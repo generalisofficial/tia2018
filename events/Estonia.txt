@@ -1,1 +1,26 @@
-﻿
+﻿add_namespace = estonia
+
+country_event = { #The Scandal Event#
+	id = estonia.1
+	title = estonia.1.t
+	desc = estonia.1.d
+	picture = GFX_report_event_church_of_sweden
+	
+	is_triggered_only = yes
+	
+	option = {	#Maybe this is for the better?
+		name = estonia.1.a
+		hidden_effect = {
+            
+        }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = progressive
+			popularity = 0.02
+		}
+		
+		ai_chance = { factor = 95 }
+	}

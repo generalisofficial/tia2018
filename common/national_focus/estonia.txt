@@ -357,13 +357,13 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-	    id = EST_rail_baltica_project
+	    id = EST_begin_the_rail_baltica_project
 		icon = baltic_development
 		
 		x = 4
 		y = 4
 		
-		cost = 30
+		cost = 20
 
 		prerequisite = {
 		    focus = EST_expand_the_E263
@@ -377,20 +377,23 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		completion_reward = {
+		
+		custom_effect_tooltip = EST_begin_the_rail_baltica
+		
 			add_popularity = {
 				ideology = progressive
-				popularity = 0.03
+				popularity = 0.06
 			}
 			LAT = {
 			    add_popularity = {
 				    ideology = progressive
-				    popularity = 0.03
+				    popularity = -0.03
 				}
 			}
 			LIT = {
 			    add_popularity = {
 				    ideology = progressive
-				    popularity = 0.03
+				    popularity = 0.02
 				}
 			}
 			
@@ -435,10 +438,10 @@ focus_tree = {    ### Made by CMDR Voltages ###
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = infrastructure
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -453,14 +456,14 @@ focus_tree = {    ### Made by CMDR Voltages ###
 						limit = {
 							free_building_slots = {
 								building = industrial_complex
-								size > 1
+								size > 2
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = infrastructure
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -475,11 +478,11 @@ focus_tree = {    ### Made by CMDR Voltages ###
 						limit = {
 							free_building_slots = {
 								building = industrial_complex
-								size > 1
+								size > 2
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -497,14 +500,14 @@ focus_tree = {    ### Made by CMDR Voltages ###
 						limit = {
 							free_building_slots = {
 								building = industrial_complex
-								size > 1
+								size > 2
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = infrastructure
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -519,11 +522,11 @@ focus_tree = {    ### Made by CMDR Voltages ###
 						limit = {
 							free_building_slots = {
 								building = industrial_complex
-								size > 1
+								size > 2
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 1
+						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -904,7 +907,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		id = EST_expand_the_E263
 		icon = infrastructure
 		
-		x = 3
+		x = 4
 		y = 1
 		
 		cost = 10
