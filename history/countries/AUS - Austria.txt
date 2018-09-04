@@ -1,6 +1,6 @@
 ﻿capital = 4
 
-oob = "AUS_2000"
+oob = "AUS_2018"
 
 set_research_slots = 4
 set_convoys = 50
@@ -82,6 +82,7 @@ add_ideas = {
 	population_growth_stagnation
 	austrian_neutrality
 	idea_eu_member
+	the_euro
 	free_trade
 	limited_conscription
 }
@@ -90,75 +91,77 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 27
+			popularity = 26
 		}
 		conservative = {
-			popularity = 27
+			popularity = 31.5
 		}
-		market_liberal = {
-			popularity = 4
+		social_liberal = {
+			popularity = 5.3
 		}
 		social_democrat = {
-			popularity = 33
+			popularity = 26.9
 		}
 		progressive = {
-			popularity = 8
+			popularity = 10.3
 		}
 		communist = {
-			popularity = 1
+			popularity = 0
 		}
 	}
 	
-	ruling_party = social_democrat
-	last_election = "1999.10.3"
-	election_frequency = 48
+	ruling_party = conservative
+	last_election = "2017.11.22"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Viktor Klima"
-	picture = "Viktor_Klima.dds"
+	name = "Christian Kern"
+	picture = "Christian_Kern.dds"
 	ideology = social_democrat_ideology
 }
+
 create_country_leader = {
-	name = "Wolfgang Schüssel"
-	picture = "Wolfgang_Schussel.dds"
+	name = "Sebastian Kurz"
+	picture = "Sebastian_Kurz.dds"
 	ideology = christian_democrat 
 }
+
 create_country_leader = {
-	name = "Susanne Riess"
-	picture = "Susanne_Riess.dds"
+	name = "Heinz-Christian Strache"
+	picture = "Heinz_Christian_Strache.dds"
 	ideology = counter_progressive_democrat
 }
+
 create_country_leader = {
-	name = "Christian Köck"
-	picture = "Christian_Kock.dds"
-	ideology = libertarian
+	name = "Matthias Strolz"
+	picture = "Matthias_Strolz.dds"
+	ideology = centrist
 }
+
 create_country_leader = {
-	name = "Alexander Van Der Bellen"
-	picture = "Alexander_Van_Der_Bellen.dds"
+	name = "Werner Kogler"
+	picture = "Werner_Kogler.dds"
 	ideology = green
 }
+
 create_country_leader = {
 	name = "Sonja Grusch"
 	picture = "Sonja_Grusch.dds"
 	ideology = democratic_socialist_ideology
 }
+
 create_country_leader = {
-	name = "Walter Baier"
-	picture = "Walter_Baier.dds"
+	name = "Mirko Messner"
+	picture = "Mirko_Messner.dds"
 	ideology = marxist
 }
-create_country_leader = {
-	name = "Karl II"
-	picture = "Karl_II.dds"
-	ideology = absolute_monarchist
-}
 
-add_namespace = {
-	name = "aus_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Karl von Habsburg"
+	picture = "Karl_von_Habsburg.dds"
+	ideology = absolute_monarchist
 }
 
 create_field_marshal = {
@@ -271,44 +274,4 @@ create_corps_commander = {
 	picture = "generals/Peter_Gruenwald.dds"
 	traits = { hill_fighter }
 	skill = 1
-}
-
-2002.1.1 = {
-	add_ideas = the_euro
-}
-
-2012.10.17 = {
-	set_party_name = {
-		ideology = market_liberal
-		long_name = AUS_market_liberal_party_2012_long
-		name = AUS_market_liberal_party_2012
-	}
-}
-
-2016.1.1 = {
-	create_country_leader = {
-		name = "Christian Kern"
-		picture = "Christian_Kern.dds"
-		ideology = social_democrat_ideology
-	}
-	create_country_leader = {
-		name = "Reinhold Mitterlehner"
-		picture = "Reinhold_Mitterlehner.dds"
-		ideology = christian_democrat 
-	}
-	create_country_leader = {
-		name = "Heinz Christian Strache"
-		picture = "Heinz_Christian_Strache.dds"
-		ideology = counter_progressive_democrat
-	}
-	create_country_leader = {
-		name = "Matthias Strolz"
-		picture = "Matthias_Strolz.dds"
-		ideology = libertarian
-	}
-	create_country_leader = {
-		name = "Eva Glawischnig"
-		picture = "Eva_Glawischnig.dds"
-		ideology = green
-	}
 }
