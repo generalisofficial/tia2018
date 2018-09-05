@@ -2,11 +2,10 @@
 state={
 	id=271
 	name="STATE_271"
-	
-	resources = {
-		steel = 1
+	resources={
+		steel=1.000
 	}
-	
+
 	history={
 		owner = ETH
 		add_core_of = ETH
@@ -15,16 +14,24 @@ state={
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 4
+
 		}
-		victory_points = { 5010 5 }
-		victory_points = { 1984 1 }
-		victory_points = { 7980 1 }
+		victory_points = {
+			5010 5 
+		}
+		victory_points = {
+			1984 1 
+		}
+		victory_points = {
+			7980 1 
+		}
+
 	}
 
 	provinces={
-		2009 2040 4954 5010 5097 7980 8036 10775 12714 12856 13137 
+		1984 2009 2040 4954 5010 5097 7944 8036 10775 12714 12856 13137 
 	}
 	manpower=65505500
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_10
 }
