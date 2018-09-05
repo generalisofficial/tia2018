@@ -100,12 +100,26 @@ gulf_opposition_strategy = {
 	ai_strategy = {
         type = support
         id = "HTS"
-        value = 400
+        value = 1000
     }
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 400
+        value = 1000
+    }
+}
+
+israel_opposition_strategy = {
+    enable = {
+        original_tag = ISR
+    }
+	abort = {
+		has_global_flag = syrian_civil_war_over
+    }
+	ai_strategy = {
+        type = support
+        id = "FSA"
+        value = 1000
     }
 }
 
