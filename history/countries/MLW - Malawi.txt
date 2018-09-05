@@ -1,6 +1,6 @@
 ﻿capital = 820
 
-oob = "MLW_2000"
+oob = "MLW_2018"
 
 set_research_slots = 2
 set_convoys = 20
@@ -91,37 +91,40 @@ set_politics = {
 
 	parties = {
 		conservative = {
-			popularity = 25
+			popularity = 20.2
 		}
 		social_liberal = {
-			popularity = 50
+			popularity = 15.6
 		}
-		social_democrat = {
-			popularity = 25
+		reactionary = {
+			popularity = 27.8
+		}
+		progressive = {
+			popularity = 36.4
 		}
 	}
 	
 	ruling_party = social_liberal
-	last_election = "1999.6.15"
+	last_election = "2014.5.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Bakili Muluzi"
-	picture = "Bakili_Muluzi.dds"
-	ideology = moderate
+	name = "Atupele Muluzi"
+	picture = "Atupele_Muluzi.dds"
+	ideology = liberalist
 }
 
 create_country_leader = {
-	name = "Gwanda Chakuamba"
-	picture = "Gwanda_Chakuamba.dds"
-	ideology = constitutionalist
+	name = "Lazarus Chakwera"
+	picture = "Lazarus_Chakwera.dds"
+	ideology = counter_progressive_democrat
 }
 	
 create_country_leader = {
-	name = "Chakufwa Chihana"
-	picture = "Chakufwa_Chihana.dds"
+	name = "Enoch Chihana"
+	picture = "Enoch_Chihana.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -134,7 +137,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Joyca Banda"
 	picture = "Joyce_Banda.dds"
-	ideology = libertarian
+	ideology = constitutionalist
 }
 
 create_corps_commander = {
@@ -153,45 +156,4 @@ create_corps_commander = {
 	name = "Marko Chiziko"
 	picture = "generals/Marko_Chiziko.dds"
 	skill = 1
-}
-
-2016.1.1 = {
-	set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 23
-		}
-		market_liberal = {
-			popularity = 25
-		}
-		social_liberal = {
-			popularity = 12
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 35
-		}
-	}
-	
-	ruling_party = progressive
-	last_election = "2014.5.20"
-	election_frequency = 60
-	elections_allowed = yes
-	}
-
-	create_country_leader = {
-	name = "Lazarus Chakwera"
-	picture = "Lazarus_Chakwera.dds"
-	ideology = fiscal_conservative
-	}
-
-	create_country_leader = {
-	name = "Atupele Muluzi"
-	picture = "Atupele_Muluzi.dds"
-	ideology = moderate
-	}
-
 }
