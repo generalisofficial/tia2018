@@ -95,6 +95,18 @@ set_technology = {
 	excavation1 = 1
 }
 
+set_country_flag = ukraine_minsk_agreement
+
+add_opinion_modifier = {
+	target = SOV
+	modifier = annexed_ukraine
+}
+
+add_opinion_modifier = {
+	target = SOV
+	modifier = annexed_ukraine_trade
+}
+	
 add_ideas = {
 	population_growth_steady
 	limited_conscription
@@ -104,62 +116,62 @@ set_politics = {
 
 	parties = {
 		fascist = {
-			popularity = 5
+			popularity = 0
 		}
 		reactionary = {
-			popularity = 5
+			popularity = 0
 		}
 		conservative = {
-			popularity = 25
+			popularity = 23.27
 		}
 		market_liberal = {
-			popularity = 35
+			popularity = 54.69
 		}
 		social_liberal = {
-			popularity = 5
+			popularity = 10.71
 		}
 		social_democrat = {
-			popularity = 5
+			popularity = 0
 		}
-		communist = {
-			popularity = 20
+		nationalist = {
+			popularity = 11.32
 		}
 	}
 	
 	ruling_party = market_liberal
-	last_election = "2014.5.25"
-	election_frequency = 48
+	last_election = "2014.3.31"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Leonid Kuchma"
-	picture = "Leonid_Kuchma.dds"
-	ideology = fiscal_conservative
+	name = "Yulia Tymoshenko"
+	picture = "Yulia_Tymoshenko.dds"
+	ideology = constitutionalist
 }
 
 create_country_leader = {
-	name = "Dmytro Yarosh"
-	picture = "Dmytro_Yarosh.dds"
+	name = "Andriy Tarasenko"
+	picture = "Andriy_Tarasenko.dds"
 	ideology = falangist
 }
 
 create_country_leader = {
-	name = "Oleh Tyahnybok"
-	picture = "Oleh_Tyahnybok.dds"
-	ideology = proto_fascist	
-}  
-
-create_country_leader = {
-	name = "Yuriy Boyko"
-	picture = "Yuriy_Boyko.dds"
+	name = "Serhiy Tihipko"
+	picture = "Serhiy_Tihipko.dds"
 	ideology = centrist 
 }
 
 create_country_leader = {
-	name = "Viktor Yanukovych"
-	picture = "Viktor_Yanukovych.dds"
+	name = "Arseniy Yatsenyuk"
+	picture = "Arseniy_Yatsenyuk.dds"
 	ideology = oligarchist
+}
+
+create_country_leader = {
+	name = "Natalia Korolevska"
+	picture = "Natalia_Korolevska.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
@@ -171,18 +183,12 @@ create_country_leader = {
 create_country_leader = {
 	name = "Oleh Lyashko"
 	picture = "Oleh_Lyashko.dds"
-	ideology = social_democrat_ideology
+	ideology = national_democrat
 }
 
 create_country_leader = {
-	name = "Denys Moskal"
-	picture = "Denys_Moskal.dds"
-	ideology = green
-}
-
-create_country_leader = {
-	name = "Oleksander Moroz"
-	picture = "Oleksander_Moroz.dds"
+	name = "Serhiy Kaplin"
+	picture = "Serhiy_Kaplin.dds"
 	ideology = democratic_socialist_ideology		
 }
 
@@ -190,11 +196,6 @@ create_country_leader = {
 	name = "Petro Symonenko"
 	picture = "Petro_Symonenko.dds"
 	ideology = marxist	
-}
-
-add_namespace = {
-	name = "ukr_unit_leader"
-	type = unit_leader
 }
 
 create_field_marshal = {
@@ -273,16 +274,4 @@ create_navy_leader = {
 	picture = "admirals/Serhiy_Hayduk.dds"
 	traits = { superior_tactician }
 	skill = 1
-}
-
-2018.1.1 = {
-    set_country_flag = ukraine_minsk_agreement
-	add_opinion_modifier = {
-		target = SOV
-		modifier = annexed_ukraine
-	}
-	add_opinion_modifier = {
-		target = SOV
-		modifier = annexed_ukraine_trade
-	}
 }
