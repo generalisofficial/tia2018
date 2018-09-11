@@ -31,6 +31,13 @@ news_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		add_popularity = {
+			ideology = islamist
+			popularity = 0.15
+		}
+	}
+	
 	option = {
 		name = "One step towards Palestine!"
 	}
@@ -43,7 +50,14 @@ news_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		add_popularity = {
+			ideology = islamist
+			popularity = -0.15
+		}
+	}
+	
 	option = {
-		name = "Disgrace!"
+		name = "They are attacking Palestinian territory!"
 	}
 }
