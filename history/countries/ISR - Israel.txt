@@ -108,31 +108,34 @@ give_guarantee = USA
 
 set_politics = {
 	parties = {
-		islamist = {
-			popularity = 10
-		}
 		nationalist = {
-			popularity = 3
+			popularity = 11.77
 		}
 		reactionary = {
-			popularity = 8
+			popularity = 5.11
 		}
 		conservative = {
-			popularity = 34
+			popularity = 23.40
 		}
 		social_democrat = {
-			popularity = 31
+			popularity = 18.67
+		}
+		social_liberal = {
+			popularity = 17.77
 		}
 		market_liberal = {
-			popularity = 4
+			popularity = 8.81
 		}
 		communist = {
-			popularity = 10
+			popularity = 10.54
+		}
+		progressive = {
+			popularity = 3.93
 		}
 	}
 		
 	ruling_party = conservative
-	last_election = "2015.3.17"
+	last_election = "2015.11.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -153,63 +156,69 @@ add_opinion_modifier = {
 }
 
 create_country_leader = {
-	name = "Ehud Barak"
-	ideology = social_democrat_ideology
-	picture = "Ehud_Barak.dds"
-}
-
-create_country_leader = {
 	name = "Benjamin Netanyahu"
-	ideology = right_wing_conservative
 	picture = "Benjamin_Netanyahu.dds"
+	ideology = right_wing_conservative
 }
 
 create_country_leader = {
-	name = "Aryeh Deri"
-	ideology = absolute_monarchist
-	picture = "Aryeh_Deri.dds"
+	name = "Avi Gabbay"
+	picture = "Avi_Gabbay.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Rehavam Ze'evi"
+	name = "Tzipi Livni"
+	picture = "Tzipi_Livni.dds"
+	ideology = liberalist
+}
+
+create_country_leader = {
+	name = "Naftali Bennett"
+	picture = "Naftali_Bennett.dds"
 	ideology = national_democrat
-	picture = "Rehavam_Zeevi.dds"
 }
 
 create_country_leader = {
-	name = "Dan Meridor"
+	name = "Avigdor Lieberman"
+	picture = "Avigdor_Lieberman.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Yair Lapid"
+	picture = "Yair_Lapid.dds"
 	ideology = libertarian
-	picture = "Dan_Meridor.dds"
 }
 
 create_country_leader = {
-	name = "Yosef Lapid"
-	ideology = libertarian
-	picture = "Yosef_Lapid.dds"
+	name = "Tamar Zandberg"
+	picture = "Tamar_Zandberg.dds"
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
-	name = "Yossi Sarid"
+	name = "Jamal Zahalka"
+	picture = "Jamal_Zahalka.dds"
 	ideology = democratic_socialist_ideology
-	picture = "Yossi_Sarid.dds"
 }
 
 create_country_leader = {
-	name = "Tawfik Toubi"
+	name = "Ayman Odeh"
+	picture = "Ayman_Odeh.dds"
 	ideology = marxist
-	picture = "Tawfik_Toubi.dds"
 }
 
 create_country_leader = {
-	name = "Abdulmalik Dehamshe"
+	name = "Raed Salah"
+	picture = "Raed_Salah.dds"
 	ideology = sunni_islamism
-	picture = "Abdulmalik_Dehamshe.dds"
 }
 
 create_country_leader = {
-	name = "Bentzi Gophstein"
+	name = "Ben-Zion Gopstein"
+	picture = "Ben_Zion_Gopstein.dds"
 	ideology = national_socialist
-	picture = "Bentzi_Gophstein.dds"
 }
 
 create_corps_commander = {
