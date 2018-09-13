@@ -17,12 +17,12 @@ ctjf_oir_strategy = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "ROJ"
-        value = 400
+        value = 2000
     }
 	ai_strategy = {
         type = support
         id = "ROJ"
-        value = 400
+        value = 2000
     } 
 }
 
@@ -36,12 +36,12 @@ assad_supporter_strategy_major = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "SYR"
-        value = 400
+        value = 2000
     }
     ai_strategy = {
         type = support
         id = "SYR"
-        value = 400
+        value = 2000
     } 
 }
 
@@ -60,7 +60,7 @@ assad_supporter_strategy_minor = {
     ai_strategy = {
         type = support
         id = "SYR"
-        value = 400
+        value = 2000
     } 
 }
 
@@ -78,12 +78,12 @@ west_antagonize_assad_strategy = {
     ai_strategy = {
         type = antagonize
         id = "SYR"
-        value = 400
+        value = 2000
     }
 	ai_strategy = {
         type = send_volunteers_desire
         id = "SYR"
-        value = -400
+        value = -2000
     }
 }
 
@@ -100,12 +100,12 @@ gulf_opposition_strategy = {
 	ai_strategy = {
         type = support
         id = "HTS"
-        value = 1000
+        value = 2000
     }
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 1000
+        value = 2000
     }
 }
 
@@ -119,7 +119,7 @@ israel_opposition_strategy = {
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 1000
+        value = 2000
     }
 }
 
@@ -133,37 +133,16 @@ anti_isis_strategy = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "ISS"
-        value = -400
+        value = -2000
     }
 	ai_strategy = {
         type = support
         id = "ISS"
-        value = -400
+        value = -2000
     }
 }
 
-turkey_vs_rojava_strategy = {
-    enable = {
-        original_tag = TUR
-    }
-    ai_strategy = {
-        type = send_volunteers_desire
-        id = "ROJ"
-        value = -400
-    }
-	ai_strategy = {
-        type = support
-        id = "ROJ"
-        value = -400
-    }
-	ai_strategy = {
-        type = antagonize
-        id = "ROJ"
-        value = 400
-    }
-}
-
-turkey_fsa_supporter_strategy = {
+TUR_intervene_in_syria = {
     enable = {
 		original_tag = TUR
 		has_government = conservative
@@ -174,21 +153,47 @@ turkey_fsa_supporter_strategy = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "FSA"
-        value = 400
+        value = 2000
     }
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 400
-    } 
+        value = 2000
+    }
+	ai_strategy = {
+        type = garrison
+        id = "FSA"
+        value = 2000
+    }
+	ai_strategy = {
+        type = garrison
+        id = "HTS"
+        value = 2000
+    }
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "ROJ"
+        value = -2000
+    }
+	ai_strategy = {
+        type = support
+        id = "ROJ"
+        value = -2000
+    }
+	ai_strategy = {
+        type = antagonize
+        id = "ROJ"
+        value = 2000
+    }
 }
 
 fsa_supporter_strategy = {
     enable = {
 	    OR = {
-	        tag = USA
-		    tag = ENG
-		    tag = FRA
+	        original_tag = USA
+		    original_tag = ENG
+		    original_tag = FRA
+			original_tag = HOL
 		}
     }
 	abort = {
@@ -200,7 +205,7 @@ fsa_supporter_strategy = {
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 400
+        value = 2000
     } 
 }
 
@@ -217,27 +222,27 @@ neutral_scw_strategy = {
 	ai_strategy = {
         type = send_volunteers_desire
         id = "ROJ"
-        value = -400
+        value = -2000
     }
 	ai_strategy = {
         type = send_volunteers_desire
         id = "SYR"
-        value = -400
+        value = -2000
     }
 	ai_strategy = {
         type = send_volunteers_desire
         id = "HTS"
-        value = -400
+        value = -2000
     }
 	ai_strategy = {
         type = send_volunteers_desire
         id = "FSA"
-        value = -400
+        value = -2000
     }
 	ai_strategy = {
         type = send_volunteers_desire
         id = "ISS"
-        value = -400
+        value = -2000
     }
 }
 
