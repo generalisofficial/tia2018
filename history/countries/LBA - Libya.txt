@@ -1,6 +1,6 @@
 ﻿capital = 448
 
-oob = "LBA_2000"
+oob = "LBA_2018"
 
 set_research_slots = 2
 set_convoys = 300
@@ -106,57 +106,36 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = { popularity = 15 }
-		nationalist = { popularity = 40 }
-		reactionary = { popularity = 2 }
-		conservative = { popularity = 5 }
-		social_liberal = { popularity = 2 }
-		communist = { popularity = 20 }
-		market_liberal = { popularity = 2 }
-		progressive  = { popularity = 4 }
-		social_democrat = { popularity = 5 }
-		democratic_socialist  = { popularity = 5 }
+		islamist = { popularity = 10.3 }
+		nationalist = { popularity = 0 }
+		reactionary = { popularity = 41.6 }
+		conservative = { popularity = 0 }
+		social_liberal = { popularity = 13.1 }
+		communist = { popularity = 0 }
+		market_liberal = { popularity = 35 }
+		progressive  = { popularity = 0 }
+		social_democrat = { popularity = 0 }
+		democratic_socialist  = { popularity = 0 }
 	}
 	
 	ruling_party = nationalist
-	last_election = "1997.1.1"
+	last_election = "2014.12.10"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Muammar al-Gaddafi"
-	picture = "Muammar_Gaddafi.dds"
-	ideology = autocrat
-	expire = "2011.1.1"
+	name = "Fayez al-Sarraj"
+	picture = "Fayez_al_Sarraj.dds"
+	ideology = independent
 }
 
 create_country_leader = {
-	name = "Abubakr Mustafa Buera"
-	picture = "Abubakr_Mustafa_Buera.dds"
-	ideology = fiscal_conservative
-}
-create_country_leader = {
-	name = "Mohammed Sawan"
-	picture = "Mohammed_Sawan.dds"
+	name = "Mohamed Sowan"
+	picture = "Mohamed_Sowan.dds"
 	ideology = sunni_islamism
-} 
-create_country_leader = {
-    name = "Mustafa Abdul Jalil"
-	picture = "Mustafa_Abdul_Jalil.dds"
-	ideology = social_democrat_ideology
-}
-create_country_leader = {
-	name = "Mohammed El-Senussi"
-	ideology = absolute_monarchist
-	picture = "Mohammed_Senussi.dds"
 }
 
-create_country_leader = {
-	name = "Ali Tarhouni"
-	ideology = centrist 
-	picture = "Ali_Tarhouni.dds"
-}
 create_country_leader = {
 	name = "Mahmoud Jibril"
 	picture = "Mahmoud_Jibril.dds"
@@ -164,27 +143,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mohammed Kilani"
-	picture = "Mohammed_Kilani.dds"
-	ideology = counter_progressive_democrat
+	name = "Ali Zeidan"
+	picture = "Ali_Zeidan.dds"
+	ideology = liberalist
 }
-
-create_country_leader = {
-	name = "Uthman Ali"
-	picture = "Uthman_Ali.dds"
-	ideology = marxist
-}   
 
 create_country_leader = {
 	name = "Mohamed Ali Abdallah"
 	picture = "Mohamed_Ali_Abdallah.dds"
-	ideology = green
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
-	name = "Mousa Kussa"
-	picture = "Mousa_Kussa.dds"
-	ideology = national_socialist
+	name = "Muftah Lamlum"
+	picture = "Muftah_Lamlum.dds"
+	ideology = autocrat
 }
 
 create_field_marshal = {
@@ -277,37 +250,4 @@ create_navy_leader = {
 	traits = { old_guard_navy superior_tactician }
 	skill = 2
 }
-
-2012.1.1 = {
-	set_politics = {
-		parties = {
-			communist = { popularity = 6 }
-			social_democrat = { popularity = 30 }
-			islamist = { popularity = 23 }
-			conservative = { popularity = 28 }
-			market_liberal = { popularity = 10 }
-			reactionary = { popularity = 14 }
-			nationalist = { popularity = 11 }
-		}
-		ruling_party = social_democrat
-		elections_allowed = yes
-		last_election = "2011.12.1"
-	}	
-	create_country_leader = {
-	name = "Fayez al-Sarraj"
-	picture = "Fayez_al_Sarraj.dds"
-	ideology = social_democrat_ideology
-    }
-	create_country_leader = {
-	name = "Saif al-Islam Gaddafi"
-	picture = "Saif_Islam_Gaddafi.dds"
-	ideology = national_democrat
-    }
-}
-2014.8.5 = {
-    create_country_leader = {
-        name = "Aguila Saleh Issa"
-	    picture = "Aguila_Saleh_Issa.dds"
-	    ideology = fiscal_conservative
-    }
 }
