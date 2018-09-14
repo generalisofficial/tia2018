@@ -1,6 +1,6 @@
 ﻿capital = 746
 
-oob = "MAL_2000"
+oob = "MAL_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -90,76 +90,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 4
-		}
-		nationalist = {
-			popularity = 6
-		}
-		conservative = {
-			popularity = 20
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		market_liberal = {
-			popularity = 2
+		progressive = {
+			popularity = 32.83
 		}
 		social_democrat = {
-			popularity = 35
-		}
-		communist = {
-			popularity = 8
+			popularity = 67.17
 		}
 	}
 	
 	ruling_party = social_democrat
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "2013.7.29"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Alpha Oumar Konaré"
+	name = "Ibrahim Boubacar Keita"
+	picture = "Ibrahim_Boubacar_Keita.dds"
 	ideology = social_democrat_ideology
-	picture = "Alpha_Oumar_Konare.dds"
 }
 
 create_country_leader = {
-	name = "Ibrahim Boubacar Keïta"
-	ideology = liberalist
-	picture = "Ibrahim_Boubacar_Keita.dds"
-}
-
-2012.1.1 = {
-	set_politics = {
-		parties = {
-			islamist = {
-				popularity = 2
-			}
-			nationalist = {
-				popularity = 2
-			}
-			conservative = {
-				popularity = 20
-			}
-			social_liberal = {
-				popularity = 39
-			}
-			market_liberal = {
-				popularity = 2
-			}
-			social_democrat = {
-				popularity = 27
-			}
-			communist = {
-				popularity = 8
-			}
-		}
-		
-		ruling_party = social_liberal
-		last_election = "1997.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	name = "Soumaila Cissé"
+	picture = "Soumailia_Cisse.dds"
+	ideology = progressive_ideology
 }
