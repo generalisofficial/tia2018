@@ -16,12 +16,12 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	default = no
-
+	
 	focus = {
-	    id = EST_baltic_stability
-		icon = neutrality
+		id = EST_a_sour_history
+		icon = molotov_ribbentrop_pact
 		
-		x = 13
+		x = 25
 		y = 0
 		
 		cost = 10
@@ -30,36 +30,12 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.02
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	focus = {
-		id = EST_socialist_unity
-		icon = industry_democratic4
-		
-		x = 25
-		y = 2
-		
-		cost = 10
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		
-		prerequisite = {
-			focus = EST_baltic_stability
-		}
+		prerequisite = {}
 		
 		mutually_exclusive = {
 		    focus = EST_nationalist_pride
 			focus = EST_estonia_first
+			focus = EST_reform_is_needed
 		}
 		
 		completion_reward = {
@@ -76,7 +52,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		icon = fascism
 		
 		x = 38
-		y = 2
+		y = 0
 		
 		cost = 10
 
@@ -89,13 +65,12 @@ focus_tree = {    ### Made by CMDR Voltages ###
 			reactionary > 0.1
 		}
 		
-		prerequisite = {
-			focus = EST_baltic_stability
-		}
+		prerequisite = {}
 		
 		mutually_exclusive = {
-		    focus = EST_socialist_unity
+		    focus = EST_a_sour_history
 			focus = EST_estonia_first
+			focus = EST_reform_is_needed
 		}
 		
 		completion_reward = {
@@ -134,11 +109,11 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_legacy_of_the_SSR
+		id = EST_the_19th_century
 		icon = communism12
 		
 		x = 25
-		y = 3
+		y = 2
 		
 		cost = 10
         
@@ -147,7 +122,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-			focus = EST_socialist_unity
+			focus = EST_a_sour_history
 		}
 		
 		mutually_exclusive = {}
@@ -164,11 +139,39 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	### Democracy ###
 	
 	focus = {
-		id = EST_the_scandal
-		icon = scandal
+		id = EST_reform_is_needed
+		icon = self_management
 		
 		x = 8
-		y = 2
+		y = 0
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {}
+		
+		mutually_exclusive = {
+		    focus = EST_estonia_first
+			focus = EST_nationalist_pride
+			focus = EST_a_sour_history
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+		focus = {
+		id = EST_1
+		icon = self_management
+		
+		x = 7
+		y = 1
 		
 		cost = 10
 
@@ -177,15 +180,68 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_baltic_stability
+		    focus = EST_reform_is_needed
 		}
 		
 		mutually_exclusive = {}
 		
-		completion_reward = {
-		    add_stability = 0.02
-			add_political_power = 100
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
 		}
+	}
+	
+	focus = {
+		id = EST_2
+		icon = self_management
+		
+		x = 9
+		y = 1
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_reform_is_needed
+		}
+		
+		mutually_exclusive = {}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+		focus = {
+		id = EST_2019_parliamentary_elections
+		icon = self_management
+		
+		x = 9
+		y = 3
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		available = {
+			date > 2019.03.03
+		}
+		
+		prerequisite = {
+		    focus = EST_reform_is_needed
+		}
+		
+		mutually_exclusive = {}
+		
+		completion_reward = {}
 		
 		ai_will_do = {
 			factor = 10
@@ -262,7 +318,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		icon = estonia_first
 		
 		x = 17
-		y = 2
+		y = 0
 		
 		cost = 10
 
@@ -274,13 +330,12 @@ focus_tree = {    ### Made by CMDR Voltages ###
 			reactionary > 0.1
 		}
 		
-		prerequisite = {
-		    focus = EST_baltic_stability
-		}
+		prerequisite = {}
 		
 		mutually_exclusive = {
-		    focus = EST_socialist_unity
+		    focus = EST_a_sour_history
 			focus = EST_nationalist_pride
+			focus = EST_reform_is_needed
 		}
 		
 		completion_reward = {
