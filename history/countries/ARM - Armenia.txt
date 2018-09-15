@@ -92,16 +92,12 @@ give_military_access = NGK
 
 set_politics = {
 	parties = {
-		reactionary = { popularity = 30 }
-		conservative = { popularity = 40 }
-		market_liberal = { popularity = 15 }
-		progressive = { popularity = 3 }
-		democratic_socialist = { popularity = 2 }
-		communist = { popularity = 10 }
+		conservative = { popularity = 58.64 }
+		market_liberal = { popularity = 41.36 }
 	}
 	
 	ruling_party = conservative
-	last_election = "1998.3.30"
+	last_election = "2013.3.2"
 	election_frequency = 60
 	elections_allowed = yes
 }
@@ -109,7 +105,19 @@ set_politics = {
 create_country_leader = {
 	name = "Serzh Sargsyan"
 	picture = "Serzh_Sargsyan.dds"
-	ideology = fiscal_conservative
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Armen Sarkissian"
+	picture = "Armen_Sarkissian.dds"
+	ideology = independent
+}
+
+create_country_leader = {
+	name = "Raffi Hovannisian"
+	picture = "Raffi_Hovannisian.dds"
+	ideology = libertarian
 }
 
 create_field_marshal = {
