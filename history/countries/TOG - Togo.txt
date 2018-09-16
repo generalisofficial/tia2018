@@ -96,34 +96,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 25
-		}
-		social_liberal = {
-			popularity = 40
+		market_liberal = {
+			popularity = 41.25
 		}
 		conservative = {
-			popularity = 25
-		}
-		communist = {
-			popularity = 10
+			popularity = 58.75
 		}
 	}
 	
-	ruling_party = reactionary
+	ruling_party = conservative
 	last_election = "2015.4.25"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Gnassingbé Eyandéma"
-	picture = "Gnassingbe_Eyandema.dds"
-	ideology = counter_progressive_democrat
-}
-
-create_country_leader = {
-	name = "Faure Gnassingbe"
+	name = "Faure Gnassingbé"
 	picture = "Faure_Gnassingbe.dds"
-	ideology = moderate
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Jean-Pierre Fabre"
+	picture = "Jean_Pierre_Fabre.dds"
+	ideology = libertarian
 }

@@ -60,52 +60,46 @@ set_country_flag = sunni_islam
 
 set_politics = {
 	parties = {
-		islamist = {
-			popularity = 30
-		}
 		conservative = {
-			popularity = 30
-		}
-		social_democrat = {
-			popularity = 18
-		}
-		market_liberal = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 10
+			popularity = 43.56
 		}
 		reactionary = {
-			popularity = 10
+			popularity = 56.44
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "2014.4.5"
+	ruling_party = reactionary
+	last_election = "2014.4.20"
+	election_frequency = 60
 	elections_allowed = yes
-	election_frequency = 48
-}
-
-create_country_leader = {
-	name = "Hibatullah Akhundzada"
-	ideology = salafism
-	picture = "Hibatullah_Akhundzada.dds"
 }
 
 create_country_leader = {
 	name = "Ashraf Ghani"
-	ideology = fiscal_conservative
 	picture = "Ashraf_Ghani.dds"
+	ideology = independent
 }
 
 create_country_leader = {
 	name = "Abdullah Abdullah"
-	ideology = libertarian
 	picture = "Abdullah_Abdullah.dds"
+	ideology = constitutionalist
+}
+
+create_country_leader = {
+	name = "Hibatullah Akhundzada"
+	picture = "Hibatullah_Akhundzada.dds"
+	ideology = salafism
 }
 
 create_country_leader = {
 	name = "Zalmai Rassoul"
-	ideology = centrist
 	picture = "Zalmai_Rassoul.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Ahmad Shah Khan"
+	picture = "Ahmad_Shah_Khan.dds"
+	ideology = absolute_monarchist
 }
