@@ -97,24 +97,27 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 10
+			popularity = 65.37
 		}
 		social_liberal = {
-			popularity = 80
-		}
-		communist = {
-			popularity = 10
+			popularity = 34.63
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "2016.3.20"
+	ruling_party = reactionary
+	last_election = "2016.3.6"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
 	name = "Patrice Talon"
-	picture = "Thomas_Patrice_Talon.dds"
-	ideology = liberalist
+	picture = "Patrice_Talon.dds"
+	ideology = independent
+}
+
+create_country_leader = {
+	name = "Thomas Boni Yayi"
+	picture = "Thomas_Boni_Yayi.dds"
+	ideology = centrist
 }
