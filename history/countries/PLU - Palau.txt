@@ -1,6 +1,6 @@
 ﻿capital = 647
 
-oob = "PLU_2000"
+oob = "PLU_2018"
 
 set_research_slots = 2
 set_convoys = 60
@@ -94,58 +94,34 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		conservative = {
-			popularity = 25
+		reactionary = {
+			popularity = 100
 		}
 		market_liberal = {
-			popularity = 15
+			popularity = 0
 		}
 		social_liberal = {
-			popularity = 30
+			popularity = 0
 		}
 		social_democrat = {
-			popularity = 10
+			popularity = 0
 		}
 		progressive = {
-			popularity = 10
+			popularity = 0
 		}
 		democratic_socialist = {
-			popularity = 10
+			popularity = 0
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
+	ruling_party = reactionary
+	last_election = "2016.11.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Kuniwo Nakamura"
-	picture = "Kuniwo_Nakamura.dds"
-	ideology = moderate
-}
-
-2001.1.1 = {
-	create_country_leader = {
-		name = "Thomas Remengesau Jr."
-		picture = "Thomas_Remengesau_Jr.dds"
-		ideology = moderate
-	}
-}
-
-2009.1.15 = {
-	create_country_leader = {
-		name = "Johnson Toribiong"
-		picture = "Johnson_Toribiong.dds"
-		ideology = moderate
-	}
-}
-
-2013.1.17 = {
-	create_country_leader = {
-		name = "Kuniwo Nakamura"
-		picture = "Kuniwo_Nakamura.dds"
-		ideology = moderate
-	}
+	name = "Thomas Remengesau Jr."
+	picture = "Thomas_Remengesau_Jr.dds"
+	ideology = independent
 }
