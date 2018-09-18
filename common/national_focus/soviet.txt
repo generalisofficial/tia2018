@@ -140,6 +140,116 @@ focus_tree = {
 		}
 	}
 	
+		focus = {
+		id = SOV_european_union_cooperation
+		icon = align_to_europe
+		x = 8
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_begin_the_reform
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = SOV_reestablish_relations_with_ukraine
+		icon = align_to_ukraine
+		x = 8
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_european_union_cooperation
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = SOV_pull_the_troops
+		icon = forceful_treaty
+		x = 8
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_reestablish_relations_with_ukraine
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+		focus = {
+		id = SOV_the_crimea_dispute
+		icon = crimea
+		x = 8
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_pull_the_troops
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = SOV_apply_to_the_european_union_economic_zone
+		icon = align_to_europe
+		x = 8
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_the_crimea_dispute
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
 	focus = {
 		id = SOV_vladimir_zhirinovsky
 		icon = zhirinovsky
@@ -955,7 +1065,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_crack_down_on_the_oligarchy
+		id = SOV_crack_down_the_oligarchy
 		icon = destroy_society
 		x = 13
 		y = 4
@@ -1009,7 +1119,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_clear_the_putinist_filled_parliament
+		id = SOV_purge_the_putinist_parlament
 		icon = self_management
 		x = 11
 		y = 6
