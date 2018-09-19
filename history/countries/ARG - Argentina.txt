@@ -1,6 +1,6 @@
 ﻿capital = 847
 
-oob = "ARG_2000"
+oob = "ARG_2018"
 
 set_research_slots = 4
 set_convoys = 260
@@ -103,19 +103,19 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		islamist = { popularity = 0.1 }
-		nationalist = { popularity = 1 }
-		reactionary = { popularity = 2 }
-		conservative = { popularity = 30.9 }
-		market_liberal = { popularity = 6 }
-		social_liberal = { popularity = 25 }
-		social_democrat = { popularity = 5 }
-		progressive = { popularity = 10 }
-		democratic_socialist = { popularity = 16 }
-		communist = { popularity = 4 }
+		islamist = { popularity = 0 }
+		nationalist = { popularity = 0 }
+		reactionary = { popularity = 0 }
+		conservative = { popularity = 51.34 }
+		market_liberal = { popularity = 0 }
+		social_liberal = { popularity = 48.66 }
+		social_democrat = { popularity = 0 }
+		progressive = { popularity = 0 }
+		democratic_socialist = { popularity = 0 }
+		communist = { popularity = 0 }
 	}
-	ruling_party = social_liberal
-	last_election = "1999.12.10"
+	ruling_party = conservative
+	last_election = "2015.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -126,8 +126,8 @@ add_opinion_modifier = {
 }
 
 create_country_leader = {
-	name = "Alejandro Biondini"
-	picture = "Alejandro_Biondini.dds"
+	name = "Gustavo Breide Obeid"
+	picture = "Gustavo_Breide_Obeid.dds"
 	ideology = national_socialist
 }
 
@@ -138,14 +138,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Fernando de la Rua"
-	picture = "Fernando_de_la_Rua.dds"
+	name = "Eduardo Fellner"
+	picture = "Eduardo_Fellner.dds"
 	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Margarita Stolbizer"
-	picture = "Margarita_Stolbizer.dds"
+	name = "Alfredo Cornejo"
+	picture = "Alfredo_Cornejo.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -159,6 +159,18 @@ create_country_leader = {
 	name = "Jorge Altamira"
 	picture = "Jorge_Altamira.dds"
 	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Sergio Massa"
+	picture = "Sergio_Massa.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Fernando Solanas"
+	picture = "Fernando_Solanas.dds"
+	ideology = green
 }
 
 create_field_marshal = {
@@ -724,17 +736,4 @@ create_navy_leader = {
 	picture = "admirals/Zenon_Bolino.dds"
 	traits = {  }
 	skill = 1
-}
-
-2016.1.1 = {
-	set_politics = {
-		ruling_party = conservative
-		last_election = "2015.12.10"
-		elections_allowed = yes
-	}
-	create_country_leader = {
-		name = "Elisa Carrió"
-		picture = "Elisa_Carrio.dds"
-		ideology = liberalist
-	}
 }
