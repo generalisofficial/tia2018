@@ -2,12 +2,9 @@
 state={
 	id=429
 	name="STATE_429"
-	manpower = 116355600
-	state_category = state_level_19
-	
 	resources={
-		oil=31
-		steel = 110
+		oil=31.000
+		steel=110.000
 	}
 
 	history={
@@ -21,12 +18,20 @@ state={
 			dockyard = 1
 			1349 = {
 				naval_base = 9
+
 			}
+
 		}
-		victory_points = { 1349 50 }	#Mumbai
+		victory_points = {
+			1349 50 
+		}
+
 	}
 
 	provinces={
-		1349 1405 4072 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269 
+		1349 1405 4072 4353 4883 4950 5063 7013 7060 7119 7177 7205 7232 7430 7619 10019 10030 10210 10270 10311 10511 10872 11993 12182 12269 12781 
 	}
+	manpower=116355600
+	buildings_max_level_factor=1.000
+	state_category=state_level_19
 }

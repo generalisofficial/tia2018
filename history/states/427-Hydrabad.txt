@@ -1,12 +1,9 @@
+
 state={
 	id=427
 	name="STATE_427"
-	manpower = 35013400
-	
-	state_category = state_level_10
-	
 	resources={
-		chromium = 10
+		chromium=10.000
 	}
 
 	history={
@@ -16,11 +13,18 @@ state={
 			infrastructure = 5
 			air_base = 2
 			industrial_complex = 5
+
 		}
-		victory_points = { 8087 20 }	#Hyderabad
+		victory_points = {
+			8087 20 
+		}
+
 	}
 
 	provinces={
-		1275 1317 1359 4280 4472 5019 5063 5104 8087 10311 10324 10511 11950 12114 12226 
+		1275 1317 4280 4472 5019 5104 8087 10259 10324 11950 12114 12226 
 	}
+	manpower=35013400
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

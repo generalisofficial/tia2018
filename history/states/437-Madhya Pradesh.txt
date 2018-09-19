@@ -1,15 +1,11 @@
 
 state={
 	id=437
-	name="STATE_437" # Indore
-	manpower = 39402500
-	
-	resources = {
-		oil=4
-		steel = 4
+	name="STATE_437"
+	resources={
+		oil=4.000
+		steel=4.000
 	}
-
-	state_category = state_level_5
 
 	history={
 		owner = RAJ
@@ -19,10 +15,15 @@ state={
 			industrial_complex = 4
 			arms_factory = 1
 			air_base = 1
+
 		}
+
 	}
 
 	provinces={
-		1949 2036 2092 2105 4106 7080 7205 8076 10807 10816 11993 11995 12080 
+		1199 1949 2036 2105 4106 4410 4953 5040 5096 7080 7938 8076 10332 10801 10807 10816 11995 12080 12799 12854 
 	}
+	manpower=39402500
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

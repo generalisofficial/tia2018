@@ -1,13 +1,9 @@
 
 state={
 	id=433
-	name="STATE_433" # Rajasthan
-	manpower = 68786000
-	
-	state_category = state_level_7
-	
+	name="STATE_433"
 	resources={
-		oil=7
+		oil=7.000
 	}
 
 	history={
@@ -17,10 +13,15 @@ state={
 			infrastructure = 6
 			industrial_complex = 4
 			arms_factory = 1
+
 		}
+
 	}
 
 	provinces={
-		1199 1908 2054 4149 4915 4971 4984 7905 7998 10847 10866 12041 12718 12743 12829 12844 12876 12886 
+		1908 2054 2092 4149 4915 4971 4984 7905 7998 10847 10866 12041 12718 12743 12829 12844 12876 12886 
 	}
+	manpower=68786000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

@@ -1,14 +1,10 @@
 
 state={
 	id=436
-	name="STATE_436" # Jabalpur
-	manpower = 28123100
-	
-	state_category = state_level_7
-	
+	name="STATE_436"
 	resources={
-		chromium = 20
-		steel = 9
+		chromium=20.000
+		steel=9.000
 	}
 
 	history={
@@ -18,11 +14,15 @@ state={
 			infrastructure = 4
 			industrial_complex = 4
 			arms_factory = 1
+
 		}
 
 	}
 
 	provinces={
-		1510 4557 4883 4950 4953 7430 7497 7574 7619 8120 10030 10401 10801 10872 12375 12420 12480 12781 12799 12854 
+		1510 4557 7497 7574 8120 10171 10401 12375 12420 12480 12490 
 	}
+	manpower=28123100
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
