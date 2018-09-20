@@ -218,6 +218,32 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		}
 	}
 	
+	focus = {
+		id = EST_invite_pope_francis_to_estonia
+		icon = self_management
+		
+		x = 9
+		y = 2
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_2
+		}
+		
+		mutually_exclusive = {}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
 		focus = {
 		id = EST_2019_parliamentary_elections
 		icon = self_management
@@ -601,8 +627,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		id = EST_provide_subsidies_to_farmers
 		icon = farming_industry
 		
-		x = 9
-		y = 6
+		x = 7
+		y = 2
 		
 		cost = 10
 
@@ -611,6 +637,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
+		    focus = EST_root_out_the_corruption
 		}
 		
 		mutually_exclusive = {}
