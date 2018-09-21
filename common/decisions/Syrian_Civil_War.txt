@@ -1,0 +1,47 @@
+syrian_civil_war = {
+	
+	operation_olive_branch = {
+		visible = {
+		    original_tag = TUR
+			country_exists = ROJ
+			country_exists = FSA
+			ROJ = { owns_state = 923 controls_state = 923 }
+		}
+		available = {
+			country_exists = ROJ
+			country_exists = FSA
+			ROJ = { owns_state = 923 controls_state = 923 }
+		}
+		
+		complete_effect = {
+			start_border_war = {
+                change_state_after_war = yes
+                attacker = {
+                    state = 827
+                    num_provinces = 1
+                    on_win =
+                    on_lose = 
+                }		
+                defender = {
+                   state = 923
+                   num_provinces = 1
+                   on_win =
+                   on_lose = 
+                }
+	        }
+		}
+		
+		icon = syrian_civil_war
+		
+		fire_only_once = yes
+		cost = 75
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 2000
+				date > 2018.1.19
+			}
+		}
+	}
+}
