@@ -1,0 +1,202 @@
+
+music = {
+	song = "the_mole"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.20
+			}
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.50
+			}
+		}
+	}
+}
+
+music = {
+	song = "variation_15"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.50
+			}
+		}
+	}
+}
+
+music = {
+	song = "end_titles"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.60
+			}
+		}
+	}
+}
+
+music = {
+	song = "we_need_our_army_back"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.10
+			}
+		}
+	}
+}
+
+
+music = {
+	song = "shivering_soldier"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}	
+}
+
+music = {
+	song = "dunkirk_theme"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}	
+}
+
+music = {
+	song = "the_tide"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "impulse"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "regimental_brothers"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}
+
+
+
+
+
+music = {
+	song = "supermar"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.30
+			}
+		}
+	}
+}
+
+
+music = {
+	song = "home"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.50
+			}
+		}
+	}
+}
+
+
+music = {
+	song = "the_oil"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			any_country = {
+				has_war_with = ROOT
+				surrender_progress > 0.10
+			}
+		}
+	}
+}
