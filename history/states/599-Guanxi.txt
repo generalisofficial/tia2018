@@ -1,14 +1,12 @@
-state= {
+
+state={
 	id=599
 	name="STATE_599"
-	manpower = 26020000
-	state_category = state_level_10
-	
-	resources = {
-		steel = 16
+	resources={
+		steel=16.000
 	}
-	
-	history= {
+
+	history={
 		owner = PRC
 		add_core_of = CHI
 		add_core_of = PRC
@@ -16,12 +14,18 @@ state= {
 			infrastructure = 5
 			industrial_complex = 9
 			air_base = 3
+
 		}
-		victory_points = { 
+		victory_points = {
 			10404 3 
 		}
+
 	}
+
 	provinces={
-		1023 1469 1597 1625 4028 4077 4085 4134 4152 4628 4656 7095 7128 7168 7210 7650 10039 10121 10404 10431 10459 12407 12436 
+		1023 1469 1597 1625 4028 4077 4085 4134 4152 4628 4656 7095 7128 7168 7210 7650 9997 10039 10121 10404 10431 10459 12407 12436 
 	}
+	manpower=26020000
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

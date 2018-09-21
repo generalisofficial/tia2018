@@ -1,15 +1,14 @@
-state= {
+
+state={
 	id=593
 	name="STATE_593"
-	manpower = 60240250
-	state_category = state_level_19
 	resources={
-		tungsten = 987
-		oil = 50
-		steel = 55
+		tungsten=987.000
+		oil=50.000
+		steel=55.000
 	}
 
-	history= {
+	history={
 		owner = PRC
 		add_core_of = CHI
 		add_core_of = PRC
@@ -21,10 +20,17 @@ state= {
 			dockyard = 2
 			9938 = {
 				naval_base = 1
+
 			}
+
 		}
+
 	}
+
 	provinces={
-		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 
+		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 10080 12014 12095 
 	}
+	manpower=60240250
+	buildings_max_level_factor=1.000
+	state_category=state_level_19
 }

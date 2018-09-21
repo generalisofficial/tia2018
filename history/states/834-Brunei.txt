@@ -1,26 +1,33 @@
+
 state={
 	id=834
 	name="STATE_834"
-	
-	resources = {
-		oil=11
+	resources={
+		oil=11.000
 	}
-	
-	history = {
+
+	history={
 		owner = BRU
 		add_core_of = BRU
 		buildings = {
 			industrial_complex = 3
 			arms_factory = 1
-			7371 = { naval_base = 2 }
+			7371 = {
+				naval_base = 2
+
+			}
+
 		}
-		victory_points = { 7371 1 }
+		victory_points = {
+			7371 1 
+		}
+
 	}
+
 	provinces={
-		7371 
+		7387 
 	}
 	manpower=415500
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_10
+	state_category=state_level_10
 }

@@ -1,14 +1,10 @@
 
 state={
 	id=611
-	name="STATE_611" # South Chahar
-	manpower = 2200000
-	
-	state_category = state_level_2
-	
-	resources = {
-		tungsten = 50
-	}	
+	name="STATE_611"
+	resources={
+		tungsten=50.000
+	}
 
 	history={
 		owner = PRC
@@ -19,13 +15,18 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 2
+
 		}
 		victory_points = {
-			11752 3
+			11752 3 
 		}
+
 	}
 
 	provinces={
-		828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 
+		828 952 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 
 	}
+	manpower=2200000
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }

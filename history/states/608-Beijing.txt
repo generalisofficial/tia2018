@@ -2,12 +2,8 @@
 state={
 	id=608
 	name="STATE_608"
-	manpower = 21700000
-	
-	state_category = state_level_21
-	
-	resources = {
-		steel = 215
+	resources={
+		steel=215.000
 	}
 
 	history={
@@ -20,17 +16,25 @@ state={
 			arms_factory = 2
 			dockyard = 3
 			air_base = 10
-			10068 = { naval_base = 2 }
+			10068 = {
+				naval_base = 2
+
+			}
+
 		}
 		victory_points = {
-			9843 50
+			9843 50 
 		}
 		victory_points = {
-			10068 2
+			10068 2 
 		}
+
 	}
 
 	provinces={
-		1134 4137 4140 6828 9843 9969 10068 11761 12026 
+		1134 1137 4137 4140 6828 9843 9969 10068 11761 12026 
 	}
+	manpower=21700000
+	buildings_max_level_factor=1.000
+	state_category=state_level_21
 }

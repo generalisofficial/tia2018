@@ -1,13 +1,10 @@
+
 state={
 	id=621
-	name="STATE_621" # Suiyuan
-	manpower = 6400000
-	
-	state_category = state_level_2
-	
-	resources = {
-		aluminium=400
-		steel = 18
+	name="STATE_621"
+	resources={
+		aluminium=400.000
+		steel=18.000
 	}
 
 	history={
@@ -19,10 +16,15 @@ state={
 			infrastructure = 3
 			air_base = 1
 			industrial_complex = 2
+
 		}
+
 	}
 
 	provinces={
-		1959 2087 3427 4525 4960 4986 7048 7158 7631 10424 10451 10629 10854 12331 12403 12609 12706 12880 
+		1959 2087 4525 4783 4960 4986 5031 7048 7158 7511 7631 7727 7803 8055 8102 8127 10424 10451 10629 10724 10770 10854 10899 12331 12403 12609 12706 12750 12880 
 	}
+	manpower=6400000
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }

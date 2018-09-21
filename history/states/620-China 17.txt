@@ -1,19 +1,15 @@
-state=
-{
+
+state={
 	id=620
-	name="STATE_620" # Hubei
-	manpower = 58160000
-	
-	resources = {
-		tungsten = 50
-		chromium = 5
-		rubber = 20
-		steel = 10
+	name="STATE_620"
+	resources={
+		tungsten=50.000
+		chromium=5.000
+		rubber=20.000
+		steel=10.000
 	}
-	
-	state_category = state_level_10
-	history=
-	{
+
+	history={
 		owner = PRC
 		add_core_of = PRC
 		add_core_of = CHI
@@ -21,12 +17,18 @@ state=
 			infrastructure = 5
 			air_base = 2
 			industrial_complex = 5
+
 		}
-		victory_points = { 
-			4619 5
+		victory_points = {
+			4619 5 
 		}
+
 	}
+
 	provinces={
-		1036 1612 4009 4130 4619 4631 5030 7019 7167 7201 7580 7596 7609 7625 7637 7948 8072 9934 9959 10462 10474 10757 12086 12408 12414 12467 
+		1036 1612 4009 4130 4619 4631 5030 7019 7167 7201 7580 7596 7609 7625 7637 7948 9934 9959 10462 10474 10757 12086 12408 12414 12467 
 	}
+	manpower=58160000
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }
