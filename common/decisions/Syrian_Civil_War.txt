@@ -6,6 +6,7 @@ syrian_civil_war = {
 			country_exists = ROJ
 			country_exists = FSA
 			ROJ = { owns_state = 923 controls_state = 923 }
+			NOT = { has_global_flag = syrian_civil_war_over }
 		}
 		available = {
 			country_exists = ROJ
@@ -15,18 +16,18 @@ syrian_civil_war = {
 		
 		complete_effect = {
 			start_border_war = {
-                change_state_after_war = yes
+                change_state_after_war = no
                 attacker = {
                     state = 827
                     num_provinces = 1
-                    on_win =
-                    on_lose = 
+                    on_win = turkey.1
+                    on_lose = election.1
                 }		
                 defender = {
                    state = 923
                    num_provinces = 1
-                   on_win =
-                   on_lose = 
+                   on_win = election.1
+                   on_lose = election.1
                 }
 	        }
 		}
@@ -37,7 +38,7 @@ syrian_civil_war = {
 		cost = 75
 		
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				factor = 2000
 				date > 2018.1.19
