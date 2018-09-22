@@ -1,21 +1,17 @@
-seek_american_alliance = {
+protect_nato_countries = {
+    reversed = yes
 	enable = {
-		NOT = { tag = USA }
-		has_country_flag = seeks_american_alliance
+		NOT = { original_tag = USA }
+		is_in_faction_with = USA
 	}
 	
 	abort = {
-		NOT = { has_country_flag = seeks_american_alliance }
+		NOT = { country_exists = USA }
 	}
 	
 	ai_strategy = {
-		type = befriend
+		type = garrison
 		id = "USA"
-		value = 150
-	}
-	ai_strategy = {
-		type = alliance
-		id = "USA"
-		value = 150
+		value = 2000
 	}
 }
