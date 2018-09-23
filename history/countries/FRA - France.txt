@@ -1,6 +1,6 @@
 ﻿capital = 16
 
-oob = "FRA_2000"
+oob = "FRA_2018"
 
 set_research_slots = 5
 set_convoys = 1000
@@ -109,6 +109,7 @@ add_ideas = {
 	population_growth_stagnation
 	free_trade
 	idea_eu_member
+	the_euro
 	idea_united_nations_security_council_member
 }
 
@@ -116,30 +117,15 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 7
-		}
-		conservative = {
-			popularity = 23
-		}
-		market_liberal = {
-			popularity = 20
+			popularity = 33.9
 		}
 		social_liberal = {
-			popularity = 3
-		}
-		social_democrat = {
-			popularity = 40
-		}
-		progressive = {
-			popularity = 3
-		}
-		communist = {
-			popularity = 4
+			popularity = 66.1
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1997.6.1"
+	last_election = "2017.4.23"
 	election_frequency = 60
 	elections_allowed = yes
 }
@@ -168,20 +154,20 @@ give_military_access = SEN
 give_military_access = GAB
 
 create_country_leader = {
-	name = "Lionel Jospin"
-	picture = "Lionel_Jospin.dds"
+	name = "Olivier Faure"
+	picture = "Olivier_Faure.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Jacques Chirac"
-	picture = "Jacques_Chirac.dds"
+	name = "Laurent Wauquiez"
+	picture = "Laurent_Wauquiez.dds"
 	ideology = gaullist
 }
 
 create_country_leader = {
-	name = "Jean Marie Le Pen"
-	picture = "Jean_Marie_Le_Pen.dds"
+	name = "Marine Le Pen"
+	picture = "Marine_Le_Pen.dds"
 	ideology = counter_progressive_democrat
 }
 
@@ -192,32 +178,32 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Andre Gandillon"
-	picture = "Andre_Gandillon.dds"
+	name = "Jean-François Simon"
+	picture = "Jean_Francois_Simon.dds"
 	ideology = national_democrat 
 }
 
 create_country_leader = {
-	name = "Jean-Luc Melenchon"
+	name = "Jean-Luc Mélenchon"
 	picture = "Jean_Luc_Melenchon.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Marie Buffet"
-	picture = "Marie_Buffet.dds"
+	name = "Pierre Laurent"
+	picture = "Pierre_Laurent.dds"
 	ideology = leninist
 }
 
 create_country_leader = {
-	name = "Francois Bayrou"
+	name = "François Bayrou"
 	picture = "Francois_Bayrou.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Noel Mamere"
-	picture = "Noel_Mamere.dds"
+	name = "David Cormand"
+	picture = "David_Cormand .dds"
 	ideology = green
 }
 	
@@ -228,8 +214,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Christiane Taubira"
-	picture = "Christiane_Taubira.dds"
+	name = "Emmanuel Macron"
+	picture = "Emmanuel_Macron.dds"
 	ideology = liberalist
 }
 
@@ -251,205 +237,233 @@ create_corps_commander = {
 	skill = 1
 }
 
-2001.1.1 = {
-	complete_national_focus = FRA_the_french_economy
-	complete_national_focus = FRA_civilian_buildup
-	complete_national_focus = FRA_northern_industry
-	complete_national_focus = FRA_our_future
-	complete_national_focus = FRA_liberte
-	complete_national_focus = FRA_the_european_dream
-	complete_national_focus = FRA_term_length_reform
-	complete_national_focus = FRA_judicial_reforms
-	complete_national_focus = FRA_executive_reforms
-	complete_national_focus = FRA_reform_the_officer_school
-	complete_national_focus = FRA_army_training_1
-	complete_national_focus = FRA_renew_the_naval_presence
-	complete_national_focus = FRA_naval_maneuvre_1
-	complete_national_focus = FRA_brest_arsenal
-	complete_national_focus = FRA_strengthen_toulon
-	complete_national_focus = FRA_new_fighter_programs
-	complete_national_focus = FRA_new_bomber_programs
-	complete_national_focus = FRA_air_force_officer_school
+create_field_marshal = {
+	name = "Pierre de Villiers"
+	picture = "Portrait_Pierre_de_Villiers.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
 }
 
-2002.1.1 = { add_ideas = the_euro }
-
-2002.6.16 = {
-	set_politics = {
-		parties = {
-			reactionary = { popularity = 10 }
-			conservative = { popularity = 37 }
-			market_liberal = { popularity = 6 }
-			social_liberal = { popularity = 3 }
-			social_democrat = { popularity = 30 }
-			progressive = { popularity = 6 }
-			democratic_socialist = { popularity = 3 }
-			communist = { popularity = 5 }
-		}
-		ruling_party = conservative
-		last_election = "2002.6.16"
-		election_frequency = 60
-		elections_allowed = yes
-	}
+create_field_marshal = {
+	name = "Jean-Pierre Bosser"
+	picture = "Portrait_Jean-Pierre_Bosser.dds"
+	traits = { old_guard offensive_doctrine }
+	skill = 2
 }
 
-2003.1.1 = {
-	create_country_leader = {
-		name = "Segolene Royal"
-		picture = "Segolene_Royal.dds"
-		ideology = social_democrat_ideology
-	}
-
-	set_party_name = {
-		ideology = conservative
-		long_name = FRA_conservative_party_UMP_long
-		name = FRA_conservative_party_UMP
-	}
+create_field_marshal = {
+	name = "Arnaud Sainte-Claire Deville"
+	picture = "Portrait_Arnaud_Sainte-Claire_Deville.dds"
+	traits = { defensive_doctrine }
+	skill = 1
 }
 
-2007.6.16 = {
-	
-	set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 4
-		}
-		conservative = {
-			popularity = 43
-		}
-		market_liberal = {
-			popularity = 8
-		}
-		social_liberal = {
-			popularity = 2
-		}
-		social_democrat = {
-			popularity = 30
-		}
-		progressive = {
-			popularity = 4
-		}
-		democratic_socialist = {
-			popularity = 4
-		}
-		communist = {
-			popularity = 5
-		}
-	}
-	
-	ruling_party = conservative
-	last_election = "2007.6.16"
-	election_frequency = 60
-	elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Nicolas Sarkozy"
-		picture = "Nicolas_Sarkozy.dds"
-		ideology = gaullist
-	}
-
+create_corps_commander = {
+	name = "François Labuze"
+	picture = "Portrait_Francois_Labuze.dds"
+	traits = { panzer_leader }
+	skill = 1
 }
 
-2008.1.1 = {
-	
-	set_party_name = {
-		ideology = market_liberal
-		long_name = FRA_market_liberal_party_MoDem_long
-		name = FRA_market_liberal_party_MoDem
-	}
-
+create_corps_commander = {
+	name = "Franck Boudet"
+	picture = "Portrait_Franck_Boudet.dds"
+	traits = { ranger }
+	skill = 1
 }
 
-2010.1.1 = {
-	create_country_leader = {
-		name = "Pierre Laurent"
-		picture = "Pierre_Laurent.dds"
-		ideology = leninist
-	}
+create_corps_commander = {
+	name = "Christophe Bizien"
+	picture = "Portrait_Christophe_Bizien.dds"
+	traits = { trait_engineer }
+	skill = 1
 }
 
-2011.1.16 = {
-	create_country_leader = {
-		name = "Francois Hollande"
-		picture = "Francois_Hollande.dds"
-		ideology = social_democrat_ideology
-	}
-	create_country_leader = {
-		name = "Marine Le Pen"
-		picture = "Marine_Le_Pen.dds"
-		ideology = counter_progressive_democrat
-	}
-	create_country_leader = {
-		name = "Eva Joly"
-		picture = "Eva_Joly.dds"
-		ideology = green
-	}
-	create_country_leader = {
-		name = "Jean-Michel Baylet"
-		picture = "Jean_Michel_Baylet.dds"
-		ideology = liberalist
-	}
+create_corps_commander = {
+	name = "Loïc Girard"
+	picture = "Portrait_Loic_Girard.dds"
+	traits = { naval_invader }
+	skill = 1
 }
 
-2012.5.6 = {
-	set_politics = {
-		parties = {
-			reactionary = { popularity = 14 }
-			conservative = { popularity = 32 }
-			market_liberal = { popularity = 2 }
-			social_liberal = { popularity = 2 }
-			social_democrat = { popularity = 34 }
-			progressive = { popularity = 5 }
-			democratic_socialist = { popularity = 8 }
-			communist = { popularity = 3 }
-		}
-		ruling_party = social_democrat
-		last_election = "2012.5.6"
-		election_frequency = 60
-		elections_allowed = yes
-	}
+create_corps_commander = {
+	name = "Pascal Ianni"
+	picture = "Portrait_Pascal_Ianni.dds"
+	traits = { naval_invader }
+	skill = 1
 }
 
-2015.1.1 = {
-	set_party_name = {
-		ideology = conservative
-		long_name = FRA_conservative_party_LR_long
-		name = FRA_conservative_party_LR
-	}
+create_corps_commander = {
+	name = "Thomas Mollard"
+	picture = "Portrait_Thomas_Mollard.dds"
+	traits = { hill_fighter }
+	skill = 1
 }
 
-2016.1.1 = {
-	set_party_name = {
-		ideology = democratic_socialist
-		long_name = FRA_democratic_socialist_party_FI_long
-		name = FRA_democratic_socialist_party_FI
-	}
-	create_country_leader = {
-		name = "Emmanuel Macron"
-		picture = "Emmanuel_Macron.dds"
-		ideology = liberalist
-	}
-	set_party_name = {
-		ideology = social_liberal
-		long_name = FRA_social_liberal_party_En_Marche_long
-		name = FRA_social_liberal_party_En_Marche
-	}
-	set_politics = {
-		parties = {
-			reactionary = { popularity = 14 }
-			conservative = { popularity = 32 }
-			market_liberal = { popularity = 36 }
-			social_liberal = { popularity = 2 }
-			social_democrat = { popularity = 2}
-			progressive = { popularity = 5 }
-			democratic_socialist = { popularity = 8 }
-			communist = { popularity = 1 }
-		}
-		ruling_party = social_liberal
-		last_election = "2014.5.6"
-		election_frequency = 60
-		elections_allowed = yes
+create_corps_commander = {
+	name = "Etienne du Peyroux"
+	picture = "Portrait_Etienne_du_Peyroux.dds"
+	traits = { naval_invader }
+	skill = 1
 }
+
+create_corps_commander = {
+	name = "François Régis Jaminet"
+	picture = "Portrait_Francois_Regis_Jaminet.dds"
+	traits = { naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hervé Bizeul"
+	picture = "Portrait_Herve_Bizeul.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jean-Jacques Fatinet"
+	picture = "Portrait_Jean-Jacques_Fatinet.dds"
+	traits = { trait_mountaineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Guillaume de Sercey"
+	picture = "Portrait_Guillaume_de_Sercey.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Guillaume Venard"
+	picture = "Portrait_Guillaume_Venard.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Nicolas Casanova"
+	picture = "Portrait_Nicolas_Casanova.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Benoit Durieux"
+	picture = "Portrait_Benoit_Durieux.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Éric Bellot des Minières"
+	picture = "Portrait_Eric_Bellot_des_Minieres.dds"
+	traits = { commando urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jean-Frédéric Lenoble"
+	picture = "Portrait_Jean-Frederic_Lenoble.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Eric Maury"
+	picture = "Portrait_Eric_Maury.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jean-François Lafont Rapnouil"
+	picture = "Portrait_Jean-Francois_Lafont_Rapnouil.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pierre Liot de Nortbecourt"
+	picture = "Portrait_Pierre_Liot_de_Nortbecourt.dds"
+	traits = { commando winter_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jean Maurin"
+	picture = "Portrait_Jean_Maurin.dds"
+	traits = { commando desert_fox jungle_rat }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Christophe Prazuck"
+	picture = "Portrait_Christophe_Prazuck.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Marc de Briancon"
+	picture = "Portrait_Marc_de_Briancon.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Denis Beraud"
+	picture = "Portrait_Denis_Beraud.dds"
+	traits = { fly_swatter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Bruno Thouvenin"
+	picture = "Portrait_Bruno_Thouvenin.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "François Rebourd"
+	picture = "Portrait_Francois_Rebourd.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Louis-Michel Guillaume"
+	picture = "Portrait_Louis-Michel_Guillaume.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Charles-Henri du Ché"
+	picture = "Portrait_Charles-Henri_du_Che.dds"
+	traits = { air_controller }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Pascal Ausseur"
+	picture = "Portrait_Pascal_Ausseurs.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Emmanuel de Oliveira"
+	picture = "Portrait_Emmanuel_de_Oliveira.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jean-Baptiste Dupuis"
+	picture = "Portrait_Jean-Baptiste_Dupuis.dds"
+	traits = { blockade_runner }
+	skill = 1
 }
