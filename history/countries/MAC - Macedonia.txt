@@ -1,6 +1,6 @@
 ﻿capital = 106
 
-oob = "MAC_2000"
+oob = "MAC_2018"
 
 set_research_slots = 3
 set_convoys = 20
@@ -87,54 +87,261 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
+			popularity = 39.39
 		}
 		conservative = {
-			popularity = 25
+			popularity = 22.74
 		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 30		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 37.87
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = social_democrat
+	last_election = "2016.12.11"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Boris Trajkovski"
-	ideology = centrist
-	picture = "Boris_Trajkovski.dds"
+	name = "Zoran Zaev"
+	picture = "Zoran_Zaev.dds"
+	ideology = social_democrat_ideology
 }
 
-2015.1.1 = {
-	create_country_leader = {
-		name = "Gjorge Ivanov"
-		ideology = liberalist
-		picture = "Gjorge_Ivanov.dds"
-	}
+create_country_leader = {
+	name = "Hristijan Mickoski"
+	picture = "Hristijan_Mickoski.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Ali Ahmeti"
+	picture = "Ali_Ahmeti.dds"
+	ideology = fiscal_conservative
+}
+
+create_field_marshal = {
+	name = "Metodija Velichkovski"
+	picture = "Portrait_Metodija_Velichkovski.dds"
+	traits = { old_guard organisational_leader }
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Muhamet Islam Racaj"
+	picture = "Portrait_Muhamet_Racaj.dds"
+	traits = { thorough_planner }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Mirche Gjorgoski"
+	picture = "Portrait_Mirche_Gjorgoski.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ljupcho Stojkov"
+	picture = "Portrait_Ljupcho_Stojkov.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ferdo Pavlov"
+	picture = "Portrait_Ferdo_Pavlov.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sasho Janev"
+	picture = "Portrait_Sasho_Janev.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Jovanovski"
+	picture = "Portrait_Zoran_Jovanovski.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Ilov"
+	picture = "Portrait_Zoran_Ilov.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Toni Janevski"
+	picture = "Portrait_Toni_Janevski.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sasho Kocevski"
+	picture = "Portrait_Sasho_Kocevski.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhivko Despotovski"
+	picture = "Portrait_Zhivko_Despotovski.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Dushko Nestorov"
+	picture = "Portrait_Dushko_Nestorov.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Dodevski"
+	picture = "Portrait_Zoran_Dodevski.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Mileski"
+	picture = "Portrait_Zoran_Mileski.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pavle Arsoski"
+	picture = "Portrait_Pavle_Arsoski.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Azim Nuredin"
+	picture = "Portrait_Azim_Nuredin.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ljubencho Petrovski"
+	picture = "Portrait_Ljubencho_Petrovski.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Orce Jordev"
+	picture = "Portrait_Orce_Jordev.dds"
+	traits = { commando urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Besnik Emini"
+	picture = "Portrait_Besnik_Emini.dds"
+	traits = { commando ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Filipovski"
+	picture = "Portrait_Zoran_Filipovski.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Marjan Masevski"
+	picture = "Portrait_Marjan_Masevski.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sasha Petrushevski"
+	picture = "Portrait_Sasha_Petrushevski.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ivan Atanasovski"
+	picture = "Portrait_Ivan_Atanasovski.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Goran Kjirkovikj"
+	picture = "Portrait_Goran_Kjikovikj.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Marjan Simonovski"
+	picture = "Portrait_Marjan_Simonovski.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Mile Donev"
+	picture = "Portrait_Mile_Donev.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Goran Petrushevski"
+	picture = "Portrait_Goran_Petrushevski.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Boro Latkoski"
+	picture = "Portrait_Boro_Latkoski.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ivica Cvetkovski"
+	picture = "Portrait_Ivica_Cvetkovski.dds"
+	traits = { bearer_of_artillery }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Toni Zlatevski"
+	picture = "Portrait_Toni_Zlatevski.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasil Mitevski"
+	picture = "Portrait_Vasil_Mitevski.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Robert Malezanski"
+	picture = "Portrait_Robert_Malezanski.dds"
+	traits = { commando }
+	skill = 1
 }
