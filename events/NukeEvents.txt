@@ -29,6 +29,60 @@ news_event = {
 				remove_building = { type = infrastructure level = 10 }
 				remove_building = { type = industrial_complex level = 10 }
 				remove_building = { type = arms_factory level = 10 }
+				if = { 
+					limit = { 
+						has_state_category = pastoral
+					}
+					set_state_category = wasteland
+				}				
+				if = { 
+					limit = { 
+						has_state_category = small_island
+					}
+					set_state_category = tiny_island 
+				}
+				if = { 
+					limit = { 
+						has_state_category = rural
+					}
+					set_state_category = pastoral
+				}
+				if = { 
+					limit = { 
+						has_state_category = town
+					}
+					set_state_category = rural  
+				}
+				if = { 
+					limit = { 
+						has_state_category = large_town
+					}
+					set_state_category = town
+				}
+				if = { 
+					limit = { 
+						has_state_category = city
+					}
+					set_state_category = large_town
+				}	
+				if = { 
+					limit = { 
+						has_state_category = large_city
+					}
+					set_state_category = city
+				}
+				if = { 
+					limit = { 
+						has_state_category = metropolis 
+					}
+					set_state_category =  large_city
+				}
+				if = { 
+					limit = { 
+						has_state_category = megalopolis
+					}
+					set_state_category = metropolis
+				}
 			}
 		if = {
 			limit = {
