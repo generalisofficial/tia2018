@@ -1,6 +1,6 @@
 ﻿capital = 687
 
-oob = "GUY_2000"
+oob = "GUY_2018"
 
 set_research_slots = 3
 set_convoys = 130
@@ -97,54 +97,30 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
+			popularity = 50.30
 		}
 		communist = {
-			popularity = 10
+			popularity = 49.70
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
+	ruling_party = social_democrat
+	last_election = "2015.5.11"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Bharrat Jagdeo"
-	ideology = centrist
-	picture = "Bharrat_Jagdeo.dds"
+	name = "David A. Granger"
+	picture = "David_A_Granger.dds"
+	ideology = social_democrat_ideology
 }
 
-add_namespace = {
-	name = "guy_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Carlisle Vyphuis"
+	picture = "Carlisle_Vyphuis.dds"
+	ideology = marxist
 }
 
 create_field_marshal = {
@@ -173,12 +149,4 @@ create_navy_leader = {
 	picture = "admirals/Gary_Best.dds"
 	traits = { superior_tactician }
 	skill = 1
-}
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "David Granger"
-		ideology = liberalist
-		picture = "David_Granger.dds"
-	}
 }
