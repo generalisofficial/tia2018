@@ -1,6 +1,6 @@
 ﻿capital = 829
 
-oob = "GND_2000"
+oob = "GND_2018"
 
 set_research_slots = 2
 set_convoys = 40
@@ -97,30 +97,27 @@ set_politics = {
 
 	parties = {
 		conservative = {
-			popularity = 47.8
+			popularity = 58.7
 		}
 		social_liberal = {
-			popularity = 45.4
-		}
-		democratic_socialist = {
-			popularity = 4.7
-		}
-		communist = {
-			popularity = 2
-		}
-		reactionary = {
-			popularity = 0.1
+			popularity = 41.3
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "2013.3.13"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Keith C. Mitchell"
-	picture = "Keith_C_Mitchell.dds"
+	name = "Keith Mitchell"
+	picture = "Keith_Mitchell.dds"
 	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Nazim Burke"
+	picture = "Nazim_Burke.dds"
+	ideology = liberalist
 }
