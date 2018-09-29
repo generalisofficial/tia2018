@@ -2,7 +2,9 @@
  ####################
  ###Law Categories###
  ####################
- government:0 "Government Policy"
+ nation:0 "Nation"
+ military:0 "Military"
+ economic_policy:0 "Economic Policy"
  homosexual_rights:0 "Stance on Homosexuality"
 
  ###Laws###
@@ -20,6 +22,14 @@
  commerce_minister:0 "Minister of Commerce"
  justice_minister:0 "Minister of Justice"
  culture_minister:0 "Minister of Culture"
+ 
+ #Privatization
+ privatization:0 "Privatization"
+ nationalized:0 "Nationalized"
+ mostly_nationalized:0 "Mostly Nationalized"
+ balanced:0 "Balanced"
+ mostly_privatized:0 "Mostly Privatized"
+ privatized:0 "Privatized"
  
  #Covert Party Support
  covert_party_support:0 "Covert Party Support"
@@ -47,7 +57,7 @@
  immigration_closed_borders:0 "Closed Borders"
  immigration_heavily_regulated:0 "Heavily Regulated"
  immigration_lightly_regulated:0 "Lightly Regulated"
- immigration_open_country:0 "Open Country"
+ immigration_open_country:0 "Open Borders"
  
  #Income Tax Rate
  income_tax_rate:0 "Income Tax Rate"
@@ -59,13 +69,11 @@
  tax_15:0 "15%"
  tax_0:0 "0%"
  
- #Popularities
- national_policy:0 "National Policy"
- national_circumstances:0 "National Circumstances"
- stability:0 "Stability"
- population_growth:0 "Population Growth"
+ #Conscription
+ conscription:0 "Conscription"
  
  #Population Growth
+ population_growth:0 "Population Growth"
  population_growth_explosion:0 "Insane Birth Rate"
  population_growth_explosion_desc:0 "This country is experiencing a massive population growth. The birth rate is out of control."
  population_growth_rapid:0 "Dangerous Birth Rate"
@@ -76,11 +84,12 @@
  population_growth_stagnation_desc:0 "This country's population growth is close to, but not quite zero. The country leadership is thinking about enacting special policies or loosen immigration laws to work against this trend."
  population_growth_decline:0 "Negative Birth Rate"
  population_growth_decline_desc:0 "This country's population is declining, meaning that more people grow old while fewer are born. This is a great strain on workforce and taxation. The country is in desperate strategic need of internal policies or external immigration to resolve this crisis."
- partially_recognized_state:0 "Unrecognized State"
- partially_recognized_state_desc:0 "This country has little to no international recognition, making it hard to take meaningful international action."
+ 
  ###########
  ###Ideas###
  ###########
+ partially_recognized_state:0 "Unrecognized State"
+ partially_recognized_state_desc:0 "This nation is not a member state of the United Nations."
  additional_recruits:0 "Additional Recruits"
  additional_recruits2:0 "Additional Recruits"
  additional_recruits3:0 "Additional Recruits"

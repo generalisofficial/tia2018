@@ -120,13 +120,13 @@ set_politics = {
 		conservative = {
 			popularity = 0
 		}
-		market_liberal = {
+		social_democrat = {
 			popularity = 0
 		}
-		social_liberal = {
+		market_liberal = {
 			popularity = 41.59
 		}
-		social_democrat = {
+		social_liberal = {
 			popularity = 33.55
 		}
 		progressive = {
@@ -139,7 +139,7 @@ set_politics = {
 			popularity = 0
 		}
 	}
-	ruling_party = social_liberal
+	ruling_party = market_liberal
 	last_election = "2014.10.7"
 	election_frequency = 48
 	elections_allowed = yes
@@ -148,13 +148,13 @@ set_politics = {
 create_country_leader = {
 	name = "Michel Temer"
 	picture = "Michel_Temer.dds"
-	ideology = centrist
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Geraldo Alckmin"
 	picture = "Geraldo_Alckmin.dds"
-	ideology = social_democrat_ideology
+	ideology = centrist
 }
 
 create_country_leader = {
@@ -190,7 +190,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Levy Fidelix"
 	picture = "Levy_Fidelix.dds"
-	ideology = counter_progressive_democrat
+	ideology = national_democrat
 }
 
 create_country_leader = {
@@ -202,13 +202,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jair Bolsonaro"
 	picture = "Jair_Bolsonaro.dds"
-	ideology = national_democrat
+	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
-	name = "Joao Amoedo"
-	picture = "Joao_Amoedo.dds"
-	ideology = libertarian
+	name = "Ciro Gomes"
+	picture = "Ciro_Gomes.dds"
+	ideology = social_democrat_ideology
 }
 
 create_field_marshal = {

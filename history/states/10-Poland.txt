@@ -1,23 +1,28 @@
+
 state={
 	id=10
-	name="STATE_10" # Warsaw
-	manpower = 5212000
-
-	state_category = state_level_14
+	name="STATE_10"
 
 	history={
 		owner = POL
-		victory_points = { 3544 32 }
+		victory_points = {
+			3544 32 
+		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 6
 			arms_factory = 2
 			air_base = 3
+
 		}
 		add_core_of = POL
+
 	}
 
 	provinces={
-		402 467 524 3482 3544 6511 9400 11492 12562 
+		402 467 524 3544 6259 6321 6511 6567 9290 9316 9400 11385 11492 12562 
 	}
+	manpower=5212000
+	buildings_max_level_factor=1.000
+	state_category=state_level_14
 }

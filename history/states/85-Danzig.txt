@@ -1,19 +1,20 @@
+
 state={
 	id=85
-	name="STATE_85" #Gdansk
-	manpower = 2765100
-	
-	state_category = state_level_10
-	
-	resources = {
-		oil=2
-		steel=5
+	name="STATE_85"
+	resources={
+		oil=2.000
+		steel=5.000
 	}
-	
+
 	history={
 		owner = POL
-		victory_points = { 362 15 }
-		victory_points = { 3295 5 }
+		victory_points = {
+			362 15 
+		}
+		victory_points = {
+			3295 5 
+		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 2
@@ -21,12 +22,18 @@ state={
 			air_base = 3
 			362 = {
 				naval_base = 6
+
 			}
+
 		}
 		add_core_of = POL
+
 	}
 
 	provinces={
-		334 362 389 3295 3324 9263 3380
+		334 362 389 3380 9263 11288 11316 11343 
 	}
+	manpower=2765100
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }
