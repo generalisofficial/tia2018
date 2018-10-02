@@ -969,3 +969,37 @@ entity = {
 	pdxmesh = "GER_infantry_weapon_mg_mesh"
 	scale = 1
 }
+
+############
+#RAW AUTISM#
+############
+
+
+entity = { 
+	clone = "infantry_rifle_entity"
+	name = "SWE_infantry_entity"
+	pdxmesh = "SWE_infantry_rifle_mesh"	
+
+	
+	state = {
+	name = "death"	animation = "death"
+	event = { time = 0 node="head" particle = "blood_particle"  keep_particle = yes }
+	}
+}	
+
+entity = { 
+	clone = "infantry_2_entity"
+	name = "SWE_infantry_2_entity"
+	pdxmesh = "SWE_infantry_mg_mesh"	
+
+	
+}
+
+entity = {
+	clone = "SWE_infantry_2_entity"
+	name = SWE_infantry_3_entity"
+}
+
+
+
+
