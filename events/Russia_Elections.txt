@@ -21,6 +21,12 @@ country_event = {
 	
 	option = {
 		name = election_SOV.1.o1
+		trigger = {
+		    OR = {
+                reactionary > 0.15
+				has_government = reactionary
+			}
+		}
 		set_politics = {
 			ruling_party = reactionary
 			elections_allowed = yes
@@ -38,14 +44,16 @@ country_event = {
 	option = {
 		name = election_SOV.1.o2
 		trigger = {
-            communist > 0.1
+		    OR = {
+                communist > 0.15
+				has_government = communist
+			}
 		}
 		set_politics = {
 			ruling_party = communist
 			elections_allowed = yes
 		}
 		news_event = russia_news.6
-		add_popularity = { ideology = communist popularity = 0.1 }
 		ai_chance = { 
 			factor = 11
 			modifier = {
@@ -58,14 +66,16 @@ country_event = {
 	option = {
 		name = election_SOV.1.o3
 		trigger = {
-            nationalist > 0.1
+		    OR = {
+                nationalist > 0.15
+				has_government = nationalist
+			}
 		}
 		set_politics = {
 			ruling_party = nationalist
 			elections_allowed = yes
 		}
 		news_event = russia_news.7
-		add_popularity = { ideology = nationalist popularity = 0.1 }
 		ai_chance = { 
 			factor = 5
 			modifier = {
@@ -82,10 +92,12 @@ country_event = {
 			elections_allowed = yes
 		}
 		trigger = {
-            social_liberal > 0.1
+		    OR = {
+                social_liberal > 0.15
+				has_government = social_liberal
+			}
 		}
 		news_event = russia_news.4
-		add_popularity = { ideology = social_liberal popularity = 0.1 }
 		ai_chance = { 
 			factor = 5
 			modifier = {
