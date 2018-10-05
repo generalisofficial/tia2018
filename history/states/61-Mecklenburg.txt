@@ -2,9 +2,8 @@
 state={
 	id=61
 	name="STATE_61"
-	
-	resources = {
-		steel = 2
+	resources={
+		steel=4.000
 	}
 
 	history={
@@ -13,20 +12,39 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
-			321 = { naval_base = 6 }
-			11305 = { naval_base = 2 }
+			321 = {
+				naval_base = 6
+
+			}
+			11305 = {
+				naval_base = 2
+
+			}
 			air_base = 3
+
 		}
-		victory_points = { 321 5 }		#Rostock
-		victory_points = { 11305 5 }	#Lübeck
-		victory_points = { 3258 2 }		#Neubrandenburg
-		victory_points = { 9294 3 }		#Schwerin
+		victory_points = {
+			9388 3 
+		}
+		victory_points = {
+			321 5 
+		}
+		victory_points = {
+			11305 5 
+		}
+		victory_points = {
+			3258 2 
+		}
+		victory_points = {
+			9294 3 
+		}
+
 	}
 
 	provinces={
-		268 293 321 3258 9294 11276 11305 
+		268 293 321 349 3258 3340 9294 9388 11276 11305 
 	}
-	manpower=1036353
+	manpower=1610674
 	buildings_max_level_factor=1.000
-	state_category = state_level_5
+	state_category=state_level_5
 }

@@ -2,12 +2,8 @@
 state={
 	id=161
 	name="STATE_161"
-	manpower = 4302401
-	
-	state_category = state_level_8
-	
-	resources = {
-		steel = 12
+	resources={
+		steel=12.000
 	}
 
 	history={
@@ -21,12 +17,18 @@ state={
 			air_base = 2
 			782 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = ITA
+
 	}
 
 	provinces={
-		782 3773 3976 6606 6790 6793 6985 9752 9924 
+		782 3773 3976 6606 6790 6793 6985 9752 9924 11734 
 	}
+	manpower=4302401
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

@@ -1,4 +1,4 @@
-#Ohio
+
 state={
 	id=261
 	name="STATE_261"
@@ -15,8 +15,13 @@ state={
 
 		}
 		add_core_of = USA
-		victory_points = { 6855 25 }	#Columbus
-		victory_points = { 6890 10 }	#Cleveland
+		victory_points = {
+			6855 25 
+		}
+		victory_points = {
+			6890 10 
+		}
+
 	}
 
 	provinces={
@@ -24,5 +29,5 @@ state={
 	}
 	manpower=11366942
 	buildings_max_level_factor=1.000
-	state_category = state_level_14
+	state_category=state_level_14
 }
