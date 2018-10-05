@@ -47,3 +47,49 @@ non_aligned_movement_decisions = {
 		}
 	}
 }
+
+baltic_assembly_decisions = {
+	
+	rejoin_baltic_assembly = {
+		visible = {
+			NOT = { has_idea = baltic_assembly_member }
+			OR = { original_tag = EST original_tag = LAT original_tag = LIT	}
+		}
+		available = {
+            NOT = { has_idea = baltic_assembly_member }
+		}
+		
+		complete_effect = {
+            add_ideas = baltic_assembly_member
+		}
+		
+		icon = politics
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_baltic_assembly = {
+		visible = {
+			has_idea = baltic_assembly_member
+		}
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = baltic_assembly_member
+		}
+		
+		icon = politics
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
