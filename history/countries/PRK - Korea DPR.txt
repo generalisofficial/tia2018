@@ -127,45 +127,42 @@ add_named_threat = {
 set_politics = {
 
 	parties = {
-		
-		conservative = {
-			popularity = 5
-		}
-		social_liberal = {
-			popularity = 6
+		nationalist = {
+			popularity = 3.2
 		}
 		social_democrat = {
-			popularity = 7
-		}
-		progressive = {
-			popularity = 8
-		}
-		democratic_socialist = {
-			popularity = 19
+			popularity = 8.44
 		}
 		communist = {
-			popularity = 55
+			popularity = 88.36
 		}
 	}
 	
 	ruling_party = communist
-	last_election = "1997.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "2014.3.9"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Kim Jong-Un"
-	picture = "Kim_Jong_Un.dds"
+	name = "Kim Jong-un"
+	picture = "Kim_Jong_un.dds"
 	ideology = juche
 	traits = {
 		brutal_dictator
 	}
 }
 
-add_namespace = {
-	name = "prk_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Kim Yong-dae"
+	picture = "Kim_Yong_dae.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Pak Sindok"
+	picture = "Pak_Sindok.dds"
+	ideology = national_democrat
 }
 
 create_field_marshal = {
