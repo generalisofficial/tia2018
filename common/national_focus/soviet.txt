@@ -162,6 +162,28 @@ focus_tree = {
 		}
 	}
 	
+		focus = {
+		id = SOV_the_russian_economy
+		icon = align_to_europe
+		x = 6
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_grigory_yavlinsky
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
 	focus = {
 		id = SOV_reestablish_relations_with_ukraine
 		icon = align_to_ukraine
