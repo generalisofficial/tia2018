@@ -1,6 +1,6 @@
-﻿capital = 525 #Seoul
+﻿capital = 525
 
-oob = "KOR_2000"
+oob = "KOR_2018"
 
 set_research_slots = 5
 set_convoys = 580
@@ -99,6 +99,8 @@ add_ideas = {
 	population_growth_stagnation
 	extensive_conscription
 	free_trade
+	idea_KOR_militarism
+	idea_KOR_USinvestment
 }
 
 give_guarantee = USA
@@ -121,64 +123,75 @@ add_opinion_modifier = {
 set_politics = {
 
 	parties = { 
-		islamist = { popularity = 0 } 
-		nationalist = { popularity = 2 } 
-		reactionary = { popularity = 0 } 
-		conservative = { popularity = 30 } 
-		market_liberal = { popularity = 10 } 
-		social_liberal = { popularity = 45 } 
-		social_democrat = { popularity = 5 } 
-		progressive = { popularity = 5 } 
-		democratic_socialist = { popularity = 3 } 
-		communist = { popularity = 0 } 
+		social_liberal = { 
+		    popularity = 41.08
+		}
+		conservative = { 
+		    popularity = 34.89
+		} 
+		market_liberal = { 
+		    popularity = 24.03
+		} 
 	} 
 	
 	ruling_party = social_liberal
-	last_election = "1998.12.5"
-	election_frequency = 48
+	last_election = "2017.5.9"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Kim Dae-jung"
-	picture = "Kim_Dae_Jung.dds"
+	name = "Moon Jae-in"
+	picture = "Moon_Jae_in.dds"
 	ideology = liberalist
 }
 
 create_country_leader = {
-	name = "Lee Hoi-chang"
-	picture = "Lee_Hoi_Chang.dds"
-	ideology = constitutionalist
+	name = "Hong Jun-pyo"
+	picture = "Hong_Jun_pyo.dds"
+	ideology = national_conservative
 }
 
 create_country_leader = {
-	name = "Hong Se-hwa"
-	picture = "Hong_Se_Hwa.dds"
+	name = "Lee Gap-yong"
+	picture = "Lee_Gap_yong.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Park Jie-won"
-	picture = "Park_Jie_Won.dds"
+	name = "Sohn Hak-kyu"
+	picture = "Sohn_Hak_kyu.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Sin Sang-jung"
-	picture = "Sim_Sang_Jun.dds"
-	ideology = progressive_ideology
+	name = "Ha Seung-soo"
+	picture = "Ha_Seung_soo.dds"
+	ideology = green
 }
 
 create_country_leader = {
-	name = "Ha Seung-soo"
-	picture = "Ha_Seung_Soo.dds"
+	name = "Lee Jeong-mi"
+	picture = "Lee_Jeong_mi.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Geum Min"
-	picture = "Geum_Min.dds"
-	ideology = marxist
+	name = "Song Young-moo"
+	picture = "Song_Young_moo.dds"
+	ideology = military_junta
+}
+
+create_country_leader = {
+	name = "Chung Kwang-taek"
+	picture = "Chung_Kwang_taek.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Cho Won-jin"
+	picture = "Cho_Won_jin.dds"
+	ideology = national_socialist
 }
 
 create_field_marshal = {
@@ -233,46 +246,4 @@ create_navy_leader = {
 	name = "Lee Ki-sik"
 	picture = "admirals/Lee_Ki_Sik.dds"
 	skill = 5
-}
-
-2018.1.1 = {
-	set_politics = {
-		parties = { 
-			islamist = { popularity = 0 } 
-			nationalist = { popularity = 0 } 
-			reactionary = { popularity = 0 } 
-			conservative = { popularity = 35 } 
-			market_liberal = { popularity = 7 } 
-			social_liberal = { popularity = 48 } 
-			social_democrat = { popularity = 0 } 
-			progressive = { popularity = 2 } 
-			democratic_socialist = { popularity = 0 } 
-			communist = { popularity = 0 } 
-		}
-		ruling_party = social_liberal
-		last_election = "2016.4.11"
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Park Geun-hye"
-		picture = "Park_Gyeung_He.dds"
-		ideology = constitutionalist
-	}
-
-	create_country_leader = {
-		name = "Moon Jae-in"
-		picture = "Moon_Jae_In.dds"
-		ideology = liberalist
-	}
-	
-	create_country_leader = {
-		name = "Kim Yong-Woo"
-		picture = "Kim-Yong-Woo.dds"
-		ideology = oligarchist
-	}
-	add_ideas = {
-	idea_KOR_militarism
-	idea_KOR_USinvestment
-}
 }
