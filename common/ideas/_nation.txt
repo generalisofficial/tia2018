@@ -11,7 +11,7 @@ ideas = {
 			available = {
 				NOT = { has_idea = idea_eu_member }
 			    OR = {
-				    has_democratic_form_of_government = no
+				    NOT = { has_democratic_form_of_government = yes }
 				    fascist > 0.2
 					nationalist > 0.2
 					reactionary > 0.2
@@ -64,7 +64,7 @@ ideas = {
 			
 			available = {
 			    OR = {
-				    has_democratic_form_of_government = no
+				    NOT = { has_democratic_form_of_government = yes }
 				    communist > 0.2
 					progressive > 0.2
 				}
@@ -73,6 +73,99 @@ ideas = {
 			modifier = {
 				MONTHLY_POPULATION = 0.4
 				consumer_goods_factor = 0.07
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	
+	state_religion = {
+		law = yes
+		
+		enforced_atheism = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_government = islamist original_tag = HLS }
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		secular = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_government = islamist original_tag = HLS }
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		christianity = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_government = islamist }
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		islam = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+			    OR = {
+				    has_government = islamist
+				    has_country_flag = sunni_islam
+					has_country_flag = shia_islam
+				}
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		buddhism = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_government = islamist }
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		judaism = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_government = islamist }
+			}
+			
+			modifier = {
+			
 			}
 			
 			cancel_if_invalid = no

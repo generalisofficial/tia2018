@@ -33,6 +33,17 @@ country_event = {
 		}
 		if = {
 			limit = {
+		        NOT = { has_idea = enforced_atheism }
+		        NOT = { has_idea = secular }
+		        NOT = { has_idea = christianity }
+		        NOT = { has_idea = islam }
+		        NOT = { has_idea = buddhism }
+				NOT = { has_idea = judaism }
+			}
+			add_ideas = secular
+		}
+		if = {
+			limit = {
 			    original_tag = CAN
 				has_idea = quebec_separatism
 			    OR = {
