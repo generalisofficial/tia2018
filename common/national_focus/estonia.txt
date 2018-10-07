@@ -18,7 +18,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	default = no
 	
 	focus = {
-		id = EST_a_sour_history
+		id = EST_cooperation_or_death
 		icon = molotov_ribbentrop_pact
 		
 		x = 25
@@ -33,7 +33,6 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		prerequisite = {}
 		
 		mutually_exclusive = {
-		    focus = EST_nationalist_pride
 			focus = EST_estonia_first
 			focus = EST_reform_is_needed
 		}
@@ -48,69 +47,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_nationalist_pride
-		icon = fascism
-		
-		x = 38
-		y = 0
-		
-		cost = 10
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		
-		available = {
-			threat > 0.2
-			reactionary > 0.1
-		}
-		
-		prerequisite = {}
-		
-		mutually_exclusive = {
-		    focus = EST_a_sour_history
-			focus = EST_estonia_first
-			focus = EST_reform_is_needed
-		}
-		
-		completion_reward = {
-            add_political_power = 100
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	focus = {
-		id = EST_russian_side
-		icon = align_to_russia
-		
-		x = 38
-		y = 3
-		
-		cost = 10
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		
-		prerequisite = {
-			focus = EST_nationalist_pride
-		}
-		
-		mutually_exclusive = {}
-		
-		completion_reward = {}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	focus = {
-		id = EST_the_19th_century
-		icon = communism12
+		id = EST_
+		icon = demand_territory2
 		
 		x = 25
 		y = 2
