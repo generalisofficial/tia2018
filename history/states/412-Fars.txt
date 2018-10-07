@@ -2,26 +2,30 @@
 state={
 	id=412
 	name="STATE_412"
-	manpower = 4601869
 	resources={
-		chromium=2
+		chromium=2.000
 	}
 
-
-	state_category = state_level_5
 	history={
 		owner = PER
-		victory_points = { 8117 15 } #shiraz
+		victory_points = {
+			8117 15 
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 6
+
 		}
 		add_core_of = PER
+
 	}
 
 	provinces={
-		4966 8117 10881 8031 13245 13244 
+		4928 4966 5089 8117 10881 13244 13245 
 	}
+	manpower=4601869
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

@@ -2,11 +2,10 @@
 state={
 	id=1006
 	name="STATE_1006"
-	
-	resources = {
-		steel = 150
+	resources={
+		steel=150.000
 	}
-	
+
 	history={
 		owner = KOR
 		buildings = {
@@ -16,17 +15,20 @@ state={
 			arms_factory = 2
 			dockyard = 1
 			anti_air_building = 4
+
 		}
-		victory_points = { 7204 5 }
+		victory_points = {
+			7204 5 
+		}
 		add_core_of = PRK
 		add_core_of = KOR
 
 	}
 
 	provinces={
-		1100  7204 10036 10115 11992 
+		1100 10036 13285 13286 13401 
 	}
 	manpower=12342448
 	buildings_max_level_factor=1.000
-	state_category = state_level_17
+	state_category=state_level_17
 }

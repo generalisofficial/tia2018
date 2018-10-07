@@ -1,9 +1,7 @@
+
 state={
 	id=916
 	name="STATE_916"
-	manpower = 2626715
-	
-	state_category = state_level_3
 
 	history={
 		owner = PER
@@ -11,13 +9,24 @@ state={
 		buildings = {
 			infrastructure = 4
 			air_base = 1
+
 		}
-		victory_points = { 12863 2 } #sirjan
-		victory_points = { 12780 3 } #rafsanjan
-		victory_points = { 10913 5 } #kerman
+		victory_points = {
+			12863 2 
+		}
+		victory_points = {
+			12780 3 
+		}
+		victory_points = {
+			10913 5 
+		}
+
 	}
 
 	provinces={
-		1986 12863 10913 12780 
+		1986 10913 11249 12780 12809 12863 
 	}
+	manpower=2626715
+	buildings_max_level_factor=1.000
+	state_category=state_level_3
 }

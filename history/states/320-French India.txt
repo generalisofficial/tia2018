@@ -2,9 +2,6 @@
 state={
 	id=320
 	name="STATE_320"
-	manpower = 641000
-
-	state_category = state_level_7
 
 	history={
 		owner = RAJ
@@ -15,9 +12,17 @@ state={
 			dockyard = 1
 			10149 = {
 				naval_base = 3
+
 			}
+
 		}
+
 	}
 
-	provinces={ 10149 }
+	provinces={
+		1381 7297 7391 10149 
+	}
+	manpower=641000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

@@ -1,9 +1,9 @@
+
 state={
 	id=871
 	name="STATE_871"
-	
-	resources = {
-		steel = 43
+	resources={
+		steel=43.000
 	}
 
 	history={
@@ -16,15 +16,23 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 			anti_air_building = 4
-			4004 = { bunker = 5 }
-			11958 = { bunker = 5 }
+			4004 = {
+				bunker = 5
+
+			}
+			11958 = {
+				bunker = 5
+
+			}
+
 		}
+
 	}
 
 	provinces={
-		1148 4004 7021 9936 11958 12011 
+		1148 4004 7021 11958 12011 13296 
 	}
 	manpower=8493000
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_10
 }

@@ -2,11 +2,8 @@
 state={
 	id=416
 	name="STATE_416"
-	manpower = 5695567
-	state_category = state_level_7
-	
-	resources = {
-		chromium = 8
+	resources={
+		chromium=8.000
 	}
 
 	history={
@@ -15,17 +12,34 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 2
+
 		}
-		victory_points = { 5029 20 } #mashhad
-		victory_points = { 1957 3 } #neyshabour
-		victory_points = { 5073 2 } #sabzevar
-		victory_points = { 1521 1 } #quchan
-		victory_points = { 10351 2 } #bojnord
-		victory_points = { 7573 1 } #esfarayen
+		victory_points = {
+			5029 20 
+		}
+		victory_points = {
+			1957 3 
+		}
+		victory_points = {
+			5073 2 
+		}
+		victory_points = {
+			1521 1 
+		}
+		victory_points = {
+			10351 2 
+		}
+		victory_points = {
+			7573 1 
+		}
 		add_core_of = PER
+
 	}
 
 	provinces={
-		1521 1888 1957 2000 5029 5073 7573 10351 10806 11671 8009 
+		1521 1888 1957 2000 5029 5073 7573 8009 10351 10806 
 	}
+	manpower=5695567
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

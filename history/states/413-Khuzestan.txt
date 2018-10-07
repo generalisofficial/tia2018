@@ -2,13 +2,9 @@
 state={
 	id=413
 	name="STATE_413"
-	manpower = 4664292
 	resources={
-		oil = 137
+		oil=137.000
 	}
-	
-	state_category = state_level_7
-	
 
 	history={
 		owner = PER
@@ -19,15 +15,27 @@ state={
 			air_base = 6
 			5005 = {
 				naval_base = 1
+
 			}
+
 		}
-		victory_points = { 7953 10 } #ahvaz
-		victory_points = { 1922 3 } #dezful
-		victory_points = { 5005 2 } #abadan > bandar mahshahr
+		victory_points = {
+			7953 10 
+		}
+		victory_points = {
+			1922 3 
+		}
+		victory_points = {
+			5005 2 
+		}
 		add_core_of = PER
+
 	}
 
 	provinces={
-		1922 5005 5089 7953 13246 
+		1922 5005 7953 13246 
 	}
+	manpower=4664292
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
