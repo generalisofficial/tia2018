@@ -1,6 +1,6 @@
 ﻿capital = 422
 
-oob = "SRI_2000"
+oob = "SRI_2018"
 
 set_research_slots = 2
 set_convoys = 100
@@ -89,40 +89,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
 		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 51.28
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 48.72
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = social_liberal
+	last_election = "2015.1.8"
+	election_frequency = 60
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Maithripala Sirisena"
+	picture = "Maithripala_Sirisena.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Mahinda Rajapaksa"
+	picture = "Mahinda_Rajapaksa.dds"
+	ideology = democratic_socialist_ideology
 }
