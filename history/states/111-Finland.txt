@@ -1,25 +1,21 @@
 
 state={
 	id=111
-	name="STATE_111" # Uusimaa
-	manpower = 3670190
-	
-	state_category = state_level_10
-	
-	resources = {
-		steel = 26
+	name="STATE_111"
+	resources={
+		steel=26.000
 	}
-	
+
 	history={
 		owner = FIN
 		victory_points = {
-			3083 20 		#Turku
+			3083 20 
 		}
 		victory_points = {
 			3137 1 
 		}
 		victory_points = {
-			11105 25		#Helsinki
+			11105 25 
 		}
 		victory_points = {
 			67 1 
@@ -34,7 +30,7 @@ state={
 			6082 1 
 		}
 		victory_points = {
-			11066 1
+			11066 1 
 		}
 		buildings = {
 			infrastructure = 7
@@ -45,16 +41,23 @@ state={
 			11105 = {
 				naval_base = 6
 				coastal_bunker = 2
+
 			}
 			3083 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = FIN
+
 	}
 
 	provinces={
-		32 52 67 169 204 3009 3025 3061 3083 3117 3137 3161 6009 6047 6066 6082 6108 6144 6163 6186 9073 9094 9129 9160 9167 9183 9194 11056 11066 11105 11138 11172 11211 13100 13101 13102 13103 13105 13106 13107 
+		32 52 67 169 204 3009 3025 3061 3083 3117 3137 3161 6009 6047 6066 6082 6108 6144 6163 6186 9073 9094 9129 9160 9167 9183 9194 11056 11066 11105 11138 11172 11211 13100 13101 13102 13103 13106 13107 
 	}
+	manpower=3670190
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

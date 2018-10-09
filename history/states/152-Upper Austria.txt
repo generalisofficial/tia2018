@@ -2,14 +2,10 @@
 state={
 	id=152
 	name="STATE_152"
-	manpower = 2675377
-	
-	state_category = state_level_10
-	
 	resources={
-		tungsten = 68
-		oil = 2
-		steel = 6
+		tungsten=68.000
+		oil=2.000
+		steel=6.000
 	}
 
 	history={
@@ -20,14 +16,27 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 4
+
 		}
-		victory_points = { 688 10 }		#Salzburg
-		victory_points = { 9665 5 }		#Linz
-		victory_points = { 3673 2 }		#Klagenfurt
-		victory_points = { 3684 1 }		#Wels
+		victory_points = {
+			688 10 
+		}
+		victory_points = {
+			9665 5 
+		}
+		victory_points = {
+			3673 2 
+		}
+		victory_points = {
+			3684 1 
+		}
+
 	}
 
 	provinces={
-		688 732 3673 3674 3684 3703 6552 6687 6691 6708 6723 9650 9665 11651 
+		688 732 3673 3674 3684 3703 6552 6687 6691 6708 6723 9650 9665 11612 11651 
 	}
+	manpower=2675377
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

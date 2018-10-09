@@ -1,18 +1,13 @@
 
 state={
 	id=149
-	name="STATE_149" # Pohjanmaa
-	
+	name="STATE_149"
 	resources={
-		chromium = 35
-		oil = 1
-		steel = 9
+		chromium=35.000
+		oil=1.000
+		steel=9.000
 	}
-	
-	manpower = 811029
-	
-	state_category = state_level_8
-	
+
 	history={
 		owner = FIN
 		victory_points = {
@@ -22,19 +17,25 @@ state={
 			158 1 
 		}
 		victory_points = {
-			6141 1
+			6141 1 
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
 			3122 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = FIN
+
 	}
 
 	provinces={
 		63 66 82 120 132 158 195 3119 3122 3172 6013 6081 6138 6141 6198 6212 9038 9156 9166 9219 11033 11041 11065 11081 11121 11126 11132 11144 13113 
 	}
+	manpower=811029
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }
