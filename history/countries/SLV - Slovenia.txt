@@ -1,6 +1,6 @@
 ﻿capital = 102
 
-oob = "SLV_2000"
+oob = "SLV_2018"
 
 set_research_slots = 4
 set_convoys = 150
@@ -92,122 +92,143 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
 		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
+			popularity = 4.17
 		}
 		conservative = {
-			popularity = 25
+			popularity = 24.92
 		}
 		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 30		
-		}
-		social_democrat = {
-			popularity = 5
+			popularity = 7.16
 		}
 		progressive = {
-			popularity = 10
+			popularity = 12.60	
+		}
+		social_democrat = {
+			popularity = 9.93
+		}
+		social_liberal = {
+			popularity = 31.89
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 9.33
 		}
 	}
 	
 	ruling_party = social_liberal
-	last_election = "1997.1.1"
+	last_election = "2014.6.3"
 	election_frequency = 48
 	elections_allowed = yes
-}
-create_country_leader = {
-	name = "Janez Drnovšek"
-	ideology = centrist
-	picture = "Janez_Drnovsek.dds"
 }
 
 create_country_leader = {
 	name = "Janez Janša"
-	ideology = national_conservative 
 	picture = "Janez_Jansa.dds"
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Marjan Šarec"
+	picture = "Marjan_Sarec.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Dejan Židan"
+	picture = "Dejan_Zidan.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Miro Cerar"
-	ideology = libertarian  
-	picture = "Miro_Cerar.dds"
+	picture = "Milo_Cerar.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
-	name = "Borut Pahor"
-	ideology = social_democrat_ideology   
-	picture = "Borut_Pahor.dds"
+	name = "Luka Mesec"
+	picture = "Luka_Mesec.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Ljudmila Novak"
+	picture = "Ljudmila_Novak.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Zmago Jelinčič Plemeniti"
-	ideology = proto_fascist   
 	picture = "Zmago_Jelincic_Plemeniti.dds"
+	ideology = autocrat
 }
 
-2004.1.1 = { add_ideas = { idea_eu_member } }
-
-2016.1.1 = {
-set_politics = {
-
-	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 25
-		}
-		market_liberal = {
-			popularity = 30
-		}
-		social_liberal = {
-			popularity = 6		
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
-		}
-	}
-	
-	ruling_party = market_liberal
-	last_election = "2014.7.13"
-	election_frequency = 48
-	elections_allowed = yes
-}
-create_country_leader = {
-	name = "Dejan Židan"
-	ideology = social_democrat_ideology   
-	picture = "Dejan_Zidan.dds"
+create_field_marshal = {
+	name = "Andrej Osterman"
+	picture = "Portrait_Andrej_Osterman.dds"
+	traits = { inspirational_leader }
+	skill = 1
 }
 
+create_field_marshal = {
+	name = "Alan Geder"
+	picture = "Portrait_Alan_Geder.dds"
+	traits = { thorough_planner }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Bojan Pograjc"
+	picture = "Portrait_Bojan_Pograjc.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Igor Tomašič"
+	picture = "Portrait_Igor_Tomasic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Igor Strojin"
+	picture = "Portrait_Igor_Strojin.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Roman Urbanč"
+	picture = "Portrait_Roman_Urbanc.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Matej Jakopič"
+	picture = "Portrait_Matej_Jakopic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ernest Anželj"
+	picture = "Portrait_Ernest_Anzelj.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Renato Petrič"
+	picture = "Portrait_Renato_Petric.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Boris Gersak"
+	picture = "Portrait_Boris_Gersak.dds"
+	traits = { seawolf }
+	skill = 1
 }
