@@ -83,4 +83,38 @@ equipments = {
 			steel = 3
 		}
 	}
+	
+	anti_air_equipment_4 = {
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_3
+		priority = 80
+		visual_level = 2
+		
+		soft_attack = 4
+		hard_attack = 15
+		ap_attack = 40
+		air_attack = 40
+
+		build_cost_ic = 6
+		resources = {
+			steel = 3
+		}
+	}
+	
+	anti_air_equipment_5 = {
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_4
+		priority = 80
+		visual_level = 2
+		
+		soft_attack = 4
+		hard_attack = 15
+		ap_attack = 40
+		air_attack = 40
+
+		build_cost_ic = 6
+		resources = {
+			steel = 3
+		}
+	}
 }
