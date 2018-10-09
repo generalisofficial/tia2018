@@ -429,10 +429,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		    949 = { set_demilitarized_zone = no }
-			950 = { set_demilitarized_zone = no }
-			news_event = south_korea_news.1
+			every_country = { news_event = south_korea_news.1 }
 			add_threat = 10
+			PRK = { add_opinion_modifier = { target = KOR modifier = recent_actions_negative } }
 			}
 	       
 		ai_will_do = {
@@ -730,7 +729,7 @@ focus_tree = {
 		add_war_support = 0.03
 		if = {
 				limit = { 525 = { is_owned_by = KOR } }
-				525 = {
+				1006 = {
 					add_building_construction = {
 						type = bunker
 						province = 7125

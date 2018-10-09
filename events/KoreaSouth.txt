@@ -7,8 +7,6 @@ country_event = {	#Remove the North Korean cores upon union
 	is_triggered_only = yes
 	
 	option = {
-	949 = { set_demilitarized_zone = no }
-	950 = { set_demilitarized_zone = no }	
 		every_state = {
 			limit = {
 				is_core_of = PRK
@@ -33,9 +31,7 @@ country_event = {	#Suggest Union
 				is_core_of = PRK
 			}
 			remove_core_of = PRK
-			}
-	949 = { set_demilitarized_zone = no }
-	950 = { set_demilitarized_zone = no }		
+			}	
 	ai_chance = { 
 	factor = 50 
 	}
