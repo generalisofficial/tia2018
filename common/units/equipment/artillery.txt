@@ -81,6 +81,40 @@ equipments = {
 			steel = 3
 		}
 	}
+	
+	artillery_equipment_4 = {
+		archetype = artillery_equipment
+		parent = artillery_equipment_3
+		priority = 50
+		visual_level = 2
+		
+		defense = 18
+		breakthrough = 8
+		soft_attack = 50
+		
+		build_cost_ic = 4.5
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}
+	
+	artillery_equipment_5 = {
+		archetype = artillery_equipment
+		parent = artillery_equipment_4
+		priority = 50
+		visual_level = 2
+		
+		defense = 18
+		breakthrough = 8
+		soft_attack = 50
+		
+		build_cost_ic = 4.5
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}
 
 	# Nebelwerfers!
 	rocket_artillery_equipment = {
@@ -275,6 +309,60 @@ equipments = {
 	sp_artillery_equipment_3 = {
 		archetype = sp_artillery_equipment
 		parent = sp_artillery_equipment_2
+		priority = 180
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 22
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 7
+		armor_value = 58
+
+		#Offensive Abilities
+		soft_attack = 112
+		hard_attack = 2
+		
+		build_cost_ic = 14
+		
+		resources = {
+			steel = 4
+			tungsten = 3
+			oil = 2
+		}
+	}
+	
+	sp_artillery_equipment_4 = {
+		archetype = sp_artillery_equipment
+		parent = sp_artillery_equipment_3
+		priority = 180
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 22
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 7
+		armor_value = 58
+
+		#Offensive Abilities
+		soft_attack = 112
+		hard_attack = 2
+		
+		build_cost_ic = 14
+		
+		resources = {
+			steel = 4
+			tungsten = 3
+			oil = 2
+		}
+	}
+	
+	sp_artillery_equipment_5 = {
+		archetype = sp_artillery_equipment
+		parent = sp_artillery_equipment_4
 		priority = 180
 		visual_level = 0
 		

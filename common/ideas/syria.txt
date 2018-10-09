@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+
+		syrian_revolution = {
+		
+			picture = syrian_revolution
+			
+			allowed = {
+			    NOT = { has_global_flag = syrian_civil_war_over }
+			}
+			
+			modifier = {
+			    ai_focus_aggressive_factor = -0.9
+                army_core_defence_factor = 0.35
+				conscription = 0.02
+				out_of_supply_factor = -0.25
+				recon_factor = 0.25
+				attrition = -0.1
+				encryption_factor = 0.2
+				max_dig_in = 1
+			}
+			
+		}
+		
+		syrian_civil_defense = {
+		
+			picture = syrian_civil_defense
+			
+			allowed = {
+			    NOT = { has_global_flag = syrian_civil_war_over }
+			}
+			
+			modifier = {
+			    industry_free_repair_factor = 0.75
+				political_power_gain = -0.15
+			}
+			
+		}
+		
+	}
+	
+}

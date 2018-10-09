@@ -70,12 +70,12 @@ objectTypes = {
 		animation = { id = "move"			type = "GER_motorized_01_move_animation" }
 	}
 	
-########	
-#AUTISM#	
-########
+#####
+#SOV#	
+#####
 
 	pdxmesh = {
-		name = "SWE_mechanized_mesh"
+		name = "SOV_mechanized_mesh"
 		file = "gfx/models/units/vehicles/GER_mechanized_01.mesh"
 		
 		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
@@ -84,7 +84,49 @@ objectTypes = {
 	}
 	
 	pdxmesh = {
-		name = "SWE_motorized_mesh"
+		name = "SOV_motorized_mesh"
+		file = "gfx/models/units/vehicles/GER_motorized_01.mesh"
+		
+		animation = { id = "idle"			type = "GER_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_motorized_01_move_animation" }
+	}
+	
+#####
+#USA#	
+#####
+
+	pdxmesh = {
+		name = "USA_mechanized_mesh"
+		file = "gfx/models/units/vehicles/GER_mechanized_01.mesh"
+		
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "USA_motorized_mesh"
+		file = "gfx/models/units/vehicles/GER_motorized_01.mesh"
+		
+		animation = { id = "idle"			type = "GER_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_motorized_01_move_animation" }
+	}
+
+#####
+#FSA#	
+#####
+
+	pdxmesh = {
+		name = "FSA_mechanized_mesh"
+		file = "gfx/models/units/vehicles/GER_mechanized_01.mesh"
+		
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "FSA_motorized_mesh"
 		file = "gfx/models/units/vehicles/GER_motorized_01.mesh"
 		
 		animation = { id = "idle"			type = "GER_motorized_01_idle_animation" }

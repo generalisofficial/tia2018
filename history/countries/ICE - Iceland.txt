@@ -1,6 +1,6 @@
-﻿capital = 100 #Iceland
+﻿capital = 100
 
-oob = "ICE_2000"
+oob = "ICE_2018"
 
 set_research_slots = 3
 set_convoys = 30
@@ -89,60 +89,82 @@ set_technology = {
 
 add_ideas = {
 	population_growth_stagnation
-        nordic_council_member
+    nordic_council_member
 	disarmed_nation
 }
 
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
+			popularity = 25.2
 		}
 		conservative = {
-			popularity = 30
+			popularity = 6.7
 		}
 		market_liberal = {
-			popularity = 6
+			popularity = 10.7
 		}
 		social_liberal = {
-			popularity = 25
+			popularity = 10.9
 		}
 		social_democrat = {
-			popularity = 5
+			popularity = 12.1
 		}
 		progressive = {
-			popularity = 10
+			popularity = 27.5
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 6.9
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
+	ruling_party = progressive
+	last_election = "2017.10.23"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Ólafur Ragnar Grímsson"
-	ideology = centrist
-	picture = "Olafur_Ragnar.dds"
+	name = "Bjarni Benediktsson"
+	picture = "Bjarni_Benediktsson.dds"
+	ideology = counter_progressive_democrat
 }
 
-add_namespace = {
-	name = "ice_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Katrin Jakobsdottir"
+	picture = "Katrin_Jakobsdottir.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Sigurour Ingi Johannsson"
+	picture = "Sigurour_Ingi_Johannsson.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Logi Mar Einarsson"
+	picture = "Logi_Mar_Einarsson.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Sigmundur David Gunnlaugsson"
+	picture = "Sigmundur_David_Gunnlaugsson.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Inga Saeland"
+	picture = "Inga_Saeland.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Borgerour Katrin Gunnarsdottir"
+	picture = "Bourgerour_Katrin_Gunnarsdottir.dds"
+	ideology = fiscal_conservative
 }
 
 create_field_marshal = {
@@ -185,12 +207,4 @@ create_navy_leader = {
 	picture = "admirals/Asgrimur_Asgrimsson.dds"
 	traits = { blockade_runner }
 	skill = 1
-}
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Guðni Th. Jóhannesson"
-		ideology = liberalist
-		picture = "Guoni.dds"
-    }
 }
