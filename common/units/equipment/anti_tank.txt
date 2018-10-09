@@ -79,4 +79,162 @@ equipments = {
 			steel = 3
 		}
 	}
+	
+	anti_tank_equipment_4 = {
+		archetype = anti_tank_equipment
+		parent = anti_tank_equipment_3
+		priority = 90
+		visual_level = 2
+		
+		hard_attack = 30
+		ap_attack = 125
+		
+		build_cost_ic = 6
+		resources = {
+			tungsten = 2
+			steel = 3
+		}
+	}
+	
+	anti_tank_equipment_5 = {
+		archetype = anti_tank_equipment
+		parent = anti_tank_equipment_4
+		priority = 90
+		visual_level = 2
+		
+		hard_attack = 30
+		ap_attack = 125
+		
+		build_cost_ic = 6
+		resources = {
+			tungsten = 2
+			steel = 3
+		}
+	}
+	
+	atgm_carrier_equipment = {
+		is_archetype = yes
+		type = { 
+			anti_tank
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		maximum_speed = 19
+		reliability = 0.8
+
+		upgrades = {
+			AT_reliability_upgrade
+			AT_pierce_upgrade
+			AT_HA_upgrade
+			AT_defence_upgrade
+		}
+
+		#Defensive Abilities
+		defense = 13
+		breakthrough = 2
+		hardness = 0.55
+		armor_value = 5
+
+		#Offensive Abilities
+		soft_attack = 4
+		hard_attack = 15
+		ap_attack = 75
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+				
+		build_cost_ic = 10
+		resources = {
+			tungsten = 2
+			steel = 2
+			oil = 1
+			rubber = 1
+		}
+	}
+
+	atgm_carrier_equipment_1 = {
+		archetype = atgm_carrier_equipment
+		priority = 90
+		visual_level = 0
+	}
+	
+	atgm_carrier_equipment_2 = {
+		archetype = atgm_carrier_equipment
+		parent = atgm_carrier_equipment_1
+		priority = 85
+		visual_level = 1
+		
+		defense = 17
+		armor_value = 10
+		
+		hard_attack = 22
+		ap_attack = 90
+		
+		build_cost_ic = 12 
+		resources = {
+			steel = 3
+			rubber = 1
+			oil = 1
+			tungsten = 2
+		}
+	}
+	
+	atgm_carrier_equipment_3 = {
+		archetype = atgm_carrier_equipment
+		parent = atgm_carrier_equipment_2
+		priority = 90
+		visual_level = 2
+		
+		defense = 25
+		armor_value = 20
+
+		hard_attack = 30
+		ap_attack = 125
+		
+		build_cost_ic = 16
+		resources = {
+			steel = 4
+			rubber = 2
+			oil = 3
+			tungsten = 2
+		}
+	}
+	
+	atgm_carrier_equipment_4 = {
+		archetype = atgm_carrier_equipment
+		parent = atgm_carrier_equipment_3
+		priority = 90
+		visual_level = 2
+		
+		defense = 29
+		armor_value = 25
+		
+		hard_attack = 30
+		ap_attack = 125
+		
+		build_cost_ic = 18
+		
+	}
+	
+	atgm_carrier_equipment_5 = {
+		archetype = atgm_carrier_equipment
+		parent = atgm_carrier_equipment_4
+		priority = 90
+		visual_level = 2
+		
+		defense = 33
+		armor_value = 30
+		
+		hard_attack = 30
+		ap_attack = 125
+		
+		build_cost_ic = 20
+	
+	}
+	
 }
