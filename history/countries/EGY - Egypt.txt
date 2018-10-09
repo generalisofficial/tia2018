@@ -1,6 +1,6 @@
 ﻿capital = 446
 
-oob = "EGY_2000"
+oob = "EGY_2018"
 
 set_research_slots = 3
 set_convoys = 150
@@ -108,91 +108,66 @@ set_country_flag = sunni_islam
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 25
-		}
-		nationalist = {
-			popularity = 35
-		}
 		reactionary = {
-			popularity = 10
-		}
-		conservative = {
-			popularity = 20
+			popularity = 97.08
 		}
 		social_liberal = {
-			popularity = 5
-		}
-		communist = {
-			popularity = 5
+			popularity = 2.92
 		}
 	}
 	
-	ruling_party = nationalist
-	last_election = "1997.1.1"
+	ruling_party = reactionary
+	last_election = "2014.3.21"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Husni Mubarak"
-	picture = "Husni_Mubarak.dds"
-	ideology = autocrat
+	name = "Abdel Fattah el-Sisi"
+	picture = "Abdel_Fattah_el_Sisi.dds"
+	ideology = independent
 }
+
 create_country_leader = {
-	name = "Abdel Fattah as Sisi"
-	picture = "Abdel_Fattah_as_Sisi.dds"
-	ideology = fiscal_conservative
+	name = "Moussa Mostafa Moussa"
+	picture = "Moussa_Mostafa_Moussa.dds"
+	ideology = social_liberal_ideology
 }
+
 create_country_leader = {
-	name = "Younes Makhioun"
-	picture = "Younes_Makhioun.dds"
-	ideology = counter_progressive_democrat
-}
-create_country_leader = {
-	name = "Ahmed Shafik"
-	picture = "Ahmed_Shafik.dds"
-	ideology = moderate
-}
-create_country_leader = {
-	name = "Mohamed Morsi"
-	picture = "Mohamed_Morsi.dds"
-	ideology = salafism
-}
-create_country_leader = {
-	name = "Mariam Milad"
-	picture = "Mariam_Milad.dds"
+	name = "Essam Khalil"
+	picture = "Essam_Khalil.dds"
 	ideology = libertarian
 }
+
 create_country_leader = {
-	name = " Adly Mahmoud Mansour"
-	picture = "Adly_Mansour.dds"
+	name = "Saad El-Katatni"
+	picture = "Saad_El_Katatni.dds"
+	ideology = sunni_islamism
+}
+
+create_country_leader = {
+	name = "Mervat Tallawy"
+	picture = "Mervat_Tallawy.dds"
 	ideology = social_democrat_ideology
 }
+
 create_country_leader = {
-	name = "Ahmed Fuad Farouk II"
-	picture = "Fuad_Farouk.dds"
-	ideology = absolute_monarchist                              
+	name = "Hossam Badrawi"
+	picture = "Hossam_Badrawi.dds"
+	ideology = autocrat
 }
+
 create_country_leader = {
-	name = "Mortada Mansour"
-	picture = "Mortada_Mansour.dds"
-	ideology = national_socialist
+	name = "Sayed Abdel Aal"
+	picture = "Sayed_Abdel_Aal.dds"
+	ideology = democratic_socialist_ideology
 }
-create_country_leader = {
-	name = "Syed Abdel Aal"
-	picture = "Syed_Abd_El-Ghani.dds"
-	ideology = green
-}
+
 create_country_leader = {
 	name = "Salah Adli"
 	picture = "Salah_Adli.dds"
 	ideology = marxist_leninist
-}
-create_country_leader = {
-	name = "Syed Abd El-Ghani"
-	picture = "Syed_Abd_El-Ghani.dds"
-	ideology = democratic_socialist_ideology
 }
 
 create_corps_commander = { 
@@ -255,39 +230,4 @@ create_navy_leader = {
 	name = "Mohab Mamish"  
 	picture = "admirals/Mohab_Mamish" 
 	skill = 1
-}
-
-2014.1.1 = {
-	set_politics = {
-
-		parties = {
-			islamist = {
-				popularity = 36
-			}
-			nationalist = {
-				popularity = 5
-			}
-			reactionary = {
-				popularity = 5
-			}
-			conservative = {
-				popularity = 40
-			}
-			social_liberal = {
-				popularity = 5
-			}
-			communist = {
-				popularity = 9
-			}
-		}
-		
-		ruling_party = conservative
-		last_election = "2013.6.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
-
-2014.6.8 = {	#General al-Sisi takes power
-	add_stability = -0.1
 }
