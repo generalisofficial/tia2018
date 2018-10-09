@@ -44,11 +44,6 @@ technologies = {
 			leads_to_tech = target_1
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = antitank
-			research_cost_coeff = 1
-		}
 		
 		path = {
 			leads_to_tech = rocket_artillery
@@ -1383,14 +1378,72 @@ technologies = {
 	
 	
 	
-	
-	
-	
 	antitank = {
 	
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
+		
+		path = {
+			leads_to_tech = atgm_carrier_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = missile_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = guidance_atgm_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	atgm_carrier_1 = {
+	
+		enable_equipments = {
+			atgm_carrier_equipment_1
+		}
+		
+		research_cost = 1
+
+		start_year = 1975
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_anti_tank
+		}
+	}
+	
+	missile_1 = {
 		
 		path = {
 			leads_to_tech = antitank1
@@ -1403,7 +1456,33 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 17 y = @1980 }
+			position = { x = 15 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	guidance_atgm_1 = {
+		
+		path = {
+			leads_to_tech = antitank1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 19 y = 3 }
 		}
 		
 		ai_will_do = {
@@ -1418,17 +1497,139 @@ technologies = {
 	
 	antitank1 = {
 
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.2
+		enable_equipments = {
+			anti_tank_equipment_2
 		}
 		
 		path = {
+			leads_to_tech = atgm_carrier_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = missile_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = guidance_atgm_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1985
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	atgm_carrier_2 = {
+	
+		enable_equipments = {
+			atgm_carrier_equipment_2
+		}
+		
+		research_cost = 1
+
+		start_year = 1990
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_anti_tank
+		}
+	}
+	
+	missile_2 = {
+		
+		path = {
 			leads_to_tech = antitank2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1995
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	guidance_atgm_2 = {
+		
+		path = {
+			leads_to_tech = antitank2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1995
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 19 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	antitank2 = {
+
+		enable_equipments = {
+			anti_tank_equipment_3
+		} 
+		
+		path = {
+			leads_to_tech = atgm_carrier_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = missile_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = guidance_atgm_3
 			research_cost_coeff = 1
 		}
 		
@@ -1438,7 +1639,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 17 y = @2000 }
+			position = { x = 17 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1451,18 +1652,32 @@ technologies = {
 		}
 	}
 	
-
+	atgm_carrier_3 = {
 	
-	antitank2 = {
+		enable_equipments = {
+			atgm_carrier_equipment_3
+		}
+		
+		research_cost = 1
 
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+		start_year = 2005
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 12 }
 		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+		
+		ai_will_do = {
+			factor = 1
 		}
+		
+		categories = {
+			armor
+			cat_anti_tank
+		}
+	}
+	
+	missile_3 = {
 		
 		path = {
 			leads_to_tech = antitank3
@@ -1471,11 +1686,11 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 2003
+		start_year = 2010
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 17 y = @2003 }
+			position = { x = 15 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1487,20 +1702,100 @@ technologies = {
 			cat_anti_tank
 		}
 	}
+	
+	guidance_atgm_3 = {
+		
+		path = {
+			leads_to_tech = antitank3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2010
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 19 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	
 	antitank3 = {
 		
 		enable_equipments = {
-			anti_tank_equipment_2
+			anti_tank_equipment_4
 		}
 		
-		#anti_tank = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.05
-		#}
-		#anti_tank_brigade = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.05
-		#}
+		path = {
+			leads_to_tech = atgm_carrier_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = missile_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = guidance_atgm_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 2015
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	atgm_carrier_4 = {
+	
+		enable_equipments = {
+			atgm_carrier_equipment_4
+		}
+		
+		research_cost = 1
+
+		start_year = 2020
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 17 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_anti_tank
+		}
+	}
+	
+	missile_4 = {
 		
 		path = {
 			leads_to_tech = antitank4
@@ -1509,11 +1804,11 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 2006
+		start_year = 2025
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 17 y = @2006 }
+			position = { x = 15 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1525,29 +1820,21 @@ technologies = {
 			cat_anti_tank
 		}
 	}
-	antitank4 = {
-
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
 	
+	guidance_atgm_4 = {
+		
 		path = {
-			leads_to_tech = antitank5
+			leads_to_tech = antitank4
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1
 
-		start_year = 2009
+		start_year = 2025
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 17 y = @2009 }
+			position = { x = 19 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1560,28 +1847,24 @@ technologies = {
 		}
 	}
 	
-	antitank5 = {
-			
+	antitank4 = {
+
 		enable_equipments = {
-			anti_tank_equipment_3
-		}	
-			
-		#anti_tank = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.05
-		#}
-		#anti_tank_brigade = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.05
-		#}
+			anti_tank_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = atgm_carrier_5
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 
-		start_year = 2015
+		start_year = 2030
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 17 y = @2015 }
+			position = { x = 17 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -1590,6 +1873,31 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_tank
+		}
+	}
+	
+	atgm_carrier_5 = {
+	
+		enable_equipments = {
+			atgm_carrier_equipment_5
+		}
+		
+		research_cost = 1
+
+		start_year = 2035
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 			cat_anti_tank
 		}
 	}
