@@ -971,7 +971,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_tank"
-					position = { x = 445 y = 160 }
+					position = { x = 800 y = 30 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -983,7 +983,7 @@ guiTypes = {
 				}	
 				instantTextBoxType = {
 					name = "artillery_subtitle_rocket"
-					position = { x = 195 y = 140 }
+					position = { x = -130 y = 10 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -996,7 +996,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "artillery_subtitle_artillery"
-					position = { x = -610 y = 40 }
+					position = { x = -650 y = 30 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1008,10 +1008,9 @@ guiTypes = {
 				}
 
 		
-					
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_air"
-					position = { x = -115 y = 55  }
+					position = { x = 420 y = 30  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1025,7 +1024,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "artillery_year2"
-					position = { x = 60 y = 140 }
+					position = { x = 30 y = 140 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1038,7 +1037,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year5"
-					position = { x = 60 y = 520 }
+					position = { x = 30 y = 520 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1051,7 +1050,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_year8"
-					position = { x = 60 y = 870 }
+					position = { x = 30 y = 870 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1064,7 +1063,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "artillery_year11"
-					position = { x = 60 y = 1220 }
+					position = { x = 30 y = 1220 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1077,7 +1076,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "artillery_year12"
-					position = { x = 60 y = 1570 }
+					position = { x = 30 y = 1570 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1092,6 +1091,14 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "gw_artillery_tree"
+				position = { x = 10% y = 172 }
+				size = { width = 1500 height = 1500 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "rocket_artillery_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 1500 height = 1500 }
 				slotsize = { width = 70 height = 70 }
