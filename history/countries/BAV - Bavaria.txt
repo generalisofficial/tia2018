@@ -1,6 +1,6 @@
 ﻿capital = 692
 
-oob = "generic_2000"
+oob = "generic_2018"
 
 set_research_slots = 4
 set_convoys = 10
@@ -81,27 +81,27 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		conservative = { popularity = 56 }
-	    social_democrat = { popularity = 31 }
-		progressive = { popularity = 8 }  
-		market_liberal = { popularity = 3 }
-		social_liberal = { popularity = 2 }
-		nationalist = { popularity = 1 }
+		conservative = { 
+		    popularity = 59.4
+		}
+	    social_democrat = { 
+		    popularity = 40.6
+		}
 	}
 	ruling_party = conservative
-	last_election = "2018.1.1"
+	last_election = "2013.10.14"
 	election_frequency = 60
-	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Franz von Wittelsbach"
-	picture = "Franz_Wittelsbach.dds"
-	ideology = absolute_monarchist
+	elections_allowed = yes
 }
 
 create_country_leader = {
 	name = "Horst Seehofer"
 	picture = "Horst_Seehofer.dds"
-	ideology = national_conservative
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Natascha Kohnen"
+	picture = "Natascha_Kohnen.dds"
+	ideology = social_democrat_ideology
 }
