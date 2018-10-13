@@ -1,6 +1,6 @@
 ﻿capital = 551
 
-oob = "SUD_2000"
+oob = "SUD_2018"
 
 set_research_slots = 2
 set_convoys = 80
@@ -103,32 +103,17 @@ set_politics = {
 
 	parties = {
 		islamist = {
-			popularity = 75
+			popularity = 94.05
 		}
-		nationalist = {
-			popularity = 2
-		}
-		reactionary = {
-			popularity = 10
-		}
-		conservative = {
-			popularity = 3
-		}
-		social_liberal = {
-			popularity = 5
-		}
-		democratic_socialist = {
-			popularity = 4
-		}
-		communist = {
-			popularity = 1
+		market_liberal = {
+			popularity = 5.95
 		}
 	}
 	
 	ruling_party = islamist
-	last_election = "1996.3.2"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "2015.4.13"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 create_country_leader = {
@@ -138,85 +123,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Fatimah Abdel Mahmoud"
-	picture = "Fatimah_Abdel_Mahmoud.dds"
-	ideology = national_democrat
-}
-
-create_country_leader = {
-	name = "Jalal al-Digair"
-	picture = "Jalal_al_Digair.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Malik Agar"
-	picture = "Malik_Agar.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Hassan Al-Turabi"
-	picture = "Hassan_Al_Turabi.dds"
-	ideology = constitutionalist
+	name = "Fadul al-Sid Shuaib"
+	picture = "Fadul_al_Sid_Shuaib.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Muhammad Mukhtar Al-Khatib"
-	picture = "Muhammad_M_Al_Khatib.dds"
+	picture = "Muhammad_Mukhtar_Al_Khatib.dds"
 	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Sadiq al-Mahdi"
-	picture = "Sadiq_al_Mahdi.dds"
-	ideology = counter_progressive_democrat
-}
-
-create_country_leader = {
-	name = "Adil Abdel Aati"
-	picture = "Adil_Abdel_Aati.dds"
-	ideology = progressive_ideology
 }
 
 create_corps_commander = {
 	name = "Mustafa Osman Obeid Salim"
 	picture = "generals/Mustafa_Salim.dds"
 	skill = 1
-}
-
-
-2015.4.16 = {
-	
-	set_politics = {
-
-	parties = {
-		islamist = {
-			popularity = 83
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 9
-		}
-		conservative = {
-			popularity = 1
-		}
-		social_liberal = {
-			popularity = 4
-		}
-		democratic_socialist = {
-			popularity = 1
-		}
-		communist = {
-			popularity = 1
-		}
-	}
-	
-	ruling_party = islamist
-	last_election = "2015.4.16"
-	election_frequency = 60
-	elections_allowed = no
-}
 }
