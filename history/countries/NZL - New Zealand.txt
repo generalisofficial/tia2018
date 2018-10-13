@@ -102,29 +102,26 @@ set_politics = {
 
 	parties = {
 		social_liberal = {
-			popularity = 1
+			popularity = 1.18
 		}
 		conservative = {
-			popularity = 52
+			popularity = 44.45
 		}
 		market_liberal = {
-			popularity = 1
+			popularity = 4.01
 		}
 		progressive = {
-			popularity = 11
+			popularity = 6.27
 		}
-		reactionary = {
-			popularity = 6
-           }
+		nationalist = {
+			popularity = 7.20
+        }
         social_democrat = {
-			popularity = 28
-		}
-		democratic_socialist = {
-			popularity = 1
+			popularity = 36.89
 		}
 	}
-	ruling_party = conservative
-	last_election = "2017.9.23"
+	ruling_party = social_democrat
+	last_election = "2017.11.21"
 	election_frequency = 36
 	elections_allowed = yes
 }
@@ -176,32 +173,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kyle Chapman"
-	picture = "Kyle_Chapman.dds"
+	name = "Colin King-Ansell"
+	picture = "Colin_King_Ansell.dds"
 	ideology = national_socialist
-}
-
-create_country_leader = {
-	name = "Anton Foljambe"
-	picture = "Anton_Foljambe.dds"
-	ideology = national_democrat
-}
-
-create_country_leader = {
-	name = "Anne I of Windsor"
-	picture = "Anne.dds"
-	ideology = absolute_monarchist
 }
 
 create_country_leader = {
 	name = "Winston Peters"
 	picture = "Winston_Peters.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Leighton Baker"
+	picture = "Leighton_Baker.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
-	name = "John Key"
-	picture = "John_Key.dds"
+	name = "Bill English"
+	picture = "Bill_English.dds"
 	ideology = fiscal_conservative
 }
 
@@ -212,20 +203,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Metiria Turei"
-	picture = "Metiria_Turei.dds"
+	name = "James Shaw"
+	picture = "James_Shaw.dds"
 	ideology = green
 }
 
 create_country_leader = {
-	name = "Peter Dunne"
-	picture = "Peter_Dunne.dds"
+	name = "Marama Fox"
+	picture = "Marama_Fox.dds"
 	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Andrew Little"
-	picture = "Andrew_Little.dds"
+	name = "Jacinda Ardern"
+	picture = "Jacinda_Ardern.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -236,14 +227,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Annalucia Vermunt"
-	picture = "Annalucia_Vermunt.dds"
-	ideology = leninist
-}
-
-add_namespace = {
-	name = "nzl_unit_leader"
-	type = unit_leader
+	name = "Felicity Coggan"
+	picture = "Felicity_Coggan.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {
