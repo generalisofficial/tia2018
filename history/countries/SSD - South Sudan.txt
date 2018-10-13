@@ -1,6 +1,6 @@
 ﻿capital = 543
 
-oob = "SSD_2016"
+oob = "SSD_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -97,60 +97,29 @@ set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 2
-		}
-		reactionary = {
-			popularity = 94
+			popularity = 94.12
 		}
 		social_liberal = {
-			popularity = 2
-		}
-		social_democrat = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 0
+			popularity = 5.88
 		}
 	}
 	
 	ruling_party = reactionary
-	last_election = "1997.1.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Salva Kiir Mayardit"
-	picture = "Salva_Kiir.dds"
+	picture = "Salva_Kiir_Mayardit.dds"
 	ideology = counter_progressive_democrat
 }
 
 create_country_leader = {
-	name = "Dr. Lam Akol"
+	name = "Lam Akol"
 	picture = "Lam_Akol.dds"
 	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Federico Awi Vuni"
-	picture = "Federico_Awi_Vuni.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Toby Maduot"
-	picture = "Toby_Maduot.dds"
-	ideology = national_democrat
-}
-
-create_country_leader = {
-	name = "Joseph Wol Modesto"
-	ideology = leninist
-}
-
-create_country_leader = {
-	name = "Simon Achien Majur"
-	ideology = progressive_ideology
 }
 
 create_corps_commander = {
