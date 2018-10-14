@@ -2,12 +2,8 @@
 state={
 	id=440
 	name="STATE_440"
-	manpower = 126370000
-	
-	state_category = state_level_19
-	
-	resources = {
-		steel = 7
+	resources={
+		steel=7.000
 	}
 
 	history={
@@ -18,12 +14,21 @@ state={
 			industrial_complex = 6
 			arms_factory = 3
 			air_base = 6
+
 		}
-		victory_points = { 10772 3 }	#Lahore
-		victory_points = { 4979 5 }		#Islamabad
+		victory_points = {
+			10772 3 
+		}
+		victory_points = {
+			4979 5 
+		}
+
 	}
 
 	provinces={
-		4979 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822 
+		1107 4979 7903 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822 
 	}
+	manpower=126370000
+	buildings_max_level_factor=1.000
+	state_category=state_level_19
 }

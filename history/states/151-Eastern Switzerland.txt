@@ -2,37 +2,44 @@
 state={
 	id=151
 	name="STATE_151"
-	
-	resources = {
-		steel = 21
-		aluminium = 2
-		tungsten = 1
+	resources={
+		steel=21.000
+		aluminium=2.000
+		tungsten=1.000
 	}
-	
+
 	history={
 		owner = SWI
-		
 		buildings = {
 			infrastructure = 5
 			air_base = 3
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
-		
-		victory_points = { 663 20 }
-		victory_points = { 9620 25 }
-		victory_points = { 9638 5 }
-		victory_points = { 11604 5 }
-		victory_points = { 11623 2 }
-		
+		victory_points = {
+			663 20 
+		}
+		victory_points = {
+			9620 25 
+		}
+		victory_points = {
+			9638 5 
+		}
+		victory_points = {
+			11604 5 
+		}
+		victory_points = {
+			11623 2 
+		}
 		add_core_of = SWI
+
 	}
 
 	provinces={
-		636 661 663 3660 6683 9587 9618 9620 9638 11601 11604 11623 
+		636 661 663 6683 9587 9618 9620 9638 11601 11604 11623 
 	}
 	manpower=4639762
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_12
+	state_category=state_level_12
 }

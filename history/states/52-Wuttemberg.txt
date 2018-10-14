@@ -2,12 +2,8 @@
 state={
 	id=52
 	name="STATE_52"
-	manpower = 6679413
-	
-	state_category = state_level_15
-	
-	resources = {
-		steel = 22
+	resources={
+		steel=22.000
 	}
 
 	history={
@@ -17,14 +13,26 @@ state={
 			industrial_complex = 5
 			arms_factory = 2
 			air_base = 8
+
 		}
 		add_core_of = GER
 		add_core_of = BAV
-		victory_points = { 692 25 }		#Munich
-		victory_points = { 708 3 }		#Augsburg
+		victory_points = {
+			692 25 
+		}
+		victory_points = {
+			708 3 
+		}
+	    victory_points = {
+			532 1
+		}
+
 	}
 
 	provinces={
-		692 707 708 3688 3705 6540 6693 9652 9666 11620 11638 11653 
+		532 571 586 692 707 708 3299 3541 3571 3688 3705 6540 6693 6725 9515 9652 9666 9681 11497 11620 11638 11653 
 	}
+	manpower=12997204
+	buildings_max_level_factor=1.000
+	state_category=state_level_15
 }
