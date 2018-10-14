@@ -93,3 +93,49 @@ baltic_assembly_decisions = {
 		}
 	}
 }
+
+nordic_council_decisions = {
+	
+	rejoin_nordic_council = {
+		visible = {
+			NOT = { has_idea = nordic_council_member }
+			OR = { original_tag = SWE original_tag = DEN original_tag = NOR original_tag = FIN original_tag = ICE }
+		}
+		available = {
+            NOT = { has_idea = nordic_council_member }
+		}
+		
+		complete_effect = {
+            add_ideas = nordic_council_member
+		}
+		
+		icon = politics
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_nordic_council = {
+		visible = {
+			has_idea = nordic_council_member
+		}
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = nordic_council_member
+		}
+		
+		icon = politics
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
