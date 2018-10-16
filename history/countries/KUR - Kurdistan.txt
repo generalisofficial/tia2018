@@ -88,29 +88,26 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		nationalist = {
-		    popularity = 20
-		}
-		reactionary = {
-			popularity = 3
-		}
 		conservative = {
-			popularity = 40
+			popularity = 45.6
+		}
+		social_democrat = {
+			popularity = 21.2
 		}
 		social_liberal = {
-			popularity = 4
+			popularity = 12.1
 		}
-		communist = {
-			popularity = 13
+		market_liberal = {
+			popularity = 7.4
 		}
 		islamist = {
-			popularity = 21
+			popularity = 7.0
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "2014.3.1"
-	election_frequency = 48
+	last_election = "2013.9.30"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
@@ -123,46 +120,46 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-    name = "Salaheddine Bahaaeddin"
-	picture = "Salaheddine_Bahaaeddin.dds"
-	ideology = sunni_islamism
+create_country_leader = { 
+    name = "Omar Said Ali"
+	picture = "Omar_Said_Ali.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = { 
-    name = "Nusherwan Mustafa"
-	picture = "Nusherwan_Mustafa.dds"
-	ideology = oligarchist 
-}
-
-create_country_leader = { 
-    name = "Arif Bawecani"
-	picture = "Arif_Bawecani.dds"
-	ideology = libertarian
-}
-
-create_country_leader = { 
-	name = "Hussein Mansor"     
-	picture = "Hussein_Mansor.dds"
-	ideology = national_democrat 
-}
-
-create_country_leader = { 
-    name = "Jalal Talabani"
-	picture = "Jalal_Talabani.dds"
- 	ideology = 	democratic_socialist_ideology
-}
-
-create_country_leader = { 
-	name = "Raouf Karimi"       
-	picture = "Raouf_Karimi.dds"
+	name = "Kosrat Rasul Ali"       
+	picture = "Kosrat_Rasul_Ali.dds"
 	ideology = social_democrat_ideology 
 }
 
 create_country_leader = { 
-    name = "Abdullah Ocalan"
+    name = "Abdullah Öcalan"
 	picture = "Abdullah_Ocalan.dds" 
 	ideology = marxist_leninist 
+}
+
+create_country_leader = { 
+    name = "Shaswar Abdulwahid"
+	picture = "Shaswar_Abdulwahid.dds"
+	ideology = libertarian
+}
+
+create_country_leader = { 
+	name = "Mustafa Sayid Qadir"     
+	picture = "Mustafa_Sayid_Qadir.dds"
+	ideology = military_junta
+}
+
+create_country_leader = {
+    name = "Ali Bapir"
+	picture = "Ali_Bapir.dds"
+	ideology = sunni_islamism
+}
+
+create_country_leader = {
+    name = "Mohammed Haji Mahmoud"
+	picture = "Mohammed_Haji_Mahmoud.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_corps_commander = {
