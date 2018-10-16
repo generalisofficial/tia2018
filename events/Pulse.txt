@@ -44,6 +44,42 @@ country_event = {
 		}
 		if = {
 			limit = {
+		        has_idea = tax_15
+			}
+			add_to_variable = { var = funds value = 1.5 }
+		}
+		if = {
+			limit = {
+		        has_idea = tax_20
+			}
+			add_to_variable = { var = funds value = 2 }
+		}
+		if = {
+			limit = {
+		        has_idea = tax_25
+			}
+			add_to_variable = { var = funds value = 2.5 }
+		}
+		if = {
+			limit = {
+		        has_idea = tax_30
+			}
+			add_to_variable = { var = funds value = 3 }
+		}
+		if = {
+			limit = {
+		        has_idea = tax_40
+			}
+			add_to_variable = { var = funds value = 4 }
+		}
+		if = {
+			limit = {
+		        has_idea = tax_50
+			}
+			add_to_variable = { var = funds value = 5 }
+		}
+		if = {
+			limit = {
 			    original_tag = CAN
 				has_idea = quebec_separatism
 			    OR = {

@@ -1,0 +1,31 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "funds_container"
+		position = { x = 1400 y = 4 } #990
+		iconType ={
+			name ="funds_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="funds_icon"
+			spriteType = "GFX_funds"
+			position = { x= 0 y = 6 }
+		}
+		
+		instantTextBoxType = {
+			name ="funds_text"
+			position = { x= -22 y = 3 }
+			font = "hoi_18mbs"
+			text = "FUNDS_MAIN"
+			format = center
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "FUNDS_TOOLTIP" 
+		}
+	}
+}
