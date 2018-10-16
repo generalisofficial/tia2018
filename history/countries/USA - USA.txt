@@ -108,26 +108,6 @@ set_technology = {
 	nukes = 1
 }
 
-set_politics = {
-
-	parties = {
-		social_liberal = {
-			popularity = 48.2
-		}
-		conservative = {
-			popularity = 46.1
-		}
-		market_liberal = {
-			popularity = 5.7
-		}
-	}
-	
-	ruling_party = conservative
-	last_election = "2016.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
-	
 add_opinion_modifier = {
 	target = AST
 	modifier = ANZUS
@@ -255,10 +235,24 @@ give_guarantee = CHI
 give_guarantee = PHI
 give_guarantee = ROJ
 
-create_country_leader = {
-	name = "John Delaney"
-	picture = "John_Delaney.dds"
-	ideology = social_liberal_ideology
+set_politics = {
+
+	parties = {
+		social_liberal = {
+			popularity = 48.2
+		}
+		conservative = {
+			popularity = 46.1
+		}
+		market_liberal = {
+			popularity = 5.7
+		}
+	}
+	
+	ruling_party = conservative
+	last_election = "2016.11.3"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 create_country_leader = {
@@ -269,6 +263,12 @@ create_country_leader = {
 		enemy_of_china
 		friend_of_russia
 	}
+}
+
+create_country_leader = {
+	name = "John Delaney"
+	picture = "John_Delaney.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
@@ -284,44 +284,38 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Frank Fluckiger"
+	picture = "Frank_Fluckiger.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Pat Noble"
+	picture = "Pat_Noble.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Patty Friend"
+	picture = "Patty_Friend.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
 	name = "John Bachtell"
 	picture = "John_Bachtell.dds"
 	ideology = marxist_leninist
 }
 
 create_country_leader = {
-	name = "The Grand Council"
-	picture = "Grand_Council.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Patrick Buchanan"
-	picture = "Patrick_Buchanan.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Howard Phillips"
-	picture = "Howard_Phillips.dds"
-	ideology = oligarchist
-}
-
-create_country_leader = {
-	name = "David McReynolds"
-	picture = "David_McReynolds.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Richard Spencer"
-	picture = "Richard_Spencer.dds"
+	name = "Richard B. Spencer"
+	picture = "Richard_B_Spencer.dds"
 	ideology = proto_fascist
 }
 
 create_country_leader = {
-	name = "Jeff Schoep"
-	picture = "Jeff_Schoep.dds"
+	name = "Martin Kerr"
+	picture = "Martin_Kerr.dds"
 	ideology = national_socialist
 }
 
