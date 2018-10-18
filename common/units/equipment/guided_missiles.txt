@@ -2,7 +2,7 @@ equipments = {
 	
 	guided_missile_equipment = {
 		is_archetype = yes
-		is_buildable = no
+		is_buildable = yes
 		type = missile
 		group_by = type
 		sprite = missile_default
@@ -29,14 +29,14 @@ equipments = {
 
 	guided_missile_equipment_1 = {
 		archetype = guided_missile_equipment
-		is_buildable = no
+		is_buildable = yes
 		one_use_only = yes
 		sprite = missile_default
 		
 		air_range = 500
 		maximum_speed = 640
 		air_agility = 10
-		air_bombing = 300
+		air_bombing = 0
 		
 		# build_cost_ic = 36
 	}
@@ -44,27 +44,27 @@ equipments = {
 	guided_missile_equipment_2 = {
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_1
-		is_buildable = no
+		is_buildable = yes
 		one_use_only = yes
 		sprite = missile_default
 		
 		air_range = 640
 		maximum_speed = 5760
 		air_agility = 10
-		air_bombing = 450
+		air_bombing = 0
 	}
 	
 	guided_missile_equipment_3 = {
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_2
-		is_buildable = no
+		is_buildable = yes
 		one_use_only = yes
 		sprite = missile_default
 		
 		air_range = 11000
 		maximum_speed = 9999
 		air_agility = 10
-		air_bombing = 600
+		air_bombing = 0
 		
 		# build_cost_ic = 44
 	}
