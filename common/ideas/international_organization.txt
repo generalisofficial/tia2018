@@ -16,6 +16,7 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+		
 		idea_united_nations_NP_security_council_member = {
 			picture = united_nations_green
 		
@@ -33,9 +34,7 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = 0.05
-				political_power_gain = -0.1
-				justify_war_goal_time = 0.1
+			
 			}
 		}
 		
@@ -47,11 +46,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.25
-				production_factory_efficiency_gain_factor = 0.15
-				political_power_gain = -0.3
-				justify_war_goal_time = 0.25
-				ai_join_ally_desire_factor = -10
+			
 			}
 		}
 		
@@ -102,8 +97,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.05
-				justify_war_goal_time = 0.05
+			
 			}
 		}
 		
@@ -114,8 +108,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				political_power_gain = 0.05
-				justify_war_goal_time = 0.15
+			
 			}
 		}
 		
@@ -126,8 +119,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				political_power_gain = 0.05
-				justify_war_goal_time = 0.15
+			
 			}
 		}
 		###		Non-Aligned Movement		###
@@ -146,9 +138,7 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				justify_war_goal_time = 0.10
+			
 			}
 		}
 		###     Baltic Assembly     ###
@@ -157,9 +147,17 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				justify_war_goal_time = 0.10
+			
+			}
+		}
+		
+		###     East African Community     ###
+		east_african_community_member = {
+			picture = east_african_community
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
 			}
 		}
 	}   
