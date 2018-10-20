@@ -1,25 +1,29 @@
-state=
-{
+
+state={
 	id=457
-	name="STATE_457" # Arabian Desert
-	manpower = 1372194
-	
-	resources = {
-		oil=43
+	name="STATE_457"
+	resources={
+		oil=43.000
 	}
-	
-	state_category = state_level_2
-	
-	history = {
+
+	history={
 		owner = EGY
 		add_core_of = EGY
 		buildings = {
 			infrastructure = 4
 			air_base = 1
+
 		}
-		victory_points = { 12002 3 }
+		victory_points = {
+			12002 3 
+		}
+
 	}
+
 	provinces={
-		1080 4068 4910 5069 7156 9957 10126 12002 12889 
+		1064 4068 4910 5069 7156 9957 10126 12002 12889 
 	}
+	manpower=1372194
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }
