@@ -46,7 +46,7 @@ guiTypes = {
 		iconType ={
 			name ="pol_faction_icon"
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 553 y = 270 }
+			position = { x= 615 y = 270 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
@@ -87,28 +87,29 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "ideology"
-				position = { x = 550 y = -30 }
+				position = { x = -70 y = -13 }
 				font = "hoi_18mbs"
 				text = "ideology"
 				maxWidth = 155
 				maxHeight = 20
+				format = centre	
 			}
 			
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 475 y = -250 }
+				position = { x = 470 y = -260 }
 				font = "hoi_16mbs"
 				text = "elections"
-				maxWidth = 155
+				maxWidth = 175
 				maxHeight = 20
 			}
 			
 			instantTextboxType = {
 				name = "faction_name"
-				position = { x = 103 y = -45 }
+				position = { x = 80 y = -45 }
 				font = "hoi_18mbs"
 				text = "faction"
-				maxWidth = 193
+				maxWidth = 250
 				maxHeight = 20
 				format = centre				
 			}
@@ -431,22 +432,15 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 300 y = 298 }
-			size = { width = 245 height = 79 }
+			position = { x = 509 y = 350 }
+			size = { width = 240 height = 600 }
 			clipping = yes
-			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 3 bottom = 2}
-			background = {
-				name = "Background"		
-				spriteType ="GFX_pol_piechart_bg"
-				position = { x = 37 y = 3 }
-			}
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = -20 y = -5 }
-				size = { width = 230 height = 80 }
-				slotsize = { width = 230 height = 14 }
+				position = { x = -20 y = 15 }
+				size = { width = 250 height = 80 }
+				slotsize = { width = 250 height = 30 }
 				format = "UPPER_LEFT"
 			}
 			
@@ -497,7 +491,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "political_ideas_window"
 		position = { x = -356 y = 100 }	
-		show_position = { x = 544 y = 100 }
+		show_position = { x = 740 y = 79 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -511,7 +505,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "title"
-			position = { x = 200 y = 4 }
+			position = { x = 150 y = 4 }
 			font = "hoi_20b"
 			text = "Economic Laws"
 			maxWidth = 450
@@ -520,7 +514,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "switch"
-			position = { x = 200 y = 26 }
+			position = { x = 150 y = 26 }
 			font = "hoi_18b"
 			text = "Switch out Henschel"
 			maxWidth = 450
@@ -715,7 +709,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "political_party_info_entry"
-		size = { width = 330 height = 18 }
+		size = { width = 330 height = 20 }
 		clipping = yes
 
 		iconType = {
