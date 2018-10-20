@@ -2,12 +2,11 @@ ideas = {
 	trade_policy = { 
 		law = yes
 
-		free_trade = {
+		laissez_faire = {
 			available = {
 				OR = {
 					NOT = { has_government = communist }
-					has_idea = idea_PRC_chinese_socialism
-					threat > 0.15
+					has_idea = socialist_market_economy
 				}
 			}
 		
@@ -17,26 +16,18 @@ ideas = {
 			
 			modifier = {
 				min_export = 0.8
-				industrial_capacity_factory = 0.15
-				production_speed_buildings_factor = 0.15
-				research_time_factor = -0.10
-				ai_join_ally_desire_factor = -15
 			}
 			
 			cancel_if_invalid = no
 		}
 		
-		export_focus = {
+		mercantilism = {
 			cost = 250
 			removal_cost = -1
 			level = 3
 			
 			modifier = {
 				min_export = 0.5
-				industrial_capacity_factory = 0.1
-				production_speed_buildings_factor = 0.1
-				research_time_factor = -0.05
-				ai_join_ally_desire_factor = -10
 			}
 			
 			default = yes
@@ -44,40 +35,13 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		limited_exports = {
-			available = {
-				OR = {
-					AND = {
-						has_democratic_form_of_government = yes
-						has_war = yes
-						any_enemy_country = {
-							ic_ratio = { 
-								tag = ROOT 
-								ratio > 0.2
-							}
-						}
-					}
-					AND = {
-						has_democratic_form_of_government = no
-						OR = {
-							has_idea = partial_economic_mobilisation
-							has_idea = war_economy
-							has_idea = tot_economic_mobilisation
-						}
-					}
-				}
-			}
-		
+		strict_mercantilism = {
 			cost = 250
 			removal_cost = -1
 			level = 2
 			
 			modifier = {
 				min_export = 0.25
-				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.05
-				research_time_factor = -0.01
-				ai_join_ally_desire_factor = -5
 			}
 			
 			cancel_if_invalid = no
@@ -95,32 +59,16 @@ ideas = {
    			}
 		}
 		
-		closed_economy = {
-			
-			
+		isolationism = {
 			available = {
-				OR = {
-					AND = {
-						has_democratic_form_of_government = no
-						has_war = yes
+				OR = { 
+					has_idea = partially_recognized_state
+					OR = {
+						has_government = fascist
+						has_government = communist
+						has_government = islamist
+						has_government = nationalist
 					}
-					AND = {
-						OR = {
-							has_government = fascist
-							has_government = communist
-						}
-						threat > 0.4
-					}
-					AND = {
-						threat > 0.6
-						has_war = yes
-					}
-					threat > 0.8
-				}
-				OR = {
-					has_war = yes
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
 				}
 			}
 			

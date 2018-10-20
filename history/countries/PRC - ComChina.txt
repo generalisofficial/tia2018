@@ -107,10 +107,10 @@ create_equipment_variant = { name = "H-5" type = jet_bomber_equipment_1  obsolet
 
 add_ideas = {
 	population_growth_stagnation
-	idea_PRC_chinese_socialism
+	socialist_market_economy
 	idea_PRC_two_child_policy
 	idea_united_nations_security_council_member
-	free_trade
+	laissez_faire
 }
 
 give_guarantee = PRK
@@ -118,6 +118,7 @@ give_guarantee = PRK
 set_politics = {
 	ruling_party = reactionary
 }
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
