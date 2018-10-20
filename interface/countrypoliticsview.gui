@@ -46,7 +46,7 @@ guiTypes = {
 		iconType ={
 			name ="pol_faction_icon"
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 615 y = 270 }
+			position = { x= 60 y = 308 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
@@ -54,7 +54,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "political_pie_chart"
 			position = { x= 619 y = 70 }
-			size = 90%%
+			#size = 90% 
 			clipping = no
 
 			iconType = {
@@ -75,15 +75,6 @@ guiTypes = {
 			position = { x = 88 y = 305 }
 			size = { width = 255 height = 60 }
 			clipping = no
-					
-#			instantTextboxType = {
-#				name = "party"
-#				position = { x = 9 y = 2 }
-#				font = "hoi_18mbs"
-#				text = "party"
-#				maxWidth = 155
-#				maxHeight = 20
-#			}
 			
 			instantTextboxType = {
 				name = "ideology"
@@ -106,22 +97,21 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "faction_name"
-				position = { x = 80 y = -45 }
+				position = { x = 100 y = 20 }
 				font = "hoi_18mbs"
 				text = "faction"
-				maxWidth = 250
+				maxWidth = 300
 				maxHeight = 20
-				format = centre				
+				format = left
 			}
 			
 			buttonType = {
 				name = "dismantle_faction"
-				position = { x = 302 y = -50 }
+				position = { x = 420 y = 33 }
 				quadTextureSprite = "GFX_dismantle_faction_button"
 				#buttonFont = "hoi_16mbs"
 				#buttonText = "DIPLOMACY_DISMANTLE_FACTION_TITLE"
 			}	
-			
 		}
 						
 		containerWindowType = {
@@ -432,7 +422,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 509 y = 350 }
+			position = { x = 509 y = 260 }
 			size = { width = 240 height = 600 }
 			clipping = yes
 			
@@ -729,15 +719,6 @@ guiTypes = {
 			position = { x = 64 y = 6 }
 			spriteType = "GFX_pol_party_colour"
 		}
-		
-		#instantTextboxType = {
-		#	name = "score"
-		#	position = { x = 160 y = 4 }
-		#	font = "hoi_16mbs"
-		#	text = "score"
-		#	maxWidth = 60
-		#	maxHeight = 18
-		#}
 			
 		instantTextboxType = {
 			name = "name"
