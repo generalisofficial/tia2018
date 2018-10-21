@@ -1,18 +1,16 @@
 ﻿add_namespace = estonia
 
-country_event = { #Drought!#
-	id = estonia.15
-	title = estonia.15.t
-	desc = estonia.15.d
+country_event = { #2018 Drought
+	id = estonia.1
+	title = estonia.1.t
+	desc = estonia.1.d
 	picture = GFX_report_event_001
-	trigger = {
-		date > 2018.06.17
-	}
 	
+	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = {	#Import in more food and pay the farmers money for the drought damages.#
-		name = estonia.15.a
+	option = {
+		name = estonia.1.a
 		hidden_effect = {
 		    add_timed_idea = {
                 idea = EST_drought_3
@@ -23,8 +21,8 @@ country_event = { #Drought!#
 		ai_chance = { factor = 60 }
 	}
 	
-	option = {	#Theres nothing we can do.#
-		name = estonia.15.b
+	option = {
+		name = estonia.1.b
 		hidden_effect = {
             add_timed_idea = {
                 idea = EST_drought_1
@@ -35,8 +33,8 @@ country_event = { #Drought!#
 		ai_chance = { factor = 10 }
 	}
 	
-	option = {	#Only pay the farmers money for the drought damages.#
-		name = estonia.15.c
+	option = {
+		name = estonia.1.c
 		hidden_effect = {
 		    add_timed_idea = {
                 idea = EST_drought_2
