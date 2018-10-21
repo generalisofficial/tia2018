@@ -79,10 +79,10 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	### Democracy ###
 	
 	focus = {
-		id = EST_change_is_needed
-		icon = self_management
+		id = EST_maintain_cooperation
+		icon = neutrality
 		
-		x = 8
+		x = 10
 		y = 0
 		
 		cost = 10
@@ -107,8 +107,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 		focus = {
-		id = EST_root_out_the_corruption
-		icon = self_management
+		id = EST_growth_of_estonia
+		icon = construction3
 		
 		x = 7
 		y = 1
@@ -120,7 +120,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_change_is_needed
+		    focus = EST_maintain_cooperation
 		}
 		
 		mutually_exclusive = {}
@@ -136,8 +136,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		id = EST_isamaa_on_igavene
 		icon = isamaa_on_igavene
 		
-		x = 9
-		y = 1
+		x = 12
+		y = 2
 		
 		cost = 10
 
@@ -146,7 +146,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_change_is_needed
+		    focus = EST_maintain_cooperation
 		}
 		
 		mutually_exclusive = {}
@@ -186,9 +186,9 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	
 		focus = {
 		id = EST_2019_parliamentary_elections
-		icon = self_management
+		icon = improve_relations
 		
-		x = 9
+		x = 10
 		y = 4
 		
 		cost = 10
@@ -299,9 +299,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		prerequisite = {}
 		
 		mutually_exclusive = {
-		    focus = EST_a_sour_history
-			focus = EST_nationalist_pride
-			focus = EST_reform_is_needed
+			focus = EST_maintain_cooperation
 		}
 		
 		completion_reward = {
