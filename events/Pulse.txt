@@ -15,6 +15,17 @@ country_event = {
 			set_country_at_war_effect = yes
 		}
 		if = {
+		    limit = {
+		        original_tag = BEL
+		        has_idea = belgian_political_system
+				OR = {
+			        has_democratic_form_of_government = no
+			        has_country_flag = end_of_the_belgian_political_system
+				}
+		    }
+			country_event = belgium.2
+	    }
+		if = {
 			limit = {
 				has_war = no
 				has_country_flag = at_war
