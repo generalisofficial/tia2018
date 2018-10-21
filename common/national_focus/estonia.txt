@@ -47,7 +47,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_
+		id = EST_idk
 		icon = demand_territory2
 		
 		x = 25
@@ -79,10 +79,10 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	### Democracy ###
 	
 	focus = {
-		id = EST_change_is_needed
-		icon = self_management
+		id = EST_maintain_cooperation
+		icon = neutrality
 		
-		x = 8
+		x = 10
 		y = 0
 		
 		cost = 10
@@ -107,8 +107,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 		focus = {
-		id = EST_root_out_the_corruption
-		icon = self_management
+		id = EST_growth_of_estonia
+		icon = construction3
 		
 		x = 7
 		y = 1
@@ -120,8 +120,32 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_change_is_needed
+		    focus = EST_maintain_cooperation
 		}
+		
+		mutually_exclusive = {}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+		focus = {
+		id = EST_focus_on_the_rural_industry
+		icon = construction3
+		
+		x = 8
+		y = 3
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {}
 		
 		mutually_exclusive = {}
 		
@@ -136,8 +160,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		id = EST_isamaa_on_igavene
 		icon = isamaa_on_igavene
 		
-		x = 9
-		y = 1
+		x = 13
+		y = 5
 		
 		cost = 10
 
@@ -146,7 +170,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_change_is_needed
+		    focus = EST_deregulate_the_economy
+			focus = EST_regulate_the_economy
 		}
 		
 		mutually_exclusive = {}
@@ -159,10 +184,93 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_invite_pope_francis_to_estonia
-		icon = self_management
+		id = EST_oiglane_riik_koigile
+		icon = isamaa_on_igavene
 		
-		x = 9
+		x = 11
+		y = 5
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_deregulate_the_economy
+			focus = EST_regulate_the_economy
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_isamaa_on_igavene
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_isamaa_on_igavene
+		icon = isamaa_on_igavene
+		
+		x = 13
+		y = 5
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_deregulate_the_economy
+			focus = EST_regulate_the_economy
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_oiglane_riik_koigile
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_reforming_the_country
+		icon = higher_society
+		
+		x = 13
+		y = 1
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_maintain_cooperation
+		}
+		
+		mutually_exclusive = {}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}	
+	focus = {
+		id = EST_encourage_capitalism
+		icon = trade_deal
+		
+		x = 15
 		y = 2
 		
 		cost = 10
@@ -172,10 +280,156 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_2
+		    focus = EST_reforming_the_country
 		}
 		
-		mutually_exclusive = {}
+		mutually_exclusive = {
+		    focus = EST_reducing_inequality
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_reducing_inequality
+		icon = neutrality
+		
+		x = 11
+		y = 2
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_reforming_the_country
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_encourage_capitalism
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_improving_the_healthcare
+		icon = national_unity_red
+		
+		x = 11
+		y = 3
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_reducing_inequality
+			focus = EST_encourage_capitalism
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_education_reforms
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_education_reforms
+		icon = intelligence_exchange
+		
+		x = 15
+		y = 3
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_reducing_inequality
+			focus = EST_encourage_capitalism
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_improving_the_healthcare
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_regulate_the_economy
+		icon = central_management
+		
+		x = 15
+		y = 4
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_improving_the_healthcare
+			focus = EST_education_reforms
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_deregulate_the_economy
+		}
+		
+		completion_reward = {}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = EST_deregulate_the_economy
+		icon = renounce_treaty
+		
+		x = 11
+		y = 4
+		
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		
+		prerequisite = {
+		    focus = EST_improving_the_healthcare
+			focus = EST_education_reforms
+		}
+		
+		mutually_exclusive = {
+		    focus = EST_regulate_the_economy
+		}
 		
 		completion_reward = {}
 		
@@ -186,10 +440,10 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	
 		focus = {
 		id = EST_2019_parliamentary_elections
-		icon = self_management
+		icon = improve_relations
 		
-		x = 9
-		y = 4
+		x = 10
+		y = 6
 		
 		cost = 10
 
@@ -198,11 +452,12 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		available = {
-			date > 2019.03.03
+			date > 2019.04.01
 		}
 		
 		prerequisite = {
-		    focus = EST_change_is_needed
+		    focus = EST_oiglane_riik_koigile
+			focus = EST_isamaa_on_igavene
 		}
 		
 		mutually_exclusive = {}
@@ -299,9 +554,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		prerequisite = {}
 		
 		mutually_exclusive = {
-		    focus = EST_a_sour_history
-			focus = EST_nationalist_pride
-			focus = EST_reform_is_needed
+			focus = EST_maintain_cooperation
 		}
 		
 		completion_reward = {
@@ -387,7 +640,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		cost = 20
 
 		prerequisite = {
-		    focus = EST_expand_the_E263
+		    focus = EST_expand_the_tallinn_tartu_highway
 		}
 		
 		prerequisite = {
@@ -564,11 +817,11 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_provide_subsidies_to_farmers
-		icon = farming_industry
+		id = EST_focus_on_the_urban_industry
+		icon = consumer_goods
 		
-		x = 7
-		y = 2
+		x = 6
+		y = 3
 		
 		cost = 10
 
@@ -576,9 +829,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
-		prerequisite = {
-		    focus = EST_root_out_the_corruption
-		}
+		prerequisite = {}
 		
 		mutually_exclusive = {}
 		
@@ -926,11 +1177,11 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	    focus = {
-		id = EST_expand_the_E263
+		id = EST_expand_the_tallinn_tartu_highway
 		icon = infrastructure
 		
 		x = 4
-		y = 1
+		y = 2
 		
 		cost = 10
         
