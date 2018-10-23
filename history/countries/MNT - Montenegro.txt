@@ -1,6 +1,6 @@
 ﻿capital = 105
 
-oob = "MTN_2016"
+oob = "MNT_2018"
 
 set_research_slots = 3
 set_convoys = 200
@@ -97,27 +97,65 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		social_democrat = { popularity = 35 }
-		conservative = { popularity = 20 }
-		democratic_socialist = { popularity = 20 }
-		nationalist = { popularity = 15 }
-		market_liberal = { popularity = 10 }
+		social_democrat = { 
+		    popularity = 41.41
+		}
+		reactionary = { 
+		    popularity = 20.32
+		}
+		market_liberal = { 
+		    popularity = 12.05
+		}
+		social_liberal = { 
+		    popularity = 11.01
+		}
+		progressive = { 
+		    popularity = 6.23
+		}
+		conservative = { 
+		    popularity = 8.98
+		}
 	}
 	ruling_party = social_democrat
-	last_election = "1997.1.1"
+	last_election = "2016.10.16"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Filip Vujanović"
+	name = "Duško Marković"
+	picture = "Dusko_Markovic.dds"
 	ideology = social_democrat_ideology
-	picture = "Filip_Vujanovic.dds"
 }
 
-add_namespace = {
-	name = "mnt_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Andrija Mandić"
+	picture = "Andrija_Mandic.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Miodrag Lekić"
+	picture = "Miodrag_Lekic.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Aleksa Bečić"
+	picture = "Aleksa_Becic.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Ranko Krivokapić"
+	picture = "Ranko_Krivokapic.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Marija Vučinović"
+	picture = "Marija_Vucinovic.dds"
+	ideology = fiscal_conservative
 }
 
 create_field_marshal = {
