@@ -1,40 +1,16 @@
 ﻿add_namespace = belgium
 
-#Hidden trigger for the Political System
-country_event = {
-	id = belgium.1
-	hidden = yes
-	fire_only_once = yes
-	
-	trigger = {
-		original_tag = BEL
-		has_idea = belgian_political_system
-		OR = {
-			has_democratic_form_of_government = no
-			has_country_flag = end_of_the_belgian_political_system
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 15
-	}
-	
-	option = {
-		country_event = belgium.2
-	}
-}
-
 #Removal of the Belgian Political System
 country_event = {
-	id = belgium.2
-	title = belgium.2.t
-	desc = belgium.2.d
+	id = belgium.1
+	title = belgium.1.t
+	desc = belgium.1.d
 	picture = GFX_report_event_belgium
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = belgium.2.o1
+		name = belgium.1.o1
 		remove_ideas = belgian_political_system
 	}
 }

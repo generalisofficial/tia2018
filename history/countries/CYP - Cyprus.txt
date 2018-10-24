@@ -1,6 +1,6 @@
 ﻿capital = 183
 
-oob = "CYP_2000"
+oob = "CYP_2018"
 
 set_research_slots = 3
 set_convoys = 100
@@ -81,63 +81,91 @@ set_technology = {
 	manufacturing1 = 1
 	excavation1 = 1
 }
+
 add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = TUR modifier = rival_trade }
+add_opinion_modifier = { target = NCY modifier = rival }
+add_opinion_modifier = { target = NCY modifier = rival_trade }
+
 add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
+	idea_eu_member
+	the_euro
 }
 
 set_politics = {
 
 	parties = {
 		conservative = {
-			popularity = 34.3
+			popularity = 36.19
 		}
-		democratic_socialist = {
-			popularity = 32.7
+		communist = {
+			popularity = 30.24
 		}
 		market_liberal = {
-			popularity = 15.8
-		}
-		social_democrat = {
-			popularity = 8.9
-		}
-		nationalist = {
-			popularity = 3.9
-		}
-		progressive = {
-			popularity = 2.2
+			popularity = 25.74
 		}
 		fascist = {
-			popularity = 0.5
-		}
-		islamist = {
-			popularity = 0.5
-		}
-		social_liberal = {
-			popularity = 0.5
+			popularity = 5.65
 		}
 		reactionary = {
-			popularity = 0.5
+			popularity = 2.18
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1997.1.1"
+	last_election = "2013.1.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Glafcos Clerides"
-	ideology = national_conservative
-	picture = "Glafcos_Clerides.dds"
+	name = "Nicos Anastasiades"
+	picture = "Nicos_Anastasiades.dds"
+	ideology = christian_democrat
 }
 
-add_namespace = {
-	name = "cyp_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Andros Kyprianou"
+	picture = "Andros_Kyprianou.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Nikolas Papadopoulos"
+	picture = "Nikolas_Papadopoulos.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Marinos Sizopoulos"
+	picture = "Marinos_Sizopoulos.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Giorgos Lillikas"
+	picture = "Giorgos_Lillikas.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Eleni Theocharous"
+	picture = "Eleni_Theocharous.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "George Perdikes"
+	picture = "George_Perdikes.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Christos Christou"
+	picture = "Christos_Christou.dds"
+	ideology = fascist_ideology
 }
 
 create_field_marshal = {
@@ -164,22 +192,4 @@ create_corps_commander = {
 	name = "Dimítrios Agorákis"
 	picture = "generals/Dimitrios_Agorakis.dds"
 	skill = 1
-}
-
-2002.1.1 = {
-	add_ideas = the_euro
-}
-
-2004.1.1 = {
-	add_ideas = {
-		idea_eu_member
-	}
-}
-
-2011.1.1 = {
-	create_country_leader = {
-		name = "Nikos Anastasiadis"
-		ideology = national_conservative
-		picture = "Nikos_Anastasiadis.dds"
-	}
 }

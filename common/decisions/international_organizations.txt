@@ -93,3 +93,95 @@ baltic_assembly_decisions = {
 		}
 	}
 }
+
+nordic_council_decisions = {
+	
+	rejoin_nordic_council = {
+		visible = {
+			NOT = { has_idea = nordic_council_member }
+			OR = { original_tag = SWE original_tag = DEN original_tag = NOR original_tag = FIN original_tag = ICE }
+		}
+		available = {
+            NOT = { has_idea = nordic_council_member }
+		}
+		
+		complete_effect = {
+            add_ideas = nordic_council_member
+		}
+		
+		icon = politics
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_nordic_council = {
+		visible = {
+			has_idea = nordic_council_member
+		}
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = nordic_council_member
+		}
+		
+		icon = politics
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+east_african_community_decisions = {
+	
+	rejoin_east_african_community = {
+		visible = {
+			NOT = { has_idea = east_african_community_member }
+			OR = { original_tag = SSD original_tag = UGA original_tag = RWA original_tag = KEN original_tag = TNZ original_tag = BUR }
+		}
+		available = {
+            NOT = { has_idea = east_african_community_member }
+		}
+		
+		complete_effect = {
+            add_ideas = east_african_community_member
+		}
+		
+		icon = politics
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_east_african_community = {
+		visible = {
+			has_idea = east_african_community_member
+		}
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = east_african_community_member
+		}
+		
+		icon = politics
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

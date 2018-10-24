@@ -100,59 +100,41 @@ add_ideas = {
 	limited_conscription
 	idea_eu_member
 	the_euro
-        baltic_assembly_member
+    baltic_assembly_member
 }
 
 set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 3
+			popularity = 5.55
 		}
 		conservative = {
-			popularity = 23
+			popularity = 24.63
 		}
 		market_liberal = {
-			popularity = 6
+			popularity = 9.45
 		}
 		social_liberal = {
-			popularity = 21
+			popularity = 38.61
 		}
 		social_democrat = {
-			popularity = 27
+			popularity = 16.04
 		}
-		progressive = {
-			popularity = 5
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 5
+		reactionary = {
+			popularity = 5.72
 		}
 	}
-	ruling_party = social_democrat
-	last_election = "1996.10.20"
+	ruling_party = social_liberal
+	last_election = "2016.10.9"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Rolandas Paksas"
-	picture = "Rolandas_Paksas.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Loreta Graužinienė"
-	picture = "Loreta_Grauziniene.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
 	name = "Saulius Skvernelis"
 	picture = "Saulius_Skvernelis.dds"
-	ideology = social_democrat_ideology
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -162,51 +144,39 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rapolas Gediminas Sakalnikas"
-	picture = "Rapolas_G_Sakalnikas.dds"
-	ideology = national_democrat
+	name = "Gintautas Paluckas"
+	picture = "Gintautas_Paluckas.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Mindaugas Gervaldas"
-	picture = "Mindaugas_Gervaldas.dds"
-	ideology = national_socialist
-}
-
-create_country_leader = {
-	name = "Romualdas Ozolas"
-	picture = "Romualdas_Ozolas.dds"
-	ideology = counter_progressive_democrat
-}
-
-create_country_leader = {
-	name = "Naglis Puteikis"
-	picture = "Naglis_Puteikis.dds"
+	name = "Eugenijus Gentvilas"
+	picture = "Eugenijus_Gentvilas.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Ramunas Karbauskis"
-	picture = "Ramunas_Karbauskis.dds"
+	name = "Valdemar Tomasevski"
+	picture = "Valdemar_Tomasevski.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Remigijus Zemaitaitis"
+	picture = "Remigijus_Zemaitaitis.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Linas Balsys"
+	picture = "Linas_Balsys.dds"
 	ideology = green
 }
 
 create_country_leader = {
-	name = "Edikas Jagelavičius"
-	picture = "Edikas_Jagelavicius.dds"
-	ideology = leninist
-}
-
-create_country_leader = {
-	name = "Paulius Gediminaitis"
-	picture = "Paulius_Gediminatis.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Mykolas Rimša"
-	picture = "Mykolas_Rimsa.dds"
-	ideology = salafism
+	name = "Giedrius Grabauskas"
+	picture = "Giedrius_Grabauskas.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {

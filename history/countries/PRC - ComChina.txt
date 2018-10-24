@@ -107,10 +107,10 @@ create_equipment_variant = { name = "H-5" type = jet_bomber_equipment_1  obsolet
 
 add_ideas = {
 	population_growth_stagnation
-	idea_PRC_chinese_socialism
+	socialist_market_economy
 	idea_PRC_two_child_policy
 	idea_united_nations_security_council_member
-	free_trade
+	laissez_faire
 }
 
 give_guarantee = PRK
@@ -118,6 +118,7 @@ give_guarantee = PRK
 set_politics = {
 	ruling_party = reactionary
 }
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -153,17 +154,8 @@ add_opinion_modifier = {
 
 set_politics = {
 	parties = {
-		fascist = { popularity = 0.2 }
-		nationalist = { popularity = 0.2 }
-		monarchist = { popularity = 1.1 }
-		reactionary = { popularity = 0.5 }
-		conservative = { popularity = 8.95 }
-		market_liberal = { popularity = 9.65 }
-		social_liberal = { popularity = 7.1 }
-		social_democrat = { popularity = 12.3 }
-		progressive = { popularity = 2.05 }
-		democratic_socialist = { popularity = 9.55 }
-		communist = { popularity = 48.4 }
+		democratic_socialist = { popularity = 0 }
+		communist = { popularity = 100 }
 	}
 	ruling_party = communist
 	last_election = "2018.1.1"
@@ -178,9 +170,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ding Zhongli"
-	picture = "Ding_Zhongli.dds"
-	ideology = centrist
+	name = "Hao Mingjin"
+	picture = "Hao_Mingjin.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
@@ -190,8 +182,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chen Zhu"
-	picture = "Chen_Zhu.dds"
+	name = "Hao Mingjin"
+	picture = "Hao_Mingjin.dds"
 	ideology = progressive_ideology
 }
 
@@ -208,9 +200,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Yan Junqi"
-	picture = "Yan_Junqi"
+	name = "Cai Dafeng"
+	picture = "Cai_Dafeng.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Wu Weihua"
+	picture = "Wu_Weihua.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Wan Gang"
+	picture = "Wan_Gang.dds"
+	ideology = reactionary_ideology
 }
 
 create_field_marshal = {

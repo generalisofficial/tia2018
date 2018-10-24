@@ -104,4 +104,57 @@ syrian_civil_war = {
 			factor = 0
 		}
 	}
+	
+	propose_north_syria_autonomous_region = {
+		visible = {
+		    original_tag = SYR
+			country_exists = ROJ
+			is_subject = no
+			ROJ = { is_subject = no }
+
+		}
+		available = {
+			country_exists = ROJ
+			is_subject = no
+			ROJ = { is_subject = no }
+			NOT = { has_war_with = ROJ }
+			OR = {
+			    ROJ = { owns_state = 920 }
+				owns_state = 920
+			}
+			OR = {
+			    ROJ = { owns_state = 923 }
+				owns_state = 923
+			}
+			OR = {
+			    ROJ = { owns_state = 919 }
+				owns_state = 919
+			}
+			OR = {
+			    ROJ = { owns_state = 918 }
+				owns_state = 918
+			}
+			OR = {
+			    ROJ = { owns_state = 814 }
+				owns_state = 814
+			}
+		}
+		
+		complete_effect = {
+		    add_political_power = 1
+		}
+		
+		icon = syrian_civil_war
+		
+		fire_only_once = yes
+		cost = 50
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				has_global_flag = syrian_civil_war_over
+			}
+		}
+	}
 }

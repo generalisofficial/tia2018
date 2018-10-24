@@ -1,6 +1,6 @@
 ﻿capital = 302
 
-oob = "BOL_2000"
+oob = "BOL_2018"
 
 set_research_slots = 3
 set_convoys = 10
@@ -88,55 +88,24 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 30
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 1
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
+			popularity = 11.7
 		}
 		social_democrat = {
-			popularity = 5
+			popularity = 24.23
 		}
 		progressive = {
-			popularity = 10
+			popularity = 2.71
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 61.36
 		}
 	}
 	
-	ruling_party = nationalist
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = democratic_socialist
+	last_election = "2014.10.12"
+	election_frequency = 60
 	elections_allowed = yes
-}
-
-create_country_leader = {
-	name = "Hugo Banzer"
-	picture = "Hugo_Banzer.dds"
-	ideology = proto_fascist
-	expire = "2002.5.5"
-}
-
-create_country_leader = {
-	name = "Gustavo Sejas Revollo"
-	picture = "Gustavo_Sejas_Revollo.dds"
-	ideology = falangist 
 }
 
 create_country_leader = {
@@ -146,58 +115,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jorge Quiroga"
-	picture = "Jorge_Quiroga.dds"
-	ideology = christian_democrat  
-}
-
-create_country_leader = {
 	name = "Samuel Jorge Doria Medina Auza"
 	picture = "Samuel_Jorge_Doria_Medina_Auza.dds"
-	ideology = libertarian  
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Ignacio Mendoza"
-	picture = "Ignacio_Mendoza.dds"
-	ideology = marxist_leninist   
+	name = "Jorge Suárez Vargas"
+	picture = "Jorge_Suarez_Vargas.dds"
+	ideology = christian_democrat
 }
 
 create_country_leader = {
-	name = " Juan del Granado"
-	picture = "Juan_Del_Granado.dds"
-	ideology = progressive_ideology   
-}
-
-2002.5.5 = {
-	create_country_leader = {
-		name = "Freddy Terrazas Salas"
-		ideology = autocrat
-		picture = "Freddy_Terrazas_Salas.dds"
-	}
-}
-
-2014.10.13 = {
-	set_politics = {
-
-		parties = {
-			conservative = {
-				popularity = 10
-			}
-			market_liberal = {
-				popularity = 25
-			}
-			progressive = {
-				popularity = 3
-			}
-			democratic_socialist = {
-				popularity = 62
-			}
-		}
-	
-		ruling_party = democratic_socialist
-		last_election = "2014.10.12"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	name = "Juan del Granado"
+	picture = "Juan_del_Granado.dds"
+	ideology = progressive_ideology
 }

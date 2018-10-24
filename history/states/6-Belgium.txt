@@ -1,37 +1,45 @@
 
 state={
 	id=6
-	name="STATE_6" # Flanders
-	manpower = 6950000
-	
-	state_category = state_level_19
-	
-	resources = {
-		steel = 97
+	name="STATE_6"
+	resources={
+		steel=97.000
 	}
 
 	history={
 		owner = BEL
-		victory_points = { 516 25 }
-		victory_points = { 6598 20 }
-		victory_points = { 6560 5 }
+		victory_points = {
+			6598 20 
+		}
+		victory_points = {
+			6560 5 
+		}
 		buildings = {
 			infrastructure = 9
 			air_base = 9
 			industrial_complex = 4
 			arms_factory = 1
 			dockyard = 1
-			6446 = { naval_base = 7 }
-			6598 = { naval_base = 10 }
+			6446 = {
+				naval_base = 7
+
+			}
+			6598 = {
+				naval_base = 10
+
+			}
+
 		}
-		
 		add_extra_state_shared_building_slots = 2
-		
 		add_core_of = BEL
 		add_core_of = FLN
+
 	}
 
 	provinces={
-		516 3576 6446 6560 6598 9574 11419 13068 
+		3576 4268 6446 6560 6598 9574 11419 13068 
 	}
+	manpower=6450000
+	buildings_max_level_factor=1.000
+	state_category=state_level_18
 }

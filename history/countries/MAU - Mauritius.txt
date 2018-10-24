@@ -1,6 +1,6 @@
 ﻿capital = 707
 
-oob = "MAU_2000"
+oob = "MAU_2018"
 
 set_research_slots = 2
 set_convoys = 500
@@ -98,19 +98,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 50
+		democratic_socialist = {
+			popularity = 51.83
 		}
-		social_liberal = {
-			popularity = 25
-		}
-		communist = {
-			popularity = 20
+		social_democrat = {
+			popularity = 48.17
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = democratic_socialist
+	last_election = "2014.12.10"
+	election_frequency = 60
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Pravind Jugnauth"
+	picture = "Pravind_Kugnauth.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Navin Ramgoolam"
+	picture = "Navin_Ramgoolam.dds"
+	ideology = social_democrat_ideology
 }

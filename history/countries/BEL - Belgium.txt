@@ -1,4 +1,4 @@
-﻿capital = 6
+﻿capital = 34
 
 oob = "BEL_2018"
 
@@ -95,7 +95,7 @@ set_technology = {
 
 add_ideas = {
 	population_growth_stagnation
-	free_trade
+	laissez_faire
 	idea_eu_member
 	belgian_political_system
 	the_euro
@@ -105,25 +105,28 @@ set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 16
+			popularity = 5.18
 		}
 		reactionary = {
-			popularity = 2
+			popularity = 20.26
 		}
 		conservative = {
-			popularity = 21
+			popularity = 11.61
 		}
 		market_liberal = {
-			popularity = 25
+			popularity = 21.64
 		}
 		social_liberal = {
-			popularity = 2
+			popularity = 4.99
 		}
 		social_democrat = {
-			popularity = 20
+			popularity = 20.50
 		}
 		progressive = {
-			popularity = 14
+			popularity = 8.62
+		}
+		communist = {
+			popularity = 3.72
 		}
 	}
 	
@@ -136,7 +139,7 @@ set_politics = {
 create_country_leader = {
 	name = "Abdelhay Bakkali Tahiri"
 	picture = "Abdelhay_Bakkali_Tahiri.dds"
-	ideology = salafism
+	ideology = salafist
 }
 
 create_country_leader = {
@@ -160,7 +163,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bart De Wever"
 	picture = "Bart_De_Wever.dds"
-	ideology = counter_progressive_democrat
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {

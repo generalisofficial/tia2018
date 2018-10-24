@@ -98,7 +98,7 @@ add_ideas = {
 	non_aligned_movement_member
 }
 
-create_faction = peninsula_shield_force
+create_faction = "Peninsula Shield Force"
 add_to_faction = SAU
 add_to_faction = KUW
 add_to_faction = OMA
@@ -109,93 +109,91 @@ add_to_faction = QAT
 set_politics = {
 
 	parties = {
-		
 		islamist = {
-			popularity = 25
-		}
-		nationalist = {
-			popularity = 10
+			popularity = 0
 		}
 		monarchist = {
-			popularity = 30
+			popularity = 100
 		}
-		conservative = {
-			popularity = 18
-		}
-		market_liberal = {
-			popularity = 10
-		}
-		social_liberal = {
-			popularity = 2
-		}
-		communist = {
-			popularity = 5
-		}
-		
 	}
 	
 	ruling_party = monarchist
-	last_election = "1982.1.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Salman bin Abdulaziz"
-	picture = "King_Salman.dds"
+	name = "Salman bin Abdulaziz al-Saud"
+	picture = "Salman_bin_Abdulaziz_al_Saud.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
+    name = "Ata Abu Rashta" 
+	picture = "Ata_Abu_Rashta.dds"
+	ideology = salafist
+}
+
+create_field_marshal = {
 	name = "Abdulrahman Al Banyan"
-	picture = "Abdulrahman_Al_Banyan.dds" 
-	ideology = national_democrat
+	picture = "Portrait_Abdulrahman_Al_Banyan.dds"
+	traits = { old_guard thorough_planner }
+	skill = 2
 }
 
-create_country_leader = {
-	name = "Saleh el-Mansour"
-	picture = "Saleh_el-Mansour.dds"
-	ideology = marxist_leninist
+create_corps_commander = {
+	name = "Eid Al Shalawi"
+	picture = "Portrait_Eid_Al_Shalawi.dds"
+	traits = { panzer_leader }
+	skill = 1
 }
 
-create_country_leader = {
-    name = "Abdul-Aziz Al ash-Sheikh" 
-	picture = "Abdulaziz_Al_Sheikh.dds"
-	ideology = salafism
+create_corps_commander = {
+	name = "Mohammed Al Otaibi"
+	picture = "Portrait_Mohammed_Al_Otaibi.dds"
+	traits = { commando }
+	skill = 1
 }
 
-create_country_leader = {
-    name = "Mohammad al-Massari" 
-	picture = "Mohammad_al-Massari.dds"
-	ideology = falangist
+create_corps_commander = {
+	name = "Ahmed Asseri"
+	picture = "Portrait_Ahmed_Asseri.dds"
+	traits = { trickster }
+	skill = 1
 }
 
-create_country_leader = {
-    name = "Ahmed Mohammad al-Rebh"
-	picture = "Ahmed_Alrebh.dds"
-	ideology = social_democrat_ideology
+create_corps_commander = { 
+	name = "Hussein bin Abdullah Alqabil"
+	picture = "Hussein_bin_Abdullah_Alqabil.dds"
+	traits = { trait_engineer }
+	skill = 2
 }
 
-create_country_leader = {
-    name = "Mohammad Fahad Muflih al-Qahtani"
-	picture = "Mohammad_F_Muflih.dds"
-	ideology = centrist
+create_corps_commander = {
+	name = "Khalid bin Bandar Al Saud"
+	picture = "Portrait_Khalid_bin_Bandar_Al_Saud.dds"
+	traits = { desert_fox }
+	skill = 1
 }
-	
-create_country_leader = {
-    name = "Ibrahim al-Mugaiteeb"
-	picture = "Ibrahim_al-Mugaiteeb.dds"
-	ideology = constitutionalist
-}
-	
-create_country_leader = {
-    name = "Khalid Bin Jamal" 
-	picture = "Khalid_Bin_Jamal.dds"
-	ideology = counter_progressive_democrat 
-} 
 
-create_country_leader = {
-    name = "Badr Bin Abdul Aziz" 
-	picture = "Badr_bin_Abdul_Aziz.dds"
-	ideology = libertarian
+create_corps_commander = {
+	name = "Mansour Al Turki"
+	picture = "Portrait_Mansour_Al_Turki.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ali Ben Mohamed Assiri"
+	picture = "Portrait_Ali_Ben_Mohamed_Assiri.dds"
+	traits = { ranger }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Abdullah Al Sultan"
+	picture = "Portrait_Abdullah_Al_Sultan.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 1
 }
