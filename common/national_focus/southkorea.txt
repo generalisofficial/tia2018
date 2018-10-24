@@ -111,7 +111,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 50
-			KOR = { news_event = olympic_games.10 }
 		}
 		
 		ai_will_do = {
@@ -131,7 +130,6 @@ focus_tree = {
 		
 		completion_reward = {
 			PRK = { add_opinion_modifier = { target = KOR modifier = recent_actions_positive } }
-			every_country = { news_event = korea_news.1 }
 		}
 		
 		ai_will_do = {
@@ -233,6 +231,7 @@ focus_tree = {
 		
 		completion_reward = {
 			PRK = { add_opinion_modifier = { target = KOR modifier = state_visit } }
+			every_country = { news_event = korea_news.1 }
 		}
 		
 		ai_will_do = {
@@ -252,6 +251,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 10
+
 		}
 		
 		ai_will_do = {

@@ -81,24 +81,7 @@ country_event = {
 		if = {
 			limit = { original_tag = PRC }
 			
-			if = {
-				limit = {
-					MCU = { is_puppet_of = PRC }
-				}
-				annex_country = {
-					target = MCU
-					transfer_troops = yes
-				}
-			}
-			if = {
-				limit = {
-					HKN = { is_puppet_of = PRC }
-				}
-				annex_country = {
-					target = HKN
-					transfer_troops = yes
-				}
-			}
+			
 			
 			annex_country = {
 				target = CHI
@@ -118,25 +101,7 @@ country_event = {
 				add_ideas = idea_united_nations_security_council_member
 			}
 			
-			if = {
-				limit = {
-					MCU = { is_puppet_of = PRC }
-				}
-				annex_country = {
-					target = MCU
-					transfer_troops = yes
-				}
-			}
-			if = {
-				limit = {
-					HKN = { is_puppet_of = PRC }
-				}
-				annex_country = {
-					target = HKN
-					transfer_troops = yes
-				}
-			}
-			
+	
 			annex_country = {
 				target = PRC
 				transfer_troops = yes
@@ -615,7 +580,7 @@ country_event = {
 	option = {	#Sure.
 		name = taiwan.18.o1
 		
-        CHI = { end_puppet = HKN }		
+        PRC = { end_puppet = HKN }		
 		ai_chance = {
 			factor = 99
 		}

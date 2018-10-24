@@ -90,16 +90,14 @@ country_event = {
     option = {
         name = north_korea.4.o1
         PRK = {
-            create_country_leader = {
-                name = "Pak Yong-Sik"
-                desc = "Pak Yong-Sik"
-                picture = "gfx/leaders/PRK/Pak_Yong_Sik.dds"
-                ideology = maoist
-                traits = {
-                friend_of_china
-                }
-            }
-            add_stability = 0.6
+		kill_country_leader	= yes
+          set_politics = {
+    ruling_party = reactionary
+}
+add_popularity = {
+reactionary = 0.5
+}
+    add_stability = 0.6
         }
     }
 	}
@@ -140,15 +138,22 @@ country_event = {
 	is_triggered_only = yes
     option = {
         name = north_korea.7.o1
+		add_political_power = -70
+		PRK = { 
+		add_stability = 0.01
+		add_political_power = 70
+		}
 		ai_chance = { 
 	factor = 80
 	}
     }
 	option = {
         name = north_korea.7.o2
-	    declare_war_on = { target = PRK type = topple_government }
-		USA = { declare_war_on = { target = PRK type = topple_government } }
-		JAP = { declare_war_on = { target = PRK type = topple_government } }
+	    PRK = { 
+		create_wargoal = {
+		type = annex_everything
+		target = KOR
+		}
 		ai_chance = { 
 	factor = 20
 	}
@@ -179,7 +184,6 @@ country_event = {
    option = {
         name = north_korea.8.o2
 	    PRK = { declare_war_on = { target = KOR type = take_core_state } }
-		PRK = { declare_war_on = { target = JAP type = topple_government } }
 		
 		ai_chance = { 
 	factor = 90
