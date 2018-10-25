@@ -101,28 +101,28 @@ set_politics = {
 
 		parties = {
 			islamist = {
-				popularity = 23
+				popularity = 16.87
 			}
 			nationalist = {
-				popularity = 5
+				popularity = 8.68
 			}
 			market_liberal = {
-				popularity = 6
+				popularity = 19.29
 			}
 			social_liberal = {
-				popularity = 30
+				popularity = 35.84
 			}
-			progressive = {
-				popularity = 3
+			fascist = {
+				popularity = 1.76
 			}
-			communist = {
-				popularity = 6
+			democratic_socialist = {
+				popularity = 4.56
 			}
 			reactionary = {
-				popularity = 5
+				popularity = 1.46
 			}
 			conservative = {
-				popularity = 18
+				popularity = 11.54
 			}
 		}
 		ruling_party = social_liberal
@@ -132,57 +132,51 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Emile Lahoud"
-	picture = "Emile_Lahoud.dds"
-	ideology = autocrat
-}
-
-create_country_leader = {
 	name = "Michel Aoun"
 	picture = "Michel_Aoun.dds"
 	ideology = centrist
 }
 
 create_country_leader = {
+	name = "Saad Hariri"
+	picture = "Saad_Hariri.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Nabih Berri"
+	picture = "Nabih_Berri.dds"
+	ideology = social_conservative 
+}
+
+create_country_leader = {
 	name = "Samir Geagea"
 	picture = "Samir_Geagea.dds"
-	ideology = reactionary_ideology
+	ideology = national_democrat
 }
 
 create_country_leader = {
 	name = "Hassan Nasrallah"
 	picture = "Hassan_Nasrallah.dds"
 	ideology = islamic_democracy
-} 
+}
 
 create_country_leader = {
-	name = "Suleiman Frangieh Jr"
+	name = "Walid Jumblatt"
+	picture = "Walid_Jumblatt.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Samy Gemayel"
+	picture = "Samy_Gemayel.dds"
+	ideology = falangist
+}
+
+create_country_leader = {
+	name = "Suleiman Frangieh Jr."
 	picture = "Suleiman_Frangieh_Jr.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Ali Qanso"
-	picture = "gfx/leaders/SYR/Ali_Qanso.dds"
-	ideology = fascist_ideology
-}
-
-create_country_leader = {
-	name = "Nada Zaarour"
-	picture = "Nada_Zaarour.dds"
-	ideology = green
-}
-
-create_country_leader = {
-	name = "Ghida al-Talal"
-	picture = "Ghida_al-Talal.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Nabih Berri"
-	picture = "Nabih_Berri.dds"
-	ideology = social_democrat_ideology
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
@@ -190,58 +184,56 @@ create_country_leader = {
 	picture = "Hanna_Gharib.dds"
 	ideology = marxist_leninist
 }
-create_country_leader = {
-	name = "Hikmat Eid"
-	picture = "Hikmat_Eid.dds"
-	ideology = social_democrat_ideology
-}
-create_country_leader = {
-	name = "Walid Jumblatt"
-	picture = "Walid_Jumblatt.dds"
-	ideology = democratic_socialist_ideology
-}
+
 create_field_marshal = { 
 	name = "Jean Kahwaji" 
 	picture = "generals/Jean_Kahwaji.dds"
 	traits = { old_guard defensive_doctrine }
 	skill = 2
 }
+
 create_corps_commander = { 
 	name = "Joseph Aoun" 
 	picture = "generals/Joseph_Aoun.dds"
 	traits = { ranger trait_engineer }
 	skill = 1
 }
+
 create_corps_commander = { 
 	name = "Fadi Abu Chakra"
 	picture = "generals/Fadi_Abou_Chakra.dds"
 	traits = { trickster urban_assault_specialist }
 	skill = 1
 }
+
 create_corps_commander = { 
 	name = "Ramzi Abu Hamza"
 	picture = "generals/Ramzi_Abu_Hamza.dds"
 	traits = { commando }
 	skill = 1
 }
+
 create_corps_commander = { 
 	name = "Shawki Al Masri"
 	picture = "generals/Shawki_Al_Masri.dds"
 	traits = { trait_mountaineer }
 	skill = 1
 }
+
 create_corps_commander = { 
 	name = "Hatem Mallak"
 	picture = "generals/Hatem_Mallak.dds"
 	traits = { panzer_leader }
 	skill = 1
 }
+
 create_corps_commander = { 
 	name = "Walid Salman"
 	picture = "generals/Walid_Salman.dds"
 	traits = { bearer_of_artillery }
 	skill = 1
 }
+
 create_navy_leader = {
 	name = "Majed Alwan"
 	picture = "generals/Majed_Alwan.dds"
