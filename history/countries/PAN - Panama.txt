@@ -1,6 +1,6 @@
 ﻿capital = 304
 
-oob = "PAN_2000"
+oob = "PAN_2018"
 
 set_research_slots = 3
 set_convoys = 400
@@ -96,53 +96,37 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
 		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
+			popularity = 39.1
 		}
 		conservative = {
-			popularity = 15	}
-		market_liberal = {
-			popularity = 6
+			popularity = 31.4
 		}
-		social_liberal = {
-			popularity = 40		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 29.5
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = nationalist
+	last_election = "2014.5.4"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Mireya Moscoso"
-	ideology = centrist
-	picture = "Mireya_Moscoso.dds"
+	name = "Juan Carlos Varela"
+	picture = "Juan_Carlos_Varela.dds"
+	ideology = national_democrat
 }
 
-2015.1.1 = {
-	create_country_leader = {
-		name = "Juan Carlos Varela"
-		ideology = social_liberal_ideology
-		picture = "Juan_C_Varela.dds"
-	}
+create_country_leader = {
+	name = "Rómulo Roux"
+	picture = "Romulo_Roux.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Benicio Robinson"
+	picture = "Benicio_Robinson.dds"
+	ideology = social_democrat_ideology
 }
