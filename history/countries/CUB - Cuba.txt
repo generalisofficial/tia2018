@@ -98,40 +98,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 5
-		}
-		reactionary = {
-			popularity = 3
-		}
 		conservative = {
-			popularity = 30.5
-		}
-		market_liberal = {
-			popularity = 2
-		}
-		social_liberal = {
-			popularity = 12
-		}
-		progressive = {
-			popularity = 8
-		}
-		democratic_socialist = {
-			popularity = 1
+			popularity = 0
 		}
 		communist = {
-			popularity = 39.5
+			popularity = 100
 		}
 	}
 	
 	ruling_party = communist
-	last_election = "1997.1.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Raúl Castro"
-	ideology = marxist_leninist
 	picture = "Raul_Castro.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "René Hernández"
+	picture = "Rene_Hernandez.dds"
+	ideology = christian_democrat
 }

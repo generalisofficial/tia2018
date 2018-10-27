@@ -1,22 +1,71 @@
 soviet_union = {
 	
-	the_cities_of_the_revolution = {
+	restore_the_ussr = {
 		visible = {
-			NOT = { has_country_flag = the_cities_of_the_revolution }
+		    original_tag = SOV
+			has_government = communist
+			NOT = { has_cosmetic_tag = SovietUnion }
+		}
+		available = {
+		    OR = {
+		       NOT = { country_exists = EST }
+			   EST = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = LAT }
+			   LAT = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = LIT }
+			   LIT = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = BLR }
+			   BLR = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = UKR }
+			   UKR = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = MDV }
+			   MDV = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = GEO }
+			   GEO = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = ARM }
+			   ARM = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = AZR }
+			   AZR = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = KAZ }
+			   KAZ = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = UZB }
+			   UZB = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = TRM }
+			   TRM = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = TJI }
+			   TJI = { is_subject_of = ROOT }
+			}
+			OR = {
+		       NOT = { country_exists = KYR }
+			   KYR = { is_subject_of = ROOT }
+			}
 		}
 		complete_effect = {
-			set_country_flag = the_cities_of_the_revolution
-			add_popularity = { ideology = communist popularity = 0.05 }
-			#Leningrad
-			set_province_name = {
-				id = 3151
-				name = "Leningrad"
-			}
-			#Stalingrad
-			set_province_name = {
-				id = 3529
-				name = "Stalingrad"
-			}
+			set_cosmetic_tag = SovietUnion
 		}
 		
 		icon = communism
