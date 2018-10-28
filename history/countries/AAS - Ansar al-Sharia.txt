@@ -1,14 +1,17 @@
-﻿capital = 293
+﻿capital = 1
 
-oob = "HOU_2018"
+oob = "AAS_2018"
 
-set_research_slots = 2
-set_war_support = 0.8
+set_research_slots = 1
+set_convoys = 1
+set_stability = 0.2
+
+set_war_support = 1.0
 
 set_country_flag = country_language_arabic
 
 set_technology = {
-    infantry_weapons = 1
+	infantry_weapons = 1
 	infantry_weapons1 = 1
 	infantry_weapons2 = 1
 	improved_infantry_weapons = 1
@@ -77,29 +80,14 @@ set_technology = {
 	excavation1 = 1
 }
 
-add_opinion_modifier = {
-	target = ISR
-	modifier = death_to_israel
-}
-
 set_country_flag = dominant_religion_islam
-set_country_flag = shia_islam
-
-add_ideas = {
-	population_growth_rapid
-	service_by_requirement
-    mostly_nationalized
-    isolationism
-}
+set_country_flag = sunni_islam
 
 set_politics = {
 
 	parties = {
 		islamist = {
 			popularity = 100
-		}
-		nationalist = {
-			popularity = 0
 		}
 	}
 	
@@ -109,19 +97,42 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	population_growth_rapid
+	service_by_requirement
+	mostly_nationalized
+	isolationism
+}
+
+complete_national_focus = generic_ideology_focus
+complete_national_focus = generic_national_strength
+complete_national_focus = generic_path_of_order
+complete_national_focus = generic_ideology_islamist
+complete_national_focus = generic_shariah_lawcode
+complete_national_focus = generic_jihad
+remove_ideas = idea_focus_generic_path_of_allah
+remove_ideas = idea_focus_generic_path_of_order
+remove_ideas = idea_focus_generic_national_strength
+
 declare_war_on = {
 	target = YEM
 	type = annex_everything
 }
 
-create_country_leader = {
-	name = "Abdul-Malik Badreddin al-Houthi"
-	picture = "gfx/leaders/YEM/Abdul_Malik_Badreddin_al_Houthi.dds"
-	ideology = islamic_democracy
+declare_war_on = {
+	target = HOU
+	type = annex_everything
 }
 
 create_country_leader = {
-	name = "Sadeq Ameen Abu Rass"
-	picture = "Sadeq_Ameen_Abu_Rass.dds"
-	ideology = arab_nationalist
+	name = "Qasim al-Raymi"
+	picture = "Qasim_al_Raymi.dds"
+	ideology = salafist
+}
+
+
+create_corps_commander = {
+	name = "Abdulkadir Mohamed Abdulkadir"
+	picture = "Abdulkadir_Mohamed_Abdulkadir.dds"	
+	skill = 2
 }
