@@ -1,6 +1,6 @@
 ﻿capital = 316
 
-oob = "COS_2000"
+oob = "COS_2018"
 
 set_research_slots = 3
 set_convoys = 140
@@ -96,53 +96,35 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
 		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 35
-		}
-		conservative = {
-			popularity = 2
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 20
-		}
-		social_democrat = {
-			popularity = 5
+			popularity = 39.41
 		}
 		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 60.59
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "1997.1.1"
+	ruling_party = progressive
+	last_election = "2014.4.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 create_country_leader = {
-	name = "Miguel Ángel Rodríguez Echeverría"
-	ideology = reactionary_ideology
-	picture = "Miguel_Echevarria.dds"
+	name = "Luis Guillermo Solís"
+	picture = "Luis_Guillermo_Solis.dds"
+	ideology = progressive_ideology
 }
-2015.1.1 = {
-	create_country_leader = {
-		name = "Luis Guillermo Solís"
-		ideology = reactionary_ideology
-		picture = "Luis_Solis.dds"
-	}
+
+create_country_leader = {
+	name = "Fabricio Alvarado Muñoz"
+	picture = "Fabricio_Alvarado_Munoz.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Jorge Pattoni Sáenz"
+	picture = "Jorge_Pattoni_Saenz.dds"
+	ideology = social_democrat_ideology
 }
 
