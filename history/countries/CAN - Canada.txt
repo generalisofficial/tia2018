@@ -1,6 +1,6 @@
 ﻿capital = 276
 
-oob = "CAN_2000"
+oob = "CAN_2018"
 
 set_research_slots = 5
 set_convoys = 400
@@ -156,62 +156,44 @@ add_opinion_modifier = {
 }
 
 create_country_leader = {
-	name = "John McGuire"
-	picture = "John_McGuire.dds"
-	ideology = salafist
-}
-
-create_country_leader = {
-	name = "Andrew I of Windsor"
-	picture = "Andrew.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Stockwell Day" #Conservative
-	picture = "Stockwell_Day.dds"
-	ideology = fiscal_conservative
-}
-
-create_country_leader = {
-	name = "Jean Chretien" #Liberal
-	picture = "Jean_Chretien.dds"
+	name = "Justin Trudeau"
+	picture = "Justin_Trudeau.dds"
 	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
-	name = "Joan Russow" #Green
-	picture = "Joan_Russow.dds"
-	ideology = green
+	name = "Andrew Scheer"
+	picture = "Andrew_Scheer.dds"
+	ideology = social_conservative
 }
 
 create_country_leader = {
-	name = "Alexa McDonough" #NPD
-	picture = "Alexa_McDonough.dds"
+	name = "Jagmeet Singh"
+	picture = "Jagmeet_Singh.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Barry Weisleder" 
-	picture = "Barry_Weisleder.dds"
-	ideology = democratic_socialist_ideology
+	name = "Elizabeth May"
+	picture = "Elizabeth_May.dds"
+	ideology = green
 }
 
 create_country_leader = {
-	name = "Ricardo Duchesne" 
-	picture = "Ricardo_Duchesne.dds"
-	ideology = national_democrat
+	name = "Maxime Bernier"
+	picture = "Maxime_Bernier.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Don Andrews" 
-	picture = "Don_Andrews.dds"
-	ideology = national_socialist
+	name = "Tim Moen"
+	picture = "Tim_Moen.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Miguel Figueroa" 
-	picture = "Miguel_Figueroa.dds"
+	name = "Elizabeth Rowley"
+	picture = "Elizabeth_Rowley.dds"
 	ideology = marxist_leninist
 }
 
@@ -239,50 +221,345 @@ create_corps_commander = {
 	skill = 1
 }
 
-2003.1.1 = {
-	set_party_name = {
-		ideology = conservative
-		long_name = CAN_conservative_party_con_long
-		name = CAN_conservative_party_con
-	}
+create_field_marshal = {
+	name = "Jonathan Vance"
+	picture = "Portrait_Jonathan_Vance.dds"
+	traits = { old_guard inspirational_leader }
+	skill = 2
 }
 
-2015.11.1 = {
-	set_politics = {
-		parties = {
-			fascist = { popularity = 0.1 }
-			nationalist = { popularity = 0.1 }
-			social_liberal = { popularity = 39.7 }
-			conservative = { popularity = 33.3 }
-			market_liberal = { popularity = 1 }
-			social_democrat = { popularity = 20.7 }
-			progressive = { popularity = 4.8 }
-			communist = { popularity = 0.3 }
-		}
-		last_election = "2015.10.19"
-		elections_allowed = yes
-	}
+create_corps_commander = {
+	name = "Dean Milner"
+	picture = "Portrait_Dean_Milner.dds"
+	traits = { panzer_leader }
+	skill = 1
 }
 
-2016.1.1 = {
-	create_country_leader = {
-		name = "Justin Trudeau"
-		picture = "Justin_Trudeau.dds"
-		ideology = centrist
-	}
-	create_country_leader = {
-		name = "Stephen Harper"
-		picture = "Stephen_Harper.dds"
-		ideology = fiscal_conservative
-	}
-	create_country_leader = {
-		name = "Elizabeth May"
-		picture = "Elizabeth_May.dds"
-		ideology = green
-	}
-	create_country_leader = {
-		name = "Thomas Mulcair"
-		picture = "Thomas_Mulcair.dds"
-		ideology = social_democrat_ideology
-	}
+create_corps_commander = {
+	name = "Simon Hetherington"
+	picture = "Portrait_Simon_Hetherington.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Omer Lavoie"
+	picture = "Portrait_Omer_Lavoie.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "C.J. Turenne"
+	picture = "Portrait_C_J_Turenne.dds"
+	traits = { winter_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Eric Landry"
+	picture = "Portrait_Eric_Landry.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stéphan Joudry"
+	picture = "Portrait_Stephan_Joudrey.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "John Cochrane"
+	picture = "Portrait_John_Cochrane.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "John Hlibchuk"
+	picture = "Portrait_Hlibchuk.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sylvie Pelletier"
+	picture = "Portrait_Sylvie_Pelletier.dds"
+	traits = { bearer_of_artillery }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wajahat Ali Beg"
+	picture = "Portrait_Wajahat_Ali_Beg.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jonathan Chouinard"
+	picture = "Portrait_Jonathan_Chouinard.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Bill Fletcher"
+	picture = "Portrait_Bill_Fletcher.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Luc Girouard"
+	picture = "Portrait_Luc_Girouard.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Geoff Abthorpe"
+	picture = "Portrait_Geoff_Abthorpe.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Eppo van Weelderen"
+	picture = "Portrait_Eppo_van_Weelderen.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Josée Robidoux"
+	picture = "Portrait_Josee_Robidoux.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stephen Bowes"
+	picture = "Portrait_Stephen_Bowes.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Michael Hood"
+	picture = "Portrait_Michael_Hood.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Michel Rouleau"
+	picture = "Portrait_Michel_Rouleau.dds"
+	traits = { naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Denis Thompson"
+	picture = "Portrait_Denis_Thompson.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stephen Hunter"
+	picture = "Portrait_Steven_Hunter.dds"
+	traits = { trait_mountaineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Blaise Cathcart"
+	picture = "Portrait_Blaise_Cathcart.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Colleen Halpin"
+	picture = "Portrait_Colleen_Halpin.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Alan Guimond"
+	picture = "Portrait_Alan_Guimond.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Gérard Poitras"
+	picture = "Portrait_Gerard_Poitras.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Charles Lamarre"
+	picture = "Portrait_C_A_Lamarre.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "H.C. MacKay"
+	picture = "Portrait_H_C_MacKay.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jean-Robert Bernier"
+	picture = "Portrait_Jean_Robert_Bernier.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pierre St-Amand"
+	picture = "Portrait_Pierre_St-Amand.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hercule Gosselin"
+	picture = "Portrait_Hercule_Gosselin.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Terry Garand"
+	picture = "Portrait_Terry_Garand.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stephen Cadden"
+	picture = "Portrait_Stephen_Cadden.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stuart Hartnell"
+	picture = "Portrait_Stuart_Hartnell.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jennie Carignan"
+	picture = "Portrait_Jennie_Carignan.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Derek Macaulay"
+	picture = "Portrait_Derek_Macauley.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Bill Truelove"
+	picture = "Portrait_Bill_Truelove.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Ron Lloyd"
+	picture = "Portrait_Ron_Lloyd.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Art McDonald"
+	picture = "Portrait_Art_MacDonald.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jeff Zwick"
+	picture = "Portrait_Jeff_Zwick.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Michel Vigneault"
+	picture = "Portrait_Michel_Vigneault.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Marta Mulkins"
+	picture = "Portrait_M_B_Mulkins.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "John Newton"
+	picture = "Portrait_John_Newton.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Craig Baines"
+	picture = "Portrait_Craig_Baines.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Scott Bishop"
+	picture = "Portrait_Scott_Bishop.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Gilles Couturier"
+	picture = "Portrait_Gilles_Couturier.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "David Arsenault"
+	picture = "Portrait_David_Arsenault.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Gilles Grégoire"
+	picture = "Portrait_Gilles_Gregoire.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Steven Waddell"
+	picture = "Portrait_Steven_Waddell.dds"
+	traits = {  }
+	skill = 1
 }

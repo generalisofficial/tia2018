@@ -1,6 +1,6 @@
 ﻿capital = 312
 
-oob = "HON_2000"
+oob = "HON_2018"
 
 set_research_slots = 3
 set_convoys = 200
@@ -96,88 +96,43 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 35
-		}
 		conservative = {
-			popularity = 2
+			popularity = 42.95
 		}
 		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 20
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 15.63
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 41.42
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "1997.1.1"
+	ruling_party = conservative
+	last_election = "2017.11.26"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Carlos Flores Facussé"
-	ideology = reactionary_ideology
-	picture = "Carlos_Flores.dds"
+	name = "Juan Orlando Hernández"
+	picture = "Juan_Orlando_Hernandez.dds"
+	ideology = national_conservative
 }
 
 create_country_leader = {
 	name = "Manuel Zelaya"
-	ideology = social_liberal_ideology 
 	picture = "Manuel_Zelaya.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Ceaser Ham"
-	ideology = democratic_socialist_ideology 
-	picture = "Ceaser_Ham.dds"
+	name = "Luis Orlando Zelaya Medrano"
+	picture = "Luis_Orlando_Zelaya_Medrano.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Guillermo Enrique Valle"
-	ideology = social_democrat_ideology  
-	picture = "Guillermo_Enrique_Valle.dds"
-}
-
-create_country_leader = {
-	name = "Felicito Avila"
-	ideology = christian_democrat  
-	picture = "Guillermo_Enrique_Valle.dds"
-}
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Juan Orlando Hernández"
-		ideology = reactionary_ideology
-		picture = "Juan_Orlando.dds"
-	}
-	create_country_leader = {
-		name = "Xiomara Castro"
-		ideology = democratic_socialist_ideology
-		picture = "Xiomara_Castro.dds"
-	}
-	create_country_leader = {
-		name = "Mauricio Villeda"
-		ideology = centrist 
-		picture = "Mauricio_Villeda.dds"
-	}
+	name = "Guillermo Enrique Valle M."
+	picture = "Guillermo_Enrique_Valle_M.dds"
+	ideology = social_democrat_ideology
 }
