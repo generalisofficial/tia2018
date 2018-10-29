@@ -1,6 +1,6 @@
 ﻿capital = 314
 
-oob = "ELS_2000"
+oob = "ELS_2018"
 
 set_research_slots = 3
 set_convoys = 120
@@ -95,69 +95,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 20
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 35
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 49.89
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 50.11
 		}
 	}
 	
 	ruling_party = social_liberal
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "2014.2.3"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Francisco Flores"
-	ideology = centrist
-	picture = "Francisco_Flores.dds"
-}
-
-create_country_leader = {
-	name = "Mauricio Funes"
+	name = "Salvador Sánchez Cerén"
+	picture = "Salvador_Sanchez_Ceren.dds"
 	ideology = democratic_socialist_ideology
-	picture = "Mauricio_Funes.dds"
 }
 
 create_country_leader = {
-	name = "Rodolfo Parker"
-	ideology = christian_democrat 
-	picture = "Rodolfo_Parker.dds"
+	name = "Carlos Calleja"
+	picture = "Carlos_Calleja.dds"
+	ideology = fiscal_conservative
 }
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Salvador Sánchez Cerén"
-		ideology = social_liberal_ideology
-		picture = "Salvador_Sanchez.dds"
-	}
-}
-
-
-
