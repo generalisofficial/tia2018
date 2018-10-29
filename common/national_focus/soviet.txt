@@ -1037,14 +1037,14 @@ focus_tree = {
 	
     focus = {
 		id = SOV_the_war_in_donbass
-		icon = novoconflict
+		icon = DPRoconflict
 		x = 43
 		y = 0
 		cost = 1
 		
 	    available = {
-		    UKR = { has_war_with = NOV }
-		    NOV = { has_war_with = UKR}
+		    UKR = { has_war_with = DPR }
+		    DPR = { has_war_with = UKR}
 		    SOV = { has_war = no }
 		}
 		

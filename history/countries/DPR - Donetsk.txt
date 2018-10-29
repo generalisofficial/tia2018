@@ -1,6 +1,6 @@
 ﻿capital = 227
 
-oob = "NOV_2018"
+oob = "DPR_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -95,7 +95,7 @@ add_ideas = {
 	mostly_nationalized
 	service_by_requirement
 	non_member_state
-        idea_SOV_russian_military_support
+    idea_SOV_russian_military_support
 }
 
 give_military_access = SOV
@@ -104,22 +104,10 @@ set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 15
+			popularity = 21.07
 		}
 		reactionary = {
-			popularity = 40
-		}
-		conservative = {
-			popularity = 15
-		}
-		social_liberal = {
-			popularity = 5
-		}
-		market_liberal = {
-			popularity = 5
-		}
-		social_democrat = {
-			popularity = 20
+			popularity = 78.93
 		}
 	}
 	
@@ -133,7 +121,12 @@ create_country_leader = {
 	name = "Aleksandar Zakharchenko"
 	picture = "Aleksandar_Zakharchenko.dds"
 	ideology = reactionary_ideology
-	traits = { defensive_strategist }
+}
+
+create_country_leader = {
+	name = "Yuri Sivokonenko"
+	picture = "Yuri_Sivokonenko.dds"
+	ideology = national_democrat
 }
 
 create_corps_commander = {

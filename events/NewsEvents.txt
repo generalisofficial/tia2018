@@ -452,7 +452,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = UKR
-				original_tag = NOV
+				original_tag = DPR
 			}
 		}
 	}
@@ -466,7 +466,7 @@ news_event = {
 				has_idea = idea_eu_member
 			}
 			NOT = { original_tag = UKR }
-			NOT = { original_tag = NOV }
+			NOT = { original_tag = DPR }
 		}
 	}
 	
@@ -476,7 +476,7 @@ news_event = {
 			NOT = { original_tag = UKR }
 			NOT = { original_tag = BLR }
 			NOT = { original_tag = SOV }
-			NOT = { original_tag = NOV }
+			NOT = { original_tag = DPR }
 			NOT = { has_idea = idea_eu_member }
 		}
 	}
@@ -524,7 +524,7 @@ news_event = {
 	}
 }
 
-#Novorossiya refuses to uphold Minsk Agreement
+#DPRorossiya refuses to uphold Minsk Agreement
 news_event = {
 	id = news.69
 	title = news.69.t
@@ -538,7 +538,7 @@ news_event = {
 		name = news.69.o1
 		trigger = {
 			OR = {
-				original_tag = NOV
+				original_tag = DPR
 				has_war_with = UKR
 			}
 		}
@@ -549,7 +549,7 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = UKR
-				has_war_with = NOV
+				has_war_with = DPR
 			}
 			NOT = { has_war_with = UKR }
 		}
@@ -563,7 +563,7 @@ news_event = {
 				is_in_faction_with = SOV
 			}
 			NOT = { has_war_with = UKR }
-			NOT = { has_war_with = NOV }
+			NOT = { has_war_with = DPR }
 		}
 	}
 	
@@ -571,11 +571,11 @@ news_event = {
 		name = news.69.o4
 		trigger = {
 			NOT = { original_tag = UKR }
-			NOT = { original_tag = NOV }
+			NOT = { original_tag = DPR }
 			NOT = { original_tag = SOV }
 			NOT = { is_in_faction_with = SOV }
 			NOT = { has_war_with = UKR }
-			NOT = { has_war_with = NOV }
+			NOT = { has_war_with = DPR }
 		}
 	}
 }
