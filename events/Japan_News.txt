@@ -776,7 +776,7 @@ news_event = {
 		name = news.89.o1
 		trigger = { 
 			NOT = { has_war_with = JAP } 
-			NOT = { has_idea = idea_focus_generic_jihad }
+			NOT = { has_idea = al_qaeda_member }
 		}
 	}
 	
@@ -785,7 +785,7 @@ news_event = {
 		trigger = {
 			OR = {
 				has_war_with = JAP 
-				has_idea = idea_focus_generic_jihad
+				has_idea = al_qaeda_member
 			}
 		}
 	}

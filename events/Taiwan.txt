@@ -92,8 +92,8 @@ country_event = {
 			limit = { original_tag = CHI }
 			
 			if = {
-				limit = { has_idea = partially_recognized_state }
-				remove_ideas = partially_recognized_state
+				limit = { has_idea = non_member_state }
+				remove_ideas = non_member_state
 			}
 			
 			if = {

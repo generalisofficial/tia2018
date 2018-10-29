@@ -377,8 +377,8 @@ news_event = {
 		trigger = {
 			NOT = { has_idea = idea_united_nations_security_council_member }
 			NOT = { has_idea = idea_united_nations_NP_security_council_member }
-			NOT = { has_idea = partially_recognized_state }
-			NOT = { has_idea = idea_focus_generic_jihad }
+			NOT = { has_idea = non_member_state }
+			NOT = { has_idea = al_qaeda_member }
 		}
 	}
 	option = {
@@ -387,8 +387,8 @@ news_event = {
 			NOT = { has_idea = idea_united_nations_security_council_member }
 			NOT = { has_idea = idea_united_nations_NP_security_council_member }
 			OR = {
-				has_idea = partially_recognized_state
-				has_idea = idea_focus_generic_jihad
+				has_idea = non_member_state
+				has_idea = al_qaeda_member
 			}
 		}
 	}
