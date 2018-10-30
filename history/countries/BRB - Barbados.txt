@@ -1,6 +1,6 @@
 ﻿capital = 692
 
-oob = "BRB_2000"
+oob = "BRB_2018"
 
 set_research_slots = 2
 set_convoys = 40
@@ -94,39 +94,28 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		conservative = { popularity = 1 }
-		social_democrat = { popularity = 36 }
-		democratic_socialist = { popularity = 63 }
+		social_democrat = { 
+		    popularity = 74.6
+		}
+		democratic_socialist = { 
+		    popularity = 25.4
+		}
 	}
 	
-	ruling_party = democratic_socialist
+	ruling_party = social_democrat
 	last_election = "1999.1.20"
 	election_frequency = 52
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Freundel Stuart"
-	picture = "Freundel_Stuart.dds"
+	name = "Mia Mottley"
+	picture = "Mia_Mottley.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Owen Seymoure Arthur"
-	picture = "Owen_Seymoure_Arthur.dds"
+	name = "Freundel Stuart"
+	picture = "Freundel_Stuart.dds"
 	ideology = democratic_socialist_ideology
-}
-
-2016.1.1 = {
-	set_politics = {
-		parties = {
-			conservative = { popularity = 0.5 }
-			social_democrat = { popularity = 51.5 }
-			democratic_socialist = { popularity = 48 }
-		}
-		ruling_party = social_democrat
-		last_election = "2013.2.21"
-		election_frequency = 52
-		elections_allowed = yes
-	}
 }
