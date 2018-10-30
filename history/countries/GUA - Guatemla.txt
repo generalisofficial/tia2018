@@ -1,7 +1,6 @@
 ﻿capital = 313
 
-
-oob = "GUA_2000"
+oob = "GUA_2018"
 
 set_research_slots = 3
 set_convoys = 100
@@ -97,86 +96,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 30
-		}
-		conservative = {
-			popularity = 2
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
+			popularity = 67.44
 		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 32.56
 		}
 	}
 	
 	ruling_party = reactionary
-	last_election = "1997.1.1"
+	last_election = "2015.9.6"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Alonso Portillo"
+	name = "Jimmy Morales"
+	picture = "Jimmy_Morales.dds"
 	ideology = reactionary_ideology
-	picture = "Alonso_Portillo.dds"
 }
+
 create_country_leader = {
-	name = "Effrain Rios Montt"
-	ideology = fascist_ideology 
-	picture = "Effrain_Rios_Montt.dds"
-}
-create_country_leader = {
-	name = "Oscar Berger"
-	ideology = national_conservative
-	picture = "Oscar_Berger.dds"
-}
-create_country_leader = {
-	name = "Alvaro Colom"
+	name = "Sandra Torres"
+	picture = "Sandra_Torres.dds"
 	ideology = social_democrat_ideology
-	picture = "Alvaro_Colom.dds"
 }
-create_country_leader = {
-	name = "Otto Perez Molina"
-	ideology = libertarian
-	picture = "Otto_Perez_Molina.dds"
-}
-create_country_leader = {
-	name = "Anibal Garcia"
-	ideology = progressive_ideology 
-	picture = "Anibal_Garcia.dds"
-}
-create_country_leader = {
-	name = "Rigoberta Menchu"
-	ideology = democratic_socialist_ideology  
-	picture = "Rigoberta_Menchu.dds"
-}
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Jimmy Morales"
-		ideology = reactionary_ideology
-		picture = "Jimmy_Morales.dds"
-	}
-}
-
-

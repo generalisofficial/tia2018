@@ -1,6 +1,6 @@
 ﻿capital = 317
 
-oob = "NIC_2000"
+oob = "NIC_2018"
 
 set_research_slots = 2
 set_convoys = 65
@@ -96,100 +96,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 30		}
-		conservative = {
-			popularity = 2	}
 		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 27.56
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
-		}
-	}
-	
-	ruling_party = reactionary
-	last_election = "1997.1.1"
-	election_frequency = 48
-	elections_allowed = yes
-}
-
-create_country_leader = {
-	name = "Arnoldo Alemán"
-	ideology = reactionary_ideology
-	picture = "Arnoldo_Aleman.dds"
-}
-
-create_country_leader = {
-	name = "Daniel Ortega"
-	ideology = democratic_socialist_ideology
-	picture = "Daniel_Ortega.dds"
-}
-
-create_country_leader = {
-	name = "Fabio Gadea Mantilla"
-	ideology = centrist 
-	picture = "Fabio_Gadea_Mantilla.dds"
-}
-
-
-2011.11.7 = {
-set_politics = {
-
-	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 10		}
-		conservative = {
-			popularity = 2	}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 30
-		}
-		communist = {
-			popularity = 10
+			popularity = 72.44
 		}
 	}
 	
 	ruling_party = democratic_socialist
-	last_election = "2011.11.6"
-	election_frequency = 48
+	last_election = "2016.11.6"
+	election_frequency = 60
 	elections_allowed = yes
 }
+
+create_country_leader = {
+	name = "Daniel Ortega"
+	picture = "Daniel_Ortega.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Arnoldo Alemán"
+	picture = "Arnoldo_Aleman.dds"
+	ideology = libertarian
 }
