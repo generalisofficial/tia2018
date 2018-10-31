@@ -2,27 +2,27 @@
 state={
 	id=54
 	name="STATE_54"
-	manpower = 3508159
-
-	state_category = state_level_10
-	
-	resources = {
-		steel = 10
+	resources={
+		steel=10.000
 	}
 
 	history={
 		owner = GER
-		buildings = {
-			infrastructure = 7
-			industrial_complex = 1
-			air_base = 3
-		}
 		add_core_of = GER
-		add_core_of = BAV
-		victory_points = { 11544 10 }	#Nuremberg
+		victory_points = {
+			11531 5 
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+
 	}
 
 	provinces={
-		561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116 
+		11531
 	}
+	manpower=996651
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

@@ -1,9 +1,7 @@
+
 state={
 	id=685
 	name="STATE_685"
-	manpower = 319467
-	
-	state_category = state_level_1
 
 	history={
 		owner = PAN
@@ -16,10 +14,18 @@ state={
 			air_base = 6
 			7617 = {
 				naval_base = 3
+
 			}
+
 		}
 		add_core_of = PAN
+
 	}
-	
-	provinces={ 7617 }
+
+	provinces={
+		4095 7617 
+	}
+	manpower=319467
+	buildings_max_level_factor=1.000
+	state_category=state_level_1
 }

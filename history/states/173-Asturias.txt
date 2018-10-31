@@ -1,13 +1,9 @@
 
 state={
 	id=173
-	name="STATE_173" # Granada
-	manpower = 3662292
-	
-	state_category = state_level_8
-	
-	resources = {
-		steel = 2
+	name="STATE_173"
+	resources={
+		steel=2.000
 	}
 
 	history={
@@ -23,15 +19,22 @@ state={
 			air_base = 4
 			9979 = {
 				naval_base = 2
+
 			}
 			747 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = SPR
+
 	}
 
 	provinces={
-		747 1090 1176 1192 4065 4095 7068 7153 7196 7198 9979 10009 10063 11956 12038 12083 
+		747 1090 1176 1192 4065 7068 7153 7198 9979 10009 10063 11956 12038 12083 
 	}
+	manpower=3662292
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

@@ -2,26 +2,32 @@
 state={
 	id=451
 	name="STATE_451"
-	manpower = 645628
-	
-	state_category = state_level_5
-	
+
 	history={
 		owner = LBA
-		
-		victory_points = { 1130 3 }
-		victory_points = { 7082 3 }
+		victory_points = {
+			1130 3 
+		}
+		victory_points = {
+			7082 3 
+		}
 		buildings = {
 			infrastructure = 2
 			air_base = 1
 			1130 = {
 				naval_base = 5
+
 			}
+
 		}
 		add_core_of = LBA
+
 	}
 
 	provinces={
-		1130 1204 4136 4151 7082 9992 10120 12094 
+		1060 1130 4060 4136 7082 7206 9992 10120 11951 12025 13078 
 	}
+	manpower=645628
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

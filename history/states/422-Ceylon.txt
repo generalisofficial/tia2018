@@ -1,35 +1,47 @@
-state=
-{
+
+state={
 	id=422
 	name="STATE_422"
-	manpower = 22053400
-	
-	state_category = state_level_12
-
 	resources={
-		rubber = 28
+		rubber=28.000
 	}
 
 	history={
 		owner = SRI
 		add_core_of = SRI
-		
-		victory_points = { 10201 1 }
-		victory_points = { 7344 3 }
-		
+		victory_points = {
+			10201 1 
+		}
+		victory_points = {
+			7344 3 
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 6
 			arms_factory = 2
 			dockyard = 1
 			air_base = 3
-			10201 = { naval_base = 3 }
-			7344 = { naval_base = 7 }
-			7260 = { naval_base = 3 }
+			10201 = {
+				naval_base = 3
+
+			}
+			7344 = {
+				naval_base = 7
+
+			}
+			7260 = {
+				naval_base = 3
+
+			}
+
 		}
+
 	}
-	
+
 	provinces={
-		1213 4219 7260 7344 10201 10229 10287 12258 
+		1213 1289 4219 7260 7344 10197 10201 10229 10287 12258 13488 
 	}
+	manpower=22053400
+	buildings_max_level_factor=1.000
+	state_category=state_level_12
 }

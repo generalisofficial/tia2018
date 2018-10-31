@@ -2,9 +2,6 @@
 state={
 	id=168
 	name="STATE_168"
-	manpower = 1007605
-	
-	state_category = state_level_7
 
 	history={
 		owner = SPR
@@ -16,12 +13,18 @@ state={
 			air_base = 2
 			10024 = {
 				naval_base = 8
+
 			}
+
 		}
 		add_core_of = SPR
+
 	}
 
 	provinces={
-		832 1093 3835 4195 7111 9903 10024 10109 11807 11884 
+		832 1093 3835 7111 9903 10024 10109 11884 
 	}
+	manpower=1007605
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
