@@ -56,7 +56,7 @@ focus_tree = {
 		id = SOV_vladimir_putin
 		icon = putin
 		x = 20
-		y = 2
+		y = 1
 		cost = 0
 		prerequisite = {
 		focus = SOV_the_russian_presidential_election
@@ -85,7 +85,7 @@ focus_tree = {
 		id = SOV_pavel_grudinin
 		icon = grudinin
 		x = 0
-		y = 2
+		y = 1
 		cost = 0
 		prerequisite = {
 		focus = SOV_the_russian_presidential_election
@@ -114,7 +114,7 @@ focus_tree = {
 		id = SOV_grigory_yavlinsky
 		icon = yavlinsky
 		x = 10
-		y = 2
+		y = 1
 		cost = 0
 		prerequisite = {
 		focus = SOV_the_russian_presidential_election
@@ -165,12 +165,12 @@ focus_tree = {
 		focus = {
 		id = SOV_the_russian_economy
 		icon = align_to_europe
-		x = 6
+		x = 5
 		y = 3
 		cost = 10
 		
 		prerequisite = {
-		    focus = SOV_grigory_yavlinsky
+		    focus = SOV_begin_the_reform
 		}
 		
 		available = {}
@@ -276,7 +276,7 @@ focus_tree = {
 		id = SOV_vladimir_zhirinovsky
 		icon = zhirinovsky
 		x = 30
-		y = 2
+		y = 1
 		cost = 0
 		prerequisite = {
 		focus = SOV_the_russian_presidential_election
@@ -1061,7 +1061,7 @@ focus_tree = {
 		id = SOV_begin_the_reform
 		icon = attack_fascism
         x = 10
-		y = 3
+		y = 2
 		cost = 10
 		
 		
@@ -1087,7 +1087,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_crack_down_the_oligarchy
+		id = SOV_crack_down_the_oilgarchy
 		icon = destroy_society
 		x = 13
 		y = 4
