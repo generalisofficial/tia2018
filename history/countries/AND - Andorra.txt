@@ -87,14 +87,18 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		conservative = { popularity = 30 }
-		market_liberal = { popularity = 25 }
-		reactionary = { popularity = 20 }
-		social_liberal = { popularity = 10 }
-		social_democrat = { popularity = 10 }
-		progressive = { popularity = 2 }
-		democratic_socialist = { popularity = 2 }
-		communist = { popularity = 1 }
+		conservative = { 
+		    popularity = 37.03
+		}
+		market_liberal = { 
+		    popularity = 27.68
+		}
+		social_democrat = { 
+		    popularity = 23.53
+		}
+		progressive = { 
+		    popularity = 11.74
+		}
 	}
 	ruling_party = conservative
 	last_election = "2015.3.1"
@@ -106,4 +110,22 @@ create_country_leader = {
 	name = "Antoni Martí"
 	picture = "Antoni_Marti.dds"
 	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Josep Pintat Forné"
+	picture = "Josep_Pintat_Forne.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Pere López Agras"
+	picture = "Pere_Lopez_Agras.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Víctor Naudi Zamora"
+	picture = "Victor_Naudi_Zamora.dds"
+	ideology = progressive_ideology
 }

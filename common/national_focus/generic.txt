@@ -1418,15 +1418,7 @@ focus_tree = {
 			if = {
 				limit = { 
 					NOT = { has_idea = neutrality_idea }
-					NOT = { has_idea = austrian_neutrality }
 				}
-				add_ideas = neutrality_idea
-			}
-			if = {	#Pretty much specific to Austria.
-				limit = {
-					has_idea = austrian_neutrality
-				}
-				remove_ideas = austrian_neutrality
 				add_ideas = neutrality_idea
 			}
 		}
@@ -1455,17 +1447,11 @@ focus_tree = {
 			if = {
 				limit = { 
 					NOT = { has_idea = neutrality_idea } 
-					NOT = { has_idea = austrian_neutrality } 
 				}
 				add_political_power = 25
 				army_experience = 10
 				navy_experience = 10
 				air_experience = 10
-			}
-			if = {
-				limit = { has_idea = austrian_neutrality }
-				remove_ideas = austrian_neutrality
-				add_political_power = -20
 			}
 			if = {
 				limit = { has_idea = neutrality_idea }
