@@ -1,6 +1,6 @@
 ﻿capital = 816
 
-oob = "MAY_2000"
+oob = "MAY_2018"
 
 set_research_slots = 3
 set_convoys = 350
@@ -101,40 +101,73 @@ set_country_flag = sunni_islam
 set_politics = {
 	parties = {
 		islamist = {
-		popularity = 5
+		    popularity = 8.11
 		}
 		nationalist = {
-		popularity = 0
+		    popularity = 5.86
 		}
 		reactionary = {
-		popularity = 5
+		    popularity = 24.32
 		}
 		conservative = {
-		popularity = 45
-		}
-		market_liberal = {
-		popularity = 10
+		    popularity = 15.32
 		}
 		social_liberal = {
-		popularity = 30
+		    popularity = 4.95
 		}
 		social_democrat = {
-		popularity = 5
+		    popularity = 18.92
 		}
 		progressive = {
-		popularity = 0
-		}
-		democratic_socialist = {
-		popularity = 0
-		}
-		communist = {
-		popularity = 0
+		    popularity = 22.52
 		}
 	}
-	ruling_party = conservative
-	last_election = "1999.11.29"
-	election_frequency = 48
+	ruling_party = reactionary
+	last_election = "2013.5.9"
+	election_frequency = 60
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Mahathir Mohamad"
+	picture = "Mahathir_Mohamad.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Anwar Ibrahim"
+	picture = "Anwar_Ibrahim.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Najib Razak"
+	picture = "Najib_Razak.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Mohamad Sabu"
+	picture = "Mohamad_Sabu.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Abdul Hadi Awang"
+	picture = "Abdul_Hadi_Awang.dds"
+	ideology = islamic_democracy
+}
+
+create_country_leader = {
+	name = "Tan Kok Wai"
+	picture = "Tan_Kok_Wai.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Abang Abdul Rahman Zohari"
+	picture = "Abang_Abdul_Rahman_Zohari.dds"
+	ideology = national_democrat
 }
 
 create_country_leader = {
@@ -144,51 +177,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Syed Husin Ketuai"
-	picture = "Syed_Husin_Ketuai.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Mahathir Mohamad"
-	picture = "Mahathir_Mohamad.dds"
-	ideology = fiscal_conservative
-}
-
-create_country_leader = {
-	name = "Abdul Taib Mahmud"
-	picture = "Abdul_Taib_Mahmud.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Fadzil Noor"
-	picture = "Fadzil_Noor.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "Lim Kit Siang"
-	picture = "Lim_Kit_Siang.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Wan Azizah Wan Ismail"
-	picture = "Wan_Azizah_Wan_Ismail.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Lim Keng Yaik"
-	picture = "Lim_Keng_Yaik.dds"
+	name = "Teo Chee Kang"
+	picture = "Teo_Chee_Kang.dds"
 	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Joseph Kurup"
-	picture = "Joseph_Kurup.dds"
-	ideology = national_democrat
 }
 
 create_corps_commander = {
@@ -215,99 +206,163 @@ create_navy_leader = {
 	skill = 1
 }
 
-2013.5.5 = {
-
-	add_ideas = {
-		volunteer_only
-	}
-
-	set_politics = {
-
-		parties = {
-			islamist = {
-			popularity = 15
-			}
-			nationalist = {
-			popularity = 5
-			}
-			reactionary = {
-			popularity = 5
-			}
-			conservative = {
-			popularity = 30
-			}
-			market_liberal = {
-			popularity = 10
-			}
-			social_liberal = {
-			popularity = 15
-			}
-			social_democrat = {
-			popularity = 20
-			}
-			progressive = {
-			popularity = 0
-			}
-			democratic_socialist = {
-			popularity = 0
-			}
-			communist = {
-			popularity = 0
-			}
-		}
-
-	ruling_party = conservative
-	last_election = "2013.5.5"
-	election_frequency = 48
-	elections_allowed = yes
+create_field_marshal = {
+	name = "Raja Mohamed Bin Raja Mohamed Noor"
+	picture = "Portrait_Noor.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
 }
 
-create_country_leader = {
-	name = "Najib Razak"
-	desc = "POLITICIAN_MAY_NAJIB_RAZAK_DESC"
-	picture = "Najib_Razak.dds"
-	expire = "2020.1.1"
-	ideology = fiscal_conservative
-	
-	traits = {
-	
-	}
+create_field_marshal = {
+	name = "Abdul Halim Bin Jalal"
+	picture = "Portrait_Jalal.dds"
+	traits = { fast_planner }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Adenan Satem"
-	desc = "POLITICIAN_MAY_ADENAN_SATEM_DESC"
-	picture = "Adenan_Saten.dds"
-	expire = "2020.1.1"
-	ideology = reactionary_ideology
-	
-	traits = {
-	
-	}
+create_field_marshal = {
+	name = "Affendi Bin Buang"
+	picture = "Portrait_Affendi.dds"
+	traits = { thorough_planner }
+	skill = 2
 }
 
-create_country_leader = {
-	name = "Abdul Hadi Awang"
-	desc = "POLITICIAN_MAY_ABDUL_HADI_AWANG_DESC"
-	picture = "Abdul_Hadi_Awang.dds"
-	expire = "2020.1.1"
-	ideology = islamic_democracy
-	
-	traits = {
-	
-	}
+create_corps_commander = {
+	name = "Zulkiple Bin Kassim"
+	picture = "Portrait_Zulkiple.dds"
+	traits = { panzer_leader }
+	skill = 2
 }
 
-create_country_leader = {
-	name = "Mah Siew Keong"
-	desc = "POLITICIAN_MAY_MAH_SIEW_KEONG_DESC"
-	picture = "Mah_Siew_Keong.dds"
-	expire = "2020.1.1"
-	ideology = libertarian
-	
-	traits = {
-	
-	}
+create_corps_commander = {
+	name = "Panglima Ahmad Hasbullah Bin Mohd Nawawi"
+	picture = "Portrait_Hasbullah.dds"
+	traits = { ranger }
+	skill = 1
 }
 
+create_corps_commander = {
+	name = "Ackbal Bin Abdul Samad"
+	picture = "Portrait_Ackbal.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Datuk Wira Zamrose Bin Mohd Zain"
+	picture = "Portrait_Zamrose.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sheikh Mokhsin Bin Sheikh Hassan"
+	picture = "Portrait_Sheikh.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pahlawan Mohd Razif Bin Idris"
+	picture = "Portrait_Razif.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pahlawan Haji Abu Sufian Bin Haji Ahmad"
+	picture = "Portrait_Sufian.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hayazi Bin Abdul Aziz"
+	picture = "Portrait_Hayazi.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sultan Ibrahim"
+	picture = "Portrait_Sultan_Ibrahim.dds"
+	traits = { commando jungle_rat naval_invader }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Ahmad Kamarulzaman Bin Haji Ahmad Badaruddin"
+	picture = "Portrait_Kamarul.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Anuwi Bin Hassan"
+	picture = "Portrait_Anuwi.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Aris Adi Tan Bin Abdullah"
+	picture = "Portrait_Aris.dds"
+	traits = { fly_swatter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohamad Roslan Bin Mohamad Ramli"
+	picture = "Portrait_Roslan.dds"
+	traits = { air_controller }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Zahiruddin Putra Bin Syed Osman"
+	picture = "Portrait_Syed.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Abdul Rahman Bin Ayob"
+	picture = "Portrait_Rahman.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jamalludin Bin Mohd Saman"
+	picture = "Portrait_Jamalludin.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Saifudin Bin Kamarudin"
+	picture = "Portrait_Saifudin.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohammed Ariff Bin Mahru"
+	picture = "Portrait_Ariff.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Rusli Bin Ramli"
+	picture = "Portrait_Rusli.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohd Reza Bin Mohd Sany"
+	picture = "Portrait_Reza.dds"
+	traits = {  }
+	skill = 1
 }
