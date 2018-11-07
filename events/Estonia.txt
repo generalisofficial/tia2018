@@ -45,3 +45,21 @@ country_event = { #2018 Drought
 		ai_chance = { factor = 30 }
 	}
 }
+
+country_event = { #Eesti Reformierakond - Kaja Kallas
+	id = estonia.2
+	title = estonia.2.t
+	desc = estonia.2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = estonia.2.a
+		create_country_leader = {
+	        name = "Kaja Kallas"
+	        picture = "Kaja_Kallas.dds"
+	        ideology = libertarian
+        }
+	}
+}

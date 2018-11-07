@@ -141,6 +141,14 @@ country_event = {
 		}
 		if = {
 			limit = {
+                original_tag = EST
+				date > 2018.4.13
+				date < 2019.1.1
+			}
+			country_event = estonia.2
+		}
+		if = {
+			limit = {
                 OR = {
 				    AND = {
 					    country_exists = SYR
