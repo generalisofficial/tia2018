@@ -1,6 +1,6 @@
 ﻿capital = 307
 
-oob = "VEN_2000"
+oob = "VEN_2018"
 
 set_research_slots = 3
 set_convoys = 350
@@ -99,85 +99,54 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 0
-		}
-		nationalist = {
-			popularity = 10
-		}
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 10
-		}
-		market_liberal = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 10
-		}
 		social_democrat = {
-			popularity = 0
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 50
+			popularity = 32.2
 		}
 		communist = {
-			popularity = 10
+			popularity = 67.8
 		}
 	}
 	
-	ruling_party = democratic_socialist
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = communist
+	last_election = "2013.5.20"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Hugo Chavez"
-	picture = "gfx/leaders/VEN/Hugo_Chavez.dds"
-	ideology = democratic_socialist_ideology
+	name = "Nicolás Maduro"
+	picture = "Nicolas_Maduro.dds"
+	ideology = chavismo
+}
+
+create_country_leader = {
+	name = "Henri Falcón"
+	picture = "Henri_Falcon.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Henrique Capriles"
-	picture = "Henrique_C_Radonski.dds"
-	ideology = libertarian 
+	picture = "Henrique_Capriles.dds"
+	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Henry Ramos Allup"
-	picture = "Henry_Ramos_Allup.dds"
-	ideology = centrist 
+	name = "Alfredo Maneiro"
+	picture = "Alfredo_Maneiro.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Omar Barboza"
-	picture = "Omar_Barboza.dds"
-	ideology = social_democrat_ideology  
+	name = "Henrique Salas Römer"
+	picture = "Henrique_Salas_Römer.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Leopoldo Lopez"
-	picture = "Leopoldo_Lopez.dds"
-	ideology = progressive_ideology   
-}
-
-create_country_leader = {
-	name = "Henrique Salas Romer"
-	picture = "Henrique_Salas_Romer.dds"
-	ideology = fiscal_conservative    
-}
-
-create_country_leader = {
-	name = "Oscar Figuera"
-	picture = "Oscar_Figuera.dds"
-	ideology = marxist_leninist    
+	name = "María Corina Machado"
+	picture = "Maria_Corina_Machado.dds"
+	ideology = libertarian
 }
 
 create_field_marshal = {
@@ -262,57 +231,4 @@ create_navy_leader = {
 	picture = "Portrait_Carlos_Viera_Acevedo.dds"
 	traits = { blockade_runner }
 	skill = 1
-}
-
-2013.1.1 = {
-	create_country_leader = {
-		name = "Nicolas Maduro"
-		picture = "Nicolas_Maduro.dds"
-		ideology = democratic_socialist_ideology
-	}
-}
-
-2016.1.1 = {
-
-	set_politics = {
-
-	parties = {
-		
-		islamist = {
-			popularity = 0
-		}
-		nationalist = {
-			popularity = 10
-		}
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 10
-		}
-		market_liberal = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 10
-		}
-		social_democrat = {
-			popularity = 0
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 50
-		}
-		communist = {
-			popularity = 10
-		}
-	}
-	
-	ruling_party = democratic_socialist
-	last_election = "2013.1.1"
-	election_frequency = 48
-	elections_allowed = yes
-	}
 }

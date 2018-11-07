@@ -1,6 +1,6 @@
 ﻿capital = 78
 
-oob = "MDV_2000"
+oob = "MDV_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -87,53 +87,57 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 25
+			popularity = 20.2
 		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 30		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 15.8
 		}
 		democratic_socialist = {
-			popularity = 10
+			popularity = 27.25
+		}
+		market_liberal = {
+			popularity = 19.25
 		}
 		communist = {
-			popularity = 10
+			popularity = 17.5
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
+	ruling_party = democratic_socialist
+	last_election = "2016.10.30"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Petru Lucinschi"
-	ideology = centrist
-	picture = "Petru_Lucinschi.dds"
+	name = "Igor Dodon"
+	picture = "Igor_Dodon.dds"
+	ideology = democratic_socialist_ideology
 }
 
-add_namespace = {
-	name = "mdv_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Viorel Cibotaru"
+	picture = "Viorel_Cibotaru.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Vladimir Voronin"
+	picture = "Vladimir_Voronin.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Vladimir Plahotniuc"
+	picture = "Vladimir_Plahotniuc.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Maia Sandu"
+	picture = "Maia_Sandu.dds"
+	ideology = libertarian
 }
 
 create_field_marshal = {
@@ -162,12 +166,4 @@ create_corps_commander = {
 	picture = "generals/Snejana_Nitrean.dds"
 	traits = { urban_assault_specialist }
 	skill = 1
-}
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Nicolae Timofti"
-		ideology = social_liberal_ideology
-		picture = "Nicolae_Timofti.dds"
-	}
 }
