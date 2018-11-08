@@ -1,6 +1,6 @@
 ﻿capital = 772
 
-oob = "SEN_2000"
+oob = "SEN_2018"
 
 set_research_slots = 2
 set_convoys = 100
@@ -96,35 +96,11 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 25
-		}
-		reactionary = {
-			popularity = 1
-		}
-		conservative = {
-			popularity = 1
-		}
 		market_liberal = {
-			popularity = 35
+			popularity = 65.80
 		}
 		social_liberal = {
-			popularity = 15
-		}
-		social_democrat = {
-			popularity = 10
-		}
-		progressive = {
-			popularity = 1
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 1
+			popularity = 34.20
 		}
 	}
 	
@@ -135,15 +111,13 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Abdoulaye Wade"
-	picture = "Abdoulaye_Wade.dds"
+	name = "Macky Sall"
+	picture = "Macky_Sall.dds"
 	ideology = libertarian
 }
 
-2012.4.2 = {
-	create_country_leader = {
-		name = "Macky Sall"
-		picture = "Macky_Sall.dds"
-		ideology = libertarian
-	}
+create_country_leader = {
+	name = "Abdoulaye Wade"
+	picture = "Abdoulaye_Wade.dds"
+	ideology = centrist
 }
