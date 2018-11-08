@@ -1,13 +1,9 @@
 
 state={
 	id=614
-	name="STATE_614" # Hebei
-	manpower = 49111786
-	
-	state_category = state_level_12
-	
-	resources = {
-		steel = 345
+	name="STATE_614"
+	resources={
+		steel=345.000
 	}
 
 	history={
@@ -18,10 +14,15 @@ state={
 			infrastructure = 8
 			industrial_complex = 9
 			air_base = 1
+
 		}
+
 	}
 
 	provinces={
-		1169 1188 4032 4058 4093 4190 4208 7000 7092 7109 10003 10022 10053 10119 11944 11980 11996 12062 
+		881 900 1052 1134 1137 1169 1188 1590 3830 3900 3955 4032 4058 4093 4140 4190 4208 6828 6904 6969 7000 7092 7109 9768 9776 9905 9969 10003 10022 10053 10119 10331 11822 11944 11980 11996 12026 12043 12062 
 	}
+	manpower=49111786
+	buildings_max_level_factor=1.000
+	state_category=state_level_12
 }
