@@ -28,7 +28,51 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @1955 }
+			position = { x = -4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+
+		path = {
+			leads_to_tech = mbt_cannon_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mbt_engine_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = fc_systems_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ap_systems_1
+			research_cost_coeff = 1
+		}
+	}
+	
+	mbt_cannon_1 = {
+		
+		research_cost = 1
+		start_year = 1975
+		
+		path = {
+			leads_to_tech = gen2_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -39,21 +83,79 @@ technologies = {
 			armor
 		}
 		
+	}
+	
+	mbt_engine_1 = {
+		
+		research_cost = 1
+		start_year = 1975
+		
 		path = {
 			leads_to_tech = gen2_mbt
 			research_cost_coeff = 1
 		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	fc_systems_1 = {
+		
+		research_cost = 1
+		start_year = 1975
+		
 		path = {
-			leads_to_tech = gen3_light
+			leads_to_tech = gen2_mbt
 			research_cost_coeff = 1
 		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	ap_systems_1 = {
+		
+		research_cost = 1
+		start_year = 1975
+		
 		path = {
-			leads_to_tech = gen1_ifv
+			leads_to_tech = gen2_mbt
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = gen1_apc
-			research_cost_coeff = 1
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 		}
 		
 	}
@@ -65,12 +167,19 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1970
+		start_year = 1980
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @1970 }
+			position = { x = -4 y = 4 }
 		}
+		
+		dependencies = {
+            mbt_cannon_1 = 1
+			mbt_engine_1 = 1
+			fc_systems_1 = 1
+			ap_systems_1 = 1
+        }
 		
 		ai_will_do = {
 			factor = 1
@@ -81,8 +190,124 @@ technologies = {
 		}
 		
 		path = {
+			leads_to_tech = mbt_cannon_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mbt_engine_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = fc_systems_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ap_systems_2
+			research_cost_coeff = 1
+		}
+		
+	}
+	
+	
+	mbt_cannon_2 = {
+		
+		research_cost = 1
+		start_year = 1985
+		
+		path = {
 			leads_to_tech = gen3_mbt
 			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	mbt_engine_2 = {
+		
+		research_cost = 1
+		start_year = 1985
+		
+		path = {
+			leads_to_tech = gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	fc_systems_2 = {
+		
+		research_cost = 1
+		start_year = 1985
+		
+		path = {
+			leads_to_tech = gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	ap_systems_2 = {
+		
+		research_cost = 1
+		start_year = 1985
+		
+		path = {
+			leads_to_tech = gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 		}
 		
 	}
@@ -98,8 +323,15 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @1990 }
+			position = { x = -4 y = 8 }
 		}
+		
+		dependencies = {
+            mbt_cannon_2 = 1
+			mbt_engine_2 = 1
+			fc_systems_2 = 1
+			ap_systems_2 = 1
+        }
 		
 		ai_will_do = {
 			factor = 1
@@ -110,10 +342,125 @@ technologies = {
 		}
 		
 		path = {
+			leads_to_tech = mbt_cannon_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mbt_engine_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = fc_systems_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ap_systems_3
+			research_cost_coeff = 1
+		}
+		
+	}
+	
+	mbt_cannon_3 = {
+		
+		research_cost = 1
+		start_year = 1995
+		
+		path = {
 			leads_to_tech = modern_gen3_mbt
 			research_cost_coeff = 1
 		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
 	
+	mbt_engine_3 = {
+		
+		research_cost = 1
+		start_year = 1995
+		
+		path = {
+			leads_to_tech = modern_gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	fc_systems_3 = {
+		
+		research_cost = 1
+		start_year = 1995
+		
+		path = {
+			leads_to_tech = modern_gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	ap_systems_3 = {
+		
+		research_cost = 1
+		start_year = 1995
+		
+		path = {
+			leads_to_tech = modern_gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
 	}
 	
 	modern_gen3_mbt = {
@@ -127,7 +474,59 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @2000 }
+			position = { x = -4 y = 12 }
+		}
+		
+		dependencies = {
+            mbt_cannon_3 = 1
+			mbt_engine_3 = 1
+			fc_systems_3 = 1
+			ap_systems_3 = 1
+        }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+        path = {
+			leads_to_tech = mbt_cannon_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mbt_engine_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = fc_systems_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ap_systems_4
+			research_cost_coeff = 1
+		}
+		
+	}
+	
+	mbt_cannon_4 = {
+		
+		research_cost = 1
+		start_year = 2005
+		
+		path = {
+			leads_to_tech = advanced_gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -138,11 +537,81 @@ technologies = {
 			armor
 		}
 		
+	}
+	
+	mbt_engine_4 = {
+		
+		research_cost = 1
+		start_year = 2005
+		
 		path = {
 			leads_to_tech = advanced_gen3_mbt
 			research_cost_coeff = 1
 		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
 	
+	fc_systems_4 = {
+		
+		research_cost = 1
+		start_year = 2005
+		
+		path = {
+			leads_to_tech = advanced_gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	ap_systems_4 = {
+		
+		research_cost = 1
+		start_year = 2005
+		
+		path = {
+			leads_to_tech = advanced_gen3_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
 	}
 	
 	advanced_gen3_mbt = {
@@ -156,7 +625,58 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @2010 }
+			position = { x = -4 y = 16 }
+		}
+		
+		dependencies = {
+            mbt_cannon_4 = 1
+			mbt_engine_4 = 1
+			fc_systems_4 = 1
+			ap_systems_4 = 1
+        }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+        path = {
+			leads_to_tech = mbt_cannon_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mbt_engine_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = fc_systems_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ap_systems_5
+			research_cost_coeff = 1
+		}
+		
+	}
+	
+	mbt_cannon_5 = {
+		
+		research_cost = 1
+		start_year = 2015
+		
+		path = {
+			leads_to_tech = gen4_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -167,11 +687,81 @@ technologies = {
 			armor
 		}
 		
+	}
+	
+	mbt_engine_5 = {
+		
+		research_cost = 1
+		start_year = 2015
+		
 		path = {
 			leads_to_tech = gen4_mbt
 			research_cost_coeff = 1
 		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
 	
+	fc_systems_5 = {
+		
+		research_cost = 1
+		start_year = 2015
+		
+		path = {
+			leads_to_tech = gen4_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	ap_systems_5 = {
+		
+		research_cost = 1
+		start_year = 2015
+		
+		path = {
+			leads_to_tech = gen4_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
 	}
 	
 	gen4_mbt = {
@@ -181,11 +771,63 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2018
+		start_year = 2020
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @2018 }
+			position = { x = -4 y = 20 }
+		}
+		
+		dependencies = {
+            mbt_cannon_5 = 1
+			mbt_engine_5 = 1
+			fc_systems_5 = 1
+			ap_systems_5 = 1
+        }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	
+	    path = {
+			leads_to_tech = mbt_cannon_6
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mbt_engine_6
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = fc_systems_6
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ap_systems_6
+			research_cost_coeff = 1
+		}
+		
+	}
+	
+	mbt_cannon_6 = {
+		
+		research_cost = 1
+		start_year = 2025
+		
+		path = {
+			leads_to_tech = gen5_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -7 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -196,11 +838,81 @@ technologies = {
 			armor
 		}
 		
+	}
+	
+	mbt_engine_6 = {
+		
+		research_cost = 1
+		start_year = 2025
+		
 		path = {
 			leads_to_tech = gen5_mbt
 			research_cost_coeff = 1
 		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
 	
+	fc_systems_6 = {
+		
+		research_cost = 1
+		start_year = 2025
+		
+		path = {
+			leads_to_tech = gen5_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	ap_systems_6 = {
+		
+		research_cost = 1
+		start_year = 2025
+		
+		path = {
+			leads_to_tech = gen5_mbt
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
 	}
 	
 	gen5_mbt = {
@@ -210,41 +922,19 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2025
-		
-		folder = {
-			name = armour_folder
-			position = { x = @main_tank_line y = @2025 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			armor
-		}
-		
-		path = {
-			leads_to_tech = gen6_mbt
-			research_cost_coeff = 1
-		}
-	
-	}
-	
-	gen6_mbt = {
-		
-		enable_equipments = {
-			modern_tank_equipment_8
-		}
-		
-		research_cost = 1
 		start_year = 2030
 		
 		folder = {
 			name = armour_folder
-			position = { x = @main_tank_line y = @2030 }
+			position = { x = -4 y = 24 }
 		}
+		
+		dependencies = {
+            mbt_cannon_6 = 1
+			mbt_engine_6 = 1
+			fc_systems_6 = 1
+			ap_systems_6 = 1
+        }
 		
 		ai_will_do = {
 			factor = 1
@@ -255,6 +945,8 @@ technologies = {
 		}
 	
 	}
+	
+	
 	
 	gen3_light = {
 		
@@ -267,7 +959,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @light_tank_line y = @1970 }
+			position = { x = 4 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -279,8 +971,114 @@ technologies = {
 		}
 		
 		path = {
+			leads_to_tech = lt_cannon_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = lt_engine_1
+			research_cost_coeff = 1
+		}
+
+	}
+	
+	lt_cannon_1 = {
+		
+		research_cost = 1
+		start_year = 1975
+
+		
+		path = {
+			leads_to_tech = lt_ap_systems_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_engine_1 = {
+		
+		research_cost = 1
+		start_year = 1975
+
+		path = {
+			leads_to_tech = lt_fc_systems_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_fc_systems_1 = {
+		
+		research_cost = 1
+		start_year = 1980
+		
+		path = {
 			leads_to_tech = modern_gen3_light
 			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_ap_systems_1 = {
+		
+		research_cost = 1
+		start_year = 1980
+		
+		path = {
+			leads_to_tech = modern_gen3_light
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 		}
 		
 	}
@@ -292,11 +1090,18 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1990
+		start_year = 1985
+		
+		dependencies = {
+            lt_cannon_1 = 1
+			lt_engine_1 = 1
+			lt_fc_systems_1 = 1
+			lt_ap_systems_1 = 1
+        }
 		
 		folder = {
 			name = armour_folder
-			position = { x = @light_tank_line y = @1990 }
+			position = { x = 4 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -307,9 +1112,115 @@ technologies = {
 			armor
 		}
 		
+	path = {
+			leads_to_tech = lt_cannon_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = lt_engine_2
+			research_cost_coeff = 1
+		}
+
+	}
+	
+	lt_cannon_2 = {
+		
+		research_cost = 1
+		start_year = 1990
+
+		
+		path = {
+			leads_to_tech = lt_ap_systems_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_engine_2 = {
+		
+		research_cost = 1
+		start_year = 1990
+
+		path = {
+			leads_to_tech = lt_fc_systems_2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_fc_systems_2 = {
+		
+		research_cost = 1
+		start_year = 1995
+		
 		path = {
 			leads_to_tech = gen4_light
 			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_ap_systems_2 = {
+		
+		research_cost = 1
+		start_year = 1995
+		
+		path = {
+			leads_to_tech = gen4_light
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 		}
 		
 	}
@@ -321,12 +1232,19 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2006
+		start_year = 2000
 		
 		folder = {
 			name = armour_folder
-			position = { x = @light_tank_line y = @2006 }
+			position = { x = 4 y = 12 }
 		}
+		
+		dependencies = {
+            lt_cannon_2 = 1
+			lt_engine_2 = 1
+			lt_fc_systems_2 = 1
+			lt_ap_systems_2 = 1
+        }
 		
 		ai_will_do = {
 			factor = 1
@@ -337,8 +1255,114 @@ technologies = {
 		}
 		
 		path = {
+			leads_to_tech = lt_cannon_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = lt_engine_3
+			research_cost_coeff = 1
+		}
+
+	}
+	
+	lt_cannon_3 = {
+		
+		research_cost = 1
+		start_year = 2005
+
+		
+		path = {
+			leads_to_tech = lt_ap_systems_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_engine_3 = {
+		
+		research_cost = 1
+		start_year = 2005
+
+		path = {
+			leads_to_tech = lt_fc_systems_3
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_fc_systems_3 = {
+		
+		research_cost = 1
+		start_year = 2010
+		
+		path = {
 			leads_to_tech = gen5_light
 			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 5 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_ap_systems_3 = {
+		
+		research_cost = 1
+		start_year = 2010
+		
+		path = {
+			leads_to_tech = gen5_light
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 		}
 		
 	}
@@ -350,11 +1374,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2018
+		start_year = 2015
 		
 		folder = {
 			name = armour_folder
-			position = { x = @light_tank_line y = @2018 }
+			position = { x = 4 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -366,8 +1390,114 @@ technologies = {
 		}
 		
 		path = {
+			leads_to_tech = lt_cannon_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = lt_engine_4
+			research_cost_coeff = 1
+		}
+
+	}
+	
+	lt_cannon_4 = {
+		
+		research_cost = 1
+		start_year = 2020
+
+		
+		path = {
+			leads_to_tech = lt_ap_systems_4
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_engine_4 = {
+		
+		research_cost = 1
+		start_year = 2020
+
+		path = {
+			leads_to_tech = lt_fc_systems_4
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_fc_systems_4 = {
+		
+		research_cost = 1
+		start_year = 2025
+		
+		path = {
 			leads_to_tech = gen6_light
 			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 5 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+		
+	}
+	
+	lt_ap_systems_4 = {
+		
+		research_cost = 1
+		start_year = 2025
+		
+		path = {
+			leads_to_tech = gen6_light
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
 		}
 		
 	}
@@ -379,11 +1509,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2025
+		start_year = 2030
 		
 		folder = {
 			name = armour_folder
-			position = { x = @light_tank_line y = @2025 }
+			position = { x = 4 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -411,7 +1541,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @ifv_line y = @1970 }
+			position = { x = 10 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -440,7 +1570,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @ifv_line y = @1990 }
+			position = { x = 10 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -469,7 +1599,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @ifv_line y = @2006 }
+			position = { x = 10 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -498,7 +1628,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @ifv_line y = @2018 }
+			position = { x = 10 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -527,7 +1657,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @ifv_line y = @2025 }
+			position = { x = 10 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -555,7 +1685,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @apc_line y = @1970 }
+			position = { x = 14 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -584,7 +1714,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @apc_line y = @1990 }
+			position = { x = 14 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -613,7 +1743,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @apc_line y = @2006 }
+			position = { x = 14 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -642,7 +1772,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @apc_line y = @2016 }
+			position = { x = 14 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -671,7 +1801,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @apc_line y = @2020 }
+			position = { x = 14 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -700,7 +1830,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = @apc_line y = @2030 }
+			position = { x = 14 y = 20 }
 		}
 		
 		ai_will_do = {
