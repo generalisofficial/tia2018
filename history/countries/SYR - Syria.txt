@@ -104,41 +104,11 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 15
-		}
 		nationalist = {
-			popularity = 40
-		}
-		reactionary = {
-			popularity = 10
-		}
-		conservative = {
-			popularity = 15
-		}
-		market_liberal = {
-			popularity = 0
+			popularity = 88.7
 		}
 		social_liberal = {
-			popularity = 15
-		}
-		social_democrat = {
-			popularity = 0
-		}
-		progressive = {
-			popularity = 0
-		}
-		democratic_socialist = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 5
-		}
-		monarchist = {
-			popularity = 0
-		}
-		fascist = {
-			popularity = 0
+			popularity = 11.3
 		}
 	}
 	
@@ -150,59 +120,29 @@ set_politics = {
 
 create_country_leader = {
 	name = "Bashar al-Assad"
+	picture = "Bashar_al_Assad.dds"
 	ideology = arab_nationalist
-	picture = "Bashar_Al_Assad.dds"
 	traits = {
 		brutal_dictator
 	}
 }
 
 create_country_leader = {
-	name = "Mired I"
-	ideology = absolute_monarchist
-	picture = "Mired_The_First.dds"
+	name = "Riad Seif"
+	picture = "Riad_Seif.dds"
+	ideology = social_conservative
 }
 
 create_country_leader = {
-	name = "Ali Haidar"
-	ideology = reactionary_ideology
-	picture = "Ali_Haidar.dds"
+	name = "Hassan al-Nouri"
+	picture = "Hassan_al_Nouri.dds"
+	ideology = centrist
 }
 
 create_country_leader = {
 	name = "Anas al-Abdah"
-	ideology = libertarian
 	picture = "Anas_al_Abdah.dds"
-}
-
-create_country_leader = {
-	name = "Hassan Abdul Azim"
-	ideology = centrist
-	picture = "Hassan_Abdul_Azim.dds"
-}
-
-create_country_leader = {
-	name = "Riad al-Turk"
-	ideology = social_democrat_ideology
-	picture = "Riad_al_Turk.dds"
-}
-
-create_country_leader = {
-	name = "Farid Ghadry"
-	ideology = progressive_ideology
-	picture = "Farid_Ghadry.dds"
-}
-
-create_country_leader = {
-	name = "Ibrahim Makhous"
-	ideology = democratic_socialist_ideology
-	picture = "Ibrahim_Makhous.dds"
-}
-
-create_country_leader = {
-	name = "Hanin Nimir"
-	ideology = marxist_leninist
-	picture = "Hanin_Nimir.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -212,15 +152,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mohammad Riad al-Shaqfeh"
-	ideology = islamic_democracy
-	picture = "Mohammad_Riad_al_Shaqfeh.dds"
+	name = "Ghias Youn Soud"
+	picture = "Ghias_Youn_Soud.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Riad Seif"
-	picture = "Riad_Seif.dds"
-	ideology = national_conservative
+	name = "Ibrahim Makhous"
+	picture = "Ibrahim_Makhous.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Hanin Nimir"
+	picture = "Hanin_Nimir.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Mohammad Riad al-Shaqfeh"
+	picture = "Mohammad_Riad_al_Shaqfeh.dds"
+	ideology = muslim_brotherhood
 }
 
 create_field_marshal = {
