@@ -2,9 +2,6 @@
 state={
 	id=365
 	name="STATE_365"
-	manpower = 8227000
-	
-	state_category = state_level_10
 
 	history={
 		owner = USA
@@ -17,15 +14,27 @@ state={
 			rubber_factory = 1
 			11975 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = USA
-		victory_points = { 12384 20 }	#Atlanta
-		victory_points = { 7118 5 }		#Augusta
-		victory_points = { 7583 5 }		#Columbus
+		victory_points = {
+			12384 20 
+		}
+		victory_points = {
+			7118 5 
+		}
+		victory_points = {
+			7583 5 
+		}
+
 	}
 
 	provinces={
 		638 968 1433 1480 5090 7118 7583 7612 9949 9996 10394 10437 10465 10492 11975 12325 12384 12470 12498 
 	}
+	manpower=8227000
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

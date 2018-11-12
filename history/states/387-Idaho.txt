@@ -2,13 +2,9 @@
 state={
 	id=387
 	name="STATE_387"
-	manpower = 1290000
-	
-	state_category = state_level_4
-	
 	resources={
-		tungsten=2
-		steel=7
+		tungsten=2.000
+		steel=7.000
 	}
 
 	history={
@@ -17,18 +13,34 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 4
+
 		}
 		add_core_of = USA
-		victory_points = { 4778 1 }		#Grangeville
-		victory_points = { 9695 1 }		#Twin Falls
-		victory_points = { 10556 5 }	#Boise
-		victory_points = { 10672 1 }	#Rexburg
-		victory_points = { 12535 1 }	#Pocatello
-		victory_points = { 12607 2 }	#Nampa
+		victory_points = {
+			4778 1 
+		}
+		victory_points = {
+			9695 1 
+		}
+		victory_points = {
+			10556 5 
+		}
+		victory_points = {
+			10672 1 
+		}
+		victory_points = {
+			12535 1 
+		}
+		victory_points = {
+			12607 2 
+		}
+
 	}
 
 	provinces={
 		1789 1832 3781 4778 7845 9616 9695 10556 10602 10672 12124 12535 12607 
 	}
-	
+	manpower=1290000
+	buildings_max_level_factor=1.000
+	state_category=state_level_4
 }

@@ -2,11 +2,8 @@
 state={
 	id=390
 	name="STATE_390"
-	manpower = 755844
-	state_category = state_level_4
-	
-	resources = {
-		steel = 5
+	resources={
+		steel=5.000
 	}
 
 	history={
@@ -15,13 +12,22 @@ state={
 			infrastructure = 4
 			air_base = 5
 			industrial_complex = 1
+
 		}
 		add_core_of = USA
-		victory_points = { 1747 3 }		#Rapid City
-		victory_points = { 12667 3 }	#Sioux Falls
+		victory_points = {
+			1747 3 
+		}
+		victory_points = {
+			12667 3 
+		}
+
 	}
 
 	provinces={
 		1747 1875 3750 4839 4880 7745 7771 7862 10569 10595 12620 12667 
 	}
+	manpower=755844
+	buildings_max_level_factor=1.000
+	state_category=state_level_4
 }

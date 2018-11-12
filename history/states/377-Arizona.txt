@@ -2,14 +2,10 @@
 state={
 	id=377
 	name="STATE_377"
-	manpower = 5161000
-	
-	state_category = state_level_7
-	
 	resources={
-		tungsten=40
-		oil=6
-		steel=3
+		tungsten=40.000
+		oil=6.000
+		steel=3.000
 	}
 
 	history={
@@ -18,14 +14,25 @@ state={
 			infrastructure = 6
 			industrial_complex = 2
 			air_base = 6
+
 		}
 		add_core_of = USA
-		victory_points = { 853 20 }	#Phoenix
-		victory_points = { 3834 5 }	#Tucson
-		victory_points = { 7821 1 }	#Page
+		victory_points = {
+			853 20 
+		}
+		victory_points = {
+			3834 5 
+		}
+		victory_points = {
+			7821 1 
+		}
+
 	}
 
 	provinces={
 		850 853 1793 3834 4796 6897 7747 7821 7920 8115 10573 10783 11814 12765 
 	}
+	manpower=5161000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

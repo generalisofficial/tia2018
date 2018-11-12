@@ -2,11 +2,10 @@
 state={
 	id=500
 	name="STATE_500"
-	
-	resources = {
-		aluminium = 69
-		oil = 50
-		steel = 102
+	resources={
+		aluminium=69.000
+		oil=50.000
+		steel=102.000
 	}
 
 	history={
@@ -19,18 +18,24 @@ state={
 			dockyard = 2
 			10980 = {
 				naval_base = 7
+
 			}
 
 		}
 		add_core_of = BRA
-		victory_points = { 10980 20 }
-		victory_points = { 8148 5 }
+		victory_points = {
+			10980 20 
+		}
+		victory_points = {
+			8148 5 
+		}
+
 	}
 
 	provinces={
-		2185 5172 7476 8148 8190 8210 8226 10432 10980 12334 12479 12996 
+		5172 8190 10980 
 	}
 	manpower=26265500
 	buildings_max_level_factor=1.000
-	state_category = state_level_19
+	state_category=state_level_19
 }

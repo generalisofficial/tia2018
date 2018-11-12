@@ -2,12 +2,9 @@
 state={
 	id=505
 	name="STATE_505"
-	
-	state_category = state_level_8
-	
-	resources = {
-		aluminium = 11
-		steel = 24
+	resources={
+		aluminium=11.000
+		steel=24.000
 	}
 
 	history={
@@ -16,14 +13,19 @@ state={
 			infrastructure = 4
 			industrial_complex = 2
 			air_base = 3
+
 		}
-		victory_points = { 8140 10 }
+		victory_points = {
+			8140 10 
+		}
 		add_core_of = BRA
+
 	}
 
 	provinces={
-		2168 2190 2218 5115 5148 5151 5174 5208 8129 8140 12923 12959 12987 
+		2168 5115 5151 5208 8140 12959 12987 13489 
 	}
 	manpower=13662200
 	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

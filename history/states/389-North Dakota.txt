@@ -2,28 +2,36 @@
 state={
 	id=389
 	name="STATE_389"
-	manpower = 642023
-	state_category = state_level_5
-	
-	resources = {
-		steel = 7
-		oil = 2
+	resources={
+		steel=7.000
+		oil=2.000
 	}
-	
+
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 4
 			air_base = 4
 			industrial_complex = 2
+
 		}
 		add_core_of = USA
-		victory_points = { 1836 5 }		#Bismarck
-		victory_points = { 6722 1 }		#Dickinson
-		victory_points = { 3719 1 }		#Fargo
+		victory_points = {
+			1836 5 
+		}
+		victory_points = {
+			6722 1 
+		}
+		victory_points = {
+			3719 1 
+		}
+
 	}
 
 	provinces={
 		1752 1836 1870 3719 4759 4772 6722 7877 10685 10709 12566 12685 
 	}
+	manpower=642023
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }
