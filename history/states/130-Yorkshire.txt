@@ -2,21 +2,27 @@
 state={
 	id=130
 	name="STATE_130"
-	manpower = 5562495
-	
-	state_category = state_level_12
-	
 	resources={
-		oil=9
+		oil=9.000
 	}
 
 	history={
 		owner = ENG
-		victory_points = { 9379 15 }		#Leeds
-		victory_points = { 11297 10 }		#Hull
-		victory_points = { 9269 5 }			#York
-		victory_points = { 9315 5 }			#Sheffield
-		victory_points = { 11382 3 }		#Doncaster
+		victory_points = {
+			9379 15 
+		}
+		victory_points = {
+			11297 10 
+		}
+		victory_points = {
+			9269 5 
+		}
+		victory_points = {
+			9315 5 
+		}
+		victory_points = {
+			11382 3 
+		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
@@ -24,12 +30,18 @@ state={
 			air_base = 10
 			11297 = {
 				naval_base = 5
+
 			}
+
 		}
 		add_core_of = ENG
+
 	}
 
 	provinces={
-		6268 9269 9315 9332 9379 9397 11297 11317 11382 
+		364 9269 9332 9379 11297 11317 
 	}
+	manpower=5562495
+	buildings_max_level_factor=1.000
+	state_category=state_level_12
 }

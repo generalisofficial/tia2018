@@ -2,14 +2,10 @@
 state={
 	id=338
 	name="STATE_338"
-	manpower = 1800615
-	
 	resources={
-		tungsten=3
-		steel = 20
+		tungsten=3.000
+		steel=20.000
 	}
-
-	state_category = state_level_10
 
 	history={
 		owner = ENG
@@ -23,12 +19,18 @@ state={
 			air_base = 2
 			3369 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = ENG
+
 	}
 
 	provinces={
-		3369 6221 6351 6378 9484 11471 
+		3369 6351 6378 9484 11471 
 	}
+	manpower=1800615
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

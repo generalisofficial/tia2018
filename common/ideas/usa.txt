@@ -76,21 +76,6 @@ ideas = {
 			}
 		}
 		
-		idea_USA_united_republic = {
-			picture = political_power_bonus
-			
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = 0.001
-				drift_defence_factor = 0.4
-				political_power_factor = 0.2
-			}
-		}
-		
 		USA_first_amendment = {
 			picture = disjointed_government
 			
@@ -114,9 +99,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = 0.001
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.1
+				resistance_tick = 0.2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.2
 				political_power_factor = -0.2
 			}
 		}
@@ -132,33 +117,6 @@ ideas = {
 			modifier = {
 				justify_war_goal_time = 2
 				political_power_factor = -0.1
-			}
-		}
-		
-		USA_abolished_the_house = {
-			picture = anti_soviet_pact
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_government = communist }
-			
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.25
-				stability_weekly = -0.003
-			}
-		}
-		
-		USA_abolished_the_senate = {
-			picture = matignon_agreements
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_government = communist }
-			
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.005
 			}
 		}
 		
@@ -192,82 +150,6 @@ ideas = {
 				experience_gain_air = 0.04
 				experience_gain_army = 0.04
 				experience_gain_navy = 0.04
-			}
-		}
-		
-		USA_american_communist_influence = {
-			picture = communism9
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_government = communist }
-			
-			removal_cost = -1
-			
-			modifier = {
-				communist_drift = 0.05
-			}
-		}
-		
-		USA_american_democratic_influence = {
-			picture = democracy
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_democratic_form_of_government = no }
-			
-			removal_cost = -1
-			
-			modifier = {
-				social_liberal_drift = 0.04
-				conservative_drift = 0.04
-			}
-		}
-		
-		USA_american_fascism = {
-			picture = segregation2
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_government = fascist }
-			
-			removal_cost = -1
-			
-			modifier = {
-				fascist_drift = 0.10
-				local_resources_factor = 0.5
-				justify_war_goal_time = -0.5
-				industrial_capacity_factory = -0.75
-				conscription_factor = -0.75
-				stability_weekly = -0.006
-			}
-		}
-		
-		USA_american_fascism_weakened = {
-			picture = segregation
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_government = fascist }
-			
-			removal_cost = -1
-			
-			modifier = {
-				fascist_drift = 0.05
-				local_resources_factor = 0.25
-				justify_war_goal_time = -0.25
-				industrial_capacity_factory = -0.1
-				conscription_factor = -0.1
-				stability_weekly = -0.001
-			}
-		}
-		
-		USA_american_nationalist_influence = {
-			picture = fascism2
-			
-			allowed = { always = no }
-			allowed_civil_war = { has_undemocratic_right_wing_government = yes }
-			
-			removal_cost = -1
-			
-			modifier = {
-				nationalist_drift = 0.05
 			}
 		}
 		

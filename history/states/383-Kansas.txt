@@ -2,13 +2,10 @@
 state={
 	id=383
 	name="STATE_383"
-	manpower = 2694000
 	resources={
-		oil=60
-		steel = 30
+		oil=60.000
+		steel=30.000
 	}
-	
-	state_category = state_level_6
 
 	history={
 		owner = USA
@@ -16,16 +13,28 @@ state={
 			infrastructure = 4
 			air_base = 2
 			industrial_complex = 2
+
 		}
 		add_core_of = USA
-		victory_points = { 1352 3 }		#Wichita
-		victory_points = { 4740 3 }		#Topeka
-		victory_points = { 7892 1 }		#Junction City
-		victory_points = { 12024 1 }	#Salina
+		victory_points = {
+			1352 3 
+		}
+		victory_points = {
+			4740 3 
+		}
+		victory_points = {
+			7892 1 
+		}
+		victory_points = {
+			12024 1 
+		}
+
 	}
 
 	provinces={
 		1352 1753 4586 4740 4757 4811 4814 4871 7834 7892 9802 10340 10532 12024 12513 
 	}
-	
+	manpower=2694000
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
 }

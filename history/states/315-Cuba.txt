@@ -1,14 +1,12 @@
-state= {
+
+state={
 	id=315
 	name="STATE_315"
-	manpower = 11238000
 	resources={
-		oil = 4
+		oil=4.000
 	}
-	
-	state_category = state_level_7
 
-	history= {
+	history={
 		owner = CUB
 		buildings = {
 			infrastructure = 4
@@ -17,21 +15,28 @@ state= {
 			air_base = 10
 			7622 = {
 				naval_base = 3
+
 			}
 			1550 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = CUB
 		victory_points = {
 			7622 5 
 		}
 		victory_points = {
-			7590 1
+			7590 1 
 		}
 
 	}
+
 	provinces={
-		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347
+		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347 
 	}
+	manpower=11238000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

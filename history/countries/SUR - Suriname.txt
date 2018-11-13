@@ -1,6 +1,6 @@
 ﻿capital = 309
 
-oob = "SUR_2000"
+oob = "SUR_2018"
 
 set_research_slots = 2
 set_convoys = 230
@@ -96,49 +96,30 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
 		progressive = {
-			popularity = 10
+			popularity = 44.54
 		}
 		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 55.46
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1996.5.23"
-	election_frequency = 48
+	ruling_party = democratic_socialist
+	last_election = "2015.5.25"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Ronald Venetiaan"
-	ideology = centrist
-	picture = "Ronald_Venetiaan.dds"
+	name = "Dési Bouterse"
+	picture = "Desi_Bouterse.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Chan Santokhi"
+	picture = "Chan_Santokhi.dds"
+	ideology = progressive_ideology
 }
 
 create_field_marshal = {
@@ -181,12 +162,4 @@ create_navy_leader = {
 	picture = "Portrait_Marino_Acton.dds"
 	traits = { blockade_runner }
 	skill = 1
-}
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Dési Bouterse"
-		ideology = social_liberal_ideology
-		picture = "Desi_Bouterse.dds"
-	}
 }

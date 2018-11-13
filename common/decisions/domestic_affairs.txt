@@ -1,0 +1,29 @@
+domestic_affairs = {
+
+	hold_snap_election = {
+		
+		visible = {
+			has_elections = yes
+		}
+		
+		available = {
+			has_stability > 0.2
+		}
+		
+		icon = politics
+		
+		cost = 25
+		
+		days_re_enable = 365
+		
+		complete_effect = {
+			hold_election = ROOT
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+}

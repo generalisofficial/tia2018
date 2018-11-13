@@ -2,13 +2,9 @@
 state={
 	id=499
 	name="STATE_499"
-	manpower = 15233900
-	
-	state_category = state_level_7
-	
-	resources = {
-		chromium=32
-		oil = 35
+	resources={
+		chromium=32.000
+		oil=35.000
 	}
 
 	history={
@@ -20,7 +16,9 @@ state={
 			air_base = 1
 			10946 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = BRA
 		victory_points = {
@@ -30,6 +28,9 @@ state={
 	}
 
 	provinces={
-		4617 5194 8143 8177 8184 8197 8242 10392 10926 10946 
+		4617 5174 5194 5218 8129 8177 8184 8197 8242 10392 10419 10926 10946 11002 12422 
 	}
+	manpower=15233900
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

@@ -1,15 +1,11 @@
 
 state={
 	id=496
-	name="STATE_496" # Minas Gerais
-	manpower = 4603600
-	
-	state_category = state_level_7
-	
+	name="STATE_496"
 	resources={
-		aluminium = 9
-		oil = 35
-		steel = 12
+		aluminium=9.000
+		oil=35.000
+		steel=12.000
 	}
 
 	history={
@@ -20,12 +16,18 @@ state={
 			air_base = 2
 			11002 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = BRA
+
 	}
 
 	provinces={
-		2153 4570 5223 7589 8196 8233 10419 10931 10999 11002 12422 12903 12909 12938 
+		2153 2167 2185 2190 2218 4570 5223 7476 7589 8148 8196 8210 8226 8233 10931 10945 10999 12334 12479 12903 12909 12923 12938 12977 12996 
 	}
+	manpower=4603600
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

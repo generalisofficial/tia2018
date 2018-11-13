@@ -2,13 +2,9 @@
 state={
 	id=386
 	name="STATE_386"
-	manpower = 5911000
-	
-	state_category = state_level_12
-	
-	resources = {
-		oil = 5
-		steel = 28
+	resources={
+		oil=5.000
+		steel=28.000
 	}
 
 	history={
@@ -22,19 +18,36 @@ state={
 			air_base = 5
 			7315 = {
 				naval_base = 6
+
 			}
+
 		}
 		add_core_of = USA
-		victory_points = { 7315 20 }	#Seattle
-		victory_points = { 1690 5 }		#Spokane
-		victory_points = { 7386 3 }		#Tacoma
-		victory_points = { 4398 2 }		#Vancouver
-		victory_points = { 7442 1 }		#Kent
-		victory_points = { 10157 1 }	#Everett
-		
+		victory_points = {
+			7315 20 
+		}
+		victory_points = {
+			1690 5 
+		}
+		victory_points = {
+			7386 3 
+		}
+		victory_points = {
+			4398 2 
+		}
+		victory_points = {
+			7442 1 
+		}
+		victory_points = {
+			10157 1 
+		}
+
 	}
 
 	provinces={
 		1320 1690 4296 4398 4747 7255 7315 7386 7414 7442 10155 10157 10198 10242 10271 10327 10687 10690 10693 12155 12214 12673 
 	}
+	manpower=5911000
+	buildings_max_level_factor=1.000
+	state_category=state_level_12
 }

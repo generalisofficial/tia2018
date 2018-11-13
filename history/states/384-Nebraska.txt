@@ -2,12 +2,8 @@
 state={
 	id=384
 	name="STATE_384"
-	manpower = 1714962
-	
-	state_category = state_level_7
-	
-	resources = {
-		steel = 9
+	resources={
+		steel=9.000
 	}
 
 	history={
@@ -16,13 +12,22 @@ state={
 			infrastructure = 4
 			air_base = 4
 			industrial_complex = 1
+
 		}
 		add_core_of = USA
-		victory_points = { 12586 4 }	#Omaha
-		victory_points = { 7852 2 }		#Lincoln
+		victory_points = {
+			12586 4 
+		}
+		victory_points = {
+			7852 2 
+		}
+
 	}
 
 	provinces={
 		1683 3613 3708 3855 4749 4760 4830 7840 7852 10606 10676 12516 12586 
 	}
+	manpower=1714962
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
