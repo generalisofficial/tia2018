@@ -183,7 +183,7 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				always = yes
+				NOT = { is_in_faction_with = SOV is_in_faction_with = PRC }
 			}
 			
 			modifier = {
@@ -197,7 +197,7 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				always = yes
+				NOT = { is_in_faction_with = USA }
 			}
 			
 			modifier = {
