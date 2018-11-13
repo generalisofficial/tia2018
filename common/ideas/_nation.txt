@@ -174,4 +174,65 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+	
+	foreign_outlook = {
+		law = yes
+		
+		outlook_western = {
+			cost = 10
+			removal_cost = -1
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		outlook_emerging = {
+			cost = 10
+			removal_cost = -1
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		outlook_non_aligned = {
+			cost = 10
+			removal_cost = -1
+			
+			available = {
+				always = yes
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+		outlook_nationalist = {
+			cost = 10
+			removal_cost = -1
+			
+			available = {
+			    is_in_faction = no
+			}
+			
+			modifier = {
+			    ai_get_ally_desire_factor = -1000
+			}
+			
+			cancel_if_invalid = yes
+		}
+	}
 }
