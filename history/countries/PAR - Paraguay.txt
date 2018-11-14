@@ -1,6 +1,6 @@
 ﻿capital = 301
 
-oob = "PAR_2000"
+oob = "PAR_2018"
 
 set_research_slots = 3
 set_convoys = 10
@@ -86,69 +86,85 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
+			popularity = 50.96
 		}
 		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 49.04
 		}
 	}
 	
 	ruling_party = reactionary
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "2013.4.22"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Luis Ángel González Macchi"
+	name = "Horacio Cartes"
+	picture = "Horacio_Cartes.dds"
 	ideology = reactionary_ideology
-	picture = "Luis_Angel.dds"
 }
 
 create_country_leader = {
-	name = "Fernando Lugo"
-	ideology = progressive_ideology
-	picture = "Fernando_Lugo.dds"
+	name = "Efraín Alegre"
+	picture = "Efrain_Alegre.dds"
+	ideology = centrist
 }
 
-create_country_leader = {
-	name = "Najeeb Amado"
-	ideology = marxist_leninist
-	picture = "Najeeb_Amado.dds"
+create_field_marshal = {
+	name = "Braulio Piris Rojas"
+	picture = "Portrait_Braulio_Piris_Rojas.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
 }
 
+create_field_marshal = {
+	name = "Bernardino Soto Estigarribia"
+	picture = "Portrait_Bernardino_Soto_Estigarribia.dds"
+	traits = { defensive_doctrine }
+	skill = 1
+}
 
-2015.1.1 = {
-	create_country_leader = {
-		name = "Horacio Cartes"
-		ideology = reactionary_ideology
-		picture = "Horacio_Cartes.dds"
-	}
+create_corps_commander = {
+	name = "Juan José Casaccia Furiasse"
+	picture = "Portrait_Juan_Jose_Furiasse.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Eladio Gonzalez Aguilar"
+	picture = "Portrait_Eladio_Gonzalez_Aguilar.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Fidel Duranona"
+	picture = "Portrait_Fidel_Duranona.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "José Maria Duarte"
+	picture = "Portrait_Jose_Maria_Duarte.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Hugo Milciades Scolari Pagliaro"
+	picture = "Portrait_Hugo_Pagliaro.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Paulo Maria Gomez Benitez"
+	picture = "Portrait_Paulo_Maria_Gomez_Benitez.dds"
+	traits = { blockade_runner }
+	skill = 1
 }
 
