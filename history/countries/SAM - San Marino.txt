@@ -1,6 +1,6 @@
 ﻿capital = 854
 
-oob = "SAM_2000"
+oob = "SAM_2018"
 
 set_research_slots = 1
 set_convoys = 1
@@ -82,37 +82,98 @@ set_technology = {
 add_ideas = {
 	population_growth_stagnation
 	neutrality_idea
+	the_euro
 }
 
 set_politics = {
 	parties = {
-		reactionary = { popularity = 5 }
-		conservative = { popularity = 25 }
-		social_democrat = { popularity = 40 }
-		progressive = { popularity = 20 }
-		democratic_socialist = { popularity = 10 }
+		conservative = { 
+		    popularity = 26.79
+		}
+		social_democrat = { 
+		    popularity = 15.41 
+		}
+		democratic_socialist = { 
+		    popularity = 36.79
+		}
+		social_liberal = { 
+		    popularity = 9.60
+		}
+		progressive = { 
+		    popularity = 9.27
+		}
+		market_liberal = { 
+		    popularity = 2.14
+		}
 	}
-	ruling_party = social_democrat
-	last_election = "1998.9.20"
-	election_frequency = 48
+	ruling_party = democratic_socialist
+	last_election = "2016.11.20"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
-
-2000.1.1 = {
-	create_country_leader = {
-		name = "Gianfranco Terenzi"
-		ideology = social_democrat_ideology
-		picture = "Gianfranco_Terenzi.dds"
-    }
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = islamic_democracy
 }
 
-2002.1.1 = { add_ideas = the_euro }
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = fascist_ideology
+}
 
-2015.1.1 = {
-	create_country_leader = {
-		name = "Massimo Andrea Ugolini"
-		ideology = social_democrat_ideology
-		picture = "Massimo_A_Ugolini.dds"
-    }
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Grand and General Council"
+	picture = "Grand_and_General_Council.dds"
+	ideology = marxist_leninist
 }
