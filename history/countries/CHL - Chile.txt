@@ -1,6 +1,6 @@
 ﻿capital = 279
 
-oob = "CHL_2000"
+oob = "CHL_2018"
 
 set_research_slots = 4
 set_convoys = 400
@@ -95,91 +95,48 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 3
-		}
-		reactionary = {
-			popularity = 3
+		social_democrat = {
+			popularity = 22.70
 		}
 		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 3
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
+			popularity = 36.64
 		}
 		democratic_socialist = {
-			popularity = 10
+			popularity = 20.27
 		}
-		communist = {
-			popularity = 20
+		progressive = {
+			popularity = 20.39
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = social_democrat
+	last_election = "2017.11.19"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Eduardo Frei Ruiz-Tagle"
-	picture = "Ecuardo_Frei_Ruiz_Tagle.dds"
-	ideology = christian_democrat
-}
-
-create_country_leader = {
-	name = "Ricardo Lagos"
-	picture = "Ricardo_Lagos.dds"
-	ideology = social_liberal_ideology
-}
-	
 create_country_leader = {
 	name = "Michelle Bachelet"
 	picture = "Michelle_Bachelet.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Sebastián Piñera"
+	picture = "Sebastian_Pinera.dds"
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Beatriz Sánchez"
+	picture = "Beatriz_Sanchez.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Maria Angelica Basualdo"
-	picture = "Maria_Angelica_Basualdo.dds"
-	ideology = proto_fascist
-}
-
-create_country_leader = {
-	name = "Guillermo Teillier"
-	picture = "Guillermo_Teillier.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Pablo Rodriguez Grez"
-	picture = "Pablo_Rodriguez_Grez.dds"
-	ideology = fascist_ideology
-}
-
-
-
-2006.3.11 = {
-	set_politics = {
-		ruling_party = democratic_socialist
-		elections_allowed = yes
-	}
-}
-
-2016.1.1 = {
-	set_politics = {
-		last_election = "2014.3.11"
-		elections_allowed = yes
-	}
+	name = "Marco Enríquez-Ominami"
+	picture = "Marco_Enriquez_Ominami.dds"
+	ideology = progressive_ideology
 }
 
 create_corps_commander = {
@@ -198,4 +155,172 @@ create_corps_commander = {
 	name = "Guido Montini Gómez"
 	picture = "generals/Guido_Gomez.dds"
 	skill = 1
+}
+
+create_field_marshal = {
+	name = "Humberto Oviedo Arriagada"
+	picture = "Portrait_Humberto_Oviedo.dds"
+	traits = { old_guard organisational_leader }
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Jorge Robles Mella"
+	picture = "Portrait_Jorge_Robles_Mella.dds"
+	traits = { logistics_wizard }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Ángelo Hernández"
+	picture = "Portrait_Hernandez.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ramón Oyarzún"
+	picture = "Portrait_Oyarzun.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Rodrigo Urrutia Oyarzún"
+	picture = "Portrait_Rodrigo_Urrutia.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Rodrigo Goicochea"
+	picture = "Portrait_Rodrigo_Goicochea.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Javier Abarzúa"
+	picture = "Portrait_Abarzua.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Germán Moreno"
+	picture = "Portrait_Moreno.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Luis Farías Gallardo"
+	picture = "Portrait_Luis_Farias.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Luis Chamorro Heilig"
+	picture = "Portrait_Luis_Heilig.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Felipe Arancibia Clavel"
+	picture = "Portrait_Felipe_Clavel.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Luis Espinoza Arenas"
+	picture = "Portrait_Luis_Arenas.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Jorge Peña Leiva"
+	picture = "Portrait_Jorge_Pena.dds"
+	traits = { jungle_rat }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Schafik Nazal Lázaro"
+	picture = "Portrait_Schafik_Lazaro.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Miguel Alfonso Bellet"
+	picture = "Portrait_Miguel_Alfonso_Bellet.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Andrés Fuentealba Gómez"
+	picture = "Portrait_Andres_Fuentealba.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hernán Araya Santis"
+	picture = "Portrait_Hernan_Araya.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Javier Iturriaga Del Campo"
+	picture = "Portrait_Javier_Iturriaga.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergio Retamal"
+	picture = "Portrait_Sergio_Retamal.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ernesto Tejos Méndez"
+	picture = "Portrait_Ernesto_Tejos.dds"
+	traits = { trait_mountaineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Fernando San Cristóbal Schott"
+	picture = "Portrait_Fernando_San_Cristobal.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Gustavo Núñez Kocher"
+	picture = "Portrait_Gustavo_Nunez.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Enrique Larrañaga Martin"
+	picture = "Portrait_Enrique_Martin.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Edmundo González Robles"
+	picture = "Portrait_Edmundo_Gonzalez.dds"
+	traits = { blockade_runner }
+	skill = 2
 }
