@@ -1,6 +1,6 @@
 ﻿capital = 305
 
-oob = "ECU_2000"
+oob = "ECU_2018"
 
 set_research_slots = 3
 set_convoys = 100
@@ -97,121 +97,161 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 40
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 15
-		}
-		social_democrat = {
-			popularity = 5
+			popularity = 48.84
 		}
 		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 51.16
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = progressive
+	last_election = "2017.2.19"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Gustavo Noboa"
-	ideology = christian_democrat 
-	picture = "Gustavo_Noboa.dds"
-}
-
-create_country_leader = {
-	name = "Lucio Gutierrez"
-	ideology = centrist 
-	picture = "Lucio_Gutierrez.dds"
-}
-
-create_country_leader = {
-	name = "Rafael Correa"
-	ideology = democratic_socialist_ideology
-	picture = "Rafael_Correa.dds"
+	name = "Lenín Moreno"
+	picture = "Lenin_Moreno.dds"
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
 	name = "Guillermo Lasso"
-	ideology = libertarian 
 	picture = "Guillermo_Lasso.dds"
+	ideology = reactionary_ideology
 }
 
-create_country_leader = {
-	name = "Winston Alarcon Elizalde"
-	ideology = marxist_leninist 
-	picture = "Winston_Alarcon_Elizalde.dds"
+create_field_marshal = {
+	name = "Leonardo Barreiro"
+	picture = "Portrait_Leandro_Barrero.dds"
+	traits = { old_guard offensive_doctrine }
+	skill = 2
 }
 
-2013.2.18 = {
-set_politics = {
-
-		parties = {
-			islamist = {
-				popularity = 1
-			}
-			nationalist = {
-				popularity = 1
-			}
-			reactionary = {
-				popularity = 2
-			}
-			conservative = {
-				popularity = 10
-			}
-			market_liberal = {
-				popularity = 6
-			}
-			social_liberal = {
-				popularity = 15
-			}
-			social_democrat = {
-				popularity = 5
-			}
-			progressive = {
-				popularity = 10
-			}
-			democratic_socialist = {
-				popularity = 40
-			}
-			communist = {
-				popularity = 10
-			}
-		}
-	
-		ruling_party = democratic_socialist
-		last_election = "2013.2.17"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+create_field_marshal = {
+	name = "César Merizalde Pavón"
+	picture = "Portrait_Cesar_Pavon.dds"
+	traits = { organisational_leader }
+	skill = 1
 }
 
-2017.5.24 = {
-	create_country_leader = {
-		name = "Lenin Moreno"
-		ideology = democratic_socialist_ideology
-		picture = "Lenin_Moreno.dds"
-    }
+create_corps_commander = {
+	name = "Edison Narváez Rosero"
+	picture = "Portrait_Edison_Narvaez.dds"
+	traits = { ranger hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Raúl Banderas Dueñas"
+	picture = "Portrait_Raul_Duenas.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "William Orellana Carrera"
+	picture = "Portrait_William_Carrera.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Roque Moreira"
+	picture = "Portrait_Roque_Moreira.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Fabián Fuel"
+	picture = "Portrait_Fabian_Fuel.dds"
+	traits = { commando jungle_rat }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Renán Ruíz Cornejo"
+	picture = "Portrait_Renan_Cornejo.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Amilcar Villavicencio"
+	picture = "Portrait_Amilcar_Villavicencio.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Byron Jara Guerron"
+	picture = "Portrait_Byron_Jara_Guerron.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Carlos Noboa Coronel"
+	picture = "Portrait_Carlos_Noboa_Coronel.dds"
+	traits = { air_controller }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Carlos Zumarraga Asanza"
+	picture = "Portrait_Carlos_Zumarraga_Asanza.dds"
+	traits = { fly_swatter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Darwin Cisneros"
+	picture = "Portrait_Darwin_Cisneros.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Fidel Erazo Jacome"
+	picture = "Portrait_Fidel_Erazo_Jacome.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Francisco Bruque Veliz"
+	picture = "Portrait_Francisco_Bruque_Veliz.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Galo Carrillo Moya"
+	picture = "Portrait_Galo_Carrillo_Moya.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Harold Salvador Cadena"
+	picture = "Portrait_Harold_Salvador_Cadena.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jorge Echeverria Bucheli"
+	picture = "Portrait_Jorge_Echeverria_Bucheli.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Marie Fares Cantos"
+	picture = "Portrait_Maria_Fares_Cantos.dds"
+	traits = { spotter }
+	skill = 1
 }

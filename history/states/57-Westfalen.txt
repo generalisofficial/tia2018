@@ -2,31 +2,29 @@
 state={
 	id=57
 	name="STATE_57"
-	
-	resources = {
-		aluminium=12
-		oil = 1
-		steel = 80
+	resources={
+		steel=1.000
 	}
 
 	history={
-		owner = GER
-		add_core_of = GER
-		victory_points = { 495 12 }		#Dortmund
-		victory_points = { 9509 3 }		#Bielefeld
+		owner = BEL
+		add_core_of = BEL
+		add_core_of = WLN
 		buildings = {
-			infrastructure = 8
-			air_base = 2
-			industrial_complex = 4
-			arms_factory = 2
-			rubber_factory = 1
+			infrastructure = 6
+			industrial_complex = 1
+
 		}
+		victory_points = {
+			3488 1 
+		}
+
 	}
 
 	provinces={
-		405 495 3355 3398 6535 6622 9443 9509 9547 11346 11431 
+		3488 
 	}
-	manpower=10109333
+	manpower=76920
 	buildings_max_level_factor=1.000
-	state_category = state_level_16
+	state_category=state_level_2
 }

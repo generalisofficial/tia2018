@@ -53,3 +53,94 @@ western_outlook_strategy_reverse = {
         value = 200
     }
 }
+
+emerging_outlook_strategy = {
+    enable = {
+	    has_idea = outlook_emerging
+		NOT = { original_tag = SOV original_tag = PRC }
+    }
+	abort = {
+	    NOT = { has_idea = outlook_emerging }
+    } 
+	ai_strategy = {
+        type = befriend
+        id = "SOV"
+        value = 200
+    }
+	ai_strategy = {
+        type = antagonize
+        id = "SOV"
+        value = -200
+    }
+	ai_strategy = {
+        type = consider_weak
+        id = "SOV"
+        value = -200
+    }
+	ai_strategy = {
+        type = alliance
+        id = "SOV"
+        value = 15
+    }
+	ai_strategy = {
+        type = befriend
+        id = "PRC"
+        value = 200
+    }
+	ai_strategy = {
+        type = antagonize
+        id = "PRC"
+        value = -200
+    }
+	ai_strategy = {
+        type = consider_weak
+        id = "PRC"
+        value = -200
+    }
+	ai_strategy = {
+        type = alliance
+        id = "PRC"
+        value = 15
+    }
+}
+
+emerging_outlook_strategy_reverse = {
+    reversed = yes
+    enable = {
+	    has_idea = outlook_emerging
+		NOT = { original_tag = SOV original_tag = PRC }
+    }
+	abort = {
+	    NOT = { has_idea = outlook_emerging }
+    } 
+	ai_strategy = {
+        type = protect
+        id = "SOV"
+        value = 200
+    }
+	ai_strategy = {
+        type = send_volunteers_desire
+        id = "SOV"
+        value = 200
+    }
+	ai_strategy = {
+        type = support
+        id = "SOV"
+        value = 200
+    }
+	ai_strategy = {
+        type = protect
+        id = "PRC"
+        value = 200
+    }
+	ai_strategy = {
+        type = send_volunteers_desire
+        id = "PRC"
+        value = 200
+    }
+	ai_strategy = {
+        type = support
+        id = "PRC"
+        value = 200
+    }
+}

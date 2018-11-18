@@ -108,20 +108,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		conservative = { popularity = 34.4 }			#CDU + CSU + FW + ÖDP + ADD
-		social_democrat = { popularity = 20.5 }			#SPD
-		reactionary = { popularity = 12.6 }				#AfD
-		market_liberal = { popularity = 10.7 }			#FDP
-		democratic_socialist = { popularity = 9.2 }		#Linke
-		progressive = { popularity = 8.9 }				#Grüne
-		social_liberal = { popularity = 1.5 }			#Tierschutzpartei + Piraten + BGE + Tierschutzallianz
-		nationalist = { popularity = 0.4 }				#NPD
-		communist = { popularity = 0.1 }				#MLPD + DKP
-		fascist = { popularity = 0.01 }					#Die Rechte
+		conservative = { 
+		    popularity = 38.1
+		}
+		social_democrat = { 
+		    popularity = 20.5
+		}
+		reactionary = { 
+		    popularity = 12.6
+		}
+		market_liberal = { 
+		    popularity = 10.7
+		}
+		democratic_socialist = { 
+		    popularity = 9.2
+		}
+		progressive = { 
+		    popularity = 8.9
+		}
 	}
 	
 	ruling_party = conservative
-	last_election = "2017.9.24"
+	last_election = "2017.10.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -129,52 +137,11 @@ set_politics = {
 add_opinion_modifier = { target = FRA modifier = franco_german_friendship }
 add_opinion_modifier = { target = HOL modifier = german_dutch_military_cooperation }
 
-create_country_leader = {
-	name = "Pierre Vogel"
-	picture = "Pierre_Vogel.dds"
-	ideology = salafist
-}
-
-create_country_leader = {
-	name = "Klaus Armstroff"
-	picture = "Klaus_Armstroff.dds"
-	ideology = national_socialist
-}
-
-create_country_leader = {
-	name = "Frank Franz"
-	picture = "Frank_Franz.dds"
-	ideology = national_democrat
-}
-
-create_country_leader = {
-	name = "Georg Friedrich I"
-	picture = "Georg_Friedrich.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Alexander Gauland"
-	picture = "Alexander_Gauland.dds"
-	ideology = reactionary_ideology
-}
 
 create_country_leader = {
 	name = "Angela Merkel"
 	picture = "Angela_Merkel.dds"
 	ideology = christian_democrat
-}
-
-create_country_leader = {
-	name = "Christian Lindner"
-	picture = "Christian_Lindner.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Patrick Schiffer"
-	picture = "Patrick_Schiffer.dds"
-	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
@@ -184,26 +151,57 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Joschka Fischer"
-	picture = "Joschka_Fischer.dds"
+	name = "Alexander Gauland"
+	picture = "Alexander_Gauland.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Frank Franz"
+	picture = "Frank_Franz.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Georg Friedrich"
+	picture = "Georg_Friedrich.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Christian Lindner"
+	picture = "Christian_Lindner.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Carsten Sawosch"
+	picture = "Carsten_Sawosch.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Simone Peter"
+	picture = "Simone_Peter.dds"
 	ideology = green
 }
 
 create_country_leader = {
-	name = "Gregor Gysi"
-	picture = "Gregor_Gysi.dds"
+	name = "Katja Kipping"
+	picture = "Katja_Kipping.dds"
 	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Klaus Armstroff"
+	picture = "Klaus_Armstroff.dds"
+	ideology = national_socialist
 }
 
 create_country_leader = {
 	name = "Patrik Köbele"
 	picture = "Patrik_Koebele.dds"
 	ideology = marxist_leninist
-}
-
-add_namespace = {
-	name = "ger_unit_leader"
-	type = unit_leader
 }
 
 create_field_marshal = {

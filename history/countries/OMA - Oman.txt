@@ -101,55 +101,21 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 10
-		}
-		nationalist = {
-			popularity = 5
-		}
 		monarchist = {
-			popularity = 70
+			popularity = 100
 		}
-		social_democrat = {
-			popularity = 15
-		}
-
 	}
 	
 	ruling_party = monarchist
-	last_election = "1997.1.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Qabus ibn Said"
-	picture = "Qabus.dds"
+	name = "Qaboos bin Said al Said"
+	picture = "Qaboos_bin_Said_al_Said.dds"
 	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Musa'ab Hassan"
-	picture = "Musaab_Hassan.dds"
-	ideology = national_socialist
-}
-
-create_country_leader = {
-	name = "Khaled Al-Mawali"
-	picture = "Khaled_Mawali.dds"
-	ideology = social_democrat_ideology
-}
-create_country_leader = {
-	name = "Ahmed Al-Khalili"
-	picture = "Khalili.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "Salim bin Musallam"
-	picture = "Salim_Musallam.dds"
-	ideology = autocrat
 }
 
 create_field_marshal = {
