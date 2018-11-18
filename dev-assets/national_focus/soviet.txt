@@ -42,7 +42,8 @@ focus_tree = {
 		}
 		}
 		bypass = {
-	    SOV = { has_country_flag = russia_elections_2018 } }
+	        has_country_flag = SOV_election_2018
+		}
 		completion_reward = {
 	    add_stability = -0.02
 		add_political_power = 50
@@ -69,7 +70,7 @@ focus_tree = {
 		}
 		}
 		bypass = {
-	    has_country_flag = putinboi
+	    has_country_flag = putin_2018
 		}
 		completion_reward = {
 		unlock_national_focus = SOV_stabilizing_the_economy
@@ -91,14 +92,10 @@ focus_tree = {
 		focus = SOV_the_russian_presidential_election
 		}
 		available = {
-	   custom_trigger_tooltip = {
-		tooltip = SOV_elections_grudinin
-		always = no
-		OR = { has_country_flag = commieboi }
-		}
+	    always = no
 		}
 		bypass = {
-      has_country_flag = commieboi 
+      has_country_flag = grudinin_2018
 		}
 		completion_reward = {
 		unlock_national_focus = SOV_stabilizing_the_economy
@@ -121,14 +118,10 @@ focus_tree = {
 		}
 		
 		available = {
-	    custom_trigger_tooltip = {
-		tooltip = SOV_elections_yavlinsky
-		always = no
-		OR = { has_country_flag = libtard }
-		}
+	        always = no
 		}
 		bypass = {
-	   has_country_flag = libtard 
+	   has_country_flag = yavlinsky_2018
 		}
 		completion_reward = {
 		unlock_national_focus = SOV_stabilizing_the_economy

@@ -1,6 +1,6 @@
 ﻿capital = 819
 
-oob = "SWZ_2000"
+oob = "SWZ_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -90,33 +90,18 @@ set_politics = {
 
 	parties = {
 		monarchist = {
-			popularity = 58
-		}
-		social_liberal = {
-			popularity = 24
-		}
-		conservative = {
-			popularity = 6
-		}
-		market_liberal = {
-			popularity = 5
-		}
-		nationalist = {
-			popularity = 4
-		}
-		communist = {
-			popularity = 3
+			popularity = 100
 		}
 	}
 	
 	ruling_party = monarchist
-	last_election = "1997.1.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Mswati III"
-	ideology = absolute_monarchist
 	picture = "Mswati_III.dds"
+	ideology = absolute_monarchist
 }

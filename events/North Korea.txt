@@ -1,41 +1,5 @@
 ﻿add_namespace = north_korea
 
-country_event = {	#Death of Kim Jong-Il
-	id = north_korea.1
-	title = north_korea.1.t
-	desc = north_korea.1.d
-	picture = GFX_report_event_kim_jong_il_dead
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = PRK
-			AND = {
-				tag = KOR
-				NOT = { country_exists = PRK }
-			}
-		}
-		date > 2011.12.14
-		date < 2012.3.1
-		has_government = communist
-		NOT = { has_country_flag = prk_death_of_kim_jong_il }
-	}
-	
-	immediate = {
-		set_country_flag = prk_death_of_kim_jong_il
-	}
-	
-	option = {
-		name = north_korea.1.o1
-		create_country_leader = {
-			name = "Kim Jong-Un"
-			picture = "Kim_Jong_Un.dds"
-			ideology = juche
-		}
-	}
-}
-
 country_event = {	#Remove the South Korean cores upon union
 	id = north_korea.2
 	hidden = yes

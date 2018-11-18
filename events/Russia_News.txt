@@ -1,11 +1,10 @@
 ﻿add_namespace = russia_news
 
-#Putin elected President
 news_event = {
 	id = russia_news.1
 	title = russia_news.1.t
 	desc = russia_news.1.d
-	picture = GFX_news_event_vladimir_putin
+	picture = GFX_news_event_putinvictorious
 	
 	is_triggered_only = yes
 	major = yes
@@ -15,12 +14,11 @@ news_event = {
 	}
 }
 
-#Zhirinovsky elected President
 news_event = {
 	id = russia_news.2
 	title = russia_news.2.t
 	desc = russia_news.2.d
-	picture = GFX_news_event_vladimir_zhirinovsky
+	picture = GFX_news_event_grudininvictorious
 	
 	is_triggered_only = yes
 	major = yes
@@ -30,12 +28,11 @@ news_event = {
 	}
 }
 
-#Zyuganov elected President
 news_event = {
 	id = russia_news.3
 	title = russia_news.3.t
 	desc = russia_news.3.d
-	picture = GFX_news_event_gennady_zyuganov
+	picture = GFX_news_event_zhirinovskyvictorious
 	
 	is_triggered_only = yes
 	major = yes
@@ -44,173 +41,17 @@ news_event = {
 		name = russia_news.3.o1
 	}
 }
-
-#Yavlinsky elected President
+	
 news_event = {
 	id = russia_news.4
 	title = russia_news.4.t
 	desc = russia_news.4.d
-	picture = GFX_news_event_grigory_yavlinsky
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = russia_news.4.o1
-		trigger = { original_tag = SOV }
-		set_country_flag = libtard
-	}
-	
-	option = {
-		name = russia_news.4.o2
-		trigger = { NOT = { original_tag = SOV } }
-	}
-}
-
-news_event = {
-	id = russia_news.5
-	title = russia_news.5.t
-	desc = russia_news.5.d
-	picture = GFX_news_event_putinvictorious
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = russia_news.5.o1
-		trigger = { original_tag = SOV }
-		set_country_flag = putinboi
-	}
-	
-	option = {
-		name = russia_news.5.o2
-		trigger = { NOT = { original_tag = SOV } }
-	}
-}
-
-news_event = {
-	id = russia_news.6
-	title = russia_news.6.t
-	desc = russia_news.6.d
-	picture = GFX_news_event_grudininvictorious
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = russia_news.6.o1
-		trigger = { original_tag = SOV }
-		set_country_flag = commieboi
-	}
-	
-	option = {
-		name = russia_news.6.o2
-		trigger = { NOT = { original_tag = SOV } }
-	}
-}
-
-news_event = {
-	id = russia_news.7
-	title = russia_news.7.t
-	desc = russia_news.7.d
-	picture = GFX_news_event_zhirinovskyvictorious
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = russia_news.7.o1
-		trigger = { original_tag = SOV }
-		set_country_flag = nationalistboi
-	}
-	
-	option = {
-		name = russia_news.7.o2
-		trigger = { NOT = { original_tag = SOV } }
-	}
-}
-	
-news_event = {
-	id = russia_news.8
-	title = russia_news.8.t
-	desc = russia_news.8.d
 	picture = GFX_news_event_ukrainebombed
 	
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
-		name = russia_news.8.o1
-		trigger = { original_tag = SOV }
-	}
-	
-	option = {
-		name = russia_news.8.o2
-		trigger = { NOT = { original_tag = SOV } 
-		has_idea = idea_eu_member
-		}
-	}
-	
-	option = {
-		name = russia_news.8.o3
-		trigger = { NOT = { original_tag = SOV } 
-		}
+		name = russia_news.4.o1
 	}
 }
-
-#Kursk Submarine Disaster
-news_event = {
-	id = news.50
-	title = news.50.t
-	desc = news.50.d
-	picture = GFX_news_event_kursk_sinking
-	
-	major = yes
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = news.50.o1
-		trigger = { original_tag = SOV }
-	}
-	
-	option = {
-		name = news.50.o2
-		trigger = { 
-			is_in_faction_with = SOV 
-			NOT = { original_tag = SOV }
-		}
-	}
-	
-	option = {
-		name = news.50.o3
-		trigger = { 
-			NOT = { is_in_faction_with = SOV }
-			NOT = { original_tag = SOV }
-			NOT = { has_war_with = SOV }
-		}
-	}
-	
-	option = {
-		name = news.50.o4
-		trigger = { 
-			has_war_with = SOV
-		}
-	}
-	}
-	
-	#Grigory speaks against Putin
-    news_event = {
-	id = russia_news.9
-	title = russia_news.9.t
-	desc = russia_news.9.d
-	picture = GFX_news_event_grigory_yavlinsky
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = russia_news.9.o1
-	    }
-    }

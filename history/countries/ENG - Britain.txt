@@ -126,41 +126,20 @@ give_guarantee = FRA
 set_politics = {
 
 	parties = {
-		conservative = {			#Tories + UUP + TUV
-			popularity = 37.3
+		conservative = {
+			popularity = 42.4
 		}
-		social_democrat = {			#Labour + SNP + SDLP + NHA
-			popularity = 35.7
+		social_democrat = {
+			popularity = 40.0
 		}
-		reactionary = {				#UKIP + DUP; buffed by like 2% so that Brexit is possible
-			popularity = 15.1
-		}
-		social_liberal = {			#LibDems
-			popularity = 7.9
-		}
-		progressive = {				#Green Party + Plaid Cymru
-			popularity = 4.4
-		}
-		democratic_socialist = {	#Sinn Fein + TUSC + Respect + S(GB) + SSP
-			popularity = 0.9
-		}
-		market_liberal = {			#APNI
-			popularity = 0.2
-		}
-		nationalist = {				#English Democrat + Christian + NLP
-			popularity = 0.2
-		}
-		communist = {				#Workers Party
-			popularity = 0.1
-		}
-		fascist = {					#BNP
-			popularity = 0.1 
+		social_liberal = {
+			popularity = 17.6
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "2017.6.18"
-	election_frequency = 36
+	last_election = "2017.5.5"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
@@ -190,36 +169,6 @@ add_opinion_modifier = {
 }
 
 create_country_leader = {
-	name = "David MacDonald"
-	picture = "david_macdonald.dds"
-	ideology = national_socialist
-}
-	
-create_country_leader = {
-	name = "Adam Walker"
-	picture = "adam_walker.dds"
-	ideology = proto_fascist
-}
-
-create_country_leader = {
-	name = "Elizabeth II"
-	picture = "Elizabeth.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Henry Bolton"
-	picture = "Henry_Bolton.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Adam Brown"
-	picture = "Adam_Brown.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
 	name = "Theresa May"
 	picture = "Theresa_May.dds"
 	ideology = fiscal_conservative
@@ -232,26 +181,44 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anjem Choudary"
-	picture = "Anjem_Choudary.dds"
-	ideology = salafist
-}
-	
-create_country_leader = {
 	name = "Vince Cable"
 	picture = "Vince_Cable.dds"
-	ideology = centrist
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Henry Bolton"
+	picture = "Henry_Bolton.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Adam Walker"
+	picture = "Adam_Walker.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Elizabeth II"
+	picture = "Elizabeth_II.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Adam Brown"
+	picture = "Adam_Brown.dds"
+	ideology = libertarian
 }
 	
 create_country_leader = {
-	name = "Natalie Bennett"
-	picture = "Natalie_Bennett.dds"
+	name = "Jonathan Bartley"
+	picture = "Jonathan_Bartley.dds"
 	ideology = green
 }
 	
 create_country_leader = {
 	name = "Peter Taaffe"
-	picture = "Peter_Taaffey.dds"
+	picture = "Peter_Taaffe.dds"
 	ideology = democratic_socialist_ideology
 }
 	
@@ -259,11 +226,6 @@ create_country_leader = {
 	name = "Robert Griffiths"
 	picture = "Robert_Griffiths.dds"
 	ideology = marxist_leninist
-}
-
-add_namespace = {
-	name = "eng_unit_leader"
-	type = unit_leader
 }
 
 create_field_marshal = {

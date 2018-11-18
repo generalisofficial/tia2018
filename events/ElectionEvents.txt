@@ -1,6 +1,7 @@
 ﻿add_namespace = election
+add_namespace = election_SOV
 
-#Actual Election
+#Generic Election
 country_event = {
 	id = election.1
 	title = election.1.t
@@ -282,6 +283,141 @@ country_event = {
 		name = election.2.o2
 		trigger = {
 			NOT = { original_tag = FROM }
+		}
+	}
+}
+
+#SOV 2018
+country_event = {
+	id = election_SOV.1
+	title = election_SOV.1.t
+	desc = election_SOV.1.d
+	picture = GFX_report_event_russiaelections
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    original_tag = SOV
+		date > 2018.1.1
+		date < 2019.1.1
+	}
+	
+	immediate = {
+		set_country_flag = SOV_election_2018
+	}
+	
+	option = {
+		name = election_SOV.1.o1
+		trigger = {
+		    OR = {
+                reactionary > 0.15
+				has_government = reactionary
+			}
+		}
+		set_politics = {
+			ruling_party = reactionary
+			elections_allowed = yes
+		}		
+		news_event = russia_news.1
+		set_country_flag = putin_2018
+		ai_chance = { 
+			factor = 76
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
+    }
+	
+	option = {
+		name = election_SOV.1.o2
+		trigger = {
+		    OR = {
+                communist > 0.15
+				has_government = communist
+			}
+		}
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = yes
+		}
+		news_event = russia_news.2
+		set_country_flag = grudinin_2018
+		ai_chance = { 
+			factor = 11
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = {
+		name = election_SOV.1.o3
+		trigger = {
+		    OR = {
+                nationalist > 0.15
+				has_government = nationalist
+			}
+		}
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = yes
+		}
+		news_event = russia_news.3
+		set_country_flag = zhirinovsky_2018
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = {
+		name = election_SOV.1.o4
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		trigger = {
+		    OR = {
+                social_liberal > 0.15
+				has_government = social_liberal
+			}
+		}
+		news_event = russia_news.4
+		set_country_flag = yavlinsky_2018
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	option = {
+		name = election_SOV.1.o5
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		trigger = {
+		    OR = {
+                conservative > 0.15
+				has_government = conservative
+			}
+		}
+		news_event = russia_news.5
+		set_country_flag = titov_2018
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
 		}
 	}
 }
