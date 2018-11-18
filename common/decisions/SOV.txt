@@ -4,7 +4,7 @@ soviet_union = {
 		visible = {
 		    original_tag = SOV
 			has_government = communist
-			NOT = { has_cosmetic_tag = SovietUnion }
+			NOT = { has_cosmetic_tag = SOV_UNION }
 		}
 		available = {
 		    OR = {
@@ -65,7 +65,7 @@ soviet_union = {
 			}
 		}
 		complete_effect = {
-			set_cosmetic_tag = SovietUnion
+			set_cosmetic_tag = SOV_UNION
 		}
 		
 		icon = communism
