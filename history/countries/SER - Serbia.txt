@@ -1,6 +1,6 @@
 ﻿capital = 107
 
-oob = "SER_2000"
+oob = "SER_2018"
 
 set_research_slots = 3
 set_convoys = 120
@@ -81,7 +81,7 @@ set_technology = {
 
 add_ideas = {
 	population_growth_stagnation
-	limited_conscription
+	volunteer_only
 	neutrality_idea
 }
 
@@ -89,153 +89,81 @@ set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 10
+			popularity = 8.10
+		}
+		fascist = {
+			popularity = 5.04
 		}
 		market_liberal = {
-			popularity = 4
+			popularity = 6.02
 		}
 		social_liberal = {
-			popularity = 4
+			popularity = 6.02
 		}
 		social_democrat = {
-			popularity = 2
+			popularity = 5.02
+		}
+		islamist = {
+			popularity = 10.6
 		}
 		conservative = {
-			popularity = 35
+			popularity = 48.25
 		}
 		democratic_socialist = {
-			popularity = 35
-		}
-		communist = {
-			popularity = 10
+			popularity = 10.95
 		}
 	}
 	
-	ruling_party = democratic_socialist
-	last_election = "1997.1.1"
+	ruling_party = conservative
+	last_election = "2016.4.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Slobodan Milošević"
+	name = "Aleksandar Vučić"
+	picture = "Aleksandar_Vucic.dds"
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Ivica Dačić"
+	picture = "Ivica_Dacic.dds"
 	ideology = democratic_socialist_ideology
-	picture = "Slobodan_Milosevic.dds"
 }
 
 create_country_leader = {
-	name = "Tomislav Nikolić"
-	ideology = fiscal_conservative
-	picture = "Tomislav_Nikolic.dds"
-}
-
-create_country_leader = {
-	name = "Vojislav Seselj"
-	ideology = fascist_ideology
+	name = "Vojislav Šešelj"
 	picture = "Vojislav_Seselj.dds"
+	ideology = national_democrat
 }
 
 create_country_leader = {
-	name = "Bosko Obradovic"
-	ideology = proto_fascist
-	picture = "Bosko_Obradovic.dds"
-}
-
-create_country_leader = {
-	name = "Alexander II"
-	ideology = absolute_monarchist
-	picture = "Alexander_II.dds"
-}
-
-create_country_leader = {
-	name = "Cedomir Jovanovic"
+	name = "Branka Stamenković"
+	picture = "Branka_Stamenkovic.dds"
 	ideology = libertarian
-	picture = "Cedomir_Jovanovic.dds"
 }
 
 create_country_leader = {
-	name = "Sasa Radulovic"
+	name = "Zoran Lutovac"
+	picture = "Zoran_Lutovac.dds"
 	ideology = social_liberal_ideology
-	picture = "Sasa_Radulovic.dds"
 }
 
 create_country_leader = {
-	name = "Zoran Dindic"
+	name = "Boško Obradović"
+	picture = "Bosko_Obradovic.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Boris Tadić"
+	picture = "Boris_Tadic.dds"
 	ideology = social_democrat_ideology
-	picture = "Zoran_Dindic.dds"
 }
 
 create_country_leader = {
-	name = "Josip Joska Broz"
-	ideology = stalinist
-	picture = "Josip_Joska_Broz.dds"
-}
-
-1999.1.1 = {
-	set_cosmetic_tag = YUG
-}
-
-2006.6.1 = {
-	drop_cosmetic_tag = yes
-	set_country_flag = SER_montenegro_referendum
-}
-
-2008.3.1 = {
-	set_country_flag = SER_kosovo_independence
-}
-
-2011.1.1 = { add_ideas = { volunteer_only } }
-
-2016.1.1 = {
-
-	oob = "SER_2016"
-	create_country_leader = {
-		name = "Aleksandar Vučić"
-		ideology = fiscal_conservative
-		picture = "Aleksandar_Vucic.dds"
-	}
-
-	create_country_leader = {
-		name = "Ivica Dačić"
-		ideology = democratic_socialist_ideology
-		picture = "Ivica_Dacic.dds"
-	}
-	
-	create_country_leader = {
-		name = "Dragan Sutanovac"
-		ideology = social_democrat_ideology
-		picture = "Dragan_Sutanovac.dds"
-	}
-
-	set_politics = {
-
-		parties = {
-			nationalist = {
-				popularity = 15
-			}
-			market_liberal = {
-				popularity = 4
-			}
-			social_liberal = {
-				popularity = 4
-			}
-			social_democrat = {
-				popularity = 2
-			}
-			conservative = {
-				popularity = 40
-			}
-			democratic_socialist = {
-				popularity = 20
-			}
-			communist = {
-				popularity = 15
-			}
-		}
-		
-		ruling_party = conservative
-		last_election = "1997.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	name = "Muamer Zukorlić"
+	picture = "Muamer_Zukorlic.dds"
+	ideology = islamic_democracy
 }
