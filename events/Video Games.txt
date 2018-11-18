@@ -1,0 +1,16 @@
+﻿add_namespace = video_games
+
+news_event = { #Far Cry 5
+	id = video_games.1
+	title = video_games.1.t
+	desc = video_games.1.d
+	picture = GFX_news_event_far_cry_5
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+		name = video_games.1.o1
+	}
+}
