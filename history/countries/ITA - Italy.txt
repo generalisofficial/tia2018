@@ -112,116 +112,89 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		islamist = {
-			popularity = 0
-		}
 		fascist = {
-			popularity = 0
+			popularity = 32.68
 		}
 		nationalist = {
-			popularity = 1
+			popularity = 17.35
 		}
 		reactionary = {
-			popularity = 27
+			popularity = 4.35
 		}
 		conservative = {
-			popularity = 30
-		}
-		monarchist = {
-			popularity = 1
+			popularity = 15.30
 		}
 		social_liberal = {
-			popularity = 10
+			popularity = 2.56
 		}
 		social_democrat = {
-			popularity = 32
+			popularity = 23.8
 		}
 		progressive = {
-			popularity = 0
+			popularity = 0.58
 		}
 		democratic_socialist = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 1
+			popularity = 3.38
 		}
 	}
 	ruling_party = social_democrat
-	last_election = "2013.2.25"
+	last_election = "2013.3.4"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Paolo Gentiloni"
+	picture = "Paolo_Gentiloni.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Matteo Salvini"
+	picture = "Matteo_Salvini.dds"
+	ideology = national_democrat
+}
+
+create_country_leader = {
+	name = "Luigi Di Maio"
+	picture = "Luigi_Di_Maio.dds"
+	ideology = fascist_ideology
 }
 
 create_country_leader = {
 	name = "Silvio Berlusconi"
 	picture = "Silvio_Berlusconi.dds"
 	ideology = christian_democrat
-	traits  = { friend_of_russia }
-}
-
-create_country_leader = {
-	name = "Paolo Gentinoli"
-	picture = "Paolo_Gentiloni.dds"
-	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Giorgia Meloni"
 	picture = "Giorgia_Meloni.dds"
-	ideology = proto_fascist
-}
-
-create_country_leader = {
-	name = "Fausto Bertinotti"
-	picture = "Fausto_Bertinotti.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Angelino Alfano"
-	picture = "Angelino_Aldano.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Angelo Bonelli"
-	picture = "Angelo_Bonelli.dds"
-	ideology = green
-}
-
-create_country_leader = {
-	name = "Simone di Stefano"
-	picture = "Simone_di_Stefano.dds"
-	ideology = fascist_ideology
-}
-
-create_country_leader = {
-	name = "Marco Panella"
-	picture = "Marco_Panella.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Vittorio Emanuele IV"
-	picture = "Vittorio_Emmanuele.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Beppe Grillo"
-	picture = "Beppe_Grillo.dds"
 	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Nichi Vendola"
-	picture = "Nichi_Vendola.dds"
+	name = "Pietro Grasso"
+	picture = "Pietro_Grasso.dds"
 	ideology = democratic_socialist_ideology
 }
 
-add_namespace = {
-	name = "ita_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Emma Bonino"
+	picture = "Emma_Bonino.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Giulio Santagata"
+	picture = "Giulio_Santagata.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Vittorio Emanuele"
+	picture = "Vittorio_Emanuele.dds"
+	ideology = absolute_monarchist
 }
 
 create_field_marshal = {
