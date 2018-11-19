@@ -79,8 +79,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	### Democracy ###
 	
 	focus = {
-		id = EST_maintain_cooperation
-		icon = neutrality
+		id = EST_estonian_centennial
+		icon = estonian_year
 		
 		x = 10
 		y = 0
@@ -242,8 +242,8 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_reforming_the_country
-		icon = higher_society
+		id = EST_reforms
+		icon = neutrality
 		
 		x = 13
 		y = 1
@@ -255,7 +255,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 		available_if_capitulated = yes
 		
 		prerequisite = {
-		    focus = EST_maintain_cooperation
+		    focus = EST_estonian_centennial
 		}
 		
 		mutually_exclusive = {}
@@ -323,7 +323,7 @@ focus_tree = {    ### Made by CMDR Voltages ###
 	}
 	
 	focus = {
-		id = EST_improving_the_healthcare
+		id = EST_reform_the_healthcare
 		icon = national_unity_red
 		
 		x = 11
