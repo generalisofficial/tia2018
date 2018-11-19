@@ -101,32 +101,32 @@ set_politics = {
 
 	parties = {
 		social_democrat = {
-			popularity = 44.06
+			popularity = 41.5
 		}
 		market_liberal = {
-			popularity = 32.32
+			popularity = 38.6
 		}
 		communist = {
-			popularity = 8.99
-		}
-		conservative = {
-			popularity = 8.34
+			popularity = 8.3
 		}
 		democratic_socialist = {
-			popularity = 2.44
+			popularity = 10.2
 		}
 		progressive = {
-			popularity = 0.37
-		}
-		monarchist = {
-			popularity = 0.31
+			popularity = 1.4
 		}
 	}
 	
 	ruling_party = social_democrat
-	last_election = "1999.10.10"
-	election_frequency = 36
+	last_election = "2015.10.13"
+	election_frequency = 48
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Pedro Passos Coelho"
+	picture = "Pedro_Passos_Coelho.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -136,61 +136,170 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Duarte III Pio de Bragança"
+	name = "Catarina Martins"
+	picture = "Catarina_Martins.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Jerónimo de Sousa"
+	picture = "Jeronimo_de_Sousa.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "André Lourenço e Silva"
+	picture = "Andre_Lourenco_e_Silva.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Assunção Cristas"
+	picture = "Assuncao_Cristas.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "José Pinto Coelho"
+	picture = "Jose_Pinto_Coelho.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Duarte Pio"
 	picture = "Duarte_Pio.dds"
 	ideology = absolute_monarchist
 }
 
-create_country_leader = {
-	name = "Mario Machado"
-	picture = "Mario_Machado.dds"
-	ideology = national_socialist
+create_field_marshal = {
+	name = "Artur Neves Pina Monteiro"
+	picture = "Portrait_Artur_Pina_Neves_Monteiro.dds"
+	traits = { old_guard thorough_planner }
+	skill = 2
 }
 
-create_country_leader = {
-	name = "Jose Pinto Coelho"
-	picture = "Jose_Pinto_Coelho.dds"
-	ideology = national_democrat 
+create_corps_commander = {
+	name = "Raul Luís de Morais Lima Ferreira da Cunha"
+	picture = "Portrait_Raul Luis_de_Morais_Lima_Ferreira_da_Cunha.dds"
+	traits = { commando }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Jeronimo de Sousa"
-	picture = "Jeronimo_de_Sousa.dds"
-	ideology = marxist_leninist  
+create_corps_commander = {
+	name = "Amandio Miranda"
+	picture = "Portrait_Amandio_Miranda.dds"
+	traits = {  }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Catarina Martins"
-	picture = "Catarina_Martins.dds"
-	ideology = democratic_socialist_ideology   
+create_corps_commander = {
+	name = "Luís Evangelista Esteves de Araujo"
+	picture = "Portrait_Luis_Evangelista_Esteves_de_Araujo.dds"
+	traits = {  }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Andre Silva"
-	picture = "Andre_Silva.dds"
-	ideology = green   
+create_corps_commander = {
+	name = "Manuel Texeira Rolo"
+	picture = "Portrait_Manuel_Texeira_Rolo.dds"
+	traits = {  }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Antonio Marinho e Pinto"
-	picture = "Antonio_Marinho_Pinto.dds"
-	ideology = centrist    
+create_corps_commander = {
+	name = "Carlos Antonio Corbal Hernandez Jeronimo"
+	picture = "Portrait_Carlos_Antonio_Corbal_Hernandez_Jeronimo.dds"
+	traits = {  }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Pedro Passos Coelho"
-	picture = "Pedro_Passos_Coelho.dds"
-	ideology = libertarian 
+create_corps_commander = {
+	name = "Carlos Perestrelo"
+	picture = "Portrait_Carlos_Perestrelo.dds"
+	traits = { commando }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Pablo Portas"
-	picture = "Pablo_Portas.dds"
-	ideology = christian_democrat      
+create_corps_commander = {
+	name = "Dina Joana Azevedo"
+	picture = "Portrait_Dina_Joana_Azevedo.dds"
+	traits = {  }
+	skill = 1
 }
 
-create_country_leader = {
-	name = "Joana Camara Pereira"
-	picture = "Joana_Camara_Pereira.dds"
-	ideology = reactionary_ideology     
+create_corps_commander = {
+	name = "Fernando Celso Vicente de Campos Serafino"
+	picture = "Portrait_Fernando_Celso_Vicente_de_ Campos_Serafino.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "José Manuel Lopes dos Santos Correia"
+	picture = "Portrait_Jose_Manuel_Lopes_dos_Santos_Correia.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Luis Fonseca"
+	picture = "Portrait_Luis_Fonseca.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Manuel Mateus Costa da Silva Couto"
+	picture = "Portrait_Manuel_Mateus_Costa_da_Silva_Couto.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Mario Joao Parente Monteiro"
+	picture = "Portrait_Mario_Joao_Parente_Monteiro.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasco Pereira"
+	picture = "Portrait_Vasco_Pereira.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vitor Fernandes"
+	picture = "Portrait_Vitor_Fernandes.dds"
+	traits = { ranger}
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Cortes Picciochi"
+	picture = "Portrait_Cortes_Picciochi.dds"
+	traits = { naval_invader }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Luís M. F. Macieira Fragoso"
+	picture = "Portrait_Luis_Macieira_Fragoso.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "António Manuel Fernandes da Silva Ribeiro"
+	picture = "Portrait_Antonio_Manuel_Fernandes_da_Silva_Ribeiro.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "José Saldanha Lopes"
+	picture = "Portrait_Jose_Saldanha_Lopes.dds"
+	traits = { seawolf }
+	skill = 1
 }
