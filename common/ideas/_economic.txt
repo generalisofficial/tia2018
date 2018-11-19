@@ -131,13 +131,10 @@ ideas = {
 			level = 5
 			
 			modifier = {
-				consumer_goods_factor = 0.45
-				production_speed_industrial_complex_factor = -0.7
-				production_speed_arms_factory_factor = -0.7
-				conversion_cost_civ_to_mil_factor= 0.3
-				conversion_cost_mil_to_civ_factor = 0.3
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_buildings_factor = 0.5
+				industrial_capacity_factory = -0.25
 				
-				ai_join_ally_desire_factor = -30
 			}
 			
 			default = yes
@@ -148,7 +145,7 @@ ideas = {
 	    mostly_privatized = {
 			
 			available = {
-			
+			    NOT = { has_government = communist }
 			}
 			
 			cost = 150
@@ -156,12 +153,11 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				consumer_goods_factor = 0.4
-
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
+				consumer_goods_factor = 0.15
+				local_resources_factor = 0.01
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = -0.15
 				
-				ai_join_ally_desire_factor = -15
 			}
 			
 			cancel_if_invalid = no
@@ -182,10 +178,8 @@ ideas = {
 			level = 3
 			
 			modifier = {
-				consumer_goods_factor = 0.3
-				production_speed_arms_factory_factor = 0.1
-				conversion_cost_civ_to_mil_factor= -0.1
-				conversion_cost_mil_to_civ_factor = -0.1
+				consumer_goods_factor = 0.25
+				local_resources_factor = 0.02
 			}
 			
 			cancel_if_invalid = no
@@ -197,7 +191,7 @@ ideas = {
 		
 		mostly_nationalized = {
 			available = {
-			
+			    NOT = { has_government = market_liberal }
 			}
 		
 			cost = 150
@@ -205,12 +199,10 @@ ideas = {
 			level = 2
 			
 			modifier = {
-				consumer_goods_factor = 0.2
-				production_speed_arms_factory_factor = 0.2
-				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
-				
-				ai_join_ally_desire_factor = 15
+				consumer_goods_factor = 0.35
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = 0.15
 			}
 			
 			cancel_if_invalid = no
@@ -222,6 +214,7 @@ ideas = {
 		
 		nationalized = {
 			available = {
+			    NOT = { has_government = market_liberal market_liberal > 0.2 }
 				OR = {
 				    has_government = communist
 				    communist > 0.2
@@ -233,13 +226,10 @@ ideas = {
 			level = 1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
-				conscription = -0.05
-				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				
-				ai_join_ally_desire_factor = 30
+				consumer_goods_factor = 0.5
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = 0.25
 			}
 			
 			cancel_if_invalid = no

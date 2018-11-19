@@ -1,6 +1,6 @@
 ﻿capital = 107
 
-oob = "SER_2000"
+oob = "SER_2018"
 
 set_research_slots = 3
 set_convoys = 120
@@ -81,7 +81,7 @@ set_technology = {
 
 add_ideas = {
 	population_growth_stagnation
-	limited_conscription
+	volunteer_only
 	neutrality_idea
 }
 
@@ -89,153 +89,254 @@ set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 10
+			popularity = 8.10
+		}
+		fascist = {
+			popularity = 5.04
 		}
 		market_liberal = {
-			popularity = 4
+			popularity = 6.02
 		}
 		social_liberal = {
-			popularity = 4
+			popularity = 6.02
 		}
 		social_democrat = {
-			popularity = 2
+			popularity = 5.02
+		}
+		islamist = {
+			popularity = 10.6
 		}
 		conservative = {
-			popularity = 35
+			popularity = 48.25
 		}
 		democratic_socialist = {
-			popularity = 35
-		}
-		communist = {
-			popularity = 10
+			popularity = 10.95
 		}
 	}
 	
-	ruling_party = democratic_socialist
-	last_election = "1997.1.1"
+	ruling_party = conservative
+	last_election = "2016.4.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Slobodan Milošević"
+	name = "Aleksandar Vučić"
+	picture = "Aleksandar_Vucic.dds"
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Ivica Dačić"
+	picture = "Ivica_Dacic.dds"
 	ideology = democratic_socialist_ideology
-	picture = "Slobodan_Milosevic.dds"
 }
 
 create_country_leader = {
-	name = "Tomislav Nikolić"
-	ideology = fiscal_conservative
-	picture = "Tomislav_Nikolic.dds"
-}
-
-create_country_leader = {
-	name = "Vojislav Seselj"
-	ideology = fascist_ideology
+	name = "Vojislav Šešelj"
 	picture = "Vojislav_Seselj.dds"
+	ideology = national_democrat
 }
 
 create_country_leader = {
-	name = "Bosko Obradovic"
-	ideology = proto_fascist
-	picture = "Bosko_Obradovic.dds"
-}
-
-create_country_leader = {
-	name = "Alexander II"
-	ideology = absolute_monarchist
-	picture = "Alexander_II.dds"
-}
-
-create_country_leader = {
-	name = "Cedomir Jovanovic"
+	name = "Branka Stamenković"
+	picture = "Branka_Stamenkovic.dds"
 	ideology = libertarian
-	picture = "Cedomir_Jovanovic.dds"
 }
 
 create_country_leader = {
-	name = "Sasa Radulovic"
+	name = "Zoran Lutovac"
+	picture = "Zoran_Lutovac.dds"
 	ideology = social_liberal_ideology
-	picture = "Sasa_Radulovic.dds"
 }
 
 create_country_leader = {
-	name = "Zoran Dindic"
+	name = "Boško Obradović"
+	picture = "Bosko_Obradovic.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Boris Tadić"
+	picture = "Boris_Tadic.dds"
 	ideology = social_democrat_ideology
-	picture = "Zoran_Dindic.dds"
 }
 
 create_country_leader = {
-	name = "Josip Joska Broz"
-	ideology = stalinist
-	picture = "Josip_Joska_Broz.dds"
+	name = "Muamer Zukorlić"
+	picture = "Muamer_Zukorlic.dds"
+	ideology = islamic_democracy
 }
 
-1999.1.1 = {
-	set_cosmetic_tag = YUG
+create_country_leader = {
+	name = "Joška Broz"
+	picture = "Joska_Broz.dds"
+	ideology = marxist_leninist
 }
 
-2006.6.1 = {
-	drop_cosmetic_tag = yes
-	set_country_flag = SER_montenegro_referendum
+create_country_leader = {
+	name = "Alexander"
+	picture = "Alexander.dds"
+	ideology = absolute_monarchist
 }
 
-2008.3.1 = {
-	set_country_flag = SER_kosovo_independence
+create_field_marshal = {
+	name = "Ljubiša Diković"
+	picture = "Portrait_Ljubisa_Dikovic.dds"
+	traits = { old_guard thorough_planner }
+	skill = 2
 }
 
-2011.1.1 = { add_ideas = { volunteer_only } }
+create_corps_commander = {
+	name = "Željko Petrović"
+	picture = "Portrait_Zeljko_Petrovic.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
 
-2016.1.1 = {
+create_corps_commander = {
+	name = "Dušan Stojanović"
+	picture = "Portrait_Dusan_Stojanovic.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
 
-	oob = "SER_2016"
-	create_country_leader = {
-		name = "Aleksandar Vučić"
-		ideology = fiscal_conservative
-		picture = "Aleksandar_Vucic.dds"
-	}
+create_corps_commander = {
+	name = "Želimir Glisović"
+	picture = "Portrait_Zelimir_Glisovic.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
 
-	create_country_leader = {
-		name = "Ivica Dačić"
-		ideology = democratic_socialist_ideology
-		picture = "Ivica_Dacic.dds"
-	}
-	
-	create_country_leader = {
-		name = "Dragan Sutanovac"
-		ideology = social_democrat_ideology
-		picture = "Dragan_Sutanovac.dds"
-	}
+create_corps_commander = {
+	name = "Milosav Simović"
+	picture = "Portrait_Milosav_Simovic.dds"
+	traits = { ranger }
+	skill = 1
+}
 
-	set_politics = {
+create_corps_commander = {
+	name = "Jelesije Radivojević"
+	picture = "Portrait_Jelesije_Radivojevic.dds"
+	traits = { commando }
+	skill = 1
+}
 
-		parties = {
-			nationalist = {
-				popularity = 15
-			}
-			market_liberal = {
-				popularity = 4
-			}
-			social_liberal = {
-				popularity = 4
-			}
-			social_democrat = {
-				popularity = 2
-			}
-			conservative = {
-				popularity = 40
-			}
-			democratic_socialist = {
-				popularity = 20
-			}
-			communist = {
-				popularity = 15
-			}
-		}
-		
-		ruling_party = conservative
-		last_election = "1997.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+create_corps_commander = {
+	name = "Ranko Živak"
+	picture = "Portrait_Ranko_Zivak.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Predrag Bandić"
+	picture = "Portrait_Predrag_Bandic.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Dejan Joksimović"
+	picture = "Portrait_Dejan_Joksimovic.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Miodrag Gordić"
+	picture = "Portrait_Miodrag_Gordic.dds"
+	traits = { bearer_of_artillery }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Branko Andrić"
+	picture = "Portrait_Branko_Andric.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vojin Jondić"
+	picture = "Portrait_Vojin_Jondic.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Mladjen Nišević"
+	picture = "Portrait_Mladjen_Nisevic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Djokica Petrović"
+	picture = "Portrait_Djokica_Petrovic.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Stojan Batinić"
+	picture = "Portrait_Stojan_Batinic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zarko Lazarević"
+	picture = "Portrait_Zarko_Lazarevic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Lubura"
+	picture = "Portrait_Zoran_Lubura.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ljubomir Nikolić"
+	picture = "Portrait_Ljubomir_Nikolic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Marinko Pavlović"
+	picture = "Portrait_Marinko_Pavlovic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoran Popović"
+	picture = "Portrait_Zoran_Popovic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Predra Simović"
+	picture = "Portrait_Predrag_Simovic.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Vladimir Vukajlović"
+	picture = "Portrait_Vladimir_Vukaljovic.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Andrija Andrić"
+	picture = "Portrait_Andrija_Andric.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 1
 }

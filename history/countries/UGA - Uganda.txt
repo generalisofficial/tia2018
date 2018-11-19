@@ -1,6 +1,6 @@
 ﻿capital = 548
 
-oob = "UGA_2000"
+oob = "UGA_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -87,28 +87,20 @@ add_ideas = {
 	non_aligned_movement_member
 	east_african_community_member
 }
+
 set_politics = {
 
 	parties = {
 		nationalist = {
-			popularity = 60
+			popularity = 60.62
 		}
 		conservative = {
-			popularity = 25
-		}
-		social_liberal = {
-			popularity = 0
-		}
-		progressive = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 5
+			popularity = 39.38
 		}
 	}
 	
 	ruling_party = nationalist
-	last_election = "1996.5.9"
+	last_election = "2016.2.18"
 	election_frequency = 60
 	elections_allowed = yes
 }
@@ -118,35 +110,11 @@ create_country_leader = {
 	picture = "Yoweri_Museveni.dds"
 	ideology = national_democrat
 }
+
 create_country_leader = {
-	name = "Paul Ssemogerere"
-	picture = "Paul_Ssemogerere.dds"
-	ideology = christian_democrat
-}
-create_country_leader = {
-	name = "Kibirige Mayanja"
-	picture = "Kibirige_Mayanja.dds"
-	ideology = progressive_ideology
-}
-create_country_leader = {
-	name = "Kizza Besigye"
-	picture = "Kizza_Besigye.dds"
-	ideology = social_liberal_ideology
-}
-create_country_leader = {
-	name = "Jaberi Bidandi Ssali"
-	picture = "Jaberi_B_Ssali.dds"
-	ideology = social_democrat_ideology
-}
-create_country_leader = {
-	name = "Ken Lukyamuzi"
-	picture = "Ken_Lukyamuzi.dds"
-	ideology = reactionary_ideology
-}
-create_country_leader = {
-	name = "Miria Obote"
-	picture = "Miria_Obote.dds"
-	ideology = marxist_leninist
+	name = "Patrick Amuriat Oboi"
+	picture = "Patrick_Amuriat_Oboi.dds"
+	ideology = fiscal_conservative
 }
 
 create_field_marshal = {
@@ -154,45 +122,15 @@ create_field_marshal = {
 	picture = "generals/Katumba_Wamala.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Patrick Kankiriho"
 	picture = "generals/Patrick_Kankiriho.dds"
 	skill = 2
 }
+
 create_corps_commander = {
 	name = "Nathan Mugisha"
 	picture = "generals/Nathan_Mugisha.dds"
 	skill = 1
-}
-
-2016.2.18 = {
-	set_politics = {
-		parties = {
-			nationalist = {
-				popularity = 70
-			}
-			conservative = {
-				popularity = 11
-			}
-			social_liberal = {
-				popularity = 18
-			}
-			progressive = {
-				popularity = 0
-			}
-			communist = {
-				popularity = 1
-			}
-		}
-		ruling_party = nationalist
-		last_election = "2016.2.18"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Olara Otunnu"
-		picture = "Olara_Otunnu.dds"
-		ideology = marxist_leninist
-	}
 }

@@ -123,7 +123,7 @@ create_equipment_variant = { name = "Tu-22M3" type = jet_bomber_equipment_1 upgr
 
 add_ideas = {
 	population_growth_stagnation
-	low_economic_mobilisation
+	mostly_privatized
 	idea_united_nations_security_council_member
     SOV_rouble_crisis
 	SOV_corrupt_oligarchy
@@ -183,10 +183,17 @@ create_country_leader = {
 		popular_figurehead
 	}
 }
+
 create_country_leader = {
 	name = "Pavel Grudinin"
 	picture = "Pavel_Grudinin.dds"
 	ideology = stalinist
+}
+
+create_country_leader = {
+	name = "Vladimir Zhirinovsky"
+	picture = "Vladimir_Zhirinovsky.dds"
+	ideology = proto_fascist
 }
 
 create_country_leader = {
@@ -229,12 +236,6 @@ create_country_leader = {
 	name = "Sergei Mironov"
 	picture = "Sergei_Mironov.dds"
 	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Vladimir Zhirinovsky"
-	picture = "Vladimir_Zhirinovsky.dds"
-	ideology = proto_fascist
 }
 
 create_country_leader = {
