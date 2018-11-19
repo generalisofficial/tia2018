@@ -1,26 +1,27 @@
-decisions_USA = {
-		
-	select_the_king_of_america = {
+statehood = {
+
+	grant_statehood_to_puerto_rico = {
 		visible = {
-			is_subject = no
-			monarchist > 0.02
-			NOT = { has_country_flag = the_king_of_america }
-		}
-		available = {
-			has_government = monarchist
-		}
-		complete_effect = {
-			set_country_flag = the_king_of_america
-			country_event = usa_decision.1
+			original_tag = USA
+			owns_state = 686
+			NOT = { 686 = { is_core_of = ROOT } }
 		}
 		
-		icon = monarchy
+		available = {
+			conservative > 0.5
+		}
+		
+		complete_effect = {
+			686 = { add_core_of = ROOT }
+		}
+		
+		icon = united_states
 		
 		fire_only_once = yes
-		cost = 60
+		cost = 100
 		
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 	}
 
