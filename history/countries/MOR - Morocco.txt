@@ -1,6 +1,6 @@
 ﻿capital = 461
 
-oob = "MOR_2000"
+oob = "MOR_2018"
 
 set_research_slots = 3
 set_convoys = 340
@@ -97,25 +97,26 @@ add_ideas = {
 	arab_league_member
 	limited_conscription
 	non_aligned_movement_member
+	african_union_member
 }
 
 set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 20.95
-		}
-		monarchist = {
 			popularity = 27.88
 		}
+		monarchist = {
+			popularity = 34.32
+		}
 		market_liberal = {
-			popularity = 10.84
+			popularity = 9.37
 		}
 		conservative = {
 			popularity = 10.68
 		}
 		social_liberal = {
-			popularity = 9.32
+			popularity = 6.84
 		}
 		social_democrat = {
 			popularity = 6.19
@@ -126,96 +127,49 @@ set_politics = {
 	}
 	
 	ruling_party = reactionary
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "2016.10.7"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Abderramán Yusufi"
-	ideology = reactionary_ideology
-	picture = "Abderraman_Yusufi.dds"
-}
-
-create_country_leader = {
 	name = "Mohammed VI"
-	ideology = absolute_monarchist
 	picture = "Mohammed_VI.dds"
+	ideology = absolute_monarchist
 }
+
 create_country_leader = {
-	name = "Hamid Chabat" 
+	name = "Saadeddine Othmani"
+	picture = "Saadeddine_Othmani.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Nizar Baraka"
+	picture = "Nizar_Baraka.dds"
 	ideology = national_conservative
-	picture = "Hamid_Chabat.dds"
 }
-
-create_country_leader = {
-	name = "Mohand Laenser" 
-	ideology = libertarian
-	picture = "Mohand_Laenser.dds"
-}
-
-create_country_leader = {
-	name = "Abbas El-Fassi" 
-	ideology = national_democrat
-	picture = "Abbas_Fassi.dds"
-}
-
-create_country_leader = {
-	name = "Mohamed Khalidi"
-	ideology = islamic_democracy
-	picture = "Mohamed_Khalidi.dds"
-}  
-
-create_country_leader = {
-	name = "Abdallah al-Harrif" 
-	ideology = marxist_leninist
-	picture = "Abdallah_al-Harrif.dds"
-}
-create_country_leader = {
-	name = "Ahmed Dgharni"
-	picture = "Ahmed_Dgharni.dds"
-	ideology = green
-}
-create_country_leader = {
-	name = "Driss Lachgar"
-	ideology = social_democrat_ideology
-	picture = "Driss_Lachgar.dds"
-}
-
-create_country_leader = {
-	name = "Ahmed Balghazi"
-	ideology = national_socialist
-	picture = "Ahmed_Balghazi.dds"
-}  
-
-create_country_leader = {
-	name = "Nabil Benabdallah"
-	ideology = democratic_socialist_ideology
-	picture = "Nabil_Benabdallah.dds"
-} 
 
 create_country_leader = {
 	name = "Salaheddine Mezouar"
+	picture = "Salaheddine_Mezouar.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Mohand Laenser"
+	picture = "Mohand_Laenser.dds"
 	ideology = centrist
-	picture = "Salaheddine_Mezouar.dds"   
-}  
-
-2010.1.1 = {
-	create_country_leader = {
-		name = "Abdelilah Benkirán"
-		ideology = reactionary_ideology
-		picture = "Abdelilah_Benkiran.dds"
-	}
 }
 
-2017.1.30 = {
-	add_ideas = { african_union_member }
+create_country_leader = {
+	name = "Driss Lachgar"
+	picture = "Driss_Lachgar.dds"
+	ideology = social_democrat_ideology
 }
 
-2017.1.1 = {  #Benkirán got fired by the King
-	create_country_leader = {
-		name = "Saadeddine Othmani"
-		ideology = reactionary_ideology
-		picture = "Saadeddine_Othmani.dds"
-	}
+create_country_leader = {
+	name = "Nabil Benabdallah"
+	picture = "Nabil_Benabdallah.dds"
+	ideology = democratic_socialist_ideology
 }
