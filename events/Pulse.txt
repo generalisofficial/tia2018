@@ -126,26 +126,17 @@ country_event = {
 		}
 		if = {
 			limit = {
-			    original_tag = JAP
-				date > 2020.7.23
-				date < 2021.1.1
-			}
-			news_event = olympic_games.2
-		}
-		if = {
-			limit = {
-			    original_tag = PRC
-				date > 2022.2.3
-				date < 2023.1.1
-			}
-			news_event = olympic_games.3
-		}
-		if = {
-			limit = {
 				date > 2018.3.26
 				date < 2019.1.1
 			}
 			news_event = video_games.1
+		}
+		if = {
+			limit = {
+				date > 2018.1.22
+				date < 2019.1.1
+			}
+			news_event = video_games.2
 		}
 		if = {
 			limit = {

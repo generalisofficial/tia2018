@@ -1,6 +1,6 @@
 ﻿capital = 691
 
-oob = "TAT_2000"
+oob = "TAT_2018"
 
 set_research_slots = 2
 set_convoys = 20
@@ -95,44 +95,27 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		social_democrat = {
-			popularity = 55
+	    social_liberal = {
+			popularity = 51.68
 		}
-		market_liberal = {
-			popularity = 45
+		social_democrat = {
+			popularity = 48.32
 		}
 	}
-	ruling_party = social_democrat
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = social_liberal
+	last_election = "2015.9.7"
+	election_frequency = 60
 	elections_allowed = yes
-}
-
-create_country_leader = {
-	name = "Basdeo Panday"
-	picture = "Bandeo_Panday.dds"
-	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Keith Rowley"
 	picture = "Keith_Rowley.dds"
-	ideology = libertarian
+	ideology = centrist
 }
 
-2015.1.1 = {
-	set_politics = {
-		parties = {
-			social_democrat = {
-				popularity = 45
-			}
-			market_liberal = {
-				popularity = 55
-			}
-		}
-		ruling_party = market_liberal
-		last_election = "2013.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+create_country_leader = {
+	name = "Kamla Persad-Bissessar"
+	picture = "Kamla_Persad_Bissessar.dds"
+	ideology = social_democrat_ideology
 }
