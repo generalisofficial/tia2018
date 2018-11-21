@@ -26,8 +26,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 1500 y = 10000 }
 	
-	
-	
 	focus = {
 		id = SOV_the_russian_presidential_election
 		icon = dangerous_laws
@@ -36,23 +34,22 @@ focus_tree = {
 		cost = 0
 		
 		available = {
-		custom_trigger_tooltip = {
-		tooltip = SOV_elections
-		always = no
+		    always = no
 		}
-		}
+		
 		bypass = {
 	        has_country_flag = SOV_election_2018
 		}
+		
 		completion_reward = {
-	    add_stability = -0.02
-		add_political_power = 50
+		
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
-     }	
+    }	
+	 
 	focus = {
 		id = SOV_vladimir_putin
 		icon = putin
@@ -272,27 +269,49 @@ focus_tree = {
 		x = 30
 		y = 1
 		cost = 0
+		
 		prerequisite = {
-		focus = SOV_the_russian_presidential_election
+		    focus = SOV_the_russian_presidential_election
 		}
 		
 		available = {
-	    custom_trigger_tooltip = {
-		tooltip = SOV_elections_zhirinovsky
-		always = no
-		OR = { has_country_flag = nationalistboi }
+	        always = no
 		}
-		}
+		
 		bypass = {
-	    has_country_flag = nationalistboi
+	        has_country_flag = zhirinovsky_2018
 		}
+		
 		completion_reward = {
-		unlock_national_focus = SOV_stabilizing_the_economy
-	    add_stability = -0.01
+	        
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = SOV_propose_the_union_state
+		icon = zhirinovsky
+		x = 30
+		y = 2
+		cost = 0
+		
+		prerequisite = {
+		    focus = SOV_vladimir_zhirinovsky
+		}
+		
+		available = {
+	        has_government = nationalist
+		}
+		
+		completion_reward = {
+	        BLR = { country_event = { id = russia.1 } }
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	

@@ -1,6 +1,32 @@
 ﻿add_namespace = russia
 
-#Belarus: Russia offers Union State
+#Belarus - Russia proposes Union State
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = GFX_report_event_russian_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.1.o1
+		ai_chance = {
+			factor = 75
+		}
+		SOV = { country_event = { id = russia.2 } }
+	}
+	
+	option = {
+		name = russia.1.o2
+		ai_chance = {
+			factor = 25
+		}
+		SOV = { country_event = { id = russia.3 } }
+	}
+}
+
+#Belarus accepts Union State
 country_event = {
 	id = russia.2
 	title = russia.2.t
@@ -11,28 +37,17 @@ country_event = {
 	
 	option = {
 		name = russia.2.o1
-		ai_chance = {
-			factor = 75
+		set_cosmetic_tag = SOV_UNIONSTATE
+		BLR = { every_owned_state = { add_core_of = ROOT } }
+		annex_country = { target = BLR transfer_troops = yes }
+		add_named_threat = {
+			threat = 5
+			name = "Expansionism"
 		}
-		SOV = { puppet = BLR }
-		SOV = { country_event = { id = russia.3 } }
-	}
-	
-	option = {
-		name = russia.2.o2
-		ai_chance = {
-			factor = 25
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		SOV = { add_opinion_modifier = { target = BLR modifier = large_decrease } }
-		SOV = { country_event = { id = russia.4 } }
 	}
 }
 
-#Belarus accepts!
+#Belarus refuses Union State
 country_event = {
 	id = russia.3
 	title = russia.3.t
@@ -43,79 +58,21 @@ country_event = {
 	
 	option = {
 		name = russia.3.o1
-		effect_tooltip = {
-			puppet = BLR
-		}
-		every_country = {
+		set_cosmetic_tag = SOV_UNIONSTATE
+		BLR = { every_owned_state = { add_core_of = ROOT } }
+		add_opinion_modifier = { target = BLR modifier = large_decrease }
+		BLR = { add_opinion_modifier = { target = BLR modifier = large_decrease } }
+		if = {
 			limit = {
-				is_in_faction_with = SOV
-				NOT = { tag = SOV }
-				NOT = { tag = BLR }
+				is_in_faction_with = BLR
+				is_faction_leader = yes
 			}
-			country_event = russia.5
+			BLR = { leave_faction = yes }
 		}
-	}
-}
-
-#Belarus refuses!
-country_event = {
-	id = russia.4
-	title = russia.4.t
-	desc = russia.4.d
-	picture = GFX_report_event_russian_flag
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.4.o1
-		effect_tooltip = {
-			add_opinion_modifier = { target = BLR modifier = large_decrease }
+		add_named_threat = {
+			threat = 10
+			name = "Unprovoked Aggression"
 		}
-	}
-}
-
-#Faction members (not Belarus): Russian imperialism
-country_event = {
-	id = russia.5
-	title = russia.5.t
-	desc = russia.5.d
-	picture = GFX_report_event_russian_flag
-	
-	is_triggered_only = yes
-	
-	option = {	#We will turn our back on Russia
-		name = russia.5.o1
-		ai_chance = {
-			factor = 75
-		}
-		SOV = { remove_from_faction = ROOT }
-		set_country_flag = left_CSTO
-	}
-	
-	option = {	#Loyalty must stay in place
-		name = russia.5.o2
-		ai_chance = {
-			factor = 25
-		}
-		add_political_power = -100
-	}
-}
-
-#ABK/SOS: Southern Strategy
-country_event = {
-	id = russia.6
-	title = russia.6.t
-	desc = russia.6.d
-	picture = GFX_report_event_russian_flag
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.6.o1
-		army_experience = 5
-		navy_experience = 5
-		air_experience = 5
-		add_political_power = 50
 	}
 }
 
