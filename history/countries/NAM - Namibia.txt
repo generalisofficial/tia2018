@@ -1,6 +1,6 @@
 ﻿capital = 541
 
-oob = "NAM_2000"
+oob = "NAM_2018"
 
 set_research_slots = 2
 set_convoys = 120
@@ -99,58 +99,30 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = { popularity = 0 }
-		fascist = { popularity = 0 }
-		nationalist = { popularity = 0 }
-		reactionary = { popularity = 0 }
-		conservative = { popularity = 10 }
-		market_liberal = { popularity = 0 }
-		social_liberal = { popularity = 3 }
-		social_democrat = { popularity = 76 }
-		progressive = { popularity = 0 }
-		democratic_socialist = { popularity = 10 }
-		communist = { popularity = 1 }
+		conservative = { 
+		    popularity = 13.27
+		}
+		democratic_socialist = { 
+		    popularity = 86.73
+		}
 	}
 	
-	ruling_party = social_democrat
-	last_election = "1999.12.1"
+	ruling_party = democratic_socialist
+	last_election = "2014.11.28"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Sam Nujoma"
-	picture = "Sam_Nujoma.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Ben Ulenga"
-	picture = "Ben_Ulenga.dds"
+	name = "Hage Geingob"
+	picture = "Hage_Geingob.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Katuutire Kaura"
-	picture = "Katuutire_Kaura.dds"
+	name = "McHenry Venaani"
+	picture = "McHenry_Venaani.dds"
 	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Chief Justus Garoeb"
-	picture = "Justus_Garoeb.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Attie Beukes"
-	picture = "Attie_Beukes.dds"
-	ideology = marxist_leninist
-}
-
-add_namespace = {
-	name = "nam_unit_leader"
-	type = unit_leader
 }
 
 create_field_marshal = {
@@ -199,41 +171,4 @@ create_navy_leader = {
 	name = "Peter Vilho"
 	picture = "admirals/Peter_Vilho.dds"
 	skill = 2
-}
-
-2014.11.28 = {
-	set_politics = {
-		parties = {
-			islamist = { popularity = 0 }
-			fascist = { popularity = 0 }
-			nationalist = { popularity = 0 }
-			reactionary = { popularity = 0 }
-			conservative = { popularity = 5 }
-			market_liberal = { popularity = 0 }
-			social_liberal = { popularity = 5 }
-			social_democrat = { popularity = 81 }
-			progressive = { popularity = 5 }
-			democratic_socialist = { popularity = 1 }
-			communist = { popularity = 3 }
-		}
-		ruling_party = social_democrat
-		last_election = "2014.11.28"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	create_country_leader = {
-		name = "Hage Geingob"
-		picture = "Hage_Geingob.dds"
-		ideology = social_democrat_ideology
-	}
-	create_country_leader = {
-		name = "McHenry Venaani"
-		picture = "McHenry_Venaani.dds"
-		ideology = fiscal_conservative
-	}
-	create_country_leader = {
-		name = "Hidipo Hamutenya"
-		picture = "Hidipo_Hamutenya.dds"
-		ideology = progressive_ideology
-	}
 }
