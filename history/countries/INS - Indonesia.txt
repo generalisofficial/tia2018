@@ -1,6 +1,6 @@
 ﻿capital = 335
 
-oob = "INS_2000"
+oob = "INS_2018"
 
 set_research_slots = 2
 set_convoys = 670
@@ -101,103 +101,61 @@ set_country_flag = sunni_islam
 set_politics = {
 
 	parties = {
-		islamist = { popularity = 21 } 
-		nationalist = { popularity = 12 }
-		reactionary = { popularity = 2 } 
-		conservative = { popularity = 22 } 
-		market_liberal = { popularity = 1 } 
-		social_liberal = { popularity = 4 }
-		social_democrat = { popularity = 3 } 
-		progressive = { popularity = 30	} 
-		democratic_socialist = { popularity = 1	} 
-		communist = { popularity = 4 }
+		nationalist = { 
+		    popularity = 46.85
+		}
+		democratic_socialist = { 
+		    popularity = 53.15
+		} 
 	}
 	
-	ruling_party = nationalist
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = democratic_socialist
+	last_election = "2014.4.17"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Abdurrahman Wahid"
-	picture = "Abdurrahman_Wahid.dds"
+	name = "Joko Widodo"
+	picture = "Joko_Widodo.dds"
+	ideology = marhaenist
+}
+
+create_country_leader = {
+	name = "Prabowo Subianto"
+	picture = "Prabowo_Subianto.dds"
 	ideology = national_democrat
 }
 
 create_country_leader = {
-	name = "Megawati Sukarnoputri"
-	picture = "Megawati_Sukarnoputri.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Prabowo Subianto Djojohadikusumo"
-	picture = "Prabowo_Subianto.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Wiranto"
-	picture = "Wiranto.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Akbar Tandjung"
-	picture = "Akbar_Tandjung.dds"
-	ideology = fiscal_conservative
-}
-
-create_country_leader = {
-	name = "Susilo Bambang Yudhoyono"
-	picture = "Susilo_B_Yudhoyono.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Nur Mahmudi Ismail"
-	picture = "NM_Ismail.dds"
+	name = "Airlangga Hartarto"
+	picture = "Airlangga_Hartarto.dds"
 	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Malem Sambat Kaban"
-	picture = "Malem_S_Kaban.dds"
-	ideology = islamic_democracy
+	name = "Susilo Bambang Yudhoyono"
+	picture = "Susilo_Bambang_Yudhoyono.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "HR Hartono"
-	picture = "HR_Hartono.dds"
-	ideology = rexist
+	name = "Sohibul Iman"
+	picture = "Sohibul_Iman.dds"
+	ideology = muslim_brotherhood
 }
 
 create_country_leader = {
-	name = "Grace Natalie"
-	picture = "Grace_Natalie.dds"
-	ideology = progressive_ideology 
+	name = "Surya Paloh"
+	picture = "Surya_Paloh.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Budiman Sudjatmiko"
-	picture = "Budiman_Sudjatmiko.dds"
-	ideology = democratic_socialist_ideology  
+	name = "Oesman Sapta Odang"
+	picture = "Oesman_Sapta_Odang.dds"
+	ideology = centrist
 }
-
-create_country_leader = {
-	name = "The Indonesian Politiburo"
-	picture = "Indonesian_Politiburo.dds"
-	ideology = marxist_leninist  
-}
-
-create_country_leader = {
-	name = "Hamengkubuwono X"
-	picture = "Hamengkubuwono_X.dds"
-	ideology = absolute_monarchist   
-}
-
-
 
 create_corps_commander = {
 	name = "Bambang Darmono"
@@ -245,53 +203,4 @@ create_navy_leader = {
 	name = "Soeparno"
 	picture = "admirals/Soeparno.dds"
 	skill = 1
-}
-
-2015.1.1 = {
-	set_politics = {
-
-		parties = {
-			islamist = { popularity = 6	}
-			nationalist = { popularity = 10	}
-			reactionary = { popularity = 7 }
-			conservative = { popularity = 15 }
-			market_liberal = { popularity = 11 }
-			social_liberal = { popularity = 8 }
-			social_democrat = { popularity = 9 }
-			progressive = { popularity = 25	}
-			democratic_socialist = { popularity = 5 }
-			communist = { popularity = 4 }
-	}
-		ruling_party = progressive
-		last_election = "2014.4.9"
-		election_frequency = 48
-		elections_allowed = yes
-	}	
-}
-
-2015.1.1 = {
-create_country_leader = {
-	name = "Joko Widodo"
-	desc = "POLITICIAN_IDO_JOKO_WIDODO_DESC"
-	picture = "Joko_Widodo.dds"
-	expire = "2020.1.1"
-	ideology = progressive_ideology
-	
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "Aburizal Bakrie"
-	desc = "POLITICIAN_IDO_ABURIZAL_BAKRIE_DESC"
-	picture = "Aburizal_Bakrie.dds"
-	expire = "2020.1.1"
-	ideology = fiscal_conservative
-	
-	traits = {
-	
-	}
-}
-
 }
