@@ -1,0 +1,60 @@
+add_namespace = congress 
+
+# Bill rejected - Puerto Rico Statehood Act
+country_event = {
+	id = congress.1
+	title = "Bill rejected - Puerto Rico Statehood Act"
+	desc = "Congress has voted down the Puerto Rico Statehood Act, this bill cannot be proposed again until the next midterm elections."
+	picture = GFX_report_event_congress
+
+	is_triggered_only = yes
+	
+	option = {
+		name = congress.1.a
+		custom_effect_tooltip = "This bill cannot be proposed again until the next midterms"
+	}
+}
+
+# Bill passed - Puerto Rico Statehood Act
+country_event = {
+	id = congress.2
+	title = "Bill passed - Puerto Rico Statehood Act"
+	desc = "Congress has passed the Puerto Rico Statehood Act, Puerto Rico will on the next 4th of July admit to the Union."
+	picture = GFX_report_event_congress
+
+	is_triggered_only = yes
+	
+	option = {
+		name = congress.2.a
+		custom_effect_tooltip = "Puerto Rico is admitted to the Union"
+	}
+}
+
+# Democrats - Puerto Rico Statehood Act
+country_event = {
+	id = parliament.3
+	title = "Democrats on the Puerto Rico Statehood Act"
+	desc = "The representative of the Democratic Party, Nancy Pelosi has declared that the party will reject the Puerto Rico Statehood Act in Congress."
+	picture = GFX_report_event_congress
+
+	is_triggered_only = yes
+	
+	option = {
+		name = parliament.3.a
+	}
+}
+
+# Republicans - Puerto Rico Statehood Act
+country_event = {
+	id = parliament.4
+	title = "Republicans on the Puerto Rico Statehood Act"
+	desc = "The representative of the Republican Party, Kevin McCarthy has declared that the party will support the Puerto Rico Statehood Act in Congress.
+	picture = GFX_report_event_congress
+
+	is_triggered_only = yes
+	
+	option = {
+		name = parliament.3.a
+		add_to_variable = { var = supseat value = conservative_seats }
+	}
+}
