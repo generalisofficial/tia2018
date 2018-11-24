@@ -1,0 +1,51 @@
+congress_USA = {
+
+    puerto_rico_statehood_act = {
+		
+        available = {
+            NOT = { has_country_flag = law_passing }
+        }
+		
+        visible = {
+		    original_tag = USA
+            NOT = { has_country_flag = law_passing }
+        }
+		
+		cost = 0
+        fire_only_once = yes
+		
+		complete_effect = {
+	        set_country_flag = law_passing
+            set_country_flag = law_passing_category
+			custom_effect_tooltip = "Congress will vote on this bill"
+            hidden_effect = {
+			    country_event = { id = congress.3 days = 5 }
+			}
+			hidden_effect = {
+			    country_event = { id = congress.4 days = 5 }
+			} 			
+        }
+		
+		days_remove = 30
+		
+		remove_effect = {
+	        remove_country_flag = law_passing 
+			remove_country_flag = law_passing_category
+			hidden_effect = { 
+			    if = {
+				    limit = { 
+					    check_variable = { supseat > 218 }
+					}
+				    country_event = { id =  congress.2 }
+				}
+				if = {
+				    limit = { 
+					    check_variable = { supseat < 218 } 
+					}
+				    country_event = { id =  congress.1 }
+				}
+				set_variable = { supseat = 0 }
+            }			
+        }
+    }
+}
