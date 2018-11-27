@@ -104,15 +104,15 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		fascist = { popularity = 0 }
-		nationalist = { popularity = 50.8 }
-		conservative = { popularity = 0 }
-		social_democrat = { popularity = 44.3 }
-		democratic_socialist = { popularity = 4.9 }
-		communist = { popularity = 0 }
+		democratic_socialist = { 
+		    popularity = 50.8 
+		}
+		social_democrat = { 
+		    popularity = 49.2
+		}
 	}
 
-	ruling_party = nationalist
+	ruling_party = democratic_socialist
 	last_election = "2013.7.30"
 	election_frequency = 60
 	elections_allowed = yes
@@ -121,43 +121,19 @@ set_politics = {
 create_country_leader = {
 	name = "Emmerson Mnangagwa"
 	picture = "Emmerson_Mnangagwa.dds"
-	ideology = national_democrat 
-}
-
-create_country_leader = {
-	name = "Morgan Tsvangirai"
-	picture = "Morgan_Tsvangirai.dds"
-	ideology = social_liberal_ideology
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
 	name = "Welshman Ncube"
 	picture = "Welshman_Ncube.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Dumiso Dabengwa"
-	picture = "Dumiso_Dabengwa.dds"
-	ideology = marxist_leninist
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
 	name = "Nelson Chamisa"
 	picture = "Nelson_Chamisa.dds"
 	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Simba Makoni"
-	picture = "Simba_Makoni.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Fred Owen"
-	picture = "Fred_Owen.dds"
-	ideology = fascist_ideology
 }
 
 create_corps_commander = {
