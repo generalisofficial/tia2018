@@ -1,6 +1,6 @@
 ﻿capital = 708
 
-oob = "COM_2000"
+oob = "COM_2018"
 
 set_research_slots = 2
 set_convoys = 50
@@ -102,66 +102,22 @@ set_country_flag = sunni_islam
 set_politics = {
 
 	parties = {
-		conservative = {      #Baobab Movement
-			popularity = 8
+		social_democrat = {
+			popularity = 60.34
 		}
-		democratic_socialist = {    #CRC
-			popularity = 40
-		}
-		islamist = {     #FNJ 
-			popularity = 36
-		}
-		nationalist = {   #MDP 
-			popularity = 11 
+		reactionary = {
+			popularity = 39.66
 		}
 	}
 	
-	ruling_party = democratic_socialist
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = social_democrat
+	last_election = "2016.2.21"
+	election_frequency = 72
 	elections_allowed = yes
 }
-create_country_leader = {
-	name = "Ahmed Abdallah Sambi"
-	picture = "Ahmed_Sambi.dds"
-	ideology = islamic_democracy
-}
+
 create_country_leader = {
 	name = "Azali Assoumani"
 	picture = "Azali_Assoumani.dds"
-	ideology = democratic_socialist_ideology
-}
-create_country_leader = {
-	name = "Ikililou Dhoinine"
-	picture = "Ikililou_Dhoinine.dds"
-	ideology = fiscal_conservative
-}
-create_country_leader = {
-	name = "Abbas Djoussouf"
-	picture = "Abbas_Djoussouf.dds"
-	ideology = neo_nationalist
-}
-2014.1.1 = {
-	set_politics = {
-
-	parties = {
-		conservative = {      #Baobab Movement
-			popularity = 30
-		}
-		democratic_socialist = {    #CRC
-			popularity = 40
-		}
-		islamist = {     #FNJ 
-			popularity = 16
-		}
-		nationalist = {   #MDP 
-			popularity = 9 
-		}
-	}
-	
-		ruling_party = conservative
-		last_election = "2013.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	ideology = social_democrat_ideology
 }
