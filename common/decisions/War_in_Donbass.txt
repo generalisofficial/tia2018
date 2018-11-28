@@ -1,0 +1,29 @@
+war_in_donbass = {
+	
+	propose_ceasefire_DPR = {
+		visible = {
+		    original_tag = DPR
+			has_war_with = UKR
+			country_exists = UKR
+		}
+		
+		available = {
+			has_war_with = UKR
+			227 = { is_fully_controlled_by = ROOT }
+			228 = { is_fully_controlled_by = ROOT }
+		}
+		
+		complete_effect = {
+			UKR = { country_event = ukraine.1 }
+		}
+		
+		icon = ukraine
+		
+		fire_only_once = yes
+		cost = 0
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
