@@ -1,23 +1,28 @@
+
 state={
 	id=693
 	name="STATE_693"
-	manpower = 91000
-	
-	state_category = state_level_5
 
 	history={
-		owner = BHM
+		owner = ENG
 		buildings = {
-			infrastructure = 5
+			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
-			10440 = { naval_base = 1 }
-			1513 = { naval_base = 1 }
+			10440 = {
+				naval_base = 1
+
+			}
+
 		}
-		add_core_of = BHM
+		add_core_of = ENG
+
 	}
-	
+
 	provinces={
-		1513 10440 
+		10440 
 	}
+	manpower=31458
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }

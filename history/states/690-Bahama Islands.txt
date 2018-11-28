@@ -1,9 +1,7 @@
+
 state={
 	id=690
 	name="STATE_690"
-	manpower = 253000
-	
-	state_category = state_level_5
 
 	history={
 		owner = BHM
@@ -11,17 +9,35 @@ state={
 			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 1
-			10254 = { naval_base = 1 }
-			4647 = { naval_base = 1 }
-			7245 = { naval_base = 1 }
+			10254 = {
+				naval_base = 1
+
+			}
+			4647 = {
+				naval_base = 1
+
+			}
+			7245 = {
+				naval_base = 1
+
+			}
+			1513 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = BHM
-		
-		victory_points = { 10254 2 }
+		victory_points = {
+			10254 2 
+		}
+
 	}
 
 	provinces={
-		4647 7245 10254 
+		1513 4647 7245 10254 
 	}
-	
+	manpower=391232
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
 }

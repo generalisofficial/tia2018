@@ -84,6 +84,46 @@ set_technology = {
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
+complete_national_focus = generic_ideology_focus
+complete_national_focus = generic_national_strength
+complete_national_focus = generic_path_of_order
+complete_national_focus = generic_ideology_islamist
+complete_national_focus = generic_shariah_lawcode
+complete_national_focus = generic_jihad
+remove_ideas = idea_focus_generic_path_of_allah
+remove_ideas = idea_focus_generic_path_of_order
+remove_ideas = idea_focus_generic_national_strength
+
+declare_war_on = {
+	target = ROJ
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = SYR
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = FSA
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = HTS
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = YEM
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = HOU
+	type = annex_everything
+}
+
 set_politics = {
 
 	parties = {
@@ -105,38 +145,12 @@ add_ideas = {
 	mostly_nationalized
 	isolationism
 	last_stand_of_isil
+	outlook_nationalist
 }
 
 add_opinion_modifier = {
 	target = ISR
 	modifier = death_to_israel
-}
-
-complete_national_focus = generic_ideology_focus
-complete_national_focus = generic_national_strength
-complete_national_focus = generic_path_of_order
-complete_national_focus = generic_ideology_islamist
-complete_national_focus = generic_shariah_lawcode
-complete_national_focus = generic_jihad
-remove_ideas = idea_focus_generic_path_of_allah
-remove_ideas = idea_focus_generic_path_of_order
-remove_ideas = idea_focus_generic_national_strength
-
-declare_war_on = {
-	target = ROJ
-	type = annex_everything
-}
-declare_war_on = {
-	target = SYR
-	type = annex_everything
-}
-declare_war_on = {
-	target = FSA
-	type = annex_everything
-}
-declare_war_on = {
-	target = HTS
-	type = annex_everything
 }
 
 create_country_leader = {
