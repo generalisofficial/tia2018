@@ -98,15 +98,15 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		social_democrat = {
-			popularity = 25.92
-		}
-		social_liberal = {
+		market_liberal = {
 			popularity = 74.08
+		}
+		democratic_socialist = {
+			popularity = 25.92
 		}
 	}
 	
-	ruling_party = social_liberal
+	ruling_party = market_liberal
 	last_election = "2016.10.2"
 	election_frequency = 60
 	elections_allowed = yes
@@ -115,11 +115,11 @@ set_politics = {
 create_country_leader = {
 	name = "Jorge Carlos Fonseca"
 	picture = "Jorge_Carlos_Fonseca.dds"
-	ideology = social_liberal_ideology
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Janira Hopffer Almada"
 	picture = "Janira_Hopffer_Almada.dds"
-	ideology = social_democrat_ideology
+	ideology = democratic_socialist_ideology
 }
