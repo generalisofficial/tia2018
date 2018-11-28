@@ -1,6 +1,6 @@
 ﻿capital = 539
 
-oob = "GAB_2000"
+oob = "GAB_2018"
 
 set_research_slots = 2
 set_convoys = 100
@@ -96,30 +96,27 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		nationalist = { popularity = 2 }
-		democratic_socialist = { popularity = 3 }
-		progressive = { popularity = 40 }
-		social_liberal = { popularity = 45 }
-		conservative = { popularity = 9 }
-		reactionary = { popularity = 1 }
+		conservative = { 
+		    popularity = 50.8
+		}
+		social_liberal = { 
+		    popularity = 49.2
+		}
 	}
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = conservative
+	last_election = "2016.8.28"
+	election_frequency = 84
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Omar Bongo"
-	picture = "Omar_Bongo.dds"
-	ideology = centrist
-	expire = "2009.6.8"
+	name = "Ali Bongo Ondimba"
+	picture = "Ali_Bongo_Ondimba.dds"
+	ideology = social_conservative
 }
 
-2009.6.8 = {
-	create_country_leader = {
-		name = "Ali Bongo Ondimba"
-		picture = "Ali_B_Ondimba.dds"
-		ideology = social_liberal_ideology
-	}
+create_country_leader = {
+	name = "Jean Ping"
+	picture = "Jean_Ping.dds"
+	ideology = centrist
 }
