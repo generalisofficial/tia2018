@@ -1,41 +1,4 @@
-﻿add_namespace = cia
-
-#Welcome to the Game
-news_event = {
-	id = cia.1
-	title = cia.1.t
-	desc = cia.1.d
-	picture = GFX_report_event_welcome
-	is_triggered_only = yes
-	option = { #Cool cool
-	    name = cia.1.o1		
-		ai_chance = { 
-		    factor = 100
-		}
-	}
-}
-
-#Baltics reach 100 years of indepentence
-news_event = {
-	id = cia.2
-	title = cia.2.t
-	desc = cia.2.d
-	picture = GFX_news_event_baltics100
-	is_triggered_only = yes
-	option = { #Who?
-	    name = cia.2.o1
-		ai_chance = { 
-		    factor = 100
-		}
-	}
-}
-
-
-
-
-
-
-add_namespace = unsc
+﻿add_namespace = unsc
 
 country_event = {
 	id = unsc.1

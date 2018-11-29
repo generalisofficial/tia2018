@@ -1,0 +1,15 @@
+﻿add_namespace = factions
+
+news_event = { #NATO - Accession
+	id = factions.1
+	title = factions.1.t
+	desc = factions.1.d
+	picture = GFX_news_event_nato
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = factions.1.o1
+	}
+}
