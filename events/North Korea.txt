@@ -59,7 +59,8 @@ country_event = {
     ruling_party = reactionary
 }
 add_popularity = {
-reactionary = 0.5
+    ideology = reactionary
+    popularity = 0.5
 }
     add_stability = 0.6
         }
@@ -118,13 +119,12 @@ country_event = {
 		type = annex_everything
 		target = KOR
 		}
-		ai_chance = { 
+	}	
+	ai_chance = { 
 	factor = 20
 	}
-		
-    }
 	}
-	
+	}
 	country_event = {
     id = north_korea.8
     title = north_korea.8.t

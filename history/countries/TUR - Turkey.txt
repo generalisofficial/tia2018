@@ -135,7 +135,7 @@ set_politics = {
 			popularity = 0
 		}
 		nationalist = {
-			popularity = 0
+			popularity = 7.48
 		}
 		islamist = {
 			popularity = 0.89
@@ -153,13 +153,13 @@ set_politics = {
 			popularity = 8.40
 		}
 		reactionary = {
-			popularity = 7.48
+			popularity = 52.59
 		}
 		democratic_socialist = {
 			popularity = 0
 		}
 	}
-	ruling_party = conservative
+	ruling_party = reactionary
 	last_election = "2014.6.24"
 	election_frequency = 48
 	elections_allowed = yes
@@ -174,7 +174,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Devlet Bahçeli"
 	picture = "Devlet_Bahceli.dds"
-	ideology = neo_nationalist
+	ideology = national_conservative
 	traits = { warmonger }
 }
 
@@ -193,7 +193,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Recep Tayyip Erdoğan"
 	picture = "Recep_Tayyip_Erdogan.dds"
-	ideology = national_conservative
+	ideology = reactionary_ideology
 	traits = { popular_figurehead }
 }
 
@@ -218,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Doğu Perinçek"
 	picture = "Dogu_Perincek.dds"
-	ideology = reactionary_ideology
+	ideology = left_wing_nationalist
 	traits = { ideological_crusader }
 }
 
