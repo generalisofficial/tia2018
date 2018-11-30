@@ -999,7 +999,7 @@ focus_tree = {
 		completion_reward = {
       random_country = { 
 	  limit = { has_idea = idea_eu_member }
-	  		    613 = {
+	  		    random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
@@ -1422,7 +1422,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		hidden = { add_ideas = communist_support }
+		hidden_effect = { add_ideas = communist_support }
 		add_political_power = -5
 				add_popularity = {
 				ideology = communist
@@ -1533,7 +1533,7 @@ focus_tree = {
 				popularity = 0.03
 			}
 			add_popularity = {
-				ideology = social_democrats
+				ideology = social_democrat
 				popularity = 0.01
 			}
 		}
@@ -1832,7 +1832,7 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = { is_in_faction = no }
-				create_faction = japanese_alliance_democratic
+				create_faction = "Asian Protection Alliance"
 			}
 			if = {
 				limit = { KOR = { NOT = { has_war_with = JAP } } }
@@ -2173,11 +2173,10 @@ focus_tree = {
 				popularity = 0.01
 			}
 
-		
+	}	
 		ai_will_do = {
 			factor = 10
 		}
-	}
 	}
 	
 	focus = {
@@ -2284,7 +2283,15 @@ focus_tree = {
 	
 		
 		completion_reward = {
-		create_wargoal = { type = annex_everything target = USA }
+		632 = {
+		add_claim_by = JAP
+		}
+		646 = {
+		add_claim_by = JAP
+		}
+		638 = {
+		add_claim_by = JAP
+		}
 		}
 		
 		ai_will_do = {

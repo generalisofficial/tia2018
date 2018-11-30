@@ -868,6 +868,8 @@ focus_tree = {
 		cost = 5
 	    prerequisite = { focus = PRK_meet_with_china }
         prerequisite = { focus = PRK_avert_mutually_assured_destruction }
+		available = { KOR = { has_completed_focus = KOR_Path_of_Peace } }
+		
 		completion_reward = {
 		add_stability = 0.01
 		add_political_power = 15
@@ -1294,7 +1296,7 @@ focus_tree = {
 	    prerequisite = { focus = PRK_Denounce_the_West}
 		
 		completion_reward = {
-		KOR = { country_event = north_korea.8 }
+		 create_wargoal = { type = annex_everything target = KOR }
 		}
 		ai_will_do = {
 			factor = 35
