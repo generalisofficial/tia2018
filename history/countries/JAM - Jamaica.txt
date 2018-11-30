@@ -1,6 +1,6 @@
 ﻿capital = 689
 
-oob = "JAM_2000"
+oob = "JAM_2018"
 
 set_research_slots = 3
 set_convoys = 150
@@ -95,55 +95,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 35
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 20
+			popularity = 50.1
 		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 49.9
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "2016.2.25"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "P. J. Patterson"
-	ideology = christian_democrat
-	picture = "PJ_Patterson.dds"
+	name = "Andrew Holness"
+	picture = "Andrew_Holness.dds"
+	ideology = fiscal_conservative
 }
 
-2015.1.1 = {
-	create_country_leader = {
-		name = "Portia Simpson-Miller"
-		ideology = social_conservative
-		picture = "Portia_Simpson_Miller.dds"
-	}
+create_country_leader = {
+	name = "Peter Phillips"
+	picture = "Peter_Phillips.dds"
+	ideology = social_democrat_ideology
 }
-

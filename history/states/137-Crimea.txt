@@ -2,12 +2,8 @@
 state={
 	id=137
 	name="STATE_137"
-	manpower = 2110200
-	
-	state_category = state_level_10
-	
-	resources = {
-		oil=15
+	resources={
+		oil=15.000
 	}
 
 	history={
@@ -15,7 +11,7 @@ state={
 		add_core_of = UKR
 		add_core_of = SOV
 		victory_points = {
-			3686 20
+			3686 20 
 		}
 		buildings = {
 			infrastructure = 5
@@ -24,16 +20,23 @@ state={
 			3686 = {
 				naval_base = 10
 				coastal_bunker = 3
+
 			}
-			9680 ={
+			9680 = {
 				naval_base = 1
 				coastal_bunker = 1
 				bunker = 1
+
 			}
+
 		}
+
 	}
 
 	provinces={
 		705 3686 3722 6704 6724 9677 9680 9718 11649 
 	}
+	manpower=2110200
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

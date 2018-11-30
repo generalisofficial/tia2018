@@ -90,6 +90,12 @@ on_actions = {
 	#PREV is faction leader on join faction requests.
 	on_join_faction = {
 		effect = {
+			if = {
+			    limit = {
+		            PREV = { original_tag = USA }
+			    }
+			    FROM = { news_event = factions.1 }
+		    }
 		}
 	}
 
@@ -146,13 +152,6 @@ on_actions = {
 			every_country = { #Democracies must love each other.
 				limit = { has_democratic_form_of_government = yes }
 				country_event = ideology.4
-			}
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = cia.1
-				news_event = cia.2
 			}
 			every_country = {
 				limit = {
