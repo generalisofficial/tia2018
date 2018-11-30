@@ -1,6 +1,6 @@
 ﻿capital = 776
 
-oob = "IVO_2000"
+oob = "IVO_2018"
 
 set_research_slots = 3
 set_convoys = 100
@@ -96,55 +96,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 1
-		}
-		conservative = {
-			popularity = 1
-		}
-		market_liberal = {
-			popularity = 1
-		}
 		social_liberal = {
-			popularity = 40
+			popularity = 83.7
 		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 5
-		}
-		democratic_socialist = {
-			popularity = 40
-		}
-		communist = {
-			popularity = 5
+			popularity = 16.3
 		}
 	}
 	
-	ruling_party = democratic_socialist
-	last_election = "1999.12.24"
+	ruling_party = social_liberal
+	last_election = "2015.10.31"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Laurent Gbagbo"
-	picture = "Laurent_Gbagbo.dds"
-	ideology = democratic_socialist_ideology
-	expire = "2011.4.11"
+	name = "Alassane Ouattara"
+	picture = "Alassane_Ouattara.dds"
+	ideology = centrist
 }
 
-2010.12.4 = {
-	create_country_leader = {
-		name = "Alassane Ouattara"
-		picture = "Alassane_Ouattara.dds"
-		ideology = social_liberal_ideology
-	}
+create_country_leader = {
+	name = "Pascal Affi N'Guessan"
+	picture = "Pascal_Affi_Nguessan.dds"
+	ideology = social_democrat_ideology
 }

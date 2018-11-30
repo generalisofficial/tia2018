@@ -41,19 +41,19 @@ ideas = {
 				reactionary_drift = 0.01
 			}
 		}
-		idea_SOV_poor_inf = {
-			picture = bad_infrastructure
+		
+		idea_SOV_siberian_money_drain = {
+			picture = siberian_money_drain
 		
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.05
-				local_resources_factor = -0.2
-				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.15
 			}
 		}
+		
 		idea_SOV_defender_of_orthotox = {
 			picture = orthodox_faith2
 		
@@ -104,6 +104,7 @@ ideas = {
 				industrial_capacity_factory = -0.05
 			}
 		}
+		
 		idea_SOV_major_oil_power = {
 			picture = oil_profits
 		
@@ -117,6 +118,7 @@ ideas = {
 				consumer_goods_factor = -0.02
 			}
 		}
+		
 		idea_SOV_home_of_the_revolution = {
 			picture = home_of_the_new_revolution
 		
@@ -141,6 +143,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+		
 		SOV_high_costing_investments = {
 			picture = financial_crisis
 		
@@ -154,6 +157,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
+		
 		SOV_rouble_crisis = {
 			picture = great_depression
 		
@@ -166,6 +170,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
+		
 		SOV_industrial_development_aid = {
 			picture = foreign_capital
 		

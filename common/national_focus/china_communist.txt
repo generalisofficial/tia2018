@@ -35,7 +35,7 @@ focus_tree = {
 		icon = one_china_policy
 		x = 15
 		y = 1
-		cost = 5
+		cost = 10
 		
 		prerequisite = {
 		focus = PRC_Conflict_in_Asia
@@ -59,7 +59,7 @@ focus_tree = {
 		icon = blue_dragon
 		x = 5
 		y = 1
-		cost = 5
+		cost = 10
 		
 		prerequisite = {
 		focus = PRC_Conflict_in_Asia
@@ -74,20 +74,17 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 70
+			factor = 30
 		}
 	}
 	
 	focus = {
 		id = PRC_Solve_The_Conflict_in_Korea
 		icon = conflictkorea
-		x = 12
-		y = 2
+		x = 27
+		y = 0
 		cost = 5
 		
-		prerequisite = {
-		focus = PRC_One_Dream_One_China
-		}
 		
 		completion_reward = {
         add_political_power = 50
@@ -101,9 +98,13 @@ focus_tree = {
     focus = {
 		id = PRC_Mediate_the_Conflict
 		icon = neutrality
-		x = 10
-		y = 3
+		x = 30
+		y = 1
 		cost = 5
+		
+		mutually_exclusive = {
+		focus = PRC_Side_with_the_North
+		}
 		
 		prerequisite = {
 		focus = PRC_Solve_The_Conflict_in_Korea
@@ -121,8 +122,8 @@ focus_tree = {
 	focus = {
 		id = PRC_Pressure_North_Korea
 		icon = political_pressure
-		x = 11
-		y = 4
+		x = 31
+		y = 2
 		cost = 5
 		
 		prerequisite = {
@@ -144,8 +145,8 @@ focus_tree = {
 	focus = {
 		id = PRC_Prevent_US_Intervention
 		icon = demand_territory
-		x = 9
-		y = 4
+		x = 29
+		y = 2
 		cost = 5
 		
 		prerequisite = {
@@ -157,6 +158,267 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Deactivate_North_Korean_Companies
+		icon = industry_close
+		x = 30
+		y = 3
+		cost = 5
+		
+		prerequisite = {
+		focus = PRC_Prevent_US_Intervention
+		}
+		prerequisite = {
+		focus = PRC_Pressure_North_Korea
+		}
+		
+		completion_reward = {
+		add_stability = 0.01
+		every_country = { news_event = china_news.1 }
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Cut_Supplies_Temporarily
+		icon = concessions
+		x = 30
+		y = 4
+		cost = 5
+		
+		prerequisite = {
+		focus = PRC_Deactivate_North_Korean_Companies
+		}
+		
+		completion_reward = {
+		add_political_power = 50
+		PRK = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative } }
+		every_country = { news_event = china_news.2 }
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Meeting_to_Restabilish_Relations
+		icon = improve_relations_red
+		x = 31
+		y = 5
+		cost = 5
+		
+		available = {
+		PRK = {
+		has_completed_focus	= PRK_restabilish_diplomatic_and_commercial_relations
+		}
+		}
+		
+		mutually_exclusive = {
+		focus = PRC_Keep_our_Sanctions
+		}
+		
+		prerequisite = {
+		focus = PRC_Cut_Supplies_Temporarily
+		}
+		
+		completion_reward = {
+		add_stability = 0.01
+		PRK = { add_opinion_modifier = { target = PRC modifier = state_visit } 
+		country_event = china.1 }
+		PRC = { add_opinion_modifier = { target = PRK modifier = state_visit } }
+		
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Keep_our_Sanctions
+		icon = embargo
+		x = 29
+		y = 5
+		cost = 5
+		
+		available = {
+		PRK = {
+		has_completed_focus	= PRK_DMZ_Incident
+		}
+		}
+		
+		mutually_exclusive = {
+		focus = PRC_Meeting_to_Restabilish_Relations
+		}
+		
+		prerequisite = {
+		focus = PRC_Cut_Supplies_Temporarily
+		}
+		
+		completion_reward = {
+        add_stability = 0.02
+		add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Side_with_the_North
+		icon = north_korea
+		x = 24
+		y = 1
+		cost = 10
+		
+		mutually_exclusive = {
+		focus = PRC_Mediate_the_Conflict
+		}
+		
+		prerequisite = {
+		focus = PRC_Solve_The_Conflict_in_Korea
+		}
+		
+		completion_reward = {
+        add_war_support = 0.02
+		add_stability = -0.01
+		}
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	
+	focus = {
+		id = PRC_End_Six_Party_Talks
+		icon = renounce_treaty
+		x = 25
+		y = 2
+		cost = 10
+	
+		prerequisite = {
+		focus = PRC_Side_with_the_North
+		}
+		
+		completion_reward = {
+        KOR = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative } }
+		USA = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative }}
+        add_stability = -0.01
+        add_war_support = 0.01
+        add_political_power = -50		
+		}
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	
+	focus = {
+		id = PRC_Repairing_our_Friendship
+		icon = tripartite_pact
+		x = 23
+		y = 2
+		cost = 10
+			
+		prerequisite = {
+		focus = PRC_Side_with_the_North
+		}
+		
+		completion_reward = {
+        PRK = { add_opinion_modifier = { target = PRC modifier = recent_actions_positive } }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	
+	
+	focus = {
+		id = PRC_Nuclearize_the_Peninsula
+		icon = nuclear_weapons
+		x = 24
+		y = 3
+		cost = 10
+			
+		prerequisite = {
+		focus = PRC_Repairing_our_Friendship
+		}
+				
+		prerequisite = {
+		focus = PRC_End_Six_Party_Talks
+		}
+		
+		completion_reward = {
+        USA = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative } }
+		PRK = {
+		add_ideas = nuclear_power_idea
+		}
+		add_ideas = nuclear_power_idea
+		add_war_support = 0.02
+		add_stability = -0.03
+		}
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	
+	focus = {
+		id = PRC_Strenghten_Our_Alliance
+		icon = align_to_north_korea2
+		x = 24
+		y = 4
+		cost = 10
+			
+		prerequisite = {
+		focus = PRC_Nuclearize_the_Peninsula
+		}
+		
+		available = {
+		PRK = { has_completed_focus = PRK_DMZ_Incident }
+		}
+		
+		completion_reward = {
+		PRK = { add_opinion_modifier = { target = PRC modifier = state_visit } 
+		give_military_access = PRC }
+		PRC = { add_opinion_modifier = { target = PRK modifier = state_visit } }
+		add_named_threat = {
+		threat = 5
+		name = threat_PRC_korea
+		}
+		every_country = { news_event = china_news.3 }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	
+	focus = {
+		id = PRC_Supply_our_Ally
+		icon = trade_with_north_korea
+		x = 24
+		y = 5
+		cost = 10
+			
+		prerequisite = {
+		focus = PRC_Strenghten_Our_Alliance
+        }
+		
+		completion_reward = {
+	add_war_support = 0.01
+	PRK = { 
+	add_opinion_modifier = { target = PRC modifier = offered_support }
+	add_resource = {
+    type = oil
+    amount = 20
+    state = 874 }
+    add_stability = 0.025
+		}
+
+	}
+		ai_will_do = {
+			factor = 30
 		}
 	}
 	
