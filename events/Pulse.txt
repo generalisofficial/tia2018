@@ -34,6 +34,13 @@ country_event = {
 		}
 		if = {
 			limit = {
+		        NOT = { has_idea = nuclear_weapons_state }
+				has_tech = nukes
+			}
+			add_ideas = nuclear_weapons_state
+		}
+		if = {
+			limit = {
 		        NOT = { has_idea = population_growth_explosion }
 		        NOT = { has_idea = population_growth_rapid }
 		        NOT = { has_idea = population_growth_steady }
