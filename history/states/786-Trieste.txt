@@ -1,26 +1,32 @@
+
 state={
 	id=786
 	name="STATE_786"
-	history = {
+
+	history={
 		owner = ITA
-		
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
 			dockyard = 1
-			6626 = { naval_base = 4 }
+			6626 = {
+				naval_base = 4
+
+			}
+
 		}
-		
-		victory_points = { 6626 3 }
-		
+		victory_points = {
+			6626 3 
+		}
 		add_core_of = ITA
 		add_core_of = VNT
+
 	}
+
 	provinces={
-		6626 
+		628 6626 9613 
 	}
 	manpower=180250
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_4
+	state_category=state_level_4
 }

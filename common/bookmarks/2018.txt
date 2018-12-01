@@ -10,86 +10,76 @@ bookmarks = {
 			history = "USA_INFORMATION_AGE_DESC"
 			ideology = conservative
 			ideas = {
-				idea_USA_political_establishment
-				american_militarism
-				idea_united_nations_security_council_member
+			    idea_united_nations_security_council_member
+				nuclear_weapons_state
 			}
 		}
+		
 		"SOV"={
 			history = "SOV_INFORMATION_AGE_DESC"
 			ideology = reactionary
 			ideas = {
 				idea_united_nations_security_council_member
-				idea_eu_sanctions
+				nuclear_weapons_state
 			}
 		}
+		
 		"PRC"={
 			history = "PRC_INFORMATION_AGE_DESC"
 			ideology = communist
 			ideas={
-				idea_PRC_chinese_socialism
 				idea_united_nations_security_council_member
+				nuclear_weapons_state
 			}			
 		}
+		
 		"ENG"={
 			history = "ENG_INFORMATION_AGE_DESC"
-			ideology = social_democrat
-			ideas = {
-				ENG_queen_elizabeth_2
-				idea_eu_member
-				idea_united_nations_security_council_member
-			}
-		}
-		"FRA"={
-			history = "FRA_INFORMATION_AGE_DESC"
 			ideology = conservative
 			ideas = {
-				idea_eu_member
-				the_euro
 				idea_united_nations_security_council_member
+				nuclear_weapons_state
+				idea_eu_member
+				commonwealth_of_nations_member
+			}
+		}
+		
+		"FRA"={
+			history = "FRA_INFORMATION_AGE_DESC"
+			ideology = social_liberal
+			ideas = {
+			    idea_united_nations_security_council_member
+				nuclear_weapons_state
+				idea_eu_member
 			}
 		}
 		"GER"={
 			history = "GER_INFORMATION_AGE_DESC"
-			ideology = social_democrat
+			ideology = conservative
 			ideas = {
-				idea_GER_german_legacy
-				idea_eu_member
-				the_euro
-				GER_bundeswehr_shortcomings
+			    idea_eu_member
 			}
 		}
+		
 		"JAP"={
 			history = "JAP_INFORMATION_AGE_DESC"
 			ideology = conservative
 			ideas = {
-				idea_JAP_emperor_akihito
-				japanese_article_9
+			
 			}
 		}
 		
 		"---"={
-			history = "OTHER_INFORMATION_AGE_DESC"
+			history = "OTHER_DESC"
 		}
 		
-		"PRK"={
+		"RAJ"={
 		    minor = yes
-			history = "PRK_INFORMATION_AGE_DESC"
-			ideology = communist
+			history = "RAJ_INFORMATION_AGE_DESC"
+			ideology = reactionary
 			ideas = {
-			    UNSC_trade_sanctions_idea
-	            idea_PRK_militarism
 				non_aligned_movement_member
-			}
-		}
-		
-		"KOR"={
-		    minor = yes
-			history = "KOR_INFORMATION_AGE_DESC"
-			ideology = social_liberal
-			ideas = {
-			    idea_KOR_militarism
-			    idea_KOR_USinvestment
+				commonwealth_of_nations_member
 			}
 		}
 		
@@ -99,9 +89,33 @@ bookmarks = {
 			ideology = social_democrat
 			ideas = {
 			    idea_eu_member
-				the_euro
-	            ITA_mafia
-	            ITA_corruption
+			}
+		}
+		
+		"PRK"={
+		    minor = yes
+			history = "PRK_INFORMATION_AGE_DESC"
+			ideology = communist
+			ideas = {
+				non_aligned_movement_member
+			}
+		}
+		
+		"KOR"={
+		    minor = yes
+			history = "KOR_INFORMATION_AGE_DESC"
+			ideology = social_liberal
+			ideas = {
+			
+			}
+		}
+		
+		"PER"={
+		    minor = yes
+			history = "PER_INFORMATION_AGE_DESC"
+			ideology = islamist
+			ideas = {
+				non_aligned_movement_member
 			}
 		}
 		
@@ -121,7 +135,6 @@ bookmarks = {
 			ideology = market_liberal
 			ideas = {
 			    idea_eu_member
-	            neutrality_idea
 			}
 		}
 		
@@ -131,7 +144,6 @@ bookmarks = {
 			ideology = social_liberal
 			ideas = {
 			    non_member_state
-	            idea_CHI_grudge
 			}
 		}
 			
