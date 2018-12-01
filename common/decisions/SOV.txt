@@ -66,6 +66,42 @@ soviet_union = {
 		}
 		complete_effect = {
 			set_cosmetic_tag = SOV_UNION
+			if = {
+			    limit = {
+		            EST = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = EST transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            LAT = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = LAT transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            LIT = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = LIT transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            BLR = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = BLR transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            UKR = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = UKR transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            MDV = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = MDV transfer_troops = yes }
+		    }
 		}
 		
 		icon = communism
