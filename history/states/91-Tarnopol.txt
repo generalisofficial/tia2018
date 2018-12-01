@@ -1,14 +1,11 @@
+
 state={
 	id=91
-	name="STATE_91" # Lwow
-	manpower = 3527800
-	
-	state_category = state_level_10
-	
-	resources = {
-		steel = 70
+	name="STATE_91"
+	resources={
+		steel=70.000
 	}
-	
+
 	history={
 		owner = UKR
 		victory_points = {
@@ -19,10 +16,15 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 2
+
 		}
+
 	}
 
 	provinces={
-		438 491 536 3483 3562 9454 9468 9558 11427 11479 
+		536 6431 6483 9468 9558 11479 
 	}
+	manpower=2534174
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }
