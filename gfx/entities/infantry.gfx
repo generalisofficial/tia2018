@@ -33,9 +33,13 @@ objectTypes = {
 		scale = 1.0
 	}
 	
+########################################################################################################################################################################################	
+########################################################################################################################################################################################	
+########################################################################################################################################################################################		
+	
 	pdxmesh = {
 		name = "generic_western_european_rifle_infantry_mesh"
-		file = "gfx/models/units/western_european_infantry.mesh"
+		file = "gfx/models/units/TIA/generic_western_infantry.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_rifle_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_rifle_attack_animation" }
@@ -62,7 +66,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "generic_western_european_mg_infantry_mesh"
-		file = "gfx/models/units/western_european_infantry.mesh"
+		file = "gfx/models/units/TIA/generic_western_infantry.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_mg_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_mg_attack_animation" }
@@ -87,10 +91,10 @@ objectTypes = {
 		animation = { id = "aim_exercise"	type = "GER_infantry_aim_exercise_mg_animation" }
 	}
 	
-	#	pdxmesh = {
-	#		name = "western_european_infantry_weapon_rifle_mesh"
-	#		file = "gfx/models/units/western_european_infantry_weapon_mg.mesh"
-	#	}	
+	pdxmesh = {
+		name = "western_european_infantry_weapon_rifle_mesh"
+		file = "gfx/models/units/western_european_infantry_weapon_mg.mesh"
+	}	
 	
 	pdxmesh = {
 		name = "western_european_infantry_weapon_mg_mesh"
@@ -101,7 +105,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_eastern_european_infantry_rifle_mesh"
-		file = "gfx/models/units/eastern_european_infantry.mesh"
+		file = "gfx/models/units/TIA/generic_eastern_infantry.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_rifle_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_rifle_attack_animation" }
@@ -128,7 +132,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "generic_eastern_european_infantry_mg_mesh"
-		file = "gfx/models/units/eastern_european_infantry.mesh"
+		file = "gfx/models/units/TIA/generic_eastern_infantry.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_mg_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_mg_attack_animation" }
@@ -157,11 +161,20 @@ objectTypes = {
 		name = "eastern_european_infantry_weapon_mg_mesh"
 		file = "gfx/models/units/eastern_european_infantry_weapon_mg.mesh"
 	}
+	
+	pdxmesh = {
+		name = "eastern_european_infantry_weapon_rifle_mesh"
+		file = "gfx/models/units/western_european_infantry_weapon_mg.mesh"
+	}		
+	
+########################################################################################################################################################################################	
+########################################################################################################################################################################################	
+########################################################################################################################################################################################		
 		
 	
 		pdxmesh = {
 		name = "asian_infantry_rifle_mesh"
-		file = "gfx/models/units/asian_infantry.mesh"
+		file = "gfx/models/units/TIA/generic_eastern_infantry.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_rifle_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_rifle_attack_animation" }
@@ -188,7 +201,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "asian_infantry_mg_mesh"
-		file = "gfx/models/units/asian_infantry.mesh"
+		file = "gfx/models/units/TIA/generic_eastern_infantry.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_mg_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_mg_attack_animation" }
@@ -633,8 +646,6 @@ objectTypes = {
 	}
 
 	
-	
-	
 	pdxmesh = {
 		name = "USA_infantry_mesh"
 		file = "gfx/models/units/USA_infantry.mesh"
@@ -776,7 +787,6 @@ objectTypes = {
 		name = "JAP_infantry_weapon_rifle_mesh"
 		file = "gfx/models/units/JAP_infantry_weapon_arisaka_rifle.mesh"
 	}
-	
 	
 
 
