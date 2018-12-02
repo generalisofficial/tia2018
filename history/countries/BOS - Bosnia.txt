@@ -1,6 +1,6 @@
 ﻿capital = 104
 
-oob = "BOS_2000"
+oob = "BOS_2018"
 
 set_research_slots = 3
 set_convoys = 20
@@ -91,66 +91,54 @@ set_technology = {
 
 add_ideas = {
 	population_growth_decline
-	limited_conscription
+	volunteer_only
 }
 
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
 		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
+			popularity = 36.61
 		}
 		social_democrat = {
-			popularity = 5
+			popularity = 33.53
 		}
-		progressive = {
-			popularity = 10
+		reactionary = {
+			popularity = 16.91
 		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+		nationalist = {
+			popularity = 12.95
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1998.12.1"
+	last_election = "2014.10.7"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-add_namespace = {
-	name = "bos_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Denis Zvizdić"
+	picture = "Denis_Zvizdic.dds"
+	ideology = national_conservative
 }
 
 create_country_leader = {
-	name = "Alija Izetbegović"
-	ideology = social_conservative 
-	picture = "Alija_Izetbegovic.dds"
+	name = "Nermin Nikšić"
+	picture = "Nermin_Niksic.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Sefer Halilovic"
-	ideology = proto_fascist 
-	picture = "Sefer_Halilovic.dds"
+	name = "Fahrudin Radončić"
+	picture = "Fahrudin_Radoncic.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Senad Šepić"
+	picture = "Senad_Sepic.dds"
+	ideology = neo_nationalist
 }
 
 create_field_marshal = {
@@ -250,19 +238,3 @@ create_corps_commander = {
 	traits = { trait_engineer }
 	skill = 1
 }
-
-2006.1.1 = {
-	add_ideas = {
-		volunteer_only
-	}
-}
-
-
-2015.1.1 = {
-	create_country_leader = {
-		name = "Bakir Izetbegović"
-		ideology = social_conservative
-		picture = "Bakir_Izetbegovic.dds"
-	}
-}
-
