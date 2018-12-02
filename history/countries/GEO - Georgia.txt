@@ -1,6 +1,6 @@
 ﻿capital = 231
 
-oob = "GEO_2000"
+oob = "GEO_2018"
 
 set_research_slots = 3
 set_convoys = 200
@@ -91,43 +91,45 @@ set_technology = {
 add_ideas = {
 	population_growth_decline
 	extensive_conscription
+	guam_member
 }
 
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 5
+		social_democrat = {
+			popularity = 48.77
 		}
 		conservative = {
-			popularity = 15
+	    	popularity = 27.11
 		}
-		social_liberal = {
-			popularity = 50
-		}
-		social_democrat = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 20
+		reactionary = {
+			popularity = 24.12
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1999.10.31"
+	ruling_party = social_democrat
+	last_election = "2016.10.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Eduard Shevardnadze"
-	picture = "Eduard_Shevardnadze.dds"
-	ideology = social_liberal_ideology
+	name = "Giorgi Kvirikashvili"
+	picture = "Giorgi_Kvirikashvili.dds"
+	ideology = social_democrat_ideology
 }
 
-add_namespace = {
-	name = "geo_unit_leader"
-	type = unit_leader
+create_country_leader = {
+	name = "Mikheil Saakashvili"
+	picture = "Mikheil_Saakashvili.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Irma Inashvili"
+	picture = "Irma_Inashvili.dds"
+	ideology = reactionary_ideology
 }
 
 create_field_marshal = {
@@ -170,46 +172,4 @@ create_corps_commander = {
 	picture = "generals/Nikoloz_Janjgava.dds"
 	traits = { hill_fighter }
 	skill = 1
-}
-
-2003.1.1 = {
-	create_country_leader = {
-		name = "Giorgi Margvelashvili"
-		picture = "Giorgi_Margvelashvili.dds"
-		ideology = social_liberal_ideology
-	}
-}
-
-2016.1.1 = {
-	set_politics = {
-
-		parties = {
-			nationalist = {
-				popularity = 7
-			}
-			reactionary = {
-				popularity = 7
-			}
-			conservative = {
-				popularity = 33
-			}
-			social_liberal = {
-				popularity = 33
-			}
-			market_liberal = {
-				popularity = 9
-			}
-			social_democrat = {
-				popularity = 7
-			}
-			communist = {
-				popularity = 4
-			}
-		}
-		
-		ruling_party = social_liberal
-		last_election = "2012.10.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 }

@@ -1,6 +1,6 @@
 ﻿capital = 455
 
-oob = "JOR_2000"
+oob = "JOR_2018"
 
 set_research_slots = 3
 set_convoys = 10
@@ -99,20 +99,12 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		islamist = { popularity = 19 }
-		nationalist = { popularity = 1 }
-		monarchist = { popularity = 40 }
-		reactionary = { popularity = 2 }
-		conservative = { popularity = 18 }
-		market_liberal = { popularity = 2 }
-		social_liberal = { popularity = 2 }
-		social_democrat = { popularity = 2 }
-		progressive = { popularity = 2 }
-		democratic_socialist = { popularity = 2 }
-		communist = { popularity = 10 }
+		monarchist = { 
+		    popularity = 100
+		}
 	}
 	ruling_party = monarchist
-	last_election = "1997.1.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -121,72 +113,6 @@ create_country_leader = {
 	name = "Abdullah II"
 	picture = "Abdullah_II.dds"
 	ideology = absolute_monarchist
-}
-
-create_country_leader = { 
-    name = "Saeed Thyab"
-	picture = "Saeed_Thyab.dds"
- 	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = { 
-    name = "Mazin Riyal"
-	picture = "Mazin_Riyal.dds"
- 	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Hamza Mansour"
-	picture = "Hamza_Mansour.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = { 
-    name = "Akram al-Homsi"
-	picture = "Akram_al-Homsi.dds"
- 	ideology = neo_nationalist
-}
-
-create_country_leader = { 
-    name = "Faraj Al-Tameezi"
-	picture = "Faraj_Al-Tameezi.dds"
- 	ideology = marxist_leninist
-}
-
-create_country_leader = { 
-    name = "Ahmed al-Shunaq"
-	picture = "Ahmed_Al-Shannaq.dds"
- 	ideology = centrist
-}
-
-create_country_leader = { 
-    name = "Fawaz Zou'bi"
-	picture = "Fawaz_Zou'bi.dds"
- 	ideology = progressive_ideology
-}
-
-create_country_leader = { 
-    name = "Hazem Qashou"
-	picture = "Hazem_Qashou.dds"
- 	ideology = social_conservative
-}
-
-create_country_leader = { 
-    name = "Saleh Ersheidat"
-	picture = "Saleh_Rsheedat.dds"
- 	ideology = social_democrat_ideology
-}
-
-create_country_leader = { 
-    name = "Rula Alhroob"
-	picture = "Rula_Alhroob.dds"
- 	ideology = reactionary_ideology
-}
-
-create_country_leader = { 
-    name = "Emhamed Abu Khalil"
-	picture = "Emhamed_Abu_Khalil.dds"
- 	ideology = falangist
 }
 
 create_field_marshal = {
@@ -202,36 +128,42 @@ create_corps_commander = {
 	traits = { panzer_leader }
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Ma'ashal Al-Zabin"
 	picture = "Ma'ashal_el-Zabin.dds"
 	traits = { desert_fox }
 	skill = 2
 }
+
 create_corps_commander = {
 	name = "Mahmoud Abdel Halim Freihat"
 	picture = "Mahmoud_Abdel_Halim_Freihat.dds"
 	traits = { commando }
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Hussein al-Majali"
 	picture = "Hussein_A_Majali.dds"
 	traits = { trickster }
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Khaled Jamil el-Sarayreh"
 	picture = "Khaled_Jamil_el-Sarayreh.dds"
 	traits = { ranger }
 	skill = 2
 }
+
 create_corps_commander = {
 	name = "Khaled Al-Sharah"
 	picture = "Khaled_Sarah.dds"
 	traits = { urban_assault_specialist }
 	skill = 1
 }
+
 create_navy_leader = {
 	name = "Qasim Fadil Nahar"
 	picture = "Qasim_Fadil_Nahar.dds"

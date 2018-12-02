@@ -185,3 +185,49 @@ east_african_community_decisions = {
 		}
 	}
 }
+
+guam_decisions = {
+	
+	join_guam = {
+		visible = {
+			NOT = { has_idea = guam_member }
+			OR = { original_tag = GEO original_tag = UKR original_tag = AZR original_tag = MDV }
+		}
+		available = {
+            NOT = { has_idea = guam_member }
+		}
+		
+		complete_effect = {
+            add_ideas = guam_member
+		}
+		
+		icon = guam
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_guam = {
+		visible = {
+			has_idea = guam_member
+		}
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = guam_member
+		}
+		
+		icon = guam
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
