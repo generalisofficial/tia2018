@@ -63,7 +63,7 @@ guiTypes = {
 
         instantTextboxType = {
 			name = "nasa_funds"
-			position = {x=300 y=15}
+			position = {x=520 y=15}
 			font = "hoi_36header"
 			text = NASA_FUNDS_TEXT
 			maxWidth = 800
@@ -123,7 +123,7 @@ guiTypes = {
 			name = "atlas_V_rocket" # ATLAS V ROCKET ADJUSTMENTS
 			position = {x=260 y=69}	
 			spriteType = "GFX_generic_bg"
-            pdx_tooltip = "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though."
+            pdx_tooltip = "ATLAS_V_TOOLTIP"
 		}
 
 		iconType = { #To Be Replaced with ATLAS V Rocket
@@ -131,7 +131,7 @@ guiTypes = {
 			spriteType = "GFX_Atlas_SM65A"
 			position = { x= 350 y = 90 }
 			scale = 1
-            pdx_tooltip = "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though."
+            pdx_tooltip = "ATLAS_V_TOOLTIP"
 		}
 
 		instantTextboxType = {
@@ -142,7 +142,7 @@ guiTypes = {
 			maxWidth = 348
 			maxHeight = 23
 			format = left
-            pdx_tooltip = "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though."
+            pdx_tooltip = "ATLAS_V_TOOLTIP"
 		}
 
 		buttonType = { # CNES SEIS SEISMOMETER DEVELOMENT

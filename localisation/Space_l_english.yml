@@ -126,7 +126,7 @@ space_race.16.t:0 "[GetNewspaperHeader]The creation of NASA"
  launch_SCORE_satellite_desc:0 "We can finally launch our SCORE Satellite into space!"
  build_SCORE_satellite:0 "Build the SCORE Satellite"
  build_SCORE_satellite_desc:0 "The 'Signal Communications by Orbiting Relay Equipment' will become one of the first communication satellites ever."
- atlas_project_progress:0 "Atlas Project Progress:  [?ROOT.USA_atlas_level|-0]"
+ insight_project_progress:0 "Insight Project Progress:  [?ROOT.USA_insight_level|-0]%"
  vanguard_project_progress:0 "Vanguard Project Progress:  [?ROOT.USA_vanguard_level|-0]"
  project_vanguard_airforce_modify_rocket:0 "Modify the Atlas ICBM for expanded use"
  project_vanguard_airforce_modify_rocket_desc:0 "We have to possibility to modify and improve the default Atlas ICBM rocket for it to fit our demands"
@@ -138,6 +138,7 @@ space_race.16.t:0 "[GetNewspaperHeader]The creation of NASA"
  project_vanguard_airforce_rocket_control_desc:0 "The newly developed control system for the Vanguard Rocket is ready to be installed and used."
  form_NASA:0 "Create a National Space Administration"
  from_NASA_desc:0 "We need a centralized administration which controls all of our different space projects, including future ones to stand up against the Soviet Union."
+ part_progress:0 "Current Part R&D status"
 
 
 # Variables
@@ -145,6 +146,7 @@ space_race.16.t:0 "[GetNewspaperHeader]The creation of NASA"
 
 # Tooltips
  atlas_missile_level_up:0 "If tested successfully, the research advances."
+ ATLAS_V_TOOLTIP:0 "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though.\n\n§YFunds required:§! §R27.000.000$§!"
 
 # Flags
  insight_programm_started:0 "Insight Program started"
@@ -188,9 +190,9 @@ space_race.16.t:0 "[GetNewspaperHeader]The creation of NASA"
 
 # GUI
  nasa_TOOLTIP:0 "National Aeronautics and Space Administration"
- NASA_FUNDS_TEXT:0 "§R[?NASA_funds]§!"
- ATLAS_LOCKED_TOOLTIP:0 "Research the Atlas Rocket first!"
- ATLAS_LOCKED_DELAYED_TOOLTIP:0 "Don't forget to research the rocket before trying to upgrade it."
+ NASA_FUNDS_TEXT:0 "Nasa Funds: §Y[?NASA_funds].000.000§! $"
+ LOCKED_TOOLTIP:0 "Research Rocket first!"
+ LOCKED_DELAYED_TOOLTIP:0 "Don't forget to research the rocket before trying to upgrade it."
  USA_SpaceWindow:0 "[Root.USASpaceResearchWindowName]"
  USA_SpaceWindow_old:0 "NACA Research Center"
  USA_SpaceWindow_new:0 "NASA Research Administration"

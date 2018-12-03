@@ -1,5 +1,6 @@
-﻿add_namespace = space_race
+﻿add_namespace = space
 add_namespace = space_funds
+add_namespace = nasa_research
 
 # USA starts Insight Programm
 news_event = {
@@ -13,14 +14,14 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = space_race.1.a
+		name = space.1.a
 		trigger = {
 			tag = USA
 		}
 	}
 
 	option = {
-		name = space_race.1.b
+		name = space.1.b
 		trigger = {
 			NOT = { tag = USA }
 		}
@@ -37,7 +38,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = space_race.2.a
+		name = space.2.a
 	}
 }
 
@@ -50,10 +51,86 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				check_variable = { NASA_funds < 650000000 }
+				check_variable = { NASA_funds < 650 }
 			}
-			add_to_variable = { var = NASA_funds value = 51000000 }
+			add_to_variable = { var = NASA_funds value = 51 }
 			country_event = { id = space_funds.1 days = 7}
 		}
+	}
+}
+
+country_event = {
+	id = nasa_research.1
+	title = "Atlas V Rocket Adjustment"
+	desc = "Would you like to proceed to the adjustment of the Atlas Rocket? (Progress will be shown in the decision screen)"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes"
+		set_country_flag = insight_atlas_v_adjustment
+		set_country_flag = research_ongoing
+		activate_targeted_decision = { target = USA decision = part_progress }
+	}
+
+	option = {
+		name = "No"
+	}
+}
+
+country_event = {
+	id = nasa_research.2
+	title = "PLACEHOLDER"
+	desc = "PLACEHOLDER"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes"
+		set_country_flag = PLACEHOLDER
+		set_country_flag = research_ongoing
+		activate_targeted_decision = { target = USA decision = part_progress }
+	}
+
+	option = {
+		name = "No"
+	}
+}
+
+country_event = {
+	id = nasa_research.3
+	title = "PLACEHOLDER"
+	desc = "PLACEHOLDER"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes"
+		set_country_flag = PLACEHOLDER
+		set_country_flag = research_ongoing
+		activate_targeted_decision = { target = USA decision = part_progress }
+	}
+
+	option = {
+		name = "No"
+	}
+}
+
+country_event = {
+	id = nasa_research.4
+	title = "PLACEHOLDER"
+	desc = "PLACEHOLDER"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes"
+		set_country_flag = PLACEHOLDER
+		set_country_flag = research_ongoing
+		activate_targeted_decision = { target = USA decision = part_progress }
+	}
+
+	option = {
+		name = "No"
 	}
 }

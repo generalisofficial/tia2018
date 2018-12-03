@@ -81,22 +81,26 @@ scripted_gui = {
 		triggers = {
 			atlas_V_rocket_click_click_enabled = {	
 				ROOT = {
-					check_variable = { NASA_funds > 27000000 }
+					check_variable = { NASA_funds > 27 }
+					NOT = { has_country_flag = research_ongoing }
 				}
 			}
 			insight_CNES_SEIS_click_enabled = {
 				ROOT = {
-					check_variable = { NASA_funds > 73000000 }
+					check_variable = { NASA_funds > 73 }
+					NOT = { has_country_flag = research_ongoing }
 				}
 			}
 			insight_lander_click_enabled = {
 				ROOT = {
-					check_variable = { NASA_funds > 199000000 }
+					check_variable = { NASA_funds > 199 }
+					NOT = { has_country_flag = research_ongoing }
 				}
 			}
 			insight_equipment_click_enabled = {
 				ROOT = {
-					check_variable = { NASA_funds > 260000000 }
+					check_variable = { NASA_funds > 260 }
+					NOT = { has_country_flag = research_ongoing }
 				}
 			}
 		}
