@@ -2,17 +2,25 @@
 state={
 	id=835
 	name="STATE_835"
-	manpower = 1000
-	state_category = state_level_1
+
 	history={
 		owner = VAT
+		set_demilitarized_zone = yes
 		buildings = {
-			infrastructure = 2
+			infrastructure = 7
+
 		}
 		add_core_of = VAT
-		victory_points = { 13205 1 }
+		victory_points = {
+			13205 1 
+		}
+
 	}
+
 	provinces={
 		13205 
 	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=state_level_1
 }
