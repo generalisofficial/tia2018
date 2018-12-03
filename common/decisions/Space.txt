@@ -1,13 +1,13 @@
-#################################
-# TO DO LIST:
-#
-# - Finish Project Vanguard (satellite news event, Russians with first satellite, etc.) and Atlas (launching SCORE)
-#################################
 
+SPACE_USA = {
 
-SPACE_RACE_USA = {
+	##############################################
+	##############################################
+	#####  USA Insight Programm (Mars V2)  #######
+	##############################################
+	##############################################
 
-	initiate_space_race_usa = {
+	initiate_insight_programm = {
 
 		icon = generic_research
 
@@ -16,8 +16,8 @@ SPACE_RACE_USA = {
 		}
 
 		available = {
-			date > 1955.1.1
-			NOT = { has_global_flag = space_race_started }
+			date > 2018.1.1
+			NOT = { USA = { has_country_flag = insight_programm_started } }
 
 		}
 
@@ -29,81 +29,36 @@ SPACE_RACE_USA = {
 
 		visible = {
 			original_tag = USA
-			date > 1955.1.1
-			NOT = { has_global_flag = space_race_started }
+			date > 2018.1.1
+			NOT = { USA = { has_country_flag = insight_programm_started } }
 		}
 
 		complete_effect = {
-			set_global_flag = space_race_started
-			news_event = { id = space_race.1 days = 1} 
-			set_country_flag = space_race_started_usa
+			news_event = { id = space.1 days = 1 } 
+			set_country_flag = insight_programm_started
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 10
-				date > 1955.1.1
+				date > 2018.2.1
 			}
 		}
 	}
 
-	form_NASA = {
+	inside_program_government_funding = {
 
 		icon = generic_research
 
 		allowed = {
 			original_tag = USA
+			USA = { has_country_flag = insight_programm_started }
+			NOT = { USA = { has_country_flag = insight_programm_over } }
 		}
 
 		available = {
-			date > 1958.7.1
-			NOT = { USA = { has_country_flag = USA_NASA } }
-		}
-
-		cost = 100
-
-		fire_only_once = yes
-
-		days_remove = 3
-
-		visible = {
-			original_tag = USA
-			date > 1958.7.1
-			NOT = { has_global_flag = space_race_started }
-		}
-
-		complete_effect = {
-			set_country_flag = USA_NASA
-			news_event = { id = space_race.1 days = 1} 
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 10
-				date > 1958.1.1
-			}
-		}
-	}
-
-	##############################################
-	##############################################
-	#  ATLAS ICBM MISSION FOR "SCORE" SATELLITE  #
-	##############################################
-	##############################################
-
-	the_atlas_program_government_funding = {
-
-		icon = generic_research
-
-		allowed = {
-			original_tag = USA
-			NOT = { has_global_flag = usa_atlas_program }
-		}
-
-		available = {
-			USA = { has_country_flag = NASA_Atlas_research }
+			USA = { has_country_flag = insight_programm_started }
 		}
 
 		cost = 200
@@ -111,27 +66,27 @@ SPACE_RACE_USA = {
 		fire_only_once = yes
 		selectable_mission = yes
 
-		days_remove = 1440
+		days_remove = 121
 
 		remove_trigger = {
-			has_tech = icbm1
+			USA = { has_country_flag = insight_rocket_built }
 		}
 
 		visible = {
 			original_tag = USA
-			USA = { has_country_flag = NASA_Atlas_research }
-			NOT = { has_global_flag = usa_atlas_program }
+			USA = { has_country_flag = insight_programm_started }
+			NOT = { USA = { has_country_flag = insight_programm_over } }
 		}
 
 		complete_effect = {
-			set_global_flag = usa_atlas_program
-			add_tech_bonus = {
-				name = "Atlas Program I"
-				uses = 5
-				bonus = 0.65
-				category = rocketry
+			set_country_flag = insight_gouvernment_funding
+			news_event = space.2
+			hidden_effect = {
+				country_event = space_funds.1
 			}
-			news_event = space_race.2
+			custom_effect_tooltip = {
+				add_to_variable = { var = NASA_funds }
+			}
 		}
 
 		remove_effect = {
@@ -147,18 +102,13 @@ SPACE_RACE_USA = {
 		}
 	}
 
-	atlas_project_progress = {
+	insight_project_progress = {
 
 		icon = generic_research
 
 		allowed = {
-			OR = {
-				AND = {
-					original_tag = USA
-					has_global_flag = usa_atlas_program
-				}
-				USA = { has_country_flag = usa_atlas_program }
-			}
+			original_tag = USA
+			USA = { has_country_flag = insight_gouvernment_funding }
 		}
 
 		available = {
@@ -173,20 +123,15 @@ SPACE_RACE_USA = {
 		days_remove = 14
 
 		visible = {
-			OR = {
-				AND = {
-					original_tag = USA
-					has_global_flag = usa_atlas_program
-				}
-				USA = { has_country_flag = usa_atlas_program }
-			}
+			original_tag = USA
+			USA = { has_country_flag = insight_gouvernment_funding }
 		}
 
 		remove_effect = {
 		}
 
 		remove_trigger = {
-			USA = { has_country_flag = usa_SCORE_satellite }
+			USA = { has_country_flag = insight_launched }
 		}
 
 		ai_will_do = {

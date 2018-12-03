@@ -1,0 +1,59 @@
+﻿add_namespace = space_race
+add_namespace = space_funds
+
+# USA starts Insight Programm
+news_event = {
+	id = space.1
+	title = space.1.t
+	desc = space.1.d
+	picture = GFX_news_event_insight_program
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = space_race.1.a
+		trigger = {
+			tag = USA
+		}
+	}
+
+	option = {
+		name = space_race.1.b
+		trigger = {
+			NOT = { tag = USA }
+		}
+	}
+}
+
+# Insight Gouvernment Funding initialized
+news_event = {
+	id = space.2
+	title = space.2.t
+	desc = space.2.d
+	picture = GFX_news_event_insight_program
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = space_race.2.a
+	}
+}
+
+country_event = {
+	id = space_funds.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { NASA_funds < 650000000 }
+			}
+			add_to_variable = { var = NASA_funds value = 51000000 }
+			country_event = { id = space_funds.1 days = 7}
+		}
+	}
+}

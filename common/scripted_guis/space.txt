@@ -1,25 +1,25 @@
-#scripted_gui = {
-#
-#	nasa_button = {
-#
-#		window_name = "nasa_button_container"
-#
-#		context_type = politics_context
-#		parent_window_token = politics_tab
-#        
-#		visible = {
-#			tag = USA
-#		}
-#		
-#		effects = {
-#			nasa_bg_click = {
-#				set_temp_variable = { show = 1 }
-#				subtract_from_temp_variable = { show = show_nasa }
-#				set_variable = { show_nasa = show }
-#			}
-#		}
-#	}
-#}
+scripted_gui = {
+
+	nasa_button = {
+
+		window_name = "nasa_button_container"
+
+		context_type = politics_context
+		parent_window_token = politics_tab
+        
+		visible = {
+			tag = USA
+		}
+		
+		effects = {
+			nasa_bg_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_nasa }
+				set_variable = { show_nasa = show }
+			}
+		}
+	}
+}
 
 scripted_gui = {
 	nasa_window = {
@@ -38,66 +38,66 @@ scripted_gui = {
 				subtract_from_temp_variable = { show = show_nasa }
 				set_variable = { show_nasa = show }
 			}
-			Atlas_Project_button_click = {
+			Insight_button_click = {
 				set_temp_variable = { show = 1 }
-				subtract_from_temp_variable = { show = show_atlas }
-				set_variable = { show_atlas = show }
+				subtract_from_temp_variable = { show = show_insight }
+				set_variable = { show_insight = show }
 			}
 		}
 	}
 }
 
 scripted_gui = {
-	atlas_project_window = {
+	insight_window = {
 
-		window_name = "atlas_window_container"
+		window_name = "insight_window_container"
 
 		context_type = player_context
 		
 		visible = {
-            check_variable = { show_atlas > 0.0 }
+            check_variable = { show_insight > 0.0 }
 		}
 
 		effects = {
 			exitbutton_click = {
 				set_temp_variable = { show = 1 }
-				subtract_from_temp_variable = { show = show_atlas }
-				set_variable = { show_atlas = show }
+				subtract_from_temp_variable = { show = show_insight }
+				set_variable = { show_insight = show }
 			}
-			atlas_sm65a_rocket_click = {
+			atlas_V_rocket_click = {
 				country_event = nasa_research.1
 			}
-			atlas_sm65a_rocket_tank_click = {
-				# country_event = nasa_research.2
-				set_temp_variable = { show = 1 }
-				subtract_from_temp_variable = { show = show_event }
-				set_variable = { show_event = show }
-				set_country_flag = atlas_sm65a_rocket_tank
+			insight_CNES_SEIS_click = {
+				country_event = nasa_research.2
 			}
-			atlas_sm65a_rocket_engine_click = {
+			insight_lander_click = {
 				country_event = nasa_research.3
 			}
-			atlas_sm65a_booster_tank_click = {
+			insight_equipment_tank_click = {
 				country_event = nasa_research.4
 			}
 		}
 
 		triggers = {
-			atlas_sm65a_rocket_click_enabled = {
-				NOT = { 	
-					ROOT = {
-						has_tech = icbm1
-					}
+			atlas_V_rocket_click_click_enabled = {	
+				ROOT = {
+					check_variable = { NASA_funds > 27000000 }
 				}
 			}
-			atlas_sm65a_rocket_tank_click_enabled = {
-				NOT = { has_tech = icbm1 }
+			insight_CNES_SEIS_click_enabled = {
+				ROOT = {
+					check_variable = { NASA_funds > 73000000 }
+				}
 			}
-			atlas_sm65a_rocket_engine_click_enabled = {
-				has_tech = icbm1
+			insight_lander_click_enabled = {
+				ROOT = {
+					check_variable = { NASA_funds > 199000000 }
+				}
 			}
-			atlas_sm65a_booster_tank_click_enabled = {
-				has_tech = icbm1
+			insight_equipment_click_enabled = {
+				ROOT = {
+					check_variable = { NASA_funds > 260000000 }
+				}
 			}
 		}
 	}
