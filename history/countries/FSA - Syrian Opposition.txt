@@ -92,6 +92,11 @@ add_opinion_modifier = {
 	modifier = death_to_israel
 }
 
+declare_war_on = {
+	target = SYR
+	type = annex_everything
+}
+
 add_ideas = {
 	population_growth_rapid
 	service_by_requirement
@@ -158,11 +163,4 @@ create_corps_commander = {
 	name = "Jamal Maarouf"
 	picture = "Jamal_Maarouf.dds"
 	skill = 2
-}
-
-2018.1.1 = {
-	declare_war_on = {
-		target = SYR
-		type = annex_everything
-	}
 }
