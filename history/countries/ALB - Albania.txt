@@ -94,16 +94,27 @@ add_ideas = {
 	population_growth_stagnation
 }
 
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
 set_politics = {
 
 	parties = {
-		nationalist = { popularity = 1 }
-		reactionary = { popularity = 2 }
-		conservative = { popularity = 23 }
-		social_democrat = { popularity = 31 }
-		progressive = { popularity = 3 }
-		democratic_socialist = { popularity = 16 }
-		communist = { popularity = 2 }
+		social_democrat = { 
+		    popularity = 48.34
+		}
+		conservative = { 
+		    popularity = 28.85
+		}
+		progressive = { 
+		    popularity = 14.28
+		}
+		reactionary = { 
+		    popularity = 4.81
+		}
+		social_liberal = { 
+		    popularity = 3.72
+		}
 	}
 	
 	ruling_party = social_democrat
@@ -112,67 +123,46 @@ set_politics = {
 	elections_allowed = yes
 }
 
-set_country_flag = dominant_religion_islam
-set_country_flag = sunni_islam
-
 create_country_leader = {
-	name = "Ilir Meta"
-	picture = "Ilir_Meta.dds"
+	name = "Edi Rama"
+	picture = "Edi_Rama.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Fatmir Mediu"
-	picture = "Fatmir_Mediu.dds"
-	ideology = social_conservative 
+	name = "Lulzim Basha"
+	picture = "Lulzim_Basha.dds"
+	ideology = fiscal_conservative
 }
 
 create_country_leader = {
-	name = "Shpetim Idrizi"
+	name = "Monika Kryemadhi"
+	picture = "Monika_Kryemadhi.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Shpëtim Idrizi"
 	picture = "Shpetim_Idrizi.dds"
 	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Ervin Mete"
-	picture = "Ervin_Mete.dds"
-	ideology = social_liberal_ideology 
-}
-	
-create_country_leader = {
-	name = "Leka II"
-	picture = "Leka_II.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Edlir Petanaj"
-	picture = "Edlir_Petanaj.dds"
-	ideology = green
-}
-
-create_country_leader = {
-	name = "Petrit Vasili"
-	picture = "Petrit_Vasili.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Adriatik Alimadhi"
-	picture = "Adriatik_Alimadhi.dds"
-	ideology = proto_fascist 
-}
-
-create_country_leader = {
-	name = "Idajet Beqiri"
-	picture = "Idajet_Beqiri.dds"
-	ideology = fascist_ideology  
+	name = "Ben Blushi"
+	picture = "Ben_Blushi.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
 	name = "Qemal Cicollari"
 	picture = "Qemal_Cicollari.dds"
-	ideology = stalinist   
+	ideology = maoist
+}
+
+create_country_leader = {
+	name = "Leka"
+	picture = "Leka.dds"
+	ideology = absolute_monarchist
 }
 
 create_field_marshal = {
