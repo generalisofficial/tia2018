@@ -1,6 +1,6 @@
 ﻿capital = 636
 
-oob = "FIJ_2000"
+oob = "FIJ_2018"
 
 set_research_slots = 2
 set_convoys = 20
@@ -97,54 +97,37 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
+		conservative = {
+			popularity = 50.02
 		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
+			popularity = 39.85
 		}
 		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 10.13
 		}
 	}
 	
 	ruling_party = conservative
-	last_election = "1997.1.1"
+	last_election = "2014.11.14"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Josefa Iloilo"
-	picture = "Josefa_Iloilo.dds"
-	ideology = social_conservative 
+	name = "Frank Bainimarama"
+	picture = "Frank_Bainimarama.dds"
+	ideology = national_conservative
 }
 
-2016.1.1 = {
-	create_country_leader = {
-		name = "George Konrote"
-		picture = "George_Konrote.dds"
-		ideology = social_conservative
-	}
+create_country_leader = {
+	name = "Sitiveni Rabuka"
+	picture = "Sitiveni_Rabuka.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Biman Prasad"
+	picture = "Biman_Prasad.dds"
+	ideology = social_democrat_ideology
 }
