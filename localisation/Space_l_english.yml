@@ -16,8 +16,7 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
  insight_program_government_funding:0 "Funding the Insight Program"
  insight_program_government_funding_desc:0 "A heavily government-funded project to develop a lander and rocket capable of landing on Mars and mesuring seismic activities."
  insight_project_progress:0 "Insight Project Progress:  [?ROOT.USA_insight_level|-0]%"
- part_progress_30:0 "Time left to research §Y[This.GetResearchPart]§!"
- part_progress_60:0 "Time left to research §Y[This.GetResearchPart]§!: [?NASA_research_countdown_val] Days"
+ part_progress:0 "Time left to research §Y[This.GetResearchPart]§!: [?NASA_research_countdown_val] Days"
 
 
 # Variables
@@ -26,9 +25,9 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
 # Tooltips
  NASA_TOOLTIP:0 "The NASA Research Facility is at your disposal. This is the place where we develop new space projects."
  NASA_FUNDS_TOOLTIP:0 "Use the available decisions to get more funds when needed."
- ATLAS_V_TOOLTIP:0 "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though.\n\n§YFunds required: 27.000.000$§!"
+ ATLAS_V_TOOLTIP:0 "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though.\n\n§YYour funds: [?ROOT.NASA_funds].000.000$\nFunds required: 27.000.000$§!"
  ATLAS_V_DONE_TOOLTIP:0 "The Insight Completion Level advances by §G10%§!"
- CNES_SEIS_TOOLTIP:0 "We are using an advanced version of the seismometer cancelled in 2016 to resist the pressure in Space and during the landing on Mars.\n\n§YFunds required: 73.000.000$§!"
+ CNES_SEIS_TOOLTIP:0 "We are using an advanced version of the seismometer cancelled in 2016 to resist the pressure in Space and during the landing on Mars.\n\n§YYour funds: [?ROOT.NASA_funds].000.000$\nFunds required: 73.000.000$§!"
  SEISMOMETER_DONE_TOOLTIP:0 "The Insight Completion Level advances by §G15%§!"
 
 # Flags

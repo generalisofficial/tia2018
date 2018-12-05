@@ -91,7 +91,10 @@ scripted_gui = {
 			atlas_V_rocket_click_enabled = {	
 				ROOT = {
 					check_variable = { NASA_funds > 27 }
-					NOT = { has_country_flag = research_ongoing }
+					NOT = { 
+						has_country_flag = research_ongoing
+						has_country_flag = insight_atlas_v_adjustment_done
+					}
 				}
 			}
 			atlas_V_checkmark_visible = {
@@ -104,6 +107,12 @@ scripted_gui = {
 					check_variable = { NASA_funds > 73 }
 					NOT = { has_country_flag = research_ongoing }
 					has_country_flag = insight_atlas_v_adjustment_done
+					NOT = { has_country_flag = insight_seismometer_research_done }
+				}
+			}
+			insight_CNES_SEIS_checkmark_visible = {
+				ROOT = {
+					has_country_flag = insight_seismometer_research_done
 				}
 			}
 			insight_lander_click_enabled = {

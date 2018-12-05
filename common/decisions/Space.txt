@@ -51,6 +51,7 @@ SPACE_USA = {
 		allowed = {
 			original_tag = USA
 			NOT = { USA = { has_country_flag = insight_programm_over } }
+			NOT = { USA = { has_country_flag = insight_gouvernment_funding } }
 		}
 
 		available = {
@@ -118,7 +119,7 @@ SPACE_USA = {
 		fire_only_once = yes
 		selectable_mission = yes
 
-		days_remove = 14
+		days_remove = 0
 
 		visible = {
 			original_tag = USA
@@ -138,47 +139,7 @@ SPACE_USA = {
 		}
 	}
 
-	part_progress_30 = {
-
-		icon = generic_research
-
-		allowed = {
-			always = no
-			# original_tag = USA
-			OR = {
-				# USA = { has_country_flag = insight_atlas_v_adjustment }
-			}
-		}
-
-		available = {
-			has_country_flag = not_selectable
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-		selectable_mission = yes
-
-		days_remove = 0
-
-		visible = {
-			always = no
-			# original_tag = USA
-			OR = {
-				# USA = { has_country_flag = insight_atlas_v_adjustment }
-			}
-		}
-
-		remove_effect = {
-			ROOT = { clr_country_flag = research_ongoing }
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	part_progress_60 = {
+	part_progress = {
 
 		icon = generic_research
 
@@ -190,13 +151,6 @@ SPACE_USA = {
 					has_country_flag = insight_seismometer_research
 				}
 			}
-			#NOT = {
-			#	USA = {
-			#		check_variable = {
-			#			NASA_research_countdown_val < 1
-			#		}
-			#	}
-			#}
 		}
 
 		available = {
@@ -217,14 +171,6 @@ SPACE_USA = {
 					has_country_flag = insight_atlas_v_adjustment 
 					has_country_flag = insight_seismometer_research
 				}
-			}
-		}
-
-		remove_effect = {
-			ROOT = { 
-				clr_country_flag = research_ongoing
-				clr_country_flag = insight_atlas_v_adjustment
-				clr_country_flag = insight_seismometer_research
 			}
 		}
 
