@@ -44,6 +44,15 @@ scripted_gui = {
 				set_variable = { show_insight = show }
 			}
 		}
+
+		triggers = {
+			Insight_button_visible = {
+				USA = { has_country_flag = insight_programm_started }
+			}
+			insight_headline_visible = {
+				USA = { has_country_flag = insight_programm_started }
+			}
+		}
 	}
 }
 
@@ -79,7 +88,7 @@ scripted_gui = {
 		}
 
 		triggers = {
-			atlas_V_rocket_click_click_enabled = {	
+			atlas_V_rocket_click_enabled = {	
 				ROOT = {
 					check_variable = { NASA_funds > 27 }
 					NOT = { has_country_flag = research_ongoing }
@@ -89,18 +98,21 @@ scripted_gui = {
 				ROOT = {
 					check_variable = { NASA_funds > 73 }
 					NOT = { has_country_flag = research_ongoing }
+					has_country_flag = insight_atlas_v_adjustment_done
 				}
 			}
 			insight_lander_click_enabled = {
 				ROOT = {
 					check_variable = { NASA_funds > 199 }
 					NOT = { has_country_flag = research_ongoing }
+					has_country_flag = insight_atlas_v_adjustment_done
 				}
 			}
 			insight_equipment_click_enabled = {
 				ROOT = {
 					check_variable = { NASA_funds > 260 }
 					NOT = { has_country_flag = research_ongoing }
+					has_country_flag = insight_atlas_v_adjustment_done
 				}
 			}
 		}

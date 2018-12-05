@@ -50,7 +50,6 @@ SPACE_USA = {
 
 		allowed = {
 			original_tag = USA
-			USA = { has_country_flag = insight_programm_started }
 			NOT = { USA = { has_country_flag = insight_programm_over } }
 		}
 
@@ -63,7 +62,7 @@ SPACE_USA = {
 		fire_only_once = yes
 		selectable_mission = yes
 
-		days_remove = 121
+		days_remove = 84 # I did the math
 
 		remove_trigger = {
 			USA = { has_country_flag = insight_rocket_built }
@@ -71,8 +70,12 @@ SPACE_USA = {
 
 		visible = {
 			original_tag = USA
+			NOT = { 
+				USA = { 
+					has_country_flag = insight_programm_over 
+				} 
+			}
 			USA = { has_country_flag = insight_programm_started }
-			NOT = { USA = { has_country_flag = insight_programm_over } }
 		}
 
 		complete_effect = {
@@ -107,7 +110,7 @@ SPACE_USA = {
 		}
 
 		available = {
-			USA = { has_country_flag = not_selectable }
+			has_country_flag = not_selectable
 		}
 
 		cost = 0
@@ -120,6 +123,7 @@ SPACE_USA = {
 		visible = {
 			original_tag = USA
 			USA = { has_country_flag = insight_gouvernment_funding }
+			NOT = { USA = { has_country_flag = not_selectable } }
 		}
 
 		remove_effect = {
@@ -134,19 +138,20 @@ SPACE_USA = {
 		}
 	}
 
-	part_progress = {
+	part_progress_30 = {
 
 		icon = generic_research
 
 		allowed = {
-			original_tag = USA
+			always = no
+			# original_tag = USA
 			OR = {
-				USA = { has_country_flag = insight_atlas_v_adjustment }
+				# USA = { has_country_flag = insight_atlas_v_adjustment }
 			}
 		}
 
 		available = {
-			USA = { has_country_flag = not_selectable }
+			has_country_flag = not_selectable
 		}
 
 		cost = 0
@@ -154,30 +159,78 @@ SPACE_USA = {
 		fire_only_once = yes
 		selectable_mission = yes
 
-		days_remove = 30
+		days_remove = 0
 
 		visible = {
-			original_tag = USA
-			USA = { has_country_flag = insight_gouvernment_funding }
+			always = no
+			# original_tag = USA
+			OR = {
+				# USA = { has_country_flag = insight_atlas_v_adjustment }
+			}
 		}
 
 		remove_effect = {
 			ROOT = { clr_country_flag = research_ongoing }
 		}
 
-		remove_trigger = {
-			USA = { has_country_flag = insight_launched }
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	part_progress_60 = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = USA
+			USA = {
+				OR = {
+					has_country_flag = insight_atlas_v_adjustment 
+					has_country_flag = insight_seismometer_research
+				}
+			}
+			NOT = {
+				USA = {
+					check_variable = {
+						NASA_research_countdown_val < 1
+					}
+				}
+			}
+		}
+
+		available = {
+			has_country_flag = not_selectable
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		selectable_mission = yes
+
+		days_remove = 0
+
+		visible = {
+			original_tag = USA
+			USA = {
+				OR = {
+					has_country_flag = insight_atlas_v_adjustment 
+					has_country_flag = insight_seismometer_research
+				}
+			}
+		}
+
+		remove_effect = {
+			ROOT = { 
+				clr_country_flag = research_ongoing
+				clr_country_flag = insight_atlas_v_adjustment
+				clr_country_flag = insight_seismometer_research
+			}
 		}
 
 		ai_will_do = {
 			factor = 0
 		}
-
-		target_trigger = {
-            FROM = {
-				tag = USA
-			}
-        }
 	}
 }
 

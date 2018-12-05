@@ -1,14 +1,14 @@
 estonian_political_corruption = {
-    find_the_culprit = {
-	        cost = 50
-            complete_effect = {
-                    
-                }
-            }
-	    
-    }
-}
-estonian_political_corruption = {
+	
+	#find_the_culprit = {
+	#        cost = 50
+    #        complete_effect = {
+    #                
+    #            }
+    #        }
+	#    
+    #}
+
     growing_corruption = {
 		available = {
 		    has_event_target = scope_GXC
@@ -19,14 +19,14 @@ estonian_political_corruption = {
 		icon = unrest
 		is_good = no
 		days_mission_timeout = 365
-		    timeout_effect = {                    
-                swap_ideas = {
-                    add_idea = EST_political_corruption2 
-                    remove_idea = EST_political_corruption
-                }
-            }
-		    complete_effect = {
+		timeout_effect = {                    
+            swap_ideas = {
+                add_idea = EST_political_corruption2 
                 remove_idea = EST_political_corruption
             }
-		}
+        }
+		complete_effect = {
+            remove_ideas = EST_political_corruption
+        }
 	}
+}

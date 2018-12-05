@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "nasa_button_container"
-		position = { x = 400 y = 310 }
+		position = { x = 620 y = 780 }
 		
 		buttonType ={
 			name ="nasa_bg"
@@ -20,13 +20,12 @@ guiTypes = {
 			name ="nasa_text"
 			position = { x= 15 y = 4 }
 			font = "hoi_18mbs"
-			text = "NASA Research Facility"
+			text = "NASA"
 			format = center
 			maxWidth = 46
 			maxHeight = 24
 			fixedsize = yes
-			
-			pdx_tooltip = "The NASA Research Facility is at your disposal. This is the place where we develop new space projects."
+			pdx_tooltip = "NASA_TOOLTIP"
 		}
 	}
 
@@ -59,6 +58,7 @@ guiTypes = {
 			maxWidth = 800
 			maxHeight = 23
 			format = left
+			pdx_tooltip = "NASA_TOOLTIP"
 		}
 
         instantTextboxType = {
@@ -114,7 +114,7 @@ guiTypes = {
 			position = {x=19 y=15}
 			font = "hoi_36header"
 			text = "INSIGHT Research Project"
-			maxWidth = 500
+			maxWidth = 300
 			maxHeight = 23
 			format = left
 		}
@@ -136,7 +136,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "atlas_V_text"
-			position = {x=280 y=70}
+			position = {x=315 y=70}
 			font = "hoi_18mbs"
 			text = "Atlas V Rocket Adjusting"
 			maxWidth = 348
@@ -149,17 +149,18 @@ guiTypes = {
 			name = "insight_CNES_SEIS" 
 			position = {x=41 y=157}	
 			spriteType = "GFX_generic_text_bg_203"
+			pdx_tooltip = "CNES_SEIS_TOOLTIP"
 		}
 
 		instantTextboxType = {
 			name = "insight_CNES_SEIS_text"
-			position = {x=60 y=160}
+			position = {x=52 y=160}
 			font = "hoi_18mbs"
 			text = "Develop CNES Seismometer"
 			maxWidth = 348
 			maxHeight = 23
 			format = left
-			pdx_tooltip = "LOCKED_TOOLTIP"
+			pdx_tooltip = "CNES_SEIS_TOOLTIP"
 			pdx_tooltip_delayed = "LOCKED_DELAYED_TOOLTIP"
 		}
 

@@ -1,6 +1,8 @@
 ﻿add_namespace = space
 add_namespace = space_funds
 add_namespace = nasa_research
+add_namespace = nasa_research_done
+add_namespace = nasa_research_countdown
 
 # USA starts Insight Programm
 news_event = {
@@ -51,9 +53,10 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				check_variable = { NASA_funds < 650 }
+				check_variable = { NASA_funds_amount < 12 }
 			}
 			add_to_variable = { var = NASA_funds value = 51 }
+			add_to_variable = { var = NASA_funds_amount value = 1 }
 			country_event = { id = space_funds.1 days = 7}
 		}
 	}
@@ -70,7 +73,11 @@ country_event = {
 		name = "Yes"
 		set_country_flag = insight_atlas_v_adjustment
 		set_country_flag = research_ongoing
-		activate_targeted_decision = { target = USA decision = part_progress }
+		hidden_effect = {
+			country_event = { id = nasa_research_done.1 days = 60 }
+			set_variable = { NASA_research_countdown_val = 60}
+			country_event = nasa_research_countdown.1
+		}
 	}
 
 	option = {
@@ -79,21 +86,78 @@ country_event = {
 }
 
 country_event = {
+	id = nasa_research_countdown.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					NASA_research_countdown_val > 0
+				}
+			}
+			add_to_variable = {
+				var = NASA_research_countdown_val
+				value = -1
+			}
+			country_event = { id = nasa_research_countdown.1 days = 1}
+		}
+	}
+	
+}
+
+country_event = {
+	id = nasa_research_done.1
+	title = "Atlas V Rocket Adjustment Accomplished"
+	desc = "Our team of engineers just announced that the adjustment was completed."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Very Good"
+		set_country_flag = insight_atlas_v_adjustment_done
+		add_to_variable = {
+			var = USA_insight_level value = 10
+		}
+		custom_effect_tooltip = "ATLAS_V_DONE_TOOLTIP"
+	}
+}
+
+country_event = {
 	id = nasa_research.2
-	title = "PLACEHOLDER"
-	desc = "PLACEHOLDER"
+	title = "CNES SEIS Seismometer Research"
+	desc = "Would you like to start the research on the improved model of the Seismometer? (Progress will be shown in the descision screen)"
 
 	is_triggered_only = yes
 
 	option = {
 		name = "Yes"
-		set_country_flag = PLACEHOLDER
+		set_country_flag = insight_seismometer_research
 		set_country_flag = research_ongoing
-		activate_targeted_decision = { target = USA decision = part_progress }
+		activate_targeted_decision = { target = USA decision = part_progress_60 }
 	}
 
 	option = {
 		name = "No"
+	}
+}
+
+country_event = {
+	id = nasa_research_done.2
+	title = "CNES SEIS Seismometer Research and Building finished"
+	desc = "Our team of engineers just announced that the adjustment was completed."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Very Good"
+		set_country_flag = insight_seismometer_research_done
+		add_to_variable = {
+			var = USA_insight_level value = 15
+		}
+		custom_effect_tooltip = "SEISMOMETER_DONE_TOOLTIP"
 	}
 }
 
@@ -108,7 +172,7 @@ country_event = {
 		name = "Yes"
 		set_country_flag = PLACEHOLDER
 		set_country_flag = research_ongoing
-		activate_targeted_decision = { target = USA decision = part_progress }
+		activate_targeted_decision = { target = USA decision = part_progress_60 }
 	}
 
 	option = {
@@ -127,7 +191,7 @@ country_event = {
 		name = "Yes"
 		set_country_flag = PLACEHOLDER
 		set_country_flag = research_ongoing
-		activate_targeted_decision = { target = USA decision = part_progress }
+		activate_targeted_decision = { target = USA decision = part_progress_60 }
 	}
 
 	option = {
