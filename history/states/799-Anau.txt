@@ -1,29 +1,36 @@
+
 state={
 	id=799
 	name="STATE_799"
-	
-	resources = {
-		oil = 19
+	resources={
+		oil=19.000
 	}
-	
-	history = {
+
+	history={
 		owner = TRM
 		add_core_of = TRM
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 1
+
 		}
-		victory_points = { 12333 15 }
-		victory_points = { 7491 1 }
-		victory_points = { 10510 1 }
+		victory_points = {
+			12333 15 
+		}
+		victory_points = {
+			7491 1 
+		}
+		victory_points = {
+			10510 1 
+		}
+
 	}
-	
+
 	provinces={
-		7491 8099 12333 12491 
+		4599 7491 8099 10510 12333 12491 
 	}
 	manpower=3520300
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_8
+	state_category=state_level_8
 }
