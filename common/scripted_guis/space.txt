@@ -94,6 +94,11 @@ scripted_gui = {
 					NOT = { has_country_flag = research_ongoing }
 				}
 			}
+			atlas_V_checkmark_visible = {
+				ROOT = {
+					has_country_flag = insight_atlas_v_adjustment_done
+				}
+			}
 			insight_CNES_SEIS_click_enabled = {
 				ROOT = {
 					check_variable = { NASA_funds > 73 }

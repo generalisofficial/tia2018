@@ -73,6 +73,10 @@ country_event = {
 		name = "Yes"
 		set_country_flag = insight_atlas_v_adjustment
 		set_country_flag = research_ongoing
+		add_to_variable = {
+			var = NASA_funds
+			amount = -27
+		}
 		hidden_effect = {
 			country_event = { id = nasa_research_done.1 days = 60 }
 			set_variable = { NASA_research_countdown_val = 60}
@@ -118,6 +122,7 @@ country_event = {
 	option = {
 		name = "Very Good"
 		set_country_flag = insight_atlas_v_adjustment_done
+		clr_country_flag = insight_atlas_v_adjustment
 		add_to_variable = {
 			var = USA_insight_level value = 10
 		}
