@@ -1,6 +1,6 @@
 ﻿capital = 113
 
-oob = "IRE_2000"
+oob = "IRE_2018"
 
 set_research_slots = 3
 set_convoys = 340
@@ -93,6 +93,7 @@ set_technology = {
 
 add_ideas = {
 	idea_eu_member
+	the_euro
 	neutrality_idea
 }
 
@@ -103,80 +104,134 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 1
-		}
 		conservative = {
-			popularity = 25
+			popularity = 31.5
 		}
-		social_liberal = {
-			popularity = 40
-		}
-		social_democrat = {
-			popularity = 19
-		}
-		progressive = {
-			popularity = 5
+		market_liberal = {
+			popularity = 29.8
 		}
 		democratic_socialist = {
-			popularity = 3
+			popularity = 16.8
 		}
-		communist = {
-			popularity = 1
+		social_democrat = {
+			popularity = 10.6
+		}
+		progressive = {
+			popularity = 7.1
+		}
+		reactionary = {
+			popularity = 4.2
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.6.6"
+	ruling_party = conservative
+	last_election = "2016.4.12"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Bertie Ahern"
-	picture = "Bertie_Ahern.dds"
-	expire = "2010.1.1"
-	ideology = social_liberal_ideology
+	name = "Leo Varadkar"
+	picture = "Leo_Varadkar.dds"
+	ideology = christian_democrat
 }
 
 create_country_leader = {
-	name = "Enda Kenny"
-	picture = "Enda_Kenny.dds"
-	expire = "2020.1.1"
-	ideology = fiscal_conservative
+	name = "Micheál Martin"
+	picture = "Micheal_Martin.dds"
+	ideology = libertarian
 }
 
-2002.1.1 = {
-	add_ideas = the_euro
+create_country_leader = {
+	name = "Gerry Adams"
+	picture = "Gerry_Adams.dds"
+	ideology = democratic_socialist_ideology
 }
 
-2016.3.1 = {
-	set_politics = {
-		parties = {
-			nationalist = {
-				popularity = 1
-			}
-			conservative = {
-				popularity = 35
-			}
-			social_liberal = {
-				popularity = 30
-			}
-			social_democrat = {
-				popularity = 15
-			}
-			progressive = {
-				popularity = 5
-			}
-			democratic_socialist = {
-				popularity = 3
-			}
-			communist = {
-				popularity = 1
-			}
-		}
-		ruling_party = conservative
-		last_election = "2016.2.20"
-		elections_allowed = yes
-	}
+create_country_leader = {
+	name = "Brendan Howlin"
+	picture = "Brendan_Howlin.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Eamon Ryan"
+	picture = "Eamon_Ryan.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "John Leahy"
+	picture = "John_Leahy.dds"
+	ideology = reactionary_ideology
+}
+
+create_field_marshal = {
+	name = "Conor O´Boyle"
+	picture = "Portrait_Conor_O_Boyle.dds"
+	traits = { old_guard thorough_planner }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Philip Brennan"
+	picture = "Portrait_Philip_Brennan.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Michael Beary"
+	picture = "Portrait_Michael_Beary.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Joe Mulligan"
+	picture = "Portrait_Joe_Mulligan.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Paul Fry"
+	picture = "Portrait_Paul_Fry.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Kevin Cotter"
+	picture = "Portrait_Kevin_Cotter.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Kieran Brennan"
+	picture = "Portrait_Kieran_Brennan.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Peter O´Hallogan"
+	picture = "Portrait_Peter_O_Hallogan.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mark Mellett"
+	picture = "Portrait_Mark_Mellett.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Hugh Tully"
+	picture = "Portrait_Hugh_Tully.dds"
+	traits = { blockade_runner }
+	skill = 1
 }

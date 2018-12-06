@@ -1,6 +1,6 @@
 ﻿capital = 911
 
-oob = "VAN_2000"
+oob = "VAN_2018"
 
 set_research_slots = 2
 set_convoys = 40
@@ -95,76 +95,19 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		democratic_socialist = {	#Vanua'aku Pati
-			popularity = 11.91
-		}
-		conservative = {		#Union of centrist Parties
-			popularity = 9.73
-		}
-		reactionary = {			#Land and Justice Party
-			popularity = 7.41
-		}
-		progressive = {			#People's Progressive Party + Melanesian Progressive Party
-			popularity = 6.1
-		}
-		social_democrat = {		#National United Party
-			popularity = 5.48
-		}
-		market_liberal = {		#Iauko Group
-			popularity = 4.84
-		}
-		social_liberal = {		#Reunification Movement for Change
-			popularity = 3.44
+		reactionary = {
+			popularity = 100
 		}
 	}
 	
-	ruling_party = progressive
-	last_election = "1997.1.1"
+	ruling_party = reactionary
+	last_election = "2016.1.22"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Barak Sopé"
-	ideology = progressive_ideology
-	picture = "Barak_Sope.dds"
-}
-
-create_country_leader = {
 	name = "Charlot Salwai"
-	ideology = democratic_socialist_ideology
 	picture = "Charlot_Salwai.dds"
-}
-
-2016.1.1 = {
-	set_politics = {
-		parties = {
-			democratic_socialist = {	#Vanua'aku Pati
-				popularity = 11.91
-			}
-			conservative = {		#Union of centrist Parties
-				popularity = 9.73
-			}
-			reactionary = {			#Land and Justice Party
-				popularity = 7.41
-			}
-			social_democrat = {		#National United Party
-				popularity = 5.48
-			}
-			progressive = {			#People's Progressive Party
-				popularity = 4.84
-			}
-			market_liberal = {		#Iauko Group
-				popularity = 4.84
-			}
-			social_liberal = {		#Reunification Movement for Change
-				popularity = 3.44
-			}
-		}
-		
-		ruling_party = social_liberal
-		last_election = "1997.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	ideology = independent
 }
