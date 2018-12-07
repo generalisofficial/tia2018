@@ -1,6 +1,6 @@
 ﻿capital = 281
 
-oob = "MLD_2000"
+oob = "MLD_2018"
 
 set_research_slots = 2
 set_convoys = 70
@@ -89,51 +89,34 @@ set_technology = {
 
 add_ideas = {
 	population_growth_steady
-	commonwealth_of_nations_member
 	non_aligned_movement_member
 }
 
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
 		market_liberal = {
-			popularity = 6
+			popularity = 58.38
 		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+		islamist = {
+			popularity = 41.62
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = islamist
+	last_election = "2013.9.23"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
-2016.10.13 = {
-	remove_ideas = commonwealth_of_nations_member
+create_country_leader = {
+	name = "Ibrahim Mohamed Solih"
+	picture = "Ibrahim_Mohamed_Solih.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Abdulla Yameen"
+	picture = "Abdulla_Yameen.dds"
+	ideology = islamic_democracy
 }

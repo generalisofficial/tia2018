@@ -1,6 +1,6 @@
 ﻿capital = 277
 
-oob = "MEX_2000"
+oob = "MEX_2018"
 
 set_research_slots = 4
 set_convoys = 730
@@ -94,35 +94,6 @@ add_ideas = {
 	neutrality_idea
 }
 
-set_politics = {
-
-	parties = {
-		market_liberal = {
-			popularity = 36
-		}
-		social_democrat = {
-			popularity = 30
-		}
-		conservative = {
-			popularity = 30
-		}
-		progressive = {
-			popularity = 2
-		}
-		monarchist = { 
-			popularity = 1
-		}
-		nationalist = { 
-			popularity = 1
-		}
-	}
-	
-	ruling_party = market_liberal
-	last_election = "1994.8.21"
-	election_frequency = 72
-	elections_allowed = yes
-}
-
 add_opinion_modifier = {
 	target = CAN
 	modifier = NAFTA
@@ -133,76 +104,107 @@ add_opinion_modifier = {
 	modifier = NAFTA
 }
 
-create_country_leader = {
-	name = "Maximilian von Götzen-Iturbide"
-	ideology = absolute_monarchist
-	picture = "Maximilian.dds"
+set_politics = {
+
+	parties = {
+		democratic_socialist = {
+			popularity = 53.19
+		}
+		conservative = {
+			popularity = 22.28
+		}
+		market_liberal = {
+			popularity = 16.41
+		}
+		reactionary = {
+			popularity = 8.12
+		}
+	}
+	
+	ruling_party = market_liberal
+	last_election = "2012.7.1"
+	election_frequency = 72
+	elections_allowed = yes
 }
+
 create_country_leader = {
-	name = "Ernesto Zedillo"
-	ideology = libertarian
-	picture = "Ernesto_Zedillo.dds"
+	name = "Andrés Manuel López Obrador"
+	picture = "Andres_Manuel_Lopez_Obrador.dds"
+	ideology = democratic_socialist_ideology
 }
+
 create_country_leader = {
-	name = "Diego Fernandez de Cevallos"
+	name = "Ricardo Anaya"
+	picture = "Ricardo_Anaya.dds"
 	ideology = national_conservative
-	picture = "Diego_Fernandez_de_Cevallos.dds"
 }
+
 create_country_leader = {
-	name = "Cuauhtemoc Cardenas Solorzano"
-	ideology = social_democrat_ideology
-	picture = "Cuauhtemoc_Cardenas_Solorzano.dds"
+	name = "Enrique Peña Nieto"
+	picture = "Enrique_Pena_Nieto.dds"
+	ideology = libertarian
 }
+
 create_country_leader = {
-	name = "Cecilia Soto Gonzalez"
-	ideology = progressive_ideology
-	picture = "Cecilia_Soto_Gonzalez.dds"
+	name = "Jaime Rodríguez Calderón"
+	picture = "Jaime_Rodriguez_Calderon.dds"
+	ideology = independent
 }
+
 create_corps_commander = {
 	name = "Carlos A. R. Munguia"
 	picture = "generals/Carlos_AR_Munguia.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Daniel Velasco Ramirez"
 	picture = "generals/Daniel_Velasco_Ramirez.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Enrique Cervantes Aguirre"
 	picture = "generals/Enrique_Cervantes_Aguirre.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Gerardo Clemente Vega Garcia"
 	picture = "generals/Gerardo_CV_Garcia.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Gilberto Hernandez Andreu"
 	picture = "generals/Gilberto_Hernandez_Andreu.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Guillermo Galvan"
 	picture = "generals/Guillermo_Galvan.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Juan Rios Cantu"
 	picture = "generals/Juan_Rios_Cantu.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Roble Arturo Granados Gallardo"
 	picture = "generals/Roble_AG_Gallardo.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Salvador Cienfuegos Zepeda"
 	picture = "generals/Salvador_Cienfuegos_Zepeda.dds"
 	skill = 1
 }
+
 create_corps_commander = {
 	name = "Tomas Angeles Dauahare"
 	picture = "generals/Tomas_Angeles_Dauahare.dds"
@@ -214,130 +216,21 @@ create_navy_leader = {
 	picture = "admirals/Jose_Ramon_Lorenzo_Franco.dds"
 	skill = 1
 }
+
 create_navy_leader = {
 	name = "Marco Antonio Peyrot Gonzalez"
 	picture = "admirals/Marco_Antonio_Peyrot_Gonzalez.dds"
 	skill = 1
 }
+
 create_navy_leader = {
 	name = "Mariano Francisco Saynez Mendoza"
 	picture = "admirals/Mariano_Francisco_Saynez_Mendoza.dds"
 	skill = 1
 }
+
 create_navy_leader = {
 	name = "Vidal Francisco Soberon Sanz"
 	picture = "admirals/Vidal_Francisco_Soberon_Sanz.dds"
 	skill = 1
-}
-
-2000.7.2 = {
-	set_politics = {
-		ruling_party = conservative
-		last_election = "2000.6.2"
-		election_frequency = 72
-		elections_allowed = yes
-	}
-    create_country_leader = {
-		name = "Vicente Fox"
-		picture = "Vicente_Fox.dds"
-		expire = "2050.1.1"
-		ideology = gaullist
-	}
-	create_country_leader = {
-		name = "Cuauhtemoc Cardenas Solorzano"
-		ideology = social_democrat_ideology
-		picture = "Cuauhtemoc_Cardenas_Solorzano.dds"
-		expire = "2050.7.2"
-	}
-	create_country_leader = {
-		name = "Francisco Labastida Ochoa"
-		picture = "Francisco_Labastida_Ochoa.dds"
-		expire = "2050.1.1"
-		ideology = libertarian
-	}
-}
-
-2006.7.2 = {
-	set_politics = {
-		ruling_party = conservative
-		last_election = "2006.6.2"
-		election_frequency = 72
-		elections_allowed = yes
-	}
-	create_country_leader = {
-		name = "Felipe Calderón"
-		picture = "Felipe_Calderon.dds"
-		ideology = gaullist
-	}
-	create_country_leader = {
-		name = "Roberto Madrazo"
-		ideology = social_democrat_ideology
-		picture = "Roberto_Madrazo.dds"
-	}
-	create_country_leader = {
-		name = "Andres Manuel Lopez Obrador"
-		picture = "Andres_Manuel_Lopez_Obrador.dds"
-		ideology = social_liberal_ideology
-	}
-}
-
-2012.7.2 = {
-	set_party_name = {
-		ideology = democratic_socialist
-		long_name = MEX_democratic_socialist_party_NA_long
-		name = MEX_democratic_socialist_party_NA
-	}
-	set_politics = {
-		ruling_party = market_liberal
-		last_election = "2012.6.2"
-		election_frequency = 72
-		elections_allowed = yes
-	}
-	create_country_leader = {
-		name = "Josefina Vasquez Mota"
-		ideology = national_conservative
-		picture = "Josefina_Vasquez_Mota.dds"
-	}
-	create_country_leader = {
-		name = "Andres Manuel Lopez Obrador"
-		picture = "Andres_Manuel_Lopez_Obrador.dds"
-		ideology = social_liberal_ideology
-	}
-}
-
-2016.1.1 = {
-	set_politics = {
-
-		parties = {
-			market_liberal = {
-				popularity = 32
-			}
-			social_liberal = {
-				popularity = 31
-			}
-			conservative = {
-				popularity = 29
-			}
-			reactionary = {
-				popularity = 3
-			}
-			nationalist = { 
-				popularity = 4
-			}
-			monarchist = { 
-				popularity = 1
-			}   
-		}
-		
-		ruling_party = market_liberal
-		last_election = "2012.2.1"
-		election_frequency = 72
-		elections_allowed = yes
-	}
-	
-	create_country_leader = {
-		name = "Enrique Peña Nieto"
-		ideology = libertarian
-		picture = "Enrique_Pena_Nieto.dds"
-	}
 }
