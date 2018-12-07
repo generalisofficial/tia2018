@@ -33,7 +33,7 @@ focus_tree = {
 	focus = {
 		id = PRC_One_Dream_One_China
 		icon = one_china_policy
-		x = 15
+		x = 20
 		y = 1
 		cost = 10
 		
@@ -51,6 +51,570 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Legacy_of_Deng
+		icon = communist_china
+		x = 15
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_One_Dream_One_China
+		}
+		
+	    mutually_exclusive = {
+		focus = PRC_Revival_of_Maoism
+		}
+		
+		completion_reward = {
+        add_political_power = 35
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Xi_Jinpings_Reforms
+		icon = elections
+		x = 15
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Legacy_of_Deng
+		}
+		
+		completion_reward = {
+        add_political_power = 15
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Realize_the_Chinese_Dream
+		icon = demand_territory2
+		x = 15
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Xi_Jinpings_Reforms
+		}
+		
+		completion_reward = {
+        add_political_power = 20
+		add_stability = 0.015
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Political_Reforms
+		icon = self_management
+		x = 15
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Realize_the_Chinese_Dream
+		}
+		
+		completion_reward = {
+        add_political_power = 35
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Hunt_Corrupt_Officers
+		icon = political_pressure
+		x = 15
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Political_Reforms
+		}
+		
+		completion_reward = {
+        add_political_power = -45
+		add_stability = 0.011
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+
+	focus = {
+		id = PRC_Harsher_Inspections
+		icon = communism8
+		x = 15
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Hunt_Corrupt_Officers
+		}
+		
+		completion_reward = {
+        add_political_power = -50
+		add_stability = 0.013
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+
+
+
+	focus = {
+		id = PRC_Purge_The_Traitors
+		icon = clear_parlament
+		x = 15
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Harsher_Inspections
+		}
+		
+		completion_reward = {
+        add_political_power = -35
+		add_stability = 0.035
+		news_event = china_news.4
+		remove_ideas = idea_PRC_corruption_crisis
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+
+
+	
+	focus = {
+		id = PRC_Improve_National_Security
+		icon = communism3
+		x = 13
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Political_Reforms
+		}
+		
+		completion_reward = {
+        add_political_power = 5
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Strenghten_The_Firewall
+		icon = radar
+		x = 13
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Improve_National_Security
+		}
+		
+		completion_reward = {
+        add_political_power = 55
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Crush_The_Illegal_Internet
+		icon = cryptologic_bomb
+		x = 13
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Strenghten_The_Firewall
+		}
+		
+		completion_reward = {
+        add_political_power = 75
+		add_stability = -0.01
+		add_ideas = idea_PRC_mass_surveillance
+		news_event = china_news.5
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Tighten_Media_Security
+		icon = continuous_restrict_freedom
+		x = 17
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Political_Reforms
+		}
+		
+		completion_reward = {
+        add_political_power = 5
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Agree_on_Foreign_Media_Restrictions
+		icon = race_relations2
+		x = 17
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Tighten_Media_Security
+		}
+		
+		completion_reward = {
+        add_political_power = -10
+		add_stability = 0.011
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Improve_Chinese_Media_For_Propaganda
+		icon = propaganda
+		x = 17
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Agree_on_Foreign_Media_Restrictions
+		}
+		
+		completion_reward = {
+        add_political_power = 45
+		add_stability = 0.022
+		add_war_support = 0.022
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_A_Reformed_Nation
+		icon = red_dragon
+		x = 15
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Improve_Chinese_Media_For_Propaganda
+		}
+		
+		prerequisite = {
+		focus = PRC_Crush_The_Illegal_Internet
+		}
+		
+		prerequisite = {
+		focus = PRC_Purge_The_Traitors
+		}
+		
+		completion_reward = {
+        add_political_power = 155
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	
+	
+	focus = {
+		id = PRC_National_Renewal
+		icon = national_unity
+		x = 19
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Realize_the_Chinese_Dream
+		}
+		
+		completion_reward = {
+		add_stability = 0.015
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Rise_To_Greatness
+		icon = national_greatness
+		x = 10
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Realize_the_Chinese_Dream
+		}
+		
+		completion_reward = {
+		add_war_support = 0.015
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Rise_To_Greatness
+		icon = national_greatness
+		x = 10
+		y = 5
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Realize_the_Chinese_Dream
+		}
+		
+		completion_reward = {
+		add_war_support = 0.015
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Asserting_Our_Position_In_East_Asia
+		icon = demand_territory3
+		x = 11
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Rise_To_Greatness
+		}
+		
+		completion_reward = {
+		add_war_support = 0.015
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Continue_Sino_Japanese_Disputes
+		icon = attack_japan2
+		x = 11
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Asserting_Our_Position_In_East_Asia
+		}
+		
+		completion_reward = {
+		add_war_support = 0.015
+		JAP = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative } }
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Pressure_The_Taiwanese_Strait
+		icon = battleships
+		x = 11
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Continue_Sino_Japanese_Disputes
+		}
+		
+		completion_reward = {
+		add_war_support = 0.02
+		CHI = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative } }
+		CHI = { country_event = china.2 }
+		add_named_threat = {
+		threat = 3.5
+		name = "Tensions Between the ROC and the PRC"
+		}
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Propose_The_Taiwanese_SAR
+		icon = chinese_united_front
+		x = 11
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Pressure_The_Taiwanese_Strait
+		}
+		
+		completion_reward = {
+		add_stability = 0.025
+        CHI = { country_event = china.4 }
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Allies_in_Eurasia
+		icon = align_to_csto
+		x = 9
+		y = 6
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Rise_To_Greatness
+		}
+		
+		completion_reward = {
+		add_political_power = 25
+		SOV = { add_opinion_modifier = { target = PRC modifier = recent_actions_positive } }
+		PRC = { add_opinion_modifier = { target = SOV modifier = recent_actions_positive } }
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Improve_Sino_Russian_Relations
+		icon = align_to_russia
+		x = 9
+		y = 7
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Allies_in_Eurasia
+		}
+		
+		completion_reward = {
+		add_political_power = 25
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Trade_Alliances_in_Central_Asia
+		icon = trade_deal
+		x = 9
+		y = 8
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Improve_Sino_Russian_Relations
+		}
+		
+		completion_reward = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Formalize_SCO_WIP
+		icon = unknown
+		x = 9
+		y = 9
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_Trade_Alliances_in_Central_Asia
+		}
+		
+		completion_reward = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 70
+		}
+	}
+	
+	focus = {
+		id = PRC_Revival_of_Maoism
+		icon = communist_party_of_china
+		x = 25
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+		focus = PRC_One_Dream_One_China
+		}
+		
+	    mutually_exclusive = {
+		focus = PRC_Legacy_of_Deng
+		}
+		
+		completion_reward = {
+        add_stability = -0.015
+		}
+		
+		ai_will_do = {
+			factor = 30
 		}
 	}
 	
@@ -81,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Solve_The_Conflict_in_Korea
 		icon = conflictkorea
-		x = 27
+		x = 37
 		y = 0
 		cost = 5
 		
@@ -98,7 +662,7 @@ focus_tree = {
     focus = {
 		id = PRC_Mediate_the_Conflict
 		icon = neutrality
-		x = 30
+		x = 40
 		y = 1
 		cost = 5
 		
@@ -122,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Pressure_North_Korea
 		icon = political_pressure
-		x = 31
+		x = 41
 		y = 2
 		cost = 5
 		
@@ -145,7 +709,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Prevent_US_Intervention
 		icon = demand_territory
-		x = 29
+		x = 39
 		y = 2
 		cost = 5
 		
@@ -164,7 +728,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Deactivate_North_Korean_Companies
 		icon = industry_close
-		x = 30
+		x = 40
 		y = 3
 		cost = 5
 		
@@ -187,7 +751,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Cut_Supplies_Temporarily
 		icon = concessions
-		x = 30
+		x = 40
 		y = 4
 		cost = 5
 		
@@ -208,7 +772,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Meeting_to_Restabilish_Relations
 		icon = improve_relations_red
-		x = 31
+		x = 41
 		y = 5
 		cost = 5
 		
@@ -241,7 +805,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Keep_our_Sanctions
 		icon = embargo
-		x = 29
+		x = 39
 		y = 5
 		cost = 5
 		
@@ -271,7 +835,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Side_with_the_North
 		icon = north_korea
-		x = 24
+		x = 34
 		y = 1
 		cost = 10
 		
@@ -295,7 +859,7 @@ focus_tree = {
 	focus = {
 		id = PRC_End_Six_Party_Talks
 		icon = renounce_treaty
-		x = 25
+		x = 35
 		y = 2
 		cost = 10
 	
@@ -318,7 +882,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Repairing_our_Friendship
 		icon = tripartite_pact
-		x = 23
+		x = 33
 		y = 2
 		cost = 10
 			
@@ -338,7 +902,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Nuclearize_the_Peninsula
 		icon = nuclear_weapons
-		x = 24
+		x = 34
 		y = 3
 		cost = 10
 			
@@ -352,10 +916,6 @@ focus_tree = {
 		
 		completion_reward = {
         USA = { add_opinion_modifier = { target = PRC modifier = recent_actions_negative } }
-		PRK = {
-		add_ideas = nuclear_power_idea
-		}
-		add_ideas = nuclear_power_idea
 		add_war_support = 0.02
 		add_stability = -0.03
 		}
@@ -367,7 +927,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Strenghten_Our_Alliance
 		icon = align_to_north_korea2
-		x = 24
+		x = 34
 		y = 4
 		cost = 10
 			
@@ -397,7 +957,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Supply_our_Ally
 		icon = trade_with_north_korea
-		x = 24
+		x = 34
 		y = 5
 		cost = 10
 			

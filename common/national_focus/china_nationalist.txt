@@ -811,6 +811,14 @@
 		y = 11
 		cost = 10
 		
+		available = {
+		is_puppet = no
+		country_exists = PRC
+		PRC = {
+		has_government = communist
+		}
+		}
+		
 		prerequisite = {
 			focus = CHI_Continue_the_Provisional_Government
 			focus = CHI_Allow_Elections
@@ -1533,10 +1541,6 @@
 				popularity = 0.05
 			}
 			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_popularity = {
 				ideology = progressive
 				popularity = 0.05
 			}
@@ -1580,7 +1584,7 @@
 	focus = {
 		id = CHI_Rise_of_The_Progressives
 		icon = leftism
-		x = 8
+		x = 6
 		y = 8
 		cost = 10
 		
@@ -1588,9 +1592,6 @@
 			focus = CHI_Rise_of_Third_Parties
 		}
 		
-		mutually_exclusive = {
-			focus = CHI_Rise_of_The_Workers
-		}
 	
 		completion_reward = {
 			add_popularity = {
@@ -1609,9 +1610,9 @@
 	}
 	
 	focus = {
-		id = CHI_Elect_a_Environmentalist_Government
+		id = CHI_Promote_Progress_and_Prosperity
 		icon = democracy
-		x = 8
+		x = 6
 		y = 9
 		cost = 10
 		
@@ -1628,10 +1629,6 @@
 	    		ideology = social_liberal
 	    		popularity = -0.05 
 			}
-			set_politics = {
-        		ruling_party = progressive
-        		elections_allowed = yes
-       		}
 		}
 		
 		ai_will_do = {
@@ -1642,12 +1639,16 @@
 	focus = {
 		id = CHI_Ecological_Reforms
 		icon = agriculture
-		x = 8
+		x = 6
 		y = 10
 		cost = 10
 		
 		prerequisite = {
-			focus = CHI_Elect_a_Environmentalist_Government
+			focus = CHI_Promote_Progress_and_Prosperity
+		}
+		
+		available = {
+		has_government = progressive
 		}
 		
 	
@@ -1661,101 +1662,21 @@
 	}
 	
 	focus = {
-		id = CHI_Rise_of_The_Workers
-		icon = communism5
-		x = 6
-		y = 8
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Rise_of_Third_Parties
-		}
-		
-		mutually_exclusive = {
-			focus = CHI_Rise_of_The_Progressives
-		}
-		
-	
-		completion_reward = {
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05 
-			}
-			add_popularity = {
-	  			ideology = social_liberal
-	    		popularity = -0.05 
-			}		
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Strenghten_Syndicalist_Movements
-		icon = communism5
-		x = 6
-		y = 9
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Rise_of_The_Workers
-		}
-	
-		completion_reward = {
-			add_popularity = {
-	    		ideology = communist
-	    		popularity = 0.05
-			}
-			country_event = generic.1	
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Spread_Pro-Unification_Propaganda
-		icon = propaganda_communist
-		x = 6
-		y = 10
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Strenghten_Syndicalist_Movements
-		}
-	
-		completion_reward = {
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05 
-			}
-			country_event = generic.1
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Prepare_the_Revolution
-		icon = communism8
+		id = CHI_Liberalize_the_Constitution
+		icon = libertarianism
 		x = 6
 		y = 11
 		cost = 10
 		
 		prerequisite = {
-			focus = CHI_Spread_Pro-Unification_Propaganda
+			focus = CHI_Ecological_Reforms
 		}
+		
 	
 		completion_reward = {
-			add_popularity = {
-	    		ideology = communist
-	    		popularity = 0.05 
-			}	
+			add_political_power = 55
+			add_stability = 0.01
+			add_war_support = -0.02
 		}
 		
 		ai_will_do = {
@@ -1763,53 +1684,7 @@
 		}
 	}
 	
-	focus = {
-		id = CHI_Communist_Takeover
-		icon = red_dragon
-		x = 6
-		y = 12
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Prepare_the_Revolution
-		}
 	
-		completion_reward = {
-			add_popularity = {
-				ideology = communist
-				popularity = 0.1 
-			}
-			set_politics = {
-				ruling_party = communist
-				elections_allowed = no
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Finally_Unified
-		icon = become_puppet
-		x = 6
-		y = 13
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Communist_Takeover
-		}
-	
-		completion_reward = {
-			PRC = { country_event = taiwan.11 }
-		}
-                 		
-		ai_will_do = {
-			factor = 35
-		}
-	
-	} 
 	focus = {
 		id = CHI_Stabilize_the_Politics
 		icon = neutrality
@@ -1957,8 +1832,17 @@
 		y = 12
 		cost = 10
 		
+		available = {
+		is_puppet = no
+		country_exists = PRC
+		PRC = {
+		has_government = communist
+		}
+		}
+		
 		prerequisite = {
 			focus = CHI_Prepare_Negotiations
+			focus = CHI_Liberalize_the_Constitution
 		}
 	
 		completion_reward = {
@@ -1977,6 +1861,10 @@
 		x = 0
 		y = 13
 		cost = 10
+		
+		available = {
+		owns_state = 976
+		}
 		
 		prerequisite = {
 			focus = CHI_Negotiate_our_Indepedence
@@ -2005,6 +1893,10 @@
 		
 		mutually_exclusive = {
 			focus = CHI_Offer_Coastal_Islands
+		}
+		
+		available = {
+		owns_state = 988
 		}
 		
 		prerequisite = {

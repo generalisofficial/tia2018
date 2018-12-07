@@ -10,9 +10,49 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.35
 				drift_defence_factor = 0.25
-				MONTHLY_POPULATION = -1
+				MONTHLY_POPULATION = -0.2
+			}
+		}
+		
+		idea_PRC_corruption_crisis = {
+			picture = political_corruption
+			
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+				foreign_subversive_activites = 0.25
+			}
+		}
+		
+		idea_PRC_environmental_crisis = {
+			picture = agriculture
+			
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+			    opinion_gain_monthly_factor = -0.15
+				improve_relations_maintain_cost_factor = 0.15
+			}
+		}
+		
+		idea_PRC_mass_surveillance = {
+			picture = intel_bonus
+			
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.025
+				drift_defence_factor = 0.05
+				foreign_subversive_activites = -0.5
 			}
 		}
 	}

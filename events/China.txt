@@ -1,86 +1,5 @@
-﻿add_namespace = china_news
-add_namespace = china
+﻿add_namespace = china
 
-news_event = {
-	id = china_news.1
-	title = china_news.1.t
-	desc = china_news.1.d
-	picture = GFX_news_event_companies_close
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = china_news_1.a
-		trigger = {
-			original_tag = PRK
-		}
-		add_political_power = -50
-	}
-	
-	option = {
-		name = china_news.1.b
-		trigger = {
-			NOT = { original_tag = PRK }
-		}
-	}
-	
-	}
-	
-	
-news_event = {
-	id = china_news.2
-	title = china_news.2.t
-	desc = china_news.2.d
-	picture = GFX_news_event_chinese_flag
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = china_news_2.a
-		trigger = {
-			original_tag = PRK
-		}
-		remove_ideas = idea_PRK_chinese_supplies
-		add_war_support = -0.02
-	}
-	
-	option = {
-		name = china_news.2.b
-		trigger = {
-			NOT = { original_tag = PRK }
-		}
-	}
-	
-	}
-	
-	news_event = {
-	id = china_news.3
-	title = china_news.3.t
-	desc = china_news.3.d
-	picture = GFX_news_event_recruits
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = china_news_3.a
-		trigger = {
-			original_tag = PRK
-			original_tag = PRC
-		}
-		add_war_support = 0.02
-	}
-	
-	option = {
-		name = china_news.3.b
-		trigger = {
-			NOT = { original_tag = PRK  original_tag = PRC }
-		}
-	}
-	
-	}
 	
 country_event = {
 	id = china.1
@@ -101,3 +20,189 @@ country_event = {
 	
 	
 	}
+	
+country_event = {
+	id = china.2
+	title = china.2.t
+	desc = china.2.d
+	picture = GFX_report_event_united_states_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = china.2.a
+	
+		add_war_support = 0.03
+		add_stability = -0.02
+		PRC = { add_opinion_modifier = { target = CHI modifier = recent_actions_negative } }
+		PRC = { country_event = china.3 }
+		
+	ai_chance = { 
+	factor = 90
+	}
+	}
+	
+	option = {
+		name = china.2.b
+	
+		add_war_support = -0.03
+		add_stability = 0.02
+		PRC = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
+		PRC = { transfer_state = 976 }
+		
+	ai_chance = { 
+	factor = 10
+	}
+	}
+	
+	
+	}
+	
+	country_event = {
+	id = china.3
+	title = china.3.t
+	desc = china.3.d
+	picture = GFX_report_event_united_states_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = china.3.a
+	
+		add_war_support = 0.025
+	}
+	
+	
+	}
+    
+	
+	country_event = {
+	id = china.4
+	title = china.4.t
+	desc = china.4.d
+	picture = GFX_report_event_twochinas
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = china.4.a
+        add_stability = 0.05
+		add_war_support = -0.25
+		PRC = { puppet = CHI }
+		news_event = china_news.6
+			PRC = { every_owned_state =  { remove_core_of = CHI } }
+			MON = { every_owned_state = { remove_core_of = CHI } }
+			SOV = { every_owned_state = { remove_core_of = CHI } }
+			set_cosmetic_tag = CHI_TAIWAN_SAR
+    diplomatic_relation = {
+    country = USA
+    relation = guarantee
+    active = no }
+	USA = {
+	diplomatic_relation = {
+    country = CHI
+    relation = guarantee
+    active = no
+}
+remove_ideas = idea_CHI_grudge
+remove_ideas = non_member_state
+}
+hidden_effect = { set_country_flag = taiwan_sar }
+	ai_chance = { 
+	factor = 10
+	}
+    
+	}
+	
+	option = {
+		name = china.4.b
+        add_stability = -0.05
+		add_war_support = 0.25
+		PRC = { country_event = china.5 }
+		
+    ai_chance = { 
+	factor = 90
+	}
+	}	
+	
+	}
+	
+	country_event = {
+	id = china.5
+	title = china.5.t
+	desc = china.5.d
+	picture = GFX_report_event_twochinas
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = china.5.a
+		add_war_support = -0.025
+		add_stability = 0.025
+		PRC = { add_opinion_modifier = { target = CHI modifier = rival } }
+	ai_chance = { 
+	factor = 90
+	}
+	}
+	
+	option = {
+		name = china.5.b
+		add_war_support = 0.025
+		PRC = { add_opinion_modifier = { target = CHI modifier = rival } }
+		create_wargoal = {
+    type = take_core_state
+    target = CHI
+   }
+	ai_chance = { 
+	factor = 10
+	}
+	}
+	
+	
+	}
+	
+	country_event = {
+	id = china.6
+	title = china.6.t
+	desc = china.6.d
+	
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	AND = {
+	has_country_flag = taiwan_sar
+	original_tag = CHI
+	has_government = communist
+	}
+	}
+	
+	option = {
+		name = china.6.a
+		set_politics = {
+    parties = {
+
+	conservative = {
+			popularity = 25
+		}
+		
+		communist = {
+			popularity = 0
+		}
+		
+		social_liberal = { 
+			popularity = 59
+		}
+	}
+	
+	ruling_party = social_liberal
+}
+	}
+	
+	
+	}
+	
+
+	
