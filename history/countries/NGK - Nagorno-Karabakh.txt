@@ -82,6 +82,7 @@ add_ideas = {
 	population_growth_steady
 	non_member_state
 }
+
 add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = AZR modifier = rival }
 
@@ -92,24 +93,18 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 30
-		}
-		conservative = {
-			popularity = 40
-		}
-		social_liberal = {
-			popularity = 30
+			popularity = 100
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "2015.5.3"
-	election_frequency = 60
+	ruling_party = reactionary
+	last_election = "2017.7.19"
+	election_frequency = 36
 	elections_allowed = yes
 }
 
 create_country_leader = {
 	name = "Bako Sahakyan"
 	picture = "Bako_Sahakyan.dds"
-	ideology = fiscal_conservative
+	ideology = independent
 }
