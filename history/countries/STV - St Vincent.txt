@@ -1,6 +1,6 @@
 ﻿capital = 830
 
-oob = "STV_2000"
+oob = "STV_2018"
 
 set_research_slots = 2
 set_convoys = 20
@@ -95,20 +95,17 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		conservative = {
-			popularity = 50
-		}
-		market_liberal = {
-			popularity = 1
-		}
 		democratic_socialist = {
-			popularity = 49
+			popularity = 52.3
+		}
+		conservative = {
+			popularity = 47.7
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = democratic_socialist
+	last_election = "2015.12.9"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
@@ -119,39 +116,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "James Fitz-Allen Mitchell"
-	picture = "James_FA_Mitchell.dds"
-	ideology = fiscal_conservative
-}
-
-2000.6.1 = {
-	create_country_leader = {
-		name = "Arnhim Ulric Eustace"
-		picture = "Arnhim_U_Eustace.dds"
-		ideology = fiscal_conservative
-	}
-}
-
-2016.1.1 = {
-	set_politics = {
-		parties = {
-			conservative = {
-				popularity = 48
-			}
-			market_liberal = {
-				popularity = 1
-			}
-			progressive = {
-				popularity = 1
-			}
-			democratic_socialist = {
-				popularity = 50
-			}
-		}
-		
-		ruling_party = democratic_socialist
-		last_election = "1997.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	name = "Godwin Friday"
+	picture = "Godwin_Friday.dds"
+	ideology = social_conservative
 }

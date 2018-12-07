@@ -1,6 +1,6 @@
 ﻿capital = 775
 
-oob = "GUI_2000"
+oob = "GUI_2018"
 
 set_research_slots = 2
 set_convoys = 100
@@ -103,68 +103,28 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 50
+		social_democrat = {
+			popularity = 57.85
 		}
 		social_liberal = {
-			popularity = 25
-		}
-		communist = {
-			popularity = 20
+			popularity = 42.15
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "1997.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = social_democrat
+	last_election = "2015.10.11"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Lansana Conté"
-	picture = "Lansana_Conte.dds"
-	ideology = reactionary_ideology
+	name = "Alpha Condé"
+	picture = "Alpha_Conde.dds"
+	ideology = social_democrat_ideology
 }
-	
-2008.12.22 = {
-	create_country_leader = {
-		name = "Moussa Dadis Camara"
-		picture = "Moussa_Dadis_Camara.dds"
-		ideology = social_democrat_ideology
-	}
-	set_politics = {
-		ruling_party = social_democrat
-		elections_allowed = yes
-	}
-}
-2009.12.3 = {
-	create_country_leader = {
-		name = "Sékouba Konaté"
-		picture = "Sekouba_Konate.dds"
-		ideology = social_democrat_ideology
-	}
-}
-2010.12.21 = {
-	create_country_leader = {
-		name = "Alpha Condé"
-		picture = "Alpha_Conde.dds"
-		ideology = social_democrat_ideology
-	}
-	set_politics = {
-		parties = {
-			reactionary = {
-				popularity = 20
-			}
-			social_democrat = {
-				popularity = 60
-			}
-			communist = {
-				popularity = 20
-			}
-		}
-		ruling_party = social_democrat
-		last_election = "2010.12.21"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+
+create_country_leader = {
+	name = "Cellou Dalein Diallo"
+	picture = "Cellou_Dalein_Diallo.dds"
+	ideology = centrist
 }
