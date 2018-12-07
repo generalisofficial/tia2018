@@ -11,22 +11,46 @@ state={
 		victory_points = {
 			9461 5 
 		}
+		UKR = {
+			set_province_controller = 9476
+			set_province_controller = 6519
+			set_province_controller = 523
+			set_province_controller = 547
+			set_province_controller = 11513
+			set_province_controller = 570
+			set_province_controller = 11487
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
 			9461 = {
 				bunker = 2
-            }
+
+			}
+			6519 = {
+				bunker = 5
+
+			}
+			523 = {
+				bunker = 5
+
+			}
+			547 = {
+				bunker = 5
+
+			}
+
 		}
 		add_core_of = UKR
 		add_core_of = DPR
+
 	}
 
 	provinces={
-		6505 9446 9461 
+		523 547 570 6505 6519 9446 9461 9476 11487 11513 
 	}
-	manpower=2167411
+	manpower=2239500
 	buildings_max_level_factor=1.000
 	state_category=state_level_5
 }

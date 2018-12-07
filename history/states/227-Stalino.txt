@@ -8,6 +8,15 @@ state={
 
 	history={
 		owner = DPR
+		UKR = {
+			set_province_controller = 6420
+			set_province_controller = 6776
+			set_province_controller = 3449
+			set_province_controller = 3466
+			set_province_controller = 502
+			set_province_controller = 3479
+			set_province_controller = 3491
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
@@ -30,10 +39,17 @@ state={
 				bunker = 5
 
 			}
+			3491 = {
+				bunker = 5
+
+			}
 
 		}
 		victory_points = {
 			6474 10 
+		}
+		victory_points = {
+			6420 3 
 		}
 		add_core_of = UKR
 		add_core_of = DPR
@@ -41,9 +57,9 @@ state={
 	}
 
 	provinces={
-		3421 6474 6493 
+		502 3421 3449 3466 3479 3491 6420 6474 6493 6776 
 	}
-	manpower=3850500
+	manpower=4356392
 	buildings_max_level_factor=1.000
 	state_category=state_level_8
 }
