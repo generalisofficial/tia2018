@@ -1,6 +1,6 @@
 ﻿capital = 318
 
-oob = "HAI_2000"
+oob = "HAI_2018"
 
 set_research_slots = 2
 set_convoys = 100
@@ -95,59 +95,46 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
-		reactionary = {
-			popularity = 2
+		market_liberal = {
+			popularity = 60.38
 		}
 		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
+			popularity = 19.57
 		}
 		progressive = {
-			popularity = 10
+			popularity = 11.04
 		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+		social_democrat = {
+			popularity = 9.01
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = market_liberal
+	last_election = "2016.11.20"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Jean-Bertrand Aristide"
-	ideology = reactionary_ideology
-	picture = "Jean_Bertrand_Aristide.dds"
+	name = "Jovenel Moïse"
+	picture = "Jovenel_Moise.dds"
+	ideology = libertarian
 }
 
-2010.1.1 = { #Haitian Earthquake
-	add_stability = -0.15
+create_country_leader = {
+	name = "Jude Célestin"
+	picture = "Jude_Celestin.dds"
+	ideology = fiscal_conservative
 }
 
-2015.1.1 = {
-	create_country_leader = {
-		name = "Jocelerme Privert"
-		ideology = reactionary_ideology
-		picture = "Jocelerme_Privert.dds"
-	}
+create_country_leader = {
+	name = "Jean-Charles Moïse"
+	picture = "Jean_Charles_Moise.dds"
+	ideology = progressive_ideology
 }
 
+create_country_leader = {
+	name = "Maryse Narcisse"
+	picture = "Maryse_Narcisse.dds"
+	ideology = social_democrat_ideology
+}
