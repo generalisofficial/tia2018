@@ -1,0 +1,31 @@
+economic_decisions = {
+	
+	SOV_cut_oil_to_estonia = {
+		visible = {
+			threat > 10
+		}
+		
+		available = {
+			has_opinion = {
+				target = EST
+ 				value = -20
+			}
+		}
+		
+		icon = democracy
+		
+		cost = 150
+		fire_only_once = yes
+		
+		complete_effect = {
+			EST = {
+				country_event = sov_economy.1
+			}
+			news_event = { economy_news.1 hours = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	} 	
+}

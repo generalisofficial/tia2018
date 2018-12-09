@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+	
+		economy_oil_cut_sov = {
+			picture = embargo
+			
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = -0.01
+				political_power_gain = -0.1
+				production_oil_factor = -0.8
+			}
+
+			cancel = {
+				has_opinion = {
+					has_opinion = {
+						target = SOV
+						value = 50
+					}
+				}
+			}
+		}
+	}
+}

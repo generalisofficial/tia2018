@@ -392,3 +392,64 @@ country_event = {
 		}
 	}
 }
+
+
+################################################
+################################################
+# ECONOMY DECISION EVENTS
+################################################
+################################################
+
+add_namespace = sov_economy
+add_namespace = usa_economy
+add_namespace = sau_economy
+add_namespace = per_economy
+add_namespace = eu_economy
+add_namespace = economy_news
+
+country_event = {
+	id = sov_economy.1
+	title = sov_economy.1.t
+	desc = sov_economy.1.d
+	picture = GFX_report_event_mining
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_economy.1.a
+		add_timed_idea = { idea = economy_oil_cut_sov days = 360 }
+	}
+}
+
+country_event = {
+	id = economy_news.1
+	title = economy_news.1.t
+	desc = economy_news.1.d
+	picture = GFX_report_event_mining
+
+	is_triggered_only = yes
+
+	option = {
+		name = economy_news.1.a
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = economy_news.1.b
+		trigger = {
+			tag = EST
+		}
+	}
+
+	option = {
+		name = economy_news.1.c
+		trigger = {
+			NOT = {
+				tag = SOV
+				tag = EST
+			}
+		}
+	}
+}
