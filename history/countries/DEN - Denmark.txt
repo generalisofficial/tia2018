@@ -99,25 +99,59 @@ set_technology = {
 	excavation1 = 1
 }
 
+set_politics = {
+	ruling_party = social_democrat
+	elections_allowed = yes
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = FAI
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = GRN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = FAI
+		puppet = GRN
+	}
+}
+
 add_ideas = {
 	population_growth_stagnation
 	idea_eu_member
-        nordic_council_member
+    nordic_council_member
 }
 
 set_politics = {
 
 	parties = {
-		social_democrat = { popularity = 27.3 }			
-		market_liberal = { popularity = 23.7 }			
-		conservative = { popularity = 3.8 }				
-		progressive = { popularity = 5.8 }				
-		reactionary = { popularity = 22.1 }				
-		social_liberal = { popularity = 8.5 }			
-		democratic_socialist = { popularity = 8.8 }
-        islamist = { popularity = 0.0 }
-        nationalist = { popularity = 0.0 }
-        fascist = { popularity = 0.0 }			
+		social_democrat = { 
+		    popularity = 27.3 
+		}			
+		market_liberal = { 
+		    popularity = 23.7 
+		}
+		reactionary = { 
+		    popularity = 22.1 
+		}
+		democratic_socialist = { 
+		    popularity = 8.8 
+		}		
+		social_liberal = { 
+		    popularity = 8.5 
+		}
+		progressive = { 
+		    popularity = 5.8 
+		}		
+		conservative = { 
+		    popularity = 3.8 
+		}								
 	}
 	
 	ruling_party = market_liberal
@@ -133,6 +167,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Lars Løkke Rasmussen"
+	picture = "Lars_Lokke_Rasmussen.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Kristian Thulesen Dahl"
+	picture = "Kristian_Thulesen_Dahl.dds"
+	ideology = reactionary_ideology 
+}
+
+create_country_leader = {
+	name = "Pernille Skipper"
+	picture = "Pernille_Skipper.dds"
+	ideology = democratic_socialist_ideology  
+}
+
+create_country_leader = {
 	name = "Uffe Elbæk"
 	picture = "Uffe_Elbaek.dds"
 	ideology = progressive_ideology  
@@ -145,33 +197,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pernille Skipper"
-	picture = "Pernille_Skipper.dds"
-	ideology = democratic_socialist_ideology  
-}
-
-create_country_leader = {
-	name = "Lars Løkke Rasmussen"
-	picture = "Lars_Lokke_Rasmussen.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
 	name = "Søren Pape Poulsen"
 	picture = "Soren_Pape_Poulsen.dds"
 	ideology = national_conservative 
-}
-
-create_country_leader = {
-	name = "Kristian Thulesen Dahl"
-	picture = "Kristian_Thulesen_Dahl.dds"
-	ideology = reactionary_ideology 
-}
-
-create_country_leader = {
-	name = "Anders Samuelsen"
-	picture = "Anders_Samuelsen.dds"
-	ideology = social_liberal_ideology
 }
 
 create_country_leader = {

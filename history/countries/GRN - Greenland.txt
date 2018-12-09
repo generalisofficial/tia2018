@@ -1,6 +1,6 @@
 ﻿capital = 101
 
-oob = "GRN_2018"
+oob = "generic_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -91,28 +91,33 @@ set_technology = {
 	excavation1 = 1
 }
 
+set_cosmetic_tag = GRN_DEN
+
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 10
+		social_democrat = {
+		    popularity = 27.2
 		}
-		conservative = {
-		    popularity = 23
+		democratic_socialist = {
+		    popularity = 25.5
 		}
 		market_liberal = {
-		    popularity = 10
+		    popularity = 19.5
 		}
 		social_liberal = {
-		    popularity = 5
+		    popularity = 13.4
 		}
-		social_democrat = {
-		    popularity = 52
+		conservative = {
+		    popularity = 8.5
+		}
+		progressive = {
+		    popularity = 5.9
 		}
 	}
 	
 	ruling_party = social_democrat
-	last_election = "2014.11.28"
+	last_election = "2014.4.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -121,4 +126,34 @@ create_country_leader = {
 	name = "Kim Kielsen"
 	picture = "Kim_Kielsen.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Sara Olsvig"
+	picture = "Sara_Olsvig.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Niels Thomsen"
+	picture = "Niels_Thomsen.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Hans Enoksen"
+	picture = "Hans_Enoksen.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Siverth K. Heilmann"
+	picture = "Siverth_K_Heilmann.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Vittus Qujaukitsoq"
+	picture = "Vittus_Qujaukitsoq.dds"
+	ideology = progressive_ideology
 }
