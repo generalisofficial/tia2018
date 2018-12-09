@@ -40,38 +40,69 @@ division_template = {
 units = {
 	
 	division = {
+		name = "Republican Guard"
+		location = 13478
+		division_template = "Mechanized Division"
+		start_experience_factor = 1
+	}
+	
+	division = {
+		name = "Strategic Reserve"
+		location = 13480
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
 		name = "1st Armored Division"
-		location = 10840
+		location = 13479
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "1st Infantry Division"
-		location = 12894
-		division_template = "Mechanized Division"
+		name = "2nd Armored Division"
+		location = 1086
+		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "2nd Infantry Division"
+		name = "Al-Islah"
+		location = 1072
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Popular Resistance Committees"
 		location = 4924
-		division_template = "Mechanized Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "3rd Infantry Division"
-		location = 4976
-		division_template = "Mechanized Division"
+		name = "Southern Movement"
+		location = 5074
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	
-	division = {
-		name = "4th Infantry Division"
-		location = 1920
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.3
+	navy = {
+		name = "Yemeni Navy"
+		base = 5074
+		location = 5074
+		ship = { name = "Tarantul-class corvette" definition = corvette equipment = { corvette_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Tarantul-class corvette" definition = corvette equipment = { corvette_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
+		ship = { name = "Osa-class missile boat" definition = missile_cruiser equipment = { missile_cruiser_1 = { amount = 1 owner = YEM } } }
 	}
 	
 }
@@ -83,7 +114,7 @@ air_wings = {
 		#MiG-29
 		jet_multirole_equipment_3 = {
 			owner = "YEM" 
-			amount = 24
+			amount = 66
 		}
 
 	}
@@ -99,7 +130,7 @@ air_wings = {
 		#F-5E
 		jet_multirole_equipment_1 = {
 			owner = "YEM" 
-			amount = 11
+			amount = 14
 		}
 
 	}
@@ -107,7 +138,7 @@ air_wings = {
 		#Su-22
 		jet_attack_equipment_2 = {
 			owner = "YEM" 
-			amount = 29
+			amount = 40
 		}
 
 	}
