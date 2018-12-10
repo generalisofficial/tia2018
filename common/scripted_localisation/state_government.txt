@@ -1,0 +1,134 @@
+defined_text = {
+	name = GetStateGovernment
+
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_islamist					
+			}
+		}
+		localization_key = STATE_GOVERNMENT_ISLAMIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_fascist
+			}
+		}
+		localization_key = STATE_GOVERNMENT_FASCIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_nationalist
+			}
+		}
+		localization_key = STATE_GOVERNMENT_NATIONALIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_monarchist
+			}
+		}
+		localization_key = STATE_GOVERNMENT_MONARCHIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_reactionary
+			}
+		}
+		localization_key = STATE_GOVERNMENT_REACTIONARY
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_conservative
+			}
+		}
+		localization_key = STATE_GOVERNMENT_CONSERVATIVE
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_market_liberal
+			}
+		}
+		localization_key = STATE_GOVERNMENT_MARKET_LIBERAL
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_social_liberal
+			}
+		}
+		localization_key = STATE_GOVERNMENT_SOCIAL_LIBERAL
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_social_democrat
+			}
+		}
+		localization_key = STATE_GOVERNMENT_SOCIAL_DEMOCRAT
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_progressive
+			}
+		}
+		localization_key = STATE_GOVERNMENT_PROGRESSIVE
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_democratic_socialist
+			}
+		}
+		localization_key = STATE_GOVERNMENT_DEMOCRATIC_SOCIALIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				has_state_flag = state_government_communist
+			}
+		}
+		localization_key = STATE_GOVERNMENT_COMMUNIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_state_government_temp = id }
+			var:selected_state_government_temp = {
+				NOT = { 
+				    has_state_flag = state_government_communist 
+					has_state_flag = state_government_democratic_socialist 
+					has_state_flag = state_government_progressive 
+					has_state_flag = state_government_social_democrat 
+					has_state_flag = state_government_social_liberal
+					has_state_flag = state_government_market_liberal
+					has_state_flag = state_government_conservative
+					has_state_flag = state_government_reactionary
+					has_state_flag = state_government_monarchist
+					has_state_flag = state_government_nationalist
+					has_state_flag = state_government_fascist
+					has_state_flag = state_government_islamist
+				}
+			}
+		}
+		localization_key = STATE_GOVERNMENT_INDEPENDENT
+	}
+}    
