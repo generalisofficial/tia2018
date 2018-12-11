@@ -1,0 +1,32 @@
+guiTypes = {
+	containerWindowType = {
+		name = "budget_topbar_container"
+		position = { x = 990 y = 4 }
+ 
+		buttonType ={
+			name ="budget_bg"
+			spriteType = "GFX_generic_box_small"
+			position = { x=0 y=0 }
+		}
+ 
+		iconType = {
+			name ="budget_icon"
+			spriteType = "GFX_budget"
+			position = { x= 0 y = 4 }
+		}
+ 
+		instantTextBoxType = {
+			name ="budget_text"
+			position = { x= 20 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?budget]"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+     
+			pdx_tooltip = "BUDGET_TOPBAR_TOOLTIP"
+			pdx_tooltip_delayed = "BUDGET_TOPBAR_TOOLTIP_DELAYED"
+		}
+	}
+}	
