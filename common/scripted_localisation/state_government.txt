@@ -50,6 +50,9 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
+				NOT = {
+			        is_owned_by = USA
+				}
 				has_state_flag = state_government_conservative
 			}
 		}
@@ -59,6 +62,9 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
+				NOT = {
+			        is_owned_by = USA
+				}
 				has_state_flag = state_government_market_liberal
 			}
 		}
@@ -68,6 +74,9 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
+				NOT = {
+			        is_owned_by = USA
+				}
 				has_state_flag = state_government_social_liberal
 			}
 		}
@@ -86,6 +95,9 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
+				NOT = {
+			        is_owned_by = USA
+				}
 				has_state_flag = state_government_progressive
 			}
 		}

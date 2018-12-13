@@ -2,28 +2,31 @@
 state={
 	id=542
 	name="STATE_542"
-	manpower = 2061252
-	
-	state_category = state_level_8
-	
 	resources={
-		chromium=2
-		steel=1
+		chromium=2.000
+		steel=1.000
 	}
 
 	history={
 		owner = BOT
 		add_core_of = BOT
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 1
+
 		}
-		victory_points = { 8214 3 }
+		victory_points = {
+			8214 5
+		}
+
 	}
 
 	provinces={
-		1580 8214 10525 12940 12963 
+		8214 12940 13524 13525 13526 13527 
 	}
+	manpower=421907
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
 }
