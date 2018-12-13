@@ -1,6 +1,6 @@
 ﻿capital = 634
 
-oob = "SOL_2000"
+oob = "SOL_2018"
 
 set_research_slots = 2
 set_convoys = 30
@@ -95,41 +95,19 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 100
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = reactionary
+	last_election = "2014.11.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Rick Houenipwela"
+	picture = "Rick_Houenipwela.dds"
+	ideology = independent
 }
