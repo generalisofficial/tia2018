@@ -802,7 +802,7 @@ ideas = {
 			}
 		}
 		
-		al_qaeda_member = {
+		salafist_jihadist_group = {
 			picture = islam1
 		
 			allowed = { always = no }
@@ -810,14 +810,14 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.3
-				drift_defence_factor = 0.5
+				drift_defence_factor = 1.0
 				army_core_defence_factor = 0.45
 				army_core_attack_factor = 0.15
 				political_power_gain = 0.2
-				army_morale_factor = 0.3
+				army_morale_factor = 0.5
 				justify_war_goal_time = -0.9
 				industrial_capacity_factory = -0.15
-				research_time_factor = 0.50
+				research_time_factor = 0.40
 			}
 		}
 		
