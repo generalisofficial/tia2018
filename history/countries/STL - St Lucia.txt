@@ -1,6 +1,6 @@
 ﻿capital = 831
 
-oob = "ST_2000"
+oob = "STL_2018"
 
 set_research_slots = 2
 set_convoys = 20
@@ -95,51 +95,27 @@ add_ideas = {
 set_politics = {
 	parties = {
 		conservative = {
-			popularity = 49
+			popularity = 54.79
 		}
 		social_democrat = {
-			popularity = 49
-		}
-		progressive = {
-			popularity = 2
+			popularity = 45.21
 		}
 	}
 	
-	ruling_party = social_democrat
-	last_election = "1997.6.1"
-	election_frequency = 48
+	ruling_party = conservative
+	last_election = "2016.6.6"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
 	name = "Allen Chastanet"
 	picture = "Allen_Chastanet.dds"
-	ideology = fiscal_conservative
+	ideology = christian_democrat
 }
 
 create_country_leader = {
-	name = "Kenny Anthony"
-	picture = "Kenny_Anthony.dds"
+	name = "Philip Pierre"
+	picture = "Philip_Pierre.dds"
 	ideology = social_democrat_ideology
-}
-
-2016.1.1 = {
-	set_politics = {
-		parties = {
-			conservative = {
-				popularity = 49
-			}
-			social_democrat = {
-				popularity = 49
-			}
-			progressive = {
-				popularity = 2
-			}
-		}
-		
-		ruling_party = conservative
-		last_election = "2011.6.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 }

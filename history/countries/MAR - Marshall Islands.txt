@@ -1,6 +1,6 @@
 ﻿capital = 633
 
-oob = "MAR_2000"
+oob = "MAR_2018"
 
 set_research_slots = 2
 set_convoys = 100
@@ -94,86 +94,19 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 100
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.1.14"
+	ruling_party = reactionary
+	last_election = "2015.11.16"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Kessai Note"
-	picture = "Kessai_Note.dds"
-	ideology = christian_democrat
-}
-
-2008.1.14 = {
-	create_country_leader = {
-		name = "Litokwa Tomeing"
-		picture = "Litokwa_Tomeing.dds"
-		ideology = christian_democrat
-	}	
-}
-
-2009.11.2 = {
-	create_country_leader = {
-		name = "Jurelang Zedkaia"
-		picture = "Jurelang_Zedkaia.dds"
-		ideology = christian_democrat
-	}	
-}
-
-2012.1.10 = {
-	create_country_leader = {
-		name = "Christopher Loeak"
-		picture = "Christopher_Loeak.dds"
-		ideology = christian_democrat
-	}	
-}
-
-2016.1.11 = {
-	create_country_leader = {
-		name = "Casten Nemra"
-		picture = "Casten_Nemra.dds"
-		ideology = christian_democrat
-	}
-}
-
-2016.1.28 = {
-		create_country_leader = {
-		name = "Hilda Heine"
-		picture = "Hilda_Heine.dds"
-		ideology = christian_democrat
-	}
+	name = "Hilda Heine"
+	picture = "Hilda_Heine.dds"
+	ideology = independent
 }

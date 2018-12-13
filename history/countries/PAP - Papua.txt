@@ -1,6 +1,6 @@
 ﻿capital = 523
 
-oob = "PAP_2000"
+oob = "PAP_2018"
 
 set_research_slots = 2
 set_convoys = 60
@@ -96,55 +96,19 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 25
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 30
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 100
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "1997.1.1"
-	election_frequency = 48
+	ruling_party = reactionary
+	last_election = "2017.6.24"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Silas Atopare"
-	picture = "Silas_Atopare.dds"
-	ideology = social_liberal_ideology
-}
-
-2016.1.1 = {
-	create_country_leader = {
-		name = "Michael Ogio"
-		picture = "Michael_Ogio.dds"
-		ideology = social_liberal_ideology
-	}
+	name = "Peter O'Neill"
+	picture = "Peter_O_Neill.dds"
+	ideology = independent
 }

@@ -94,40 +94,19 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		islamist = {
-			popularity = 1
-		}
-		nationalist = {
-			popularity = 1
-		}
 		reactionary = {
-			popularity = 2
-		}
-		conservative = {
-			popularity = 30
-		}
-		market_liberal = {
-			popularity = 6
-		}
-		social_liberal = {
-			popularity = 25
-		}
-		social_democrat = {
-			popularity = 5
-		}
-		progressive = {
-			popularity = 10
-		}
-		democratic_socialist = {
-			popularity = 10
-		}
-		communist = {
-			popularity = 10
+			popularity = 100
 		}
 	}
 	
-	ruling_party = conservative
+	ruling_party = reactionary
 	last_election = "2017.3.7"
 	election_frequency = 24
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Peter M. Christian"
+	picture = "Peter_M_Christian.dds"
+	ideology = independent
 }
