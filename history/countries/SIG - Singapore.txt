@@ -107,34 +107,37 @@ give_guarantee = ENG
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 100
-		}
 		conservative = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 0
+			popularity = 69.9
 		}
 		social_democrat = {
-			popularity = 0
+			popularity = 17.6
 		}
-		democratic_socialist = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 0
+		social_liberal = {
+			popularity = 12.5
 		}
 	}
 	
-	ruling_party = reactionary
+	ruling_party = conservative
 	last_election = "2017.9.13"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Halimah Yacob"
-	picture = "Halimah_Yacob.dds"
-	ideology = independent
+	name = "Lee Hsien Loong"
+	picture = "Lee_Hsien_Loong.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Low Thia Khiang"
+	picture = "Low_Thia_Khiang.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Chiam See Tong"
+	picture = "Chiam_See_Tong.dds"
+	ideology = social_liberal_ideology
 }
