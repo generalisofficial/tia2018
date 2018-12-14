@@ -50,9 +50,6 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
-				NOT = {
-			        is_owned_by = USA
-				}
 				has_state_flag = state_government_conservative
 			}
 		}
@@ -62,9 +59,6 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
-				NOT = {
-			        is_owned_by = USA
-				}
 				has_state_flag = state_government_market_liberal
 			}
 		}
@@ -74,9 +68,6 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { var:selected_state_government_temp = id }
 			var:selected_state_government_temp = {
-				NOT = {
-			        is_owned_by = USA
-				}
 				has_state_flag = state_government_social_liberal
 			}
 		}
@@ -142,35 +133,5 @@ defined_text = {
 			}
 		}
 		localization_key = STATE_GOVERNMENT_INDEPENDENT
-	}
-	text = {
-		trigger = {
-			set_temp_variable = { var:selected_state_government_temp = id }
-			var:selected_state_government_temp = {
-			    is_owned_by = USA
-				has_state_flag = state_government_social_liberal
-			}
-		}
-		localization_key = STATE_GOVERNMENT_SOCIAL_LIBERAL_USA
-	}
-	text = {
-		trigger = {
-			set_temp_variable = { var:selected_state_government_temp = id }
-			var:selected_state_government_temp = {
-			    is_owned_by = USA
-				has_state_flag = state_government_conservative
-			}
-		}
-		localization_key = STATE_GOVERNMENT_CONSERVATIVE_USA
-	}
-	text = {
-		trigger = {
-			set_temp_variable = { var:selected_state_government_temp = id }
-			var:selected_state_government_temp = {
-			    is_owned_by = USA
-				has_state_flag = state_government_market_liberal
-			}
-		}
-		localization_key = STATE_GOVERNMENT_MARKET_LIBERAL_USA
 	}
 }    
