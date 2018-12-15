@@ -13,26 +13,5 @@ ideas = {
 				conscription_factor = -0.1
 			}
 		}
-	
 	}
-
-#Designers
-naval_manufacturer = { designer = yes
-	TUR_TNF = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { naval_equipment = 0.1 } traits = { raiding_fleet_naval_manufacturer } }
-	}
-tank_manufacturer = { designer = yes
-	TUR_Otokar = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { armor = 0.1 } traits = { medium_tank_manufacturer } }
-	}
-materiel_manufacturer = { designer = yes 
-	TUR_MKEK = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { infantry_weapons = 0.15 } traits = { infantry_equipment_manufacturer} }
-	TUR_Nurol = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { artillery = 0.15 } traits = { artillery_manufacturer} }
-	TUR_FNSS = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { mechanized_equipment = 0.15 } traits = { motorized_equipment_manufacturer} }
-	}
-aircraft_manufacturer = { designer = yes
-	TUR_TAI = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { air_equipment = 0.15 } traits = { light_aircraft_manufacturer } }
-	}
-industrial_concern = {
-	TUR_Koc = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { industry = 0.15 } traits = { industrial_concern } }
-	TUR_ASELSAN = { ai_will_do = { factor = 1 }  allowed = { original_tag = TUR } research_bonus = { electronics = 0.15 } traits = { electronics_concern } }
-	}
-	}
+}
