@@ -286,3 +286,48 @@ commonwealth_of_independent_states_decisions = {
 		}
 	}
 }
+
+gulf_cooperation_council_decisions = {
+	
+	join_gulf_cooperation_council = {
+	
+		visible = {
+			NOT = { has_idea = gulf_cooperation_council_member }
+			OR = { original_tag = SAU original_tag = OMA original_tag = UAE original_tag = QAT original_tag = BAH original_tag = JOR original_tag = YEM original_tag = MOR }
+		}
+		available = {
+            NOT = { has_idea = gulf_cooperation_council_member }
+		}
+		
+		complete_effect = {
+            add_ideas = gulf_cooperation_council_member
+		}
+		
+		icon = gulf_cooperation_council
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_gulf_cooperation_council  = {
+	
+		visible = {
+			has_idea = gulf_cooperation_council_member
+		}
+		
+		complete_effect = {
+            remove_ideas = gulf_cooperation_council_member
+		}
+		
+		icon = gulf_cooperation_council
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
