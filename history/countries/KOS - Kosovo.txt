@@ -90,16 +90,15 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		islamist = { popularity = 0 }
-		nationalist = { popularity = 13.24 }
-		reactionary = { popularity = 0 }
-		conservative = { popularity = 33.74 }
-		market_liberal = { popularity = 25.53 }
-		social_liberal = { popularity = 0 }
-		social_democrat = { popularity = 27.49 }
-		progressive = { popularity = 0 }
-		democratic_socialist = { popularity = 0 }
-		communist = { popularity = 0 }
+		conservative = { 
+		    popularity = 33.74 
+		}
+		market_liberal = {
+		    popularity = 25.53 
+		}
+		social_democrat = { 
+		    popularity = 27.49 
+		}
 	}
 	ruling_party = conservative
 	last_election = "2016.2.26"
@@ -108,9 +107,21 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Hashim Thaçi"
-	picture = "Hashim_Thaci.dds"
+	name = "Ramush Haradinaj"
+	picture = "Ramush_Haradinaj.dds"
 	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Visar Ymeri"
+	picture = "Visar_Ymeri.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Isa Mustafa"
+	picture = "Isa_Mustafa.dds"
+	ideology = libertarian
 }
 
 create_field_marshal = {
