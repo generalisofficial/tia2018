@@ -22,31 +22,31 @@ country_event = {
 		
 		trigger = {
 			OR = {
-				AND = { has_government = communist communist > 0.2 }
-				AND = { has_government = democratic_socialist democratic_socialist > 0.2 }
-				AND = { has_government = progressive progressive > 0.2 }
-				AND = { has_government = social_democrat social_democrat > 0.2 }
-				AND = { has_government = social_liberal social_liberal > 0.2 }
-				AND = { has_government = market_liberal market_liberal > 0.2 }
-				AND = { has_government = conservative conservative > 0.2 }
-				AND = { has_government = reactionary reactionary > 0.2 }
-				AND = { has_government = monarchist monarchist > 0.2 }
-				AND = { has_government = nationalist nationalist > 0.2 }
-				AND = { has_government = fascist fascist > 0.2 }
-				AND = { has_government = islamist islamist > 0.2 }
+				AND = { has_government = communist communist > 0.1 }
+				AND = { has_government = democratic_socialist democratic_socialist > 0.1 }
+				AND = { has_government = progressive progressive > 0.1 }
+				AND = { has_government = social_democrat social_democrat > 0.1 }
+				AND = { has_government = social_liberal social_liberal > 0.1 }
+				AND = { has_government = market_liberal market_liberal > 0.1 }
+				AND = { has_government = conservative conservative > 0.1 }
+				AND = { has_government = reactionary reactionary > 0.1 }
+				AND = { has_government = monarchist monarchist > 0.1 }
+				AND = { has_government = nationalist nationalist > 0.1 }
+				AND = { has_government = fascist fascist > 0.1 }
+				AND = { has_government = islamist islamist > 0.1 }
 				AND = {
-					communist < 0.2
-					democratic_socialist < 0.2
-					progressive < 0.2
-					social_democrat < 0.2
-					social_liberal < 0.2
-					market_liberal < 0.2
-					conservative < 0.2
-					reactionary < 0.2
-					monarchist < 0.2
-					nationalist < 0.2
-					fascist < 0.2
-					islamist < 0.2
+					communist < 0.1
+					democratic_socialist < 0.1
+					progressive < 0.1
+					social_democrat < 0.1
+					social_liberal < 0.1
+					market_liberal < 0.1
+					conservative < 0.1
+					reactionary < 0.1
+					monarchist < 0.1
+					nationalist < 0.1
+					fascist < 0.1
+					islamist < 0.1
 				}
 			}
 		}
@@ -65,7 +65,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = communist }
-			communist > 0.25
+			communist > 0.1
 		}
 		
 		set_politics = {
@@ -79,7 +79,7 @@ country_event = {
 		name = election.1.o2
 		trigger = {
 			NOT = { has_government = democratic_socialist }
-			democratic_socialist > 0.25
+			democratic_socialist > 0.1
 		}
 		ai_chance = {
 			factor = 4
@@ -99,7 +99,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = social_democrat }
-			social_democrat > 0.25
+			social_democrat > 0.1
 		}
 		
 		set_politics = {
@@ -113,7 +113,7 @@ country_event = {
 		name = election.1.o4
 		trigger = {
 			NOT = { has_government = progressive }
-			progressive > 0.25
+			progressive > 0.1
 		}
 		ai_chance = {
 			factor = 4
@@ -133,7 +133,7 @@ country_event = {
 		}	
 		trigger = {
 			NOT = { has_government = social_liberal }
-			social_liberal > 0.25
+			social_liberal > 0.1
 		}
 		
 		set_politics = {
@@ -150,7 +150,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = market_liberal }
-			market_liberal > 0.25
+			market_liberal > 0.1
 		}
 		
 		set_politics = {
@@ -167,7 +167,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = conservative }
-			conservative > 0.25
+			conservative > 0.1
 		}
 		
 		set_politics = {
@@ -184,7 +184,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = reactionary }
-			reactionary > 0.25
+			reactionary > 0.1
 		}
 		
 		set_politics = {
@@ -201,7 +201,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = nationalist }
-			nationalist > 0.25
+			nationalist > 0.1
 		}
 		
 		set_politics = {
@@ -218,7 +218,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = fascist }
-			fascist > 0.25
+			fascist > 0.1
 		}
 		
 		set_politics = {
@@ -235,7 +235,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = islamist }
-			islamist > 0.25
+			islamist > 0.1
 		}
 		
 		set_politics = {
@@ -252,7 +252,7 @@ country_event = {
 		}
 		trigger = {
 			NOT = { has_government = monarchist }
-			monarchist > 0.25
+			monarchist > 0.1
 		}
 		
 		set_politics = {
@@ -310,7 +310,7 @@ country_event = {
 		name = election_SOV.1.o1
 		trigger = {
 		    OR = {
-                reactionary > 0.15
+                reactionary > 0.1
 				has_government = reactionary
 			}
 		}
@@ -333,7 +333,7 @@ country_event = {
 		name = election_SOV.1.o2
 		trigger = {
 		    OR = {
-                communist > 0.15
+                communist > 0.1
 				has_government = communist
 			}
 		}
@@ -356,7 +356,7 @@ country_event = {
 		name = election_SOV.1.o3
 		trigger = {
 		    OR = {
-                nationalist > 0.15
+                nationalist > 0.1
 				has_government = nationalist
 			}
 		}
@@ -383,7 +383,7 @@ country_event = {
 		}
 		trigger = {
 		    OR = {
-                social_liberal > 0.15
+                social_liberal > 0.1
 				has_government = social_liberal
 			}
 		}
@@ -406,7 +406,7 @@ country_event = {
 		}
 		trigger = {
 		    OR = {
-                conservative > 0.15
+                conservative > 0.1
 				has_government = conservative
 			}
 		}
