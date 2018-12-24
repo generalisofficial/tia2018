@@ -88,45 +88,58 @@ set_technology = {
 	excavation1 = 1
 }
 
-1999.1.1 = {
-	create_country_leader = {
-		name = "Alex Salmond"
-		picture = "Alex_Salmond.dds"
-		ideology = christian_democrat
-    }
-}
-2015.1.1 = {
-	create_country_leader = {
-		name = "Nicola Sturgeon"
-		picture = "Nicola_Sturgeon.dds"
-		ideology = christian_democrat
-    }
-}
 set_politics = {
 
 	parties = {
-		nationalist = {
-			popularity = 10
+		reactionary = {
+			popularity = 46.2
 		}
 		conservative = {
-			popularity = 51
-		}
-		market_liberal = {
-			popularity = 4
-		}
-		social_liberal = {
-			popularity = 10
+			popularity = 22.9
 		}
 		social_democrat = {
-			popularity = 23
+			popularity = 19.1
 		}
-		communist = {
-			popularity = 2
+		progressive = {
+			popularity = 6.6
+		}
+		social_liberal = {
+			popularity = 5.2
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1998.1.1"
-	election_frequency = 48
+	ruling_party = reactionary
+	last_election = "2016.5.6"
+	election_frequency = 60
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Nicola Sturgeon"
+	picture = "Nicola_Sturgeon.dds"
+    ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Ruth Davidson"
+	picture = "Ruth_Davidson.dds"
+    ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Richard Leonard"
+	picture = "Richard_Leonard.dds"
+    ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Patrick Harvie"
+	picture = "Patrick_Harvie.dds"
+    ideology = green
+}
+
+create_country_leader = {
+	name = "Willie Rennie"
+	picture = "Willie_Rennie.dds"
+    ideology = social_liberal_ideology
 }
