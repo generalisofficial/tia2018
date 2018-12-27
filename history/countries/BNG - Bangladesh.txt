@@ -108,22 +108,19 @@ set_country_flag = sunni_islam
 set_politics = {
 
 	parties = {
-		democratic_socialist = {
-			popularity = 1.75
-		}
-		communist = {
-			popularity = 2.06
-		}
 		social_democrat = {
 			popularity = 79.14
 		}
-		reactionary = {
-			popularity = 17.05
+		conservative = {
+			popularity = 11.31
+		}
+		communist = {
+			popularity = 9.55
 		}
 	}
 	
 	ruling_party = social_democrat
-	last_election = "2014.10.31"
+	last_election = "2014.12.30"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -137,17 +134,23 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hussain Muhammad Ershad"
 	picture = "Hussain_Muhammad_Ershad.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Khaleda Zia"
-	picture = "Khaleda_Zia.dds"
-	ideology = neo_nationalist
+	ideology = national_conservative
 }
 
 create_country_leader = {
 	name = "Rashed Khan Menon"
 	picture = "Rashed_Khan_Menon.dds"
-	ideology = marxist_leninist
+	ideology = maoist
+}
+
+create_country_leader = {
+	name = "Khaleda Zia"
+	picture = "Khaleda_Zia.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Maqbul Ahmed"
+	picture = "Maqbul_Ahmed.dds"
+	ideology = salafist
 }
