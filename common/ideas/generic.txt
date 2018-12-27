@@ -809,27 +809,25 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.3
-				drift_defence_factor = 1.0
+				conscription = 0.35
 				army_core_defence_factor = 0.45
-				army_core_attack_factor = 0.15
-				political_power_gain = 0.2
-				army_morale_factor = 0.5
-				justify_war_goal_time = -0.9
-				industrial_capacity_factory = -0.15
-				research_time_factor = 0.40
+				army_core_attack_factor = 0.25
+				army_morale_factor = 0.75
+				political_power_gain = -0.20
+				justify_war_goal_time = -0.99
 			}
 		}
 		
-		islamic_sectarian_conflicts = {
+		islamic_sectarian_violence = {
 			picture = islam2
 		
 			allowed = { always = no }
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.15
-				conscription_factor = -0.2
+				stability_factor = -0.1
+				conscription_factor = -0.15
+				drift_defence_factor = -0.25
 			}
 		}
 		
