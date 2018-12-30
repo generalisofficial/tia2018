@@ -95,29 +95,38 @@ add_ideas = {
 
 set_politics = {
 	parties = {
-		market_liberal = { 
-		    popularity = 55.15 
-		}
 		social_democrat = { 
-		    popularity = 44.85 
+		    popularity = 45.69
+		}
+		conservative = { 
+		    popularity = 33.55
+		}
+		democratic_socialist = { 
+		    popularity = 20.76
 		}
 	}
-	ruling_party = market_liberal
-	last_election = "2017.7.7"
+	ruling_party = social_democrat
+	last_election = "2016.6.29"
 	election_frequency = 48
 	elections_allowed = yes
-}
-
-create_country_leader = {
-	name = "Khaltmaagiin Battulga"
-	picture = "Khaltmaagiin_Battulga.dds"
-	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Ukhnaagiin Khürelsükh"
 	picture = "Ukhnaagiin_Khurelsukh.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Erdene Sodnomzundui"
+	picture = "Erdene_Sodnomzundui.dds"
+	ideology = fiscal_conservatism
+}
+
+create_country_leader = {
+	name = "Nambaryn Enkhbayar"
+	picture = "Nambaryn_Enkhbayar.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_field_marshal = {
