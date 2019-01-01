@@ -1,16 +1,14 @@
+
 state={
 	id=686
 	name="STATE_686"
-	manpower = 3810913
-	
-	state_category = state_level_5
-	
-	resources = {
-		oil = 2
+	resources={
+		oil=2.000
 	}
 
 	history={
 		owner = USA
+		add_core_of = PRT
 		set_state_flag = state_government_social_liberal
 		victory_points = {
 			1440 1 
@@ -19,11 +17,19 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 1
-			1440 = { naval_base = 3 }
+			1440 = {
+				naval_base = 3
+
+			}
+
 		}
+
 	}
 
 	provinces={
-		1440 4155 
+		1440 
 	}
+	manpower=3195153
+	buildings_max_level_factor=1.000
+	state_category=state_level_4
 }
