@@ -207,6 +207,28 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SOV_
+		icon = align_to_europe
+		x = 11
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_closer_with_the_west
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
 		id = SOV_pull_the_troops
 		icon = forceful_treaty
 		x = 8
