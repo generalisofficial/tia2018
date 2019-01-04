@@ -100,15 +100,18 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		social_democrat = {
+		market_liberal = {
 			popularity = 55.1
 		}
 		social_liberal = {
 			popularity = 44.9
 		}
+		social_democrat = {
+			popularity = 4.2
+		}
 	}
 	
-	ruling_party = social_democrat
+	ruling_party = market_liberal
 	last_election = "2017.11.13"
 	election_frequency = 60
 	elections_allowed = yes
@@ -117,11 +120,17 @@ set_politics = {
 create_country_leader = {
 	name = "Muse Bihi Abdi"
 	picture = "Muse_Bihi_Abdi.dds"
-	ideology = social_democrat_ideology
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Abdirahman Mohamed Abdullahi"
 	picture = "Abdirahman_Mohamed_Abdullahi.dds"
 	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Faysal Ali Warabe"
+	picture = "Faysal_Ali_Warabe.dds"
+	ideology = social_democrat_ideology
 }
