@@ -98,6 +98,16 @@ add_ideas = {
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 365 }
 
+add_opinion_modifier = {
+	target = ERI
+	modifier = rival
+}
+
+add_opinion_modifier = {
+	target = ERI
+	modifier = embargo
+}
+
 set_politics = {
 
 	parties = {
@@ -115,20 +125,10 @@ set_politics = {
 	elections_allowed = yes
 }
 
-add_opinion_modifier = {
-	target = ERI
-	modifier = rival
-}
-
-add_opinion_modifier = {
-	target = ERI
-	modifier = rival_trade
-}
-
 create_country_leader = {
 	name = "Hailemariam Desalegn"
 	picture = "Hailemariam_Desalegn.dds"
-	ideology = democratic_socialist_ideology
+	ideology = african_socialist
 }
 
 create_country_leader = {

@@ -1,6 +1,6 @@
 ﻿capital = 326
 
-oob = "HKN_2018"
+oob = "generic_2018"
 
 set_research_slots = 4
 set_convoys = 60
@@ -94,19 +94,22 @@ add_ideas = {
 set_politics = {
 
 	parties = {
+		communist = {
+			popularity = 98.19
+		}
 		reactionary = {
-			popularity = 100
+			popularity = 1.81
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "2017.6.30"
+	ruling_party = communist
+	last_election = "2017.7.1"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Carrie Lam"
+    name = "Carrie Lam"
 	picture = "Carrie_Lam.dds"
-	ideology = independent
+	ideology = maoist
 }
