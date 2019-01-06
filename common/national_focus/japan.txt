@@ -1826,6 +1826,7 @@ focus_tree = {
 		available = {
 			is_in_faction = no
 			has_government = conservative
+			is_puppet = no
 		}
 		
 		completion_reward = {
@@ -2004,6 +2005,18 @@ focus_tree = {
 		x = 22
 		y = 8
 		cost = 10
+		
+		available = {
+		is_puppet = no
+		country_exists = PRC
+		PRC = {
+		has_government = communist
+		}
+	    country_exists = PRK
+		PRK = {
+		has_government = communist
+		}
+		}
 		
 		prerequisite = {
 			focus = JAP_reorganize_the_army
@@ -2686,6 +2699,7 @@ focus_tree = {
 	    PRK = { 
 		has_democratic_form_of_government = no
 		}
+		is_puppet = no
 		}
 		
 		completion_reward = {

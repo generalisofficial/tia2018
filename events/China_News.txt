@@ -127,7 +127,7 @@ news_event = {
 	id = china_news.6
 	title = china_news.6.t
 	desc = china_news.6.d
-	picture = GFX_news_event_china_and_taiwan
+	picture = GFX_news_event_china_taiwan_kmt
 	
 	is_triggered_only = yes
 	major = yes
@@ -151,5 +151,23 @@ news_event = {
 	}
 	 }
 	}
+	
+	}
+	
+		news_event = {
+	id = china_news.7
+	title = china_news.7.t
+	desc = china_news.7.d
+	picture = GFX_news_event_political_assembly
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = china_news.7.a
+
+	}
+	
+
 	
 	}
