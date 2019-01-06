@@ -274,16 +274,6 @@ country_event = {
 	
 	option = {
 		name = election.2.o1
-		trigger = {
-			original_tag = FROM
-		}
-	}
-	
-	option = {
-		name = election.2.o2
-		trigger = {
-			NOT = { original_tag = FROM }
-		}
 	}
 }
 

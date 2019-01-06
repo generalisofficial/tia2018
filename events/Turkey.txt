@@ -1,6 +1,6 @@
 ﻿add_namespace = turkey
 
-#Successful Operation Olive Branch
+#TUR- Successful Operation Olive Branch
 country_event = {
 	id = turkey.1
 	title = turkey.1.t
@@ -30,19 +30,17 @@ country_event = {
 		FSA = { transfer_state = 923 }
 	}
 	
-	option = {	#Hand over Afrin to HTS
+	option = {	#Occupy Afrin
 		name = turkey.1.o3
-		trigger = { 
-			country_exists = HTS
-		}
 		ai_chance = {
 			factor = 0
 		}
-		HTS = { transfer_state = 923 }
+		add_political_power = -100
+		add_named_threat = { threat = 5 name = "Occupied Afrin" }	
 	}
 }
 
-#Failed Operation Olive Branch
+#TUR - Failed Operation Olive Branch
 country_event = {
 	id = turkey.2
 	title = turkey.2.t
@@ -51,6 +49,52 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = turkey.1.o1
+		name = turkey.2.o1
+		add_political_power = -25
+	}
+}
+
+#ROJ - Failed Operation Olive Branch
+country_event = {
+	id = turkey.3
+	title = turkey.3.t
+	desc = turkey.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.3.o1
+		add_political_power = 25
+	}
+}
+
+#ROJ - Successful Operation Olive Branch
+country_event = {
+	id = turkey.4
+	title = turkey.4.t
+	desc = turkey.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.3.o1
+		add_political_power = -50
+	}
+}
+
+#Operation Olive Branch
+news_event = {
+	id = turkey.5
+	title = turkey.5.t
+	desc = turkey.5.d
+	picture = GFX_news_event_iraq_war4
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	major = yes
+	
+	option = {
+		name = turkey.5.o1
 	}
 }

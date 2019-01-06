@@ -1,6 +1,6 @@
 ﻿add_namespace = syria
 
-#End of the Syrian Civil War
+#End of the Syrian Civil War - Assad
 news_event = {
 	id = syria.1
 	title = syria.1.t
@@ -10,15 +10,14 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
+	major = yes
+	
 	immediate = {
 		set_global_flag = syrian_civil_war_over
 	}
 	
 	option = {
 		name = syria.1.o1
-		trigger = { 
-			country_exists = SYR
-		}
 		SYR = { every_owned_state = { remove_core_of = FSA } }
 		SYR = { every_owned_state = { remove_core_of = HTS } }
 		SYR = { every_owned_state = { remove_core_of = ISS } }
@@ -31,29 +30,30 @@ news_event = {
 			ROJ = { every_owned_state = { remove_core_of = HTS } }
 		}
 	}
+}
+
+#End of the Syrian Civil War - Rebels
+news_event = {
+	id = syria.2
+	title = syria.2.t
+	desc = syria.2.d
+	picture = GFX_news_event_al_qaeda
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	major = yes
+	
+	immediate = {
+		set_global_flag = syrian_civil_war_over
+	}
 	
 	option = {
-		name = syria.1.o2
-		trigger = { 
-			OR = { 
-			    country_exists = FSA
-				country_exists = HTS
-			}
-		}
-		if = {
-		    limit = {
-			    country_exists = FSA
-			}
-		    FSA = { every_owned_state = { remove_core_of = SYR } }
-		    FSA = { every_owned_state = { remove_core_of = ISS } }
-		}
-		if = {
-		    limit = {
-			    country_exists = HTS
-			}
-		    HTS = { every_owned_state = { remove_core_of = SYR } }
-		    HTS = { every_owned_state = { remove_core_of = ISS } }
-		}
+		name = syria.2.o1
+		FSA = { every_owned_state = { remove_core_of = SYR } }
+		FSA = { every_owned_state = { remove_core_of = ISS } }
+		HTS = { every_owned_state = { remove_core_of = SYR } }
+		HTS = { every_owned_state = { remove_core_of = ISS } }
 		if = {
 		    limit = {
 			    country_exists = ROJ
@@ -62,12 +62,26 @@ news_event = {
 			ROJ = { every_owned_state = { remove_core_of = SYR } }
 		}
 	}
+}
+
+#End of the Syrian Civil War - ISIL
+news_event = {
+	id = syria.3
+	title = syria.3.t
+	desc = syria.3.d
+	picture = GFX_news_event_islamic_state
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	major = yes
+	
+	immediate = {
+		set_global_flag = syrian_civil_war_over
+	}
 	
 	option = {
-		name = syria.1.o3
-		trigger = { 
-			country_exists = ISS
-		}
+		name = syria.3.o1
 		ISS = { every_owned_state = { remove_core_of = SYR } }
 		ISS = { every_owned_state = { remove_core_of = FSA } }
 		ISS = { every_owned_state = { remove_core_of = HTS } }

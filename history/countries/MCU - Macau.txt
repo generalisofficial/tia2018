@@ -1,6 +1,6 @@
 ﻿capital = 729
 
-oob = "MCU_2018"
+oob = "generic_2018"
 
 set_research_slots = 4
 set_convoys = 100
@@ -94,12 +94,12 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
+		communist = {
 			popularity = 100
 		}
 	}
 	
-	ruling_party = reactionary
+	ruling_party = communist
 	last_election = "2014.8.31"
 	election_frequency = 60
 	elections_allowed = yes
@@ -108,5 +108,5 @@ set_politics = {
 create_country_leader = {
 	name = "Fernando Chui"
 	picture = "Fernando_Chui.dds"
-	ideology = independent
+	ideology = maoist
 }

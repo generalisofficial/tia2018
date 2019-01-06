@@ -1,19 +1,26 @@
+
 state={
 	id=778
 	name="STATE_778"
-	history = {
+
+	history={
 		owner = CAF
+		add_core_of = CAF
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
+
 		}
-		victory_points = { 12830 3 }
+		victory_points = {
+			12830 5
+		}
+
 	}
+
 	provinces={
-		11012 12830 
+		12830 
 	}
-	manpower=3122250
+	manpower=734350
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_6
+	state_category=state_level_5
 }

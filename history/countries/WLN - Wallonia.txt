@@ -90,103 +90,52 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic_socialist = {
-		    popularity = 33
+		social_democrat = {
+		    popularity = 38.9
 	    }
-	    social_liberal = {
-		    popularity = 27
+	    market_liberal = {
+		    popularity = 26.69
 		}
 		conservative = {
-		    popularity = 17
-		}
-		nationalist = {
-		    popularity = 4
+		    popularity = 15.18
 		}
 		progressive = {
-		    popularity = 18
+		    popularity = 8.62
 		}
 		communist = {
-		    popularity = 1
+		    popularity = 5.75
+		}
+		nationalist = {
+		    popularity = 4.86
 		}
 		
 	}
-	ruling_party = democratic_socialist
-	last_election = "1999.1.1"
+	ruling_party = market_liberal
+	last_election = "2014.5.26"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Jean-Claude Van Cauwenberghe"
-	picture = "Jean_Cauwenberghe.dds"
-	ideology = democratic_socialist_ideology
+	name = "Rudy Demotte"
+	picture = "Rudy_Demotte.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Serge Jubla"
-	picture = "Serge_Kubla.dds"
-	ideology = social_liberal_ideology
+	name = "Willy Borsus"
+	picture = "Willy_Borsus.dds"
+	ideology = libertarian
 }
 
-2009.1.1 = {
-	set_party_name = {
-		ideology = social_liberal
-		long_name = WLN_social_liberal_party_MR_long
-		name = WLN_social_liberal_party_MR
-	}
-	set_party_name = {
-		ideology = conservative
-		long_name = WLN_conservative_party_CDH_long
-		name = WLN_conservative_party_CDH
-	}
-	set_party_name = {
-		ideology = progressive
-		long_name = WLN_progressive_party_ECOLO_long
-		name = WLN_progressive_party_ECOLO
-	}
-	set_party_name = {
-		ideology = communist
-		long_name = WLN_communist_party_PTBGO_long
-		name = WLN_communist_party_PTBGO
-	}
+create_country_leader = {
+	name = "André Antoine"
+	picture = "Andre_Antoine.dds"
+	ideology = christian_democrat
 }
-	
-2012.1.1 = {
-    set_politics = {
-	    parties = {
-		    nationalist = {
-			    popularity = 8
-		    }
-	    	conservative = {
-		    	popularity = 17
-		    }
-		    social_liberal = {
-		        popularity = 29
-		    }
-		    democratic_socialist = {
-		        popularity = 32
-		    }
-			progressive = {
-			    popularity = 10
-			}
-			communist = {
-			    popularity = 5
-			}
-			
-	    }    
-	    ruling_party = democratic_socialist
-	    last_election = "2014.1.1"
-	    election_frequency = 60
-	    elections_allowed = yes
-	}
-	create_country_leader = {
-		name = "Rudy Demotte"
-		picture = "Rudy_Demotte.dds"
-		ideology = democratic_socialist_ideology
-	}
-	create_country_leader = {
-		name = "Willy Borsus"
-		picture = "Willy_Borsus.dds"
-		ideology = social_liberal_ideology
-	}
+
+create_country_leader = {
+	name = "Philippe Henry"
+	picture = "Philippe_Henry.dds"
+	ideology = green
 }
