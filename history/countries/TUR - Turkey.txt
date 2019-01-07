@@ -88,17 +88,6 @@ set_technology = {
 	excavation1 = 1
 }
 
-create_equipment_variant = { name = "G3A7A1" type = infantry_equipment_1 obsolete = yes }
-create_equipment_variant = { name = "M48A5T2" type = modern_tank_equipment_1 upgrades = { tank_gun_upgrade = 3 tank_reliability_upgrade = 1 tank_engine_upgrade = 2 } obsolete = yes  }
-create_equipment_variant = { name = "Tepe-class" type = frigate_1 obsolete = yes }
-create_equipment_variant = { name = "Gabya-class" type = frigate_2 obsolete = yes }
-create_equipment_variant = { name = "Yavuz-class" type = frigate_2 obsolete = yes  }
-create_equipment_variant = { name = "Barbaros-class" type = frigate_2 upgrades = { ship_torpedo_upgrade = 1 destroyer_engine_upgrade = 2 }  }
-create_equipment_variant = { name = "Ay-class" type = submarine_2  }
-create_equipment_variant = { name = "Preveze-class" type = submarine_2  }
-
-
-
 diplomatic_relation = { country = AZR relation = non_aggression_pact }
 diplomatic_relation = { country = NCY relation = non_aggression_pact }
 give_guarantee = AZR
@@ -114,7 +103,7 @@ set_country_flag = sunni_islam
 add_ideas = {
 	population_growth_steady
 	limited_conscription
-	kurdish_separatism
+	pkk_insurgency
 }
 
 add_opinion_modifier = { target = AZR modifier = large_increase }
@@ -131,51 +120,53 @@ add_opinion_modifier = { target = GRE modifier = rival }
 
 set_politics = {
 	parties = {
-		social_democrat = {
-			popularity = 0
-		}
-		nationalist = {
-			popularity = 0
-		}
-		islamist = {
-			popularity = 0.89
-		}
-		market_liberal = {
-			popularity = 0
-		}
-		conservative = {
+		reactionary = {
 			popularity = 52.59
 		}
-		social_liberal = {
+		social_democrat = {
 			popularity = 30.64
 		}
-		progressive = {
+		democratic_socialist = {
 			popularity = 8.40
 		}
-		reactionary = {
-			popularity = 7.48
-		}
-		democratic_socialist = {
-			popularity = 0
+		conservative = {
+			popularity = 8.37
 		}
 	}
-	ruling_party = conservative
+	ruling_party = reactionary
 	last_election = "2014.6.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Önder Aksakal"
-	picture = "Onder_Aksakal.dds"
-	ideology = social_democrat_ideology
+	name = "Recep Tayyip Erdoğan"
+	picture = "Recep_Tayyip_Erdogan.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Muharrem İnce"
+	picture = "Muharrem_Ince.dds"
+	ideology = kemalist
+}
+
+create_country_leader = {
+	name = "Selahattin Demirtaş"
+	picture = "Selahattin_Demirtas.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Meral Akşener"
+	picture = "Meral_Aksener.dds"
+	ideology = liberal_conservative
 }
 
 create_country_leader = {
 	name = "Devlet Bahçeli"
 	picture = "Devlet_Bahceli.dds"
-	ideology = neo_nationalist
-	traits = { warmonger }
+	ideology = fascist_ideology
 }
 
 create_country_leader = {
@@ -188,44 +179,6 @@ create_country_leader = {
 	name = "Gültekin Uysal"
 	picture = "Gultekin_Uysal.dds"
 	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Recep Tayyip Erdoğan"
-	picture = "Recep_Tayyip_Erdogan.dds"
-	ideology = national_conservative
-	traits = { popular_figurehead }
-}
-
-create_country_leader = {
-	name = "Kemal Kiliçdaroğlu"
-    picture = "Kemal_Kilicdaroglu.dds"
-    ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Selahattin Demirtaş"
-	picture = "Selahattin_Demirtas.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Mustafa Destici"
-	picture = "Mustafa_Destici.dds"
-	ideology = fascist_ideology
-}
-
-create_country_leader = {
-	name = "Doğu Perinçek"
-	picture = "Dogu_Perincek.dds"
-	ideology = reactionary_ideology
-	traits = { ideological_crusader }
-}
-
-create_country_leader = {
-	name = "Alper Taş"
-	picture = "Alper_Tas.dds"
-	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {

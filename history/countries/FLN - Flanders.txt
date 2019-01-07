@@ -90,69 +90,63 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		conservative = {
-		    popularity = 25
+		reactionary = {
+		    popularity = 36.76
 	    }
-	    social_liberal = {
-		    popularity = 22
+	    conservative = {
+		    popularity = 20.48
 		}
-		nationalist = {
-		    popularity = 24
+		market_liberal = {
+		    popularity = 14.15
 		}
-		communist = {
-		    popularity = 16
+		social_democrat = {
+		    popularity = 13.99
 		}
 		progressive = {
-		    popularity = 13
+		    popularity = 8.7
+		}
+		nationalist = {
+		    popularity = 5.92
 		}
 	}
-	ruling_party = conservative
-	last_election = "1999.1.1"
+	ruling_party = reactionary
+	last_election = "2014.5.26"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Luc Van den Brande"
-	picture = "Luc_Brande.dds"
-	ideology = fiscal_conservative
-}
-create_country_leader = {
-	name = "Karel De Gutch"
-	picture = "Karel_Gutch.dds"
-	ideology = social_liberal_ideology
-}
-create_country_leader = {
-	name = "Liesbeth Homans"
-	picture = "Liesbeth_Homans.dds"
-	ideology = neo_nationalist
+	name = "Geert Bourgeois"
+	picture = "Geert_Bourgeois.dds"
+	ideology = reactionary_ideology
 }
 
-2009.1.1 = {
-	set_party_name = {
-		ideology = nationalist
-		long_name = FLN_nationalist_party_NVA_long
-		name = FLN_nationalist_party_NVA
-	}
+create_country_leader = {
+	name = "Kris Peeters"
+	picture = "Kris_Peeters.dds"
+	ideology = christian_democrat
 }
-	
-2012.1.1 = {
-    set_politics = {
-	    parties = {
-		    nationalist = { popularity = 37 }
-	    	conservative = { popularity = 21 }
-		    social_liberal = { popularity = 16 }
-		    communist = { popularity = 16 }
-			progressive = { popularity = 10 }
-	    }    
-	    ruling_party = nationalist
-	    last_election = "2013.1.1"
-	    election_frequency = 60
-	    elections_allowed = yes
-	}
-	create_country_leader = {
-		name = "Kris Peeters"
-		picture = "Kris_Peeters.dds"
-		ideology = social_liberal_ideology
-	}
+
+create_country_leader = {
+	name = "Gwendolyn Rutten"
+	picture = "Gwendolyn_Rutten.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "John Crombez"
+	picture = "John_Crombez.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Meyrem Almaci"
+	picture = "Meyrem_Almaci.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Tom Van Grieken"
+	picture = "Tom_Van_Grieken.dds"
+	ideology = neo_nationalist
 }

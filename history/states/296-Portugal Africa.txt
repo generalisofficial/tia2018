@@ -1,10 +1,7 @@
 
 state={
 	id=296
-	name="STATE_296" # Guinea-Bissau
-	manpower = 1640000
-	
-	state_category = state_level_5
+	name="STATE_296"
 
 	history={
 		owner = GBS
@@ -13,13 +10,21 @@ state={
 			industrial_complex = 3
 			12891 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = GBS
-		victory_points = { 12891 1 }
+		victory_points = {
+			12891 1 
+		}
+
 	}
 
 	provinces={
-		12747 12891 
+		12747 12891 13336 
 	}
+	manpower=1640000
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

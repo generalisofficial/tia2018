@@ -92,6 +92,11 @@ add_ideas = {
     isolationism
 }
 
+declare_war_on = {
+	target = YEM
+	type = annex_everything
+}
+
 set_politics = {
 
 	parties = {
@@ -109,14 +114,9 @@ set_politics = {
 	elections_allowed = no
 }
 
-declare_war_on = {
-	target = YEM
-	type = annex_everything
-}
-
 create_country_leader = {
 	name = "Abdul-Malik Badreddin al-Houthi"
-	picture = "gfx/leaders/YEM/Abdul_Malik_Badreddin_al_Houthi.dds"
+	picture = "Abdul_Malik_Badreddin_al_Houthi.dds"
 	ideology = islamic_democracy
 }
 

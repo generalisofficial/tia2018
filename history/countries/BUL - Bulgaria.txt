@@ -101,16 +101,25 @@ set_politics = {
 
 	parties = {
 		conservative = {
-			popularity = 40.63
+			popularity = 32.65
 		}
 		social_democrat = {
-			popularity = 59.37
+			popularity = 27.19
+		}
+		fascist = {
+			popularity = 27.02
+		}
+		social_liberal = {
+			popularity = 8.99
+		}
+		market_liberal = {
+			popularity = 4.15
 		}
 	}
 	
-	ruling_party = social_democrat
-	last_election = "2016.11.13"
-	election_frequency = 60
+	ruling_party = conservative
+	last_election = "2017.3.26"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
@@ -121,33 +130,45 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Simeon Saxe-Coburg-Gotha"
-	picture = "Simeon_Saxe_Coburg_Gotha.dds"
-	ideology = absolute_monarchist 
+	name = "Korneliya Ninova"
+	picture = "Korneliya_Ninova.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Rumen Radev"
-	picture = "Rumen_Radev.dds"
-	ideology = social_democrat_ideology 
+	name = "Volen Siderov"
+	picture = "Volen_Siderov.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Valeri Simeonov"
+	picture = "Valeri_Simeonov.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Krasimir Karakachanov"
+	picture = "Krasimir_Karakachanov.dds"
+	ideology = neo_nationalist
 }
 
 create_country_leader = {
 	name = "Mustafa Karadaya"
 	picture = "Mustafa_Karadaya.dds"
-	ideology = social_liberal_ideology
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Veselin Mareshki"
+	picture = "Veselin_Mareshki.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Margarita Mileva"
 	picture = "Margarita_Mileva.dds"
 	ideology = democratic_socialist_ideology 
-}
-
-create_country_leader = {
-	name = "Stoyan Panchev"
-	picture = "Stoyan_Panchev.dds"
-	ideology = libertarian  
 }
 
 create_country_leader = {
@@ -163,21 +184,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Krasimir Karakachanov"
-	picture = "Krasimir_Karakachanov.dds"
-	ideology = reactionary_ideology    
-}
-
-create_country_leader = {
-	name = "Volen Siderov"
-	picture = "Volen_Siderov.dds"
-	ideology = proto_fascist      
-}
-
-create_country_leader = {
-	name = "Boyan Rasate"
-	picture = "Boyan_Rasate.dds"
-	ideology = national_socialist      
+	name = "Simeon Saxe-Coburg-Gotha"
+	picture = "Simeon_Saxe_Coburg_Gotha.dds"
+	ideology = absolute_monarchist 
 }
 
 create_field_marshal = {

@@ -1,0 +1,121 @@
+private_military_companies = { 
+    hire_wagner_group = {
+        icon = generic_political_discourse
+
+        available = {
+            has_war = yes
+			NOT = { has_war_with = SOV }
+        }
+		
+		visible = {
+			NOT = { has_global_flag = hired_wagner_group }
+        }
+
+        cost = 500
+
+        fire_only_once = no
+		
+        complete_effect = {
+			set_global_flag = hired_wagner_group
+			hidden_effect = {
+				division_template = {
+					name = "Wagner Group"
+					priority = 2
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Wagner Group Unit\" division_template = \"Wagner Group\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Wagner Group Unit\" division_template = \"Wagner Group\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Wagner Group Unit\" division_template = \"Wagner Group\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Wagner Group Unit\" division_template = \"Wagner Group\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+				}
+				set_division_template_lock = { division_template = "Wagner Group" is_locked = yes }
+			}
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	hire_slavonic_corps = {
+        icon = generic_political_discourse
+
+        available = {
+            has_war = yes
+			NOT = { has_war_with = HKN }
+        }
+		
+		visible = {
+			NOT = { has_global_flag = hired_slavonic_corps }
+        }
+
+        cost = 500
+
+        fire_only_once = no
+		
+        complete_effect = {
+			set_global_flag = hired_slavonic_corps
+			hidden_effect = {
+				division_template = {
+					name = "Slavonic Corps"
+					priority = 2
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Slavonic Corps Unit\" division_template = \"Slavonic Corps\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Slavonic Corps Unit\" division_template = \"Slavonic Corps\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Slavonic Corps Unit\" division_template = \"Slavonic Corps\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Slavonic Corps Unit\" division_template = \"Slavonic Corps\" start_experience_factor = 4.0"
+						owner = ROOT
+					}
+				}
+				set_division_template_lock = { division_template = "Slavonic Corps" is_locked = yes }
+			}
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

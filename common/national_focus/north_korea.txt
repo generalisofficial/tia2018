@@ -13,6 +13,7 @@ focus_tree = {
 	
 	default = no
 	
+		continuous_focus_position = { x = 20 y = 2000 }
 	
 	focus = {
 		id = PRK_Peninsula_Conflict
@@ -357,8 +358,6 @@ focus_tree = {
         ruling_party = social_democrat
         elections_allowed = yes
 		}
-		drop_cosmetic_tag = yes
-		set_cosmetic_tag = PRK_social_democrat
 		}
 		
 		ai_will_do = {
@@ -390,7 +389,7 @@ focus_tree = {
 		prerequisite = { focus = PRK_Coup_Recovery }
 		
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.075
 		KOR = { add_opinion_modifier = { target = PRK modifier = recent_actions_positive } }
 		KOR = { add_opinion_modifier = { target = PRK modifier = state_visit } }
 		}
@@ -409,6 +408,7 @@ focus_tree = {
 		
 		completion_reward = {
 		add_political_power = 300
+		add_stability = 0.055
 		USA = { add_opinion_modifier = { target = PRK modifier = recent_actions_positive } }
 		USA = { add_opinion_modifier = { target = PRK modifier = state_visit } }
 		SOV = {
@@ -457,6 +457,7 @@ focus_tree = {
 		prerequisite = { focus = PRK_End_Nuclear_Program }
 		
 		completion_reward = {
+		 add_stability = 0.025
 		 JAP = {
 				add_opinion_modifier = {
 					target = KOR
@@ -1099,6 +1100,7 @@ focus_tree = {
 	    prerequisite = { focus = PRK_Prepare_for_War }
 	    prerequisite = { focus = PRK_Continue_the_Nuclear_Program }
 	    prerequisite = { focus = PRK_Finish_Fortifications }
+		mutually_exclusive = { focus = PRK_Status_Quo }
 		
 		completion_reward = {
 		add_political_power = -50
@@ -1176,7 +1178,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRK_Form_the_Alliance
+		id = PRK_Strenghten_Our_Alliance
 		icon = military_deal
 		x = 20
 		y = 11
@@ -1186,10 +1188,7 @@ focus_tree = {
 		prerequisite = { focus = PRK_Military_Vietnam_Alliance }
 		
 		completion_reward = {
-	    create_faction = "United Workers of Asia"
-		LAO = { country_event = north_korea.9 }
-		PRC = { country_event = north_korea.9 }
-		VIN = { country_event = north_korea.9 }
+	    PRC = { add_opinion_modifier = { target = PRK modifier = state_visit } }
 		}
 		ai_will_do = {
 			factor = 35
@@ -1202,7 +1201,7 @@ focus_tree = {
 		x = 20
 		y = 12
 		cost = 5
-	    prerequisite = { focus = PRK_Form_the_Alliance }
+	    prerequisite = { focus = PRK_Strenghten_Our_Alliance }
 		
 		completion_reward = {
 	    add_ideas = army_organization_bonus

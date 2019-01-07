@@ -109,17 +109,23 @@ set_politics = {
 		reactionary = {
 			popularity = 49.27
 		}
-		conservative = {
-			popularity = 14.38
-		}
 		fascist = {
 			popularity = 19.06
 		}
-		progressive = {
+		social_democrat = {
 			popularity = 11.91
+		}
+		progressive = {
+			popularity = 7.06
+		}
+		conservative = {
+			popularity = 6.66
 		}
 		social_liberal = {
 			popularity = 5.38
+		}
+		market_liberal = {
+			popularity = 0.66
 		}
 	}
 	
@@ -136,12 +142,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zsolt Semjén"
-	picture = "Zsolt_Semjen.dds"
-	ideology = christian_democrat
-}
-
-create_country_leader = {
 	name = "Gábor Vona"
 	picture = "Gabor_Vona.dds"
 	ideology = fascist_ideology
@@ -154,15 +154,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gergely Karácsony"
-	picture = "Gergely_Karacsony.dds"
+	name = "Bernadett Szél"
+	picture = "Bernadett_Szel.dds"
 	ideology = green
+}
+
+create_country_leader = {
+	name = "Zsolt Semjén"
+	picture = "Zsolt_Semjen.dds"
+	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Ferenc Gyurcsány"
 	picture = "Ferenc_Gyurcsany.dds"
 	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Péter Juhász"
+	picture = "Peter_Juhasz.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -175,12 +187,6 @@ create_country_leader = {
 	name = "Szilárd Kalmár"
 	picture = "Szilard_Kalmar.dds"
 	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Gábor Fodor"
-	picture = "Gabor_Fodor.dds"
-	ideology = libertarian
 }
 
 create_field_marshal = {

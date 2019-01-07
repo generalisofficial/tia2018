@@ -10,42 +10,58 @@
  TAKE_DECISION_HEADER:0 "§HTake decision§!\n\n"
  DECISION_COST_DESC:0 "It costs £pol_power $VAL|H0$ to take the decision"
  DECISION_COST_NOT_ENOUGH:0 "It costs £pol_power $VAL|HR$ to take the decision"
+ 
  #Formable Nation Decisions
  formable_nation_decisions:0 "Formable Nations"
  formable_nation_decisions_desc:0 "We have bigger plans than just '[This.GetName]'; [This.GetName] is not nearly enough. We need to think bigger. We need to have vision for the future."
  form_scandinavia:0 "Form Scandinavia"
  form_peru_bolivia:0 "Form Peru-Bolivia"
  form_peru_bolivia_desc:0 "Having reconquered the lands of our old confederation, we can put in action our bigger plans and revive it. We can claim to become the Peru-Bolivian Confederation once again, generations will remember this moment!"
+
  #Soviet Union
  soviet_union:0 "Union of Soviet Socialist Republics"
  soviet_union_desc:0 "The Union of Soviet Socialist Republics was a socialist federation in Eurasia that existed from 1922 to 1991. Nominally a union of multiple national Soviet republics, its government and economy were highly centralized. The country was a one-party state, governed by the Communist Party with Moscow as its capital in its largest republic, the Russian Soviet Federative Socialist Republic. Russians dominated the USSR. Other major urban centres were Leningrad, Kiev, Minsk, Alma-Ata and Novosibirsk."
  restore_the_ussr:0 "Restore the USSR"
+ 
+ #Private Military Companies
+ private_military_companies:0 "Private Military Companies"
+ private_military_companies_desc:0 "A private military company is a private company providing armed combat or security services for financial gain. The services and expertise offered by PMCs are typically similar to those of governmental security, military or police forces, most often on a smaller scale. While PMCs often provide services to train or supplement official armed forces in service of governments, they can also be employed by private companies to provide bodyguards for key staff or protection of company premises, especially in hostile territories."
+ hire_wagner_group:0 "Hire the Wagner Group"
+ hire_slavonic_corps:0 "Hire the Slavonic Corps"
+ 
  #Diplomatic Doctrine
  diplomatic_decisions:0 "Diplomacy"
  diplomacy_towards_palestine:0 "Diplomacy towards Palestine"
  diplomacy_towards_taiwan:0 "Diplomacy towards Taiwan"
  seek_friendship_of_neighbor:0 "Seek [From.GetAdjective] Friendship"
+ 
  ##Domestic Affairs
  domestic_affairs:0 "Domestic Affairs"
  hold_snap_election:0 "Hold Snap Election"
+ 
  #Foreign Affairs
  foreign_affairs:0 "Foreign Affairs"
  declare_neutrality:0 "Declare Neutrality"
  abandon_neutrality:0 "Abandon Neutrality"
+ 
  #Army Decisions
  army_decisions:0 "Army"
  expand_the_army_officer_corps:0 "Expand the Army Officer Corps"
+ 
  #Navy Decisions
  navy_decisions:0 "Navy"
  expand_the_navy_officer_corps:0 "Expand the Navy Officer Corps"
+ 
  #Air Force Decisions
  air_force_decisions:0 "Air Force"
  expand_the_air_force_officer_corps:0 "Expand the Air Force Officer Corps"
+ 
  #Secret Agreements
  secret_agreements:0 "Secret Agreements"
  secret_agreements_desc:0 "Some things need to be handled below the surface and behind closed doors. By privately contacting specific countries regarding specific inquiries, we might just find common ground to stand on with these countries."
  operation_napoleon:0 "Operation Napoleon"
  operation_napoleon_desc:0 "A secret agreement to see Belgium divided, the German, Dutch and French governments should jointly pursue 'Operation Napoleon', a military plot to see the Belgian state destroyed."
+ 
  #Syrian Civil War
  syrian_civil_war:0 "Syrian Civil War"
  syrian_civil_war_desc:0 "The Syrian Civil War is an ongoing multi-sided armed conflict in Syria fought between the Ba'athist Syrian Arab Republic led by President Bashar al-Assad, along with its allies, and various forces opposing both the government and each other in varying combinations."
@@ -53,69 +69,82 @@
  operation_olive_branch_desc:0 "Last year, we finished Operation Euphrates Shield, eliminating ISIL from our border and capturing Jarabulus, Dabiq and al-Bab. This offensive secured the split of the Afrin & Manbij areas held by the SDF. To secure our border, we need to occupy Afrin and create a safe zone in northern Syria."
  legalize_syrian_civil_defence:0 "Legalize the Syrian Civil Defence"
  ban_syrian_civil_defence:0 "Ban the Syrian Civil Defence"
+ 
  #War in Donbass
  war_in_donbass:0 "War in Donbass"
  war_in_donbass_desc:0 "The War in Donbass is an armed conflict in the Donbass region of Ukraine. From the beginning of March 2014, protests by pro-Russian and anti-government groups took place in the Donetsk and Luhansk oblasts of Ukraine, in the aftermath of the 2014 Ukrainian revolution and the Euromaidan movement. These demonstrations, which followed the annexation of Crimea by the Russian Federation, and which were part of a wider group of concurrent pro-Russian protests across southern and eastern Ukraine, escalated into an armed conflict between the separatist forces of the self-declared Donetsk People's Republic, and the Ukrainian government."
  propose_ceasefire_DPR:0 "Propose Ukrainian Ceasefire"
+ 
  #African Union
  african_union_decisions:0 "African Union"
+ 
  #Arab League
  arab_league_decisions:0 "Arab League"
+ arab_league_decisions_desc:0 "The Arab League is a regional organization of Arab states in and around North Africa, the Horn of Africa and Arabia. It was formed in Cairo on 22 March 1945 with six members: Kingdom of Egypt, Kingdom of Iraq, Transjordan, Lebanon, Saudi Arabia, and Syria. Yemen joined as a member on 5 May 1945."
+ join_arab_league:0 "Join the Arab League"
+ leave_arab_league:0 "Leave the Arab League"
+ 
  #European Union
  european_union_decisions:0 "European Union"
  european_union_decisions_desc:0 "The European Union is a political and economic union of 28 member states that are located primarily in Europe. The EU has developed an internal single market through a standardised system of laws that apply in all member states in those matters where members have agreed to act as one. EU policies aim to ensure the free movement of people, goods, services and capital within the internal market, enact legislation in justice and home affairs and maintain common policies on trade, agriculture, fisheries and regional development."
  apply_to_join_the_EU:0 "Apply to join the EU"
  leave_the_EU:0 "Leave the EU"
  adopt_euro:0 "Adopt the Euro"
+ 
  #Non-Aligned Movement
  non_aligned_movement_decisions:0 "Non-Aligned Movement"
- non_aligned_movement_decisions_desc:0 "The Non-Aligned Movement is a group of states that are not formally aligned with or against any major power bloc. As of 2018, the movement has 120 members."
+ non_aligned_movement_decisions_desc:0 "The Non-Aligned Movement is a group of states that are not formally aligned with or against any major power bloc."
  join_non_aligned_movement:0 "Join the Non-Aligned Movement"
  leave_non_aligned_movement:0 "Leave the Non-Aligned Movement"
+ 
  #Baltic Assembly
  baltic_assembly_decisions:0 "Baltic Assembly"
  baltic_assembly_decisions_desc:0 "The Baltic Assembly is a regional organisation that promotes intergovernmental cooperation between Estonia, Latvia, and Lithuania. It attempts to find a common position in relation to many international issues, including economic, political and cultural issues. The decisions of the assembly are advisory."
  join_baltic_assembly:0 "Join the Baltic Assembly"
  leave_baltic_assembly:0 "Leave the Baltic Assembly"
+ 
  #Nordic Council
  nordic_council_decisions:0 "Nordic Council"
  nordic_council_decisions_desc:0 "The Nordic Council is the official body for formal inter-parliamentary co-operation among the Nordic countries. Formed in 1952, it has 87 representatives from Denmark, Finland, Iceland, Norway, and Sweden. The representatives are members of parliament in their respective countries or areas and are elected by those parliaments."
  join_nordic_council:0 "Join the Nordic Council"
  leave_nordic_council:0 "Leave the Nordic Council"
+ 
  #East African Community
  east_african_community_decisions:0 "East African Community"
  east_african_community_decisions_desc:0 "The East African Community is an intergovernmental organization composed of six countries in the African Great Lakes region in eastern Africa: Burundi, Kenya, Rwanda, South Sudan, Tanzania, and Uganda."
  join_east_african_community:0 "Join the East African Community"
  leave_east_african_community:0 "Leave the East African Community"
+ 
  #GUAM
  guam_decisions:0 "GUAM"
  guam_decisions_desc:0 "GUAM is a regional organization of four post-Soviet states: Georgia, Ukraine, Azerbaijan, and Moldova."
  join_guam:0 "Join GUAM"
  leave_guam:0 "Leave GUAM"
+ 
  #Commonwealth of Independent States
  commonwealth_of_independent_states_decisions:0 "Commonwealth of Independent States"
  commonwealth_of_independent_states_decisions_desc:0 "The Commonwealth of Independent States, also sometimes called the Russian Commonwealth in order to distinguish it from the Commonwealth of Nations, is a regional intergovernmental organisation of 10 post-Soviet republics in Eurasia formed following the dissolution of the Soviet Union."
  join_commonwealth_of_independent_states:0 "Join the Commonwealth of Independent States"
  leave_commonwealth_of_independent_states:0 "Leave the Commonwealth of Independent States"
+ 
+ #Gulf Cooperation Council
+ gulf_cooperation_council_decisions:0 "Gulf Cooperation Council"
+ gulf_cooperation_council_decisions_desc:0 "The Gulf Cooperation Council is a regional intergovernmental political and economic union consisting of all Arab states of the Persian Gulf except Iraq. The Charter of the Gulf Cooperation Council was signed on 25 May 1981, formally establishing the institution."
+ join_gulf_cooperation_council:0 "Join the Gulf Cooperation Council"
+ leave_gulf_cooperation_council:0 "Leave the Gulf Cooperation Council"
+ 
+ #Shanghai Cooperation Organization
+ shanghai_cooperation_organization_decisions:0 "Shanghai Cooperation Organization"
+ shanghai_cooperation_organization_decisions_desc:0 "The Shanghai Cooperation Organization is a Eurasian political, economic, and security alliance. The SCO is widely regarded as the alliance of East due to its growing centrality in Asia-Pacific, and has been the primary security pillar of the region. Being the world's forefront regional organisation in economic power and political influence, and one of the world's strongest military alliances, it is also the largest regional organisation in the world in terms of population, covering nearly half of the human population."
+ join_shanghai_cooperation_organization:0 "Join the Gulf Cooperation Council"
+ leave_shanghai_cooperation_organization:0 "Leave the Gulf Cooperation Council"
+ 
  #War in North-West Pakistan
  war_in_northwest_pakistan_decisions:0 "War in North-West Pakistan"
  war_in_northwest_pakistan_decisions_desc:0 "The War in North-West Pakistan is an armed conflict involving Pakistan, and armed militant groups such as the Tehrik-i-Taliban Pakistan, Jundallah, Lashkar-e-Islam, TNSM, al-Qaeda, and their Central Asian allies such as the ISIL–Khorasan, Islamic Movement of Uzbekistan, East Turkistan Movement, Emirate of Caucasus, and elements of organized crime."
  launch_invasion_of_khyber_pakhtunkhwa:0 "Launch Invasion of Khyber Pakhtunkhwa"
+ 
  #Overseas Military Bases
  foreign_bases:0 "Overseas Military Bases"
  foreign_bases_desc:0 "The establishment of military bases abroad enable a country to project power, e.g. to conduct expeditionary warfare, and thereby influence events abroad. Depending on their size and infrastructure, they can be used as staging areas or for logistical, communications and intelligence support. Many conflicts throughout modern history have resulted in overseas military bases being established in large numbers by world powers and the existence of bases abroad has served countries having them in achieving political and military goals."
  terminate_foreign_bases:0 "Evict [From.GetAdjective] Military Bases"
- 
- 
- #Economy
-
- economy_oil_cut_sov:0 "Oil supplies cut off from [SOV.GetNameDef]"
- economic_decisions:0 "Economy"
- sov_economy.1.t:0 "[SOV.GetName] cuts our oil supply!"
- sov_economy.1.d:0 "[SOV.GetNameDef] just stopped supplying us with oil! Did me make them angry somehow?"
- sov_economy.1.a:0 "Crap."
- economy_news.1.t:0 "[SOV.GetNameDef] cut off oil supplies to [EST.GetName]!"
- economy_news.1.d:0 "[SOV.GetNameDef] just announces that it took the decisions to end all oil transport into [EST.GetName]. The reasons for this are currently unclear to the public, but it seems like [EST.GetName] has angered the opposing gouvernment with their recent international actions."
- economy_news.1.a:0 "They earned it."
- economy_news.1.b:0 "Our population won't like this."
- economy_news.1.c:0 "Worrying..."

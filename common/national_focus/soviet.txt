@@ -53,7 +53,7 @@ focus_tree = {
 	focus = {
 		id = SOV_vladimir_putin
 		icon = putin
-		x = 24
+		x = 26
 		y = 1
 		cost = 0
 		prerequisite = {
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = SOV_pavel_grudinin
 		icon = grudinin
-		x = 4
+		x = 3
 		y = 1
 		cost = 0
 		prerequisite = {
@@ -131,14 +131,19 @@ focus_tree = {
 	}
 	
 		focus = {
-		id = SOV_european_union_cooperation
+		id = SOV_closer_with_the_west
 		icon = align_to_europe
-		x = 8
-		y = 4
+		x = 10
+		y = 3
 		cost = 10
 		
 		prerequisite = {
 		    focus = SOV_begin_the_reform
+			focus = SOV_pavel_grudinin
+		}
+		
+		mutually_exclusive = {
+		    focus = SOV_closer_with_the_east
 		}
 		
 		available = {}
@@ -153,15 +158,19 @@ focus_tree = {
 	}
 	
 		focus = {
-		id = SOV_the_russian_economy
-		icon = neutrality
-		x = 4
+		id = SOV_closer_with_the_east
+		icon = align_to_csto
+		x = 6
 		y = 3
 		cost = 10
 		
 		prerequisite = {
 		    focus = SOV_begin_the_reform
-		    focus = SOV_pavel_grudinin
+			focus = SOV_pavel_grudinin
+		}
+		
+		mutually_exclusive = {
+		    focus = SOV_closer_with_the_west
 		}
 		
 		available = {}
@@ -176,14 +185,36 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_reestablish_relations_with_ukraine
+		id = SOV_planning_a_state_visit_to_kiev
 		icon = align_to_ukraine
-		x = 8
-		y = 5
+		x = 9
+		y = 4
 		cost = 10
 		
 		prerequisite = {
-		    focus = SOV_european_union_cooperation
+		    focus = SOV_closer_with_the_west
+		}
+		
+		available = {}
+
+		completion_reward = {
+		    
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	focus = {
+		id = SOV_
+		icon = align_to_europe
+		x = 11
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+		    focus = SOV_closer_with_the_west
 		}
 		
 		available = {}
@@ -266,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = SOV_vladimir_zhirinovsky
 		icon = zhirinovsky
-		x = 34
+		x = 36
 		y = 1
 		cost = 0
 		
@@ -338,28 +369,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
-		id = SOV_kerch_strait_incident
-		icon = attack_ukraine
-		x = 22
-		y = 3
-		cost = 10
-		
-		
-		prerequisite = {
-		    focus = 
-		}
-		
-		completion_reward = {
-		    
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-		focus = {
+	focus = {
 		id = SOV_stabilizing_the_economy
 		icon = russian_ruble
 		x = 42
@@ -391,7 +401,7 @@ focus_tree = {
 		}
 	}
 	
-	    focus = {
+	   focus = {
 		id = SOV_reform_the_economy
 		icon = construction
 		x = 44
@@ -1049,7 +1059,7 @@ focus_tree = {
 	focus = {
 		id = SOV_begin_the_reform
 		icon = attack_fascism
-        x = 10
+        x = 12
 		y = 2
 		cost = 10
 		
@@ -1078,7 +1088,7 @@ focus_tree = {
 	focus = {
 		id = SOV_crack_down_the_oilgarchy
 		icon = destroy_society
-		x = 13
+		x = 15
 		y = 4
 		cost = 10
 		
@@ -1104,7 +1114,7 @@ focus_tree = {
 	focus = {
 		id = SOV_discredit_putin
 		icon = putin
-		x = 11
+		x = 13
 		y = 5
 		cost = 10
 		
@@ -1132,7 +1142,7 @@ focus_tree = {
 	focus = {
 		id = SOV_purge_the_putinist_parlament
 		icon = self_management
-		x = 11
+		x = 13
 		y = 6
 		cost = 10
 		
@@ -1173,6 +1183,54 @@ focus_tree = {
 			factor = 10
 		}
 	}
-	
+	focus = {
+		id = SOV_crimean_bridge
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = SOV_standing_firm_against_the_west
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+				}
+			ai_will_do = {
+					factor = 10
+				}
+
 	}
+	focus = {
+		id = SOV_pension_reforms
+		icon = GFX_focus_generic_concessions
+		cost = 10
+		prerequisite = {
+			focus = SOV_standing_firm_against_the_west
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = SOV_standing_firm_against_the_west
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = SOV_establishing_a_new_government
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = SOV_establishing_a_new_government
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = SOV_vladimir_putin
+		}
+		x = 26
+		y = 2
+
+	}
+}
 	

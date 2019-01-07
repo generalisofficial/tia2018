@@ -2,29 +2,34 @@
 state={
 	id=153
 	name="STATE_153"
-	manpower = 1855340
-	
-	state_category = state_level_7
-	
-	resources = {
-		tungsten=16
-		steel = 10
-		oil = 1
+	resources={
+		tungsten=16.000
+		steel=10.000
+		oil=1.000
 	}
 
 	history={
 		owner = AUS
 		add_core_of = AUS
-		victory_points = { 673 5 }	#Innsbruck
-		victory_points = { 6673 1 }	#Villach
+		victory_points = {
+			673 5 
+		}
+		victory_points = {
+			6673 1 
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 4
+
 		}
+
 	}
 
 	provinces={
-		668 671 673 3675 6673 6678 6680 9633 9636 11618 11634 
+		671 673 6678 9633 9636 11618 11634 
 	}
+	manpower=1855340
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

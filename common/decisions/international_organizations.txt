@@ -3,15 +3,13 @@ non_aligned_movement_decisions = {
 	join_non_aligned_movement = {
 	
 		visible = {
-			NOT = { has_idea = non_aligned_movement_member }
+			NOT = { has_idea = non_aligned_movement_member has_idea = salafist_jihadist_group }
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = SOV }
 			NOT = { is_in_faction_with = PRC }
 		}
 		available = {
-			NOT = { is_in_faction_with = USA }
-			NOT = { is_in_faction_with = SOV }
-			NOT = { is_in_faction_with = PRC }
+			NOT = { is_in_faction_with = USA is_in_faction_with = SOV is_in_faction_with = PRC has_idea = non_member_state }
 		}
 		
 		complete_effect = {
@@ -55,11 +53,11 @@ baltic_assembly_decisions = {
 	join_baltic_assembly = {
 	
 		visible = {
-			NOT = { has_idea = baltic_assembly_member }
+			NOT = { has_idea = baltic_assembly_member has_idea = salafist_jihadist_group }
 			OR = { original_tag = EST original_tag = LAT original_tag = LIT	}
 		}
 		available = {
-            NOT = { has_idea = baltic_assembly_member }
+            NOT = { has_idea = baltic_assembly_member has_idea = non_member_state }
 		}
 		
 		complete_effect = {
@@ -103,11 +101,11 @@ nordic_council_decisions = {
 	join_nordic_council = {
 	
 		visible = {
-			NOT = { has_idea = nordic_council_member }
+			NOT = { has_idea = nordic_council_member has_idea = salafist_jihadist_group }
 			OR = { original_tag = SWE original_tag = DEN original_tag = NOR original_tag = FIN original_tag = ICE }
 		}
 		available = {
-            NOT = { has_idea = nordic_council_member }
+            NOT = { has_idea = nordic_council_member has_idea = non_member_state }
 		}
 		
 		complete_effect = {
@@ -151,11 +149,11 @@ east_african_community_decisions = {
 	join_east_african_community = {
 	
 		visible = {
-			NOT = { has_idea = east_african_community_member }
+			NOT = { has_idea = east_african_community_member has_idea = salafist_jihadist_group }
 			OR = { original_tag = SSD original_tag = UGA original_tag = RWA original_tag = KEN original_tag = TNZ original_tag = BUR }
 		}
 		available = {
-            NOT = { has_idea = east_african_community_member }
+            NOT = { has_idea = east_african_community_member has_idea = non_member_state }
 		}
 		
 		complete_effect = {
@@ -199,11 +197,11 @@ guam_decisions = {
 	join_guam = {
 	
 		visible = {
-			NOT = { has_idea = guam_member }
+			NOT = { has_idea = guam_member has_idea = salafist_jihadist_group }
 			OR = { original_tag = GEO original_tag = UKR original_tag = AZR original_tag = MDV }
 		}
 		available = {
-            NOT = { has_idea = guam_member }
+            NOT = { has_idea = guam_member has_idea = non_member_state }
 		}
 		
 		complete_effect = {
@@ -247,11 +245,11 @@ commonwealth_of_independent_states_decisions = {
 	join_commonwealth_of_independent_states = {
 	
 		visible = {
-			NOT = { has_idea = commonwealth_of_independent_states_member }
+			NOT = { has_idea = commonwealth_of_independent_states_member has_idea = salafist_jihadist_group }
 			OR = { original_tag = SOV original_tag = UKR original_tag = BLR original_tag = LIT original_tag = LAT original_tag = EST original_tag = MDV original_tag = GEO original_tag = TRA original_tag = GEO original_tag = ABK original_tag = SOS original_tag = NGK original_tag = ARM original_tag = AZR original_tag = KAZ original_tag = UZB original_tag = KYR original_tag = TRM original_tag = TJI }
 		}
 		available = {
-            NOT = { has_idea = commonwealth_of_independent_states_member }
+            NOT = { has_idea = commonwealth_of_independent_states_member has_idea = non_member_state }
 		}
 		
 		complete_effect = {
@@ -278,6 +276,151 @@ commonwealth_of_independent_states_decisions = {
 		}
 		
 		icon = commonwealth_of_independent_states
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+gulf_cooperation_council_decisions = {
+	
+	join_gulf_cooperation_council = {
+	
+		visible = {
+			NOT = { has_idea = gulf_cooperation_council_member has_idea = salafist_jihadist_group }
+			OR = { original_tag = SAU original_tag = OMA original_tag = UAE original_tag = QAT original_tag = BAH original_tag = JOR original_tag = YEM original_tag = MOR }
+		}
+		available = {
+            NOT = { has_idea = gulf_cooperation_council_member has_idea = non_member_state }
+		}
+		
+		complete_effect = {
+            add_ideas = gulf_cooperation_council_member
+		}
+		
+		icon = gulf_cooperation_council
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_gulf_cooperation_council  = {
+	
+		visible = {
+			has_idea = gulf_cooperation_council_member
+		}
+		
+		complete_effect = {
+            remove_ideas = gulf_cooperation_council_member
+		}
+		
+		icon = gulf_cooperation_council
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+arab_league_decisions = {
+	
+	join_arab_league = {
+	
+		visible = {
+			NOT = { has_idea = arab_league_member has_idea = salafist_jihadist_group }
+			has_country_flag = country_language_arabic
+		}
+		
+		available = {
+            NOT = { has_idea = arab_league_member has_idea = non_member_state }
+		}
+		
+		complete_effect = {
+            add_ideas = arab_league_member
+		}
+		
+		icon = arab_league
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_arab_league = {
+	
+		visible = {
+			has_idea = arab_league_member
+		}
+		
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = arab_league_member
+		}
+		
+		icon = arab_league
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+shanghai_cooperation_organization_decisions = {
+	
+	join_shanghai_cooperation_organization = {
+	
+		visible = {
+			NOT = { has_idea = shanghai_cooperation_organization_member has_idea = salafist_jihadist_group }
+			OR = { original_tag = RAJ original_tag = PAK original_tag = PRC original_tag = SOV original_tag = KAZ original_tag = TJI original_tag = UZB original_tag = KYR}
+		}
+		
+		available = {
+            NOT = { has_idea = shanghai_cooperation_organization_member has_idea = non_member_state }
+		}
+		
+		complete_effect = {
+            add_ideas = shanghai_cooperation_organization_member
+		}
+		
+		icon = shanghai_cooperation_organization
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_shanghai_cooperation_organization = {
+	
+		visible = {
+			has_idea = shanghai_cooperation_organization_member
+		}
+		
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = shanghai_cooperation_organization_member
+		}
+		
+		icon = shanghai_cooperation_organization
 		
 		cost = 50
 		

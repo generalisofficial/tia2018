@@ -1,6 +1,6 @@
 ﻿capital = 543
 
-oob = "MAD_2000"
+oob = "MAD_2018"
 
 set_research_slots = 2
 set_convoys = 500
@@ -95,31 +95,19 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		nationalist = { popularity = 2 }
-		reactionary = { popularity = 3 }
-		conservative = { popularity = 40 }
-		market_liberal = { popularity = 16 }
-		social_liberal = { popularity = 16 }
-		democratic_socialist = { popularity = 18 }
-		communist = { popularity = 5 }
+		reactionary = { 
+		    popularity = 100
+		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1997.5.1"
-	election_frequency = 48
+	ruling_party = reactionary
+	last_election = "2013.11.7"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Tantely Andrianarivo"
-	picture = "Tantely_Andrianarivo.dds"
-	ideology = fiscal_conservative
-}
-
-2016.1.1 = {
-	create_country_leader = {
-		name = "Olivier Mahafaly Solonadrasana"
-		picture = "Olivier_M_Solonadrasana.dds"
-		ideology = fiscal_conservative
-	}
+	name = "Hery Rajaonarimampianina"
+	picture = "Hery_Rajaonarimampianina.dds"
+	ideology = independent
 }

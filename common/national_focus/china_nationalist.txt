@@ -103,6 +103,10 @@
 			add_stability = 0.01
 			add_political_power = 10
 			add_war_support = -0.01
+			add_popularity = {
+	   			ideology = conservative
+	    		popularity = 0.025
+			}
 		}
 		
 		ai_will_do = {
@@ -214,6 +218,10 @@
 	
 		completion_reward = {
 			add_stability = 0.03
+				add_popularity = {
+	   			ideology = conservative
+	    		popularity = 0.015
+			}
 		}
 		
 		ai_will_do = {
@@ -293,6 +301,10 @@
 		y = 8
 		cost = 10
 		
+		available = {
+		has_government = conservative
+		}
+
 		prerequisite = {
 			focus = CHI_Economic_Reforms
 		}
@@ -549,7 +561,7 @@
 		completion_reward = {
 		    add_political_power = 100
 	        add_popularity = {
-	            ideology = conservative
+	            ideology = reactionary
 	            popularity = 0.02 
 			} 
 		}
@@ -560,7 +572,7 @@
 	}
 	
 	focus = {
-		id = CHI_Conservative_Propaganda
+		id = CHI_reactionary_Propaganda
 		icon = propaganda
 		x = 20
 		y = 4
@@ -574,7 +586,7 @@
 		completion_reward = {
 			add_political_power = -50
 	    	add_popularity = {
-	    		ideology = conservative
+	    		ideology = reactionary
 	    		popularity = 0.01 
 			} 
 		}
@@ -592,7 +604,7 @@
 		cost = 10
 		
 		prerequisite = {
-			focus = CHI_Conservative_Propaganda
+			focus = CHI_reactionary_Propaganda
 		}
 	
 		completion_reward = {
@@ -664,7 +676,7 @@
 	
 		completion_reward = {
 		    add_popularity = {
-	            ideology = conservative
+	            ideology = reactionary
 	            popularity = 0.02 
 		    }	
 		}
@@ -687,7 +699,7 @@
 
 		completion_reward = {
 			add_popularity = {
-	   			ideology = conservative
+	   			ideology = reactionary
 	    		popularity = 0.05 }
 		}
 		
@@ -723,7 +735,7 @@
 	}
 	
 	focus = {
-		id = CHI_The_Coup
+		id = CHI_Nationalist_Plot
 		icon = military_mission
 		x = 20
 		y = 9
@@ -735,42 +747,12 @@
 	
 		completion_reward = {
 			add_popularity = {
-	    		ideology = conservative
+	    		ideology = reactionary
 	    		popularity = 0.1 
 			}
-			set_politics = {
-        		ruling_party = conservative
-       			elections_allowed = no
-            }
-		}
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Allow_Elections
-		icon = democracy
-		x = 22
-		y = 10
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_The_Coup
-		}
-		mutually_exclusive = {
-			focus = CHI_Continue_the_Provisional_Government
-		}
-
-	
-		completion_reward = {
 			add_popularity = {
-				ideology = conservative
-				popularity = 0.02
-			}
-			set_politics = {
-				ruling_party = conservative
-				elections_allowed = yes
+			ideology = social_liberal
+			popularity = -0.1
 			}
 		}
 		ai_will_do = {
@@ -779,23 +761,24 @@
 	}
 	
 	focus = {
-		id = CHI_Continue_the_Provisional_Government
+		id = CHI_Strenghten_National_Pride
 		icon = destroy_establishment
-		x = 18
+		x = 20
 		y = 10
 		cost = 10
 		
-		prerequisite = {
-			focus = CHI_The_Coup
+		available = {
+		has_government = reactionary
 		}
-        mutually_exclusive = {
-			focus = CHI_Allow_Elections
+		
+		prerequisite = {
+			focus = CHI_Nationalist_Plot
 		}
 	
 		completion_reward = {
 			add_popularity = {
-	    		ideology = conservative
-	   			popularity = -0.02 
+	    		ideology = reactionary
+	   			popularity = 0.02 
 			}
 		}
 
@@ -820,14 +803,13 @@
 		}
 		
 		prerequisite = {
-			focus = CHI_Continue_the_Provisional_Government
-			focus = CHI_Allow_Elections
+			focus = CHI_Strenghten_National_Pride
 		}
 
 	
 		completion_reward = {
 			add_popularity = {
-	    		ideology = conservative
+	    		ideology = reactionary
 	    		popularity = 0.05
 			}
 		}
@@ -873,7 +855,7 @@
 		completion_reward = {
 			PRC = { 
 				add_popularity = {
-	    			ideology = conservative
+	    			ideology = social_liberal
 	   				popularity = 0.04
 				}
 				add_stability = -0.01
@@ -900,8 +882,8 @@
 		completion_reward = {
 		    PRC = {
 		        add_popularity = {
-	                ideology = conservative
-	                popularity = 0.1
+	                ideology = democratic_socialist
+	                popularity = 0.05
 		        }
 		        add_stability = -0.01
 		        country_event = generic.1
@@ -928,7 +910,7 @@
 		completion_reward = {
 			PRC = { 
 				add_popularity = {
-	   				ideology = conservative
+	   				ideology = nationalist
 	    			popularity = 0.02
 				}
 				add_popularity = {
