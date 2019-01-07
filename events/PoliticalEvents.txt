@@ -1,6 +1,6 @@
 ﻿add_namespace = political
 
-#Fascist Coup
+#Fascist Ultimatum
 country_event = {
 	id = political.1
 	title = political.1.t
@@ -9,11 +9,7 @@ country_event = {
 	
 	trigger = {
 		fascist > 0.5
-		NOT = {
-			has_government = nationalist
-			has_government = fascist
-		}
-		is_puppet = no
+		NOT = { has_government = fascist }
 	}
 	
 	mean_time_to_happen = {
@@ -46,17 +42,19 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
-		if = {
-			limit = {
-				has_idea = idea_USA_political_establishment
-			}
-			remove_ideas = idea_USA_political_establishment
+	}
+	
+	option = {
+		name = political.1.o1
+		start_civil_war = {
+			ideology = fascist
+			size = 0.5
 		}
 	}
 }
 
 
-#Nationalist Coup
+#Nationalist Ultimatum
 country_event = {
 	id = political.2
 	title = political.2.t
@@ -65,12 +63,7 @@ country_event = {
 	
 	trigger = {
 		nationalist > 0.5
-		NOT = {
-			has_government = nationalist
-			has_government = fascist
-		}
-		is_puppet = no
-		
+		NOT = { has_government = nationalist }
 	}
 	
 	mean_time_to_happen = {
@@ -102,40 +95,24 @@ country_event = {
 		name = political.2.o1
 		set_politics = {
 			ruling_party = nationalist
-			elections_allowed = no
-		}
-		news_event = {
-			hours = 3
-			id = news.1
-		}
-		if = {
-			limit = {
-				has_idea = idea_USA_political_establishment
-			}
-			remove_ideas = idea_USA_political_establishment
-		}
-	}
-	
-	option = {
-		name = political.2.o2
-		set_politics = {
-			ruling_party = nationalist
 			elections_allowed = yes
 		}
 		news_event = {
 			hours = 3
 			id = news.1
 		}
-		if = {
-			limit = {
-				has_idea = idea_USA_political_establishment
-			}
-			remove_ideas = idea_USA_political_establishment
+	}
+	
+	option = {
+		name = political.2.o2
+		start_civil_war = {
+			ideology = nationalist
+			size = 0.5
 		}
 	}
 }
 
-#Communist Coup
+#Communist Ultimatum
 country_event = {
 	id = political.3
 	title = political.3.t
@@ -144,10 +121,7 @@ country_event = {
 	
 	trigger = {
 		communist > 0.5
-		NOT = {
-			has_government = communist
-		}
-		is_puppet = no
+		NOT = { has_government = communist }
 	}
 	
 	mean_time_to_happen = {
@@ -163,7 +137,7 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			OR = {
-				has_government = communist
+				has_government = fascist
 				has_government = nationalist
 			}
 		}
@@ -215,7 +189,7 @@ country_event = {
 	}
 }
 
-#Islamist Coup
+#Islamist Ultimatum
 country_event = {
 	id = political.4
 	title = political.4.t
@@ -224,11 +198,7 @@ country_event = {
 	
 	trigger = {
 		islamist > 0.5
-		NOT = {
-			has_government = islamist
-		}
-		
-		is_puppet = no
+		NOT = { has_government = islamist }
 	}
 	
 	mean_time_to_happen = {
@@ -275,7 +245,7 @@ country_event = {
 	}
 }
 
-#Reactionary Coup
+#Reactionary Ultimatum
 country_event = {
 	id = political.5
 	title = political.5.t
@@ -284,11 +254,7 @@ country_event = {
 	
 	trigger = {
 		reactionary > 0.5
-		NOT = {
-			has_government = reactionary
-		}
-		
-		is_puppet = no
+		NOT = { has_government = reactionary }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -338,7 +304,7 @@ country_event = {
 	}
 }
 
-#Conservative Coup
+#Conservative Ultimatum
 country_event = {
 	id = political.6
 	title = political.6.t
@@ -347,11 +313,7 @@ country_event = {
 	
 	trigger = {
 		conservative > 0.5
-		NOT = {
-			has_government = conservative
-		}
-		
-		is_puppet = no
+		NOT = { has_government = conservative }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -401,7 +363,7 @@ country_event = {
 	}
 }
 
-#Market Liberal Coup
+#Classical Liberal Ultimatum
 country_event = {
 	id = political.7
 	title = political.7.t
@@ -410,11 +372,7 @@ country_event = {
 	
 	trigger = {
 		market_liberal > 0.5
-		NOT = {
-			has_government = market_liberal
-		}
-		
-		is_puppet = no
+		NOT = { has_government = market_liberal }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -464,7 +422,7 @@ country_event = {
 	}
 }
 
-#Social Liberal Coup
+#Social Liberal Ultimatum
 country_event = {
 	id = political.8
 	title = political.8.t
@@ -473,11 +431,7 @@ country_event = {
 	
 	trigger = {
 		social_liberal > 0.5
-		NOT = {
-			has_government = social_liberal
-		}
-		
-		is_puppet = no
+		NOT = { has_government = social_liberal }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -527,7 +481,7 @@ country_event = {
 	}
 }
 
-#Social Democrat Coup
+#Social Democrat Ultimatum
 country_event = {
 	id = political.9
 	title = political.9.t
@@ -536,11 +490,7 @@ country_event = {
 	
 	trigger = {
 		social_democrat > 0.5
-		NOT = {
-			has_government = social_democrat
-		}
-		
-		is_puppet = no
+		NOT = { has_government = social_democrat }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -590,7 +540,7 @@ country_event = {
 	}
 }
 
-#Progressive Coup
+#Progressive Ultimatum
 country_event = {
 	id = political.10
 	title = political.10.t1
@@ -599,11 +549,7 @@ country_event = {
 	
 	trigger = {
 		progressive > 0.5
-		NOT = {
-			has_government = progressive
-		}
-		
-		is_puppet = no
+		NOT = { has_government = progressive }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -653,7 +599,7 @@ country_event = {
 	}
 }
 
-#Democratic Socialist Coup
+#Democratic Socialist Ultimatum
 country_event = {
 	id = political.11
 	title = political.11.t
@@ -662,9 +608,7 @@ country_event = {
 	
 	trigger = {
 		democratic_socialist > 0.5
-		NOT = {
-			has_government = democratic_socialist
-		}
+		NOT = { has_government = democratic_socialist }
 		OR = {
 			has_government = communist
 			has_government = fascist
@@ -714,7 +658,7 @@ country_event = {
 	}
 }
 
-#Monarchist Coup
+#Monarchist Ultimatum
 country_event = {
 	id = political.12
 	title = political.12.t
@@ -723,10 +667,7 @@ country_event = {
 	
 	trigger = {
 		monarchist > 0.5
-		NOT = {
-			has_government = monarchist
-		}
-		is_puppet = no
+		NOT = { has_government = monarchist }
 	}
 	
 	mean_time_to_happen = {
@@ -1166,360 +1107,5 @@ country_event = {
 			is_puppet = no
 			NOT = { has_government = communist }
 		}
-	}
-}
-
-#Islamist Influence increases
-country_event = {
-	id = political.25
-	title = political.25.t
-	desc = political.25.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Islamist Influence decreases
-country_event = {
-	id = political.26
-	title = political.26.t
-	desc = political.26.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Fascist Influence increases
-country_event = {
-	id = political.27
-	title = political.27.t
-	desc = political.27.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Fascist Influence decreases
-country_event = {
-	id = political.28
-	title = political.28.t
-	desc = political.28.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Nationalist Influence increases
-country_event = {
-	id = political.29
-	title = political.29.t
-	desc = political.29.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Nationalist Influence decreases
-country_event = {
-	id = political.30
-	title = political.30.t
-	desc = political.30.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Monarchist Influence increases
-country_event = {
-	id = political.31
-	title = political.31.t
-	desc = political.31.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Monarchist Influence decreases
-country_event = {
-	id = political.32
-	title = political.32.t
-	desc = political.32.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Reactionary Influence increases
-country_event = {
-	id = political.33
-	title = political.33.t
-	desc = political.33.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Reactionary Influence decreases
-country_event = {
-	id = political.34
-	title = political.34.t
-	desc = political.34.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Conservative Influence increases
-country_event = {
-	id = political.35
-	title = political.35.t
-	desc = political.35.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Conservative Influence decreases
-country_event = {
-	id = political.36
-	title = political.36.t
-	desc = political.36.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Libertarian Influence increases
-country_event = {
-	id = political.37
-	title = political.37.t
-	desc = political.37.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Libertarian Influence decreases
-country_event = {
-	id = political.38
-	title = political.38.t
-	desc = political.38.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Social Liberal Influence increases
-country_event = {
-	id = political.39
-	title = political.39.t
-	desc = political.39.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Social Liberal Influence decreases
-country_event = {
-	id = political.40
-	title = political.40.t
-	desc = political.40.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Social Democrat Influence increases
-country_event = {
-	id = political.41
-	title = political.41.t
-	desc = political.41.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Social Democrat Influence decreases
-country_event = {
-	id = political.42
-	title = political.42.t
-	desc = political.42.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Progressive Influence increases
-country_event = {
-	id = political.43
-	title = political.43.t
-	desc = political.43.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Progressive Influence decreases
-country_event = {
-	id = political.44
-	title = political.44.t
-	desc = political.44.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Socialist Influence increases
-country_event = {
-	id = political.45
-	title = political.45.t
-	desc = political.45.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Socialist Influence decreases
-country_event = {
-	id = political.46
-	title = political.46.t
-	desc = political.46.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Communist Influence increases
-country_event = {
-	id = political.47
-	title = political.47.t
-	desc = political.47.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Communist Influence decreases
-country_event = {
-	id = political.48
-	title = political.48.t
-	desc = political.48.d
-	picture = GFX_report_event_angry_mob
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = option.OK
-	}
-}
-
-#Puppet: No longer lose all influences
-country_event = {
-	id = political.50
-	hidden = yes
-	
-	trigger = {
-		is_puppet = no
-		has_country_flag = puppet_lost_influence
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		clr_country_flag = puppet_lost_influence
 	}
 }
