@@ -1,0 +1,36 @@
+﻿add_namespace = brexit
+
+news_event = { #Brexit - News
+	id = brexit.1
+	title = brexit.1.t
+	desc = brexit.1.d
+	picture = GFX_news_event_brexit
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = brexit.1.o1
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	
+	option = {
+		name = brexit.1.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_idea = idea_eu_member
+		}
+	}
+	
+	option = {
+		name = brexit.1.o3
+		trigger = {
+		    NOT = {
+			    original_tag = ENG
+			    has_idea = idea_eu_member
+			}
+		}
+	}
+}

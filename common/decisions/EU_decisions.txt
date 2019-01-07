@@ -72,7 +72,7 @@ european_union_decisions = {
 			}
 		}
 		
-		icon = democracy
+		icon = united_kingdom
 		
 		cost = 150
 		fire_only_once = yes
@@ -86,4 +86,32 @@ european_union_decisions = {
 		}
 	}
  	
+}
+
+brexit_decisions = {
+	
+	brexit_countdown = {
+
+		icon = united_kingdom
+
+		visible = {
+		    original_tag = ENG
+			has_idea = idea_eu_member
+			NOT = { has_global_flag = brexit_stopped }
+		}
+		
+		available = {
+			has_global_flag = brexit_stopped
+		}
+
+		selectable_mission = yes
+		days_mission_timeout = 454
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+		    remove_ideas = idea_eu_member
+	        news_event = brexit.1
+		}
+	}
 }
