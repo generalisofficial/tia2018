@@ -1,13 +1,12 @@
-﻿capital = 422
+﻿capital = 635
 
-oob = "SRI_2018"
+oob = "generic_2018"
 
 set_research_slots = 2
-set_convoys = 100
-set_stability = 0.2
+set_convoys = 30
+set_stability = 0.6
 
-set_country_flag = country_language_sinhala
-set_country_flag = country_language_tamil
+set_country_flag = country_language_french
 
 set_technology = {
 	infantry_weapons = 1
@@ -46,7 +45,15 @@ set_technology = {
 	interwar_artillery = 1
 	antitank1 = 1
 	interwar_antiair = 1
-
+	
+	destroyer1 = 1
+	destroyer2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	submarine_nuclear_reactor = 1
+	cold_war_ship_design = 1
 	
 	gen2_attack = 1
 	gen3_attack = 1
@@ -81,48 +88,45 @@ set_technology = {
 }
 
 add_ideas = {
-	population_growth_explosion
-	limited_conscription
-	commonwealth_of_nations_member
+	population_growth_steady
 }
 
 set_politics = {
 
 	parties = {
-		social_liberal = {
-			popularity = 51.28
+		libertarian = {
+			popularity = 51.19
 		}
+		
+		conservative = {
+			popularity = 24.54
+		}
+		
 		democratic_socialist = {
-			popularity = 48.72
+			popularity = 24.27
 		}
 	}
 	
-	ruling_party = social_liberal
-	last_election = "2015.1.8"
-	election_frequency = 60
+	ruling_party = market_liberal
+	last_election = "2014.5.11"
+	election_frequency = 50
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Maithripala Sirisena"
-	picture = "Maithripala_Sirisena.dds"
-	ideology = centrist
+	name = "Philippe Germain"
+	picture = "Philippe_Germain.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Mahinda Rajapaksa"
-	picture = "Mahinda_Rajapaksa.dds"
+	name = "Pierre Frogier"
+	picture = "Pierre_Frogier.dds"
+	ideology = gaullist
+}
+
+create_country_leader = {
+	name = "Victor Tutugoro"
+	picture = "Victor_Tutugoro.dds"
 	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Rauff Hakeem"
-	picture = "Rauff_Hakeem.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "D. E. W. Gunasekera"
-	picture = "D_E_W_Gunasekera.dds"
-	ideology = marxist_leninist
 }

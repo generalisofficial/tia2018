@@ -1,0 +1,49 @@
+﻿add_namespace = new_caledonia
+
+country_event = { #New Caledonian independence referendum, 2018
+	id = new_caledonia.1
+	title = new_caledonia.1.t
+	desc = new_caledonia.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = new_caledonia.1.o1
+		set_global_flag = new_caledonia_independent
+		random_list = {
+			56 = {
+				country_event = new_caledonia.2
+			}
+			44 = {
+			    country_event = new_caledonia.3
+			}
+		}
+	}
+}
+
+country_event = { #New Caledonia Refuses Independence
+	id = new_caledonia.2
+	title = new_caledonia.2.t
+	desc = new_caledonia.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = new_caledonia.2.o1
+	}
+}
+
+country_event = { #New Caledonia Votes for Independence
+	id = new_caledonia.3
+	title = new_caledonia.3.t
+	desc = new_caledonia.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = new_caledonia.3.o1
+		set_global_flag = new_caledonia_independent
+		release = NCD
+	}
+} 
