@@ -15,6 +15,10 @@ country_event = {
 			date > 2019.1.1
 			NOT = { original_tag = SOV }
 		}
+		OR = {
+			NOT = { has_government = communist }
+			NOT = { original_tag = PRK }
+		}
 	}
 	
 	option = {	#The Ruling Party
@@ -282,7 +286,6 @@ country_event = {
 	id = election_SOV.1
 	title = election_SOV.1.t
 	desc = election_SOV.1.d
-	picture = GFX_report_event_russiaelections
 	
 	is_triggered_only = yes
 	
@@ -410,4 +413,27 @@ country_event = {
 			}
 		}
 	}
+}
+
+#PRK Generic
+country_event = {
+	id = election_PRK.1
+	title = election_PRK.1.t
+	desc = election_PRK.1.d
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    original_tag = PRK
+		has_government = communist
+	}
+	
+	option = {
+		name = election_PRK.1.o1
+		add_political_power = 25
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = yes
+		}		
+    }
 }
