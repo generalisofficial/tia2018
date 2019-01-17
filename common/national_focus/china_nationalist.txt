@@ -1496,56 +1496,16 @@
 		}
 	}
 	
-	focus = {
-		id = CHI_Rise_of_Third_Parties
-		icon = improve_relations_green
-		x = 6
-		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Open_the_Political_Sphere
-		}
-		
-		mutually_exclusive = {
-			focus = CHI_Rise_of_The_DPP
-		}
-		
-	
-		completion_reward = {
-			add_political_power = -50
-			add_popularity = {
-				ideology = social_liberal
-				popularity = -0.05
-			}
-			add_popularity = {
-				ideology = democratic_socialist
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = progressive
-				popularity = 0.05
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
 	
 	focus = {
 		id = CHI_Rise_of_The_DPP
 		icon = improve_relations_green
-		x = 2
+		x = 4
 		y = 7
 		cost = 10
 		
 		prerequisite = {
 			focus = CHI_Open_the_Political_Sphere
-		}
-		
-		mutually_exclusive = {
-			focus = CHI_Rise_of_Third_Parties
 		}
 		
 	
@@ -1555,122 +1515,23 @@
 	   			ideology = social_liberal
 	    		popularity = 0.05
 			}
-		
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Rise_of_The_Progressives
-		icon = leftism
-		x = 6
-		y = 8
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Rise_of_Third_Parties
-		}
-		
-	
-		completion_reward = {
 			add_popularity = {
 	   			ideology = progressive
-	   			popularity = 0.05
+	    		popularity = 0.03
 			}
-			add_popularity = {
-	    		ideology = social_liberal
-	    		popularity = -0.05
-			}
+		
 		}
 		
 		ai_will_do = {
 			factor = 35
 		}
 	}
-	
-	focus = {
-		id = CHI_Promote_Progress_and_Prosperity
-		icon = democracy
-		x = 6
-		y = 9
-		cost = 10
 		
-		prerequisite = {
-			focus = CHI_Rise_of_The_Progressives
-		}
-	
-		completion_reward = {
-			add_popularity = {
-				ideology = progressive
-				popularity = 0.1
-			}
-			add_popularity = {
-	    		ideology = social_liberal
-	    		popularity = -0.05 
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Ecological_Reforms
-		icon = agriculture
-		x = 6
-		y = 10
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Promote_Progress_and_Prosperity
-		}
-		
-		available = {
-		has_government = progressive
-		}
-		
-	
-		completion_reward = {
-			add_ideas = idea_focus_generic_progressive_doctrine
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Liberalize_the_Constitution
-		icon = libertarianism
-		x = 6
-		y = 11
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Ecological_Reforms
-		}
-		
-	
-		completion_reward = {
-			add_political_power = 55
-			add_stability = 0.01
-			add_war_support = -0.02
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
 	
 	focus = {
 		id = CHI_Stabilize_the_Politics
 		icon = neutrality
-		x = 2
+		x = 4
 		y = 8
 		cost = 10
 		
@@ -1700,7 +1561,7 @@
 		}
 	
 		completion_reward = {
-			add_political_power = 200
+			add_political_power = 50
 			add_stability = 0.01
 		}
 		
@@ -1712,7 +1573,7 @@
 	focus = {
 		id = CHI_Unpopularize_the_One_China_Dream
 		icon = destroy_society
-		x = 0
+		x = 4
 		y = 9
 		cost = 10
 		
@@ -1737,7 +1598,7 @@
 	focus = {
 		id = CHI_Liberalization_Over_Tradition
 		icon = industry_democratic3
-		x = 4
+		x = 6
 		y = 9
 		cost = 10
 		
@@ -1758,7 +1619,7 @@
 	focus = {
 		id = CHI_Spread_Pro-Indepedence_Propaganda
 		icon = propaganda
-		x = 2
+		x = 4
 		y = 10
 		cost = 10
 		
@@ -1789,7 +1650,7 @@
 	focus = {
 		id = CHI_Prepare_Negotiations
 		icon = intelligence_exchange
-		x = 2
+		x = 4
 		y = 11
 		cost = 10
 		
@@ -1810,7 +1671,7 @@
 	focus = {
 		id = CHI_Negotiate_our_Indepedence
 		icon = align_to_china2
-		x = 2
+		x = 4
 		y = 12
 		cost = 10
 		
@@ -1824,7 +1685,6 @@
 		
 		prerequisite = {
 			focus = CHI_Prepare_Negotiations
-			focus = CHI_Liberalize_the_Constitution
 		}
 	
 		completion_reward = {
@@ -1840,7 +1700,7 @@
 	focus = {
 		id = CHI_Offer_Coastal_Islands
 		icon = diplomatic_treaty
-		x = 0
+		x = 2
 		y = 13
 		cost = 10
 		
@@ -1869,7 +1729,7 @@
 	focus = {
 		id = CHI_Offer_Spratly_Islands
 		icon = diplomatic_treaty
-		x = 4
+		x = 6
 		y = 13
 		cost = 10
 		
@@ -1898,7 +1758,7 @@
 	focus = {
 		id = CHI_Declare_our_Indepedence
 		icon = demand_territory2
-		x = 2
+		x = 4
 		y = 14
 		cost = 10
 
@@ -1932,7 +1792,7 @@
 	focus = {
 		id = CHI_Push_for_Recognition
 		icon = align_to_united_nations
-		x = 2
+		x = 4
 		y = 15
 		cost = 10
 		
@@ -1953,7 +1813,7 @@
 	focus = {
 		id = CHI_The_Asian_Tigers
 		icon = tiger
-		x = 2
+		x = 4
 		y = 16
 		cost = 10
 		
@@ -1974,7 +1834,7 @@
 	focus = {
 		id = CHI_Invite_Singapore
 		icon = align_to_singapore
-		x = 4
+		x = 6
 		y = 17
 		cost = 10
 		
@@ -1994,7 +1854,7 @@
 	focus = {
 		id = CHI_Invite_South_Korea
 		icon = align_to_south_korea2
-		x = 0
+		x = 2
 		y = 17
 		cost = 10
 		
@@ -2014,7 +1874,7 @@
 	focus = {
 		id = CHI_Purchase_Hong_Kong_Indepedence
 		icon = money
-		x = 2
+		x = 4
 		y = 18
 		cost = 10
 		
@@ -2034,7 +1894,7 @@
 	focus = {
 		id = CHI_Invite_Hong_Kong
 		icon = align_to_hong_kong
-		x = 2
+		x = 4
 		y = 19
 		cost = 10
 
@@ -2058,7 +1918,7 @@
 	focus = {
 		id = CHI_The_New_Dream_Realized
 		icon = golden_dragon
-		x = 2
+		x = 4
 		y = 20
 		cost = 10
 		

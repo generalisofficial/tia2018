@@ -2037,13 +2037,10 @@ focus_tree = {
 	focus = {
 		id = JAP_contain_north_korean_agression
 		icon = attack_north_korea
-		x = 26
+		x = 22
 		y = 9
 		cost = 10
-		
-		mutually_exclusive = {
-			focus = JAP_contain_chinese_agression
-		}
+
 		prerequisite = {
 			focus = JAP_the_final_decision
 		}
@@ -2059,30 +2056,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = JAP_contain_chinese_agression
-		icon = attack_china
-		x = 18
-		y = 9
-		cost = 10
-		
-		mutually_exclusive = {
-			focus = JAP_contain_north_korean_agression
-		}
-		prerequisite = {
-			focus = JAP_the_final_decision
-		}
-		
-		completion_reward = {
-        create_wargoal = { type = puppet_wargoal_focus target = PRC }
-		USA = { country_event = japan.22 }
-		KOR = { country_event = japan.22 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
 	
 	focus = {
 		id = JAP_stand_alone
@@ -2092,7 +2065,11 @@ focus_tree = {
 		cost = 10
 		
 		prerequisite = {
-			focus = JAP_contain_chinese_agression
+			focus = JAP_contain_north_korean_agression
+		}
+		
+		mutually_exclusive = {
+		focus = JAP_stand_with_the_west
 		}
 		
 		completion_reward = {
@@ -2321,6 +2298,10 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = JAP_contain_north_korean_agression
+		}
+		
+	  mutually_exclusive = {
+		focus = JAP_stand_alone
 		}
 		
 		completion_reward = {
@@ -2680,41 +2661,12 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = JAP_demand_korean_unification
-		icon = attack_north_korea
-		x = 15
-		y = 13
-		cost = 10
-		
-		prerequisite = {
-			focus = JAP_the_conflict_in_korea
-		}
-		
-		mutually_exclusive = {
-		focus = JAP_prepare_for_their_strike
-		}
-		
-		available = {
-	    PRK = { 
-		has_democratic_form_of_government = no
-		}
-		is_puppet = no
-		}
-		
-		completion_reward = {
-		PRK = { country_event = japan.23 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
+
 	
 	focus = {
 		id = JAP_prepare_for_their_strike
 		icon = defence
-		x = 11
+		x = 12
 		y = 13
 		cost = 10
 		
@@ -2722,9 +2674,6 @@ focus_tree = {
 			focus = JAP_the_conflict_in_korea
 		}
 		
-		mutually_exclusive = {
-		focus = JAP_demand_korean_unification
-		}
 		
 		completion_reward = {
 		add_ideas = defensive_preparations3
@@ -2738,12 +2687,12 @@ focus_tree = {
 	focus = {
 		id = JAP_japanese_nuclear_program
 		icon = nuclear_weapons
-		x = 11
-		y = 14
+		x = 14
+		y = 13
 		cost = 10
 		
 		prerequisite = {
-			focus = JAP_prepare_for_their_strike
+			focus = JAP_the_conflict_in_korea
 		}
 		
 		
