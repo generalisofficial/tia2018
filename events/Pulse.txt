@@ -41,6 +41,22 @@ country_event = {
 		}
 		if = {
 			limit = {
+		        original_tag = LEB
+				country_exists = HEZ
+				has_government = islamist
+			}
+			annex_country = { target = HEZ transfer_troops = yes }
+		}
+		if = {
+			limit = {
+		        original_tag = PAL
+				country_exists = HAM
+				has_government = islamist
+			}
+			annex_country = { target = HAM transfer_troops = yes }
+		}
+		if = {
+			limit = {
 		        NOT = { has_idea = population_growth_explosion }
 		        NOT = { has_idea = population_growth_rapid }
 		        NOT = { has_idea = population_growth_steady }
