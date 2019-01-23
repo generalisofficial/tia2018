@@ -1,4 +1,4 @@
-﻿capital = 828
+﻿capital = 137
 
 oob = "generic_2018"
 
@@ -95,27 +95,27 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-		    popularity = 97.94
+		    popularity = 71.06
 		}
-		conservative = {
-		    popularity = 0.84
-		}
-		social_democrat = {
-		    popularity = 0.53
-		}
-		communist = {
-		    popularity = 0.63
+		nationalist = {
+		    popularity = 28.94
 		}
 	}
 	
 	ruling_party = reactionary
-	last_election = "2016.9.18"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "2014.9.14"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Ramzan Kadyrov"
-	picture = "Ramzan_Kadyrov.dds"
+	name = "Sergey Aksyonov"
+	picture = "Sergey_Aksyonov.dds"
 	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Vladimir Zhirinovsky"
+	picture = "gfx/leaders/SOV/Vladimir_Zhirinovsky.dds"
+	ideology = proto_fascist
 }
