@@ -1,5 +1,5 @@
 autonomy_state = {
-	id = autonomy_integrated_puppet
+	id = autonomy_special_administrative_region
 	
 	is_puppet = yes
 	
@@ -36,7 +36,7 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Together for Victory"
-		NOT = { OVERLORD = { original_tag = PRC has_government = communist } }
+		OVERLORD = { original_tag = PRC has_government = communist }
 	}
 	
 	can_take_level = {
