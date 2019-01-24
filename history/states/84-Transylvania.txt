@@ -2,12 +2,8 @@
 state={
 	id=84
 	name="STATE_84"
-	manpower = 1622300
-	
-	state_category = state_level_5
-	
-	resources = {
-		steel = 6
+	resources={
+		steel=20.000
 	}
 
 	history={
@@ -15,15 +11,23 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			air_base = 2
+			air_base = 6
+
 		}
 		victory_points = {
 			690 1 
 		}
+		victory_points = {
+			6711 5 
+		}
 		add_core_of = ROM
+
 	}
 
 	provinces={
-		676 690 693 3665 3676 3694 6679 6709 9619 11622 11639 
+		676 690 693 711 727 3665 3676 3689 3694 6679 6709 6711 6714 6731 9619 9668 9670 9672 9685 11622 11639 11676 
 	}
+	manpower=6789250
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

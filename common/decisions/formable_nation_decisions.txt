@@ -1,103 +1,45 @@
 formable_nation_decisions = {
 	
-	form_scandinavia = {
+	form_peru_bolivian_confederation = {
 		visible = {
-			OR = {
-				original_tag = DEN
-				original_tag = NOR
-				original_tag = SWE
+		    OR = {
+			    original_tag = PRU	
+				original_tag = BOL
 			}
-			is_subject = no
 		}
 		
 		available = {
-			OR = {
-				has_democratic_form_of_government = yes
-				has_government = monarchist
-			}
-			OR = {
-				original_tag = DEN
-				original_tag = NOR
-				original_tag = SWE
-			}
-			OR = {
-				original_tag = DEN
-				DEN = { is_subject_of = ROOT }
-				DEN = { exists = no }
-			}
-			OR = {
-				original_tag = NOR
-				NOR = { is_subject_of = ROOT }
-				NOR = { exists = no }
-			}
-			OR = {
-				original_tag = SWE
-				SWE = { is_subject_of = ROOT }
-				SWE = { exists = no }
-			}
+			owns_state = 901
+			owns_state = 487
+			owns_state = 302
+			owns_state = 688
+			owns_state = 860
+			owns_state = 506
+			owns_state = 861
 		}
-		
-		icon = scandinavia
-		
-		cost = 210
-		fire_only_once = yes
-		
-		complete_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			set_country_flag = has_formed_scandinavia
-			set_cosmetic_tag = Scandinavia
-			add_named_threat = {
-				name = threat_formation_of_scandinavia
-				threat = -2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 15
-		}
-	}
-	
-	
-	form_peru_bolivia = {
-		visible = {
-			original_tag = PRU	
-		}
-		
-		available = {
-				controls_state = 901
-				controls_state = 487
-				controls_state = 302
-				controls_state = 688
-				controls_state = 860
-				controls_state = 506
-				controls_state = 861
-			}
 		
 		icon = civil_support
 		
-		cost = 210
+		cost = 100
 		fire_only_once = yes
 		
 		complete_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			set_cosmetic_tag = PRU_Conf
-			add_state_claim = 486
-			add_state_claim = 509
-			add_state_claim = 908
-			add_state_core = 901
-			add_state_core = 487
-			add_state_core = 302
-			add_state_core = 688
-			add_state_core = 860
-			add_state_core = 506
-			add_state_core = 861
+			set_cosmetic_tag = PRU_BOL
+			every_state = {
+			    limit = {
+				    OR = {
+				         is_core_of = PRU
+				         is_core_of = BOL
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
 		}
 		
 		ai_will_do = {
-			factor = 15
-		}
+			factor = 100
 		}
 	}
+}
 	

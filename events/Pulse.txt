@@ -211,11 +211,21 @@ country_event = {
 			news_event = ethiopia.1
 		}
 		if = {
+			limit = {
+			    original_tag = SAF
+				date > 2018.2.13
+				date < 2019.1.1
+			}
+			news_event = south_africa.1
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {
 				    has_cosmetic_tag = GRN_DEN
 				    has_cosmetic_tag = FAI_DEN
+                    has_cosmetic_tag = HKN_SAR
+				    has_cosmetic_tag = MCU_SAR
 			    }
 		    }
 	        drop_cosmetic_tag = yes
