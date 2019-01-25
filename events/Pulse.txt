@@ -265,6 +265,14 @@ country_event = {
 				}
 			}
 			country_event = syria.2
+			if = { 
+			    limit = { country_exists = FSA }
+				FSA = { set_cosmetic_tag = SYR_REBEL }
+			}
+			if = { 
+			    limit = { country_exists = HTS }
+				HTS = { set_cosmetic_tag = SYR_REBEL }
+			}
 		}
 		if = {
 			limit = {
