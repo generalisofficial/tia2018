@@ -1,5 +1,7 @@
 ﻿add_namespace = election
 add_namespace = election_SOV
+add_namespace = election_PRK
+add_namespace = election_SWE
 
 #Generic Election
 country_event = {
@@ -13,7 +15,7 @@ country_event = {
 	trigger = {
 		OR = {
 			date > 2019.1.1
-			NOT = { original_tag = SOV }
+			NOT = { original_tag = SOV original_tag = SWE }
 		}
 		OR = {
 			NOT = { has_government = communist }
@@ -21,140 +23,219 @@ country_event = {
 		}
 	}
 	
-	option = {	#The Ruling Party
-		name = election.1.o12
-		
-		trigger = {
-			OR = {
-				AND = { has_government = communist communist > 0.1 }
-				AND = { has_government = democratic_socialist democratic_socialist > 0.1 }
-				AND = { has_government = progressive progressive > 0.1 }
-				AND = { has_government = social_democrat social_democrat > 0.1 }
-				AND = { has_government = social_liberal social_liberal > 0.1 }
-				AND = { has_government = market_liberal market_liberal > 0.1 }
-				AND = { has_government = conservative conservative > 0.1 }
-				AND = { has_government = reactionary reactionary > 0.1 }
-				AND = { has_government = monarchist monarchist > 0.1 }
-				AND = { has_government = nationalist nationalist > 0.1 }
-				AND = { has_government = fascist fascist > 0.1 }
-				AND = { has_government = islamist islamist > 0.1 }
-				AND = {
-					communist < 0.1
-					democratic_socialist < 0.1
-					progressive < 0.1
-					social_democrat < 0.1
-					social_liberal < 0.1
-					market_liberal < 0.1
-					conservative < 0.1
-					reactionary < 0.1
-					monarchist < 0.1
-					nationalist < 0.1
-					fascist < 0.1
-					islamist < 0.1
-				}
-			}
-		}
-		
-		ai_chance = {
-			factor = 10
-		}
-		add_stability = 0.1
-		add_political_power = 20
-	}
-	
 	option = {	#Communists
 		name = election.1.o1
 		ai_chance = {
-			factor = 2
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = communist }
-			communist > 0.1
+			OR = {
+				communist > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = communist
 			elections_allowed = no
 		}
+		if = {
+		    limit = {
+		        communist < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Democratic Socialists
 		name = election.1.o2
 		trigger = {
-			NOT = { has_government = democratic_socialist }
-			democratic_socialist > 0.1
+			OR = {
+				democratic_socialist > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		ai_chance = {
-			factor = 4
+			factor = 1
 		}
 		
 		set_politics = {
 			ruling_party = democratic_socialist
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        democratic_socialist < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Social Democrats
 		name = election.1.o3
 		ai_chance = {
-			factor = 6
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = social_democrat }
-			social_democrat > 0.1
+			OR = {
+				social_democrat > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        social_democrat < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Progressives
 		name = election.1.o4
 		trigger = {
-			NOT = { has_government = progressive }
-			progressive > 0.1
+			OR = {
+				progressive > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		ai_chance = {
-			factor = 4
+			factor = 1
 		}
 		
 		set_politics = {
 			ruling_party = progressive
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        progressive < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Social Liberals
 		name = election.1.o5
 		ai_chance = {
-			factor = 6
+			factor = 1
 		}	
 		trigger = {
-			NOT = { has_government = social_liberal }
-			social_liberal > 0.1
+			OR = {
+				social_liberal > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        social_liberal < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Market Liberals
 		name = election.1.o6
 		ai_chance = {
-			factor = 3
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = market_liberal }
-			market_liberal > 0.1
+			OR = {
+				market_liberal > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
@@ -167,51 +248,114 @@ country_event = {
 	option = {	#Conservatives
 		name = election.1.o7
 		ai_chance = {
-			factor = 4
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = conservative }
-			conservative > 0.1
+			OR = {
+				conservative > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = conservative
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        conservative < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Reactionaries
 		name = election.1.o8
 		ai_chance = {
-			factor = 4
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = reactionary }
-			reactionary > 0.1
+			OR = {
+				reactionary > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = reactionary
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        reactionary < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Nationalists
 		name = election.1.o9
 		ai_chance = {
-			factor = 2
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = nationalist }
-			nationalist > 0.1
+			OR = {
+				nationalist > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = nationalist
 			elections_allowed = no
 		}
+		if = {
+		    limit = {
+		        nationalist < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
@@ -221,48 +365,110 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = fascist }
-			fascist > 0.1
+			OR = {
+				fascist > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = fascist
 			elections_allowed = no
 		}
+		if = {
+		    limit = {
+		        fascist < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Islamists
 		name = election.1.o11
 		ai_chance = {
-			factor = 2
+			factor = 1
 		}
 		trigger = {
-			NOT = { has_government = islamist }
-			islamist > 0.1
+			OR = {
+				islamist > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = islamist
 			elections_allowed = no
 		}
+		if = {
+		    limit = {
+		        islamist < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Absolute Monarchists
 		name = election.1.o13
 		ai_chance = {
-			factor = 3
-		}
+			factor = 1
 		trigger = {
-			NOT = { has_government = monarchist }
-			monarchist > 0.1
+			OR = {
+				monarchist > 0.5
+				AND = {
+					communist < 0.34
+					democratic_socialist < 0.34
+					progressive < 0.34
+					social_democrat < 0.34
+					social_liberal < 0.34
+					market_liberal < 0.34
+					conservative < 0.34
+					reactionary < 0.34
+					monarchist < 0.34
+					nationalist < 0.34
+					fascist < 0.34
+					islamist < 0.34
+				}
+			}
 		}
 		
 		set_politics = {
 			ruling_party = monarchist
 			elections_allowed = no
 		}
+		if = {
+		    limit = {
+		        monarchist < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 }
@@ -303,7 +509,7 @@ country_event = {
 		name = election_SOV.1.o1
 		trigger = {
 		    OR = {
-                reactionary > 0.1
+                reactionary > 0.34
 				has_government = reactionary
 			}
 		}
@@ -326,7 +532,7 @@ country_event = {
 		name = election_SOV.1.o2
 		trigger = {
 		    OR = {
-                communist > 0.1
+                communist > 0.34
 				has_government = communist
 			}
 		}
@@ -349,7 +555,7 @@ country_event = {
 		name = election_SOV.1.o3
 		trigger = {
 		    OR = {
-                nationalist > 0.1
+                nationalist > 0.34
 				has_government = nationalist
 			}
 		}
@@ -376,7 +582,7 @@ country_event = {
 		}
 		trigger = {
 		    OR = {
-                social_liberal > 0.1
+                social_liberal > 0.34
 				has_government = social_liberal
 			}
 		}
@@ -399,7 +605,7 @@ country_event = {
 		}
 		trigger = {
 		    OR = {
-                conservative > 0.1
+                conservative > 0.34
 				has_government = conservative
 			}
 		}
@@ -435,5 +641,47 @@ country_event = {
 			ruling_party = communist
 			elections_allowed = yes
 		}		
+    }
+}
+
+#SWE 2018
+country_event = {
+	id = election_SWE.1
+	title = election_SWE.1.t
+	desc = election_SWE.1.d
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    original_tag = SWE
+		date > 2018.1.1
+		date < 2019.1.1
+	}
+	
+	#Red-Greens
+	option = {
+		name = election_SWE.1.o1
+		trigger = {
+	        check_variable = { var = SWE_red_greens value = 50 compare = greater_than_or_equals }
+	    }
+    }
+	
+	#The Alliance
+	option = {
+		name = election_SWE.1.o2
+		trigger = {
+	        check_variable = { var = SWE_the_alliance value = 50 compare = greater_than_or_equals }
+	    }
+    }
+	
+	#Deadlock
+	option = {
+		name = election_SWE.1.o3
+		trigger = {
+	        NOT = { 
+			    check_variable = { var = SWE_red_greens value = 50 compare = greater_than_or_equals }
+			    check_variable = { var = SWE_the_alliance value = 50 compare = greater_than_or_equals }
+			}
+	    }
     }
 }

@@ -1,24 +1,25 @@
 
 state={
 	id=204
-	name="STATE_204" # Bobruysk
-	manpower = 1041084
-	
-	state_category = state_level_2
-	
-	resources = {
-		oil = 2
+	name="STATE_204"
+	resources={
+		oil=2.000
 	}
 
 	history={
 		owner = BLR
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = BLR
+
 	}
 
 	provinces={
-		3350 6373 9289 3378 6292 342 11322
+		216 277 294 304 331 342 360 386 406 3267 3331 3350 3378 3759 6292 6373 9236 9289 11216 11313 11322 
 	}
+	manpower=1041084
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }
