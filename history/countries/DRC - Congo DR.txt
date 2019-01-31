@@ -100,35 +100,46 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic_socialist = {
-			popularity = 48.95
+		social_democrat = {
+			popularity = 38.57
+		}
+		libertarian = {
+			popularity = 34.83
 		}
 		reactionary = {
-			popularity = 18.72
+			popularity = 23.84
 		}
-		social_democrat = {
-			popularity = 32.33
+		democratic_socialist = {
+			popularity = 2.76
 		}
-		market_liberal = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 0
-		}
-		progressive = {
-			popularity = 0
-		}
-		
 	}
 	
 	ruling_party = democratic_socialist
-	last_election = "2011.12.23"
-	election_frequency = 84
-	elections_allowed = no
+	last_election = "2013.12.30"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 create_country_leader = {
 	name = "Joseph Kabila"
 	picture = "Joseph_Kabila.dds"
 	ideology = african_socialist
+}
+
+create_country_leader = {
+	name = "Félix Tshisekedi"
+	picture = "Felix_Tshisekedi.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Martin Fayulu"
+	picture = "Martin_Fayulu.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Emmanuel Ramazani Shadary"
+	picture = "Emmanuel_Ramazani_Shadary.dds"
+	ideology = independent
 }
