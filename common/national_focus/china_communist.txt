@@ -649,25 +649,24 @@ focus_tree = {
 		cost = 10
 		
 		prerequisite = {
-		focus = PRC_Continue_Sino_Japanese_Disputes
+			focus = PRC_Continue_Sino_Japanese_Disputes
 		}
 		
 		completion_reward = {
-		add_war_support = -0.02
-		CHI = { add_opinion_modifier = { target = PRC modifier = recent_actions_positive } }
-		CHI = { 
-			add_popularity = {
+			add_war_support = -0.02
+			CHI = { add_opinion_modifier = { target = PRC modifier = recent_actions_positive } }
+			CHI = { 
+				add_popularity = {
 	                ideology = conservative
 	                popularity = 0.02
 		        }
-		}		
-		news_event = china_news.6	
-		
-		
+			}		
+			news_event = china_news.6	
+		}
+
 		ai_will_do = {
 			factor = 70
 		}
-	}
 	}
 	
 	focus = {
