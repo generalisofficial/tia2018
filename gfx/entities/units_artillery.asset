@@ -34,7 +34,7 @@ entity = {
 	scale = 1
 	
 	attach = { name = artillery			artillery = "artillery_gun_entity" }
-	attach = { name = infantry			infantry = "infantry_rifle_entity" }
+	attach = { name = infantry			infantry = "infantry_entity" }
 }
 
 
@@ -56,8 +56,9 @@ entity = {
 	scale = 1
 	
 	attach = { name = artillery			artillery = "artillery_gun_entity" }
-	attach = { name = infantry			infantry = "infantry_rifle_entity" }
+	attach = { name = infantry			infantry = "infantry_entity" }
 }
+
 
 entity = {
 	name = "artillery_gun_entity"
@@ -92,5 +93,5 @@ entity = {
 	state = { name = "move"				animation = "move" 					animation_blend_time = 0.3 animation_speed = 1.0 }
 	state = { name = "retreat"			animation = "move" 					animation_blend_time = 0.3 animation_speed = 1.0 }
 	
-	scale = 1.0
+	scale = 0.8
 }

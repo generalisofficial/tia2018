@@ -172,22 +172,13 @@ objectTypes = {
 	}
 	
 	pdxmesh = {
-		name = "eastern_unit_artillery_mesh"
-		file = "gfx/models/units/TIA/artillery/eastern_generic_artillery.mesh"
+		name = "unit_artillery_mesh"
+		file = "gfx/models/buildings/artillery.mesh"
 		
 		animation = { id = "idle"  			type = "artillery_idle_animation" }
 		animation = { id = "move"  			type = "artillery_moving_animation" }
 		animation = { id = "attack"  		type = "artillery_attack_animation" }
 	}
-	
-	pdxmesh = {
-		name = "western_unit_artillery_mesh"
-		file = "gfx/models/units/TIA/artillery/western_generic_artillery.mesh"
-		
-		animation = { id = "idle"  			type = "artillery_idle_animation" }
-		animation = { id = "move"  			type = "artillery_moving_animation" }
-		animation = { id = "attack"  		type = "artillery_attack_animation" }
-	}	
 	
 	pdxmesh = {
 		name = "frame_artillery_mesh"
