@@ -108,7 +108,6 @@ leader_traits = {
 		parent = panzer_leader
 		
 		mutually_exclusive = combined_arms_expert
-		mutually_exclusive = cavalry_expert
 		
 		gui_row = 1
 	}
@@ -131,7 +130,6 @@ leader_traits = {
 		}
 		
 		trait_type = assignable_trait
-		parent = cavalry_leader
 		parent = panzer_leader
 		
 		mutually_exclusive = panzer_expert
@@ -157,7 +155,7 @@ leader_traits = {
 		}
 		
 		trait_type = assignable_trait
-		parent = cavalry_leader
+		parent = panzer_leader
 		
 		mutually_exclusive = panzer_expert
 		mutually_exclusive = combined_arms_expert

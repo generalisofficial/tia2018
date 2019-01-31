@@ -2420,3 +2420,17 @@ soundeffect = {
 		sound = "decisions_ui_button_01"
 	}
 }
+
+soundeffect = {
+	name = ita_rocket_unit_attack
+	falloff = falloff_100
+	sounds = {
+		sound = ita_rocket_unit_attack_01
+	}  
+	max_audible = 3
+	max_audible_behaviour = fail
+	is3d = yes
+	volume = 0.5
+	delay_random_offset = { 0.0 0.15 }
+	playbackrate_random_offset = { 0.0 0.10 }
+}
