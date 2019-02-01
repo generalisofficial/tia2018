@@ -7,8 +7,14 @@ state={
 	}
 
 	history={
-		owner = LBA
+		owner = HOR
 		add_core_of = LBA
+		add_core_of = HOR
+		LBA = {
+			set_province_controller = 7194
+			set_province_controller = 4047
+			set_province_controller = 1041
+		}
 		buildings = {
 			infrastructure = 1
 			air_base = 1
