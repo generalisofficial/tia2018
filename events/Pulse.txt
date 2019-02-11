@@ -163,6 +163,13 @@ country_event = {
 		}
 		if = {
 			limit = {
+				date > 2018.12.13
+				date < 2019.1.1
+			}
+			news_event = terrorism.1
+		}
+		if = {
+			limit = {
 				original_tag = FRA
 				date > 2018.11.3
 				date < 2019.1.1
