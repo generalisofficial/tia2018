@@ -105,15 +105,21 @@ baltic_assembly_decisions = {
 		}
 		
 		available = {
-			owns_state = 13
-			owns_state = 191
-			owns_state = 840
-			owns_state = 12
-			owns_state = 190
-			owns_state = 96
-			owns_state = 189
-			owns_state = 188
-			owns_state = 11
+		    OR = {
+			    original_tag = EST
+		        NOT = { country_exists = EST }
+			    EST = { is_subject_of = ROOT }
+			}
+			OR = {
+			    original_tag = LAT
+		        NOT = { country_exists = LAT }
+			    LAT = { is_subject_of = ROOT }
+			}
+			OR = {
+			    original_tag = LIT
+		        NOT = { country_exists = LIT }
+			    LIT = { is_subject_of = ROOT }
+			}
 		}
 		
 		icon = civil_support
@@ -123,6 +129,7 @@ baltic_assembly_decisions = {
 		
 		complete_effect = {
 			set_cosmetic_tag = BLT
+			set_capital = 12
 			set_global_flag = baltic_assembly_dissolved
 			every_state = {
 			    limit = {
@@ -133,6 +140,24 @@ baltic_assembly_decisions = {
 				    }
 			    }
 			    add_core_of = ROOT
+		    }
+			if = {
+			    limit = {
+		            EST = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = EST transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            LAT = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = LAT transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            LIT = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = LIT transfer_troops = yes }
 		    }
 			every_country = {
 			    limit = {
@@ -478,6 +503,133 @@ shanghai_cooperation_organization_decisions = {
 		
 		ai_will_do = {
 			base = 0
+		}
+	}
+}
+
+benelux_decisions = {
+	
+	join_benelux = {
+	
+		visible = {
+			NOT = { has_idea = benelux_member has_idea = salafist_jihadist_group }
+			OR = { original_tag = HOL original_tag = BEL original_tag = LUX }
+		}
+		
+		available = {
+            NOT = { has_idea = benelux_member has_idea = non_member_state }
+		}
+		
+		complete_effect = {
+            add_ideas = benelux_member
+		}
+		
+		icon = benelux
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_benelux = {
+	
+		visible = {
+			has_idea = benelux_member
+		}
+		
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = benelux_member
+		}
+		
+		icon = benelux
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	unite_the_benelux = {
+		visible = {
+		    OR = {
+			    original_tag = HOL
+				original_tag = BEL
+				original_tag = LUX
+			}
+		}
+		
+		available = {
+		    OR = {
+			    original_tag = HOL
+		        NOT = { country_exists = HOL }
+			    HOL = { is_subject_of = ROOT }
+			}
+			OR = {
+			    original_tag = BEL
+		        NOT = { country_exists = BEL }
+			    BEL = { is_subject_of = ROOT }
+			}
+			OR = {
+			    original_tag = LUX
+		        NOT = { country_exists = LUX }
+			    LUX = { is_subject_of = ROOT }
+			}
+		}
+		
+		icon = benelux
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = BNL
+			set_capital = 34
+			set_global_flag = benelux_dissolved
+			every_state = {
+			    limit = {
+				    OR = {
+				         is_core_of = HOL
+				         is_core_of = BEL
+						 is_core_of = LUX
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			if = {
+			    limit = {
+		            HOL = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = HOL transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            BEL = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = BEL transfer_troops = yes }
+		    }
+			if = {
+			    limit = {
+		            LUX = { is_subject_of = ROOT }
+			    }
+			    annex_country = { target = LUX transfer_troops = yes }
+		    }
+			every_country = {
+			    limit = {
+				    has_idea = benelux_member
+			    }
+			    remove_ideas = benelux_member
+		    }
+		}
+		
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }
