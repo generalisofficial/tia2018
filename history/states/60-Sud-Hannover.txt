@@ -2,29 +2,35 @@
 state={
 	id=60
 	name="STATE_60"
-	
-	resources = {
-		steel = 6
+	resources={
+		steel=6.000
 	}
 
 	history={
 		owner = GER
-		victory_points = { 6524 3 }		#Erfurt
-		victory_points = { 538 2 }		#Jena
-		victory_points = { 6501 2 }		#Gera
+		victory_points = {
+			6524 3 
+		}
+		victory_points = {
+			538 2 
+		}
+		victory_points = {
+			6501 2 
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
 			air_base = 2
+
 		}
 		add_core_of = GER
 
 	}
 
 	provinces={
-		425 482 538 3500 3561 6501 6524 9497 
+		425 482 538 3500 6501 6524 9497 
 	}
 	manpower=3105214
 	buildings_max_level_factor=1.000
-	state_category = state_level_6
+	state_category=state_level_6
 }
