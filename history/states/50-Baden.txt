@@ -1,13 +1,11 @@
+
 state={
 	id=50
 	name="STATE_50"
-
-	state_category = state_level_14
-	
-	resources = {
-		steel = 27
+	resources={
+		steel=27.000
 	}
-	
+
 	history={
 		owner = GER
 		set_state_flag = state_government_progressive
@@ -16,18 +14,31 @@ state={
 			industrial_complex = 4
 			arms_factory = 1
 			air_base = 3
+
 		}
 		add_core_of = GER
-		victory_points = { 9517 20 } #Stuttgart
-		victory_points = { 3530 5 }	 #Karlsruhe
-		victory_points = { 6568 4 }	 #Heidelberg
-		victory_points = { 6712 7 }	 #Freiburg
-		victory_points = { 6934 2 }	 #Friedrichshafen
+		victory_points = {
+			9517 20 
+		}
+		victory_points = {
+			3530 5 
+		}
+		victory_points = {
+			6568 4 
+		}
+		victory_points = {
+			6712 7 
+		}
+		victory_points = {
+			6934 2 
+		}
+
 	}
 
 	provinces={
-		519 694 3530 3679 3690 3692 6542 6555 6568 6581 6712 6934 9517 9545 9655 11486 11499 11640 13126 
+		519 694 3530 3679 3692 6542 6555 6568 6581 6712 6934 9517 9545 9655 11486 11499 11640 13126 
 	}
 	manpower=10586854
 	buildings_max_level_factor=1.000
+	state_category=state_level_14
 }
