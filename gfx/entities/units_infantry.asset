@@ -110,8 +110,8 @@ entity = {
 	
 	state = { 
 	name = "support_attack"	animation = "support_attack" 
-	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = m16_attack } } 
-	event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = m16_attack } } 
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = m16_support_attack } } 
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = m16_support_attack } } 
 	event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
 	}
 }
@@ -220,20 +220,20 @@ entity = {
 	
 	state = { name = "attack"	animation = "attack" 
 		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ak47_attack } } 
-		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = m16_attack } } 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ak47_attack } } 
 		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
 	}
 	
 	state = { name = "defend"
 		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ak47_attack } } 
-		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = m16_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ak47_attack } } 
 		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
 	}
 	
 	state = { 
 	name = "support_attack"	animation = "support_attack" 
-	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = ak47_attack } } 
-	event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = m16_attack } } 
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = ak47_support_attack } } 
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = ak47_support_attack } } 
 	event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
 	}
 }
