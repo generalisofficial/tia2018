@@ -72,6 +72,14 @@ technology_categories = {
 	para_tech
 	light_mechanized
 	heavy_mechanized
+	asw_tech
+	naval_minesweeping
+	naval_minelaying
+	naval_mines
+	category_nav_bomber
+	category_tac_bomber
+	category_strat_bomber
+	fg_tech
 }
 
 technology_folders = {
@@ -80,7 +88,16 @@ technology_folders = {
 	armour_folder
 	artillery_folder
 	air_techs_folder
-	naval_folder
+	naval_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+		}
+	}
+	mtgnavalfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	industry_folder
 	land_doctrine_folder
 	naval_doctrine_folder
