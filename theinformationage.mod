@@ -7,3 +7,11 @@ tags={
 	"Ideologies"
 }
 supported_version="1.5.4"
+replace_path = "history/units"
+replace_path = "common/ai_focuses"
+replace_path = "common/national_focus"
+replace_path = "common/ai_strategy"
+replace_path = "common/ai_strategy_plans"
+replace_path = "common/scripted_triggers"
+replace_path = "common/scripted_localisation"
+replace_path = "common/scripted_effects"
