@@ -28,7 +28,6 @@ on_actions = {
 			Root = {
 				every_army_leader = {
 					limit = { is_exiled_leader_from = Root }
-					remove_unit_leader_trait = exiled_leader
 					remove_exile_tag = yes
 				}
 			}
