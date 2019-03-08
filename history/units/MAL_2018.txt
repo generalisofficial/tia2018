@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Border Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -26,12 +26,32 @@ division_template = {
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 2 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 	}
+}
+division_template = {
+	name = "Special Forces Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+	
+	priority = 2
 }
 division_template = {
 	name = "Armored Brigade"
@@ -41,6 +61,7 @@ division_template = {
 		modern_armor = { x = 0 y = 1 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
+		light_mechanized = { x = 2 y = 0 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
@@ -50,30 +71,101 @@ division_template = {
 units = {
 	
 	division = {
-		name = "1st Brigade"
-		location = 12751
+		name = "Malaysian Special Forces"
+		location = 12144
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Division 1st Brigade"
+		location = 4424
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Division 2nd Brigade"
+		location = 4424
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "30th Border Brigade"
+		location = 12144
+		division_template = "Border Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "31st Border Brigade"
+		location = 7387
+		division_template = "Border Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Division 1st Brigade"
+		location = 12905
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "2nd Brigade"
-		location = 12794
-		division_template = "Motorized Brigade"
+		name = "1st Division 2nd Brigade"
+		location = 12905
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
-}
-
-### Air OOB ###
-
-air_wings = {
-	746 = {
-		#MiG-21Bis - 70s but downgraded for gameplay variety and to fit with icon
-		jet_multirole_equipment_1 = {
-			owner = "MAL" 
-			amount = 9
-		}
-
+	division = {
+		name = "2nd Division 1st Brigade"
+		location = 12255
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}
+	
+	division = {
+		name = "2nd Division 2nd Brigade"
+		location = 12255
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Division 1st Brigade"
+		location = 12271
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Division 2nd Brigade"
+		location = 12271
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Division 1st Brigade"
+		location = 10212
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Division 2nd Brigade"
+		location = 10212
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "11th Brigade"
+		location = 4412
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
 }

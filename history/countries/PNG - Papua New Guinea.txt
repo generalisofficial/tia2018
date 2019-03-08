@@ -1,12 +1,11 @@
-﻿capital = 336
+﻿capital = 523
 
-oob = "SIG_2018"
+oob = "PNG_2018"
 
-set_research_slots = 5
-set_convoys = 470
-set_stability = 0.55
+set_research_slots = 2
+set_convoys = 60
+set_stability = 0.4
 
-set_country_flag = country_language_chinese
 set_country_flag = country_language_english
 
 set_technology = {
@@ -46,7 +45,6 @@ set_technology = {
 	interwar_artillery = 1
 	antitank1 = 1
 	interwar_antiair = 1
-	
 
 	
 	gen2_attack = 1
@@ -83,50 +81,26 @@ set_technology = {
 
 add_ideas = {
 	population_growth_steady
-	extensive_conscription
 	commonwealth_of_nations_member
 	non_aligned_movement_member
 }
 
-give_guarantee = NZL
-give_guarantee = MAL
-give_guarantee = AST
-give_guarantee = ENG
-
 set_politics = {
 
 	parties = {
-		conservative = {
-			popularity = 69.9
-		}
-		social_democrat = {
-			popularity = 17.6
-		}
-		social_liberal = {
-			popularity = 12.5
+		reactionary = {
+			popularity = 100
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "2017.9.13"
-	election_frequency = 72
+	ruling_party = reactionary
+	last_election = "2017.6.24"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Lee Hsien Loong"
-	picture = "Lee_Hsien_Loong.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Low Thia Khiang"
-	picture = "Low_Thia_Khiang.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Chiam See Tong"
-	picture = "Chiam_See_Tong.dds"
-	ideology = social_liberal_ideology
+	name = "Peter O'Neill"
+	picture = "Peter_O_Neill.dds"
+	ideology = independent
 }

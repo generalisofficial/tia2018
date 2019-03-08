@@ -1,13 +1,12 @@
-﻿capital = 336
+﻿capital = 746
 
-oob = "SIG_2018"
+oob = "MLI_2018"
 
-set_research_slots = 5
-set_convoys = 470
-set_stability = 0.55
+set_research_slots = 2
+set_convoys = 10
+set_stability = 0.15
 
-set_country_flag = country_language_chinese
-set_country_flag = country_language_english
+set_country_flag = country_language_french
 
 set_technology = {
 	infantry_weapons = 1
@@ -46,7 +45,6 @@ set_technology = {
 	interwar_artillery = 1
 	antitank1 = 1
 	interwar_antiair = 1
-	
 
 	
 	gen2_attack = 1
@@ -80,53 +78,40 @@ set_technology = {
 	manufacturing1 = 1
 	excavation1 = 1
 }
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
 
 add_ideas = {
-	population_growth_steady
-	extensive_conscription
-	commonwealth_of_nations_member
+	population_growth_explosion
+	african_union_member
 	non_aligned_movement_member
 }
-
-give_guarantee = NZL
-give_guarantee = MAL
-give_guarantee = AST
-give_guarantee = ENG
 
 set_politics = {
 
 	parties = {
-		conservative = {
-			popularity = 69.9
+		progressive = {
+			popularity = 32.83
 		}
 		social_democrat = {
-			popularity = 17.6
-		}
-		social_liberal = {
-			popularity = 12.5
+			popularity = 67.17
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "2017.9.13"
-	election_frequency = 72
+	ruling_party = social_democrat
+	last_election = "2013.7.29"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Lee Hsien Loong"
-	picture = "Lee_Hsien_Loong.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Low Thia Khiang"
-	picture = "Low_Thia_Khiang.dds"
+	name = "Ibrahim Boubacar Keita"
+	picture = "Ibrahim_Boubacar_Keita.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Chiam See Tong"
-	picture = "Chiam_See_Tong.dds"
-	ideology = social_liberal_ideology
+	name = "Soumaila Cissé"
+	picture = "Soumailia_Cisse.dds"
+	ideology = progressive_ideology
 }

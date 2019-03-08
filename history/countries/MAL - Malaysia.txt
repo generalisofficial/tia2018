@@ -1,1 +1,366 @@
-﻿
+﻿capital = 816
+
+oob = "MAL_2018"
+
+set_research_slots = 3
+set_convoys = 350
+set_stability = 0.4
+
+set_country_flag = country_language_malay
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank = 1 
+ 	antitank1 = 1
+	interwar_antiair = 1
+	
+
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	modern_communication_systems = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+}
+
+add_ideas = {
+	population_growth_rapid
+	limited_conscription
+	commonwealth_of_nations_member
+	non_aligned_movement_member
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+give_guarantee = NZL
+give_guarantee = SIG
+give_guarantee = AST
+give_guarantee = ENG
+
+set_politics = {
+	parties = {
+		islamist = {
+		    popularity = 8.11
+		}
+		nationalist = {
+		    popularity = 5.86
+		}
+		reactionary = {
+		    popularity = 24.32
+		}
+		conservative = {
+		    popularity = 15.32
+		}
+		social_liberal = {
+		    popularity = 4.95
+		}
+		social_democrat = {
+		    popularity = 18.92
+		}
+		progressive = {
+		    popularity = 22.52
+		}
+	}
+	ruling_party = reactionary
+	last_election = "2013.5.9"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Mahathir Mohamad"
+	picture = "Mahathir_Mohamad.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Anwar Ibrahim"
+	picture = "Anwar_Ibrahim.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Najib Razak"
+	picture = "Najib_Razak.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Mohamad Sabu"
+	picture = "Mohamad_Sabu.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Abdul Hadi Awang"
+	picture = "Abdul_Hadi_Awang.dds"
+	ideology = islamic_democracy
+}
+
+create_country_leader = {
+	name = "Tan Kok Wai"
+	picture = "Tan_Kok_Wai.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Abang Abdul Rahman Zohari"
+	picture = "Abang_Abdul_Rahman_Zohari.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Mohd Nasir Hashim"
+	picture = "Mohd_Nasir_Hashim.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Teo Chee Kang"
+	picture = "Teo_Chee_Kang.dds"
+	ideology = libertarian
+}
+
+create_corps_commander = {
+	name = "Zulkifeli Mohd Zin"
+	picture = "Zulkifeli_Mohd_Zin.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Raja Mohamed Affandi Raja Mohamed Noor"
+	picture = "Raja_Mohamed.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zulkifi Zainal Abidin"
+	picture = "Zulkifli_Zainal_Abidin.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Dato Anuwi"
+	picture = "admirals/Dato_Anuwi.dds"
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Raja Mohamed Bin Raja Mohamed Noor"
+	picture = "Portrait_Noor.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Abdul Halim Bin Jalal"
+	picture = "Portrait_Jalal.dds"
+	traits = { fast_planner }
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Affendi Bin Buang"
+	picture = "Portrait_Affendi.dds"
+	traits = { thorough_planner }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Zulkiple Bin Kassim"
+	picture = "Portrait_Zulkiple.dds"
+	traits = { panzer_leader }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Panglima Ahmad Hasbullah Bin Mohd Nawawi"
+	picture = "Portrait_Hasbullah.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ackbal Bin Abdul Samad"
+	picture = "Portrait_Ackbal.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Datuk Wira Zamrose Bin Mohd Zain"
+	picture = "Portrait_Zamrose.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sheikh Mokhsin Bin Sheikh Hassan"
+	picture = "Portrait_Sheikh.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pahlawan Mohd Razif Bin Idris"
+	picture = "Portrait_Razif.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Pahlawan Haji Abu Sufian Bin Haji Ahmad"
+	picture = "Portrait_Sufian.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Hayazi Bin Abdul Aziz"
+	picture = "Portrait_Hayazi.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sultan Ibrahim"
+	picture = "Portrait_Sultan_Ibrahim.dds"
+	traits = { commando jungle_rat naval_invader }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Ahmad Kamarulzaman Bin Haji Ahmad Badaruddin"
+	picture = "Portrait_Kamarul.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Anuwi Bin Hassan"
+	picture = "Portrait_Anuwi.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Aris Adi Tan Bin Abdullah"
+	picture = "Portrait_Aris.dds"
+	traits = { fly_swatter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohamad Roslan Bin Mohamad Ramli"
+	picture = "Portrait_Roslan.dds"
+	traits = { air_controller }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Zahiruddin Putra Bin Syed Osman"
+	picture = "Portrait_Syed.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Abdul Rahman Bin Ayob"
+	picture = "Portrait_Rahman.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jamalludin Bin Mohd Saman"
+	picture = "Portrait_Jamalludin.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Saifudin Bin Kamarudin"
+	picture = "Portrait_Saifudin.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohammed Ariff Bin Mahru"
+	picture = "Portrait_Ariff.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Rusli Bin Ramli"
+	picture = "Portrait_Rusli.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohd Reza Bin Mohd Sany"
+	picture = "Portrait_Reza.dds"
+	traits = {  }
+	skill = 1
+}

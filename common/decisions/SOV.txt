@@ -28,8 +28,8 @@ soviet_union = {
 			   UKR = { is_subject_of = ROOT }
 			}
 			OR = {
-		       NOT = { country_exists = MDV }
-			   MDV = { is_subject_of = ROOT }
+		       NOT = { country_exists = MOL }
+			   MOL = { is_subject_of = ROOT }
 			}
 			OR = {
 		       NOT = { country_exists = GEO }
@@ -98,9 +98,9 @@ soviet_union = {
 		    }
 			if = {
 			    limit = {
-		            MDV = { is_subject_of = ROOT }
+		            MOL = { is_subject_of = ROOT }
 			    }
-			    annex_country = { target = MDV transfer_troops = yes }
+			    annex_country = { target = MOL transfer_troops = yes }
 		    }
 		}
 		

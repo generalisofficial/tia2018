@@ -1,12 +1,11 @@
 ﻿division_template = {
-	name = "Desert Force"
+	name = "Infantry Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
-	
-	priority = 0
 }
 division_template = {
 	name = "Motorized Brigade"
@@ -51,30 +50,16 @@ division_template = {
 units = {
 	
 	division = {
-		name = "Mechanized Forces of Niger"
-		location = 12707
+		name = "1st Brigade"
+		location = 12751
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "Auxiliary Brigade"
-		location = 8028
+		name = "2nd Brigade"
+		location = 12794
 		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Northern Force"
-		location = 4913
-		division_template = "Desert Force"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Northern Force"
-		location = 1956
-		division_template = "Desert Force"
 		start_experience_factor = 0.3
 	}
 	
@@ -83,11 +68,11 @@ units = {
 ### Air OOB ###
 
 air_wings = {
-	749 = {
-		#Su-25
-		jet_attack_equipment_2 = {
-			owner = "NIG" 
-			amount = 2
+	746 = {
+		#MiG-21Bis - 70s but downgraded for gameplay variety and to fit with icon
+		jet_multirole_equipment_1 = {
+			owner = "MAL" 
+			amount = 9
 		}
 
 	}

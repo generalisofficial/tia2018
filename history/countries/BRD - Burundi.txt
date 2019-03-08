@@ -1,13 +1,13 @@
-﻿capital = 336
+﻿capital = 780
 
-oob = "SIG_2018"
+oob = "BRD_2018"
 
-set_research_slots = 5
-set_convoys = 470
-set_stability = 0.55
+set_research_slots = 2
+set_convoys = 20
+set_stability = 0.25
 
-set_country_flag = country_language_chinese
 set_country_flag = country_language_english
+set_country_flag = country_language_french
 
 set_technology = {
 	infantry_weapons = 1
@@ -46,7 +46,6 @@ set_technology = {
 	interwar_artillery = 1
 	antitank1 = 1
 	interwar_antiair = 1
-	
 
 	
 	gen2_attack = 1
@@ -82,51 +81,42 @@ set_technology = {
 }
 
 add_ideas = {
-	population_growth_steady
+	population_growth_explosion
+	hutu_tutsi_tensions
+	african_union_member
 	extensive_conscription
-	commonwealth_of_nations_member
 	non_aligned_movement_member
+	east_african_community_member
 }
-
-give_guarantee = NZL
-give_guarantee = MAL
-give_guarantee = AST
-give_guarantee = ENG
 
 set_politics = {
 
 	parties = {
-		conservative = {
-			popularity = 69.9
-		}
-		social_democrat = {
-			popularity = 17.6
+		nationalist = {
+			popularity = 2.14
 		}
 		social_liberal = {
-			popularity = 12.5
+			popularity = 69.41
+		}
+		reactionary = {
+			popularity = 28.45
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "2017.9.13"
-	election_frequency = 72
+	ruling_party = social_liberal
+	last_election = "2015.7.21"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Lee Hsien Loong"
-	picture = "Lee_Hsien_Loong.dds"
-	ideology = social_conservative
+	name = "Pierre Nkurunziza"
+	picture = "Pierre_Nkurunziza.dds"
+	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Low Thia Khiang"
-	picture = "Low_Thia_Khiang.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Chiam See Tong"
-	picture = "Chiam_See_Tong.dds"
-	ideology = social_liberal_ideology
+	name = "Agathon Rwasa"
+	picture = "Agathon_Rwasa.dds"
+	ideology = independent
 }
