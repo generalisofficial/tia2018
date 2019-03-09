@@ -233,18 +233,18 @@ guiTypes = {
 			iconType = {
 				name = "constructions_bg2"
 				position = { x = 0 y = 152 }
-				quadTextureSprite = "GFX_constructions_bg1"
+				quadTextureSprite = "GFX_constructions_bg4"
 			}
 			
 			iconType = {
 				name = "constructions_bg3"
-				position = { x = 0 y = 440 }
+				position = { x = 0 y = 380 }
 				quadTextureSprite = "GFX_constructions_bg2"
 			}
 
 			iconType = {
 				name = "constructions_bg4"
-				position = { x = 0 y = 585 }
+				position = { x = 0 y = 525 }
 				quadTextureSprite = "GFX_constructions_bg3"
 			}
 
@@ -262,7 +262,7 @@ guiTypes = {
 
 			iconType = {
 				name = "province_constructions"
-				position = { x = 5 y = 443 }
+				position = { x = 5 y = 383 }
 				quadTextureSprite = "GFX_province_constructions"
 			}
 			
@@ -271,7 +271,7 @@ guiTypes = {
 				position = { x = 8 y = 51 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 44 }
-				max_slots_horizontal = 3
+				max_slots_horizontal = 2
 				format = "UPPER_LEFT"
 			}
 			
@@ -280,23 +280,23 @@ guiTypes = {
 				position = { x = 8 y = 196 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 44 }
-				max_slots_horizontal = 3
+				max_slots_horizontal = 2
 				format = "UPPER_LEFT"
 			}
 			
 			gridBoxType = {
 				name = "province_item_grid"
-				position = { x = 8 y = 485 }
+				position = { x = 8 y = 422 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 44 }
-				max_slots_horizontal = 3
+				max_slots_horizontal = 2
 				format = "UPPER_LEFT"
 			}
 		}
 
 		buttonType = {
 			name = "convert_ic_button"
-			position = { x = -81 y = 644 }
+			position = { x = -81 y = 584 }
 			quadTextureSprite ="GFX_convert_ic_button"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -306,7 +306,7 @@ guiTypes = {
 				
 		buttonType = {
 			name = "minimize"
-			position = { x = -74 y = 703 }
+			position = { x = -74 y = 643 }
 			quadTextureSprite ="GFX_production_line_arrow_left"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -315,7 +315,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "expand"
-			position = { x = -74 y = 703 }
+			position = { x = -74 y = 643 }
 			quadTextureSprite ="GFX_production_line_arrow_right"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -324,7 +324,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -42 y = 9 }
+			position = { x = -43 y = 9 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -353,7 +353,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "start_construction_entry"
-		position = { x=0 y=0 }
+		position = { x=0 y=4 }
 		size = { width = 45 height = 45 }
 		clipping = no
 		
