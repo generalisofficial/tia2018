@@ -1,12 +1,14 @@
-﻿capital = 769
+﻿capital = 759
 
-oob = "BEN_2018"
+oob = "RCG_2018"
 
 set_research_slots = 2
-set_convoys = 240
-set_stability = 0.3
+set_convoys = 90
+set_stability = 0.25
 
 set_country_flag = country_language_french
+set_country_flag = country_language_lingala
+set_country_flag = country_language_munukutuba
 
 set_technology = {
 	infantry_weapons = 1
@@ -89,27 +91,51 @@ set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 65.37
+			popularity = 0
+		}
+		conservative = {
+			popularity = 0
 		}
 		social_liberal = {
-			popularity = 34.63
+			popularity = 39.81
+		}
+		social_democrat = {
+			popularity = 0
+		}
+		democratic_socialist = {
+			popularity = 60.19
+		}
+		communist = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = reactionary
-	last_election = "2016.3.6"
+	ruling_party = democratic_socialist
+	last_election = "2016.3.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Patrice Talon"
-	picture = "Patrice_Talon.dds"
-	ideology = independent
+	name = "Denis Sassou Nguesso"
+	picture = "Denis_Sassou_Nguesso.dds"
+	ideology = african_socialist
 }
 
 create_country_leader = {
-	name = "Thomas Boni Yayi"
-	picture = "Thomas_Boni_Yayi.dds"
-	ideology = centrist
+	name = "Pascal Tsaty Mabiala"
+	picture = "Pascal_Tsaty_Mabiala.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Guy Brice Parfait Kolélas"
+	picture = "Guy_Brice_Parfait_Kolelas.dds"
+	ideology = social_liberal_ideology
+}
+
+create_corps_commander = {
+	name = "Guy Blanchard Okoi"
+	picture = "generals/Guy_Okoi.dds"
+	skill = 1
 }

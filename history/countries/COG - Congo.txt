@@ -1,14 +1,16 @@
-﻿capital = 759
+﻿capital = 295
 
 oob = "COG_2018"
 
 set_research_slots = 2
-set_convoys = 90
-set_stability = 0.25
+set_convoys = 60
+set_stability = 0.1
 
 set_country_flag = country_language_french
 set_country_flag = country_language_lingala
-set_country_flag = country_language_munukutuba
+set_country_flag = country_language_kikongo
+set_country_flag = country_language_swahili
+set_country_flag = country_language_tshiluba
 
 set_technology = {
 	infantry_weapons = 1
@@ -90,52 +92,46 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 39.81
-		}
 		social_democrat = {
-			popularity = 0
+			popularity = 38.57
+		}
+		market_liberal = {
+			popularity = 34.83
+		}
+		reactionary = {
+			popularity = 23.84
 		}
 		democratic_socialist = {
-			popularity = 60.19
-		}
-		communist = {
-			popularity = 0
+			popularity = 2.76
 		}
 	}
 	
 	ruling_party = democratic_socialist
-	last_election = "2016.3.20"
+	last_election = "2013.12.30"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Denis Sassou Nguesso"
-	picture = "Denis_Sassou_Nguesso.dds"
+	name = "Joseph Kabila"
+	picture = "Joseph_Kabila.dds"
 	ideology = african_socialist
 }
 
 create_country_leader = {
-	name = "Pascal Tsaty Mabiala"
-	picture = "Pascal_Tsaty_Mabiala.dds"
+	name = "Félix Tshisekedi"
+	picture = "Felix_Tshisekedi.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Guy Brice Parfait Kolélas"
-	picture = "Guy_Brice_Parfait_Kolelas.dds"
-	ideology = social_liberal_ideology
+	name = "Martin Fayulu"
+	picture = "Martin_Fayulu.dds"
+	ideology = libertarian
 }
 
-create_corps_commander = {
-	name = "Guy Blanchard Okoi"
-	picture = "generals/Guy_Okoi.dds"
-	skill = 1
+create_country_leader = {
+	name = "Emmanuel Ramazani Shadary"
+	picture = "Emmanuel_Ramazani_Shadary.dds"
+	ideology = independent
 }
