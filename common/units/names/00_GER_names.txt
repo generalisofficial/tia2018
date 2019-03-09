@@ -2,7 +2,7 @@
 	fleet_names_template = FLEET_NAME_GER
 	submarine = {
 		prefix = ""
-		generic = { "Unterseeboot" }
+		generic = { "U-Boot" }
 		unique = {
 			"U-1" "U-2" "U-3" "U-4" "U-5" "U-6" "U-7" "U-8" "U-9" "U-10" "U-11" "U-12" "U-13" "U-14" "U-15" "U-16" "U-17" "U-18" "U-19" "U-20" "U-21" "U-22" "U-23" "U-24" "U-25" "U-26" 
 			"U-27" "U-28" "U-29" "U-30" "U-31" "U-32" "U-33" "U-34" "U-35" "U-36" "U-37" "U-38" "U-39" "U-40" "U-41" "U-42" "U-43" "U-44" "U-45" "U-46" "U-47" "U-48" "U-49" "U-50" "U-51" "U-52" 
@@ -64,7 +64,7 @@
 		prefix = ""
 		generic = { "Zerstörer" }
 		unique = {
-			"Z1" "Z2" "Z3" "Z4" "Z5" "Z6" "Z7" "Z8" "Z9" "Z10" "Z11" "Z12" "Z13" "Z14" "Z15" "Z16" "Z17" "Z18" "Z18" "Z20" "Z21" "Z22" "Z23" "Z24" "Z25" "Z26" "Z27" "Z28" "Z29" "Z30"
+			"Z1" "Z2" "Z3" "Z4" "Z5" "Z6" "Z7" "Z8" "Z9" "Z10" "Z11" "Z12" "Z13" "Z14" "Z15" "Z16" "Z17" "Z18" "Z19" "Z20" "Z21" "Z22" "Z23" "Z24" "Z25" "Z26" "Z27" "Z28" "Z29" "Z30"
 			"Z31" "Z32" "Z33" "Z34" "Z35" "Z36" "Z37" "Z38" "Z39" "Z40" "Z41" "Z42" "Z43" "Z44" "Z45" "Z46" "Z47" "Z48" "Z49" "Z50" "Z51" "Z52" "Z53" "Z54" "Z55" "Z56" "Z57" "Z58" "Z59"
 			"Z60" "Z61" "Z62" "Z63" "Z64" "Z65" "Z66" "Z67" "Z68" "Z69" "Z70" "Z71" "Z72" "Z73" "Z74" "Z75" "Z76" "Z77" "Z78" "Z79" "Z80" "Z81" "Z82" "Z83" "Z84" "Z85" "Z86" "Z87" "Z88"
 			"Z89" "Z90" "Z91" "Z92" "Z93" "Z94" "Z95" "Z96" "Z97" "Z98" "Z99" "Z100" "Z101" "Z102" "Z103" "Z104" "Z105" "Z106" "Z107" "Z108" "Z109" "Z110" "Z111" "Z112" "Z113" "Z114" "Z115"
@@ -76,29 +76,35 @@
 	}
 	light_cruiser = {
 		prefix = ""
-		generic = { "Leichte Kreuzer" }
+		generic = { "Leichter Kreuzer" }
 		unique = {
-			"Mainz" "Magdeburg" "München" "Medusa" "Niobe" "Nymphe" "Stettin" "Stuttgart" "Dresden" "Kolberg" "Augsburg" "Breslau" "Stralsund" "Straßburg" "Rostock" 
-			"Pillau" "Elbing" "Graudenz" "Regensburg" "Wiesbaden" "Frankfurt" "Brummer" "Bremen" "Berlin" "Danzig" "Hamburg" 
-			"Bremse" "Lübeck" "Gazelle" "Thetis" "Ariadne" "Amazone" "Frauenlob" "Arcona" "Undine" 
-			"Emden" "Königsberg" "Karlsruhe" "Köln" "Leipzig" "Nürnberg"
-
+			"Emden" "Königsberg" "Karlsruhe" "Köln" "Leipzig" "Nürnberg" "München" "Berlin" "Hamburg" "Stuttgart"
+			"Bremen" "Lübeck" "Danzig" "Stettin" "Dresden" "Mainz" "Augsburg" "Magdeburg" "Breslau" "Hannover"
+			"Stralsund" "Frankfurt" "Rostock" "Elbing" "Straßburg" "Regensburg" "Wiesbaden" "Aachen" "Potsdam" "Heidelberg"
+			"Kiel" "Würzburg" "Münster" "Darmstadt" "Chemnitz" "Braunschweig" "Kassel" "Oldenburg" "Düsseldorf" "Halle"
+			"Wien" "Dortmund" "Freiburg" "Duisburg" "Mannheim" "Erfurt" "Osnabrück" "Essen" "Wolfsburg" "Wuppertal"
+			"Prag" "Innsbruck" "Saarbrücken" "Posen" "Mülhausen" "Paderborn" "Brünn" "Ingolstadt" "Bielefeld" "Salzburg"
+			"Pilsen" "Mülheim" "Heilbronn" "Bonn" "Graz" "Oberhausen" "Ludwigshafen" "Bochum" "Solingen" "Linz"
+			"Mönchengladbach" "Fürth" "Trier" "Hagen" "Krefeld" "Ulm" "Göttingen" "Gelsenkirchen" "Recklinghausen" "Pforzheim"
+			"Hamm" "Bottrop" "Bremerhaven" "Reutlingen" "Jena" "Koblenz" "Leverkusen" "Neuss" "Offenbach" "Herne"
+			"Remscheid" "Kaiserslautern" "Salzgitter" "Schwerin" "Cottbus" "Wilhelmshaven" "Erlangen" "Siegen" "Hildesheim" "Zwickau"
+			"Medusa" "Niobe" "Nymphe" "Brummer" "Bremse" "Gazelle" "Thetis" "Ariadne" "Amazone" "Frauenlob" "Arcona" "Undine" "Hela" "Gefion"
 		}
 	}
 	heavy_cruiser = {
 		prefix = ""
-		generic = { "Kreuzer" }
+		generic = { "Schwerer Kreuzer" "Panzerschiff" }
 		unique = {
-			"Admiral Graf Spee" "Admiral Hipper" "Blücher" "Prinz Eugen" "Seydlitz" "Lützow" "Posen" "Preussen" "Pillau" "Roon" "Elsass" "Hessen" "Herta" 
-			"Freya" "Vineta" "Siegfried" "Hansa" "Friedrich Carl" "Hela" "Gefion" "Helgoland" "Schwaben" "Wörth" "Wettin" "Wittelsbach"
+			"Admiral Graf Spee" "Admiral Hipper" "Blücher" "Prinz Eugen" "Seydlitz" "Lützow" "Roon" "Deutschland" "Herta" "Freya" "Vineta" "Siegfried" "Hansa" "Friedrich Carl" "Buddenbrock" "Bittenfeld" "Schwarzenberg"
+			"Eichhorn" "Flemming" "Boyen" "Haeseler" "Woyrsch" "Mansfeld"
+			"Kalckreuth" "Kleist" "Wrangel" "Daun" "Heyde" "Krockow"
 		}
 	}
 	battle_cruiser = {
 		prefix = ""
 		generic = { "Schlachtkreuzer" }
 		unique = {
-			"Ostfriesland" "Oldenburg" "Posen" "Preussen" "Pillau" "Von der Tann" "Moltke" "Goeben" "Derfflinger" "Holtzendorff" "Braunschweig" 
-			"Bayern" "Sachsen" "Baden" "Weissenburg"  
+			 "Von der Tann" "Moltke" "Goeben" "Derfflinger" "Holtzendorff" "York" "Von Mackensen" "Von Lettow-Vorbeck" "Friedrich Barbarossa" "Karl der Große" 
 		}
 	}
     battleship = {
@@ -107,16 +113,123 @@
         unique = {
             "Scharnhorst" "Gneisenau" "Bismarck" "Tirpitz"
             "Hindenburg" "Ludendorff" "Friedrich der Große" "Großdeutschland" "Ulrich von Hutten" "Götz von Berlichingen"
-            "Brandenburg" "Hessen" "Zähringen" "Mecklenburg" "Elsass" "Lothringen" "Hannover" "Nassau" "Pommern" "Westfalen" "Rheinland" "Thüringen" "Württemberg"
+            "Brandenburg" "Hessen" "Zähringen" "Mecklenburg" "Elsass" "Lothringen" "Hannover" "Nassau" "Pommern" "Westfalen" "Rheinland" "Thüringen" "Württemberg" "Braunschweig" "Bayern" "Sachsen" "Baden" "Weissenburg" "Ostfriesland" "Oldenburg" "Posen" "Preussen" "Pillau" "Helgoland" "Schwaben" "Wörth" "Wettin" "Wittelsbach" "Orbotrit" "Ostmark" "Schleswig" "Holstein" "Franken" "Strelitz"
         }
     }
 	carrier = {
 		prefix = ""
 		generic = { "Flugzeugträger" }
 		unique = {
-			"Konrad Adenauer" "Ludwig Erhard" "Kurt-Georg Kiesinger" "Willy Brandt" "Helmut Schmidt" "Helmut Kohl" "Gerhard Schröder" "Angela Merkel"
-			"Gustav Stresemann" "Friedrich Ebert" "Theodor Heuss" "Johannes Rau" "Joachim Gauck"
+			"Graf Zeppelin" "Peter Strasser" "Seydlitz" "Europa" "Potsdam" "Otto Lilienthal" "Aurora" "Jade" "Elbe" "Manfred von Richthofen" "Max Immelman"
+			
 		}
+	}
+
+	air_wing_names_template = AIR_WING_NAME_GER_FALLBACK
+
+	#Air wings can only be named through archetype
+	fighter_equipment = {
+		prefix = ""
+		generic = { "Jagdgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		 "JG 1 Oesau" "JG 2 Richthofen" "JG 3 Udet" "JG 5 Eismeer" "JG 6 Horst Wessel" "JG 7 Nowotny" "JG 26 Schlageter" "JG 27 Afrika" "JG 51 Mölders" "JG 53 Pik As" "JG 54 Grünherz" "JG 77 Herz As"
+		}	
+	}
+
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = { "Sonder-Jagdverband" "Jagdverband" "Erprobungskommando" "Lehrgeschwader" "Erprobungsgruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = { "Zerstörergeschwader" "Nachtjagdgeschwader"}
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	CAS_equipment = {
+		prefix = ""
+		generic = { "Schlachtgeschwader" "Stukageschwader" "Schnellkampfgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "Träger-Jagdgruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "Träger-Stukagruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Torpedobombergruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Kampfgeschwader" "Kampfschulgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Sonder-Kampfverband" "Erprobungskommando" "Lehrkampfgeschwader" "Schnellbombergeschwader" "Erprobungsgruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Küstenfliegergruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Fernkampfgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Fernkampfgeschwader zbV." "Schnellbombergeschwader" "Erprobungskommando" "Erprobungsgruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "Transportgeschwader" "Kampfgeschwader zbV."}
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
 	}
 
 

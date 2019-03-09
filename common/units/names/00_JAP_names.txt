@@ -78,7 +78,7 @@
 		prefix = ""
 		generic = { "Jun'yosenkan" }
 		unique = {
-			"Kongo" "Hiei" "Haruna" "Kirishima" "Amagi" "Tsukuba" "Ikoma" "Ibuki" "Kurama" "Akagi" "Atago" "Takao"
+			 "Amagi" "Tsukuba" "Ikoma" "Ibuki" "Kurama" "Akagi" "Atago" "Takao" "Kongo" "Hiei" "Haruna" "Kirishima"
 			# Fictional
 			"Iwaki" "Iwate" "Asahi" "Zao" "Iide" "Azuma" "Bandai" "Nasu" "Makihata" "Tanigawa" "Takatsuma" "Hotaka"
 			"Asama" "Tsukuba" "Hotaka" "Jonen" "Norikura" "Tateshina" "Mizugaki" "Tanzawa" "Ena" "Shiomi" "Akaishi"
@@ -90,7 +90,7 @@
 		prefix = ""
 		generic = { "Senkan" }
 		unique = {
-			"Yamato" "Musashi" "Tosa" "Kii" "Owari" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
+			"Hiei" "Yamato" "Musashi" "Tosa" "Kii" "Owari" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
 			# Captured/Converted/Older Models
 			"Fuso" "Yamashiro" "Ise" "Hyuga" "Nagato" "Mutsu" "Kaga" "Shinano" 
 			# Fictional
@@ -108,7 +108,38 @@
 			"Shinyo"
 		}
 	}
+	air_wing_names_template = AIR_WING_NAME_JAP_FALLBACK
 
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "Kokutai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "Kokutai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Kokutai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
+
+	suicide_craft_equipment = {
+		prefix = ""
+		generic = { "Tokubetsu Kogekitai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
 
 	infantry = {
 		prefix = ""
