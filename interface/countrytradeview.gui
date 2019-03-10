@@ -306,7 +306,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -42 y = 9 }
+			position = { x = -43 y = 9 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -571,9 +571,9 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "balance"
-			position = { x=35 y=8 }
+			position = { x=13 y=8 }
 			font = "hoi_20bs"
-			maxWidth = 35
+			maxWidth = 57
 			maxHeight = 18
 			format = right
 		}
@@ -607,11 +607,20 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "needed"
-			position = { x=20 y=96 }
+			position = { x=20 y=94 }
 			font = "hoi_16mbs"
 			maxWidth = 50
-			maxHeight = 18
+			maxHeight = 28
 			format = right
+		}
+		
+		instantTextboxType = {
+			name = "neededType"
+			position = { x=10 y=94 }
+			font = "hoi_16mbs"
+			maxWidth = 50
+			maxHeight = 28
+			format = left
 		}
 		
 		buttonType = {

@@ -1,6 +1,25 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_fuel_strip"
+		texturefile = "gfx//interface//unitcontrol//fuel_strip.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3		
+	}
+	
+	spriteType = {
+		name = "GFX_fuel"
+		texturefile = "gfx//interface//topbar//fuel_icon.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_fuel_state"
+		texturefile = "gfx//interface//topbar//fuel_state_icon.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3		
+	}
+	
+	spriteType = {
 		name = "GFX_playlist_bg"
 		texturefile = "gfx//interface//topbar//musicplayer//playlist_bg.dds"
 	}
@@ -299,6 +318,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_topbar_nuke"
 		texturefile = "gfx//interface//topbar//nuke_icon.dds"
+	}
+	
+	progressbartype = {
+		name = "GFX_topbar_fuel_bar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\fuel_bar.dds"
+		textureFile2 = "gfx\\interface\\fuel_bar_bg.dds"
+		size = { x = 54 y = 8 }
+		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	
 	frameAnimatedSpriteType = {
