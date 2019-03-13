@@ -6,7 +6,7 @@ tags={
 	"Map"
 	"Ideologies"
 }
-supported_version="1.6.0"
+supported_version="1.6.1"
 replace_path = "history/units"
 replace_path = "common/ai_focuses"
 replace_path = "common/national_focus"
