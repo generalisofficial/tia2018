@@ -174,17 +174,15 @@ ideas = {
 			}
 		}
 		
-		SOV_industrial_development_aid = {
-			picture = foreign_capital
+		SOV_memories_of_putin = {
+			picture = memories_of_putin
 		
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.10
-				production_speed_buildings_factor = 0.2
+				stability_factor = -0.3
 			}
 		}
 		
