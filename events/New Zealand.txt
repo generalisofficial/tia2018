@@ -1,0 +1,19 @@
+﻿add_namespace = new_zealand
+
+country_event = { #National Party - Simon Bridges
+	id = new_zealand.1
+	title = new_zealand.1.t
+	desc = new_zealand.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = new_zealand.1.a
+		create_country_leader = {
+	        name = "Simon Bridges"
+	        picture = "Simon_Bridges.dds"
+	        ideology = liberal_conservative
+        }
+	}
+}
