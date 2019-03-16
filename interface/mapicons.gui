@@ -836,8 +836,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_mapicon_naval_combat"
 			Orientation = center
 			centerPosition = yes
-			position = { x=0 y=-30 }
-			frame = 2
+			position = { x=1 y=-30 }
 		}
 
 		gridBoxType = {
@@ -1036,7 +1035,7 @@ guiTypes = {
 		name = "naval_mission_mapicon_entry"
 		#backGround =""
 		position = { x=0 y=0 }
-		size = { width=42 height=50 } # WARNING: To make sure icon will not be misplaced, set the size to the true size of the content
+		size = { width=42 height=66 } # WARNING: To make sure icon will not be misplaced, set the size to the true size of the content
 		orientation = upper_left
 		
 		buttonType = {
@@ -1044,16 +1043,33 @@ guiTypes = {
 			quadTextureSprite = "GFX_mapicon_naval_mission_patrol"
 			position = { x=0 y=0 }
 		}
-		
+
 		instantTextboxType = {
 			name = "count"
 			position = { x=7 y=33 }
 			font = "hoi_16mbs"
 			maxWidth = 32
 			maxHeight = 14
-			format = center	
+			format = center
+			text = "1/2"
 		}
-		
+
+		iconType = {
+			name = "efficiency_background"
+			position = { x=4 y=47 }
+			spriteType = "GFX_mapicon_naval_mission_efficiency_bg"
+		}
+
+		instantTextboxType = {
+			name = "efficiency"
+			position = { x=7 y=46 }
+			font = "hoi_16mbs"
+			maxWidth = 34
+			maxHeight = 14
+			format = center
+			text = "100%"
+		}
+
 		iconType = {
 			name = "pride"
 			position = {x=-5 y=-5}
@@ -1088,10 +1104,12 @@ guiTypes = {
 				format = left
 				spacing = 1.0
 			}
+
+			@unit_counters_pos_y = 100
 			
 			gridBoxType = {
 				name = "unit_grid"
-				position = { x = -80 y = 93 }
+				position = { x = -80 y = @unit_counters_pos_y }
 				size = { width = 100% height = 100%% }
 				slotsize = { width = 36 height = 36 }
 				max_slots_horizontal = 1
@@ -1101,7 +1119,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "enemy_unit_grid"
-				position = { x = 15 y = 93 }
+				position = { x = 15 y = @unit_counters_pos_y }
 				size = { width = 100% height = 100%% }
 				slotsize = { width = 36 height = 36 }
 				max_slots_horizontal = 1
@@ -1111,17 +1129,19 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "enemy_convoy_grid"
-				position = { x = 15 y = 93 }
+				position = { x = 15 y = @unit_counters_pos_y }
 				size = { width = 100% height = 100%% }
 				slotsize = { width = 36 height = 21 }
 				max_slots_horizontal = 1
 				add_horizontal = no
 				format = "UPPER_LEFT"
 			}
+
+			@small_status_icon_pos_y = 65
 			
 			containerWindowType = {
 				name = "mine_status_container"
-				position = { x=3 y=53 }
+				position = { x=3 y=@small_status_icon_pos_y }
 				size = { width = 28 height = 35 }
 				clipping = no
 				orientation = upper_left
@@ -1145,7 +1165,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "ongoing_combat_container"
-				position = { x=3 y=53 }
+				position = { x=3 y=@small_status_icon_pos_y }
 				size = { width = 28 height = 35 }
 				clipping = no
 				orientation = upper_left
@@ -1170,7 +1190,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "combat_results_container"
-				position = { x=3 y=53 }
+				position = { x=3 y=@small_status_icon_pos_y }
 				size = { width = 28 height = 35 }
 				clipping = no
 				orientation = upper_left
@@ -1195,7 +1215,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "accidents_container"
-				position = { x=3 y=53 }
+				position = { x=3 y=@small_status_icon_pos_y }
 				size = { width = 28 height = 35 }
 				clipping = no
 				orientation = upper_left
@@ -1584,7 +1604,7 @@ guiTypes = {
 		}
 	}
 
-@DECISION_PROGRESS_BAR_Y = 35
+@DECISION_PROGRESS_BAR_Y = 37
 @DECISION_PROGRESS_BAR_X = 6
 	containerWindowType = {
 		name = "decision_mapicon_item"
@@ -1651,7 +1671,7 @@ guiTypes = {
 		iconType = {
 			name ="timer_icon"
 			quadTextureSprite = "GFX_decision_timer_icon_strip"
-			position = { x=-3 y=25 }
+			position = { x=-4 y=26 }
 			scale = 0.6
 			frame = 2
 		}
