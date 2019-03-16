@@ -2,12 +2,8 @@
 state={
 	id=476
 	name="STATE_476"
-	manpower = 5663331
-	
-	state_category = state_level_5
-	
-	resources = {
-		oil = 18
+	resources={
+		oil=18.000
 	}
 
 	history={
@@ -18,13 +14,18 @@ state={
 			air_base = 1
 			10889 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = MEX
+
 	}
 
 	provinces={
-		2021 8236 10773 10889 12712 
+		2021 8236 10773 10889 12712 12867 
 	}
-	
+	manpower=5663331
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

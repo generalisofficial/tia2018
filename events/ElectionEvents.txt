@@ -656,37 +656,14 @@ country_event = {
 		date < 2019.1.1
 	}
 	
-	#Red-Greens
 	option = {
 		name = election_SWE.1.o1
-		news_event = election_SWE.2
-		set_politics = {
-			ruling_party = social_democrat
-			elections_allowed = yes
-		}
-		add_popularity = { ideology = social_democrat popularity = 0.05 }
-		add_popularity = { ideology = progressive popularity = 0.05 }
-		add_popularity = { ideology = democratic_socialist popularity = 0.05 }
-		
-    }
-	
-	#The Alliance
-	option = {
-		name = election_SWE.1.o2
-		news_event = election_SWE.3
-		set_politics = {
-			ruling_party = market_liberal
-			elections_allowed = yes
-		}
-		add_popularity = { ideology = market_liberal popularity = 0.05 }
-		add_popularity = { ideology = social_liberal popularity = 0.05 }
-		add_popularity = { ideology = conservative popularity = 0.05 }
-    }
-	
-	#Deadlock
-	option = {
-		name = election_SWE.1.o3
-		news_event = election_SWE.4
-		add_country_leader_trait = caretaker_government
+		set_variable = { v_seats = party_popularity@democratic_socialist }
+		set_variable = { mp_seats = party_popularity@progressive }
+		set_variable = { s_seats = party_popularity@social_democrat }
+		set_variable = { c_seats = party_popularity@social_liberal }
+		set_variable = { m_seats = party_popularity@market_liberal }
+		set_variable = { kd_seats = party_popularity@conservative }
+		set_variable = { sd_seats = party_popularity@reactionary }
     }
 }
