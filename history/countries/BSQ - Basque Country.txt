@@ -84,58 +84,53 @@ set_politics = {
 
 	parties = {
 		conservative = {
-		    popularity = 45
+		    popularity = 37.4
 	    }
 	    democratic_socialist = {
-		    popularity = 5
+		    popularity = 21.1
 		}
-		nationalist = {
-		    popularity = 11
+	    communist = {
+		    popularity = 14.8
 		}
-		communist = { 
-		    popularity = 39
+		social_democrat = { 
+		    popularity = 11.9
+		}
+		reactionary = { 
+		    popularity = 10.1
 		}
 	}    
 	ruling_party = conservative
-	last_election = "1999.1.1"
-	election_frequency = 24
+	last_election = "2016.10.25"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Juan José Ibarretxe"
-	picture = "Juan_Jose.dds"
-	ideology = gaullist
+	name = "Iñigo Urkullu"
+	picture = "Inigo_Urkullu.dds"
+	ideology = national_conservative
 }
+
 create_country_leader = {
-	name = "Jaime Mayor Oreja"
-	picture = "Jaime_Mayor.dds"
+	name = "Arnaldo Otegi"
+	picture = "Arnaldo_Otegi.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Pilar Zabala Artano"
+	picture = "Pilar_Zabala_Artano.dds"
 	ideology = marxist_leninist
 }
-	
-2012.1.1 = {
-    set_politics = {
-	    parties = {
-		    conservative = { popularity = 39 }
-	    	democratic_socialist = { popularity = 15 }
-		    nationalist = { popularity = 22 }
-		    social_liberal = { popularity = 3 }
-		    communist = { popularity = 21 }
-	    }    
-	    ruling_party = conservative
-	    last_election = "1999.1.1"
-	    election_frequency = 24
-	    elections_allowed = yes
-	}
 
-	create_country_leader = {
-		name = "Iñigo Urkullu"
-		picture = "Inigo_Urkullu.dds"
-		ideology = gaullist
-    }
-	create_country_leader = {
-		name = "Maddalen Iriarte"
-		picture = "Maddalen_Iriarte.dds"
-		ideology = nationalist_ideology
-    }
+create_country_leader = {
+	name = "Idoia Mendia"
+	picture = "Idoia_Mendia.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Alfonso Alonso"
+	picture = "Alfonso_Alonso.dds"
+	ideology = reactionary_ideology
 }
