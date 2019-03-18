@@ -2,47 +2,6 @@ ideas = {
 	
 	country = {
 		
-		SOV_corrupt_oligarchy = {
-			picture = restricted_society
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.20
-				industrial_capacity_factory = -0.10
-				custom_effect_tooltip = SOV_corrupt_oligarchy_tooltip
-			}
-		}
-		
-		idea_SOV_oligarchic_republic = {
-			picture = army_of_aggression
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.25
-				industrial_capacity_factory = 0.20
-				custom_effect_tooltip = SOV_corrupt_oligarchy_tooltip
-			}
-		}
-		
-		idea_SOV_putinism = {
-			picture = victors_of_ww1
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = 0.25
-				reactionary_drift = 0.01
-			}
-		}
-		
 		idea_SOV_siberian_money_drain = {
 			picture = siberian_money_drain
 		
@@ -93,20 +52,6 @@ ideas = {
 			}
 		}
 		
-		idea_SOV_corrupt_oligarchy2 = {
-			picture = restricted_society
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.05
-				industrial_capacity_factory = -0.05
-				custom_effect_tooltip = SOV_corrupt_oligarchy_tooltip
-			}
-		}
-		
 		idea_gazprom = {
 			picture = oil_profits
 		
@@ -130,20 +75,6 @@ ideas = {
 			
 			modifier = {
 			    communist_drift = 0.01
-			}
-		}
-		
-		SOV_corrupt_oligarchy3 = {
-			picture = high_society
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.2
-				industrial_capacity_factory = 0.1
-				custom_effect_tooltip = SOV_corrupt_oligarchy_tooltip
 			}
 		}
 		

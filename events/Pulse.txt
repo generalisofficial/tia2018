@@ -78,32 +78,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-		        NOT = { has_idea = outlook_western }
-		        NOT = { has_idea = outlook_emerging }
-		        NOT = { has_idea = outlook_non_aligned }
-		        NOT = { has_idea = outlook_nationalist }
-			}
-			add_ideas = outlook_non_aligned
-		}
-		if = {
-			limit = {
-		        NOT = { has_idea = outlook_western }
-		        is_in_faction_with = USA
-			}
-			add_ideas = outlook_western
-		}
-		if = {
-			limit = {
-		        NOT = { has_idea = outlook_emerging }
-				OR = {
-		            is_in_faction_with = SOV
-					is_in_faction_with = PRC
-				}
-			}
-			add_ideas = outlook_emerging
-		}
-		if = {
-			limit = {
 			    original_tag = CAN
 				has_idea = quebec_separatism
 			    OR = {

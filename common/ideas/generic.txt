@@ -802,6 +802,20 @@ ideas = {
 			}
 		}
 		
+		idea_oligarchy = {
+			picture = army_of_aggression
+		
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		
 		salafist_jihadist_group = {
 			picture = islam1
 		
