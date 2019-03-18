@@ -3,7 +3,9 @@ state={
 	id=592
 	name="STATE_592"
 	resources={
-		steel=25.000
+		tungsten=987.000
+		oil=50.000
+		steel=80.000
 	}
 
 	history={
@@ -12,14 +14,18 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 9
-			arms_factory = 2
-			dockyard = 2
-			air_base = 5
+			industrial_complex = 18
+			arms_factory = 5
+			dockyard = 4
+			air_base = 6
 			1047 = {
 				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
+
+			}
+			9938 = {
+				naval_base = 1
 
 			}
 
@@ -31,9 +37,9 @@ state={
 	}
 
 	provinces={
-		1047 1087 1131 1187 4092 4160 7039 7128 7135 7152 9963 9997 10121 11938 11941 11981 12077 
+		1047 1078 1087 1120 1131 1162 1187 1202 4050 4092 4160 4165 4207 7039 7067 7108 7128 7135 7141 7152 7182 9938 9963 9970 9978 9997 10080 10121 11938 11941 11981 12014 12077 12095 
 	}
-	manpower=60200000
+	manpower=108500000
 	buildings_max_level_factor=1.000
-	state_category=state_level_14
+	state_category=state_level_20
 }
