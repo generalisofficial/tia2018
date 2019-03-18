@@ -1,4 +1,5 @@
 ﻿add_namespace = north_korea
+add_namespace = north_korea_news
 
 country_event = {	#Remove the South Korean cores upon union
 	id = north_korea.2
@@ -185,4 +186,119 @@ country_event = {
 			factor = 10
 		}
 	}
-}	
+}
+
+news_event = {
+	id = north_korea_news.1
+	title = north_korea_news.1.t
+	desc = north_korea_news.1.d
+	picture = GFX_news_event_fall_seoul
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			PRK = {
+				controls_state = 525
+				has_war_with = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = north_korea_news.1.o1
+		trigger = {
+			tag = PRK
+		}	
+	}
+	
+	option = {
+		name = north_korea_news.1.o2
+		trigger = {
+			tag = KOR
+		}	
+	}
+	
+	option = {
+		name = north_korea_news.1.o3
+		trigger = {
+			NOT = {
+				tag = KOR
+				tag = PRK 
+			}
+		}	
+	}	
+}
+
+news_event = {
+	id = north_korea_news.2
+	title = north_korea_news.2.t
+	desc = north_korea_news.2.d
+	picture = GFX_news_event_korea_war_north
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			has_completed_focus = PRK_Unite_Korea
+			has_war_with = KOR
+			tag = PRK 
+		}	
+	}
+	option = {
+		name = north_korea_news.2.o1
+		trigger = {
+			tag = PRK
+		}	
+	}
+	
+	option = {
+		name = north_korea_news.2.o2
+		trigger = {
+			tag = KOR
+		}	
+	}
+	
+	option = {
+		name = north_korea_news.2.o3
+		trigger = {
+			NOT = {
+				tag = KOR
+				tag = PRK 
+			}
+		}	
+	}	
+}
+
+news_event = {
+	id = north_korea_news.3
+	title = north_korea_news.3.t
+	desc = north_korea_news.3.d
+	picture = GFX_news_event_korea_end_north
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = north_korea_news.3.o1
+		trigger = {
+			tag = PRK
+		}	
+	}
+	
+	option = {
+		name = north_korea_news.3.o2
+		trigger = {
+			NOT = {
+				tag = PRK
+			}	
+		}	
+	}
+		
+}		

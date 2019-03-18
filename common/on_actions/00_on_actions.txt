@@ -261,6 +261,47 @@ on_actions = {
 			}
 		}
 	}
+	
+ on_capitulation = {
+    effect = {
+        if = {
+            limit = {
+                TAG = KOR
+                FROM = { TAG = PRK }
+            }
+            PRK = {
+				annex_country = {
+					target = KOR
+					transfer_troops = no
+				}				
+				every_country = {
+					news_event = north_korea_news.3
+				}	
+			}
+        }
+    }
+}
+
+ on_capitulation = {
+    effect = {
+        if = {
+            limit = {
+                TAG = PRK
+                FROM = { TAG = KOR }
+            }
+            KOR = {
+				annex_country = {
+					target = PRK
+					transfer_troops = no
+				}				
+				every_country = {
+					news_event = south_korea_news.5
+				}	
+			}
+        }
+    }
+}
+
 
 	# Scope is the country owner of the PotF, FROM is the country of the killer
 	on_pride_of_the_fleet_sunk = {
