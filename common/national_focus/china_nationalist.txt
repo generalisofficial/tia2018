@@ -1,2416 +1,1178 @@
- focus_tree = {
-	
+focus_tree = {
 	id = taiwan_focus
-	
 	country = {
-		factor = 0
-		
-		modifier = {
-			add = 20
-			original_tag = CHI
-		}
+		factor = 1
 	}
-
-	default = no
-	
-	continuous_focus_position = { x = 1500 y = 10000 }
-
-    focus = {
-		id = CHI_Conflict_in_Asia
-		icon = prc_focus
+	default = yes
+	focus = {
+		id = CHI_year_of_the_dog
+		icon = GFX_prc_focus
+		cost = 10,00
 		x = 10
 		y = 0
-		cost = 10
+			completion_reward = {
+					add_political_power = 30
+					add_war_support = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			add_political_power = 30
-			add_war_support = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_One_China_One_Dream
-		icon = one_china_policy
-		x = 16
+		id = CHI_industrial_program
+		icon = GFX_construction
+		cost = 10,00
+		x = 30
 		y = 1
-		cost = 10
-		
+			completion_reward = {
+					add_political_power = 100
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_2018_local_elections
+		icon = GFX_goal_unknown
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Conflict_in_Asia
+			focus = CHI_year_of_the_dog
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = CHI_2020_presidential_elections
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_2018_local_elections
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = CHI_pan_green_coalition
+		icon = GFX_national_greatness
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_2020_presidential_elections
 		}
 		mutually_exclusive = {
-			focus = CHI_A_New_Dream
+			focus = CHI_pan_blue_coalition
 		}
-
-	
-		completion_reward = {
-			add_war_support = 0.02
-			add_political_power = 25
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_A_New_Dream
-		icon = national_greatness
 		x = 4
-		y = 1
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Conflict_in_Asia
-		}
-		
-		mutually_exclusive = {
-			focus = CHI_One_China_One_Dream
-		}
-
-	
-		completion_reward = {
-			add_stability = 0.01
-			add_political_power = 30
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Status_Quo
-		icon = neutrality
-		x = 12
-		y = 2
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_One_China_One_Dream
-		}
-		mutually_exclusive = {
-			focus = CHI_Nationalist_Revival
-		}
-
-	
-		completion_reward = {
-			add_stability = 0.01
-			add_political_power = 10
-			add_war_support = -0.01
-			add_popularity = {
-	   			ideology = conservative
-	    		popularity = 0.025
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Nationalist_Revival
-		icon = demand_territory2
-		x = 20
-		y = 2
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_One_China_One_Dream
-		}
-		mutually_exclusive = {
-			focus = CHI_Status_Quo
-		}
-
-	
-		completion_reward = {
-			add_stability = -0.01
-			add_political_power = 15
-			add_war_support = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-		
-	focus = {
-		id = CHI_Internal_Focus
-		icon = national_unity
-		x = 12
 		y = 3
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Status_Quo
-		}
+			completion_reward = {
+					add_stability = 0.01
+					add_political_power = 30
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			add_political_power = 60
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_Political_Reforms
-		icon = constitution
-		x = 12
-		y = 4
-		cost = 10
-		
+		id = CHI_pan_blue_coalition
+		icon = GFX_national_unity
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Internal_Focus
+			focus = CHI_2020_presidential_elections
 		}
-
-	
-		completion_reward = {
-			add_political_power = 15
-			add_stability = 0.01
+		mutually_exclusive = {
+			focus = CHI_pan_green_coalition
 		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Ensure_Democracy
-		icon = democracy
-		x = 12
-		y = 5
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Political_Reforms
-		}
-
-	
-		completion_reward = {
-			add_political_power = 40
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Strenghten_the_Yuan
-		icon = legislative_yuan
-		x = 12
-		y = 6
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Ensure_Democracy
-		}
-
-	
-		completion_reward = {
-			add_stability = 0.03
-				add_popularity = {
-	   			ideology = conservative
-	    		popularity = 0.015
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	
-	focus = {
-		id = CHI_Reforms_in_the_Executive_Yuan
-		icon = examination_yuan
-		x = 12
-		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Strenghten_the_Yuan
-		}
-	
-		completion_reward = {
-			add_political_power = -40
-			add_stability = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Agrarian_Reforms
-		icon = agriculture
-		x = 10
-		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Strenghten_the_Yuan
-		}
-	
-		completion_reward = {
-			add_political_power = 50
-			add_ideas = agricultural_investments2
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Economic_Reforms
-		icon = consumer_goods
-		x = 14
-		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Strenghten_the_Yuan
-		}
-	
-		completion_reward = {
-			add_political_power = 50
-			add_ideas = idea_focus_CHI_free_markets
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	
-	focus = {
-		id = CHI_Look_Outside
-		icon = national_unity_red
-		x = 12
-		y = 8
-		cost = 10
-		
-		available = {
-		has_government = conservative
-		}
-
-		prerequisite = {
-			focus = CHI_Economic_Reforms
-		}
-		prerequisite = {
-			focus = CHI_Agrarian_Reforms
-		}
-		prerequisite = {
-			focus = CHI_Reforms_in_the_Executive_Yuan
-		}
-
-		completion_reward = {
-			add_political_power = 30
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_The_Old_Alliance
-		icon = align_to_america
-		x = 12
-		y = 9
-		cost = 10
-
-		prerequisite = {
-			focus = CHI_Look_Outside
-		}
-
-		completion_reward = {
-			USA = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-		id = CHI_Trade_Deals
-		icon = trade_with_america
-		x = 12
-		y = 10
-		cost = 10
-
-		prerequisite = {
-			focus = CHI_The_Old_Alliance
-		}
-
-		completion_reward = {
-			USA = { add_opinion_modifier = { target = CHI modifier = trade_influence_1 } }
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-   	focus = {
-		id = CHI_Reapproach_Japan
-		icon = align_to_japan
-		x = 10
-		y = 9
-		cost = 10
-
-		prerequisite = {
-			focus = CHI_Look_Outside
-		}
-
-		completion_reward = {
-			JAP = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-		id = CHI_Senkaku_Islands_Question
-		icon = dangerous_deal
-		x = 10
-		y = 10
-		cost = 10
-
-		prerequisite = {
-			focus = CHI_Reapproach_Japan
-		}
-
-		completion_reward = {
-			JAP = { country_event = taiwan.4 }
-	
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-		id = CHI_Agreements_with_South_Korea
-		icon = align_to_south_korea
-		x = 14
-		y = 9
-		cost = 10
-
-		prerequisite = {
-			focus = CHI_Look_Outside
-		}
-
-		completion_reward = {
-			KOR = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-	
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-		id = CHI_Scientific_Deals
-		icon = scientific_exchange
-		x = 14
-		y = 10
-		cost = 10
-
-		prerequisite = {
-			focus = CHI_Agreements_with_South_Korea
-		}
-
-		completion_reward = {
-			add_ideas = scientific_advances2
-			add_political_power = 30
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-    	id = CHI_International_Outreach
-    	icon = align_to_united_nations
-    	x = 12
-    	y = 11
-     	cost = 10
-
-     	prerequisite = {
-        	focus = CHI_Senkaku_Islands_Question
-     	}
-     	prerequisite = {
-        	focus = CHI_Scientific_Deals
-     	}
-	  
-	  	prerequisite = {
-         	focus = CHI_Trade_Deals
-      	}
-	  
-      	completion_reward = {
-		 	add_political_power = 50
-      	}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-    	id = CHI_Approach_ASEAN
-    	icon = align_to_asean
-		x = 12
-    	y = 12
-    	cost = 10
-
-    	prerequisite = {
-        	focus = CHI_International_Outreach
-      	}
-
-		completion_reward = {
-			SIA = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			VIN = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			CAM = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			"PHI" = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			BRM = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			MAL = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			INS = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			LAO = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			SIG = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			BRU = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-    focus = {
-    	id = CHI_Secure_the_Island
-    	icon = defence
-    	x = 12
-    	y = 13
-    	cost = 10
-
-    	prerequisite = {
-        	focus = CHI_Approach_ASEAN
-      	}
-
-    	completion_reward = {
-			add_war_support = 0.01
-			add_ideas = defensive_preparations3
-    	}
-
-		ai_will_do = {
-			factor = 35
-		}
-   	}
-   
-    focus = {
-    	id = CHI_Republic_Never_Fall
-    	icon = blue_dragon
-    	x = 12
-    	y = 14
-    	cost = 10
-
-    	prerequisite = {
-        	focus = CHI_Secure_the_Island
-    	}
-
-    	completion_reward = {
-        	add_war_support = 0.01
-	    	add_ideas = defensive_constructions4
-	    	add_ideas = defensive_military_strategy
-		}
-
-		ai_will_do = {
-			factor = 35
-		}
-   }
-   
-   	focus = {
-		id = CHI_Nationalist_Rallies
-		icon = nationalism
-		x = 20
+		x = 16
 		y = 3
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Nationalist_Revival
-		}
+			completion_reward = {
+					add_political_power = 60
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-		    add_political_power = 100
-	        add_popularity = {
-	            ideology = reactionary
-	            popularity = 0.02 
-			} 
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_reactionary_Propaganda
-		icon = propaganda
-		x = 20
+		id = CHI_offensive_focus
+		icon = GFX_constitution
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_pan_blue_coalition
+		}
+		x = 16
 		y = 4
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Nationalist_Rallies
-		}
+			completion_reward = {
+					add_political_power = 15
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			add_political_power = -50
-	    	add_popularity = {
-	    		ideology = reactionary
-	    		popularity = 0.01 
-			} 
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
-    focus = {
-		id = CHI_Protests_in_the_Yuan
-		icon = demand_territory
-		x = 20
+	focus = {
+		id = CHI_reassert_one_china_policy
+		icon = GFX_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_offensive_focus
+		}
+		x = 16
 		y = 5
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_reactionary_Propaganda
-		}
-	
-		completion_reward = {
-			add_stability = -0.04
-			country_event = taiwan.5
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_A_New_Parliament
-		icon = renounce_treaty2
-		x = 20
-		y = 6
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Protests_in_the_Yuan
-		}
+			completion_reward = {
+					add_political_power = 40
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			add_stability = 0.01
-			add_political_power = -50
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
-    focus = {
-		id = CHI_Emphasize_the_Anti-Secession_Law
-		icon = forceful_treaty
-		x = 20
+	focus = {
+		id = CHI_infrastructure_project
+		icon = GFX_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_industrial_program
+		}
+		x = 30
+		y = 2
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_countryside_development
+		icon = GFX_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_infrastructure_project
+		}
+		x = 28
+		y = 3
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_resource_projects
+		icon = GFX_production2
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_countryside_development
+		}
+		x = 28
+		y = 4
+			completion_reward = {
+					524 = {
+							add_resource = {
+									type = aluminium
+									amount = 20
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_2022_KMT_dominates
+		icon = GFX_examination_yuan
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_2022_local_elections
+		}
+		mutually_exclusive = {
+			focus = CHI_2022_DPP_dominates
+		}
+		x = 16
 		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_A_New_Parliament
-		}
+			completion_reward = {
+					add_political_power = -40
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	    completion_reward = {
-	    	add_popularity = {
-	    		ideology = social_liberal
-	    		popularity = -0.01
-			} 
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_End_the_Four_Wants_and_One_Without_Policy
-		icon = renounce_treaty
-		x = 18
-		y = 7
-		cost = 10
-		
+		id = CHI_befriend_the_west
+		icon = GFX_national_unity_red
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_A_New_Parliament
+			focus = CHI_2022_KMT_dominates
 		}
-
-	
-		completion_reward = {
-		    add_popularity = {
-	            ideology = reactionary
-	            popularity = 0.02 
-		    }	
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reshuffle_the_Cabinet
-		icon = self_management
-		x = 22
-		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_A_New_Parliament
-		}
-
-		completion_reward = {
-			add_popularity = {
-	   			ideology = reactionary
-	    		popularity = 0.05 }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Start_the_Plan
-		icon = military_sphere
-		x = 20
+		x = 16
 		y = 8
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Reshuffle_the_Cabinet
-		}
-		prerequisite = {
-			focus = CHI_End_the_Four_Wants_and_One_Without_Policy
-		}
-		prerequisite = {
-			focus = CHI_Emphasize_the_Anti-Secession_Law
-		}
-	
-		completion_reward = {
-			add_war_support = 0.02
-		}
+			available = {
+					has_government = conservative
+				}
+			completion_reward = {
+					add_political_power = 30
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_Nationalist_Plot
-		icon = military_mission
-		x = 20
+		id = CHI_anti_communism
+		icon = GFX_align_to_america
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_befriend_the_west
+		}
+		x = 16
 		y = 9
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Start_the_Plan
-		}
-	
-		completion_reward = {
-			add_popularity = {
-	    		ideology = reactionary
-	    		popularity = 0.1 
-			}
-			add_popularity = {
-			ideology = social_liberal
-			popularity = -0.1
-			}
-		}
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Strenghten_National_Pride
-		icon = destroy_establishment
-		x = 20
-		y = 10
-		cost = 10
-		
-		available = {
-		has_government = reactionary
-		}
-		
-		prerequisite = {
-			focus = CHI_Nationalist_Plot
-		}
-	
-		completion_reward = {
-			add_popularity = {
-	    		ideology = reactionary
-	   			popularity = 0.02 
-			}
-		}
+			completion_reward = {
+					USA = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_The_Bigger_Picture
-		icon = attack_communism
-		x = 20
+		id = CHI_restart_trade
+		icon = GFX_trade_with_america
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_anti_communism
+		}
+		x = 16
+		y = 10
+			completion_reward = {
+					USA = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = trade_influence_1
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_request_us_aid
+		icon = GFX_align_to_united_nations
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_restart_trade
+		}
+		x = 16
 		y = 11
-		cost = 10
-		
-		available = {
-		is_puppet = no
-		country_exists = PRC
-		PRC = {
-		has_government = communist
-		}
-		}
-		
-		prerequisite = {
-			focus = CHI_Strenghten_National_Pride
-		}
+			completion_reward = {
+					add_political_power = 50
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			add_popularity = {
-	    		ideology = reactionary
-	    		popularity = 0.05
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_Light_the_Powder_Keg
-		icon = war3
-		x = 20
+		id = CHI_approach_asean
+		icon = GFX_align_to_asean
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_request_us_aid
+		}
+		x = 16
 		y = 12
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_The_Bigger_Picture	
-		}
+			completion_reward = {
+					SIA = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					VIN = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					CAM = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					"PHI" = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					BRM = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					MAL = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					INS = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					LAO = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					SIG = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					BRU = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			PRC = { add_stability = -0.02 }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_Agreements_with_Chinese_Companies
-		icon = intelligence_exchange
-		x = 20
+		id = CHI_operation_qianghua
+		icon = GFX_defence
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_approach_asean
+		}
+		x = 16
 		y = 13
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Light_the_Powder_Keg	
-		}
+			completion_reward = {
+					add_war_support = 0.01
+					add_ideas = defensive_preparations3
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-	
-		completion_reward = {
-			PRC = { 
-				add_popularity = {
-	    			ideology = social_liberal
-	   				popularity = 0.04
-				}
-				add_stability = -0.01
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_Support_the_Chinese_Workers_Movements
-		icon = concessions2
-		x = 18
-		y = 13
-		cost = 10
-		
+		id = CHI_bastion_of_resistance
+		icon = GFX_blue_dragon
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Light_the_Powder_Keg	
+			focus = CHI_operation_qianghua
 		}
-
-	
-		completion_reward = {
-		    PRC = {
-		        add_popularity = {
-	                ideology = democratic_socialist
-	                popularity = 0.05
-		        }
-		        add_stability = -0.01
-		        country_event = generic.1
-		    }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Ally_the_PRC_Opposition
-		icon = military_deal
-		x = 22
-		y = 13
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Light_the_Powder_Keg	
-		}
-
-	
-		completion_reward = {
-			PRC = { 
-				add_popularity = {
-	   				ideology = nationalist
-	    			popularity = 0.02
-				}
-				add_popularity = {
-	    			ideology = social_liberal
-	    			popularity = 0.02
-				}
-				add_popularity = {
-	    			ideology = democratic_socialist
-	    			popularity = 0.02
-				}
-				add_stability = -0.04
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Explode_the_Powder_Keg
-		icon = attack_china
-		x = 20
+		x = 16
 		y = 14
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Ally_the_PRC_Opposition	
-		}
-		
-		prerequisite = {
-			focus = CHI_Support_the_Chinese_Workers_Movements	
-		}
-		
-		prerequisite = {
-			focus = CHI_Agreements_with_Chinese_Companies	
-		}
-	
-		completion_reward = {
-			PRC = { country_event = { days = 3 id = taiwan.6 } }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Legacy_of_Chiang_Kai_Shek
-		icon = chiang_kai_shek
-		x = 16
-		y = 16
-		cost = 1
-		
-   		available = {
-			CHI = { has_completed_focus = CHI_Explode_the_Powder_Keg }
-			CHI = { has_war_with = PRC }
-		}
+			completion_reward = {
+					add_war_support = 0.01
+					add_ideas = defensive_constructions4
+					add_ideas = defensive_military_strategy
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-		completion_reward = {
-			add_war_support = 0.05
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
-    focus = {
-		id = CHI_The_War_of_Reconquest
-		icon = chinese_democracy
-		x = 16
-		y = 17
-		cost = 1
-		
-		prerequisite = {
-			focus = CHI_Legacy_of_Chiang_Kai_Shek
-		}
-	
-		completion_reward = {
-			add_political_power = 200
-			add_war_support = 0.3
-			add_ideas = idea_CHI_mainland
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
 	focus = {
-		id = CHI_At_Last_United
-		icon = chinese_united_front
-		x = 16
-		y = 18
-		cost = 1
-		
-		available = {
-			NOT = { country_exists = PRC }
-			NOT = { has_war = yes }
-		}
-		
+		id = CHI_defensive_focus
+		icon = GFX_continuous_boost_freedom
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_The_War_of_Reconquest
+			focus = CHI_pan_green_coalition
 		}
-
-	
-		completion_reward = {
-			add_political_power = 400
-			add_stability = 0.3
-			remove_ideas = idea_CHI_mainland
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reconquer_the_Lost_Land
-		icon = war2_purple
-		x = 16
-		y = 19
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_At_Last_United
-		}
-
-	
-		completion_reward = {
-			add_war_support = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-   focus = {
-		id = CHI_The_Tibetan_Question
-		icon = attack_monarchy3
-		x = 20
-		y = 20
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_Reconquer_the_Lost_Land
-		}
-
-	
-		completion_reward = {
-			add_political_power = 30
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reconquer_the_Treaty_Ports
-		icon = attack_democracy2
-		x = 16
-		y = 20
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_Reconquer_the_Lost_Land
-		}
-
-	
-		completion_reward = {
-			HKN = { country_event = taiwan.8 }
-			MCU = { country_event = taiwan.8 }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_The_Uyghur_Question
-		icon = political_pressure_dark_green
-		x = 12
-		y = 20
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_Reconquer_the_Lost_Land
-		}
-
-	
-		completion_reward = {
-			add_political_power = 30
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reconquer_Tibet
-		icon = attack_monarchy2
-		x = 18
-		y = 21
-		cost = 2
-		
-		mutually_exclusive = {
-			focus = CHI_Subjugate_Tibet 
-		}
-		
-		prerequisite = {
-			focus = CHI_The_Tibetan_Question
-		}
-
-	
-		completion_reward = {
-			create_wargoal = { type = take_core_state target = TIB }
-			add_stability = -0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-    focus = {
-		id = CHI_Subjugate_Tibet
-		icon = attack_monarchy
-		x = 22
-		y = 21
-		cost = 2
-		
-		mutually_exclusive = {
-		focus = CHI_Reconquer_Tibet
-		}
-		
-		prerequisite = {
-			focus = CHI_The_Tibetan_Question
-		}
-	
-		completion_reward = {
-			TIB = { country_event = taiwan.7 }
-			add_stability = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reconquer_Uyghuria
-		icon = war2_green
-		x = 14
-		y = 21
-		cost = 1
-		
-		mutually_exclusive = {
-		focus = CHI_Subjugate_the_Uyghurs
-		}
-		
-		prerequisite = {
-			focus = CHI_The_Uyghur_Question
-		}
-	
-		completion_reward = {
-			create_wargoal = { type = take_core_state target = SIK }
-			add_stability = -0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Subjugate_the_Uyghurs
-		icon = territorial_claims
-		x = 10
-		y = 21
-		cost = 1
-		
-		mutually_exclusive = {
-		focus = CHI_Reconquer_Uyghuria
-		}
-		
-		prerequisite = {
-			focus = CHI_The_Uyghur_Question
-		}
-
-		completion_reward = {
-			SIK = { country_event = taiwan.7 }
-			add_stability = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-		
-	focus = {
-		id = CHI_To_The_North
-		icon = territory_or_war
-		x = 18
-		y = 22
-		cost = 5
-	
-		prerequisite = {
-			focus = CHI_Reconquer_Uyghuria
-			focus = CHI_Subjugate_the_Uyghurs
-		}
-		prerequisite = {
-			focus = CHI_Reconquer_Tibet
-			focus = CHI_Subjugate_Tibet
-		}
-		prerequisite = {
-			focus = CHI_Reconquer_the_Treaty_Ports
-        }
-	
-		completion_reward = {
-			add_war_support = 0.01
-			add_political_power = 30
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reconquer_Mongolia
-		icon = attack_mongolia
-		x = 16
-		y = 23
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_To_The_North
-		}
-
-		completion_reward = {
-	    	create_wargoal = { type = take_core_state target = MON }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Purchase_Tannu_Tuva
-		icon = align_to_russia
-		x = 20
-		y = 23
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_To_The_North
-		}
-	
-		completion_reward = {
-	   		SOV = { country_event = taiwan.9}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Demand_Korean_Unification
-		icon = attack_north_korea
-		x = 18
-		y = 23
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_To_The_North
-		}
-	
-		completion_reward = {
-	    	PRK = { country_event = taiwan.10}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_One_China
-		icon = black_dragon
-		x = 18
-		y = 24
-		cost = 5
-		
-		prerequisite = {
-			focus = CHI_Reconquer_Mongolia
-		}
-		prerequisite = {
-			focus = CHI_Purchase_Tannu_Tuva
-		}
-		prerequisite = {
-			focus = CHI_Demand_Korean_Unification
-		}
-	
-		completion_reward = {
-			remove_ideas = non_member_state
-			add_ideas = idea_united_nations_security_council_member
-		}		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Weaken_the_KMT
-		icon = attack_fascism
-		x = 4
-		y = 2
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_A_New_Dream	
-		}
-	
-		completion_reward = {
-			add_political_power = -50
-			add_popularity = {
-	    		ideology = conservative
-	    		popularity = -0.05
-			}
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Start_The_Process_of_Reconciliation
-		icon = major_alliance
-		x = 4
-		y = 3
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Weaken_the_KMT
-		}
-		
-	
-		completion_reward = {
-			add_stability = 0.01
-			add_political_power = 40
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_End_Pro-War_Propaganda
-		icon = continuous_boost_freedom
 		x = 4
 		y = 4
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Start_The_Process_of_Reconciliation
-		}
-		
-	
-		completion_reward = {
-			remove_ideas = idea_CHI_grudge
-			add_ideas = idea_focus_personal_freedoms
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					remove_ideas = idea_CHI_grudge
+					add_ideas = idea_focus_personal_freedoms
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Small_Trade_Agreements
-		icon = trade_with_china
-		x = 6
-		y = 4
-		cost = 10
-		
+		id = CHI_attempt_reconciliation
+		icon = GFX_align_to_china
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Start_The_Process_of_Reconciliation
+			focus = CHI_defensive_focus
 		}
-		
-	
-		completion_reward = {
-			PRC = { add_opinion_modifier = { target = CHI modifier = trade_influence_1 } }
-			CHI = { add_opinion_modifier = { target = PRC modifier = trade_influence_1 } }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Give_Up_Senkaku_Islands
-		icon = align_to_japan
-		x = 2
-		y = 4
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Start_The_Process_of_Reconciliation
-		}
-		
-	
-		completion_reward = {
-			PRC = { add_opinion_modifier = { target = CHI modifier = recent_actions_positive } }
-			JAP = { add_opinion_modifier = { target = PRC modifier = recent_actions_positive } }
-			876 = { remove_core_of = CHI }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Reconciliation_with_the_PRC
-		icon = align_to_china
 		x = 4
 		y = 5
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Give_Up_Senkaku_Islands
-		}
-		prerequisite = {
-			focus = CHI_Small_Trade_Agreements
-		}
-		prerequisite = {
-			focus = CHI_End_Pro-War_Propaganda
-		}
-		
-	
-		completion_reward = {
-			PRC = { add_opinion_modifier = { target = CHI modifier = established_diplomatic_relations } }
-			CHI = { add_opinion_modifier = { target = PRC modifier = established_diplomatic_relations } }
-			PRC = { add_opinion_modifier  = { target = CHI modifier = new_diplomatic_missions } }
-			CHI = { add_opinion_modifier  = { target = PRC modifier = new_diplomatic_missions } }
-			add_stability = 0.04
-			add_political_power = 30
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = established_diplomatic_relations
+								}
+						}
+					CHI = {
+							add_opinion_modifier = {
+									target = PRC
+									modifier = established_diplomatic_relations
+								}
+						}
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = new_diplomatic_missions
+								}
+						}
+					CHI = {
+							add_opinion_modifier = {
+									target = PRC
+									modifier = new_diplomatic_missions
+								}
+						}
+					add_stability = 0.04
+					add_political_power = 30
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Open_the_Political_Sphere
-		icon = neutrality
-		x = 4
-		y = 6
-		cost = 10
-		
+		id = CHI_2022_DPP_dominates
+		icon = GFX_improve_relations_green
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Reconciliation_with_the_PRC
+			focus = CHI_2022_local_elections
 		}
-		
-	
-		completion_reward = {
-			add_political_power = 300
+		mutually_exclusive = {
+			focus = CHI_2022_KMT_dominates
 		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	
-	focus = {
-		id = CHI_Rise_of_The_DPP
-		icon = improve_relations_green
 		x = 4
 		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Open_the_Political_Sphere
-		}
-		
-	
-		completion_reward = {
-			add_political_power = -50
-			add_popularity = {
-	   			ideology = social_liberal
-	    		popularity = 0.05
-			}
-			add_popularity = {
-	   			ideology = progressive
-	    		popularity = 0.03
-			}
-		
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_political_power = -50
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = progressive
+							popularity = 0.03
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-		
-	
 	focus = {
-		id = CHI_Stabilize_the_Politics
-		icon = neutrality
+		id = CHI_domestic_focus
+		icon = GFX_neutrality
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_2022_DPP_dominates
+		}
 		x = 4
 		y = 8
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Rise_of_The_DPP
-		}	
-	
-		completion_reward = {
-			add_political_power = 200
-			add_stability = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_political_power = 200
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_End_the_Anti-Secession_Law
-		icon = renounce_treaty
-		x = 2
-		y = 9
-		cost = 10
-		
+		id = CHI_abolish_one_china_policy
+		icon = GFX_renounce_treaty
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Stabilize_the_Politics
+			focus = CHI_domestic_focus
 		}
-	
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.01
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Unpopularize_the_One_China_Dream
-		icon = destroy_society
 		x = 4
 		y = 9
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Stabilize_the_Politics
-		}
-	
-		completion_reward = {
-			add_political_power = -50
-			add_stability = 0.02
-			add_war_support = -0.1
-			add_popularity = {
-			ideology = conservative
-			popularity = -0.1 }
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Liberalization_Over_Tradition
-		icon = industry_democratic3
-		x = 6
-		y = 9
-		cost = 10
-		
+		id = CHI_pro_independence_campaign
+		icon = GFX_propaganda
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Stabilize_the_Politics
+			focus = CHI_abolish_one_china_policy
 		}
-	
-		completion_reward = {
-			add_political_power = 100
-			add_ideas = idea_focus_CHI_free_markets
-		}
-		
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Spread_Pro-Indepedence_Propaganda
-		icon = propaganda
 		x = 4
 		y = 10
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_End_the_Anti-Secession_Law
-		}
-		
-		prerequisite = {
-			focus = CHI_Liberalization_Over_Tradition
-		}
-		
-		prerequisite = {
-			focus = CHI_Unpopularize_the_One_China_Dream
-		}
-	
-		completion_reward = {
-		    add_political_power = 200
-		    add_popularity = {
-	            ideology = social_liberal
-	            popularity = 0.1
-			}
-        }		
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_political_power = 200
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.1
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Prepare_Negotiations
-		icon = intelligence_exchange
+		id = CHI_prepare_negotiations
+		icon = GFX_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_pro_independence_campaign
+		}
 		x = 4
 		y = 11
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Spread_Pro-Indepedence_Propaganda
-		}
-	
-		completion_reward = {
-			add_political_power = 200
-			PRC = { add_opinion_modifier = { target = CHI modifier = diplomatic_support } }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_political_power = 200
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = diplomatic_support
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Negotiate_our_Indepedence
-		icon = align_to_china2
+		id = CHI_independence_negotiations
+		icon = GFX_align_to_china2
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_prepare_negotiations
+		}
 		x = 4
 		y = 12
-		cost = 10
-		
-		available = {
-		is_puppet = no
-		country_exists = PRC
-		PRC = {
-		has_government = communist
-		}
-		}
-		
-		prerequisite = {
-			focus = CHI_Prepare_Negotiations
-		}
-	
-		completion_reward = {
-			PRC = { add_opinion_modifier = { target = CHI modifier = diplomatic_support } }
-			PRC = { country_event =  taiwan.12  }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			available = {
+					is_puppet = no
+					country_exists = PRC
+					PRC = {
+							has_government = communist
+						}
+				}
+			completion_reward = {
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = diplomatic_support
+								}
+						}
+					PRC = {
+							country_event = taiwan.12
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Offer_Coastal_Islands
-		icon = diplomatic_treaty
+		id = CHI_deal_with_prc
+		icon = GFX_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_independence_negotiations
+		}
+		mutually_exclusive = {
+			focus = CHI_negotiations_failed
+		}
 		x = 2
 		y = 13
-		cost = 10
-		
-		available = {
-		owns_state = 976
-		}
-		
-		prerequisite = {
-			focus = CHI_Negotiate_our_Indepedence
-		}
-		
-		mutually_exclusive = {
-			focus = CHI_Offer_Spratly_Islands
-		}
-	
-		completion_reward = {
-			add_political_power = -30
-			PRC = { country_event = taiwan.13  }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			available = {
+					owns_state = 976
+				}
+			completion_reward = {
+					add_political_power = -30
+					PRC = {
+							country_event = taiwan.13
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Offer_Spratly_Islands
-		icon = diplomatic_treaty
+		id = CHI_negotiations_failed
+		icon = GFX_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_independence_negotiations
+		}
+		mutually_exclusive = {
+			focus = CHI_deal_with_prc
+		}
 		x = 6
 		y = 13
-		cost = 10
-		
-		mutually_exclusive = {
-			focus = CHI_Offer_Coastal_Islands
-		}
-		
-		available = {
-		owns_state = 988
-		}
-		
-		prerequisite = {
-			focus = CHI_Negotiate_our_Indepedence
-		}	
-	
-		completion_reward = {
-			add_political_power = -30
-			PRC = { country_event = taiwan.14  }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			available = {
+					owns_state = 988
+				}
+			completion_reward = {
+					add_political_power = -30
+					PRC = {
+							country_event = taiwan.14
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Declare_our_Indepedence
-		icon = demand_territory2
+		id = CHI_declare_independence
+		icon = GFX_demand_territory2
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_deal_with_prc
+			focus = CHI_negotiations_failed
+		}
 		x = 4
 		y = 14
-		cost = 10
+			available = {
+					NOT = {
+							any_owned_state = {
+									is_core_of = PRC
+								}
+						}
+				}
+			completion_reward = {
+					add_political_power = -30
+					every_country = {
+							news_event = taiwan_news.2
+						}
+					PRC = {
+							every_owned_state = {
+									remove_core_of = CHI
+								}
+						}
+					MON = {
+							every_owned_state = {
+									remove_core_of = CHI
+								}
+						}
+					SOV = {
+							every_owned_state = {
+									remove_core_of = CHI
+								}
+						}
+					set_cosmetic_tag = CHI_TAIWAN
+				}
+			ai_will_do = {
+					factor = 35
+				}
 
-		available = {
-			NOT = {
-				any_owned_state = { is_core_of = PRC }
-			}
-        }
-		
-		prerequisite = {
-			focus = CHI_Offer_Coastal_Islands
-			focus = CHI_Offer_Spratly_Islands
-		}
-		
-		
-	
-		completion_reward = {
-			add_political_power = -30
-			every_country = { news_event =  taiwan_news.2  }
-			PRC = { every_owned_state =  { remove_core_of = CHI } }
-			MON = { every_owned_state = { remove_core_of = CHI } }
-			SOV = { every_owned_state = { remove_core_of = CHI } }
-			set_cosmetic_tag = CHI_TAIWAN
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
 	}
-	
 	focus = {
-		id = CHI_Push_for_Recognition
-		icon = align_to_united_nations
+		id = CHI_pressure_the_un
+		icon = GFX_align_to_united_nations
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_declare_independence
+		}
 		x = 4
 		y = 15
-		cost = 10
-		
-		prerequisite = {
-	    	focus = CHI_Declare_our_Indepedence
-		}
-	
-		completion_reward = {
-			add_political_power = 50
-			remove_ideas = non_member_state
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_The_Asian_Tigers
-		icon = tiger
-		x = 4
-		y = 16
-		cost = 10
-		
-		prerequisite = {
-	    	focus = CHI_Push_for_Recognition
-		}
-	
-		completion_reward = {
-			create_faction = "The Asian Tigers"
-			add_stability = 0.01
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Invite_Singapore
-		icon = align_to_singapore
-		x = 6
-		y = 17
-		cost = 10
-		
-		prerequisite = {
-	    	focus = CHI_The_Asian_Tigers
-		}
-	
-		completion_reward = {
-			SIG = { country_event = taiwan.17 }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Invite_South_Korea
-		icon = align_to_south_korea2
-		x = 2
-		y = 17
-		cost = 10
-		
-		prerequisite = {
-	    	focus = CHI_The_Asian_Tigers
-		}		
-	
-		completion_reward = {
-			KOR = { country_event = taiwan.17 }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Purchase_Hong_Kong_Indepedence
-		icon = money
-		x = 4
-		y = 18
-		cost = 10
-		
-		prerequisite = {
-	    	focus = CHI_The_Asian_Tigers
-		}
-		
-		completion_reward = {
-			PRC = { country_event = taiwan.18 }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Invite_Hong_Kong
-		icon = align_to_hong_kong
-		x = 4
-		y = 19
-		cost = 10
-
-		available = {
-			HKN = { is_puppet = no }
-		}
-
-		prerequisite = {
-	    	focus = CHI_Purchase_Hong_Kong_Indepedence
-		}
-		
-		completion_reward = {
-			HKN = { country_event = taiwan.17 }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_The_New_Dream_Realized
-		icon = golden_dragon
-		x = 4
-		y = 20
-		cost = 10
-		
-		prerequisite = {
-	    	focus = CHI_Invite_Hong_Kong
-		}
-		
-		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 100
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Industrial_Development
-		icon = construction
-		x = 30
-		y = 1
-		cost = 10
-		
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Infrastructure_Expansion
-		icon = infrastructure
-		x = 30
-		y = 2
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Industrial_Development
-		}
-		
-		
-		completion_reward = {
-			524 = {
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
+			completion_reward = {
+					add_political_power = 50
+					remove_ideas = non_member_state
 				}
-            }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_A_New_Taipei
-		icon = infrastructure
+		id = CHI_develop_taipei
+		icon = GFX_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_infrastructure_project
+		}
 		x = 32
 		y = 3
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Infrastructure_Expansion
-		}
-		
-		
-		completion_reward = {
-			524 = {
-				add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-            }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Develop_the_Countryside
-		icon = infrastructure
-		x = 28
-		y = 3
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Infrastructure_Expansion
-		}
-		
-		
-		completion_reward = {
-			524 = {
-				add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
+			ai_will_do = {
+					factor = 35
 				}
-            }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+
 	}
-	
 	focus = {
-		id = CHI_Strive_for_Oil
-		icon = oil_trade
+		id = CHI_drill_for_oil
+		icon = GFX_oil_trade
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_develop_taipei
+		}
 		x = 32
 		y = 4
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_A_New_Taipei
-		}
-		
-		
-		completion_reward = {
-			524 = { add_resource = { type = oil amount = 20 } }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					524 = {
+							add_resource = {
+									type = oil
+									amount = 20
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Aluminum_Mining
-		icon = production2
-		x = 28
-		y = 4
-		cost = 10
-		
+		id = CHI_develop_the_islands
+		icon = GFX_infrastructure
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Develop_the_Countryside
+			focus = CHI_drill_for_oil
 		}
-		
-		
-		completion_reward = {
-			524 = { add_resource = { type = aluminium amount = 20 } }
+		prerequisite = {
+			focus = CHI_resource_projects
 		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Develop_the_Coastal_Islands
-		icon = infrastructure
 		x = 30
 		y = 5
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Strive_for_Oil
-		}
-		prerequisite = {
-			focus = CHI_Aluminum_Mining
-		}
-		
-		completion_reward = {
-			976 = {
-            	add_building_construction = {
-               		type = infrastructure
-               		level = 1
-              		instant_build = yes
-           		}
-            }
-	   		977 = {
-            	add_building_construction = {
-              		type = infrastructure
-               		level = 1
-               		instant_build = yes
-            	}
-            }	
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					976 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					977 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Military_Development
-		icon = license_production
+		id = CHI_military_focus
+		icon = GFX_license_production
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_develop_the_islands
+		}
+		mutually_exclusive = {
+			focus = CHI_industrial_focus
+		}
 		x = 32
 		y = 6
-		cost = 10
-		
+			completion_reward = {
+					add_ideas = military_industry_project4
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_industrial_focus
+		icon = GFX_industry_civilian
+		cost = 10,00
 		prerequisite = {
-			focus = CHI_Develop_the_Coastal_Islands
+			focus = CHI_develop_the_islands
 		}
 		mutually_exclusive = {
-			focus = CHI_Civilian_Development
+			focus = CHI_military_focus
 		}
-		
-		completion_reward = {
-			add_ideas = military_industry_project4	
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
-	}
-	
-	focus = {
-		id = CHI_Civilian_Development
-		icon = industry_civilian
 		x = 28
 		y = 6
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Develop_the_Coastal_Islands
-		}
-		mutually_exclusive = {
-			focus = CHI_Military_Development
-		}
-		
-		completion_reward = {
-			add_ideas = civilian_industry_project4	
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_ideas = civilian_industry_project4
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
 		id = CHI_Formosan_Military_Industry
-		icon = industry_military
+		icon = GFX_industry_military
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_military_focus
+		}
 		x = 32
 		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Military_Development
-	    }
-		
-		completion_reward = {
-	   		524 = {
-            	add_building_construction = {
-              		type = arms_factory
-               		level = 2
-               		instant_build = yes
-            	}
-            }
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Rapid_Industrialization
-		icon = industry_democratic
+		id = CHI_business_contracts
+		icon = GFX_industry_democratic
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_industrial_focus
+		}
 		x = 28
 		y = 7
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Civilian_Development
-	    }
-		
-		completion_reward = {
-			524 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
+			completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
 				}
-			}
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
 		id = CHI_Revitalize_the_Army
-		icon = infantry_allies
-		x = 32
-		y = 8
-		cost = 10
-		
+		icon = GFX_infantry_allies
+		cost = 10,00
 		prerequisite = {
 			focus = CHI_Formosan_Military_Industry
-	    }
-		
-		completion_reward = {
-			add_ideas = army_morale_bonus
-			add_ideas = army_organization_bonus
-	   		army_experience = 50
 		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+		x = 32
+		y = 8
+			completion_reward = {
+					add_ideas = army_morale_bonus
+					add_ideas = army_organization_bonus
+					army_experience = 50
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Industrial_Agreement_with_Japan
-		icon = industry_democratic2
+		id = CHI_japanese_cooperation
+		icon = GFX_industry_democratic2
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_business_contracts
+		}
 		x = 28
 		y = 8
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Rapid_Industrialization
-	    }
-		
-		completion_reward = {
-	   		524 = {
-		   		add_extra_state_shared_building_slots = 2
-           		add_building_construction = {
-               		type = industrial_complex
-               		level = 1
-               		instant_build = yes
-            	}
-            }
-			JAP = {
-    			526 = {
-					add_extra_state_shared_building_slots = 2
-            		add_building_construction = {
-              			type = industrial_complex
-              			level = 1
-            			instant_build = yes
-            		}
-            	}
-				add_opinion_modifier = { target = CHI modifier = recent_actions_positive }
-          	}		  
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					JAP = {
+							526 = {
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
 		id = CHI_Improve_the_Navy
-		icon = navy
-		x = 32
-		y = 9
-		cost = 10
-		
+		icon = GFX_navy
+		cost = 10,00
 		prerequisite = {
 			focus = CHI_Revitalize_the_Army
-	    }
-		
-		completion_reward = {
-       		524 = { add_building_construction = { type = naval_base province = 7186 level = 4 instant_build = yes } }
-			591 = { add_building_construction = { type = dockyard level = 4 instant_build = yes } }
-			navy_experience = 80
 		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+		x = 32
+		y = 9
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = naval_base
+									province = 7186
+									level = 4
+									instant_build = yes
+								}
+						}
+					591 = {
+							add_building_construction = {
+									type = dockyard
+									level = 4
+									instant_build = yes
+								}
+						}
+					navy_experience = 80
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Industrial_Agreement_with_South_Korea
-		icon = industry_democratic4
+		id = CHI_south_korean_cooperation
+		icon = GFX_industry_democratic4
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_japanese_cooperation
+		}
 		x = 28
 		y = 9
-		cost = 10
-		
-		prerequisite = {
-		focus = CHI_Industrial_Agreement_with_Japan
-	    }
-		
-		completion_reward = {
-			524 = {
-		   		add_extra_state_shared_building_slots = 2
-            	add_building_construction = {
-               		type = industrial_complex
-               		level = 1
-               		instant_build = yes
-            	}
-            }
-			KOR = {
-       			869 = {
-		   			add_extra_state_shared_building_slots = 2
-            		add_building_construction = {
-              			type = industrial_complex
-              			level = 1
-             			instant_build = yes
-          			}
-            	}
-				add_opinion_modifier = { target = CHI modifier = recent_actions_positive }
-          	}	  
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					KOR = {
+							869 = {
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
 		id = CHI_Improve_the_Airforce
-		icon = airforce
-		x = 32
-		y = 10
-		cost = 10
-		
+		icon = GFX_airforce
+		cost = 10,00
 		prerequisite = {
 			focus = CHI_Improve_the_Navy
-	    }
-		
-		completion_reward = {
-      	 	524 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
+		}
+		x = 32
+		y = 10
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+					air_experience = 80
 				}
-			}
-			air_experience = 80
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Industrial_Development_Funding
-		icon = money
+		id = CHI_fund_development
+		icon = GFX_money
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_south_korean_cooperation
+		}
 		x = 28
 		y = 10
-		cost = 10
-		
-		prerequisite = {
-			focus = CHI_Industrial_Agreement_with_South_Korea
-	    }
-		
-		completion_reward = {
-			add_ideas = idea_focus_industrial_development_program
-			add_political_power = -50
-		}
-	
-		ai_will_do = {
-			factor = 35
-		}
+			completion_reward = {
+					add_ideas = idea_focus_industrial_development_program
+					add_political_power = -50
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
 	}
-	
 	focus = {
-		id = CHI_Fortify_the_Capital
-		icon = military_fort
-		x = 30
-		y = 11
-		cost = 10
-		
+		id = CHI_taipei_megalopolis
+		icon = GFX_military_fort
+		cost = 10,00
 		prerequisite = {
 			focus = CHI_Improve_the_Airforce
-			focus = CHI_Industrial_Development_Funding
-	    }
-		
-		completion_reward = {
-			524 = {
-				add_building_construction = {
-					type = bunker
-					province = 7186
-					level = 6
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = 7186
-					level = 4
-					instant_build = yes
-				}
-			}
-			air_experience = 80
+			focus = CHI_fund_development
 		}
-	
-		ai_will_do = {
-			factor = 35
+		x = 30
+		y = 11
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = bunker
+									province = 7186
+									level = 6
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 7186
+									level = 4
+									instant_build = yes
+								}
+						}
+					air_experience = 80
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_abandon_spratly_islands
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_pressure_the_un
 		}
-	}	
+		mutually_exclusive = {
+			focus = CHI_reassert_spratly_claims
+		}
+		x = 2
+		y = 16
+
+	}
+	focus = {
+		id = CHI_reassert_spratly_claims
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_pressure_the_un
+		}
+		mutually_exclusive = {
+			focus = CHI_abandon_spratly_islands
+		}
+		x = 6
+		y = 16
+
+	}
+	focus = {
+		id = CHI_2022_local_elections
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_reassert_one_china_policy
+			focus = CHI_attempt_reconciliation
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = CHI_reconcile_with_japan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_abandon_spratly_islands
+			focus = CHI_reassert_spratly_claims
+		}
+		mutually_exclusive = {
+			focus = CHI_reassert_senkaku_claims
+		}
+		x = 2
+		y = 17
+
+	}
+	focus = {
+		id = CHI_reassert_senkaku_claims
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_abandon_spratly_islands
+			focus = CHI_reassert_spratly_claims
+		}
+		mutually_exclusive = {
+			focus = CHI_reconcile_with_japan
+		}
+		x = 6
+		y = 17
+
+	}
+	focus = {
+		id = CHI_mainland_reclaimed
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CHI_bastion_of_resistance
+		}
+		x = 16
+		y = 16
+
+	}
 }
