@@ -1,13 +1,17 @@
 focus_tree = {
 	id = taiwan_focus
 	country = {
-		factor = 1
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = CHI
+		}
 	}
 	default = yes
 	focus = {
 		id = CHI_year_of_the_dog
-		icon = GFX_prc_focus
-		cost = 10,00
+		icon = prc_focus
+		cost = 10.00
 		x = 10
 		y = 0
 			completion_reward = {
@@ -21,8 +25,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_industrial_program
-		icon = GFX_construction
-		cost = 10,00
+		icon = construction
+		cost = 10.00
 		x = 30
 		y = 1
 			completion_reward = {
@@ -35,8 +39,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_2018_local_elections
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_year_of_the_dog
 		}
@@ -46,8 +50,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_2020_presidential_elections
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2018_local_elections
 		}
@@ -57,49 +61,62 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_pan_green_coalition
-		icon = GFX_national_greatness
-		cost = 10,00
+		icon = national_greatness
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2020_presidential_elections
+		}
+		bypass = {
+		    OR = {
+			    has_government = communist
+				has_government = democratic_socialist
+				has_government = progressive
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+		    }
 		}
 		mutually_exclusive = {
 			focus = CHI_pan_blue_coalition
 		}
 		x = 4
 		y = 3
-			completion_reward = {
-					add_stability = 0.01
-					add_political_power = 30
-				}
-			ai_will_do = {
-					factor = 35
-				}
+		completion_reward = {
+		
+		}
 
 	}
 	focus = {
 		id = CHI_pan_blue_coalition
-		icon = GFX_national_unity
-		cost = 10,00
+		icon = align_to_taiwan
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2020_presidential_elections
+		}
+		bypass = {
+		    OR = {
+			    has_government = fascist
+				has_government = islamist
+				has_government = conservative
+				has_government = reactionary
+				has_government = monarchist
+				has_government = nationalist
+		    }
 		}
 		mutually_exclusive = {
 			focus = CHI_pan_green_coalition
 		}
 		x = 16
 		y = 3
-			completion_reward = {
-					add_political_power = 60
-				}
-			ai_will_do = {
-					factor = 35
-				}
+		completion_reward = {
+		
+		}
 
 	}
 	focus = {
 		id = CHI_offensive_focus
-		icon = GFX_constitution
-		cost = 10,00
+		icon = constitution
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_pan_blue_coalition
 		}
@@ -116,8 +133,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_reassert_one_china_policy
-		icon = GFX_democracy
-		cost = 10,00
+		icon = democracy
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_offensive_focus
 		}
@@ -133,8 +150,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_infrastructure_project
-		icon = GFX_infrastructure
-		cost = 10,00
+		icon = infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_industrial_program
 		}
@@ -156,8 +173,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_countryside_development
-		icon = GFX_infrastructure
-		cost = 10,00
+		icon = infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_infrastructure_project
 		}
@@ -179,8 +196,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_resource_projects
-		icon = GFX_production2
-		cost = 10,00
+		icon = production2
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_countryside_development
 		}
@@ -201,8 +218,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_2022_KMT_dominates
-		icon = GFX_examination_yuan
-		cost = 10,00
+		icon = examination_yuan
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2022_local_elections
 		}
@@ -222,8 +239,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_befriend_the_west
-		icon = GFX_national_unity_red
-		cost = 10,00
+		icon = national_unity_red
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2022_KMT_dominates
 		}
@@ -242,8 +259,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_anti_communism
-		icon = GFX_align_to_america
-		cost = 10,00
+		icon = align_to_america
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_befriend_the_west
 		}
@@ -264,8 +281,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_restart_trade
-		icon = GFX_trade_with_america
-		cost = 10,00
+		icon = trade_with_america
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_anti_communism
 		}
@@ -286,8 +303,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_request_us_aid
-		icon = GFX_align_to_united_nations
-		cost = 10,00
+		icon = align_to_united_nations
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_restart_trade
 		}
@@ -303,8 +320,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_approach_asean
-		icon = GFX_align_to_asean
-		cost = 10,00
+		icon = align_to_asean
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_request_us_aid
 		}
@@ -379,8 +396,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_operation_qianghua
-		icon = GFX_defence
-		cost = 10,00
+		icon = defence
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_approach_asean
 		}
@@ -397,8 +414,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_bastion_of_resistance
-		icon = GFX_blue_dragon
-		cost = 10,00
+		icon = blue_dragon
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_operation_qianghua
 		}
@@ -416,8 +433,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_defensive_focus
-		icon = GFX_continuous_boost_freedom
-		cost = 10,00
+		icon = continuous_boost_freedom
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_pan_green_coalition
 		}
@@ -434,8 +451,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_attempt_reconciliation
-		icon = GFX_align_to_china
-		cost = 10,00
+		icon = align_to_china
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_defensive_focus
 		}
@@ -476,8 +493,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_2022_DPP_dominates
-		icon = GFX_improve_relations_green
-		cost = 10,00
+		icon = improve_relations_green
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2022_local_elections
 		}
@@ -504,8 +521,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_domestic_focus
-		icon = GFX_neutrality
-		cost = 10,00
+		icon = neutrality
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_2022_DPP_dominates
 		}
@@ -522,8 +539,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_abolish_one_china_policy
-		icon = GFX_renounce_treaty
-		cost = 10,00
+		icon = renounce_treaty
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_domestic_focus
 		}
@@ -540,8 +557,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_pro_independence_campaign
-		icon = GFX_propaganda
-		cost = 10,00
+		icon = propaganda
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_abolish_one_china_policy
 		}
@@ -561,8 +578,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_prepare_negotiations
-		icon = GFX_intelligence_exchange
-		cost = 10,00
+		icon = intelligence_exchange
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_pro_independence_campaign
 		}
@@ -584,8 +601,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_independence_negotiations
-		icon = GFX_align_to_china2
-		cost = 10,00
+		icon = align_to_china2
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_prepare_negotiations
 		}
@@ -616,8 +633,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_deal_with_prc
-		icon = GFX_diplomatic_treaty
-		cost = 10,00
+		icon = diplomatic_treaty
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_independence_negotiations
 		}
@@ -642,8 +659,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_negotiations_failed
-		icon = GFX_diplomatic_treaty
-		cost = 10,00
+		icon = diplomatic_treaty
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_independence_negotiations
 		}
@@ -668,8 +685,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_declare_independence
-		icon = GFX_demand_territory2
-		cost = 10,00
+		icon = demand_territory2
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_deal_with_prc
 			focus = CHI_negotiations_failed
@@ -712,8 +729,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_pressure_the_un
-		icon = GFX_align_to_united_nations
-		cost = 10,00
+		icon = align_to_united_nations
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_declare_independence
 		}
@@ -730,8 +747,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_develop_taipei
-		icon = GFX_infrastructure
-		cost = 10,00
+		icon = infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_infrastructure_project
 		}
@@ -753,8 +770,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_drill_for_oil
-		icon = GFX_oil_trade
-		cost = 10,00
+		icon = oil_trade
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_develop_taipei
 		}
@@ -775,8 +792,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_develop_the_islands
-		icon = GFX_infrastructure
-		cost = 10,00
+		icon = infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_drill_for_oil
 		}
@@ -808,8 +825,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_military_focus
-		icon = GFX_license_production
-		cost = 10,00
+		icon = license_production
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_develop_the_islands
 		}
@@ -828,8 +845,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_industrial_focus
-		icon = GFX_industry_civilian
-		cost = 10,00
+		icon = industry_civilian
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_develop_the_islands
 		}
@@ -848,8 +865,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Formosan_Military_Industry
-		icon = GFX_industry_military
-		cost = 10,00
+		icon = industry_military
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_military_focus
 		}
@@ -871,8 +888,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_business_contracts
-		icon = GFX_industry_democratic
-		cost = 10,00
+		icon = industry_democratic
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_industrial_focus
 		}
@@ -895,8 +912,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Revitalize_the_Army
-		icon = GFX_infantry_allies
-		cost = 10,00
+		icon = infantry_allies
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_Formosan_Military_Industry
 		}
@@ -914,8 +931,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_japanese_cooperation
-		icon = GFX_industry_democratic2
-		cost = 10,00
+		icon = industry_democratic2
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_business_contracts
 		}
@@ -952,8 +969,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Improve_the_Navy
-		icon = GFX_navy
-		cost = 10,00
+		icon = navy
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_Revitalize_the_Army
 		}
@@ -984,8 +1001,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_south_korean_cooperation
-		icon = GFX_industry_democratic4
-		cost = 10,00
+		icon = industry_democratic4
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_japanese_cooperation
 		}
@@ -1022,8 +1039,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Improve_the_Airforce
-		icon = GFX_airforce
-		cost = 10,00
+		icon = airforce
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_Improve_the_Navy
 		}
@@ -1046,8 +1063,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_fund_development
-		icon = GFX_money
-		cost = 10,00
+		icon = money
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_south_korean_cooperation
 		}
@@ -1064,8 +1081,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_taipei_megalopolis
-		icon = GFX_military_fort
-		cost = 10,00
+		icon = military_fort
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_Improve_the_Airforce
 			focus = CHI_fund_development
@@ -1096,8 +1113,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_abandon_spratly_islands
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_pressure_the_un
 		}
@@ -1110,8 +1127,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_reassert_spratly_claims
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_pressure_the_un
 		}
@@ -1124,8 +1141,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_2022_local_elections
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_reassert_one_china_policy
 			focus = CHI_attempt_reconciliation
@@ -1136,8 +1153,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_reconcile_with_japan
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_abandon_spratly_islands
 			focus = CHI_reassert_spratly_claims
@@ -1151,8 +1168,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_reassert_senkaku_claims
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_abandon_spratly_islands
 			focus = CHI_reassert_spratly_claims
@@ -1166,8 +1183,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_mainland_reclaimed
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = goal_unknown
+		cost = 10.00
 		prerequisite = {
 			focus = CHI_bastion_of_resistance
 		}

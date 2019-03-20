@@ -1,55 +1,89 @@
-state=
-{
+
+state={
 	id=524
 	name="STATE_524"
-	manpower = 23367320
-	
-	state_category = state_level_21
-	
-	resources = {
-		oil = 2
-		aluminium = 1
+	resources={
+		oil=2.000
+		aluminium=1.000
 	}
-	
-	history=
-	{
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 10
-			
 			industrial_complex = 15
 			arms_factory = 3
 			dockyard = 3
-			
 			air_base = 10
-			
 			12068 = {
 				naval_base = 10
 				coastal_bunker = 5
+
 			}
-			11914 = { coastal_bunker = 1 }
-			1175 = { coastal_bunker = 1 }
-			4096 = { coastal_bunker = 1 }
-			9955 = { coastal_bunker = 1 }
+			11914 = {
+				coastal_bunker = 1
+
+			}
+			1175 = {
+				coastal_bunker = 1
+
+			}
+			4096 = {
+				coastal_bunker = 1
+
+			}
+			9955 = {
+				coastal_bunker = 1
+
+			}
 			7186 = {
 				naval_base = 6
 				coastal_bunker = 2
+
 			}
-			7214 = { coastal_bunker = 1 }
-			11959 = { coastal_bunker = 1 }
-			1091 = { coastal_bunker = 1 }
+			7214 = {
+				coastal_bunker = 1
+
+			}
+			11959 = {
+				coastal_bunker = 1
+
+			}
+			1091 = {
+				coastal_bunker = 1
+
+			}
+			13606 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+
 		}
 		victory_points = {
-			7186 5 
+			7186 10
+		}
+		victory_points = {
+			11959 5
+		}
+		victory_points = {
+			7214 3
+		}
+		victory_points = {
+			13606 1
 		}
 		victory_points = {
 			12068 1 
 		}
 
 	}
+
 	provinces={
-		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
-		}
+		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068 13606 
+	}
+	manpower=23367320
+	buildings_max_level_factor=1.000
+	state_category=state_level_21
 }
