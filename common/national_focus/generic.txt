@@ -78,26 +78,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = generic_ideology_focus
-		icon = propaganda
-		x = @ideology_tree_start
-		y = 0
-		cost = 10
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-		
-		ai_will_do = {
-			base = 0
-			modifier = {
-				is_historical_focus_on = no
-				add = 25
-			}
-		}
-	}
-	
-	focus = {
 		id = generic_army_focus
 		icon = infantry_allies
 		x = @army_tree_center

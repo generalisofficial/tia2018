@@ -92,31 +92,3 @@ country_event = {
 		DPR  = { load_oob = "DPR volunteers" }
 	}
 }
-
-country_event = {
-	id = russia.27
-	title = russia.27.t
-	desc = russia.27.d
-	picture = GFX_report_event_stock_market
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.27.o1
-		add_political_power = -100
-	    add_timed_idea = {
-            idea = SOV_industrial_development_aid
-            days = 430
-		}
-	}
-	
-	option = {
-		name = russia.27.o2
-		add_stability = -0.03
-		add_political_power = -180
-		swap_ideas = {
-            add_idea = SOV_corrupt_oligarchy3
-            remove_idea = SOV_corrupt_oligarchy
-		}
-    }
-}
