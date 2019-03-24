@@ -724,11 +724,18 @@ country_event = {
 	option = {
 		name = election_SWE.1.o1
 		set_variable = { v_seats = party_popularity@democratic_socialist }
+		multiply_variable = { v_seats = 100 }
 		set_variable = { mp_seats = party_popularity@progressive }
+		multiply_variable = { mp_seats = 100 }
 		set_variable = { s_seats = party_popularity@social_democrat }
+		multiply_variable = { s_seats = 100 }
 		set_variable = { c_seats = party_popularity@social_liberal }
+		multiply_variable = { c_seats = 100 }
 		set_variable = { m_seats = party_popularity@market_liberal }
+		multiply_variable = { m_seats = 100 }
 		set_variable = { kd_seats = party_popularity@conservative }
+		multiply_variable = { kd_seats = 100 }
 		set_variable = { sd_seats = party_popularity@reactionary }
+		multiply_variable = { sd_seats = 100 }
     }
 }
