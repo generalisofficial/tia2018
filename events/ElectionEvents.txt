@@ -242,6 +242,12 @@ country_event = {
 			ruling_party = market_liberal
 			elections_allowed = yes
 		}
+		if = {
+		    limit = {
+		        market_liberal < 0.5
+		    }
+			add_timed_idea = { idea = elected_minority_government days = 180 }
+	    }
 		hidden_effect = { news_event = election.2 }
 	}
 	
@@ -487,6 +493,81 @@ country_event = {
 		name = election.2.o1
 	}
 }
+
+country_event = {
+	id = election.3
+	title = "Forming a coalition"
+	desc = "Our government does not have the absolute majority of 50% in the parliament. Shall we ask other parties to form a coalition?"
+	picture = GFX_report_event_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_idea = elected_minority_government
+		NOT = { has_country_flag = asked_for_coalition }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+
+	immediate = {
+		set_country_flag = asked_for_coalition
+	}
+
+	option = {
+		name = "Yes, Good idea."
+		#country_event = election.4
+	}
+
+	option = {
+		name = "No, we'll stick to ourselves"
+	}
+
+}
+
+#country_event = {
+#	id = election.4
+#	title = "Choosing a coalition partner"
+#	desc = "The following parties are most likely to accept a coalition with us:"
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "Islamist Party"
+#		trigger = {
+#			islamist > 0.1
+#			OR = {
+#				country_is_democratic = yes
+#				country_is_democratic = no
+#			}
+#			NOT = {
+#				has_government = fascist
+#				has_government = nationalist
+#				has_government = communist
+#				has_government = monarchist
+#				has_government = reactionary
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = "Fascist Party"
+#		trigger = {
+#			fascist > 0.1
+#			OR = {
+#				country_is_democratic = yes
+#				country_is_democratic = no
+#			}
+#			NOT = {
+#				has_government = nationalist
+#				has_government = communist
+#				has_government = monarchist
+#				has_government = reactionary
+#			}
+#		}
+#	}
+#}
 
 #SOV 2018
 country_event = {

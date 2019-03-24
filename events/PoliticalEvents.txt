@@ -42,6 +42,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 	
 	option = {
@@ -100,6 +108,14 @@ country_event = {
 		news_event = {
 			hours = 3
 			id = news.1
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
 		}
 	}
 	
@@ -167,6 +183,14 @@ country_event = {
 		news_event = {
 			hours = 3
 			id = news.1
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
 		}
 	}
 	
@@ -242,6 +266,22 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
+	}
+
+	option = {
+		name = political.4.o2
+		start_civil_war = {
+			ideology = islamist
+			size = 0.5
+		}
 	}
 }
 
@@ -301,6 +341,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 }
 
@@ -317,7 +365,6 @@ country_event = {
 		OR = {
 			has_government = communist
 			has_government = fascist
-			has_government = communist
 			has_government = nationalist
 			has_government = monarchist
 		}
@@ -360,6 +407,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 }
 
@@ -376,7 +431,6 @@ country_event = {
 		OR = {
 			has_government = communist
 			has_government = fascist
-			has_government = communist
 			has_government = nationalist
 			has_government = monarchist
 		}
@@ -419,6 +473,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 }
 
@@ -435,7 +497,6 @@ country_event = {
 		OR = {
 			has_government = communist
 			has_government = fascist
-			has_government = communist
 			has_government = nationalist
 			has_government = monarchist
 		}
@@ -478,6 +539,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 }
 
@@ -494,7 +563,6 @@ country_event = {
 		OR = {
 			has_government = communist
 			has_government = fascist
-			has_government = communist
 			has_government = nationalist
 			has_government = monarchist
 		}
@@ -537,6 +605,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 }
 
@@ -553,7 +629,6 @@ country_event = {
 		OR = {
 			has_government = communist
 			has_government = fascist
-			has_government = communist
 			has_government = nationalist
 			has_government = monarchist
 		}
@@ -596,6 +671,14 @@ country_event = {
 			hours = 3
 			id = news.1
 		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
+		}
 	}
 }
 
@@ -612,7 +695,6 @@ country_event = {
 		OR = {
 			has_government = communist
 			has_government = fascist
-			has_government = communist
 			has_government = nationalist
 			has_government = monarchist
 		}
@@ -654,6 +736,14 @@ country_event = {
 		news_event = {
 			hours = 3
 			id = news.1
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
 		}
 	}
 }
@@ -706,6 +796,14 @@ country_event = {
 		news_event = {
 			hours = 3
 			id = news.1
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = has_coalition
+				}
+			}
+			break_coalition = yes
 		}
 	}
 }
@@ -1107,5 +1205,16 @@ country_event = {
 			is_puppet = no
 			NOT = { has_government = communist }
 		}
+	}
+}
+
+country_event = {
+	id = political.25
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		update_coalition = yes
 	}
 }

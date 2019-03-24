@@ -592,3 +592,108 @@ UNSC_cleanup_effect = {
 	clear_global_event_target = sanctions_country
 	clr_global_flag = UNSC_sanction_voting_ongoing
 }
+
+break_coalition = {
+	clr_country_flag = has_coalition
+	clr_country_flag = coalition_islamist
+	clr_country_flag = coalition_fascist
+	clr_country_flag = coalition_nationalist
+	clr_country_flag = coalition_monarchist
+	clr_country_flag = coalition_reactionary
+	clr_country_flag = coalition_conservative
+	clr_country_flag = coalition_market_liberal
+	clr_country_flag = coalition_social_liberal
+	clr_country_flag = coalition_social_democrat
+	clr_country_flag = coalition_progressive
+	clr_country_flag = coalition_democratic_socialist
+	clr_country_flag = coalition_communist
+	clear_variable = ROOT.Coalition
+}
+
+update_coalition = {
+	set_variable = {
+		var = ROOT.Coalition
+		value = 0
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_islamist
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@islamist }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_fascist
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@fascist }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_nationalist
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@nationalist }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_monarchist
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@monarchist }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_reactionary
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@reactionary }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_conservative
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@conservative }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_market_liberal
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@market_liberal }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_liberal
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@social_liberal }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_democrat
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@social_democrat }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_progressive
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@progressive }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_democratic_socialist
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@democratic_socialist }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_communist
+		}
+		add_to_variable = { ROOT.Coalition = party_popularity@communist }
+	}
+	multiply_variable = { ROOT.Coalition = 100 }
+
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = has_coalition }
+		}
+		break_coalition = yes
+	}
+}

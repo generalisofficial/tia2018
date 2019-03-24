@@ -16,4 +16,22 @@ scripted_gui = {
 		
         }
 	}
+
+	coalition_topbar = {
+		window_name = "coalition_topbar_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+            has_country_flag = has_coalition
+		}
+ 
+        effects = {
+		
+        }
+        
+		triggers = {
+		
+        }
+	}
 }

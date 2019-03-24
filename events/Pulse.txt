@@ -286,6 +286,13 @@ country_event = {
 			}
 			country_event = syria.3
 		}
+		if = {
+			limit = {
+				has_idea = elected_minority_government
+				NOT = { has_country_flag = asked_for_coalition }
+			}
+			country_event = election.3
+		}
 	}
 }
 

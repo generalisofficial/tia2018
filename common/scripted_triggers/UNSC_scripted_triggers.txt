@@ -47,3 +47,14 @@ at_war_country_saved = {
 		has_country_flag = at_war_country_20
 	}
 }
+
+country_is_democratic = {
+	OR = {
+		NOT = {
+			has_government = fascist
+			has_government = nationalist
+			has_government = communist
+		}
+	}
+	has_election = yes
+}
