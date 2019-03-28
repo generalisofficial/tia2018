@@ -1,41 +1,49 @@
+
 state={
 	id=816
 	name="STATE_816"
-	resources = {
-		aluminium=18
-		rubber=31
-		oil=9
-		steel=12
+	resources={
+		aluminium=18.000
+		rubber=31.000
+		steel=12.000
 	}
-	history = { 
+
+	history={
 		owner = MAL
 		add_core_of = MAL
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 5
 			arms_factory = 1
-			dockyard = 1
-			10297 = { naval_base = 8 }
-			7399 = { naval_base = 1 }
-			10313 = { naval_base = 1 }
+			10297 = {
+				naval_base = 8
+
+			}
+			10313 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 7329 1 }
-		victory_points = { 10297 20 }
-		victory_points = { 1291 1 }
-		victory_points = { 1364 1 }
-		victory_points = { 12199 1 }
-		victory_points = { 4412 1 }
-		victory_points = { 12905 1 }
-		victory_points = { 7387 1 }
-		victory_points = { 10212 1 }
-		victory_points = { 4424 1 }
-		
+		victory_points = {
+			13612 20 
+		}
+		victory_points = {
+			7427 6
+		}
+		victory_points = {
+			4412 4
+		}
+		victory_points = {
+			4424 5
+		}
+
 	}
+
 	provinces={
-		1392 4367 4412 4424 7399 7427 10297 10313 12255 12271 
+		4412 4424 7427 10297 10313 13610 13611 13612 
 	}
-	manpower=19800250
+	manpower=14001700
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_14
+	state_category=state_level_13
 }

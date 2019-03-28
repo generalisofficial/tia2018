@@ -1,23 +1,28 @@
+
 state={
 	id=891
 	name="STATE_891"
-	provinces={
-		1357 1535 1548 4511 7516 7601 10384 10425 10438 12264 12360 12373 12388 12402 12417 12431 
+	resources={
+		tungsten=5.000
+		rubber=60.000
 	}
-	resources = {
-		tungsten=5
-		rubber = 60
-	}
-	history = {
+
+	history={
 		owner = SIA
 		add_core_of = SIA
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 2
+
 		}
+
 	}
-	state_category = state_level_8
+
+	provinces={
+		1357 1535 1548 4511 4582 7516 7601 10384 10425 10438 12195 12264 12360 12373 12388 12402 12417 12431 
+	}
 	manpower=21500250
 	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

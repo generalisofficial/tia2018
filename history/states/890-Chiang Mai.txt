@@ -1,28 +1,41 @@
+
 state={
 	id=890
 	name="STATE_890"
-	provinces={
-		1253 1488 1990 4496 7312 7353 7492 7531 7675 8045 10371 12345 
+	resources={
+		tungsten=9.000
+		rubber=21.000
+		steel=2.000
 	}
-	resources = {
-		tungsten = 9
-		rubber = 21
-		steel = 2
-	}
-	history = {
+
+	history={
 		owner = SIA
 		add_core_of = SIA
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 2
+
 		}
-		victory_points = { 1488 5 }
-		victory_points = { 1990 1 }
-		victory_points = { 7353 2 }
-		victory_points = { 8045 2 }
+		victory_points = {
+			1488 5 
+		}
+		victory_points = {
+			1990 1 
+		}
+		victory_points = {
+			7353 2 
+		}
+		victory_points = {
+			8045 2 
+		}
+
 	}
-	state_category = state_level_7
+
+	provinces={
+		1253 1488 1990 4496 4566 7312 7353 7492 7531 7544 7559 7572 7675 8045 10371 10398 10411 12173 12345 
+	}
 	manpower=6500250
 	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
