@@ -2,44 +2,40 @@
 state={
 	id=454
 	name="STATE_454"
-	
+
 	history={
 		owner = ISR
 		add_core_of = ISR
-		add_core_of = PAL
 		add_core_of = HAM
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 4
 			arms_factory = 1
-			dockyard = 1
 			air_base = 9
 			nuclear_reactor = 1
-			1065 = {
-				bunker = 2
-				naval_base = 1
-			}
-			1201 = {
-				bunker = 1
-			}
 			4206 = {
 				bunker = 5
 				naval_base = 5
+
 			}
+
 		}
-		victory_points = { 4206 20 }
-		victory_points = { 1065 3 }
-		victory_points = { 1201 2 }
-		victory_points = { 13218 1 }
-		victory_points = { 11970 1 }
-		victory_points = { 13248 21 }
+		victory_points = {
+			4206 20 
+		}
+		victory_points = {
+			13218 1 
+		}
+		victory_points = {
+			11970 1 
+		}
+
 	}
 
 	provinces={
-		1065 1201 4206 13248 
+		4206 
 	}
-	
-	manpower= 7276242
+	manpower=3504200
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_6
 }

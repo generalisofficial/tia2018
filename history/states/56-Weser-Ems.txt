@@ -1,31 +1,27 @@
+
 state={
 	id=56
 	name="STATE_56"
-	manpower = 3158467
-	
-	resources = {
-		aluminium=1
-		oil = 2
-		steel = 5
-	}
-	
-	state_category = state_level_8
 
 	history={
-		owner = GER
-		add_core_of = GER
+		owner = FRA
+		add_core_of = FRA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
-			241 = { naval_base = 7 }
-			air_base = 3
+			13084 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 241 1 } #Wilhelmshaven
-		victory_points = { 309 2 } #Oldenburg
-		victory_points = { 11233 1 } #Lingen
+
 	}
 
 	provinces={
-		241 247 309 336 3234 9281 11233 11264 11360 11388 
+		13084 
 	}
+	manpower=35107
+	buildings_max_level_factor=1.000
+	state_category=state_level_1
 }

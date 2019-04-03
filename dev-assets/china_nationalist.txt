@@ -1,0 +1,1195 @@
+focus_tree = {
+	id = taiwan_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = CHI
+		}
+	}
+	default = yes
+	focus = {
+		id = CHI_year_of_the_dog
+		icon = prc_focus
+		cost = 10.00
+		x = 10
+		y = 0
+			completion_reward = {
+					add_political_power = 30
+					add_war_support = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_industrial_program
+		icon = construction
+		cost = 10.00
+		x = 30
+		y = 1
+			completion_reward = {
+					add_political_power = 100
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_2018_local_elections
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_year_of_the_dog
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = CHI_2020_presidential_elections
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2018_local_elections
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = CHI_pan_green_coalition
+		icon = national_greatness
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2020_presidential_elections
+		}
+		bypass = {
+		    OR = {
+			    has_government = communist
+				has_government = democratic_socialist
+				has_government = progressive
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+		    }
+		}
+		mutually_exclusive = {
+			focus = CHI_pan_blue_coalition
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = CHI_pan_blue_coalition
+		icon = align_to_taiwan
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2020_presidential_elections
+		}
+		bypass = {
+		    OR = {
+			    has_government = fascist
+				has_government = islamist
+				has_government = conservative
+				has_government = reactionary
+				has_government = monarchist
+				has_government = nationalist
+		    }
+		}
+		mutually_exclusive = {
+			focus = CHI_pan_green_coalition
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = CHI_offensive_focus
+		icon = constitution
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_pan_blue_coalition
+		}
+		x = 16
+		y = 4
+			completion_reward = {
+					add_political_power = 15
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_reassert_one_china_policy
+		icon = democracy
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_offensive_focus
+		}
+		x = 16
+		y = 5
+			completion_reward = {
+					add_political_power = 40
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_infrastructure_project
+		icon = infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_industrial_program
+		}
+		x = 30
+		y = 2
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_countryside_development
+		icon = infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_infrastructure_project
+		}
+		x = 28
+		y = 3
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_resource_projects
+		icon = production2
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_countryside_development
+		}
+		x = 28
+		y = 4
+			completion_reward = {
+					524 = {
+							add_resource = {
+									type = aluminium
+									amount = 20
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_2022_KMT_dominates
+		icon = examination_yuan
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2022_local_elections
+		}
+		mutually_exclusive = {
+			focus = CHI_2022_DPP_dominates
+		}
+		x = 16
+		y = 7
+			completion_reward = {
+					add_political_power = -40
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_befriend_the_west
+		icon = national_unity_red
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2022_KMT_dominates
+		}
+		x = 16
+		y = 8
+			available = {
+					has_government = conservative
+				}
+			completion_reward = {
+					add_political_power = 30
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_anti_communism
+		icon = align_to_america
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_befriend_the_west
+		}
+		x = 16
+		y = 9
+			completion_reward = {
+					USA = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_restart_trade
+		icon = trade_with_america
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_anti_communism
+		}
+		x = 16
+		y = 10
+			completion_reward = {
+					USA = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = trade_influence_1
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_request_us_aid
+		icon = align_to_united_nations
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_restart_trade
+		}
+		x = 16
+		y = 11
+			completion_reward = {
+					add_political_power = 50
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_approach_asean
+		icon = align_to_asean
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_request_us_aid
+		}
+		x = 16
+		y = 12
+			completion_reward = {
+					SIA = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					VIN = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					CAM = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					"PHI" = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					BRM = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					MAL = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					INS = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					LAO = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					SIG = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+					BRU = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_operation_qianghua
+		icon = defence
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_approach_asean
+		}
+		x = 16
+		y = 13
+			completion_reward = {
+					add_war_support = 0.01
+					add_ideas = defensive_preparations3
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_bastion_of_resistance
+		icon = blue_dragon
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_operation_qianghua
+		}
+		x = 16
+		y = 14
+			completion_reward = {
+					add_war_support = 0.01
+					add_ideas = defensive_constructions4
+					add_ideas = defensive_military_strategy
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_defensive_focus
+		icon = continuous_boost_freedom
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_pan_green_coalition
+		}
+		x = 4
+		y = 4
+			completion_reward = {
+					remove_ideas = idea_CHI_grudge
+					add_ideas = idea_focus_personal_freedoms
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_attempt_reconciliation
+		icon = align_to_china
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_defensive_focus
+		}
+		x = 4
+		y = 5
+			completion_reward = {
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = established_diplomatic_relations
+								}
+						}
+					CHI = {
+							add_opinion_modifier = {
+									target = PRC
+									modifier = established_diplomatic_relations
+								}
+						}
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = new_diplomatic_missions
+								}
+						}
+					CHI = {
+							add_opinion_modifier = {
+									target = PRC
+									modifier = new_diplomatic_missions
+								}
+						}
+					add_stability = 0.04
+					add_political_power = 30
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_2022_DPP_dominates
+		icon = improve_relations_green
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2022_local_elections
+		}
+		mutually_exclusive = {
+			focus = CHI_2022_KMT_dominates
+		}
+		x = 4
+		y = 7
+			completion_reward = {
+					add_political_power = -50
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = progressive
+							popularity = 0.03
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_domestic_focus
+		icon = neutrality
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_2022_DPP_dominates
+		}
+		x = 4
+		y = 8
+			completion_reward = {
+					add_political_power = 200
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_abolish_one_china_policy
+		icon = renounce_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_domestic_focus
+		}
+		x = 4
+		y = 9
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.01
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_pro_independence_campaign
+		icon = propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_abolish_one_china_policy
+		}
+		x = 4
+		y = 10
+			completion_reward = {
+					add_political_power = 200
+					add_popularity = {
+							ideology = social_liberal
+							popularity = 0.1
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_prepare_negotiations
+		icon = intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_pro_independence_campaign
+		}
+		x = 4
+		y = 11
+			completion_reward = {
+					add_political_power = 200
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = diplomatic_support
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_independence_negotiations
+		icon = align_to_china2
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_prepare_negotiations
+		}
+		x = 4
+		y = 12
+			available = {
+					is_puppet = no
+					country_exists = PRC
+					PRC = {
+							has_government = communist
+						}
+				}
+			completion_reward = {
+					PRC = {
+							add_opinion_modifier = {
+									target = CHI
+									modifier = diplomatic_support
+								}
+						}
+					PRC = {
+							country_event = taiwan.12
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_deal_with_prc
+		icon = diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_independence_negotiations
+		}
+		mutually_exclusive = {
+			focus = CHI_negotiations_failed
+		}
+		x = 2
+		y = 13
+			available = {
+					owns_state = 976
+				}
+			completion_reward = {
+					add_political_power = -30
+					PRC = {
+							country_event = taiwan.13
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_negotiations_failed
+		icon = diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_independence_negotiations
+		}
+		mutually_exclusive = {
+			focus = CHI_deal_with_prc
+		}
+		x = 6
+		y = 13
+			available = {
+					owns_state = 988
+				}
+			completion_reward = {
+					add_political_power = -30
+					PRC = {
+							country_event = taiwan.14
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_declare_independence
+		icon = demand_territory2
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_deal_with_prc
+			focus = CHI_negotiations_failed
+		}
+		x = 4
+		y = 14
+			available = {
+					NOT = {
+							any_owned_state = {
+									is_core_of = PRC
+								}
+						}
+				}
+			completion_reward = {
+					add_political_power = -30
+					every_country = {
+							news_event = taiwan_news.2
+						}
+					PRC = {
+							every_owned_state = {
+									remove_core_of = CHI
+								}
+						}
+					MON = {
+							every_owned_state = {
+									remove_core_of = CHI
+								}
+						}
+					SOV = {
+							every_owned_state = {
+									remove_core_of = CHI
+								}
+						}
+					set_cosmetic_tag = CHI_TAIWAN
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_pressure_the_un
+		icon = align_to_united_nations
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_declare_independence
+		}
+		x = 4
+		y = 15
+			completion_reward = {
+					add_political_power = 50
+					remove_ideas = non_member_state
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_develop_taipei
+		icon = infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_infrastructure_project
+		}
+		x = 32
+		y = 3
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_drill_for_oil
+		icon = oil_trade
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_develop_taipei
+		}
+		x = 32
+		y = 4
+			completion_reward = {
+					524 = {
+							add_resource = {
+									type = oil
+									amount = 20
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_develop_the_islands
+		icon = infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_drill_for_oil
+		}
+		prerequisite = {
+			focus = CHI_resource_projects
+		}
+		x = 30
+		y = 5
+			completion_reward = {
+					976 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					977 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_military_focus
+		icon = license_production
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_develop_the_islands
+		}
+		mutually_exclusive = {
+			focus = CHI_industrial_focus
+		}
+		x = 32
+		y = 6
+			completion_reward = {
+					add_ideas = military_industry_project4
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_industrial_focus
+		icon = industry_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_develop_the_islands
+		}
+		mutually_exclusive = {
+			focus = CHI_military_focus
+		}
+		x = 28
+		y = 6
+			completion_reward = {
+					add_ideas = civilian_industry_project4
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_Formosan_Military_Industry
+		icon = industry_military
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_military_focus
+		}
+		x = 32
+		y = 7
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_business_contracts
+		icon = industry_democratic
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_industrial_focus
+		}
+		x = 28
+		y = 7
+			completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_Revitalize_the_Army
+		icon = infantry_allies
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_Formosan_Military_Industry
+		}
+		x = 32
+		y = 8
+			completion_reward = {
+					add_ideas = army_morale_bonus
+					add_ideas = army_organization_bonus
+					army_experience = 50
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_japanese_cooperation
+		icon = industry_democratic2
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_business_contracts
+		}
+		x = 28
+		y = 8
+			completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					JAP = {
+							526 = {
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_Improve_the_Navy
+		icon = navy
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_Revitalize_the_Army
+		}
+		x = 32
+		y = 9
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = naval_base
+									province = 7186
+									level = 4
+									instant_build = yes
+								}
+						}
+					591 = {
+							add_building_construction = {
+									type = dockyard
+									level = 4
+									instant_build = yes
+								}
+						}
+					navy_experience = 80
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_south_korean_cooperation
+		icon = industry_democratic4
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_japanese_cooperation
+		}
+		x = 28
+		y = 9
+			completion_reward = {
+					524 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					KOR = {
+							869 = {
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							add_opinion_modifier = {
+									target = CHI
+									modifier = recent_actions_positive
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_Improve_the_Airforce
+		icon = airforce
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_Improve_the_Navy
+		}
+		x = 32
+		y = 10
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+					air_experience = 80
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_fund_development
+		icon = money
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_south_korean_cooperation
+		}
+		x = 28
+		y = 10
+			completion_reward = {
+					add_ideas = idea_focus_industrial_development_program
+					add_political_power = -50
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_taipei_megalopolis
+		icon = military_fort
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_Improve_the_Airforce
+			focus = CHI_fund_development
+		}
+		x = 30
+		y = 11
+			completion_reward = {
+					524 = {
+							add_building_construction = {
+									type = bunker
+									province = 7186
+									level = 6
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 7186
+									level = 4
+									instant_build = yes
+								}
+						}
+					air_experience = 80
+				}
+			ai_will_do = {
+					factor = 35
+				}
+
+	}
+	focus = {
+		id = CHI_abandon_spratly_islands
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_pressure_the_un
+		}
+		mutually_exclusive = {
+			focus = CHI_reassert_spratly_claims
+		}
+		x = 2
+		y = 16
+
+	}
+	focus = {
+		id = CHI_reassert_spratly_claims
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_pressure_the_un
+		}
+		mutually_exclusive = {
+			focus = CHI_abandon_spratly_islands
+		}
+		x = 6
+		y = 16
+
+	}
+	focus = {
+		id = CHI_2022_local_elections
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_reassert_one_china_policy
+			focus = CHI_attempt_reconciliation
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = CHI_reconcile_with_japan
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_abandon_spratly_islands
+			focus = CHI_reassert_spratly_claims
+		}
+		mutually_exclusive = {
+			focus = CHI_reassert_senkaku_claims
+		}
+		x = 2
+		y = 17
+
+	}
+	focus = {
+		id = CHI_reassert_senkaku_claims
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_abandon_spratly_islands
+			focus = CHI_reassert_spratly_claims
+		}
+		mutually_exclusive = {
+			focus = CHI_reconcile_with_japan
+		}
+		x = 6
+		y = 17
+
+	}
+	focus = {
+		id = CHI_mainland_reclaimed
+		icon = goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_bastion_of_resistance
+		}
+		x = 16
+		y = 16
+
+	}
+}

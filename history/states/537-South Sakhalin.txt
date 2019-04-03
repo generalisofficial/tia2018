@@ -1,11 +1,12 @@
-state= {
+
+state={
 	id=537
 	name="STATE_537"
-	manpower = 325196
-	
-	state_category = state_level_5
+	resources={
+		oil=100.000
+	}
 
-	history= {
+	history={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
@@ -14,13 +15,18 @@ state= {
 				naval_base = 1
 
 			}
+
 		}
 		victory_points = {
-			12446 1
+			12446 1 
 		}
 
 	}
-	provinces=
-	{
-1322 1820 12446 	}
+
+	provinces={
+		855 1322 1742 1755 1820 12446 
+	}
+	manpower=490181
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }
