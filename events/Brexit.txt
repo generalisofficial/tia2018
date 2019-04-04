@@ -34,3 +34,38 @@ news_event = { #Brexit - News
 		}
 	}
 }
+
+news_event = { #Brexit Stopped - News
+	id = brexit.2
+	title = brexit.2.t
+	desc = brexit.2.d
+	picture = GFX_news_event_brexit
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = brexit.2.o1
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	
+	option = {
+		name = brexit.2.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_idea = idea_eu_member
+		}
+	}
+	
+	option = {
+		name = brexit.2.o3
+		trigger = {
+		    NOT = {
+			    original_tag = ENG
+			    has_idea = idea_eu_member
+			}
+		}
+	}
+}
