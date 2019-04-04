@@ -4,19 +4,30 @@ state={
 	name="STATE_516"
 
 	history={
-		owner = SOV
+		owner = PNG
+	    victory_points = {
+			4226 1 
+		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+			4226 = {
+				naval_base = 1
+
+			}
+			10234 = {
+				naval_base = 1
+
+			}
 
 		}
-		add_core_of = SOV
+		add_core_of = PNG
 
 	}
 
 	provinces={
-		96 1722 1729 1745 1757 1819 2853 2877 2900 2923 2972 3184 3336 3415 4006 4229 4692 4733 4761 4812 4859 4878 6085 6211 7809 9224 10536 10564 10607 10635 11122 11261 11328 12517 12545 12549 12634 12643 12687 13060 13061 13064 13065 
+		1358 4226 4378 10234 
 	}
-	manpower=43948
+	manpower=249358
 	buildings_max_level_factor=1.000
-	state_category=state_level_0
+	state_category=state_level_3
 }

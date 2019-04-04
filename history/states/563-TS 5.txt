@@ -1,11 +1,9 @@
 
 state={
 	id=563
-	name="STATE_563" # Chita
-	manpower = 1044310
-	state_category = state_level_2
+	name="STATE_563"
 	resources={
-		oil=100
+		oil=100.000
 	}
 
 	history={
@@ -13,11 +11,16 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 2
+
 		}
 		add_core_of = SOV
+
 	}
 
 	provinces={
 		1672 1826 4675 4677 4719 4832 7725 7786 10559 10565 10574 10643 10681 10683 12556 12622 12641 
 	}
+	manpower=1044310
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }

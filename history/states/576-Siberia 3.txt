@@ -1,20 +1,31 @@
 
 state={
 	id=576
-	name="STATE_576" # Yeniseisk
-	manpower = 117195
-	
-	state_category = wasteland
+	name="STATE_576"
 
 	history={
-		owner = SOV
+		owner = SUD
+		add_core_of = SUD
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
+			industrial_complex = 3
+			dockyard = 1
+			12725 = {
+				naval_base = 3
+
+			}
+
 		}
-		add_core_of = SOV
+		victory_points = {
+			12725 1 
+		}
+
 	}
 
 	provinces={
-		1679 1697 1741 1780 1828 1837 4687 4743 4785 4831 4842 7701 7707 7750 7805 7863 10544 10576 10631 10705 12555 12595 12615 12655 12666 
+		2003 2046 2088 7989 10902 12725 13469 
 	}
+	manpower=2653171
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }
