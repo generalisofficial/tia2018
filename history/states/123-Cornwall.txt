@@ -1,30 +1,39 @@
-state= {
+
+state={
 	id=123
 	name="STATE_123"
-	manpower = 1881013
-	
-	state_category = state_level_7
-	
-	resources = {
-		tungsten = 60
-		steel = 25
+	resources={
+		tungsten=63.000
+		steel=45.000
 	}
 
-	history= {
+	history={
 		owner = ENG
-		victory_points = { 540 10 }
+		victory_points = {
+			540 10 
+		}
+		victory_points = {
+			3369 5 
+		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 1
-			air_base = 6
+			industrial_complex = 2
+			air_base = 8
+			arms_factory = 1
 			540 = {
 				naval_base = 8
+
 			}
+
 		}
 		add_core_of = ENG
+
 	}
 
-	provinces= {
-		540 3422 3463 6526 9562 11406
- 	}
+	provinces={
+		540 3369 3422 3463 6351 6378 6526 9484 9562 11406 11471 
+	}
+	manpower=5289000
+	buildings_max_level_factor=1.000
+	state_category=state_level_11
 }

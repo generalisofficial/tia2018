@@ -122,4 +122,30 @@ brexit_decisions = {
 	        news_event = brexit.1
 		}
 	}
+	
+	second_brexit_referendum = {
+		visible = {
+		    original_tag = ENG
+			has_idea = idea_eu_member
+			NOT = { has_global_flag = brexit_deal_reached }
+		}
+		
+		visible = {
+			has_idea = idea_eu_member
+			NOT = { has_global_flag = brexit_deal_reached }
+		}
+		
+		icon = united_kingdom
+		
+		cost = 150
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = brexit.3
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

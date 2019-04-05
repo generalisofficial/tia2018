@@ -69,3 +69,51 @@ news_event = { #Brexit Stopped - News
 		}
 	}
 }
+
+country_event = { #Second Referendum
+	id = brexit.3
+	title = brexit.3.t
+	desc = brexit.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = brexit.3.o1
+	    random_list = {
+			51 = {
+				country_event = brexit.4
+			}
+			49 = {
+			    country_event = brexit.5
+			}
+		}
+	}
+}
+
+country_event = { #Second Referendum - Leave
+	id = brexit.4
+	title = brexit.4.t
+	desc = brexit.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = brexit.4.o1
+	}
+}
+
+country_event = { #Second Referendum - Leave
+	id = brexit.5
+	title = brexit.5.t
+	desc = brexit.5.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = brexit.5.o1
+		set_global_flag = brexit_stopped
+	}
+}
