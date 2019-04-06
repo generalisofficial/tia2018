@@ -110,6 +110,16 @@ add_ideas = {
     nordic_council_member
 }
 
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_conservative
+set_variable = { var = ROOT.Coalition value = 0 }
+add_to_variable = { ROOT.Coalition = party_popularity@market_liberal }
+add_to_variable = { ROOT.Coalition = party_popularity@conservative }
+multiply_variable = { ROOT.Coalition = 100 }
+
+
 set_politics = {
 
 	parties = {

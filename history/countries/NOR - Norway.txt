@@ -84,8 +84,17 @@ add_ideas = {
 	population_growth_decline
 	laissez_faire
 	limited_conscription
-        nordic_council_member
+    nordic_council_member
 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_reactionary
+set_variable = { var = ROOT.Coalition value = 0 }
+add_to_variable = { ROOT.Coalition = party_popularity@conservative }
+add_to_variable = { ROOT.Coalition = party_popularity@reactionary }
+multiply_variable = { ROOT.Coalition = 100 }
 
 set_politics = {
 	parties = {
