@@ -124,20 +124,16 @@ set_politics = {
 	elections_allowed = yes
 }
 
-# Coalition START
+# Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_reactionary
 set_country_flag = coalition_market_liberal
 set_country_flag = coalition_conservative
-set_variable = {
-	var = ROOT.Coalition
-	value = 0
-}
+set_variable = { var = ROOT.Coalition value = 0 }
 add_to_variable = { ROOT.Coalition = party_popularity@reactionary }
 add_to_variable = { ROOT.Coalition = party_popularity@market_liberal }
 add_to_variable = { ROOT.Coalition = party_popularity@conservative }
 multiply_variable = { ROOT.Coalition = 100 }
-# Coalition END
 
 create_country_leader = {
 	name = "Abdelhay Bakkali Tahiri"
