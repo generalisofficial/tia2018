@@ -293,6 +293,13 @@ country_event = {
 			}
 			country_event = election.3
 		}
+		if = {
+			limit = {
+				NOT = { tag = SWE }
+				has_country_flag = has_coalition
+			}
+			country_event = political.25
+		}
 	}
 }
 
