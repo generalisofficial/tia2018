@@ -707,7 +707,7 @@ country_event = {
     }
 }
 
-#SWE 2018
+#SWE Generic (Parliamentary)
 country_event = {
 	id = election_SWE.1
 	title = election_SWE.1.t
@@ -717,12 +717,11 @@ country_event = {
 	
 	trigger = {
 	    original_tag = SWE
-		date > 2018.1.1
-		date < 2019.1.1
 	}
 	
 	option = {
 		name = election_SWE.1.o1
+		break_coalition = yes
 		set_variable = { v_seats = party_popularity@democratic_socialist }
 		multiply_variable = { v_seats = 100 }
 		set_variable = { mp_seats = party_popularity@progressive }
@@ -737,5 +736,62 @@ country_event = {
 		multiply_variable = { kd_seats = 100 }
 		set_variable = { sd_seats = party_popularity@reactionary }
 		multiply_variable = { sd_seats = 100 }
+		country_event = election_SWE.2
+    }
+}
+
+#SWE Government Formation
+country_event = {
+	id = election_SWE.2
+	title = election_SWE.2.t
+	desc = election_SWE.2.d
+	
+	is_triggered_only = yes
+	
+	option = { #S-MP
+		name = election_SWE.2.o1
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		set_country_flag = has_coalition
+        set_country_flag = coalition_social_democrat
+        set_country_flag = coalition_progressive
+        set_variable = { var = ROOT.Coalition value = 0 }
+        add_to_variable = { ROOT.Coalition = s_seats }
+        add_to_variable = { ROOT.Coalition = mp_seats }
+        multiply_variable = { ROOT.Coalition = 100 }
+    }
+	
+	option = { #Alliansen
+		name = election_SWE.2.o2
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		set_country_flag = has_coalition
+        set_country_flag = coalition_social_liberal
+        set_country_flag = coalition_market_liberal
+		set_country_flag = coalition_conservative
+        set_variable = { var = ROOT.Coalition value = 0 }
+        add_to_variable = { ROOT.Coalition = c_seats }
+        add_to_variable = { ROOT.Coalition = m_seats }
+		add_to_variable = { ROOT.Coalition = kd_seats }
+        multiply_variable = { ROOT.Coalition = 100 }
+    }
+	
+	option = { #M-KD
+		name = election_SWE.2.o3
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		set_country_flag = has_coalition
+        set_country_flag = coalition_market_liberal
+		set_country_flag = coalition_conservative
+        set_variable = { var = ROOT.Coalition value = 0 }
+        add_to_variable = { ROOT.Coalition = m_seats }
+		add_to_variable = { ROOT.Coalition = kd_seats }
+        multiply_variable = { ROOT.Coalition = 100 }
     }
 }
