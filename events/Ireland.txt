@@ -1,0 +1,26 @@
+﻿add_namespace = ireland
+
+country_event = { #Sinn Fein - Mary Lou McDonald
+	id = ireland.1
+	title = ireland.1.t
+	desc = ireland.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ireland.1.a
+		create_country_leader = {
+	        name = "Mary Lou McDonald"
+	        picture = "Mary_Lou_McDonald.dds"
+	        ideology = democratic_socialist_ideology
+        }
+		NIR = {
+		    create_country_leader = {
+	            name = "Mary Lou McDonald"
+	            picture = "Mary_Lou_McDonald.dds"
+	            ideology = democratic_socialist_ideology
+            }
+		}
+	}
+}
