@@ -3,26 +3,51 @@ state={
 	id=466
 	name="STATE_466"
 	resources={
-		aluminium=200.000
-		steel=20.000
+		aluminium=231.000
+		steel=45.000
+		oil=2.000
 	}
 
 	history={
 		owner = CAN
 		buildings = {
-			infrastructure = 4
-			air_base = 3
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 6
+			12149 = {
+				naval_base = 6
+
+			}
+
 		}
 		add_core_of = CAN
 		add_core_of = QUE
-		victory_points = { 1341 3 }			#Gatineau
-		victory_points = { 12223 2 }		#Saguenay
+		victory_points = {
+			1341 3 
+		}
+		victory_points = {
+			12223 2 
+		}
+		victory_points = {
+			4345 20 
+		}
+		victory_points = {
+			12149 10 
+		}
+		victory_points = {
+			9601 3 
+		}
+		victory_points = {
+			10230 3 
+		}
+
 	}
 
 	provinces={
-		490 983 1341 1356 1657 1712 1764 3208 3911 4419 4666 4769 6740 7364 7435 7683 7807 7810 7875 7893 10176 10249 10534 10700 10715 11682 11902 12147 12205 12223 12276 12600 13160 13162 13164 13166 13181 13184 13196 
+		490 983 1284 1341 1356 1657 1712 1764 3208 3911 4305 4345 4417 4419 4422 4666 4769 6740 7289 7291 7345 7364 7433 7435 7683 7807 7810 7875 7893 9601 10174 10176 10230 10249 10320 10534 10700 10715 11682 11902 12147 12149 12205 12223 12276 12291 12600 13160 13162 13164 13166 13181 13184 13196 
 	}
-	manpower=1203000
+	manpower=8164361
 	buildings_max_level_factor=1.000
-	state_category=state_level_7
+	state_category=state_level_14
 }

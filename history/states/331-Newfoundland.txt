@@ -2,13 +2,9 @@
 state={
 	id=331
 	name="STATE_331"
-	manpower = 479000
-	
-	state_category = state_level_5
-	
-	resources = {
-		oil = 15
-		steel = 12
+	resources={
+		oil=15.000
+		steel=12.000
 	}
 
 	history={
@@ -17,13 +13,27 @@ state={
 			infrastructure = 3
 			12505 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = CAN
-		victory_points = { 12505 3 }		#St Johns
+		victory_points = {
+			12505 3 
+		}
+		victory_points = {
+			1785 2 
+		}
+		victory_points = {
+			12503 1 
+		}
+
 	}
 
 	provinces={
-		7758 7788 12505 12680 12698 
+		1426 1785 4720 4787 7758 7788 12503 12505 12680 12698 13165 13180 
 	}
+	manpower=519716
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
 }
