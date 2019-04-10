@@ -1,4 +1,4 @@
-ideas = {
+ ideas = {
 
 	country = {
 	
@@ -12,11 +12,24 @@ ideas = {
 				original_tag = SWE
 				OR = {
 				    has_government = social_democrat
-					has_government = progressive
+					has_country_flag = coalition_social_democrat
 				}
 			}
 			
 			traits = { social_democrat_party_membership }
+		}
+		
+		beatrice_ask = {
+			
+			allowed = {
+				original_tag = SWE
+				OR = {
+				    has_government = market_liberal
+					has_country_flag = coalition_market_liberal
+				}
+			}
+			
+			traits = { market_liberal_party_membership }
 		}
 	
 	}
@@ -29,11 +42,24 @@ ideas = {
 				original_tag = SWE
 				OR = {
 				    has_government = social_democrat
-					has_government = progressive
+					has_country_flag = coalition_social_democrat
 				}
 			}
 			
 			traits = { social_democrat_party_membership }
+		}
+		
+		hans_wallmark = {
+			
+			allowed = {
+				original_tag = SWE
+				OR = {
+				    has_government = market_liberal
+					has_country_flag = coalition_market_liberal
+				}
+			}
+			
+			traits = { market_liberal_party_membership }
 		}
 	
 	}
@@ -46,7 +72,7 @@ ideas = {
 				original_tag = SWE
 				OR = {
 				    has_government = social_democrat
-					has_government = progressive
+					has_country_flag = coalition_social_democrat
 				}
 			}
 			
@@ -59,8 +85,7 @@ ideas = {
 				original_tag = SWE
 				OR = {
 				    has_government = market_liberal
-					has_government = social_liberal
-					has_government = conservative
+					has_country_flag = coalition_market_liberal
 				}
 			}
 			
@@ -77,11 +102,24 @@ ideas = {
 				original_tag = SWE
 				OR = {
 				    has_government = social_democrat
-					has_government = progressive
+					has_country_flag = coalition_social_democrat
 				}
 			}
 			
 			traits = { social_democrat_party_membership }
+		}
+		
+		erik_bengtzboe = {
+			
+			allowed = {
+				original_tag = SWE
+				OR = {
+				    has_government = market_liberal
+					has_country_flag = coalition_market_liberal
+				}
+			}
+			
+			traits = { market_liberal_party_membership }
 		}
 	
 	}
@@ -100,6 +138,19 @@ ideas = {
 			
 			traits = { social_democrat_party_membership }
 		}
+		
+		johan_forssell = {
+			
+			allowed = {
+				original_tag = SWE
+				OR = {
+				    has_government = market_liberal
+					has_country_flag = coalition_market_liberal
+				}
+			}
+			
+			traits = { market_liberal_party_membership }
+		}
 	
 	}
 	
@@ -110,12 +161,25 @@ ideas = {
 			allowed = {
 				original_tag = SWE
 				OR = {
-				    has_government = social_democrat
-					has_government = progressive
+				    has_government = progressive
+					has_country_flag = coalition_progressive
 				}
 			}
 			
 			traits = { progressive_party_membership }
+		}
+		
+		lotta_finstorp = {
+			
+			allowed = {
+				original_tag = SWE
+				OR = {
+				    has_government = market_liberal
+					has_country_flag = coalition_market_liberal
+				}
+			}
+			
+			traits = { market_liberal_party_membership }
 		}
 	
 	}

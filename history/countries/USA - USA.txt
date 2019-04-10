@@ -217,21 +217,17 @@ give_guarantee = PHI
 give_guarantee = ROJ
 
 #House of Representatives
-set_variable = { democratic_seats = 45.5 }
+set_variable = { democratic_seats = 48.8 }
 set_variable = { republican_seats = 51.2 }
-set_variable = { independent_seats = 3.3 }
 
 set_politics = {
 
 	parties = {
 		social_liberal = {
-			popularity = 48.2
+			popularity = 53.4
 		}
 		conservative = {
-			popularity = 46.1
-		}
-		market_liberal = {
-			popularity = 5.7
+			popularity = 46.6
 		}
 	}
 	
@@ -247,7 +243,6 @@ create_country_leader = {
 	ideology = republican_party
 	traits = {
 		enemy_of_china
-		friend_of_russia
 	}
 }
 

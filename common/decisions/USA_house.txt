@@ -1,0 +1,39 @@
+USA_house = {
+	USA_republican_house = {
+		
+        available = {
+            always = no
+        }
+		
+        visible = { 
+		    original_tag = USA
+            #republican_house = yes
+        }
+		
+		cost = 0
+        fire_only_once = no
+		
+		complete_effect = {
+	        set_country_flag = oof
+        }
+    }
+
+	USA_democrat_house = {
+		
+        available = {
+            always = no
+        }
+		
+        visible = { 
+		    original_tag = USA
+            #democrat_house = yes
+        }
+		
+		cost = 0
+        fire_only_once = no
+		
+		complete_effect = {
+	        set_country_flag = oof
+        }
+    }	
+}
