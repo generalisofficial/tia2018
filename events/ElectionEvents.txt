@@ -760,7 +760,6 @@ country_event = {
         set_variable = { var = ROOT.Coalition value = 0 }
         add_to_variable = { ROOT.Coalition = s_seats }
         add_to_variable = { ROOT.Coalition = mp_seats }
-        multiply_variable = { ROOT.Coalition = 100 }
     }
 	
 	option = { #Alliansen
@@ -777,7 +776,6 @@ country_event = {
         add_to_variable = { ROOT.Coalition = c_seats }
         add_to_variable = { ROOT.Coalition = m_seats }
 		add_to_variable = { ROOT.Coalition = kd_seats }
-        multiply_variable = { ROOT.Coalition = 100 }
     }
 	
 	option = { #M-KD
@@ -792,6 +790,5 @@ country_event = {
         set_variable = { var = ROOT.Coalition value = 0 }
         add_to_variable = { ROOT.Coalition = m_seats }
 		add_to_variable = { ROOT.Coalition = kd_seats }
-        multiply_variable = { ROOT.Coalition = 100 }
     }
 }
