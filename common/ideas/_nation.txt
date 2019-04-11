@@ -1,4 +1,716 @@
 ideas = {
+
+	######################################
+	#	POPULATION
+	######################################
+
+	population_growth = {
+		law = yes
+		
+		population_growth_explosion = {
+		
+			picture = population_explosion
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 1.25
+				consumer_goods_factor = 0.12
+				research_speed_factor = 0.02
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		population_growth_rapid = {
+			
+			picture = population_rapid_growth
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 0.6
+				consumer_goods_factor = 0.08
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		population_growth_steady = {
+			
+			picture = population_growth
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				consumer_goods_factor = 0.04
+				research_speed_factor = -0.02
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		population_growth_stagnation = {
+			
+			picture = population_stagnation
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = -0.6
+				research_speed_factor = -0.04
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		population_growth_decline = {
+			
+			picture = population_decline
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = -1.25
+				research_speed_factor = -0.06
+				consumer_goods_factor = -0.08
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+	}
+
+	######################################
+	#	MANPOWER / CONSCRIPTION
+	######################################
+
+	conscription = { 
+		law = yes
+
+		disarmed_nation = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 7
+			
+			available = {
+			}
+
+			modifier = {
+				conscription = 0.001
+				industrial_capacity_factory = 0.2
+				ai_join_ally_desire_factor = -30
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		volunteer_only = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 6
+			
+			available = {
+			}
+
+			modifier = {
+				conscription = 0.005
+				industrial_capacity_factory = 0.15
+				ai_join_ally_desire_factor = -15
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		limited_conscription = {
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			available = {
+			}
+
+			modifier = {
+				conscription = 0.015
+				industrial_capacity_factory = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		extensive_conscription = {
+			
+			available = {
+				OR = {
+					threat > 0.3
+					has_war = yes
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				conscription = 0.04
+				training_time_factor = 0.1
+				industrial_capacity_factory = 0.05
+				ai_join_ally_desire_factor = 10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		service_by_requirement = {
+		
+			available = {		
+				OR = {
+					has_war = yes
+					OR = {
+						AND = {
+							OR = {
+								has_government = islamist
+								has_government = fascist
+								has_government = nationalist
+								has_government = communist
+							}
+							threat > 0.7
+						}
+						threat > 0.95
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			modifier = {
+				conscription = 0.07
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				training_time_factor = 0.2
+				ai_join_ally_desire_factor = 20
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		all_adults_serve = {
+			
+			
+			available = {
+				has_war = yes
+			}
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				conscription = 0.12
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.3
+				#XP from reinforcement penalty (small)
+				training_time_factor = 0.3
+				ai_join_ally_desire_factor = 30
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		scraping_the_barrel = {
+			
+			
+			available = {
+				has_war = yes
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			modifier = {
+				conscription = 0.2
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.4
+				training_time_factor = 0.5
+				ai_join_ally_desire_factor = 40
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+
+	######################################
+	#	ECONOMIC
+	######################################
+
+	income_tax_rate = {
+		law = yes
+		
+		tax_50 = {
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			    stability_factor = -0.2
+				political_power_gain = 0.5
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		tax_40 = {
+			cost = 150
+			removal_cost = -1
+			level = 6
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			    stability_factor = -0.1
+				political_power_gain = 0.4
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		tax_30 = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			
+			available = {
+			
+			}
+			
+			modifier = {
+                stability_factor = -0.05
+				political_power_gain = 0.3
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+		}
+		
+		tax_25 = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			    political_power_gain = 0.25
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		tax_20 = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			    
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.2
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		tax_15 = {
+			cost = 0
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			    stability_factor = 0.1
+				political_power_gain = 0.15
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		tax_0 = {
+			cost = 0
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			    stability_factor = 0.2
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+	
+	privatization = { 
+		law = yes
+		
+		privatized = {
+		
+			available = {
+			    NOT = { has_government = communist communist > 0.2 }
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_buildings_factor = 0.5
+				industrial_capacity_factory = -0.25
+				
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+	    mostly_privatized = {
+			
+			available = {
+			    NOT = { has_government = communist }
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				local_resources_factor = 0.01
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = -0.15
+				
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		balanced = {
+			
+			available = {
+			
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				local_resources_factor = 0.02
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		mostly_nationalized = {
+			available = {
+			    NOT = { has_government = market_liberal }
+			}
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = 0.15
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
+		nationalized = {
+			available = {
+			    NOT = { has_government = market_liberal market_liberal > 0.2 }
+				OR = {
+				    has_government = communist
+				    communist > 0.2
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = -0.4
+				industrial_capacity_factory = 0.25
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		socialist_market_economy = {
+		
+			available = { 
+			    original_tag = PRC
+			    has_government = communist
+			}
+			
+		    cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+			}
+		}
+		
+	}
+
+	######################################
+	#	COVERT PARTY SUPPORT
+	######################################
+
+	covert_party_support = {
+		law = yes
+		
+		islamist_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = islamist has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				islamist_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		fascist_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = fascist has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				fascist_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		nationalist_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = nationalist has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				nationalist_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		monarchist_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = monarchist has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				monarchist_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		reactionary_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = reactionary has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				reactionary_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		conservative_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = conservative has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				conservative_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		market_liberal_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = market_liberal has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				market_liberal_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		social_liberal_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = social_liberal has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				social_liberal_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		social_democrat_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = social_democrat has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				social_democrat_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		progressive_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = progressive has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				progressive_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		democratic_socialist_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = democratic_socialist has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				democratic_socialist_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		communist_support = {
+			cost = 75
+			
+			available = {
+				NOT = { has_government = communist has_idea = USA_first_amendment }
+			}
+			
+			modifier = {
+				communist_drift = 0.1
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = yes
+		}
+	}
+
+	######################################
+	#	IMMIGRATION
+	######################################
 	
 	immigration_policy = {
 		law = yes
@@ -78,6 +790,10 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+
+	######################################
+	#	RELIGION
+	######################################
 	
 	state_religion = {
 		law = yes
@@ -174,6 +890,169 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+
+	######################################
+	#	LGBT
+	######################################
+
+	lgbt_rights = {
+		law = yes
+		
+		lgbt_banned = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		lgbt_denounced = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		lgbt_legalized = {
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			default = yes
+		}
+   }
+
+	######################################
+	#	FEMALE RIGHTS
+	######################################
+   
+   female_rights = {
+		law = yes
+		
+		patriarchy = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		family_values = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		gender_equality = {
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				MONTHLY_POPULATION = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+   }
+
+	######################################
+	#	TRADE UNIONS
+	######################################
+   
+   trade_unions = {
+		law = yes
+		
+		unions_prohibited = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				political_power_gain = 0.15
+				industrial_capacity_factory = -0.2
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		unions_legalized = {
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				industrial_capacity_factory = 0.2
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+   }
+
+	######################################
+	#	OTHER COUNTY IDEAS
+	######################################
 	
     country = {
 		martial_law = {
