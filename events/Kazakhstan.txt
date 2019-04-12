@@ -1,0 +1,35 @@
+﻿add_namespace = kazakhstan
+
+country_event = { #Resignation of Nursultan Nazarbayev
+	id = kazakhstan.1
+	title = kazakhstan.1.t
+	desc = kazakhstan.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = kazakhstan.1.o1
+		news_event = kazakhstan.2
+		set_global_flag = nazarbayev_resigned
+		create_country_leader = {
+	        name = "Kassym-Jomart Tokayev"
+	        picture = "Kassym_Jomart_Tokayev.dds"
+	        ideology = reactionary_ideology
+        }
+	}
+}
+
+news_event = { #Resignation of Nursultan Nazarbayev - News
+	id = kazakhstan.2
+	title = kazakhstan.2.t
+	desc = kazakhstan.2.d
+	picture = GFX_news_event_astana
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kazakhstan.2.o1
+	}
+}

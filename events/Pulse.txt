@@ -166,6 +166,7 @@ country_event = {
 		}
 	    if = {
 			limit = {
+			    original_tag = SLO
 				date > 2018.2.21
 				date < 2019.1.1
 			}
@@ -173,6 +174,7 @@ country_event = {
 		}
 		if = {
 			limit = {
+			    original_tag = NZL
 				date > 2018.2.26
 				date < 2019.1.1
 			}
@@ -180,6 +182,7 @@ country_event = {
 		}
 		if = {
 			limit = {
+			    original_tag = IRE
 				date > 2018.2.9
 				date < 2019.1.1
 			}
@@ -187,10 +190,19 @@ country_event = {
 		}
 		if = {
 			limit = {
+			    original_tag = MAC
 				date > 2018.6.12
 				date < 2019.1.1
 			}
 			country_event = macedonia.1
+		}
+		if = {
+			limit = {
+			    original_tag = KAZ
+				date > 2019.3.19
+				date < 2020.1.1
+			}
+			country_event = kazakhstan.1
 		}
 		if = {
 			limit = {
