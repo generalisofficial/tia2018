@@ -736,11 +736,32 @@ country_event = {
 		multiply_variable = { kd_seats = 100 }
 		set_variable = { sd_seats = party_popularity@reactionary }
 		multiply_variable = { sd_seats = 100 }
-		country_event = election_SWE.2
+		if = {
+			limit = {
+			    OR = {
+					communist > 0.5
+					democratic_socialist > 0.5
+					progressive > 0.5
+					social_democrat > 0.5
+					social_liberal > 0.5
+					market_liberal > 0.5
+					conservative > 0.5
+					reactionary > 0.5
+					monarchist > 0.5
+					nationalist > 0.5
+					fascist > 0.5
+					islamist > 0.5
+				}
+			}
+			country_event = election_SWE.3
+			else = {
+				country_event = election_SWE.2
+			}
+		}
     }
 }
 
-#SWE Government Formation
+#SWE Government Formation - Coalition
 country_event = {
 	id = election_SWE.2
 	title = election_SWE.2.t
@@ -750,6 +771,9 @@ country_event = {
 	
 	option = { #S-MP
 		name = election_SWE.2.o1
+		ai_chance = {
+			factor = 1
+		}
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = yes
@@ -762,8 +786,30 @@ country_event = {
         add_to_variable = { ROOT.Coalition = mp_seats }
     }
 	
-	option = { #Alliansen
+	option = { #S-MP-C
 		name = election_SWE.2.o2
+		ai_chance = {
+			factor = 1
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		set_country_flag = has_coalition
+        set_country_flag = coalition_social_democrat
+        set_country_flag = coalition_progressive
+		set_country_flag = coalition_social_liberal
+        set_variable = { var = ROOT.Coalition value = 0 }
+        add_to_variable = { ROOT.Coalition = s_seats }
+        add_to_variable = { ROOT.Coalition = mp_seats }
+		add_to_variable = { ROOT.Coalition = c_seats }
+    }
+	
+	option = { #Alliansen
+		name = election_SWE.2.o3
+		ai_chance = {
+			factor = 1
+		}
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = yes
@@ -779,7 +825,10 @@ country_event = {
     }
 	
 	option = { #M-KD
-		name = election_SWE.2.o3
+		name = election_SWE.2.o4
+		ai_chance = {
+			factor = 1
+		}
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = yes
@@ -791,4 +840,178 @@ country_event = {
         add_to_variable = { ROOT.Coalition = m_seats }
 		add_to_variable = { ROOT.Coalition = kd_seats }
     }
+}
+
+#SWE Government Formation - Single-Party
+country_event = {
+	id = election_SWE.3
+	title = election_SWE.3.t
+	desc = election_SWE.3.d
+	
+	is_triggered_only = yes
+	
+	option = {	#Kommunistiska Partiet
+		name = election_SWE.3.o1
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			communist > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Vänsterpartiet
+		name = election_SWE.3.o2
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			democratic_socialist > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = democratic_socialist
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Miljöpartiet
+		name = election_SWE.3.o3
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			progressive > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Socialdemokraterna
+		name = election_SWE.3.o4
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			social_democrat > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Centerpartiet
+		name = election_SWE.3.o5
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			social_liberal > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Moderaterna
+		name = election_SWE.3.o6
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			market_liberal > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Kristdemokraterna
+		name = election_SWE.3.o7
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			conservative > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Sverigedemokraterna
+		name = election_SWE.3.o8
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			reactionary > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = reactionary
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Alternativ för Sverige
+		name = election_SWE.3.o9
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			nationalist > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Nordiska motståndsrörelsen
+		name = election_SWE.3.o10
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			fascist > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = fascist
+			elections_allowed = yes
+		}
+	}
+	
+	option = {	#Islamiska förbundet i Sverige
+		name = election_SWE.3.o11
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			islamist > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = islamist
+			elections_allowed = yes
+		}
+	}
 }
