@@ -100,6 +100,28 @@ add_opinion_modifier = { target = PAL modifier = rival_trade }
 
 give_guarantee = USA
 
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_nationalist
+set_variable = { var = ROOT.Coalition value = 0 }
+add_to_variable = { ROOT.Coalition = likud_seats }
+add_to_variable = { ROOT.Coalition = jewish_home_seats }
+multiply_variable = { ROOT.Coalition = 100 }
+
+#Knesset
+set_variable = { hadash_seats = 10.54 }
+set_variable = { balad_seats = 0 }
+set_variable = { meretz_seats = 3.93 }
+set_variable = { haavoda_seats = 18.67 }
+set_variable = { hatnuah_seats = 17.77 }
+set_variable = { yesh_atid_seats = 8.81 }
+set_variable = { likud_seats = 23.40 }
+set_variable = { yisrael_beiteinu_seats = 5.11 }
+set_variable = { jewish_home_seats = 11.77 }
+set_variable = { lehava_seats = 0 }
+set_variable = { islamic_israel_seats = 0 }
+
 set_politics = {
 	parties = {
 		nationalist = {
