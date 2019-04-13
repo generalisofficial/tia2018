@@ -764,7 +764,7 @@ country_event = {
 					islamist > 0.5
 				}
 			}
-			country_event = election_SWE.3
+			country_event = election.4
 			else = {
 				country_event = election_SWE.2
 			}
@@ -853,16 +853,16 @@ country_event = {
     }
 }
 
-#SWE Government Formation - Single-Party
+#GENERIC Government Formation - Single-Party
 country_event = {
-	id = election_SWE.3
-	title = election_SWE.3.t
-	desc = election_SWE.3.d
+	id = election.4
+	title = election.4.t
+	desc = election.4.d
 	
 	is_triggered_only = yes
 	
-	option = {	#Kommunistiska Partiet
-		name = election_SWE.3.o1
+	option = {	#Communist
+		name = election.4.o1
 		ai_chance = {
 			factor = 1
 		}
@@ -876,8 +876,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Vänsterpartiet
-		name = election_SWE.3.o2
+	option = {	#Democratic Socialist
+		name = election.4.o2
 		ai_chance = {
 			factor = 1
 		}
@@ -891,8 +891,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Miljöpartiet
-		name = election_SWE.3.o3
+	option = {	#Progressive
+		name = election.4.o3
 		ai_chance = {
 			factor = 1
 		}
@@ -906,8 +906,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Socialdemokraterna
-		name = election_SWE.3.o4
+	option = {	#Social Democrat
+		name = election.4.o4
 		ai_chance = {
 			factor = 1
 		}
@@ -921,8 +921,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Centerpartiet
-		name = election_SWE.3.o5
+	option = {	#Social Liberal
+		name = election.4.o5
 		ai_chance = {
 			factor = 1
 		}
@@ -936,8 +936,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Moderaterna
-		name = election_SWE.3.o6
+	option = {	#Market Liberal
+		name = election.4.o6
 		ai_chance = {
 			factor = 1
 		}
@@ -951,8 +951,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Kristdemokraterna
-		name = election_SWE.3.o7
+	option = {	#Conservative
+		name = election.4.o7
 		ai_chance = {
 			factor = 1
 		}
@@ -966,8 +966,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Sverigedemokraterna
-		name = election_SWE.3.o8
+	option = {	#Reactionary
+		name = election.4.o8
 		ai_chance = {
 			factor = 1
 		}
@@ -981,8 +981,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Alternativ för Sverige
-		name = election_SWE.3.o9
+	option = {	#Nationalist
+		name = election.4.o9
 		ai_chance = {
 			factor = 1
 		}
@@ -996,8 +996,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Nordiska motståndsrörelsen
-		name = election_SWE.3.o10
+	option = {	#Third Position
+		name = election.4.o10
 		ai_chance = {
 			factor = 1
 		}
@@ -1011,8 +1011,8 @@ country_event = {
 		}
 	}
 	
-	option = {	#Islamiska förbundet i Sverige
-		name = election_SWE.3.o11
+	option = {	#Islamist
+		name = election.4.o11
 		ai_chance = {
 			factor = 1
 		}
@@ -1081,9 +1081,9 @@ country_event = {
 					islamist > 0.5
 				}
 			}
-			country_event = election_ISR.3
+			country_event = election.4
 			else = {
-				#country_event = election_ISR.2
+				country_event = election_ISR.2
 			}
 		}
     }
@@ -1091,14 +1091,14 @@ country_event = {
 
 #ISR Government Formation - Coalition
 country_event = {
-	id = election_SWE.2
-	title = election_SWE.2.t
-	desc = election_SWE.2.d
+	id = election_ISR.2
+	title = election_ISR.2.t
+	desc = election_ISR.2.d
 	
 	is_triggered_only = yes
 	
 	option = { #Likud + Jewish Home
-		name = election_SWE.2.o1
+		name = election_ISR.2.o1
 		ai_chance = {
 			factor = 1
 		}
