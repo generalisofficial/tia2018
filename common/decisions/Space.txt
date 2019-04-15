@@ -50,12 +50,12 @@ SPACE_USA = {
 
 		allowed = {
 			original_tag = USA
-			NOT = { USA = { has_country_flag = insight_programm_over } }
-			NOT = { USA = { has_country_flag = insight_gouvernment_funding } }
 		}
 
 		available = {
 			USA = { has_country_flag = insight_programm_started }
+			NOT = { USA = { has_country_flag = insight_programm_over } }
+			NOT = { USA = { has_country_flag = insight_gouvernment_funding } }
 		}
 
 		cost = 200
@@ -107,11 +107,11 @@ SPACE_USA = {
 
 		allowed = {
 			original_tag = USA
-			USA = { has_country_flag = insight_gouvernment_funding }
 		}
 
 		available = {
 			has_country_flag = not_selectable
+			USA = { has_country_flag = insight_gouvernment_funding }
 		}
 
 		cost = 0
@@ -145,16 +145,16 @@ SPACE_USA = {
 
 		allowed = {
 			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = not_selectable
 			USA = {
 				OR = {
 					has_country_flag = insight_atlas_v_adjustment 
 					has_country_flag = insight_seismometer_research
 				}
 			}
-		}
-
-		available = {
-			has_country_flag = not_selectable
 		}
 
 		cost = 0
