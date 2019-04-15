@@ -2,9 +2,8 @@
 state={
 	id=36
 	name="STATE_36"
-	
-	resources = {
-		steel = 11
+	resources={
+		steel=11.000
 	}
 
 	history={
@@ -14,15 +13,30 @@ state={
 			infrastructure = 7
 			industrial_complex = 3
 			air_base = 2
+
 		}
-		victory_points = { 9309 1 }		#Assen
-		victory_points = { 9363 2 }		#Zwolle
+		victory_points = {
+			13616 1
+		}
+		victory_points = {
+			9403 2 
+		}
+		victory_points = {
+			9363 2
+		}
+		victory_points = {
+			6241 3
+		}
+		victory_points = {
+			391 5 
+		}
+
 	}
 
 	provinces={
-		6241 6286 9309 9363 9403 
+		391 6241 6286 9363 9403 11456 13616 
 	}
-	manpower=4364000
+	manpower=4861347
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_9
 }

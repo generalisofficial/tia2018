@@ -2,29 +2,37 @@
 state={
 	id=35
 	name="STATE_35"
-	
-	resources = {
-		steel = 9
+	resources={
+		steel=9.000
 	}
 
 	history={
 		owner = HOL
 		buildings = {
-			infrastructure = 7
+			infrastructure = 6
 			industrial_complex = 2
-			arms_factory = 1
 			air_base = 3
-			9498 = { naval_base = 5 }
+
 		}
-		victory_points = { 6496 5 }		#Eindhoven
-		victory_points = { 9498 20 }	#Rotterdam
-		victory_points = { 9431 1 }		#Middelburg
+		victory_points = {
+			6496 5 
+		}
+		victory_points = {
+			9431 1 
+		}
+		victory_points = {
+			480 1 
+		}
+		victory_points = {
+			 11562 2
+		}
+
 	}
 
 	provinces={
-		480 3262 6496 6500 9431 9498 11456 11562 
+		480 3262 6496 6500 9431 11562 
 	}
-	manpower=6449000
+	manpower=4026259
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_7
 }
