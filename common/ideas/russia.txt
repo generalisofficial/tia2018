@@ -127,16 +127,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-				OR = {
-				    has_government = reactionary
-					has_country_flag = coalition_reactionary
-				}
+				has_government = reactionary
 			}
 			
-			traits = {
-			    reactionary_party_membership
-				financial_veteran
-            }
+			traits = { reactionary_party_membership }
+			cancel_if_invalid = yes
 		}
 	}
 	
@@ -148,15 +143,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-				OR = {
-				    has_government = reactionary
-					has_country_flag = coalition_reactionary
-				}
+				has_government = reactionary
 			}
 			
-			traits = {
-			    reactionary_party_membership
-            }
+			traits = { reactionary_party_membership }
+			cancel_if_invalid = yes
 		}
 	}
 	
@@ -166,17 +157,13 @@ ideas = {
 			
 			picture = minister_vladimir_medinsky
 			
-			allowed = {
-				original_tag = SOV
-				OR = {
-				    has_government = reactionary
-					has_country_flag = coalition_reactionary
-				}
+			allowed = {	
+			    original_tag = SOV
+				has_government = reactionary
 			}
 			
-			traits = {
-			    reactionary_party_membership
-            }
+			traits = { reactionary_party_membership }
+			cancel_if_invalid = yes
 		}
 	}
     
@@ -188,15 +175,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-				OR = {
-				    has_government = reactionary
-					has_country_flag = coalition_reactionary
-				}
+				has_government = reactionary
 			}
 			
-			traits = {
-			    reactionary_party_membership
-            }
+			traits = { reactionary_party_membership }
+			cancel_if_invalid = yes
 		}
 	}
 	
@@ -208,15 +191,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = SOV
-				OR = {
-				    has_government = reactionary
-					has_country_flag = coalition_reactionary
-				}
+				has_government = reactionary
 			}
 			
-			traits = {
-			    reactionary_party_membership
-            }
+			traits = { reactionary_party_membership }
+			cancel_if_invalid = yes
 		}
 	}
 }
