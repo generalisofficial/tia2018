@@ -33,23 +33,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				communist > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			communist > 0.08
 		}
 		
 		set_politics = {
@@ -68,23 +52,7 @@ country_event = {
 	option = {	#Democratic Socialists
 		name = election.1.o2
 		trigger = {
-			OR = {
-				democratic_socialist > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			democratic_socialist > 0.08
 		}
 		ai_chance = {
 			factor = 1
@@ -109,23 +77,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				social_democrat > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			social_democrat > 0.08
 		}
 		
 		set_politics = {
@@ -144,23 +96,7 @@ country_event = {
 	option = {	#Progressives
 		name = election.1.o4
 		trigger = {
-			OR = {
-				progressive > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			progressive > 0.08
 		}
 		ai_chance = {
 			factor = 1
@@ -185,23 +121,7 @@ country_event = {
 			factor = 1
 		}	
 		trigger = {
-			OR = {
-				social_liberal > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			social_liberal > 0.08
 		}
 		
 		set_politics = {
@@ -223,23 +143,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				market_liberal > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			market_liberal > 0.08
 		}
 		
 		set_politics = {
@@ -261,23 +165,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				conservative > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+		    conservative > 0.08
 		}
 		
 		set_politics = {
@@ -299,23 +187,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				reactionary > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			reactionary > 0.08
 		}
 		
 		set_politics = {
@@ -337,23 +209,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				nationalist > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			nationalist > 0.08
 		}
 		
 		set_politics = {
@@ -369,29 +225,13 @@ country_event = {
 		hidden_effect = { news_event = election.2 }
 	}
 	
-	option = {	#Fascists
+	option = {	#Third Position
 		name = election.1.o10
 		ai_chance = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				fascist > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			fascist > 0.08
 		}
 		
 		set_politics = {
@@ -413,23 +253,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				islamist > 0.5
-				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
-				}
-			}
+			islamist > 0.08
 		}
 		
 		set_politics = {
