@@ -2,21 +2,17 @@
 state={
 	id=24
 	name="STATE_24"
-	manpower = 2446300
-	
-	resources = {
-		steel = 21
+	resources={
+		steel=21.000
 	}
-	
-	state_category = state_level_8
 
 	history={
 		owner = FRA
 		victory_points = {
-			3671 10
+			3671 10 
 		}
 		victory_points = {
-			512 15
+			512 15 
 		}
 		buildings = {
 			infrastructure = 7
@@ -24,9 +20,13 @@ state={
 
 		}
 		add_core_of = FRA
+
 	}
 
 	provinces={
-		512 3493 3671 6518 6533 6688 9492 11611 11631 
+		512 651 669 3493 3626 3655 3671 6518 6533 6547 6651 6688 9492 9507 9629 11611 11631 
 	}
+	manpower=2446300
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

@@ -1,13 +1,9 @@
 
 state={
 	id=32
-	name="STATE_32" 
-	manpower = 1007500
-	
-	state_category = state_level_7
-	
+	name="STATE_32"
 	resources={
-		oil=2
+		oil=2.000
 	}
 
 	history={
@@ -15,14 +11,19 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+
 		}
 		victory_points = {
 			3768 1 
 		}
 		add_core_of = FRA
+
 	}
 
 	provinces={
-		762 780 3589 3768 6784 11713 
+		454 3402 3447 6585 9561 11420 11549 
 	}
+	manpower=1890000
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }
