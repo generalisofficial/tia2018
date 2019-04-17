@@ -126,6 +126,11 @@ technologies = {
 		research_speed_factor = +0.01
 
 		path = {
+			leads_to_tech = computing_machine
+			research_cost_coeff = 1
+		}
+
+		path = {
 			leads_to_tech = decryption_algorithm_1
 			research_cost_coeff = 1
 		}
@@ -141,6 +146,75 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = @center_right y = @1990 }
+		}
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	computing_machine = {
+
+		research_speed_factor = +0.01
+
+		path = {
+			leads_to_tech = computing_machine2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = decryption_algorithm_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = encryption_algorithm_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2002
+
+		folder = {
+			name = electronics_folder
+			position = { x = @center_right y = @2002 }
+		}
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+
+	computing_machine2 = {
+
+		research_speed_factor = +0.01
+
+		path = {
+			leads_to_tech = decryption_algorithm_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = encryption_algorithm_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2006
+
+		folder = {
+			name = electronics_folder
+			position = { x = @center_right y = @2006 }
 		}
 
 		ai_will_do = {
@@ -198,7 +272,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = @far_right y = @2000 }
+			position = { x = @further_right y = @2000 }
 		}
 
 		ai_will_do = {
@@ -225,7 +299,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = @far_right y = @2004 }
+			position = { x = @further_right y = @2004 }
 		}
 
 		ai_will_do = {
@@ -247,7 +321,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = @far_right y = @2008 }
+			position = { x = @further_right y = @2008 }
 		}
 
 		ai_will_do = {
@@ -263,11 +337,6 @@ technologies = {
 	encryption_algorithm_1 = {
 
 		encryption = 1
-
-		path = {
-			leads_to_tech = encryption_algorithm_2
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1
 		start_year = 1990
@@ -291,17 +360,12 @@ technologies = {
 
 		encryption = 1
 
-		path = {
-			leads_to_tech = encryption_algorithm_3
-			research_cost_coeff = 1
-		}
-
 		research_cost = 1
 		start_year = 2002
 
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2002 }
+			position = { x = @center_left y = @2002 }
 		}
 
 		ai_will_do = {
@@ -323,7 +387,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = @center y = @2006 }
+			position = { x = @center_left y = @2006 }
 		}
 
 		ai_will_do = {
@@ -339,11 +403,6 @@ technologies = {
 	decryption_algorithm_1 = {
 
 		decryption = 1
-
-		path = {
-			leads_to_tech = decryption_algorithm_2
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1
 		start_year = 1990
@@ -367,17 +426,12 @@ technologies = {
 
 		decryption = 1
 
-		path = {
-			leads_to_tech = decryption_algorithm_3
-			research_cost_coeff = 1
-		}
-
 		research_cost = 1
 		start_year = 2002
 
 		folder = {
 			name = electronics_folder
-			position = { x = @right y = @2002 }
+			position = { x = @more_right y = @2002 }
 		}
 
 		ai_will_do = {
@@ -399,7 +453,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = @right y = @2006 }
+			position = { x = @more_right y = @2006 }
 		}
 
 		ai_will_do = {
