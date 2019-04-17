@@ -29,4 +29,10 @@ EU_membership_termination = {
 	}
 	remove_ideas = idea_eu_member
 	add_stability = -0.05
+	if = {
+		limit = {
+			has_idea = the_euro
+		}
+		remove_ideas = the_euro
+	}
 }
