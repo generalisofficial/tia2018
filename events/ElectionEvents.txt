@@ -33,7 +33,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			communist > 0.08
+			communist > 0.1
 		}
 		
 		set_politics = {
@@ -52,7 +52,7 @@ country_event = {
 	option = {	#Democratic Socialists
 		name = election.1.o2
 		trigger = {
-			democratic_socialist > 0.08
+			democratic_socialist > 0.1
 		}
 		ai_chance = {
 			factor = 1
@@ -77,7 +77,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			social_democrat > 0.08
+			social_democrat > 0.1
 		}
 		
 		set_politics = {
@@ -96,7 +96,7 @@ country_event = {
 	option = {	#Progressives
 		name = election.1.o4
 		trigger = {
-			progressive > 0.08
+			progressive > 0.1
 		}
 		ai_chance = {
 			factor = 1
@@ -121,7 +121,7 @@ country_event = {
 			factor = 1
 		}	
 		trigger = {
-			social_liberal > 0.08
+			social_liberal > 0.1
 		}
 		
 		set_politics = {
@@ -143,7 +143,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			market_liberal > 0.08
+			market_liberal > 0.1
 		}
 		
 		set_politics = {
@@ -165,7 +165,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    conservative > 0.08
+		    conservative > 0.1
 		}
 		
 		set_politics = {
@@ -187,7 +187,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			reactionary > 0.08
+			reactionary > 0.1
 		}
 		
 		set_politics = {
@@ -209,7 +209,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			nationalist > 0.08
+			nationalist > 0.1
 		}
 		
 		set_politics = {
@@ -231,7 +231,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			fascist > 0.08
+			fascist > 0.1
 		}
 		
 		set_politics = {
@@ -253,7 +253,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			islamist > 0.08
+			islamist > 0.1
 		}
 		
 		set_politics = {
@@ -278,18 +278,18 @@ country_event = {
 			OR = {
 				monarchist > 0.5
 				AND = {
-					communist < 0.08
-					democratic_socialist < 0.08
-					progressive < 0.08
-					social_democrat < 0.08
-					social_liberal < 0.08
-					market_liberal < 0.08
-					conservative < 0.08
-					reactionary < 0.08
-					monarchist < 0.08
-					nationalist < 0.08
-					fascist < 0.08
-					islamist < 0.08
+					communist < 0.1
+					democratic_socialist < 0.1
+					progressive < 0.1
+					social_democrat < 0.1
+					social_liberal < 0.1
+					market_liberal < 0.1
+					conservative < 0.1
+					reactionary < 0.1
+					monarchist < 0.1
+					nationalist < 0.1
+					fascist < 0.1
+					islamist < 0.1
 				}
 			}
 		}
@@ -496,7 +496,7 @@ country_event = {
 		add_popularity = { ideology = conservative popularity = 0.05 }
 		trigger = {
 		    OR = {
-                conservative > 0.08
+                conservative > 0.1
 				has_government = conservative
 			}
 		}
