@@ -16,4 +16,485 @@ scripted_gui = {
 		
         }
 	}
+
+	coalition_government_formation = {
+		window_name = "coalition_government_formation_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+			has_country_flag = forming_government_1
+		}
+ 
+        effects = {
+			next_click = {
+				clr_country_flag = forming_government_1
+				set_country_flag = forming_government_2
+			}
+			party1_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_islamist
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_islamist
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_islamist
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party2_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_fascist
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_fascist
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_fascist
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party3_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_nationalist
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_nationalist
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_nationalist
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party4_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_monarchist
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_monarchist
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_monarchist
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party5_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_reactionary
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_reactionary
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_reactionary
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party6_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_conservative
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_conservative
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_conservative
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party7_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_market_liberal
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_market_liberal
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_market_liberal
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party8_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_social_liberal
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_social_liberal
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_social_liberal
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party9_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_social_democrat
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_social_democrat
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_social_democrat
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party10_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_progressive
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_progressive
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_progressive
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_communist
+			}
+			party11_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_democratic_socialist
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_democratic_socialist
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_democratic_socialist
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_communist
+			}
+			party12_click = { 
+				if = {
+					limit = {
+						has_country_flag = government_communist
+						has_country_flag = government_chosen
+					}
+					clr_country_flag = government_communist
+					clr_country_flag = government_chosen
+				}
+				else = {
+					set_country_flag = government_communist
+					set_country_flag = government_chosen
+				}
+				clr_country_flag = government_islamist
+				clr_country_flag = government_fascist
+				clr_country_flag = government_nationalist
+				clr_country_flag = government_monarchist
+				clr_country_flag = government_reactionary
+				clr_country_flag = government_conservative
+				clr_country_flag = government_market_liberal
+				clr_country_flag = government_social_liberal
+				clr_country_flag = government_social_democrat
+				clr_country_flag = government_progressive
+				clr_country_flag = government_democratic_socialist
+			}
+        }
+        
+		triggers = {
+			party1_click_enabled = {
+				islamist > 0.05
+			}
+			party1_title_click_enabled = {
+				islamist > 0.05
+			}
+			party1_accept_visible = {
+				has_country_flag = government_islamist
+			}
+			party2_click_enabled = {
+				fascist > 0.05
+			}
+			party2_title_click_enabled = {
+				fascist > 0.05
+			}
+			party2_accept_visible = {
+				has_country_flag = government_fascist
+			}
+			party3_click_enabled = {
+				nationalist > 0.05
+			}
+			party3_title_click_enabled = {
+				nationalist > 0.05
+			}
+			party3_accept_visible = {
+				has_country_flag = government_nationalist
+			}
+			party4_click_enabled = {
+				monarchist > 0.05
+			}
+			party4_title_click_enabled = {
+				monarchist > 0.05
+			}
+			party4_accept_visible = {
+				has_country_flag = government_monarchist
+			}
+			party5_click_enabled = {
+				reactionary > 0.05
+			}
+			party5_title_click_enabled = {
+				reactionary > 0.05
+			}
+			party5_accept_visible = {
+				has_country_flag = government_reactionary
+			}
+			party6_click_enabled = {
+				conservative > 0.05
+			}
+			party6_title_click_enabled = {
+				conservative > 0.05
+			}
+			party6_accept_visible = {
+				has_country_flag = government_conservative
+			}
+			party7_click_enabled = {
+				market_liberal > 0.05
+			}
+			party7_title_click_enabled = {
+				market_liberal > 0.05
+			}
+			party7_accept_visible = {
+				has_country_flag = government_market_liberal
+			}
+			party8_click_enabled = {
+				social_liberal > 0.05
+			}
+			party8_title_click_enabled = {
+				social_liberal > 0.05
+			}
+			party8_accept_visible = {
+				has_country_flag = government_social_liberal
+			}
+			party9_click_enabled = {
+				social_democrat > 0.05
+			}
+			party9_title_click_enabled = {
+				social_democrat > 0.05
+			}
+			party9_accept_visible = {
+				has_country_flag = government_social_democrat
+			}
+			party10_click_enabled = {
+				progressive > 0.05
+			}
+			party10_title_click_enabled = {
+				progressive > 0.05
+			}
+			party10_accept_visible = {
+				has_country_flag = government_progressive
+			}
+			party11_click_enabled = {
+				democratic_socialist > 0.05
+			}
+			party11_title_click_enabled = {
+				democratic_socialist > 0.05
+			}
+			party11_accept_visible = {
+				has_country_flag = government_democratic_socialist
+			}
+			party12_click_enabled = {
+				communist > 0.05
+			}
+			party12_title_click_enabled = {
+				communist > 0.05
+			}
+			party12_accept_visible = {
+				has_country_flag = government_communist
+			}
+			next_click_enabled = {
+				has_country_flag = government_chosen
+			}		
+        }
+		properties = {
+			party1_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party2_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party3_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party4_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party5_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party6_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party7_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party8_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party9_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party10_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party11_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party12_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+		}
+	}
 }
