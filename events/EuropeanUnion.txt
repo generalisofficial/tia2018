@@ -456,82 +456,6 @@ country_event = {
 	}
 }
 
-#The Euro
-country_event = {
-	id = european_union.16
-	title = european_union.16.t
-	desc = european_union.16.d
-	picture = GFX_report_event_euro
-	
-	is_triggered_only = yes
-	
-	option = {	#We want in!
-		name = european_union.16.o1
-		add_ideas = the_euro
-		if = {
-			limit = { NOT = { has_global_flag = the_euro_established } }
-			set_global_flag = the_euro_established
-			news_event = news.96
-		}
-		if = {
-			limit = {
-				OR = {
-					tag = SWE
-					tag = DEN
-					tag = ENG
-				}
-			}
-			add_political_power = -25
-		}
-		
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0.01
-				OR = {
-					tag = SWE
-					tag = DEN
-					tag = ENG
-				}
-			}
-		}
-	}
-	
-	option = {	#We will have an opt-out on that one.
-		name = european_union.16.o2
-		if = {
-			limit = {
-				OR = {
-					tag = SWE
-					tag = DEN
-					tag = ENG
-				}
-			}
-			add_political_power = 25
-		}
-		if = {
-			limit = {
-				NOT = { tag = SWE }
-				NOT = { tag = DEN }
-				NOT = { tag = ENG }
-			}
-			add_political_power = -50
-		}
-		
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1000
-				OR = {
-					tag = SWE
-					tag = DEN
-					tag = ENG
-				}
-			}
-		}
-	}
-}
-
 #Re-Nationalize the Currency
 country_event = {
 	id = european_union.17
@@ -625,23 +549,3 @@ country_event = {
 		ai_chance = { base = 0 }
 	}
 	}
-		
-country_event = {
-	id = european_union.20
-	title = european_union.20.t
-	desc = european_union.20.d
-	picture = GFX_report_event_european_union
-	
-	is_triggered_only = yes
-	
-	option = {	#How dare!
-		name = european_union.20.o1
-		add_political_power = -30
-		add_war_support = 0.01
-		
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
