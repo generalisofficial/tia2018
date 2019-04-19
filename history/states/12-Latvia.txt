@@ -2,35 +2,58 @@
 state={
 	id=12
 	name="STATE_12"
-	manpower = 1300000
-	
-	state_category = state_level_10
-	
+
 	history={
 		owner = LAT
-		victory_points = { 9340 5 }
-		victory_points = { 310 1 }
-		victory_points = { 341 1 }
+		victory_points = {
+			9340 10
+		}
+		victory_points = {
+			7482 1
+		}
+		victory_points = {
+			10493 1
+		}
 		buildings = {
 			infrastructure = 5
-			
 			industrial_complex = 3
 			arms_factory = 1
 			dockyard = 1
-			
 			air_base = 3
-			
-			9340 = { naval_base = 3 }
-			3298 = { bunker = 2 }
-			319 = { bunker = 2 }
-			222 = { bunker = 2 }
-			9275 = { bunker = 2 }
-			6459 = { bunker = 2 }
+			9340 = {
+				naval_base = 3
+
+			}
+			3298 = {
+				bunker = 2
+
+			}
+			319 = {
+				bunker = 2
+
+			}
+			222 = {
+				bunker = 2
+
+			}
+			9275 = {
+				bunker = 2
+
+			}
+			6459 = {
+				bunker = 2
+
+			}
+
 		}
 		add_core_of = LAT
+
 	}
 
 	provinces={
-		222 310 319 341 3255 3298 3388 6459 7482 9240 9275 9317 9340 9501 10323 10493 11222 11302 11358 
+		3388 7482 9240 9317 9340 9501 10323 10493 11222 11302 
 	}
+	manpower=867034
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
