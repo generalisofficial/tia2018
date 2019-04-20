@@ -697,3 +697,21 @@ update_coalition = {
 		break_coalition = yes
 	}
 }
+
+cleanup_coalition = {
+	clr_country_flag = government_chosen
+	clr_country_flag = government_islamist
+	clr_country_flag = government_fascist
+	clr_country_flag = government_nationalist
+	clr_country_flag = government_monarchist
+	clr_country_flag = government_reactionary
+	clr_country_flag = government_conservative
+	clr_country_flag = government_market_liberal
+	clr_country_flag = government_social_liberal
+	clr_country_flag = government_social_democrat
+	clr_country_flag = government_progressive
+	clr_country_flag = government_democratic_socialist
+	clr_country_flag = government_communist
+	clr_country_flag = coalition_chosen
+	clear_variable = ROOT.NewCoalition
+}

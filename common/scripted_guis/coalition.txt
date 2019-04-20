@@ -25,11 +25,492 @@ scripted_gui = {
 		visible = {
 			has_country_flag = forming_government_1
 		}
+
+		ai_test_interval = 2
+		ai_test_variance = 1
+		ai_enabled = {
+			has_country_flag = forming_government_1
+		}
+		ai_weights = {
+			party1_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = islamist
+				}
+				modifier = {
+					add = 1
+					islamist > 0.09
+				}
+				modifier = {
+					add = 1
+					islamist > 0.19
+				}
+				modifier = {
+					add = 1
+					islamist > 0.29
+				}
+				modifier = {
+					add = 1
+					islamist > 0.39
+				}
+			}
+			party2_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = fascist
+				}
+				modifier = {
+					add = 1
+					fascist > 0.09
+				}
+				modifier = {
+					add = 1
+					fascist > 0.19
+				}
+				modifier = {
+					add = 1
+					fascist > 0.29
+				}
+				modifier = {
+					add = 1
+					fascist > 0.39
+				}
+			}
+			party3_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = nationalist
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.09
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.19
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.29
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.39
+				}
+			}
+			party4_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = monarchist
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.09
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.19
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.29
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.39
+				}
+			}
+			party5_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = reactionary
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.09
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.19
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.29
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.39
+				}
+			}
+			party6_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = conservative
+				}
+				modifier = {
+					add = 1
+					conservative > 0.09
+				}
+				modifier = {
+					add = 1
+					conservative > 0.19
+				}
+				modifier = {
+					add = 1
+					conservative > 0.29
+				}
+				modifier = {
+					add = 1
+					conservative > 0.39
+				}
+			}
+			party7_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = market_liberal
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.09
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.19
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.29
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.39
+				}
+			}
+			party8_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = social_liberal
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.09
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.19
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.29
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.39
+				}
+			}
+			party9_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = social_democrat
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.09
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.19
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.29
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.39
+				}
+			}
+			party10_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = progressive
+				}
+				modifier = {
+					add = 1
+					progressive > 0.09
+				}
+				modifier = {
+					add = 1
+					progressive > 0.19
+				}
+				modifier = {
+					add = 1
+					progressive > 0.29
+				}
+				modifier = {
+					add = 1
+					progressive > 0.39
+				}
+			}
+			party11_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = democratic_socialist
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.09
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.19
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.29
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.39
+				}
+			}
+			party12_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = communist
+				}
+				modifier = {
+					add = 1
+					communist > 0.09
+				}
+				modifier = {
+					add = 1
+					communist > 0.19
+				}
+				modifier = {
+					add = 1
+					communist > 0.29
+				}
+				modifier = {
+					add = 1
+					communist > 0.39
+				}
+			}
+			next_click = {
+                ai_will_do = {
+                    factor = 1
+                }
+            }
+        }
  
         effects = {
 			next_click = {
 				clr_country_flag = forming_government_1
 				set_country_flag = forming_government_2
+				if = {
+					limit = {
+						has_country_flag = government_islamist
+					}
+					set_politics = {						
+						ruling_party = islamist
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_islamist
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_fascist
+					}
+					set_politics = {						
+						ruling_party = fascist
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_fascist
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_nationalist
+					}
+					set_politics = {						
+						ruling_party = nationalist
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_nationalist
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_monarchist
+					}
+					set_politics = {						
+						ruling_party = monarchist
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_monarchist
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_reactionary
+					}
+					set_politics = {						
+						ruling_party = reactionary
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_reactionary
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_conservative
+					}
+					set_politics = {						
+						ruling_party = conservative
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_conservative
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_market_liberal
+					}
+					set_politics = {						
+						ruling_party = market_liberal
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_market_liberal
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_social_liberal
+					}
+					set_politics = {						
+						ruling_party = social_liberal
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_social_liberal
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_social_democrat
+					}
+					set_politics = {						
+						ruling_party = social_democrat
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_social_democrat
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_progressive
+					}
+					set_politics = {						
+						ruling_party = progressive
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_progressive
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_democratic_socialist
+					}
+					set_politics = {						
+						ruling_party = democratic_socialist
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_democratic_socialist
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = government_communist
+					}
+					set_politics = {						
+						ruling_party = communist
+						elections_allowed = yes
+					}
+					set_country_flag = coalition_communist
+					set_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@ruling_party
+					}
+				}
 			}
 			party1_click = { 
 				if = {
@@ -444,6 +925,950 @@ scripted_gui = {
 			}
 			next_click_enabled = {
 				has_country_flag = government_chosen
+			}		
+        }
+		properties = {
+			party1_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party2_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party3_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party4_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party5_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party6_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party7_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party8_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party9_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party10_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party11_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+			party12_accept = {
+				image = GFX_accept_decline_icon
+				frame = 2
+			}
+		}
+	}
+
+	coalition_coalition_formation = {
+		window_name = "coalition_coalition_formation_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+			has_country_flag = forming_government_2
+		}
+
+		ai_test_interval = 2
+		ai_test_variance = 1
+		ai_enabled = {
+			has_country_flag = forming_government_1
+		}
+		ai_weights = {
+			party1_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = islamist
+				}
+				modifier = {
+					add = 1
+					islamist > 0.09
+				}
+				modifier = {
+					add = 1
+					islamist > 0.19
+				}
+				modifier = {
+					add = 1
+					islamist > 0.29
+				}
+				modifier = {
+					add = 1
+					islamist > 0.39
+				}
+			}
+			party2_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = fascist
+				}
+				modifier = {
+					add = 1
+					fascist > 0.09
+				}
+				modifier = {
+					add = 1
+					fascist > 0.19
+				}
+				modifier = {
+					add = 1
+					fascist > 0.29
+				}
+				modifier = {
+					add = 1
+					fascist > 0.39
+				}
+			}
+			party3_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = nationalist
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.09
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.19
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.29
+				}
+				modifier = {
+					add = 1
+					nationalist > 0.39
+				}
+			}
+			party4_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = monarchist
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.09
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.19
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.29
+				}
+				modifier = {
+					add = 1
+					monarchist > 0.39
+				}
+			}
+			party5_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = reactionary
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.09
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.19
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.29
+				}
+				modifier = {
+					add = 1
+					reactionary > 0.39
+				}
+			}
+			party6_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = conservative
+				}
+				modifier = {
+					add = 1
+					conservative > 0.09
+				}
+				modifier = {
+					add = 1
+					conservative > 0.19
+				}
+				modifier = {
+					add = 1
+					conservative > 0.29
+				}
+				modifier = {
+					add = 1
+					conservative > 0.39
+				}
+			}
+			party7_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = market_liberal
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.09
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.19
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.29
+				}
+				modifier = {
+					add = 1
+					market_liberal > 0.39
+				}
+			}
+			party8_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = social_liberal
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.09
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.19
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.29
+				}
+				modifier = {
+					add = 1
+					social_liberal > 0.39
+				}
+			}
+			party9_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = social_democrat
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.09
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.19
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.29
+				}
+				modifier = {
+					add = 1
+					social_democrat > 0.39
+				}
+			}
+			party10_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = progressive
+				}
+				modifier = {
+					add = 1
+					progressive > 0.09
+				}
+				modifier = {
+					add = 1
+					progressive > 0.19
+				}
+				modifier = {
+					add = 1
+					progressive > 0.29
+				}
+				modifier = {
+					add = 1
+					progressive > 0.39
+				}
+			}
+			party11_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = democratic_socialist
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.09
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.19
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.29
+				}
+				modifier = {
+					add = 1
+					democratic_socialist > 0.39
+				}
+			}
+			party12_click = {
+				ai_will_do = {
+					factor = 1
+				}
+				modifier = {
+					add = 1
+					has_government  = communist
+				}
+				modifier = {
+					add = 1
+					communist > 0.09
+				}
+				modifier = {
+					add = 1
+					communist > 0.19
+				}
+				modifier = {
+					add = 1
+					communist > 0.29
+				}
+				modifier = {
+					add = 1
+					communist > 0.39
+				}
+			}
+			finish_click = {
+                ai_will_do = {
+                    factor = 1
+                }
+            }
+        }
+ 
+        effects = {
+			finish_click = {
+				clr_country_flag = forming_government_2
+				set_country_flag = has_coalition
+				add_to_variable = {
+					var = ROOT.NewCoalition
+					value = party_popularity@ruling_party
+				}
+				set_variable = { ROOT.NewCoalition = ROOT.Coalition }
+				cleanup_coalition = yes
+			}
+			party1_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_islamist
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@islamist
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_islamist
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@islamist
+					}
+				}
+				else = {
+					set_country_flag = coalition_islamist
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@islamist
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party2_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_fascist
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@fascist
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_fascist
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@fascist
+					}
+				}
+				else = {
+					set_country_flag = coalition_fascist
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@fascist
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party3_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_nationalist
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@nationalist
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_nationalist
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@nationalist
+					}
+				}
+				else = {
+					set_country_flag = coalition_nationalist
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@nationalist
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party4_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_monarchist
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@monarchist
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_monarchist
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@monarchist
+					}
+				}
+				else = {
+					set_country_flag = coalition_monarchist
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@monarchist
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party5_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_reactionary
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@reactionary
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_reactionary
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@reactionary
+					}
+				}
+				else = {
+					set_country_flag = coalition_reactionary
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@reactionary
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party6_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_conservative
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@conservative
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_conservative
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@conservative
+					}
+				}
+				else = {
+					set_country_flag = coalition_conservative
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@conservative
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party7_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_market_liberal
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@market_liberal
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_market_liberal
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@market_liberal
+					}
+				}
+				else = {
+					set_country_flag = coalition_market_liberal
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@market_liberal
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party8_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_social_liberal
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@social_liberal
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_social_liberal
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@social_liberal
+					}
+				}
+				else = {
+					set_country_flag = coalition_social_liberal
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@social_liberal
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party9_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_social_democrat
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@social_democrat
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_social_democrat
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@social_democrat
+					}
+				}
+				else = {
+					set_country_flag = coalition_social_democrat
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@social_democrat
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party10_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_progressive
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@progressive
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_progressive
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@progressive
+					}
+				}
+				else = {
+					set_country_flag = coalition_progressive
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@progressive
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party11_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_democratic_socialist
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@democratic_socialist
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_democratic_socialist
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@democratic_socialist
+					}
+				}
+				else = {
+					set_country_flag = coalition_democratic_socialist
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@democratic_socialist
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+			party12_click = { 
+				if = {
+					limit = {
+						has_country_flag = coalition_communist
+						has_country_flag = coalition_chosen
+						check_variable = {
+							var = ROOT.NewCoalition
+							value = party_popularity@communist
+							compare = greater_than_or_equals
+						}
+					}
+					clr_country_flag = coalition_communist
+					clr_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					subtract_from_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@communist
+					}
+				}
+				else = {
+					set_country_flag = coalition_communist
+					set_country_flag = coalition_chosen
+					divide_variable = { ROOT.NewCoalition = 100 }
+					add_to_variable = {
+						var = ROOT.NewCoalition
+						value = party_popularity@communist
+					}
+					multiply_variable = { ROOT.NewCoalition = 100 }
+				}
+			}
+        }
+        
+		triggers = {
+			party1_click_enabled = {
+				islamist > 0.00
+			}
+			party1_title_click_enabled = {
+				islamist > 0.00
+			}
+			party1_visible = {
+				NOT = { has_country_flag = government_islamist }
+			}
+			party1_title_visible = {
+				NOT = { has_country_flag = government_islamist }
+			}
+			party1_accept_visible = {
+				has_country_flag = coalition_islamist
+				NOT = { has_country_flag = government_islamist }
+			}
+			party2_click_enabled = {
+				fascist > 0.00
+			}
+			party2_title_click_enabled = {
+				fascist > 0.00
+			}
+			party2_visible = {
+				NOT = { has_country_flag = government_fascist }
+			}
+			party2_title_visible = {
+				NOT = { has_country_flag = government_fascist }
+			}
+			party2_accept_visible = {
+				has_country_flag = coalition_fascist
+				NOT = { has_country_flag = government_fascist }
+			}
+			party3_click_enabled = {
+				nationalist > 0.00
+			}
+			party3_title_click_enabled = {
+				nationalist > 0.00
+			}
+			party3_visible = {
+				NOT = { has_country_flag = government_nationalist }
+			}
+			party3_title_visible = {
+				NOT = { has_country_flag = government_nationalist }
+			}
+			party3_accept_visible = {
+				has_country_flag = coalition_nationalist
+				NOT = { has_country_flag = government_nationalist }
+			}
+			party4_click_enabled = {
+				monarchist > 0.00
+			}
+			party4_title_click_enabled = {
+				monarchist > 0.00
+			}
+			party4_visible = {
+				NOT = { has_country_flag = government_monarchist }
+			}
+			party4_title_visible = {
+				NOT = { has_country_flag = government_monarchist }
+			}
+			party4_accept_visible = {
+				has_country_flag = coalition_monarchist
+				NOT = { has_country_flag = government_monarchist }
+			}
+			party5_click_enabled = {
+				reactionary > 0.00
+			}
+			party5_title_click_enabled = {
+				reactionary > 0.00
+			}
+			party5_visible = {
+				NOT = { has_country_flag = government_reactionary }
+			}
+			party5_title_visible = {
+				NOT = { has_country_flag = government_reactionary }
+			}
+			party5_accept_visible = {
+				has_country_flag = coalition_reactionary
+				NOT = { has_country_flag = government_reactionary }
+			}
+			party6_click_enabled = {
+				conservative > 0.00
+			}
+			party6_title_click_enabled = {
+				conservative > 0.00
+			}
+			party6_visible = {
+				NOT = { has_country_flag = government_conservative }
+			}
+			party6_title_visible = {
+				NOT = { has_country_flag = government_conservative }
+			}
+			party6_accept_visible = {
+				has_country_flag = coalition_conservative
+				NOT = { has_country_flag = government_conservative }
+			}
+			party7_click_enabled = {
+				market_liberal > 0.00
+			}
+			party7_title_click_enabled = {
+				market_liberal > 0.00
+			}
+			party7_visible = {
+				NOT = { has_country_flag = government_market_liberal }
+			}
+			party7_title_visible = {
+				NOT = { has_country_flag = government_market_liberal }
+			}
+			party7_accept_visible = {
+				has_country_flag = coalition_market_liberal
+				NOT = { has_country_flag = government_market_liberal }
+			}
+			party8_click_enabled = {
+				social_liberal > 0.00
+			}
+			party8_title_click_enabled = {
+				social_liberal > 0.00
+			}
+			party8_visible = {
+				NOT = { has_country_flag = government_social_liberal }
+			}
+			party8_title_visible = {
+				NOT = { has_country_flag = government_social_liberal }
+			}
+			party8_accept_visible = {
+				has_country_flag = coalition_social_liberal
+				NOT = { has_country_flag = government_social_liberal }
+			}
+			party9_click_enabled = {
+				social_democrat > 0.00
+			}
+			party9_title_click_enabled = {
+				social_democrat > 0.00
+			}
+			party9_visible = {
+				NOT = { has_country_flag = government_social_democrat }
+			}
+			party9_title_visible = {
+				NOT = { has_country_flag = government_social_democrat }
+			}
+			party9_accept_visible = {
+				has_country_flag = coalition_social_democrat
+				NOT = { has_country_flag = government_social_democrat }
+			}
+			party10_click_enabled = {
+				progressive > 0.00
+			}
+			party10_title_click_enabled = {
+				progressive > 0.00
+			}
+			party10_visible = {
+				NOT = { has_country_flag = government_progressive }
+			}
+			party10_title_visible = {
+				NOT = { has_country_flag = government_progressive }
+			}
+			party10_accept_visible = {
+				has_country_flag = coalition_progressive
+				NOT = { has_country_flag = government_progressive }
+			}
+			party11_click_enabled = {
+				democratic_socialist > 0.00
+			}
+			party11_title_click_enabled = {
+				democratic_socialist > 0.00
+			}
+			party11_visible = {
+				NOT = { has_country_flag = government_democratic_socialist }
+			}
+			party11_title_visible = {
+				NOT = { has_country_flag = government_democratic_socialist }
+			}
+			party11_accept_visible = {
+				has_country_flag = coalition_democratic_socialist
+				NOT = { has_country_flag = government_democratic_socialist }
+			}
+			party12_click_enabled = {
+				communist > 0.00
+			}
+			party12_title_click_enabled = {
+				communist > 0.00
+			}
+			party12_visible = {
+				NOT = { has_country_flag = government_communist }
+			}
+			party12_title_visible = {
+				NOT = { has_country_flag = government_communist }
+			}
+			party12_accept_visible = {
+				has_country_flag = coalition_communist
+				NOT = { has_country_flag = government_communist }
+			}
+			finish_click_enabled = {
+				has_country_flag = coalition_chosen
 			}		
         }
 		properties = {

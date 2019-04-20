@@ -640,3 +640,28 @@ defined_text = {
 		localization_key = COALITION_NEXT_NO
 	}
 }
+
+####################### GET IF COALITION FORMING IS FINISHED
+
+defined_text = {
+	name = GetCoalitionFinished
+
+	text = {
+		trigger = {
+			has_country_flag = coalition_chosen
+		}
+		localization_key = COALITION_FINISHED_OK
+	}
+
+	text = {
+		trigger = {
+			NOT = { has_country_flag = coalition_chosen }
+			check_variable = {
+				var = ROOT.NewCoalition
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = COALITION_FINISHED_NO
+	}
+}
