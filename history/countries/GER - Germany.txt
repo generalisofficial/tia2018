@@ -98,22 +98,23 @@ add_ideas = {
 set_country_flag = has_coalition
 set_country_flag = coalition_conservative
 set_country_flag = coalition_social_democrat
-add_to_variable = { ROOT.Coalition = cdu_seats }
-add_to_variable = { ROOT.Coalition = spd_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 multiply_variable = { ROOT.Coalition = 100 }
 
 #Bundestag
-set_variable = { dkp_seats = 0 }
-set_variable = { die_linke_seats = 9.2 }
-set_variable = { grune_seats = 8.9 }
-set_variable = { spd_seats = 20.5 }
-set_variable = { piraten_seats = 0 }
-set_variable = { fdp_seats = 10.7 }
-set_variable = { cdu_seats = 38.1 }
-set_variable = { afd_seats = 12.6 }
-set_variable = { npd_seats = 0 }
-set_variable = { dritte_weg_seats = 0 }
-set_variable = { dwr_seats = 0 }
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 9.2 }
+set_variable = { progressive_seats = 8.9 }
+set_variable = { social_democrat_seats = 20.5 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 10.7 }
+set_variable = { conservative_seats = 38.1 }
+set_variable = { reactionary_seats = 12.6 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
 
 add_opinion_modifier = { target = FRA modifier = franco_german_friendship }
 add_opinion_modifier = { target = HOL modifier = german_dutch_military_cooperation }

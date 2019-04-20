@@ -3,6 +3,8 @@ add_namespace = election_SOV
 add_namespace = election_PRK
 add_namespace = election_SWE
 add_namespace = election_ISR
+add_namespace = election_GER
+add_namespace = election_DEN
 
 #Generic Election
 country_event = {
@@ -550,28 +552,30 @@ country_event = {
 	option = {
 		name = election_SWE.1.o1
 		break_coalition = yes
-		set_variable = { k_seats = party_popularity@communist }
-		multiply_variable = { k_seats = 100 }
-		set_variable = { v_seats = party_popularity@democratic_socialist }
-		multiply_variable = { v_seats = 100 }
-		set_variable = { mp_seats = party_popularity@progressive }
-		multiply_variable = { mp_seats = 100 }
-		set_variable = { s_seats = party_popularity@social_democrat }
-		multiply_variable = { s_seats = 100 }
-		set_variable = { c_seats = party_popularity@social_liberal }
-		multiply_variable = { c_seats = 100 }
-		set_variable = { m_seats = party_popularity@market_liberal }
-		multiply_variable = { m_seats = 100 }
-		set_variable = { kd_seats = party_popularity@conservative }
-		multiply_variable = { kd_seats = 100 }
-		set_variable = { sd_seats = party_popularity@reactionary }
-		multiply_variable = { sd_seats = 100 }
-		set_variable = { afs_seats = party_popularity@nationalist }
-		multiply_variable = { afs_seats = 100 }
-		set_variable = { nmr_seats = party_popularity@fascist }
-		multiply_variable = { nmr_seats = 100 }
-		set_variable = { ifis_seats = party_popularity@islamist }
-		multiply_variable = { ifis_seats = 100 }
+		set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+		multiply_variable = { democratic_socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { market_liberal_seats = party_popularity@market_liberal }
+		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { reactionary_seats = party_popularity@reactionary }
+		multiply_variable = { reactionary_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { nationalist_seats = party_popularity@nationalist }
+		multiply_variable = { nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
 		if = {
 			limit = {
 			    OR = {
@@ -785,28 +789,30 @@ country_event = {
 	option = {
 		name = election_ISR.1.o1
 		break_coalition = yes
-		set_variable = { hadash_seats = party_popularity@communist }
-		multiply_variable = { hadash_seats = 100 }
-		set_variable = { balad_seats = party_popularity@democratic_socialist }
-		multiply_variable = { balad_seats = 100 }
-		set_variable = { meretz_seats = party_popularity@progressive }
-		multiply_variable = { meretz_seats = 100 }
-		set_variable = { haavoda_seats = party_popularity@social_democrat }
-		multiply_variable = { haavoda_seats = 100 }
-		set_variable = { miflaga_seats = party_popularity@social_liberal }
-		multiply_variable = { miflaga_seats = 100 }
-		set_variable = { yesh_atid_seats = party_popularity@market_liberal }
-		multiply_variable = { yesh_atid_seats = 100 }
-		set_variable = { likud_seats = party_popularity@conservative }
-		multiply_variable = { likud_seats = 100 }
-		set_variable = { yisrael_beiteinu_seats = party_popularity@reactionary }
-		multiply_variable = { yisrael_beiteinu_seats = 100 }
-		set_variable = { jewish_home_seats = party_popularity@nationalist }
-		multiply_variable = { jewish_home_seats = 100 }
-		set_variable = { lehava_seats = party_popularity@fascist }
-		multiply_variable = { lehava_seats = 100 }
-		set_variable = { islamic_israel_seats = party_popularity@islamist }
-		multiply_variable = { islamic_israel_seats = 100 }
+		set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+		multiply_variable = { democratic_socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { market_liberal_seats = party_popularity@market_liberal }
+		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { reactionary_seats = party_popularity@reactionary }
+		multiply_variable = { reactionary_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { nationalist_seats = party_popularity@nationalist }
+		multiply_variable = { nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
 		if = {
 			limit = {
 			    OR = {
@@ -847,28 +853,30 @@ country_event = {
 	option = {
 		name = election_GER.1.o1
 		break_coalition = yes
-		set_variable = { dkp_seats = party_popularity@communist }
-		multiply_variable = { dkp_seats = 100 }
-		set_variable = { die_linke_seats = party_popularity@democratic_socialist }
-		multiply_variable = { die_linke_seats = 100 }
-		set_variable = { grune_seats = party_popularity@progressive }
-		multiply_variable = { grune_seats = 100 }
-		set_variable = { spd_seats = party_popularity@social_democrat }
-		multiply_variable = { spd_seats = 100 }
-		set_variable = { piraten_seats = party_popularity@social_liberal }
-		multiply_variable = { piraten_seats = 100 }
-		set_variable = { fdp_seats = party_popularity@market_liberal }
-		multiply_variable = { fdp_seats = 100 }
-		set_variable = { cdu_seats = party_popularity@conservative }
-		multiply_variable = { cdu_seats = 100 }
-		set_variable = { afd_seats = party_popularity@reactionary }
-		multiply_variable = { afd_seats = 100 }
-		set_variable = { npd_seats = party_popularity@nationalist }
-		multiply_variable = { npd_seats = 100 }
-		set_variable = { dritte_weg = party_popularity@fascist }
-		multiply_variable = { dritte_weg_seats = 100 }
-		set_variable = { dwr_seats = party_popularity@islamist }
-		multiply_variable = { dwr_seats = 100 }
+		set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+		multiply_variable = { democratic_socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { market_liberal_seats = party_popularity@market_liberal }
+		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { reactionary_seats = party_popularity@reactionary }
+		multiply_variable = { reactionary_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { nationalist_seats = party_popularity@nationalist }
+		multiply_variable = { nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
 		if = {
 			limit = {
 			    OR = {
@@ -909,28 +917,30 @@ country_event = {
 	option = {
 		name = election_DEN.1.o1
 		break_coalition = yes
-		set_variable = { den_dkp_seats = party_popularity@communist }
-		multiply_variable = { den_dkp_seats = 100 }
-		set_variable = { enhedslisten_seats = party_popularity@democratic_socialist }
-		multiply_variable = { enhedslisten_seats = 100 }
-		set_variable = { alternativet_seats = party_popularity@progressive }
-		multiply_variable = { alternativet_seats = 100 }
-		set_variable = { socialdemokratiet_seats = party_popularity@social_democrat }
-		multiply_variable = { socialdemokratiet_seats = 100 }
-		set_variable = { liberal_alliance_seats = party_popularity@social_liberal }
-		multiply_variable = { liberal_alliance_seats = 100 }
-		set_variable = { venstre_seats = party_popularity@market_liberal }
-		multiply_variable = { venstre_seats = 100 }
-		set_variable = { dkf_seats = party_popularity@conservative }
-		multiply_variable = { dkf_seats = 100 }
-		set_variable = { df_seats = party_popularity@reactionary }
-		multiply_variable = { df_seats = 100 }
-		set_variable = { dansk_samling_seats = party_popularity@nationalist }
-		multiply_variable = { dansk_samling_seats = 100 }
-		set_variable = { dnsb = party_popularity@fascist }
-		multiply_variable = { dnsb_seats = 100 }
-		set_variable = { den_hizb_seats = party_popularity@islamist }
-		multiply_variable = { den_hizb_seats = 100 }
+		set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+		multiply_variable = { democratic_socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { market_liberal_seats = party_popularity@market_liberal }
+		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { reactionary_seats = party_popularity@reactionary }
+		multiply_variable = { reactionary_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { nationalist_seats = party_popularity@nationalist }
+		multiply_variable = { nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
 		if = {
 			limit = {
 			    OR = {

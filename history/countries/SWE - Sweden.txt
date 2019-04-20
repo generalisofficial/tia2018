@@ -99,17 +99,22 @@ add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 
 set_country_flag = has_coalition
 set_country_flag = coalition_social_democrat
 set_country_flag = coalition_progressive
-add_to_variable = { ROOT.Coalition = s_seats }
-add_to_variable = { ROOT.Coalition = mp_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
 
 #Riksdag
-set_variable = { v_seats = 5.7 }
-set_variable = { mp_seats = 6.9 }
-set_variable = { s_seats = 31 }
-set_variable = { c_seats = 6.1 }
-set_variable = { m_seats = 23.3 }
-set_variable = { kd_seats = 4.6 }
-set_variable = { sd_seats = 12.9 }
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 5.7 }
+set_variable = { progressive_seats = 6.9 }
+set_variable = { social_democrat_seats = 31 }
+set_variable = { social_liberal_seats = 6.1 }
+set_variable = { market_liberal_seats = 23.3 }
+set_variable = { conservative_seats = 4.6 }
+set_variable = { reactionary_seats = 12.9 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
 
 set_politics = {
 
