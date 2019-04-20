@@ -893,3 +893,65 @@ country_event = {
 		}
     }
 }
+
+#DEN Generic (Parliamentary)
+country_event = {
+	id = election_DEN.1
+	title = election_DEN.1.t
+	desc = election_DEN.1.d
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    original_tag = DEN
+	}
+	
+	option = {
+		name = election_DEN.1.o1
+		break_coalition = yes
+		set_variable = { den_dkp_seats = party_popularity@communist }
+		multiply_variable = { den_dkp_seats = 100 }
+		set_variable = { enhedslisten_seats = party_popularity@democratic_socialist }
+		multiply_variable = { enhedslisten_seats = 100 }
+		set_variable = { alternativet_seats = party_popularity@progressive }
+		multiply_variable = { alternativet_seats = 100 }
+		set_variable = { socialdemokratiet_seats = party_popularity@social_democrat }
+		multiply_variable = { socialdemokratiet_seats = 100 }
+		set_variable = { liberal_alliance_seats = party_popularity@social_liberal }
+		multiply_variable = { liberal_alliance_seats = 100 }
+		set_variable = { venstre_seats = party_popularity@market_liberal }
+		multiply_variable = { venstre_seats = 100 }
+		set_variable = { dkf_seats = party_popularity@conservative }
+		multiply_variable = { dkf_seats = 100 }
+		set_variable = { df_seats = party_popularity@reactionary }
+		multiply_variable = { df_seats = 100 }
+		set_variable = { dansk_samling_seats = party_popularity@nationalist }
+		multiply_variable = { dansk_samling_seats = 100 }
+		set_variable = { dnsb = party_popularity@fascist }
+		multiply_variable = { dnsb_seats = 100 }
+		set_variable = { den_hizb_seats = party_popularity@islamist }
+		multiply_variable = { den_hizb_seats = 100 }
+		if = {
+			limit = {
+			    OR = {
+					communist > 0.5
+					democratic_socialist > 0.5
+					progressive > 0.5
+					social_democrat > 0.5
+					social_liberal > 0.5
+					market_liberal > 0.5
+					conservative > 0.5
+					reactionary > 0.5
+					monarchist > 0.5
+					nationalist > 0.5
+					fascist > 0.5
+					islamist > 0.5
+				}
+			}
+			country_event = election.4
+			else = {
+				set_country_flag = forming_government_1
+			}
+		}
+    }
+}

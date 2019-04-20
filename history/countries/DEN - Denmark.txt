@@ -113,11 +113,26 @@ add_ideas = {
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_market_liberal
+set_country_flag = coalition_social_liberal
 set_country_flag = coalition_conservative
 set_variable = { var = ROOT.Coalition value = 0 }
-add_to_variable = { ROOT.Coalition = party_popularity@market_liberal }
-add_to_variable = { ROOT.Coalition = party_popularity@conservative }
+add_to_variable = { ROOT.Coalition = venstre_seats }
+add_to_variable = { ROOT.Coalition = liberal_alliance_seats }
+add_to_variable = { ROOT.Coalition = dkf_seats }
 multiply_variable = { ROOT.Coalition = 100 }
+
+#Folketing
+set_variable = { dkp_seats = 0 }
+set_variable = { enhedslisten_seats = 8.8 }
+set_variable = { alternativet_seats = 5.8 }
+set_variable = { socialdemokratiet_seats = 27.3 }
+set_variable = { liberal_alliance_seats = 8.5 }
+set_variable = { venstre_seats = 23.7 }
+set_variable = { dkf_seats = 3.8 }
+set_variable = { df_seats = 22.1 }
+set_variable = { dansk_samling_seats = 0 }
+set_variable = { dnsb_seats = 0 }
+set_variable = { den_hizb_seats = 0 }
 
 
 set_politics = {
