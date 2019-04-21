@@ -56,6 +56,23 @@
 			traits = { social_liberal_party_membership }
 			cancel_if_invalid = yes
 		}
+		
+		stig_henriksson = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = democratic_socialist
+					has_country_flag = coalition_democratic_socialist
+				}
+			}
+			
+			traits = { democratic_socialist_party_membership }
+			cancel_if_invalid = yes
+		}
 	
 	}
 	
@@ -109,6 +126,23 @@
 			}
 			
 			traits = { social_liberal_party_membership }
+			cancel_if_invalid = yes
+		}
+		
+		hans_linde = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = democratic_socialist
+					has_country_flag = coalition_democratic_socialist
+				}
+			}
+			
+			traits = { democratic_socialist_party_membership }
 			cancel_if_invalid = yes
 		}
 	
@@ -166,6 +200,23 @@
 			traits = { social_liberal_party_membership }
 			cancel_if_invalid = yes
 		}
+		
+		ulla_andersson = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = democratic_socialist
+					has_country_flag = coalition_democratic_socialist
+				}
+			}
+			
+			traits = { democratic_socialist_party_membership }
+			cancel_if_invalid = yes
+		}
 	
 	}
 	
@@ -219,6 +270,23 @@
 			}
 			
 			traits = { social_liberal_party_membership }
+			cancel_if_invalid = yes
+		}
+		
+		ali_esbati = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = democratic_socialist
+					has_country_flag = coalition_democratic_socialist
+				}
+			}
+			
+			traits = { democratic_socialist_party_membership }
 			cancel_if_invalid = yes
 		}
 	
@@ -276,6 +344,23 @@
 			traits = { social_liberal_party_membership }
 			cancel_if_invalid = yes
 		}
+		
+		linda_snecker = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = democratic_socialist
+					has_country_flag = coalition_democratic_socialist
+				}
+			}
+			
+			traits = { democratic_socialist_party_membership }
+			cancel_if_invalid = yes
+		}
 	
 	}
 	
@@ -288,6 +373,25 @@
 			}
 			
 			available = {
+			    date < 2019.1.21
+				OR = {
+				    has_government = progressive
+					has_country_flag = coalition_progressive
+				}
+			}
+			
+			traits = { progressive_party_membership }
+			cancel_if_invalid = yes
+		}
+		
+		amanda_lind = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+			    date > 2019.1.21
 				OR = {
 				    has_government = progressive
 					has_country_flag = coalition_progressive
@@ -329,6 +433,23 @@
 			}
 			
 			traits = { social_liberal_party_membership }
+			cancel_if_invalid = yes
+		}
+		
+		rossana_dinamarca = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = democratic_socialist
+					has_country_flag = coalition_democratic_socialist
+				}
+			}
+			
+			traits = { democratic_socialist_party_membership }
 			cancel_if_invalid = yes
 		}
 	
