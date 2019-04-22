@@ -1,24 +1,35 @@
 
 state={
 	id=417
-	name="STATE_417" # Hamadan
-	manpower = 4070544
-	state_category = state_level_4
+	name="STATE_417"
 
 	history={
 		owner = PER
 		buildings = {
 			infrastructure = 4
 			air_base = 4
+
 		}
 		add_core_of = PER
-		victory_points = { 2065 3 } #khorramabad
-		victory_points = { 1982 3 } #arak
-		victory_points = { 8040 10 } #hamadan
-		victory_points = { 8125 2 } #saveh
-	}			
+		victory_points = {
+			2065 3 
+		}
+		victory_points = {
+			1982 3 
+		}
+		victory_points = {
+			8040 10 
+		}
+		victory_points = {
+			8125 2 
+		}
+
+	}
 
 	provinces={
-		1982 2065 8040 8125 
+		1982 2065 5050 8040 8125 
 	}
+	manpower=4070544
+	buildings_max_level_factor=1.000
+	state_category=state_level_4
 }

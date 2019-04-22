@@ -15,5 +15,49 @@ SWE_riksdag = {
 		complete_effect = {
 	        set_country_flag = oof
         }
+    }
+
+	SWE_instate_a_monarchy = {
+		
+        available = {
+            check_variable = {
+                var = monarchist_seats
+                value = 50
+                compare = greater_than_or_equals
+            }
+        }
+		
+        visible = { 
+		    original_tag = SWE
+        }
+		
+		cost = 50
+        fire_only_once = no
+		
+		complete_effect = {
+	        country_event = political.12
+        }
+    }
+
+	SWE_declare_an_islamic_state = {
+		
+        available = {
+            check_variable = {
+                var = islamist_seats
+                value = 50
+                compare = greater_than_or_equals
+            }
+        }
+		
+        visible = { 
+		    original_tag = SWE
+        }
+		
+		cost = 50
+        fire_only_once = no
+		
+		complete_effect = {
+	        country_event = political.4
+        }
     }	
 }

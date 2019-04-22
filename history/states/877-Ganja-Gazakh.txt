@@ -1,23 +1,32 @@
+
 state={
 	id=877
 	name="STATE_877"
-	provinces={
-		1539 11645 11674 6763
+	resources={
+		aluminium=7.000
 	}
-	resources = {
-		aluminium = 7
-	}
-	history = {
+
+	history={
 		owner = AZR
 		add_core_of = AZR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+
 		}
-		victory_points = { 11674 2 }
+		victory_points = {
+			1539 3
+		}
+		victory_points = {
+			11674 1
+		}
+
+	}
+
+	provinces={
+		1539 1610 11674 11704 
 	}
 	manpower=1994500
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_7
+	state_category=state_level_7
 }

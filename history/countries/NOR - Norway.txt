@@ -91,10 +91,23 @@ add_ideas = {
 set_country_flag = has_coalition
 set_country_flag = coalition_conservative
 set_country_flag = coalition_reactionary
-set_variable = { var = ROOT.Coalition value = 0 }
-add_to_variable = { ROOT.Coalition = party_popularity@conservative }
-add_to_variable = { ROOT.Coalition = party_popularity@reactionary }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 multiply_variable = { ROOT.Coalition = 100 }
+
+#Storting
+set_variable = { communist_seats = 2.4 }
+set_variable = { democratic_socialist_seats = 6.0 }
+set_variable = { progressive_seats = 3.2 }
+set_variable = { social_democrat_seats = 27.4 }
+set_variable = { social_liberal_seats = 4.4 }
+set_variable = { market_liberal_seats = 37.2 }
+set_variable = { conservative_seats = 4.2 }
+set_variable = { reactionary_seats = 15.2 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
 
 set_politics = {
 	parties = {

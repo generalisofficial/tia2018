@@ -1,23 +1,29 @@
+
 state={
 	id=878
 	name="STATE_878"
-	provinces={
-		4473 12434 
+	resources={
+		oil=4.000
 	}
-	resources = {
-		oil = 4
-	}
-	history = {
+
+	history={
 		owner = AZR
 		add_core_of = AZR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
-		victory_points = { 4473 1 }
+		victory_points = {
+			4473 1 
+		}
+
+	}
+
+	provinces={
+		4473 12434 
 	}
 	manpower=190000
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_5
+	state_category=state_level_5
 }
