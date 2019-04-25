@@ -1,32 +1,28 @@
 
 state={
 	id=13
-	name="STATE_13" #Harju
-	manpower = 780660
-	
+	name="STATE_13"
 	resources={
-		steel = 3
+		steel=3.000
 	}
-	
-	state_category = state_level_10
-	
+
 	history={
 		owner = EST
 		victory_points = {
 			3152 5 
-			}
-			victory_points = {
+		}
+		victory_points = {
 			3174 1 
-			}
-			victory_points = {
+		}
+		victory_points = {
 			185 1 
-			}
-			victory_points = {
+		}
+		victory_points = {
 			83 1 
-			}
-			victory_points = {
-			6201 1
-			}
+		}
+		victory_points = {
+			6201 1 
+		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -36,12 +32,18 @@ state={
 			3152 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = EST
+
 	}
 
 	provinces={
-		83 185 308 496 567 3074 3152 3174 6201 6381 9079 11127 11291 11426 
+		83 308 496 567 3074 3152 3174 6381 11291 11426 
 	}
+	manpower=780660
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

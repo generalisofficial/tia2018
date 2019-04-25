@@ -1,25 +1,36 @@
+
 state={
 	id=840
 	name="STATE_840"
-	provinces={
-		4640 11057 11443 
-	}
 	resources={
-		oil = 3
+		oil=3.000
 	}
-	history = {
+
+	history={
 		owner = EST
 		add_core_of = EST
-		victory_points = { 4640 2 }
-		victory_points = { 11443 1 }
+		victory_points = {
+			4640 2 
+		}
 		buildings = {
 			infrastructure = 3
-			4640 = { naval_base = 2 }
-			4640 = { bunker = 2 }
+			4640 = {
+				naval_base = 2
+
+			}
+			4640 = {
+				bunker = 2
+
+			}
+
 		}
+
 	}
-	manpower=146500
+
+	provinces={
+		4640 
+	}
+	manpower=140388
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_5
+	state_category=state_level_3
 }

@@ -94,23 +94,47 @@ add_ideas = {
 	juri_luik
 }
 
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+multiply_variable = { ROOT.Coalition = 100 }
+
+#Riigikogu
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 15.2 }
+set_variable = { social_liberal_seats = 24.8 }
+set_variable = { market_liberal_seats = 27.7 }
+set_variable = { conservative_seats = 22.4 }
+set_variable = { reactionary_seats = 8.1 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
+
 set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 8.1
+			popularity = 17.8
 		}
 		conservative = {
-			popularity = 22.4
+			popularity = 11.4
 		}
 		market_liberal = {
-			popularity = 27.7
+			popularity = 32.1
 		}
 		social_liberal = {
-			popularity = 24.8
+			popularity = 28.9
 		}
 		social_democrat = {
-			popularity = 15.2
+			popularity = 9.8
 		}
 	}	
 	ruling_party = social_liberal
@@ -159,12 +183,6 @@ create_country_leader = {
 	name = "Züleyxa Izmailova"
 	picture = "Zuleyxa_Izmailova.dds"
 	ideology = green
-}
-
-create_country_leader = {
-	name = "Vaino Väljas"
-	picture = "Vaino_Valjas.dds"
-	ideology = marxist_leninist
 }
 
 create_field_marshal = {

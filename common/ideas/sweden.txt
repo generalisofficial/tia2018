@@ -402,6 +402,23 @@
 			cancel_if_invalid = yes
 		}
 		
+		gunilla_carlsson = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				OR = {
+				    has_government = social_democrat
+					has_country_flag = coalition_social_democrat
+				}
+			}
+			
+			traits = { social_democrat_party_membership }
+			cancel_if_invalid = yes
+		}
+		
 		lotta_finstorp = {
 			
 			allowed = {
