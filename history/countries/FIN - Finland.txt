@@ -85,33 +85,57 @@ add_ideas = {
 	population_growth_stagnation
 	laissez_faire
 	idea_eu_member
-        nordic_council_member
+    nordic_council_member
 	limited_conscription
 	finnish_neutrality
 	sisu
 	the_euro
 }
 
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+multiply_variable = { ROOT.Coalition = 100 }
+
+#Eduskunta
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 7.1 }
+set_variable = { progressive_seats = 8.5 }
+set_variable = { social_democrat_seats = 16.5 }
+set_variable = { social_liberal_seats = 26.4 }
+set_variable = { market_liberal_seats = 18.2 }
+set_variable = { conservative_seats = 3.5 }
+set_variable = { reactionary_seats = 25.1 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
+
 set_politics = {
 
 	parties = {
 		reactionary = {
-			popularity = 17.7
+			popularity = 19.48
 		}
 		conservative = {
-			popularity = 3.5
+			popularity = 3.90
 		}
 		market_liberal = {
-			popularity = 20.7
+			popularity = 19.25
 		}
 		social_liberal = {
-			popularity = 26
+			popularity = 18.69
 		}
 		social_democrat = {
-			popularity = 16.5
+			popularity = 20.09
 		}
 		progressive = {
-			popularity = 8.5
+			popularity = 11.49
 		}
 		democratic_socialist = {
 			popularity = 7.1
@@ -122,6 +146,24 @@ set_politics = {
 	last_election = "2015.4.14"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Juha Sipilä"
+	picture = "Juha_Sipila.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Jussi Halla-aho"
+	picture = "Jussi_Halla_aho.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Petteri Orpo"
+	picture = "Petteri_Orpo.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -143,27 +185,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jussi Halla-aho"
-	picture = "Jussi_Halla_aho.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
 	name = "Sari Essayah"
 	picture = "Sari_Essayah.dds"
 	ideology = christian_democrat
-}
-
-create_country_leader = {
-	name = "Petteri Orpo"
-	picture = "Petteri_Orpo.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Juha Sipilä"
-	picture = "Juha_Sipila.dds"
-	ideology = centrist
 }
 
 create_country_leader = {
