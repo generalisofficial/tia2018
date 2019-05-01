@@ -90,11 +90,26 @@ set_country_flag = christianity
 set_politics = {
 
 	parties = {
+		social_liberal = {
+			popularity = 17.9
+		}
 		social_democrat = {
-			popularity = 32.2
+			popularity = 20.3
+		}
+		progressive = {
+			popularity = 4.7
 		}
 		democratic_socialist = {
-			popularity = 67.8
+			popularity = 50.71
+		}
+		conservative = {
+			popularity = 0.59
+		}
+		communist = {
+			popularity = 3.5
+		}
+		market_liberal = {
+			popularity = 2.3
 		}
 	}
 	
@@ -111,15 +126,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Henri Falcón"
-	picture = "Henri_Falcon.dds"
+	name = "Juan Guaidó"
+	picture = "Juan_Guaido.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Henrique Capriles"
-	picture = "Henrique_Capriles.dds"
-	ideology = centrist
+	name = "Henri Falcón"
+	picture = "Henri_Falcon.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Tomás Guanipa"
+	picture = "Tomas_Guanipa.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
@@ -132,12 +153,6 @@ create_country_leader = {
 	name = "María Corina Machado"
 	picture = "Maria_Corina_Machado.dds"
 	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Juan Guaidó"
-	picture = "Juan_Guaido.dds"
-	ideology = progressive_ideology
 }
 
 create_field_marshal = {

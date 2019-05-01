@@ -1,0 +1,30 @@
+﻿add_namespace = venezuela
+
+country_event = { #Juan Guaido declared president
+	id = venezuela.1
+	title = venezuela.1.t
+	desc = venezuela.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = venezuela.1.o1
+		news_event = venezuela.2
+		set_global_flag = venezuela_crisis
+	}
+}
+
+news_event = { #Venezuelan presidential crisis
+	id = venezuela.2
+	title = venezuela.2.t
+	desc = venezuela.2.d
+	picture = GFX_news_event_guaido
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = venezuela.2.o1
+	}
+}
