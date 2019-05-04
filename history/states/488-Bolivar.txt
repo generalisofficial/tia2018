@@ -2,24 +2,28 @@
 state={
 	id=488
 	name="STATE_488"
-	manpower = 4300300
-	
-	state_category = state_level_2
-	
-	resources = {
-		oil = 182
+	resources={
+		oil=182.000
 	}
 
 	history={
 		owner = VEN
 		add_core_of = VEN
+		victory_points = {
+			10767 2
+		}
 		buildings = {
 			infrastructure = 1
 			air_base = 1
+
 		}
+
 	}
 
 	provinces={
-		1981 5317 7915 8050 10736 10849 10879 
+		1981 5317 7915 8050 10736 10767 10849 10879 
 	}
+	manpower=1383297
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }
