@@ -1,0 +1,66 @@
+category = {
+ name = "Battle"
+ soundeffects = {
+	
+	usa_rocket_unit_attack
+	ger_rocket_unit_attack
+	ita_rocket_unit_attack
+ }
+ 
+}
+
+sound = 
+{
+	name = "usa_rocket_unit_attack_01"
+	file = "audiofiles/usa_rocket_unit_attack_01.wav"
+}
+sound = 
+{
+	name = "ita_rocket_unit_attack_01"
+	file = "audiofiles/ita_rocket_unit_attack_01.wav"
+}
+sound = 
+{
+	name = "ger_rocket_unit_attack_01"
+	file = "audiofiles/ger_rocket_unit_attack_01.wav"
+}
+
+soundeffect = {
+	name = usa_rocket_unit_attack
+	falloff = falloff_100
+	sounds = {
+		sound = usa_rocket_unit_attack_01
+	}  
+	max_audible = 3
+	max_audible_behaviour = fail
+	is3d = yes
+	volume = 0.7
+	delay_random_offset = { 0.0 0.15 }
+	playbackrate_random_offset = { 0.0 0.10 }
+}
+soundeffect = {
+	name = ger_rocket_unit_attack
+	falloff = falloff_100
+	sounds = {
+		sound = ger_rocket_unit_attack_01
+	}  
+	max_audible = 3
+	max_audible_behaviour = fail
+	is3d = yes
+	volume = 0.5
+	delay_random_offset = { 0.0 0.15 }
+	playbackrate_random_offset = { 0.0 0.10 }
+}
+soundeffect = {
+	name = ita_rocket_unit_attack
+	falloff = falloff_100
+	sounds = {
+		sound = ita_rocket_unit_attack_01
+	}  
+	max_audible = 3
+	max_audible_behaviour = fail
+	is3d = yes
+	volume = 0.5
+	delay_random_offset = { 0.0 0.15 }
+	playbackrate_random_offset = { 0.0 0.10 }
+}

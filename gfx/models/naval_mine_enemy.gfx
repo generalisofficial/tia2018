@@ -1,0 +1,24 @@
+objectTypes = {
+	pdxmesh = {
+		name = "naval_mine_enemy_mesh"
+		file = "gfx/models/naval_mine_enemy.mesh"
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "naval_mine_outline_red.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAdvanced"
+		}
+
+		meshsettings = {
+			name = "polySurface3Shape"
+			index = 0
+			texture_diffuse = "naval_mine_diffuse.dds"
+			texture_normal = "naval_mine_normal.dds"
+			texture_specular = "naval_mine_spec.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+}
