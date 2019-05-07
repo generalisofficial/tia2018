@@ -27,9 +27,9 @@ scripted_gui = {
 		}
 
 		ai_test_interval = 1
-		ai_test_variance = 1
+		ai_test_variance = 0.2
 		ai_enabled = {
-			ROOT = { has_country_flag = forming_government_1 }
+			always = yes
 		}
 		ai_check = {
            has_country_flag = forming_government_1
@@ -337,7 +337,7 @@ scripted_gui = {
 			}
 			next_click = {
                 ai_will_do = {
-                    factor = 1
+                    factor = 10
                 }
             }
         }
@@ -992,9 +992,9 @@ scripted_gui = {
 		}
 
 		ai_test_interval = 1
-		ai_test_variance = 1
+		ai_test_variance = 0.2
 		ai_enabled = {
-			ROOT = { has_country_flag = forming_government_2 }
+			always = yes
 		}
 		ai_check = {
            has_country_flag = forming_government_2
@@ -1302,7 +1302,7 @@ scripted_gui = {
 			}
 			finish_click = {
                 ai_will_do = {
-                    factor = 1
+                    factor = 10
                 }
             }
         }
@@ -1317,6 +1317,7 @@ scripted_gui = {
 				}
 				set_variable = { ROOT.NewCoalition = ROOT.Coalition }
 				cleanup_coalition = yes
+				update_coalition = yes
 			}
 			party1_click = { 
 				if = {
