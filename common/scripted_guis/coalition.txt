@@ -26,10 +26,13 @@ scripted_gui = {
 			has_country_flag = forming_government_1
 		}
 
-		ai_test_interval = 2
+		ai_test_interval = 1
 		ai_test_variance = 1
 		ai_enabled = {
-			has_country_flag = forming_government_1
+			ROOT = { has_country_flag = forming_government_1 }
+		}
+		ai_check = {
+           has_country_flag = forming_government_1
 		}
 		ai_weights = {
 			party1_click = {
@@ -988,10 +991,13 @@ scripted_gui = {
 			has_country_flag = forming_government_2
 		}
 
-		ai_test_interval = 2
+		ai_test_interval = 1
 		ai_test_variance = 1
 		ai_enabled = {
-			has_country_flag = forming_government_1
+			ROOT = { has_country_flag = forming_government_2 }
+		}
+		ai_check = {
+           has_country_flag = forming_government_2
 		}
 		ai_weights = {
 			party1_click = {
