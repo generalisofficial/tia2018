@@ -157,8 +157,8 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-		    every_country = {
-				country_event = pulse.1
+			every_country = {
+				pulse = yes
 			}
             random_country = {
                 limit = { is_ai = yes has_war = no }

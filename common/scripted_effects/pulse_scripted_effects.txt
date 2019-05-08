@@ -1,12 +1,4 @@
-﻿add_namespace = pulse
-
-country_event = {
-	id = pulse.1
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
+pulse = {
 		if = {
 			limit = {
 				has_war = yes
@@ -319,65 +311,4 @@ country_event = {
 			}
 			country_event = syria.3
 		}
-		if = {
-			limit = {
-				has_idea = elected_minority_government
-				NOT = { has_country_flag = asked_for_coalition }
-			}
-			country_event = election.3
-		}
-		if = {
-			limit = {
-				NOT = { tag = SWE }
-				has_country_flag = has_coalition
-			}
-			country_event = political.25
-		}
-	}
 }
-
-country_event = {
-    id = pulse.14
-
-    hidden = yes
-
-    is_triggered_only = yes
-
-
-    immediate = {
-		country_event = { id = pulse.1 days = 1 random = 1 } #January
-		country_event = { id = pulse.1 days = 32 random = 1 } #February
-		country_event = { id = pulse.1 days = 61 random = 1 } #March
-		country_event = { id = pulse.1 days = 92 random = 1 } #April
-		country_event = { id = pulse.1 days = 122 random = 1 } #May
-		country_event = { id = pulse.1 days = 153 random = 1 } #June
-		country_event = { id = pulse.1 days = 183 random = 1 } #July
-		country_event = { id = pulse.1 days = 214 random = 1 } #August
-		country_event = { id = pulse.1 days = 245 random = 1 } #September
-		country_event = { id = pulse.1 days = 275 random = 1 } #October
-		country_event = { id = pulse.1 days = 306 random = 1 } #November
-		country_event = { id = pulse.1 days = 336 random = 1 } #December
-		country_event = { id = pulse.14 days = 365 random = 1 } #Yearly
-	}
-}
-			
-country_event = {
-    id = pulse.15
-
-	hidden = yes
-
-	is_triggered_only = yes
-	
-	immediate = {
-		country_event = { id = pulse.1 days = 1 random = 1 } #June
-		country_event = { id = pulse.1 days = 8 random = 1 } #June
-		country_event = { id = pulse.1 days = 39 random = 1 } #July
-		country_event = { id = pulse.1 days = 71 random = 1 } #August
-		country_event = { id = pulse.1 days = 103 random = 1 } #Sept
-		country_event = { id = pulse.1 days = 134 random = 1 } #October
-		country_event = { id = pulse.1 days = 166 random = 1 } #November
-		country_event = { id = pulse.1 days = 196 random = 1 } #December
-		country_event = { id = pulse.14 days = 228 random = 1 } #New Year
-	}
-}
-
