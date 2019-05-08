@@ -10,15 +10,6 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "ENG_mechanized_mesh"
-		file = "gfx/models/units/vehicles/ENG_mechanized_01.mesh"
-		
-		animation = { id = "idle"			type = "ENG_mechanized_01_idle_animation" }
-		animation = { id = "move"			type = "ENG_mechanized_01_move_animation" }
-		animation = { id = "attack"			type = "ENG_mechanized_01_attack_animation" }
-	}
-	
-	pdxmesh = {
 		name = "generic_motorized_mesh"
 		file = "gfx/models/units/vehicles/generic_motorized_01.mesh"
 		
@@ -27,38 +18,21 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "GER_mechanized_mesh"
-		file = "gfx/models/units/vehicles/GER_mechanized_01.mesh"
+		name = "caiman_mrap_mesh"
+		file = "gfx/models/caiman_mrap.mesh"
 		
-		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
-		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
-		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+		animation = { id = "idle"			type = "generic_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "generic_motorized_01_move_animation" }
 	}
-	
+
 	pdxmesh = {
-		name = "GER_motorized_mesh"
-		file = "gfx/models/units/vehicles/GER_motorized_01.mesh"
-		
-		animation = { id = "idle"			type = "GER_motorized_01_idle_animation" }
-		animation = { id = "move"			type = "GER_motorized_01_move_animation" }
-	}
-	
-	pdxmesh = {
-		name = "SOV_mechanized_mesh"
-		file = "gfx/models/units/vehicles/SOV_mechanized_01.mesh"
+		name = "m3_bradley_mesh"
+		file = "gfx/models/m3_bradley.mesh"
 		
 		animation = { id = "idle"			type = "SOV_mechanized_01_idle_animation" }
 		animation = { id = "move"			type = "SOV_mechanized_01_move_animation" }
 	}
-	
-	pdxmesh = {
-		name = "SOV_motorized_mesh"
-		file = "gfx/models/units/vehicles/SOV_motorized_01.mesh"
-		
-		animation = { id = "idle"			type = "SOV_motorized_01_idle_animation" }
-		animation = { id = "move"			type = "SOV_motorized_01_move_animation" }
-	}
-	
+
 	pdxmesh = {
 		name = "US_mechanized_mesh"
 		file = "gfx/models/units/vehicles/US_mechanized_01.mesh"
@@ -75,31 +49,4 @@ objectTypes = {
 		animation = { id = "idle"			type = "US_motorized_01_idle_animation" }
 		animation = { id = "move"			type = "US_motorized_01_move_animation" }
 	}
-	
-	pdxmesh = {
-		name = "bicycle_frame_mesh"
-		file = "gfx/models/units/vehicles/bicycle_frame.mesh"
-		
-		animation = { id = "idle"			type = "bicycle_frame_idle_animation" }
-		animation = { id = "move"			type = "bicycle_frame_move_animation" }
-		animation = { id = "attack"			type = "bicycle_frame_attack_animation" }
-	}
-	
-	pdxmesh = {
-		name = "bicycle_vehicle_mesh"
-		file = "gfx/models/units/vehicles/bicycle_vehicle.mesh"
-		
-		animation = { id = "idle"			type = "bicycle_vehicle_idle_animation" }
-		animation = { id = "idle_2"			type = "bicycle_vehicle_idle_2_animation" }
-		animation = { id = "move"			type = "bicycle_vehicle_move_animation" }
-		animation = { id = "move_2"			type = "bicycle_vehicle_move_2_animation" }
-		animation = { id = "retreat"		type = "bicycle_vehicle_retreat_animation" }
-		animation = { id = "retreat_2"		type = "bicycle_vehicle_retreat_2_animation" }
-		
-		animation = { id = "still"			type = "bicycle_vehicle_still_animation" }
-	}
-
-
-
-	
 }
