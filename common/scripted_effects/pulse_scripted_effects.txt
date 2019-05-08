@@ -246,6 +246,14 @@ pulse = {
 			news_event = south_africa.1
 		}
 		if = {
+			limit = {
+			    original_tag = SWE
+				date > 2019.5.3
+				date < 2020.1.1
+			}
+			news_event = sweden.1
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {

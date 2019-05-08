@@ -1,0 +1,19 @@
+﻿add_namespace = sweden
+
+country_event = { #Miljöpartiet - Per Bolund
+	id = sweden.1
+	title = sweden.1.t
+	desc = sweden.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = sweden.1.a
+		create_country_leader = {
+	        name = "Per Bolund"
+	        picture = "Per_Bolund.dds"
+	        ideology = green
+        }
+	}
+}
