@@ -674,4 +674,19 @@ country_event = {
 			elections_allowed = yes
 		}
 	}
+	
+    option = {	#Monarchist
+		name = election.4.o12
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			monarchist > 0.5
+		}
+		
+		set_politics = {
+			ruling_party = monarchist
+			elections_allowed = yes
+		}
+	}
 }
