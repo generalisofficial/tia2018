@@ -42,7 +42,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Democratic Socialists
@@ -64,7 +63,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Social Democrats
@@ -86,7 +84,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Progressives
@@ -108,7 +105,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Social Liberals
@@ -130,7 +126,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Market Liberals
@@ -152,7 +147,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Conservatives
@@ -174,7 +168,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Reactionaries
@@ -196,7 +189,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Nationalists
@@ -218,7 +210,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Third Position
@@ -240,7 +231,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Islamists
@@ -262,7 +252,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
 	}
 	
 	option = {	#Absolute Monarchists
@@ -300,21 +289,6 @@ country_event = {
 		    }
 			add_timed_idea = { idea = elected_minority_government days = 180 }
 	    }
-		hidden_effect = { news_event = election.2 }
-	}
-}
-
-country_event = {
-	id = election.2
-	title = election.2.t
-	desc = election.2.d
-	picture = GFX_news_event_united_states_capitol
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = election.2.o1
 	}
 }
 
