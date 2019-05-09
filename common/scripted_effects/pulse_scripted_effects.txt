@@ -150,6 +150,13 @@ pulse = {
 		}
 		if = {
 			limit = {
+				date > 2019.4.20
+				date < 2020.1.1
+			}
+			news_event = terrorism.4
+		}
+		if = {
+			limit = {
 				original_tag = FRA
 				date > 2018.11.3
 				date < 2019.1.1

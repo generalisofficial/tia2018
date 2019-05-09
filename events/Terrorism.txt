@@ -54,3 +54,18 @@ news_event = { #Utrecht tram attack
 		name = terrorism.3.o1
 	}
 }
+
+news_event = { #Sri Lanka Easter bombings
+	id = terrorism.4
+	title = terrorism.4.t
+	desc = terrorism.4.d
+	picture = GFX_news_event_sri_lanka_bombing
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+		name = terrorism.4.o1
+	}
+}
