@@ -99,19 +99,21 @@ pulse = {
 		}
 		if = {
 			limit = {
-			    original_tag = KOR
 				date > 2018.6.13
 				date < 2019.1.1
+				NOT = { has_global_flag = fifa1 }
 			}
 			news_event = fifa_world_cup.1
+			set_global_flag = fifa1
 		}
 		if = {
 			limit = {
-			    original_tag = KOR
 				date > 2018.2.8
 				date < 2019.1.1
+				NOT = { has_global_flag = olympics1 }
 			}
 			news_event = olympic_games.1
+			set_global_flag = olympics1
 		}
 		if = {
 			limit = {
@@ -131,29 +133,37 @@ pulse = {
 			limit = {
 				date > 2018.12.13
 				date < 2019.1.1
+				NOT = { has_global_flag = terrorism1 }
 			}
 			news_event = terrorism.1
+			set_global_flag = terrorism1
 		}
 		if = {
 			limit = {
 				date > 2019.3.14
 				date < 2020.1.1
+				NOT = { has_global_flag = terrorism2 }
 			}
 			news_event = terrorism.2
+			set_global_flag = terrorism2
 		}
 		if = {
 			limit = {
 				date > 2019.3.17
 				date < 2020.1.1
+				NOT = { has_global_flag = terrorism3 }
 			}
 			news_event = terrorism.3
+			set_global_flag = terrorism3
 		}
 		if = {
 			limit = {
 				date > 2019.4.20
 				date < 2020.1.1
+				NOT = { has_global_flag = terrorism4 }
 			}
 			news_event = terrorism.4
+			set_global_flag = terrorism4
 		}
 		if = {
 			limit = {
