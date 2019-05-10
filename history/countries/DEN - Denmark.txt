@@ -110,16 +110,6 @@ add_ideas = {
     nordic_council_member
 }
 
-# Coalition
-set_country_flag = has_coalition
-set_country_flag = coalition_market_liberal
-set_country_flag = coalition_social_liberal
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = market_liberal_seats }
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
-add_to_variable = { ROOT.Coalition = conservative_seats }
-multiply_variable = { ROOT.Coalition = 100 }
-
 #Folketing
 set_variable = { communist_seats = 0 }
 set_variable = { democratic_socialist_seats = 8.8 }
@@ -134,6 +124,14 @@ set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
 
