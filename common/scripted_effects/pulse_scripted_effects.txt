@@ -94,8 +94,10 @@ pulse = {
 			    original_tag = POR
 				date > 2018.5.11
 				date < 2019.1.1
+				NOT = { has_global_flag = eurovision1 }
 			}
 			news_event = eurovision.1
+			set_global_flag = eurovision1
 		}
 		if = {
 			limit = {
@@ -119,15 +121,19 @@ pulse = {
 			limit = {
 				date > 2018.3.26
 				date < 2019.1.1
+				NOT = { has_global_flag = games1 }
 			}
 			news_event = video_games.1
+			set_global_flag = games1
 		}
 		if = {
 			limit = {
 				date > 2018.1.22
 				date < 2019.1.1
+				NOT = { has_global_flag = games2 }
 			}
 			news_event = video_games.2
+			set_global_flag = games2
 		}
 		if = {
 			limit = {
