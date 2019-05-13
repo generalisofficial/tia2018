@@ -87,19 +87,47 @@ add_ideas = {
 	commonwealth_of_nations_member
 }
 
+#House of Commons
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 3.45 }
+set_variable = { social_democrat_seats = 19.71 }
+set_variable = { social_liberal_seats = 42.66 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 32.89 }
+set_variable = { reactionary_seats = 1.29 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_country_flag = christianity
 
 set_politics = {
 	parties = {
-		conservative = { popularity = 32 }
-		market_liberal = { popularity = 8 }
-		social_liberal = { popularity = 38 }
-		social_democrat = { popularity = 13 }
-		progressive = { popularity = 2 }
-		democratic_socialist = { popularity = 7 }
+		social_liberal = { 
+		    popularity = 42.66
+		}
+		conservative = {
+		    popularity = 32.89
+		}
+		social_democrat = { 
+		    popularity = 19.71
+		}
+		progressive = { 
+		    popularity = 3.45
+		}
+		reactionary = { 
+		    popularity = 1.29
+		}
 	}
 	ruling_party = social_liberal
-	last_election = "1997.6.2"
+	last_election = "2015.10.21"
 	election_frequency = 48
 	elections_allowed = yes
 }
