@@ -173,6 +173,15 @@ pulse = {
 		}
 		if = {
 			limit = {
+				date > 2019.4.14
+				date < 2020.1.1
+				NOT = { has_global_flag = france1 }
+			}
+			news_event = france.1
+			set_global_flag = france1
+		}
+		if = {
+			limit = {
 				original_tag = FRA
 				date > 2018.11.3
 				date < 2019.1.1
