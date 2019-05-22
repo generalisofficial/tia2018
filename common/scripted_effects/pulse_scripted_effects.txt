@@ -238,6 +238,14 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    original_tag = AST
+				date > 2018.2.25
+				date < 2019.1.1
+			}
+			country_event = australia.2
+		}
+		if = {
+			limit = {
 			    original_tag = USA
 				has_government = communist
 				NOT = { has_country_flag = washington_dc_renamed_due_to_gus_hall has_country_flag = no_commie_renaming }
