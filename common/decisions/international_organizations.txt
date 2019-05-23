@@ -105,21 +105,19 @@ baltic_assembly_decisions = {
 		}
 		
 		available = {
-		    OR = {
-			    original_tag = EST
-		        NOT = { country_exists = EST }
-			    EST = { is_subject_of = ROOT }
-			}
-			OR = {
-			    original_tag = LAT
-		        NOT = { country_exists = LAT }
-			    LAT = { is_subject_of = ROOT }
-			}
-			OR = {
-			    original_tag = LIT
-		        NOT = { country_exists = LIT }
-			    LIT = { is_subject_of = ROOT }
-			}
+		    owns_state = 13
+			owns_state = 191
+			owns_state = 840
+			owns_state = 717
+			owns_state = 12
+			owns_state = 981
+			owns_state = 190
+			owns_state = 949
+			owns_state = 189
+			owns_state = 739
+			owns_state = 96
+			owns_state = 11
+			owns_state = 188
 		}
 		
 		icon = civil_support
@@ -140,24 +138,6 @@ baltic_assembly_decisions = {
 				    }
 			    }
 			    add_core_of = ROOT
-		    }
-			if = {
-			    limit = {
-		            EST = { is_subject_of = ROOT }
-			    }
-			    annex_country = { target = EST transfer_troops = yes }
-		    }
-			if = {
-			    limit = {
-		            LAT = { is_subject_of = ROOT }
-			    }
-			    annex_country = { target = LAT transfer_troops = yes }
-		    }
-			if = {
-			    limit = {
-		            LIT = { is_subject_of = ROOT }
-			    }
-			    annex_country = { target = LIT transfer_troops = yes }
 		    }
 			every_country = {
 			    limit = {
