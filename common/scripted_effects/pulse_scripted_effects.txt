@@ -94,91 +94,59 @@ pulse = {
 			    original_tag = POR
 				date > 2018.5.11
 				date < 2019.1.1
-				NOT = { has_global_flag = eurovision1 }
 			}
 			news_event = eurovision.1
-			set_global_flag = eurovision1
 		}
 		if = {
 			limit = {
+			    original_tag = KOR
 				date > 2018.6.13
 				date < 2019.1.1
-				NOT = { has_global_flag = fifa1 }
 			}
 			news_event = fifa_world_cup.1
-			set_global_flag = fifa1
 		}
 		if = {
 			limit = {
+			    original_tag = KOR
 				date > 2018.2.8
 				date < 2019.1.1
-				NOT = { has_global_flag = olympics1 }
 			}
 			news_event = olympic_games.1
-			set_global_flag = olympics1
 		}
 		if = {
 			limit = {
 				date > 2018.3.26
 				date < 2019.1.1
-				NOT = { has_global_flag = games1 }
 			}
 			news_event = video_games.1
-			set_global_flag = games1
 		}
 		if = {
 			limit = {
 				date > 2018.1.22
 				date < 2019.1.1
-				NOT = { has_global_flag = games2 }
 			}
 			news_event = video_games.2
-			set_global_flag = games2
 		}
 		if = {
 			limit = {
 				date > 2018.12.13
 				date < 2019.1.1
-				NOT = { has_global_flag = terrorism1 }
 			}
 			news_event = terrorism.1
-			set_global_flag = terrorism1
 		}
 		if = {
 			limit = {
 				date > 2019.3.14
 				date < 2020.1.1
-				NOT = { has_global_flag = terrorism2 }
 			}
 			news_event = terrorism.2
-			set_global_flag = terrorism2
 		}
 		if = {
 			limit = {
 				date > 2019.3.17
 				date < 2020.1.1
-				NOT = { has_global_flag = terrorism3 }
 			}
 			news_event = terrorism.3
-			set_global_flag = terrorism3
-		}
-		if = {
-			limit = {
-				date > 2019.4.20
-				date < 2020.1.1
-				NOT = { has_global_flag = terrorism4 }
-			}
-			news_event = terrorism.4
-			set_global_flag = terrorism4
-		}
-		if = {
-			limit = {
-				date > 2019.4.14
-				date < 2020.1.1
-				NOT = { has_global_flag = france1 }
-			}
-			news_event = france.1
-			set_global_flag = france1
 		}
 		if = {
 			limit = {
@@ -230,22 +198,6 @@ pulse = {
 		}
 		if = {
 			limit = {
-			    original_tag = AST
-				date > 2018.6.7
-				date < 2019.1.1
-			}
-			country_event = australia.1
-		}
-		if = {
-			limit = {
-			    original_tag = AST
-				date > 2018.2.25
-				date < 2019.1.1
-			}
-			country_event = australia.2
-		}
-		if = {
-			limit = {
 			    original_tag = USA
 				has_government = communist
 				NOT = { has_country_flag = washington_dc_renamed_due_to_gus_hall has_country_flag = no_commie_renaming }
@@ -260,14 +212,6 @@ pulse = {
 				NOT = { has_government = communist }
 			}
 			country_event = usa.70
-		}
-		if = {
-			limit = {
-                original_tag = ARM
-				date > 2019.4.16
-				date < 2020.1.1
-			}
-			country_event = armenia.1
 		}
 		if = {
 			limit = {

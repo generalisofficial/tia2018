@@ -83,46 +83,88 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		conservative = {
-			popularity = 37.42
+		nationalist = {
+			popularity = 25
 		}
-		market_liberal = {
-		    popularity = 29.42
+		reactionary = {
+		    popularity = 17
 		}
 		social_democrat = {
-		    popularity = 17.06
+		    popularity = 56
 		}
-		democratic_socialist = {
-			popularity = 16.10
+		progressive = {
+			popularity = 3
 		}
 	}
 	
-	ruling_party = market_liberal
-	last_election = "2014.10.1"
+	ruling_party = social_democrat
+	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "François Legault"
-	picture = "Francois_Legault.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Philippe Couillard"
-	picture = "Philippe_Couillard.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Jean-François Lisée"
-	picture = "Jean_Francois_Lisee.dds"
+	name = "Gilles Duceppe"
 	ideology = social_democrat_ideology
+	picture = "Gilles_Duceppe.dds"
 }
 
 create_country_leader = {
-	name = "Manon Massé"
-	picture = "Manon_Masse.dds"
+	name = "Jean Charest"
+	ideology = social_liberal_ideology
+	picture = "Jean_Charest.dds"
+}
+
+create_country_leader = {
+	name = "Jean Charest"
+	ideology = social_liberal_ideology
+	picture = "Jean_Charest.dds"
+}
+
+create_country_leader = {
+	name = "François Legault"
+	ideology = liberal_conservative
+	picture = "Francois_Legault.dds"
+}
+
+create_country_leader = {
+	name = "Pierre-Paul St-Onge"
 	ideology = democratic_socialist_ideology
+	picture = "Pierre_Paul_St_Onge.dds"
+}
+
+create_country_leader = {
+	name = "Paul Biron"
+	ideology = reactionary_ideology 
+	picture = "Paul_Biron.dds"
+}
+
+create_country_leader = {
+	name = "Pierre Fontaine"
+	ideology = marxist_leninist
+	picture = "Pierre_Fontaine.dds"
+}
+
+create_country_leader = {
+	name = "Ugo Menard"
+	ideology = nationalist_ideology 
+	picture = "Ugo_Menard.dds"
+}
+
+2015.1.1 = {
+	create_country_leader = {
+		name = "Martine Ouellet"
+		picture = "Martine_Ouellet.dds"
+		ideology = social_democrat_ideology
+    }
+	create_country_leader = {
+		name = "Philippe Couillard"
+		picture = "Philippe_Couillard.dds"
+		ideology = social_liberal_ideology
+    }
+	create_country_leader = {
+		name = "Alex Tyrrell"
+		picture = "Alex_Tyrrell.dds"
+		ideology = green
+    }
 }

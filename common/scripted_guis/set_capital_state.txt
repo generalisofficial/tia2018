@@ -7,6 +7,7 @@ scripted_gui = {
 		
 		visible = {
 			is_owned_by = ROOT
+			is_capital = no
 		}
 
 	    effects = {
@@ -23,7 +24,6 @@ scripted_gui = {
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
 				is_core_of = ROOT
-				is_capital = no
 				ROOT = { has_political_power > 500 }
             }
 		}

@@ -94,7 +94,13 @@ add_ideas = {
 	the_euro
 }
 
-set_country_flag = christianity
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+multiply_variable = { ROOT.Coalition = 100 }
 
 #Bundestag
 set_variable = { communist_seats = 0 }
@@ -109,13 +115,6 @@ set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
-
-# Coalition
-set_country_flag = has_coalition
-set_country_flag = coalition_conservative
-set_country_flag = coalition_social_democrat
-add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 add_opinion_modifier = { target = FRA modifier = franco_german_friendship }
 add_opinion_modifier = { target = HOL modifier = german_dutch_military_cooperation }

@@ -87,7 +87,13 @@ add_ideas = {
     nordic_council_member
 }
 
-set_country_flag = christianity
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+multiply_variable = { ROOT.Coalition = 100 }
 
 #Storting
 set_variable = { communist_seats = 2.4 }
@@ -102,13 +108,6 @@ set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
-
-# Coalition
-set_country_flag = has_coalition
-set_country_flag = coalition_conservative
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {
 	parties = {
