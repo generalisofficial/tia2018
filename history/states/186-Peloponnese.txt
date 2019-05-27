@@ -2,28 +2,39 @@
 state={
 	id=186
 	name="STATE_186"
-	manpower=945000
-	
-	state_category = state_level_7
-	
-	resources = {
-		oil = 1
+	resources={
+		oil=1.000
 	}
 
 	history={
 		owner = GRE
 		add_core_of = GRE
+		victory_points = {
+			4078 3
+		}
+		victory_points = {
+			11965 2
+		}
+		victory_points = {
+			4178 1
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 2
 			industrial_complex = 1
-			11965 = { naval_base = 1 }
-			4193 = { naval_base = 2 }
+			11965 = {
+				naval_base = 1
+
+			}
+
 		}
 
 	}
 
 	provinces={
-		1173 4078 4178 4193 7096 7211 11965 
+		4078 4178 7096 7211 11965 
 	}
+	manpower=577903
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

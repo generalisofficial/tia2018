@@ -2,23 +2,34 @@
 state={
 	id=187
 	name="STATE_187"
-	manpower = 322600
-	
-	state_category = state_level_2
 
 	history={
 		owner = GRE
 		add_core_of = GRE
 		set_demilitarized_zone = yes
+		victory_points = {
+			8435 1
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 1
-			8435 = { naval_base = 1 }
-			6550 = { naval_base = 1 }
+			8435 = {
+				naval_base = 1
+
+			}
+			6550 = {
+				naval_base = 1
+
+			}
+
 		}
+
 	}
 
 	provinces={
-		3401 6550 8435 
+		3988 6550 8435 
 	}
+	manpower=199231
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }
