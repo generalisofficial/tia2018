@@ -287,14 +287,10 @@ country_event = {
 	}
 	desc = {
 		text = european_union.10.d4
-		trigger = { has_government = reactionary }
-	}
-	desc = {
-		text = european_union.10.d5
 		trigger = { has_government = communist }
 	}
 	desc = {
-		text = european_union.10.d6
+		text = european_union.10.d5
 		trigger = { has_government = islamist }
 	}
 	picture = GFX_report_event_european_union
@@ -305,7 +301,6 @@ country_event = {
 			has_government = fascist
 			has_government = nationalist
 			has_government = monarchist
-			has_government = reactionary
 			has_government = communist
 			has_government = islamist
 		}
@@ -330,19 +325,6 @@ country_event = {
 			factor = 25
 		}
 	}
-	
-	option = {
-		name = european_union.10.o2
-		trigger = {
-			has_government = reactionary
-		}
-		
-		add_political_power = -25
-		
-		ai_chance = {
-			factor = 100
-		}
-	}	
 }
 
 #Apply the EU relationships Event
