@@ -1,41 +1,47 @@
 USA_house = {
-	USA_republican_house = {
+	USA_impeach_democratic_president = {
 		
         available = {
-            always = no
+            republican_majority = yes
+			has_government = social_liberal
+			has_stability < 0.25
         }
 		
         visible = { 
 		    original_tag = USA
-            republican_majority = yes
-			democratic_majority = no
+			has_government = social_liberal
         }
 		
-		cost = 0
+		cost = 100
         fire_only_once = no
 		
+		days_re_enable = 360
+		
 		complete_effect = {
-	        set_country_flag = oof
+	        country_event = usa.1
         }
     }
 
-	USA_democrat_house = {
+	USA_impeach_republican_president = {
 		
         available = {
-            always = no
+            democratic_majority = yes
+			has_government = conservative
+			has_stability < 0.25
         }
 		
         visible = { 
 		    original_tag = USA
-            democratic_majority = yes
-			republican_majority = no
+			has_government = conservative
         }
 		
-		cost = 0
+		cost = 100
         fire_only_once = no
 		
+		days_re_enable = 360
+		
 		complete_effect = {
-	        set_country_flag = oof
+	        country_event = usa.1
         }
-    }	
+    }
 }

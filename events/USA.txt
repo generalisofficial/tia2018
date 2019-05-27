@@ -1,5 +1,32 @@
 ﻿add_namespace = usa
 
+#President Impeached
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	
+	is_triggered_only =  yes
+	fire_only_once = no
+	
+	option = {
+		name = usa.1.o1
+		if = {
+			limit = {
+			    has_country_leader = { name = "Donald Trump" ruling_only = yes } 
+			}
+			create_country_leader = {
+	            name = "Mike Pence"
+	            picture = "Mike_Pence.dds"
+	            ideology = national_conservative
+            }
+			else = {
+			    retire_country_leader = yes
+			}
+		}
+	}
+}
+
 #Third Party Gains
 country_event = {
 	id = usa.18

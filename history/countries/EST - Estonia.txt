@@ -80,6 +80,8 @@ set_technology = {
 	excavation1 = 1
 }
 
+set_country_flag = christianity
+
 add_ideas = {
 	population_growth_decline
 	idea_eu_member
@@ -94,16 +96,6 @@ add_ideas = {
 	juri_luik
 }
 
-# Coalition
-set_country_flag = has_coalition
-set_country_flag = coalition_social_liberal
-set_country_flag = coalition_social_democrat
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
-add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = conservative_seats }
-multiply_variable = { ROOT.Coalition = 100 }
-
 #Riigikogu
 set_variable = { communist_seats = 0 }
 set_variable = { democratic_socialist_seats = 0 }
@@ -117,6 +109,15 @@ set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
 
