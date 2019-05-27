@@ -91,34 +91,82 @@ add_opinion_modifier = { target = AZR modifier = rival }
 give_guarantee = NGK
 give_military_access = NGK
 
+set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 6.58 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 7.78 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 27.35 }
+set_variable = { reactionary_seats = 58.29 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {
 	parties = {
-		conservative = { popularity = 58.64 }
-		market_liberal = { popularity = 41.36 }
+		social_liberal = { 
+		    popularity = 56.79
+		}
+		conservative = { 
+		    popularity = 8.26
+		}
+		market_liberal = { 
+		    popularity = 6.37
+		}
+		reactionary = { 
+		    popularity = 24.70
+		}
+		democratic_socialist = { 
+		    popularity = 3.88
+		}
 	}
 	
-	ruling_party = conservative
-	last_election = "2013.3.2"
+	ruling_party = reactionary
+	last_election = "2013.12.9"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Serzh Sargsyan"
-	picture = "Serzh_Sargsyan.dds"
-	ideology = national_conservative
+	name = "Karen Karapetyan"
+	picture = "Karen_Karapetyan.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Armen Sarkissian"
-	picture = "Armen_Sarkissian.dds"
-	ideology = independent
+	name = "Gagik Tsarukyan"
+	picture = "Gagik_Tsarukyan.dds"
+	ideology = social_conservative
 }
 
 create_country_leader = {
-	name = "Raffi Hovannisian"
-	picture = "Raffi_Hovannisian.dds"
+	name = "Nikol Pashinyan"
+	picture = "Nikol_Pashinyan.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Edmon Marukyan"
+	picture = "Edmon_Marukyan.dds"
 	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Armen Rustamyan"
+	picture = "Armen_Rustamyan.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_field_marshal = {

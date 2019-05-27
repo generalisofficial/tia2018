@@ -1,0 +1,108 @@
+socotra_crisis = {
+	
+	seize_socotra = {
+	
+		visible = {
+			original_tag = UAE
+			YEM = { owns_state = 922 has_war_with = HOU }
+		}
+		
+		available = {
+			YEM = { controls_state = 922 has_war_with = HOU }
+		}
+		
+		complete_effect = {
+		    transfer_state = 922
+			add_named_threat = { threat = 3 name = "Seized Socotra" }
+			add_ideas = socotra_occupation
+            news_event = socotra.1			
+		}
+		
+		icon = socotra
+		
+		cost = 10
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 200
+				date > 2018.4.29
+			}
+		}
+	}
+	
+    withdraw_from_socotra = {
+	
+		visible = {
+			original_tag = UAE
+			owns_state = 922
+			NOT = { has_country_flag = annexed_socotra }
+		}
+		
+		available = {
+			country_exists = YEM 
+			owns_state = 922
+		}
+		
+		complete_effect = {
+		    YEM = { transfer_state = 922 }
+			add_political_power = 20
+			remove_ideas = socotra_occupation
+            news_event = socotra.2	
+		}
+		
+		icon = socotra
+		
+		cost = 0
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 200
+				date > 2018.5.13
+			}
+		}
+	}
+	
+	annex_socotra = {
+	
+		visible = {
+			original_tag = UAE
+			owns_state = 922
+			has_idea = socotra_occupation
+		}
+		
+		available = {
+			owns_state = 922
+		}
+		
+		fire_only_once = yes
+		
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+		    922 = { add_core_of = ROOT }
+			add_named_threat = { threat = 10 name = "Annexed Socotra" }
+			remove_ideas = socotra_occupation
+            news_event = socotra.3
+			YEM = { add_opinion_modifier = { target = ROOT modifier = rival } }
+			HOU = { add_opinion_modifier = { target = ROOT modifier = rival } }
+		}
+		
+		icon = socotra
+		
+		cost = 25
+		days_remove = 60
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
