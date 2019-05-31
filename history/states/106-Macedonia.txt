@@ -2,11 +2,10 @@
 state={
 	id=106
 	name="STATE_106"
-	
-	resources = {
-		steel = 1
+	resources={
+		steel=1.000
 	}
-	
+
 	history={
 		owner = MAC
 		add_core_of = MAC
@@ -15,15 +14,21 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 2
+
 		}
-		victory_points = { 3882 5 }
-		victory_points = { 974 2 }
+		victory_points = {
+			3882 5 
+		}
+		victory_points = {
+			974 2 
+		}
+
 	}
 
 	provinces={
-		833 867 907 974 3833 3865 3882 6886 11856 
+		907 974 3833 3865 3882 6886 11856 
 	}
-	manpower=2103721
+	manpower=1883656
 	buildings_max_level_factor=1.000
-	state_category = state_level_8
+	state_category=state_level_7
 }

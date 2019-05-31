@@ -1,14 +1,7 @@
 
 state={
 	id=47
-	name="STATE_47" # Thessaly
-	manpower=5612500
-	resources={
-		aluminium=3
-		steel=2
-	}
-	
-	state_category = state_level_10
+	name="STATE_47"
 
 	history={
 		owner = GRE
@@ -18,15 +11,23 @@ state={
 		buildings = {
 			infrastructure = 6
 			air_base = 3
-			industrial_complex = 3
-			arms_factory = 2
+			industrial_complex = 1
+			arms_factory = 1
 			dockyard = 1
-			4109 = { naval_base = 9 }
+			4109 = {
+				naval_base = 9
+
+			}
+
 		}
 		add_core_of = GRE
+
 	}
 
 	provinces={
-		863 976 1109 3864 3973 3988 4109 6930 7127 
+		4109 
 	}
+	manpower=3828434
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
 }

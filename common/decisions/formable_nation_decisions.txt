@@ -9,7 +9,6 @@ formable_nation_decisions = {
 		}
 		
 		available = {
-			owns_state = 901
 			owns_state = 487
 			owns_state = 302
 			owns_state = 688
@@ -35,6 +34,163 @@ formable_nation_decisions = {
 			    add_core_of = ROOT
 		    }
 			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	form_yugoslavia = {
+		visible = {
+		    OR = {
+			    original_tag = SER
+				original_tag = CRO
+				original_tag = KOS
+				original_tag = BOS
+				original_tag = SLV
+				original_tag = MAC
+				original_tag = MNT
+			}
+		}
+		
+		available = {
+			owns_state = 45
+			owns_state = 107
+			owns_state = 108
+			owns_state = 927
+			owns_state = 785
+			owns_state = 1012
+			owns_state = 1013
+			owns_state = 106
+			owns_state = 1014
+			owns_state = 105
+			owns_state = 104
+			owns_state = 848
+			owns_state = 103
+			owns_state = 109
+			owns_state = 736
+			owns_state = 163
+			owns_state = 102
+		}
+		
+		icon = civil_support
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = YUG
+			every_state = {
+			    limit = {
+				    OR = {
+				         is_core_of = SER
+				         is_core_of = CRO
+						 is_core_of = KOS
+						 is_core_of = BOS
+						 is_core_of = SLV
+						 is_core_of = MAC
+						 is_core_of = MNT
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	form_soviet_union = {
+		visible = {
+		    OR = {
+			    original_tag = SOV
+				original_tag = UKR
+				original_tag = BLR
+				original_tag = MOL
+				original_tag = TRA
+				original_tag = LAT
+				original_tag = LIT
+				original_tag = EST
+				original_tag = GEO
+				original_tag = ARM
+				original_tag = AZR
+				original_tag = NGK
+				original_tag = ABK
+				original_tag = SOS
+				original_tag = KAZ
+				original_tag = UZB
+				original_tag = TMS
+				original_tag = TAJ
+				original_tag = KYR
+			}
+		}
+		
+		available = {
+		    has_government = communist
+			all_state = {
+                limit = {
+				    OR = {
+                        is_core_of = SOV
+						is_core_of = UKR
+						is_core_of = BLR
+						is_core_of = MOL
+						is_core_of = TRA
+						is_core_of = LAT
+						is_core_of = LIT
+						is_core_of = EST
+						is_core_of = GEO
+						is_core_of = ARM
+						is_core_of = AZR
+						is_core_of = NGK
+						is_core_of = ABK
+						is_core_of = SOS
+						is_core_of = KAZ
+						is_core_of = UZB
+						is_core_of = TMS
+						is_core_of = TAJ
+						is_core_of = KYR
+					}
+                }
+                is_owned_by = ROOT
+            }
+		}
+		
+		icon = civil_support
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = SOV_UNION
+			all_state = {
+                limit = {
+				    OR = {
+                        is_core_of = SOV
+						is_core_of = UKR
+						is_core_of = BLR
+						is_core_of = MOL
+						is_core_of = TRA
+						is_core_of = LAT
+						is_core_of = LIT
+						is_core_of = EST
+						is_core_of = GEO
+						is_core_of = ARM
+						is_core_of = AZR
+						is_core_of = NGK
+						is_core_of = ABK
+						is_core_of = SOS
+						is_core_of = KAZ
+						is_core_of = UZB
+						is_core_of = TMS
+						is_core_of = TAJ
+						is_core_of = KYR
+					}
+                }
+                add_core_of = ROOT
+            }
 		}
 		
 		ai_will_do = {

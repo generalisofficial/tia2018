@@ -2,14 +2,10 @@
 state={
 	id=44
 	name="STATE_44"
-	manpower = 2200138
-	
-	state_category = state_level_7
-	
-	resources = {
-		steel = 1
+	resources={
+		steel=1.000
 	}
-	
+
 	history={
 		owner = ALB
 		add_core_of = ALB
@@ -23,11 +19,17 @@ state={
 			air_base = 3
 			9914 = {
 				naval_base = 4
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		3884 3896 9780 9875 9914 11762 
+		3884 3896 9780 9875 9914 11762 11767 
 	}
+	manpower=2200138
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
