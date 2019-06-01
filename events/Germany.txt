@@ -1,45 +1,37 @@
 ﻿add_namespace = germany
 
-#The CDU on its own
-news_event = {
+country_event = { #Die Grunen - Annalena Baerbock
 	id = germany.1
 	title = germany.1.t
 	desc = germany.1.d
-	picture = GFX_news_event_CDU
 	
+	is_triggered_only = yes
 	fire_only_once = yes
 	
-	trigger = {
-		original_tag = GER
-		NOT = { has_country_flag = CDU_on_its_own }
-		has_war = no
-		OR = {
-			AND = {		#Bavaria exists and not a puppet or a puppet of Germany.
-				country_exists = BAV
-				OR = {
-					BAV = { is_puppet = no }
-					BAV = { is_puppet_of = GER }
-				}
-			}
-			AND = {		#Germany does not own any of Bavaria's states.
-				NOT = { 52 = { is_owned_by = GER } }	#Upper Bavaria
-				NOT = { 53 = { is_owned_by = GER } }	#Lower Bavaria
-				NOT = { 54 = { is_owned_by = GER } }	#Franconia
-			}
-		}
+	option = {
+		name = germany.1.a
+		create_country_leader = {
+	        name = "Annalena Baerbock"
+	        picture = "Annalena_Baerbock.dds"
+	        ideology = green
+        }
 	}
+}
+
+country_event = { #SPD - Andrea Nahles
+	id = germany.2
+	title = germany.2.t
+	desc = germany.2.d
 	
-	mean_time_to_happen = {
-		days = 15
-	}
+	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = {
-		name = germany.1.o1
-		set_country_flag = CDU_on_its_own
-		set_party_name = {
-			ideology = conservative
-			long_name = GER_conservative_party_CDU_long
-			name = GER_conservative_party_CDU
-		}
+		name = germany.2.a
+		create_country_leader = {
+	        name = "Andrea Nahles"
+	        picture = "Andrea_Nahles.dds"
+	        ideology = social_democrat_ideology
+        }
 	}
 }

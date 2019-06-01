@@ -196,6 +196,22 @@ pulse = {
 			}
 			country_event = slovakia.1
 		}
+	    if = {
+			limit = {
+			    original_tag = GER
+				date > 2018.1.26
+				date < 2019.1.1
+			}
+			country_event = germany.1
+		}
+	    if = {
+			limit = {
+			    original_tag = GER
+				date > 2018.4.20
+				date < 2019.1.1
+			}
+			country_event = germany.2
+		}
 		if = {
 			limit = {
 			    original_tag = NZL
