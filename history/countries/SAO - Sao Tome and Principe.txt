@@ -89,27 +89,36 @@ set_politics = {
 
 	parties = {
 		market_liberal = {
-			popularity = 100
+			popularity = 41.81
 		}
-		reactionary = {
-			popularity = 0
+		democratic_socialist = {
+			popularity = 40.32
+		}
+		conservative = {
+			popularity = 19.27
 		}
 	}
 	
 	ruling_party = market_liberal
-	last_election = "2016.7.17"
-	election_frequency = 60
+	last_election = "2014.10.7"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Evaristo Carvalho"
-	picture = "Evaristo_Carvalho.dds"
+	name = "Patrice Trovoada"
+	picture = "Patrice_Trovoada.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Manuel Pinto da Costa"
-	picture = "Manuel_Pinto_da_Costa.dds"
-	ideology = independent
+	name = "Jorge Bom Jesus"
+	picture = "Jorge_Bom_Jesus.dds"
+	ideology = african_socialist
+}
+
+create_country_leader = {
+	name = "Leonel Mário d'Alva"
+	picture = "Leonel_Mario_d_Alva.dds"
+	ideology = liberal_conservative
 }
