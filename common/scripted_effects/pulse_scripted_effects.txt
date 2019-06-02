@@ -91,6 +91,21 @@ pulse = {
 		}
 		if = {
 			limit = {
+				check_variable = {
+                    var = ROOT.Coalition
+                    value = 50
+                    compare = less_than
+                }
+				check_variable = {
+                    var = ROOT.Coalition
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+			}
+			add_ideas = minority_government
+		}
+		if = {
+			limit = {
 			    original_tag = POR
 				date > 2018.5.11
 				date < 2019.1.1

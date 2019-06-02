@@ -92,6 +92,29 @@ add_ideas = {
 
 set_country_flag = christianity
 
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 6.27 }
+set_variable = { social_democrat_seats = 36.89 }
+set_variable = { social_liberal_seats = 1.18 }
+set_variable = { market_liberal_seats = 4.01 }
+set_variable = { conservative_seats = 44.45 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 7.20 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_nationalist
+set_country_flag = coalition_progressive
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = nationalist_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
+
 set_politics = {
 
 	parties = {

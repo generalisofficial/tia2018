@@ -83,18 +83,37 @@ set_technology = {
 set_politics = {
 
 	parties = {
-	    conservative = {
-		    popularity = 55
+	    nationalist = {
+		    popularity = 50.10
 		}
-		democratic_socialist = {
-		    popularity = 38
+		social_democrat = {
+		    popularity = 22.70
 		}
-		progressive = {
-		    popularity = 7
+		fascist = {
+		    popularity = 27.2
 		}
 	}
-	ruling_party = conservative
-	last_election = "2000.1.1"
+	
+	ruling_party = nationalist
+	last_election = "2015.5.31"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Luca Zaia"
+	picture = "Luca_Zaia.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Alessandra Moretti"
+	picture = "Alessandra_Moretti.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Jacopo Berti"
+	picture = "Jacopo_Berti.dds"
+	ideology = syncretic
 }

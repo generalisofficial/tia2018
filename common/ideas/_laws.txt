@@ -1068,14 +1068,15 @@ ideas = {
 			}
 		}
 		
-		elected_minority_government = {
+		minority_government = {
 			picture = disjointed_government
 		
 			allowed = { always = no }
 			removal_cost = -1
 			
 			modifier = {
-			    stability_factor = -0.25
+			    political_power_gain = -0.3
+				stability_factor = -0.1
 			}
 		}
 	}   
