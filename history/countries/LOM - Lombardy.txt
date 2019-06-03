@@ -82,52 +82,37 @@ set_technology = {
 set_politics = {
 
 	parties = {
-	    conservative = {
-		    popularity = 62
+	    nationalist = {
+		    popularity = 49.7
 		}
-		democratic_socialist = {
-		    popularity = 32
+		social_democrat = {
+		    popularity = 29.1
 		}
-		progressive = {
-		    popularity = 4
-		}
-		communist = {
-		    popularity = 2
+		fascist = {
+		    popularity = 21.2
 		}
 	}
-	ruling_party = conservative
-	last_election = "2000.1.1"
+	
+	ruling_party = nationalist
+	last_election = "2013.3.4"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
+create_country_leader = {
+	name = "Roberto Maroni"
+	picture = "Roberto_Maroni.dds"
+	ideology = nationalist_ideology
+}
 
-2015.1.1 = {
+create_country_leader = {
+	name = "Giorgio Gori"
+	picture = "Giorgio_Gori.dds"
+	ideology = social_democrat_ideology
+}
 
-    set_politics = {
-
-	    parties = {
-		    communist = {
-			    popularity = 1
-		    }
-	    	conservative = {
-		    	popularity = 42
-		    }
-		    democratic_socialist = {
-		        popularity = 38
-		    }
-			nationalist = {
-			    popularity = 2
-			}
-			reactionary = {
-			    popularity = 13
-			}
-			progressive = {
-			    popularity = 4
-			}
-	    }    
-	    ruling_party = conservative
-	    last_election = "2013.1.1"
-	    election_frequency = 60
-	    elections_allowed = yes
-	}
+create_country_leader = {
+	name = "Dario Violi"
+	picture = "Dario_Violi.dds"
+	ideology = syncretic
+}
