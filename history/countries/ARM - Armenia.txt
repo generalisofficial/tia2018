@@ -114,29 +114,19 @@ set_country_flag = coalition_democratic_socialist
 add_to_variable = { ROOT.Coalition = reactionary_seats }
 add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
-set_politics = {
-	parties = {
-		social_liberal = { 
-		    popularity = 56.79
-		}
-		conservative = { 
-		    popularity = 8.26
-		}
-		market_liberal = { 
-		    popularity = 6.37
-		}
-		reactionary = { 
-		    popularity = 24.70
-		}
-		democratic_socialist = { 
-		    popularity = 3.88
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2013.12.9"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_liberal = 56.79
+    conservative = 8.26
+    market_liberal = 6.37
+    reactionary = 24.70
+    democratic_socialist = 3.88
 }
 
 create_country_leader = {

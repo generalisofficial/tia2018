@@ -87,21 +87,16 @@ add_ideas = {
 	lgbt_illegal
 }
 
-set_politics = {
-
-	parties = {
-		market_liberal = {
-			popularity = 65.80
-		}
-		social_liberal = {
-			popularity = 34.20
-		}
-	}
-	
+set_politics = {	
 	ruling_party = market_liberal
 	last_election = "1981.1.1"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    market_liberal = 65.80
+    social_liberal = 34.20
 }
 
 create_country_leader = {

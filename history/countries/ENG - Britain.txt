@@ -103,24 +103,17 @@ give_guarantee = AST
 give_guarantee = MAL
 give_guarantee = FRA
 
-set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 42.4
-		}
-		social_democrat = {
-			popularity = 40.0
-		}
-		social_liberal = {
-			popularity = 17.6
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2017.5.5"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 42.4
+    social_democrat = 40.0
+    social_liberal = 17.6
 }
 
 add_opinion_modifier = {

@@ -91,36 +91,21 @@ add_ideas = {
 	mostly_nationalized
 }
 	
-set_politics = {
-
-	parties = { 
-		nationalist = {
-		    popularity = 0
-		}
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 0
-		}
-		islamist = {
-			popularity = 0
-		}
-		democratic_socialist = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2016.3.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 0
+    reactionary = 0
+    conservative = 0
+    social_liberal = 0
+    communist = 0
+    islamist = 0
+    democratic_socialist = 100
 }
 
 create_country_leader = { 

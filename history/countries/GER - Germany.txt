@@ -120,33 +120,20 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_opinion_modifier = { target = FRA modifier = franco_german_friendship }
 add_opinion_modifier = { target = HOL modifier = german_dutch_military_cooperation }
 
-set_politics = {
-
-	parties = {
-		conservative = { 
-		    popularity = 38.1
-		}
-		social_democrat = { 
-		    popularity = 20.5
-		}
-		reactionary = { 
-		    popularity = 12.6
-		}
-		market_liberal = { 
-		    popularity = 10.7
-		}
-		democratic_socialist = { 
-		    popularity = 9.2
-		}
-		progressive = { 
-		    popularity = 8.9
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2017.10.24"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 38.1
+    social_democrat = 20.5
+    reactionary = 12.6
+    market_liberal = 10.7
+    democratic_socialist = 9.2
+    progressive = 8.9
 }
 
 create_country_leader = {

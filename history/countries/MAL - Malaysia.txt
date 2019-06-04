@@ -98,33 +98,20 @@ give_guarantee = AST
 give_guarantee = ENG
 
 set_politics = {
-	parties = {
-		islamist = {
-		    popularity = 8.11
-		}
-		nationalist = {
-		    popularity = 5.86
-		}
-		reactionary = {
-		    popularity = 24.32
-		}
-		conservative = {
-		    popularity = 15.32
-		}
-		social_liberal = {
-		    popularity = 4.95
-		}
-		social_democrat = {
-		    popularity = 18.92
-		}
-		progressive = {
-		    popularity = 22.52
-		}
-	}
 	ruling_party = reactionary
 	last_election = "2013.5.9"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 8.11
+    nationalist = 5.86
+    reactionary = 24.32
+    conservative = 15.32
+    social_liberal = 4.95
+    social_democrat = 18.92
+    progressive = 22.52
 }
 
 create_country_leader = {

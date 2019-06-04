@@ -98,36 +98,21 @@ add_opinion_modifier = {
 	modifier = death_to_israel
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 27.88
-		}
-		monarchist = {
-			popularity = 34.32
-		}
-		market_liberal = {
-			popularity = 9.37
-		}
-		conservative = {
-			popularity = 10.68
-		}
-		social_liberal = {
-			popularity = 6.84
-		}
-		social_democrat = {
-			popularity = 6.19
-		}
-		democratic_socialist = {
-			popularity = 4.72
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2016.10.7"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 27.88
+    monarchist = 34.32
+    market_liberal = 9.37
+    conservative = 10.68
+    social_liberal = 6.84
+    social_democrat = 6.19
+    democratic_socialist = 4.72
 }
 
 create_country_leader = {

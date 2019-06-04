@@ -91,33 +91,20 @@ add_ideas = {
 	population_growth_steady
 }
 
-set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 31.5
-		}
-		market_liberal = {
-			popularity = 29.8
-		}
-		democratic_socialist = {
-			popularity = 16.8
-		}
-		social_democrat = {
-			popularity = 10.6
-		}
-		progressive = {
-			popularity = 7.1
-		}
-		reactionary = {
-			popularity = 4.2
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2016.4.12"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 31.5
+    market_liberal = 29.8
+    democratic_socialist = 16.8
+    social_democrat = 10.6
+    progressive = 7.1
+    reactionary = 4.2
 }
 
 create_country_leader = {

@@ -111,21 +111,16 @@ add_opinion_modifier = {
 	modifier = embargo
 }
 
-set_politics = {
-
-	parties = {
-		democratic_socialist = { 
-		    popularity = 91.41
-		}
-		reactionary = { 
-		    popularity = 8.59
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2015.5.24"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic_socialist = 91.41
+    reactionary = 8.59
 }
 
 create_country_leader = {

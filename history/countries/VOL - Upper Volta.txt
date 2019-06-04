@@ -88,21 +88,16 @@ add_ideas = {
 	non_aligned_movement_member
 }
 
-set_politics = {
-
-	parties = {
-		social_democrat = {
-			popularity = 53.49
-		}
-		social_liberal = {
-			popularity = 46.51
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_democrat
 	last_election = "2015.11.29"
 	election_frequency = 60
 	elections_allowed = no
+}
+
+set_popularities = {
+    social_democrat = 53.49
+    social_liberal = 46.51
 }
 
 create_country_leader = {

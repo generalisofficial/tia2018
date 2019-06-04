@@ -93,42 +93,23 @@ set_country_flag = buddhism
 
 add_opinion_modifier = { target = PRK modifier = rival }
 
-set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 0
-		}
-		reactionary = {
-			popularity = 12.51
-		}
-		conservative = {
-			popularity = 44.59
-		}
-		social_democrat = {
-			popularity = 1.69
-		}
-		social_liberal = {
-			popularity = 27.24
-		}
-		market_liberal = {
-			popularity = 0
-		}
-		progressive = {
-			popularity = 6.07
-		}
-		democratic_socialist = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 7.90
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2017.10.22"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 0
+    reactionary = 12.51
+    conservative = 44.59
+    social_democrat = 1.69
+    social_liberal = 27.24
+    market_liberal = 0
+    progressive = 6.07
+    democratic_socialist = 0
+    communist = 7.90
 }
 	
 create_country_leader = {

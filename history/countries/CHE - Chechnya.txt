@@ -80,27 +80,18 @@ set_technology = {
 	excavation1 = 1
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-		    popularity = 97.94
-		}
-		conservative = {
-		    popularity = 0.84
-		}
-		social_democrat = {
-		    popularity = 0.53
-		}
-		communist = {
-		    popularity = 0.63
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2016.9.18"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    reactionary = 97.94
+    conservative = 0.84
+    social_democrat = 0.53
+    communist = 0.63
 }
 
 create_country_leader = {

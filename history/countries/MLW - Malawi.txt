@@ -87,27 +87,18 @@ add_ideas = {
 	non_aligned_movement_member
 }
 
-set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 20.2
-		}
-		social_liberal = {
-			popularity = 15.6
-		}
-		reactionary = {
-			popularity = 27.8
-		}
-		progressive = {
-			popularity = 36.4
-		}
-	}
-	
+set_politics = {	
 	ruling_party = progressive
 	last_election = "2014.5.20"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 20.2
+    social_liberal = 15.6
+    reactionary = 27.8
+    progressive = 36.4
 }
 
 create_country_leader = {

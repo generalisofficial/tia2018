@@ -99,27 +99,18 @@ add_opinion_modifier = {
 add_opinion_modifier = { target = ZAP modifier = rival }
 add_opinion_modifier = { target = ZAP modifier = rival_trade }
 
-set_politics = {
-
-	parties = {
-		democratic_socialist = {
-			popularity = 53.19
-		}
-		conservative = {
-			popularity = 22.28
-		}
-		market_liberal = {
-			popularity = 16.41
-		}
-		reactionary = {
-			popularity = 8.12
-		}
-	}
-	
+set_politics = {	
 	ruling_party = market_liberal
 	last_election = "2012.7.1"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic_socialist = 53.19
+    conservative = 22.28
+    market_liberal = 16.41
+    reactionary = 8.12
 }
 
 create_country_leader = {

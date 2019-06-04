@@ -92,18 +92,15 @@ give_military_access = LEB
 add_opinion_modifier = { target = ISR modifier = rival }
 add_opinion_modifier = { target = ISR modifier = rival_trade }
 
-set_politics = {
-
-	parties = {
-		islamist = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = islamist
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 100
 }
 
 create_country_leader = {

@@ -89,21 +89,16 @@ add_ideas = {
 	lgbt_illegal
 }
 
-set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 53.9
-		}
-		social_democrat = {
-			popularity = 46.1
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2016.12.7"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 53.9
+    social_democrat = 46.1
 }
 
 create_country_leader = {

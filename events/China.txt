@@ -180,23 +180,14 @@ hidden_effect = { set_country_flag = taiwan_sar }
 	
 	option = {
 		name = china.6.a
-		set_politics = {
-    parties = {
-
-	conservative = {
-			popularity = 25
-		}
-		
-		communist = {
-			popularity = 0
-		}
-		
-		social_liberal = { 
-			popularity = 59
-		}
-	}
-	
+		set_politics = {	
 	ruling_party = social_liberal
+}
+
+set_popularities = {
+    conservative = 25
+    communist = 0
+    social_liberal = 59
 }
 	}
 	

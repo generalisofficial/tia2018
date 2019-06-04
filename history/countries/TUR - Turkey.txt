@@ -109,24 +109,17 @@ add_opinion_modifier = { target = GRE modifier = rival }
 
 
 set_politics = {
-	parties = {
-		reactionary = {
-			popularity = 52.59
-		}
-		social_democrat = {
-			popularity = 30.64
-		}
-		democratic_socialist = {
-			popularity = 8.40
-		}
-		conservative = {
-			popularity = 8.37
-		}
-	}
 	ruling_party = reactionary
 	last_election = "2014.6.24"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 52.59
+    social_democrat = 30.64
+    democratic_socialist = 8.40
+    conservative = 8.37
 }
 
 create_country_leader = {

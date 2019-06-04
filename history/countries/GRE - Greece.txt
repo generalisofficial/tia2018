@@ -93,39 +93,22 @@ give_military_access = CYP
 add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = MAC modifier = rival }
 
-set_politics = {
-
-	parties = {
-		fascist = {
-			popularity = 7.0
-		}
-		reactionary = {
-			popularity = 3.4
-		}
-		conservative = {
-			popularity = 28.1
-		}
-		market_liberal = {
-			popularity = 3.4
-		}
-		social_liberal = {
-			popularity = 4.1	
-		}
-		social_democrat = {
-			popularity = 6.3
-		}
-		democratic_socialist = {
-			popularity = 42.1
-		}
-		communist = {
-			popularity = 5.6
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2015.10.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    fascist = 7.0
+    reactionary = 3.4
+    conservative = 28.1
+    market_liberal = 3.4
+    social_liberal = 4.1
+    social_democrat = 6.3
+    democratic_socialist = 42.1
+    communist = 5.6
 }
 
 create_country_leader = {

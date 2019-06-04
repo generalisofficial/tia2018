@@ -92,21 +92,16 @@ add_ideas = {
 
 give_military_access = SOV
 
-set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 21.07
-		}
-		reactionary = {
-			popularity = 78.93
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary 
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    nationalist = 21.07
+    reactionary = 78.93
 }
 
 create_country_leader = {

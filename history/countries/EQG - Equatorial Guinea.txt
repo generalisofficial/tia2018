@@ -89,21 +89,16 @@ add_ideas = {
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 730 }
 
-set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 93.53
-		}
-		social_democrat = {
-			popularity = 6.47
-		}
-	}
-	
+set_politics = {	
 	ruling_party = nationalist
 	last_election = "2016.4.24"
 	election_frequency = 84
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 93.53
+    social_democrat = 6.47
 }
 
 create_country_leader = {

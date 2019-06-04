@@ -89,33 +89,20 @@ add_ideas = {
 
 set_country_flag = christianity
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 0
-		}
-		conservative = {
-			popularity = 0
-		}
-		social_liberal = {
-			popularity = 39.81
-		}
-		social_democrat = {
-			popularity = 0
-		}
-		democratic_socialist = {
-			popularity = 60.19
-		}
-		communist = {
-			popularity = 0
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2016.3.20"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 0
+    conservative = 0
+    social_liberal = 39.81
+    social_democrat = 0
+    democratic_socialist = 60.19
+    communist = 0
 }
 
 create_country_leader = {

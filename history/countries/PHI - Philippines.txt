@@ -95,27 +95,18 @@ add_opinion_modifier = {
 	modifier = past_japanese_war_crimes
 }
 
-set_politics = {
-
-	parties = {
-		market_liberal = {
-		    popularity = 12.73
-		}
-		social_democrat = {
-		    popularity = 3.42
-		}
-		social_liberal = {
-		    popularity = 39.01
-		}
-		democratic_socialist = {
-		    popularity = 44.84
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2016.5.9"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    market_liberal = 12.73
+    social_democrat = 3.42
+    social_liberal = 39.01
+    democratic_socialist = 44.84
 }
 
 create_country_leader = {

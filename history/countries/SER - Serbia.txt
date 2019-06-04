@@ -87,39 +87,22 @@ add_ideas = {
 
 set_country_flag = christianity
 
-set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 8.10
-		}
-		fascist = {
-			popularity = 5.04
-		}
-		market_liberal = {
-			popularity = 6.02
-		}
-		social_liberal = {
-			popularity = 6.02
-		}
-		social_democrat = {
-			popularity = 5.02
-		}
-		islamist = {
-			popularity = 10.6
-		}
-		conservative = {
-			popularity = 48.25
-		}
-		democratic_socialist = {
-			popularity = 10.95
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2016.4.24"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 8.10
+    fascist = 5.04
+    market_liberal = 6.02
+    social_liberal = 6.02
+    social_democrat = 5.02
+    islamist = 10.6
+    conservative = 48.25
+    democratic_socialist = 10.95
 }
 
 create_country_leader = {

@@ -90,30 +90,19 @@ add_ideas = {
 
 set_country_flag = christianity
 
-set_politics = {
-	
-	parties = {
-		conservative = { 
-		    popularity = 24.09
-		}
-		social_liberal = { 
-		    popularity = 9.60
-		}	
-		market_liberal = { 
-		    popularity = 10.13
-		}
-		reactionary = { 
-		    popularity = 37.58
-		}
-		nationalist = { 
-		    popularity = 18.6
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2015.10.25"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 24.09
+    social_liberal = 9.60
+    market_liberal = 10.13
+    reactionary = 37.58
+    nationalist = 18.6
 }
 
 add_opinion_modifier = { target = CZE modifier = visegrad_group }

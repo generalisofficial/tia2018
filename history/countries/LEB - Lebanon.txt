@@ -94,38 +94,22 @@ give_guarantee = HEZ
 give_military_access = HEZ
 
 set_politics = {
-
-		parties = {
-			islamist = {
-				popularity = 16.87
-			}
-			nationalist = {
-				popularity = 8.68
-			}
-			market_liberal = {
-				popularity = 23.29
-			}
-			social_liberal = {
-				popularity = 31.84
-			}
-			fascist = {
-				popularity = 1.76
-			}
-			democratic_socialist = {
-				popularity = 4.56
-			}
-			reactionary = {
-				popularity = 1.46
-			}
-			conservative = {
-				popularity = 11.54
-			}
-		}
 		ruling_party = social_liberal
 		last_election = "2014.5.6"
 		election_frequency = 48
 		elections_allowed = yes
 }
+
+    set_popularities = {
+        islamist = 16.87
+        nationalist = 8.68
+        market_liberal = 23.29
+        social_liberal = 31.84
+        fascist = 1.76
+        democratic_socialist = 4.56
+        reactionary = 1.46
+        conservative = 11.54
+    }
 
 create_country_leader = {
 	name = "Saad Hariri"

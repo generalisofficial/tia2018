@@ -79,19 +79,15 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		conservative = { 
-		    popularity = 59.4
-		}
-	    social_democrat = { 
-		    popularity = 40.6
-		}
-	}
 	ruling_party = conservative
 	last_election = "2013.10.14"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 59.4
+    social_democrat = 40.6
 }
 
 create_country_leader = {

@@ -93,36 +93,21 @@ add_ideas = {
 	islamic_sectarian_violence
 }
 
-set_politics = {
-
-	parties = {
-			islamist = {
-				popularity = 14.29
-			}
-			nationalist = {
-				popularity = 0
-			}
-			reactionary = {
-				popularity = 37.96
-			}
-			conservative = {
-				popularity = 33.77
-			}
-			progressive = {
-				popularity = 6.38
-			}
-			social_democrat = {
-				popularity = 0
-			}
-			social_liberal = {
-				popularity = 7.6
-			}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "2014.5.12"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 14.29
+    nationalist = 0
+    reactionary = 37.96
+    conservative = 33.77
+    progressive = 6.38
+    social_democrat = 0
+    social_liberal = 7.6
 }
 
 create_country_leader = {

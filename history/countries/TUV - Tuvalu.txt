@@ -83,18 +83,15 @@ add_ideas = {
 	commonwealth_of_nations_member
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    reactionary = 100
 }
 
 create_country_leader = {

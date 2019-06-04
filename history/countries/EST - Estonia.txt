@@ -120,28 +120,18 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 17.8
-		}
-		conservative = {
-			popularity = 11.4
-		}
-		market_liberal = {
-			popularity = 32.1
-		}
-		social_liberal = {
-			popularity = 28.9
-		}
-		social_democrat = {
-			popularity = 9.8
-		}
-	}	
 	ruling_party = social_liberal
 	last_election = "2015.3.3"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 17.8
+    conservative = 11.4
+    market_liberal = 32.1
+    social_liberal = 28.9
+    social_democrat = 9.8
 }
 
 create_country_leader = {

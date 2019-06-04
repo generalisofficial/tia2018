@@ -87,21 +87,16 @@ add_ideas = {
 
 set_country_flag = christianity
 
-set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 0
-		}
-		communist = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = communist
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservative = 0
+    communist = 100
 }
 
 create_country_leader = {

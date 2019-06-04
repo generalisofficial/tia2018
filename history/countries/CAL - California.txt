@@ -81,19 +81,15 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		conservative = {
-			popularity = 40
-		}
-		social_liberal = {
-			popularity = 60
-		}
-	}
 	ruling_party = social_liberal
 	last_election = "2014.11.6"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 40
+    social_liberal = 60
 }
 
 create_country_leader = {

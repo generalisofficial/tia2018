@@ -91,21 +91,16 @@ add_ideas = {
 	lgbt_illegal
 }
 
-set_politics = {
-
-	parties = {
-	    conservative = {
-	        popularity = 41.54
-	    }
-	    democratic_socialist = {
-	        popularity = 58.46
-	    }
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2015.10.25"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 41.54
+    democratic_socialist = 58.46
 }
 
 create_country_leader = {

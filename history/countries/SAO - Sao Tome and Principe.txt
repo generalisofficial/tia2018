@@ -85,24 +85,17 @@ add_ideas = {
 	african_union_member
 }
 
-set_politics = {
-
-	parties = {
-		market_liberal = {
-			popularity = 41.81
-		}
-		democratic_socialist = {
-			popularity = 40.32
-		}
-		conservative = {
-			popularity = 19.27
-		}
-	}
-	
+set_politics = {	
 	ruling_party = market_liberal
 	last_election = "2014.10.7"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    market_liberal = 41.81
+    democratic_socialist = 40.32
+    conservative = 19.27
 }
 
 create_country_leader = {

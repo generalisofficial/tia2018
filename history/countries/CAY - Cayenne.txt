@@ -83,22 +83,16 @@ add_ideas = {
 	population_growth_steady
 }
 
-set_politics = {
-
-	parties = {
-		social_liberal = {
-			popularity = 50.65
-		}
-		
-		democratic_socialist = {
-			popularity = 49.35
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_liberal
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_liberal = 50.65
+    democratic_socialist = 49.35
 }
 
 create_country_leader = {

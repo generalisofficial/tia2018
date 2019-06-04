@@ -85,21 +85,16 @@ add_ideas = {
 	disarmed_nation
 }
 
-set_politics = {
-
-	parties = {
-		social_democrat = {
-			popularity = 56.99
-		}
-		social_liberal = {
-			popularity = 43.01
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_democrat
 	last_election = "2014.12.8"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_democrat = 56.99
+    social_liberal = 43.01
 }
 
 create_country_leader = {

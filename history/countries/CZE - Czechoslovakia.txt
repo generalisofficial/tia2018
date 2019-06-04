@@ -105,33 +105,20 @@ add_opinion_modifier = {
 }
 
 set_politics = {
-	parties = {
-		reactionary = { 
-		    popularity = 32.6
-		}
-		conservative = { 
-		    popularity = 25.4
-		}
-		social_liberal = { 
-		    popularity = 10.8
-		}
-		nationalist = { 
-		    popularity = 10.6
-		}
-		communist = { 
-		    popularity = 7.8
-		}
-		social_democrat = { 
-		    popularity = 7.3
-		}
-		market_liberal = { 
-		    popularity = 5.5
-		}
-	}
 	ruling_party = reactionary
 	last_election = "2017.10.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 32.6
+    conservative = 25.4
+    social_liberal = 10.8
+    nationalist = 10.6
+    communist = 7.8
+    social_democrat = 7.3
+    market_liberal = 5.5
 }
 
 create_country_leader = {

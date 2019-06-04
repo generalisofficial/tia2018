@@ -105,36 +105,21 @@ add_opinion_modifier = {
 	modifier = visegrad_group
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 49.27
-		}
-		fascist = {
-			popularity = 19.06
-		}
-		social_democrat = {
-			popularity = 11.91
-		}
-		progressive = {
-			popularity = 7.06
-		}
-		conservative = {
-			popularity = 6.66
-		}
-		social_liberal = {
-			popularity = 5.38
-		}
-		market_liberal = {
-			popularity = 0.66
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2014.4.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 49.27
+    fascist = 19.06
+    social_democrat = 11.91
+    progressive = 7.06
+    conservative = 6.66
+    social_liberal = 5.38
+    market_liberal = 0.66
 }
 
 create_country_leader = {

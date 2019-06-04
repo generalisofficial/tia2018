@@ -91,22 +91,16 @@ add_ideas = {
 	commonwealth_of_independent_states_member
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 83.47
-		}
-		social_democrat = {
-			popularity = 16.53
-		}
-		
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2015.10.11"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 83.47
+    social_democrat = 16.53
 }
 
 create_country_leader = {

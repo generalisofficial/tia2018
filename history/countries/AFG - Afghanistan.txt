@@ -59,20 +59,16 @@ add_ideas = {
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
-set_politics = {
-	parties = {
-		reactionary = {
-			popularity = 56.44
-		}
-		conservative = {
-			popularity = 43.56
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2014.4.20"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 56.44
+    conservative = 43.56
 }
 
 create_country_leader = {

@@ -81,21 +81,16 @@ set_technology = {
 	excavation1 = 1
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-		    popularity = 71.06
-		}
-		nationalist = {
-		    popularity = 28.94
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2014.9.14"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 71.06
+    nationalist = 28.94
 }
 
 create_country_leader = {

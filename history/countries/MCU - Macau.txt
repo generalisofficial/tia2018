@@ -85,18 +85,15 @@ add_ideas = {
 
 set_cosmetic_tag = HKN_SAR
 
-set_politics = {
-
-	parties = {
-		communist = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = communist
 	last_election = "2014.8.31"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    communist = 100
 }
 
 create_country_leader = {

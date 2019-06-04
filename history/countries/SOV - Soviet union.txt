@@ -123,24 +123,17 @@ add_ideas = {
     sergey_shoygu
 }
 
-set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 11.54
-		}
-		reactionary = {
-			popularity = 76.69
-		}
-		communist = {
-			popularity = 11.77
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2012.3.18"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 11.54
+    reactionary = 76.69
+    communist = 11.77
 }
 
 create_faction = "Collective Security Treaty Organization"

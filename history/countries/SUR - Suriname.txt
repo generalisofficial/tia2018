@@ -88,21 +88,16 @@ add_ideas = {
 
 set_country_flag = christianity
 
-set_politics = {
-
-	parties = {
-		progressive = {
-			popularity = 44.54
-		}
-		democratic_socialist = {
-			popularity = 55.46
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2015.5.25"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    progressive = 44.54
+    democratic_socialist = 55.46
 }
 
 create_country_leader = {

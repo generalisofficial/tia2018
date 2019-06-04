@@ -84,33 +84,20 @@ set_cosmetic_tag = GRN_DEN
 
 set_country_flag = christianity
 
-set_politics = {
-
-	parties = {
-		social_democrat = {
-		    popularity = 27.2
-		}
-		democratic_socialist = {
-		    popularity = 25.5
-		}
-		market_liberal = {
-		    popularity = 19.5
-		}
-		social_liberal = {
-		    popularity = 13.4
-		}
-		conservative = {
-		    popularity = 8.5
-		}
-		progressive = {
-		    popularity = 5.9
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_democrat
 	last_election = "2014.4.24"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_democrat = 27.2
+    democratic_socialist = 25.5
+    market_liberal = 19.5
+    social_liberal = 13.4
+    conservative = 8.5
+    progressive = 5.9
 }
 
 create_country_leader = {

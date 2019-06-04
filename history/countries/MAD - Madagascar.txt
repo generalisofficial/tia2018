@@ -87,18 +87,15 @@ add_ideas = {
 
 set_country_flag = christianity
 
-set_politics = {
-
-	parties = {
-		reactionary = { 
-		    popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2013.11.7"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 100
 }
 
 create_country_leader = {

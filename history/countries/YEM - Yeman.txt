@@ -90,21 +90,16 @@ add_ideas = {
 	lgbt_illegal
 }
 
-set_politics = {
-	
-	parties = {
-		nationalist = {
-			popularity = 100
-		}
-		democratic_socialist = {
-			popularity = 0
-		}
-	}
-		
+set_politics = {		
 	ruling_party = nationalist
 	last_election = "2012.2.21"
 	election_frequency = 72
 	elections_allowed = no
+}
+
+set_popularities = {
+    nationalist = 100
+    democratic_socialist = 0
 }
 
 create_country_leader = {

@@ -102,24 +102,17 @@ give_military_access = SYR
 give_military_access = IRQ
 give_military_access = HOU
 
-set_politics = {
-
-	parties = {
-	    islamist = {
-	        popularity = 57.14
-	    }
-	    reactionary = {
-	        popularity = 38.28
-	    }
-	    conservative = {
-	        popularity = 4.58
-	    }
-	}
-	
+set_politics = {	
 	ruling_party = islamist
 	last_election = "2017.5.19"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 57.14
+    reactionary = 38.28
+    conservative = 4.58
 }
 
 create_country_leader = {

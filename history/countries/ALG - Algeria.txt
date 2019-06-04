@@ -95,21 +95,16 @@ set_country_flag = sunni_islam
 
 give_guarantee = WES
 
-set_politics = {
-
-	parties = {
-		islamist = {
-			popularity = 18.47
-		}
-		democratic_socialist = {
-			popularity = 81.53
-		}
-	}
-	
+set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2014.4.17"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 18.47
+    democratic_socialist = 81.53
 }
 
 add_opinion_modifier = {

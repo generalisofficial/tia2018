@@ -83,21 +83,16 @@ add_ideas = {
 	population_growth_steady
 }
 
-set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 87.5
-		}
-		fascist = {
-			popularity = 12.5
-		}
-	}
-	
+set_politics = {	
 	ruling_party = nationalist
 	last_election = "2014.11.13"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 87.5
+    fascist = 12.5
 }
 
 create_country_leader = {

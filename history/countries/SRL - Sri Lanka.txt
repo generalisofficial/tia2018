@@ -88,21 +88,16 @@ add_ideas = {
 
 set_country_flag = buddhism
 
-set_politics = {
-
-	parties = {
-		social_liberal = {
-			popularity = 51.28
-		}
-		democratic_socialist = {
-			popularity = 48.72
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_liberal
 	last_election = "2015.1.8"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_liberal = 51.28
+    democratic_socialist = 48.72
 }
 
 create_country_leader = {

@@ -102,33 +102,20 @@ add_ideas = {
 
 set_country_flag = hinduism
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 42.34
-		}
-		progressive = {
-			popularity = 17.1
-		}
-		social_democrat = {
-			popularity = 22.52
-		}
-		fascist = {
-			popularity = 6.85
-		}
-		democratic_socialist = {
-			popularity = 5.84
-		}
-		communist = {
-			popularity = 5.25
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2014.4.7"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 42.34
+    progressive = 17.1
+    social_democrat = 22.52
+    fascist = 6.85
+    democratic_socialist = 5.84
+    communist = 5.25
 }
 
 create_country_leader = {

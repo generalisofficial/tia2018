@@ -80,24 +80,17 @@ set_technology = {
 	excavation1 = 1
 }
 
-set_politics = {
-
-	parties = {
-	    nationalist = {
-		    popularity = 50.10
-		}
-		social_democrat = {
-		    popularity = 22.70
-		}
-		fascist = {
-		    popularity = 27.2
-		}
-	}
-	
+set_politics = {	
 	ruling_party = nationalist
 	last_election = "2015.5.31"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 50.10
+    social_democrat = 22.70
+    fascist = 27.2
 }
 
 create_country_leader = {

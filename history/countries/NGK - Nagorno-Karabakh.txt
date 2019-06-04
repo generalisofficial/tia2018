@@ -89,18 +89,15 @@ add_opinion_modifier = { target = AZR modifier = rival }
 give_guarantee = ARM
 give_military_access = ARM
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2017.7.19"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 100
 }
 
 create_country_leader = {

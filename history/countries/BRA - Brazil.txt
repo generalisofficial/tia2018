@@ -89,33 +89,20 @@ add_ideas = {
 set_country_flag = christianity
 
 set_politics = {
-	parties = {
-		fascist = {
-			popularity = 1.3
-		}
-		reactionary = {
-			popularity = 46.0
-		}
-		social_democrat = {
-			popularity = 12.5
-		}
-		market_liberal = {
-			popularity = 5.1
-		}
-		social_liberal = {
-			popularity = 4.8
-		}
-		progressive = {
-			popularity = 1.0
-		}
-		democratic_socialist = {
-			popularity = 29.3
-		}
-	}
 	ruling_party = market_liberal
 	last_election = "2014.10.7"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    fascist = 1.3
+    reactionary = 46.0
+    social_democrat = 12.5
+    market_liberal = 5.1
+    social_liberal = 4.8
+    progressive = 1.0
+    democratic_socialist = 29.3
 }
 
 create_country_leader = {

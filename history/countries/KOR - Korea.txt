@@ -107,24 +107,17 @@ add_opinion_modifier = {
 	modifier = rival_trade
 }
 
-set_politics = {
-
-	parties = { 
-		social_liberal = { 
-		    popularity = 41.08
-		}
-		conservative = { 
-		    popularity = 34.89
-		} 
-		market_liberal = { 
-		    popularity = 24.03
-		} 
-	} 
-	
+set_politics = {	
 	ruling_party = social_liberal
 	last_election = "2017.5.9"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_liberal = 41.08
+    conservative = 34.89
+    market_liberal = 24.03
 }
 
 create_country_leader = {

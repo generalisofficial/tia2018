@@ -85,21 +85,16 @@ add_ideas = {
 	non_aligned_movement_member
 }
 
-set_politics = {
-
-	parties = {
-		market_liberal = {
-			popularity = 58.38
-		}
-		islamist = {
-			popularity = 41.62
-		}
-	}
-	
+set_politics = {	
 	ruling_party = islamist
 	last_election = "2013.9.23"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    market_liberal = 58.38
+    islamist = 41.62
 }
 
 create_country_leader = {

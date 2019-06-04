@@ -84,18 +84,15 @@ add_ideas = {
 	population_growth_steady
 }
 
-set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = reactionary
 	last_election = "2015.11.16"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 100
 }
 
 create_country_leader = {

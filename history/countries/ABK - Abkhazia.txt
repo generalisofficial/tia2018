@@ -86,21 +86,16 @@ add_ideas = {
 	non_member_state
 }
 
-set_politics = {
-
-	parties = {
-		nationalist = { 
-		    popularity = 51.52
-		}
-		reactionary = { 
-		    popularity = 48.48
-		}	
-	}
-	
+set_politics = {	
 	ruling_party = nationalist
 	last_election = "2014.8.24"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 51.52
+    reactionary = 48.48
 }
 
 create_country_leader = {
