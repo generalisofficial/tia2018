@@ -460,6 +460,9 @@ country_event = {
 			ruling_party = communist
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+        set_country_flag = coalition_communist
+        add_to_variable = { ROOT.Coalition = communist_seats }
 	}
 	
 	option = {	#Democratic Socialist
@@ -475,6 +478,9 @@ country_event = {
 			ruling_party = democratic_socialist
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_democratic_socialist
+        add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 	}
 	
 	option = {	#Progressive
@@ -490,6 +496,9 @@ country_event = {
 			ruling_party = progressive
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_progressive
+        add_to_variable = { ROOT.Coalition = progressive_seats }
 	}
 	
 	option = {	#Social Democrat
@@ -505,6 +514,9 @@ country_event = {
 			ruling_party = social_democrat
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_social_democrat
+        add_to_variable = { ROOT.Coalition = social_democrat_seats }
 	}
 	
 	option = {	#Social Liberal
@@ -520,6 +532,9 @@ country_event = {
 			ruling_party = social_liberal
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_social_liberal
+        add_to_variable = { ROOT.Coalition = social_liberal_seats }
 	}
 	
 	option = {	#Market Liberal
@@ -534,7 +549,10 @@ country_event = {
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = yes
-		}
+		}		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_market_liberal
+        add_to_variable = { ROOT.Coalition = market_liberal_seats }
 	}
 	
 	option = {	#Conservative
@@ -550,6 +568,9 @@ country_event = {
 			ruling_party = conservative
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_conservative
+        add_to_variable = { ROOT.Coalition = conservative_seats }
 	}
 	
 	option = {	#Reactionary
@@ -565,6 +586,9 @@ country_event = {
 			ruling_party = reactionary
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_reactionary
+        add_to_variable = { ROOT.Coalition = reactionary_seats }
 	}
 	
 	option = {	#Nationalist
@@ -580,6 +604,9 @@ country_event = {
 			ruling_party = nationalist
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_nationalist
+        add_to_variable = { ROOT.Coalition = nationalist_seats }
 	}
 	
 	option = {	#Third Position
@@ -595,6 +622,9 @@ country_event = {
 			ruling_party = fascist
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_fascist
+        add_to_variable = { ROOT.Coalition = fascist_seats }
 	}
 	
 	option = {	#Islamist
@@ -610,6 +640,9 @@ country_event = {
 			ruling_party = islamist
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_islamist
+        add_to_variable = { ROOT.Coalition = islamist_seats }
 	}
 	
     option = {	#Monarchist
@@ -625,5 +658,8 @@ country_event = {
 			ruling_party = monarchist
 			elections_allowed = yes
 		}
+		set_country_flag = has_coalition
+		set_country_flag = coalition_monarchist
+        add_to_variable = { ROOT.Coalition = monarchist_seats }
 	}
 }
