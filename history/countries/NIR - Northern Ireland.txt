@@ -87,34 +87,33 @@ add_ideas = {
 set_country_flag = christianity
 
 set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 35
-		}
-		democratic_socialist = {
-			popularity = 30
-		}
-		conservative = {
-			popularity = 12
-		}
-		social_democrat = {
-			popularity = 12
-		}
-		social_liberal = {
-			popularity = 8
-		}
-		progressive = {
-			popularity = 3
-		}
-	}
-	
 	ruling_party = reactionary
 	last_election = "2017.5.5"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
+set_popularities = {
+	reactionary = {
+		popularity = 35
+	}
+	democratic_socialist = {
+		popularity = 30
+	}
+	conservative = {
+		popularity = 12
+	}
+	social_democrat = {
+		popularity = 12
+	}
+	social_liberal = {
+		popularity = 8
+	}
+	progressive = {
+		popularity = 3
+	}
+}
+	
 create_country_leader = {
 	name = "Arlene Foster"
 	picture = "Arlene_Foster.dds"

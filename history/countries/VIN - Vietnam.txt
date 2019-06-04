@@ -95,17 +95,16 @@ add_opinion_modifier = {
 }
 
 set_politics = {
-
-	parties = {
-		communist = {
-			popularity = 100
-		}
-	}
-	
 	ruling_party = communist
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	communist = {
+		popularity = 100
+	}
 }
 
 create_country_leader = {

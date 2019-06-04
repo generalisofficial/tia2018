@@ -82,29 +82,28 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 46.2
-		}
-		conservative = {
-			popularity = 22.9
-		}
-		social_democrat = {
-			popularity = 19.1
-		}
-		progressive = {
-			popularity = 6.6
-		}
-		social_liberal = {
-			popularity = 5.2
-		}
-	}
-	
 	ruling_party = reactionary
 	last_election = "2016.5.6"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+	reactionary = {
+		popularity = 46.2
+	}
+	conservative = {
+		popularity = 22.9
+	}
+	social_democrat = {
+		popularity = 19.1
+	}
+	progressive = {
+		popularity = 6.6
+	}
+	social_liberal = {
+		popularity = 5.2
+	}
 }
 
 create_country_leader = {

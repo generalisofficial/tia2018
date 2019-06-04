@@ -91,26 +91,25 @@ set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
 set_politics = {
-
-	parties = {
-		nationalist = {
-			popularity = 11.39
-		}
-		social_liberal = {
-			popularity = 0
-		}
-		reactionary = {
-			popularity = 88.61
-		}
-		communist = {
-			popularity = 0
-		}
-	}
-	
 	ruling_party = reactionary
 	last_election = "2016.12.4"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+	nationalist = {
+		popularity = 11.39
+	}
+	social_liberal = {
+		popularity = 0
+	}
+	reactionary = {
+		popularity = 88.61
+	}
+	communist = {
+		popularity = 0
+	}
 }
 
 create_country_leader = {

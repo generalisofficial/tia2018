@@ -89,24 +89,22 @@ add_ideas = {
 set_country_flag = christianity
 
 set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 36.61
-		}
-		conservative = {
-			popularity = 6.36
-		}
-		democratic_socialist = {
-			popularity = 57.03
-		}
-
-	}
-	
 	ruling_party = democratic_socialist
 	last_election = "2014.10.15"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+	reactionary = {
+		popularity = 36.61
+	}
+	conservative = {
+		popularity = 6.36
+	}
+	democratic_socialist = {
+		popularity = 57.03
+	}
 }
 
 create_country_leader = {

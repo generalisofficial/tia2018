@@ -109,27 +109,28 @@ add_to_variable = { ROOT.Coalition = social_liberal_seats }
 set_country_flag = christianity
 
 set_politics = {
-	parties = {
-		social_liberal = { 
-		    popularity = 42.66
-		}
-		conservative = {
-		    popularity = 32.89
-		}
-		social_democrat = { 
-		    popularity = 19.71
-		}
-		progressive = { 
-		    popularity = 3.45
-		}
-		reactionary = { 
-		    popularity = 1.29
-		}
-	}
 	ruling_party = social_liberal
 	last_election = "2015.10.21"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+	social_liberal = { 
+		popularity = 42.66
+	}
+	conservative = {
+		popularity = 32.89
+	}
+	social_democrat = { 
+		popularity = 19.71
+	}
+	progressive = { 
+		popularity = 3.45
+	}
+	reactionary = { 
+		popularity = 1.29
+	}
 }
 
 add_opinion_modifier = {

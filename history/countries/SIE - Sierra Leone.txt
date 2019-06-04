@@ -88,20 +88,19 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		reactionary = {
-			popularity = 51.8
-		}
-		democratic_socialist = {
-			popularity = 48.2
-		}
-	}
-	
 	ruling_party = democratic_socialist
 	last_election = "2012.3.7"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+	reactionary = {
+		popularity = 51.8
+	}
+	democratic_socialist = {
+		popularity = 48.2
+	}
 }
 
 create_country_leader = {

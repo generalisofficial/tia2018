@@ -102,28 +102,27 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-	    social_liberal = {
-			popularity = 39.11
-		}
-		reactionary = {
-			popularity = 21.30
-		}
-		conservative = {
-			popularity = 20.01
-		}
-		democratic_socialist = {
-			popularity = 19.58
-		}
-	}
-	
 	ruling_party = social_liberal
 	last_election = "2017.4.23"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
+set_popularities = {
+	social_liberal = {
+		popularity = 39.11
+	}
+	reactionary = {
+	    popularity = 21.30
+	}
+	conservative = {
+		popularity = 20.01
+	}
+	democratic_socialist = {
+		popularity = 19.58
+	}
+}
+	
 add_opinion_modifier = {
 	target = ENG
 	modifier = entente_cordiale

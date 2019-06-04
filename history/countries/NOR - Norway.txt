@@ -111,38 +111,39 @@ add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {
-	parties = {
-		reactionary = {
-			popularity = 15.2
-		}
-		conservative = {
-			popularity = 4.2
-		}
-		market_liberal = {
-			popularity = 37.2
-		}
-		social_liberal = {
-			popularity = 4.4
-		}
-		social_democrat = {
-			popularity = 27.4
-		}
-		progressive = {
-			popularity = 3.2
-		}
-		democratic_socialist = {
-			popularity = 6.0
-		}
-		communist = {
-			popularity = 2.4
-		}
-	}
 	ruling_party = market_liberal 
 	last_election = "2017.9.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+set_popularities = {
+	reactionary = {
+		popularity = 15.2
+	}
+	conservative = {
+		popularity = 4.2
+	}
+	market_liberal = {
+		popularity = 37.2
+	}
+	social_liberal = {
+		popularity = 4.4
+	}
+	social_democrat = {
+		popularity = 27.4
+	}
+	progressive = {
+		popularity = 3.2
+	}
+	democratic_socialist = {
+		popularity = 6.0
+	}
+	communist = {
+		popularity = 2.4
+	}
+}
+	
 create_country_leader = {
 	name = "Knut Arild Hareide"
 	picture = "Knut_Arild_Hareide.dds"

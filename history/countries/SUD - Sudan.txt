@@ -94,20 +94,19 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		islamist = {
-			popularity = 94.05
-		}
-		market_liberal = {
-			popularity = 5.95
-		}
-	}
-	
 	ruling_party = islamist
 	last_election = "2015.4.13"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+	islamist = {
+		popularity = 94.05
+	}
+	market_liberal = {
+		popularity = 5.95
+	}
 }
 
 create_country_leader = {

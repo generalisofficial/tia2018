@@ -103,16 +103,16 @@ add_opinion_modifier = {
 }
 
 set_politics = {
-	parties = {
-		nationalist = {
-			popularity = 100
-		}
-	}
-	
 	ruling_party = nationalist
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	nationalist = {
+		popularity = 100
+	}
 }
 
 create_country_leader = {
@@ -121,7 +121,7 @@ create_country_leader = {
 	ideology = nationalist_ideology
 }
 
-create_country_leader = {
+create_country_leader = { #joke/meme
 	name = "Haffaz Aladeen"
 	picture = "Haffaz_Aladeen.dds"
 	ideology = fascist_ideology

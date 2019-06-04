@@ -116,30 +116,31 @@ add_to_variable = { ROOT.Coalition = market_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
-	parties = {
-		conservative = {
-			popularity = 13.38
-		}
-		market_liberal = {
-			popularity = 41.92
-		}
-		progressive = {
-			popularity = 10
-		}
-        social_democrat = {
-			popularity = 33.9
-		}
-		reactionary = {
-			popularity = 0.5
-        }
-		social_liberal = {
-			popularity = 0.3
-		}
-	}
 	ruling_party = market_liberal
 	last_election = "2016.7.2"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+	conservative = {
+		popularity = 13.38
+	}
+	market_liberal = {
+		popularity = 41.92
+	}
+	progressive = {
+		popularity = 10
+	}
+    social_democrat = {
+		popularity = 33.9
+	}
+	reactionary = {
+		popularity = 0.5
+    }
+	social_liberal = {
+	    popularity = 0.3
+    }
 }
 
 add_opinion_modifier = {
