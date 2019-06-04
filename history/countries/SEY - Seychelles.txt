@@ -88,19 +88,20 @@ add_ideas = {
 }
 
 set_politics = {
+
+	parties = {
+		social_liberal = {
+			popularity = 49.85
+		}
+		social_democrat = {
+			popularity = 50.15
+		}
+	}
+	
 	ruling_party = social_democrat
 	last_election = "2015.12.3"
 	election_frequency = 36
 	elections_allowed = yes
-}
-
-set_popularities = {
-	social_liberal = {
-		popularity = 49.85
-	}
-	social_democrat = {
-		popularity = 50.15
-	}
 }
 
 create_country_leader = {

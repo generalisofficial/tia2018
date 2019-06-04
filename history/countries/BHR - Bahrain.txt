@@ -92,16 +92,17 @@ set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
 set_politics = {
+
+	parties = {
+		monarchist = {
+			popularity = 100
+		}
+	}
+	
 	ruling_party = monarchist
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-set_popularities = {
-	monarchist = {
-		popularity = 100
-	}
 }
 
 create_country_leader = {

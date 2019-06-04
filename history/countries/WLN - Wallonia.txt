@@ -81,31 +81,32 @@ set_technology = {
 }
 
 set_politics = {
+
+	parties = {
+		social_democrat = {
+		    popularity = 38.9
+	    }
+	    market_liberal = {
+		    popularity = 26.69
+		}
+		conservative = {
+		    popularity = 15.18
+		}
+		progressive = {
+		    popularity = 8.62
+		}
+		communist = {
+		    popularity = 5.75
+		}
+		nationalist = {
+		    popularity = 4.86
+		}
+		
+	}
 	ruling_party = market_liberal
 	last_election = "2014.5.26"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-set_popularities = {
-	social_democrat = {
-		popularity = 38.9
-	}
-	market_liberal = {
-		popularity = 26.69
-    }
-	conservative = {
-		popularity = 15.18
-	}
-	progressive = {
-		popularity = 8.62
-	}
-	communist = {
-		popularity = 5.75
-	}
-	nationalist = {
-	    popularity = 4.86
-	}	
 }
 
 create_country_leader = {

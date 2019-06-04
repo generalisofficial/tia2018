@@ -96,19 +96,20 @@ add_ideas = {
 set_country_flag = christianity
 
 set_politics = {
+
+	parties = {
+		nationalist = {
+			popularity = 98.8
+		}
+		progressive = {
+			popularity = 1.2
+		}
+	}
+	
 	ruling_party = nationalist
 	last_election = "2017.8.4"
 	election_frequency = 84
 	elections_allowed = yes
-}
-
-set_popularities = {
-	nationalist = {
-		popularity = 98.8
-	}
-	progressive = {
-		popularity = 1.2
-	}
 }
 
 create_country_leader = {

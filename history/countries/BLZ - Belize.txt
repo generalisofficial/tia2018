@@ -89,19 +89,20 @@ add_ideas = {
 set_country_flag = christianity
 
 set_politics = {
+
+	parties = {
+		conservative = {
+			popularity = 50.52
+		}
+		social_democrat = {
+			popularity = 49.48
+		}
+	}
+	
 	ruling_party = conservative
 	last_election = "2015.2.13"
 	election_frequency = 72
 	elections_allowed = yes
-}
-
-set_popularities = {
-	conservative = {
-		popularity = 50.52
-	}
-	social_democrat = {
-		popularity = 49.48
-	}
 }
 
 create_country_leader = {

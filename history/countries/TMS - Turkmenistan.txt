@@ -89,19 +89,23 @@ add_ideas = {
 }
 
 set_politics = {
+
+	parties = {
+		reactionary = {
+			popularity = 2.31
+		}
+		nationalist = {
+			popularity = 97.69
+		}
+		communist = {
+			popularity = 0
+		}
+	}
+	
 	ruling_party = nationalist
 	last_election = "2017.2.12"
 	election_frequency = 84
 	elections_allowed = yes
-}
-
-set_popularities = {
-	reactionary = {
-		popularity = 2.31
-	}
-	nationalist = {
-		popularity = 97.69
-	}
 }
 
 create_country_leader = {

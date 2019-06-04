@@ -84,6 +84,10 @@ set_technology = {
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
+remove_ideas = idea_focus_generic_path_of_allah
+remove_ideas = idea_focus_generic_path_of_order
+remove_ideas = idea_focus_generic_national_strength
+
 declare_war_on = {
 	target = ROJ
 	type = annex_everything
@@ -115,16 +119,17 @@ declare_war_on = {
 }
 
 set_politics = {
+
+	parties = {
+		islamist = {
+			popularity = 100
+		}
+	}
+	
 	ruling_party = islamist
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-set_popularities = {
-	islamist = {
-		popularity = 100
-	}
 }
 
 add_ideas = {

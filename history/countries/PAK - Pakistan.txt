@@ -100,31 +100,32 @@ add_ideas = {
 add_opinion_modifier = { target = ARM modifier = rival }
 
 set_politics = {
+
+	parties = {
+		progressive = {
+			popularity = 13.09
+		}
+		reactionary = {
+			popularity = 41.32
+		}
+		islamist = {
+			popularity = 5.34
+		}
+		conservative = {
+			popularity = 33.85
+		}
+		nationalist = {
+			popularity = 4.85
+		}
+		democratic_socialist = {
+			popularity = 1.54
+		}
+	}
+	
 	ruling_party = conservative
 	last_election = "2013.7.25"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-set_popularities = {
-	progressive = {
-		popularity = 13.09
-	}
-	reactionary = {
-		popularity = 41.32
-	}
-	islamist = {
-		popularity = 5.34
-	}
-	conservative = {
-		popularity = 33.85
-	}
-	nationalist = {
-		popularity = 4.85
-	}
-	democratic_socialist = {
-		popularity = 1.54
-	}
 }
 
 create_country_leader = {

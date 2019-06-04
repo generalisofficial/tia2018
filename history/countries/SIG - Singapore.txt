@@ -95,22 +95,23 @@ give_guarantee = AST
 give_guarantee = ENG
 
 set_politics = {
+
+	parties = {
+		conservative = {
+			popularity = 69.9
+		}
+		social_democrat = {
+			popularity = 17.6
+		}
+		social_liberal = {
+			popularity = 12.5
+		}
+	}
+	
 	ruling_party = conservative
 	last_election = "2017.9.13"
 	election_frequency = 72
 	elections_allowed = yes
-}
-
-set_popularities = {
-	conservative = {
-		popularity = 69.9
-	}
-	social_democrat = {
-		popularity = 17.6
-	}
-	social_liberal = {
-		popularity = 12.5
-	}
 }
 
 create_country_leader = {

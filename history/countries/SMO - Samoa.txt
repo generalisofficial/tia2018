@@ -85,19 +85,20 @@ add_ideas = {
 }
 
 set_politics = {
+
+	parties = {
+		conservative = {
+			popularity = 57.3
+		}
+		social_liberal = {
+			popularity = 42.7
+		}
+	}
+	
 	ruling_party = conservative
 	last_election = "2016.3.4"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-set_popularities = {
-	conservative = {
-		popularity = 57.3
-	}
-	social_liberal = {
-		popularity = 42.7
-	}
 }
 
 create_country_leader = {

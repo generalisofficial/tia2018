@@ -90,22 +90,23 @@ add_ideas = {
 }
 
 set_politics = {
+
+	parties = {
+		social_democrat = {
+			popularity = 66.99
+		}
+		conservative = {
+			popularity = 20.08
+		}
+		reactionary = {
+			popularity = 12.93
+		}
+	}
+	
 	ruling_party = social_democrat
 	last_election = "2015.10.4"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-set_popularities = {
-	social_democrat = {
-		popularity = 66.99
-	}
-	conservative = {
-		popularity = 20.08
-	}
-	reactionary = {
-		popularity = 12.93
-	}
 }
 
 create_country_leader = {

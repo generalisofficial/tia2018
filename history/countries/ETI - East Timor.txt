@@ -85,19 +85,44 @@ add_ideas = {
 }
 
 set_politics = {
+
+	parties = {
+		islamist = {
+			popularity = 0
+		}
+		nationalist = {
+			popularity = 0
+		}
+		reactionary = {
+			popularity = 0
+		}
+		conservative = {
+			popularity = 0
+		}
+		market_liberal = {
+			popularity = 0
+		}
+		social_liberal = {
+			popularity = 0
+		}
+		social_democrat = {
+			popularity = 42.9
+		}
+		progressive = {
+			popularity = 0
+		}
+		democratic_socialist = {
+			popularity = 57.1
+		}
+		communist = {
+			popularity = 0
+		}
+	}
+	
 	ruling_party = democratic_socialist
 	last_election = "2017.3.20"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-set_popularities = {
-	social_democrat = {
-		popularity = 42.9
-	}
-	democratic_socialist = {
-		popularity = 57.1
-	}
 }
 
 create_country_leader = {

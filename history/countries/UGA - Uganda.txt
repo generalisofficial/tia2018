@@ -92,19 +92,20 @@ add_ideas = {
 }
 
 set_politics = {
+
+	parties = {
+		nationalist = {
+			popularity = 60.62
+		}
+		conservative = {
+			popularity = 39.38
+		}
+	}
+	
 	ruling_party = nationalist
 	last_election = "2016.2.18"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-set_popularities = {
-	nationalist = {
-		popularity = 60.62
-	}
-	conservative = {
-		popularity = 39.38
-	}
 }
 
 create_country_leader = {
