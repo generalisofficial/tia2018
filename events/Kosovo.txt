@@ -1,0 +1,19 @@
+﻿add_namespace = kosovo
+
+country_event = { #Vetevendosje - Albin Kurti
+	id = kosovo.1
+	title = kosovo.1.t
+	desc = kosovo.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = kosovo.1.a
+		create_country_leader = {
+	        name = "Albin Kurti"
+	        picture = "Albin_Kurti.dds"
+	        ideology = progressive_ideology
+        }
+	}
+}

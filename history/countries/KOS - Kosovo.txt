@@ -88,6 +88,29 @@ add_ideas = {
 	non_member_state
 }
 
+#Assembly of the Republic of Kosovo
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 15.81 }
+set_variable = { social_democrat_seats = 10.02 }
+set_variable = { social_liberal_seats = 0.83 }
+set_variable = { market_liberal_seats = 25.53 }
+set_variable = { conservative_seats = 27.82 }
+set_variable = { reactionary_seats = 19.16 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {
 	ruling_party = conservative
 	last_election = "2016.2.26"
@@ -96,9 +119,18 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 46.98
-    social_democrat = 27.49
+    reactionary = 19.16
+    conservative = 27.82
+    progressive = 15.81
     market_liberal = 25.53
+	social_democrat = 10.02
+	social_liberal = 0.83
+}
+
+create_country_leader = {
+	name = "Kadri Veseli"
+	picture = "Kadri_Veseli.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
@@ -110,13 +142,31 @@ create_country_leader = {
 create_country_leader = {
 	name = "Visar Ymeri"
 	picture = "Visar_Ymeri.dds"
-	ideology = social_democrat_ideology
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
 	name = "Isa Mustafa"
 	picture = "Isa_Mustafa.dds"
 	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Shpend Ahmeti"
+	picture = "Shpend_Ahmeti.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Valon Murati"
+	picture = "Valon_Murati.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Behgjet Pacolli"
+	picture = "Behgjet_Pacolli.dds"
+	ideology = centrist
 }
 
 create_field_marshal = {
