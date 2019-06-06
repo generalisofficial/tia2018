@@ -86,8 +86,11 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 59.4
-    social_democrat = 40.6
+    conservative = 57.4
+	progressive = 17.6
+	reactionary = 10.2
+	social_democrat = 9.7
+	market_liberal = 5.1
 }
 
 create_country_leader = {
@@ -97,7 +100,25 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Katharina Schulze"
+	picture = "Katharina_Schulze.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Martin Sichert"
+	picture = "Martin_Sichert.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
 	name = "Natascha Kohnen"
 	picture = "Natascha_Kohnen.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Martin Hagen"
+	picture = "Martin_Hagen.dds"
+	ideology = libertarian
 }
