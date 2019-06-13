@@ -1,26 +1,19 @@
 ﻿add_namespace = election
-add_namespace = election_SOV
-add_namespace = election_PRK
 
-#Generic Election
+#Election - First-past-the-post
 country_event = {
 	id = election.1
 	title = election.1.t
 	desc = election.1.d
-	picture = GFX_report_event_election
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			date > 2019.1.1
-			NOT = { original_tag = SOV }
-		}
-		OR = {
-			NOT = { has_government = communist }
-			NOT = { original_tag = PRK }
-		}
-		NOT = { original_tag = SWE original_tag = ISR original_tag = GER original_tag = DEN original_tag = NOR original_tag = EST original_tag = FIN original_tag = LIT original_tag = CAN original_tag = ARM original_tag = AST original_tag = NZL }
+		NOT = { has_idea = proportional_representation }
+	}
+	
+	immediate = {
+	    break_coalition = yes
 	}
 	
 	option = {	#Communists
@@ -29,24 +22,136 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			communist > 0.1
+		    check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@communist
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_communist
+        add_to_variable = { ROOT.Coalition = communist_seats }
 		set_politics = {
 			ruling_party = communist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 	}
 	
 	option = {	#Democratic Socialists
 		name = election.1.o2
 		trigger = {
-			democratic_socialist > 0.1
+		    check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@democratic_socialist
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		ai_chance = {
 			factor = 1
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_democratic_socialist
+        add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 		set_politics = {
 			ruling_party = democratic_socialist
 			elections_allowed = yes
@@ -59,7 +164,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			social_democrat > 0.1
+		    check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_democrat
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -71,7 +230,61 @@ country_event = {
 	option = {	#Progressives
 		name = election.1.o4
 		trigger = {
-			progressive > 0.1
+		    check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@progressive
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		ai_chance = {
 			factor = 1
@@ -89,7 +302,61 @@ country_event = {
 			factor = 1
 		}	
 		trigger = {
-			social_liberal > 0.1
+		    check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@social_liberal
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -104,7 +371,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			market_liberal > 0.1
+		    check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@market_liberal
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -119,7 +440,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    conservative > 0.1
+		    check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@conservative
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -134,7 +509,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			reactionary > 0.1
+		    check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@reactionary
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -149,7 +578,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			nationalist > 0.1
+		    check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@nationalist
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -164,7 +647,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			fascist > 0.1
+		    check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -179,7 +716,61 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			islamist > 0.1
+		    check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@fascist
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@monarchist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@islamist
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
@@ -194,174 +785,68 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			OR = {
-				monarchist > 0.5
-				AND = {
-					communist < 0.1
-					democratic_socialist < 0.1
-					progressive < 0.1
-					social_democrat < 0.1
-					social_liberal < 0.1
-					market_liberal < 0.1
-					conservative < 0.1
-					reactionary < 0.1
-					monarchist < 0.1
-					nationalist < 0.1
-					fascist < 0.1
-					islamist < 0.1
-				}
-			}
+		    check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@communist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@democratic_socialist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@social_democrat
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@progressive
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@social_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@market_liberal
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@conservative
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@fascist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@reactionary
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@nationalist
+                compare = greater_than_or_equals
+            }
+			check_variable = {
+                var = party_popularity@monarchist
+                value = party_popularity@islamist
+                compare = greater_than_or_equals
+            }
 		}
 		
 		set_politics = {
 			ruling_party = monarchist
 			elections_allowed = no
 		}
-		if = {
-		    limit = {
-		        monarchist < 0.5
-		    }
-			add_timed_idea = { idea = elected_minority_government days = 180 }
-	    }
 	}
-}
-
-#SOV 2018
-country_event = {
-	id = election_SOV.1
-	title = election_SOV.1.t
-	desc = election_SOV.1.d
-	
-	is_triggered_only = yes
-	
-	trigger = {
-	    original_tag = SOV
-		date > 2018.1.1
-		date < 2019.1.1
-	}
-	
-	immediate = {
-		set_country_flag = SOV_election_2018
-	}
-	
-	option = {
-		name = election_SOV.1.o1
-		set_politics = {
-			ruling_party = reactionary
-			elections_allowed = yes
-		}		
-		news_event = russia_news.1
-		set_country_flag = putin_2018
-		add_popularity = { ideology = reactionary popularity = 0.05 }
-		ai_chance = { 
-			factor = 76
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 1000
-			}
-		}
-    }
-	
-	option = {
-		name = election_SOV.1.o2
-		set_politics = {
-			ruling_party = communist
-			elections_allowed = yes
-		}
-		news_event = russia_news.2
-		set_country_flag = grudinin_2018
-		add_popularity = { ideology = communist popularity = 0.05 }
-		ai_chance = { 
-			factor = 11
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	
-	option = {
-		name = election_SOV.1.o3
-		set_politics = {
-			ruling_party = nationalist
-			elections_allowed = yes
-		}
-		news_event = russia_news.3
-		set_country_flag = zhirinovsky_2018
-		add_popularity = { ideology = nationalist popularity = 0.05 }
-		ai_chance = { 
-			factor = 5
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	
-	option = {
-		name = election_SOV.1.o4
-		set_politics = {
-			ruling_party = social_liberal
-			elections_allowed = yes
-		}
-		add_popularity = { ideology = social_liberal popularity = 0.05 }
-		news_event = russia_news.4
-		set_country_flag = yavlinsky_2018
-		ai_chance = { 
-			factor = 1
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	
-	option = {
-		name = election_SOV.1.o5
-		set_politics = {
-			ruling_party = conservative
-			elections_allowed = yes
-		}
-		add_popularity = { ideology = conservative popularity = 0.05 }
-		trigger = {
-		    OR = {
-                conservative > 0.1
-				has_government = conservative
-			}
-		}
-		news_event = russia_news.5
-		set_country_flag = titov_2018
-		ai_chance = { 
-			factor = 1
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-}
-
-#PRK Generic
-country_event = {
-	id = election_PRK.1
-	title = election_PRK.1.t
-	desc = election_PRK.1.d
-	
-	is_triggered_only = yes
-	
-	trigger = {
-	    original_tag = PRK
-		has_government = communist
-	}
-	
-	option = {
-		name = election_PRK.1.o1
-		add_political_power = 25
-		set_politics = {
-			ruling_party = communist
-			elections_allowed = yes
-		}		
-    }
 }
 
 #Generic (Parliamentary)
@@ -373,25 +858,15 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-	    OR = {
-	        original_tag = SWE
-			original_tag = ISR
-			original_tag = GER
-			original_tag = DEN
-			original_tag = NOR
-		    original_tag = EST
-			original_tag = FIN
-			original_tag = LIT
-			original_tag = CAN
-			original_tag = ARM
-			original_tag = AST
-			original_tag = NZL
-		}
+	    has_idea = proportional_representation
+	}
+	
+	immediate = {
+	    break_coalition = yes
 	}
 	
 	option = {
 		name = election.3.o1
-		break_coalition = yes
 		set_variable = { communist_seats = party_popularity@communist }
 		multiply_variable = { communist_seats = 100 }
 		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }

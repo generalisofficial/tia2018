@@ -790,6 +790,43 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+	
+    electoral_system = {
+		law = yes
+		
+		first_past_the_post = {
+			cost = 300
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		proportional_representation = {
+			cost = 300
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			   
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
 
 	######################################
 	#	RELIGION
