@@ -85,9 +85,31 @@ add_ideas = {
 	the_euro
 	laissez_faire
 	limited_conscription
+	proportional_representation
 }
 
 set_country_flag = christianity
+
+#Parliament of Austria
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 26.9 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 5.3 }
+set_variable = { conservative_seats = 31.5 }
+set_variable = { reactionary_seats = 26 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -99,7 +121,7 @@ set_politics = {
 set_popularities = {
     reactionary = 26
     conservative = 31.5
-    social_liberal = 5.3
+    market_liberal = 5.3
     social_democrat = 26.9
     progressive = 10.3
 }
@@ -125,7 +147,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Matthias Strolz"
 	picture = "Matthias_Strolz.dds"
-	ideology = centrist
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Cosma Tieber"
+	picture = "Cosma_Tieber.dds"
+	ideology = pirate
 }
 
 create_country_leader = {
