@@ -89,7 +89,27 @@ add_ideas = {
 	idea_eu_member
 	catalonia_separatism
 	the_euro
+	proportional_representation
 }
+
+#Congress of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 21.3 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 24.6 }
+set_variable = { social_liberal_seats = 21.1 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 33 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_country_flag = christianity
 
@@ -101,10 +121,11 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 33.0
-    social_democrat = 24.6
-    democratic_socialist = 21.3
-    social_liberal = 21.1
+    conservative = 17.7
+    social_democrat = 35.9
+    democratic_socialist = 18.2
+    social_liberal = 16.9
+	fascist = 10.3
 }
 
 create_country_leader = {
