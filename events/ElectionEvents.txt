@@ -14,6 +14,30 @@ country_event = {
 	
 	immediate = {
 	    break_coalition = yes
+		set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+		multiply_variable = { democratic_socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { market_liberal_seats = party_popularity@market_liberal }
+		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { reactionary_seats = party_popularity@reactionary }
+		multiply_variable = { reactionary_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { nationalist_seats = party_popularity@nationalist }
+		multiply_variable = { nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
 	}
 	
 	option = {	#Communists
@@ -220,7 +244,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_social_democrat
+        add_to_variable = { ROOT.Coalition = social_democrat_seats }
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = yes
@@ -289,7 +315,9 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_progressive
+        add_to_variable = { ROOT.Coalition = progressive_seats }
 		set_politics = {
 			ruling_party = progressive
 			elections_allowed = yes
@@ -358,7 +386,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_social_liberal
+        add_to_variable = { ROOT.Coalition = social_liberal_seats }
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = yes
@@ -427,7 +457,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_market_liberal
+        add_to_variable = { ROOT.Coalition = market_liberal_seats }
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = yes
@@ -496,7 +528,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_conservative
+        add_to_variable = { ROOT.Coalition = conservative_seats }
 		set_politics = {
 			ruling_party = conservative
 			elections_allowed = yes
@@ -565,7 +599,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_reactionary
+        add_to_variable = { ROOT.Coalition = reactionary_seats }
 		set_politics = {
 			ruling_party = reactionary
 			elections_allowed = yes
@@ -634,7 +670,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_nationalist
+        add_to_variable = { ROOT.Coalition = nationalist_seats }
 		set_politics = {
 			ruling_party = nationalist
 			elections_allowed = no
@@ -703,7 +741,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_fascist
+        add_to_variable = { ROOT.Coalition = fascist_seats }
 		set_politics = {
 			ruling_party = fascist
 			elections_allowed = no
@@ -772,7 +812,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_islamist
+        add_to_variable = { ROOT.Coalition = islamist_seats }
 		set_politics = {
 			ruling_party = islamist
 			elections_allowed = no
@@ -841,7 +883,9 @@ country_event = {
                 compare = greater_than_or_equals
             }
 		}
-		
+		set_country_flag = has_coalition
+		set_country_flag = coalition_monarchist
+        add_to_variable = { ROOT.Coalition = monarchist_seats }
 		set_politics = {
 			ruling_party = monarchist
 			elections_allowed = no
