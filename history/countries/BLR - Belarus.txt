@@ -89,7 +89,27 @@ add_ideas = {
 	limited_conscription
 	non_aligned_movement_member
 	commonwealth_of_independent_states_member
+	first_past_the_post
 }
+
+#House of Representatives of Belarus
+set_variable = { communist_seats = 8.98 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 4.16 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 2.16 }
+set_variable = { reactionary_seats = 80.46 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -99,8 +119,11 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 83.47
-    social_democrat = 16.53
+    reactionary = 80.46
+    communist = 8.98
+	nationalist = 4.24
+	conservative = 2.16
+	social_democrat = 4.16
 }
 
 create_country_leader = {
@@ -110,26 +133,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Tatsyana Holubeva"
+	picture = "Tatsyana_Holubeva.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
 	name = "Sergei Gaidukevich"
 	picture = "Sergei_Gaidukevich.dds"
 	ideology = nationalist_ideology
 }
 
 create_country_leader = {
-	name = "Paval Sieviaryniets"
-	picture = "Paval_Sieviaryniets.dds"
-	ideology = christian_democrat
+	name = "Anatoly Lebedko"
+	picture = "Anatoly_Lebedko.dds"
+	ideology = liberal_conservative
 }
 
 create_country_leader = {
-	name = "Vladimir Novosiad"
-	picture = "Vladimir_Novosiad.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Irina Veshtard"
-	picture = "Irina_Veshtard.dds"
+	name = "Vasil Zadnyaprany"
+	picture = "Vasil_Zadnyaprany.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -137,12 +160,6 @@ create_country_leader = {
 	name = "Aleh Novikau"
 	picture = "Aleh_Novikau.dds"
 	ideology = green
-}
-
-create_country_leader = {
-	name = "Tatsyana Holubeva"
-	picture = "Tatsyana_Holubeva.dds"
-	ideology = marxist_leninist
 }
 
 create_field_marshal = {

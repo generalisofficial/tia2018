@@ -619,77 +619,75 @@ update_coalition = {
 		limit = {
 			has_country_flag = coalition_islamist
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@islamist }
+		add_to_variable = { ROOT.Coalition = islamist_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_fascist
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@fascist }
+		add_to_variable = { ROOT.Coalition = fascist_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_nationalist
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@nationalist }
+		add_to_variable = { ROOT.Coalition = nationalist_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_monarchist
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@monarchist }
+		add_to_variable = { ROOT.Coalition = monarchist_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_reactionary
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@reactionary }
+		add_to_variable = { ROOT.Coalition = reactionary_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_conservative
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@conservative }
+		add_to_variable = { ROOT.Coalition = conservative_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_market_liberal
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@market_liberal }
+		add_to_variable = { ROOT.Coalition = market_liberal_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_social_liberal
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@social_liberal }
+		add_to_variable = { ROOT.Coalition = social_liberal_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_social_democrat
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@social_democrat }
+		add_to_variable = { ROOT.Coalition = social_democrat_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_progressive
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@progressive }
+		add_to_variable = { ROOT.Coalition = progressive_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_democratic_socialist
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@democratic_socialist }
+		add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 	}
 	if = {
 		limit = {
 			has_country_flag = coalition_communist
 		}
-		add_to_variable = { ROOT.Coalition = party_popularity@communist }
+		add_to_variable = { ROOT.Coalition = communist_seats }
 	}
 	multiply_variable = { ROOT.Coalition = 100 }
-
-
 	if = {
 		limit = {
 			NOT = { has_country_flag = has_coalition }
