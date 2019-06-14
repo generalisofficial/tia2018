@@ -83,22 +83,43 @@ add_ideas = {
 	population_growth_steady
 	idea_eu_member
 	the_euro
+	proportional_representation
 }
 
 set_country_flag = christianity
 
+#Assembly of the Republic
+set_variable = { communist_seats = 8.3 }
+set_variable = { democratic_socialist_seats = 10.2 }
+set_variable = { progressive_seats = 1.4 }
+set_variable = { social_democrat_seats = 33.7 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 33 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2015.10.13"
+	last_election = "2015.10.6"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 41.5
+    social_democrat = 33.7
     market_liberal = 38.6
     communist = 8.3
     democratic_socialist = 10.2
+	conservative = 7.8
     progressive = 1.4
 }
 
@@ -141,7 +162,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "José Pinto Coelho"
 	picture = "Jose_Pinto_Coelho.dds"
-	ideology = fascist_ideology
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Francisco Oliveira"
+	picture = "Francisco_Oliveira.dds"
+	ideology = centrist
 }
 
 create_country_leader = {
