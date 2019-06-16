@@ -180,6 +180,19 @@ on_actions = {
 				}
 				set_country_at_war_effect = yes
 			}
+			every_country = {
+				limit = {
+					NOT = { has_country_flag = has_coalition }
+				}
+				quickset_coalition = yes
+			}
+			every_country = {
+				limit = {
+					NOT = { has_country_flag = has_coalition }
+				}
+				quickset_parliament = yes
+				quickset_coalition = yes
+			}
 		}
 	}
 	
