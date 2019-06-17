@@ -35,3 +35,36 @@ country_event = { #National Party - Michael McCormack
         }
 	}
 }
+
+country_event = { #2018 Liberal Party of Australia leadership spills
+	id = australia.3
+	title = australia.3.t
+	desc = australia.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = australia.3.a
+		ai_chance = {
+			factor = 53
+		}
+		create_country_leader = {
+	        name = "Scott Morrison"
+	        picture = "Scott_Morrison.dds"
+	        ideology = libertarian
+        }
+	}
+	
+	option = {
+		name = australia.3.b
+		ai_chance = {
+			factor = 47
+		}
+		create_country_leader = {
+	        name = "Peter Dutton"
+	        picture = "Peter_Dutton.dds"
+	        ideology = libertarian
+        }
+	}
+}
