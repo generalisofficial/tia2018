@@ -99,9 +99,31 @@ add_ideas = {
 	visegrad_group_member
 	idea_eu_member
 	the_euro
+	proportional_representation
 }
 
 set_country_flag = christianity
+
+#Riksdag
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 28.3 }
+set_variable = { social_liberal_seats = 0 
+set_variable = { market_liberal_seats = 23.2 }
+set_variable = { conservative_seats = 19.3 }
+set_variable = { reactionary_seats = 7.6 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 12.6 }
+set_variable = { fascist_seats = 9.0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {
 	ruling_party = social_democrat
