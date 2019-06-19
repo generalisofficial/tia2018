@@ -13,13 +13,6 @@ equipments = {
 		#Misc Abilities
 		reliability = 0.8
 
-		upgrades = {
-			ART_reliability_upgrade
-			ART_SA_upgrade
-			ART_HA_upgrade
-			ART_defence_upgrade
-		}
-
 		#Defensive Abilities
 		defense = 10
 		breakthrough = 6
@@ -81,40 +74,6 @@ equipments = {
 			steel = 3
 		}
 	}
-	
-	artillery_equipment_4 = {
-		archetype = artillery_equipment
-		parent = artillery_equipment_3
-		priority = 50
-		visual_level = 2
-		
-		defense = 18
-		breakthrough = 8
-		soft_attack = 50
-		
-		build_cost_ic = 4.5
-		resources = {
-			tungsten = 1
-			steel = 3
-		}
-	}
-	
-	artillery_equipment_5 = {
-		archetype = artillery_equipment
-		parent = artillery_equipment_4
-		priority = 50
-		visual_level = 2
-		
-		defense = 18
-		breakthrough = 8
-		soft_attack = 50
-		
-		build_cost_ic = 4.5
-		resources = {
-			tungsten = 1
-			steel = 3
-		}
-	}
 
 	# Nebelwerfers!
 	rocket_artillery_equipment = {
@@ -127,16 +86,8 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_land
-
-		upgrades = {
-			ART_reliability_upgrade
-			ART_SA_upgrade
-			ART_HA_upgrade
-			ART_defence_upgrade
-		}
 		
 		#Misc Abilities
-		maximum_speed = 14
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -146,17 +97,15 @@ equipments = {
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 5
+		soft_attack = 50
+		hard_attack = 1
 		ap_attack = 2
 		air_attack = 0
 		
-		build_cost_ic = 10
+		build_cost_ic = 4
 		resources = {
 			tungsten = 2
-			steel = 2
-			oil = 1
-			rubber = 1
+			steel = 1
 		}
 	}
 	
@@ -172,87 +121,56 @@ equipments = {
 		priority = 60
 		visual_level = 1
 		
-		maximum_speed = 16
-		
 		defense = 15
 		breakthrough = 12
+		soft_attack = 64
 		
-		soft_attack = 80
+		build_cost_ic = 5
+		resources = {
+			tungsten = 2
+			steel = 1
+		}
+	}
+	
+	#Katyusha 
+	motorized_rocket_equipment = {
+		is_archetype = yes
+		type = { 
+			artillery
+			motorized
+			rocket
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 12
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 1
+		ap_attack = 2
+		air_attack = 0
 		
 		build_cost_ic = 12
 		resources = {
-			tungsten = 2
-			steel = 3
-			rubber = 1
 			oil = 1
-		}
-	}
-	
-	rocket_artillery_equipment_3 = {
-		archetype = rocket_artillery_equipment
-		parent = rocket_artillery_equipment_2
-		priority = 60
-		visual_level = 1
-		
-		maximum_speed = 18
-		
-		defense = 18
-		breakthrough = 15
-		
-		soft_attack = 90
-		
-		build_cost_ic = 14
-		resources = {
-			tungsten = 2
-				steel = 4
 			rubber = 1
-			oil = 2
-		}
-		
-	}
-	
-	rocket_artillery_equipment_4 = {
-		archetype = rocket_artillery_equipment
-		parent = rocket_artillery_equipment_3
-		priority = 60
-		visual_level = 1
-		
-		maximum_speed = 20
-		
-		defense = 20
-		breakthrough = 17
-		
-		soft_attack = 110
-		
-		build_cost_ic = 16
-		resources = {
-			tungsten = 2
-			steel = 4
-			rubber = 2
-			oil = 3
+			steel = 1
 		}
 	}
 	
-	rocket_artillery_equipment_5 = {
-		archetype = rocket_artillery_equipment
-		parent = rocket_artillery_equipment_4
-		priority = 60
-		visual_level = 1
-		
-		maximum_speed = 20
-		
-		defense = 24
-		breakthrough = 18
-		
-		soft_attack = 120
-		
-		build_cost_ic = 20
-		resources = {
-			tungsten = 2
-			steel = 4
-			rubber = 2
-			oil = 3
-		}
+	motorized_rocket_equipment_1 = {
+		archetype = motorized_rocket_equipment
+		priority = 70
+		visual_level = 0
 	}
 	
 	sp_artillery_equipment = {
@@ -359,100 +277,4 @@ equipments = {
 			oil = 2
 		}
 	}
-	
-	sp_artillery_equipment_4 = {
-		archetype = sp_artillery_equipment
-		parent = sp_artillery_equipment_3
-		priority = 180
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 22
-
-		#Defensive Abilities
-		defense = 14
-		breakthrough = 7
-		armor_value = 58
-
-		#Offensive Abilities
-		soft_attack = 112
-		hard_attack = 2
-		
-		build_cost_ic = 14
-		
-		resources = {
-			steel = 4
-			tungsten = 3
-			oil = 2
-		}
-	}
-	
-	sp_artillery_equipment_5 = {
-		archetype = sp_artillery_equipment
-		parent = sp_artillery_equipment_4
-		priority = 180
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 22
-
-		#Defensive Abilities
-		defense = 14
-		breakthrough = 7
-		armor_value = 58
-
-		#Offensive Abilities
-		soft_attack = 112
-		hard_attack = 2
-		
-		build_cost_ic = 14
-		
-		resources = {
-			steel = 4
-			tungsten = 3
-			oil = 2
-		}
-	}
-
-	motorized_rocket_equipment = {
-		is_archetype = yes
-		picture = archetype_motorized_rocket_equipment			
-		type = { 
-			artillery
-			motorized
-			rocket
-		}
-		group_by = archetype
-		
-		interface_category = interface_category_land
-		
-		#Misc Abilities
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 15
-		breakthrough = 12
-		hardness = 0
-		armor_value = 0
-
-		#Offensive Abilities
-		soft_attack = 36
-		hard_attack = 1
-		ap_attack = 2
-		air_attack = 0
-		
-		build_cost_ic = 12
-		resources = {
-			oil = 1
-			rubber = 1
-			steel = 1
-		}
-	}
-	
-	motorized_rocket_equipment_1 = {
-		archetype = motorized_rocket_equipment
-		priority = 70
-		visual_level = 0
-	}
-	
 }
