@@ -116,13 +116,13 @@ set_country_flag = christianity
 
 #Folketing
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 8.8 }
-set_variable = { progressive_seats = 5.8 }
-set_variable = { social_democrat_seats = 27.6 }
-set_variable = { social_liberal_seats = 8.5 }
-set_variable = { market_liberal_seats = 23.7 }
-set_variable = { conservative_seats = 3.8 }
-set_variable = { reactionary_seats = 22.1 }
+set_variable = { democratic_socialist_seats = 12 }
+set_variable = { progressive_seats = 4.8 }
+set_variable = { social_democrat_seats = 26.3 }
+set_variable = { social_liberal_seats = 4.6 }
+set_variable = { market_liberal_seats = 27.8 }
+set_variable = { conservative_seats = 3.4 }
+set_variable = { reactionary_seats = 21.1 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -131,27 +131,25 @@ set_variable = { islamist = 0 }
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_market_liberal
-set_country_flag = coalition_social_liberal
 set_country_flag = coalition_conservative
 add_to_variable = { ROOT.Coalition = market_liberal_seats }
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = market_liberal
-	last_election = "2015.6.17"
+	last_election = "2015.6.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 27.6
-    market_liberal = 23.7
-    reactionary = 22.1
-    democratic_socialist = 8.8
-    social_liberal = 8.5
-    progressive = 5.8
-    conservative = 3.8
+    social_democrat = 30.4
+    market_liberal = 25.7
+    reactionary = 11.1
+    democratic_socialist = 14.6
+    social_liberal = 8.6
+    progressive = 3.0
+    conservative = 6.6
 }
 
 create_country_leader = {
@@ -173,8 +171,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pernille Skipper"
-	picture = "Pernille_Skipper.dds"
+	name = "Pia Olsen Dyhr"
+	picture = "Pia_Olsen_Dyhr.dds"
 	ideology = democratic_socialist_ideology  
 }
 
@@ -193,7 +191,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Søren Pape Poulsen"
 	picture = "Soren_Pape_Poulsen.dds"
-	ideology = national_conservative 
+	ideology = social_conservative 
+}
+
+create_country_leader = {
+	name = "Morten Østergaard"
+	picture = "Morten_Ostergaard.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
