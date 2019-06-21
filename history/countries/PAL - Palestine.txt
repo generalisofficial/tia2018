@@ -88,6 +88,7 @@ add_ideas = {
 	non_aligned_movement_member
 	idea_jewish_settlements
 	islam
+	first_past_the_post
 }
 
 add_opinion_modifier = { target = ISR modifier = rival }
@@ -100,9 +101,31 @@ set_politics = {
 	elections_allowed = no
 }
 
+#Palestinian Legislative Council
+set_variable = { communist_seats = 3.78 }
+set_variable = { democratic_socialist_seats = 1.51 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 37.14 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 1.51 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 56.06 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_popularities = {
-    social_democrat = 62.52
-    democratic_socialist = 37.48
+    islamist = 56.06
+    social_democrat = 37.14
+	communist = 3.78
+    democratic_socialist = 1.51
+	market_liberal = 1.51
 }
 
 create_country_leader = {
@@ -130,8 +153,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nayef Hawatmeh"
-	picture = "Nayef_Hawatmeh.dds"
+	name = "Salam Fayyad"
+	picture = "Salam_Fayyad.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Ahmad Sa'adat"
+	picture = "Ahmad_Saadat.dds"
 	ideology = marxist_leninist
 }
 
