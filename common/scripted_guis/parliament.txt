@@ -1,0 +1,142 @@
+scripted_gui = {
+
+	parliament_window = {
+		window_name = "parliament_window_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+			check_variable = {
+				show_parliament = 1
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = show_parliament
+			}
+		}
+
+		properties = {
+			icon_seat1 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^0"
+			}
+			icon_seat2 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^1"
+			}
+			icon_seat3 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^2"
+			}
+			icon_seat4 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^3"
+			}
+			icon_seat5 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^4"
+			}
+			icon_seat6 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^5"
+			}
+			icon_seat7 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^6"
+			}
+			icon_seat8 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^7"
+			}
+			icon_seat9 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^8"
+			}
+			icon_seat10 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^9"
+			}
+			icon_seat11 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^10"
+			}
+			icon_seat12 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^11"
+			}
+			icon_seat13 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^12"
+			}
+			icon_seat14 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^13"
+			}
+			icon_seat15 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^14"
+			}
+			icon_seat16 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^15"
+			}
+			icon_seat17 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^16"
+			}
+			icon_seat18 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^17"
+			}
+			icon_seat19 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^18"
+			}
+			icon_seat20 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^19"
+			}
+			icon_seat21 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^20"
+			}
+			icon_seat22 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^21"
+			}
+			icon_seat23 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^22"
+			}
+			icon_seat24 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^23"
+			}
+			icon_seat25 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^24"
+			}
+		}
+	}
+
+	parliament_button = {
+		window_name = "parliament_button_container"
+
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			show_parliament_button_click = {
+				set_variable = {
+					show_parliament = 1
+				}
+			}
+		}
+	}
+}

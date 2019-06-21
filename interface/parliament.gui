@@ -1,0 +1,234 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "parliament_window_container"
+		position = { x = 1 y = 100 }	
+		show_position = { x = 545 y = 80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		size = { width = 700 height = 400 }
+		clipping = yes
+		show_sound = open_sub_window
+		moveable = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_tiled_window_1b_border"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -42 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		iconType = {
+			name = "icon_seat1"
+			spriteType = "GFX_political_colors"
+			frame = 1
+			position = { x = 30 y = 160 }
+		}
+
+		iconType = {
+			name = "icon_seat2"
+			spriteType = "GFX_political_colors"
+			frame = 2
+			position = { x = 20 y = 110 }
+		}
+
+		iconType = {
+			name = "icon_seat3"
+			spriteType = "GFX_political_colors"
+			frame = 3
+			position = { x = 80 y = 130 }
+		}
+
+		iconType = {
+			name = "icon_seat4"
+			spriteType = "GFX_political_colors"
+			frame = 4
+			position = { x = 67 y = 80 }
+		}
+
+		iconType = {
+			name = "icon_seat5"
+			spriteType = "GFX_political_colors"
+			frame = 5
+			position = { x = 126 y = 105 }
+		}
+
+		iconType = {
+			name = "icon_seat6"
+			spriteType = "GFX_political_colors"
+			frame = 6
+			position = { x = 118 y = 55 }
+		}
+
+		iconType = {
+			name = "icon_seat7"
+			spriteType = "GFX_political_colors"
+			frame = 7
+			position = { x = 180 y = 100 }
+		}
+
+		iconType = {
+			name = "icon_seat8"
+			spriteType = "GFX_political_colors"
+			frame = 8
+			position = { x = 172 y = 50 }
+		}
+
+		iconType = {
+			name = "icon_seat9"
+			spriteType = "GFX_political_colors"
+			frame = 9
+			position = { x = 230 y = 100 }
+		}
+
+		iconType = {
+			name = "icon_seat10"
+			spriteType = "GFX_political_colors"
+			frame = 10
+			position = { x = 225 y = 50 }
+		}
+
+		iconType = {
+			name = "icon_seat11"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 280 y = 100 }
+		}
+
+		iconType = {
+			name = "icon_seat12"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 280 y = 50 }
+		}
+
+		iconType = {
+			name = "icon_seat13"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 330 y = 100 }
+		}
+
+		iconType = {
+			name = "icon_seat14"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 330 y = 50 }
+		}
+
+		iconType = {
+			name = "icon_seat15"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 380 y = 100 }
+		}
+
+		iconType = {
+			name = "icon_seat16"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 380 y = 50 }
+		}
+
+		iconType = {
+			name = "icon_seat17"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 430 y = 100 }
+		}
+
+		iconType = {
+			name = "icon_seat18"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 430 y = 50 }
+		}
+
+		iconType = {
+			name = "icon_seat19"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 480 y = 105 }
+		}
+
+		iconType = {
+			name = "icon_seat20"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 485 y = 55 }
+		}
+
+		iconType = {
+			name = "icon_seat21"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 520 y = 130 }
+		}
+
+		iconType = {
+			name = "icon_seat22"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 535 y = 80 }
+		}
+
+		iconType = {
+			name = "icon_seat23"
+			spriteType = "GFX_political_colors"
+			frame = 11
+			position = { x = 560 y = 160 }
+		}
+
+		iconType = {
+			name = "icon_seat24"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 580 y = 110 }
+		}
+
+		iconType = {
+			name = "icon_seat25"
+			spriteType = "GFX_political_colors"
+			frame = 12
+			position = { x = 610 y = 150 }
+		}
+	}
+
+	containerWindowType = {
+		name = "parliament_button_container"
+		position = { x = 200 y = 391 }
+		size = { width = 50 height = 50 }
+
+		buttonType = {
+			name = "show_parliament_button"
+			position = { x = 1 y = 1 }
+			quadTextureSprite = "GFX_button_94x31"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "show_parliament_button_text"
+			position = { x = 0 y = 4 }
+			font = "hoi_20bs"
+			text = "Parliament"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_RIGHT"
+		}
+	}
+}	
