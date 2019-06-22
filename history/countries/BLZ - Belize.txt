@@ -84,6 +84,7 @@ add_ideas = {
 	population_growth_rapid
 	commonwealth_of_nations_member
 	non_aligned_movement_member
+	proportional_representation
 }
 
 set_country_flag = christianity
@@ -97,8 +98,28 @@ set_politics = {
 
 set_popularities = {
     conservative = 50.52
-    social_democrat = 49.48
+    social_democrat = 47.83
+	progressive = 1.65
 }
+
+#Belize House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 1.65 }
+set_variable = { social_democrat_seats = 47.83 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 50.52 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 create_country_leader = {
 	name = "Dean Barrow"
@@ -110,4 +131,10 @@ create_country_leader = {
 	name = "Johnny Briceno"
 	picture = "Johnny_Briceno.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Patrick Rogers"
+	picture = "Patrick_Rogers.dds"
+	ideology = progressive_ideology
 }
