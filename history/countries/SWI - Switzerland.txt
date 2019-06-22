@@ -94,6 +94,31 @@ set_country_flag = christianity
 
 give_guarantee = LIC
 
+#Federal Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 7.1 }
+set_variable = { social_democrat_seats = 30.9 }
+set_variable = { social_liberal_seats = 4.6 }
+set_variable = { market_liberal_seats = 16.4 }
+set_variable = { conservative_seats = 11.6 }
+set_variable = { reactionary_seats = 29.4 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_conservative
+set_country_flag = coalition_market_liberal
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+
 set_politics = {	
 	ruling_party = social_democrat
     last_election = "2015.10.18"
