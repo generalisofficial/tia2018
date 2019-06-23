@@ -270,20 +270,20 @@ set_parliament_graphics = {
 	round_variable = nationalist_seats_parliament
 	round_variable = fascist_seats_parliament
 
-## Step 3 : Divide by 4 (For a graphic of 25 seats)
+## Step 3 : Divide by 2 (For a graphic of 50 seats)
 
-	divide_variable = { communist_seats_parliament = 4 }
-	divide_variable = { democratic_socialist_seats_parliament = 4 }
-	divide_variable = { social_democrat_seats_parliament = 4 }
-	divide_variable = { progressive_seats_parliament = 4 }
-	divide_variable = { social_liberal_seats_parliament = 4 }
-	divide_variable = { market_liberal_seats_parliament = 4 }
-	divide_variable = { conservative_seats_parliament = 4 }
-	divide_variable = { islamist_seats_parliament = 4 }
-	divide_variable = { monarchist_seats_parliament = 4 }
-	divide_variable = { reactionary_seats_parliament = 4 }
-	divide_variable = { nationalist_seats_parliament = 4 }
-	divide_variable = { fascist_seats_parliament = 4 }
+	divide_variable = { communist_seats_parliament = 2 }
+	divide_variable = { democratic_socialist_seats_parliament = 2 }
+	divide_variable = { social_democrat_seats_parliament = 2 }
+	divide_variable = { progressive_seats_parliament = 2 }
+	divide_variable = { social_liberal_seats_parliament = 2 }
+	divide_variable = { market_liberal_seats_parliament = 2 }
+	divide_variable = { conservative_seats_parliament = 2 }
+	divide_variable = { islamist_seats_parliament = 2 }
+	divide_variable = { monarchist_seats_parliament = 2 }
+	divide_variable = { reactionary_seats_parliament = 2 }
+	divide_variable = { nationalist_seats_parliament = 2 }
+	divide_variable = { fascist_seats_parliament = 2 }
 
 ## Step 4 : Round again
 
@@ -321,203 +321,303 @@ set_parliament_graphics = {
 		array = ideology_seats_array
 		if = {
 			limit = {
+				check_variable = { v > 49 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 48 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 47 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 46 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 45 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 44 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 43 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 42 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 41 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 40 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 39 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 38 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 37 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 36 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 35 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 34 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 33 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 32 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 31 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 30 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 29 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 28 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 27 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 26 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 25 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
 				check_variable = { v > 24 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?ideology_seats_array^v]"
-			log = "Index: [?ideology_seats_array^i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 23 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 22 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 21 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 20 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 19 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 18 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 17 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 16 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 15 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 14 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 13 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 12 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 11 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 10 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 9 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 8 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 7 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 6 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 5 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 4 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 3 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 2 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 1 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 		if = {
 			limit = {
 				check_variable = { v > 0 }
 			}
 			add_to_array = { parliament_array = i }
-			log = "Value: [?v]"
-			log = "Index: [?i]"
 		}
 	}
 }
