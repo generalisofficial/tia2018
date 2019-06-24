@@ -97,7 +97,27 @@ add_ideas = {
 	non_member_state
 	limited_conscription
 	idea_CHI_grudge
+	first_past_the_post
 }
+
+#Legislative Yuan
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 6.10 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 44.04 }
+set_variable = { market_liberal_seats = 7.16 }
+set_variable = { conservative_seats = 42.7 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {
     ruling_party = social_liberal
@@ -107,9 +127,10 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 56.1
-    conservative = 31.1
-    reactionary = 12.8
+    social_liberal = 44.04
+    conservative = 42.7
+    progressive = 6.10
+	libertarian = 7.16
 }
 
 create_country_leader = {
@@ -125,27 +146,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "James Soong"
-	picture = "James_Soong.dds"
-	ideology = reactionary_ideology
+	name = "Huang Kuo-chang"
+	picture = "Huang_Kuo_Chang.dds"
+	ideology = progressive_ideology
 }
 
 create_country_leader = {
-	name = "Liu Yi-te"
-	picture = "Liu_Yi_te.dds"
+	name = "James Soong"
+	picture = "James_Soong.dds"
 	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Hsu Hsin-ying"
+	picture = "Hsu_Hsin_ying.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
 	name = "Fan Yun"
 	picture = "Fan_Yun.dds"
 	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Huang Kuo-chang"
-	picture = "Huang_Kuo_Chang.dds"
-	ideology = progressive_ideology
 }
 
 create_country_leader = {
