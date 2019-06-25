@@ -104,6 +104,25 @@ give_guarantee = AST
 give_guarantee = MAL
 give_guarantee = FRA
 
+#House of Commons
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 43.7 }
+set_variable = { social_liberal_seats = 7.4 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 48.9 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
 	ruling_party = conservative
 	last_election = "2017.5.5"
@@ -112,9 +131,9 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 42.4
-    social_democrat = 40.0
-    social_liberal = 17.6
+    conservative = 48.9
+    social_democrat = 43.7
+    social_liberal = 7.4
 }
 
 add_opinion_modifier = {

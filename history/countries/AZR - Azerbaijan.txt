@@ -84,6 +84,7 @@ add_ideas = {
 	non_aligned_movement_member
 	guam_member
 	commonwealth_of_independent_states_member
+	first_past_the_post
 }
 
 set_country_flag = dominant_religion_islam
@@ -95,6 +96,25 @@ give_guarantee = TUR
 add_opinion_modifier = { target = TUR modifier = large_increase }
 add_opinion_modifier = { target = ARM modifier = rival }
 add_opinion_modifier = { target = NGK modifier = rival }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 100 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -112,12 +132,6 @@ create_country_leader = {
 	name = "Ilham Aliyev"
 	picture = "Ilham_Aliyev.dds"
 	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Zahid Oruc"
-	picture = "Zahid_Oruc.dds"
-	ideology = liberal_conservative
 }
 
 create_field_marshal = {
