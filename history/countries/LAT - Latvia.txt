@@ -90,22 +90,43 @@ add_ideas = {
 
 set_country_flag = christianity
 
+#Saeima
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 23.0 }
+set_variable = { social_liberal_seats = 31.6 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 28.8 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 16.6 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_conservative
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = nationalist_seats }
+
 set_politics = {	
-	ruling_party = progressive
+	ruling_party = social_liberal
 	last_election = "2014.10.6"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 16.61
-    reactionary = 13.51
-    conservative = 21.87
-    market_liberal = 0
-    social_liberal = 0
-    social_democrat = 23
-    progressive = 25.01
-    democratic_socialist = 0
+    nationalist = 11.01
+    reactionary = 14.25
+    conservative = 20.28
+    market_liberal = 12.04
+    social_liberal = 22.62
+    social_democrat = 19.80
 }
 
 create_country_leader = {
@@ -123,7 +144,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Maris Kucinskis"
 	picture = "Maris_Kucinskis.dds"
-	ideology = green
+	ideology = nordic_agrarian
 }
 
 create_country_leader = {
@@ -133,9 +154,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Inguna Sudraba"
-	picture = "Inguna_Sudraba.dds"
+	name = "Aldis Gobzems"
+	picture = "Aldis_Gobzems.dds"
 	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Juris Pūce"
+	picture = "Juris_Puce.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Vladimirs Frolovs"
+	picture = "Vladimirs_Frolovs.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {
