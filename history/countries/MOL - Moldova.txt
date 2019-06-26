@@ -88,25 +88,52 @@ add_ideas = {
 
 set_country_flag = christianity
 
+#Parliament of the Republic of Moldova
+set_variable = { communist_seats = 17.48 }
+set_variable = { democratic_socialist_seats = 20.51 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 32.18 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 9.67 }
+set_variable = { conservative_seats = 20.16 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = social_democrat
 	last_election = "2016.10.30"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 20.2
-    social_democrat = 15.8
-    democratic_socialist = 27.25
-    market_liberal = 19.25
-    communist = 17.5
+    conservative = 2.95
+    social_democrat = 25.74
+    democratic_socialist = 31.15
+    social_liberal = 28.96
+	market_liberal = 1.25
+	reactionary = 8.32
+    communist = 3.75
 }
 
 create_country_leader = {
-	name = "Igor Dodon"
-	picture = "Igor_Dodon.dds"
+	name = "Zinaida Greceanii"
+	picture = "Zinaida_Greceanii.dds"
 	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Pavel Filip"
+	picture = "Pavel_Filip.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
@@ -122,15 +149,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vladimir Plahotniuc"
-	picture = "Vladimir_Plahotniuc.dds"
-	ideology = social_democrat_ideology
+	name = "Maia Sandu"
+	picture = "Maia_Sandu.dds"
+	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Maia Sandu"
-	picture = "Maia_Sandu.dds"
+	name = "Mihai Ghimpu"
+	picture = "Mihai_Ghimpu.dds"
 	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Ilan Shor"
+	picture = "Ilan_Shor.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Vladimir Braga"
+	picture = "Vladimir_Braga.dds"
+	ideology = green
 }
 
 create_field_marshal = {
