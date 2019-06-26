@@ -81,9 +81,29 @@ set_technology = {
 
 add_ideas = {
 	population_growth_steady
+	first_past_the_post
 }
 
 set_country_flag = christianity
+
+#Chamber of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 12.04 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 29.25 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 2.84 }
+set_variable = { reactionary_seats = 55.87 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -93,8 +113,10 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 50.96
-    social_liberal = 49.04
+    reactionary = 57.22
+    social_liberal = 24.18
+	democratic_socialist = 11.83
+	conservative = 6.77
 }
 
 create_country_leader = {
@@ -106,7 +128,19 @@ create_country_leader = {
 create_country_leader = {
 	name = "Efraín Alegre"
 	picture = "Efrain_Alegre.dds"
-	ideology = centrist
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Carlos Filizzola"
+	picture = "Carlos_Filizzola.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Pedro Fadul"
+	picture = "Pedro_Fadul.dds"
+	ideology = christian_democrat
 }
 
 create_field_marshal = {
