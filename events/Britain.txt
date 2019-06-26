@@ -1,1 +1,19 @@
-﻿
+﻿add_namespace = britain
+
+country_event = { #2018 UKIP leadership election
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.1.a
+		create_country_leader = {
+	        name = "Gerard Batten"
+	        picture = "Gerard_Batten.dds"
+	        ideology = reactionary_ideology
+        }
+	}
+}

@@ -339,7 +339,7 @@ pulse = {
 				date > 2018.4.1
 				date < 2019.1.1
 			}
-			news_event = ethiopia.1
+			country_event = ethiopia.1
 		}
 		if = {
 			limit = {
@@ -347,7 +347,7 @@ pulse = {
 				date > 2018.2.13
 				date < 2019.1.1
 			}
-			news_event = south_africa.1
+			country_event = south_africa.1
 		}
 		if = {
 			limit = {
@@ -355,7 +355,15 @@ pulse = {
 				date > 2019.5.3
 				date < 2020.1.1
 			}
-			news_event = sweden.1
+			country_event = sweden.1
+		}
+		if = {
+			limit = {
+			    original_tag = ENG
+				date > 2018.4.13
+				date < 2019.1.1
+			}
+			country_event = britain.1
 		}
 		if = {
 		    limit = {
