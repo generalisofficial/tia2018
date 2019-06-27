@@ -89,7 +89,27 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	first_past_the_post
 }
+
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 3.8 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 73.6 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 22.6 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {		
 	ruling_party = nationalist
@@ -99,8 +119,9 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 100
-    democratic_socialist = 0
+    nationalist = 73.6
+	islamist = 22.6
+    democratic_socialist = 3.8
 }
 
 create_country_leader = {

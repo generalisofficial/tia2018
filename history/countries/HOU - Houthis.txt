@@ -91,11 +91,12 @@ add_ideas = {
     mostly_nationalized
     isolationism
 	lgbt_illegal
+	first_past_the_post
 }
 
 declare_war_on = {
 	target = YEM
-	type = annex_everything
+	type = civil_war
 }
 
 set_politics = {	
@@ -107,17 +108,10 @@ set_politics = {
 
 set_popularities = {
     islamist = 100
-    nationalist = 0
 }
 
 create_country_leader = {
 	name = "Abdul-Malik Badreddin al-Houthi"
 	picture = "Abdul_Malik_Badreddin_al_Houthi.dds"
 	ideology = khomeinist
-}
-
-create_country_leader = {
-	name = "Sadeq Ameen Abu Rass"
-	picture = "Sadeq_Ameen_Abu_Rass.dds"
-	ideology = arab_nationalist
 }
