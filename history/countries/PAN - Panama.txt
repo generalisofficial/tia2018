@@ -84,21 +84,41 @@ add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
 	neutrality_idea
+	first_past_the_post
 }
 
 set_country_flag = christianity
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 31.49 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 33.72 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 34.79 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = nationalist_seats }
+
 set_politics = {	
 	ruling_party = nationalist
-	last_election = "2014.5.4"
+	last_election = "2014.5.5"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 39.1
-    conservative = 31.4
-    social_democrat = 29.5
+    nationalist = 10.83
+    conservative = 31.00
+    social_democrat = 58.17
 }
 
 create_country_leader = {
@@ -114,7 +134,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Benicio Robinson"
-	picture = "Benicio_Robinson.dds"
+	name = "Laurentino Cortizo"
+	picture = "Laurentino_Cortizo.dds"
 	ideology = social_democrat_ideology
 }
