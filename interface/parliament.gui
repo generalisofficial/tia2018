@@ -413,29 +413,30 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "parliament_button_container"
-		position = { x = 200 y = 391 }
+		position = { x = 129 y = 48 }
 		size = { width = 50 height = 50 }
 
 		buttonType = {
 			name = "show_parliament_button"
 			position = { x = 1 y = 1 }
-			quadTextureSprite = "GFX_button_94x31"
+			quadTextureSprite = "GFX_parliament_logo"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = parliament_tooltip
 		}
 
-		instantTextBoxType = {
-			name = "show_parliament_button_text"
-			position = { x = 0 y = 4 }
-			font = "hoi_20bs"
-			text = "Parliament"
-			maxWidth = 100
-			maxHeight = 20
-			fixedsize = no
-			format = centre
-			Orientation = "UPPER_RIGHT"
-		}
+#		instantTextBoxType = {
+#			name = "show_parliament_button_text"
+#			position = { x = 0 y = 4 }
+#			font = "hoi_20bs"
+#			text = "Parliament"
+#			maxWidth = 100
+#			maxHeight = 20
+#			fixedsize = no
+#			format = centre
+#			Orientation = "UPPER_RIGHT"
+#		}
 	}
 }	
