@@ -294,14 +294,7 @@ country_event = {
 	
 	trigger = {
 		reactionary > 0.5
-		NOT = { has_government = reactionary }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = communist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = reactionary has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -361,13 +354,7 @@ country_event = {
 	
 	trigger = {
 		conservative > 0.5
-		NOT = { has_government = conservative }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = conservative has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -418,7 +405,7 @@ country_event = {
 	}
 }
 
-#Classical Liberal Ultimatum
+#Libertarian Ultimatum
 country_event = {
 	id = political.7
 	title = political.7.t
@@ -427,13 +414,7 @@ country_event = {
 	
 	trigger = {
 		market_liberal > 0.5
-		NOT = { has_government = market_liberal }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = market_liberal has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -493,13 +474,7 @@ country_event = {
 	
 	trigger = {
 		social_liberal > 0.5
-		NOT = { has_government = social_liberal }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = social_liberal has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -559,13 +534,7 @@ country_event = {
 	
 	trigger = {
 		social_democrat > 0.5
-		NOT = { has_government = social_democrat }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = social_democrat has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -625,13 +594,7 @@ country_event = {
 	
 	trigger = {
 		progressive > 0.5
-		NOT = { has_government = progressive }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = progressive has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -691,13 +654,7 @@ country_event = {
 	
 	trigger = {
 		democratic_socialist > 0.5
-		NOT = { has_government = democratic_socialist }
-		OR = {
-			has_government = communist
-			has_government = fascist
-			has_government = nationalist
-			has_government = monarchist
-		}
+		NOT = { has_government = democratic_socialist has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -846,14 +803,6 @@ country_event = {
 			popularity = 0.03
 		}
 	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = islamist }
-		}
-	}
 }
 
 #Fascist Gathering
@@ -876,14 +825,6 @@ country_event = {
 		add_popularity = {
 			ideology = fascist
 			popularity = 0.03
-		}
-	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = fascist }
 		}
 	}
 }
@@ -910,14 +851,6 @@ country_event = {
 			popularity = 0.03
 		}
 	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = nationalist }
-		}
-	}
 }
 
 #Monarchist Gathering
@@ -940,14 +873,6 @@ country_event = {
 		add_popularity = {
 			ideology = monarchist
 			popularity = 0.03
-		}
-	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = monarchist }
 		}
 	}
 }
@@ -974,14 +899,6 @@ country_event = {
 			popularity = 0.03
 		}
 	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = reactionary }
-		}
-	}
 }
 
 #Conservative Gathering
@@ -1004,14 +921,6 @@ country_event = {
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.03
-		}
-	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = conservative }
 		}
 	}
 }
@@ -1038,14 +947,6 @@ country_event = {
 			popularity = 0.03
 		}
 	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = market_liberal }
-		}
-	}
 }
 
 #Social Liberal Gathering
@@ -1068,14 +969,6 @@ country_event = {
 		add_popularity = {
 			ideology = social_liberal
 			popularity = 0.03
-		}
-	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = social_liberal }
 		}
 	}
 }
@@ -1102,14 +995,6 @@ country_event = {
 			popularity = 0.03
 		}
 	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = social_democrat }
-		}
-	}
 }
 
 #Progressive Gathering
@@ -1132,14 +1017,6 @@ country_event = {
 		add_popularity = {
 			ideology = progressive
 			popularity = 0.03
-		}
-	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = progressive }
 		}
 	}
 }
@@ -1166,14 +1043,6 @@ country_event = {
 			popularity = 0.03
 		}
 	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = democratic_socialist }
-		}
-	}
 }
 
 #Communist Gathering
@@ -1196,14 +1065,6 @@ country_event = {
 		add_popularity = {
 			ideology = communist
 			popularity = 0.03
-		}
-	}
-	
-	option = {
-		name = political.o.deservesSupport
-		trigger = {
-			is_puppet = no
-			NOT = { has_government = communist }
 		}
 	}
 }
