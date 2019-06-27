@@ -83,9 +83,9 @@ set_technology = {
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
-give_military_access = TUR
-give_military_access = HTS
-give_military_access = USA
+TUR = { give_military_access = FSA }
+USA = { give_military_access = FSA }
+HTS = { give_military_access = FSA }
 
 add_opinion_modifier = {
 	target = ISR

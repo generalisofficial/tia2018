@@ -150,16 +150,16 @@ add_opinion_modifier = {
 }
 add_opinion_modifier = {
 	target = PRK
-	modifier = recent_tensions_in_asia
+	modifier = recent_tensions_in_asia 
 }
 
-give_military_access = SAU
-give_military_access = KUW
-give_military_access = JOR
-give_military_access = QAT
-give_military_access = PAK
-give_military_access = KOR
-give_military_access = ROJ
+SAU = { give_military_access = USA }
+KUW = { give_military_access = USA }
+JOR = { give_military_access = USA }
+QAT = { give_military_access = USA }
+PAK = { give_military_access = USA }
+KOR = { give_military_access = USA }
+ROJ = { give_military_access = USA }
 
 add_ideas = {
     nuclear_weapons_state

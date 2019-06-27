@@ -188,6 +188,25 @@ pulse = {
 		}
 		if = {
 			limit = {
+				NOT = { 
+				    country_exists = ISS
+				    has_global_flag = isis_defeated
+				}
+			}
+			news_event = isis.1
+			set_global_flag = isis_defeated
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = ISS
+				        is_claimed_by = ISS
+			    }
+			    remove_core_of = ISS
+				remove_claim_by = ISS
+		    }
+		}
+		if = {
+			limit = {
 				date > 2019.4.14
 				date < 2020.1.1
 				NOT = { has_global_flag = france1 }

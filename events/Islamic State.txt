@@ -1,0 +1,45 @@
+﻿add_namespace = isis
+
+#End of the Islamic State
+news_event = {
+	id = isis.1
+	title = isis.1.t
+	desc = isis.1.d
+	picture = GFX_news_event_isis_burn
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = isis.1.o3
+		trigger = {
+		    original_tag = SYR
+	    }
+	}
+	
+	option = {
+		name = isis.1.o3
+		trigger = {
+		    original_tag = ROJ
+	    }
+	}
+	
+	option = {
+		name = isis.1.o3
+		trigger = {
+		    has_idea = salafist_jihadist_group
+	    }
+	}
+	
+	option = {
+		name = isis.1.o3
+		trigger = {
+		    NOT = { 
+			    has_idea = salafist_jihadist_group
+				original_tag = ROJ
+				original_tag = SYR
+			}
+	    }
+	}
+}
