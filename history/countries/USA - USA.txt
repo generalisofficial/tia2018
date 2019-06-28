@@ -220,8 +220,23 @@ give_guarantee = PHI
 give_guarantee = ROJ
 
 #House of Representatives
-set_variable = { democratic_seats = 48.8 }
-set_variable = { republican_seats = 51.2 }
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 48.8 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 51.2 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -231,8 +246,7 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 29.3
-    social_democrat = 24.1
+    social_liberal = 53.4
     conservative = 46.6
 }
 
@@ -249,12 +263,6 @@ create_country_leader = {
 	name = "Joe Biden"
 	picture = "Joe_Biden.dds"
 	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Bernie Sanders"
-	picture = "Bernie_Sanders.dds"
-	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
