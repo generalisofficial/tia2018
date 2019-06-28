@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 500
-		size = { width = 600 height = 600 }
+		size = { width = 600 height = 610 }
 		clipping = yes
 		show_sound = open_sub_window
 		moveable = no
@@ -408,6 +408,149 @@ guiTypes = {
 			frame = 12
 			position = { x= 502 y = 239 }
 			scale = 0.7
+		}
+		instantTextBoxType = {
+			name = "popularity_title"
+			position = { x = 40 y = 300 }
+			font = "hoi_36header"
+			text = "Last Election"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "communist_popularity"
+			position = { x = 40 y = 350 }
+			font = "hoi_20bs"
+			text = "COMMUNIST_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "democratic_socialists_popularity"
+			position = { x = 40 y = 370 }
+			font = "hoi_20bs"
+			text = "DEMOCRATIC_SOCIALISTS_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "social_democrats_popularity"
+			position = { x = 40 y = 390 }
+			font = "hoi_20bs"
+			text = "SOCIAL_DEMOCRATS_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "progressive_popularity"
+			position = { x = 40 y = 410 }
+			font = "hoi_20bs"
+			text = "PROGRESSIVE_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "social_liberal_popularity"
+			position = { x = 40 y = 430 }
+			font = "hoi_20bs"
+			text = "SOCIAL_LIBERAL_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "libertarian_popularity"
+			position = { x = 40 y = 450 }
+			font = "hoi_20bs"
+			text = "LIBERTARIAN_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "conservative_popularity"
+			position = { x = 40 y = 470 }
+			font = "hoi_20bs"
+			text = "CONSERVATIVE_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "reactionary_popularity"
+			position = { x = 40 y = 490 }
+			font = "hoi_20bs"
+			text = "REACTIONARY_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "monarchist_popularity"
+			position = { x = 40 y = 510 }
+			font = "hoi_20bs"
+			text = "MONARCHIST_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "nationalist_popularity"
+			position = { x = 40 y = 530 }
+			font = "hoi_20bs"
+			text = "NATIONALIST_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "third_position_popularity"
+			position = { x = 40 y = 550 }
+			font = "hoi_20bs"
+			text = "THIRD_POSITION_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "islamist_popularity"
+			position = { x = 40 y = 570 }
+			font = "hoi_20bs"
+			text = "ISLAMIST_POPULARITY_TEXT"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
 		}
 	}
 
