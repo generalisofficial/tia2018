@@ -82,36 +82,69 @@ set_technology = {
 
 add_ideas = {
 	population_growth_explosion
+	proportional_representation
 }
+
+#National Parliament
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 43.74 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 29.46 }
+set_variable = { social_liberal_seats = 9.79 }
+set_variable = { market_liberal_seats = 17.01 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
-	last_election = "2017.3.20"
+	last_election = "2013.5"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    islamist = 0
-    nationalist = 0
-    reactionary = 0
-    conservative = 0
-    market_liberal = 0
-    social_liberal = 0
-    social_democrat = 42.9
-    progressive = 0
-    democratic_socialist = 57.1
-    communist = 0
+    conservative = 5.5
+    market_liberal = 21.52
+    social_liberal = 9.79
+    social_democrat = 33.84
+    democratic_socialist = 29.65
 }
 
 create_country_leader = {
-	name = "Francisco Guterres"
-	picture = "Francisco_Guterres.dds"
+	name = "Mari Alkatiri"
+	picture = "Mari_Alkatiri.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "António da Conceição"
-	picture = "Antonio_da_Conceicao.dds"
+	name = "Xanana Gusmão"
+	picture = "Xanana_Gusmao.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Taur Matan Ruak"
+	picture = "Taur_Matan_Ruak.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Mariano Sabino Lopes"
+	picture = "Mariano_Sabino_Lopes.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Gilman Santos"
+	picture = "Gilman_Santos.dds"
+	ideology = social_conservative
 }
