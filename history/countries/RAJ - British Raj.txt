@@ -102,20 +102,42 @@ add_ideas = {
 
 set_country_flag = hinduism
 
+#Lok Sabha
+set_variable = { communist_seats = 3.25 }
+set_variable = { democratic_socialist_seats = 7.1 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 24.5 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 65.1 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 3.3 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_fascist
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = fascist_seats }
+
 set_politics = {	
 	ruling_party = reactionary
-	last_election = "2014.4.7"
+	last_election = "2014.4.11"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 42.35
-    progressive = 17.1
-    social_democrat = 22.52
-    fascist = 6.85
-    democratic_socialist = 5.84
-    communist = 5.25
+    reactionary = 61.34
+    progressive = 5.09
+    social_democrat = 25.94
+    fascist = 2.10
+    democratic_socialist = 4.07
+	social_liberal = 0.91
+	islamist = 0.55
 }
 
 create_country_leader = {
