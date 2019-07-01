@@ -92,6 +92,25 @@ add_ideas = {
 
 set_country_flag = christianity
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 86.35 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 11.16 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 2.49 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {	
 	ruling_party = social_liberal
 	last_election = "2015.7.21"
@@ -100,9 +119,9 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 2.14
-    social_liberal = 69.41
-    reactionary = 28.45
+    social_liberal = 86.35
+    reactionary = 11.16
+	nationalist = 2.49
 }
 
 create_country_leader = {
@@ -115,4 +134,10 @@ create_country_leader = {
 	name = "Agathon Rwasa"
 	picture = "Agathon_Rwasa.dds"
 	ideology = independent
+}
+
+create_country_leader = {
+	name = "Pierre Buyoya"
+	picture = "Pierre_Buyoya.dds"
+	ideology = nationalist_ideology
 }
