@@ -184,13 +184,13 @@ on_actions = {
 				limit = {
 					NOT = { has_country_flag = has_coalition }
 				}
-				country_event = election.0
+				country_event = election.1000
 			}
 			every_country = {
 				limit = {
 					has_country_flag = has_coalition
 				}
-				country_event = election.01
+				country_event = election.999
 			}
 		}
 	}

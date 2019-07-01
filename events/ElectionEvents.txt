@@ -2,7 +2,7 @@
 
 # The On_startup seems to be messed up, instead of scripted effects, this event will run on startup to quickset parliaments
 country_event = {
-	id = election.0
+	id = election.1000
 	hidden = yes
 	
 	is_triggered_only = yes
@@ -17,7 +17,7 @@ country_event = {
 
 # For Debug purpose, also ran on every country at startup to set up graphics if coalition already there
 country_event = {
-	id = election.01
+	id = election.999
 	hidden = yes
 	
 	is_triggered_only = yes

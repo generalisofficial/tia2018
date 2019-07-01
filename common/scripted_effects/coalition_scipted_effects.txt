@@ -623,8 +623,13 @@ set_parliament_graphics = {
 			add_to_array = { parliament_array = i }
 		}
 	}
-	resize_array = {
-		parliament_array = 51
+	if = {
+		limit = {
+			check_variable = { parliament_array^num > 51 }
+		}
+		resize_array = {
+			parliament_array = 51
+		}
 	}
 }
 
