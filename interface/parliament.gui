@@ -622,9 +622,32 @@ guiTypes = {
 			text = "OPPOSITION_POPULARITY"
 			maxWidth = 300
 			maxHeight = 40
-			fixedsize = no
+			fixedsize = yes
 			format = left
 			Orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = "motion_of_no_confidence_button"
+			position = { x = 321 y = 460 }
+			quadTextureSprite = "button_type_4"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_default
+			pdx_tooltip = MOTION_NO_CONFIDENCE_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "motion_of_no_confidence_title"
+			position = { x = 335 y = 465 }
+			font = "hoi_20bs"
+			text = "Motion of No Confidence"
+			maxWidth = 195
+			maxHeight = 40
+			fixedsize = yes
+			format = center
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = MOTION_NO_CONFIDENCE_TOOLTIP
 		}
 	}
 
