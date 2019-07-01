@@ -149,6 +149,7 @@ quickset_parliament = {
 
 quickset_coalition = {
     set_country_flag = has_coalition
+	set_variable = { ROOT.Coalition = 0 }
 	if = {
 		limit = {
 			has_government = communist
@@ -233,6 +234,7 @@ quickset_coalition = {
 		set_country_flag = coalition_islamist
         add_to_variable = { ROOT.Coalition = islamist_seats }
 	}
+	set_parliament_graphics_2 = yes
 }
 
 set_parliament_graphics = {
@@ -620,5 +622,20 @@ set_parliament_graphics = {
 			}
 			add_to_array = { parliament_array = i }
 		}
+	}
+}
+
+set_parliament_graphics_2 = {
+	set_variable = {
+		ROOT.GroupGFX = ROOT.Coalition
+	}
+	divide_variable = { ROOT.GroupGFX = 100 }
+	multiply_variable = { ROOT.GroupGFX = 230 }
+
+	set_variable = {
+		ROOT.Opposition = 100
+	}
+	subtract_from_variable = {
+		ROOT.Opposition = ROOT.Coalition
 	}
 }

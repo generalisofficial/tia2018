@@ -28,8 +28,15 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+		name = "Reload and quickset Parliament and Coalition"
 		clear_array = parliament_array
 		clear_array = ideology_seats_array 
+		quickset_parliament = yes
+		quickset_coalition = yes
+	}
+	option = {
+		name = "Reload Graphics only"
 		set_parliament_graphics = yes
+		set_parliament_graphics_2 = yes
 	}
 }
