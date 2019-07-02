@@ -16,23 +16,19 @@ scripted_gui = {
 				clear_variable = show_parliament
 			}
 			motion_of_no_confidence_button_click = {
-				set_country_flag = forming_government_1
-				break_coalition = yes
+				motion_of_no_confidence = yes
 			}
 			motion_of_no_confidence_title_click = {
-				set_country_flag = forming_government_1
-				break_coalition = yes
+				motion_of_no_confidence = yes
 			}
 		}
 
 		triggers = {
 			motion_of_no_confidence_button_click_enabled = {
-				has_idea = proportional_representation
-            	minority_government = yes
+				has_idea = parliamentary_system
 			}
 			motion_of_no_confidence_title_click_enabled = {
-				has_idea = proportional_representation
-            	minority_government = yes
+				has_idea = parliamentary_system
 			}
 		}
 
