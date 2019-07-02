@@ -1327,27 +1327,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@islamist
+							value = islamist_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_islamist
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@islamist
+						value = islamist_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_islamist
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@islamist
+						value = islamist_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party2_click = { 
@@ -1357,27 +1354,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@fascist
+							value = fascist_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_fascist
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@fascist
+						value = fascist_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_fascist
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@fascist
+						value = fascist_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party3_click = { 
@@ -1387,27 +1381,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@nationalist
+							value = nationalist_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_nationalist
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@nationalist
+						value = nationalist_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_nationalist
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@nationalist
+						value = nationalist_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party4_click = { 
@@ -1417,27 +1408,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@monarchist
+							value = monarchist_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_monarchist
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@monarchist
+						value = monarchist_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_monarchist
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@monarchist
+						value = monarchist_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party5_click = { 
@@ -1447,27 +1435,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@reactionary
+							value = reactionary_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_reactionary
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@reactionary
+						value = reactionary_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_reactionary
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@reactionary
+						value = reactionary_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party6_click = { 
@@ -1477,27 +1462,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@conservative
+							value = conservative_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_conservative
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@conservative
+						value = conservative_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_conservative
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@conservative
+						value = conservative_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party7_click = { 
@@ -1507,27 +1489,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@market_liberal
+							value = market_liberal_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_market_liberal
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@market_liberal
+						value = market_liberal_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_market_liberal
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@market_liberal
+						value = market_liberal_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party8_click = { 
@@ -1537,27 +1516,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@social_liberal
+							value = social_liberal_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_social_liberal
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@social_liberal
+						value = social_liberal_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_social_liberal
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@social_liberal
+						value = social_liberal_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party9_click = { 
@@ -1567,27 +1543,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@social_democrat
+							value = social_democrat_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_social_democrat
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@social_democrat
+						value = social_democrat_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_social_democrat
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@social_democrat
+						value = social_democrat_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party10_click = { 
@@ -1597,27 +1570,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@progressive
+							value = progressive_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_progressive
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@progressive
+						value = progressive_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_progressive
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@progressive
+						value = progressive_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party11_click = { 
@@ -1627,27 +1597,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@democratic_socialist
+							value = democratic_socialist_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_democratic_socialist
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@democratic_socialist
+						value = democratic_socialist_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_democratic_socialist
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@democratic_socialist
+						value = democratic_socialist_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
 			party12_click = { 
@@ -1657,27 +1624,24 @@ scripted_gui = {
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = party_popularity@communist
+							value = communist_seats
 							compare = greater_than_or_equals
 						}
 					}
 					clr_country_flag = coalition_communist
 					clr_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@communist
+						value = communist_seats
 					}
 				}
 				else = {
 					set_country_flag = coalition_communist
 					set_country_flag = coalition_chosen
-					divide_variable = { ROOT.NewCoalition = 100 }
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@communist
+						value = communist_seats
 					}
-					multiply_variable = { ROOT.NewCoalition = 100 }
 				}
 			}
         }
