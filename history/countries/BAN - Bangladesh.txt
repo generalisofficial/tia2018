@@ -87,10 +87,30 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	proportional_representation
 }
 
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
+
+#Jatiya Sangsad
+set_variable = { communist_seats = 2.06 }
+set_variable = { democratic_socialist_seats = 1.75 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 79.14 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 17.05 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -100,9 +120,11 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 79.14
-    conservative = 11.31
-    communist = 9.55
+    social_democrat = 76.88
+	reactionary = 16.39
+    conservative = 5.07
+    communist = 1.00
+	democratic_socialist = 0.66
 }
 
 create_country_leader = {
@@ -127,6 +149,12 @@ create_country_leader = {
 	name = "Khaleda Zia"
 	picture = "Khaleda_Zia.dds"
 	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Hasanul Haq Inu"
+	picture = "Hasanul_Haq_Inu.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
