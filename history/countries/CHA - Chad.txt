@@ -85,10 +85,30 @@ add_ideas = {
 	african_union_member
 	non_aligned_movement_member
 	lgbt_illegal
+	first_past_the_post
 }
 
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 28.73 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 71.27 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
 	ruling_party = nationalist
@@ -98,8 +118,8 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 59.92
-    social_democrat = 40.08
+    nationalist = 71.27
+    social_democrat = 28.73
 }
 
 create_country_leader = {
