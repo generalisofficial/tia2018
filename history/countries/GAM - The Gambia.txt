@@ -87,7 +87,27 @@ add_ideas = {
 	limited_conscription
 	african_union_member
 	non_aligned_movement_member
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 8.94 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 57.77 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 17.38 }
+set_variable = { reactionary_seats = 15.91 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -97,9 +117,10 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 43.3
-    reactionary = 39.6
-    conservative = 17.1
+    social_democrat = 57.77
+    conservative = 17.38
+	reactionary = 15.91
+	democratic_socialist = 8.94
 }
 
 create_country_leader = {
@@ -118,4 +139,10 @@ create_country_leader = {
 	name = "Mama Kandeh"
 	picture = "Mama_Kandeh.dds"
 	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Halifa Sallah"
+	picture = "Halifa_Sallah.dds"
+	ideology = democratic_socialist_ideology
 }
