@@ -87,9 +87,29 @@ add_ideas = {
 	commonwealth_of_nations_member
 	non_aligned_movement_member
 	lgbt_illegal
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 80.01 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 3.51 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 16.39 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -99,8 +119,9 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 13.27
-    democratic_socialist = 86.73
+    conservative = 16.39
+    democratic_socialist = 80.01
+	social_liberal = 3.51
 }
 
 create_country_leader = {
@@ -113,6 +134,12 @@ create_country_leader = {
 	name = "McHenry Venaani"
 	picture = "McHenry_Venaani.dds"
 	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Mike Kavekotora"
+	picture = "Mike_Kavekotora.dds"
+	ideology = social_liberal_ideology
 }
 
 create_field_marshal = {

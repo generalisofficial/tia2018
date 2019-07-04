@@ -546,21 +546,14 @@ benelux_decisions = {
 		}
 		
 		available = {
-		    OR = {
-			    original_tag = HOL
-		        NOT = { country_exists = HOL }
-			    HOL = { is_subject_of = ROOT }
-			}
-			OR = {
-			    original_tag = BEL
-		        NOT = { country_exists = BEL }
-			    BEL = { is_subject_of = ROOT }
-			}
-			OR = {
-			    original_tag = LUX
-		        NOT = { country_exists = LUX }
-			    LUX = { is_subject_of = ROOT }
-			}
+		    owns_state = 7
+			owns_state = 35
+			owns_state = 841
+			owns_state = 36
+			owns_state = 6
+			owns_state = 34
+			owns_state = 57
+			owns_state = 8
 		}
 		
 		icon = benelux
@@ -582,24 +575,6 @@ benelux_decisions = {
 			    }
 			    add_core_of = ROOT
 		    }
-			if = {
-			    limit = {
-		            HOL = { is_subject_of = ROOT }
-			    }
-			    annex_country = { target = HOL transfer_troops = yes }
-		    }
-			if = {
-			    limit = {
-		            BEL = { is_subject_of = ROOT }
-			    }
-			    annex_country = { target = BEL transfer_troops = yes }
-		    }
-			if = {
-			    limit = {
-		            LUX = { is_subject_of = ROOT }
-			    }
-			    annex_country = { target = LUX transfer_troops = yes }
-		    }
 			every_country = {
 			    limit = {
 				    has_idea = benelux_member
@@ -610,6 +585,54 @@ benelux_decisions = {
 		
 		ai_will_do = {
 			factor = 100
+		}
+	}
+}
+	
+asean_decisions = {
+	
+	join_asean = {
+	
+		visible = {
+			NOT = { has_idea = asean_member has_idea = salafist_jihadist_group }
+			OR = { original_tag = BRM original_tag = SIA original_tag = LAO	original_tag = CAM original_tag = VIN original_tag = PHI original_tag = MAL original_tag = SIG original_tag = BRU original_tag = INS original_tag = ETI }
+		}
+		available = {
+            NOT = { has_idea = asean_member has_idea = non_member_state }
+		}
+		
+		complete_effect = {
+            add_ideas = asean_member
+		}
+		
+		icon = asean
+		
+		cost = 100
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	leave_asean = {
+	
+		visible = {
+			has_idea = asean_member
+		}
+		available = {
+            always = yes
+		}
+		
+		complete_effect = {
+            remove_ideas = asean_member
+		}
+		
+		icon = asean
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 0
 		}
 	}
 }
