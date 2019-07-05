@@ -121,7 +121,27 @@ add_ideas = {
     vladimir_medinsky
     alexander_konovalov
     sergey_shoygu
+	presidential_system
 }
+
+#State Duma
+set_variable = { communist_seats = 13.3 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 6.2 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0.2 }
+set_variable = { reactionary_seats = 65.69 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 14.61 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -131,9 +151,11 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 11.54
-    reactionary = 76.69
-    communist = 11.77
+    reactionary = 65.69
+    nationalist = 14.61
+	communist = 13.3
+	social_democrat = 6.2
+	conservative = 0.2
 }
 
 create_faction = "Collective Security Treaty Organization"
@@ -212,8 +234,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sergei Mironov"
-	picture = "Sergei_Mironov.dds"
+	name = "Sergey Mironov"
+	picture = "Sergey_Mironov.dds"
 	ideology = social_democrat_ideology
 }
 

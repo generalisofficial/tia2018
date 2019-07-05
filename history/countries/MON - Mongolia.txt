@@ -79,10 +79,30 @@ set_technology = {
 	excavation1 = 1
 }
 
+#State Great Khural
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 10.76 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 55.69 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 33.55 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 add_ideas = {
 	population_growth_rapid
 	non_aligned_movement_member
 	neutrality_idea
+	parliamentary_system
 }
 
 set_country_flag = buddhism
@@ -95,9 +115,9 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 45.69
+    social_democrat = 55.69
     conservative = 33.55
-    democratic_socialist = 20.76
+    democratic_socialist = 10.76
 }
 
 create_country_leader = {
