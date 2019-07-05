@@ -82,9 +82,31 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	idea_eu_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Parliament of Romania
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 45.48 }
+set_variable = { social_liberal_seats = 20.04 }
+set_variable = { market_liberal_seats = 5.62 }
+set_variable = { conservative_seats = 25.03 }
+set_variable = { reactionary_seats = 2.79 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 1.04 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_market_liberal
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -95,9 +117,11 @@ set_politics = {
 
 set_popularities = {
     social_democrat = 45.48
-    market_liberal = 25.61
+    conservative = 25.03
     social_liberal = 20.04
-    conservative = 8.87
+    market_liberal = 5.62
+	reactionary = 2.79
+	nationalist = 1.04
 }
 
 create_country_leader = {
@@ -109,7 +133,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ludovic Orban"
 	picture = "Ludovic_Orban.dds"
-	ideology = libertarian
+	ideology = christian_democrat
 }
 
 create_country_leader = {
@@ -121,13 +145,19 @@ create_country_leader = {
 create_country_leader = {
 	name = "Călin Popescu-Tăriceanu"
 	picture = "Calin_Popescu_Tariceanu.dds"
-	ideology = liberal_conservative
+	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Silviu Dumitru"
-	picture = "Silviu_Dumitru.dds"
+	name = "Dănuţ Pop"
+	picture = "Danut_Pop.dds"
 	ideology = green
+}
+
+create_country_leader = {
+	name = "Robert Bugă"
+	picture = "Robert_Buga.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
@@ -140,6 +170,18 @@ create_country_leader = {
 	name = "Tudor Ionescu"
 	picture = "Tudor_Ionescu.dds"
 	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Constantin Rotaru"
+	picture = "Constantin_Rotaru.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Margareta"
+	picture = "Margareta.dds"
+	ideology = absolute_monarchist
 }
 
 create_corps_commander = {
