@@ -1108,12 +1108,19 @@ ideas = {
 		minority_government = {
 			picture = disjointed_government
 		
-			allowed = { always = no }
+			allowed = {
+			    check_variable = {
+                    var = ROOT.Coalition
+                    value = 50
+                    compare = less_than
+                }
+				has_idea = parliamentary_system
+			}
+			
 			removal_cost = -1
 			
 			modifier = {
 			    political_power_gain = -0.3
-				stability_factor = -0.1
 			}
 		}
 	}   
