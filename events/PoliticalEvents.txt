@@ -9,7 +9,7 @@ country_event = {
 	
 	trigger = {
 		fascist > 0.5
-		NOT = { has_government = fascist }
+		NOT = { has_government = fascist has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -71,7 +71,7 @@ country_event = {
 	
 	trigger = {
 		nationalist > 0.5
-		NOT = { has_government = nationalist }
+		NOT = { has_government = nationalist has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -137,7 +137,7 @@ country_event = {
 	
 	trigger = {
 		communist > 0.5
-		NOT = { has_government = communist }
+		NOT = { has_government = communist has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -222,7 +222,7 @@ country_event = {
 	
 	trigger = {
 		islamist > 0.5
-		NOT = { has_government = islamist }
+		NOT = { has_government = islamist has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
