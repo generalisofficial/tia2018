@@ -382,6 +382,14 @@ pulse = {
 			country_event = britain.1
 		}
 		if = {
+			limit = {
+			    original_tag = ROM
+				date > 2018.1.28
+				date < 2019.1.1
+			}
+			country_event = romania.1
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {
