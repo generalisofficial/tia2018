@@ -67,3 +67,62 @@ create_random_factory_MIL_2 = {
 		}
 	}
 }
+
+
+money_setup_scripted_effect = {
+	### Income based on taxes from population
+	# Base value: 40% income tax for everyone which can be changed in-game
+	# All these variables could be changed in-game. Would add more to the fact that we want to create something very immersive, with many possibilities
+
+	# The total country population divided by 1000, because multiply this by 1000 and the variable breaks - gg Paradox
+	set_variable = {
+		total_population_k = max_manpower_k
+	}
+
+	if = {
+		limit = {
+			ROOT = { 
+				random_owned_state = {
+					is_on_continent = europe
+				}
+			}
+		}
+		# Different for every country, I took something in the middle to start with
+		set_variable = {
+			income_tax_default_europe = 40
+		}
+		# Based on 13.4€ per day GROSS EARNINGS in the European Union, working 8 hours per day and 20 days a month
+		set_variable = { 
+			monthly_income_hourly = 13.4
+		}
+		set_variable = {
+			works_hours_per_day = 8
+		}
+		set_variable = {
+			average_working_days_per_month = 20
+		}
+		set_variable = {
+			income_per_month = monthly_income_hourly
+		}
+		multiply_variable = {
+			income_per_month = works_hours_per_day
+		}
+		multiply_variable = { # Should be 2112€ per month on average in the whole EU (globalized to Europe - again, not every country is the same so this either has to be changed per country, or freely set by the player during the game)
+			income_per_month = average_working_days_per_month
+		}
+		# Divide by 1000 so the variable doesn't suicide itself, so should be 2,112€ - also fits because total population is divided by 1000 too
+		divide_variable = {
+			income_per_month = 1000
+		}
+		# This is what the state gets out of it
+		set_variable = {
+			income_per_month_for_country = income_per_month
+		}
+		divide_variable = {
+			income_per_month_for_country = 40
+		}
+		multiply_variable = { # Final calculation for everyone, children and elderly included I suppose, might have to be corrected
+			income_per_month_for_country = total_population_k
+		}
+	}
+}

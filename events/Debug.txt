@@ -1,0 +1,41 @@
+﻿add_namespace = debug
+
+country_event = { #RPA replaces Karapetyan
+	id = debug.1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Debug Manpower Vars"
+		set_variable = {
+			manpower_variable = manpower
+		}
+		set_variable = {
+			manpower_per_military_factory_variable = manpower_per_military_factory
+		}
+		set_variable = {
+			manpower_max_available_variable = max_available_manpower
+		}
+		set_variable = {
+			max_manpower_variable = max_manpower
+		}
+		set_variable = {
+			max_manpower_k_variable = max_manpower_k
+		}
+	}
+
+	option = {
+		name = "Cleanup Manpower Vars"
+		clear_variable = manpower_variable
+		clear_variable = manpower_per_military_factory_variable
+		clear_variable = manpower_max_available_variable
+		clear_variable = max_manpower_variable
+		clear_variable = max_manpower_k_variable
+		clear_variable = total_population
+	}
+
+	option = {
+		name = "Run money scripted effect"
+		money_setup_scripted_effect = yes
+	}
+}
