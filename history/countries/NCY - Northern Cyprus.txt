@@ -68,6 +68,7 @@ add_ideas = {
 	non_member_state
 	limited_conscription
 	isolationism
+	parliamentary_system
 }
 
 give_guarantee = TUR
@@ -76,26 +77,61 @@ give_military_access = TUR
 add_opinion_modifier = { target = CYP modifier = rival }
 add_opinion_modifier = { target = CYP modifier = rival_trade }
 
+#Assembly of the Republic
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 29.5 }
+set_variable = { social_liberal_seats = 17.1 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 7.8 }
+set_variable = { reactionary_seats = 45.6 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = social_democrat
-	last_election = "2015.4.26"
+	ruling_party = reactionary
+	last_election = "2013.1.7"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 39.50
-    social_democrat = 60.50
+    reactionary = 45.6
+    social_democrat = 29.5
+	social_liberal = 17.1
+	conservative = 7.8
 }
 
 create_country_leader = {
-	name = "Mustafa Akıncı"
-	picture = "Mustafa_Akinci.dds"
+	name = "Hüseyin Özgürgün"
+	picture = "Huseyin_Ozgurgun.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Tufan Erhürman"
+	picture = "Tufan_Erhurman.dds"
 	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Derviş Eroğlu"
-	picture = "Dervis_Eroglu.dds"
-	ideology = reactionary_ideology
+	name = "Kudret Özersay"
+	picture = "Kudret_Ozersay.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Serdar Denktaş"
+	picture = "Serdar_Denktas.dds"
+	ideology = social_conservative
 }

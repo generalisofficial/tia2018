@@ -91,11 +91,7 @@ pulse = {
 		}
 		if = {
 			limit = {
-				check_variable = {
-                    var = ROOT.Coalition
-                    value = 50
-                    compare = less_than
-                }
+				minority_government = yes
 				has_idea = parliamentary_system
 			}
 			add_ideas = minority_government

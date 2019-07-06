@@ -79,33 +79,59 @@ set_technology = {
 	excavation1 = 1
 }
 
+give_military_access = GRE
+
 add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = TUR modifier = rival_trade }
 add_opinion_modifier = { target = NCY modifier = rival }
 add_opinion_modifier = { target = NCY modifier = rival_trade }
+add_opinion_modifier = { target = GRE modifier = diplomatic_proximity }
 
 add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
 	idea_eu_member
 	the_euro
+	presidential_system
 }
 
 set_country_flag = christianity
 
+#House of Representatives
+set_variable = { communist_seats = 25.7 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 4.8 }
+set_variable = { social_democrat_seats = 6.2 }
+set_variable = { social_liberal_seats = 6.0 }
+set_variable = { market_liberal_seats = 14.5 }
+set_variable = { conservative_seats = 33.9 }
+set_variable = { reactionary_seats = 5.2 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 3.7 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
 	ruling_party = conservative
 	last_election = "2013.1.28"
-	election_frequency = 48
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 36.19
-    communist = 30.24
-    market_liberal = 25.74
-    fascist = 5.65
-    reactionary = 2.18
+    conservative = 33.9
+    communist = 25.7
+    market_liberal = 14.5
+	social_democrat = 6.2
+	social_liberal = 6.0
+	reactionary = 5.2
+	progressive = 4.8
+    fascist = 3.7
 }
 
 create_country_leader = {
@@ -135,7 +161,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Giorgos Lillikas"
 	picture = "Giorgos_Lillikas.dds"
-	ideology = social_liberal_ideology
+	ideology = centrist
 }
 
 create_country_leader = {
