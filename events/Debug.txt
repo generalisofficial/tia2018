@@ -1,6 +1,6 @@
 ﻿add_namespace = debug
 
-country_event = { #RPA replaces Karapetyan
+country_event = {
 	id = debug.1
 	
 	is_triggered_only = yes
@@ -37,5 +37,16 @@ country_event = { #RPA replaces Karapetyan
 	option = {
 		name = "Run money scripted effect"
 		money_setup_scripted_effect = yes
+	}
+}
+
+country_event = {
+	id = debug.2
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Update Money scripted effect"
+		money_update_scripted_effect = yes
 	}
 }

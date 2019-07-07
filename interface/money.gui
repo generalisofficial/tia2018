@@ -1,0 +1,130 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "money_topbar_container"
+		position = { x = 1450 y = 4 }
+
+		buttonType = {
+			name = "open_money_window"
+			spriteType = "GFX_generic_box_125"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = MONEY_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "money_value_button_text"
+			position = { x = 4 y = 4 }
+			font = "hoi_18mbs"
+			text = MONEY_VALUE
+			format = right
+			maxWidth = 110
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = MONEY_TOOLTIP
+		}
+	}
+
+	containerWindowType = {
+		name = "money_window_container"
+		position = { x = 300 y = 200 }
+		size = { width = 1280 height = 720 }
+
+		fade_time = 250
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "close_button" 
+			position = { x = 1240 y = 10 }	
+			spriteType = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "state_treasury_window_title"
+			position = { x = 450 y = 20 }
+			font = "hoi_36header"
+			text = "State Treasury Management"
+			format = left
+			maxWidth = 420
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "money_value_text"
+			position = { x = 380 y = 80 }
+			font = "hoi_24header"
+			text = MONEY_VALUE_TEXT_WINDOW
+			format = left
+			maxWidth = 600
+			maxHeight = 24
+			fixedsize = no
+			pdx_tooltip = MONEY_SHOW_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "taxation_title"
+			position = { x = 180 y = 130 }
+			font = "hoi_36header"
+			text = "Taxation"
+			format = left
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = TAXATION_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "taxation_population_text"
+			position = { x = 100 y = 180 }
+			font = "hoi_24header"
+			text = TAXATION_POPULATION
+			format = left
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "add_to_income_taxation"
+			position = { x = 379 y = 180 }
+			quadTextureSprite ="GFX_zoom_in"
+		}
+
+		buttonType = {
+			name = "reduce_income_taxation"
+			position = { x = 312 y = 180 }
+			quadTextureSprite ="GFX_zoom_out"
+		}
+
+		instantTextBoxType = {
+			name = "taxation_corporation_text"
+			position = { x = 100 y = 220 }
+			font = "hoi_24header"
+			text = TAXATION_CORPORATION
+			format = left
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "add_to_corporate_taxation"
+			position = { x = 412 y = 220 }
+			quadTextureSprite ="GFX_zoom_in"
+		}
+
+		buttonType = {
+			name = "reduce_corporate_taxation"
+			position = { x = 347 y = 220 }
+			quadTextureSprite ="GFX_zoom_out"
+		}
+	}
+}	
