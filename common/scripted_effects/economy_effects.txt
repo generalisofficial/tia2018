@@ -103,70 +103,102 @@ money_setup_scripted_effect = {
 			average_working_days_monthly = 20
 		}
 		set_variable = {
-			income_monthly = monthly_income_hourly
-		}
-		multiply_variable = {
-			income_monthly = works_hours_per_day
-		}
-		multiply_variable = { # Should be 2112€ per month on average in the whole EU (globalized to Europe - again, not every country is the same so this either has to be changed per country, or freely set by the player during the game)
-			income_monthly = average_working_days_monthly
-		}
-		# Divide by 1000 so the variable doesn't suicide itself, so should be 2,112€ - also fits because total population is divided by 1000 too
-		divide_variable = {
-			income_monthly = 1000
-		}
-		# This is what the state gets out of it
-		set_variable = {
-			income_monthly_for_country = income_monthly
-		}
-		divide_variable = {
-			income_monthly_for_country = 100
-		}
-		multiply_variable = {
-			income_monthly_for_country = income_tax
-		}
-		multiply_variable = { # Final calculation for everyone, children and elderly included I suppose, might have to be corrected
-			income_monthly_for_country = total_population_k
-		}
-
-		## Based on factories - corporate taxation
-		# Different for every country too, same as above - this is the european average
-		set_variable = {
 			corporate_tax = 21.68
 		}
 		set_variable = { # Random number between 1 and 5 million, divided by 1000
 			corporate_income_monthly = 3311.080
 		}
-		set_variable = {
-			corporate_income_monthly_for_country = corporate_income_monthly
-		}
-		divide_variable = {
-			corporate_income_monthly_for_country = 100
-		}
-		multiply_variable = {
-			corporate_income_monthly_for_country = corporate_tax
-		}
-		multiply_variable = { # Final calculation for all factories, civilian and military
-			corporate_income_monthly_for_country = num_of_factories
-		}
+	}
 
-		## Adding everything together for a base value of money
+	if = {
+		limit = {
+			ROOT = { 
+				any_owned_state = {
+					is_on_continent = north_america
+				}
+			}
+		}
+		## Based on Population
+		# Different for every country, I took something in the middle to start with
+		set_variable = { # Federal for the average salary + median state
+			income_tax = 26.8
+		}
+		#
+		set_variable = { # Based on 56.000$ NET per year on average (I added a few $ to make it look gross)
+			monthly_income_hourly = 33.1
+		}
 		set_variable = {
-			state_treasury = 0
+			works_hours_per_day = 8
 		}
-		add_to_variable = {
-			state_treasury = income_monthly_for_country
+		set_variable = {
+			average_working_days_monthly = 21
 		}
-		add_to_variable = { # Final result of total money the country can use, divided by 1000
-			state_treasury = corporate_income_monthly_for_country
+		set_variable = { # This is the average. There's federal tax (21%) and state tax (depends), both get added together
+			corporate_tax = 25.7
 		}
+		set_variable = { # Random number, higher than Europe but I can't find any reliable data
+			corporate_income_monthly = 4068.587
+		}
+	}
 
-		set_variable = {
-			state_treasury_show = state_treasury
-		}
-		divide_variable = {
-			state_treasury_show = 1000
-		}
+	set_variable = {
+		income_monthly = monthly_income_hourly
+	}
+	multiply_variable = {
+		income_monthly = works_hours_per_day
+	}
+	multiply_variable = { # Should be 2112€ per month on average in the whole EU (globalized to Europe - again, not every country is the same so this either has to be changed per country, or freely set by the player during the game)
+		income_monthly = average_working_days_monthly
+	}
+	# Divide by 1000 so the variable doesn't suicide itself, so should be 2,112€ - also fits because total population is divided by 1000 too
+	divide_variable = {
+		income_monthly = 1000
+	}
+	# This is what the state gets out of it
+	set_variable = {
+		income_monthly_for_country = income_monthly
+	}
+	divide_variable = {
+		income_monthly_for_country = 100
+	}
+	multiply_variable = {
+		income_monthly_for_country = income_tax
+	}
+	multiply_variable = { # Final calculation for everyone, children and elderly included I suppose, might have to be corrected
+		income_monthly_for_country = total_population_k
+	}
+
+	## Based on factories - corporate taxation
+	# Different for every country too, same as above - this is the european average
+
+	set_variable = {
+		corporate_income_monthly_for_country = corporate_income_monthly
+	}
+	divide_variable = {
+		corporate_income_monthly_for_country = 100
+	}
+	multiply_variable = {
+		corporate_income_monthly_for_country = corporate_tax
+	}
+	multiply_variable = { # Final calculation for all factories, civilian and military
+		corporate_income_monthly_for_country = num_of_factories
+	}
+
+	## Adding everything together for a base value of money
+	set_variable = {
+		state_treasury = 0
+	}
+	add_to_variable = {
+		state_treasury = income_monthly_for_country
+	}
+	add_to_variable = { # Final result of total money the country can use, divided by 1000
+		state_treasury = corporate_income_monthly_for_country
+	}
+	set_variable = {
+		state_treasury_show = state_treasury
+	}
+	divide_variable = {
+		state_treasury_show = 1000
 	}
 }
 
