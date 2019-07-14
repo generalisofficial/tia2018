@@ -83,9 +83,29 @@ add_ideas = {
 	population_growth_rapid
 	limited_conscription
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 65.86 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 12.41 }
+set_variable = { conservative_seats = 21.73 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -95,8 +115,9 @@ set_politics = {
 }
 
 set_popularities = {
-    market_liberal = 27.56
-    democratic_socialist = 72.44
+    democratic_socialist = 65.86
+	conservative = 21.73
+	market_liberal = 12.41
 }
 
 create_country_leader = {
@@ -108,5 +129,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Arnoldo Alemán"
 	picture = "Arnoldo_Aleman.dds"
+	ideology = liberal_conservative
+}
+
+create_country_leader = {
+	name = "José del Carmen Alvarado"
+	picture = "Jose_del_Carmen_Alvarado.dds"
 	ideology = libertarian
 }
