@@ -87,12 +87,32 @@ add_opinion_modifier = {
 set_country_flag = dominant_religion_islam
 set_country_flag = shia_islam
 
+#People’s Council of Syria
+set_variable = { communist_seats = 1.6 }
+set_variable = { democratic_socialist_seats = 1.6 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 94 }
+set_variable = { fascist_seats = 2.8 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = nationalist_seats }
+
 add_ideas = {
 	population_growth_rapid
 	service_by_requirement
 	islamic_sectarian_violence
 	non_aligned_movement_member
 	lgbt_illegal
+	presidential_system
 }
 
 set_politics = {	
@@ -103,8 +123,10 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 88.7
-    social_liberal = 11.3
+    nationalist = 94
+	fascist = 2.8
+	communist = 1.6
+	democratic_socialist = 1.6
 }
 
 create_country_leader = {
@@ -123,9 +145,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hassan al-Nouri"
-	picture = "Hassan_al_Nouri.dds"
-	ideology = centrist
+	name = "Safwan al-Qudsi"
+	picture = "Safwan_al_Qudsi.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
@@ -156,13 +178,6 @@ create_country_leader = {
 	name = "Mohammad Riad al-Shaqfeh"
 	picture = "Mohammad_Riad_al_Shaqfeh.dds"
 	ideology = muslim_brotherhood
-}
-
-create_field_marshal = {
-	name = "Bashar Al Assad"
-	picture = "Portrait_Bashar_Al_Assad.dds"
-	traits = { thorough_planner }
-	skill = 2
 }
 
 create_field_marshal = {

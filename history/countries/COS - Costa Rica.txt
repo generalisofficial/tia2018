@@ -84,9 +84,29 @@ add_ideas = {
 	disarmed_nation
 	neutrality_idea
 	christianity
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#Legislative Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 66.67 }
+set_variable = { social_democrat_seats = 31.58 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 1.75 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_progressive
+add_to_variable = { ROOT.Coalition = progressive_seats }
 
 set_politics = {	
 	ruling_party = progressive
@@ -96,8 +116,9 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 39.41
-    progressive = 60.59
+    nationalist = 24.56
+	social_democrat = 29.82
+    progressive = 45.62
 }
 
 create_country_leader = {

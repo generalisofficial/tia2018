@@ -82,9 +82,29 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	limited_conscription
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#Legislative Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 24.54 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 33.74 }
+set_variable = { reactionary_seats = 41.72 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -94,8 +114,9 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 49.89
-    democratic_socialist = 50.11
+    reactionary = 41.72
+    conservative = 33.74
+    democratic_socialist = 24.54
 }
 
 create_country_leader = {
@@ -107,5 +128,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Carlos Calleja"
 	picture = "Carlos_Calleja.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Nayib Bukele"
+	picture = "Nayib_Bukele.dds"
 	ideology = liberal_conservative
 }
