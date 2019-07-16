@@ -99,7 +99,27 @@ add_ideas = {
 	idea_eu_member
 	the_euro
 	idea_united_nations_security_council_member
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 1.73 }
+set_variable = { democratic_socialist_seats = 2.95 }
+set_variable = { progressive_seats = 0.17 }
+set_variable = { social_democrat_seats = 7.80 }
+set_variable = { social_liberal_seats = 54.73 }
+set_variable = { market_liberal_seats = 7.28 }
+set_variable = { conservative_seats = 23.74 }
+set_variable = { reactionary_seats = 1.56 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_liberal
@@ -109,10 +129,14 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 39.11
-    reactionary = 21.30
-    conservative = 20.01
-    democratic_socialist = 19.58
+    social_liberal = 54.73
+	market_liberal = 7.28
+	social_democrat = 7.80
+    reactionary = 1.56
+    conservative = 23.74
+    democratic_socialist = 2.95
+	communist = 1.73
+	progressive = 0.17
 }
 
 add_opinion_modifier = {

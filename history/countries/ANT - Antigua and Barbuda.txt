@@ -84,9 +84,29 @@ add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
 	non_aligned_movement_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 43.55 }
+set_variable = { social_democrat_seats = 56.45 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -96,8 +116,8 @@ set_politics = {
 }
 
 set_popularities = {
-    progressive = 43.55
-    social_democrat = 56.45
+    progressive = 40.76
+    social_democrat = 59.24
 }
 
 create_country_leader = {
