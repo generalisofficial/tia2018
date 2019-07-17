@@ -105,8 +105,8 @@ money_setup_scripted_effect = {
 		set_variable = {
 			corporate_tax = 21.68
 		}
-		set_variable = { # Random number between 1 and 5 million, divided by 1000
-			corporate_income_monthly = 3311.080
+		set_variable = { # Random number between 1 and 5 million, divided by 1.000.000
+			corporate_income_monthly = 3.311080
 		}
 	}
 
@@ -137,7 +137,7 @@ money_setup_scripted_effect = {
 			corporate_tax = 25.7
 		}
 		set_variable = { # Random number, higher than Europe but I can't find any reliable data
-			corporate_income_monthly = 4068.587
+			corporate_income_monthly = 4.068587
 		}
 	}
 
@@ -166,6 +166,9 @@ money_setup_scripted_effect = {
 	}
 	multiply_variable = { # Final calculation for everyone, children and elderly included I suppose, might have to be corrected
 		income_monthly_for_country = total_population_k
+	}
+	divide_variable = { # On 1 Million
+		income_monthly_for_country = 1000
 	}
 
 	## Based on factories - corporate taxation
@@ -197,9 +200,6 @@ money_setup_scripted_effect = {
 	set_variable = {
 		state_treasury_show = state_treasury
 	}
-	divide_variable = {
-		state_treasury_show = 1000
-	}
 }
 
 money_update_scripted_effect = {
@@ -228,6 +228,9 @@ money_update_scripted_effect = {
 	multiply_variable = {
 		income_monthly_for_country = total_population_k
 	}
+	divide_variable = {
+		income_monthly_for_country = 1000
+	}
 
 	set_variable = {
 		corporate_income_monthly_for_country = corporate_income_monthly
@@ -251,8 +254,5 @@ money_update_scripted_effect = {
 	}
 	set_variable = {
 		state_treasury_show = state_treasury
-	}
-	divide_variable = {
-		state_treasury_show = 1000
 	}
 }

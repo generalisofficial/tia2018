@@ -1,0 +1,12 @@
+﻿add_namespace = money
+
+country_event = { #RPA replaces Karapetyan
+	id = money.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		money_setup_scripted_effect = yes
+	}
+}
