@@ -85,9 +85,33 @@ add_ideas = {
 	population_growth_decline
 	idea_eu_member
 	the_euro
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Chamber of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 4.94 }
+set_variable = { progressive_seats = 10.13 }
+set_variable = { social_democrat_seats = 20.28 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 24.37 }
+set_variable = { conservative_seats = 33.68 }
+set_variable = { reactionary_seats = 6.64 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_progressive
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
 
 set_politics = {	
 	ruling_party = market_liberal
@@ -97,13 +121,13 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 6.64
-    conservative = 33.72
-    market_liberal = 21.35
-    social_democrat = 20.28
-    progressive = 10.13
-    democratic_socialist = 4.94
-    social_liberal = 2.94
+    reactionary = 8.28
+    conservative = 28.31
+    market_liberal = 18.76
+    social_democrat = 17.60
+    progressive = 15.12
+    democratic_socialist = 5.48
+    social_liberal = 6.45
 }
 
 create_country_leader = {
@@ -113,14 +137,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Marc Spautz"
-	picture = "Marc_Spautz.dds"
+	name = "Claude Wiseler"
+	picture = "Claude_Wiseler.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
-	name = "Claude Haagen"
-	picture = "Claude_Haagen.dds"
+	name = "Etienne Schneider"
+	picture = "Etienne_Schneider.dds"
 	ideology = social_democrat_ideology
 }
 

@@ -93,9 +93,29 @@ add_ideas = {
 	ITA_mafia
 	ITA_corruption
 	ITA_migrants_from_africa
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Chamber of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 3.20 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 33.05 }
+set_variable = { social_liberal_seats = 0.49 }
+set_variable = { market_liberal_seats = 10.09 }
+set_variable = { conservative_seats = 21.56 }
+set_variable = { reactionary_seats = 1.96 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 4.09 }
+set_variable = { fascist_seats = 25.56 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {
 	ruling_party = social_democrat
@@ -105,12 +125,12 @@ set_politics = {
 }
 
 set_popularities = {
-    fascist = 32.68
+    fascist = 36.24
     nationalist = 17.35
     reactionary = 4.35
-    conservative = 15.30
-    social_liberal = 2.56
-    social_democrat = 23.8
+    conservative = 15.3
+    social_liberal = 3.1
+    social_democrat = 19.17
     progressive = 0.58
     democratic_socialist = 3.38
 }
@@ -161,6 +181,12 @@ create_country_leader = {
 	name = "Giulio Santagata"
 	picture = "Giulio_Santagata.dds"
 	ideology = green
+}
+
+create_country_leader = {
+	name = "Enrico Zanetti"
+	picture = "Enrico_Zanetti.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {

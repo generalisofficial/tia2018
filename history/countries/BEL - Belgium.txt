@@ -87,9 +87,33 @@ add_ideas = {
 	idea_eu_member
 	belgian_political_system
 	the_euro
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Chamber of Representatives
+set_variable = { communist_seats = 3.72 }
+set_variable = { democratic_socialist_seats = 8.83 }
+set_variable = { progressive_seats = 8.62 }
+set_variable = { social_democrat_seats = 11.67 }
+set_variable = { social_liberal_seats = 1.80 }
+set_variable = { market_liberal_seats = 23.64 }
+set_variable = { conservative_seats = 16.29 }
+set_variable = { reactionary_seats = 20.26 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 5.17 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_conservative
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = market_liberal
@@ -99,14 +123,15 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 5.66
-    reactionary = 21.26
-    conservative = 11.61
-    market_liberal = 22.64
-    social_liberal = 4.99
-    social_democrat = 21.50
-    progressive = 8.62
-    communist = 3.72
+    nationalist = 11.95
+    reactionary = 16.03
+    conservative = 12.59
+    market_liberal = 20.18
+    social_liberal = 2.22
+    social_democrat = 9.46
+    progressive = 12.24
+    communist = 8.62
+	democratic_socialist = 6.71
 }
 
 create_country_leader = {
@@ -173,6 +198,12 @@ create_country_leader = {
 	name = "Tom Van Grieken"
 	picture = "Tom_Van_Grieken.dds"
 	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Olivier Maingain"
+	picture = "Olivier_Maingain.dds"
+	ideology = centrist
 }
 
 create_field_marshal = {
