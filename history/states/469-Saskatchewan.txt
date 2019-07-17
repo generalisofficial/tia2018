@@ -1,10 +1,10 @@
+
 state={
 	id=469
 	name="STATE_469"
-	
-	resources = {
-		oil = 54
-		steel = 2
+	resources={
+		oil=54.000
+		steel=2.000
 	}
 
 	history={
@@ -13,16 +13,22 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 1
+
 		}
 		add_core_of = CAN
-		victory_points = { 736 5 }		#Saskatoon
-		victory_points = { 12663 2 }	#Regina
+		victory_points = {
+			736 5 
+		}
+		victory_points = {
+			12663 2 
+		}
+
 	}
 
 	provinces={
-		736 1671 1788 3481 3498 3769 3800 4695 4739 6779 9669 10552 10611 10656 11440 12593 12603 12663 12682 13167 13168 13183 13185 13187 
+		736 1671 1788 3481 3498 3769 3800 4695 4739 6779 9669 10552 10611 10656 11440 12593 12603 12663 12682 
 	}
 	manpower=1033000
 	buildings_max_level_factor=1.000
-	state_category = state_level_6
+	state_category=state_level_6
 }

@@ -1,11 +1,10 @@
+
 state={
 	id=548
 	name="STATE_548"
 	resources={
-		tungsten=2
+		tungsten=2.000
 	}
-
-	state_category = state_level_7
 
 	history={
 		owner = UGA
@@ -15,13 +14,18 @@ state={
 			industrial_complex = 4
 			arms_factory = 2
 			air_base = 1
+
 		}
-		victory_points = { 12989 2 }
+		victory_points = {
+			12989 2 
+		}
+
 	}
 
 	provinces={
-		3854 7088 7133 8223 12929 12989 13177 
+		3854 7088 7133 8223 12929 12989 
 	}
 	manpower=33400400
 	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }
