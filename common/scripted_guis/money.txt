@@ -32,15 +32,19 @@ scripted_gui = {
 			}
             add_to_income_taxation_click = {
                 add_to_variable = { income_tax = 1 }
+                add_stability = -0.01
             }
             reduce_income_taxation_click = {
                 subtract_from_variable = { income_tax = 1 }
+                add_stability = 0.01
             }
             add_to_corporate_taxation_click = {
                 add_to_variable = { corporate_tax = 1 }
+                add_stability = -0.01
             }
             reduce_corporate_taxation_click = {
                 subtract_from_variable = { corporate_tax = 1 }
+                add_stability = 0.01
             }
         }
 

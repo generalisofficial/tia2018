@@ -96,12 +96,14 @@ guiTypes = {
 			name = "add_to_income_taxation"
 			position = { x = 379 y = 180 }
 			quadTextureSprite ="GFX_zoom_in"
+			pdx_tooltip = TAXATION_UP_TOOLTIP
 		}
 
 		buttonType = {
 			name = "reduce_income_taxation"
 			position = { x = 312 y = 180 }
 			quadTextureSprite ="GFX_zoom_out"
+			pdx_tooltip = TAXATION_DOWN_TOOLTIP
 		}
 
 		instantTextBoxType = {
@@ -119,12 +121,14 @@ guiTypes = {
 			name = "add_to_corporate_taxation"
 			position = { x = 412 y = 220 }
 			quadTextureSprite ="GFX_zoom_in"
+			pdx_tooltip = TAXATION_UP_TOOLTIP
 		}
 
 		buttonType = {
 			name = "reduce_corporate_taxation"
 			position = { x = 347 y = 220 }
 			quadTextureSprite ="GFX_zoom_out"
+			pdx_tooltip = TAXATION_DOWN_TOOLTIP
 		}
 	}
 }	

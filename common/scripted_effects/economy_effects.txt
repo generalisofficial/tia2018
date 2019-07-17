@@ -141,6 +141,156 @@ money_setup_scripted_effect = {
 		}
 	}
 
+	if = {
+		limit = {
+			ROOT = { 
+				any_owned_state = {
+					is_on_continent = asia
+				}
+			}
+		}
+		## Based on Population
+		# Different for every country, I took something in the middle to start with
+		set_variable = {
+			income_tax = 23.5
+		}
+		set_variable = { # Based on 6.000$ NET per year on average (I added a few $ to make it look gross)
+			monthly_income_hourly = 5.1
+		}
+		set_variable = {
+			works_hours_per_day = 10
+		}
+		set_variable = {
+			average_working_days_monthly = 25
+		}
+		set_variable = {
+			corporate_tax = 19.5
+		}
+		set_variable = {
+			corporate_income_monthly = 2.624287
+		}
+	}
+
+	if = {
+		limit = {
+			ROOT = { 
+				any_owned_state = {
+					is_on_continent = australia
+				}
+			}
+		}
+		## Based on Population
+		# Different for every country, I took something in the middle to start with
+		set_variable = {
+			income_tax = 26.9
+		}
+		set_variable = { # Based on 49.000$ NET per year on average (I added a few $ to make it look gross)
+			monthly_income_hourly = 23
+		}
+		set_variable = {
+			works_hours_per_day = 8
+		}
+		set_variable = {
+			average_working_days_monthly = 20
+		}
+		set_variable = {
+			corporate_tax = 30
+		}
+		set_variable = {
+			corporate_income_monthly = 3.862354
+		}
+	}
+
+	if = {
+		limit = {
+			ROOT = { 
+				any_owned_state = {
+					is_on_continent = middle_east
+				}
+			}
+		}
+		## Based on Population
+		# Different for every country, I took something in the middle to start with
+		set_variable = {
+			income_tax = 12
+		}
+		set_variable = { # Based on 8.000$ NET per year on average (I added a few $ to make it look gross)
+			monthly_income_hourly = 7.9
+		}
+		set_variable = {
+			works_hours_per_day = 9
+		}
+		set_variable = {
+			average_working_days_monthly = 22
+		}
+		set_variable = {
+			corporate_tax = 16
+		}
+		set_variable = {
+			corporate_income_monthly = 1.368243
+		}
+	}
+
+	if = {
+		limit = {
+			ROOT = { 
+				any_owned_state = {
+					is_on_continent = africa
+				}
+			}
+		}
+		## Based on Population
+		# Different for every country, I took something in the middle to start with
+		set_variable = {
+			income_tax = 36
+		}
+		set_variable = { # Based on 1.500$ NET per year on average (I added a few $ to make it look gross)
+			monthly_income_hourly = 2.9
+		}
+		set_variable = {
+			works_hours_per_day = 12
+		}
+		set_variable = {
+			average_working_days_monthly = 25
+		}
+		set_variable = {
+			corporate_tax = 30
+		}
+		set_variable = {
+			corporate_income_monthly = 0.413572
+		}
+	}
+
+	if = {
+		limit = {
+			ROOT = { 
+				any_owned_state = {
+					is_on_continent = south_america
+				}
+			}
+		}
+		## Based on Population
+		# Different for every country, I took something in the middle to start with
+		set_variable = {
+			income_tax = 32
+		}
+		set_variable = { # Based on 10.000$ NET per year on average (I added a few $ to make it look gross)
+			monthly_income_hourly = 9.1
+		}
+		set_variable = {
+			works_hours_per_day = 9
+		}
+		set_variable = {
+			average_working_days_monthly = 22
+		}
+		set_variable = {
+			corporate_tax = 26
+		}
+		set_variable = {
+			corporate_income_monthly = 1.985760
+		}
+	}
+
 	set_variable = {
 		income_monthly = monthly_income_hourly
 	}
