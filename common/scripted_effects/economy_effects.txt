@@ -336,6 +336,9 @@ money_setup_scripted_effect = {
 	multiply_variable = { # Final calculation for all factories, civilian and military
 		corporate_income_monthly_for_country = num_of_factories
 	}
+	divide_variable = { # On 1 Million
+		corporate_income_monthly_for_country = 1000
+	}
 
 	## Adding everything together for a base value of money
 	set_variable = {
