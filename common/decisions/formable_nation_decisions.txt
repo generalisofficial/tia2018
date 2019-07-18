@@ -132,32 +132,36 @@ formable_nation_decisions = {
 		
 		available = {
 		    has_government = communist
-			any_state = {
-                limit = {
-				    OR = {
-                        is_core_of = SOV
-						is_core_of = UKR
-						is_core_of = BLR
-						is_core_of = MOL
-						is_core_of = TRA
-						is_core_of = LAT
-						is_core_of = LIT
-						is_core_of = EST
-						is_core_of = GEO
-						is_core_of = ARM
-						is_core_of = AZR
-						is_core_of = NGK
-						is_core_of = ABK
-						is_core_of = SOS
-						is_core_of = KAZ
-						is_core_of = UZB
-						is_core_of = TMS
-						is_core_of = TAJ
-						is_core_of = KYR
-					}
-                }
-                is_owned_by = ROOT
-            }
+			if = {
+				limit = {
+					all_state = {
+						OR = {
+			                is_core_of = SOV
+							is_core_of = UKR
+							is_core_of = BLR
+							is_core_of = MOL
+							is_core_of = TRA
+							is_core_of = LAT
+							is_core_of = LIT
+							is_core_of = EST
+							is_core_of = GEO
+							is_core_of = ARM
+							is_core_of = AZR
+							is_core_of = NGK
+							is_core_of = ABK
+							is_core_of = SOS
+							is_core_of = KAZ
+							is_core_of = UZB
+							is_core_of = TMS
+							is_core_of = TAJ
+							is_core_of = KYR
+						}
+						THIS = {
+							is_owned_by = SOV
+						}
+           			}
+				}
+			}
 		}
 		
 		icon = civil_support
