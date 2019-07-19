@@ -46,6 +46,11 @@ scripted_gui = {
                 subtract_from_variable = { corporate_tax = 1 }
                 add_stability = 0.01
             }
+            loans_menu_button_click = {
+                set_temp_variable = { show_1 = 1 }
+				subtract_from_temp_variable = { show_1 = show_loans }
+				set_variable = { show_loans = show_1 }
+            }
         }
 
         triggers = {
@@ -60,6 +65,63 @@ scripted_gui = {
             }
             reduce_corporate_taxation_click_enabled = {
                 NOT = { check_variable = { corporate_tax < 1 } }
+            }
+        }
+    }
+
+    money_loans_window = {
+        window_name = "money_loans_window_container"
+
+		context_type = player_context
+ 
+		visible = {
+            check_variable = { show_loans > 0 }
+		}
+
+        effects = {
+            close_button_click = {
+				set_variable = { show_loans = 0 }
+			}
+            loan_menu_add_interest_button_click = {
+                add_to_variable = { loan_interest = 1 }
+            }
+            loan_menu_lower_interest_button_click = {
+                subtract_from_variable = { loan_interest = 1 }
+            }
+           add_loan_button_click = {
+                set_temp_variable = { show_2 = 1 }
+			    subtract_from_temp_variable = { show_2 = show_add_loans }
+			    set_variable = { show_add_loans = show_2 }
+           }
+        }
+    }
+
+    money_add_loans_window = {
+        window_name = "money_add_loans_window_container"
+
+        context_type = player_context
+ 
+		visible = {
+            check_variable = { show_add_loans > 0 }
+		}
+
+        effects = {
+            cancel_button_click = {
+                set_variable = { show_add_loans = 0 }
+            }
+        }
+
+        dynamic_lists = {
+            country_grid = {
+                array = xcountry_grid_array
+                entry_container = country_grid_entry
+                change_scope = yes
+            }
+        }
+
+        properties = {
+            flag = {
+                image = "[This.GetFlag]"
             }
         }
     }

@@ -53,4 +53,32 @@ country_event = {
 		name = "Update Money scripted effect"
 		money_update_scripted_effect = yes
 	}
+	option = {
+		name = "Add random country to grid"
+		#random_country = {
+		#	add_to_array = {
+		#		array = FROM.xcountry_grid_array
+		#		value = this
+		#	}
+		#}
+		random_country = {
+			limit = {
+				#only add if not player and not in array
+				not = { is_in_array = { prev.xcountry_grid_array = this } }
+				not = { tag = prev }
+				not = { tag = not }
+			}
+			add_to_array = { prev.xcountry_grid_array = this } 
+		}
+	}
+	option = {
+		name = "Clear Country Grid"
+		clear_array = xcountry_grid_array
+	}
+	option = {
+		name = "Add USA to country Grid"
+		USA = {
+			add_to_array = { prev.xcountry_grid_array = this } 
+		}
+	}
 }

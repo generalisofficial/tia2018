@@ -1,0 +1,10 @@
+defined_text = {
+	name = GetLoansList
+
+	text = {
+		trigger = {
+			check_variable = { loans_amount < 1 }
+		}
+		localization_key = NO_LOANS_LIST
+	}
+}    

@@ -130,5 +130,259 @@ guiTypes = {
 			quadTextureSprite ="GFX_zoom_out"
 			pdx_tooltip = TAXATION_DOWN_TOOLTIP
 		}
+
+
+		buttonType = {
+			name = "loans_menu_button"
+			position = { x = 550 y = 219 }
+			quadTextureSprite ="button_type_4"
+			font = "hoi_24header"
+			text = LOANS_MENU_BUTTON
+			format = left
+			pdx_tooltip = LOANS_MENU_TOOLTIP
+		}
+	}
+
+	containerWindowType = {
+		name = "money_loans_window_container"
+		position = { x = 530 y = 250 }
+		size = { width = 800 height = 500 }
+
+		fade_time = 250
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "close_button" 
+			position = { x = 750 y = 20 }	
+			spriteType = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "loans_menu_window_title"
+			position = { x = 280 y = 20 }
+			font = "hoi_36header"
+			text = "Loan Management"
+			format = left
+			maxWidth = 420
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "loans_menu_window_active_loans_title"
+			position = { x = 100 y = 90 }
+			font = "hoi_24header"
+			text = "Active Loan(s)"
+			format = left
+			maxWidth = 160
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		containerWindowType = {
+			name = "loans_menu_window_active_loans_window"
+			position = { x = 50 y = 120 }
+			size = { width = 250 height = 300 }
+	
+			background = {
+				name = "background"
+				spriteType ="GFX_tiled_window2_1b_border"
+				pdx_tooltip = ACTIVE_LOANS_TOOTLIP
+			}
+			
+			instantTextBoxType = {
+				name = "active_loans_list"
+				position = { x = 7 y = 13 }
+				font = "hoi_18mbs"
+				maxWidth = 235
+				maxHeight = 300
+				text = "[THIS.GetLoansList]"	
+				format = center
+				scrollbarType = standardtext_slider
+				pdx_tooltip = ACTIVE_LOANS_TOOTLIP
+			}
+		}
+
+		buttonType = {
+			name = "add_loan_button"
+			position = { x = 350 y = 130 }
+			font = "hoi_18mbs"
+			text = "Add loan"
+			quadTextureSprite ="button_type_4"
+			format = left
+		}
+
+		buttonType = {
+			name = "pay_back_loan_button"
+			position = { x = 350 y = 170 }
+			font = "hoi_18mbs"
+			text = "Pay back loan"
+			quadTextureSprite ="button_type_4"
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "loans_menu_window_interest_title"
+			position = { x = 365 y = 230 }
+			font = "hoi_24header"
+			text = "Our loan Interest"
+			format = left
+			maxWidth = 420
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "loans_menu_window_interest"
+			position = { x = 450 y = 260 }
+			font = "hoi_24header"
+			text = "LOAN_INTEREST_TEXT"
+			format = left
+			maxWidth = 420
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "loan_menu_add_interest_button"
+			position = { x = 485 y = 260 }
+			font = "hoi_18mbs"
+			quadTextureSprite ="GFX_zoom_in"
+			format = left
+		}
+
+		buttonType = {
+			name = "loan_menu_lower_interest_button"
+			position = { x = 410 y = 260 }
+			font = "hoi_18mbs"
+			quadTextureSprite ="GFX_zoom_out"
+			format = left
+		}
+	}
+
+	containerWindowType = {
+		name = "money_add_loans_window_container"
+		position = { x = 650 y = 300 }
+		size = { width = 500 height = 400 }
+
+		fade_time = 250
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg2"
+		}
+
+		buttonType = {
+			name = "cancel_button"
+			position = { x = 150 y = 340 }
+			font = "hoi_18mbs"
+			text = "Cancel"
+			quadTextureSprite ="button_type_4"
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "add_loans_window_title"
+			position = { x = 70 y = 20 }
+			font = "hoi_24header"
+			text = "Who would you like to request to?"
+			format = left
+			maxWidth = 420
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		containerWindowType = {
+			name = "country_grid_container"
+			position = { x = 60 y = 50 }
+			size = { width = 400 height = 280 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window2_2b_border"
+			}        
+		
+			gridboxtype = {
+				name = "country_grid"
+				position = { x = 10 y = 0 }
+				size = { width = 95%% height = 100%% }
+				slotsize = { width = 400 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "country_grid_entry"
+		position = { x = 10 y = 0} 
+		size = { width = 370 height = 110 }
+	
+		background = {
+			name = "Background"    
+			quadTextureSprite = "GFX_tiled_window2_2b_border"
+		}
+	
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 40 y = 15 }
+			font = "hoi_18mbs"
+			text = "[?this.GetName]"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+	
+		IconType = {
+			name = "flag"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x = 300 y = 9 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "money"
+			position = { x = 40 y = 41 }
+			font = "hoi_18mbs"
+			text = "AMOUNT_OF_MONEY"
+			format = left
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "opinion"
+			position = { x = 40 y = 68 }
+			font = "hoi_18mbs"
+			text = "OPINION_OF_US"
+			format = left
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "request_button"
+			quadTextureSprite = "button_type_5"
+			position = { x = 250 y = 68 }
+			font = "hoi_18mbs"
+			text = "Request"
+			Orientation = "UPPER_LEFT"
+		}
 	}
 }	
