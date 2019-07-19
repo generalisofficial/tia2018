@@ -1,6 +1,6 @@
 ﻿add_namespace = money
 
-country_event = { #RPA replaces Karapetyan
+country_event = {
 	id = money.1
 	hidden = yes
 
@@ -8,5 +8,91 @@ country_event = { #RPA replaces Karapetyan
 
 	immediate = {
 		money_setup_scripted_effect = yes
+		add_to_array = {
+			array = global.xcountry_grid_array
+			value = ROOT.id
+		}
+	}
+}
+
+country_event = {
+	id = money.2
+	title = money.2.t
+	desc = money.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes, we accept"
+		subtract_from_variable = {
+			ROOT.state_treasury = FROM.loan_request
+		}
+		add_to_variable = {
+			FROM.state_treasury = FROM.loan_request
+		}
+		FROM = {
+			set_country_flag = they_accepted
+			set_country_flag = loan_request_ongoing
+			country_event = money.3
+			add_to_variable = {
+				loans_amount = 1
+			}
+		}
+		add_to_array = {
+			FROM.loans_grid_array = ROOT.id
+		}
+		ai_chance = {
+			factor = TheirLoanOpinionOfUs
+		}
+	}
+
+	option = {
+		name = "No, we refuse"
+		FROM = {
+			set_country_flag = they_refused
+			country_event = money.3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = money.3
+	title = money.3.t
+	desc = {
+		text = money.3.d1
+		trigger = {
+			has_country_flag = they_accepted
+		}
+	}
+	desc = {
+		text = money.3.d2
+		trigger = {
+			has_country_flag = they_refused
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes!"
+		trigger = {
+			has_country_flag = they_accepted
+		}
+		clr_country_flag = they_accepted
+		clear_variable = show_loan_request_final
+		clear_variable = show_add_loans
+	}
+
+	option = {
+		name = "This is sad..."
+		trigger = {
+			has_country_flag = they_refused
+		}
+		clr_country_flag = they_refused
+		clear_variable = show_loan_request_final
+		clear_variable = show_add_loans
 	}
 }

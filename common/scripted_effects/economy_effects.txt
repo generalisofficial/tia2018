@@ -412,3 +412,68 @@ money_update_scripted_effect = {
 		state_treasury_show = state_treasury
 	}
 }
+
+loans_calculate_opinion_factor = {
+	for_each_scope_loop = {
+		array = global.xcountry_grid_array
+		break = b
+
+		set_variable = {
+			THIS.LoansOpinion = 0
+		}
+		add_to_variable = {
+			THIS.LoansOpinion = THIS.opinion@FROM
+		}
+		if = {
+			limit = {
+				THIS = {
+					is_in_faction_with = FROM
+				}
+			}
+			add_to_variable = {
+				THIS.LoansOpinion = 15
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_idea = idea_eu_member
+				}
+				THIS = {
+					has_idea = idea_eu_member
+				}
+			}
+			add_to_variable = {
+				THIS.LoansOpinion = 15
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
+					has_war_with = FROM
+				}
+			}
+			subtract_from_variable = {
+				THIS.LoansOpinion = 150
+			}
+		}
+	}
+}
+
+setup_country_tag = {
+	var:selected_country = {
+		save_global_event_target_as = selected_country_tag
+		set_variable = {
+			state_treasury30 = state_treasury
+		}
+		divide_variable = {
+			state_treasury30 = 100
+		}
+		multiply_variable = {
+			state_treasury30 = 30
+		}
+	}
+	set_variable = {
+		ROOT.TheirLoanOpinionOfUs = THIS.LoansOpinion
+	}
+}

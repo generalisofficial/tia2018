@@ -7,4 +7,96 @@ defined_text = {
 		}
 		localization_key = NO_LOANS_LIST
 	}
-}    
+}
+
+defined_text = {
+	name = GetLoansFactionMember
+
+	text = {
+		trigger = {
+			THIS = {
+				is_in_faction_with = FROM
+			}
+		}
+		localization_key = LOANS_FACTION_YES
+	}
+	text = {
+		trigger = {
+			THIS = {
+				NOT = { is_in_faction_with = FROM }
+			}
+		}
+		localization_key = LOANS_FACTION_NO
+	}
+}
+
+defined_text = {
+	name = GetLoansEUMember
+
+	text = {
+		trigger = {
+			FROM = {
+				has_idea = idea_eu_member
+			}
+			THIS = {
+				has_idea = idea_eu_member
+			}
+		}
+		localization_key = LOANS_EU_YES
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = { 
+					FROM = {
+						has_idea = idea_eu_member
+					}
+				}
+				NOT = {
+					THIS = {
+						has_idea = idea_eu_member
+					}
+				}
+			}
+		}
+		localization_key = LOANS_EU_NO
+	}
+}
+
+defined_text = {
+	name = GetInWar
+
+	text = {
+		trigger = {
+			THIS = {
+				has_war_with = FROM
+			}
+		}
+		localization_key = LOANS_WAR_YES
+	}
+	text = {
+		trigger = {
+			THIS = {
+				NOT = { has_war_with = FROM }
+			}
+		}
+		localization_key = LOANS_WAR_NO
+	}
+}
+
+defined_text = {
+	name = GetHasLoanToPayBack
+
+	text = {
+		trigger = {
+			check_variable = { loans_amount < 1 }
+		}
+		localization_key = LOANS_HAS_NONE
+	}
+	text = {
+		trigger = {
+			check_variable = { loans_amount > 0 }
+		}
+		localization_key = notooltip
+	}
+}

@@ -92,7 +92,22 @@ scripted_gui = {
                 set_temp_variable = { show_2 = 1 }
 			    subtract_from_temp_variable = { show_2 = show_add_loans }
 			    set_variable = { show_add_loans = show_2 }
+                loans_calculate_opinion_factor = yes
            }
+        }
+
+        triggers = {
+            pay_back_loan_button_click_enabled = {
+                check_variable = { loans_amount > 0 }
+            }
+        }
+
+        dynamic_lists = {
+            loans_grid = {
+                array = loans_grid_array
+                entry_container = loans_grid_entry
+                change_scope = yes
+            }
         }
     }
 
@@ -108,20 +123,130 @@ scripted_gui = {
         effects = {
             cancel_button_click = {
                 set_variable = { show_add_loans = 0 }
+                set_variable = { show_loan_request_final = 0 }
+            }
+            request_button_click = {
+                FROM = {
+                    set_variable = {
+                        selected_country = PREV.id
+                    }
+                    set_variable = { show_loan_request_final = 1 }
+                    setup_country_tag = yes
+                }
             }
         }
 
         dynamic_lists = {
             country_grid = {
-                array = xcountry_grid_array
+                array = global.xcountry_grid_array
                 entry_container = country_grid_entry
                 change_scope = yes
+            }
+        }
+
+        triggers = {
+            request_button_click_enabled = {
             }
         }
 
         properties = {
             flag = {
                 image = "[This.GetFlag]"
+            }
+        }
+    }
+
+    money_loan_request_final = {
+        window_name = "money_loan_request_final_container"
+
+        context_type = player_context
+
+        visible = {
+            check_variable = { show_loan_request_final > 0 }
+		}
+
+        effects = {
+            loan_lower_amount_button_click = {
+                subtract_from_variable = {
+                    loan_request = 0.05
+                }
+                clamp_variable = {
+                    var = loan_request
+                    min = 0
+                }
+            }
+            loan_lower_amount_button_control_click = {
+                subtract_from_variable = {
+                    loan_request = 0.1
+                }
+                clamp_variable = {
+                    var = loan_request
+                    min = 0
+                }
+            }
+            loan_lower_amount_button_shift_click = {
+                subtract_from_variable = {
+                    loan_request = 1
+                }
+                clamp_variable = {
+                    var = loan_request
+                    min = 0
+                }
+            }
+            loan_add_to_amount_button_click = {
+                add_to_variable = {
+                    loan_request = 0.05
+                }
+                clamp_variable = {
+                    var = loan_request
+                    max = selected_country_tag.state_treasury30
+                }
+            }
+            loan_add_to_amount_button_control_click = {
+                add_to_variable = {
+                    loan_request = 0.1
+                }
+                clamp_variable = {
+                    var = loan_request
+                    max = selected_country_tag.state_treasury30
+                }
+            }
+            loan_add_to_amount_button_shift_click = {
+                add_to_variable = {
+                    loan_request = 1
+                }
+                clamp_variable = {
+                    var = loan_request
+                    max = selected_country_tag.state_treasury30
+                }
+            }
+            request_button_click = {
+                var:selected_country = {
+                    country_event = money.2
+                }
+            }
+        }
+
+        triggers = {
+            loan_add_to_amount_button_click_enabled = {
+                NOT = {
+                    check_variable = {
+                        loan_request = selected_country_tag.state_treasury30
+                    }
+                    check_variable = {
+                        loan_request > selected_country_tag.state_treasury30
+                    }
+                }
+            }
+            loan_lower_amount_button_click_enabled = {
+                NOT = {
+                    check_variable = {
+                        loan_request = 0
+                    }
+                }
+            }
+            request_button_click_enabled = {
+                NOT = { has_country_flag = loan_request_ongoing }
             }
         }
     }
