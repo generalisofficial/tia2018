@@ -37,12 +37,18 @@ country_event = {
 			add_to_variable = {
 				loans_amount = 1
 			}
+			set_variable = {
+				lend_money = loan_request
+			}
+			set_variable = {
+				loan_days_left = 365
+			}
 		}
 		add_to_array = {
 			FROM.loans_grid_array = ROOT.id
 		}
 		ai_chance = {
-			factor = TheirLoanOpinionOfUs
+			factor = 100 #var:TheirLoanOpinionOfUs
 		}
 	}
 
@@ -52,9 +58,9 @@ country_event = {
 			set_country_flag = they_refused
 			country_event = money.3
 		}
-		ai_chance = {
-			factor = 100
-		}
+		#ai_chance = {
+		#	factor = 100
+		#}
 	}
 }
 
@@ -75,6 +81,12 @@ country_event = {
 	}
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clear_variable = loan_request
+		}
+	}
 
 	option = {
 		name = "Yes!"
