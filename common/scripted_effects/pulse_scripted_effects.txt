@@ -451,4 +451,16 @@ pulse = {
 			}
 			country_event = syria.3
 		}
+		if = {
+			limit = {
+				has_variable = loan_days_left
+				check_variable = {
+					loan_days_left < 1
+				}
+			}
+			var:originated_country = {
+				country_event = money.7
+			}
+		}
+	}
 }

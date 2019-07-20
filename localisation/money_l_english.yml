@@ -5,7 +5,7 @@
  MONEY_TOOLTIP:0 "§YState Tresury Management§! Window\n\nCurrently holds around §Y[?state_treasury|0] Million $§!"
 
  # State Treasury Window
- MONEY_VALUE_TEXT_WINDOW:0 "Our state treasury currently holds: §Y[?state_treasury_show|0].000.000$§!"
+ MONEY_VALUE_TEXT_WINDOW:0 "Our state treasury currently holds: §Y[?state_treasury|0].000.000$§!"
  MONEY_SHOW_TOOLTIP:0 "More precisely: [?state_treasury] Million"
  TAXATION_POPULATION:0 "Current Income Tax:   §Y[?income_tax]%§!"
  TAXATION_CORPORATION:0 "Current Corporate Tax:   §Y[?corporate_tax|0]%§!"
@@ -35,8 +35,16 @@
  LOAN_INTEREST_EXPLANATION:0 "This means that we will have to pay them back [?selected_country_tag.loan_interest]% more of what we received."
  LOAN_I_WOULD_LIKE_TEXT:0 "I would like to request:"
  LOAN_I_WOULD_LIKE_MONEY_TEXT:0 "§Y[?loan_request] Million $§!"
- LOANS_AMOUNT_OF_MONEY_DUE:0 "Money to paid back: §Y[?lend_money] Million $.§!"
- LOANS_PAYBACK_TIME:0 "Time to pay the money back: §Y[?loan_days_left] days.§!"
+ LOANS_AMOUNT_OF_MONEY_DUE:0 "Money to pay back: §Y[?THIS.lend_money] Million $.§!"
+ LOANS_PAYBACK_TIME:0 "Time to pay the money back: §Y[?THIS.loan_days_left] days.§!"
+ LOAN_ADD_AMOUNT_TOOLTIP:0 "§YControls:§!\n- Normal Click: +0.05 Million\n- CTRL&Click: +0.1 Million\n- SHIFT&Click: +1 Million"
+ LOAN_LOWER_AMOUNT_TOOLTIP:0 "§YControls:§!\n- Normal Click: -0.05 Million\n- CTRL&Click: -0.1 Million\n- SHIFT&Click: -1 Million"
+ LOANS_AMOUNT_OF_MONEY_DUE_PAYBACK:0 "§Y[?THIS.lend_money] Million $.§!"
+ LOANS_PAYBACK_TIME2:0 "Payback time: §Y[?THIS.loan_days_left] days.§!"
+ LOAN_REQUEST_FINAL_TOOLTIP:0 "[This.GetNotTooManyLoans]"
+ LOANS_AMOUNT_OK:0 "You can request this loan."
+ LOANS_AMOUNT_TOO_MUCH:0 "You cannot request more than 5 loans."
+ MONEY_BACK_TT:0 "The §YState Treasury§! is reduced by §R[?selected_payback_country_tag.lend_money] Million §!\n§Y[selected_payback_country_tag.GetFlag] [selected_payback_country_tag.GetName]§! gains §G[?selected_payback_country_tag.lend_money] Million §!"
 
  # Events
  money.2.t:0 "[FROM.GetName] request a loan"
@@ -44,3 +52,9 @@
  money.3.t:0 "Reaction from our Loan Partner"
  money.3.d1:0 "[FROM.GetName] accepted our loan! We now have one year of time to pay them back."
  money.3.d2:0 "[FROM.GetName] refused our loan! Maybe we should ask a country that has better relations with us."
+ money.5.t:0 "Loan Payback"
+ money.5.d:0 "Are you sure that you want to pay back your loan to [selected_payback_country_tag.GetNameDef]?\n\nMoney before payback: [?state_treasury] Million \nMoney to pay back: [?selected_payback_country_tag.lend_money] Million \nMoney after payback: [?state_treasuy_new] Million"
+ money.6.t:0 "[FROM.GetName] paid back its loan"
+ money.6.d:0 "[FROM.GetNameDef] just paied us back the [?FROM.lend_money] they owed us."
+ money.7.t:0 "We have to pay our debs"
+ money.7.d:0 "The one year delay to pay back our loan from [FROM.GetName] has passed. They want us to pay their money back, not matter what it costs to us."

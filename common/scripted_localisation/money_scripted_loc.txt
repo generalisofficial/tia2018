@@ -100,3 +100,20 @@ defined_text = {
 		localization_key = notooltip
 	}
 }
+
+defined_text = {
+	name = GetNotTooManyLoans
+
+	text = {
+		trigger = {
+			check_variable = { loans_amount < 5 }
+		}
+		localization_key = LOANS_AMOUNT_OK
+	}
+	text = {
+		trigger = {
+			check_variable = { loans_amount > 4 }
+		}
+		localization_key = LOANS_AMOUNT_TOO_MUCH
+	}
+}

@@ -30,25 +30,38 @@ country_event = {
 		add_to_variable = {
 			FROM.state_treasury = FROM.loan_request
 		}
+		set_variable = {
+			lend_money = FROM.loan_request
+		}
+		divide_variable = {
+			lend_money = 100
+		}
+		multiply_variable = {
+			lend_money = loan_interest
+		}
+		add_to_variable = {
+			lend_money = FROM.loan_request
+		}
+		set_variable = {
+			loan_days_left = 365
+		}
+		set_variable = {
+			originated_country = FROM.id
+		}
+		country_event = money.4
 		FROM = {
 			set_country_flag = they_accepted
 			set_country_flag = loan_request_ongoing
-			country_event = money.3
 			add_to_variable = {
 				loans_amount = 1
 			}
-			set_variable = {
-				lend_money = loan_request
-			}
-			set_variable = {
-				loan_days_left = 365
-			}
+			country_event = money.3
 		}
 		add_to_array = {
 			FROM.loans_grid_array = ROOT.id
 		}
 		ai_chance = {
-			factor = 100 #var:TheirLoanOpinionOfUs
+			base = LoansOpinion
 		}
 	}
 
@@ -58,9 +71,9 @@ country_event = {
 			set_country_flag = they_refused
 			country_event = money.3
 		}
-		#ai_chance = {
-		#	factor = 100
-		#}
+		ai_chance = {
+			base = 50
+		}
 	}
 }
 
@@ -106,5 +119,125 @@ country_event = {
 		clr_country_flag = they_refused
 		clear_variable = show_loan_request_final
 		clear_variable = show_add_loans
+	}
+}
+
+country_event = {
+	id = money.4
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					loan_days_left > 0
+				}
+			}
+			subtract_from_variable = {
+				loan_days_left = 1
+			}
+			country_event = { id = money.4 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = money.5
+	title = money.5.t
+	desc = money.5.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				state_treasuy_new = state_treasury
+			}
+			subtract_from_variable = {
+				state_treasuy_new = ROOT.lend_money
+			}
+		}
+	}
+
+	option = {
+		name = "Yes"
+		subtract_from_variable = {
+			state_treasury = selected_payback_country_tag.lend_money
+		}
+		subtract_from_variable = {
+			loans_amount = 1
+		}
+		event_target:selected_payback_country_tag = {
+			add_to_variable = {
+				state_treasury = lend_money
+			}
+			country_event = money.6
+			remove_from_array = {
+				ROOT.loans_payback_grid_array = THIS.id
+			}
+			remove_from_array = {
+				ROOT.loans_grid_array = THIS.id
+			}
+		}
+		set_variable = { show_payback = 0 }
+		custom_effect_tooltip = MONEY_BACK_TT
+	}
+
+	option = {
+		name = "No"
+	}
+}
+
+country_event = {
+	id = money.6
+	title = money.6.t
+	desc = money.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Great!"
+		FROM = {
+			clear_variable = state_treasury_new
+			clear_variable = loan_days_left
+			clear_variable = loans_opinion
+			clear_variable = lend_money
+			clear_variable = theirloanopinionofus
+			clear_variable = selected_country
+			clear_global_event_target = selected_payback_country_tag
+		}
+		clear_variable = lend_money
+	}
+}
+
+country_event = {
+	id = money.7
+	title = money.7.t
+	desc = money.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Pay Now"
+		subtract_from_variable = {
+			state_treasury = FROM.lend_money
+		}
+		subtract_from_variable = {
+			loans_amount = 1
+		}
+		FROM = {
+			add_to_variable = {
+				state_treasury = lend_money
+			}
+			country_event = money.6
+			remove_from_array = {
+				ROOT.loans_payback_grid_array = THIS.id
+			}
+			remove_from_array = {
+				ROOT.loans_grid_array = THIS.id
+			}
+		}
 	}
 }

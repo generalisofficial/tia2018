@@ -131,7 +131,6 @@ guiTypes = {
 			pdx_tooltip = TAXATION_DOWN_TOOLTIP
 		}
 
-
 		buttonType = {
 			name = "loans_menu_button"
 			position = { x = 550 y = 219 }
@@ -189,13 +188,14 @@ guiTypes = {
 		containerWindowType = {
 			name = "loans_menu_window_active_loans_window"
 			position = { x = 30 y = 120 }
-			size = { width = 300 height = 300 }
+			size = { width = 300 height = 280 }
+			margin = { top = 5 bottom = 5 }
 	
 			verticalScrollbar = "right_vertical_slider"
 
 			background = {
 				name = "Background"
-				quadTextureSprite = "GFX_tiled_window2_2b_border"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
 			}        
 		
 			gridboxtype = {
@@ -218,7 +218,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "pay_back_loan_button"
+			name = "pay_back_loans_button"
 			position = { x = 350 y = 170 }
 			font = "hoi_18mbs"
 			text = "Pay back loan"
@@ -233,25 +233,25 @@ guiTypes = {
 			font = "hoi_24header"
 			text = "Our loan Interest"
 			format = left
-			maxWidth = 420
+			maxWidth = 200
 			maxHeight = 24
 			fixedsize = yes
 		}
 
 		instantTextBoxType = {
 			name = "loans_menu_window_interest"
-			position = { x = 450 y = 260 }
+			position = { x = 445 y = 260 }
 			font = "hoi_24header"
 			text = "LOAN_INTEREST_TEXT"
 			format = left
-			maxWidth = 420
+			maxWidth = 60
 			maxHeight = 24
 			fixedsize = yes
 		}
 
 		buttonType = {
 			name = "loan_menu_add_interest_button"
-			position = { x = 485 y = 260 }
+			position = { x = 480 y = 260 }
 			font = "hoi_18mbs"
 			quadTextureSprite ="GFX_zoom_in"
 			format = left
@@ -259,10 +259,41 @@ guiTypes = {
 
 		buttonType = {
 			name = "loan_menu_lower_interest_button"
-			position = { x = 410 y = 260 }
+			position = { x = 405 y = 260 }
 			font = "hoi_18mbs"
 			quadTextureSprite ="GFX_zoom_out"
 			format = left
+		}
+	}
+
+	containerWindowType = {
+		name = "money_payback_window_container"
+		position = { x = 575 y = 120 }
+		size = { width = 200 height = 300 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window2_2b_border"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 0 y = 10 }
+			font = "hoi_24header"
+			text = "Which one?"
+			format = center
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		gridboxtype = {
+			name = "loans_payback_grid"
+			position = { x = 200 y = 40 }
+			size = { width = 95%% height = 100%% }
+			slotsize = { width = 400 height = 1 }
+			max_slots_horizontal = 1
+			add_horizontal = no
 		}
 	}
 
@@ -298,7 +329,7 @@ guiTypes = {
 			name = "money_lend"
 			position = { x = 10 y = 41 }
 			font = "hoi_18mbs"
-			text = "LOANS_AMOUNT_OF_MONEY_DUE"
+			text = LOANS_AMOUNT_OF_MONEY_DUE
 			format = left
 			maxWidth = 260
 			maxHeight = 24
@@ -309,9 +340,54 @@ guiTypes = {
 			name = "payback_time"
 			position = { x = 10 y = 68 }
 			font = "hoi_18mbs"
-			text = "LOANS_PAYBACK_TIME"
+			text = LOANS_PAYBACK_TIME
 			format = left
 			maxWidth = 260
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "loans_payback_grid_entry"
+		position = { x = 10 y = 0} 
+		size = { width = 190 height = 80 }
+	
+		buttonType = {
+			name = "payback_button"    
+			quadTextureSprite = "GFX_tiled_window2_2b_border"
+			size = { width = 190 height = 80 }
+		}
+	
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 15 y = 15 }
+			font = "hoi_18mbs"
+			text = "[?this.GetTag]"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "money_lend"
+			position = { x = 75 y = 15 }
+			font = "hoi_18mbs"
+			text = LOANS_AMOUNT_OF_MONEY_DUE_PAYBACK
+			format = left
+			maxWidth = 110
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "payback_time"
+			position = { x = 15 y = 40 }
+			font = "hoi_18mbs"
+			text = LOANS_PAYBACK_TIME2
+			format = center
+			maxWidth = 160
 			maxHeight = 24
 			fixedsize = yes
 		}
@@ -381,9 +457,10 @@ guiTypes = {
 		position = { x = 10 y = 0} 
 		size = { width = 370 height = 110 }
 	
-		background = {
-			name = "Background"    
+		buttonType = {
+			name = "request_button"    
 			quadTextureSprite = "GFX_tiled_window2_2b_border"
+			size = { width = 370 height = 110 }
 		}
 	
 		instantTextBoxType = {
@@ -392,7 +469,7 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "[?this.GetName]"
 			format = left
-			maxWidth = 200
+			maxWidth = 230
 			maxHeight = 24
 			fixedsize = yes
 		}
@@ -421,19 +498,10 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "LOANS_OPINION_OF_US"
 			format = left
-			maxWidth = 250
+			maxWidth = 160
 			maxHeight = 24
 			fixedsize = yes
 			pdx_tooltip = LOANS_OPINION_TOOLTIP
-		}
-
-		buttonType = {
-			name = "request_button"
-			quadTextureSprite = "button_type_5"
-			position = { x = 250 y = 68 }
-			font = "hoi_18mbs"
-			text = "Request"
-			Orientation = "UPPER_LEFT"
 		}
 	}
 
@@ -506,19 +574,20 @@ guiTypes = {
 			maxWidth = 120
 			maxHeight = 25
 			fixedsize = yes
-			pdx_tooltip = LOAN_INTEREST_EXPLANATION
 		}
 
 		buttonType = {
 			name = "loan_lower_amount_button"
 			position = { x = 200 y = 146 }
 			quadTextureSprite ="GFX_zoom_out"
+			pdx_tooltip = LOAN_LOWER_AMOUNT_TOOLTIP
 		}
 
 		buttonType = {
 			name = "loan_add_to_amount_button"
 			position = { x = 340 y = 146 }
 			quadTextureSprite ="GFX_zoom_in"
+			pdx_tooltip = LOAN_ADD_AMOUNT_TOOLTIP
 		}
 
 		buttonType = {
@@ -528,6 +597,7 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "Request"
 			Orientation = "CENTER_UP"
+			pdx_tooltip = LOAN_REQUEST_FINAL
 		}
 	}
 }	

@@ -82,3 +82,16 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = debug.3
+	title = "Debug 3"
+	desc = "Debug 3"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Cleanup Loan Payback Array"
+		clear_array = loans_payback_grid_array
+	}
+}

@@ -78,8 +78,11 @@ money_setup_scripted_effect = {
 	set_variable = {
 		total_population_k = max_manpower_k
 	}
-	set_variable = {
-		loan_interest = 5
+	if = {
+		limit = {
+			NOT = { has_variable = loan_interest }
+		}
+		set_variable = { loan_interest = 5 }
 	}
 
 	if = {
@@ -92,8 +95,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = {
-			income_tax = 40
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 40 }
 		}
 		# Based on 13.4€ per day GROSS EARNINGS in the European Union, working 8 hours per day and 20 days a month
 		set_variable = { 
@@ -105,8 +111,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 20
 		}
-		set_variable = {
-			corporate_tax = 21.68
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 21.68 }
 		}
 		set_variable = { # Random number between 1 and 5 million, divided by 1.000.000
 			corporate_income_monthly = 3.311080
@@ -123,8 +132,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = { # Federal for the average salary + median state
-			income_tax = 26.8
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 26.8 }
 		}
 		#
 		set_variable = { # Based on 56.000$ NET per year on average (I added a few $ to make it look gross)
@@ -136,8 +148,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 21
 		}
-		set_variable = { # This is the average. There's federal tax (21%) and state tax (depends), both get added together
-			corporate_tax = 25.7
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 25.7 }
 		}
 		set_variable = { # Random number, higher than Europe but I can't find any reliable data
 			corporate_income_monthly = 4.068587
@@ -154,8 +169,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = {
-			income_tax = 23.5
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 23.5 }
 		}
 		set_variable = { # Based on 6.000$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 5.1
@@ -166,8 +184,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 25
 		}
-		set_variable = {
-			corporate_tax = 19.5
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 19.5 }
 		}
 		set_variable = {
 			corporate_income_monthly = 2.624287
@@ -184,8 +205,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = {
-			income_tax = 26.9
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 26.9 }
 		}
 		set_variable = { # Based on 49.000$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 23
@@ -196,8 +220,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 20
 		}
-		set_variable = {
-			corporate_tax = 30
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 30 }
 		}
 		set_variable = {
 			corporate_income_monthly = 3.862354
@@ -214,8 +241,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = {
-			income_tax = 12
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 12 }
 		}
 		set_variable = { # Based on 8.000$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 7.9
@@ -226,8 +256,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 22
 		}
-		set_variable = {
-			corporate_tax = 16
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 16 }
 		}
 		set_variable = {
 			corporate_income_monthly = 1.368243
@@ -244,8 +277,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = {
-			income_tax = 36
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 36 }
 		}
 		set_variable = { # Based on 1.500$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 2.9
@@ -256,8 +292,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 25
 		}
-		set_variable = {
-			corporate_tax = 30
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 30 }
 		}
 		set_variable = {
 			corporate_income_monthly = 0.413572
@@ -274,8 +313,11 @@ money_setup_scripted_effect = {
 		}
 		## Based on Population
 		# Different for every country, I took something in the middle to start with
-		set_variable = {
-			income_tax = 32
+		if = {
+			limit = {
+				NOT = { has_variable = income_tax }
+			}
+			set_variable = { income_tax = 32 }
 		}
 		set_variable = { # Based on 10.000$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 9.1
@@ -286,8 +328,11 @@ money_setup_scripted_effect = {
 		set_variable = {
 			average_working_days_monthly = 22
 		}
-		set_variable = {
-			corporate_tax = 26
+		if = {
+			limit = {
+				NOT = { has_variable = corporate_tax }
+			}
+			set_variable = { corporate_tax = 26 }
 		}
 		set_variable = {
 			corporate_income_monthly = 1.985760
@@ -353,9 +398,6 @@ money_setup_scripted_effect = {
 	add_to_variable = { # Final result of total money the country can use, divided by 1000
 		state_treasury = corporate_income_monthly_for_country
 	}
-	set_variable = {
-		state_treasury_show = state_treasury
-	}
 }
 
 money_update_scripted_effect = {
@@ -407,9 +449,6 @@ money_update_scripted_effect = {
 	}
 	add_to_variable = {
 		state_treasury = corporate_income_monthly_for_country
-	}
-	set_variable = {
-		state_treasury_show = state_treasury
 	}
 }
 
@@ -475,5 +514,11 @@ setup_country_tag = {
 	}
 	set_variable = {
 		ROOT.TheirLoanOpinionOfUs = THIS.LoansOpinion
+	}
+}
+
+setup_country_tag2 = {
+	THIS = {
+		save_global_event_target_as = selected_payback_country_tag
 	}
 }

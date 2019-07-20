@@ -88,16 +88,38 @@ scripted_gui = {
             loan_menu_lower_interest_button_click = {
                 subtract_from_variable = { loan_interest = 1 }
             }
-           add_loan_button_click = {
+            add_loan_button_click = {
                 set_temp_variable = { show_2 = 1 }
 			    subtract_from_temp_variable = { show_2 = show_add_loans }
 			    set_variable = { show_add_loans = show_2 }
                 loans_calculate_opinion_factor = yes
-           }
+            }
+            pay_back_loans_button_click = {
+                set_temp_variable = { show_4 = 1 }
+			    subtract_from_temp_variable = { show_4 = show_payback }
+			    set_variable = { show_payback = show_4 }
+                if = {
+                    limit = {
+                        NOT = {
+                            check_variable = {
+                                loans_grid_array^num = loans_payback_grid_array^num
+                            }
+                        }
+                    }
+                    clear_array = loans_payback_grid_array
+                    for_each_loop = {
+                        array = loans_grid_array
+                        break = loans_grid_array^num
+                        add_to_array = {
+                            loans_payback_grid_array = v
+                        }
+                    }
+                }
+            }
         }
 
         triggers = {
-            pay_back_loan_button_click_enabled = {
+            pay_back_loans_button_click_enabled = {
                 check_variable = { loans_amount > 0 }
             }
         }
@@ -158,6 +180,36 @@ scripted_gui = {
         properties = {
             flag = {
                 image = "[This.GetFlag]"
+            }
+        }
+    }
+
+    money_payback_window = {
+        window_name = "money_payback_window_container"
+
+        context_type = player_context
+        parent_window_name = "money_loans_window_container"
+
+        visible = {
+            check_variable = { show_payback > 0 }
+        }
+
+        dynamic_lists = {
+            loans_payback_grid = {
+                array = loans_payback_grid_array
+                entry_container = loans_payback_grid_entry
+                change_scope = yes
+            }
+        }
+
+        effects = {
+            payback_button_click = {
+                THIS = {
+                    setup_country_tag2 = yes
+                }
+                FROM = {
+                    country_event = money.5
+                }
             }
         }
     }
@@ -252,7 +304,11 @@ scripted_gui = {
                 }
             }
             request_button_click_enabled = {
-                NOT = { has_country_flag = loan_request_ongoing }
+                NOT = { 
+                    check_variable = {
+                        loans_amount > 4
+                    }
+                }
             }
         }
     }
