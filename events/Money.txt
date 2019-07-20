@@ -16,6 +16,19 @@ country_event = {
 }
 
 country_event = {
+	id = money.11
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+            money_update_scripted_effect = yes
+        }
+	}
+}
+
+country_event = {
 	id = money.2
 	title = money.2.t
 	desc = money.2.d
@@ -218,6 +231,12 @@ country_event = {
 	desc = money.7.d
 
 	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = paying
+		}
+	}
 
 	option = {
 		name = "Pay Now"
@@ -227,17 +246,21 @@ country_event = {
 		subtract_from_variable = {
 			loans_amount = 1
 		}
+		remove_from_array = {
+			ROOT.loans_payback_grid_array = FROM.id
+		}
+		remove_from_array = {
+			ROOT.loans_grid_array = FROM.id
+		}
 		FROM = {
 			add_to_variable = {
 				state_treasury = lend_money
 			}
 			country_event = money.6
-			remove_from_array = {
-				ROOT.loans_payback_grid_array = THIS.id
-			}
-			remove_from_array = {
-				ROOT.loans_grid_array = THIS.id
-			}
+		}
+		hidden_effect = {
+			clr_country_flag = paying
+			clear_variable = loan_days_left
 		}
 	}
 }
