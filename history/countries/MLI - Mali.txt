@@ -85,7 +85,27 @@ add_ideas = {
 	population_growth_explosion
 	african_union_member
 	non_aligned_movement_member
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 11.5 }
+set_variable = { progressive_seats = 22.6 }
+set_variable = { social_democrat_seats = 65.9 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -95,12 +115,13 @@ set_politics = {
 }
 
 set_popularities = {
-    progressive = 32.83
-    social_democrat = 67.17
+    social_democrat = 65.9
+	progressive = 22.6
+	democratic_socialist = 11.5
 }
 
 create_country_leader = {
-	name = "Ibrahim Boubacar Keita"
+	name = "Ibrahim Boubacar Keïta"
 	picture = "Ibrahim_Boubacar_Keita.dds"
 	ideology = social_democrat_ideology
 }
@@ -109,4 +130,10 @@ create_country_leader = {
 	name = "Soumaila Cissé"
 	picture = "Soumailia_Cisse.dds"
 	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Tiémoko Sangaré"
+	picture = "Tiemoko_Sangare.dds"
+	ideology = african_socialist
 }

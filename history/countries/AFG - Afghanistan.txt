@@ -55,6 +55,7 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	presidential_system
 }
 
 set_country_flag = dominant_religion_islam
@@ -64,6 +65,25 @@ set_country_flag = sunni_islam
 set_variable = { income_tax = 20 }
 set_variable = { corporate_tax = 20 }
 
+#House of the People
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 1.6 }
+set_variable = { social_liberal_seats = 3.6 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 78.75 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 4.41 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 11.64 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {	
 	ruling_party = reactionary
 	last_election = "2014.4.20"
@@ -72,8 +92,11 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 56.44
-    conservative = 43.56
+    reactionary = 78.75
+	islamist = 11.64
+	nationalist = 4.41
+	social_liberal = 3.6
+	social_democrat = 1.6
 }
 
 create_country_leader = {
@@ -95,9 +118,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zalmai Rassoul"
-	picture = "Zalmai_Rassoul.dds"
-	ideology = centrist
+	name = "Muhammad Mohaqiq"
+	picture = "Muhammad_Mohaqiq.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Sebghatullah Sanjar"
+	picture = "Sebghatullah_Sanjar.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Sebghatullah Sanjar"
+	picture = "Sebghatullah_Sanjar.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {

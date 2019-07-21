@@ -84,9 +84,29 @@ add_ideas = {
 	african_union_member
 	commonwealth_of_nations_member
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 55.93 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 8.35 }
+set_variable = { reactionary_seats = 35.72 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -96,9 +116,9 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 36.61
-    conservative = 6.36
-    democratic_socialist = 57.03
+    democratic_socialist = 55.93
+    reactionary = 35.72
+    conservative = 8.35
 }
 
 create_country_leader = {
@@ -108,8 +128,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Alfonso Dhlakama"
-	picture = "Alfonso_Dhlakama.dds"
+	name = "Afonso Dhlakama"
+	picture = "Afonso_Dhlakama.dds"
 	ideology = reactionary_ideology
 }
 

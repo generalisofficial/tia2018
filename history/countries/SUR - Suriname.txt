@@ -84,9 +84,29 @@ add_ideas = {
 	population_growth_rapid
 	limited_conscription
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 1.9 }
+set_variable = { democratic_socialist_seats = 50.9 }
+set_variable = { progressive_seats = 31.6 }
+set_variable = { social_democrat_seats = 3.9 }
+set_variable = { social_liberal_seats = 11.7 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -96,8 +116,11 @@ set_politics = {
 }
 
 set_popularities = {
-    progressive = 44.54
-    democratic_socialist = 55.46
+    democratic_socialist = 50.9
+	progressive = 31.6
+	social_liberal = 11.7
+	social_democrat = 3.9
+	communist = 1.9
 }
 
 create_country_leader = {
@@ -110,6 +133,24 @@ create_country_leader = {
 	name = "Chan Santokhi"
 	picture = "Chan_Santokhi.dds"
 	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Ronnie Brunswijk"
+	picture = "Ronnie_Brunswijk.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Gregory Rusland"
+	picture = "Gregory_Rusland.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Jim Hok"
+	picture = "Jim_Hok.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {
