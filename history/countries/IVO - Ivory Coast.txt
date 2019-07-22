@@ -83,9 +83,29 @@ add_ideas = {
 	population_growth_explosion
 	african_union_member
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 49.74 }
+set_variable = { social_liberal_seats = 50.26 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_liberal
@@ -95,8 +115,8 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 83.7
-    social_democrat = 16.3
+    social_liberal = 50.26
+    social_democrat = 49.74
 }
 
 create_country_leader = {

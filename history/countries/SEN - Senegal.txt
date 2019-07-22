@@ -85,18 +85,39 @@ add_ideas = {
 	african_union_member
 	non_aligned_movement_member
 	lgbt_illegal
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 4.24 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 20.06 }
+set_variable = { market_liberal_seats = 75.7 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
 
 set_politics = {	
 	ruling_party = market_liberal
-	last_election = "1981.1.1"
-	election_frequency = 72
+	last_election = "2012.2.24"
+	election_frequency = 84
 	elections_allowed = yes
 }
 
 set_popularities = {
-    market_liberal = 65.80
-    social_liberal = 34.20
+    market_liberal = 75.7
+    social_liberal = 20.06
+	democratic_socialist = 4.24
 }
 
 create_country_leader = {
@@ -109,4 +130,10 @@ create_country_leader = {
 	name = "Abdoulaye Wade"
 	picture = "Abdoulaye_Wade.dds"
 	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Ousmane Tanor Dieng"
+	picture = "Ousmane_Tanor_Dieng.dds"
+	ideology = african_socialist
 }
