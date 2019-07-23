@@ -87,7 +87,27 @@ add_ideas = {
 	african_union_member
 	limited_conscription
 	non_aligned_movement_member
+	presidential_system
 }
+
+#National People's Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 55.8 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 44.2 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -97,12 +117,25 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic_socialist = 61.92
-    reactionary = 38.08
+    democratic_socialist = 57.83
+    social_democrat = 21.10
+	progressive = 21.07
 }
 
 create_country_leader = {
 	name = "José Mário Vaz"
 	picture = "Jose_Mario_Vaz.dds"
 	ideology = african_socialist
+}
+
+create_country_leader = {
+	name = "Alberto M'bunhe Nambeia"
+	picture = "Alberto_Mbunhe_Nambeia.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Braima Camará"
+	picture = "Braima_Camara.dds"
+	ideology = progressive_ideology
 }

@@ -97,6 +97,7 @@ add_ideas = {
 	african_union_member
 	non_aligned_movement_member
 	lgbt_illegal
+	parliamentary_system
 }
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 365 }
@@ -111,6 +112,25 @@ add_opinion_modifier = {
 	modifier = embargo
 }
 
+#House of Peoples' Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 100 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2015.5.24"
@@ -119,8 +139,7 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic_socialist = 91.41
-    reactionary = 8.59
+    democratic_socialist = 100
 }
 
 create_country_leader = {
