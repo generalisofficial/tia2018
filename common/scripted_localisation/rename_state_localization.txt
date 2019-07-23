@@ -1,0 +1,13 @@
+defined_text = {
+    name = RENAME_STATE_DISPLAY_SL
+    text = {
+        trigger = {
+            check_variable = { current_char = 0 }
+            check_variable = { chars^0 = 0 }
+        }
+        localization_key = "RENAME_STATE_START"
+    }
+    text = {
+        localization_key = "RENAME_IN_PROGRESS"
+    }
+}
