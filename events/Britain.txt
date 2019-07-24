@@ -50,3 +50,36 @@ country_event = { #2019 Liberal Democrats leadership election
         }
 	}
 }
+
+country_event = { #2019 Conservative Party leadership election
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.3.a
+		ai_chance = {
+			factor = 66
+		}
+		create_country_leader = {
+	        name = "Boris Johnson"
+	        picture = "Boris_Johnson.dds"
+	        ideology = social_conservative
+        }
+	}
+	
+	option = {
+		name = britain.3.b
+		ai_chance = {
+			factor = 34
+		}
+		create_country_leader = {
+	        name = "Jeremy Hunt"
+	        picture = "Jeremy_Hunt.dds"
+	        ideology = social_conservative
+        }
+	}
+}
