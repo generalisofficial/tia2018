@@ -84,6 +84,7 @@ set_technology = {
 add_ideas = {
 	population_growth_decline
 	idea_eu_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
@@ -91,6 +92,31 @@ set_country_flag = christianity
 #Economy
 set_variable = { income_tax = 10 }
 set_variable = { corporate_tax = 10 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 27.19 }
+set_variable = { social_liberal_seats = 8.99 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 48.01 }
+set_variable = { reactionary_seats = 3.75 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 8.73 }
+set_variable = { fascist_seats = 3.33 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_nationalist
+set_country_flag = coalition_fascist
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = nationalist_seats }
+add_to_variable = { ROOT.Coalition = fascist_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -100,11 +126,12 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 32.65
+    conservative = 48.01
     social_democrat = 27.19
-    fascist = 27.02
     social_liberal = 8.99
-    market_liberal = 4.15
+	nationalist = 8.73
+	reactionary = 3.75
+	fascist = 3.33
 }
 
 create_country_leader = {
@@ -141,12 +168,6 @@ create_country_leader = {
 	name = "Mustafa Karadaya"
 	picture = "Mustafa_Karadaya.dds"
 	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Veselin Mareshki"
-	picture = "Veselin_Mareshki.dds"
-	ideology = libertarian
 }
 
 create_country_leader = {
