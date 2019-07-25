@@ -91,7 +91,27 @@ add_ideas = {
 	limited_conscription
 	non_aligned_movement_member
 	lgbt_illegal
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 53.97 }
+set_variable = { social_liberal_seats = 46.03 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -101,8 +121,8 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 57.85
-    social_liberal = 42.15
+    social_democrat = 53.97
+    social_liberal = 46.03
 }
 
 create_country_leader = {
