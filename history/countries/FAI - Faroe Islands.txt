@@ -87,6 +87,29 @@ add_ideas = {
 	christianity
 }
 
+#Løgting
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 20.7 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 25.1 }
+set_variable = { social_liberal_seats = 4.1 }
+set_variable = { market_liberal_seats = 18.7 }
+set_variable = { conservative_seats = 18.9 }
+set_variable = { reactionary_seats = 12.5 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_democratic_socialist
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {	
 	ruling_party = social_democrat
 	last_election = "2015.9.1"
@@ -118,7 +141,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jørgen Niclasen"
 	picture = "Jorgen_Niclasen.dds"
-	ideology = liberal_conservative
+	ideology = national_conservative
 }
 
 create_country_leader = {
