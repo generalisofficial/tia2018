@@ -87,6 +87,7 @@ add_ideas = {
 	idea_PRK_militarism
 	idea_PRK_chinese_supplies
     non_aligned_movement_member
+	parliamentary_system
 }
 
 set_country_flag = buddhism
@@ -116,17 +117,36 @@ add_named_threat = {
 	name = threat_PRK_nuclear_program
 }
 
+#Supreme People's Assembly
+set_variable = { communist_seats = 89.5 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 7.3 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 3.2 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_communist
+add_to_variable = { ROOT.Coalition = communist_seats }
+
 set_politics = {	
 	ruling_party = communist
-	last_election = "2014.3.9"
+	last_election = "2014.3.10"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
     nationalist = 3.2
-    social_democrat = 8.44
-    communist = 88.36
+    social_democrat = 7.3
+    communist = 89.49
 }
 
 create_country_leader = {

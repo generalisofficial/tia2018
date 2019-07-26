@@ -83,6 +83,7 @@ add_ideas = {
 	population_growth_explosion
 	african_union_member
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
@@ -90,6 +91,25 @@ set_country_flag = christianity
 #Economy
 set_variable = { income_tax = 35 }
 set_variable = { corporate_tax = 35 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 27.7 }
+set_variable = { social_liberal_seats = 39.7 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 32.6 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -99,8 +119,9 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 65.37
-    social_liberal = 34.63
+    reactionary = 32.6
+    social_liberal = 39.7
+	social_democrat = 27.7
 }
 
 create_country_leader = {
@@ -113,4 +134,10 @@ create_country_leader = {
 	name = "Thomas Boni Yayi"
 	picture = "Thomas_Boni_Yayi.dds"
 	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Adrien Houngbédji"
+	picture = "Adrien_Houngbedji.dds"
+	ideology = social_democrat_ideology
 }

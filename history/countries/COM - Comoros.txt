@@ -86,10 +86,30 @@ add_ideas = {
 	arab_league_member
 	african_union_member
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
+
+#Assembly of the Union of the Comoros
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 53.12 }
+set_variable = { social_liberal_seats = 10.42 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 18.47 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 17.99 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -99,12 +119,32 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 60.34
-    reactionary = 39.66
+    social_democrat = 53.12
+    conservative = 18.47
+    islamist = 17.99
+    social_liberal = 10.42
 }
 
 create_country_leader = {
 	name = "Azali Assoumani"
 	picture = "Azali_Assoumani.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Mohamed Halifa"
+	picture = "Mohamed_Halifa.dds"
+	ideology = liberal_conservative
+}
+
+create_country_leader = {
+	name = "Ahmed Abdallah Mohamed Sambi"
+	picture = "Ahmed_Abdallah_Mohamed_Sambi.dds"
+	ideology = khomeinist
+}
+
+create_country_leader = {
+	name = "Mouigni Baraka"
+	picture = "Mouigni_Baraka.dds"
+	ideology = centrist
 }

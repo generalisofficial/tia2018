@@ -83,28 +83,49 @@ add_ideas = {
 	idea_eu_member
 	the_euro
 	neutrality_idea
+	population_growth_steady
+	parliamentary_system
 }
 
 set_country_flag = christianity
 
-add_ideas = {
-	population_growth_steady
-}
+#Dáil Éireann
+set_variable = { communist_seats = 3.9 }
+set_variable = { democratic_socialist_seats = 15.3 }
+set_variable = { progressive_seats = 2.7 }
+set_variable = { social_democrat_seats = 9.6 }
+set_variable = { social_liberal_seats = 4.2 }
+set_variable = { market_liberal_seats = 24.3 }
+set_variable = { conservative_seats = 37.8 }
+set_variable = { reactionary_seats = 2.2 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
 	ruling_party = conservative
-	last_election = "2016.4.12"
-	election_frequency = 48
+	last_election = "2016.4.10"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 31.5
-    market_liberal = 29.8
-    democratic_socialist = 16.8
-    social_democrat = 10.6
-    progressive = 7.1
-    reactionary = 4.2
+    conservative = 37.8
+    market_liberal = 24.3
+    democratic_socialist = 15.3
+    social_democrat = 9.6
+	social_liberal = 4.2
+	communist = 3.9
+    progressive = 2.7
+    reactionary = 2.2
 }
 
 create_country_leader = {
