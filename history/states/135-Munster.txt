@@ -2,9 +2,6 @@
 state={
 	id=135
 	name="STATE_135"
-	manpower = 1241400
-
-	state_category = state_level_7
 
 	history={
 		owner = IRE
@@ -13,12 +10,21 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 2
+
 		}
-		victory_points = { 7394 5 }		#Cork
-		victory_points = { 6313 5 }		#Limerick
+		victory_points = {
+			7394 5 
+		}
+		victory_points = {
+			6289 4
+		}
+
 	}
 
 	provinces={
 		6289 6313 6405 7394 9284 9310 9405 11237 11267 11334 
 	}
+	manpower=1241400
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

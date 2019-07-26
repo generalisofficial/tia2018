@@ -1,10 +1,8 @@
 
 state={
 	id=113
-	name="STATE_113" # Leinster
-	manpower = 3133000
-	state_category = state_level_10
-	
+	name="STATE_113"
+
 	history={
 		owner = IRE
 		add_core_of = IRE
@@ -14,15 +12,28 @@ state={
 			arms_factory = 2
 			dockyard = 1
 			air_base = 5
-			11293 = { naval_base = 8 }
+			11293 = {
+				naval_base = 8
+
+			}
+
 		}
-		victory_points = { 11293 20 }	#Dublin
-		victory_points = { 285 3 }		#Waterford
-		victory_points = { 3359 3 }		#Dundalk
-		victory_points = { 7377 3 }		#Bray
+		victory_points = {
+			11293 20 
+		}
+		victory_points = {
+			285 3
+		}
+		victory_points = {
+			3359 2 
+		}
+
 	}
 
 	provinces={
 		285 303 369 3342 3359 7377 11293 11303 
 	}
+	manpower=3133000
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }
