@@ -89,7 +89,27 @@ add_ideas = {
 	non_aligned_movement_member
 	east_african_community_member
 	lgbt_illegal
+	presidential_system
 }
+
+#Parliament of Uganda
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 7.3 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 14.6 }
+set_variable = { conservative_seats = 9.4 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {	
 	ruling_party = nationalist
@@ -99,8 +119,10 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 60.62
-    conservative = 39.38
+    nationalist = 68.7
+    market_liberal = 14.6
+	conservative = 9.4
+	democratic_socialist = 7.3
 }
 
 create_country_leader = {
@@ -112,7 +134,19 @@ create_country_leader = {
 create_country_leader = {
 	name = "Patrick Amuriat Oboi"
 	picture = "Patrick_Amuriat_Oboi.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Norbert Mao"
+	picture = "Norbert_Mao.dds"
 	ideology = liberal_conservative
+}
+
+create_country_leader = {
+	name = "Jimmy Akena Obote"
+	picture = "Jimmy_Akena_Obote.dds"
+	ideology = african_socialist
 }
 
 create_field_marshal = {
