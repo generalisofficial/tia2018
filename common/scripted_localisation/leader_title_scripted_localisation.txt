@@ -1,0 +1,57 @@
+defined_text = {
+	name = GetLeaderTitle
+
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_leader_title_temp = id }
+			var:selected_leader_title_temp = {
+				NOT = { 
+				    has_government = monarchist
+				    original_tag = ALB
+					original_tag = ENG
+					original_tag = SWE
+				}
+			}
+		}
+		localization_key = LEADER_TITLE_GENERIC
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_leader_title_temp = id }
+			var:selected_leader_title_temp = {
+			    has_government = monarchist
+			}
+		}
+		localization_key = LEADER_TITLE_MONARCHIST
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_leader_title_temp = id }
+			var:selected_leader_title_temp = {
+			    NOT = { has_government = monarchist }
+			    original_tag = ALB
+			}
+		}
+		localization_key = LEADER_TITLE_ALB
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_leader_title_temp = id }
+			var:selected_leader_title_temp = {
+			    NOT = { has_government = monarchist }
+			    original_tag = ENG
+			}
+		}
+		localization_key = LEADER_TITLE_ENG
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { var:selected_leader_title_temp = id }
+			var:selected_leader_title_temp = {
+			    NOT = { has_government = monarchist }
+			    original_tag = SWE
+			}
+		}
+		localization_key = LEADER_TITLE_SWE
+	}
+}    
