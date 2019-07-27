@@ -9,6 +9,7 @@ tags={
 supported_version="1.7.1"
 replace_path = "history/units"
 replace_path = "common/ai_focuses"
+replace_path = "common/bookmarks"
 replace_path = "common/national_focus"
 replace_path = "common/ai_strategy"
 replace_path = "common/ai_strategy_plans"

@@ -12,6 +12,7 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+		
 		ENG_king_charles_3 = {
 			picture = king_charles_3
 			allowed = {
@@ -20,6 +21,7 @@ ideas = {
 			modifier = {
 			}
 		}
+		
 		ENG_king_william_5 = {
 			picture = king_william_5
 			allowed = {
@@ -27,6 +29,16 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.05
+			}
+		}
+		
+		ENG_conservative_dup_agreement = {
+			picture = tories_dup
+			allowed = {
+				has_government = conservative
+			}
+			modifier = {
+				political_power_gain = -0.1
 			}
 		}
 	}
