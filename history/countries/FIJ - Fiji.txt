@@ -84,7 +84,27 @@ add_ideas = {
 	population_growth_stagnation
 	commonwealth_of_nations_member
 	non_aligned_movement_member
+	parliamentary_system
 }
+
+#Parliament of Fiji
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 12.65 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 59.17 }
+set_variable = { reactionary_seats = 28.18 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
