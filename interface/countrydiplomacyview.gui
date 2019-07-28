@@ -410,7 +410,7 @@ guiTypes = {
 					slotsize = { width = 33 height = 32 }
 					max_slots = { x = 10 y = 2 }
 					format = "UPPER_LEFT"
-			}				
+				}				
 				
 			}
 			
@@ -1006,14 +1006,14 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "diplomacy_idea_category_entry"
-		size = { width = 255 height = 100 }
-		clipping = no
+		size = { width = 231 height = 180 }
+		clipping = yes
 	
 		
 		background = {
 			name = "Background"		
-			spriteType = "GFX_diplo_details_header"
-			position = { x = 4 y = 6 }			
+			spriteType = "GFX_diplo_details_header1"
+			position = { x = 8 y = 6 }			
 		}
 
 		iconType = {
@@ -1028,7 +1028,7 @@ guiTypes = {
 			position = { x = 75 y = 17 }
 			font = "hoi_18mbs"
 			text = "category"
-			maxWidth = 160
+			maxWidth = 150
 			maxHeight = 20
 			format = center
 			fixedsize = yes
@@ -1036,14 +1036,14 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ideas"
-			position = { x = 14 y = 41 }
-			size = { width = 100%% height = 100%% }
+			position = { x = 14 y = 40 }
+			size = { width = 1 height = 1 }
 			verticalScrollbar = "right_vertical_slider"
 		
 			gridBoxType = {
 				name = "ideas_grid"
 				position = { x = 0 y = 0 }
-				size = { width = 255 height = 106 }
+				size = { width = 150 height = 150 }
 				slotsize = { width = 70 height = 64 }
 				max_slots_horizontal = 3
 				format = "UPPER_LEFT"
@@ -4336,14 +4336,14 @@ guiTypes = {
 	#don't delete, it's used for stretching ideas' scrollable area
 	containerWindowType = {
 		name = "diplomacy_idea_category_entry_dummy"
-		size = { width = 255 height = 1 }
-		clipping = no
+		size = { width = 255 height = 150 }
+		clipping = yes
 	}
 	
 	containerWindowType = {
 		name = "diplomacy_idea_entry"
-		size = { width = 53 height = 53 }
-		clipping = no
+		size = { width = 70 height = 70 }
+		clipping = yes
 
 		iconType = {
 			name = "empty_icon"
