@@ -102,18 +102,18 @@ set_variable = { social_democrat_seats = 26.9 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { market_liberal_seats = 5.3 }
 set_variable = { conservative_seats = 31.5 }
-set_variable = { reactionary_seats = 26 }
+set_variable = { reactionary_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { nationalist_seats = 26 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_conservative
-set_country_flag = coalition_reactionary
+set_country_flag = coalition_nationalist
 add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -123,7 +123,7 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 26
+    nationalist = 26
     conservative = 31.5
     market_liberal = 5.3
     social_democrat = 26.9
@@ -145,6 +145,12 @@ create_country_leader = {
 create_country_leader = {
 	name = "Heinz-Christian Strache"
 	picture = "Heinz_Christian_Strache.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Helmut Nikel"
+	picture = "Helmut_Nikel.dds"
 	ideology = reactionary_ideology
 }
 
