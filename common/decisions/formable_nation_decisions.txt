@@ -103,6 +103,64 @@ formable_nation_decisions = {
 		}
 	}
 	
+	form_iberia = {
+		visible = {
+		    OR = {
+			    original_tag = SPR
+				original_tag = POR
+				original_tag = CAT
+				original_tag = BSQ
+			}
+		}
+		
+		available = {
+			owns_state = 169
+			owns_state = 168
+			owns_state = 171
+			owns_state = 166
+			owns_state = 165
+			owns_state = 167
+			owns_state = 168
+			owns_state = 173
+			owns_state = 172
+			owns_state = 169
+			owns_state = 176
+			owns_state = 174
+			owns_state = 175
+			owns_state = 170
+			owns_state = 41
+			owns_state = 181
+			owns_state = 112
+			owns_state = 180
+			owns_state = 179
+		}
+		
+		icon = civil_support
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = IBR
+			every_state = {
+			    limit = {
+				    OR = {
+				         is_core_of = POR
+				         is_core_of = SPR
+						 is_core_of = CAT
+						 is_core_of = BSQ
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
 	form_soviet_union = {
 		visible = {
 		    OR = {

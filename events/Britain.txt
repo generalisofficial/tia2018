@@ -13,7 +13,7 @@ country_event = { #2018 UKIP leadership election
 		create_country_leader = {
 	        name = "Gerard Batten"
 	        picture = "Gerard_Batten.dds"
-	        ideology = reactionary_ideology
+	        ideology = nationalist_ideology
         }
 	}
 }
@@ -80,6 +80,25 @@ country_event = { #2019 Conservative Party leadership election
 	        name = "Jeremy Hunt"
 	        picture = "Jeremy_Hunt.dds"
 	        ideology = social_conservative
+        }
+	}
+}
+
+country_event = { #Blaiklock Resigns
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.4.a
+		add_popularity = { ideology = reactionary popularity = 0.1 }
+		create_country_leader = {
+	        name = "Nigel Farage"
+	        picture = "Nigel_Farage.dds"
+	        ideology = reactionary_ideology
         }
 	}
 }
