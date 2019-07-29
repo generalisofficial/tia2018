@@ -96,7 +96,7 @@ SPACE_USA = {
 			factor = 1
 			modifier = {
 				factor = 10
-				date > 1954.5.14
+				date > 2018.9.1
 			}
 		}
 	}
@@ -139,7 +139,7 @@ SPACE_USA = {
 		}
 	}
 
-	part_progress = {
+	USA_part_progress = {
 
 		icon = generic_research
 
@@ -149,12 +149,7 @@ SPACE_USA = {
 
 		available = {
 			has_country_flag = not_selectable
-			USA = {
-				OR = {
-					has_country_flag = insight_atlas_v_adjustment 
-					has_country_flag = insight_seismometer_research
-				}
-			}
+			NOT = { has_country_flag = research_ongoing }
 		}
 
 		cost = 0
@@ -165,13 +160,55 @@ SPACE_USA = {
 		days_remove = 0
 
 		visible = {
+			has_country_flag = research_ongoing
+		}
+
+		remove_trigger = {
+			has_country_flag = no_research_ongoing
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	USA_transfer_funds = {
+
+		icon = generic_research
+
+		allowed = {
 			original_tag = USA
-			USA = {
-				OR = {
-					has_country_flag = insight_atlas_v_adjustment 
-					has_country_flag = insight_seismometer_research
-				}
+		}
+
+		available = {
+			USA = { has_country_flag = insight_programm_started }
+			NOT = { USA = { has_country_flag = insight_programm_over } }
+		}
+
+		cost = 0
+
+		selectable_mission = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		remove_trigger = {
+			USA = { has_country_flag = insight_rocket_built }
+		}
+
+		complete_effect = {
+			subtract_from_variable = { state_treasury = 25 }
+			add_to_variable = { NASA_funds = 25 }
+		}
+
+		visible = {
+			original_tag = USA
+			NOT = { 
+				USA = { 
+					has_country_flag = insight_programm_over 
+				} 
 			}
+			USA = { has_country_flag = insight_programm_started }
 		}
 
 		ai_will_do = {
@@ -190,7 +227,7 @@ SPACE_USA = {
 ############################################
 ############################################
 ############################################
-# SOVIET UNION #
+# RUSSIA #
 ############################################
 ############################################
 ############################################

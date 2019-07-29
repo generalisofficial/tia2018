@@ -16,7 +16,9 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
  insight_program_government_funding:0 "Funding the Insight Program"
  insight_program_government_funding_desc:0 "A heavily government-funded project to develop a lander and rocket capable of landing on Mars and mesuring seismic activities."
  insight_project_progress:0 "Insight Project Progress:  [?ROOT.USA_insight_level|-0]%"
- part_progress:0 "Time left to research §Y[This.GetResearchPart]§!: [?NASA_research_countdown_val] Days"
+ USA_part_progress:0 "Time left to research §Y[This.GetResearchPart]§!: [?NASA_research_countdown_val] Days"
+ USA_transfer_funds:0 "Transfer funds from State Treasury"
+ USA_transfer_funds_desc:0 "We can transfer 25 Million $\ from the state treasury to NASA every week on top of the government funding in case we ever lack funds."
 
 
 # Variables
@@ -25,11 +27,12 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
 # Tooltips
  NASA_TOOLTIP:0 "The NASA Research Facility is at your disposal. This is the place where we develop new space projects."
  NASA_FUNDS_TOOLTIP:0 "Use the available decisions to get more funds when needed."
- ATLAS_V_TOOLTIP:0 "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though.\n\n§YYour funds: [?ROOT.NASA_funds].000.000$\nFunds required: 27.000.000$§!"
+ ATLAS_V_TOOLTIP:0 "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though.\n\n§YFunds required: 27.000.000$\nYour funds: [?ROOT.NASA_funds].000.000$§!"
  ATLAS_V_DONE_TOOLTIP:0 "The Insight Completion Level advances by §G10%§!"
- CNES_SEIS_TOOLTIP:0 "We are using an advanced version of the seismometer cancelled in 2016 to resist the pressure in Space and during the landing on Mars.\n\n§YYour funds: [?ROOT.NASA_funds].000.000$\nFunds required: 73.000.000$§!"
+ CNES_SEIS_TOOLTIP:0 "We are using an advanced version of the seismometer cancelled in 2016 to resist the pressure in Space and during the landing on Mars.\n\n§YFunds required: 73.000.000$\nYour funds: [?ROOT.NASA_funds].000.000$§!"
  SEISMOMETER_DONE_TOOLTIP:0 "The Insight Completion Level advances by §G15%§!"
  NASA_FUNDS_TT:0 "You can aquire §YFunding§! through decisions"
+ INSIGHT_LANDER_TOOLTIP:0 "The lander for this mission is based on the design for the 2008 Phoenix Mars Lander. It weights 358kg (on Earth), is 6m wide with solar panels deployed and is equipend with a science deck and a robotic arm.\n\n§YFunds required: 106.000.000$\nYour funds: [?ROOT.NASA_funds].000.000$§!"
 
 # Flags
  insight_programm_started:0 "Insight Program started"
@@ -38,6 +41,12 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
  insight_gouvernment_funding:0 "Insight Gouvernment Funding Ongoing"
  insight_launched:0 "Insight launched"
  not_selectable:0 "Decision Not Selectable."
+ insight_atlas_v_adjustment_done:0 "Atlas V Rocket Adjustment Done"
+ insight_seismometer_research_done:0 "Seismometer Research Done"
+ insight_atlas_v_adjustment:0 "Atlas V Rocket Adjustment Done"
+ insight_seismometer_research:0 "Seismometer Research Done"
+ research_ongoing:0 "There's currently a §Yresearch ongoing§!"
+ no_research_ongoing:0 "There's currently §Yno research ongoing§!"
  
 
 # Misc
@@ -53,5 +62,6 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
  LOCKED_DELAYED_TOOLTIP:0 "Don't forget to research the rocket before trying to upgrade it."
  insight_atlas_v_adjustment_name:0 "Atlas V Rocket Adjustment"
  insight_seismometer_research_name:0 "CNES SEIS Seismometer"
+ insight_lander_research_name:0 "InSight Lander"
  color_red:0 "§R"
  color_green:0 "§G"

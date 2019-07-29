@@ -117,9 +117,15 @@ scripted_gui = {
 			}
 			insight_lander_click_enabled = {
 				ROOT = {
-					check_variable = { NASA_funds > 199 }
+					check_variable = { NASA_funds > 106 }
 					NOT = { has_country_flag = research_ongoing }
 					has_country_flag = insight_atlas_v_adjustment_done
+					NOT = { has_country_flag = insight_lander_research_done }
+				}
+			}
+			insight_lander_checkmark_visible = {
+				ROOT = {
+					has_country_flag = insight_lander_research_done
 				}
 			}
 			insight_equipment_click_enabled = {
@@ -127,6 +133,12 @@ scripted_gui = {
 					check_variable = { NASA_funds > 260 }
 					NOT = { has_country_flag = research_ongoing }
 					has_country_flag = insight_atlas_v_adjustment_done
+					NOT = { has_country_flag = insight_equipment_research_done }
+				}
+			}
+			insight_equipment_checkmark_visible = {
+				ROOT = {
+					has_country_flag = insight_equipment_research_done
 				}
 			}
 		}

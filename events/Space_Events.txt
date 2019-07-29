@@ -124,6 +124,7 @@ country_event = {
 		set_country_flag = insight_atlas_v_adjustment_done
 		clr_country_flag = insight_atlas_v_adjustment
 		clr_country_flag = research_ongoing
+		set_country_flag = no_research_ongoing
 		add_to_variable = {
 			var = USA_insight_level value = 10
 		}
@@ -147,7 +148,7 @@ country_event = {
 			value = 73
 		}
 		hidden_effect = {
-			country_event = { id = nasa_research_done.1 days = 80 }
+			country_event = { id = nasa_research_done.2 days = 80 }
 			set_variable = { NASA_research_countdown_val = 80 }
 			country_event = nasa_research_countdown.1
 		}
@@ -170,6 +171,7 @@ country_event = {
 		set_country_flag = insight_seismometer_research_done
 		clr_country_flag = insight_seismometer_research
 		clr_country_flag = research_ongoing
+		set_country_flag = no_research_ongoing
 		add_to_variable = {
 			var = USA_insight_level value = 15
 		}
@@ -177,40 +179,49 @@ country_event = {
 	}
 }
 
-#country_event = {
-#	id = nasa_research.3
-#	title = "PLACEHOLDER"
-#	desc = "PLACEHOLDER"
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = "Yes"
-#		set_country_flag = PLACEHOLDER
-#		set_country_flag = research_ongoing
-#		activate_targeted_decision = { target = USA decision = part_progress_60 }
-#	}
-#
-#	option = {
-#		name = "No"
-#	}
-#}
-#
-#country_event = {
-#	id = nasa_research.4
-#	title = "PLACEHOLDER"
-#	desc = "PLACEHOLDER"
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = "Yes"
-#		set_country_flag = PLACEHOLDER
-#		set_country_flag = research_ongoing
-#		activate_targeted_decision = { target = USA decision = part_progress_60 }
-#	}
-#
-#	option = {
-#		name = "No"
-#	}
-#}
+country_event = {
+	id = nasa_research.3
+	title = "InSight Lander Research"
+	desc = "Would you like to start the research on the new Insight Lander project?"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes"
+		set_country_flag = insight_lander_research
+		set_country_flag = research_ongoing
+		subtract_from_variable = {
+			var = ROOT.NASA_funds
+			value = 106
+		}
+		hidden_effect = {
+			country_event = { id = nasa_research_done.3 days = 80 }
+			set_variable = { NASA_research_countdown_val = 80 }
+			country_event = nasa_research_countdown.1
+		}
+	}
+
+	option = {
+		name = "No"
+	}
+}
+
+country_event = {
+	id = nasa_research_done.3
+	title = "Insight Lander Research and Building finished"
+	desc = "Our team of engineers just announced that the adjustment was completed."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Very Good"
+		set_country_flag = insight_lander_research_done
+		clr_country_flag = insight_lander_research
+		clr_country_flag = research_ongoing
+		set_country_flag = no_research_ongoing
+		add_to_variable = {
+			var = USA_insight_level value = 25
+		}
+		custom_effect_tooltip = "SEISMOMETER_DONE_TOOLTIP"
+	}
+}

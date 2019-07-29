@@ -73,20 +73,20 @@ guiTypes = {
 			pdx_tooltip = "NASA_FUNDS_TT"
 		}
 
-		buttonType = {
-			name = "Insight_button" 
-			position = {x=29 y=64}	
-			spriteType = "GFX_generic_bg_307x113"
-		}
-		
 		instantTextboxType = {
 			name = "insight_headline"
-			position = {x=35 y=68}
+			position = { x = 60 y = 68 }
 			font = "hoi_18mbs"
 			text = "InSight Research Project"
-			maxWidth = 348
+			maxWidth = 180
 			maxHeight = 23
 			format = left
+		}
+
+		buttonType = {
+			name = "Insight_button" 
+			position = {x=90 y=100}	
+			spriteType = "GFX_insight_icon"
 		}
 	}
 
@@ -138,9 +138,9 @@ guiTypes = {
 
 		iconType = {
 			name ="atlas_V_checkmark"
-			spriteType = "GFX_checkmark"
-			position = { x= 420 y = 70 }
-			scale = 1
+			spriteType = "GFX_accept_decline_icon"
+			position = { x= 500 y = 70 }
+			frame = 2
 		}
 
 		instantTextboxType = {
@@ -148,72 +148,61 @@ guiTypes = {
 			position = {x=315 y=70}
 			font = "hoi_18mbs"
 			text = "Atlas V Rocket Adjusting"
-			maxWidth = 348
+			maxWidth = 200
 			maxHeight = 23
 			format = left
             pdx_tooltip = "ATLAS_V_TOOLTIP"
 		}
 
-		buttonType = { # CNES SEIS SEISMOMETER DEVELOMENT
+		buttonType = { # CNES SEIS SEISMOMETER DEVELOPMENT
 			name = "insight_CNES_SEIS" 
 			position = {x=41 y=157}	
 			spriteType = "GFX_generic_text_bg_203"
+			font = "hoi_18mbs"
+			text = "Develop CNES Seismometer"
 			pdx_tooltip = "CNES_SEIS_TOOLTIP"
+			pdx_tooltip_delayed = "LOCKED_DELAYED_TOOLTIP"
 		}
 
 		iconType = {
 			name ="insight_CNES_SEIS_checkmark"
-			spriteType = "GFX_checkmark"
-			position = { x= 70 y = 148 }
-			scale = 0.7
-		}
-
-		instantTextboxType = {
-			name = "insight_CNES_SEIS_text"
-			position = {x=52 y=160}
-			font = "hoi_18mbs"
-			text = "Develop CNES Seismometer"
-			maxWidth = 348
-			maxHeight = 23
-			format = left
-			pdx_tooltip = "CNES_SEIS_TOOLTIP"
-			pdx_tooltip_delayed = "LOCKED_DELAYED_TOOLTIP"
+			spriteType = "GFX_accept_decline_icon"
+			position = { x= 230 y = 148 }
+			frame = 2
 		}
 
 		buttonType = { # INSIGHT LANDING SYSTEM
 			name = "insight_lander" 
 			position = {x=289 y=157}	
 			spriteType = "GFX_generic_text_bg_203"
-		}
-
-		instantTextboxType = {
-			name = "insight_lander_text"
-			position = {x=300 y=160}
 			font = "hoi_18mbs"
 			text = "Develop Landing System"
-			maxWidth = 348
-			maxHeight = 23
-			format = left
-			pdx_tooltip = "LOCKED_TOOLTIP"
+			pdx_tooltip = "INSIGHT_LANDER_TOOLTIP"
 			pdx_tooltip_delayed = "LOCKED_DELAYED_TOOLTIP"
+		}
+
+		iconType = {
+			name ="insight_lander_checkmark"
+			spriteType = "GFX_accept_decline_icon"
+			position = { x= 470 y = 148 }
+			frame = 2
 		}
 
 		buttonType = { # INSIGHT EQUIPMENT LIKE ELECTRONICS, GPS, COMMUNICATION, CAMERA, ETC
 			name = "insight_equipment" 
 			position = {x=545 y=157}	
 			spriteType = "GFX_generic_text_bg_203"
-		}
-
-		instantTextboxType = {
-			name = "insight_equipment_text"
-			position = {x=565 y=160}
 			font = "hoi_18mbs"
-			text = "Enlarge Booster Tank"
-			maxWidth = 348
-			maxHeight = 23
-			format = left
+			text = "Develop Solar Panels"
 			pdx_tooltip = "LOCKED_TOOLTIP"
 			pdx_tooltip_delayed = "LOCKED_DELAYED_TOOLTIP"
+		}
+
+		iconType = {
+			name ="insight_equipment_checkmark"
+			spriteType = "GFX_accept_decline_icon"
+			position = { x= 730 y = 148 }
+			frame = 2
 		}
 	}
 

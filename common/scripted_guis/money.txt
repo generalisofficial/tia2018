@@ -181,7 +181,7 @@ scripted_gui = {
         window_name = "money_payback_window_container"
 
         context_type = player_context
-        parent_window_name = "money_loans_window_container"
+        parent_window_name = "money_window_container"
 
         visible = {
             check_variable = { show_payback > 0 }
