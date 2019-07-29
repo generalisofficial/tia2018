@@ -1,1 +1,47 @@
-﻿
+﻿add_namespace = japan
+
+country_event = { #2018 LDP leadership election
+	id = japan.1
+	title = japan.1.t
+	desc = japan.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = japan.1.a
+		ai_chance = {
+			factor = 68
+		}
+	}
+	
+	option = {
+		name = japan.1.b
+		ai_chance = {
+			factor = 32
+		}
+		create_country_leader = {
+	        name = "Shigeru Ishiba"
+	        picture = "Shigeru_Ishiba.dds"
+	        ideology = national_conservative
+        }
+	}
+}
+
+country_event = { #2019 Imperial Transition
+	id = japan.1
+	title = japan.1.t
+	desc = japan.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = japan.2.a
+		create_country_leader = {
+	        name = "Naruhito"
+	        picture = "Naruhito.dds"
+	        ideology = absolute_monarchist
+        }
+	}
+}
