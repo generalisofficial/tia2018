@@ -46,11 +46,6 @@ scripted_gui = {
                 subtract_from_variable = { corporate_tax = 1 }
                 add_stability = 0.01
             }
-            loans_menu_button_click = {
-                set_temp_variable = { show_1 = 1 }
-				subtract_from_temp_variable = { show_1 = show_loans }
-				set_variable = { show_loans = show_1 }
-            }
         }
 
         triggers = {
@@ -73,15 +68,13 @@ scripted_gui = {
         window_name = "money_loans_window_container"
 
 		context_type = player_context
+        parent_window_name = "money_window_container"
  
 		visible = {
-            check_variable = { show_loans > 0 }
+            check_variable = { show_money > 0 }
 		}
 
         effects = {
-            close_button_click = {
-				set_variable = { show_loans = 0 }
-			}
             loan_menu_add_interest_button_click = {
                 add_to_variable = { loan_interest = 1 }
             }

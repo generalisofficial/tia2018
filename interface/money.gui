@@ -94,7 +94,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "add_to_income_taxation"
-			position = { x = 379 y = 180 }
+			position = { x = 400 y = 180 }
 			quadTextureSprite ="GFX_zoom_in"
 			pdx_tooltip = TAXATION_UP_TOOLTIP
 		}
@@ -130,37 +130,20 @@ guiTypes = {
 			quadTextureSprite ="GFX_zoom_out"
 			pdx_tooltip = TAXATION_DOWN_TOOLTIP
 		}
-
-		buttonType = {
-			name = "loans_menu_button"
-			position = { x = 550 y = 219 }
-			quadTextureSprite ="button_type_4"
-			font = "hoi_24header"
-			text = LOANS_MENU_BUTTON
-			format = left
-			pdx_tooltip = LOANS_MENU_TOOLTIP
-		}
 	}
 
 	containerWindowType = {
 		name = "money_loans_window_container"
-		position = { x = 530 y = 250 }
+		position = { x = 450 y = 110 }
 		size = { width = 800 height = 500 }
 
 		fade_time = 250
 		fade_type = linear
-		moveable = yes
+		moveable = no
 
 		background = {
 			name = "Background"
-			spriteType = "GFX_tiled_bg"
-		}
-
-		buttonType = {
-			name = "close_button" 
-			position = { x = 750 y = 20 }	
-			spriteType = "GFX_closebutton"
-			pdx_tooltip = "CLOSE"
+			spriteType = "GFX_tiled_window_thin_border2"
 		}
 
 		instantTextBoxType = {
@@ -172,6 +155,7 @@ guiTypes = {
 			maxWidth = 420
 			maxHeight = 24
 			fixedsize = yes
+			pdx_tooltip = LOANS_MENU_TOOLTIP
 		}
 
 		instantTextBoxType = {
