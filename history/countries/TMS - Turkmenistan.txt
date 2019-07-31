@@ -86,7 +86,27 @@ add_ideas = {
 	neutrality_idea
 	non_aligned_movement_member
 	lgbt_illegal
+	presidential_system
 }
+
+#Assembly of Turkmenistan
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 8.79 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 91.21 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {	
 	ruling_party = nationalist
@@ -96,13 +116,18 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 2.31
-    nationalist = 97.69
-    communist = 0
+    nationalist = 91.21
+    conservative = 8.79
 }
 
 create_country_leader = {
 	name = "Gurbanguly Berdimuhamedow"
 	picture = "Gurbanguly_Berdimuhamedow.dds"
 	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Saparmyrat Ovganov"
+	picture = "Saparmyrat_Ovganov.dds"
+	ideology = liberal_conservative
 }
