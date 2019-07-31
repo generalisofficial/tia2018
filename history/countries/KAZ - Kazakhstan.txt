@@ -85,12 +85,33 @@ add_ideas = {
 	limited_conscription
 	commonwealth_of_independent_states_member
 	shanghai_cooperation_organization_member
+	presidential_system
 }
 
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 365 }
+
+#Mazhilis
+set_variable = { communist_seats = 7.14 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 7.14 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 85.72 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 
 set_politics = {	
 	ruling_party = reactionary
@@ -100,8 +121,9 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 97.75
-    communist = 2.25
+    reactionary = 85.72
+    communist = 7.14
+	market_liberal = 7.14
 }
 
 create_country_leader = {
@@ -114,6 +136,12 @@ create_country_leader = {
 	name = "Vladislav Kosarev"
 	picture = "Vladislav_Kosarev.dds"
 	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Azat Peruashev"
+	picture = "Azat_Peruashev.dds"
+	ideology = libertarian
 }
 
 create_field_marshal = {
