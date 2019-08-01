@@ -82,20 +82,42 @@ set_technology = {
 
 add_ideas = {
 	population_growth_stagnation
+	presidential_system
 }
 
 set_country_flag = christianity
 
+#National Assembly
+set_variable = { communist_seats = 4.04 }
+set_variable = { democratic_socialist_seats = 50.50 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 13.13 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 32.33 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {	
 	ruling_party = democratic_socialist
-	last_election = "2014.10.26"
+	last_election = "2014.10.27"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 43.37
-    democratic_socialist = 56.63
+    democratic_socialist = 50.50
+	conservative = 32.33
+	social_liberal = 13.13
+	communist = 4.04
 }
 
 create_country_leader = {
@@ -105,9 +127,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Luis Alberto Lacalle Pou"
-	picture = "Luis_Alberto_Lacalle_Pou.dds"
-	ideology = reactionary_ideology
+	name = "Luis Alberto Héber"
+	picture = "Luis_Alberto_Heber.dds"
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Max Sapolinski"
+	picture = "Max_Sapolinski.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Eduardo Rubio"
+	picture = "Eduardo_Rubio.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {
