@@ -86,7 +86,27 @@ add_ideas = {
 	population_growth_steady
 	commonwealth_of_independent_states_member
 	shanghai_cooperation_organization_member
+	presidential_system
 }
+
+#Supreme Assembly 
+set_variable = { communist_seats = 3.27 }
+set_variable = { democratic_socialist_seats = 1.63 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 8.19 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 3.27 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 83.64 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_nationalist
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {	
 	ruling_party = nationalist
@@ -96,11 +116,11 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 65.4
-    conservative = 2.7
-    democratic_socialist = 6.5
-    communist = 4.2
-    social_liberal = 21.2
+    nationalist = 83.64
+	social_liberal = 8.19
+	communist = 3.27
+    conservative = 3.27
+    democratic_socialist = 1.63
 }
 
 create_country_leader = {
@@ -116,15 +136,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Abduhalim Ghafarov"
-	picture = "Abduhalim_Ghafarov.dds"
-	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
 	name = "Miroj Abdulloyev"
 	picture = "Miroj_Abdulloyev.dds"
 	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Masud Sobirov"
+	picture = "Masud_Sobirov.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Abduhalim Ghafarov"
+	picture = "Abduhalim_Ghafarov.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {

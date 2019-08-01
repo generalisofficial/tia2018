@@ -89,6 +89,31 @@ add_ideas = {
 	shanghai_cooperation_organization_member
 }
 
+#Supreme Council
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 9.16 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 34.18 }
+set_variable = { social_liberal_seats = 10 }
+set_variable = { market_liberal_seats = 8.33 }
+set_variable = { conservative_seats = 23.33 }
+set_variable = { reactionary_seats = 15 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_democratic_socialist
+set_country_flag = coalition_market_liberal
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+
 set_politics = {	
 	ruling_party = social_democrat
 	last_election = "2015.10.4"
@@ -97,9 +122,12 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 66.99
-    conservative = 20.08
-    reactionary = 12.93
+    social_democrat = 34.18
+    conservative = 23.33
+    reactionary = 15
+	social_liberal = 10
+	demoratic_socialist = 9.16
+	market_liberal = 8.33
 }
 
 create_country_leader = {
@@ -111,11 +139,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ömürbek Babanov"
 	picture = "Omurbek_Babanov.dds"
-	ideology = social_conservative
+	ideology = liberal_conservative
 }
 
 create_country_leader = {
 	name = "Kanatbek Isaev"
 	picture = "Kanatbek_Isaev.dds"
 	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Bakyt Torobayev"
+	picture = "Bakyt_Torobayev.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Altynbek Sulaymanov"
+	picture = "Altynbek_Sulaymanov.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Omurbek Tekebayev"
+	picture = "Omurbek_Tekebayev.dds"
+	ideology = democratic_socialist_ideology
 }
