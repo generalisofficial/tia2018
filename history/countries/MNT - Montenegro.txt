@@ -81,9 +81,29 @@ set_technology = {
 
 add_ideas = {
 	population_growth_stagnation
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Parliament of Montenegro
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 7.40 }
+set_variable = { social_democrat_seats = 50.65 }
+set_variable = { social_liberal_seats = 18.51  }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 2.46 }
+set_variable = { reactionary_seats = 20.98 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {
 	ruling_party = social_democrat
@@ -93,12 +113,11 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 41.41
-    reactionary = 20.32
-    market_liberal = 12.05
-    social_liberal = 11.01
-    progressive = 6.23
-    conservative = 8.98
+    social_democrat = 50.65
+    reactionary = 20.98
+    social_liberal = 18.51
+    progressive = 7.40
+    conservative = 2.46
 }
 
 create_country_leader = {
@@ -114,12 +133,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Miodrag Lekić"
-	picture = "Miodrag_Lekic.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
 	name = "Aleksa Bečić"
 	picture = "Aleksa_Becic.dds"
 	ideology = social_liberal_ideology
@@ -132,9 +145,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Marija Vučinović"
-	picture = "Marija_Vucinovic.dds"
+	name = "Miodrag Lekić"
+	picture = "Miodrag_Lekic.dds"
 	ideology = liberal_conservative
+}
+
+create_country_leader = {
+	name = "Zoran Radošević"
+	picture = "Zoran_Radosevic.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Nicholas II"
+	picture = "Nicholas_II.dds"
+	ideology = absolute_monarchist
 }
 
 create_field_marshal = {
