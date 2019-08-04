@@ -261,5 +261,49 @@ formable_nation_decisions = {
 			factor = 100
 		}
 	}
+
+	form_czechoslovakia = {
+		visible = {
+		    OR = {
+			    original_tag = CZE
+				original_tag = SLO
+			}
+		}
+		
+		available = {
+			owns_state = 70
+			owns_state = 664
+			owns_state = 71
+			owns_state = 72
+			owns_state = 74
+			owns_state = 75
+			owns_state = 9
+			owns_state = 69
+		}
+		
+		icon = civil_support
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = CZESLO
+			set_capital = 9
+			every_state = {
+			    limit = {
+				    OR = {
+				         is_core_of = CZE
+				         is_core_of = SLO
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }
 	

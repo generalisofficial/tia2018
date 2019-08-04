@@ -119,7 +119,17 @@ brexit_decisions = {
 		
 		timeout_effect = {
 		    remove_ideas = idea_eu_member
-	        news_event = brexit.1
+			if = {
+		        limit = {
+			        has_global_flag = brexit_deal
+		        }
+				set_global_flag = soft_brexit
+		        #news_event = brexit.6
+		        else = {
+				    set_global_flag = hard_brexit
+			        news_event = brexit.1
+		        }
+	        }
 		}
 	}
 	
