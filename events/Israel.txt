@@ -1,0 +1,24 @@
+﻿add_namespace = israel
+
+country_event = { #Blue and White
+	id = israel.1
+	title = israel.1.t
+	desc = israel.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = israel.1.a
+		set_party_name = {
+		    ideology = social_liberal
+		    long_name = "Kahol Lavan"
+		    name = "Kahol Lavan"
+	    }
+		create_country_leader = {
+	        name = "Benny Gantz"
+	        picture = "Benny_Gantz.dds"
+	        ideology = centrist
+        }
+	}
+}
