@@ -21,7 +21,7 @@ NGame = {
 
 NDiplomacy = {
 	DIPLOMACY_REQUEST_EXPIRY_DAYS = 30,
-	BASE_SURRENDER_LEVEL = 0.75,						-- Surrender when level reached. valid 0-1
+	BASE_SURRENDER_LEVEL = 1.0,							-- Surrender when level reached. valid 0-1
 	MAX_TRUST_VALUE = 100,							-- Max trust value cap.
 	MIN_TRUST_VALUE = -100,							-- Min trust value cap.
 	MAX_OPINION_VALUE = 100,						-- Max opinion value cap.
