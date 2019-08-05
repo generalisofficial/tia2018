@@ -1,1 +1,34 @@
-﻿
+﻿add_namespace = spain
+
+country_event = { #2018 PP leadership election
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = spain.1.a
+		ai_chance = {
+			factor = 58
+		}
+		create_country_leader = {
+	        name = "Pablo Casado"
+	        picture = "Pablo_Casado.dds"
+	        ideology = christian_democrat
+        }
+	}
+	
+	option = {
+		name = spain.1.b
+		ai_chance = {
+			factor = 42
+		}
+		create_country_leader = {
+	        name = "Soraya Sáenz de Santamaría"
+	        picture = "Soraya_Saenz_de_Santamaria.dds"
+	        ideology = christian_democrat
+        }
+	}
+}
