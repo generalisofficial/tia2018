@@ -520,5 +520,15 @@ pulse = {
 				country_event = money.7
 			}
 		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = baltic_assembly_member
+			        }
+				}
+			}
+			set_global_flag = baltic_assembly_dissolved
+		}
 	}
 }
