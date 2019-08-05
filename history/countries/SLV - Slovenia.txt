@@ -81,9 +81,31 @@ set_technology = {
 add_ideas = {
 	population_growth_stagnation
 	idea_eu_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#National Assembly of the Republic of Slovenia 
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 5.97 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.98 }
+set_variable = { social_liberal_seats = 44.82 }
+set_variable = { market_liberal_seats = 7.35 }
+set_variable = { conservative_seats = 5.59 }
+set_variable = { reactionary_seats = 30.29 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_liberal
@@ -93,25 +115,25 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 4.17
-    conservative = 24.92
-    market_liberal = 7.16
-    progressive = 12.60
+    reactinoary = 24.92
+    market_liberal = 29.63
     social_democrat = 9.93
-    social_liberal = 31.89
+    social_liberal = 14.86
     democratic_socialist = 9.33
+	conservative = 7.16
+	nationalist = 4.17
 }
 
 create_country_leader = {
 	name = "Janez Janša"
 	picture = "Janez_Jansa.dds"
-	ideology = national_conservative
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
 	name = "Marjan Šarec"
 	picture = "Marjan_Sarec.dds"
-	ideology = progressive_ideology
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -135,7 +157,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ljudmila Novak"
 	picture = "Ljudmila_Novak.dds"
-	ideology = libertarian
+	ideology = christian_democrat
 }
 
 create_country_leader = {

@@ -83,9 +83,29 @@ set_technology = {
 add_ideas = {
 	population_growth_decline
 	idea_eu_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Sabor
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 27.55 }
+set_variable = { social_liberal_seats = 8.24 }
+set_variable = { market_liberal_seats = 9.91 }
+set_variable = { conservative_seats = 52.98 }
+set_variable = { reactionary_seats = 1.32 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
 	ruling_party = conservative
@@ -95,10 +115,11 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 36.27
-    market_liberal = 23.68
-    social_democrat = 33.82
-    reactionary = 6.23
+    conservative = 52.98
+    market_liberal = 9.91
+    social_democrat = 27.55
+	social_liberal = 8.24
+	reactionary = 1.32
 }
 
 create_country_leader = {
@@ -120,15 +141,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ivan Vilibor Sinčić"
-	picture = "Ivan_Vilibor_Sincic.dds"
-	ideology = reactionary_ideology
+	name = "Anka Mrak-Taritaš"
+	picture = "Anka_Mrak_Taritas.dds"
+	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
-	name = "Marijana Puljak"
-	picture = "Marijana_Puljak.dds"
-	ideology = social_liberal_ideology
+	name = "Ivan Vilibor Sinčić"
+	picture = "Ivan_Vilibor_Sincic.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
@@ -147,6 +168,12 @@ create_country_leader = {
 	name = "Luka Keller"
 	picture = "Luka_Keller.dds"
 	ideology = green
+}
+
+create_country_leader = {
+	name = "Davor Trbuha"
+	picture = "Davor_Trbuha.dds"
+	ideology = fascist_ideology
 }
 
 create_field_marshal = {
