@@ -104,6 +104,25 @@ add_opinion_modifier = {
 	modifier = visegrad_group
 }
 
+#Chamber of Deputies
+set_variable = { communist_seats = 7.8 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 7.3 }
+set_variable = { social_liberal_seats = 10.8 }
+set_variable = { market_liberal_seats = 5.2 }
+set_variable = { conservative_seats = 22.4 }
+set_variable = { reactionary_seats = 35.9 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 10.6 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {
 	ruling_party = reactionary
 	last_election = "2017.10.20"
@@ -112,13 +131,13 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 32.6
-    conservative = 25.4
+    reactionary = 35.9
+    conservative = 22.4
     social_liberal = 10.8
     nationalist = 10.6
     communist = 7.8
     social_democrat = 7.3
-    market_liberal = 5.5
+    market_liberal = 5.2
 }
 
 create_country_leader = {
@@ -149,6 +168,12 @@ create_country_leader = {
 	name = "Vojtěch Filip"
 	picture = "Vojtech_Filip.dds"
 	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Milan Chovanec"
+	picture = "Milan_Chovanec.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {

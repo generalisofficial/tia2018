@@ -1,0 +1,34 @@
+﻿add_namespace = czechia
+
+country_event = { #2018 ČSSD leadership election
+	id = czechia.1
+	title = czechia.1.t
+	desc = czechia.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = czechia.1.a
+		ai_chance = {
+			factor = 55
+		}
+		create_country_leader = {
+	        name = "Jan Hamáček"
+	        picture = "Jan_Hamacek.dds"
+	        ideology = social_democrat_ideology
+        }
+	}
+	
+	option = {
+		name = czechia.1.b
+		ai_chance = {
+			factor = 45
+		}
+		create_country_leader = {
+	        name = "Jiří Zimola"
+	        picture = "Jiri_Zimola.dds"
+	        ideology = social_democrat_ideology
+        }
+	}
+}
