@@ -128,6 +128,7 @@ pulse = {
 			limit = {
 				date > 2018.3.26
 				date < 2019.1.1
+				has_global_flag = gaming_news
 				NOT = { has_global_flag = games1 }
 			}
 			news_event = video_games.1
@@ -137,6 +138,7 @@ pulse = {
 			limit = {
 				date > 2018.1.22
 				date < 2019.1.1
+				has_global_flag = gaming_news
 				NOT = { has_global_flag = games2 }
 			}
 			news_event = video_games.2

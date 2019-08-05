@@ -86,23 +86,43 @@ add_ideas = {
 	laissez_faire
 	visegrad_group_member
 	idea_eu_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
 
+#Sejm
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 5.65 }
+set_variable = { market_liberal_seats = 2.84 }
+set_variable = { conservative_seats = 33.69 }
+set_variable = { reactionary_seats = 53.04 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 4.78 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {	
 	ruling_party = reactionary
-	last_election = "2015.10.25"
+	last_election = "2015.11.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 24.09
-    social_liberal = 9.60
-    market_liberal = 10.13
-    reactionary = 37.58
-    nationalist = 18.6
+    reactionary = 53.04
+    conservative = 33.69
+	nationalist = 4.78
+	market_liberal = 2.84
+    social_liberal = 5.65
 }
 
 add_opinion_modifier = { target = CZE modifier = visegrad_group }
@@ -130,18 +150,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Katarzyna Lubnauer"
 	picture = "Katarzyna_Lubnauer.dds"
-	ideology = social_liberal_ideology
+	ideology = libertarian
 }
 
 create_country_leader = {
 	name = "Wladyslaw Kosiniak-Kamysz"
 	picture = "Wladyslaw_Kosiniak_Kamysz.dds"
-	ideology = libertarian
+	ideology = agrarian
 }
 
 create_country_leader = {
-	name = "Zbigniew Ziobro"
-	picture = "Zbigniew_Ziobro.dds"
+	name = "Adam Gmurczyk"
+	picture = "Adam_Gmurczyk.dds"
 	ideology = fascist_ideology
 }
 
