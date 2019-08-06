@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Peshmerga Regiment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+	
+	priority = 0
+}
+
+division_template = {
+	name = "Heavy Peshmerga Regiment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Regional Guard Brigades"
+		location = 3916
+		division_template = "Heavy Peshmerga Regiment"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Hezekani Kosrat Rasul"
+		location = 13346
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Anti-Terror Forces"
+		location = 13349
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Presidential Peshmerga Brigades"
+		location = 13348
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "70 Unit"
+		location = 13354
+		division_template = "Heavy Peshmerga Regiment"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Emergency Forces"
+		location = 5014
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "PUK Asayish"
+		location = 13353
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Nechirvan Barzani Brigade"
+		location = 13351
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "KDP Asayish"
+		location = 13356
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Zerevani"
+		location = 10811
+		division_template = "Peshmerga Regiment"
+		start_experience_factor = 0.3
+	}
+}

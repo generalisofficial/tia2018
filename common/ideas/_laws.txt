@@ -435,7 +435,7 @@ ideas = {
 				    OR = {
 				        has_government = market_liberal
 					    has_government = conservative
-				        add = 20
+				        factor = 20
    		            }
 				}
 		    }
@@ -938,6 +938,21 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
+		cheondoism = {
+			cost = 25
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_government = islamist }
+				has_country_flag = cheondoism
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+		}
 	}
 
 	######################################
@@ -1140,18 +1155,85 @@ ideas = {
 			picture = disjointed_government
 		
 			allowed = {
+			    always = no
+			}
+			
+			cancel = {
 			    check_variable = {
                     var = ROOT.Coalition
                     value = 50
-                    compare = less_than
+                    compare = greater_than_or_equals
                 }
-				has_idea = parliamentary_system
 			}
 			
 			removal_cost = -1
 			
 			modifier = {
-			    political_power_gain = -0.3
+			    political_power_gain = -0.1
+			}
+		}
+		
+		unstable_coalition = {
+			picture = disjointed_government
+		
+			allowed = {
+			    always = no
+			}
+			
+			cancel = {
+			    NOT = {
+			    OR = { 
+				    AND = {
+					    OR = {
+						    has_country_flag = coalition_social_liberal
+				            has_country_flag = coalition_market_liberal
+							has_country_flag = coalition_conservative
+							has_country_flag = coalition_reactionary
+						}
+						OR = {
+						    has_country_flag = coalition_social_democrat
+				            has_country_flag = coalition_progressive
+							has_country_flag = coalition_democratic_socialist
+							has_country_flag = coalition_communist
+						}
+			        }
+					AND = {
+					    OR = {
+						    has_country_flag = coalition_social_liberal
+				            has_country_flag = coalition_market_liberal
+							has_country_flag = coalition_conservative
+							has_country_flag = coalition_reactionary
+						}
+						OR = {
+							has_country_flag = coalition_islamist
+							has_country_flag = coalition_monarchist
+							has_country_flag = coalition_nationalist
+							has_country_flag = coalition_fascist
+						}
+			        }
+					AND = {
+						OR = {
+							has_country_flag = coalition_islamist
+							has_country_flag = coalition_monarchist
+							has_country_flag = coalition_nationalist
+							has_country_flag = coalition_fascist
+						}
+						OR = {
+						    has_country_flag = coalition_social_democrat
+				            has_country_flag = coalition_progressive
+							has_country_flag = coalition_democratic_socialist
+							has_country_flag = coalition_communist
+						}
+			        }
+				}
+			}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_gain = -0.25
+				stability_factor = -0.2
 			}
 		}
 	}   
