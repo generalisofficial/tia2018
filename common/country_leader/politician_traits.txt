@@ -275,14 +275,6 @@ leader_traits = {
 		
 		ai_will_do = { factor = 1 }
 	}
-
-	vacancy = {
-		random = no
-		
-		political_power_factor = -0.5
-		
-		ai_will_do = { factor = 1 }
-	}
 	
 	war_industrialist = {
 		sprite = 6
@@ -327,4 +319,11 @@ leader_traits = {
 		ai_will_do = { factor = 1 }
 	}
 	
+	pedophile = {
+	    random = yes
+		
+		stability_factor = -0.1
+		
+		ai_will_do = { factor = 1 }
+	}
 }
