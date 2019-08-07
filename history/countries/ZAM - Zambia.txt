@@ -98,7 +98,27 @@ add_ideas = {
 	commonwealth_of_nations_member
 	non_aligned_movement_member
 	lgbt_illegal
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 3.20 }
+set_variable = { social_democrat_seats = 57.05 }
+set_variable = { social_liberal_seats = 39.75 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -108,9 +128,9 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 47.63
-    social_democrat = 50.35
-    conservative = 2.02
+    social_democrat = 57.05
+    social_liberal = 39.75
+    progressive = 3.20
 }
 	
 create_country_leader = {
@@ -126,9 +146,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Elias Chipimo Jr."
-	picture = "Elias_Chipimo_Jr.dds"
-	ideology = liberal_conservative
+	name = "Felix Mutati"
+	picture = "Felux_Mutati.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Tilyenji Kaunda"
+	picture = "Tilyenji_Kaunda.dds"
+	ideology = african_socialist
 }
 
 create_corps_commander = {

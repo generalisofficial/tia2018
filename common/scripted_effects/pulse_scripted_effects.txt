@@ -452,6 +452,15 @@ pulse = {
 			country_event = israel.1
 		}
 		if = {
+			limit = {
+			    original_tag = BOT
+				has_government = conservative
+				date > 2018.3.31
+				date < 2019.1.1
+			}
+			country_event = botswana.1
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {
