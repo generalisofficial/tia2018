@@ -75,106 +75,6 @@ scripted_gui = {
 							owner = ROOT
 						}
 					}
-					else = {
-						if = {
-							limit = {
-								check_variable = { FROM.FROM.resistance > 0.9 }
-							}
-							var:created_partisan_state = {
-								create_unit = {
-									division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-									owner = ROOT
-								}
-								create_unit = {
-									division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-									owner = ROOT
-								}
-								create_unit = {
-									division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-									owner = ROOT
-								}
-								create_unit = {
-									division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-									owner = ROOT
-								}
-								create_unit = {
-									division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-									owner = ROOT
-								}
-							}
-							else = {
-								if = {
-									limit = {
-										check_variable = { FROM.FROM.resistance > 0.8 }
-									}
-									var:created_partisan_state = {
-										create_unit = {
-											division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-											owner = ROOT
-										}
-										create_unit = {
-											division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-											owner = ROOT
-										}
-										create_unit = {
-											division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-											owner = ROOT
-										}
-										create_unit = {
-											division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-											owner = ROOT
-										}
-									}
-									else = {
-										if = {
-											limit = {
-												check_variable = { FROM.FROM.resistance > 0.7 }
-											}
-											var:created_partisan_state = {
-												create_unit = {
-													division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-													owner = ROOT
-												}
-												create_unit = {
-													division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-													owner = ROOT
-												}
-												create_unit = {
-													division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-													owner = ROOT
-												}
-											}
-											else = {
-												if = {
-													limit = {
-														check_variable = { FROM.FROM.resistance > 0.6 }
-													}
-													var:created_partisan_state = {
-														create_unit = {
-															division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-															owner = ROOT
-														}
-														create_unit = {
-															division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-															owner = ROOT
-														}
-													}
-													else = {
-														var:created_partisan_state = {
-															create_unit = {
-																division = "name = \"Partisan\" division_template = \"Partisan\" start_experience_factor = 0.0" 
-																owner = ROOT
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
 				}
 				if = {
 					limit = {
@@ -203,7 +103,7 @@ scripted_gui = {
 		
 		triggers = {
 			state_riseup_partisan_click_enabled = {
-				check_variable = { FROM.FROM.resistance > 0.4 }
+				check_variable = { FROM.FROM.resistance > 1 }
 				check_variable = { FROM.FROM.risedup_partizan = 0 }
 				FROM.FROM = { is_core_of = ROOT }
 			}
