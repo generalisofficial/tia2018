@@ -1111,8 +1111,17 @@ ideas = {
 			    NOT = { has_idea = USA_second_amendment }
 			}
 			
-			modifier = {
+			on_add = {
+			    if = {
+			        limit = {
+				        original_tag = USA
+			        }
+		 	        set_global_flag = terrorism5
+		        }
+			}
 			
+			modifier = {
+			    stability_factor = 0.05
 			}
 			
 			cancel_if_invalid = no

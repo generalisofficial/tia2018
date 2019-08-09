@@ -2,19 +2,38 @@
 state={
 	id=556
 	name="STATE_556"
-
+	resources={
+		rubber=18.000
+		oil=4.000
+	}
+	
 	history={
 		owner = IVO
 		add_core_of = IVO
 		buildings = {
-			infrastructure = 3
+			infrastructure = 6
+			industrial_complex = 3
+			dockyard = 1
+			10762 = {
+				naval_base = 2
+
+			}
+			10803 = {
+				naval_base = 3
+
+			}
+
 		}
+		victory_points = {
+			10803 5
+		}
+
 	}
 
 	provinces={
-		5013 5070 8065 
+		5013 8122 10803 13642 13643 13644 13647 13649 13651 13653 
 	}
-	manpower=4222000
+	manpower=13698875
 	buildings_max_level_factor=1.000
-	state_category = state_level_5
+	state_category=state_level_9
 }
