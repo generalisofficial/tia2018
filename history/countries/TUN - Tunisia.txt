@@ -90,7 +90,31 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	parliamentary_system
 }
+
+#Assembly of the Representatives of the People
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 6.91 }
+set_variable = { progressive_seats = 1.84 }
+set_variable = { social_democrat_seats = 48.41 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 3.68 }
+set_variable = { conservative_seats = 7.37 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 31.79 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_islamist
+set_country_flag = coalition_market_liberal
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = islamist_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -100,15 +124,17 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 59.37
-    islamist = 27.79
-    market_liberal = 4.02
-    democratic_socialist = 8.82
+    social_democrat = 48.41
+    islamist = 31.79
+	conservative = 7.37
+    democratic_socialist = 6.91
+	market_liberal = 3.68
+	progressive = 1.84
 }
 
 create_country_leader = {
-	name = "Beji Caid Essebsi"
-	picture = "Beji_Caid_Essebsi.dds"
+	name = "Youssef Chahed"
+	picture = "Youssef_Chahed.dds"
 	ideology = social_democrat_ideology
 }
 
@@ -121,13 +147,25 @@ create_country_leader = {
 create_country_leader = {
 	name = "Slim Riahi"
 	picture = "Slim_Riahi.dds"
-	ideology = libertarian
+	ideology = liberal_conservative
 }
 
 create_country_leader = {
 	name = "Hamma Hammami"
 	picture = "Hamma_Hammami.dds"
-	ideology = african_socialist
+	ideology = nasserist
+}
+
+create_country_leader = {
+	name = "Yassine Brahim"
+	picture = "Yassine_Brahim.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Moncef Marzouki"
+	picture = "Moncef_Marzouki.dds"
+	ideology = progressive_ideology
 }
 
 create_corps_commander = {
