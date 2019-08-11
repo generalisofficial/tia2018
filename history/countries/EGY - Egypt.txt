@@ -90,10 +90,30 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	presidential_system
 }
 
 set_country_flag = dominant_religion_islam
 set_country_flag = sunni_islam
+
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 3.18 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 11.57 }
+set_variable = { market_liberal_seats = 12.91 }
+set_variable = { conservative_seats = 7.04 }
+set_variable = { reactionary_seats = 63.46 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 1.84 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -101,10 +121,14 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
+ 
 set_popularities = {
-    reactionary = 97.08
-    social_liberal = 2.92
+    reactionary = 63.46
+	market_liberal = 12.91
+    social_liberal = 11.57
+	conservative = 7.04
+	democratic_socialist = 3.18
+	islamist = 1.84
 }
 
 create_country_leader = {
@@ -114,45 +138,33 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Moussa Mostafa Moussa"
-	picture = "Moussa_Mostafa_Moussa.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
 	name = "Essam Khalil"
 	picture = "Essam_Khalil.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Saad El-Katatni"
-	picture = "Saad_El_Katatni.dds"
-	ideology = muslim_brotherhood
+	name = "Ashraf Rashad"
+	picture = "Ashraf_Rashad.dds"
+	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Mervat Tallawy"
-	picture = "Mervat_Tallawy.dds"
-	ideology = social_democrat_ideology
+	name = "Bahaa El-Din Abu Shoka"
+	picture = "Bahaa_El_Din_Abu_Shoka.dds"
+	ideology = national_conservative
 }
 
 create_country_leader = {
-	name = "Hossam Badrawi"
-	picture = "Hossam_Badrawi.dds"
-	ideology = nationalist_ideology
+	name = "Galal Haridy"
+	picture = "Galal_Haridy.dds"
+	ideology = nasserist
 }
 
 create_country_leader = {
-	name = "Sayed Abdel Aal"
-	picture = "Sayed_Abdel_Aal.dds"
-	ideology = african_socialist
-}
-
-create_country_leader = {
-	name = "Salah Adli"
-	picture = "Salah_Adli.dds"
-	ideology = marxist_leninist
+	name = "Younes Makhioun"
+	picture = "Younes_Makhioun.dds"
+	ideology = salafist
 }
 
 create_corps_commander = { 
