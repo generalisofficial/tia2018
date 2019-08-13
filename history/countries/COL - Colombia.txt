@@ -84,33 +84,83 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
 
+#Chamber of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 3.54 }
+set_variable = { progressive_seats = 4.09 }
+set_variable = { social_democrat_seats = 17.26 }
+set_variable = { social_liberal_seats = 34.1 }
+set_variable = { market_liberal_seats = 9.46 }
+set_variable = { conservative_seats = 19.53 }
+set_variable = { reactionary_seats = 11.57 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 3.99 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {	
 	ruling_party = social_liberal
-	last_election = "1997.1.1"
+	last_election = "2014.5.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 39.14
-    social_liberal = 35.77
-    progressive = 25.09
+    reactionary = 22.03
+    social_democrat = 20.44
+	market_liberal = 17.44
+    social_liberal = 14.53
+	conservative = 12.79
+	progressive = 6.97
+	communist = 2.90
+	democratic_socialist = 1.74
+	nationalist = 1.16
 }
 
 create_country_leader = {
 	name = "Juan Manuel Santos"
 	picture = "Juan_Manuel_Santos.dds"
-	ideology = centrist
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Humberto de la Calle"
+	picture = "Humberto_de_la_Calle.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Iván Duque Márquez"
-	picture = "Ivan_Duque_Marquez.dds"
-	ideology = nationalist_ideology
+	picture = "Ivan_Duque_Marguez.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Hernán Andrade"
+	picture = "Hernan_Andrade.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Jorge Enrique Vélez"
+	picture = "Jorge_Enrique_Velez.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Clara López Obregón"
+	picture = "Clara_Lopez_Obregon.dds"
+	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
@@ -120,8 +170,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jaime Caycedo"
-	picture = "Jaime_Caycedo.dds"
+	name = "Timoleón Jiménez"
+	picture = "Timoleon_Jimenez.dds"
 	ideology = marxist_leninist
 }
 
