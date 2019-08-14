@@ -1,0 +1,203 @@
+equipments = {
+
+	LHD = { 
+		is_archetype = yes
+		is_buildable = no
+		type = capital_ship
+		group_by = archetype
+		
+		interface_category = interface_category_capital_ships
+		
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		lg_armor_piercing = 0
+		lg_attack = 1
+		#fire_range = 10
+		torpedo_attack = 0
+		#shore_bombardment = 20
+		
+		anti_air_attack = 5
+		
+		armor_value = 8
+		#evasion = 10
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 18
+		reliability = 0.80
+
+		naval_range = 5000
+		
+		max_strength = 100
+		#port_capacity_usage = 2
+		
+		build_cost_ic = 7000
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+
+		manpower = 150
+	}
+
+	LHD_1 = {
+		archetype = LHD
+		priority = 60
+
+	}
+	
+	LHD_2 = {
+		archetype = LHD
+		parent = LHD_1
+		priority = 60
+		
+		lg_armor_piercing = 0
+		lg_attack = 1
+		#fire_range = 10
+		torpedo_attack = 0
+		#shore_bombardment = 22.25
+		
+		anti_air_attack = 7.5
+		
+		armor_value = 9
+		#evasion = 10
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 18
+		reliability = 0.80
+
+		naval_range = 6500
+		
+		max_strength = 125
+		#port_capacity_usage = 2
+		
+		build_cost_ic = 7500
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+
+		manpower = 175
+	}
+	
+	LHD_3 = {
+		archetype = LHD
+		parent = LHD_2
+		priority = 60
+		
+		lg_armor_piercing = 0
+		lg_attack = 1
+		#fire_range = 10
+		torpedo_attack = 0
+		#shore_bombardment = 25
+		
+		anti_air_attack = 10
+		
+		armor_value = 9
+		#evasion = 10
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 20
+		reliability = 0.80
+
+		naval_range = 8000
+		
+		max_strength = 125
+		#port_capacity_usage = 2
+		
+		build_cost_ic = 7800
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+
+		manpower = 200
+	}
+	
+	LHD_4 = {
+		archetype = LHD
+		parent = LHD_3
+		priority = 60
+		
+		lg_armor_piercing = 0
+		lg_attack = 1
+		#fire_range = 10
+		torpedo_attack = 0
+		#shore_bombardment = 27.5
+		
+		anti_air_attack = 10
+		
+		armor_value = 9
+		#evasion = 10
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 20
+		reliability = 0.80
+
+		naval_range = 8500
+		
+		max_strength = 125
+		#port_capacity_usage = 2
+		
+		build_cost_ic = 8200
+		resources = {
+			oil = 1
+			steel = 3
+			chromium = 1
+		}
+
+		manpower = 200
+	}
+	
+	LHD_5 = {
+		archetype = LHD
+		parent = LHD_4
+		priority = 60
+		
+		lg_armor_piercing = 0
+		lg_attack = 1
+		#fire_range = 10
+		torpedo_attack = 0
+		#shore_bombardment = 30
+		
+		anti_air_attack = 12.5
+		
+		armor_value = 9
+		#evasion = 10
+		
+		surface_detection = 15
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 20
+		reliability = 0.80
+
+		naval_range = 10000
+		
+		max_strength = 125
+		#port_capacity_usage = 2
+		
+		build_cost_ic = 8500
+		resources = {
+			oil = 2
+			steel = 3
+			chromium = 2
+		}
+
+		manpower = 225
+	}
+}
