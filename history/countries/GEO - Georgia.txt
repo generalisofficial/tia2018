@@ -84,9 +84,29 @@ add_ideas = {
 	extensive_conscription
 	guam_member
 	christianity
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Parliament of Georgia
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 76.25 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 13.69 }
+set_variable = { conservative_seats = 5.03 }
+set_variable = { reactionary_seats = 5.03 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -96,15 +116,22 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 48.77
-    conservative = 27.11
-    reactionary = 24.12
+    social_democrat = 76.25
+	market_liberal = 13.69
+    conservative = 5.03
+    reactionary = 5.03
 }
 
 create_country_leader = {
 	name = "Giorgi Kvirikashvili"
 	picture = "Giorgi_Kvirikashvili.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Davit Bakradze"
+	picture = "Davit_Bakradze.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {

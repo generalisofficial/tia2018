@@ -25,6 +25,16 @@ european_union_decisions = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+				    has_government = market_liberal
+					has_government = conservative
+					has_government = social_liberal
+					has_government = social_democrat
+					has_government = progressive
+				}
+			}
 		}
 	}
 	
@@ -35,11 +45,7 @@ european_union_decisions = {
 		}
 		
 		available = {
-			has_democratic_form_of_government = yes
-			NOT = {
-			    has_government = reactionary
-				has_government = democratic_socialist
-			}
+		
 		}
 		
 		icon = democracy
@@ -62,14 +68,7 @@ european_union_decisions = {
 		}
 		
 		available = {
-			has_stability < 0.8
-			OR = {
-				has_government = reactionary
-				has_government = democratic_socialist
-				has_stability < 0.5
-			}
-			if = { limit = { original_tag = GER }
-			}
+		    #NOT = { has_idea = brexit }
 		}
 		
 		icon = united_kingdom
@@ -83,6 +82,16 @@ european_union_decisions = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 1
+				NOT = {
+				    has_government = market_liberal
+					has_government = conservative
+					has_government = social_liberal
+					has_government = social_democrat
+					has_government = progressive
+				}
+			}
 		}
 	}
  	
