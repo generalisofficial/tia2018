@@ -88,20 +88,45 @@ add_ideas = {
 	service_by_requirement
 	non_member_state
     idea_SOV_russian_military_support
+	presidential_system
+}
+
+declare_war_on = {
+	target = UKR
+	type = annex_everything
 }
 
 give_military_access = SOV
 
+#People's Council of the Donetsk People's Republic
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 74 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 26 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {	
 	ruling_party = reactionary 
-	last_election = "2018.1.1"
+	last_election = "2014.11.11"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 21.07
-    reactionary = 78.93
+    nationalist = 26
+    reactionary = 74
 }
 
 create_country_leader = {
@@ -120,9 +145,4 @@ create_corps_commander = {
 	name = "Aleksandar Zakharchenko"
 	picture = "generals/Aleksandar_Zakharchenko.dds"
 	skill = 3
-}
-
-declare_war_on = {
-	target = UKR
-	type = annex_everything
 }
