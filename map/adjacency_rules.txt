@@ -303,3 +303,43 @@ adjacency_rule
 	icon = 13243
 	offset = { -2 0 -9 }
 }
+
+#Strait of Malacca
+adjacency_rule
+{
+	name = "MALACCA_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12299 12168 }
+	
+	icon = 12299
+	offset = { -2 0 -9 }
+}

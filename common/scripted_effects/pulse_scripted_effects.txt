@@ -478,6 +478,15 @@ pulse = {
 			country_event = botswana.1
 		}
 		if = {
+			limit = {
+			    original_tag = SWZ
+				has_government = monarchist
+				date > 2018.4.18
+				date < 2019.1.1
+			}
+			country_event = botswana.1
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {

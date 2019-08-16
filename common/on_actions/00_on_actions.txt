@@ -195,6 +195,17 @@ on_actions = {
 			every_country = {
 				country_event = money.1
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = RULE_DISABLE_STARTING_FACTIONS
+						option = ENABLED
+					}
+				}
+				every_country = {
+				    dismantle_faction = yes
+			    }
+			}
 			SOV = { add_nuclear_bombs = 6490 }
 			USA = { add_nuclear_bombs = 6185 }
 			FRA = { add_nuclear_bombs = 300 }

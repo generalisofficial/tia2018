@@ -483,3 +483,19 @@ maximum_fort_level = {
 #		desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
 #	}
 #}
+
+#SUBMODS - THE INFORMATION AGE
+disable_starting_factions = {
+	name = "RULE_DISABLE_STARTING_FACTIONS"
+	group = "RULE_GROUP_SUBMODS"
+	option = {
+		name = DISABLED
+		text = "RULE_OPTION_SUBMOD_DISABLED"
+		desc = "RULE_DISABLE_STARTING_FACTIONS_DISABLED_DESC"
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_OPTION_SUBMOD_ENABLED"
+		desc = "RULE_DISABLE_STARTING_FACTIONS_ENABLED_DESC"
+	}
+}

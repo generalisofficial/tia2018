@@ -1,0 +1,46 @@
+﻿add_namespace = swaziland
+
+country_event = { #Kingdom of Eswatini
+	id = swaziland.1
+	title = swaziland.1.t
+	desc = swaziland.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Authorize
+		name = swaziland.1.a
+		set_global_flag = eswatini
+		set_cosmetic_tag = SWZ_2018
+		news_event = swaziland.2
+	}
+	
+	option = { #Veto
+		name = swaziland.1.b
+	}
+}
+
+news_event = { #Kingdom of Eswatini - News
+	id = swaziland.2
+	title = swaziland.2.t
+	desc = swaziland.2.d
+	picture = GFX_news_event_mswati
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = swaziland.2.a
+		trigger = { 
+			NOT = { original_tag = SWZ }
+		}
+	}
+	
+	option = {
+		name = swaziland.2.b
+	    trigger = { 
+			original_tag = SWZ
+		}
+	}
+}
