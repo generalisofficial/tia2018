@@ -37,3 +37,29 @@ news_event = {
 		}
 	}
 }
+
+#Eurovision Song Contest 2019
+news_event = {
+	id = eurovision.2
+	title = eurovision.2.t
+	desc = eurovision.2.d
+	picture = GFX_news_event_eurovision_2019
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = eurovision.2.o1
+		trigger = { 
+		    original_tag = HOL
+	    }
+	}
+	
+	option = {
+		name = eurovision.2.o2
+		trigger = { 
+			NOT = { original_tag = HOL }
+		}
+	}
+}

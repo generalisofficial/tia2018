@@ -108,6 +108,16 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    original_tag = ISR
+				date > 2019.5.17
+				date < 2020.1.1
+				NOT = { has_global_flag = eurovision2 }
+			}
+			news_event = eurovision.1
+			set_global_flag = eurovision2
+		}
+		if = {
+			limit = {
 				date > 2018.6.13
 				date < 2019.1.1
 				NOT = { has_global_flag = fifa1 }
