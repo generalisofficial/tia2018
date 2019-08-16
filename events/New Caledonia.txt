@@ -42,7 +42,23 @@ country_event = { #New Caledonia Votes for Independence
 	
 	option = {
 		name = new_caledonia.3.o1
+		news_event = new_caledonia.4
 		set_global_flag = new_caledonia_independent
 		release = NCD
 	}
-} 
+}
+
+news_event = { #New Caledonia Votes for Independence - News
+	id = new_caledonia.4
+	title = new_caledonia.4.t
+	desc = new_caledonia.4.d
+	picture = GFX_news_event_new_caledonia
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = new_caledonia.4.o1
+	}
+}
