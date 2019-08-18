@@ -1,0 +1,21 @@
+north_korea_unites_korea = {
+	news_event = news.85
+	PRK = {
+		annex_country = {
+			target = KOR
+			transfer_troops = yes
+		}
+	}
+	PRK = { country_event = north_korea.2 }
+}
+
+south_korea_unites_korea = {
+	news_event = news.86
+	KOR = {
+		annex_country = {
+			target = PRK
+			transfer_troops = yes
+		}
+	}
+	KOR = { country_event = south_korea.1 }
+}

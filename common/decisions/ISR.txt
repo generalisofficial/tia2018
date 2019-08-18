@@ -1,0 +1,31 @@
+ISR_regency = {
+
+	embrace_netanyahu = {
+		visible = {
+		    original_tag = ISR
+			has_country_leader = { name = "Yitzchak Ginsburgh" ruling_only = yes }
+		}
+		
+		available = {
+			has_country_leader = { name = "Yitzchak Ginsburgh" ruling_only = yes }
+		}
+		
+		complete_effect = {
+		    set_party_name = { ideology = monarchist long_name = "Netanyahu" name = "Netanyahu" }
+		    create_country_leader = {
+	            name = "Benjamin I"
+	            picture = "Benjamin_I.dds"
+	            ideology = absolute_monarchist
+            }
+		}
+		
+		icon = democracy
+		
+		fire_only_once = yes
+		cost = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

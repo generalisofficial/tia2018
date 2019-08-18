@@ -82,9 +82,29 @@ set_technology = {
 add_ideas = {
 	population_growth_stagnation
 	non_member_state
+	presidential_system
 }
 
 set_country_flag = christianity
+
+#Supreme Council
+set_variable = { communist_seats = 2.32 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 97.68 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -94,12 +114,24 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 62.3
-    reactionary = 37.7
+    conservative = 97.68
+	communist = 2.32
 }
 
 create_country_leader = {
 	name = "Vadim Krasnoselsky"
 	picture = "Vadim_Krasnoselsky.dds"
 	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Oleg Khorzhan"
+	picture = "Oleg_Khorzhan.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Roman Khudyakov"
+	picture = "Roman_Khudyakov.dds"
+	ideology = proto_fascist
 }

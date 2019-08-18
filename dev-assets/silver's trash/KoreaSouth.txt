@@ -1,0 +1,233 @@
+﻿add_namespace = south_korea
+add_namespace = south_korea_news
+
+country_event = {	#Remove the North Korean cores upon union
+	id = south_korea.1
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		every_state = {
+			limit = {
+				is_core_of = PRK
+				is_owned_by = KOR
+			}
+			remove_core_of = PRK
+		}
+	}
+}
+country_event = {	#Suggest Union
+	id = south_korea.2
+	title = south_korea.2.t
+	desc = south_korea.2.d
+	picture = GFX_news_event_south_korea
+	is_triggered_only = yes
+	
+	option = {
+	name = south_korea.2.o1
+	KOR = {annex_country = { target = PRK transfer_troops = yes } }
+		every_state = {
+			limit = {
+				is_core_of = PRK
+			}
+			remove_core_of = PRK
+			}	
+	ai_chance = { 
+	factor = 50 
+	}
+		
+	}
+	
+	option = {
+	name = south_korea.2.o2
+		ai_chance = {
+		factor = 50 }
+		}
+	}
+	
+country_event = {
+	id = south_korea.3
+	title = south_korea.3.t
+	desc = south_korea.3.d
+	picture = GFX_news_event_south_korea
+	
+	is_triggered_only = yes
+	
+	option = {	#Sure.
+		name = south_korea.3.o1
+		
+		KOR = { add_to_faction = ROOT }
+		set_country_flag = seeks_german_alliance
+		KOR = { country_event = diplomatic_response.1 }
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = south_korea.3.o2
+		
+		KOR = { country_event = diplomatic_response.2 }
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+news_event = {
+	id = south_korea_news.1
+	title = south_korea_news.1.t
+	desc = south_korea_news.1.d
+	picture = GFX_news_event_south_korea_remilitarizes
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_korea_news.o1
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	
+	option = {
+		name = south_korea_news.o2
+		trigger = {
+			NOT = { original_tag = KOR }
+		}
+	}
+}
+
+news_event = {
+	id = south_korea_news.2
+	title = south_korea_news.2.t
+	desc = south_korea_news.2.d
+	picture = GFX_news_event_south_korea_peace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_korea_news.2.o1
+	}
+	
+}
+
+news_event = {
+	id = south_korea_news.3
+	title = south_korea_news.3.t
+	desc = south_korea_news.3.d
+	picture = GFX_news_event_korea_war_south
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			has_completed_focus = KOR_Unite_Korea
+			has_war_with = PRK
+			tag = KOR 
+		}	
+	}
+	option = {
+		name = south_korea_news.3.o1
+		trigger = {
+			tag = KOR
+		}	
+	}
+	
+	option = {
+		name = south_korea_news.3.o2
+		trigger = {
+			tag = PRK
+		}	
+	}
+	
+	option = {
+		name = south_korea_news.3.o3
+		trigger = {
+			NOT = {
+				tag = KOR
+				tag = PRK 
+			}
+		}	
+	}	  
+}
+
+news_event = {
+	id = south_korea_news.4
+	title = south_korea_news.4.t
+	desc = south_korea_news.4.d
+	picture = GFX_news_event_fall_pyongyang
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			KOR = {
+				controls_state = 527
+				has_war_with = PRK
+			}
+		}
+	}
+	
+	option = {
+		name = south_korea_news.4.o1
+		trigger = {
+			tag = KOR
+		}	
+	}
+	
+	option = {
+		name = south_korea_news.4.o2
+		trigger = {
+			tag = PRK
+		}	
+	}
+	
+	option = {
+		name = south_korea_news.4.o3
+		trigger = {
+			NOT = {
+				tag = KOR
+				tag = PRK 
+			}
+		}	
+	}	
+}
+
+news_event = {
+	id = south_korea_news.5
+	title = south_korea_news.5.t
+	desc = south_korea_news.5.d
+	picture = GFX_news_event_korea_end_south
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = south_korea_news.5.o1
+		trigger = {
+			tag = KOR
+		}	
+	}
+	
+	option = {
+		name = south_korea_news.5.o2
+		trigger = {
+			NOT = {
+				tag = KOR
+			}	
+		}	
+	}
+		
+}
+
