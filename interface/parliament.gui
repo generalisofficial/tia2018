@@ -17,12 +17,6 @@ guiTypes = {
 			spriteType = "GFX_tiled_bg"
 		}
 
-#		iconType = {
-#			name = "TemplateBackground"
-#			spriteType = "GFX_parliament_temp_bg"
-#			position = { x = 43 y = 20}
-#		}
-
 		buttonType = {
 			name = "close_button"
 			position = { x = -42 y = 9 }
@@ -653,7 +647,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "parliament_button_container"
-		position = { x = 132 y = 48 }
+		position = { x = 140 y = 50 }
 		size = { width = 50 height = 50 }
 
 		buttonType = {
@@ -667,17 +661,5 @@ guiTypes = {
 			pdx_tooltip = parliament_tooltip
 			scale = 0.95
 		}
-
-#		instantTextBoxType = {
-#			name = "show_parliament_button_text"
-#			position = { x = 0 y = 4 }
-#			font = "hoi_20bs"
-#			text = "Parliament"
-#			maxWidth = 100
-#			maxHeight = 20
-#			fixedsize = no
-#			format = centre
-#			Orientation = "UPPER_RIGHT"
-#		}
 	}
 }	

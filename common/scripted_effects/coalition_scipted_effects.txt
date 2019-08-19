@@ -646,3 +646,78 @@ set_parliament_graphics_2 = {
 		ROOT.Opposition = ROOT.Coalition
 	}
 }
+
+set_coalition_to_array = {
+	if = {
+		limit = {
+			has_country_flag = coalition_islamist
+		}
+		add_to_array = { member_parties_array = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_fascist
+		}
+		add_to_array = { member_parties_array = 2 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_nationalist
+		}
+		add_to_array = { member_parties_array = 3 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_monarchist
+		}
+		add_to_array = { member_parties_array = 4 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_reactionary
+		}
+		add_to_array = { member_parties_array = 5 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_conservative
+		}
+		add_to_array = { member_parties_array = 6 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_market_liberal
+		}
+		add_to_array = { member_parties_array = 7 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_liberal
+		}
+		add_to_array = { member_parties_array = 8 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_democrat
+		}
+		add_to_array = { member_parties_array = 9 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_progressive
+		}
+		add_to_array = { member_parties_array = 10 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_democratic_socialist
+		}
+		add_to_array = { member_parties_array = 11 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_communist
+		}
+		add_to_array = { member_parties_array = 12 }
+	}
+}

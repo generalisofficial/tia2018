@@ -1,0 +1,71 @@
+scripted_gui = {
+
+	government_window = {
+		window_name = "government_window_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+			check_variable = {
+				show_government = 1
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = show_government
+			}
+		}
+
+		triggers = {
+		}
+
+		properties = {
+            flag = {
+                image = "[This.GetFlag]"
+            }
+
+			leading_party_icon = {
+				image = "[This.GetGovernmentPartyIcon]"
+			}
+			icon = {
+				image = "[This.GetMemberPartyIcon]"
+			}
+        }
+
+		dynamic_lists = {
+            member_parties_grid = {
+                array = member_parties_array
+                entry_container = member_parties_grid_entry
+                change_scope = no
+            }
+        }
+	}
+
+	government_button = {
+		window_name = "government_button_container"
+
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			show_government_button_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_government }
+				set_variable = { show_government = show }
+				set_variable = { show_parliament = 0 }
+				if = {
+					limit = {
+						check_variable = { show_government = 1 }
+					}
+					clear_array = member_parties_array
+				}
+				set_coalition_to_array = yes
+			}
+		}
+	}
+}

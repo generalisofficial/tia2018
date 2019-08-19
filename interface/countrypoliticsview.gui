@@ -284,8 +284,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "active_goal"
-			position = { x = 179 y = 48 }
-			size = { width = 330 height = 50 }
+			position = { x = 415 y = 48 }
+			size = { width = 89 height = 50 }
 			clipping = no
 						
 			background = {
@@ -295,27 +295,27 @@ guiTypes = {
 			
 			buttonType = {
 				name = "add_national_goal_button"
-				position = { x = 100 y = 7 }
+				position = { x = 5 y = 10 }
 				spriteType = "GFX_add_national_goal_button"
 				clicksound = click_default
 			}
 
 			iconType = {
 				name = "nat_spirit_glow_overlay"
-				position = { x = 105 y = 10 }
+				position = { x = 5 y = 10 }
 				spriteType = "GFX_nat_spirit_glow_overlay"
 				alwaystransparent = yes
 			}			
 			
 			iconType = {
 				name = "pol_power_icon"
-				position = { x = 105 y = 55 }
+				position = { x = 5 y = 55 }
 				quadTextureSprite = "GFX_pol_power_icon"
 			}
 		
 			instantTextboxType = {
 				name = "focus_cost"
-				position = { x = 132 y = 60 }
+				position = { x = 32 y = 60 }
 				font = "hoi_18mbs"
 				text = "3"
 				maxWidth = 35
@@ -328,7 +328,6 @@ guiTypes = {
 				name = "continuous_glow"
 				position = { x = -16 y = -6 }
 				quadTextureSprite = "GFX_ongoing_focus_goal_polview"
-				scale = 0.9
 			}
 			
 			iconType = {
@@ -341,7 +340,7 @@ guiTypes = {
 
 			iconType = {
 				name = "continuous_small_glow"
-				position = { x = 104 y = 12 }
+				position = { x = 4 y = 12 }
 				quadTextureSprite = "GFX_ongoing_focus_goal_icon"
 				alwaystransparent = yes
 			}
@@ -364,10 +363,10 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "title"
-				position = { x = 128 y = 34 }
+				position = { x = 15 y = 38 }
 				font = "hoi_18mbs"
 				text = "POLITICS_ACTIVE_GOAL"
-				maxWidth = 200
+				maxWidth = 70
 				maxHeight = 20
 				format = center
 				alwaystransparent = yes
@@ -376,16 +375,17 @@ guiTypes = {
 			
 			iconType = {
 				name = "progress"
-				spriteType = "GFX_activegoal_progress"
-				position = { x=112 y = 72 }		
+				#spriteType = "GFX_activegoal_progress"
+				position = { x= 0 y = 72 }
+				scale = 0
 			}
 			
-			iconType = {
-				name = "progress_frame"
-				position = { x = 110 y = 72 }
-				spriteType = "GFX_pol_goal_progress_frame"
-				alwaystransparent = yes
-			}			
+			#iconType = {
+			#	name = "progress_frame"
+			#	position = { x = 12 y = 72 }
+			#	spriteType = "GFX_pol_goal_progress_frame"
+			#	alwaystransparent = yes
+			#}			
 		}
 		containerWindowType = {
 			name = "national_spirit"
