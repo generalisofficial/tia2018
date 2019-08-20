@@ -107,8 +107,10 @@ set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
 set_country_flag = coalition_conservative
 set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = reactionary_seats }
 
