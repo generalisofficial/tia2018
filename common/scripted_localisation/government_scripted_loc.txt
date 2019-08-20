@@ -249,3 +249,347 @@ defined_text = {
 		localization_key = GFX_ideology_[This.GetTag]_communist_group
 	}
 }
+
+defined_text = {
+	name = GetGovernmentMemberPartyType
+	
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 1 }
+			has_government = islamist
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 1 }
+			NOT = { has_government = islamist }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 2 }
+			has_government = fascist
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 2 }
+			NOT = { has_government = fascist }
+		}
+		localization_key = "(Coalition Partner)"
+	}text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 3 }
+			has_government = nationalist
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 3 }
+			NOT = { has_government = nationalist }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 4 }
+			has_government = monarchist
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 4 }
+			NOT = { has_government = monarchist }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 5 }
+			has_government = reactionary
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 5 }
+			NOT = { has_government = reactionary }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 6 }
+			has_government = conservative
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 6 }
+			NOT = { has_government = conservative }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 7 }
+			has_government = market_liberal
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 7 }
+			NOT = { has_government = market_liberal }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 8 }
+			has_government = social_liberal
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 8 }
+			NOT = { has_government = social_liberal }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 9 }
+			has_government = social_democrat
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 9 }
+			NOT = { has_government = social_democrat }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 10 }
+			has_government = progressive
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 10 }
+			NOT = { has_government = progressive }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 11 }
+			has_government = democratic_socialist
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 11 }
+			NOT = { has_government = democratic_socialist }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 12 }
+			has_government = communist
+		}
+		localization_key = "(Government Leader)"
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 12 }
+			NOT = { has_government = communist }
+		}
+		localization_key = "(Coalition Partner)"
+	}
+}
+
+defined_text = {
+	name = GetCanBeKicked
+
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 1 }
+			has_government = islamist
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 1 }
+			NOT = { has_government = islamist }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 2 }
+			has_government = fascist
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 2 }
+			NOT = { has_government = fascist }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 3 }
+			has_government = nationalist
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 3 }
+			NOT = { has_government = nationalist }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 4 }
+			has_government = monarchist
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 4 }
+			NOT = { has_government = monarchist }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 5 }
+			has_government = reactionary
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 5 }
+			NOT = { has_government = reactionary }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 6 }
+			has_government = conservative
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 6 }
+			NOT = { has_government = conservative }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 7 }
+			has_government = market_liberal
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 7 }
+			NOT = { has_government = market_liberal }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 8 }
+			has_government = social_liberal
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 8 }
+			NOT = { has_government = social_liberal }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 9 }
+			has_government = social_democrat
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 9 }
+			NOT = { has_government = social_democrat }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 10 }
+			has_government = progressive
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 10 }
+			NOT = { has_government = progressive }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 11 }
+			has_government = democratic_socialist
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 11 }
+			NOT = { has_government = democratic_socialist }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 12 }
+			has_government = communist
+		}
+		localization_key = GOV_CANT_BE_KICKED
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.member_parties_array^i = 12 }
+			NOT = { has_government = communist }
+		}
+		localization_key = "Kick this Party from your coalition."
+	}
+}
