@@ -585,6 +585,16 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = benelux_member
+			        }
+				}
+			}
+			set_global_flag = benelux_dissolved
+		}
+		if = {
+			limit = {
 			    OR = { 
 				    AND = {
 					    OR = {
