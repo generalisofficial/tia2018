@@ -91,11 +91,30 @@ add_ideas = {
 
 set_country_flag = hinduism
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 66.12 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 33.88 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2014.12.10"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
@@ -105,7 +124,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Pravind Jugnauth"
-	picture = "Pravind_Kugnauth.dds"
+	picture = "Pravind_Jugnauth.dds"
 	ideology = african_socialist
 }
 

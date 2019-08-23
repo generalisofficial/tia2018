@@ -1,32 +1,38 @@
 
 state={
 	id=681
-	name="STATE_681" # Cape
-	manpower = 31400400
-
-	state_category = state_level_19
-	
-	resources = {
-		chromium = 100
-		aluminium = 3
-		steel = 59
+	name="STATE_681"
+	resources={
+		chromium=100.000
+		aluminium=3.000
+		steel=59.000
 	}
 
 	history={
 		owner = SAF
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 6
-			arms_factory = 2
+			industrial_complex = 4
+			arms_factory = 1
 			dockyard = 1
 			air_base = 3
-			12589 = { naval_base = 4 }
+			12589 = {
+				naval_base = 4
+
+			}
+
 		}
-		victory_points = { 12589 10  }
+		victory_points = {
+			12589 10 
+		}
 		add_core_of = SAF
+
 	}
 
 	provinces={
-		1509 4528 4822 5203 10415 10442 10697 12419 12547 12589 12692 
+		12547 12589 12692 13671 13672 13674 13675 13678 13682 
 	}
+	manpower=6621100
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }

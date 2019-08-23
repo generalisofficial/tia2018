@@ -1,15 +1,11 @@
 
 state={
 	id=275
-	name="STATE_275" # Transvaal
-	manpower = 10680363
-	
-	state_category = state_level_12
-	
+	name="STATE_275"
 	resources={
-		chromium=1050
-		aluminium=47
-		steel=15
+		chromium=1050.000
+		aluminium=47.000
+		steel=15.000
 	}
 
 	history={
@@ -18,14 +14,25 @@ state={
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 4
+
 		}
 		victory_points = {
-			10400 10
+			13708 10 
+		}
+		victory_points = {
+			10400 5
+		}
+		victory_points = {
+			13701 2
 		}
 		add_core_of = SAF
+
 	}
 
 	provinces={
-		1688 2171 2213 5106 5217 5231 10400 10566 10668 12064 12648 
+		2213 10400 10668 13701 13704 13706 13708 13709 
 	}
+	manpower=18696000
+	buildings_max_level_factor=1.000
+	state_category=state_level_14
 }

@@ -83,30 +83,71 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
 
+#Chamber of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 22.10 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 55.81 }
+set_variable = { social_liberal_seats = 1.57 }
+set_variable = { market_liberal_seats = 11.05 }
+set_variable = { conservative_seats = 9.47 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_politics = {	
-	ruling_party = progressive
+	ruling_party = social_democrat
 	last_election = "2016.5.17"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    progressive = 61.74
-    social_democrat = 38.26
+    social_democrat = 55.81
+	democratic_socialist = 22.10
+	market_liberal = 11.05
+	conservative = 9.47
+	social_liberal = 1.57
 }
 
 create_country_leader = {
 	name = "Danilo Medina"
 	picture = "Danilo_Medina.dds"
-	ideology = progressive_ideology
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Luis Abinader"
 	picture = "Luis_Abinader.dds"
-	ideology = social_democrat_ideology
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Tony Peña Guaba"
+	picture = "Tony_Pena_Guaba.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Federico Antún Batlle"
+	picture = "Federico_Antun_Batlle.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Guillermo Moreno García"
+	picture = "Guillermo_Moreno_Garcia.dds"
+	ideology = social_liberal_ideology
 }
