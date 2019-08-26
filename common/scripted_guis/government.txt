@@ -113,6 +113,11 @@ scripted_gui = {
 					subtract_from_variable = { ROOT.Coalition = communist_seats }
 				}
 			}
+			resign_button_click = {
+				add_political_power = -150
+				break_coalition = yes
+				set_country_flag = forming_government_1
+			}
 		}
 
 		triggers = {
@@ -204,6 +209,9 @@ scripted_gui = {
 						always = no
 					}
 				}
+			}
+			resign_button_click_enabled = {
+				always = yes
 			}
 		}
 

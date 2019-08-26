@@ -70,6 +70,16 @@ guiTypes = {
 			format = left
 			Orientation = "upper_left"
 		}
+
+		buttonType = {
+			name = "resign_button"
+			position = { x = 410 y = 205 }
+			font = "hoi_18mbs"
+			quadTextureSprite = "button_type_7"
+			buttonText = "Resign"
+			format = left
+			pdx_tooltip = GOV_RESIGN_TOOLTIP
+		}
 		
 		containerWindowType = {
 			name = "government_members_container"
