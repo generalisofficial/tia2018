@@ -44,17 +44,29 @@ country_event = {
 	immediate = {
 	    break_coalition = yes
 		set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
 		set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+		multiply_variable = { democratic_socialist_seats = 100 }
 		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
 		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
 		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
 		set_variable = { market_liberal_seats = party_popularity@market_liberal }
+		multiply_variable = { market_liberal_seats = 100 }
 		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
 		set_variable = { reactionary_seats = party_popularity@reactionary }
+		multiply_variable = { reactionary_seats = 100 }
 		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
 		set_variable = { nationalist_seats = party_popularity@nationalist }
+		multiply_variable = { nationalist_seats = 100 }
 		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
 		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
 	}
 	
 	option = {	#Communists
@@ -122,7 +134,6 @@ country_event = {
 		set_country_flag = has_coalition
 		set_country_flag = coalition_communist
         set_variable = { ROOT.Coalition = communist_seats }
-		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
 			ruling_party = communist
 			elections_allowed = yes
