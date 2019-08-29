@@ -3,7 +3,7 @@ state={
 	id=1007
 	name="STATE_1007"
 	resources={
-		steel=43.000
+		steel=63.000
 	}
 
 	history={
@@ -11,21 +11,36 @@ state={
 		add_core_of = KOR
 		add_core_of = PRK
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			air_base = 7
-			industrial_complex = 3
+			industrial_complex = 5
+			arms_factory = 1
+			dockyard = 1
+			4056 = {
+				naval_base = 6
+
+			}
 
 		}
 		victory_points = {
-			12089 5 
+			4056 20 
+		}
+		victory_points = {
+			4086 5 
+		}
+		victory_points = {
+			13713 5
+		}
+		victory_points = {
+			12060 4 
 		}
 
 	}
 
 	provinces={
-		1054 1081 4086 4103 7121 10085 10115 11912 12060 12089 13289 13324 13335 13371 
+		1054 1081 4056 4086 4103 7121 10085 10115 11912 12060 12089 13289 13324 13371 13713 
 	}
-	manpower=9801507
+	manpower=13291934
 	buildings_max_level_factor=1.000
-	state_category=state_level_13
+	state_category=state_level_15
 }
