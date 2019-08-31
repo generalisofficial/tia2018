@@ -494,7 +494,16 @@ pulse = {
 				date > 2018.4.18
 				date < 2019.1.1
 			}
-			country_event = botswana.1
+			country_event = swaziland.1
+		}
+		if = {
+			limit = {
+			    original_tag = PRU
+				has_country_leader = { name = "Pedro Pablo Kuczynski" ruling_only = yes } 
+				date > 2018.3.22
+				date < 2019.1.1
+			}
+			country_event = peru.1
 		}
 		if = {
 		    limit = {

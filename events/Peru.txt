@@ -1,0 +1,20 @@
+﻿add_namespace = peru
+
+country_event = { #Pedro Pablo Kuczynski Resigns
+	id = peru.1
+	title = peru.1.t
+	desc = peru.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = peru.1.o1
+		add_stability = -0.1
+		create_country_leader = {
+	        name = "Martín Vizcarra"
+	        picture = "Martin_Vizcarra.dds"
+	        ideology = libertarian
+        }
+	}
+}
