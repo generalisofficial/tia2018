@@ -1,14 +1,9 @@
-
 state={
 	id=117
-	name="STATE_117" # Campania
-	manpower = 6233611
-	
-	state_category = state_level_7
-	
+	name="STATE_117"
 	resources={
-		oil = 2
-		steel = 6
+		oil=2.000
+		steel=6.000
 	}
 
 	history={
@@ -16,18 +11,27 @@ state={
 		victory_points = {
 			819 20 
 		}
+		victory_points = {
+			955 2
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
 			air_base = 3
 			819 = {
 				naval_base = 6
+
 			}
+
 		}
 		add_core_of = ITA
+
 	}
 
 	provinces={
-		819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803 
+		819 851 955 9826 11803 
 	}
+	manpower=5869029
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }
