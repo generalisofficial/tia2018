@@ -1,26 +1,30 @@
+
 state={
 	id=709
 	name="STATE_709"
-	manpower = 91000
-	
-	state_category = state_level_2
-	
-	history=
-	{
+
+	history={
 		owner = SEY
 		add_core_of = SEY
+		victory_points = {
+			2188 1 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			2188 = {
 				naval_base = 1
+
 			}
+
 		}
-		
-		victory_points = { 2188 1 }
+
 	}
-	
+
 	provinces={
 		2188 
 	}
+	manpower=98248
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }
