@@ -424,6 +424,22 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    original_tag = AUS
+				date > 2018.6.22
+				date < 2019.1.1
+			}
+			country_event = austria.1
+		}
+		if = {
+			limit = {
+			    original_tag = AUS
+				date > 2018.11.23
+				date < 2019.1.1
+			}
+			country_event = austria.2
+		}
+		if = {
+			limit = {
 			    original_tag = SPR
 				date > 2018.7.4
 				date < 2019.1.1
