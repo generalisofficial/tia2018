@@ -96,15 +96,15 @@ set_variable = { corporate_tax = 25 }
 
 #Parliament of Austria
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 0 }
+set_variable = { democratic_socialist_seats = 4.37 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 26.9 }
+set_variable = { social_democrat_seats = 28.42 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { market_liberal_seats = 5.3 }
-set_variable = { conservative_seats = 31.5 }
+set_variable = { market_liberal_seats = 5.46 }
+set_variable = { conservative_seats = 33.88 }
 set_variable = { reactionary_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 26 }
+set_variable = { nationalist_seats = 27.87 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -123,11 +123,11 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 26
-    conservative = 31.5
-    market_liberal = 5.3
-    social_democrat = 26.9
-    progressive = 10.3
+    nationalist = 27.87
+    conservative = 33.88
+    market_liberal = 5.46
+    social_democrat = 28.42
+    democratic_socialist = 4.37
 }
 
 create_country_leader = {
@@ -167,14 +167,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Peter Pilz"
-	picture = "Peter_Pilz.dds"
+	name = "Werner Kogler"
+	picture = "Werner_Kogler.dds"
 	ideology = progressive_ideology
 }
 
 create_country_leader = {
-	name = "Sonja Grusch"
-	picture = "Sonja_Grusch.dds"
+	name = "Peter Pilz"
+	picture = "Peter_Pilz.dds"
 	ideology = democratic_socialist_ideology
 }
 
@@ -185,8 +185,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karl von Habsburg"
-	picture = "Karl_von_Habsburg.dds"
+	name = "Karl II"
+	picture = "Karl_II.dds"
 	ideology = absolute_monarchist
 }
 
