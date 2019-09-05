@@ -96,28 +96,47 @@ add_ideas = {
 	african_union_member
 	commonwealth_of_nations_member
 	non_aligned_movement_member
+	parliamentary_system
 }
 
 set_country_flag = christianity
 
+#National Assembly
+set_variable = { communist_seats = 6.25 }
+set_variable = { democratic_socialist_seats = 0.5 }
+set_variable = { progressive_seats = 1.25 }
+set_variable = { social_democrat_seats = 64.75 }
+set_variable = { social_liberal_seats = 22.25 }
+set_variable = { market_liberal_seats = 2.5 }
+set_variable = { conservative_seats = 1.5 }
+set_variable = { reactionary_seats = 1 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2014.5.7"
+	last_election = "2014.5.8"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    islamist = 0
-    nationalist = 0
-    reactionary = 2.90
-    conservative = 0
-    market_liberal = 3.40
-    social_liberal = 25.23
-    social_democrat = 62.12
-    progressive = 0
-    democratic_socialist = 0
-    communist = 6.35
+    social_democrat = 59
+	social_liberal = 21
+	communist = 11
+    market_liberal = 3.5
+	reactionary = 2.5
+	conservative = 2
+	progressive = 0.5
+	democratic_socialist = 0.25
+	islamist = 0.25
 }
 
 create_country_leader = {
@@ -133,15 +152,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mangosuthu Buthelezi"
-	picture = "Mangosuthu_Buthelezi.dds"
-	ideology = libertarian
+	name = "Julius Malema"
+	picture = "Julius_Malema.dds"
+	ideology = marxist_leninist
 }
 
 create_country_leader = {
-	name = "Kenneth Meshoe"
-	picture = "Kenneth_Meshoe.dds"
-	ideology = christian_democrat
+	name = "Mangosuthu Buthelezi"
+	picture = "Mangosuthu_Buthelezi.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -151,21 +170,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Kenneth Meshoe"
+	picture = "Kenneth_Meshoe.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
 	name = "Luthando Mbinda"
 	picture = "Luthando_Mbinda.dds"
 	ideology = african_socialist
 }
 
 create_country_leader = {
-	name = "Mosiuoa_Lekota"
+	name = "Mosiuoa Lekota"
 	picture = "Mosiuoa_Lekota.dds"
 	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Julius Malema"
-	picture = "Julius_Malema.dds"
-	ideology = marxist_leninist
 }
 
 create_country_leader = {
