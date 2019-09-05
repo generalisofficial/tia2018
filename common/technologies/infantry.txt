@@ -2664,10 +2664,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2008
+		start_year = 2006
 		folder = {
 			name = infantry_folder
-			position = { x = @body_armor_line y = @2008 }
+			position = { x = @body_armor_line y = @2006 }
 		}
 		
 		categories = {
@@ -2720,10 +2720,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2019
+		start_year = 2014
 		folder = {
 			name = infantry_folder
-			position = { x = @body_armor_line y = @2019 }
+			position = { x = @body_armor_line y = @2014 }
 		}
 		
 		categories = {
@@ -2776,10 +2776,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2027
+		start_year = 2023
 		folder = {
 			name = infantry_folder
-			position = { x = @body_armor_line y = @2027 }
+			position = { x = @body_armor_line y = @2023 }
 		}
 		
 		categories = {
@@ -2849,6 +2849,9 @@ technologies = {
 	
 	body_armor7 = {
 
+		category_all_infantry = {
+			maximum_speed = 0.1
+		}
 		infantry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -2888,10 +2891,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2040
+		start_year = 2038
 		folder = {
 			name = infantry_folder
-			position = { x = @body_armor_line y = @2040 }
+			position = { x = @body_armor_line y = @2038 }
 		}
 		
 		categories = {
@@ -2906,41 +2909,36 @@ technologies = {
 	body_armor8 = {
 
 		infantry = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}		
 		mountaineers = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 		paratrooper = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 		marine = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 		motorized = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 		light_mechanized = {
-			defense = 0.02
-			breakthrough = 0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 		mechanized = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		
-		path = {
-			leads_to_tech = body_armor9
-			research_cost_coeff = 1
+			defense = 0.1
+			breakthrough = 0.1
 		}
 
 		research_cost = 1.5
@@ -2948,57 +2946,6 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = @body_armor_line y = @2050 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	body_armor9 = {
-
-		infantry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		paratrooper = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		marine = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		motorized = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		light_mechanized = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		mechanized = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-
-		research_cost = 1.5
-		start_year = 2060
-		folder = {
-			name = infantry_folder
-			position = { x = @body_armor_line y = @2060 }
 		}
 		
 		categories = {
