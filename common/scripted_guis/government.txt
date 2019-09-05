@@ -115,10 +115,17 @@ scripted_gui = {
 			}
 			resign_button_click = {
 				add_political_power = -150
-				break_coalition = yes
-				set_country_flag = forming_government_1
-			}
-		}
+				if = {
+			        limit = {
+			            has_idea = parliamentary_system
+			        }
+			        break_coalition = yes
+			        set_country_flag = forming_government_1
+				    else = {
+			            retire_country_leader = yes
+			        }
+				}
+		    }
 
 		triggers = {
 			kick_button_click_enabled = {
