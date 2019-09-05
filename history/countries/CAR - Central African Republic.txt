@@ -80,11 +80,15 @@ set_technology = {
 	excavation1 = 1
 }
 
+add_opinion_modifier = { target = LOG modifier = rival }
+add_opinion_modifier = { target = LOG modifier = rival_trade }
+
 add_ideas = {
 	population_growth_rapid
 	african_union_member
 	non_aligned_movement_member
 	presidential_system
+	idea_central_african_civil_war
 }
 
 set_country_flag = christianity
