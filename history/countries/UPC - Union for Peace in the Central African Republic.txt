@@ -1,6 +1,6 @@
-﻿capital = 779
+﻿capital = 660
 
-oob = "LOG_2018"
+oob = "UPC_2018"
 
 set_research_slots = 2
 set_convoys = 10
@@ -82,6 +82,25 @@ set_technology = {
 
 add_opinion_modifier = { target = CAR modifier = rival }
 add_opinion_modifier = { target = CAR modifier = rival_trade }
+add_opinion_modifier = { target = ABL modifier = rival }
+add_opinion_modifier = { target = ABL modifier = rival_trade }
+add_opinion_modifier = { target = FPR modifier = rival }
+add_opinion_modifier = { target = FPR modifier = rival_trade }
+
+declare_war_on = {
+	target = FPR
+	type = civil_war
+}
+
+declare_war_on = {
+	target = ABL
+	type = civil_war
+}
+
+declare_war_on = {
+	target = CAR
+	type = civil_war
+}
 
 add_ideas = {
 	population_growth_rapid
@@ -90,22 +109,21 @@ add_ideas = {
 	presidential_system
 }
 
-set_country_flag = dominant_religion_islam
-set_country_flag = sunni_islam
+set_country_flag = islam
 
 set_politics = {	
-	ruling_party = islamist
+	ruling_party = reactionary
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    islamist = 100
+    reactionary = 100
 }
 
 create_country_leader = {
-	name = "Michel Djotodia"
-	picture = "Michel_Djotodia.dds"
-	ideology = islamic_democracy
+	name = "Ali Darassa"
+	picture = "Ali_Darassa.dds"
+	ideology = military_junta
 }

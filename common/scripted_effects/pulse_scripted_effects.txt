@@ -628,6 +628,72 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    original_tag = UPC
+				country_exists = UPC
+				owns_state = 778
+				NOT = { country_exists = CAR country_exists = FPR country_exists = ABL has_cosmetic_tag = CAR }
+			}
+			set_cosmetic_tag = CAR
+			set_capital = 778
+			every_state = {
+			    limit = {
+				    OR = {
+					    is_core_of = ABL
+						is_core_of = CAR
+						is_core_of = FPR
+					}
+			    }
+			    remove_core_of = ABL
+				remove_core_of = CAR
+				remove_core_of = FPR
+		    }
+		}
+		if = {
+			limit = {
+			    original_tag = FPR
+				country_exists = FPR
+				owns_state = 778
+				NOT = { country_exists = CAR country_exists = UPC country_exists = ABL has_cosmetic_tag = CAR }
+			}
+			set_cosmetic_tag = CAR
+			set_capital = 778
+			every_state = {
+			    limit = {
+				    OR = {
+					    is_core_of = UPC
+						is_core_of = CAR
+						is_core_of = ABL
+					}
+			    }
+			    remove_core_of = UPC
+				remove_core_of = CAR
+				remove_core_of = ABL
+		    }
+		}
+		if = {
+			limit = {
+			    original_tag = ABL
+				country_exists = ABL
+				owns_state = 778
+				NOT = { country_exists = CAR country_exists = UPC country_exists = FPR has_cosmetic_tag = CAR }
+			}
+			set_cosmetic_tag = CAR
+			set_capital = 778
+			every_state = {
+			    limit = {
+				    OR = {
+					    is_core_of = UPC
+						is_core_of = CAR
+						is_core_of = FPR
+					}
+			    }
+			    remove_core_of = UPC
+				remove_core_of = CAR
+				remove_core_of = FPR
+		    }
+		}
+		if = {
+			limit = {
 			    OR = { 
 				    AND = {
 					    OR = {
