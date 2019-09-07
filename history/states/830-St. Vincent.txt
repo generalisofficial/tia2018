@@ -1,20 +1,29 @@
+
 state={
 	id=830
 	name="STATE_830"
-	history = {
+
+	history={
 		owner = STV
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-			379 = { naval_base = 1 }
+			379 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 379 1 }
+		victory_points = {
+			379 1 
+		}
+
 	}
+
 	provinces={
-		379 
+		379 13762 
 	}
 	manpower=115000
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_2
+	state_category=state_level_2
 }
