@@ -1223,6 +1223,30 @@ scripted_gui = {
 				cleanup_coalition = yes
 				update_coalition = yes
 				set_parliament_graphics_2 = yes
+				if = {
+	                limit = {
+					    original_tag = GER
+			            has_global_flag = akk_elected
+			        }
+			        clr_global_flag = akk_elected
+			        create_country_leader = {
+	                    name = "Annegret Kramp-Karrenbauer"
+	                    picture = "Annegret_Kramp_Karrenbauer.dds"
+	                    ideology = christian_democrat
+                    }
+		        }
+				if = {
+	                limit = {
+					    original_tag = GER
+			            has_global_flag = merz_elected
+			        }
+			        clr_global_flag = merz_elected
+			        create_country_leader = {
+	                    name = "Friedrich Merz"
+	                    picture = "Friedrich_Merz.dds"
+	                    ideology = christian_democrat
+                    }
+		        }
 			}
 			party1_click = { 
 				if = {

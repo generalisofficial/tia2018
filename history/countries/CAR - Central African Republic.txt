@@ -18,7 +18,7 @@ set_technology = {
 	accessories1 = 1
 	pistols1 = 1
 	heavy_weapons1 = 1
-	night_vision = 1
+	heavy_weapons2 = 1
 	body_armor1 = 1
 	body_armor2 = 1
 	special_forces2 = 1
@@ -86,21 +86,6 @@ add_opinion_modifier = { target = ABL modifier = rival }
 add_opinion_modifier = { target = ABL modifier = rival_trade }
 add_opinion_modifier = { target = FPR modifier = rival }
 add_opinion_modifier = { target = FPR modifier = rival_trade }
-
-declare_war_on = {
-	target = FPR
-	type = civil_war
-}
-
-declare_war_on = {
-	target = UPC
-	type = civil_war
-}
-
-declare_war_on = {
-	target = ABL
-	type = civil_war
-}
 
 add_ideas = {
 	population_growth_rapid

@@ -9,7 +9,7 @@ country_event = { #Die Grunen - Annalena Baerbock
 	fire_only_once = yes
 	
 	option = {
-		name = germany.1.a
+		name = germany.1.o1
 		create_country_leader = {
 	        name = "Annalena Baerbock"
 	        picture = "Annalena_Baerbock.dds"
@@ -27,11 +27,60 @@ country_event = { #SPD - Andrea Nahles
 	fire_only_once = yes
 	
 	option = {
-		name = germany.2.a
+		name = germany.2.o1
 		create_country_leader = {
 	        name = "Andrea Nahles"
 	        picture = "Andrea_Nahles.dds"
 	        ideology = social_democrat_ideology
         }
+	}
+}
+
+country_event = { #2018 Christian Democratic Union leadership election
+	id = germany.3
+	title = germany.3.t
+	desc = germany.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = germany.3.o1
+		ai_chance = {
+			factor = 52
+		}
+		if = {
+	        limit = {
+			    has_government = conservative
+			}
+			set_global_flag = akk_elected
+			else = {
+			    create_country_leader = {
+	                name = "Annegret Kramp-Karrenbauer"
+	                picture = "Annegret_Kramp_Karrenbauer.dds"
+	                ideology = christian_democrat
+                }
+			}
+		}
+	}
+	
+	option = {
+		name = germany.3.o2
+		ai_chance = {
+			factor = 48
+		}
+		if = {
+	        limit = {
+			    has_government = conservative
+			}
+			set_global_flag = merz_elected
+			else = {
+			    create_country_leader = {
+	                name = "Friedrich Merz"
+	                picture = "Friedrich_Merz.dds"
+	                ideology = christian_democrat
+                }
+			}
+		}
 	}
 }
