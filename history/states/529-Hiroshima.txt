@@ -1,12 +1,9 @@
 
 state={
 	id=529
-	name="STATE_529" # Chugoku
-	manpower = 7563428
-	state_category = state_level_13
-	
-	resources = {
-		steel = 204
+	name="STATE_529"
+	resources={
+		steel=204.000
 	}
 
 	history={
@@ -20,16 +17,24 @@ state={
 			dockyard = 1
 			1092 = {
 				naval_base = 10
+
 			}
+			13759 = {
+				naval_base = 1
+
+			}
+
 		}
-		
 		victory_points = {
-			1092 5
+			1092 5 
 		}
 
 	}
 
 	provinces={
-		1092 1167 1191 4197 7050 7145 7212 9968 10052 10055 11946 11985 
+		1092 1167 1191 4197 7050 7145 7212 9968 10052 10055 11946 11985 13759 
 	}
+	manpower=7563428
+	buildings_max_level_factor=1.000
+	state_category=state_level_13
 }

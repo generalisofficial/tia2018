@@ -62,23 +62,35 @@ country_event = { #2019 Conservative Party leadership election
 	option = {
 		name = britain.3.a
 		ai_chance = {
-			factor = 66
+			factor = 51
 		}
 		create_country_leader = {
 	        name = "Boris Johnson"
 	        picture = "Boris_Johnson.dds"
-	        ideology = social_conservative
+	        ideology = national_conservative
         }
 	}
 	
 	option = {
 		name = britain.3.b
 		ai_chance = {
-			factor = 34
+			factor = 25
 		}
 		create_country_leader = {
 	        name = "Jeremy Hunt"
 	        picture = "Jeremy_Hunt.dds"
+	        ideology = social_conservative
+        }
+	}
+	
+	option = {
+		name = britain.3.c
+		ai_chance = {
+			factor = 24
+		}
+		create_country_leader = {
+	        name = "Michael Gove"
+	        picture = "Michael_Gove.dds"
 	        ideology = social_conservative
         }
 	}
