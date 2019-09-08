@@ -2,31 +2,29 @@
 state={
 	id=543
 	name="STATE_543"
-	manpower = 21300300
-	
-	resources = {
-		chromium = 10
-	}
-	
-	state_category = state_level_8
-	
+
 	history={
 		owner = MAD
+		victory_points = {
+			11015 10
+		}
+		victory_points = {
+			13768 2
+		}
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 4
+			industrial_complex = 2
 			arms_factory = 1
-			dockyard = 1
 			air_base = 1
-			5222 = {
-				naval_base = 3
-			}
+
 		}
-		victory_points = { 5128 2 }
 
 	}
 
 	provinces={
-		2200 5128 5185 5222 8180 8188 8246 10993 11015 12956 
+		11015 13768 13769 13770 
 	}
+	manpower=6342303
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }
