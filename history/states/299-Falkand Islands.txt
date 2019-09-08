@@ -1,21 +1,34 @@
-state= {
+
+state={
 	id=299
 	name="STATE_299"
-	manpower=2463
-	
-	state_category = state_level_1
-	
-	history= 	{
+
+	history={
 		owner = ENG
 		add_core_of = ENG
 		add_claim_by = ARG
+		victory_points = {
+			13775 1
+		}
+		victory_points = {
+			12960 1
+		}
 		buildings = {
 			infrastructure = 2
 			air_base = 1
-			12960 = {
+			13775 = {
 				naval_base = 1
+
 			}
+
 		}
+
 	}
-	provinces= { 12960 }
+
+	provinces={
+		12960 13775 
+	}
+	manpower=3234
+	buildings_max_level_factor=1.000
+	state_category=state_level_1
 }
