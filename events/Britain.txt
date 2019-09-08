@@ -114,3 +114,43 @@ country_event = { #Blaiklock Resigns
         }
 	}
 }
+
+country_event = { #Poisoning of Sergei and Yulia Skripal
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.5.a
+		news_event = britain.6
+		add_opinion_modifier = { target = SOV modifier = unprovoked_aggression }
+	}
+}
+
+news_event = { #Poisoning of Sergei and Yulia Skripal
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	picture = GFX_news_event_skripal
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = britain.6.a
+		trigger = {
+	        NOT = { original_tag = ENG }
+	    }
+	}
+	
+	option = {
+		name = britain.6.b
+		trigger = {
+	        original_tag = ENG
+	    }
+	}
+}
