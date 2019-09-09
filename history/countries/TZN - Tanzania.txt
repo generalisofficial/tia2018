@@ -89,7 +89,27 @@ add_ideas = {
 	non_aligned_movement_member
 	east_african_community_member
 	lgbt_illegal
+	presidential_system
 }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 73.12 }
+set_variable = { progressive_seats = 0.26 }
+set_variable = { social_democrat_seats = 0.26 }
+set_variable = { social_liberal_seats = 10.18 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 16.18 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = democratic_socialist
@@ -99,8 +119,11 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 41.54
-    democratic_socialist = 58.46
+    democratic_socialist = 73.12
+	conservative = 16.18
+	social_liberal = 10.18
+	progressive = 0.26
+	social_democrat = 0.26
 }
 
 create_country_leader = {
@@ -110,27 +133,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Augustino Mrema"
-	picture = "Augustino_Mrema.dds"
-	ideology = social_democrat_ideology
+	name = "Freeman Mbowe"
+	picture = "Freeman_Mbowe.dds"
+	ideology = social_conservative
 }
 
 create_country_leader = {
 	name = "Seif Sharif Hamad"
 	picture = "Seif_Sharif_Hamad.dds"
-	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Freeman Mbowe"
-	picture = "Freeman_Mbowe.dds"
-	ideology = liberal_conservative
+	ideology = centrist
 }
 
 create_country_leader = {
 	name = "Zitto Kabwe"
 	picture = "Zitto_Kabwe.dds"
 	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "James Mbatia"
+	picture = "James_Mbatia.dds"
+	ideology = social_democrat_ideology
 }
 	
 create_field_marshal = {
