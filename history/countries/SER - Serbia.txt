@@ -83,9 +83,29 @@ add_ideas = {
 	population_growth_stagnation
 	volunteer_only
 	neutrality_idea
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 11.60 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.2 }
+set_variable = { social_liberal_seats = 6.4 }
+set_variable = { market_liberal_seats = 6.4 }
+set_variable = { conservative_seats = 54.81 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 8.79 }
+set_variable = { fascist_seats = 5.2 }
+set_variable = { islamist_seats = 1.6 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -95,14 +115,14 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 8.10
-    fascist = 5.04
-    market_liberal = 6.02
-    social_liberal = 6.02
-    social_democrat = 5.02
-    islamist = 10.6
-    conservative = 48.25
-    democratic_socialist = 10.95
+    conservative = 54.81
+    democratic_socialist = 11.60
+    nationalist = 8.79
+    market_liberal = 6.4
+    social_liberal = 6.4
+	fascist = 5.2
+    social_democrat = 5.2
+    islamist = 1.6
 }
 
 create_country_leader = {
