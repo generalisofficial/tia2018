@@ -16,11 +16,11 @@ news_event = {
 
 	immediate = {
 			ROOT = {		
-                add_named_threat = { threat = 15 name = "Nuclear Attack" }				
+                add_named_threat = { threat = 20 name = "Nuclear Attack" }				
 			}
 			every_enemy_country = {
 				limit = { owns_state = FROM }
-				add_stability = -10
+				add_war_support = -15
 			}
 			FROM = {
 				remove_building = { type = arms_factory level = 10 }
