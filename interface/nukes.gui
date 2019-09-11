@@ -98,7 +98,7 @@ guiTypes = {
 			name = "natural_uranium_in_stock"
 			position = { x = 250 y = 540 }
 			font = "hoi_24header"
-			text = "[?Root.naturaluraniumstock] KG"
+			text = "[?Root.naturaluraniumstock] T"
 			maxWidth = 120
 			maxHeight = 40
 			fixedsize = no
@@ -145,181 +145,203 @@ guiTypes = {
 			pdx_tooltip = NUKE_STEP1_TOOLTIP
 		}
 
-		# Natural Uranium
-		instantTextBoxType = {
-			name = "natural_uranium_title"
-			position = { x = 100 y = 130 }
-			font = "hoi_24header"
-			text = "Buy Natural Uranium"
-			maxWidth = 350
-			maxHeight = 40
-			fixedsize = no
-			format = center
-			Orientation = "UPPER_LEFT"
+		containerWindowType = {
+			name = "natural_uranium_container"
+			position = { x = 75 y = 130 }
+			size = { width = 400 height = 150 }
+
+			background = {
+				name = "background"
+				spriteType = "GFX_tiled_window_thin_border2"
+			}
+
+			# Natural Uranium
+			instantTextBoxType = {
+				name = "natural_uranium_title"
+				position = { x = 22 y = 10 }
+				font = "hoi_24header"
+				text = "Buy Natural Uranium"
+				maxWidth = 350
+				maxHeight = 40
+				fixedsize = no
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "natural_uranium_amount_title"
+				position = { x = 20 y = 40 }
+				font = "hoi_24header"
+				text = "Amount:"
+				maxWidth = 100
+				maxHeight = 40
+				fixedsize = no
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "natural_uranium_amount"
+				position = { x = 155 y = 40 }
+				font = "hoi_24header"
+				text = "[?Root.AmountUraniumToBuy] T"
+				maxWidth = 100
+				maxHeight = 40
+				fixedsize = no
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			buttonType = {
+				name = "natural_uranium_amount_plus_button"
+				position = { x = 255 y = 40 }
+				quadTextureSprite ="GFX_zoom_in"
+				Orientation = "UPPER_LEFT"
+			}
+
+			buttonType = {
+				name = "natural_uranium_amount_minus_button"
+				position = { x = 128 y = 40 }
+				quadTextureSprite ="GFX_zoom_out"
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "natural_uranium_price_title"
+				position = { x = 20 y = 70 }
+				font = "hoi_24header"
+				text = "Price:"
+				maxWidth = 100
+				maxHeight = 40
+				fixedsize = no
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "natural_uranium_price"
+				position = { x = 120 y = 70 }
+				font = "hoi_24header"
+				text = "[?Root.UraniumFinalPrice] Million $"
+				maxWidth = 180
+				maxHeight = 40
+				fixedsize = no
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			buttonType = {
+				name = "buy_natural_uranium_button"
+				position = { x = 90 y = 105 }
+				quadTextureSprite = "button_type_4"
+				font = "hoi_24header"
+				text = "Buy"
+				Orientation = "UPPER_LEFT"
+			}
 		}
 
-		instantTextBoxType = {
-			name = "natural_uranium_amount_title"
-			position = { x = 90 y = 170 }
-			font = "hoi_24header"
-			text = "Amount:"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = left
-			Orientation = "UPPER_LEFT"
-		}
+		containerWindowType = {
+			name = "enriched_uranium_container"
+			position = { x = 75 y = 300 }
+			size = { width = 400 height = 150 }
 
-		instantTextBoxType = {
-			name = "natural_uranium_amount"
-			position = { x = 225 y = 170 }
-			font = "hoi_24header"
-			text = "[?Root.AmountUraniumToBuy] KG"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = center
-			Orientation = "UPPER_LEFT"
-		}
+			background = {
+				name = "background"
+				spriteType = "GFX_tiled_window_thin_border2"
+			}
 
-		buttonType = {
-			name = "natural_uranium_amount_plus_button"
-			position = { x = 320 y = 170 }
-			quadTextureSprite ="GFX_zoom_in"
-			Orientation = "UPPER_LEFT"
-		}
+			# Enriched Uranium
+			instantTextBoxType = {
+				name = "enriched_uranium_title"
+				position = { x = 22 y = 10 }
+				font = "hoi_24header"
+				text = "Buy Enriched Uranium"
+				maxWidth = 350
+				maxHeight = 40
+				fixedsize = no
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
 
-		buttonType = {
-			name = "natural_uranium_amount_minus_button"
-			position = { x = 200 y = 170 }
-			quadTextureSprite ="GFX_zoom_out"
-			Orientation = "UPPER_LEFT"
-		}
+			instantTextBoxType = {
+				name = "enriched_uranium_amount_title"
+				position = { x = 20 y = 40 }
+				font = "hoi_24header"
+				text = "Amount:"
+				maxWidth = 100
+				maxHeight = 40
+				fixedsize = no
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 
-		instantTextBoxType = {
-			name = "natural_uranium_price_title"
-			position = { x = 90 y = 210 }
-			font = "hoi_24header"
-			text = "Price:"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = left
-			Orientation = "UPPER_LEFT"
-		}
+			instantTextBoxType = {
+				name = "enriched_uranium_amount"
+				position = { x = 155 y = 40 }
+				font = "hoi_24header"
+				text = "[?Root.AmountEnrichedUraniumToBuy] KG"
+				maxWidth = 100
+				maxHeight = 40
+				fixedsize = no
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
 
-		instantTextBoxType = {
-			name = "natural_uranium_price"
-			position = { x = 225 y = 210 }
-			font = "hoi_24header"
-			text = "[?Root.UraniumFinalPrice] $"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = center
-			Orientation = "UPPER_LEFT"
-		}
+			buttonType = {
+				name = "enriched_uranium_amount_plus_button"
+				position = { x = 255 y = 40 }
+				quadTextureSprite ="GFX_zoom_in"
+				Orientation = "UPPER_LEFT"
+			}
 
-		buttonType = {
-			name = "buy_natural_uranium_button"
-			position = { x = 160 y = 250 }
-			quadTextureSprite = "button_type_4"
-			font = "hoi_24header"
-			text = "Buy"
-			Orientation = "UPPER_LEFT"
-		}
+			buttonType = {
+				name = "enriched_uranium_amount_minus_button"
+				position = { x = 128 y = 40 }
+				quadTextureSprite ="GFX_zoom_out"
+				Orientation = "UPPER_LEFT"
+			}
 
-		# Enriched Uranium
-		instantTextBoxType = {
-			name = "enriched_uranium_title"
-			position = { x = 100 y = 300 }
-			font = "hoi_24header"
-			text = "Buy Enriched Uranium"
-			maxWidth = 350
-			maxHeight = 40
-			fixedsize = no
-			format = center
-			Orientation = "UPPER_LEFT"
-		}
+			instantTextBoxType = {
+				name = "enriched_uranium_price_title"
+				position = { x = 20 y = 70 }
+				font = "hoi_24header"
+				text = "Price:"
+				maxWidth = 100
+				maxHeight = 40
+				fixedsize = no
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 
-		instantTextBoxType = {
-			name = "enriched_uranium_amount_title"
-			position = { x = 90 y = 340 }
-			font = "hoi_24header"
-			text = "Amount:"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = left
-			Orientation = "UPPER_LEFT"
-		}
+			instantTextBoxType = {
+				name = "enriched_uranium_price"
+				position = { x = 115 y = 70 }
+				font = "hoi_24header"
+				text = "[?Root.EnrichedUraniumFinalPrice] Million $"
+				maxWidth = 180
+				maxHeight = 40
+				fixedsize = no
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
 
-		instantTextBoxType = {
-			name = "enriched_uranium_amount"
-			position = { x = 225 y = 340 }
-			font = "hoi_24header"
-			text = "[?Root.AmountEnrichedUraniumToBuy] KG"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = center
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "enriched_uranium_amount_plus_button"
-			position = { x = 320 y = 340 }
-			quadTextureSprite ="GFX_zoom_in"
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "enriched_uranium_amount_minus_button"
-			position = { x = 200 y = 340 }
-			quadTextureSprite ="GFX_zoom_out"
-			Orientation = "UPPER_LEFT"
-		}
-
-		instantTextBoxType = {
-			name = "enriched_uranium_price_title"
-			position = { x = 90 y = 380 }
-			font = "hoi_24header"
-			text = "Price:"
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			format = left
-			Orientation = "UPPER_LEFT"
-		}
-
-		instantTextBoxType = {
-			name = "enriched_uranium_price"
-			position = { x = 200 y = 380 }
-			font = "hoi_24header"
-			text = "[?Root.EnrichedUraniumFinalPrice][Root.GetAddZerosToMillion] $"
-			maxWidth = 150
-			maxHeight = 40
-			fixedsize = no
-			format = center
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "buy_enriched_uranium_button"
-			position = { x = 160 y = 420 }
-			quadTextureSprite = "button_type_4"
-			font = "hoi_24header"
-			text = "Buy"
-			Orientation = "UPPER_LEFT"
+			buttonType = {
+				name = "buy_enriched_uranium_button"
+				position = { x = 90 y = 105 }
+				quadTextureSprite = "button_type_4"
+				font = "hoi_24header"
+				text = "Buy"
+				Orientation = "UPPER_LEFT"
+			}
 		}
 
 		## STEP 2: ENRICHEMENT - Only for natural uranium
 
 		instantTextBoxType = {
-			name = "step2_enrichement_title"
+			name = "step2_enrichment_title"
 			position = { x = 520 y = 80 }
 			font = "hoi_36header"
-			text = "Step 2: Enrichement"
+			text = "Step 2: Enrichment"
 			maxWidth = 350
 			maxHeight = 40
 			fixedsize = no
@@ -338,14 +360,13 @@ guiTypes = {
 			fixedsize = no
 			format = left
 			Orientation = "UPPER_LEFT"
-			pdx_tooltip = NUKE_STEP2_TOOLTIP
 		}
 
 		instantTextBoxType = {
 			name = "amount_to_enrich"
 			position = { x = 680 y = 140 }
 			font = "hoi_24header"
-			text = "[?Root.UraniumToEnrich] KG"
+			text = "[?Root.UraniumToEnrich] T"
 			maxWidth = 110
 			maxHeight = 40
 			fixedsize = no
@@ -368,27 +389,52 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "enrichement_grade_title"
+			name = "enrichment_grade_title"
 			position = { x = 560 y = 175 }
 			font = "hoi_24header"
-			text = "Enrichement Grade: 90%"
+			text = "Enrichment Grade: 90%"
 			maxWidth = 250
 			maxHeight = 40
 			fixedsize = no
 			format = left
 			Orientation = "UPPER_LEFT"
-			pdx_tooltip = NUKE_STEP2_TOOLTIP
+			pdx_tooltip = NUKE_ENRICHMENT_GRADE_TOOLTIP
 		}
 
 		instantTextBoxType = {
 			name = "amount_to_enrich"
 			position = { x = 680 y = 140 }
 			font = "hoi_24header"
-			text = "[?Root.UraniumToEnrich] KG"
+			text = "[?Root.UraniumToEnrich] T"
 			maxWidth = 110
 			maxHeight = 40
 			fixedsize = no
 			format = center
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "enrichment_time_title"
+			position = { x = 560 y = 210 }
+			font = "hoi_24header"
+			text = "Time needed (in days):"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_ENRICHMENT_TIME_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "time_to_enrich"
+			position = { x = 810 y = 210 }
+			font = "hoi_24header"
+			text = "[?Root.enrichementdaysneeded]"
+			maxWidth = 60
+			maxHeight = 40
+			fixedsize = no
+			format = left
 			Orientation = "UPPER_LEFT"
 		}
 
