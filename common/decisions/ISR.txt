@@ -29,6 +29,35 @@ ISR_regency = {
 		}
 	}
 	
+	crown_the_belz = {
+		visible = {
+		    original_tag = ISR
+			has_country_leader = { name = "Yitzchak Ginsburgh" ruling_only = yes }
+		}
+		
+		available = {
+			has_country_leader = { name = "Yitzchak Ginsburgh" ruling_only = yes }
+		}
+		
+		complete_effect = {
+		    set_party_name = { ideology = monarchist long_name = "Belz" name = "Belz" }
+		    create_country_leader = {
+	            name = "Yissachar Dov Rokeach"
+	            picture = "Yissachar_Dov_Rokeach.dds"
+	            ideology = absolute_monarchist
+            }
+		}
+		
+		icon = democracy
+		
+		fire_only_once = yes
+		cost = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	embrace_netanyahu = {
 		visible = {
 		    original_tag = ISR
