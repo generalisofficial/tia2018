@@ -1,0 +1,37 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "nukes_topbar_button_container"
+		position = { x = 200 y = 60 }
+
+		buttonType = {
+			name = "open_nuke_window"
+			spriteType = "GFX_nuke_button"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_TOOLTIP
+		}
+	}
+
+	containerWindowType = {
+		name = "nuke_window_container"
+		position = { x = 300 y = 200 }
+		size = { width = 1280 height = 720 }
+
+		fade_time = 250
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "close_button" 
+			position = { x = 1240 y = 10 }	
+			spriteType = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}	

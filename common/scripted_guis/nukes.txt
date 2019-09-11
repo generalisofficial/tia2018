@@ -1,0 +1,38 @@
+scripted_gui = {
+	nukes_topbar_button = {
+		window_name = "nukes_topbar_button_container"
+
+		context_type = player_context
+ 
+		visible = {
+            always = yes
+		}
+ 
+        effects = {                     
+            open_nuke_window = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_nukes }
+				set_variable = { show_nukes = show }
+			}
+        }
+	}
+
+    nuke_window = {
+        window_name = "nuke_window_container"
+
+		context_type = player_context
+ 
+		visible = {
+            check_variable = { show_nukes > 0 }
+		}
+ 
+        effects = {                     
+            close_button_click = {
+				set_variable = { show_nukes = 0 }
+			}
+        }
+
+        triggers = {
+        }
+    }
+}
