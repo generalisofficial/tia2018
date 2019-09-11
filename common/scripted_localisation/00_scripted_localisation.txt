@@ -8,3 +8,24 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
+defined_text = {
+    name = GetAddZerosToMillion
+
+    text = {
+		trigger = {
+			ROOT = {
+                check_variable = { EnrichedUraniumFinalPrice = 0 }
+            }
+		}
+		localization_key = ""
+	}
+
+	text = {
+		trigger = {
+			ROOT = {
+                check_variable = { EnrichedUraniumFinalPrice > 0 }
+            }
+		}
+		localization_key = "00000"
+	}
+}

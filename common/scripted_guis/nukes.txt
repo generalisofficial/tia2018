@@ -9,7 +9,7 @@ scripted_gui = {
 		}
  
         effects = {                     
-            open_nuke_window = {
+            open_nuke_window_click = {
 				set_temp_variable = { show = 1 }
 				subtract_from_temp_variable = { show = show_nukes }
 				set_variable = { show_nukes = show }
@@ -30,9 +30,140 @@ scripted_gui = {
             close_button_click = {
 				set_variable = { show_nukes = 0 }
 			}
+            natural_uranium_amount_plus_button_click = {
+                add_to_variable = { Root.AmountUraniumToBuy = 1 }
+                set_variable = { Root.UraniumFinalPrice = Root.AmountUraniumToBuy }
+                multiply_variable = { Root.UraniumFinalPrice = 66 }
+            }
+            natural_uranium_amount_plus_button_shift_click = {
+                add_to_variable = { Root.AmountUraniumToBuy = 100 }
+                set_variable = { Root.UraniumFinalPrice = Root.AmountUraniumToBuy }
+                multiply_variable = { Root.UraniumFinalPrice = 66 }
+            }
+            natural_uranium_amount_plus_button_control_click = {
+                add_to_variable = { Root.AmountUraniumToBuy = 10 }
+                set_variable = { Root.UraniumFinalPrice = Root.AmountUraniumToBuy }
+                multiply_variable = { Root.UraniumFinalPrice = 66 }
+            }
+            natural_uranium_amount_minus_button_click = {
+                add_to_variable = { Root.AmountUraniumToBuy = -1 }
+                set_variable = { Root.UraniumFinalPrice = Root.AmountUraniumToBuy }
+                multiply_variable = { Root.UraniumFinalPrice = 66 }
+                if = {
+                    limit = {
+                        check_variable = { AmountUraniumToBuy < 0 }
+                    }
+                    set_variable = { Root.AmountUraniumToBuy = 0 }
+                    set_variable = { Root.UraniumFinalPrice = 0 }
+                }
+            }
+            natural_uranium_amount_minus_button_shift_click = {
+                add_to_variable = { Root.AmountUraniumToBuy = -100 }
+                set_variable = { Root.UraniumFinalPrice = Root.AmountUraniumToBuy }
+                multiply_variable = { Root.UraniumFinalPrice = 66 }
+                if = {
+                    limit = {
+                        check_variable = { AmountUraniumToBuy < 0 }
+                    }
+                    set_variable = { Root.AmountUraniumToBuy = 0 }
+                    set_variable = { Root.UraniumFinalPrice = 0 }
+                }
+            }
+            natural_uranium_amount_minus_button_control_click = {
+                add_to_variable = { Root.AmountUraniumToBuy = -10 }
+                set_variable = { Root.UraniumFinalPrice = Root.AmountUraniumToBuy }
+                multiply_variable = { Root.UraniumFinalPrice = 66 }
+                if = {
+                    limit = {
+                        check_variable = { AmountUraniumToBuy < 0 }
+                    }
+                    set_variable = { Root.AmountUraniumToBuy = 0 }
+                    set_variable = { Root.UraniumFinalPrice = 0 }
+                }
+            }
+            buy_natural_uranium_button_click = {
+                set_variable = { Root.UraniumFinalPriceMillion = Root.UraniumFinalPrice }
+                divide_variable = { Root.UraniumFinalPriceMillion = 1000000 }
+                subtract_from_variable = { Root.state_treasury = Root.UraniumFinalPriceMillion }
+                add_to_variable = { Root.naturaluraniumstock = AmountUraniumToBuy }
+            }
+
+
+            enriched_uranium_amount_plus_button_click = {
+                add_to_variable = { Root.AmountEnrichedUraniumToBuy = 1 }
+                set_variable = { Root.EnrichedUraniumFinalPrice = Root.AmountEnrichedUraniumToBuy }
+                multiply_variable = { Root.EnrichedUraniumFinalPrice = 15 }
+            }
+            enriched_uranium_amount_plus_button_shift_click = {
+                add_to_variable = { Root.AmountEnrichedUraniumToBuy = 100 }
+                set_variable = { Root.EnrichedUraniumFinalPrice = Root.AmountEnrichedUraniumToBuy }
+                multiply_variable = { Root.EnrichedUraniumFinalPrice = 15 }
+            }
+            enriched_uranium_amount_plus_button_control_click = {
+                add_to_variable = { Root.AmountEnrichedUraniumToBuy = 10 }
+                set_variable = { Root.EnrichedUraniumFinalPrice = Root.AmountEnrichedUraniumToBuy }
+                multiply_variable = { Root.EnrichedUraniumFinalPrice = 15 }
+            }
+            enriched_uranium_amount_minus_button_click = {
+                add_to_variable = { Root.AmountEnrichedUraniumToBuy = -1 }
+                set_variable = { Root.EnrichedUraniumFinalPrice = Root.AmountEnrichedUraniumToBuy }
+                multiply_variable = { Root.EnrichedUraniumFinalPrice = 15 }
+                if = {
+                    limit = {
+                        check_variable = { AmountEnrichedUraniumToBuy < 0 }
+                    }
+                    set_variable = { Root.AmountEnrichedUraniumToBuy = 0 }
+                    set_variable = { Root.EnrichedUraniumFinalPrice = 0 }
+                }
+            }
+            enriched_uranium_amount_minus_button_shift_click = {
+                add_to_variable = { Root.AmountEnrichedUraniumToBuy = -100 }
+                set_variable = { Root.EnrichedUraniumFinalPrice = Root.AmountEnrichedUraniumToBuy }
+                multiply_variable = { Root.EnrichedUraniumFinalPrice = 15 }
+                if = {
+                    limit = {
+                        check_variable = { AmountEnrichedUraniumToBuy < 0 }
+                    }
+                    set_variable = { Root.AmountEnrichedUraniumToBuy = 0 }
+                    set_variable = { Root.EnrichedUraniumFinalPrice = 0 }
+                }
+            }
+            enriched_uranium_amount_minus_button_control_click = {
+                add_to_variable = { Root.AmountEnrichedUraniumToBuy = -10 }
+                set_variable = { Root.EnrichedUraniumFinalPrice = Root.AmountEnrichedUraniumToBuy }
+                multiply_variable = { Root.EnrichedUraniumFinalPrice = 15 }
+                if = {
+                    limit = {
+                        check_variable = { AmountEnrichedUraniumToBuy < 0 }
+                    }
+                    set_variable = { Root.AmountEnrichedUraniumToBuy = 0 }
+                    set_variable = { Root.EnrichedUraniumFinalPrice = 0 }
+                }
+            }
+            buy_enriched_uranium_button_click = {
+                set_variable = { Root.EnrichedUraniumFinalPriceMillion = Root.EnrichedUraniumFinalPrice }
+                divide_variable = { Root.EnrichedUraniumFinalPriceMillion = 10 }
+                subtract_from_variable = { Root.state_treasury = Root.EnrichedUraniumFinalPriceMillion }
+                add_to_variable = { Root.enricheduraniumstock = AmountEnrichedUraniumToBuy }
+            }
         }
 
         triggers = {
+            window_is_locked_visible = {
+                NOT = { has_tech = nukes }
+            }
+            natural_uranium_amount_plus_button_click_enabled = {
+                NOT = { check_variable = { Root.AmountUraniumToBuy = 900000 } }
+            }
+            natural_uranium_amount_minus_button_click_enabled = {
+                NOT = { check_variable = { Root.AmountUraniumToBuy = 0 } }
+            }
+            enriched_uranium_amount_plus_button_click_enabled = {
+                NOT = { check_variable = { Root.AmountEnrichedUraniumToBuy = 900000 } }
+            }
+            enriched_uranium_amount_minus_button_click_enabled = {
+                NOT = { check_variable = { Root.AmountEnrichedUraniumToBuy = 0 } }
+            }
         }
     }
 }
