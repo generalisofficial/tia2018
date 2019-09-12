@@ -117,4 +117,18 @@ country_event = {
 		clear_variable = enrichment_max_add_time
 		clr_country_flag = enriching
 	}
+
+	option = {
+		name = "Cleanup Nuke Building Vars"
+		clear_variable = building_max_time
+		clear_variable = building_max_add_time
+		clear_variable = NukesToBuildFinal
+		clear_variable = nuke_calculation
+		clear_variable = nuke_time_calculation
+		clear_variable = nuke_costs_calculation
+		clear_variable = buildingcosts
+		clear_variable = buildingdaysneeded
+		clear_variable = HEUNeeded
+		clr_country_flag = building_nuke
+	}
 }

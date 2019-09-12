@@ -290,6 +290,77 @@ scripted_gui = {
                 country_event = { id = nuke_time_calc.1 hours = 24 }
                 set_variable = { UraniumToEnrich = 0 }
             }
+
+            # BUILD THE NUKE
+
+            amount_to_build_plus_button_click = {
+                add_to_variable = { NukesToBuild = 1 }
+                set_variable = { nuke_calculation = NukesToBuild }
+                multiply_variable = { nuke_calculation = 15.5 }
+                set_variable = { HEUNeeded = nuke_calculation }
+                set_variable = { nuke_time_calculation = NukesToBuild }
+                multiply_variable = { nuke_time_calculation = 7 }
+                set_variable = { buildingdaysneeded = nuke_time_calculation }
+                set_variable = { nuke_costs_calculation = NukesToBuild }
+                multiply_variable = { nuke_costs_calculation = 9.280 }
+                set_variable = { buildingcosts = nuke_costs_calculation }
+            }
+            amount_to_build_plus_button_control_click = {
+                add_to_variable = { NukesToBuild = 10 }
+                set_variable = { nuke_calculation = NukesToBuild }
+                multiply_variable = { nuke_calculation = 15.5 }
+                set_variable = { HEUNeeded = nuke_calculation }
+                set_variable = { nuke_time_calculation = NukesToBuild }
+                multiply_variable = { nuke_time_calculation = 7 }
+                set_variable = { buildingdaysneeded = nuke_time_calculation }
+                set_variable = { nuke_costs_calculation = NukesToBuild }
+                multiply_variable = { nuke_costs_calculation = 9.280 }
+                set_variable = { buildingcosts = nuke_costs_calculation }
+            }
+            amount_to_build_minus_button_click = {
+                add_to_variable = { NukesToBuild = -1 }
+                set_variable = { nuke_calculation = NukesToBuild }
+                multiply_variable = { nuke_calculation = 15.5 }
+                set_variable = { HEUNeeded = nuke_calculation }
+                set_variable = { nuke_time_calculation = NukesToBuild }
+                multiply_variable = { nuke_time_calculation = 7 }
+                set_variable = { buildingdaysneeded = nuke_time_calculation }
+                set_variable = { nuke_costs_calculation = NukesToBuild }
+                multiply_variable = { nuke_costs_calculation = 9.280 }
+                set_variable = { buildingcosts = nuke_costs_calculation }
+            }
+            amount_to_build_minus_button_control_click = {
+                add_to_variable = { NukesToBuild = -10 }
+                if = {
+                    limit = {
+                        check_variable = { NukesToBuild < 0 }
+                    }
+                    set_variable = { Root.NukesToBuild = 0 }
+                    set_variable = { Root.buildingdaysneeded = 0 }
+                }
+                set_variable = { nuke_calculation = NukesToBuild }
+                multiply_variable = { nuke_calculation = 15.5 }
+                set_variable = { HEUNeeded = nuke_calculation }
+                set_variable = { nuke_time_calculation = NukesToBuild }
+                multiply_variable = { nuke_time_calculation = 7 }
+                set_variable = { buildingdaysneeded = nuke_time_calculation }
+                set_variable = { nuke_costs_calculation = NukesToBuild }
+                multiply_variable = { nuke_costs_calculation = 9.280 }
+                set_variable = { buildingcosts = nuke_costs_calculation }
+            }
+            buy_building_button_click = {
+                set_country_flag = building_nuke
+                subtract_from_variable = { state_treasury = buildingcosts }
+                subtract_from_variable = { enricheduraniumstock = HEUNeeded }
+                set_variable = { NukesToBuildFinal = NukesToBuild }
+                set_variable = { building_time_left = buildingdaysneeded }
+                set_variable = { building_max_time = 230 }
+                divide_variable = { building_max_time = building_time_left }
+                set_variable = { building_max_add_time = building_max_time }
+                set_variable = { building_max_time = 0 }
+                country_event = { id = nuke_time_calc.2 hours = 24 }
+                set_variable = { NukesToBuild = 0 }
+            }
         }
 
         triggers = {
@@ -325,11 +396,27 @@ scripted_gui = {
                 check_variable = { Root.UraniumToEnrich > 0 }
                 NOT = { has_country_flag = enriching }
             }
+            amount_to_build_minus_button_click_enabled = {
+                NOT = { check_variable = { NukesToBuild = 0 } }
+            }
+            amount_to_build_plus_button_click_enabled = {
+                NOT = { check_variable = { NukesToBuild = 999 } }
+                check_variable = { enricheduraniumstock > 0 }
+            }
+            buy_building_button_click_enabled = {
+                NOT = { 
+                    check_variable = { NukesToBuild = 0 }
+                    check_variable = { HEUNeeded > enricheduraniumstock }
+                }
+            }
         }
 
         properties = {
             enrichment_progress_bar_bg = {
 				x = ROOT.enrichment_max_time
+			}
+            building_progress_bar_bg = {
+				x = ROOT.building_max_time
 			}
         }
     }

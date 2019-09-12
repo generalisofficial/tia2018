@@ -110,7 +110,7 @@ guiTypes = {
 			name = "enriched_uranium_in_stock_title"
 			position = { x = 60 y = 580 }
 			font = "hoi_24header"
-			text = "Enriched Uranium:"
+			text = "Highly Enriched Uranium (HEU):"
 			maxWidth = 200
 			maxHeight = 40
 			fixedsize = no
@@ -120,7 +120,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "enriched_uranium_in_stock"
-			position = { x = 250 y = 580 }
+			position = { x = 250 y = 603 }
 			font = "hoi_24header"
 			text = "[?Root.enricheduraniumstock] KG"
 			maxWidth = 120
@@ -128,6 +128,31 @@ guiTypes = {
 			fixedsize = no
 			format = left
 			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "nukes_in_stock_title"
+			position = { x = 60 y = 650 }
+			font = "hoi_24header"
+			text = "Nuclear Weapons:"
+			maxWidth = 200
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "nukes_in_stock"
+			position = { x = 250 y = 650 }
+			font = "hoi_24header"
+			text = "[?Root.num_of_nukes]"
+			maxWidth = 120
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKES_IN_STOCK_TOOLTIP
 		}
 
 		# STEP 1: BUY BASE MATERIAL
@@ -360,6 +385,7 @@ guiTypes = {
 			fixedsize = no
 			format = left
 			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_AMOUNT_TO_ENRICH_TOOLTIP
 		}
 
 		instantTextBoxType = {
@@ -372,6 +398,7 @@ guiTypes = {
 			fixedsize = no
 			format = center
 			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_AMOUNT_TO_ENRICH_TOOLTIP
 		}
 
 		buttonType = {
@@ -481,6 +508,7 @@ guiTypes = {
 			font = "hoi_24header"
 			text = "Enrich"
 			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_ENRICH_BUTTON_TOOLTIP
 		}
 
 		instantTextBoxType = {
@@ -530,5 +558,158 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_STEP3_TOOLTIP
 		}
+
+		instantTextBoxType = {
+			name = "amount_to_build_title"
+			position = { x = 970 y = 140 }
+			font = "hoi_24header"
+			text = "Amount:"
+			maxWidth = 80
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "amount_to_build"
+			position = { x = 1070 y = 140 }
+			font = "hoi_24header"
+			text = "[?Root.NukesToBuild]"
+			maxWidth = 110
+			maxHeight = 40
+			fixedsize = no
+			format = center
+			Orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = "amount_to_build_plus_button"
+			position = { x = 1160 y = 140 }
+			quadTextureSprite ="GFX_zoom_in"
+			Orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = "amount_to_build_minus_button"
+			position = { x = 1070 y = 140 }
+			quadTextureSprite ="GFX_zoom_out"
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "HEU_needed_to_build_tilte"
+			position = { x = 970 y = 175 }
+			font = "hoi_24header"
+			text = "HEU needed:"
+			maxWidth = 130
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_HEU_NEEDED_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "HEU_needed_to_build"
+			position = { x = 1100 y = 176 }
+			font = "hoi_24header"
+			text = "[?Root.HEUNeeded] KG"
+			maxWidth = 110
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_HEU_NEEDED_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "building_time_title"
+			position = { x = 970 y = 210 }
+			font = "hoi_24header"
+			text = "Time needed:"
+			maxWidth = 150
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = NUKE_BUILD_TIME_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "building_time"
+			position = { x = 1110 y = 210 }
+			font = "hoi_24header"
+			text = "[?Root.buildingdaysneeded] days"
+			maxWidth = 150
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "building_costs_title"
+			position = { x = 970 y = 245 }
+			font = "hoi_24header"
+			text = "Costs:"
+			maxWidth = 100
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "building_costs"
+			position = { x = 1043 y = 245 }
+			font = "hoi_24header"
+			text = "[?Root.buildingcosts] Million $"
+			maxWidth = 180
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = "buy_building_button"
+			position = { x = 970 y = 290 }
+			quadTextureSprite = "button_type_4"
+			font = "hoi_24header"
+			text = "Build"
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "building_progress_title"
+			position = { x = 940 y = 360 }
+			font = "hoi_36header"
+			text = "Building Progress"
+			maxWidth = 330
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		containerWindowType = {
+			name = "building_progress_container"
+			position = { x= 965 y = 410 }
+			size = { width = 230 height = 40 }
+			clipping = yes
+
+			iconType = {
+				name = "building_progress"
+				spriteType = "GFX_groups_bar_progress"
+				position = { x= 0 y = -1 }
+			}
+
+			iconType = {
+				name = "building_progress_bar_bg"
+				quadTextureSprite = "GFX_parliament_bar_bg"
+				position = { x= 0 y = 0 }
+			}
+		}
 	}
-}	
+}

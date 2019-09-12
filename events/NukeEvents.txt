@@ -40,6 +40,45 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = nuke_time_calc.2
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { building_max_time < 230 }
+			}
+			add_to_variable = { building_max_time = building_max_add_time }
+			country_event = { id = nuke_time_calc.2 hours = 24 }
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { building_max_time > 230 }
+					check_variable = { building_max_time = 230 }
+				}
+			}
+			add_nuclear_bombs = Root.NukesToBuildFinal
+			clear_variable = building_max_time
+			clear_variable = building_max_add_time
+			clear_variable = NukesToBuildFinal
+			clear_variable = nuke_calculation
+			clear_variable = nuke_time_calculation
+			clear_variable = nuke_costs_calculation
+			clear_variable = buildingcosts
+			clear_variable = buildingdaysneeded
+			clear_variable = HEUNeeded
+			clr_country_flag = building_nuke
+		}
+	}
+
+	option = {
+	}
+}
+
 #######################################
 # Nuclear Bomb Events Written by swf541
 #######################################
