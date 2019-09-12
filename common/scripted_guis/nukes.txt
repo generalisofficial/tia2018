@@ -393,10 +393,16 @@ scripted_gui = {
             natural_uranium_amount_minus_button_click_enabled = {
                 NOT = { check_variable = { Root.AmountUraniumToBuy = 0 } }
             }
+            buy_natural_uranium_button_click_enabled = {
+                NOT = { check_variable = { Root.AmountUraniumToBuy = 0 } }
+            }
             enriched_uranium_amount_plus_button_click_enabled = {
                 NOT = { check_variable = { Root.AmountEnrichedUraniumToBuy = 900000 } }
             }
             enriched_uranium_amount_minus_button_click_enabled = {
+                NOT = { check_variable = { Root.AmountEnrichedUraniumToBuy = 0 } }
+            }
+            buy_enriched_uranium_button_click_enabled = {
                 NOT = { check_variable = { Root.AmountEnrichedUraniumToBuy = 0 } }
             }
             amount_to_enrich_plus_button_click_enabled = {
