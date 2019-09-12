@@ -25,7 +25,30 @@ scripted_gui = {
 		visible = {
             check_variable = { show_nukes > 0 }
 		}
+
+        effects = {
+            close_button_click = {
+				set_variable = { show_nukes = 0 }
+			}
+        }
+
+        triggers = {
+            window_is_locked_visible = {
+                NOT = { has_tech = nukes }
+            }
+        }
+    }
+
+    nuke_inside_window = {
+        window_name = "nuke_window_inside_container"
+        parent_window_name = "nuke_window_container"
+
+		context_type = player_context
  
+		visible = {
+            has_tech = nukes
+		}
+
         effects = {                     
             close_button_click = {
 				set_variable = { show_nukes = 0 }
@@ -364,9 +387,6 @@ scripted_gui = {
         }
 
         triggers = {
-            window_is_locked_visible = {
-                NOT = { has_tech = nukes }
-            }
             natural_uranium_amount_plus_button_click_enabled = {
                 NOT = { check_variable = { Root.AmountUraniumToBuy = 900000 } }
             }

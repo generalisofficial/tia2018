@@ -67,9 +67,13 @@ guiTypes = {
 			format = center
 			Orientation = "UPPER_LEFT"
 		}
+	}
 
+	containerWindowType = {
+		name = "nuke_window_inside_container"
+		position = { x = 0 y = 0 }
+		size = { width = 1280 height = 720 }
 		## OUR STOCK
-
 		instantTextBoxType = {
 			name = "stock_title"
 			position = { x = 200 y = 480 }
@@ -81,7 +85,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "natural_uranium_in_stock_title"
 			position = { x = 60 y = 540 }
@@ -93,7 +96,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "natural_uranium_in_stock"
 			position = { x = 250 y = 540 }
@@ -105,7 +107,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enriched_uranium_in_stock_title"
 			position = { x = 60 y = 580 }
@@ -117,7 +118,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enriched_uranium_in_stock"
 			position = { x = 250 y = 603 }
@@ -129,7 +129,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "nukes_in_stock_title"
 			position = { x = 60 y = 650 }
@@ -141,7 +140,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "nukes_in_stock"
 			position = { x = 250 y = 650 }
@@ -154,9 +152,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKES_IN_STOCK_TOOLTIP
 		}
-
 		# STEP 1: BUY BASE MATERIAL
-
 		instantTextBoxType = {
 			name = "step1_material_title"
 			position = { x = 100 y = 80 }
@@ -169,17 +165,14 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_STEP1_TOOLTIP
 		}
-
 		containerWindowType = {
 			name = "natural_uranium_container"
 			position = { x = 75 y = 130 }
 			size = { width = 400 height = 150 }
-
 			background = {
 				name = "background"
 				spriteType = "GFX_tiled_window_thin_border2"
 			}
-
 			# Natural Uranium
 			instantTextBoxType = {
 				name = "natural_uranium_title"
@@ -192,7 +185,6 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "natural_uranium_amount_title"
 				position = { x = 20 y = 40 }
@@ -204,7 +196,6 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "natural_uranium_amount"
 				position = { x = 155 y = 40 }
@@ -216,21 +207,18 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			buttonType = {
 				name = "natural_uranium_amount_plus_button"
 				position = { x = 255 y = 40 }
 				quadTextureSprite ="GFX_zoom_in"
 				Orientation = "UPPER_LEFT"
 			}
-
 			buttonType = {
 				name = "natural_uranium_amount_minus_button"
 				position = { x = 128 y = 40 }
 				quadTextureSprite ="GFX_zoom_out"
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "natural_uranium_price_title"
 				position = { x = 20 y = 70 }
@@ -242,7 +230,6 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "natural_uranium_price"
 				position = { x = 120 y = 70 }
@@ -254,7 +241,6 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			buttonType = {
 				name = "buy_natural_uranium_button"
 				position = { x = 90 y = 105 }
@@ -264,17 +250,14 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 		}
-
 		containerWindowType = {
 			name = "enriched_uranium_container"
 			position = { x = 75 y = 300 }
 			size = { width = 400 height = 150 }
-
 			background = {
 				name = "background"
 				spriteType = "GFX_tiled_window_thin_border2"
 			}
-
 			# Enriched Uranium
 			instantTextBoxType = {
 				name = "enriched_uranium_title"
@@ -287,7 +270,6 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "enriched_uranium_amount_title"
 				position = { x = 20 y = 40 }
@@ -299,7 +281,6 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "enriched_uranium_amount"
 				position = { x = 155 y = 40 }
@@ -311,21 +292,18 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			buttonType = {
 				name = "enriched_uranium_amount_plus_button"
 				position = { x = 255 y = 40 }
 				quadTextureSprite ="GFX_zoom_in"
 				Orientation = "UPPER_LEFT"
 			}
-
 			buttonType = {
 				name = "enriched_uranium_amount_minus_button"
 				position = { x = 128 y = 40 }
 				quadTextureSprite ="GFX_zoom_out"
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "enriched_uranium_price_title"
 				position = { x = 20 y = 70 }
@@ -337,7 +315,6 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
 				name = "enriched_uranium_price"
 				position = { x = 115 y = 70 }
@@ -349,7 +326,6 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			buttonType = {
 				name = "buy_enriched_uranium_button"
 				position = { x = 90 y = 105 }
@@ -359,9 +335,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 		}
-
 		## STEP 2: ENRICHEMENT - Only for natural uranium
-
 		instantTextBoxType = {
 			name = "step2_enrichment_title"
 			position = { x = 520 y = 80 }
@@ -374,7 +348,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_STEP2_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "amount_to_enrich_title"
 			position = { x = 560 y = 140 }
@@ -387,7 +360,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_AMOUNT_TO_ENRICH_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "amount_to_enrich"
 			position = { x = 680 y = 140 }
@@ -400,21 +372,18 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_AMOUNT_TO_ENRICH_TOOLTIP
 		}
-
 		buttonType = {
 			name = "amount_to_enrich_plus_button"
 			position = { x = 790 y = 140 }
 			quadTextureSprite ="GFX_zoom_in"
 			Orientation = "UPPER_LEFT"
 		}
-
 		buttonType = {
 			name = "amount_to_enrich_minus_button"
 			position = { x = 655 y = 140 }
 			quadTextureSprite ="GFX_zoom_out"
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_grade_title"
 			position = { x = 560 y = 175 }
@@ -427,7 +396,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_ENRICHMENT_GRADE_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_time_title"
 			position = { x = 560 y = 210 }
@@ -440,7 +408,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_ENRICHMENT_TIME_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "time_to_enrich"
 			position = { x = 700 y = 210 }
@@ -452,7 +419,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_costs_title"
 			position = { x = 560 y = 245 }
@@ -464,7 +430,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_costs"
 			position = { x = 635 y = 245 }
@@ -476,7 +441,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_result_title"
 			position = { x = 560 y = 300 }
@@ -488,7 +452,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_result"
 			position = { x = 645 y = 300 }
@@ -500,7 +463,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		buttonType = {
 			name = "buy_enrichment_button"
 			position = { x = 585 y = 360 }
@@ -510,7 +472,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_ENRICH_BUTTON_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "enrichment_progress_title"
 			position = { x = 540 y = 430 }
@@ -522,30 +483,23 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		containerWindowType = {
 			name = "enrichment_progress_container"
 			position = { x= 570 y = 480 }
 			size = { width = 230 height = 40 }
 			clipping = yes
-
 			iconType = {
 				name = "enrichment_progress"
 				spriteType = "GFX_groups_bar_progress"
 				position = { x= 0 y = -1 }
 			}
-
 			iconType = {
 				name = "enrichment_progress_bar_bg"
 				quadTextureSprite = "GFX_parliament_bar_bg"
 				position = { x= 0 y = 0 }
 			}
 		}
-
-
-
 		## STEP 3: BUILDING
-
 		instantTextBoxType = {
 			name = "step3_building_title"
 			position = { x = 900 y = 80 }
@@ -558,7 +512,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_STEP3_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "amount_to_build_title"
 			position = { x = 970 y = 140 }
@@ -570,7 +523,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "amount_to_build"
 			position = { x = 1070 y = 140 }
@@ -582,21 +534,18 @@ guiTypes = {
 			format = center
 			Orientation = "UPPER_LEFT"
 		}
-
 		buttonType = {
 			name = "amount_to_build_plus_button"
 			position = { x = 1160 y = 140 }
 			quadTextureSprite ="GFX_zoom_in"
 			Orientation = "UPPER_LEFT"
 		}
-
 		buttonType = {
 			name = "amount_to_build_minus_button"
 			position = { x = 1070 y = 140 }
 			quadTextureSprite ="GFX_zoom_out"
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "HEU_needed_to_build_tilte"
 			position = { x = 970 y = 175 }
@@ -609,7 +558,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_HEU_NEEDED_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "HEU_needed_to_build"
 			position = { x = 1100 y = 176 }
@@ -622,7 +570,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_HEU_NEEDED_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "building_time_title"
 			position = { x = 970 y = 210 }
@@ -635,7 +582,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = NUKE_BUILD_TIME_TOOLTIP
 		}
-
 		instantTextBoxType = {
 			name = "building_time"
 			position = { x = 1110 y = 210 }
@@ -647,7 +593,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "building_costs_title"
 			position = { x = 970 y = 245 }
@@ -659,7 +604,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "building_costs"
 			position = { x = 1043 y = 245 }
@@ -671,7 +615,6 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		buttonType = {
 			name = "buy_building_button"
 			position = { x = 970 y = 290 }
@@ -680,7 +623,6 @@ guiTypes = {
 			text = "Build"
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name = "building_progress_title"
 			position = { x = 940 y = 360 }
@@ -692,19 +634,16 @@ guiTypes = {
 			format = left
 			Orientation = "UPPER_LEFT"
 		}
-
 		containerWindowType = {
 			name = "building_progress_container"
 			position = { x= 965 y = 410 }
 			size = { width = 230 height = 40 }
 			clipping = yes
-
 			iconType = {
 				name = "building_progress"
 				spriteType = "GFX_groups_bar_progress"
 				position = { x= 0 y = -1 }
 			}
-
 			iconType = {
 				name = "building_progress_bar_bg"
 				quadTextureSprite = "GFX_parliament_bar_bg"
