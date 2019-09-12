@@ -86,6 +86,7 @@ scripted_gui = {
             buy_natural_uranium_button_click = {
                 subtract_from_variable = { Root.state_treasury = Root.UraniumFinalPrice }
                 add_to_variable = { Root.naturaluraniumstock = AmountUraniumToBuy }
+                set_variable = { AmountUraniumToBuy = 0 }
             }
 
 
@@ -144,6 +145,7 @@ scripted_gui = {
             buy_enriched_uranium_button_click = {
                 subtract_from_variable = { Root.state_treasury = Root.EnrichedUraniumFinalPrice }
                 add_to_variable = { Root.enricheduraniumstock = AmountEnrichedUraniumToBuy }
+                set_variable = { AmountEnrichedUraniumToBuy = 0 }
             }
 
 
@@ -159,6 +161,15 @@ scripted_gui = {
                     }
                     set_variable = { Root.UraniumToEnrich = Root.naturaluraniumstock }
                 }
+                set_variable = { enrichment_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_calculation = 0.266 }
+                set_variable = { enrichementdaysneeded = enrichment_calculation }
+                set_variable = { enrichment_result_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_result_calculation = 0.661 }
+                set_variable = { enrichmentresult = enrichment_result_calculation }
+                set_variable = { enrichment_price_calcualtion = UraniumToEnrich }
+                multiply_variable = { enrichment_price_calcualtion = 0.119 }
+                set_variable = { enrichmentcosts = enrichment_price_calcualtion }
             }
             amount_to_enrich_plus_button_control_click = {
                 add_to_variable = { Root.UraniumToEnrich = 10 }
@@ -171,6 +182,15 @@ scripted_gui = {
                     }
                     set_variable = { Root.UraniumToEnrich = naturaluraniumstock }
                 }
+                set_variable = { enrichment_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_calculation = 0.266 }
+                set_variable = { enrichementdaysneeded = enrichment_calculation }
+                set_variable = { enrichment_result_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_result_calculation = 0.661 }
+                set_variable = { enrichmentresult = enrichment_result_calculation }
+                set_variable = { enrichment_price_calcualtion = UraniumToEnrich }
+                multiply_variable = { enrichment_price_calcualtion = 0.119 }
+                set_variable = { enrichmentcosts = enrichment_price_calcualtion }
             }
             amount_to_enrich_plus_button_shift_click = {
                 add_to_variable = { Root.UraniumToEnrich = 100 }
@@ -183,6 +203,15 @@ scripted_gui = {
                     }
                     set_variable = { Root.UraniumToEnrich = naturaluraniumstock }
                 }
+                set_variable = { enrichment_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_calculation = 0.266 }
+                set_variable = { enrichementdaysneeded = enrichment_calculation }
+                set_variable = { enrichment_result_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_result_calculation = 0.661 }
+                set_variable = { enrichmentresult = enrichment_result_calculation }
+                set_variable = { enrichment_price_calcualtion = UraniumToEnrich }
+                multiply_variable = { enrichment_price_calcualtion = 0.119 }
+                set_variable = { enrichmentcosts = enrichment_price_calcualtion }
             }
             amount_to_enrich_minus_button_click = {
                 add_to_variable = { Root.UraniumToEnrich = -1 }
@@ -193,6 +222,15 @@ scripted_gui = {
                     set_variable = { Root.UraniumToEnrich = 0 }
                     set_variable = { Root.UraniumToEnrichFinalPrice = 0 }
                 }
+                set_variable = { enrichment_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_calculation = 0.266 }
+                set_variable = { enrichementdaysneeded = enrichment_calculation }
+                set_variable = { enrichment_result_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_result_calculation = 0.661 }
+                set_variable = { enrichmentresult = enrichment_result_calculation }
+                set_variable = { enrichment_price_calcualtion = UraniumToEnrich }
+                multiply_variable = { enrichment_price_calcualtion = 0.119 }
+                set_variable = { enrichmentcosts = enrichment_price_calcualtion }
             }
             amount_to_enrich_minus_button_control_click = {
                 add_to_variable = { Root.UraniumToEnrich = -10 }
@@ -203,6 +241,15 @@ scripted_gui = {
                     set_variable = { Root.UraniumToEnrich = 0 }
                     set_variable = { Root.UraniumToEnrichFinalPrice = 0 }
                 }
+                set_variable = { enrichment_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_calculation = 0.266 }
+                set_variable = { enrichementdaysneeded = enrichment_calculation }
+                set_variable = { enrichment_result_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_result_calculation = 0.661 }
+                set_variable = { enrichmentresult = enrichment_result_calculation }
+                set_variable = { enrichment_price_calcualtion = UraniumToEnrich }
+                multiply_variable = { enrichment_price_calcualtion = 0.119 }
+                set_variable = { enrichmentcosts = enrichment_price_calcualtion }
             }
             amount_to_enrich_minus_button_shift_click = {
                 add_to_variable = { Root.UraniumToEnrich = -100 }
@@ -213,6 +260,35 @@ scripted_gui = {
                     set_variable = { Root.UraniumToEnrich = 0 }
                     set_variable = { Root.UraniumToEnrichFinalPrice = 0 }
                 }
+                set_variable = { enrichment_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_calculation = 0.266 }
+                set_variable = { enrichementdaysneeded = enrichment_calculation }
+                set_variable = { enrichment_result_calculation = UraniumToEnrich }
+                multiply_variable = { enrichment_result_calculation = 0.661 }
+                set_variable = { enrichmentresult = enrichment_result_calculation }
+                set_variable = { enrichment_price_calcualtion = UraniumToEnrich }
+                multiply_variable = { enrichment_price_calcualtion = 0.119 }
+                set_variable = { enrichmentcosts = enrichment_price_calcualtion }
+            }
+            buy_enrichment_button_click = {
+                set_country_flag = enriching
+                subtract_from_variable = { state_treasury = enrichmentcosts }
+                subtract_from_variable = { naturaluraniumstock = UraniumToEnrich }
+                set_variable = { UraniumToEnrichFinal = UraniumToEnrich }
+                set_variable = { enrichment_time_left = enrichementdaysneeded }
+                if = {
+                    limit = {
+                        check_variable = { enrichment_time_left < 1 }
+                    }
+                    set_variable = { enrichment_time_left = 1 }
+                }
+                round_variable = enrichment_time_left
+                set_variable = { enrichment_max_time = 230 }
+                divide_variable = { enrichment_max_time = enrichment_time_left }
+                set_variable = { enrichment_max_add_time = enrichment_max_time }
+                set_variable = { enrichment_max_time = 0 }
+                country_event = { id = nuke_time_calc.1 hours = 24 }
+                set_variable = { UraniumToEnrich = 0 }
             }
         }
 
@@ -233,14 +309,28 @@ scripted_gui = {
                 NOT = { check_variable = { Root.AmountEnrichedUraniumToBuy = 0 } }
             }
             amount_to_enrich_plus_button_click_enabled = {
-                NOT = { check_variable = { Root.UraniumToEnrich = 900000 } }
+                NOT = { 
+                    check_variable = { Root.UraniumToEnrich = 900000 } 
+                    check_variable = { Root.UraniumToEnrich = naturaluraniumstock }
+                    has_country_flag = enriching
+                }
             }
             amount_to_enrich_minus_button_click_enabled = {
-                NOT = { check_variable = { Root.UraniumToEnrich = 0 } }
+                NOT = { 
+                    check_variable = { Root.UraniumToEnrich = 0 }
+                    has_country_flag = enriching
+                }
             }
-            amount_to_enrich_plus_button_click_enabled = {
-                NOT = { check_variable = { Root.UraniumToEnrich = naturaluraniumstock } }
+            buy_enrichment_button_click_enabled = {
+                check_variable = { Root.UraniumToEnrich > 0 }
+                NOT = { has_country_flag = enriching }
             }
+        }
+
+        properties = {
+            enrichment_progress_bar_bg = {
+				x = ROOT.enrichment_max_time
+			}
         }
     }
 }

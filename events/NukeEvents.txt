@@ -1,4 +1,46 @@
-﻿#######################################
+﻿add_namespace = nuke_time_calc
+
+country_event = {
+	id = nuke_time_calc.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { enrichment_max_time < 230 }
+			}
+			add_to_variable = { enrichment_max_time = enrichment_max_add_time }
+			country_event = { id = nuke_time_calc.1 hours = 24 }
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { enrichment_max_time > 230 }
+					check_variable = { enrichment_max_time = 230 }
+				}
+			}
+			add_to_variable = { Root.enricheduraniumstock = Root.UraniumToEnrichFinal }
+			clear_variable = enrichment_max_time
+			clear_variable = enrichment_time_left
+			clear_variable = UraniumToEnrichFinal
+			clear_variable = enrichment_calculation
+			clear_variable = enrichment_result_calculation
+			clear_variable = enrichment_price_calcualtion
+			clear_variable = enrichmentcosts
+			clear_variable = enrichmentresult
+			clear_variable = enrichementdaysneeded
+			clear_variable = enrichment_max_add_time
+			clr_country_flag = enriching
+		}
+	}
+
+	option = {
+	}
+}
+
+#######################################
 # Nuclear Bomb Events Written by swf541
 #######################################
 
@@ -15,27 +57,27 @@ news_event = {
 
 
 	immediate = {
-	        add_to_variable = { global.nuclear_winter = 1 }
-			ROOT = {		
-                add_named_threat = { threat = 20 name = "Nuclear Attack" }				
-			}
-			every_enemy_country = {
-				limit = { owns_state = FROM }
-				add_war_support = -15
-			}
-			FROM = {
-				remove_building = { type = arms_factory level = 10 }
-				remove_building = { type = industrial_complex level = 10 }
-				remove_building = { type = air_base level = 10 }
-				remove_building = { type = infrastructure level = 10 }
-				remove_building = { type = industrial_complex level = 10 }
-				remove_building = { type = arms_factory level = 10 }
-				remove_building = { type = dockyard level = 10 }
-				remove_building = { type = anti_air_building level = 10 }
-				remove_building = { type = radar_station level = 10 }
-				remove_building = { type = rocket_site level = 10 }
-				set_state_category = nuclear_wasteland
-			}
+	    add_to_variable = { global.nuclear_winter = 1 }
+		ROOT = {		
+            add_named_threat = { threat = 20 name = "Nuclear Attack" }				
+		}
+		every_enemy_country = {
+			limit = { owns_state = FROM }
+			add_war_support = -15
+		}
+		FROM = {
+			remove_building = { type = arms_factory level = 10 }
+			remove_building = { type = industrial_complex level = 10 }
+			remove_building = { type = air_base level = 10 }
+			remove_building = { type = infrastructure level = 10 }
+			remove_building = { type = industrial_complex level = 10 }
+			remove_building = { type = arms_factory level = 10 }
+			remove_building = { type = dockyard level = 10 }
+			remove_building = { type = anti_air_building level = 10 }
+			remove_building = { type = radar_station level = 10 }
+			remove_building = { type = rocket_site level = 10 }
+			set_state_category = nuclear_wasteland
+		}
 		if = {
 			limit = {
 				

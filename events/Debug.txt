@@ -95,3 +95,26 @@ country_event = {
 		clear_array = loans_payback_grid_array
 	}
 }
+
+country_event = {
+	id = debug.4
+	title = "Debug 4"
+	desc = "Debug 4"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Cleanup Nuke Variables"
+		clear_variable = enrichment_max_time
+		clear_variable = enrichment_time_left
+		clear_variable = UraniumToEnrichFinal
+		clear_variable = enrichment_calculation
+		clear_variable = enrichment_result_calculation
+		clear_variable = enrichment_price_calcualtion
+		clear_variable = enrichmentcosts
+		clear_variable = enrichmentresult
+		clear_variable = enrichementdaysneeded
+		clear_variable = enrichment_max_add_time
+		clr_country_flag = enriching
+	}
+}
