@@ -86,24 +86,44 @@ add_ideas = {
 	east_african_community_member
 	extensive_conscription
 	lgbt_illegal
+	presidential_system
 }
 
+#National Legislature of South Sudan
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 5.89 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 94.11 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {	
-	ruling_party = nationalist
+	ruling_party = reactionary
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    nationalist = 94.12
-    social_liberal = 5.88
+    reactionary = 94.11
+    social_liberal = 5.89
 }
 
 create_country_leader = {
 	name = "Salva Kiir Mayardit"
 	picture = "Salva_Kiir_Mayardit.dds"
-	ideology = nationalist_ideology
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {

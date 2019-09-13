@@ -1084,7 +1084,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		regulated_firearms = {
+		universal_background_checks = {
 			cost = 150
 			removal_cost = -1
 			level = 2
@@ -1126,6 +1126,64 @@ ideas = {
 			
 			cancel_if_invalid = no
 			default = yes
+		}
+   }
+   
+   	######################################
+	#	MEDIA
+	######################################
+   
+    media = {
+		law = yes
+		
+		state_media = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		balanced_media = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			
+			}
+			
+			modifier = {
+			
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		private_media = {
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
 		}
    }
 
