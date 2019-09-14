@@ -2,9 +2,6 @@
 state={
 	id=340
 	name="STATE_340"
-	manpower = 5726527
-
-	state_category = state_level_8
 
 	history={
 		owner = TUR
@@ -13,13 +10,19 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 4
+
 		}
-		
-		victory_points = { 947 20 }
+		victory_points = {
+			947 20 
+		}
 		add_core_of = TUR
+
 	}
 
 	provinces={
-		785 947 3786 3851 6864 6912 9799 9887 11778 11867 
+		785 947 3786 3851 6864 6912 9799 9887 11778 11867 13870 
 	}
+	manpower=5726527
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }
