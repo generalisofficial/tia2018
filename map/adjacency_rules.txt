@@ -381,3 +381,42 @@ adjacency_rule
 	icon = 12299
 	offset = { -2 0 -9 }
 }
+
+adjacency_rule
+{
+	name = "GOLDEN_GATE_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 9671 677 }
+	
+	icon = 9671
+	offset = { -2 0 -9 }
+}

@@ -189,21 +189,6 @@ type={
 	}
 }
 type={
-	type="vejle_wave_entity"
-	use_animation=no
-	scale=125.000000
-	always_visible=yes
-	object={
-		name="vejle_wave_entity"
-		position={
-			2960.250 10.000 1638.850 
-		}
-		rotation={
-			0.000 -20.000 0.000 
-		}
-	}
-}
-type={
 	type="brandenburger_tor_entity"
 	use_animation=no
 	scale=0.150000
@@ -234,18 +219,12 @@ type={
 	}
 }
 type={
-	type="parliement_london_entity"
-	use_animation=no
-	scale=0.200000
-	always_visible=yes
-}
-type={
-	type="parliament_london_entity"
+	type="westminster_entity"
 	use_animation=no
 	scale=0.150000
 	always_visible=yes
 	object={
-		name="eiffel_tower_entity"
+		name="westminster_entity"
 		position={
 			2794.940 9.900 1561.650 
 		}
@@ -278,6 +257,21 @@ type={
 		name="trade_center_entity"
 		position={
 			1654.380 9.700 1555.650 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+}
+type={
+	type="un_hq_entity"
+	use_animation=no
+	scale=0.100000
+	always_visible=yes
+	object={
+		name="un_hq_entity"
+		position={
+			1658.640 9.700 1556.650 
 		}
 		rotation={
 			0.000 50.000 0.000 
@@ -330,12 +324,6 @@ type={
 	}
 }
 type={
-	type="phinx_entity"
-	use_animation=no
-	scale=0.250000
-	always_visible=yes
-}
-type={
 	type="sphinx_entity"
 	use_animation=no
 	scale=0.150000
@@ -366,12 +354,12 @@ type={
 	}
 }
 type={
-	type="burj_dubai_entity"
+	type="burj_khalifa_entity"
 	use_animation=no
 	scale=0.850000
 	always_visible=yes
 	object={
-		name="burj_dubai_entity"
+		name="burj_khalifa_entity"
 		position={
 			3673.590 10.100 1060.340 
 		}
