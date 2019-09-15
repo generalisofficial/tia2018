@@ -10,6 +10,9 @@ country_event = { #Kingdom of Eswatini
 	
 	option = { #Authorize
 		name = swaziland.1.a
+		ai_chance = {
+			factor = 100
+		}
 		set_global_flag = eswatini
 		set_cosmetic_tag = SWZ_2018
 		news_event = swaziland.2
@@ -17,6 +20,9 @@ country_event = { #Kingdom of Eswatini
 	
 	option = { #Veto
 		name = swaziland.1.b
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 

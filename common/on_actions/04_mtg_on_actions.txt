@@ -47,6 +47,7 @@ on_actions = {
 	#ROOT = nation being puppeted, FROM = overlord
 	on_puppet = {
 		effect = {
+		    ROOT = { break_coalition = yes quickset_coalition = yes }
 		}
 	}
 
