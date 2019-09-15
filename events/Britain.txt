@@ -154,3 +154,36 @@ news_event = { #Poisoning of Sergei and Yulia Skripal
 	    }
 	}
 }
+
+country_event = { #2019 UKIP leadership election
+	id = britain.7
+	title = britain.7.t
+	desc = britain.7.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.3.a
+		ai_chance = {
+			factor = 53
+		}
+		create_country_leader = {
+	        name = "Richard Braine"
+	        picture = "Richard_Braine.dds"
+	        ideology = nationalist_ideology
+        }
+	}
+	
+	option = {
+		name = britain.7.b
+		ai_chance = {
+			factor = 47
+		}
+		create_country_leader = {
+	        name = "Freddy Vachha"
+	        picture = "Freddy_Vachha.dds"
+	        ideology = nationalist_ideology
+        }
+	}
+}
