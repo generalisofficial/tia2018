@@ -93,6 +93,25 @@ add_ideas = {
 	lgbt_illegal
 }
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 24.18 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 75.82 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_islamist
+add_to_variable = { ROOT.Coalition = islamist_seats }
+
 set_politics = {	
 	ruling_party = islamist
 	last_election = "2015.4.13"
@@ -101,32 +120,20 @@ set_politics = {
 }
 
 set_popularities = {
-    islamist = 94.05
-    market_liberal = 5.95
+    islamist = 75.82
+    conservative = 24.18
 }
 
 create_country_leader = {
 	name = "Omar al-Bashir"
 	picture = "Omar_al_Bashir.dds"
-	ideology = salafist
+	ideology = muslim_brotherhood
 }
 
 create_country_leader = {
-	name = "Ahmed Awad Ibn Auf"
-	picture = "Ahmed_Awad_Ibn_Auf.dds"
+	name = "Abdel Fattah al-Burhan"
+	picture = "Abdel_Fattah_al_Burhan.dds"
 	ideology = military_junta
-}
-
-create_country_leader = {
-	name = "Fadul al-Sid Shuaib"
-	picture = "Fadul_al_Sid_Shuaib.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Muhammad Mukhtar Al-Khatib"
-	picture = "Muhammad_Mukhtar_Al_Khatib.dds"
-	ideology = marxist_leninist
 }
 
 create_corps_commander = {

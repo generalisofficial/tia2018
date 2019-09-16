@@ -1416,63 +1416,6 @@ ideas = {
    }
    
     ######################################
-	#	SOCIAL SECURITY
-	######################################
-   
-    social_security = {
-		law = yes
-		
-		basic_income = {
-			cost = 150
-			removal_cost = -1
-			level = 3
-			
-			available = {
-			
-			}
-			
-			modifier = {
-			
-			}
-			
-			cancel_if_invalid = no
-		}
-		
-		social_safety_net = {
-			cost = 150
-			removal_cost = -1
-			level = 2
-			
-			available = {
-			
-			}
-			
-			modifier = {
-			
-			}
-			
-			cancel_if_invalid = no
-		}
-		
-		no_social_security = {
-			cost = 150
-			removal_cost = -1
-			level = 1
-			
-			available = {
-			
-			}
-			
-			modifier = {
-			
-			}
-			
-			cancel_if_invalid = no
-			default = yes
-		}
-   }
-   
-    ######################################
 	#	HEALTHCARE
 	######################################
    
@@ -1704,7 +1647,7 @@ ideas = {
 	#	MINIMUM WAGE
 	######################################
    
-    state_pensions = {
+    minimum_wage = {
 		law = yes
 		
 		generous_minimum_wage = {

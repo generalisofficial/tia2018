@@ -2,14 +2,10 @@
 state={
 	id=294
 	name="STATE_294"
-	manpower = 4300000
-	
-	state_category = state_level_8
-	
 	resources={
-		aluminium=8
-		chromium=13
-		oil=101
+		aluminium=8.000
+		chromium=13.000
+		oil=101.000
 	}
 
 	history={
@@ -19,19 +15,33 @@ state={
 			industrial_complex = 5
 			arms_factory = 1
 			dockyard = 1
-			air_base = 4 
+			air_base = 4
 			10760 = {
 				naval_base = 3
+
 			}
+
 		}
-		victory_points = { 10760 15 }
-		victory_points = { 4993 2 }
-		victory_points = { 8020 1 }
-		victory_points = { 5049 1 }
+		victory_points = {
+			10760 15 
+		}
+		victory_points = {
+			4993 2 
+		}
+		victory_points = {
+			8020 1 
+		}
+		victory_points = {
+			5049 1 
+		}
 		add_core_of = OMA
+
 	}
 
 	provinces={
-		1947 2018 2059 2103 4993 5049 8002 8020 10760 13243 
+		1947 2018 2059 2103 4993 5049 8002 8020 10760 
 	}
+	manpower=4300000
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
 }
