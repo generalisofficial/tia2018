@@ -1,75 +1,3 @@
-############################## THE INFORMATION AGE MOD CONTENT ################################
-
-soundeffect = {
-	name = m16_attack
-	falloff = "falloff_100"
-	sounds = {
-		sound = m16_fire_01
-
-	} 
-	max_audible = 4
-	delay_random_offset = { 0.0 0.3 }
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.2
-	volume_random_offset = { -0.1 0.1 }
-}
-
-
-soundeffect = {
-	name = m16_support_attack
-	falloff = "falloff_100"
-	sounds = {
-		sound = m16_fire_01
-
-	} 
-	max_audible = 4
-	delay_random_offset = { 0.0 0.2 }
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.35
-	volume_random_offset = { -0.1 0.1 }
-}
-
-
-
-
-soundeffect = {
-	name = ak47_attack
-	falloff = "falloff_100"
-	sounds = {
-		sound = ak47_fire_01
-
-	} 
-	max_audible = 4
-	delay_random_offset = { 0.0 0.3 }
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.2
-	volume_random_offset = { -0.1 0.1 }
-}
-
-
-
-soundeffect = {
-	name = ak47_support_attack
-	falloff = "falloff_100"
-	sounds = {
-		sound = ak47_fire_01
-
-	} 
-	max_audible = 4
-	delay_random_offset = { 0.0 0.2 }
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.35
-	volume_random_offset = { -0.1 0.1 }
-}
-
-
-
-
-
 
 soundeffect = {
 	name = horse_walking
@@ -1130,16 +1058,6 @@ soundeffect = {
 	falloff = "falloff_100"
 	sounds = {
 		sound = infantry_rifle_attack01
-		sound = infantry_rifle_attack02
-		sound = infantry_rifle_attack03
-		sound = infantry_rifle_attack04
-		sound = infantry_rifle_attack05
-		sound = infantry_rifle_attack06
-		sound = infantry_rifle_attack07
-		sound = infantry_rifle_attack08
-		sound = infantry_rifle_attack09
-		sound = infantry_rifle_attack10
-		sound = infantry_rifle_attack11
 	} 
 	max_audible = 6
 	delay_random_offset = { 0.0 0.15 }
@@ -1214,10 +1132,6 @@ soundeffect = {
 	falloff = "falloff_100"
 	sounds = {
 		sound = artillery_unit_fire_01
-		sound = artillery_unit_fire_02
-		sound = artillery_unit_fire_03
-		sound = artillery_unit_fire_04
-		sound = artillery_unit_fire_05
 	} 
 	max_audible = 3
 	delay_random_offset = { 0.0 0.3 }
@@ -1343,10 +1257,6 @@ soundeffect = {
 	falloff = "falloff_distance"
 	sounds = {
 		sound = airplane_bomb_01
-		sound = airplane_bomb_02
-		sound = airplane_bomb_03
-		sound = airplane_bomb_04
-		sound = airplane_bomb_05
 	} 
 	max_audible = 5
 	max_audible_behaviour = fail
@@ -2001,6 +1911,16 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "alert_ally_pulling_its_expeditionaries_sound"
+	volume = 0.35
+	sounds = {
+		sound = "high_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
 	name = "alert_border_conflict_sound"
 	volume = 0.35
 	sounds = {
@@ -2151,6 +2071,16 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "alert_is_spotting_sound"
+	volume = 0.35
+	sounds = {
+		sound = "mid_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
 	name = "alert_few_manpower_sound"
 	volume = 0.40
 	sounds = {
@@ -2171,7 +2101,27 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "alert_faction_assume_leadership_possible_sound"
+	volume = 0.35
+	sounds = {
+		sound = "low_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
 	name = "alert_faction_possible_invite_sound"
+	volume = 0.35
+	sounds = {
+		sound = "low_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_faction_member_near_assuming_leadership_sound"
 	volume = 0.35
 	sounds = {
 		sound = "low_alert_01"
@@ -2487,18 +2437,4 @@ soundeffect = {
 	sounds = {
 		sound = "decisions_ui_button_01"
 	}
-}
-
-soundeffect = {
-	name = ita_rocket_unit_attack
-	falloff = falloff_100
-	sounds = {
-		sound = ita_rocket_unit_attack_01
-	}  
-	max_audible = 3
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.5
-	delay_random_offset = { 0.0 0.15 }
-	playbackrate_random_offset = { 0.0 0.10 }
 }

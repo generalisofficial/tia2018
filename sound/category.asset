@@ -38,6 +38,8 @@ category = {
 	alert_few_manpower_sound #4
 	alert_faction_generate_wargoal_sound #3
 	alert_faction_possible_invite_sound #5
+	alert_faction_assume_leadership_possible_sound #5
+	alert_faction_member_near_assuming_leadership_sound #5
 	alert_air_reserve_unused_sound #4
 	alert_air_wings_unassigned_sound #4
 	alert_timed_activity_low_equipment_sound #4
@@ -63,6 +65,7 @@ category = {
 	alert_decision_timeout_sound
 	alert_border_conflict_sound
 	alert_is_at_war_sound
+	alert_ally_pulling_its_expeditionaries_sound
 	
 	######## INGAME ALERT - sidebar
 	# important and less so by type (naval/air/land)
@@ -75,6 +78,7 @@ category = {
 	alert_base_very_low_supply_sound # 2
 	alert_enemy_air_superiority_sound # 2 eget
 	alert_naval_combat_sound #2
+	alert_is_spotting_sound #2
 	alert_expensive_ships_low_str_sound #2
 	alert_resistance_sound # 3
 	alert_battleplans_with_no_divs_sound # 5
@@ -158,11 +162,6 @@ category = {
 	medium_armour_fire
 	light_armour_fire
 	ITA_light_armour_fire
-	ita_rocket_unit_attack
-	m16_support_attack
-	m16_attack
-	ak47_attack
-	ak47_support_attack
 	
 	ship_hit_big_effect
 	ship_miss_big_effect

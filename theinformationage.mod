@@ -1,4 +1,4 @@
-name="The Information Age 2018"
+name="The Information Age"
 path="mod/the-information-age/"
 tags={
 	"Historical"
