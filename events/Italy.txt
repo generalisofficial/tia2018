@@ -1,1 +1,19 @@
-﻿
+﻿add_namespace = italy
+
+country_event = { #Conte Cabinet
+	id = italy.1
+	title = italy.1.t
+	desc = italy.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = italy.1.a
+		create_country_leader = {
+	        name = "Giuseppe Conte"
+	        picture = "Giuseppe_Conte.dds"
+	        ideology = reactionary_ideology
+        }
+	}
+}

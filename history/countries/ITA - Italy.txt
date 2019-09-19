@@ -100,16 +100,16 @@ set_country_flag = christianity
 
 #Chamber of Deputies
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 3.20 }
+set_variable = { democratic_socialist_seats = 5.87 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 33.05 }
-set_variable = { social_liberal_seats = 0.49 }
-set_variable = { market_liberal_seats = 10.09 }
-set_variable = { conservative_seats = 21.56 }
-set_variable = { reactionary_seats = 1.96 }
+set_variable = { social_democrat_seats = 48.59 }
+set_variable = { social_liberal_seats = 0.95 }
+set_variable = { market_liberal_seats = 7.46 }
+set_variable = { conservative_seats = 15.55 }
+set_variable = { reactionary_seats = 17.30 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 4.09 }
-set_variable = { fascist_seats = 25.56 }
+set_variable = { nationalist_seats = 2.85 }
+set_variable = { fascist_seats = 1.43 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
@@ -125,14 +125,14 @@ set_politics = {
 }
 
 set_popularities = {
-    fascist = 36.77
-    nationalist = 17.35
-    reactionary = 4.35
-    conservative = 15.3
-    social_liberal = 3.1
-    social_democrat = 19.17
-    progressive = 0.58
-    democratic_socialist = 3.38
+    nationalist = 19.84
+    reactionary = 36.38
+    conservative = 17.14
+	fascist = 5.07
+    social_liberal = 0.47
+    social_democrat = 18.73
+    progressive = 0.15
+    democratic_socialist = 2.22
 }
 
 create_country_leader = {
@@ -150,19 +150,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Luigi Di Maio"
 	picture = "Luigi_Di_Maio.dds"
-	ideology = syncretic
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
 	name = "Silvio Berlusconi"
 	picture = "Silvio_Berlusconi.dds"
 	ideology = christian_democrat
-}
-
-create_country_leader = {
-	name = "Giorgia Meloni"
-	picture = "Giorgia_Meloni.dds"
-	ideology = reactionary_ideology
 }
 
 create_country_leader = {
@@ -187,6 +181,12 @@ create_country_leader = {
 	name = "Enrico Zanetti"
 	picture = "Enrico_Zanetti.dds"
 	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Giorgia Meloni"
+	picture = "Giorgia_Meloni.dds"
+	ideology = fascist_ideology
 }
 
 create_country_leader = {

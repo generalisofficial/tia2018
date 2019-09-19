@@ -5,27 +5,27 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		victory_points = {
-			6332 12
+			6332 10
+		}
+		victory_points = {
+			11265 1
 		}
 		buildings = {
 			infrastructure = 8
 			air_base = 4
-			6332 = { 
-				naval_base = 6 
-				bunker = 1	
-			}
+			6332 = { bunker = 1	}
 			281 = { bunker = 1 }
 			348 = { bunker = 1 }
 			395 = { bunker = 1 }
 			3384 = { bunker = 1 }
-			11265 = { bunker = 1 }
+			11265 = { bunker = 1 naval_base = 6  }
 		}
 	}
 	provinces={
 		281 348 395 3384 6332 11265 
 	}
-	manpower=920250
+	manpower=994599
 	buildings_max_level_factor=1.000
 	
-	state_category = state_level_10
+	state_category = state_level_9
 }
