@@ -10,10 +10,26 @@ country_event = { #Conte Cabinet
 	
 	option = {
 		name = italy.1.a
+		news_event = italy.2
 		create_country_leader = {
 	        name = "Giuseppe Conte"
 	        picture = "Giuseppe_Conte.dds"
 	        ideology = reactionary_ideology
         }
+	}
+}
+
+news_event = { #Conte Cabinet - News
+	id = italy.2
+	title = italy.2.t
+	desc = italy.2.d
+	picture = GFX_news_event_conte_cabinet
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = italy.2.a
 	}
 }

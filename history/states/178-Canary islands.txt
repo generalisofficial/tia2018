@@ -2,22 +2,28 @@
 state={
 	id=178
 	name="STATE_178"
-	manpower = 761347
-	
-	state_category = state_level_2
 
 	history={
 		owner = SPR
+		victory_points = {
+			13071 3
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			13071 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = SPR
+
 	}
 
 	provinces={
-		13071 
+		13071 13886 
 	}
+	manpower=2127685
+	buildings_max_level_factor=1.000
+	state_category=state_level_3
 }
