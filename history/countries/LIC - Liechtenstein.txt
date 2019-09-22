@@ -83,21 +83,70 @@ add_ideas = {
 	population_growth_stagnation
 	neutrality_idea
 	christianity
+	parliamentary_system
 }
 
+#Landtag
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 12 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 36 }
+set_variable = { conservative_seats = 32 }
+set_variable = { reactionary_seats = 20 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = monarchist
-	last_election = "2018.1.1"
+	ruling_party = market_liberal
+	last_election = "2017.2.5"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-    monarchist = 100
+	market_liberal = 36
+	conservative = 32
+	reactionary = 20
+	social_democrat = 12
 }
 
 create_country_leader = {
 	name = "Hans-Adam II"
 	picture = "Hans_Adam_II.dds"
 	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Adrian Hasler"
+	picture = "Adrian_Hasler.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Daniel Risch"
+	picture = "Daniel_Risch.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Harry Quaderer"
+	picture = "Harry_Quaderer.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Pepo Frick"
+	picture = "Pepo_Frick.dds"
+	ideology = social_democrat_ideology
 }
