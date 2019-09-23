@@ -91,25 +91,39 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	presidential_system
 }
 
-set_popularities = {
-    islamist = 29.5
-    nationalist = 22.95
-    reactionary = 24.95
-    conservative = 22.6
-}
+#House of the People
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 14.6 }
+set_variable = { social_liberal_seats = 55.9 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 29.5 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {
 	ruling_party = social_liberal
 	last_election = "2017.2.8"
-	election_frequency = 60
+	election_frequency = 36
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Hassan Sheikh Mohamud"
-	picture = "Hassan_Sheikh_Mohamud.dds"
-	ideology = islamic_democracy
+set_popularities = {
+    social_liberal = 55.9
+	conservative = 29.5
+	social_democrat = 14.6
 }
 
 create_country_leader = {   
@@ -118,46 +132,16 @@ create_country_leader = {
 	ideology = social_liberal_ideology
 }
 
-create_country_leader = {   
-	name = "Hassan Moalim"
-	picture = "Hassan_Moalim.dds"
+create_country_leader = {
+	name = "Hassan Sheikh Mohamud"
+	picture = "Hassan_Sheikh_Mohamud.dds"
 	ideology = national_conservative
 }
 
 create_country_leader = {   
-	name = "Akhalfo Muhammad Bebeoukmole"
-	picture = "Prince_Bebeoukmole.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Maslah Mohamed Siad"    
-	picture = "Maslah_Mohamed_Siad.dds"
-	ideology = nationalist_ideology
-}
-
-create_country_leader = {
-	name = "Abdirahman Ibrahim Bile"
-	picture = "Abdirahman_Ibrahim_Bile.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
 	name = "Sharif Sheikh Ahmed"
 	picture = "Sharif_Sheikh_Ahmed.dds"
-	ideology = independent
-}
-
-create_country_leader = {
-	name = "Mohamed Abdi Hassan"
-	picture = "Abdi_Hassan.dds"
-	ideology = neo_nazi
-}
-
-create_country_leader = {
-	name = "Sa'iid Isse Mohamud"    
-	picture = "Sa'iid_Isee_Mohamud.dds"
-	ideology = marxist_leninist
+	ideology = social_democrat_ideology
 }
 
 create_corps_commander = {    

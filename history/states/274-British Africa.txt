@@ -2,29 +2,32 @@
 state={
 	id=274
 	name="STATE_274"
-	
-	resources = {
-		aluminium = 8
-		rubber = 7
-		oil = 6
+	resources={
+		aluminium=8.000
+		rubber=7.000
+		oil=6.000
 	}
 
 	history={
 		owner = GHA
 		add_core_of = GHA
+		victory_points = {
+			10862 10 
+		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			infrastructure = 5
+			industrial_complex = 2
 			arms_factory = 1
 			dockyard = 1
+
 		}
-		victory_points = { 10862 1 }
+
 	}
 
 	provinces={
-		10862 12742 12785 12787 13136 
+		10862 
 	}
-	manpower=18163600
+	manpower=4010054
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_4
 }

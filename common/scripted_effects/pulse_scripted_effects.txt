@@ -520,6 +520,30 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    original_tag = ISR
+				date > 2019.6.6
+				date < 2020.1.1
+			}
+			country_event = israel.2
+		}
+		if = {
+			limit = {
+			    original_tag = ISR
+				date > 2019.1.1
+				date < 2020.1.1
+			}
+			country_event = israel.3
+		}
+		if = {
+			limit = {
+			    original_tag = ISR
+				date > 2019.5.27
+				date < 2020.1.1
+			}
+			country_event = israel.4
+		}
+		if = {
+			limit = {
 			    original_tag = BOT
 				has_government = conservative
 				date > 2018.3.31
