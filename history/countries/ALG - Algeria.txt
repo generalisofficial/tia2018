@@ -100,6 +100,7 @@ add_ideas = {
 	non_aligned_movement_member
 	lgbt_illegal
 	islam
+	presidential_system
 }
 
 set_country_flag = dominant_religion_islam
@@ -111,16 +112,39 @@ give_guarantee = WES
 set_variable = { income_tax = 35 }
 set_variable = { corporate_tax = 26 }
 
+#People's National Assembly
+set_variable = { communist_seats = 2.29 }
+set_variable = { democratic_socialist_seats = 59.4 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.41 }
+set_variable = { social_liberal_seats = 1.87 }
+set_variable = { market_liberal_seats = 20.83 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 10.20 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {	
 	ruling_party = democratic_socialist
-	last_election = "2014.4.17"
+	last_election = "2014.12.12"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    islamist = 18.47
-    democratic_socialist = 81.53
+    democratic_socialist = 59.4
+	market_liberal = 20.83
+	islamist = 10.20
+	social_democrat = 5.41
+	communist = 2.29
+	social_liberal = 1.87
 }
 
 add_opinion_modifier = {
@@ -135,15 +159,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Abdallah Djaballah"
-	picture = "Abdallah_Djaballah.dds"
-	ideology = reactionary_ideology
+	name = "Ahmed Ouyahia"
+	picture = "Ahmed_Ouyahia.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Moussa Touati"
-	picture = "Moussa_Touati.dds"
-	ideology = liberal_conservative
+	name = "Abderrazak Makri"
+	picture = "Abderrazak_Makri.dds"
+	ideology = muslim_brotherhood
 }
 
 create_country_leader = {
@@ -155,37 +179,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Louisa Hanoune"
 	picture = "Louisa_Hanoune.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Ahmed Ouyahia"
-	picture = "Ahmed_Ouyahia.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Abderrazak Makri"
-	picture = "Abderrazak_Makri.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "Idris Khodair"
-	picture = "Idris_Khodair.dds"
-	ideology = green
+	ideology = trotskyist
 }
 
 create_country_leader = {
 	name = "Mohcine Belabbas"
 	picture = "Mohcine_Belabbas.dds"
-    ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Tahar Benbaïbeche"
-	picture = "Tahar_Benbaibeche.dds"
-	ideology = neo_nazi
+	ideology = social_liberal_ideology
 }
 
 create_corps_commander = { 
