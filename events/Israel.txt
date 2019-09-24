@@ -85,3 +85,17 @@ country_event = { #End of the Zionist Union
 	    }
 	}
 }
+
+country_event = { #Kulanu merges with Likud
+	id = israel.4
+	title = israel.4.t
+	desc = israel.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = israel.4.a
+		add_popularity = { ideology = conservative popularity = -0.01 }
+	}
+}
