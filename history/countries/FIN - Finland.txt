@@ -97,13 +97,13 @@ set_country_flag = christianity
 
 #Eduskunta
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 7.1 }
-set_variable = { progressive_seats = 8.5 }
-set_variable = { social_democrat_seats = 16.5 }
-set_variable = { social_liberal_seats = 26.4 }
-set_variable = { market_liberal_seats = 18.2 }
-set_variable = { conservative_seats = 3.5 }
-set_variable = { reactionary_seats = 25.1 }
+set_variable = { democratic_socialist_seats = 6 }
+set_variable = { progressive_seats = 7.5 }
+set_variable = { social_democrat_seats = 17.5 }
+set_variable = { social_liberal_seats = 29.51 }
+set_variable = { market_liberal_seats = 28.49 }
+set_variable = { conservative_seats = 2.5 }
+set_variable = { reactionary_seats = 8.5 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -113,10 +113,8 @@ set_variable = { islamist = 0 }
 set_country_flag = has_coalition
 set_country_flag = coalition_social_liberal
 set_country_flag = coalition_market_liberal
-set_country_flag = coalition_reactionary
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = market_liberal_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
 	ruling_party = social_liberal
@@ -126,13 +124,13 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 19.48
-    conservative = 3.90
-    market_liberal = 19.25
-    social_liberal = 18.69
-    social_democrat = 20.09
-    progressive = 11.49
-    democratic_socialist = 7.1
+    reactionary = 19.5
+    conservative = 2.5
+    market_liberal = 19.5
+    social_liberal = 20.5
+    social_democrat = 20
+    progressive = 10
+    democratic_socialist = 8
 }
 
 create_country_leader = {
