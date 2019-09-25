@@ -23,6 +23,7 @@ scripted_gui = {
 					clr_country_flag = coalition_islamist
 					remove_from_array = { member_parties_array = 1 }
 					subtract_from_variable = { ROOT.Coalition = islamist_seats }
+					add_to_variable = { ROOT.Opposition = islamist_seats }
 				}
 				else_if = {
 					limit = {
@@ -31,6 +32,7 @@ scripted_gui = {
 					clr_country_flag = coalition_fascist
 					remove_from_array = { member_parties_array = 2 }
 					subtract_from_variable = { ROOT.Coalition = fascist_seats }
+					add_to_variable = { ROOT.Opposition = fascist_seats }
 				}
 				else_if = {
 					limit = {
@@ -39,6 +41,7 @@ scripted_gui = {
 					clr_country_flag = coalition_nationalist
 					remove_from_array = { member_parties_array = 3 }
 					subtract_from_variable = { ROOT.Coalition = nationalist_seats }
+					add_to_variable = { ROOT.Opposition = nationalist_seats }
 				}
 				else_if = {
 					limit = {
@@ -47,6 +50,7 @@ scripted_gui = {
 					clr_country_flag = coalition_monarchist
 					remove_from_array = { member_parties_array = 4 }
 					subtract_from_variable = { ROOT.Coalition = monarchist_seats }
+					add_to_variable = { ROOT.Opposition = monarchist_seats }
 				}
 				else_if = {
 					limit = {
@@ -55,6 +59,7 @@ scripted_gui = {
 					clr_country_flag = coalition_reactionary
 					remove_from_array = { member_parties_array = 5 }
 					subtract_from_variable = { ROOT.Coalition = reactionary_seats }
+					add_to_variable = { ROOT.Opposition = reactionary_seats }
 				}
 				else_if = {
 					limit = {
@@ -63,6 +68,7 @@ scripted_gui = {
 					clr_country_flag = coalition_conservative
 					remove_from_array = { member_parties_array = 6 }
 					subtract_from_variable = { ROOT.Coalition = conservative_seats }
+					add_to_variable = { ROOT.Opposition = conservative_seats }
 				}
 				else_if = {
 					limit = {
@@ -71,6 +77,7 @@ scripted_gui = {
 					clr_country_flag = coalition_market_liberal
 					remove_from_array = { member_parties_array = 7 }
 					subtract_from_variable = { ROOT.Coalition = market_liberal_seats }
+					add_to_variable = { ROOT.Opposition = market_liberal_seats }
 				}
 				else_if = {
 					limit = {
@@ -79,6 +86,7 @@ scripted_gui = {
 					clr_country_flag = coalition_social_liberal
 					remove_from_array = { member_parties_array = 8 }
 					subtract_from_variable = { ROOT.Coalition = social_liberal_seats }
+					add_to_variable = { ROOT.Opposition = social_liberal_seats }
 				}
 				else_if = {
 					limit = {
@@ -87,6 +95,7 @@ scripted_gui = {
 					clr_country_flag = coalition_social_democrat
 					remove_from_array = { member_parties_array = 9 }
 					subtract_from_variable = { ROOT.Coalition = social_democrat_seats }
+					add_to_variable = { ROOT.Opposition = social_democrat_seats }
 				}
 				else_if = {
 					limit = {
@@ -95,6 +104,7 @@ scripted_gui = {
 					clr_country_flag = coalition_progressive
 					remove_from_array = { member_parties_array = 10 }
 					subtract_from_variable = { ROOT.Coalition = proressive_seats }
+					add_to_variable = { ROOT.Opposition = progressive_seats }
 				}
 				else_if = {
 					limit = {
@@ -103,6 +113,7 @@ scripted_gui = {
 					clr_country_flag = coalition_democratic_socialist
 					remove_from_array = { member_parties_array = 11 }
 					subtract_from_variable = { ROOT.Coalition = democratic_socialist_seats }
+					add_to_variable = { ROOT.Opposition = democratic_socialist_seats }
 				}
 				else_if = {
 					limit = {
@@ -111,6 +122,7 @@ scripted_gui = {
 					clr_country_flag = coalition_communuist
 					remove_from_array = { member_parties_array = 12 }
 					subtract_from_variable = { ROOT.Coalition = communist_seats }
+					add_to_variable = { ROOT.Opposition = communist_seats }
 				}
 			}
 			resign_button_click = {
