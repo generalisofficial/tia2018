@@ -1,14 +1,10 @@
 
 state={
 	id=226
-	name="STATE_226" # Dnipropertovsk
-	manpower = 2900300
-	
-	state_category = state_level_10
-	
+	name="STATE_226"
 	resources={
-		aluminium=6
-		steel=65
+		aluminium=6.000
+		steel=65.000
 	}
 
 	history={
@@ -18,16 +14,21 @@ state={
 			11437 10 
 		}
 		victory_points = {
-			11561 1
+			11561 1 
 		}
 		buildings = {
 			infrastructure = 5
 			air_base = 2
 			industrial_complex = 1
+
 		}
+
 	}
 
 	provinces={
-		453 472 486 6423 9419 9433 9463 9479 11422 11437 11452 11561 
+		453 472 486 6423 9433 9463 9479 11422 11437 11452 11561 
 	}
+	manpower=2900300
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }
