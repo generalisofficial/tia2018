@@ -2,13 +2,9 @@
 state={
 	id=477
 	name="STATE_477"
-	manpower = 13331460
-	
-	state_category = state_level_7
-	
-	resources = {
-		oil = 68
-		steel = 5
+	resources={
+		oil=68.000
+		steel=5.000
 	}
 
 	history={
@@ -19,16 +15,25 @@ state={
 			air_base = 1
 			12810 = {
 				naval_base = 3
+
 			}
+			10889 = {
+				naval_base = 2
+
+			}
+
 		}
 		add_core_of = MEX
 		victory_points = {
-			12810 1
+			12810 1 
 		}
+
 	}
 
 	provinces={
-		8079 8089 10732 12810 
+		2021 8079 10732 10889 12810 
 	}
-	
+	manpower=8112505
+	buildings_max_level_factor=1.000
+	state_category=state_level_6
 }
