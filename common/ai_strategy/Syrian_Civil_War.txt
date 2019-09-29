@@ -1,22 +1,23 @@
 ctjf_oir_strategy_major = {
     enable = {
 	    OR = {
-            tag = USA
-		    tag = FRA
-		    tag = GER
-		    tag = ENG
+            original_tag = USA
+		    original_tag = FRA
+		    original_tag = GER
+		    original_tag = ENG
+			original_tag = DEN
 		}
     }
 	abort = {
 	    NOT = { country_exists = ISS }
     } 
-    ai_strategy = {
-        type = send_volunteers_desire
+	ai_strategy = {
+        type = befriend
         id = "ROJ"
         value = 2000
     }
 	ai_strategy = {
-        type = support
+        type = protect
         id = "ROJ"
         value = 2000
     } 
@@ -25,17 +26,25 @@ ctjf_oir_strategy_major = {
 assad_supporter_strategy_major = {
     enable = {
 	    OR = {
-            tag = PER
-		    tag = SOV
+            original_tag = PER
+		    original_tag = SOV
 		}
+    }
+	abort = {
+		SYR = { NOT = { has_country_leader = { name = "Bashar al-Assad" ruling_only = yes } } }
     }
     ai_strategy = {
         type = send_volunteers_desire
         id = "SYR"
         value = 2000
     }
+	ai_strategy = {
+        type = befriend
+        id = "SYR"
+        value = 2000
+    }
     ai_strategy = {
-        type = support
+        type = protect
         id = "SYR"
         value = 2000
     } 
@@ -44,10 +53,10 @@ assad_supporter_strategy_major = {
 assad_supporter_strategy_minor = {
     enable = {
     	OR = {
-            tag = PRC
-		    tag = PRK
-			tag = BLR
-			tag = IRQ
+            original_tag = PRC
+		    original_tag = PRK
+			original_tag = BLR
+			original_tag = IRQ
 		}
 	}
 	abort = {
@@ -69,7 +78,10 @@ west_antagonize_assad_strategy = {
 		}
     }
 	abort = {
-        is_in_faction_with = SYR
+	    OR = {
+		    SYR = { NOT = { has_country_leader = { name = "Bashar al-Assad" ruling_only = yes } } }
+            is_in_faction_with = SYR
+		}
     }
     ai_strategy = {
         type = antagonize
