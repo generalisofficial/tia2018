@@ -590,6 +590,7 @@ pulse = {
 				NOT = { country_exists = ISS }
 			}
 			country_event = syria.1
+			set_global_flag = syrian_civil_war_over
 		}
 		if = {
 			limit = {
@@ -616,13 +617,14 @@ pulse = {
 				}
 			}
 			country_event = syria.2
+			set_global_flag = syrian_civil_war_over
 			if = { 
 			    limit = { country_exists = FSA }
-				FSA = { set_cosmetic_tag = SYR_REBEL }
+				FSA = { set_cosmetic_tag = FSA_GOV }
 			}
 			if = { 
 			    limit = { country_exists = HTS }
-				HTS = { set_cosmetic_tag = SYR_REBEL }
+				HTS = { set_cosmetic_tag = HTS_GOV }
 			}
 		}
 		if = {
@@ -634,6 +636,7 @@ pulse = {
 				NOT = { country_exists = SYR }
 			}
 			country_event = syria.3
+			set_global_flag = syrian_civil_war_over
 		}
 		if = {
 			limit = {
@@ -731,54 +734,5 @@ pulse = {
 				remove_core_of = CAR
 				remove_core_of = FPR
 		    }
-		}
-		if = {
-			limit = {
-			    OR = { 
-				    AND = {
-					    OR = {
-						    has_country_flag = coalition_social_liberal
-				            has_country_flag = coalition_market_liberal
-							has_country_flag = coalition_conservative
-							has_country_flag = coalition_reactionary
-						}
-						OR = {
-						    has_country_flag = coalition_social_democrat
-				            has_country_flag = coalition_progressive
-							has_country_flag = coalition_democratic_socialist
-							has_country_flag = coalition_communist
-						}
-			        }
-					AND = {
-					    OR = {
-						    has_country_flag = coalition_social_liberal
-				            has_country_flag = coalition_market_liberal
-							has_country_flag = coalition_conservative
-							has_country_flag = coalition_reactionary
-						}
-						OR = {
-							has_country_flag = coalition_islamist
-							has_country_flag = coalition_monarchist
-							has_country_flag = coalition_nationalist
-							has_country_flag = coalition_fascist
-						}
-			        }
-					AND = {
-						OR = {
-							has_country_flag = coalition_islamist
-							has_country_flag = coalition_monarchist
-							has_country_flag = coalition_nationalist
-							has_country_flag = coalition_fascist
-						}
-						OR = {
-						    has_country_flag = coalition_social_democrat
-				            has_country_flag = coalition_progressive
-							has_country_flag = coalition_democratic_socialist
-							has_country_flag = coalition_communist
-						}
-			        }
-				}
-			}
-			add_ideas = unstable_coalition
 		}
 }

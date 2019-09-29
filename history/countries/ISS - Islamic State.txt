@@ -93,21 +93,6 @@ declare_war_on = {
 	type = annex_everything
 }
 
-declare_war_on = {
-	target = SYR
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = FSA
-	type = annex_everything
-}
-
-declare_war_on = {
-	target = HTS
-	type = annex_everything
-}
-
 set_politics = {	
 	ruling_party = islamist
 	last_election = "2018.1.1"
@@ -123,7 +108,6 @@ add_ideas = {
 	population_growth_rapid
 	non_member_state
 	service_by_requirement
-	#nationalized
 	isolationism
 	salafist_jihadist_group
 	lgbt_illegal
@@ -138,6 +122,12 @@ create_country_leader = {
 	name = "Abu Bakr al-Baghdadi"
 	picture = "Abu_Bakr_al_Baghdadi.dds"
 	ideology = salafist
+}
+
+create_field_marshal = {
+	name = "Abu Khaled al-Ansari"
+	picture = "Abu_Khaled_al_Ansari.dds"	
+	skill = 3
 }
 
 create_corps_commander = {

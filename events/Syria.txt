@@ -8,26 +8,24 @@ news_event = {
 	picture = GFX_news_event_syrian_war_over
 	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
+	fire_only_once = no
 	major = yes
-	
-	immediate = {
-		set_global_flag = syrian_civil_war_over
-	}
 	
 	option = {
 		name = syria.1.o1
-		SYR = { every_owned_state = { remove_core_of = FSA } }
-		SYR = { every_owned_state = { remove_core_of = HTS } }
-		SYR = { every_owned_state = { remove_core_of = ISS } }
-		if = {
+		every_state = {
 		    limit = {
-			    country_exists = ROJ
+		        OR = {
+					is_core_of = FSA
+					is_core_of = HTS
+					is_claimed_by = FSA
+					is_claimed_by = HTS
+				}
 			}
-		    ROJ = { every_owned_state = { remove_core_of = ISS } }
-			ROJ = { every_owned_state = { remove_core_of = FSA } }
-			ROJ = { every_owned_state = { remove_core_of = HTS } }
+			remove_core_of = FSA
+			remove_core_of = HTS
+		    remove_claim_by = FSA
+			remove_claim_by = HTS
 		}
 	}
 }
@@ -37,29 +35,23 @@ news_event = {
 	id = syria.2
 	title = syria.2.t
 	desc = syria.2.d
-	picture = GFX_news_event_al_qaeda
+	picture = GFX_news_event_al_nusra
 	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
+	fire_only_once = no
 	major = yes
-	
-	immediate = {
-		set_global_flag = syrian_civil_war_over
-	}
 	
 	option = {
 		name = syria.2.o1
-		FSA = { every_owned_state = { remove_core_of = SYR } }
-		FSA = { every_owned_state = { remove_core_of = ISS } }
-		HTS = { every_owned_state = { remove_core_of = SYR } }
-		HTS = { every_owned_state = { remove_core_of = ISS } }
-		if = {
+		every_state = {
 		    limit = {
-			    country_exists = ROJ
+		        OR = {
+				    is_core_of = SYR
+				    is_claimed_by = SYR
+				}
 			}
-		    ROJ = { every_owned_state = { remove_core_of = ISS } }
-			ROJ = { every_owned_state = { remove_core_of = SYR } }
+			remove_core_of = SYR
+			remove_claim_by = SYR
 		}
 	}
 }
@@ -72,26 +64,27 @@ news_event = {
 	picture = GFX_news_event_islamic_state
 	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
+	fire_only_once = no
 	major = yes
-	
-	immediate = {
-		set_global_flag = syrian_civil_war_over
-	}
-	
+
 	option = {
 		name = syria.3.o1
-		ISS = { every_owned_state = { remove_core_of = SYR } }
-		ISS = { every_owned_state = { remove_core_of = FSA } }
-		ISS = { every_owned_state = { remove_core_of = HTS } }
-		if = {
+		every_state = {
 		    limit = {
-			    country_exists = ROJ
+		        OR = {
+				    is_core_of = SYR
+					is_core_of = FSA
+					is_core_of = HTS
+				    is_claimed_by = SYR
+					is_claimed_by = FSA
+					is_claimed_by = HTS
+				}
 			}
-		    ROJ = { every_owned_state = { remove_core_of = SYR } }
-			ROJ = { every_owned_state = { remove_core_of = FSA } }
-			ROJ = { every_owned_state = { remove_core_of = HTS } }
+			remove_core_of = SYR
+			remove_core_of = FSA
+			remove_core_of = HTS
+			remove_claim_by = SYR
+		    remove_claim_by = FSA
+			remove_claim_by = HTS
 		}
-	}
 }
