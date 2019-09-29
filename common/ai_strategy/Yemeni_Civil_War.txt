@@ -3,10 +3,10 @@ saudi_led_coalition = {
 	    OR = {
             original_tag = SAU
 			original_tag = UAE
-			original_tag = SEN
 			original_tag = SUD
 			original_tag = MOR
 			original_tag = QAT
+			original_tag = BHR
 		}
     }
 	abort = {
@@ -18,7 +18,7 @@ saudi_led_coalition = {
         value = 400
     }
 	ai_strategy = {
-        type = support
+        type = protect
         id = "YEM"
         value = 400
     } 
@@ -35,12 +35,12 @@ pro_houthi_coalition = {
 	    has_global_flag = yemeni_civil_war_over
     } 
     ai_strategy = {
-        type = send_volunteers_desire
+        type = befriend
         id = "HOU"
         value = 400
     }
 	ai_strategy = {
-        type = support
+        type = protect
         id = "HOU"
         value = 400
     } 

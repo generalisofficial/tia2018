@@ -99,9 +99,9 @@ create_faction = "Axis of Resistance"
 add_to_faction = PER
 add_to_faction = HEZ
 
-give_military_access = SYR
-give_military_access = IRQ
-give_military_access = HOU
+SYR = { give_military_access = PER }
+IRQ = { give_military_access = PER }
+HOU = { give_military_access = PER }
 
 set_politics = {	
 	ruling_party = islamist

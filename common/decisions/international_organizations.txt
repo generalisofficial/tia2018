@@ -341,6 +341,10 @@ arab_league_decisions = {
 		
 		available = {
             NOT = { has_idea = arab_league_member has_idea = non_member_state }
+			OR = {
+			    NOT = { original_tag = SYR }
+				NOT = { country_exists = FSA }
+			}
 		}
 		
 		complete_effect = {
