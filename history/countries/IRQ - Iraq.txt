@@ -85,6 +85,31 @@ set_technology = {
 set_country_flag = dominant_religion_islam
 set_country_flag = shia_islam
 
+#Council of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 12.45 }
+set_variable = { social_liberal_seats = 33.69 }
+set_variable = { market_liberal_seats = 9.52 }
+set_variable = { conservative_seats = 14.65 }
+set_variable = { reactionary_seats = 18.34 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 11.35 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_market_liberal
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 add_ideas = {
 	population_growth_explosion
 	arab_league_member
@@ -92,23 +117,66 @@ add_ideas = {
 	extensive_conscription
 	islamic_sectarian_violence
 	islam
+	parliamentary_system
 }
 
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = social_liberal
 	last_election = "2014.5.12"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    islamist = 14.29
-    nationalist = 0
-    reactionary = 37.96
-    conservative = 33.77
-    progressive = 6.38
-    social_democrat = 0
-    social_liberal = 7.6
+    social_democrat = 46.88
+	communist = 0.69
+	islamist = 16.78
+	social_liberal = 14.68
+	reactionary = 8.74
+	market_liberal = 7.34
+	conservative = 4.89
+}
+
+create_country_leader = {
+	name = "Muqtada al-Sadr"
+	picture = "Muqtada_al_Sadr.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Raid Jahid Fahmi"
+	picture = "Raid_Jahid_Fahmi.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Hadi al-Amiri"
+	picture = "Hadi_al_Amiri.dds"
+	ideology = khomeinist
+}
+
+create_country_leader = {
+	name = "Haider al-Abadi"
+	picture = "Haider_al_Abadi.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Nouri al-Maliki"
+	picture = "Nouri_al_Maliki.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Ayad Allawi"
+	picture = "Ayad_Allawi.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Osama al-Nujaifi"
+	picture = "Osama_al_Nujaifi.dds"
+	ideology = social_conservative
 }
 
 create_country_leader = {
@@ -121,60 +189,6 @@ create_country_leader = {
 	name = "Ra'ad bin Zeid"
 	picture = "Raad_bin_Zeid.dds"
     ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Muqtada al-Sadr"
-	picture = "Muqtada_al_Sadr.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Haider al-Abadi"
-	picture = "Haider_al_Abadi.dds"
-	ideology = liberal_conservative
-}
-
-create_country_leader = {
-	name = "Adnan Pachachi"
-	picture = "Adnan_Pachachi.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Nouri al-Maliki"
-	picture = "Nouri_al_Maliki.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Naseer al-Chaderchi"
-	picture = "Naseer_al_Chaderchi"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Ayad Allawi"
-	picture = "Ayad_Allawi.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Raid Jahid Fahmi"
-	picture = "Raid_Jahid_Fahmi.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Humam Hamoudi"
-	picture = "Humam_Hamoudi.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "Yonadam Kanna"
-	picture = "Yonadam_Kanna.dds"
-	ideology = fascist_ideology
 }
 
 create_field_marshal = {

@@ -30,6 +30,7 @@ country_event = { #New Caledonia Refuses Independence
 	
 	option = {
 		name = new_caledonia.2.o1
+		add_political_power = 15
 	}
 }
 
@@ -45,6 +46,7 @@ country_event = { #New Caledonia Votes for Independence
 		news_event = new_caledonia.4
 		set_global_flag = new_caledonia_independent
 		release = NCD
+		add_political_power = -15
 	}
 }
 

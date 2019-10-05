@@ -28,8 +28,6 @@ country_event = {
 	title = mtg_exile_government.2.title
 	desc = mtg_exile_government.2.desc
 	
-	picture = GFX_report_event_canadian_soldiers
-	
 	is_triggered_only = yes
 
 	option = {
@@ -58,8 +56,6 @@ country_event = {
 	id = mtg_exile_government.3
 	title = mtg_exile_government.3.title
 	desc = mtg_exile_government.3.desc
-	
-	picture = GFX_report_event_destroyers
 	
 	is_triggered_only = yes
 
@@ -101,8 +97,6 @@ country_event = {
 	title = mtg_exile_government.4.title
 	desc = mtg_exile_government.4.desc
 	
-	picture = GFX_report_event_destroyers
-	
 	is_triggered_only = yes
 
 	# Good
@@ -132,24 +126,5 @@ country_event = {
 	# Good
 	option = {
 		name = mtg_exile_government.5.a
-	}
-}
-
-# generic events
-add_namespace = mtg_generic
-
-# Notification event of changing ideology
-country_event = {
-	id = mtg_generic.1
-	title = mtg_generic.1.title
-	desc = mtg_generic.1.desc
-	
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-
-	# Good
-	option = {
-		name = mtg_generic.1.a
 	}
 }

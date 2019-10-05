@@ -1,33 +1,39 @@
-state=
-{
+
+state={
 	id=100
 	name="STATE_100"
-	manpower = 330000
-	
-	state_category = state_level_7
-	
-	resources = {
-		aluminium = 40
+	resources={
+		aluminium=40.000
 	}
-	
-	history=
-	{
+
+	history={
 		owner = ICE
 		victory_points = {
-			4861 1 
+			12674 5 
 		}
 		victory_points = {
-			12689 1
+			4861 2
 		}
 		victory_points = {
-			12674 5
+			13932 1 
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
-			12674 ={ naval_base = 2 }
+			12674 = {
+				naval_base = 2
+
+			}
+
 		}
 		add_core_of = ICE
+
 	}
-	provinces= { 4861 12674 12689 }
+
+	provinces={
+		4861 12674 12689 13932 13933 
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

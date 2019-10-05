@@ -84,9 +84,33 @@ add_ideas = {
     nordic_council_member
 	disarmed_nation
 	christianity
+	parliamentary_system
 }
 
 set_country_flag = christianity
+
+#Althing
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 3.17 }
+set_variable = { progressive_seats = 17.5 }
+set_variable = { social_democrat_seats = 11.11 }
+set_variable = { social_liberal_seats = 23.80 }
+set_variable = { market_liberal_seats = 12.69 }
+set_variable = { conservative_seats = 6.34 }
+set_variable = { reactionary_seats = 25.39 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_progressive
+set_country_flag = coalition_market_liberal
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
+add_to_variable = { ROOT.Coalition = market_liberal_seats }
 
 set_politics = {	
 	ruling_party = progressive
@@ -96,13 +120,13 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 25.2
-    conservative = 6.7
-    market_liberal = 10.7
-    social_liberal = 10.9
-    social_democrat = 12.1
-    progressive = 27.5
-    democratic_socialist = 6.9
+    reactionary = 25.39
+    progressive = 17.5
+    market_liberal = 12.69
+    social_liberal = 23.80
+    social_democrat = 11.11
+	conservative = 6.34
+    democratic_socialist = 3.17
 }
 
 create_country_leader = {
@@ -118,15 +142,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sigurour Ingi Johannsson"
-	picture = "Sigurour_Ingi_Johannsson.dds"
+	name = "Sigurdur Ingi Johannsson"
+	picture = "Sigurdur_Ingi_Johannsson.dds"
 	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Logi Mar Einarsson"
-	picture = "Logi_Mar_Einarsson.dds"
-	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
@@ -136,15 +154,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Logi Már Einarsson"
+	picture = "Logi_Mar_Einarsson.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Thorgerdur Katrin Gunnarsdottir"
+	picture = "Thorgerdur_Katrin_Gunnarsdottir.dds"
+	ideology = liberal_conservative
+}
+
+create_country_leader = {
 	name = "Inga Saeland"
 	picture = "Inga_Saeland.dds"
 	ideology = democratic_socialist_ideology
 }
 
 create_country_leader = {
-	name = "Borgerour Katrin Gunnarsdottir"
-	picture = "Bourgerour_Katrin_Gunnarsdottir.dds"
-	ideology = liberal_conservative
+	name = "Thorvaldur Torvaldsson"
+	picture = "Thorvaldur_Torvaldsson.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {
