@@ -382,6 +382,7 @@ adjacency_rule
 	offset = { -2 0 -9 }
 }
 
+#Golden Gate Bridge
 adjacency_rule
 {
 	name = "GOLDEN_GATE_STRAIT"
@@ -458,5 +459,45 @@ adjacency_rule
 	required_provinces = { 10201 7265 4416 }
 	
 	icon = 10201
+	offset = { -2 0 -9 }
+}
+
+#Straits of Tiran
+adjacency_rule
+{
+	name = "TIRAN_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 13934 12101 10099 12073 }
+	
+	icon = 13934
 	offset = { -2 0 -9 }
 }

@@ -5,7 +5,6 @@ country_event = {
 	id = political.1
 	title = political.1.t
 	desc = political.1.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		fascist > 0.5
@@ -61,7 +60,6 @@ country_event = {
 	id = political.2
 	title = political.2.t
 	desc = political.2.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		nationalist > 0.5
@@ -121,7 +119,6 @@ country_event = {
 	id = political.3
 	title = political.3.t
 	desc = political.3.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		communist > 0.5
@@ -188,7 +185,6 @@ country_event = {
 	id = political.4
 	title = political.4.t
 	desc = political.4.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		islamist > 0.5
@@ -248,7 +244,6 @@ country_event = {
 	id = political.5
 	title = political.5.t
 	desc = political.5.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		reactionary > 0.5
@@ -296,7 +291,6 @@ country_event = {
 	id = political.6
 	title = political.6.t
 	desc = political.6.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		conservative > 0.5
@@ -344,7 +338,6 @@ country_event = {
 	id = political.7
 	title = political.7.t
 	desc = political.7.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		market_liberal > 0.5
@@ -392,7 +385,6 @@ country_event = {
 	id = political.8
 	title = political.8.t
 	desc = political.8.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		social_liberal > 0.5
@@ -440,7 +432,6 @@ country_event = {
 	id = political.9
 	title = political.9.t
 	desc = political.9.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		social_democrat > 0.5
@@ -488,7 +479,6 @@ country_event = {
 	id = political.10
 	title = political.10.t1
 	desc = political.10.d1
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		progressive > 0.5
@@ -536,7 +526,6 @@ country_event = {
 	id = political.11
 	title = political.11.t
 	desc = political.11.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		democratic_socialist > 0.5
@@ -584,7 +573,6 @@ country_event = {
 	id = political.12
 	title = political.12.t
 	desc = political.12.d
-	picture = GFX_report_event_coup
 	
 	trigger = {
 		monarchist > 0.5
@@ -632,7 +620,6 @@ country_event = {
 	id = political.13
 	title = political.13.t
 	desc = political.13.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		islamist > 0.01
@@ -672,7 +659,6 @@ country_event = {
 	id = political.14
 	title = political.14.t
 	desc = political.14.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		fascist > 0.01
@@ -696,7 +682,6 @@ country_event = {
 	id = political.15
 	title = political.15.t
 	desc = political.15.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		nationalist > 0.01
@@ -720,7 +705,6 @@ country_event = {
 	id = political.16
 	title = political.16.t
 	desc = political.16.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		monarchist > 0.01
@@ -744,7 +728,6 @@ country_event = {
 	id = political.17
 	title = political.17.t
 	desc = political.17.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		reactionary > 0.01
@@ -768,7 +751,6 @@ country_event = {
 	id = political.18
 	title = political.18.t1
 	desc = political.18.d1
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		conservative > 0.01
@@ -792,7 +774,6 @@ country_event = {
 	id = political.19
 	title = political.19.t
 	desc = political.19.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		market_liberal > 0.01
@@ -816,7 +797,6 @@ country_event = {
 	id = political.20
 	title = political.20.t
 	desc = political.20.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		social_liberal > 0.01
@@ -840,7 +820,6 @@ country_event = {
 	id = political.21
 	title = political.21.t
 	desc = political.21.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		social_democrat > 0.01
@@ -864,7 +843,6 @@ country_event = {
 	id = political.22
 	title = political.22.t
 	desc = political.22.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		progressive > 0.01
@@ -888,7 +866,6 @@ country_event = {
 	id = political.23
 	title = political.23.t
 	desc = political.23.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		democratic_socialist > 0.01
@@ -912,7 +889,6 @@ country_event = {
 	id = political.24
 	title = political.24.t
 	desc = political.24.d
-	picture = GFX_report_event_political_gathering
 	
 	trigger = {
 		communist > 0.01
@@ -931,13 +907,192 @@ country_event = {
 	}
 }
 
+#Leader of the Opposition slams government
 country_event = {
 	id = political.25
-	hidden = yes
-
-	is_triggered_only = yes
-
+	title = political.25.t
+	desc = political.25.d
+	
+	trigger = {
+		has_idea = parliamentary_system
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+		modifier = {
+			factor = 3
+			has_stability < 0.5
+		}
+	}
+	
 	option = {
-		update_coalition = yes
+		name = political.25.a
+		if = {
+			limit = { 
+			    has_country_flag = coalition_islamist
+			}
+			add_popularity = { ideology = islamist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_fascist
+			}
+			add_popularity = { ideology = fascist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_nationalist
+			}
+			add_popularity = { ideology = nationalist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_monarchist
+			}
+			add_popularity = { ideology = monarchist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_reactionary
+			}
+			add_popularity = { ideology = reactionary popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_conservative
+			}
+			add_popularity = { ideology = conservative popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_market_liberal
+			}
+			add_popularity = { ideology = market_liberal popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_liberal
+			}
+			add_popularity = { ideology = social_liberal popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_democrat
+			}
+			add_popularity = { ideology = social_democrat popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_progressive
+			}
+			add_popularity = { ideology = progressive popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_democratic_socialist
+			}
+			add_popularity = { ideology = democratic_socialist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_communist
+			}
+			add_popularity = { ideology = communist popularity = -0.03 }	
+		}
+	}
+}
+
+#Head of Government slams opposition
+country_event = {
+	id = political.26
+	title = political.26.t
+	desc = political.26.d
+	
+	trigger = {
+		has_idea = parliamentary_system
+	}
+	
+	mean_time_to_happen = {
+		days = 2500
+		modifier = {
+			factor = 3
+			has_stability > 0.5
+		}
+	}
+	
+	option = {
+		name = political.25.a
+		if = {
+			limit = { 
+			    has_country_flag = coalition_islamist
+			}
+			add_popularity = { ideology = islamist popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_fascist
+			}
+			add_popularity = { ideology = fascist popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_nationalist
+			}
+			add_popularity = { ideology = nationalist popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_monarchist
+			}
+			add_popularity = { ideology = monarchist popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_reactionary
+			}
+			add_popularity = { ideology = reactionary popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_conservative
+			}
+			add_popularity = { ideology = conservative popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_market_liberal
+			}
+			add_popularity = { ideology = market_liberal popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_liberal
+			}
+			add_popularity = { ideology = social_liberal popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_democrat
+			}
+			add_popularity = { ideology = social_democrat popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_progressive
+			}
+			add_popularity = { ideology = progressive popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_democratic_socialist
+			}
+			add_popularity = { ideology = democratic_socialist popularity = 0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_communist
+			}
+			add_popularity = { ideology = communist popularity = 0.03 }	
+		}
 	}
 }
