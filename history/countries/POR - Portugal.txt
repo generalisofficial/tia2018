@@ -89,13 +89,13 @@ add_ideas = {
 set_country_flag = christianity
 
 #Assembly of the Republic
-set_variable = { communist_seats = 8.3 }
-set_variable = { democratic_socialist_seats = 10.2 }
-set_variable = { progressive_seats = 1.4 }
-set_variable = { social_democrat_seats = 33.7 }
+set_variable = { communist_seats = 7.39 }
+set_variable = { democratic_socialist_seats = 8.26 }
+set_variable = { progressive_seats = 0.43 }
+set_variable = { social_democrat_seats = 37.4 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { market_liberal_seats = 0 }
-set_variable = { conservative_seats = 33 }
+set_variable = { market_liberal_seats = 38.7 }
+set_variable = { conservative_seats = 7.82 }
 set_variable = { reactionary_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
@@ -115,24 +115,25 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 33.7
-    market_liberal = 38.6
-    communist = 8.3
-    democratic_socialist = 10.2
-	conservative = 7.8
-    progressive = 1.4
-}
-
-create_country_leader = {
-	name = "Pedro Passos Coelho"
-	picture = "Pedro_Passos_Coelho.dds"
-	ideology = libertarian
+    social_democrat = 47.51
+    market_liberal = 33.91
+    democratic_socialist = 8.41
+	communist = 5.31
+	conservative = 2.21
+    progressive = 2.21
+	nationalist = 0.44
 }
 
 create_country_leader = {
 	name = "António Costa"
 	picture = "Antonio_Costa.dds"
 	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Pedro Passos Coelho"
+	picture = "Pedro_Passos_Coelho.dds"
+	ideology = libertarian
 }
 
 create_country_leader = {
@@ -148,20 +149,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "André Lourenço e Silva"
-	picture = "Andre_Lourenco_e_Silva.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
 	name = "Assunção Cristas"
 	picture = "Assuncao_Cristas.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
-	name = "José Pinto Coelho"
-	picture = "Jose_Pinto_Coelho.dds"
+	name = "Rui Tavares"
+	picture = "Rui_Tavares.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "André Ventura"
+	picture = "Andre_Ventura.dds"
 	ideology = nationalist_ideology
 }
 
@@ -175,6 +176,12 @@ create_country_leader = {
 	name = "Duarte Pio"
 	picture = "Duarte_Pio.dds"
 	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "José Pinto Coelho"
+	picture = "Jose_Pinto_Coelho.dds"
+	ideology = fascist_ideology
 }
 
 create_field_marshal = {

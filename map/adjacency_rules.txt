@@ -541,3 +541,43 @@ adjacency_rule
 	icon = 9680
 	offset = { -2 0 -9 }
 }
+
+#Bohai Strait
+adjacency_rule
+{
+	name = "BOHAI_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 1150 1104 }
+	
+	icon = 1150
+	offset = { -2 0 -9 }
+}

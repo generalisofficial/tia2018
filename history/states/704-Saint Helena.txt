@@ -1,23 +1,28 @@
+
 state={
 	id=704
 	name="STATE_704"
-	manpower=4534	
-	state_category = state_level_1
-	
-	history= {
+
+	history={
 		owner = ENG
 		victory_points = {
-			13016 1
+			13016 1 
 		}
 		buildings = {
 			infrastructure = 1
 			13016 = {
 				naval_base = 1
+
 			}
+
 		}
+
 	}
-	
+
 	provinces={
 		13016 
 	}
+	manpower=4534
+	buildings_max_level_factor=1.000
+	state_category=state_level_1
 }

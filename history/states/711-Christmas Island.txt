@@ -1,25 +1,29 @@
+
 state={
 	id=711
 	name="STATE_711"
-	manpower=2205	
-	state_category = state_level_1
-	
-	history=
-	{
+
+	history={
 		owner = AST
 		victory_points = {
-			13005 1
+			13005 1 
 		}
 		buildings = {
 			infrastructure = 3
 			13005 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = AST
+
 	}
-	
+
 	provinces={
 		13005 
 	}
+	manpower=2205
+	buildings_max_level_factor=1.000
+	state_category=state_level_1
 }
