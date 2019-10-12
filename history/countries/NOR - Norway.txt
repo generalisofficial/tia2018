@@ -92,14 +92,14 @@ add_ideas = {
 set_country_flag = christianity
 
 #Storting
-set_variable = { communist_seats = 2.4 }
-set_variable = { democratic_socialist_seats = 6.0 }
-set_variable = { progressive_seats = 3.2 }
-set_variable = { social_democrat_seats = 27.4 }
-set_variable = { social_liberal_seats = 4.4 }
-set_variable = { market_liberal_seats = 37.2 }
-set_variable = { conservative_seats = 4.2 }
-set_variable = { reactionary_seats = 15.2 }
+set_variable = { communist_seats = 0.59 }
+set_variable = { democratic_socialist_seats = 6.50 }
+set_variable = { progressive_seats = 0.59 }
+set_variable = { social_democrat_seats = 28.99 }
+set_variable = { social_liberal_seats = 11.24 }
+set_variable = { market_liberal_seats = 31.39 }
+set_variable = { conservative_seats = 4.73 }
+set_variable = { reactionary_seats = 15.97 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -108,10 +108,8 @@ set_variable = { islamist = 0 }
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_market_liberal
-set_country_flag = coalition_conservative
 set_country_flag = coalition_reactionary
 add_to_variable = { ROOT.Coalition = market_liberal_seats }
-add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {
@@ -121,21 +119,63 @@ set_politics = {
 	elections_allowed = yes
 }
 
-set_popularities = {
-    reactionary = 15.2
-    conservative = 4.2
-    market_liberal = 37.2
-    social_liberal = 4.4
-    social_democrat = 27.4
-    progressive = 3.2
-    democratic_socialist = 6.0
-    communist = 2.4
+set_popularities = {    
+    social_democrat = 28.99
+    market_liberal = 31.39
+    reactionary = 15.97
+    social_liberal = 11.24
+    democratic_socialist = 6.50
+    conservative = 4.73
+    progressive = 0.59
+    communist = 0.59
+}
+
+create_country_leader = {
+	name = "Jonas Gahr Store"
+	picture = "Jonas_Gahr_Store.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Erna Solberg"
+	picture = "Erna_Solberg.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Siv Jensen"
+	picture = "Siv_Jensen.dds"
+	ideology = reactionary_ideology   
+}
+
+create_country_leader = {
+	name = "Trygve Slagsvold Vedum"
+	picture = "Trygve_Slagsvold_Vedum.dds"
+	ideology = agrarian
+}
+
+create_country_leader = {
+	name = "Audun Lysbakken"
+	picture = "Audun_Lysbakken.dds"
+	ideology = democratic_socialist_ideology      
 }
 
 create_country_leader = {
 	name = "Knut Arild Hareide"
 	picture = "Knut_Arild_Hareide.dds"
 	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Une Aina Bastholm"
+	picture = "Une_Aina_Bastholm.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Bjørnar Moxnes"
+	picture = "Bjornar_Moxnes.dds"
+	ideology = marxist_leninist
 }
 
 create_country_leader = {
@@ -154,48 +194,6 @@ create_country_leader = {
 	name = "Harald V"
 	picture = "Harald_V.dds"
 	ideology = absolute_monarchist  
-}
-
-create_country_leader = {
-	name = "Siv Jensen"
-	picture = "Siv_Jensen.dds"
-	ideology = reactionary_ideology   
-}
-
-create_country_leader = {
-	name = "Erna Solberg"
-	picture = "Erna_Solberg.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Jonas Gahr Store"
-	picture = "Jonas_Gahr_Store.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Audun Lysbakken"
-	picture = "Audun_Lysbakken.dds"
-	ideology = democratic_socialist_ideology      
-}
-
-create_country_leader = {
-	name = "Bjørnar Moxnes"
-	picture = "Bjornar_Moxnes.dds"
-	ideology = marxist_leninist      
-}
-
-create_country_leader = {
-	name = "Trygve Slagsvold Vedum"
-	picture = "Trygve_Slagsvold_Vedum.dds"
-	ideology = agrarian
-}
-
-create_country_leader = {
-	name = "Une Aina Bastholm"
-	picture = "Une_Aina_Bastholm.dds"
-	ideology = green
 }
 
 create_country_leader = {

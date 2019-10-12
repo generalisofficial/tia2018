@@ -1,0 +1,19 @@
+﻿add_namespace = nauru
+
+country_event = { #President Lionel Aingimea
+	id = nauru.1
+	title = nauru.1.t
+	desc = nauru.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = nauru.1.a
+		create_country_leader = {
+	        name = "Lionel Aingimea"
+	        picture = "Lionel_Aingimea.dds"
+	        ideology = independent
+        }
+	}
+}
