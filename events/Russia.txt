@@ -75,20 +75,3 @@ country_event = {
 		}
 	}
 }
-
-#Russia sends support to Donbass 
-country_event = {
-	id = russia.11
-	title = russia.11.t
-	desc = russia.11.d
-	picture = GFX_report_event_russian_flag
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.11.o1
-		DPR  = { add_ideas = idea_SOV_russian_support }
-		DPR  = { add_manpower = 100000 }
-		DPR  = { load_oob = "DPR volunteers" }
-	}
-}

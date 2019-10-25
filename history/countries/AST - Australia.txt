@@ -102,12 +102,12 @@ set_variable = { corporate_tax = 30 }
 #House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { democratic_socialist_seats = 0 }
-set_variable = { progressive_seats = 10.23 }
-set_variable = { social_democrat_seats = 34.73 }
-set_variable = { social_liberal_seats = 1.85 }
-set_variable = { market_liberal_seats = 42.05 }
-set_variable = { conservative_seats = 10.60 }
-set_variable = { reactionary_seats = 0.54 }
+set_variable = { progressive_seats = 0.67 }
+set_variable = { social_democrat_seats = 46.00 }
+set_variable = { social_liberal_seats = 0.67 }
+set_variable = { market_liberal_seats = 41.33 }
+set_variable = { conservative_seats = 10.66 }
+set_variable = { reactionary_seats = 0.67 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -122,18 +122,18 @@ add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
 	ruling_party = market_liberal
-	last_election = "2016.7.2"
+	last_election = "2016.5.18"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 13.38
-    market_liberal = 41.92
-    progressive = 10.00
-    social_democrat = 33.90
-    reactionary = 0.50
-    social_liberal = 0.30
+    market_liberal = 42.4
+    social_democrat = 45.03
+    conservative = 10.59
+    progressive = 0.66
+    reactionary = 0.66
+    social_liberal = 0.66
 }
 
 add_opinion_modifier = {

@@ -96,9 +96,29 @@ add_ideas = {
 	islamic_sectarian_violence
 	lgbt_illegal
 	islam
+	parliamentary_system
 }
 
 add_opinion_modifier = { target = ARM modifier = rival }
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 2.92 }
+set_variable = { progressive_seats = 13.45 }
+set_variable = { social_democrat_seats = 2.33 }
+set_variable = { social_liberal_seats = 7.01 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 59.68 }
+set_variable = { reactionary_seats = 10.23 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 4.38 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -108,60 +128,19 @@ set_politics = {
 }
 
 set_popularities = {
-    progressive = 13.09
-    reactionary = 41.32
-    islamist = 5.34
-    conservative = 33.86
-    nationalist = 4.85
-    democratic_socialist = 1.54
+    reactionary = 47.99
+    conservative = 25.73
+    progressive = 15.78
+    islamist = 4.38
+    democratic_socialist = 3.21
+	social_liberal = 2.04
+	social_democrat = 0.87
 }
 
 create_country_leader = {
-	name = "Siraj-ul-Haq"
-	picture = "Siraj_ul_Haq.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "Fazl-ur-Rehman"
-	picture = "Fazl_ur_Rehman.dds"
-	ideology = nationalist_ideology
-}
-
-create_country_leader = {
-	name = "Pervez Musharraf"
-	picture = "Pervez_Musharraf.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Safdar Ali Abbasi"
-	picture = "Safdar_Ali_Abbasi.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Bilawal Bhutto Zardari"
-	picture = "Bilawal_Bhutto_Zardari.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Altaf Hussain"
-	picture = "Altaf_Hussain.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Jameel Ahmad Malik"
-	picture = "Jameel_Ahmad_Malik.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Afrasiab Khattak"
-	picture = "Afrasiab_Khattak.dds"
-	ideology = democratic_socialist_ideology
+	name = "Imran Khan"
+	picture = "Imran_Khan.dds"
+	ideology = reactionary_ideology
 }
 
 create_country_leader = {
@@ -171,9 +150,39 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imran Khan"
-	picture = "Imran_Khan.dds"
-	ideology = reactionary_ideology
+	name = "Bilawal Bhutto Zardari"
+	picture = "Bilawal_Bhutto_Zardari.dds"
+	ideology = progressive_ideology
+}
+
+create_country_leader = {
+	name = "Fazal-ur-Rehman"
+	picture = "Fazal_ur_Rehman.dds"
+	ideology = islamic_democracy
+}
+
+create_country_leader = {
+	name = "Sibghatullah Shah Rashdi III"
+	picture = "Sibghatullah_Shah_Rashdi_III.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Asfandyar Wali Khan"
+	picture = "Asfandyar_Wali_Khan.dds"
+	ideology = democratic_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Altaf Hussain"
+	picture = "Altaf_Hussain.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Jameel Ahmad Malik"
+	picture = "Jameel_Ahmad_Malik.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {

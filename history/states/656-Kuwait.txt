@@ -1,33 +1,36 @@
+
 state={
 	id=656
 	name="STATE_656"
-	manpower = 2940110
-	
-	state_category = state_level_10
-	
-	resources = {
-		oil = 300
+	resources={
+		oil=300.000
 	}
-	
+
 	history={
 		owner = KUW
 		add_core_of = KUW
-		
-		victory_points = { 8085 20 }
-		
+		victory_points = {
+			8085 20 
+		}
 		buildings = {
 			infrastructure = 7
-			
 			industrial_complex = 6
 			arms_factory = 2
 			dockyard = 1
-			
 			air_base = 6
-			8085 = { naval_base = 8 }
+			8085 = {
+				naval_base = 8
+
+			}
+
 		}
 
 	}
+
 	provinces={
-		8085
+		8085 13251 13252 
 	}
+	manpower=2940110
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

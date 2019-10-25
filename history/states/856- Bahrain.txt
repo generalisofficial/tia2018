@@ -2,13 +2,9 @@
 state={
 	id=856
 	name="STATE_856"
-	manpower = 807131
-	
-	state_category = state_level_10
-	
-	resources = {
-		aluminium=93
-		oil=6
+	resources={
+		aluminium=93.000
+		oil=6.000
 	}
 
 	history={
@@ -21,13 +17,20 @@ state={
 			air_base = 2
 			13204 = {
 				naval_base = 3
+
 			}
+
 		}
-		victory_points = { 13204 3 }
+		victory_points = {
+			13204 3 
+		}
+
 	}
 
 	provinces={
 		13204 
 	}
-	
+	manpower=807131
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }
