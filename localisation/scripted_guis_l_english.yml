@@ -126,11 +126,11 @@
  #####################################
 
   # Events
-space.1.t:0 "[USA.GetName] starts the InSight Program"
+ space.1.t:0 "[USA.GetName] starts the InSight Program"
  space.1.d:0 "\n\nToday, the president of the United States [USA.GetLeader] announced the start of the InSight Program by NASA. The Programs aims to land a second rover on Mars to measure its seismic activities and its internal heat flow. The project had already been delayed in 2016 but will now be completed.\nIt is scheduled to launch at the end of 2018."
  space.1.a:0 "To Mars! For the second time!"
  space.1.b:0 "Looking forward to the images."
-space.2.t:0 "Gouvernment funding for InSight launched!"
+ space.2.t:0 "Government funding for InSight launched!"
  space.2.d:0 "We are now collecting money from weekly activities for the next 3 months. It should be enough time to collect the 650.000.000$ we need.\n\n§RPS: You need to access the NASA research window through the politics window to start working on the project.§!"
  space.2.a:0 "Nice!"
 
@@ -184,26 +184,6 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
  insight_lander_research_name:0 "InSight Lander"
  color_red:0 "§R"
  color_green:0 "§G"
-
-
- ############################
- # PARTISANS SCRIPTED GUI
- ############################
-
- PARTISAN_INFO_NO1:0 "§R§H[This.GetName]§! is not your core state! You cannot raise Partisans here!§!"
- PARTISAN_INFO_NO2:0 "You have recently mobilized partisans and you cannot encourage them again for §H[?From.From.risedup_day]§! days. You can do it day later."
- PARTISAN_INFO_NO3:0 "§RIn order to raise §H[This.GetName]§! partisans, you need at least §H50%§! resistance strength in state!§!"
- PARTISAN_INFO_YES:0 "§H[This.GetName]§! urge for uprising!"
- PARTISAN_1DIVISION_TOOLTIP:0 "Given the scale of resistance we will be able to form §H1§! partisan unit."
- PARTISAN_2DIVISION_TOOLTIP:0 "Given the scale of resistance we will be able to form §H2§! partisan units."
- PARTISAN_3DIVISION_TOOLTIP:0 "Given the scale of resistance we will be able to form §H3§! partisan units."
- PARTISAN_4DIVISION_TOOLTIP:0 "Given the scale of resistance we will be able to form §H4§! partisan units."
- PARTISAN_5DIVISION_TOOLTIP:0 "Given the scale of resistance we will be able to form §H5§! partisan units."
- PARTISAN_6DIVISION_TOOLTIP:0 "Given the scale of resistance we will be able to form §H6§! partisan units."
- PARTISAN_0DIVISION_TOOLTIP:0 ""
- PARTISANS_INFO:0 "[This.partisan_info]"
- PARTISANS_INFO_DELAYED:0 "[This.partisan_info_delayed]"
-
 
  ######################################################
  # COALITION, PARLIAMENT AND GOVERNMENT SCRIPTED GUI
@@ -312,4 +292,4 @@ space.2.t:0 "Gouvernment funding for InSight launched!"
  government_tooltip:0 "§YGovernment§!"
  GOV_KICK_TOOLTIP:0 "[This.GetCanBeKicked]"
  GOV_CANT_BE_KICKED:0 "The Party leads the Government.\n§YIt cannot be kicked.§!"
- GOV_RESIGN_TOOLTIP:0 "§RThe current government party will resign and therefore breaking the active coalition!§!\n\n§YA new government will have to be formed§! (Requires 150 Political Power)."
+ GOV_RESIGN_TOOLTIP:0 "§RThe government will resign and call for Parliament to elect a new Cabinet.§!\n\n§YA new government will have to be formed§! (Requires 150 Political Power)."

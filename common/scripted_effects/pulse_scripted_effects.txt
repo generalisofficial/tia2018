@@ -651,6 +651,12 @@ pulse = {
 		}
 		if = {
 			limit = {
+			    has_country_leader = { name = "Collective Leadership" ruling_only = yes } 
+			}
+			kill_country_leader = yes
+		}
+		if = {
+			limit = {
 			    NOT = { 
 				    any_country = {
 				        has_idea = baltic_assembly_member
