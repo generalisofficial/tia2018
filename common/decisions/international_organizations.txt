@@ -3,7 +3,7 @@ non_aligned_movement_decisions = {
 	join_non_aligned_movement = {
 	
 		visible = {
-			NOT = { has_idea = non_aligned_movement_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = non_aligned_movement_member has_idea = salafist_jihadist_group has_global_flag = non_aligned_movement_dissolved }
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = SOV }
 			NOT = { is_in_faction_with = PRC }
@@ -101,7 +101,7 @@ nordic_council_decisions = {
 	join_nordic_council = {
 	
 		visible = {
-			NOT = { has_idea = nordic_council_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = nordic_council_member has_idea = salafist_jihadist_group has_global_flag = nordic_council_dissolved }
 			OR = { original_tag = SWE original_tag = DEN original_tag = NOR original_tag = FIN original_tag = ICE }
 		}
 		available = {
@@ -149,7 +149,7 @@ east_african_community_decisions = {
 	join_east_african_community = {
 	
 		visible = {
-			NOT = { has_idea = east_african_community_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = east_african_community_member has_idea = salafist_jihadist_group has_global_flag = east_african_community_dissolved }
 			OR = { original_tag = SSD original_tag = UGA original_tag = RWA original_tag = KEN original_tag = TZN original_tag = BUR }
 		}
 		available = {
@@ -197,7 +197,7 @@ guam_decisions = {
 	join_guam = {
 	
 		visible = {
-			NOT = { has_idea = guam_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = guam_member has_idea = salafist_jihadist_group has_global_flag = guam_dissolved }
 			OR = { original_tag = GEO original_tag = UKR original_tag = AZR original_tag = MOL }
 		}
 		available = {
@@ -245,7 +245,7 @@ commonwealth_of_independent_states_decisions = {
 	join_commonwealth_of_independent_states = {
 	
 		visible = {
-			NOT = { has_idea = commonwealth_of_independent_states_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = commonwealth_of_independent_states_member has_idea = salafist_jihadist_group has_global_flag = commonwealth_of_independent_states_dissolved }
 			OR = { original_tag = SOV original_tag = UKR original_tag = BLR original_tag = LIT original_tag = LAT original_tag = EST original_tag = MOL original_tag = GEO original_tag = TRA original_tag = GEO original_tag = ABK original_tag = SOS original_tag = NGK original_tag = ARM original_tag = AZR original_tag = KAZ original_tag = UZB original_tag = KYR original_tag = TMS original_tag = TAJ }
 		}
 		available = {
@@ -290,7 +290,7 @@ gulf_cooperation_council_decisions = {
 	join_gulf_cooperation_council = {
 	
 		visible = {
-			NOT = { has_idea = gulf_cooperation_council_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = gulf_cooperation_council_member has_idea = salafist_jihadist_group has_global_flag = gulf_cooperation_council_dissolved }
 			OR = { original_tag = SAU original_tag = OMA original_tag = UAE original_tag = QAT original_tag = BHR original_tag = JOR original_tag = YEM original_tag = MOR }
 		}
 		available = {
@@ -335,7 +335,7 @@ arab_league_decisions = {
 	join_arab_league = {
 	
 		visible = {
-			NOT = { has_idea = arab_league_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = arab_league_member has_idea = salafist_jihadist_group has_global_flag = arab_league_dissolved }
 			has_country_flag = country_language_arabic
 		}
 		
@@ -389,7 +389,7 @@ shanghai_cooperation_organization_decisions = {
 	join_shanghai_cooperation_organization = {
 	
 		visible = {
-			NOT = { has_idea = shanghai_cooperation_organization_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = shanghai_cooperation_organization_member has_idea = salafist_jihadist_group has_global_flag = shanghai_cooperation_organization_dissolved }
 			OR = { original_tag = RAJ original_tag = PAK original_tag = PRC original_tag = SOV original_tag = KAZ original_tag = TAJ original_tag = UZB original_tag = KYR}
 		}
 		
@@ -439,7 +439,7 @@ benelux_decisions = {
 	join_benelux = {
 	
 		visible = {
-			NOT = { has_idea = benelux_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = benelux_member has_idea = salafist_jihadist_group has_global_flag = benelux_dissolved }
 			OR = { original_tag = HOL original_tag = BEL original_tag = LUX }
 		}
 		
@@ -489,7 +489,7 @@ asean_decisions = {
 	join_asean = {
 	
 		visible = {
-			NOT = { has_idea = asean_member has_idea = salafist_jihadist_group }
+			NOT = { has_idea = asean_member has_idea = salafist_jihadist_group has_global_flag = asean_dissolved }
 			OR = { original_tag = BRM original_tag = SIA original_tag = LAO	original_tag = CAM original_tag = VIN original_tag = PHI original_tag = MAL original_tag = SIG original_tag = BRU original_tag = INS original_tag = ETI }
 		}
 		available = {

@@ -581,3 +581,43 @@ adjacency_rule
 	icon = 1150
 	offset = { -2 0 -9 }
 }
+
+#Bass Strait
+adjacency_rule
+{
+	name = "BASS_STRAIT"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12645 1759 }
+		
+	icon = 12645
+	offset = { 5 0 -6 }
+}

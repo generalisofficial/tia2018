@@ -14,8 +14,8 @@
  NUKE_AMOUNT_TO_ENRICH_TOOLTIP:0 "The Amount of §Ynatural Uranium§! to enrich."
  NUKE_ENRICH_BUTTON_TOOLTIP:0 "Enrich §Ynatural Uranium to Highly Enriched Uranium§! (HEU)."
  NUKE_HEU_NEEDED_TOOLTIP:0 "You need §Yapproximately 15-16 KG§! of Highly Enriched Uranium to build §Yone§! Nuclear Warhead."
- NUKES_IN_STOCK_TOOLTIP:0 "§GDeveloper Notice:§! Due to an engine limitation, the maximum amount of nuclear weapons a country can posess is limted to '999'."
- NUKE_BUILD_TIME_TOOLTIP:0 "It takes around §Ya week§! to build a nuclear weapon"
+ NUKES_IN_STOCK_TOOLTIP:0 "§GDeveloper Notice:§! Due to an engine limitation, the maximum amount of nuclear weapons a country can posess is limited to '999'."
+ NUKE_BUILD_TIME_TOOLTIP:0 "It takes around §Y1 week§! to build a nuclear weapon"
 
  # TO DO:
  # FINISH ENRICHEMENT -> add the price ; configure the time needed
@@ -191,7 +191,7 @@
 
  # Toolbar
  COALITION_SUPPORT:0 "[?ROOT.Coalition]%"
- COALITION_TOOLTIP:0 "\n\n§YGovernment Support§!\nThe current government is backed by §Y[?ROOT.Coalition]%§! of MPs\n\nThe current government is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
+ COALITION_TOOLTIP:0 "\n\n§YGovernment Support§!\nThe current government holds of §Y[?ROOT.Coalition]%§! of seats\n\nThe current government is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
  coalition_islamist_party:0 "- Islamist Party\n"
  coalition_fascist_party:0 "- Third Positionist Party\n"
  coalition_nationalist_party:0 "- Nationalist Party\n"
@@ -266,7 +266,7 @@
  #### Parliament Mechanic
  # Tooltips
  parliament_tooltip:0 "§YParliament§!"
- MOTION_NO_CONFIDENCE_TOOLTIP:0 "A successful §YMotion of No Confidence§! will let you form a new government without holding elections for a new parliament.\n\n§YRequirements§!:\n- Has Idea: §YParliamentary System§!"
+ MOTION_NO_CONFIDENCE_TOOLTIP:0 "A successful §YMotion of No Confidence§! will unseat the government and let parliament form a new one from scratch.\n\n§YRequirements§!:\n- Has Idea: §YParliamentary System§!"
 
  # Ideology Texts for the window
  COMMUNIST_POPULARITY_TEXT:0 "§CCommunists: [?Root.communist_seats]%§!"

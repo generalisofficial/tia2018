@@ -651,9 +651,22 @@ pulse = {
 		}
 		if = {
 			limit = {
-			    has_country_leader = { name = "Collective Leadership" ruling_only = yes } 
+			    OR = {
+			        has_country_leader = { name = "Collective Leadership" ruling_only = yes } 
+					has_country_leader = { name = "No Candidate" ruling_only = yes } 
+				}
 			}
 			kill_country_leader = yes
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = non_aligned_movement_member
+			        }
+				}
+			}
+			set_global_flag = non_aligned_movement_dissolved
 		}
 		if = {
 			limit = {
@@ -669,11 +682,111 @@ pulse = {
 			limit = {
 			    NOT = { 
 				    any_country = {
+				        has_idea = nordic_council_member
+			        }
+				}
+			}
+			set_global_flag = nordic_council_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = east_african_community_member
+			        }
+				}
+			}
+			set_global_flag = east_african_community_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = east_african_community_member
+			        }
+				}
+			}
+			set_global_flag = east_african_community_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = guam_member
+			        }
+				}
+			}
+			set_global_flag = guam_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = commonwealth_of_independent_states_member
+			        }
+				}
+			}
+			set_global_flag = commonwealth_of_independent_states_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = commonwealth_of_independent_states_member
+			        }
+				}
+			}
+			set_global_flag = commonwealth_of_independent_states_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = gulf_cooperation_council_member
+			        }
+				}
+			}
+			set_global_flag = gulf_cooperation_council_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = arab_league_member
+			        }
+				}
+			}
+			set_global_flag = arab_league_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = shanghai_cooperation_organization_member
+			        }
+				}
+			}
+			set_global_flag = shanghai_cooperation_organization_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
 				        has_idea = benelux_member
 			        }
 				}
 			}
 			set_global_flag = benelux_dissolved
+		}
+		if = {
+			limit = {
+			    NOT = { 
+				    any_country = {
+				        has_idea = asean_member
+			        }
+				}
+			}
+			set_global_flag = asean_dissolved
 		}
 		if = {
 			limit = {

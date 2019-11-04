@@ -15,13 +15,6 @@ country_event = {	#Worker Protests
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 20 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 10 } }
 		modifier = {	#Authoritarian states will get protests more frequently.
 			factor = 0.8
 			OR = {
@@ -138,13 +131,6 @@ country_event = {	#Suburb Riots
 			factor = 1.25
 			has_democratic_form_of_government = yes
 		}
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 20 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 10 } }
 	}
 	
 	option = {
@@ -182,12 +168,6 @@ country_event = {	#Parliamentary Crisis
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 20 } }
 	}
 	
 	option = {
@@ -266,13 +246,6 @@ country_event = {	#Reform Administration Laws
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 50 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 45 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 35 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 25 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 20 } }
 	}
 	
 	option = {	#An excellent proposal!
@@ -310,13 +283,6 @@ country_event = {	#Local Separatists gain support
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 50 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 45 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 35 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 25 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 20 } }
 	}
 	
 	option = {	#Let them talk.
@@ -343,13 +309,6 @@ country_event = {	#Prison Break
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 50 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 45 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 35 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 25 } }
-		modifier = { factor = 0.95 has_country_flag = { flag = national_stability value < 20 } }
 	}
 	
 	option = {	#They'll catch him eventually.
@@ -389,13 +348,6 @@ country_event = {	#Racial Violence against Ethnic Minorities
 	
 	mean_time_to_happen = {
 		days = 10000
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 50 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 45 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 35 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 25 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 20 } }
 	}
 	
 	option = {	#Bring the criminals to justice
@@ -480,16 +432,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 65 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 55 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 50 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 45 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 40 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 35 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 30 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 25 } }
-		modifier = { factor = 0.9 has_country_flag = { flag = national_stability value < 20 } }
 	}
 	
 	option = {
@@ -528,11 +470,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 90 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 50 } }
 	}
 	
 	option = {	#We need to fight this!
@@ -558,102 +495,6 @@ country_event = {
 	}
 }
 
-##Border Incident
-#country_event = {
-#	id = generic.12
-#	title = generic.12.t
-#	desc = generic.12.d
-#	picture = GFX_report_event_border_conflict
-#	
-#	trigger = {
-#		is_puppet = no
-#		any_neighbor_country = {
-#			is_puppet = no
-#			NOT = { is_in_faction_with = ROOT }
-#			has_opinion = {
-#				target = ROOT
-#				value < 10
-#			}
-#		}
-#	}
-#	
-#	mean_time_to_happen = {
-#		days = 2000
-#	}
-#	
-#	option = {	#We will find a solution.
-#		name = generic.12.o1
-#		add_political_power = 10
-#		ai_chance = { 
-#			factor = 90
-#			modifier = { add = 20 threat < 0.7 }
-#			modifier = { add = 20 threat < 0.5 }
-#			modifier = { add = 20 threat < 0.3 }
-#			modifier = {
-#				add = 100
-#				has_democratic_form_of_government = yes
-#			}
-#		}
-#	}
-#	
-#	option = {	#We need to stay vigilant.
-#		ai_chance = { 
-#			factor = 10 
-#			modifier = { add = 20 has_government = fascist }
-#		}
-#		
-#		name = generic.12.o2
-#		
-#		army_experience = 5
-#		navy_experience = 5
-#		air_experience = 5
-#		
-#		add_named_threat = {
-#			threat = 0.5
-#			name = generic.12.t
-#		}
-#		
-#		if = {
-#			limit = { is_historical_focus_on = yes }
-#			add_popularity = -10
-#		}
-#		if = {
-#			limit = { is_historical_focus_on = no }
-#			random_neighbor_country = {
-#				limit = {
-#					is_puppet = no
-#					NOT = { is_in_faction_with = ROOT }
-#					has_opinion = {
-#						target = ROOT
-#						value < 10
-#					}
-#				}
-#				ROOT = {
-#					create_wargoal = {
-#						target = PREV
-#						type = puppet_wargoal
-#					}
-#				}
-#			}
-#		}
-#		
-#		if = {
-#			limit = { fascist > 0.02 }
-#			add_popularity = {
-#				ideology = fascist
-#				popularity = 0.02
-#			}
-#		}
-#		if = {
-#			limit = { communist > 0.02 }
-#			add_popularity = {
-#				ideology = communist
-#				popularity = 0.02
-#			}
-#		}
-#	}
-#}
-
 #Airline Scandal
 country_event = {
 	id = generic.13
@@ -670,11 +511,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 50 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 40 } }
 	}
 	
 	option = {
@@ -710,11 +546,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 50 } }
-		modifier = { factor = 1.1 has_country_flag = { flag = national_stability value > 40 } }
 	}
 	
 	option = {	#Purge the army!
@@ -816,11 +647,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 3000
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value > 90 } }
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value > 80 } }
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value > 70 } }
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value > 60 } }
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value > 50 } }
 	}
 	
 	option = {
@@ -853,9 +679,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value < 60 } }
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value < 45 } }
-		modifier = { factor = 0.92 has_country_flag = { flag = national_stability value < 30 } }
 	}
 	
 	option = {
