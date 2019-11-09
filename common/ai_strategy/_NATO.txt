@@ -1,48 +1,41 @@
 seek_NATO_membership = {
 	
 	enable = {
-	
-		NOT = { tag = USA }
+		NOT = { original_tag = USA }
 		USA = { is_in_faction = yes }
-		
 		OR = {
-			tag = BEL
-			tag = CAN
-			tag = DEN
-			tag = FRA
-			tag = ICE
-			tag = ITA
-			tag = LUX
-			tag = HOL
-			tag = NOR
-			tag = POR
-			tag = ENG
-			tag = GRE
-			tag = TUR
-			tag = GER
-			tag = SPR
-			tag = CZE
-			tag = HUN
-			tag = POL
-			tag = BUL
-			tag = EST
-			tag = LAT
-			tag = LIT
-			tag = ROM
-			tag = SLO
-			tag = SLV
-			tag = CRO
-			tag = ALB
-			tag = MNT
-			
-			has_country_flag = has_joined_NATO_by_event
+			original_tag = BEL
+			original_tag = CAN
+			original_tag = DEN
+			original_tag = FRA
+			original_tag = ICE
+			original_tag = ITA
+			original_tag = LUX
+			original_tag = HOL
+			original_tag = NOR
+			original_tag = POR
+			original_tag = ENG
+			original_tag = GRE
+			original_tag = TUR
+			original_tag = GER
+			original_tag = SPR
+			original_tag = CZE
+			original_tag = HUN
+			original_tag = POL
+			original_tag = BUL
+			original_tag = EST
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = ROM
+			original_tag = SLO
+			original_tag = SLV
+			original_tag = CRO
+			original_tag = ALB
+			original_tag = MNT
 		}
-		
 		NOT = { has_country_flag = left_NATO }
-		
 		has_democratic_form_of_government = yes
 		USA = { has_democratic_form_of_government = yes }
-		
 	}
 	
 	abort = {

@@ -1,0 +1,46 @@
+USA_campaign_promises = {
+	
+	build_the_wall = {
+	
+		visible = {
+		    original_tag = USA
+			has_country_leader = { name = "Donald Trump" ruling_only = yes }
+		}
+		
+		available = {
+			has_country_leader = { name = "Donald Trump" ruling_only = yes }
+			majority_government = yes
+		}
+		
+		complete_effect = {
+		    news_event = usa.2
+		}
+		
+		remove_effect = {
+		    add_popularity = { ideology = conservative popularity = 0.03 }
+		}
+		
+		timeout_effect = {
+		    add_popularity = { ideology = conservative popularity = -0.03 }
+		}
+		
+		modifier = {
+			#Continuous money decrease stuffi add pls
+		}
+		
+		icon = donald_trump
+		
+		days_remove = 30
+		selectable_mission = yes
+		days_mission_timeout = 732
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				date > 2019.2.15
+			}
+		}
+	}
+}

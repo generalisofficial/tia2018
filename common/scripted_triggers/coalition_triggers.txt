@@ -6,17 +6,9 @@ minority_government = {
     }
 }
 
-republican_majority = {
+majority_government = {
 	check_variable = {
-        var = republican_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-}
-
-democratic_majority = {
-	check_variable = {
-        var = democratic_seats
+        var = ROOT.Coalition
         value = 50
         compare = greater_than_or_equals
     }

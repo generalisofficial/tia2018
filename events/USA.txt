@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = no
 	
 	option = {
-		name = usa.1.o1
+		name = usa.1.a
 		if = {
 			limit = {
 			    has_country_leader = { name = "Donald Trump" ruling_only = yes } 
@@ -23,6 +23,31 @@ country_event = {
 			else = {
 			    retire_country_leader = yes
 			}
+		}
+	}
+}
+
+#Trump builds the wall
+news_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_news_event_donald_trump_legislation
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = usa.2.a
+		trigger = { 
+			NOT = { original_tag = USA }
+		}
+	}
+	
+	option = {
+		name = usa.2.b
+		trigger = { 
+			original_tag = USA
 		}
 	}
 }
