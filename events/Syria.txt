@@ -17,15 +17,11 @@ news_event = {
 		    limit = {
 		        OR = {
 					is_core_of = FSA
-					is_core_of = HTS
 					is_claimed_by = FSA
-					is_claimed_by = HTS
 				}
 			}
 			remove_core_of = FSA
-			remove_core_of = HTS
 		    remove_claim_by = FSA
-			remove_claim_by = HTS
 		}
 	}
 }
@@ -74,17 +70,13 @@ news_event = {
 		        OR = {
 				    is_core_of = SYR
 					is_core_of = FSA
-					is_core_of = HTS
 				    is_claimed_by = SYR
 					is_claimed_by = FSA
-					is_claimed_by = HTS
 				}
 			}
 			remove_core_of = SYR
 			remove_core_of = FSA
-			remove_core_of = HTS
 			remove_claim_by = SYR
 		    remove_claim_by = FSA
-			remove_claim_by = HTS
 		}
 }

@@ -586,7 +586,6 @@ pulse = {
 			    NOT = { has_global_flag = syrian_civil_war_over }
 				country_exists = SYR
 				NOT = { country_exists = FSA }
-				NOT = { country_exists = HTS }
 				NOT = { country_exists = ISS }
 			}
 			country_event = syria.1
@@ -599,40 +598,19 @@ pulse = {
 					AND = {
 					    country_exists = FSA
 						NOT = { country_exists = SYR }
-						NOT = { country_exists = HTS }
-						NOT = { country_exists = ISS }
-					}
-					AND = {
-					    country_exists = HTS
-						NOT = { country_exists = FSA }
-						NOT = { country_exists = SYR }
-						NOT = { country_exists = ISS }
-					}
-					AND = {
-					    country_exists = FSA
-					    country_exists = HTS
-						NOT = { country_exists = SYR }
 						NOT = { country_exists = ISS }
 					}
 				}
 			}
 			country_event = syria.2
 			set_global_flag = syrian_civil_war_over
-			if = { 
-			    limit = { country_exists = FSA }
-				FSA = { set_cosmetic_tag = FSA_GOV }
-			}
-			if = { 
-			    limit = { country_exists = HTS }
-				HTS = { set_cosmetic_tag = HTS_GOV }
-			}
+			FSA = { set_cosmetic_tag = FSA_GOV }
 		}
 		if = {
 			limit = {
 			    NOT = { has_global_flag = syrian_civil_war_over }
 				country_exists = ISS
 				NOT = { country_exists = FSA }
-				NOT = { country_exists = HTS }
 				NOT = { country_exists = SYR }
 			}
 			country_event = syria.3
