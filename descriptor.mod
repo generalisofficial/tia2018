@@ -11,7 +11,7 @@ tags={
 	"Ideologies"
 	"Utilities"
 }
-supported_version="1.8.0"
+supported_version="1.8.1"
 replace_path = "history/units"
 replace_path = "common/ai_focuses"
 replace_path = "common/bookmarks"

@@ -83,6 +83,7 @@ add_ideas = {
 	population_growth_rapid
 	limited_conscription
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
@@ -91,18 +92,37 @@ set_country_flag = christianity
 set_variable = { income_tax = 25 }
 set_variable = { corporate_tax = 29 }
 
+#Chamber of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 67.69 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 24.62 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 7.69 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {	
 	ruling_party = democratic_socialist
-	last_election = "2014.10.12"
+	last_election = "2014.10.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 11.7
-    social_democrat = 24.23
-    progressive = 2.71
-    democratic_socialist = 61.36
+    democratic_socialist = 51.53
+	social_liberal = 38.48
+	conservative = 6.92
+	market_liberal = 3.07
 }
 
 create_country_leader = {
@@ -118,15 +138,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jorge Suárez Vargas"
-	picture = "Jorge_Suarez_Vargas.dds"
+	name = "Carlos Mesa"
+	picture = "Carlos_Mesa.dds"
+	ideology = centrist
+}
+
+create_country_leader = {
+	name = "Chi Hyun Chung"
+	picture = "Chi_Hyun_Chung.dds"
 	ideology = christian_democrat
 }
 
 create_country_leader = {
-	name = "Juan del Granado"
-	picture = "Juan_del_Granado.dds"
-	ideology = progressive_ideology
+	name = "Óscar Ortiz Antelo"
+	picture = "Oscar_Ortiz_Antelo.dds"
+	ideology = libertarian
 }
 
 create_field_marshal = {
