@@ -1,12 +1,13 @@
-state=
-{
+
+state={
 	id=647
 	name="STATE_647"
-	state_category = state_level_2
-	manpower = 21200
-	history=
-	{
+
+	history={
 		owner = PLU
+		victory_points = {
+			4357 1 
+		}
 		add_core_of = PLU
 		buildings = {
 			infrastructure = 3
@@ -16,13 +17,15 @@ state=
 				naval_base = 1
 
 			}
+
 		}
-		
-		victory_points = {
-			4357 1 
-		}
+
 	}
+
 	provinces={
-		4357 12103
+		4357 
 	}
+	manpower=17907
+	buildings_max_level_factor=1.000
+	state_category=state_level_2
 }
