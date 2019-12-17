@@ -342,3 +342,35 @@ create_navy_leader = {
 	picture = "admirals/Yuan_Yubai.dds"
 	skill = 1
 }
+
+#PUPPETS
+
+HKN = {
+    set_politics = {	
+	    ruling_party = conservative
+	    last_election = "2017.7.1"
+	    election_frequency = 60
+	    elections_allowed = yes
+    }
+    set_popularities = {
+        conservative = 37.14
+        market_liberal = 17.14
+	    democratic_socialist = 7.14
+	    social_liberal = 32.88
+	    social_democrat = 1.42
+	    reactionary = 4.28
+    }
+}
+
+MCU = {
+    set_politics = {	
+	    ruling_party = conservative
+	    last_election = "2014.8.25"
+	    election_frequency = 60
+	    elections_allowed = yes
+    }
+    set_popularities = {
+        conservative = 87.87
+	    social_liberal = 12.13
+    }
+}
