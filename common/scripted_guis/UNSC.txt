@@ -6,12 +6,13 @@ scripted_gui = {
 		window_name = "open_unsc_window_button_container"
 		
 		visible = {
-			ROOT = {
-				OR = {
-					has_idea = idea_united_nations_security_council_member
-					has_idea = idea_united_nations_NP_security_council_member
-				}
-			}
+		    always = no
+			#ROOT = {
+			#	OR = {
+			#		has_idea = idea_united_nations_security_council_member
+			#		has_idea = idea_united_nations_NP_security_council_member
+			#	}
+			#}
 		}
 		
 		effects = {	
