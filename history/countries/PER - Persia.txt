@@ -103,6 +103,25 @@ SYR = { give_military_access = PER }
 IRQ = { give_military_access = PER }
 HOU = { give_military_access = PER }
 
+#Islamic Consultative Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 100 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_islamist
+add_to_variable = { ROOT.Coalition = islamist_seats }
+
 set_politics = {	
 	ruling_party = islamist
 	last_election = "2017.5.19"
@@ -111,45 +130,19 @@ set_politics = {
 }
 
 set_popularities = {
-    islamist = 57.14
-    reactionary = 38.28
-    conservative = 4.58
+    islamist = 100
 }
 
 create_country_leader = {
-	name = "Hassan Rouhani"
-	picture = "Hassan_Rouhani.dds"
+	name = "Ali Khamenei"
+	picture = "Ali_Khamenei.dds"
 	ideology = khomeinist
 }
 
 create_country_leader = {
-	name = "Mostafa Pourmohammadi"
-	picture = "Mostafa_Pourmohammadi.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Mohammad Nabi Habibi"
-	picture = "Mohammad_Nabi_Habibi.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Mohammad Tavasoli"
-	picture = "Mohammad_Tavasoli.dds"
-	ideology = libertarian
-}
-
-create_country_leader = {
-	name = "Hossein Kamali"
-	picture = "Hossein_Kamali.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Sadegh Kharazi"
-	picture = "Sadegh_Kharazi.dds"
-	ideology = progressive_ideology
+	name = "Mohammad Omidvar"
+	picture = "Mohammad_Omidvar.dds"
+	ideology = marxist_leninist
 }
 
 create_country_leader = {
