@@ -570,6 +570,14 @@ pulse = {
 			country_event = peru.1
 		}
 		if = {
+			limit = {
+			    original_tag = OMA
+				date > 2020.1.10
+				date < 2021.1.1
+			}
+			country_event = oman.1
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {
