@@ -101,7 +101,7 @@ money_setup_scripted_effect = {
 			}
 			set_variable = { income_tax = 40 }
 		}
-		# Based on 13.4€ per day GROSS EARNINGS in the European Union, working 8 hours per day and 20 days a month
+		# Based on 13.4â‚¬ per day GROSS EARNINGS in the European Union, working 8 hours per day and 20 days a month
 		set_variable = { 
 			monthly_income_hourly = 13.4
 		}
@@ -136,7 +136,7 @@ money_setup_scripted_effect = {
 			limit = {
 				NOT = { has_variable = income_tax }
 			}
-			set_variable = { income_tax = 26.8 }
+			set_variable = { income_tax = 26 }
 		}
 		#
 		set_variable = { # Based on 56.000$ NET per year on average (I added a few $ to make it look gross)
@@ -173,7 +173,7 @@ money_setup_scripted_effect = {
 			limit = {
 				NOT = { has_variable = income_tax }
 			}
-			set_variable = { income_tax = 23.5 }
+			set_variable = { income_tax = 23 }
 		}
 		set_variable = { # Based on 6.000$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 5.1
@@ -209,7 +209,7 @@ money_setup_scripted_effect = {
 			limit = {
 				NOT = { has_variable = income_tax }
 			}
-			set_variable = { income_tax = 26.9 }
+			set_variable = { income_tax = 27 }
 		}
 		set_variable = { # Based on 49.000$ NET per year on average (I added a few $ to make it look gross)
 			monthly_income_hourly = 23
@@ -345,10 +345,10 @@ money_setup_scripted_effect = {
 	multiply_variable = {
 		income_monthly = works_hours_per_day
 	}
-	multiply_variable = { # Should be 2112€ per month on average in the whole EU (globalized to Europe - again, not every country is the same so this either has to be changed per country, or freely set by the player during the game)
+	multiply_variable = { # Should be 2112â‚¬ per month on average in the whole EU (globalized to Europe - again, not every country is the same so this either has to be changed per country, or freely set by the player during the game)
 		income_monthly = average_working_days_monthly
 	}
-	# Divide by 1000 so the variable doesn't suicide itself, so should be 2,112€ - also fits because total population is divided by 1000 too
+	# Divide by 1000 so the variable doesn't suicide itself, so should be 2,112â‚¬ - also fits because total population is divided by 1000 too
 	divide_variable = {
 		income_monthly = 1000
 	}
@@ -523,5 +523,52 @@ setup_country_tag = {
 setup_country_tag2 = {
 	THIS = {
 		save_global_event_target_as = selected_payback_country_tag
+	}
+}
+
+money_update_taxonly_scripted_effect = {
+
+	set_variable = {
+		income_monthly = monthly_income_hourly
+	}
+	multiply_variable = {
+		income_monthly = works_hours_per_day
+	}
+	multiply_variable = { 
+		income_monthly = average_working_days_monthly
+	}
+	divide_variable = {
+		income_monthly = 1000
+	}
+	set_variable = {
+		income_monthly_for_country = income_monthly
+	}
+	divide_variable = {
+		income_monthly_for_country = 100
+	}
+	multiply_variable = {
+		income_monthly_for_country = income_tax
+	}
+	multiply_variable = {
+		income_monthly_for_country = total_population_k
+	}
+	divide_variable = {
+		income_monthly_for_country = 1000
+	}
+
+	set_variable = {
+		corporate_income_monthly_for_country = corporate_income_monthly
+	}
+	divide_variable = {
+		corporate_income_monthly_for_country = 100
+	}
+	multiply_variable = {
+		corporate_income_monthly_for_country = corporate_tax
+	}
+	multiply_variable = { # Final calculation for all factories, civilian and military
+		corporate_income_monthly_for_country = num_of_factories
+	}
+	divide_variable = {
+		corporate_income_monthly_for_country = 1000
 	}
 }

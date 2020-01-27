@@ -71,7 +71,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "taxation_title"
-			position = { x = 180 y = 130 }
+			position = { x = 160 y = 130 }
 			font = "hoi_36header"
 			text = "Taxation"
 			format = left
@@ -83,7 +83,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "taxation_population_text"
-			position = { x = 100 y = 180 }
+			position = { x = 70 y = 180 }
 			font = "hoi_24header"
 			text = TAXATION_POPULATION
 			format = left
@@ -94,21 +94,21 @@ guiTypes = {
 
 		buttonType = {
 			name = "add_to_income_taxation"
-			position = { x = 400 y = 180 }
+			position = { x = 370 y = 180 }
 			quadTextureSprite ="GFX_zoom_in"
 			pdx_tooltip = TAXATION_UP_TOOLTIP
 		}
 
 		buttonType = {
 			name = "reduce_income_taxation"
-			position = { x = 312 y = 180 }
+			position = { x = 282 y = 180 }
 			quadTextureSprite ="GFX_zoom_out"
 			pdx_tooltip = TAXATION_DOWN_TOOLTIP
 		}
 
 		instantTextBoxType = {
 			name = "taxation_corporation_text"
-			position = { x = 100 y = 220 }
+			position = { x = 70 y = 220 }
 			font = "hoi_24header"
 			text = TAXATION_CORPORATION
 			format = left
@@ -119,16 +119,44 @@ guiTypes = {
 
 		buttonType = {
 			name = "add_to_corporate_taxation"
-			position = { x = 412 y = 220 }
+			position = { x = 382 y = 220 }
 			quadTextureSprite ="GFX_zoom_in"
 			pdx_tooltip = TAXATION_UP_TOOLTIP
 		}
 
 		buttonType = {
 			name = "reduce_corporate_taxation"
-			position = { x = 347 y = 220 }
+			position = { x = 317 y = 220 }
 			quadTextureSprite ="GFX_zoom_out"
 			pdx_tooltip = TAXATION_DOWN_TOOLTIP
+		}
+
+		containerWindowType = {
+			name = "money_income_information_container"
+			position = { x = 10 y = 270 }
+			size = { width = 400 height = 250 }
+	
+			instantTextBoxType = {
+				name = "income_information_title"
+				position = { x = 70 y = 10 }
+				font = "hoi_36header"
+				text = "Income Information"
+				format = center
+				maxWidth = 300
+				maxHeight = 24
+				fixedsize = yes
+			}
+
+			instantTextBoxType = {
+				name = "income_from_citizens_and_corporations"
+				position = { x = 20 y = 60 }
+				font = "hoi_24header"
+				text = "INCOME_FROM_CITIZENS_AND_CORP"
+				format = left
+				maxWidth = 400
+				maxHeight = 200
+				fixedsize = yes
+			}
 		}
 	}
 
@@ -137,8 +165,6 @@ guiTypes = {
 		position = { x = 450 y = 110 }
 		size = { width = 800 height = 500 }
 
-		fade_time = 250
-		fade_type = linear
 		moveable = no
 
 		background = {
