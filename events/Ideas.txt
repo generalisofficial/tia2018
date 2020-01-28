@@ -337,7 +337,7 @@ country_event = {
 			add_ideas = total_censorship
 		}
 
-		if = {
+		if = { # ALCOHOL BAN
 			limit = {
 				OR = {
 					TAG = AFG
@@ -358,6 +358,16 @@ country_event = {
 				}
 			}
 			add_ideas = alcohol_ban
+		}
+
+		if = { # SOCIAL SECURITY
+			limit = {
+				OR = {
+					ROOT = { has_idea = idea_eu_member }
+					
+				}
+			}
+			add_ideas = social_safety_net
 		}
 	}
 }
