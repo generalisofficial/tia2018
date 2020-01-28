@@ -1,0 +1,340 @@
+﻿add_namespace = ideas
+
+# Adding correct country laws
+country_event = {
+	id = ideas.1
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		if = { # LGBT RIGHTS
+			limit = {
+				OR = {
+					TAG = ARG
+					TAG = AST
+					TAG = AUS
+					TAG = BEL
+					TAG = BRA
+					TAG = CAN
+					TAG = COL
+					TAG = DEN
+					TAG = ECU
+					TAG = FIN
+					TAG = FRA
+					TAG = GER
+					TAG = GRE
+					TAG = ICE
+					TAG = IRE
+					TAG = LUX
+					TAG = MAL
+					TAG = MEX
+					TAG = HOL
+					TAG = NZL
+					TAG = NOR
+					TAG = POR
+					TAG = SAF
+					TAG = SPR
+					TAG = SWE
+					TAG = CHI
+					TAG = ENG
+					TAG = USA
+					TAG = URG
+				}
+			}
+			add_ideas = lgbt_legalized
+		}
+
+		if = { # GENDER EQUALITY
+			limit = {
+				OR = {
+					TAG = AST
+					TAG = CAN
+					TAG = NZL
+					TAG = SPR
+					TAG = MEX
+					TAG = BOS
+					TAG = ENG
+					TAG = LIT
+					TAG = ICE
+				}
+			}
+			add_ideas = gender_equality
+		}
+
+		if = { # PATRIARCHY
+			limit = {
+				OR = {
+					TAG = ANT
+					TAG = ALG
+					TAG = SEN
+					TAG = TUN
+					TAG = GNA
+					TAG = LEB
+					TAG = SOL
+					TAG = HAI
+					TAG = MLI
+					TAG = GAB
+					TAG = PAK
+					TAG = EQG
+					TAG = PLU
+					TAG = NIG
+					TAG = MIC
+					TAG = AFG
+					TAG = GNB
+					TAG = PAL
+					TAG = TON
+					TAG = BRU
+					TAG = JOR
+					TAG = UAE
+					TAG = SSD
+					TAG = LBA
+					TAG = COG
+					TAG = SAU
+					TAG = OMA
+					TAG = BHR
+					TAG = KUW
+					TAG = IRQ
+					TAG = MRT
+					TAG = PER
+					TAG = SUD
+					TAG = QAT
+					TAG = SYR
+					TAG = YEM
+				}
+			}
+			add_ideas = patriarchy
+		}
+
+		if = { # PERMISSIVE GUN LAWS
+			limit = { 
+				OR = {
+					TAG = CYP
+					TAG = BRA
+					TAG = ARG
+					TAG = COS
+					TAG = CZE
+					TAG = ELS
+					TAG = EST
+					TAG = HON
+					TAG = IRQ
+					TAG = LIT
+					TAG = PAK
+					TAG = PUE
+					TAG = SER
+					TAG = URG
+					TAG = PHI
+					TAG = SLO
+					TAG = CRO
+					TAG = GUA
+					TAG = MNT
+					TAG = MAC
+					TAG = SLV
+					TAG = BAH
+					TAG = ITA
+					TAG = MEX
+					TAG = USA
+					TAG = AUS
+					TAG = LIC
+					TAG = SWI
+					TAG = MOC
+					TAG = POL
+				}
+			}
+			add_ideas = permissive_gun_laws
+		}
+
+		if = { # RESTRICTIVE GUN LAWS
+			limit = {
+				OR = {
+					TAG = BAH
+					TAG = BOS
+					TAG = COL
+					TAG = EGY
+					TAG = ETH
+					TAG = GAM
+					TAG = GUY
+					TAG = RAJ
+					TAG = JAM
+					TAG = KOS
+					TAG = MAU
+					TAG = MON
+					TAG = NAM
+					TAG = NEP
+					TAG = NGA
+					TAG = SOV
+					TAG = RWA
+					TAG = SEN
+					TAG = SIE
+					TAG = SUR
+					TAG = SWZ
+					TAG = SIA
+					TAG = UAE
+					TAG = ZAM
+					TAG = ZIM
+					TAG = BEL
+					TAG = FRA
+					TAG = GER
+					TAG = FIN
+					TAG = GRE
+				}
+			}
+			add_ideas = restrictive_gun_laws
+		}
+
+		if = { # UNREGULATED FIREARMS
+			limit = {
+				OR = {
+					TAG = YEM
+				}
+			}
+			add_ideas = unregulated_firearms
+		}
+
+		if = { # PRESS HARASSMENT
+			limit = {
+				OR = {
+					TAG = CHL
+					TAG = NAM
+					TAG = KOR
+					TAG = GUY
+					TAG = HKN
+					TAG = ITA
+					TAG = BEN
+					TAG = SAF
+					TAG = MNT
+					TAG = SER
+					TAG = BUL
+					TAG = HUN
+					TAG = RAJ
+					TAG = MON
+					TAG = ANT
+					TAG = BOT
+					TAG = COR
+					TAG = ELS
+					TAG = DOM
+					TAG = ROM
+					TAG = BRK
+					TAG = PHI
+					TAG = MOZ
+					TAG = BRA
+					TAG = PER
+					TAG = PAN
+					TAG = BOL
+					TAG = BOS
+					TAG = COM
+					TAG = INS
+					TAG = KOS
+					TAG = LES
+					TAG = NIC
+					TAG = NIG
+					TAG = SIE
+					TAG = TZN
+					TAG = ARG
+					TAG = HAI
+					TAG = NGR
+					TAG = ALB
+					TAG = LEB
+					TAG = MLD
+					TAG = TUN
+					TAG = BAN
+					TAG = GEO
+					TAG = KEN
+					TAG = MRT
+					TAG = MAC
+					TAG = MOL
+					TAG = COL
+					TAG = COG
+					TAG = NEP
+					TAG = SEN
+					TAG = TUR
+					TAG = SEY
+					TAG = EGY
+					TAG = GNB
+					TAG = KUW
+					TAG = UGA
+					TAG = BHU
+					TAG = ECU
+					TAG = FIJ
+					TAG = SSD
+					TAG = UKR
+					TAG = GUA
+					TAG = LIB
+					TAG = LBA
+					TAG = MLW
+					TAG = PAR
+					TAG = SIA
+					TAG = ZAM
+				}
+			}
+			add_ideas = press_harassment
+		}
+
+		if = { # TOTAL CENSORSHIP
+			limit = {
+				OR = {
+					TAG = ALG
+					TAG = CAR
+					TAG = GNB
+					TAG = HON
+					TAG = MEX
+					TAG = CAM
+					TAG = JOR
+					TAG = MAD
+					TAG = MAL
+					TAG = PAK
+					TAG = ARM
+					TAG = ANG
+					TAG = QAT
+					TAG = SIG
+					TAG = CMR
+					TAG = MOR
+					TAG = IRQ
+					TAG = KYR
+					TAG = TOG
+					TAG = IVO
+					TAG = GAB
+					TAG = OMA
+					TAG = BUR
+					TAG = SRL
+					TAG = UAE
+					TAG = AFG
+					TAG = DJI
+					TAG = BRU
+					TAG = CHA
+					TAG = SWA
+					TAG = VEN
+					TAG = SUD
+					TAG = TAJ
+					TAG = AZR
+					TAG = SOV
+					TAG = ZIM
+					TAG = ETH
+					TAG = GAM
+					TAG = KAZ
+					TAG = RWA
+					TAG = RCG
+					TAG = PAL
+					TAG = YEM
+					TAG = BHR
+					TAG = LAO
+					TAG = SAU
+					TAG = SOM
+					TAG = VIN
+					TAG = PRC
+					TAG = MYA
+					TAG = SYR
+					TAG = CUB
+					TAG = EQG
+					TAG = PER
+					TAG = BLR
+					TAG = ERI
+					TAG = UZB
+					TAG = TMS
+					TAG = PRK
+				}
+			}
+			add_ideas = total_censorship
+		}
+	}
+}

@@ -526,6 +526,10 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+
+	######################################
+	#	ELECTORAL SYSTEM
+	######################################
 	
     electoral_system = {
 		law = yes
@@ -697,10 +701,12 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				MONTHLY_POPULATION = 0.1
+				MONTHLY_POPULATION = 0.05
 			}
 			
 			cancel_if_invalid = no
+
+			default = yes
 		}
 		
 		lgbt_legalized = {
@@ -714,12 +720,9 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.02
-				
 			}
 			
 			cancel_if_invalid = no
-			
-			default = yes
 		}
    }
 
@@ -761,6 +764,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 			default = yes
 		}
 		
@@ -792,23 +796,41 @@ ideas = {
 		unregulated_firearms = {
 			cost = 150
 			removal_cost = -1
-			level = 3
+			level = 4
 			
 			available = {
 			
 			}
 			
 			modifier = {
-				partisan_effect = 0.5
+				partisan_effect = 0.3
 				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.3
+				army_core_defence_factor = 0.2
 				political_power_factor = -0.2
 			}
 			
 			cancel_if_invalid = no
 		}
 		
-		universal_background_checks = {
+		permissive_gun_laws = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+
+			}
+			
+			modifier = {
+				partisan_effect = 0.2
+				army_core_defence_factor = 0.15
+				political_power_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		restrictive_gun_laws = {
 			cost = 150
 			removal_cost = -1
 			level = 2
@@ -818,7 +840,7 @@ ideas = {
 			}
 			
 			modifier = {
-				partisan_effect = 0.2
+				partisan_effect = 0.1
 				army_core_defence_factor = 0.1
 				political_power_factor = -0.05
 			}
@@ -849,6 +871,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			
 			default = yes
 		}
    }
