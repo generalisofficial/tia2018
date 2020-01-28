@@ -336,5 +336,28 @@ country_event = {
 			}
 			add_ideas = total_censorship
 		}
+
+		if = {
+			limit = {
+				OR = {
+					TAG = AFG
+					TAG = BAN
+					TAG = BRU
+					TAG = RAJ
+					TAG = PER
+					TAG = KUW
+					TAG = LBA
+					TAG = SAU
+					TAG = SUD
+					TAG = UAE
+					TAG = YEM
+					TAG = PAK
+					TAG = MLD
+					TAG = SOM
+					TAG = QAT
+				}
+			}
+			add_ideas = alcohol_ban
+		}
 	}
 }

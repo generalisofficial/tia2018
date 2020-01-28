@@ -871,7 +871,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-			
+
 			default = yes
 		}
    }
@@ -953,6 +953,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
+				political_power_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -972,6 +973,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 			default = yes
 		}
 		
@@ -985,7 +987,9 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				partisan_effect = 0.05
+				army_core_defence_factor = 0.05
+				political_power_factor = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -1009,7 +1013,7 @@ ideas = {
 			}
 			
 			modifier = {
-			    consumer_goods_factor = 0.2
+			    consumer_goods_factor = 0.07
 				stability_factor = 0.1
 			}
 			
@@ -1026,7 +1030,7 @@ ideas = {
 			}
 			
 			modifier = {
-			    consumer_goods_factor = 0.1
+			    consumer_goods_factor = 0.03
 				stability_factor = 0.05
 			}
 			
@@ -1043,7 +1047,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				political_power_factor = 0.05			
 			}
 			
 			cancel_if_invalid = no
@@ -1068,7 +1072,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.1
+				conscription_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -1084,7 +1089,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				conscription_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -1104,6 +1110,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 			default = yes
 		}
    }
@@ -1125,7 +1132,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -1141,7 +1149,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -1161,6 +1170,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 			default = yes
 		}
    }
@@ -1182,7 +1192,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.1
+				training_time_factor = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -1198,7 +1209,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				training_time_factor = -0.1
 			}
 			
 			cancel_if_invalid = no
@@ -1218,6 +1230,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 			default = yes
 		}
    }
@@ -1239,7 +1252,9 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				partisan_effect = 0.07
+				army_core_defence_factor = 0.07
+				decryption_factor  = 0.07
 			}
 			
 			cancel_if_invalid = no
@@ -1255,7 +1270,9 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				partisan_effect = 0.04
+				army_core_defence_factor = 0.04
+				decryption_factor  = 0.04
 			}
 			
 			cancel_if_invalid = no
@@ -1275,6 +1292,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 			default = yes
 		}
    }
@@ -1296,7 +1314,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				army_morale_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -1312,7 +1330,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				army_morale_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -1353,7 +1371,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				production_speed_buildings_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -1369,7 +1387,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				production_speed_buildings_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
