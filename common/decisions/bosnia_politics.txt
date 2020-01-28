@@ -1,0 +1,68 @@
+bosnia_politics = {
+	
+	leave_dayton_agreement = {
+	
+		visible = {
+			original_tag = BOS
+			has_idea = idea_dayton_agreement
+		}
+		
+		available = {
+			has_idea = idea_dayton_agreement
+		}
+		
+		complete_effect = {
+            country_event = bosnia.1
+            news_event = bosnia.2			
+		}
+		
+		icon = break_treaty
+		
+		cost = 10
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 80
+				OR = {
+				    has_war_with = CRO
+					has_war_with = SER
+					has_war_with = USA
+					has_government = fascist
+					has_government = communist
+					has_government = monarchist
+				}
+			}
+		}
+	}
+	
+	apply_for_union_with_serbia = {
+	
+		visible = {
+			original_tag = RSE
+			country_exists = SER
+		}
+		
+		available = {
+			has_war = no
+			is_subject = no
+			SER = { has_war = no is_subject = no }
+		}
+		
+		complete_effect = {
+            SER = { country_event = bosnia.5 }
+		}
+		
+		icon = politics
+		
+		cost = 50
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
