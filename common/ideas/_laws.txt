@@ -1137,6 +1137,8 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			default = yes
 		}
 		
 		national_health_insurance = {
@@ -1170,8 +1172,6 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-
-			default = yes
 		}
    }
   
@@ -1214,6 +1214,8 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			default = yes
 		}
 		
 		no_public_education = {
@@ -1230,8 +1232,6 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-
-			default = yes
 		}
    }
    
@@ -1334,6 +1334,8 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			default = yes
 		}
 		
 		no_state_pensions = {
@@ -1350,7 +1352,6 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-			default = yes
 		}
    }
    
@@ -1364,7 +1365,7 @@ ideas = {
 		generous_minimum_wage = {
 			cost = 150
 			removal_cost = -1
-			level = 3
+			level = 4
 			
 			available = {
 			
@@ -1380,7 +1381,7 @@ ideas = {
 		moderate_minimum_wage = {
 			cost = 150
 			removal_cost = -1
-			level = 2
+			level = 3
 			
 			available = {
 			
@@ -1391,6 +1392,24 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+		}
+
+		low_minimum_wage = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.01
+			}
+			
+			cancel_if_invalid = no
+
+			default = yes
 		}
 		
 		no_minimum_wage = {
@@ -1407,7 +1426,6 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-			default = yes
 		}
    }
 

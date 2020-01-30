@@ -360,14 +360,251 @@ country_event = {
 			add_ideas = alcohol_ban
 		}
 
-		if = { # SOCIAL SECURITY
+		if = { # SOCIAL SAFETY NET
 			limit = {
 				OR = {
 					ROOT = { has_idea = idea_eu_member }
-					
+					ROOT = { has_idea = nordic_council_member }
+					TAG = AST
+					TAG = SWI
+					TAG = AUS
+					TAG = USA
+					TAG = ISR
+					TAG = ICE
+					TAG = KOR
+					TAG = CAN
+					TAG = JAP
+					TAG = NZL
+					TAG = CHL
 				}
 			}
 			add_ideas = social_safety_net
+		}
+
+		if = { # NO HEALTHCARE
+			limit = {
+				OR = {
+					TAG = HAI
+					TAG = DOM
+					TAG = SUR
+					TAG = BOL
+					TAG = USA
+					TAG = MAU
+					TAG = SEN
+					TAG = GAM
+					TAG = GNB
+					TAG = GNA
+					TAG = EQG
+					TAG = SIE
+					TAG = LIB
+					TAG = MAL
+					TAG = NIG
+					TAG = NGA
+					TAG = CHA
+					TAG = CMR
+					TAG = SUD
+					TAG = SSD
+					TAG = ERI
+					TAG = KEN
+					TAG = SOM
+					TAG = ANG
+					TAG = BUR
+					TAG = ZIM
+					TAG = MOZ
+					TAG = LEB
+					TAG = SYR
+					TAG = JOR
+					TAG = IRQ
+					TAG = PER
+					TAG = TMS
+					TAG = TAJ
+					TAG = AFG
+					TAG = PAK
+					TAG = CHI
+					TAG = CAM
+				}
+			}
+			add_ideas = no_healthcare_funding
+		}
+
+		if = { # FREE BUT NOT UNIVERSAL HEALTHCARE
+			limit = {
+				OR = {
+					TAG = GUA
+					TAG = HON
+					TAG = NIC
+					TAG = ELS
+					TAG = PAN
+					TAG = MOR
+					TAG = LBA
+					TAG = EGY
+					TAG = IVO
+					TAG = BEN
+					TAG = TOG
+					TAG = ETH
+					TAG = YEM
+					TAG = CAR
+					TAG = COG
+					TAG = RCG
+					TAG = TAN
+					TAG = UGA
+					TAG = MAL
+					TAG = MAD
+					TAG = SAF
+					TAG = LES
+					TAG = ARM
+					TAG = AZB
+					TAG = KYR
+					TAG = MON
+					TAG = NEP
+					TAG = BAN
+					TAG = MYA
+					TAG = LAO
+					TAG = VIN
+					TAG = PHI
+					TAG = PNG
+				}
+			}
+			add_ideas = national_health_insurance
+		}
+
+		if = { # GENEROUS MINIMUM WAGE
+			limit = {
+				OR = {
+					TAG = LUX
+					TAG = AST
+					TAG = NZL
+					TAG = MON
+				}
+			}
+			add_ideas = generous_minimum_wage
+		}
+
+		if = { # MODERATE MINIMUM WAGE
+			limit = {
+				OR = {
+					TAG = MAU
+					TAG = SPR
+					TAG = ISR
+					TAG = USA
+					TAG = ENG
+					TAG = FRA
+					TAG = GER
+					TAG = BEL
+					TAG = HOL
+					TAG = IRE
+					TAG = KOR
+					TAG = CAN
+					TAG = JAP
+					TAG = SPR
+					TAG = AND
+				}
+			}
+			add_ideas = moderate_minimum_wage
+		}
+
+		if = { # NO MINIMUM WAGE
+			limit = {
+				OR = {
+					TAG = BUR
+					TAG = UGA
+					TAG = RWA
+					TAG = HKN
+					TAG = SIE
+					TAG = GEO
+					TAG = KYR
+					TAG = MAL
+					TAG = ETH
+					TAG = GAM
+					TAG = GNB
+					TAG = RCG
+					TAG = MAD
+					TAG = IND
+					TAG = BHU
+					TAG = SRI
+					TAG = TAJ
+					TAG = MLI
+					TAG = NIG
+					TAG = BUR
+					TAG = TAN
+					TAG = TOG
+					TAG = BEN
+					TAG = CAM
+					TAG = ESW
+					TAG = SEN
+					TAG = LAO
+					TAG = CAM
+					TAG = NEP
+					TAG = SUD
+					TAG = SSD
+					TAG = AFG
+					TAG = BOT
+					TAG = BAN
+					TAG = SOL
+				}
+			}
+			add_ideas = moderate_minimum_wage
+		}
+
+		if = { # NO STATE PENSIONS
+			limit = {
+				OR = {
+					TAG = BUR
+					TAG = UGA
+					TAG = RWA
+					TAG = HKN
+					TAG = SIE
+					TAG = GEO
+					TAG = KYR
+					TAG = MAL
+					TAG = ETH
+					TAG = GAM
+					TAG = GNB
+					TAG = RCG
+					TAG = MAD
+					TAG = IND
+					TAG = BHU
+					TAG = SRI
+					TAG = TAJ
+					TAG = MLI
+					TAG = NIG
+					TAG = BUR
+					TAG = TAN
+					TAG = TOG
+					TAG = BEN
+					TAG = CAM
+					TAG = ESW
+					TAG = SEN
+					TAG = LAO
+					TAG = CAM
+					TAG = NEP
+					TAG = SUD
+					TAG = SSD
+					TAG = AFG
+					TAG = BOT
+					TAG = BAN
+					TAG = SOL
+				}
+			}
+			add_ideas = no_state_pensions
+		}
+
+		if = { # GENEROUS PENSIONS
+			limit = {
+				OR = {
+					TAG = LUX
+					TAG = AST
+					TAG = NZL
+					TAG = MON
+					TAG = HOL
+					TAG = DEN
+					TAG = FIN
+					TAG = SWE
+					TAG = NOR
+					TAG = SIG
+				}
+			}
+			add_ideas = generous_pensions
 		}
 	}
 }
