@@ -453,6 +453,9 @@ money_update_scripted_effect = {
 	add_to_variable = {
 		state_treasury = corporate_income_monthly_for_country
 	}
+	subtract_from_variable = {
+		state_treasury = total_monthly_expanses
+	}
 }
 
 loans_calculate_opinion_factor = {
@@ -570,5 +573,59 @@ money_update_taxonly_scripted_effect = {
 	}
 	divide_variable = {
 		corporate_income_monthly_for_country = 1000
+	}
+}
+
+money_update_expenses_scripted_effect = {
+	set_variable = {
+		total_monthly_income = 0
+	}
+	set_variable = {
+		total_monthly_expanses = 0
+	}
+	add_to_variable = {
+		total_monthly_income = income_monthly_for_country
+	}
+	add_to_variable = {
+		total_monthly_income = corporate_income_monthly_for_country
+	}
+
+	set_variable = { # Cost of prohibiting firearms from GDP
+		cost_prohibited_firearms_percent = 0.125 # Percent from GDP
+	}
+	set_variable = {
+		cost_prohibited_firearms = total_monthly_income
+	}
+	divide_variable = {
+		cost_prohibited_firearms = 100
+	}
+	multiply_variable = {
+		cost_prohibited_firearms = cost_prohibited_firearms_percent
+	}
+
+	set_variable = { # Cost of restrictive firearms from GDP
+		cost_restrictive_gun_laws_percent = 0.15 # Percent from GDP
+	}
+	set_variable = {
+		cost_restrictive_gun_laws = total_monthly_income
+	}
+	divide_variable = {
+		cost_restrictive_gun_laws = 100
+	}
+	multiply_variable = {
+		cost_restrictive_gun_laws = cost_restrictive_gun_laws_percent
+	}
+
+	set_variable = { # Cost of permissive firearms from GDP
+		cost_permissive_gun_laws_percent = 0.1 # Percent from GDP
+	}
+	set_variable = {
+		cost_permissive_gun_laws = total_monthly_income
+	}
+	divide_variable = {
+		cost_permissive_gun_laws = 100
+	}
+	multiply_variable = {
+		cost_permissive_gun_laws = cost_permissive_gun_laws_percent
 	}
 }

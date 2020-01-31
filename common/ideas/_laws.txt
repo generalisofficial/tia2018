@@ -801,6 +801,10 @@ ideas = {
 			available = {
 			
 			}
+
+			on_add = {
+				custom_effect_tooltip = unregulated_firearms_cost
+			}
 			
 			modifier = {
 				partisan_effect = 0.3
@@ -820,6 +824,13 @@ ideas = {
 			available = {
 
 			}
+
+			on_add = {
+				custom_effect_tooltip = permissive_gun_laws_cost
+				add_to_variable = {
+					total_monthly_expanses = cost_permissive_gun_laws
+				}
+			}
 			
 			modifier = {
 				partisan_effect = 0.2
@@ -837,6 +848,13 @@ ideas = {
 			
 			available = {
 			    NOT = { has_idea = USA_second_amendment }
+			}
+
+			on_add = {
+				custom_effect_tooltip = restrictive_gun_laws_cost
+				add_to_variable = {
+					total_monthly_expanses = cost_restrictive_gun_laws
+				}
 			}
 			
 			modifier = {
@@ -863,7 +881,11 @@ ideas = {
 				        original_tag = USA
 			        }
 		 	        set_global_flag = terrorism5
-		        }
+				}
+				custom_effect_tooltip = prohibited_firearms_cost
+				add_to_variable = {
+					total_monthly_expanses = cost_prohibited_firearms
+				}
 			}
 			
 			modifier = {

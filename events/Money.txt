@@ -12,6 +12,7 @@ country_event = {
 			array = global.xcountry_grid_array
 			value = ROOT.id
 		}
+		money_update_expenses_scripted_effect = yes
 	}
 }
 
@@ -24,6 +25,19 @@ country_event = {
 	immediate = {
 		every_country = {
             money_update_scripted_effect = yes
+        }
+	}
+}
+
+country_event = {
+	id = money.111
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+            money_update_expenses_scripted_effect = yes
         }
 	}
 }

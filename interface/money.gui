@@ -158,6 +158,34 @@ guiTypes = {
 				fixedsize = yes
 			}
 		}
+
+		containerWindowType = {
+			name = "money_expenses_information_container"
+			position = { x = 10 y = 480 }
+			size = { width = 400 height = 250 }
+	
+			instantTextBoxType = {
+				name = "expsense_information_title"
+				position = { x = 55 y = 10 }
+				font = "hoi_36header"
+				text = "Expenses Information"
+				format = center
+				maxWidth = 330
+				maxHeight = 24
+				fixedsize = yes
+			}
+
+			instantTextBoxType = {
+				name = "total_expenses_monthly"
+				position = { x = 20 y = 60 }
+				font = "hoi_24header"
+				text = "TOTAL_EXPENSES_PER_MONTH"
+				format = left
+				maxWidth = 400
+				maxHeight = 200
+				fixedsize = yes
+			}
+		}
 	}
 
 	containerWindowType = {
