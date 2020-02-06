@@ -560,10 +560,6 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.05
-			if = {
-				limit = { has_idea = ZIM_disgruntled_veterans }
-				remove_ideas = ZIM_disgruntled_veterans
-			}
 		}
 		
 		ai_will_do = {
