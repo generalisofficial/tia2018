@@ -83,34 +83,55 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
 
+#Chamber of Deputies
+set_variable = { communist_seats = 8.38 }
+set_variable = { democratic_socialist_seats = 11.61 }
+set_variable = { progressive_seats = 1.95 }
+set_variable = { social_democrat_seats = 22.58 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 0 }
+set_variable = { conservative_seats = 55.48 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = social_democrat
+	ruling_party = conservative
 	last_election = "2017.11.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 22.70
-    conservative = 36.64
-    democratic_socialist = 20.27
-    progressive = 20.39
-}
-
-create_country_leader = {
-	name = "Michelle Bachelet"
-	picture = "Michelle_Bachelet.dds"
-	ideology = social_democrat_ideology
+    conservative = 55.48
+	social_democrat = 22.58
+	democratic_socialist = 11.61
+	communist = 8.38
+	progressive = 1.95
 }
 
 create_country_leader = {
 	name = "Sebastián Piñera"
 	picture = "Sebastian_Pinera.dds"
-	ideology = national_conservative
+	ideology = liberal_conservative
+}
+
+create_country_leader = {
+	name = "Álvaro Elizalde"
+	picture = "Alvaro_Elizalde.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
@@ -120,9 +141,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Marco Enríquez-Ominami"
-	picture = "Marco_Enriquez_Ominami.dds"
-	ideology = progressive_ideology
+	name = "Guillermo Teillier"
+	picture = "Guillermo_Teillier.dds"
+	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Félix González Gatica"
+	picture = "Felix_Gonzalez_Gatica.dds"
+	ideology = green
 }
 
 create_corps_commander = {
