@@ -84,32 +84,80 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = christianity
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 21.89 }
+set_variable = { progressive_seats = 3.64 }
+set_variable = { social_democrat_seats = 42.38 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { market_liberal_seats = 6.56 }
+set_variable = { conservative_seats = 10.94 }
+set_variable = { reactionary_seats = 14.59 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_politics = {	
-	ruling_party = progressive
+	ruling_party = social_democrat
 	last_election = "2017.2.19"
-	election_frequency = 60
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 48.84
-    progressive = 51.16
+    social_democrat = 42.38
+	democratic_socialist = 21.89
+	reactionary = 14.59
+	conservative = 10.94
+	market_liberal = 6.56
+	progressive = 3.64
 }
 
 create_country_leader = {
 	name = "Lenín Moreno"
 	picture = "Lenin_Moreno.dds"
-	ideology = progressive_ideology
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Rafael Correa"
+	picture = "Rafael_Correa.dds"
+	ideology = bolivarianist
 }
 
 create_country_leader = {
 	name = "Guillermo Lasso"
 	picture = "Guillermo_Lasso.dds"
 	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Pascual del Cioppo"
+	picture = "Pascual_del_Cioppo.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Mauricio Rodas"
+	picture = "Mauricio_Rodas.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Marlon Santi"
+	picture = "Marlon_Santi.dds"
+	ideology = progressive_ideology
 }
 
 create_field_marshal = {
