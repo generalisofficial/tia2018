@@ -1,1 +1,46 @@
-﻿
+﻿add_namespace = finland
+
+country_event = { #Green League - Maria Ohisalo
+	id = finland.1
+	title = finland.1.t
+	desc = finland.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = finland.1.a
+		create_country_leader = {
+	        name = "Maria Ohisalo"
+	        picture = "Maria_Ohisalo.dds"
+	        ideology = green
+        }
+	}
+}
+
+country_event = { #Rinne Cabinet Resigns
+	id = finland.2
+	title = finland.2.t
+	desc = finland.2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = finland.2.a
+		create_country_leader = {
+	        name = "Sanna Marin"
+	        picture = "Sanna_Marin.dds"
+	        ideology = social_democrat_ideology
+        }
+	}
+	
+	option = {
+		name = finland.2.b
+		create_country_leader = {
+	        name = "Antti Lindtman"
+	        picture = "Antti_Lindtman.dds"
+	        ideology = social_democrat_ideology
+        }
+	}
+}

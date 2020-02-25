@@ -578,6 +578,22 @@ pulse = {
 			country_event = oman.1
 		}
 		if = {
+			limit = {
+			    original_tag = FIN
+				date > 2019.6.15
+				date < 2020.1.1
+			}
+			country_event = finland.1
+		}
+		if = {
+			limit = {
+			    original_tag = FIN
+				date > 2019.12.10
+				date < 2020.1.1
+			}
+			country_event = finland.2
+		}
+		if = {
 		    limit = {
 			    is_subject = no
 			    OR = {
