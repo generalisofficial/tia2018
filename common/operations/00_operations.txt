@@ -1018,7 +1018,6 @@ operation_coup_government = { ### 7 1/70
 			target = FROM
 			value > 35
 		}
-		NOT = { has_completed_focus = SPR_regional_defense_council_of_aragon }
 	}
 
 	equipment = {
@@ -1045,27 +1044,63 @@ operation_coup_government = { ### 7 1/70
 		FROM = {
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = fascism }
+					PREV.ROOT = { has_government = communist }
 				}
-				fascism > 0.2
+				communist > 0.2
 			}
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = communism }
+					PREV.ROOT = { has_government = progressive }
 				}
-				communism > 0.2
+				progressive > 0.2
 			}
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = democratic }
+					PREV.ROOT = { has_government = social_democrat }
 				}
-				democratic > 0.2
+				social_democrat > 0.2
 			}
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = neutrality }
+					PREV.ROOT = { has_government = social_liberal }
 				}
-				neutrality > 0.2
+				social_liberal > 0.2
+			}
+			if = {
+				limit = {
+					PREV.ROOT = { has_government = market_liberal }
+				}
+				market_liberal > 0.2
+			}
+			if = {
+				limit = {
+					PREV.ROOT = { has_government = conservative }
+				}
+				conservative > 0.2
+			}
+			if = {
+				limit = {
+					PREV.ROOT = { has_government = reactionary }
+				}
+				reactionary > 0.2
+			}
+			if = {
+				limit = {
+					PREV.ROOT = { has_government = monarchist }
+				}
+				monarchist > 0.2
+			}
+			if = {
+				limit = {
+					PREV.ROOT = { has_government = nationalist }
+				}
+				nationalist > 0.2
+			}
+			if = {
+				limit = {
+					PREV.ROOT = { has_government = fascist }
+				}
+				fascist > 0.2
 			}
 				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
 				#set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
@@ -1192,14 +1227,6 @@ operation_coup_government = { ### 7 1/70
 			clear_variable = coup_operation_party@ROOT
 			hidden_effect = {
 				ROOT = {
-					every_operative = {
-						if = {
-							limit = {
-								has_trait = operative_seducer
-							}
-							ROOT = { set_country_flag = achievement_seducer_spy }
-						}
-					}
 					add_to_variable = {
 						var = total_coups
 						value = 1

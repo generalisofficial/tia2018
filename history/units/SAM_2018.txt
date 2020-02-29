@@ -1,32 +1,15 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Infantry Regiment"
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		marine = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Brigade"
+	name = "Mechanized Regiment"
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
@@ -34,13 +17,10 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Armored Brigade"
+	name = "Armored Regiment"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
@@ -48,5 +28,12 @@ division_template = {
 }
 
 units = {
-	#No military to speak of
+	
+	division = {
+		name = "Forces of Samoa"
+		location = 7290
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	
 }

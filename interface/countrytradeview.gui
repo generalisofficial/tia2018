@@ -334,23 +334,23 @@ guiTypes = {
 		iconType = {
 			name = "player_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = -100 y = 13 }
+			position = { x = -98 y = 13 }
 			Orientation = upper_right
 		}
 			
 		iconType = {
 			name = "large_flag_frame"
-			position = { x = -105 y = 11 }
+			position = { x = -102 y = 11 }
 			spriteType = "GFX_large_flag_frame"
 			orientation = upper_right
 		}	
 			
 		instantTextboxType = {
 			name = "country"
-			position = { x = 110 y = 32 }
+			position = { x = 132 y = 32 }
 			font = "hoi_24header"
 			text = "country"
-			maxWidth = 300
+			maxWidth = 260
 			maxHeight = 18
 			vertical_alignment = center 			
 			format = center			
@@ -364,45 +364,45 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "trade"
-			position = { x = 69 y = 95 }
+			position = { x = 69 y = 90 }
 			font = "hoi_18mbs"
 			text = ""
-			maxWidth = 400
+			maxWidth = 230
 			maxHeight = 100
 			format = left			
 		}
 			
-		#containerWindowType = {
-		#	name = "flags"
-		#	position = { x = 294 y = 80 }	
-		#	size = { width = 220 height = 176 }
-		#		
-		#	background = {
-		#		name = "Background"		
-		#		quadTextureSprite ="GFX_tiled_plain_bg"
-		#		alwaystransparent = yes
-		#	}
-#
-		#	instantTextboxType = {
-		#		name = "traded_nations_label"
-		#		position = { x = 15 y = 10 }
-		#		font = "hoi_18mbs"
-		#		text = "TRADED_NATIONS"
-		#		fixedsize = yes
-		#		maxWidth = 190
-		#		maxHeight = 80
-		#		format = left
-		#	}
-		#	
-		#	gridBoxType = {
-		#		name = "flags_grid"
-		#		position = { x = 10 y = 30 }
-		#		size = { width = 100% height = 100% }
-		#		slotsize = { width=45 height=31 }
-		#		max_slots_horizontal = 4
-		#		format = "UPPER_LEFT"
-		#	}
-		#}
+		containerWindowType = {
+			name = "flags"
+			position = { x = 294 y = 80 }	
+			size = { width = 220 height = 176 }
+				
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "traded_nations_label"
+				position = { x = 15 y = 10 }
+				font = "hoi_18mbs"
+				text = "TRADED_NATIONS"
+				fixedsize = yes
+				maxWidth = 190
+				maxHeight = 80
+				format = left
+			}
+			
+			gridBoxType = {
+				name = "flags_grid"
+				position = { x = 10 y = 30 }
+				size = { width = 100% height = 100% }
+				slotsize = { width=45 height=31 }
+				max_slots_horizontal = 4
+				format = "UPPER_LEFT"
+			}
+		}
 			
 		buttonType = {
 			name = "buy_needed_amount_button"
@@ -424,15 +424,15 @@ guiTypes = {
 		iconType ={
 			name ="convoys_icon"
 			spriteType = "GFX_topbar_convoys"
-			position = {x=30 y=191}
+			position = {x=30 y=211}
 		}
 			
 		instantTextboxType = {
 			name = "convoys_description"
-			position = { x = 69 y = 180 }
+			position = { x = 69 y = 200 }
 			font = "hoi_18mbs"
 			text = ""
-			maxWidth = 400
+			maxWidth = 230
 			maxHeight = 80
 			format = left
 		}
@@ -529,13 +529,13 @@ guiTypes = {
 		iconType ={
 			name ="convoys_icon_bg"
 			spriteType = "GFX_diplo_action_bottom"
-			position = {x=7 y=-80}
+			position = {x=7 y=-70}
 			Orientation = "LOWER_LEFT"			
 		}
 			
 		buttonType = {
 			name = "send_button"
-			position = { x = 350 y = -58 }
+			position = { x = 350 y = -55 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "SEND"
@@ -546,7 +546,7 @@ guiTypes = {
 			
 		buttonType = {
 			name = "cancel_button"
-			position = { x = 70 y = -58 }
+			position = { x = 70 y = -55 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "CLOSE"
@@ -580,7 +580,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "produced"
-			position = { x=20 y=37 }
+			position = { x=20 y=36 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 18
@@ -599,7 +599,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "exported"
 			font = "hoi_16mbs"
-			position = { x=20 y=75 }
+			position = { x=20 y=76 }
 			maxWidth = 50
 			maxHeight = 18
 			format = right
@@ -607,7 +607,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "needed"
-			position = { x=20 y=93 }
+			position = { x=20 y=94 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 28
@@ -616,7 +616,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "neededType"
-			position = { x=10 y=93 }
+			position = { x=10 y=94 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 28
@@ -625,7 +625,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "cancel_imports"
-			position = { x= 46 y= 123 }
+			position = { x= 46 y= 125 }
 			pdx_tooltip = "CANCEL_RESOURCE_IMPORT"
 			quadTextureSprite ="GFX_cancel_import_button"
 			clicksound = click_default

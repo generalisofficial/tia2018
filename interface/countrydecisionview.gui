@@ -97,7 +97,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name_text"
-			position = { x = 74 y = 25 }
+			position = { x = 74 y = 26 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = { x = 0 y = 0 }
@@ -110,8 +110,16 @@ guiTypes = {
 		}
 		
 		buttonType = {
+			name = "track_decisions_checkbox"
+			position = { x = 447 y = 26 }
+			quadTextureSprite = "GFX_checkbox_small5"
+			clicksound = decisions_ui_button
+			frame = 2
+		}
+		
+		buttonType = {
 			name = "category_collapse_btn"
-			position = { x=470 y=25 }
+			position = { x=475 y=25 }
 			quadTextureSprite = "GFX_conveyor_collapse_btn"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
@@ -122,7 +130,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "decision_category_desc"
-		position = { x=-3 y=0 }
+		position = { x=0 y=0 }
 		size = { width=510 height=8 }
 		clipping = no
 		
@@ -178,7 +186,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "value"
-			position = { x = 30 y = 3 }
+			position = { x = 200 y = 3 }
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = "33"	
@@ -191,7 +199,7 @@ guiTypes = {
 		iconType = {
 			name = "target_flag"
 			quadTextureSprite ="GFX_flag_small"
-			position = { x= 0 y = 0}
+			position = { x= 215 y = 0}
 		}	
 	}
 
@@ -201,7 +209,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "event_header"
-		position = {x=-2 y=0}
+		position = {x=0 y=0}
 		Orientation = upper_left
 		size = {width=3 height=65}
 		clipping = no
@@ -227,7 +235,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "event_checkbox_window"
-			position = {x=365 y=38}
+			position = {x=365 y=45}
 			Orientation = upper_right
 
 
@@ -240,7 +248,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "events_popup_text"
-				position = { x = 23 y = -3 }
+				position = { x = 23 y = -5 }
 				textureFile = ""
 				font = "hoi_16mbs"
 				borderSize = { x = 0 y = 0 }
@@ -254,7 +262,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "news_checkbox_window"
-			position = {x=235 y=38}
+			position = {x=235 y=45}
 			Orientation = upper_right
 
 
@@ -267,7 +275,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "news_popup_text"
-				position = { x = 23 y = -3 }
+				position = { x = 23 y = -5 }
 				textureFile = ""
 				font = "hoi_16mbs"
 				borderSize = { x = 0 y = 0 }
@@ -538,7 +546,7 @@ guiTypes = {
 		iconType = {
 			name = "btn_progress_good"
 			position = {x=9 y=28}
-			spriteType = "GFX_decision_item_progress_good"			
+			spriteType = "GFX_decision_item_progress_good"
 		}
 
 		iconType = {
@@ -646,6 +654,7 @@ guiTypes = {
 			name = "zoom_icon"
 			position = {x=462 y=4}
 			spriteType = "GFX_locator_item_icon"
+			alwaystransparent = yes
 		}
 	}
 }
