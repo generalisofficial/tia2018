@@ -2,7 +2,11 @@
 equipments = {
 
 	super_heavy_tank_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_super_heavy_tank_equipment		
 		is_buildable = no
 		type = armor
 		group_by = archetype
@@ -17,17 +21,17 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 10
 		breakthrough = 74
-		hardness = 0.95
+		hardness = 0.99
 		armor_value = 145
 
 		#Offensive Abilities
-		soft_attack = 30
+		soft_attack = 38
 		hard_attack = 45
 		ap_attack = 146
 		air_attack = 0
@@ -37,20 +41,29 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		
+		fuel_consumption = 10
 	}
 
 	super_heavy_tank_equipment_1 = {
+		year = 1943
+
 		archetype = super_heavy_tank_equipment
 		priority = 130
 		visual_level = 0
+		is_convertable = yes
 	}
 
 	super_heavy_tank_artillery_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_super_heavy_tank_equipment			
 		is_buildable = no
 		family = super_heavy_tank_equipment
 		type = { 
@@ -69,38 +82,48 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
-		hardness = 0.8
+		hardness = 0.9
 		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 122
+		soft_attack = 85
 		hard_attack = 3
 		ap_attack = 9
 		air_attack = 0
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		fuel_consumption = 5
 	}
 
 	super_heavy_tank_artillery_equipment_1 = {
+		year = 1943
+
 		archetype = super_heavy_tank_artillery_equipment
 		priority = 140
 		visual_level = 0
+		can_convert_from = { 
+			super_heavy_tank_equipment_1 
+		}
 	}
 
 
 	super_heavy_tank_destroyer_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_super_heavy_tank_equipment			
 		is_buildable = no
 		family = super_heavy_tank_equipment
 		type = { 
@@ -119,13 +142,13 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
-		hardness = 0.95
+		hardness = 0.99
 		armor_value = 145
 
 		#Offensive Abilities
@@ -136,21 +159,31 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		fuel_consumption = 5
 	}
 
 	super_heavy_tank_destroyer_equipment_1 = {
+		year = 1943
+
 		archetype = super_heavy_tank_destroyer_equipment
 		priority = 160
 		visual_level = 0
+		can_convert_from = { 
+			super_heavy_tank_equipment_1 
+		}
 	}
 
 
 	super_heavy_tank_aa_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_super_heavy_tank_equipment			
 		is_buildable = no
 		family = super_heavy_tank_equipment
 		type = { 
@@ -169,13 +202,13 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
-		hardness = 0.8
+		hardness = 0.9
 		armor_value = 100
 
 		#Offensive Abilities
@@ -186,15 +219,21 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		fuel_consumption = 2.5
 	}
 
 	super_heavy_tank_aa_equipment_1 = {
+		year = 1943
+
 		archetype = super_heavy_tank_aa_equipment
 		priority = 150
 		visual_level = 0
+		can_convert_from = { 
+			super_heavy_tank_equipment_1 
+		}
 	}
 }

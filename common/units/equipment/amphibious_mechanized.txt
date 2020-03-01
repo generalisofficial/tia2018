@@ -1,6 +1,6 @@
 equipments = {
 
-	mechanized_equipment = {
+	amphibious_mechanized_equipment = {
 		year = 1936
 
 		is_archetype = yes
@@ -15,7 +15,7 @@ equipments = {
 		interface_category = interface_category_land
 		
 		#Misc Abilities
-		maximum_speed = 8
+		maximum_speed = 7
 		reliability = 0.8
 		
 		#Defensive Abilities
@@ -34,28 +34,27 @@ equipments = {
 		build_cost_ic = 8
 		resources = {
 			steel = 2
-			#oil = 1
 			rubber = 1
 		}
 		
-		fuel_consumption = 2.4
+		fuel_consumption = 4.0
 	}
 
 	# ~1941
-	mechanized_equipment_1 = {
+	amphibious_mechanized_equipment_1 = {
 		year = 1940
 
-		archetype = mechanized_equipment
+		archetype = amphibious_mechanized_equipment
 		priority = 40
 		visual_level = 0
 	}
 
 	# ~1943
-	mechanized_equipment_2 = {
+	amphibious_mechanized_equipment_2 = {
 		year = 1942
 
-		archetype = mechanized_equipment
-		parent = mechanized_equipment_1
+		archetype = amphibious_mechanized_equipment
+		parent = amphibious_mechanized_equipment_1
 		priority = 40
 		visual_level = 1
 
@@ -74,35 +73,6 @@ equipments = {
 		resources = {
 			steel = 3
 			rubber = 1
-			#oil = 1
-		}
-	}
-
-	# ~1945
-	mechanized_equipment_3 = {
-		year = 1944
-
-		archetype = mechanized_equipment
-		parent = mechanized_equipment_2
-		priority = 40
-		visual_level = 2
-		
-		maximum_speed = 12
-
-		#Defensive Abilities
-		defense = 34
-		breakthrough = 6
-		hardness = 0.8
-		armor_value = 20
-
-		#Offensive Abilities
-		ap_attack = 21
-		
-		build_cost_ic = 12
-		resources = {
-			steel = 4
-			rubber = 1
-			#oil = 2
 		}
 	}
 }

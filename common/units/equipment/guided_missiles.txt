@@ -1,13 +1,15 @@
 equipments = {
 	
 	guided_missile_equipment = {
+		year = 1936
+
 		is_archetype = yes
 		is_buildable = no
-		type = strategic_bomber
+		can_license = no
+		type = missile
 		group_by = type
 		sprite = missile_default
-		
-		air_map_icon_frame = 1
+		air_map_icon_frame = 9
 		
 		interface_category = interface_category_air
 				
@@ -25,9 +27,13 @@ equipments = {
 			aluminium = 3
 			tungsten = 3
 		}
+
+		fuel_consumption = 0
 	}
 
 	guided_missile_equipment_1 = {
+		year = 1944
+
 		archetype = guided_missile_equipment
 		is_buildable = no
 		one_use_only = yes
@@ -42,6 +48,8 @@ equipments = {
 	}
 
 	guided_missile_equipment_2 = {
+		year = 1945
+
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_1
 		is_buildable = no
@@ -55,6 +63,8 @@ equipments = {
 	}
 	
 	guided_missile_equipment_3 = {
+		year = 1946
+
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_2
 		is_buildable = no

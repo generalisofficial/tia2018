@@ -2,8 +2,13 @@
 equipments = {
 
 	medium_tank_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_medium_tank_equipment		
 		is_buildable = no
+		is_convertable = yes
 		type = armor
 		group_by = archetype
 		
@@ -23,11 +28,11 @@ equipments = {
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
-		hardness = 0.8
+		hardness = 0.9
 		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 15
+		soft_attack = 19
 		hard_attack = 14
 		ap_attack = 61
 		air_attack = 0
@@ -37,25 +42,33 @@ equipments = {
 		
 		build_cost_ic = 12 
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 2
 			steel = 2
 		}
+		
+		fuel_consumption = 3.6
 	}
 
 	# 1939
 	medium_tank_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_equipment
 		priority = 50
 		visual_level = 0
+		is_convertable = yes
 	}
 
 	# 1941
 	medium_tank_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_1
 		priority = 50
 		visual_level = 1
+		is_convertable = yes
 						
 		#Misc Abilities
 		maximum_speed = 9
@@ -66,14 +79,14 @@ equipments = {
 		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 20
+		soft_attack = 25
 		hard_attack = 19
 		ap_attack = 81
 		air_attack = 0
 
 		build_cost_ic = 13
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 2
 			steel = 3
 		}	
@@ -81,10 +94,13 @@ equipments = {
 
 	# 1943
 	medium_tank_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_2
 		priority = 50
 		visual_level = 2
+		is_convertable = yes
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -95,21 +111,25 @@ equipments = {
 		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 26
+		soft_attack = 32
 		hard_attack = 24
 		ap_attack = 91
 		air_attack = 0
 		
 		build_cost_ic = 14
 		resources = {
-			oil = 2
+			#oil = 2
 			tungsten = 2
 			steel = 4
 		}	
 	}
 
 	medium_tank_artillery_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_medium_tank_equipment		
 		is_buildable = no
 		family = medium_tank_equipment
 		type = { 
@@ -132,13 +152,13 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 12
-		breakthrough = 6
-		hardness = 0.55
-		armor_value = 35
+		defense = 5
+		breakthrough = 3
+		hardness = 0.65
+		armor_value = 45
 
 		#Offensive Abilities
-		soft_attack = 70
+		soft_attack = 42
 		hard_attack = 1
 		ap_attack = 5
 		air_attack = 0
@@ -146,26 +166,37 @@ equipments = {
 		build_cost_ic = 12
 		
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 3
 			steel = 2
 		}
+		fuel_consumption = 1.8
 	}
 
 	medium_tank_artillery_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_artillery_equipment
 		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
-
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
 	}
 
 	medium_tank_artillery_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
 		family = medium_tank_equipment_2
 		priority = 60
 		visual_level = 1
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -176,7 +207,7 @@ equipments = {
 		armor_value = 50
 
 		#Offensive Abilities
-		soft_attack = 92
+		soft_attack = 50
 		hard_attack = 1.5
 		
 		build_cost_ic = 13
@@ -184,27 +215,33 @@ equipments = {
 		resources = {
 			steel = 3
 			tungsten = 3
-			oil = 1
+			#oil = 1
 		}
 	}
 
 	medium_tank_artillery_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_2
 		family = medium_tank_equipment_3
 		priority = 60
 		visual_level = 2
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
 
 		#Defensive Abilities
-		defense = 14
-		breakthrough = 7
+		defense = 7
+		breakthrough = 4
 		armor_value = 58
 
 		#Offensive Abilities
-		soft_attack = 112
+		soft_attack = 55
 		hard_attack = 2
 		
 		build_cost_ic = 14
@@ -212,12 +249,16 @@ equipments = {
 		resources = {
 			steel = 4
 			tungsten = 3
-			oil = 2
+			#oil = 2
 		}
 	}
 
 	medium_tank_destroyer_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_medium_tank_equipment		
 		is_buildable = no
 		family = medium_tank_equipment
 		type = { 
@@ -242,7 +283,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 1.3
-		hardness = 0.8
+		hardness = 0.9
 		armor_value = 60
 
 		#Offensive Abilities
@@ -254,27 +295,39 @@ equipments = {
 		build_cost_ic = 12
 		
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 4
 			steel = 2
 		}
+		fuel_consumption = 1.8
 	}
 
 	# 1939
 	medium_tank_destroyer_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_destroyer_equipment
 		family = medium_tank_equipment_1
 		priority = 80
 		visual_level = 0
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
 	}
 
 	# 1941
 	medium_tank_destroyer_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_1
 		family = medium_tank_equipment_2
 		priority = 80
 		visual_level = 1
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -292,7 +345,7 @@ equipments = {
 		build_cost_ic = 13
 		
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 4
 			steel = 3
 		}		
@@ -300,11 +353,17 @@ equipments = {
 
 	# 1943
 	medium_tank_destroyer_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_2
 		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -322,7 +381,7 @@ equipments = {
 		build_cost_ic = 14
 		
 		resources = {
-			oil = 2
+			#oil = 2
 			tungsten = 4
 			steel = 4
 		}
@@ -330,7 +389,11 @@ equipments = {
 
 
 	medium_tank_aa_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_medium_tank_equipment		
 		is_buildable = no
 		family = medium_tank_equipment
 		type = { 
@@ -355,7 +418,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 2.5
 		breakthrough = 2.5
-		hardness = 0.55
+		hardness = 0.65
 		armor_value = 45
 
 		#Offensive Abilities
@@ -367,26 +430,38 @@ equipments = {
 		build_cost_ic = 12
 		
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 2
 			steel = 2
 		}
+		fuel_consumption = 0.9
 	}
 
 	medium_tank_aa_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_aa_equipment
 		family = medium_tank_equipment_1
 		priority = 70
 		visual_level = 0
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
 
 	}
 
 	medium_tank_aa_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
 		family = medium_tank_equipment_2
 		priority = 70
 		visual_level = 1
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -405,18 +480,24 @@ equipments = {
 		build_cost_ic = 13
 		
 		resources = {
-			oil = 1
+			#oil = 1
 			tungsten = 2
 			steel = 3
 		}
 	}
 
 	medium_tank_aa_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_2
 		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -435,7 +516,7 @@ equipments = {
 		build_cost_ic = 14
 		
 		resources = {
-			oil = 2
+			#oil = 2
 			tungsten = 2
 			steel = 4
 		}		

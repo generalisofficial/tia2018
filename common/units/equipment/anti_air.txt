@@ -1,10 +1,13 @@
 equipments = {
 
 	anti_air_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		picture = archetype_anti_air_equipment		
 		type = {
 			anti_air
-			motorized
+			infantry #adding infantry type
 		}
 		group_by = archetype
 		
@@ -22,8 +25,8 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 3
 		hard_attack = 7
-		ap_attack = 15
-		air_attack = 15
+		ap_attack = 25
+		air_attack = 19
 
 		#Space taken in convoy
 		lend_lease_cost = 3
@@ -37,12 +40,16 @@ equipments = {
 	}
 
 	anti_air_equipment_1 = {
+		year = 1936
+
 		archetype = anti_air_equipment
 		priority = 80
 		visual_level = 0
 	}
 	
 	anti_air_equipment_2 = {
+		year = 1940
+
 		archetype = anti_air_equipment
 		parent = anti_air_equipment_1
 		priority = 80
@@ -50,7 +57,7 @@ equipments = {
 		
 		soft_attack = 3.5
 		hard_attack = 11
-		ap_attack = 25
+		ap_attack = 60
 		air_attack = 25
 
 		build_cost_ic = 5
@@ -60,6 +67,8 @@ equipments = {
 	}
 	
 	anti_air_equipment_3 = {
+		year = 1943
+
 		archetype = anti_air_equipment
 		parent = anti_air_equipment_2
 		priority = 80
@@ -67,8 +76,8 @@ equipments = {
 		
 		soft_attack = 4
 		hard_attack = 15
-		ap_attack = 40
-		air_attack = 40
+		ap_attack = 88
+		air_attack = 32
 
 		build_cost_ic = 6
 		resources = {

@@ -1,74 +1,69 @@
 sub_units = {
 
-	modern_armor = {
-		sprite = "medium_armor"
+	armored_car = {
+		#sprite = light_armor
+		sprite = armored_car
 		map_icon_category = armored
-		priority = 2510
-		ai_priority = 3510
+		priority = 501
+		ai_priority = 200
 		active = yes
 		
 		type = {
-			armor
+			motorized
 		}
 		
-		group = armor
+		group = mobile
 		
 		categories = {
-			category_tanks
 			category_front_line
-			category_all_armor
 			category_army
 		}
-		
-		
+
 
 		combat_width = 2
 
 		need = {
-			modern_tank_equipment = 50
+			armored_car_equipment = 60
 		}
 		manpower = 500
 		max_organisation = 10
-		max_strength = 2
 		default_morale = 0.3
 		training_time = 180
-		weight = 1.5
-		
-		supply_consumption = 0.25
+		max_strength = 2
+		weight = 0.8
+		supply_consumption = 0.14
 
-		#Tanks are awesome
-		# soft_attack = 0.5
-
+		#WE GOOD AT SUPPRESS 
 		suppression = 2.5
-		
+
 		forest = {
-		    attack = -0.3
+		    attack = -0.2
 			movement = -0.4
-		}
-		hills = 	{
-		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.1
+		    movement = -0.1
 		}
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.3
+			movement = -0.5
 		}
 		marsh = {
 		    attack = -0.1 
-			movement = -0.1
+			movement = -0.2
+		}
+		desert = {
+			movement = 0.15
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.3
 		}
 		river = { 
 			attack = -0.2 
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.7
-		}
+			attack = -0.4
+		}	
 	}
 }
