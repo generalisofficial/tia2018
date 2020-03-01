@@ -158,10 +158,6 @@ on_actions = {
                 limit = { is_ai = yes has_war = no }
                 set_country_flag = pulse_one_flag
             }	
-			every_country = { #Democracies must love each other.
-				limit = { has_democratic_form_of_government = yes }
-				country_event = ideology.4
-			}
 			every_country = {
 				limit = {
 					has_idea = idea_united_nations_security_council_member
