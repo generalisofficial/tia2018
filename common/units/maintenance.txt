@@ -3,10 +3,8 @@ sub_units = {
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
-		ai_priority = 0
 		active = no
-		affects_speed = no
-		
+
 		type = {
 			infantry
 			support
@@ -34,8 +32,7 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		# Important Ability
-		reliability_factor = 0.05
-		equipment_capture_factor = 0.05
+		reliability_factor = 0.25
 		
 		essential = {
 			support_equipment

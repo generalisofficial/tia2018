@@ -8,15 +8,11 @@ sub_units = {
 			#capital_ship
 			carrier 
 		}
-		need = { ship_hull_carrier = 1 }
-		
+		need = { carrier = 1 }
 		supply_consumption = 0.3
 		
+
 		max_organisation = 40
-		
-		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
-		critical_part_damage_chance_mult = 1
-		
-		hit_profile_mult = 1.0
+
 	}
 }

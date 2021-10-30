@@ -53,7 +53,6 @@ technology_categories = {
 	infantry_tech
 	marine_tech
 	construction_tech
-	excavation_tech
 	submarine_doctrine
 	air_equipment
 	cat_mobile_warfare
@@ -71,69 +70,22 @@ technology_categories = {
 	mot_rockets
 	support_tech
 	para_tech
-	engineers_tech
-	recon_tech
-	mountaineers_tech
-	military_police_tech
-	hospital_tech
-	logistics_tech
-	signal_company_tech
-	maintenance_company_tech
-	naval_mines
-	concentrated_industry_category
-	dispersed_industry_category
-	asw_tech
-	naval_minesweeping
-	naval_minelaying
-	cat_scout_plane
+	light_mechanized
+	heavy_mechanized
 }
 
 technology_folders = {
-	infantry_folder = {
-		ledger = army
-	}
-	support_folder = {
-		ledger = army
-	}
-	armour_folder = {
-		ledger = army
-	}
-	artillery_folder = {
-		ledger = army
-	}
-	air_techs_folder = {
-		ledger = air
-	}
-	naval_folder = {
-		available = {
-			not = { has_dlc = "Man the Guns" }
-		}
-		ledger = navy
-	}
-	mtgnavalfolder = {
-		available = {
-			has_dlc = "Man the Guns"
-		}
-		ledger = navy
-	}
-	industry_folder = {
-		ledger = civilian
-	}
-	land_doctrine_folder = {
-		ledger = army
-		doctrine = yes
-	}
-	naval_doctrine_folder = {
-		ledger = navy
-		doctrine = yes
-	}
-	air_doctrine_folder = {
-		ledger = air
-		doctrine = yes
-	}
-	electronics_folder = {
-		ledger = civilian
-	}
+	infantry_folder
+	support_folder
+	armour_folder
+	artillery_folder
+	air_techs_folder
+	naval_folder
+	industry_folder
+	land_doctrine_folder
+	naval_doctrine_folder
+	air_doctrine_folder
+	electronics_folder
 	#secret_weapons_folder
 }
 

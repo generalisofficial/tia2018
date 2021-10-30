@@ -1,0 +1,16 @@
+sub_units = {
+	LHD = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 9
+		active = yes
+		type = { capital_ship }
+		need = { LHD = 1 }
+
+		max_organisation = 40
+
+
+		supply_consumption = 0.2
+	}
+
+}

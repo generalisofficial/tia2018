@@ -31,7 +31,7 @@ spriteTypes = {
 		borderSize = { x=32 y=32 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = yes	
+		allwaystransparent = yes	
 	}
 
 	corneredTileSpriteType = {
@@ -41,7 +41,7 @@ spriteTypes = {
 		borderSize = { x=0 y=0 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = yes
+		allwaystransparent = yes
 	}
 
 	corneredTileSpriteType = {
@@ -263,15 +263,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
-	corneredTileSpriteType = {
-		name = "GFX_tiled_header"
-		size = { x=543 y=41}
-		texturefile = "gfx//interface//header_bg.dds"
-		bordersize = { x=61 y=21}
-		tilingCenter = yes
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
 	spriteType = {
 		name = "GFX_technology_available_item_bg"
 		textureFile = "gfx//interface//techtree//technology_available_item_bg.dds"
@@ -300,7 +291,7 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-#		alwaystransparent = yes
+#		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}		
 	
@@ -347,7 +338,7 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-#		alwaystransparent = yes
+#		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	
@@ -374,7 +365,7 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-		alwaystransparent = yes
+		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	
@@ -1310,52 +1301,6 @@ spriteTypes = {
 	}
 
 
-	spriteType = {
-		name = "GFX_air_doctrine_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/air_doctrine_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_air_techs_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/air_techs_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_armour_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/armour_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_artillery_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/artillery_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_electronics_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/electronics_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_industry_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/industry_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_infantry_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/infantry_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_land_doctrine_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/land_doctrine_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_naval_doctrine_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/naval_doctrine_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_naval_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/naval_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_mtgnavalfolder_icon"
-		textureFile = "gfx/interface/techtree/icons/naval_folder_icon.dds"
-	}
-	spriteType = {
-		name = "GFX_support_folder_icon"
-		textureFile = "gfx/interface/techtree/icons/support_folder_icon.dds"
-	}
+
+
 }
