@@ -19,7 +19,7 @@ has_democratic_form_of_government = {
 		OR = {
 			has_government = reactionary
 			has_government = conservative
-			has_government = market_liberal
+			has_government = classical_liberal
 			has_government = social_liberal
 			has_government = social_democrat
 			has_government = progressive
@@ -46,7 +46,7 @@ is_left_wing_democratic = {
 
 is_centrist_democratic = {
 	OR = {
-		has_government = market_liberal
+		has_government = classical_liberal
 		has_government = social_liberal
 	}
 }

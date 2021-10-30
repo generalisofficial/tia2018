@@ -601,7 +601,7 @@ break_coalition = {
 	clr_country_flag = coalition_monarchist
 	clr_country_flag = coalition_reactionary
 	clr_country_flag = coalition_conservative
-	clr_country_flag = coalition_market_liberal
+	clr_country_flag = coalition_classical_liberal
 	clr_country_flag = coalition_social_liberal
 	clr_country_flag = coalition_social_democrat
 	clr_country_flag = coalition_progressive
@@ -653,9 +653,9 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_market_liberal
+			has_country_flag = coalition_classical_liberal
 		}
-		add_to_variable = { ROOT.Coalition = market_liberal_seats }
+		add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 	}
 	if = {
 		limit = {
@@ -704,7 +704,7 @@ cleanup_coalition = {
 	clr_country_flag = government_monarchist
 	clr_country_flag = government_reactionary
 	clr_country_flag = government_conservative
-	clr_country_flag = government_market_liberal
+	clr_country_flag = government_classical_liberal
 	clr_country_flag = government_social_liberal
 	clr_country_flag = government_social_democrat
 	clr_country_flag = government_progressive

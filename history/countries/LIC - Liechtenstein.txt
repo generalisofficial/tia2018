@@ -92,7 +92,7 @@ set_variable = { democratic_socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 12 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { market_liberal_seats = 36 }
+set_variable = { classical_liberal_seats = 36 }
 set_variable = { conservative_seats = 32 }
 set_variable = { reactionary_seats = 20 }
 set_variable = { monarchist_seats = 0 }
@@ -102,20 +102,20 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_market_liberal
+set_country_flag = coalition_classical_liberal
 set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = market_liberal
+	ruling_party = classical_liberal
 	last_election = "2017.2.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	market_liberal = 36
+	classical_liberal = 36
 	conservative = 32
 	reactionary = 20
 	social_democrat = 12

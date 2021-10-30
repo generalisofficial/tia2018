@@ -66,9 +66,9 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = coalition_market_liberal
+			has_country_flag = coalition_classical_liberal
 		}
-		localization_key = coalition_market_liberal_party
+		localization_key = coalition_classical_liberal_party
 	}
 }
 defined_text = {
@@ -279,22 +279,22 @@ defined_text = {
 
 	text = {
 		trigger = {
-			market_liberal < 0.05
+			classical_liberal < 0.05
 		}
 		localization_key = COALITION_PARTY_NOT_ENOUGH
 	}
 
 	text = {
 		trigger = {
-			market_liberal > 0.05
-			market_liberal < 0.5
+			classical_liberal > 0.05
+			classical_liberal < 0.5
 		}
 		localization_key = COALITION_PARTY_ENOUGH
 	}
 
 	text = {
 		trigger = {
-			market_liberal > 0.5
+			classical_liberal > 0.5
 		}
 		localization_key = COALITION_PARTY_MAJORITY
 	}
@@ -529,13 +529,13 @@ defined_text = {
 
 	text = {
 		trigger = {
-			market_liberal < 0.01
+			classical_liberal < 0.01
 		}
 		localization_key = COALITION_PARTY_RED
 	}
 	text = {
 		trigger = {
-			market_liberal > 0.00
+			classical_liberal > 0.00
 		}
 		localization_key = COALITION_PARTY_GREEN
 	}

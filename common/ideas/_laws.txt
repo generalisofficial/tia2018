@@ -353,15 +353,15 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 		
-		market_liberal_support = {
+		classical_liberal_support = {
 			cost = 75
 			
 			available = {
-				NOT = { has_government = market_liberal is_ai = yes }
+				NOT = { has_government = classical_liberal is_ai = yes }
 			}
 			
 			modifier = {
-				market_liberal_drift = 0.1
+				classical_liberal_drift = 0.1
 				political_power_gain = -0.15
 			}
 			
@@ -1517,7 +1517,7 @@ ideas = {
 				    AND = {
 					    OR = {
 						    has_country_flag = coalition_social_liberal
-				            has_country_flag = coalition_market_liberal
+				            has_country_flag = coalition_classical_liberal
 							has_country_flag = coalition_conservative
 							has_country_flag = coalition_reactionary
 						}
@@ -1531,7 +1531,7 @@ ideas = {
 					AND = {
 					    OR = {
 						    has_country_flag = coalition_social_liberal
-				            has_country_flag = coalition_market_liberal
+				            has_country_flag = coalition_classical_liberal
 							has_country_flag = coalition_conservative
 							has_country_flag = coalition_reactionary
 						}

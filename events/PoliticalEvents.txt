@@ -286,26 +286,26 @@ country_event = {
 	desc = political.7.d
 	
 	trigger = {
-		market_liberal > 0.5
-		NOT = { has_government = market_liberal has_elections = yes }
+		classical_liberal > 0.5
+		NOT = { has_government = classical_liberal has_elections = yes }
 	}
 	
 	mean_time_to_happen = {
 		days = 75
 		modifier = {
 			factor = 0.5
-			market_liberal > 0.5
+			classical_liberal > 0.5
 		}
 		modifier = {
 			factor = 0.5
-			market_liberal > 0.55
+			classical_liberal > 0.55
 		}
 	}
 	
 	option = {
 		name = political.7.o1
 		set_politics = {
-			ruling_party = market_liberal
+			ruling_party = classical_liberal
 			elections_allowed = yes
 		}
 		news_event = {
@@ -668,7 +668,7 @@ country_event = {
 	desc = political.19.d
 	
 	trigger = {
-		market_liberal > 0.01
+		classical_liberal > 0.01
 	}
 	
 	mean_time_to_happen = {
@@ -678,7 +678,7 @@ country_event = {
 	option = {
 		name = political.o.movingOn
 		add_popularity = {
-			ideology = market_liberal
+			ideology = classical_liberal
 			popularity = 0.03
 		}
 	}
@@ -857,9 +857,9 @@ country_event = {
 		}
 		if = {
 			limit = { 
-			    has_country_flag = coalition_market_liberal
+			    has_country_flag = coalition_classical_liberal
 			}
-			add_popularity = { ideology = market_liberal popularity = -0.03 }	
+			add_popularity = { ideology = classical_liberal popularity = -0.03 }	
 		}
 		if = {
 			limit = { 
@@ -952,9 +952,9 @@ country_event = {
 		}
 		if = {
 			limit = { 
-			    has_country_flag = coalition_market_liberal
+			    has_country_flag = coalition_classical_liberal
 			}
-			add_popularity = { ideology = market_liberal popularity = 0.03 }	
+			add_popularity = { ideology = classical_liberal popularity = 0.03 }	
 		}
 		if = {
 			limit = { 

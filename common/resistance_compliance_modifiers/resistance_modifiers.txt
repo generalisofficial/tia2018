@@ -165,7 +165,7 @@ resistance_90 = {
 				set_temp_variable = { allowed_party_progressive = 1 }
 				set_temp_variable = { allowed_party_social_democrat = 1 }
 				set_temp_variable = { allowed_party_social_liberal = 1 }
-				set_temp_variable = { allowed_party_market_liberal = 1 }
+				set_temp_variable = { allowed_party_classical_liberal = 1 }
 				set_temp_variable = { allowed_party_conservative = 1 }
 				set_temp_variable = { allowed_party_reactionary = 1 }
 				set_temp_variable = { allowed_party_monarchist = 1 }
@@ -214,8 +214,8 @@ resistance_90 = {
 									check_variable = { allowed_party_social_liberal = 0 }
 								}
 								AND = { 
-									has_government = market_liberal
-									check_variable = { allowed_party_market_liberal = 0 }
+									has_government = classical_liberal
+									check_variable = { allowed_party_classical_liberal = 0 }
 								}
 								AND = { 
 									has_government = conservative
@@ -275,11 +275,11 @@ resistance_90 = {
 								}
 								set_politics = { ruling_party = social_liberal elections_allowed = yes }
 							}
-							allowed_party_market_liberal = {
+							allowed_party_classical_liberal = {
 								set_popularities = {
-									market_liberal = 100
+									classical_liberal = 100
 								}
-								set_politics = { ruling_party = market_liberal elections_allowed = yes }
+								set_politics = { ruling_party = classical_liberal elections_allowed = yes }
 							}
 							allowed_party_conservative = {
 								set_popularities = {

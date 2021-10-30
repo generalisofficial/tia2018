@@ -60,9 +60,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_government = market_liberal
+			has_government = classical_liberal
 		}
-		localization_key = GFX_ideology_[This.GetTag]_market_liberal_group
+		localization_key = GFX_ideology_[This.GetTag]_classical_liberal_group
 	}
 	text = {
 		trigger = {
@@ -216,7 +216,7 @@ defined_text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 7 }
 		}
-		localization_key = GFX_ideology_[This.GetTag]_market_liberal_group
+		localization_key = GFX_ideology_[This.GetTag]_classical_liberal_group
 	}
 	text = {
 		trigger = {
@@ -339,14 +339,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 7 }
-			has_government = market_liberal
+			has_government = classical_liberal
 		}
 		localization_key = "(Government Leader)"
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 7 }
-			NOT = { has_government = market_liberal }
+			NOT = { has_government = classical_liberal }
 		}
 		localization_key = "(Coalition Partner)"
 	}
@@ -511,14 +511,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 7 }
-			has_government = market_liberal
+			has_government = classical_liberal
 		}
 		localization_key = GOV_CANT_BE_KICKED
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 7 }
-			NOT = { has_government = market_liberal }
+			NOT = { has_government = classical_liberal }
 		}
 		localization_key = "Kick this Party from your coalition."
 	}

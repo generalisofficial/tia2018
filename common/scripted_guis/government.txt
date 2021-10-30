@@ -74,10 +74,10 @@ scripted_gui = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 7 }
 					}
-					clr_country_flag = coalition_market_liberal
+					clr_country_flag = coalition_classical_liberal
 					remove_from_array = { member_parties_array = 7 }
-					subtract_from_variable = { ROOT.Coalition = market_liberal_seats }
-					add_to_variable = { ROOT.Opposition = market_liberal_seats }
+					subtract_from_variable = { ROOT.Coalition = classical_liberal_seats }
+					add_to_variable = { ROOT.Opposition = classical_liberal_seats }
 				}
 				else_if = {
 					limit = {
@@ -187,7 +187,7 @@ scripted_gui = {
 				else_if = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 7 }
-						NOT = { has_government = market_liberal }
+						NOT = { has_government = classical_liberal }
 					}
 					always = yes
 				}

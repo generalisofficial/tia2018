@@ -53,8 +53,8 @@ country_event = {
 		multiply_variable = { social_democrat_seats = 100 }
 		set_variable = { social_liberal_seats = party_popularity@social_liberal }
 		multiply_variable = { social_liberal_seats = 100 }
-		set_variable = { market_liberal_seats = party_popularity@market_liberal }
-		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
+		multiply_variable = { classical_liberal_seats = 100 }
 		set_variable = { conservative_seats = party_popularity@conservative }
 		multiply_variable = { conservative_seats = 100 }
 		set_variable = { reactionary_seats = party_popularity@reactionary }
@@ -97,7 +97,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@communist
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -168,7 +168,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@democratic_socialist
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -246,7 +246,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@social_democrat
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -318,7 +318,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@progressive
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -396,7 +396,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@social_liberal
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -450,67 +450,67 @@ country_event = {
 		}
 		trigger = {
 		    check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@communist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@democratic_socialist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@social_democrat
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@progressive
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@social_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@reactionary
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@monarchist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@fascist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@market_liberal
+                var = party_popularity@classical_liberal
                 value = party_popularity@islamist
                 compare = greater_than_or_equals
             }
 		}
 		set_country_flag = has_coalition
-		set_country_flag = coalition_market_liberal
-        set_variable = { ROOT.Coalition = market_liberal_seats }
+		set_country_flag = coalition_classical_liberal
+        set_variable = { ROOT.Coalition = classical_liberal_seats }
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
-			ruling_party = market_liberal
+			ruling_party = classical_liberal
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
@@ -551,7 +551,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@conservative
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -626,7 +626,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@reactionary
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -701,7 +701,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@nationalist
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -776,7 +776,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@fascist
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -851,7 +851,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@islamist
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -926,7 +926,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@monarchist
-                value = party_popularity@market_liberal
+                value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -997,8 +997,8 @@ country_event = {
 		multiply_variable = { social_democrat_seats = 100 }
 		set_variable = { social_liberal_seats = party_popularity@social_liberal }
 		multiply_variable = { social_liberal_seats = 100 }
-		set_variable = { market_liberal_seats = party_popularity@market_liberal }
-		multiply_variable = { market_liberal_seats = 100 }
+		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
+		multiply_variable = { classical_liberal_seats = 100 }
 		set_variable = { conservative_seats = party_popularity@conservative }
 		multiply_variable = { conservative_seats = 100 }
 		set_variable = { reactionary_seats = party_popularity@reactionary }
@@ -1020,7 +1020,7 @@ country_event = {
 					progressive > 0.5
 					social_democrat > 0.5
 					social_liberal > 0.5
-					market_liberal > 0.5
+					classical_liberal > 0.5
 					conservative > 0.5
 					reactionary > 0.5
 					nationalist > 0.5
@@ -1150,16 +1150,16 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			market_liberal > 0.5
+			classical_liberal > 0.5
 		}
 		
 		set_politics = {
-			ruling_party = market_liberal
+			ruling_party = classical_liberal
 			elections_allowed = yes
 		}		
 		set_country_flag = has_coalition
-		set_country_flag = coalition_market_liberal
-        set_variable = { ROOT.Coalition = market_liberal_seats }
+		set_country_flag = coalition_classical_liberal
+        set_variable = { ROOT.Coalition = classical_liberal_seats }
 		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}

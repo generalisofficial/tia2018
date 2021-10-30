@@ -97,7 +97,7 @@ set_variable = { democratic_socialist_seats = 4.94 }
 set_variable = { progressive_seats = 10.13 }
 set_variable = { social_democrat_seats = 20.28 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { market_liberal_seats = 24.37 }
+set_variable = { classical_liberal_seats = 24.37 }
 set_variable = { conservative_seats = 33.68 }
 set_variable = { reactionary_seats = 6.64 }
 set_variable = { monarchist_seats = 0 }
@@ -107,15 +107,15 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_market_liberal
+set_country_flag = coalition_classical_liberal
 set_country_flag = coalition_social_democrat
 set_country_flag = coalition_progressive
-add_to_variable = { ROOT.Coalition = market_liberal_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = progressive_seats }
 
 set_politics = {	
-	ruling_party = market_liberal
+	ruling_party = classical_liberal
 	last_election = "2013.10.14"
 	election_frequency = 60
 	elections_allowed = yes
@@ -124,7 +124,7 @@ set_politics = {
 set_popularities = {
     reactionary = 8.28
     conservative = 28.31
-    market_liberal = 18.76
+    classical_liberal = 18.76
     social_democrat = 17.60
     progressive = 15.12
     democratic_socialist = 5.48

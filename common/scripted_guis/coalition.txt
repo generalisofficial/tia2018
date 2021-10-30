@@ -166,19 +166,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						market_liberal > 0.09
+						classical_liberal > 0.09
 					}
 					modifier = {
 						add = 1
-						market_liberal > 0.19
+						classical_liberal > 0.19
 					}
 					modifier = {
 						add = 1
-						market_liberal > 0.29
+						classical_liberal > 0.29
 					}
 					modifier = {
 						add = 1
-						market_liberal > 0.39
+						classical_liberal > 0.39
 					}
 				}
 			}
@@ -384,13 +384,13 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
-						has_country_flag = government_market_liberal
+						has_country_flag = government_classical_liberal
 					}
 					set_politics = {						
-						ruling_party = market_liberal
+						ruling_party = classical_liberal
 						elections_allowed = yes
 					}
-					set_country_flag = coalition_market_liberal
+					set_country_flag = coalition_classical_liberal
 					set_variable = {
 						var = ROOT.NewCoalition
 						value = party_popularity@ruling_party
@@ -485,7 +485,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -510,7 +510,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -535,7 +535,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -560,7 +560,7 @@ scripted_gui = {
 				clr_country_flag = government_nationalist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -585,7 +585,7 @@ scripted_gui = {
 				clr_country_flag = government_nationalist
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -610,7 +610,7 @@ scripted_gui = {
 				clr_country_flag = government_nationalist
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -620,14 +620,14 @@ scripted_gui = {
 			party7_click = { 
 				if = {
 					limit = {
-						has_country_flag = government_market_liberal
+						has_country_flag = government_classical_liberal
 						has_country_flag = government_chosen
 					}
-					clr_country_flag = government_market_liberal
+					clr_country_flag = government_classical_liberal
 					clr_country_flag = government_chosen
 				}
 				else = {
-					set_country_flag = government_market_liberal
+					set_country_flag = government_classical_liberal
 					set_country_flag = government_chosen
 				}
 				clr_country_flag = government_islamist
@@ -661,7 +661,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
 				clr_country_flag = government_democratic_socialist
@@ -686,7 +686,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_progressive
 				clr_country_flag = government_democratic_socialist
@@ -711,7 +711,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_democratic_socialist
@@ -736,7 +736,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -761,7 +761,7 @@ scripted_gui = {
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_reactionary
 				clr_country_flag = government_conservative
-				clr_country_flag = government_market_liberal
+				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
@@ -825,13 +825,13 @@ scripted_gui = {
 				has_country_flag = government_conservative
 			}
 			party7_click_enabled = {
-				market_liberal > 0.00
+				classical_liberal > 0.00
 			}
 			party7_title_click_enabled = {
-				market_liberal > 0.00
+				classical_liberal > 0.00
 			}
 			party7_accept_visible = {
-				has_country_flag = government_market_liberal
+				has_country_flag = government_classical_liberal
 			}
 			party8_click_enabled = {
 				social_liberal > 0.00
@@ -1083,19 +1083,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						market_liberal > 0.09
+						classical_liberal > 0.09
 					}
 					modifier = {
 						add = 1
-						market_liberal > 0.19
+						classical_liberal > 0.19
 					}
 					modifier = {
 						add = 1
-						market_liberal > 0.29
+						classical_liberal > 0.29
 					}
 					modifier = {
 						add = 1
-						market_liberal > 0.39
+						classical_liberal > 0.39
 					}
 				}
 			}
@@ -1390,27 +1390,27 @@ scripted_gui = {
 			party7_click = { 
 				if = {
 					limit = {
-						has_country_flag = coalition_market_liberal
+						has_country_flag = coalition_classical_liberal
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = market_liberal_seats
+							value = classical_liberal_seats
 							compare = greater_than_or_equals
 						}
 					}
-					clr_country_flag = coalition_market_liberal
+					clr_country_flag = coalition_classical_liberal
 					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = market_liberal_seats
+						value = classical_liberal_seats
 					}
 				}
 				else = {
-					set_country_flag = coalition_market_liberal
+					set_country_flag = coalition_classical_liberal
 					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = market_liberal_seats
+						value = classical_liberal_seats
 					}
 				}
 			}
@@ -1649,20 +1649,20 @@ scripted_gui = {
 				NOT = { has_country_flag = government_conservative }
 			}
 			party7_click_enabled = {
-				market_liberal > 0.00
+				classical_liberal > 0.00
 			}
 			party7_title_click_enabled = {
-				market_liberal > 0.00
+				classical_liberal > 0.00
 			}
 			party7_visible = {
-				NOT = { has_country_flag = government_market_liberal }
+				NOT = { has_country_flag = government_classical_liberal }
 			}
 			party7_title_visible = {
-				NOT = { has_country_flag = government_market_liberal }
+				NOT = { has_country_flag = government_classical_liberal }
 			}
 			party7_accept_visible = {
-				has_country_flag = coalition_market_liberal
-				NOT = { has_country_flag = government_market_liberal }
+				has_country_flag = coalition_classical_liberal
+				NOT = { has_country_flag = government_classical_liberal }
 			}
 			party8_click_enabled = {
 				social_liberal > 0.00
