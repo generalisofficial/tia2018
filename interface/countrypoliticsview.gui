@@ -362,30 +362,30 @@ guiTypes = {
 				clicksound = click_default
 			}
 			
-			#instantTextboxType = {
-			#	name = "title"
-			#	position = { x = 128 y = 34 }
-			#	font = "hoi_18mbs"
-			#	text = "POLITICS_ACTIVE_GOAL"
-			#	maxWidth = 200
-			#	maxHeight = 20
-			#	format = center
-			#	alwaystransparent = yes
-			#	vertical_alignment = center				
-			#}
+			instantTextboxType = {
+				name = "title"
+				position = { x = 300 y = 34 } #Positioned out of bounds so it doesn't cause errors
+				font = "hoi_18mbs"
+				text = "POLITICS_ACTIVE_GOAL"
+				maxWidth = 200
+				maxHeight = 20
+				format = center
+				alwaystransparent = yes
+				vertical_alignment = center				
+			}
 			
-			#iconType = {
-			#	name = "progress"
-			#	spriteType = "GFX_activegoal_progress"
-			#	position = { x=112 y = 72 }		
-			#}
+			iconType = {
+				name = "progress"
+				spriteType = "GFX_activegoal_progress"
+				position = { x=300 y = 72 }	#Positioned out of bounds so it doesn't cause errors
+			}
 			
-			#iconType = {
-			#	name = "progress_frame"
-			#	position = { x = 110 y = 72 }
-			#	spriteType = "GFX_pol_goal_progress_frame"
-			#	alwaystransparent = yes
-			#}			
+			iconType = {
+				name = "progress_frame"
+				position = { x = 300 y = 72 } #Positioned out of bounds so it doesn't cause errors
+				spriteType = "GFX_pol_goal_progress_frame"
+				alwaystransparent = yes
+			}			
 		}
 		containerWindowType = {
 			name = "national_spirit"
