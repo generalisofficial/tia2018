@@ -916,6 +916,16 @@ bitmapfonts = {
 			T = { 255 255 255 }
 		}
 	}
+	
+	bitmapfont_override = {
+		name = "vic_18"
+		fontfiles = {
+			"gfx/fonts/hoi_18"
+			"gfx/fonts/hoi_18_cryllic"
+		}
+		languages = { "l_russian" "l_polish" }
+	}
+	
 	bitmapfont = {
 		name = "vic_18s"
 		path = "gfx/fonts/vic_18s"
@@ -976,6 +986,16 @@ bitmapfonts = {
 			T = { 255 255 255 }
 		}
 	}
+	
+	bitmapfont_override = {
+		name = "vic_22"
+		fontfiles = {
+			"gfx/fonts/hoi_18"
+			"gfx/fonts/hoi_18_cryllic"
+		}
+		languages = { "l_russian" "l_polish" }
+	}
+	
 	bitmapfont = {
 		name = "vic_22s"
 		path = "gfx/fonts/vic_22s"
@@ -1018,6 +1038,16 @@ bitmapfonts = {
 			T = { 255 255 255 }
 		}
 	}
+	
+	bitmapfont_override = {
+		name = "vic_36"
+		fontfiles = { 
+			"gfx/fonts/hoi_26mbs"
+			"gfx/fonts/hoi_26mbs_cryllic"
+		}
+		languages = { "l_russian" "l_polish" } 
+	}
+	
 	bitmapfont = {
 		name = "vic_36s"
 		path = "gfx/fonts/vic_36s"
@@ -1180,11 +1210,11 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16"
 			"gfx/fonts/hoi_16typewriter"			
 		}		
-		color = 0xffffffff
+		color = 0xff000000
 
 		textcolors = {
 			G = { 86 172 91 }
-			R = { 222 86 70 }
+			R = { 238 0 0 }
 			Y = { 238 201 35 }
 			H = { 238 201 35 }
 			T = { 255 255 255 }
@@ -1199,7 +1229,8 @@ bitmapfonts = {
 		}
 	languages = { "l_russian" "l_polish" } 
 	}
-	
+
+
 	bitmapfont = {
 		name = "hoi4_typewriter16_inverted"
 		fontfiles = { 	
@@ -1224,7 +1255,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi_16typewriter_cryllic_inverted"
 		}
 	languages = { "l_russian" "l_polish" } 
-	}
+	}		
 	
 	bitmapfont = {
 		name = "hoi4_typewriter22"
@@ -1232,6 +1263,34 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi4_typewriter22"		
 			"gfx/fonts/hoi_22typewriter"
+#			"gfx/fonts/hoi_22typewriter_cryllic"
+		}		
+		color = 0xff000000
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont_override = {
+		name = "hoi4_typewriter22"
+		fontfiles = { 
+			"gfx/fonts/hoi_22typewriter"
+			"gfx/fonts/hoi_22typewriter_cryllic"
+		}
+	languages = { "l_russian" "l_polish" } 
+	}	
+
+	bitmapfont = {
+		name = "hoi4_typewriter22_inverted"
+#		path = "gfx/fonts/hoi4_typewriter22"
+		fontfiles = { 
+			"gfx/fonts/hoi4_typewriter22_inverted"		
+			"gfx/fonts/hoi_22typewriter_inverted"
 #			"gfx/fonts/hoi_22typewriter_cryllic"
 		}		
 		color = 0xffffffff
@@ -1243,13 +1302,13 @@ bitmapfonts = {
 			H = { 238 201 35 }
 			T = { 255 255 255 }
 		}
-	}
+	}	
 	
 	bitmapfont_override = {
-		name = "hoi4_typewriter22"
+		name = "hoi4_typewriter22_inverted"
 		fontfiles = { 
-			"gfx/fonts/hoi_22typewriter"
-			"gfx/fonts/hoi_22typewriter_cryllic"
+			"gfx/fonts/hoi_22typewriter_inverted"
+			"gfx/fonts/hoi_22typewriter_cryllic_inverted"
 		}
 	languages = { "l_russian" "l_polish" } 
 	}		
@@ -1335,8 +1394,25 @@ bitmapfonts = {
 			"gfx/fonts/hoi_26mbs"
 			"gfx/fonts/hoi_26mbs_cryllic"
 		}
-	languages = { "l_russian" "l_polish" } 
-	}	
+		languages = { "l_russian" "l_polish" } 
+	}
+	
+	bitmapfont = {
+		name = "hoi_26header"
+		fontfiles = { 
+			"gfx/fonts/hoi_26mbs"
+			"gfx/fonts/hoi_26mbs_cryllic"
+		} 
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
 	
 	bitmapfont = {
 		name = "hoi_22tech"
@@ -1353,7 +1429,16 @@ bitmapfonts = {
 			H = { 238 201 35 }
 			T = { 255 255 255 }
 		}
-	}	
+	}
+
+	bitmapfont = {
+		name = "hoi_22chat"
+		fontfiles = { 
+			"gfx/fonts/hoi_22tech"
+
+		}		
+		color = 0x4ffffffff
+	}
 	
 	bitmapfont = {
 		name = "hoi_33"
@@ -1466,6 +1551,20 @@ bitmapfonts = {
 		texturefile = "gfx//interface//button_type_1.tga"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua";
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_pink_selection_frame"
+		size= {x=39 y=39 }
+		textureFile ="gfx//interface//tiles//tiled_selection.dds"
+		borderSize = { x=16 y=16 }
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_pink_bold_selection_frame"
+		size= {x=39 y=39 }
+		textureFile ="gfx//interface//tiles//tiled_selection_bold.dds"
+		borderSize = { x=1 y=1 }
 	}
 	
 }
