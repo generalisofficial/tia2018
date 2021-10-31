@@ -1198,7 +1198,33 @@ bitmapfonts = {
 			"gfx/fonts/hoi_16typewriter_cryllic"
 		}
 	languages = { "l_russian" "l_polish" } 
-	}	
+	}
+	
+	bitmapfont = {
+		name = "hoi4_typewriter16_inverted"
+		fontfiles = { 	
+			"gfx/fonts/hoi4_typewriter16_inverted"
+			"gfx/fonts/hoi_16typewriter_inverted"			
+		}		
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont_override = {
+		name = "hoi4_typewriter16_inverted"
+		fontfiles = { 
+			"gfx/fonts/hoi_16typewriter_inverted"
+			"gfx/fonts/hoi_16typewriter_cryllic_inverted"
+		}
+	languages = { "l_russian" "l_polish" } 
+	}
 	
 	bitmapfont = {
 		name = "hoi4_typewriter22"
