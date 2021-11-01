@@ -79,11 +79,8 @@ set_technology = {
 }
 
 diplomatic_relation = { country = AZR relation = non_aggression_pact }
-diplomatic_relation = { country = NCY relation = non_aggression_pact }
 give_guarantee = AZR
-give_guarantee = NCY
 AZR = { give_military_access = TUR }
-NCY = { give_military_access = TUR }
 give_military_access = FSA
 
 set_country_flag = dominant_religion_islam
@@ -94,6 +91,34 @@ add_ideas = {
 	limited_conscription
 	pkk_insurgency
 	presidential_system
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NCY
+		autonomous_state = autonomy_puppet
+	}
+	else = {
+		puppet = NCY
+	}
+}
+
+NCY = {
+	set_politics = {	
+		ruling_party = reactionary
+		last_election = "2013.1.7"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		reactionary = 45.6
+		social_democrat = 29.5
+		social_liberal = 17.1
+		conservative = 7.8
+	}
 }
 
 add_opinion_modifier = { target = AZR modifier = large_increase }

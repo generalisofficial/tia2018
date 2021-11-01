@@ -81,19 +81,19 @@ set_technology = {
 
 add_ideas = {
 	population_growth_steady
-	presidential_system
+	parliamentary_system
 }
 
 set_cosmetic_tag = MCU_SAR
 
 #Legislative Assembly
-set_variable = { communist_seats = 0 }
+set_variable = { communist_seats = 71.43 }
 set_variable = { democratic_socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 12.13 }
+set_variable = { social_liberal_seats = 28.57 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 87.87 }
+set_variable = { conservative_seats = 0 }
 set_variable = { reactionary_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
@@ -102,29 +102,32 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_communist
+add_to_variable = { ROOT.Coalition = communist_seats }
 
 set_politics = {	
-	ruling_party = conservative
-	last_election = "2014.8.25"
-	election_frequency = 60
+	ruling_party = communist
+	last_election = "2017.9.12"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 87.87
-	social_liberal = 12.13
+    communist = 85.72
+	social_liberal = 14.28
 }
 
 create_country_leader = {
 	name = "Fernando Chui"
 	picture = "Fernando_Chui.dds"
-	ideology = national_conservative
+	ideology = maoist
+	traits = {
+		friend_of_china
+	}
 }
 
 create_country_leader = {
-	name = "Scott Chiang Meng Hin"
-	picture = "Scott_Chiang_Meng_Hin.dds"
+	name = "Antonio Ng"
+	picture = "Antonio_Ng.dds"
 	ideology = social_liberal_ideology
 }

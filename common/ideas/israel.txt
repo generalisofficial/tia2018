@@ -1,9 +1,8 @@
 ideas = {
-	
 	country = {
-		
+
 		idea_vanguard_of_judaism = {
-			picture = jewish_faith
+			picture = idea_judaism
 			
 			allowed = {
 				always = yes
@@ -24,35 +23,7 @@ ideas = {
 				islamist_acceptance = -50
 				islamist_drift = -0.25
 			}
-			
-		}
-		
-		idea_mossad = {
-			picture = mossad
-			
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-			    political_power_gain = -0.25
-			    improve_relations_maintain_cost_factor = 0.75
-			    foreign_subversive_activites = -0.3
-				subversive_activites_upkeep = -0.5
-				lend_lease_tension = -0.20
-				send_volunteers_tension = -0.20
-				decryption_factor = 0.25
-				encryption_factor = 0.15
-			}
-			
 		}
 		
 	}
-	
 }

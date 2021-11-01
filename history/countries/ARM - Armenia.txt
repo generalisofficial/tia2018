@@ -86,11 +86,21 @@ add_ideas = {
 	parliamentary_system
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NGK
+		autonomous_state = autonomy_puppet
+	}
+	else = {
+		puppet = NGK
+	}
+}
+
 add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = AZR modifier = rival }
-
-give_guarantee = NGK
-give_military_access = NGK
 
 set_country_flag = christianity
 
