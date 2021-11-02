@@ -1,39 +1,5 @@
 ﻿add_namespace = estonia
 
-country_event = { #2018 Drought
-	id = estonia.1
-	title = estonia.1.t
-	desc = estonia.1.d
-	picture = GFX_report_event_001
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = estonia.1.a
-		hidden_effect = { 
-		    add_timed_idea = { idea = EST_drought_3 days = 65 } 
-		}
-		ai_chance = { factor = 60 }
-	}
-	
-	option = {
-		name = estonia.1.b
-		hidden_effect = {
-            add_timed_idea = { idea = EST_drought_1 days = 95 }
-        }
-		ai_chance = { factor = 10 }
-	}
-	
-	option = {
-		name = estonia.1.c
-		hidden_effect = {
-		    add_timed_idea = { idea = EST_drought_2 days = 80 }
-		}
-		ai_chance = { factor = 30 }
-	}
-}
-
 country_event = { #Eesti Reformierakond - Kaja Kallas
 	id = estonia.2
 	title = estonia.2.t

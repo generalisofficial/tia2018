@@ -178,6 +178,16 @@ add_ideas = {
 	idea_oligarchy
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Central Intelligence Agency"
+ 		icon = "GFX_intelligence_agency_logo_USA"
+	}
+}
+
 create_faction = "North Atlantic Treaty Organization"
 
 add_to_faction = USA

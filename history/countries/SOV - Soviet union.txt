@@ -116,6 +116,52 @@ add_ideas = {
 	presidential_system
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ABK
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SOS
+		autonomous_state = autonomy_puppet
+	}
+	else = {
+		puppet = ABK
+		puppet = SOS
+	}
+}
+
+ABK = {
+	set_politics = {	
+		ruling_party = nationalist
+		last_election = "2014.8.24"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		nationalist = 51.52
+		reactionary = 48.48
+	}
+}
+
+create_faction = "Collective Security Treaty Organization"
+add_to_faction = SOV
+add_to_faction = BLR
+add_to_faction = ARM
+add_to_faction = TAJ
+add_to_faction = KAZ
+add_to_faction = KYR
+
+give_guarantee = TRA
+
+give_military_access = DPR
+TRA = { give_military_access = SOV }
+SYR = { give_military_access = SOV }
+DPR = { give_military_access = SOV }
+
 #State Duma
 set_variable = { communist_seats = 13.3 }
 set_variable = { democratic_socialist_seats = 0 }
@@ -149,24 +195,6 @@ set_popularities = {
 	social_democrat = 6.2
 	conservative = 0.2
 }
-
-create_faction = "Collective Security Treaty Organization"
-add_to_faction = SOV
-add_to_faction = BLR
-add_to_faction = ARM
-add_to_faction = TAJ
-add_to_faction = KAZ
-add_to_faction = KYR
-
-give_guarantee = ABK
-give_guarantee = SOS
-give_guarantee = TRA
-
-SOS = { give_military_access = SOV }
-ABK = { give_military_access = SOV }
-TRA = { give_military_access = SOV }
-SYR = { give_military_access = SOV }
-DPR = { give_military_access = SOV }
 
 create_country_leader = {
 	name = "Vladimir Putin"
