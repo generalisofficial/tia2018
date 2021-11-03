@@ -458,13 +458,6 @@ ideas = {
 			
 			available = {
 				NOT = { has_idea = idea_eu_member }
-			    OR = {
-				    NOT = { has_democratic_form_of_government = yes }
-				    fascist > 0.2
-					nationalist > 0.2
-					reactionary > 0.2
-					islamist > 0.2
-				}
 			}
 			
 			modifier = {
@@ -511,11 +504,6 @@ ideas = {
 			level = 1
 			
 			available = {
-			    OR = {
-				    NOT = { has_democratic_form_of_government = yes }
-				    communist > 0.2
-					progressive > 0.2
-				}
 			}
 			
 			modifier = {

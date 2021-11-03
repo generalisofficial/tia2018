@@ -99,6 +99,16 @@ add_ideas = {
 	presidential_system
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Foreign Intelligence Service of Ukraine"
+ 		icon = "GFX_intelligence_agency_logo_UKR"
+	}
+}
+
 #Verkhovna Rada
 set_variable = { communist_seats = 0 }
 set_variable = { democratic_socialist_seats = 0 }

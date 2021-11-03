@@ -91,6 +91,16 @@ add_ideas = {
 	islam
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Qatar State Security"
+ 		icon = "GFX_intelligence_agency_logo_QAT"
+	}
+}
+
 set_politics = {	
 	ruling_party = monarchist
 	last_election = "2018.1.1"

@@ -102,6 +102,16 @@ add_ideas = {
 	presidential_system
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Directorate-General for External Security"
+ 		icon = "GFX_intelligence_agency_logo_FRA"
+	}
+}
+
 #National Assembly
 set_variable = { communist_seats = 1.73 }
 set_variable = { democratic_socialist_seats = 2.95 }

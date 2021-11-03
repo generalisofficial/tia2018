@@ -3,7 +3,6 @@
 # names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
 
 intelligence_agency = {
-
 	picture = GFX_intelligence_agency_logo_USA
 	names = { "Central Intelligence Agency" }
 	
@@ -12,93 +11,113 @@ intelligence_agency = {
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_ITA
+	names = { "External Intelligence and Security Agency" }
 	
-	picture = GFX_intelligence_agency_logo_generic_1
-	names = { "Rooke" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = ITA }
+	available = { original_tag = ITA }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_SYR
+	names = { "General Intelligence Directorate" }
 	
-	picture = GFX_intelligence_agency_logo_generic_2
-	names = { "Tower" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = SYR }
+	available = { original_tag = SYR }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_ISR
+	names = { "Mossad" }
 	
-	picture = GFX_intelligence_agency_logo_generic_3
-	names = { "Snake" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = ISR }
+	available = { original_tag = ISR }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_SAU
+	names = { "General Intelligence Presidency" }
 	
-	picture = GFX_intelligence_agency_logo_generic_4
-	names = { "Stag" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = SAU }
+	available = { original_tag = SAU }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_QAT
+	names = { "Qatar State Security" }
 	
-	picture = GFX_intelligence_agency_logo_generic_5
-	names = { "Golden Lion" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = QAT }
+	available = { original_tag = QAT }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_GER
+	names = { "Federal Intelligence Service" }
 	
-	picture = GFX_intelligence_agency_logo_generic_6
-	names = { "Arrow" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = GER }
+	available = { original_tag = GER }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_FRA
+	names = { "Directorate-General for External Security" }
 	
-	picture = GFX_intelligence_agency_logo_generic_7
-	names = { "Lion Head" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = FRA }
+	available = { original_tag = FRA }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_UAE
+	names = { "Signals Intelligence Agency" }
 	
-	picture = GFX_intelligence_agency_logo_generic_8
-	names = { "Golden Eagle" }
-	
-	available = { always = yes }
-	
-	default = { always = yes } 
+	default = { tag = UAE }
+	available = { original_tag = UAE }
 }
 
 intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_UKR
+	names = { "Foreign Intelligence Service of Ukraine" }
 	
-	picture = GFX_intelligence_agency_logo_generic_9
-	names = { "Hammer and Sickle" }
+	default = { tag = UKR }
+	available = { original_tag = UKR }
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_ENG
+	names = { "Secret Intelligence Service" }
 	
-	available = { 
-		has_government = communism
-	}
+	default = { tag = ENG }
+	available = { original_tag = ENG }
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_SWE
+	names = { "Swedish Security Service" }
 	
-	default = { always = yes } 
+	default = { tag = SWE }
+	available = { original_tag = SWE }
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_PRC
+	names = { "Ministry of State Security" }
+	
+	default = { tag = PRC }
+	available = { original_tag = PRC }
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_SOV
+	names = { "Foreign Intelligence Service" }
+	
+	default = { tag = SOV }
+	available = { original_tag = SOV }
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_BRA
+	names = { "Brazilian Intelligence Agency" }
+	
+	default = { tag = BRA }
+	available = { original_tag = BRA }
 }

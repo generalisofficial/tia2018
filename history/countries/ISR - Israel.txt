@@ -95,6 +95,16 @@ add_ideas = {
 	parliamentary_system
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Mossad"
+ 		icon = "GFX_intelligence_agency_logo_ISR"
+	}
+}
+
 add_opinion_modifier = { target = PAL modifier = rival }
 add_opinion_modifier = { target = PAL modifier = rival_trade }
 

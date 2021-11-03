@@ -86,6 +86,16 @@ add_ideas = {
 	population_growth_steady
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Brazilian Intelligence Agency"
+ 		icon = "GFX_intelligence_agency_logo_BRA"
+	}
+}
+
 set_country_flag = christianity
 
 #Economy

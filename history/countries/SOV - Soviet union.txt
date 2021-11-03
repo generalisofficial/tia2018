@@ -134,6 +134,16 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Foreign Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_SOV"
+	}
+}
+
 ABK = {
 	set_politics = {	
 		ruling_party = nationalist
@@ -144,6 +154,18 @@ ABK = {
 	set_popularities = {
 		nationalist = 51.52
 		reactionary = 48.48
+	}
+}
+
+SOS = {
+	set_politics = {	
+		ruling_party = reactionary
+		last_election = "2017.4.9"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		reactionary = 100
 	}
 }
 

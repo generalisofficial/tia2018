@@ -88,6 +88,16 @@ add_ideas = {
 	parliamentary_system
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Swedish Security Service"
+ 		icon = "GFX_intelligence_agency_logo_SWE"
+	}
+}
+
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 365 }
 
 #Riksdag
