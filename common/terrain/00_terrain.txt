@@ -33,7 +33,6 @@ categories =  {
 
 		units = {
 			attack = -0.2
-			#movement = -0.2
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.1
@@ -49,7 +48,6 @@ categories =  {
 
 		units = {
 			attack = -0.3
-			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
 	}
@@ -65,10 +63,17 @@ categories =  {
 
 		units = {
 			attack = -0.6
-			#movement = -0.4
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.10
+	}
+
+	glacial = {
+		color = { 255 255 255 }
+		movement_cost = 1.0
+		ai_terrain_importance_factor = 0
+		match_value = 0
+		sound_type = desert
 	}
 	
 	plains = {
@@ -76,6 +81,14 @@ categories =  {
 		movement_cost = 1.0
 		ai_terrain_importance_factor = 0.1
 		match_value = 0.5
+		sound_type = plains
+	}
+
+	farmland = {
+		color = { 255 129 66 }
+		movement_cost = 1.2
+		ai_terrain_importance_factor = 0.5
+		match_value = 1
 		sound_type = plains
 	}
 	
@@ -88,7 +101,6 @@ categories =  {
 
 		units = {
 			attack = -0.3
-			#movement = -0.2
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.50
@@ -105,7 +117,6 @@ categories =  {
 
 		units = {
 			attack = -0.3
-			#movement = -0.3
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.25
@@ -124,7 +135,6 @@ categories =  {
 
 		units = {
 			attack = -0.4
-			#movement = -0.4
 		}
 		
 		sickness_chance = 1.0
@@ -148,7 +158,7 @@ categories =  {
 		is_water = yes
 		sound_type = sea
 		
-		battle_cruiser = {
+		corvette = {
 			units = {
 				attack = -0.2
 				movement = -0.2
@@ -156,7 +166,7 @@ categories =  {
 			}
 			navy_fuel_consumption_factor = 0.2
 		}
-		battleship = {
+		frigate = {
 			units = {
 				attack = -0.2
 				movement = -0.2
@@ -164,7 +174,15 @@ categories =  {
 			}
 			navy_fuel_consumption_factor = 0.2
 		}
-		heavy_cruiser = {
+		destroyer = {
+			units = {
+				attack = -0.2
+				movement = -0.2
+				defence = -0.2
+			}
+			navy_fuel_consumption_factor = 0.2
+		}
+		missile_cruiser = {
 			units = {
 				attack = -0.2
 				movement = -0.2
@@ -206,22 +224,22 @@ categories =  {
 		
 		destroyer = {
 			units = {
-				attack = -0.5
-				movement = -0.5
-				defence = -0.5
+				attack = -0.2
+				movement = -0.2
+				defence = -0.2
 			}
 		}
-		light_cruiser = {
+		corvette = {
 			units = {
-				attack = -0.25
+				attack = -0.1
 				movement = -0.1
-				defence = -0.25
+				defence = -0.1
 			}
 		}
 		submarine = {
-			navy_visibility = -0.25
+			navy_visibility = -0.15
 			units = {
-				movement = -0.5
+				movement = -0.25
 			}
 		}
 
@@ -238,36 +256,129 @@ categories =  {
 ###
 
 terrain = {
-	terrain_0					= { type = plains			color = { 	0	 } texture = 1 }
-	terrain_1					= { type = forest			color = { 	1	 } texture = 4 } 
-	desert_mountain				= { type = hills			color = { 	2	 } texture = 3 }
-	desert						= { type = desert			color = { 	3	 } texture = 9 }
-		
-	terrain_4					= { type = forest			color = { 	4	 } texture = 5 }
-	terrain_5					= { type = plains	 		color = { 	5	 } texture = 0 }
-	terrain_6					= { type = mountain			color = { 	6	 } texture = 11 }
-	terrain_7					= { type = desert			color = { 	7	 } texture = 12 }
-	desert_hills				= { type = desert			color = { 	8	 } texture = 14 }
-	terrain_9					= { type = marsh			color = { 	9	 } texture = 6 }
-	terrain_10					= { type = mountain   		color = { 	10	 } texture = 13 }
-			
-	desert						= { type = mountain			color = { 	11	 } texture = 11 }
-	desert						= { type = desert			color = { 	12	 } texture = 8 }
-		
-	forest_13					= { type = urban			color = { 	13	 } texture = 10 spawn_city = yes }
-	forest_14					= { type = lakes			color = { 	14	 } texture = 255 }
-	ocean_15					= { type = ocean			color = { 	15	 } texture = 9 } 
-		
-	snow_16						= { type = mountain			color = { 	16	 } texture = 11  perm_snow = yes }
-	plains_17					= { type = plains			color = { 	19	 } texture = 0  perm_snow = yes }
-	
-	hills_blend					= { type = hills			color = { 	17	 } texture = 2 }
-	mountain_variation_sand	 	= { type = mountain			color = { 	18	 } texture = 7 }
-	mountain_variation_grass 	= { type = mountain			color = { 	20	 } texture = 7 }
-	jungle_18					= { type = jungle			color = { 	21	 } texture = 4 }
-	jungle_blend_18				= { type = jungle			color = { 	22	 } texture = 5 }
-	
-	jungle_blend_18				= { type = mountain			color = { 	27	 } texture = 7 }
-	desert_mountain_tops		= { type = mountain			color = { 	31	 } texture = 15 }
-	
+	# Plains
+	plains = { 
+		type = plains
+		color = { 0 }
+		texture = 1
+	}
+	# Farmland
+	farmland = { 
+		type = farmland
+		color = { 1 }
+		texture = 0
+	} 
+	# Forest
+	forest_thick = { 
+		type = forest
+		color = { 2 }
+		texture = 4
+	}
+	forest_light = {
+		type = forest
+		color = { 3 }
+		texture = 5
+	}
+	# Desert
+	desert_1 = { 
+		type = desert
+		color = { 4 }
+		texture = 9
+	}
+	desert_2 = { 
+		type = desert
+		color = { 5 }
+		texture = 12
+	}
+	desert_farmland = { 
+		type = desert
+		color = { 6 }
+		texture = 8
+	}
+	# Hills
+	hills_grass = { 
+		type = hills
+		color = { 7 }
+		texture = 2
+	}
+	hills_rocky = { 
+		type = hills
+		color = { 8 }
+		texture = 3
+	}
+	hills_desert = { 
+		type = hills
+		color = { 9 }
+		texture = 14
+	}
+	# Marsh
+	marsh = {
+		type = marsh
+		color = { 10 }
+		texture = 6
+	}
+	# Mountain
+	mountain_grass = {
+		type = mountain
+		color = { 11 }
+		texture = 7
+	}
+	mountain_desert = { 
+		type = mountain
+		color = { 12 }
+		texture = 13
+	}
+	mountain_desert_2 = { 
+		type = mountain
+		color = { 13 }
+		texture = 15
+	}
+	mountain_rocky = {
+		type = mountain
+		color = { 14 }
+		texture = 11
+	}
+	# Urban
+	urban = {
+		type = urban
+		color = { 16 } 
+		texture = 10 
+		spawn_city = yes 
+	}
+	# Jungle
+	jungle = { 
+		type = jungle
+		color = { 17 }
+		texture = 4
+	}
+	# Water
+	lakes = { 
+		type = lakes
+		color = { 18 }
+		texture = 1
+	}
+	ocean = { 
+		type = ocean
+		color = { 19 }
+		texture = 1
+	}
+	ocean_frozen = { 
+		type = ocean
+		color = { 20 }
+		texture = 1
+		perm_snow = yes
+	}
+	# Glacial
+	glacial_ice_sheet = {
+		type = glacial
+		color = { 21 }
+		texture = 11
+		perm_snow = yes
+	}
+	glacial_mountain = { 
+		type = glacial
+		color = { 15 }
+		texture = 11
+		perm_snow = yes
+	}
 }

@@ -70,34 +70,6 @@ pulse = {
 		}
 		if = {
 			limit = {
-			    original_tag = CAN
-				has_idea = quebec_separatism
-			    OR = {
-			        has_country_flag = quebec_appeased
-			        AND = {
-				        466 = { NOT = { is_owned_by = CAN } }
-				        468 = { NOT = { is_owned_by = CAN } }
-			        }
-				}
-			}
-			remove_ideas = quebec_separatism
-		}
-		if = {
-			limit = {
-				has_idea = catalonia_separatism
-				country_exists = CAT
-			}
-			remove_ideas = catalonia_separatism
-		}
-		#if = {
-			#limit = {
-				#minority_government = yes
-				#has_idea = parliamentary_system
-			#}
-			#add_ideas = minority_government
-		#}
-		if = {
-			limit = {
 			    original_tag = POR
 				date > 2018.5.11
 				date < 2019.1.1
@@ -356,23 +328,6 @@ pulse = {
 				date < 2020.1.1
 			}
 			country_event = australia.4
-		}
-		if = {
-			limit = {
-			    original_tag = USA
-				has_government = communist
-				NOT = { has_country_flag = washington_dc_renamed_due_to_gus_hall has_country_flag = no_commie_renaming }
-				has_civil_war = no
-			}
-			country_event = usa.63
-		}
-		if = {
-			limit = {
-			    original_tag = USA
-				has_country_flag = washington_dc_renamed_due_to_gus_hall
-				NOT = { has_government = communist }
-			}
-			country_event = usa.70
 		}
 		if = {
 			limit = {

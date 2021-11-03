@@ -1,20 +1,25 @@
 ideas = {
-	
 	country = {
-	
 		catalonia_separatism = {
 			picture = catalonia_separatism
 		
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
 			
 			modifier = {
 				stability_factor = -0.05
 				political_power_factor = -0.1
 				conscription_factor = -0.1
 			}
+
+			cancel = {
+				OR = {
+					country_exists = CAT
+					NOT = { 
+						owns_state = 165 
+					}
+				}
+			}
 		}
-	
 	}
-	
 }
