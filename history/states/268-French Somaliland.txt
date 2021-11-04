@@ -1,10 +1,7 @@
+
 state={
 	id=268
 	name="STATE_268"
-	manpower = 911381
-
-
-	state_category = state_level_10
 
 	history={
 		owner = DJI
@@ -14,11 +11,20 @@ state={
 			air_base = 1
 			8124 = {
 				naval_base = 1
+
 			}
+
 		}
-		victory_points = { 8124 5 }
+		victory_points = {
+			8124 5 
+		}
+
 	}
+
 	provinces={
-		4985 8124
- 	}
+		4985 8124 13496 
+	}
+	manpower=911381
+	buildings_max_level_factor=1.000
+	state_category=state_level_10
 }

@@ -1,0 +1,245 @@
+ideas = {
+	country = {
+	
+		#United Nations
+		idea_united_nations_security_council_member = {
+			picture = united_nations_gold
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+			}
+			
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		idea_united_nations_NP_security_council_member = {
+			picture = united_nations_green
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+
+		UNSC_trade_sanctions_idea = {
+			picture = united_nations_economic_sanctions
+		
+			allowed = { always = yes }
+
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.05
+				trade_opinion_factor = -0.25
+				local_resources_factor = -0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.2
+			}
+		}
+
+		UNSC_security_risk_idea = {
+			picture = united_nations_diplomatic_sanctions
+		
+			allowed = { always = yes }
+
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.05
+				justify_war_goal_time = 0.1
+				enemy_justify_war_goal_time = -0.15
+			}
+		}
+		
+		#African Union
+		african_union_member = {
+			picture = AU_member
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		
+		#European Union
+		idea_eu_member = {
+			picture = EU_member
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+		
+		the_euro = {
+			picture = the_euro
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		
+		idea_eu_sanctions = {
+			picture = trade
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+	    #ASEAN 
+		asean_member = {
+			picture = asean
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+		
+		#Visegrad Group
+		visegrad_group_member = {
+			picture = visegrad
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+		
+		#Commonwealth of Nations
+		commonwealth_of_nations_member = {
+			picture = commonwealth_member
+			allowed = {
+				always = no
+			}
+			modifier = {
+			
+			}
+		}
+		
+		#Arab League	
+		arab_league_member = {
+			picture = arab_league
+			allowed = {
+				always = no
+			}
+			modifier = {
+			
+			}
+		}
+
+		#Non-Aligned Movement
+		non_aligned_movement_member = {
+			picture = non_aligned_movement
+			allowed = {
+				always = no
+			}
+			modifier = {
+				ai_get_ally_desire_factor = -20
+			}
+		}
+
+      	#Nordic Council
+	    nordic_council_member = {
+			picture = nordic_council
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+
+     	#Baltic Assembly
+		baltic_assembly_member = {
+			picture = baltic_assembly
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		
+     	#East African Community
+		east_african_community_member = {
+			picture = east_african_community
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+				
+     	#GUAM
+		guam_member = {
+			picture = guam
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		
+     	#Commonwealth of Independent States
+		commonwealth_of_independent_states_member = {
+			picture = commonwealth_of_independent_states
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		
+     	#Gulf Cooperation Council
+		gulf_cooperation_council_member = {
+			picture = gulf_cooperation_council
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		
+     	#Shanghai Cooperation Organization
+		shanghai_cooperation_organization_member = {
+			picture = shanghai_cooperation_organization
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		
+     	#Benelux Union
+		benelux_member = {
+			picture = benelux_union
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+	}   
+}

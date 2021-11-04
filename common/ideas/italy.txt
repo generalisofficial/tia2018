@@ -19,36 +19,6 @@ ideas = {
 			}
 		}
 		
-		ITA_mafia_curtailed = {
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-			picture = spy_political
-			
-			modifier = {
-				stability_factor = -0.03
-				research_speed_factor = 0.025
-				consumer_goods_factor = 0.02
-				production_speed_industrial_complex_factor = -0.1
-                political_power_gain = -0.1
-			}
-		}
-		
-		ITA_victory_over_mafia = {
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-			picture = matignon_agreements
-			
-			modifier = {
-				stability_factor = 0.1
-			}
-		}
-		
 		ITA_corruption = {
 		
 			picture = matignon_agreements
@@ -77,37 +47,6 @@ ideas = {
 				stability_factor = -0.02
 			}
 		
-		}
-		
-		ITA_migrants_from_africa_encouraged = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = agriculture
-			
-			modifier = {
-				MONTHLY_POPULATION = 0.05
-				consumer_goods_factor = 0.03
-				stability_factor = -0.03
-			}
-		
-		}
-		
-		ITA_migrants_from_africa_limited = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = factory_strikes
-			
-			modifier = {
-				MONTHLY_POPULATION = 0.01
-				consumer_goods_factor = 0.01
-				stability_factor = -0.01
-			}
 		}
 	}
 }

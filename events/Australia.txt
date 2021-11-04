@@ -5,8 +5,13 @@ country_event = { #Centre Alliance
 	title = australia.1.t
 	desc = australia.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = AST
+		date > 2018.6.7
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = australia.1.a
@@ -23,8 +28,13 @@ country_event = { #2018 National Party of Australia leadership election
 	title = australia.2.t
 	desc = australia.2.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = AST
+		date > 2018.2.25
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = australia.2.a
@@ -56,8 +66,13 @@ country_event = { #2018 Liberal Party of Australia leadership spills
 	title = australia.3.t
 	desc = australia.3.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = AST
+		date > 2018.8.23
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = australia.3.a
@@ -89,8 +104,13 @@ country_event = { #2019 Australian Labor Party leadership election
 	title = australia.4.t
 	desc = australia.4.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = AST
+		date > 2019.5.29
+		date < 2020.1.1
+	}
 	
 	option = {
 		name = australia.4.a

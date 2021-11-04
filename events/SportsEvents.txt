@@ -7,9 +7,13 @@ news_event = {	#Olympic Games of 2018 (Pyeongchang)
 	desc = olympic_games.1.d
 	picture = GFX_news_event_olympic_games_2018
 	
-	is_triggered_only = yes
-	fire_only_once = no
+	fire_only_once = yes
 	major = yes
+
+	trigger = {
+		date > 2018.2.8
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = olympic_games.option
@@ -22,9 +26,13 @@ news_event = {	#2018 FIFA World Cup
 	desc = fifa_world_cup.1.d
 	picture = GFX_news_event_fifa_world_cup_2018
 	
-	is_triggered_only = yes
-	fire_only_once = no
+	fire_only_once = yes
 	major = yes
+
+	trigger = {
+		date > 2018.6.13
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = fifa_world_cup.hostOption

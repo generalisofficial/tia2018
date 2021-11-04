@@ -5,8 +5,13 @@ country_event = { #Resignation of Jacob Zuma
 	title = south_africa.1.t
 	desc = south_africa.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = SAF
+		date > 2018.2.13
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = south_africa.1.o1

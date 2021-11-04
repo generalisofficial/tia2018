@@ -1,11 +1,3 @@
-pulse_decisions = {
-	icon = pulse
-
-	allowed = {
-		always = yes
-	}
-}
-
 formable_nation_decisions = {
 	icon = propaganda
 
@@ -41,46 +33,6 @@ brexit_decisions = {
 	}
 }
 
-decisions_CHI = {
-	icon = taiwan
-
-	allowed = {
-		original_tag = CHI
-	}
-}
-
-decisions_PRC = {
-	icon = china
-
-	allowed = {
-		original_tag = PRC
-	}
-}
-
-power_struggle_in_the_communist_party = {
-	icon = power_struggle
-	
-	allowed = {
-		original_tag = PRC
-	}
-}
-
-decisions_FRA = {
-	icon = france
-
-	allowed = {
-		original_tag = FRA
-	}
-}
-
-decisions_JAP = {
-	icon = japan
-
-	allowed = {
-		original_tag = JAP
-	}
-}
-
 SPACE_USA = {
 	icon = generic_propaganda
 
@@ -100,15 +52,6 @@ SPACE_USA = {
     }
 }
 
-#FOR DEVELOPMENT ONLY
-USA_house = {
-	icon = united_states
-
-	allowed = {
-		always = no
-	}
-}
-
 syrian_civil_war = {
 	icon = syrian_civil_war
 
@@ -117,24 +60,8 @@ syrian_civil_war = {
 	}
 }
 
-war_in_northwest_pakistan = {
-    icon = al_qaeda
-	
-    allowed = { 
-		always = yes
-    }
-}
-
 war_in_donbass = {
     icon = ukraine
-	
-    allowed = { 
-		always = yes
-    }
-}
-
-foreign_bases = {
-    icon = crisis
 	
     allowed = { 
 		always = yes
@@ -149,22 +76,6 @@ socotra_crisis = {
 	}
 }
 
-private_military_companies = {
-	icon = politics
-
-	allowed = {
-		always = no
-	}
-}
-
-eritrea_ethiopia_conflict = {
-	icon = break_treaty
-
-	allowed = {
-		always = yes
-	}
-}
-
 ISR_regency = {
 	icon = democracy
 
@@ -173,104 +84,12 @@ ISR_regency = {
 	}
 }
 
-african_union_decisions = {
-	icon = african_union
+international_organizations = {
+	icon = propaganda
 
 	visible = {
 		always = yes
 	}
-}
-
-arab_league_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-non_aligned_movement_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-baltic_assembly_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-nordic_council_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-east_african_community_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-guam_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-commonwealth_of_independent_states_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-gulf_cooperation_council_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-shanghai_cooperation_organization_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-benelux_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-asean_decisions = {
-	icon = politics
-
-	visible = {
-		always = yes
-	}
-}
-
-diplomatic_decisions = {
-	icon = politics
 }
 
 domestic_affairs = {
@@ -278,7 +97,11 @@ domestic_affairs = {
 }
 
 foreign_affairs = {
-	icon = politics
+	icon = break_treaty
+}
+
+economic_affairs = {
+	icon = economy
 }
 
 army_decisions = {
@@ -295,26 +118,6 @@ navy_decisions = {
 
 air_force_decisions = {
 	icon = air_force
-}
-
-secret_agreements = {
-	icon = military_plan
-}
-
-european_union_decisions = {
-	icon = european_union
-	
-	picture = GFX_decision_cat_picture_european_union
-
-	visible = {
-		OR = {
-			is_EU_member = yes
-			is_in_europe = yes
-			original_tag = ISR
-			original_tag = MOR
-			original_tag = TUR
-		}
-	}
 }
 
 governments_in_exile = {

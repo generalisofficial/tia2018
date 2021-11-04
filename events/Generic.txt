@@ -1,676 +1,191 @@
 ﻿add_namespace = generic
 
-country_event = {	#Worker Protests
+#Leader of the Opposition slams government
+country_event = {
 	id = generic.1
 	title = generic.1.t
 	desc = generic.1.d
 	
 	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 90
-		}
+		has_idea = parliamentary_system
 	}
 	
 	mean_time_to_happen = {
 		days = 2000
-		modifier = {	#Authoritarian states will get protests more frequently.
-			factor = 0.8
-			OR = {
-				has_government = monarchist
-				has_government = fascist
-				has_government = communist
-				has_government = nationalist
-			}
-		}
-		modifier = {	#Left Wing Democracies will get protests less frequently.
-			factor = 1.2
-			OR = {
-				has_government = social_democrat
-				has_government = progressive
-				has_government = democratic_socialist
-			}
-		}
 		modifier = {
-			factor = 0.5
-			has_offensive_war = yes
-		}
-		modifier = {
-			factor = 1.5
-			has_defensive_war = yes
+			factor = 0.1
+			has_stability < 0.5
 		}
 	}
 	
 	option = {
-		name = generic.1.o1
-		add_stability = 0.03
-		add_timed_idea = { idea = worker_strikes_1 days = 90 }
-		add_political_power = 10
-		ai_chance = { factor = 30 }
-	}
-	
-	option = {
-		name = generic.1.o2
-		add_timed_idea = { idea = worker_strikes_1 days = 50 }
-		ai_chance = { factor = 40 }
-	}
-	
-	option = {
-		name = generic.1.o3
-		add_stability = -0.03
-		add_timed_idea = { idea = worker_strikes_1 days = 10 }
-		add_political_power = -10
-		ai_chance = { factor = 30 }
+		name = generic.1.a
+		if = {
+			limit = { 
+			    has_country_flag = coalition_islamist
+			}
+			add_popularity = { ideology = islamist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_fascist
+			}
+			add_popularity = { ideology = fascist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_nationalist
+			}
+			add_popularity = { ideology = nationalist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_monarchist
+			}
+			add_popularity = { ideology = monarchist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_reactionary
+			}
+			add_popularity = { ideology = reactionary popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_conservative
+			}
+			add_popularity = { ideology = conservative popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_classical_liberal
+			}
+			add_popularity = { ideology = classical_liberal popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_liberal
+			}
+			add_popularity = { ideology = social_liberal popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_democrat
+			}
+			add_popularity = { ideology = social_democrat popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_progressive
+			}
+			add_popularity = { ideology = progressive popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_democratic_socialist
+			}
+			add_popularity = { ideology = democratic_socialist popularity = -0.03 }	
+		}
+		if = {
+			limit = { 
+			    has_country_flag = coalition_communist
+			}
+			add_popularity = { ideology = communist popularity = -0.03 }	
+		}
 	}
 }
 
-country_event = {	#Hospital Funding
+#Head of Government slams opposition
+country_event = {
 	id = generic.2
 	title = generic.2.t
 	desc = generic.2.d
 	
 	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 90
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 3000
-		modifier = {
-			factor = 0.25
-			has_civil_war = yes
-		}
-		modifier = {
-			factor = 0.8
-			has_war = yes
-		}
-	}
-	
-	option = {
-		name = generic.2.o1
-		add_stability = 0.01
-		add_political_power = -20
-		ai_chance = { factor = 50 }
-	}
-	
-	option = {
-		name = generic.2.o2
-		add_stability = -0.02
-		ai_chance = { factor = 50 }
-	}
-}
-
-country_event = {	#Suburb Riots
-	id = generic.3
-	title = generic.3.t
-	desc = generic.3.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 90
-		}
+		has_idea = parliamentary_system
 	}
 	
 	mean_time_to_happen = {
 		days = 2000
 		modifier = {
-			factor = 0.8
-			has_war = yes
-		}
-		modifier = {
-			factor = 0.8
-			has_offensive_war = yes
-		}
-		modifier = {
-			factor = 1.25
-			has_democratic_form_of_government = yes
+			factor = 0.1
+			has_stability > 0.5
 		}
 	}
 	
 	option = {
-		name = generic.3.o1
-		add_political_power = -10
-		add_stability = -0.01
-		add_stability = -0.02
-		ai_chance = { factor = 30 }
-	}
-	
-	option = {
-		name = generic.3.o2
-		add_political_power = -30
-		add_stability = -0.01
-		ai_chance = { factor = 40 }
-	}
-	
-	option = {
-		name = generic.3.o3
-		add_political_power = -50
-		add_stability = 0.01
-		ai_chance = { factor = 30 }
-	}
-}
-
-country_event = {	#Parliamentary Crisis
-	id = generic.4
-	title = generic.4.t
-	desc = generic.4.d
-	
-	trigger = {
-		has_democratic_form_of_government = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {
-		name = generic.4.o1
-		add_stability = 0.01
-		add_political_power = -45
-		add_timed_idea = {
-			idea = parliamentary_crisis
-			days = 20
-		}
-		ai_chance = { factor = 30 }
-	}
-	
-	option = {
-		name = generic.4.o2
-		add_political_power = -30
-		add_timed_idea = {
-			idea = parliamentary_crisis
-			days = 30
-		}
-		ai_chance = { factor = 40 }
-	}
-	
-	option = {
-		name = generic.4.o3
-		add_stability = -0.01
-		add_political_power = -15
-		add_timed_idea = {
-			idea = parliamentary_crisis
-			days = 40
+		name = generic.1.a
+		if = {
+			limit = { 
+			    has_country_flag = coalition_islamist
+			}
+			add_popularity = { ideology = islamist popularity = 0.03 }	
 		}
 		if = {
-			limit = { fascist > 0.03 }
-			add_popularity = {
-				ideology = fascist
-				popularity = 0.03
+			limit = { 
+			    has_country_flag = coalition_fascist
 			}
+			add_popularity = { ideology = fascist popularity = 0.03 }	
 		}
 		if = {
-			limit = { nationalist > 0.03 }
-			add_popularity = {
-				ideology = nationalist
-				popularity = 0.03
+			limit = { 
+			    has_country_flag = coalition_nationalist
 			}
+			add_popularity = { ideology = nationalist popularity = 0.03 }	
 		}
 		if = {
-			limit = { communist > 0.03 }
-			add_popularity = {
-				ideology = communist
-				popularity = 0.03
+			limit = { 
+			    has_country_flag = coalition_monarchist
 			}
+			add_popularity = { ideology = monarchist popularity = 0.03 }	
 		}
 		if = {
-			limit = { monarchist > 0.03 }
-			add_popularity = {
-				ideology = monarchist
-				popularity = 0.03
+			limit = { 
+			    has_country_flag = coalition_reactionary
 			}
+			add_popularity = { ideology = reactionary popularity = 0.03 }	
 		}
-		ai_chance = { factor = 30 }
-	}
-}
-
-country_event = {	#Reform Administration Laws
-	id = generic.5
-	title = generic.5.t
-	desc = generic.5.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 60
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#An excellent proposal!
-		name = generic.5.o1
-		add_political_power = -90
-		add_stability = 0.05
-	}
-	
-	option = {	#Partial reforms make sense.
-		name = generic.5.o2
-		add_political_power = -40
-		add_stability = 0.02
-	}
-	
-	option = {	#We should focus something else.
-		name = generic.5.o3
-		add_political_power = 10
-	}
-}
-
-country_event = {	#Local Separatists gain support
-	id = generic.6
-	title = generic.6.t
-	desc = generic.6.d
-	
-	trigger = {
-		has_democratic_form_of_government = yes
-		has_country_flag = {
-			flag = national_stability
-			value < 70
-		}
-		num_of_controlled_states > 1
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#Let them talk.
-		name = generic.6.o1
-		add_stability = -0.03
-	}
-	
-	option = {	#Silence them.
-		name = generic.6.o2
-		add_political_power = -25
-		add_stability = -0.01
-	}
-}
-
-country_event = {	#Prison Break
-	id = generic.7
-	title = generic.7.t
-	desc = generic.7.d
-	
-	trigger = {
-		num_of_controlled_states > 1
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#They'll catch him eventually.
-		name = generic.7.o1
-		add_stability = -0.03
-		ai_chance = { factor = 30 }
-	}
-	
-	option = {	#We need to get the guy back.
-		name = generic.7.o2
-		add_political_power = -25
-		add_stability = -0.01
-		ai_chance = { factor = 40 }
-	}
-	
-	option = {	#Thorough Reforms are necessary.
-		name = generic.7.o3
-		add_political_power = -50
-		add_stability = 0.01
-		ai_chance = { factor = 30 }
-	}
-}
-
-country_event = {	#Racial Violence against Ethnic Minorities
-	id = generic.8
-	title = generic.8.t
-	desc = generic.8.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 70
-		}
-		num_of_controlled_states > 1
-	}
-	
-	mean_time_to_happen = {
-		days = 10000
-	}
-	
-	option = {	#Bring the criminals to justice
-		trigger = {
-			NOT = { has_government = fascist }
-		}
-		name = generic.8.o1
-		add_political_power = -30
-		add_stability = 0.01
-	}
-	
-	option = {	#Turn a blind eye.
-		trigger = {
-			NOT = { has_government = progressive }
-			NOT = { has_government = democratic_socialist }
-		}
-		name = generic.8.o2
-		add_political_power = -5
-		add_stability = -0.01
-		add_popularity = {
-			ideology = fascist
-			popularity = 0.01
-		}
-	}
-}
-
-country_event = {	#Demand for more Direct Democracy
-	id = generic.9
-	title = generic.9.t
-	desc = generic.9.d
-	
-	trigger = {
-		has_democratic_form_of_government = yes
-		num_of_controlled_states > 1
-		NOT = { has_idea = swiss_political_system }
-	}
-	
-	mean_time_to_happen = {
-		days = 10000
-		modifier = {
-			factor = 0.9
-			reactionary > 0.05
-		}
-		modifier = {
-			factor = 0.9
-			reactionary > 0.1
-		}
-	}
-	
-	option = {
-		name = generic.9.o1
-		add_stability = 0.02
-		add_political_power = -20
-		add_popularity = { ideology = nationalist popularity = -0.01 }
-		add_popularity = { ideology = fascist popularity = -0.01 }
-		add_popularity = { ideology = communist popularity = -0.01 }
-		add_popularity = { ideology = monarchist popularity = -0.01 }
-		ai_chance = { factor = 50 }
-	}
-	
-	option = {
-		name = generic.9.o2
-		add_political_power = 5
-		ai_chance = { factor = 50 }
-	}
-}
-
-#Controversial Ruling
-country_event = {
-	id = generic.10
-	title = generic.10.t
-	desc = generic.10.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 70
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {
-		name = generic.10.o1
-		add_political_power = -10
-		add_stability = -0.01
-		ai_chance = { factor = 50 }
-	}
-	
-	option = {
-		name = generic.10.o2
-		add_political_power = -50
-		add_stability = 0.01
-		ai_chance = { factor = 50 }
-	}
-}
-
-#Steel Producer Scandal
-country_event = {
-	id = generic.11
-	title = generic.11.t
-	desc = generic.11.d
-	
-	trigger = {
-		num_of_controlled_states > 1
-		has_country_flag = {
-			flag = national_stability
-			value > 35
-		}
-		NOT = { has_government = communist }
-		any_owned_state = {
-			state_population > 25000
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#We need to fight this!
-		name = generic.11.o1
-		add_political_power = 20
-		add_popularity = { ideology = progressive popularity = 0.01 }
-		ai_chance = { factor = 50 }
-	}
-	
-	option = {	#...Why would we?
-		name = generic.11.o2
-		add_political_power = -10
-		add_stability = -0.01
-		random_owned_state = {
-			limit = { state_population > 25000 }
-			add_resource = {
-				type = steel
-				amount = 2
+		if = {
+			limit = { 
+			    has_country_flag = coalition_conservative
 			}
+			add_popularity = { ideology = conservative popularity = 0.03 }	
 		}
-		add_popularity = { ideology = classical_liberal popularity = 0.01 }
-		ai_chance = { factor = 50 }
-	}
-}
-
-#Airline Scandal
-country_event = {
-	id = generic.13
-	title = generic.13.t
-	desc = generic.13.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 90
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {
-		name = generic.13.o1
-		add_political_power = 5
-	}
-	
-	option = {	
-		name = generic.13.o2
-		add_stability = 0.01
-		add_political_power = -20
-	}
-}
-
-#Military Excesses
-country_event = {
-	id = generic.14
-	title = generic.14.t
-	desc = generic.14.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 70
-		}
-		num_of_controlled_states > 1
-		any_owned_state = {
-			state_population > 100000
-		}
-		has_army_manpower = { size > 50000 }
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#Purge the army!
-		name = generic.14.o1
-		add_stability = 0.02
-		add_political_power = 10
-		ai_chance = { factor = 50 }
-	}
-	
-	option = {	#Turn a blind eye.
-		name = generic.14.o2
-		add_stability = -0.02
-		random_owned_state = {
-			limit = {
-				state_population > 100000
+		if = {
+			limit = { 
+			    has_country_flag = coalition_classical_liberal
 			}
-			add_manpower = 5000
+			add_popularity = { ideology = classical_liberal popularity = 0.03 }	
 		}
-		ai_chance = { factor = 50 }
-	}
-}
-
-#Shariah Patrols (Islamist countries)
-country_event = {
-	id = generic.15
-	title = generic.15.t
-	
-	trigger = {
-		OR = {
-			has_government = islamist
-			islamist > 0.25
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_liberal
+			}
+			add_popularity = { ideology = social_liberal popularity = 0.03 }	
 		}
-		has_country_flag = {
-			flag = national_stability
-			value < 80
+		if = {
+			limit = { 
+			    has_country_flag = coalition_social_democrat
+			}
+			add_popularity = { ideology = social_democrat popularity = 0.03 }	
 		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#Good.
-		name = generic.15.o1
-		add_stability = -0.01
-		add_popularity = {
-			ideology = islamist
-			popularity = 0.03
+		if = {
+			limit = { 
+			    has_country_flag = coalition_progressive
+			}
+			add_popularity = { ideology = progressive popularity = 0.03 }	
 		}
-		ai_chance = { factor = 50 }
-	}
-	
-	option = {	#Citizen should not enforce our laws.
-		name = generic.15.o2
-		add_political_power = -30
-		add_stability = 0.01
-		ai_chance = { factor = 50 }
-	}
-}
-
-#Outstanding Political Activist
-country_event = {
-	id = generic.16
-	title = generic.16.t
-	desc = generic.16.d
-	
-	trigger = {
-		has_democratic_form_of_government = yes
-		has_country_flag = {
-			flag = national_stability
-			value > 30
+		if = {
+			limit = { 
+			    has_country_flag = coalition_democratic_socialist
+			}
+			add_popularity = { ideology = democratic_socialist popularity = 0.03 }	
 		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {	#An excellent addition!
-		name = generic.16.o1
-		add_political_power = 5
-		add_stability = 0.01
-	}
-}
-
-#Increase in Political Attention
-country_event = {
-	id = generic.17
-	title = generic.17.t
-	desc = generic.17.d
-	
-	trigger = {
-		has_democratic_form_of_government = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 3000
-	}
-	
-	option = {
-		name = generic.17.o1
-		add_stability = 0.01
-		add_popularity = { ideology = democratic_socialist popularity = 0.005 }
-		add_popularity = { ideology = progressive popularity = 0.005 }
-		add_popularity = { ideology = social_democrat popularity = 0.005 }
-		add_popularity = { ideology = social_liberal popularity = 0.005 }
-		add_popularity = { ideology = classical_liberal popularity = 0.005 }
-		add_popularity = { ideology = conservative popularity = 0.005 }
-		add_popularity = { ideology = reactionary popularity = 0.005 }
-	}
-}
-
-#Conspiracy Theories take hold
-country_event = {
-	id = generic.18
-	title = generic.18.t
-	desc = generic.18.d
-	
-	trigger = {
-		has_country_flag = {
-			flag = national_stability
-			value < 70
+		if = {
+			limit = { 
+			    has_country_flag = coalition_communist
+			}
+			add_popularity = { ideology = communist popularity = 0.03 }	
 		}
-		num_of_controlled_states > 1
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-	}
-	
-	option = {
-		name = generic.18.o1
-		add_stability = -0.01
-		add_political_power = 30
-	}
-	
-	option = {
-		name = generic.18.o2
-		add_stability = 0.01
 	}
 }

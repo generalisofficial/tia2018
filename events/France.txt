@@ -6,9 +6,13 @@ news_event = { #Notre-Dame de Paris fire
 	desc = france.1.d
 	picture = GFX_news_event_notre_dame_fire
 	
-	is_triggered_only = yes
-	fire_only_once = no
+	fire_only_once = yes
 	major = yes
+
+	trigger = {
+		date > 2019.4.14
+		date < 2020.1.1
+	}
 	
 	option = {
 		name = france.1.o1

@@ -5,13 +5,21 @@ country_event = { #Murder of Ján Kuciak
 	title = slovakia.1.t
 	desc = slovakia.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = SLO
+		has_country_leader = {
+			name = "Robert Fico"
+			ruling_only = yes
+		}
+		date > 2018.2.21
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = slovakia.1.o1
 		add_stability = -0.1
-		set_country_flag = fico_resigned
 		create_country_leader = {
 	        name = "Peter Pellegrini"
 	        picture = "Peter_Pellegrini.dds"

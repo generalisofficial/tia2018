@@ -5,8 +5,13 @@ country_event = { #Green League - Maria Ohisalo
 	title = finland.1.t
 	desc = finland.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = FIN
+		date > 2019.6.15
+		date < 2020.1.1
+	}
 	
 	option = {
 		name = finland.1.a
@@ -23,8 +28,17 @@ country_event = { #Rinne Cabinet Resigns
 	title = finland.2.t
 	desc = finland.2.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = FIN
+		has_country_leader = { 
+			name = "Antti Rinne" 
+			ruling_only = yes 
+		} 
+		date > 2019.12.10
+		date < 2020.1.1
+	}
 	
 	option = {
 		name = finland.2.a

@@ -92,10 +92,25 @@ if = {
 	}
 	set_autonomy = {
 		target = NGK
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_puppet_state
 	}
 	else = {
 		puppet = NGK
+	}
+}
+
+NGK = {
+	set_politics = {	
+		ruling_party = conservative
+		last_election = "2015.3.31"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		nationalist = 30
+		reactionary = 53.34
+		conservative = 6.66
+		social_liberal = 10
 	}
 }
 
@@ -131,7 +146,7 @@ add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
 
 set_politics = {	
 	ruling_party = reactionary
-	last_election = "2013.12.9"
+	last_election = "2017.6.20"
 	election_frequency = 60
 	elections_allowed = yes
 }

@@ -1,0 +1,395 @@
+﻿add_namespace = system
+
+country_event = {
+	id = system.1
+	hidden=yes
+
+	trigger = {
+		has_war = yes
+		NOT = { has_country_flag = at_war }
+	}
+	
+	immediate = {
+		set_country_at_war_effect = yes
+	}
+}
+
+country_event = {
+	id = system.2
+	hidden=yes
+
+	trigger = {
+		has_war = no
+		has_country_flag = at_war
+	}
+	
+	immediate = {
+		clr_country_flag = at_war
+	}
+}
+
+country_event = {
+	id = system.3
+	hidden=yes
+
+	trigger = {
+		NOT = { has_idea = nuclear_weapons_state }
+		has_tech = nukes
+	}
+	
+	immediate = {
+		add_ideas = nuclear_weapons_state
+	}
+}
+
+country_event = {
+	id = system.4
+	hidden=yes
+
+	trigger = {
+		original_tag = LEB
+		country_exists = HEZ
+		has_government = islamist
+	}
+	
+	immediate = {
+		annex_country = { target = HEZ transfer_troops = yes }
+	}
+}
+
+country_event = {
+	id = system.5
+	hidden=yes
+
+	trigger = {
+		original_tag = PAL
+		country_exists = HAM
+		has_government = islamist
+	}
+	
+	immediate = {
+		annex_country = { target = HAM transfer_troops = yes }
+	}
+}
+
+country_event = {
+	id = system.6
+	hidden=yes
+
+	trigger = {
+		NOT = { has_idea = population_growth_explosion }
+		NOT = { has_idea = population_growth_rapid }
+		NOT = { has_idea = population_growth_steady }
+		NOT = { has_idea = population_growth_stagnation }
+		NOT = { has_idea = population_growth_decline }
+	}
+	
+	immediate = {
+		add_ideas = population_growth_stagnation
+	}
+}
+
+country_event = {
+	id = system.7
+	hidden=yes
+
+	trigger = {
+		NOT = { has_idea = enforced_atheism }
+		NOT = { has_idea = secular }
+		NOT = { has_idea = christianity }
+		NOT = { has_idea = islam }
+		NOT = { has_idea = buddhism }
+		NOT = { has_idea = judaism }
+	}
+	
+	immediate = {
+		add_ideas = secular
+	}
+}
+
+country_event = {
+	id = system.8
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			country_exists = ISS
+			has_global_flag = isis_defeated
+		}
+	}
+	
+	immediate = {
+		news_event = isis.1
+		set_global_flag = isis_defeated
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = ISS
+					is_claimed_by = ISS
+				}
+			}
+			remove_core_of = ISS
+			remove_claim_by = ISS
+		}
+	}
+}
+
+country_event = {
+	id = system.9
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = syrian_civil_war_over }
+		country_exists = SYR
+		NOT = { country_exists = FSA }
+		NOT = { country_exists = ISS }
+	}
+	
+	immediate = {
+		country_event = syria.1
+		set_global_flag = syrian_civil_war_over
+	}
+}
+
+country_event = {
+	id = system.10
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = syrian_civil_war_over }
+		OR = {
+			AND = {
+				country_exists = FSA
+				NOT = { country_exists = SYR }
+				NOT = { country_exists = ISS }
+			}
+		}
+	}
+	
+	immediate = {
+		country_event = syria.2
+		set_global_flag = syrian_civil_war_over
+		FSA = { set_cosmetic_tag = FSA_GOV }
+	}
+}
+
+country_event = {
+	id = system.11
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = syrian_civil_war_over }
+		country_exists = ISS
+		NOT = { country_exists = FSA }
+		NOT = { country_exists = SYR }
+	}
+	
+	immediate = {
+		country_event = syria.3
+		set_global_flag = syrian_civil_war_over
+	}
+}
+
+country_event = {
+	id = system.12
+	hidden=yes
+
+	trigger = {
+		has_variable = loan_days_left
+		check_variable = {
+			loan_days_left < 1
+		}
+	}
+	
+	immediate = {
+		var:originated_country = {
+			country_event = money.7
+		}
+	}
+}
+
+country_event = {
+	id = system.13
+	hidden=yes
+
+	trigger = {
+		OR = {
+			has_country_leader = { name = "Collective Leadership" ruling_only = yes } 
+			has_country_leader = { name = "No Candidate" ruling_only = yes } 
+		}
+	}
+	
+	immediate = {
+		kill_country_leader = yes
+	}
+}
+
+country_event = {
+	id = system.14
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = non_aligned_movement_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = non_aligned_movement_dissolved
+	}
+}
+
+country_event = {
+	id = system.15
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = baltic_assembly_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = baltic_assembly_dissolved
+	}
+}
+
+country_event = {
+	id = system.16
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = east_african_community_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = east_african_community_dissolved
+	}
+}
+
+country_event = {
+	id = system.17
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = guam_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = guam_dissolved
+	}
+}
+
+country_event = {
+	id = system.18
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = commonwealth_of_independent_states_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = commonwealth_of_independent_states_dissolved
+	}
+}
+
+country_event = {
+	id = system.19
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = gulf_cooperation_council_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = gulf_cooperation_council_dissolved
+	}
+}
+
+country_event = {
+	id = system.20
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = arab_league_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = arab_league_dissolved
+	}
+}
+
+country_event = {
+	id = system.21
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = shanghai_cooperation_organization_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = shanghai_cooperation_organization_dissolved
+	}
+}
+
+country_event = {
+	id = system.22
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = benelux_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = benelux_dissolved
+	}
+}
+
+country_event = {
+	id = system.23
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = asean_member
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = asean_dissolved
+	}
+}

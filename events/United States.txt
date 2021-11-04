@@ -1,0 +1,66 @@
+﻿add_namespace = usa
+
+#2020 Democratic Party presidential primaries
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = USA
+		has_idea = presidential_system
+		date > 2020.8.11
+		date < 2021.1.1
+	}
+
+	option = {
+		name = usa.1.o1
+		ai_chance = {
+			factor = 65
+		}
+		create_country_leader = {
+	        name = "Joe Biden"
+	        picture = "Joe_Biden.dds"
+	        ideology = centrist
+        }
+	}
+
+	option = {
+		name = usa.1.o2
+		ai_chance = {
+			factor = 35
+		}
+		create_country_leader = {
+	        name = "Bernie Sanders"
+	        picture = "Bernie_Sanders.dds"
+	        ideology = social_liberal_ideology
+        }
+	}
+}
+
+#Trump builds the wall
+news_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_news_event_donald_trump_legislation
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = usa.2.o1
+		trigger = { 
+			NOT = { original_tag = USA }
+		}
+	}
+	
+	option = {
+		name = usa.2.o2
+		trigger = { 
+			original_tag = USA
+		}
+	}
+}

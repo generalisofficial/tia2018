@@ -5,8 +5,13 @@ country_event = { #Eesti Reformierakond - Kaja Kallas
 	title = estonia.2.t
 	desc = estonia.2.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = EST
+		date > 2018.6.17
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = estonia.2.a
@@ -23,8 +28,13 @@ country_event = { #Sotsiaaldemokraatlik Erakond - Indrek Saar
 	title = estonia.3.t
 	desc = estonia.3.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = EST
+		date > 2018.4.13
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = estonia.3.a

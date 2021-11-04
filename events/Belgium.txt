@@ -7,7 +7,14 @@ country_event = {
 	desc = belgium.1.d
 	picture = GFX_report_event_belgium
 	
-	is_triggered_only = yes
+	trigger = {
+		original_tag = BEL
+		has_idea = belgian_political_system
+		OR = {
+			has_democratic_form_of_government = no
+			has_country_flag = end_of_the_belgian_political_system
+		}
+	}
 	
 	option = {
 		name = belgium.1.o1

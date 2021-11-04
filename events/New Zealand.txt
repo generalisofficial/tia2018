@@ -5,8 +5,13 @@ country_event = { #2018 New Zealand National Party leadership election
 	title = new_zealand.1.t
 	desc = new_zealand.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = NZL
+		date > 2018.2.26
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = new_zealand.1.a

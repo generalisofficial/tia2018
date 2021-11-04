@@ -5,8 +5,14 @@ country_event = { #New Caledonian independence referendum, 2018
 	title = new_caledonia.1.t
 	desc = new_caledonia.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = FRA
+		owns_state = 635
+		date > 2018.11.3
+		date < 2019.1.1
+	}
 	
 	option = {
 		name = new_caledonia.1.o1
@@ -57,7 +63,6 @@ news_event = { #New Caledonia Votes for Independence - News
 	picture = GFX_news_event_new_caledonia
 	
 	is_triggered_only = yes
-	
 	major = yes
 	
 	option = {

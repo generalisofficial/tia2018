@@ -1,0 +1,75 @@
+domestic_affairs = {
+
+	hold_snap_election = {
+		
+		visible = {
+			has_elections = yes
+		}
+		
+		available = {
+			has_idea = parliamentary_system
+		}
+		
+		icon = politics
+		
+		cost = 25
+		
+		days_re_enable = 365
+		
+		complete_effect = {
+			hold_election = ROOT
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	enact_a_state_of_emergency = {
+		
+		visible = {
+			NOT = { has_idea = state_of_emergency }
+		}
+		
+		available = {
+			has_war = yes
+		}
+		
+		icon = politics
+		
+		cost = 50
+		
+		complete_effect = {
+	        add_ideas = state_of_emergency
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enact_martial_law = {
+		
+		visible = {
+			NOT = { has_idea = martial_law }
+		}
+		
+		available = {
+			
+		}
+		
+		icon = politics
+		
+		cost = 100
+		
+		complete_effect = {
+	        add_ideas = martial_law
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

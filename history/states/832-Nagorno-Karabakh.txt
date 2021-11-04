@@ -1,26 +1,31 @@
+
 state={
 	id=832
 	name="STATE_832"
 
 	history={
 		owner = NGK
-		add_core_of = AZR
-		add_core_of = NGK
+		victory_points = {
+			13997 1
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+			13997 = {
+				bunker = 5
+
+			}
 
 		}
-		victory_points = {
-			1467 2 
-		}
+		add_core_of = AZR
+		add_core_of = NGK
 
 	}
 
 	provinces={
-		1467 9715 
+		13997 
 	}
-	manpower=134000
+	manpower=120000
 	buildings_max_level_factor=1.000
-	state_category = state_level_5
+	state_category=state_level_4
 }

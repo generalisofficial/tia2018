@@ -144,15 +144,6 @@ add_opinion_modifier = {
 	modifier = ANZUS_trade
 }
 
-add_opinion_modifier = {
-	target = PRC
-	modifier = recent_tensions_in_asia
-}
-add_opinion_modifier = {
-	target = PRK
-	modifier = recent_tensions_in_asia 
-}
-
 SAU = { give_military_access = USA }
 KUW = { give_military_access = USA }
 JOR = { give_military_access = USA }
@@ -161,8 +152,29 @@ PAK = { give_military_access = USA }
 KOR = { give_military_access = USA }
 ROJ = { give_military_access = USA }
 IRQ = { give_military_access = USA }
+DJI = { give_military_access = USA }
+AST = { give_military_access = USA }
+BAH = { give_military_access = USA }
+BHR = { give_military_access = USA }
+BOS = { give_military_access = USA }
+VOL = { give_military_access = USA }
+CMR = { give_military_access = USA }
+ECU = { give_military_access = USA }
+HON = { give_military_access = USA }
+JAP = { give_military_access = USA }
+KEN = { give_military_access = USA }
+KOS = { give_military_access = USA }
+NGR = { give_military_access = USA }
+OMA = { give_military_access = USA }
+PHI = { give_military_access = USA }
+SEY = { give_military_access = USA }
+SIG = { give_military_access = USA }
+SIA = { give_military_access = USA }
+TUN = { give_military_access = USA }
+UAE = { give_military_access = USA }
 
 add_ideas = {
+	idea_united_nations_security_council_member
     nuclear_weapons_state
 	laissez_faire
 	population_growth_steady
@@ -174,8 +186,30 @@ add_ideas = {
 	USA_first_amendment
 	USA_second_amendment
 	USA_congress_authority
-	idea_united_nations_security_council_member
 	idea_oligarchy
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MIC
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = MAR
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = PLU
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = MIC
+		puppet = MAR
+		puppet = PLU
+	}
 }
 
 if = {
@@ -185,6 +219,43 @@ if = {
 	create_intelligence_agency = {
   		name = "Central Intelligence Agency"
  		icon = "GFX_intelligence_agency_logo_USA"
+	}
+}
+
+MIC = {
+	set_politics = {	
+		ruling_party = reactionary
+		last_election = "2017.3.7"
+		election_frequency = 24
+		elections_allowed = yes
+	}
+	set_popularities = {
+		reactionary = 100
+	}
+}
+
+MAR = {
+	set_politics = {	
+		ruling_party = reactionary
+		last_election = "2015.11.16"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		reactionary = 100
+	}
+}
+
+PLU = {
+	set_politics = {	
+		ruling_party = reactionary
+		last_election = "2016.11.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+		reactionary = 100
 	}
 }
 
@@ -224,11 +295,6 @@ give_guarantee = AST
 give_guarantee = ISR
 give_guarantee = JAP
 give_guarantee = KOR
-give_guarantee = KIR
-give_guarantee = MAR
-give_guarantee = MIC
-give_guarantee = NZL
-give_guarantee = PLU
 give_guarantee = CHI
 give_guarantee = PHI
 give_guarantee = ROJ
@@ -276,8 +342,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "No Candidate"
-	picture = "No_Candidate.dds"
+	name = "Nancy Pelosi"
+	picture = "Nancy_Pelosi.dds"
 	ideology = social_liberal_ideology
 }
 

@@ -78,15 +78,12 @@ set_technology = {
 }
 
 add_ideas = {
+	non_aligned_movement_member
     nuclear_weapons_state
+	UNSC_trade_sanctions_idea
 	population_growth_steady
-	#mostly_nationalized
 	service_by_requirement
 	isolationism
-	UNSC_trade_sanctions_idea
-	idea_PRK_militarism
-	idea_PRK_chinese_supplies
-    non_aligned_movement_member
 	parliamentary_system
 }
 
@@ -113,7 +110,7 @@ add_opinion_modifier = {
 }
 
 add_named_threat = {
-	threat = 10
+	threat = 5
 	name = threat_PRK_nuclear_program
 }
 
@@ -136,13 +133,17 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_communist
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_nationalist
 add_to_variable = { ROOT.Coalition = communist_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = nationalist_seats }
 
 set_politics = {	
 	ruling_party = communist
-	last_election = "2014.3.10"
-	election_frequency = 60
-	elections_allowed = yes
+	last_election = "2018.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 set_popularities = {

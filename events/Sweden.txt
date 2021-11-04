@@ -5,8 +5,13 @@ country_event = { #Miljöpartiet - Per Bolund
 	title = sweden.1.t
 	desc = sweden.1.d
 	
-	is_triggered_only = yes
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = SWE
+		date > 2019.5.3
+		date < 2020.1.1
+	}
 	
 	option = {
 		name = sweden.1.a
