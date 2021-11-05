@@ -13,3 +13,23 @@ news_event = { #NATO - Accession
 		name = factions.1.o1
 	}
 }
+
+#[Country] leaves NATO
+news_event = {
+	id = factions.2
+	title = factions.2.t
+	desc = factions.2.d
+	picture = GFX_news_event_nato
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = factions.2.o1
+		trigger = { original_tag = FROM }
+	}
+	option = {
+		name = factions.2.o2
+		trigger = { NOT = { original_tag = FROM } }
+	}
+}

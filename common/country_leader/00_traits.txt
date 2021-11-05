@@ -1,177 +1,244 @@
 leader_traits = {
 	
-#ai_focus_defense_factor
-#ai_focus_aggressive_factor
-#ai_focus_production_factor
-#ai_focus_military_advancements_factor
-#ai_focus_peaceful_factor
-#ai_focus_naval_factor
-#ai_focus_naval_air_factor
-#ai_focus_aviation_factor 
-	
-	rocket_scientist = {
+	strongman = {
+		sprite = 4
 		random = no
-		sprite = 14
 		
-		ai_will_do = {
-			factor = 1
-		}
+		political_power_factor = 0.25
+		stability_factor = -0.05
+		
+		ai_will_do = { factor = 1 }
 	}
 	
-	nuclear_scientist = {
+	regent = {
 		random = no
-		sprite = 14
 		
-		ai_will_do = {
-			factor = 1
-		}
+		political_power_factor = -0.2
+		
+		ai_will_do = { factor = 1 }
 	}
 	
-	military_theorist = {
-		sprite = 14
-		experience_gain_army = 0.05
+	warlord = {
+		random = no
 		
-		ai_will_do = {
-			factor = 500
-		}
+		war_support_factor = 0.3
+		
+		ai_will_do = { factor = 1 }
 	}
+
+	# Background
+
+	background_celebrity = {
+		random = yes
+		
+		opinion_gain_monthly_factor = 0.1
+		stability_factor = 0.02
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	background_trade_unionist = {
+		random = yes
+		
+		political_power_factor = -0.05
+		stability_factor = 0.05
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	background_intelligence_officer = {
+		random = yes
+		
+		encryption_factor = 0.25
+		decryption_factor = 0.25
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	# Diplomacy
 	
-	mobile_warfare_expert = { 
-		sprite = 14
-		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 500
+	friend_of_america = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "USA"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "USA"
+			value = 25
 		}
 	}
-	
-	superior_firepower_expert = {
-		sprite = 14
-		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 500
+
+	enemy_of_america = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "USA"			
+			value = 50
 		}
 	}
-	
-	grand_battle_plan_expert = {
-		sprite = 14
-		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 500
+
+	friend_of_russia = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "SOV"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "SOV"
+			value = 25
 		}
 	}
-	
-	mass_assault_expert = {
-		sprite = 14
-		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 500
+
+	enemy_of_russia = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "SOV"			
+			value = 100
 		}
 	}
-	
-	air_warfare_theorist = {
-		sprite = 14
-		experience_gain_air = 0.05
-		
-		ai_will_do = {
-			factor = 500
+
+	friend_of_germany = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "GER"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = 25
 		}
 	}
-	
-	dive_bomber = {
-		sprite = 14
-		equipment_bonus = {
-			CAS_equipment = {
-					instant = yes
-					air_ground_attack = 0.1 
-			}
-		}
-		experience_gain_air = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	enemy_of_germany = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "GER"			
+			value = 100
 		}
 	}
-	
-	victory_through_airpower = {
-		sprite = 14
-		experience_gain_air = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	friend_of_france = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "FRA"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "FRA"
+			value = 25
 		}
 	}
-	
-	close_air_support_proponent = {
-		sprite = 14
-		experience_gain_air = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	enemy_of_france = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "FRA"			
+			value = 100
 		}
 	}
-	
-	assault_avaition = {
-		sprite = 14
-		experience_gain_air = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	friend_of_china = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "PRC"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "PRC"
+			value = 25
 		}
 	}
-	
-	naval_theorist = {
-		sprite = 14
-		experience_gain_navy = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	enemy_of_china = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "PRC"			
+			value = 100
 		}
 	}
-	
-	naval_aviation_pioneer = {
-		sprite = 14
-		experience_gain_navy = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	friend_of_india = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "RAJ"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "RAJ"
+			value = 25
 		}
 	}
-	
-	grand_fleet_proponent = {
-		sprite = 14
-		experience_gain_navy = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	enemy_of_india = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "RAJ"			
+			value = 100
 		}
 	}
-	
-	submarine_specialist = {
-		sprite = 14
-		experience_gain_navy = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	friend_of_britain = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "ENG"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "ENG"
+			value = 25
 		}
 	}
-	
-	blitzkrieg_theorist = {
-		sprite = 14
-		
-		equipment_bonus = {
-			armor = {
-				instant = yes
-				maximum_speed = 0.10
-			}
-		}
-		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 100
+
+	enemy_of_britain = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "ENG"			
+			value = 100
 		}
 	}
+
+	friend_of_japan = {
+		random = yes
+		ai_strategy = {
+			type = befriend
+			id = "JAP"			
+			value = 25
+		}
+		ai_strategy = {
+			type = alliance
+			id = "JAP"
+			value = 25
+		}
+	}
+
+	enemy_of_japan = {
+		random = yes
+		ai_strategy = {
+			type = antagonize
+			id = "JAP"			
+			value = 100
+		}
+	}
+
 }

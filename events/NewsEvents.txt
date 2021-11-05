@@ -182,26 +182,6 @@ news_event = {
 	}
 }
 
-#[Country] leaves NATO
-news_event = {
-	id = news.58
-	title = news.58.t
-	desc = news.58.d
-	picture = GFX_news_event_nato
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = news.58.o1
-		trigger = { original_tag = FROM }
-	}
-	option = {
-		name = news.58.o2
-		trigger = { NOT = { original_tag = FROM } }
-	}
-}
-
 #[Country] enacts Mass Mobilization
 news_event = {
 	id = news.80
