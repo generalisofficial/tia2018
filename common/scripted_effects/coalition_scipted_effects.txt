@@ -734,11 +734,17 @@ create_pie_chart = {
 		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
 		size = 100 # 100 pieces, each percent is one piece
 	}
-	set_temp_variable = { communist_pop = party_popularity_100@communist }
+	set_temp_variable = { communist_pop = communist_seats_parliament }
 	round_temp_variable = communist_pop
+	multiply_temp_variable = {
+		communist_pop = 2
+	}
 
-	set_temp_variable = { democratic_socialist_pop = party_popularity_100@democratic_socialist }
+	set_temp_variable = { democratic_socialist_pop = democratic_socialist_seats_parliament }
 	round_temp_variable = democratic_socialist_pop 
+	multiply_temp_variable = {
+		democratic_socialist_pop = 2
+	}
 	set_variable = { ROOT.last_idx = communist_pop }
 	add_to_temp_variable = { democratic_socialist_pop = ROOT.last_idx }
 	for_loop_effect = {
@@ -748,9 +754,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { social_democrat_pop = party_popularity_100@social_democrat }
+	set_temp_variable = { social_democrat_pop = social_democrat_seats_parliament }
 	round_temp_variable = social_democrat_pop 
-	#set_variable = { ROOT.last_idx = democratic_socialist_pop }
+	multiply_temp_variable = {
+		social_democrat_pop = 2
+	}
 	add_to_temp_variable = { social_democrat_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -759,9 +767,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { progressive_pop = party_popularity_100@progressive }
+	set_temp_variable = { progressive_pop = progressive_seats_parliament }
 	round_temp_variable = progressive_pop 
-	#set_variable = { ROOT.last_idx = social_democrat_pop }
+	multiply_temp_variable = {
+		progressive_pop = 2
+	}
 	add_to_temp_variable = { progressive_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -770,9 +780,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { social_liberal_pop = party_popularity_100@social_liberal }
+	set_temp_variable = { social_liberal_pop = social_liberal_seats_parliament }
 	round_temp_variable = social_liberal_pop 
-	#set_variable = { ROOT.last_idx = progressive_pop }
+	multiply_temp_variable = {
+		social_liberal_pop = 2
+	}
 	add_to_temp_variable = { social_liberal_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -781,9 +793,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { classical_liberal_pop = party_popularity_100@classical_liberal }
+	set_temp_variable = { classical_liberal_pop = classical_liberal_seats_parliament }
 	round_temp_variable = classical_liberal_pop 
-	#set_variable = { ROOT.last_idx = social_liberal }
+	multiply_temp_variable = {
+		classical_liberal_pop = 2
+	}
 	add_to_temp_variable = { classical_liberal_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -792,9 +806,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { conservative_pop = party_popularity_100@conservative }
+	set_temp_variable = { conservative_pop = conservative_seats_parliament }
 	round_temp_variable = conservative_pop 
-	#set_variable = { ROOT.last_idx = classical_liberal_pop }
+	multiply_temp_variable = {
+		conservative_pop = 2
+	}
 	add_to_temp_variable = { conservative_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -803,9 +819,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { islamist_pop = party_popularity_100@islamist }
+	set_temp_variable = { islamist_pop = islamist_seats_parliament }
 	round_temp_variable = islamist_pop 
-	#set_variable = { ROOT.last_idx = conservative_pop }
+	multiply_temp_variable = {
+		islamist_pop = 2
+	}
 	add_to_temp_variable = { islamist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -814,9 +832,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { monarchist_pop = party_popularity_100@monarchist }
+	set_temp_variable = { monarchist_pop = monarchist_seats_parliament }
 	round_temp_variable = monarchist_pop 
-	#set_variable = { ROOT.last_idx = islamist_pop }
+	multiply_temp_variable = {
+		monarchist_pop = 2
+	}
 	add_to_temp_variable = { monarchist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -825,9 +845,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { reactionary_pop = party_popularity_100@reactionary }
+	set_temp_variable = { reactionary_pop = reactionary_seats_parliament }
 	round_temp_variable = reactionary_pop 
-	#set_variable = { ROOT.last_idx = monarchist_pop }
+	multiply_temp_variable = {
+		reactionary_pop = 2
+	}
 	add_to_temp_variable = { reactionary_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -836,9 +858,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { nationalist_pop = party_popularity_100@nationalist }
+	set_temp_variable = { nationalist_pop = nationalist_seats_parliament }
 	round_temp_variable = nationalist_pop 
-	#set_variable = { ROOT.last_idx = reactionary_pop }
+	multiply_temp_variable = {
+		nationalist_pop = 2
+	}
 	add_to_temp_variable = { nationalist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
@@ -847,8 +871,11 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { fascist_pop = party_popularity_100@fascist }
+	set_temp_variable = { fascist_pop = fascist_seats_parliament }
 	round_temp_variable = fascist_pop 
+	multiply_temp_variable = {
+		fascist_pop = 2
+	}
 	add_to_temp_variable = { fascist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
