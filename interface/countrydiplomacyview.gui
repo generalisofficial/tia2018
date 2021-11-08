@@ -39,7 +39,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "diplo_flag_frame"
-				position = { x = 14 y = -10 }
+				position = { x = 14 y = -8 }
 				spriteType = "GFX_diplo_flag_frame"
 				alwaystransparent = yes
 			}			
@@ -47,7 +47,7 @@ guiTypes = {
 			iconType ={
 				name = "ideology_icon"
 				spriteType = "GFX_ideology_unknown"
-				position = { x = 158 y = 0 }
+				position = { x = 158 y = -3 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
@@ -57,7 +57,7 @@ guiTypes = {
 				position = { x = 245 y = 3 }
 				font = "hoi_18mbs"
 				text = "Germanian"
-				maxWidth = 173
+				maxWidth = 210
 				fixedsize = yes
 				maxHeight = 20
 				format = left
@@ -74,7 +74,7 @@ guiTypes = {
 					position = { x = 0 y = 0 }
 					font = "hoi_18mbs"
 					text = "faction"
-					maxWidth = 173
+					maxWidth = 210
 					maxHeight = 20
 					fixedsize = yes		
 					format = left
@@ -86,58 +86,10 @@ guiTypes = {
 				position = { x = 245 y = 43 }
 				font = "hoi_16mbs"
 				text = "Rudolf Kittler"
-				maxWidth = 173
+				maxWidth = 210
 				maxHeight = 20
 				format = left
 				fixedsize = yes						
-			}
-
-			iconType =
-			{
-				name ="stability_bg"
-				spriteType = "GFX_diplo_unity_bg"
-				position = { x= 370 y = 1 }
-			}	
-			
-			iconType =
-			{
-				name ="stability_icon"
-				spriteType = "GFX_stability_icon"
-				position = { x= 378 y = 9 }
-			}			
-
-			instantTextboxType = {
-				name = "stability_value"
-				position = { x = 369 y = 42 }
-				font = "hoi_16mbs"
-				text = "100%"
-				maxWidth = 44
-				maxHeight = 20
-				format = center
-			}
-			
-			iconType =
-			{
-				name ="war_support_bg"
-				spriteType = "GFX_diplo_unity_bg"
-				position = { x= 414 y = 1 }
-			}	
-			
-			iconType =
-			{
-				name ="war_support_icon"
-				spriteType = "GFX_war_support_icon"
-				position = { x= 421 y = 9 }
-			}			
-
-			instantTextboxType = {
-				name = "war_support_value"
-				position = { x = 414 y = 42 }
-				font = "hoi_16mbs"
-				text = "100%"
-				maxWidth = 44
-				maxHeight = 20
-				format = center
 			}
 			
 			containerWindowType = {
@@ -297,7 +249,7 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "active_national_focus_info"
-					position = { x = 141 y = 88 }
+					position = { x = 1000 y = 88 }  #Positioned out of bounds so it doesn't cause errors
 					size = { width = 330 height = 50 }
 					clipping = no
 					
@@ -384,7 +336,19 @@ guiTypes = {
 					name = "win_header_short"
 					position = { x = 8 y= 6 }
 					spriteType = "GFX_win_header_short"
+					alwaystransparent = yes
 				}
+
+				instantTextBoxType = {
+					name = "actions_title"
+					position = { x = 12 y = 8 }
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "Diplomatic Actions"
+					maxWidth = 240
+					maxHeight = 30	
+				}
+
 				
 				gridboxtype = {
 					name = "actions_grid"
@@ -406,10 +370,9 @@ guiTypes = {
 					position = { x = -2 y = -14 }
 				}
 				
-				
 				instantTextBoxType = {
 					name = "spirit_title"
-					position = { x = 0 y = 0 }
+					position = { x = -150 y = 0 } #Moved out of bounds to hide
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
 					text = "FE_COUNTRY_SPIRIT"
@@ -419,8 +382,8 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "national_spirit_container"
-					position = { x = 127 y = 0 }
-					size = { width = 385 height = 68 }
+					position = { x = 5 y = -5 }
+					size = { width = 500 height = 75 }
 					verticalScrollbar = "right_vertical_slider"
 					
 					background = {
@@ -723,6 +686,50 @@ guiTypes = {
 				Orientation = "LOWER_LEFT"
 				buttonText = "OPEN_COUNTRY_LIST"
 				clicksound = click_close
+			}
+
+			iconType = {
+				name ="stability_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x= 600 y = 200 } #Also moved off-screen
+			}	
+			
+			iconType = {
+				name ="stability_icon"
+				spriteType = "GFX_stability_icon"
+				position = { x= 600 y = 210 } #Also moved off-screen
+			}			
+
+			instantTextboxType = {
+				name = "stability_value"
+				position = { x = 600 y = 245 } #Also moved off-screen
+				font = "hoi_16mbs"
+				text = "100%"
+				maxWidth = 44
+				maxHeight = 20
+				format = center
+			}
+			
+			iconType = {
+				name ="war_support_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x= 600 y = 200 } #Also moved off-screen
+			}	
+			
+			iconType = {
+				name ="war_support_icon"
+				spriteType = "GFX_war_support_icon"
+				position = { x= 600 y = 212 } #Also moved off-screen
+			}			
+
+			instantTextboxType = {
+				name = "war_support_value"
+				position = { x = 600 y = 245 } #Also moved off-screen
+				font = "hoi_16mbs"
+				text = "100%"
+				maxWidth = 44
+				maxHeight = 20
+				format = center
 			}
 		}
 

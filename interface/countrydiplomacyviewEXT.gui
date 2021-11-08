@@ -1,0 +1,73 @@
+guiTypes = {
+	containerWindowType = {
+		name = "stability_diplomacy_container"
+		position = { x = 300 y = 223 }
+		orientation = UPPER_LEFT
+		
+		iconType ={
+			name ="stability_icon"
+			spriteType = "GFX_stability_icon"
+			position = { x= 1 y = -9 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name ="stability_value"
+			position = { x= -10 y = 23 }
+			font = "hoi_16mbs"
+			text = "[?FROM.stability|%]"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+	containerWindowType = {
+		name = "coalition_diplomacy_container"
+		position = { x = 370 y = 223 }
+		orientation = UPPER_LEFT
+		
+		iconType ={
+			name ="coalition_support_icon"
+			spriteType = "GFX_coalition_support_icon"
+			position = { x= 2 y = -9 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = COALITION_TOOLTIP_DIPLO
+		}
+
+		instantTextBoxType = {
+			name ="coalition_support"
+			position = { x= -10 y = 23 }
+			font = "hoi_16mbs"
+			text = COALITION_SUPPORT_DIPLO
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = COALITION_TOOLTIP_DIPLO
+		}
+	}
+	containerWindowType = {
+		name = "population_diplomacy_container"
+		position = { x = 430 y = 223 }
+		orientation = UPPER_LEFT
+		
+		iconType ={
+			name ="population_icon"
+			spriteType = "GFX_population_icon"
+			position = { x= 5 y = -11 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name ="population"
+			position = { x= -10 y = 23 }
+			font = "hoi_16mbs"
+			text = "[?FROM.manpower_k]K"
+			format = center
+			maxWidth = 70
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+}

@@ -53,19 +53,19 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 219 y = 301 }
-			size = { width = 330 height = 73 }
+			position = { x = 280 y = 301 }
+			size = { width = 267 height = 73 }
 			clipping = yes
 		    verticalScrollbar = "right_vertical_slider"
 			
-#			background = {
-#				name = "Background"		
-#				spriteType ="GFX_pol_piechart_bg"
-#			}
+			background = {
+				name = "Background"		
+				spriteType ="GFX_pol_piechart_bg"
+			}
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = 260 y = 184 }
+				position = { x = 1 y = 1 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 230 height = 16 }
 				format = "UPPER_LEFT"
@@ -294,14 +294,14 @@ guiTypes = {
 			
 			buttonType = {
 				name = "add_national_goal_button"
-				position = { x = 104 y = 10 }
+				position = { x = 300 y = 10 } #Positioned out of bounds so it doesn't cause errors
 				spriteType = "GFX_add_national_goal_button"
 				clicksound = click_default
 			}
 
 			iconType = {
 				name = "nat_spirit_glow_overlay"
-				position = { x = 105 y = 10 }
+				position = { x = 300 y = 10 } #Positioned out of bounds so it doesn't cause errors
 				spriteType = "GFX_nat_spirit_glow_overlay"
 				alwaystransparent = yes
 			}			
@@ -325,7 +325,7 @@ guiTypes = {
 
 			iconType = {
 				name = "continuous_glow"
-				position = { x = 88 y = -6 }
+				position = { x = 300 y = -6 } #Positioned out of bounds so it doesn't cause errors
 				quadTextureSprite = "GFX_ongoing_focus_goal_polview"
 				scale = 0.9
 				alwaystransparent = yes
@@ -333,7 +333,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "goal_icon"
-				position = { x = 150 y = 51 }
+				position = { x = 300 y = 51 } #Positioned out of bounds so it doesn't cause errors
 				centerposition = yes			
 				spriteType = "GFX_goal_unknown"
 				alwaystransparent = yes
@@ -341,7 +341,7 @@ guiTypes = {
 
 			iconType = {
 				name = "continuous_small_glow"
-				position = { x = 104 y = 12 }
+				position = { x = 300 y = 12 } #Positioned out of bounds so it doesn't cause errors
 				quadTextureSprite = "GFX_ongoing_focus_goal_icon"
 				alwaystransparent = yes
 			}
