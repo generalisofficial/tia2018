@@ -132,3 +132,20 @@ country_event = {
 		clr_country_flag = building_nuke
 	}
 }
+
+country_event = {
+	id = debug.5
+	title = "Debug 5"
+	desc = "Debug 5"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Update coalition"
+		update_coalition = yes
+	}
+	option = {
+		name = "Update coalition for all"
+		every_country = { update_coalition = yes }
+	}
+}

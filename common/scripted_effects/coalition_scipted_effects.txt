@@ -98,6 +98,7 @@ update_coalition = {
 		}
 		break_coalition = yes
 	}
+	create_pie_chart = yes
 }
 
 cleanup_coalition = {
@@ -630,6 +631,7 @@ set_parliament_graphics = {
 			parliament_array = 51
 		}
 	}
+	create_pie_chart = yes
 }
 
 set_parliament_graphics_2 = {
@@ -720,4 +722,140 @@ set_coalition_to_array = {
 		}
 		add_to_array = { member_parties_array = 12 }
 	}
+}
+
+# Scripted GUI Pie Chart by Yard1
+
+# this creates a pie chart of popularities - can be easily adapted to show anything that adds up to 100%
+create_pie_chart = {
+	clear_array = pie_chart
+	resize_array = {
+		array = pie_chart
+		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+		size = 100 # 100 pieces, each percent is one piece
+	}
+	set_temp_variable = { communist_pop = party_popularity_100@communist }
+	round_temp_variable = communist_pop
+
+	set_temp_variable = { democratic_socialist_pop = party_popularity_100@democratic_socialist }
+	round_temp_variable = democratic_socialist_pop 
+	set_variable = { ROOT.last_idx = communist_pop }
+	add_to_temp_variable = { democratic_socialist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = democratic_socialist_pop
+		set_variable = { pie_chart^v = 2 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { social_democrat_pop = party_popularity_100@social_democrat }
+	round_temp_variable = social_democrat_pop 
+	#set_variable = { ROOT.last_idx = democratic_socialist_pop }
+	add_to_temp_variable = { social_democrat_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = social_democrat_pop
+		set_variable = { pie_chart^v = 3 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { progressive_pop = party_popularity_100@progressive }
+	round_temp_variable = progressive_pop 
+	#set_variable = { ROOT.last_idx = social_democrat_pop }
+	add_to_temp_variable = { progressive_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = progressive_pop
+		set_variable = { pie_chart^v = 4 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { social_liberal_pop = party_popularity_100@social_liberal }
+	round_temp_variable = social_liberal_pop 
+	#set_variable = { ROOT.last_idx = progressive_pop }
+	add_to_temp_variable = { social_liberal_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = social_liberal_pop
+		set_variable = { pie_chart^v = 5 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { classical_liberal_pop = party_popularity_100@classical_liberal }
+	round_temp_variable = classical_liberal_pop 
+	#set_variable = { ROOT.last_idx = social_liberal }
+	add_to_temp_variable = { classical_liberal_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = classical_liberal_pop
+		set_variable = { pie_chart^v = 6 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { conservative_pop = party_popularity_100@conservative }
+	round_temp_variable = conservative_pop 
+	#set_variable = { ROOT.last_idx = classical_liberal_pop }
+	add_to_temp_variable = { conservative_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = conservative_pop
+		set_variable = { pie_chart^v = 7 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { islamist_pop = party_popularity_100@islamist }
+	round_temp_variable = islamist_pop 
+	#set_variable = { ROOT.last_idx = conservative_pop }
+	add_to_temp_variable = { islamist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = islamist_pop
+		set_variable = { pie_chart^v = 8 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { monarchist_pop = party_popularity_100@monarchist }
+	round_temp_variable = monarchist_pop 
+	#set_variable = { ROOT.last_idx = islamist_pop }
+	add_to_temp_variable = { monarchist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = monarchist_pop
+		set_variable = { pie_chart^v = 9 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { reactionary_pop = party_popularity_100@reactionary }
+	round_temp_variable = reactionary_pop 
+	#set_variable = { ROOT.last_idx = monarchist_pop }
+	add_to_temp_variable = { reactionary_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = reactionary_pop
+		set_variable = { pie_chart^v = 10 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { nationalist_pop = party_popularity_100@nationalist }
+	round_temp_variable = nationalist_pop 
+	#set_variable = { ROOT.last_idx = reactionary_pop }
+	add_to_temp_variable = { nationalist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = nationalist_pop
+		set_variable = { pie_chart^v = 11 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { fascist_pop = party_popularity_100@fascist }
+	round_temp_variable = fascist_pop 
+	add_to_temp_variable = { fascist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = fascist_pop
+		set_variable = { pie_chart^v = 12 }
+	}
+
+	clear_variable = ROOT.last_idx
+	add_to_variable = { pie_chart_dirty = 1 }
 }
