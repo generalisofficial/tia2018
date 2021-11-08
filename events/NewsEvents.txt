@@ -321,14 +321,14 @@ news_event = {
 	option = {
 		name = news.106.o1
 		trigger = {
-			has_democratic_form_of_government = yes
+			is_democracy = yes
 		}
 	}
 	
 	option = {
 		name = news.106.o2
 		trigger = { 
-			has_democratic_form_of_government = no
+			is_democracy = no
 		}
 	}
 }
@@ -344,12 +344,12 @@ news_event = {
 	
 	option = {
 		name = news.107.o1
-		trigger = { has_democratic_form_of_government = yes }
+		trigger = { is_democracy = yes }
 	}
 	
 	option = {
 		name = news.107.o2
-		trigger = { has_democratic_form_of_government = no }
+		trigger = { is_democracy = no }
 	}
 }
 
@@ -364,11 +364,11 @@ news_event = {
 	
 	option = {
 		name = news.108.o1
-		trigger = { has_democratic_form_of_government = yes }
+		trigger = { is_democracy = yes }
 	}
 	
 	option = {
 		name = news.108.o2
-		trigger = { has_democratic_form_of_government = no }
+		trigger = { is_democracy = no }
 	}
 }

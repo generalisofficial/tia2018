@@ -1,3 +1,10 @@
+is_UNSC_member = {
+	OR = {
+		has_idea = idea_united_nations_security_council_member
+		has_idea = idea_united_nations_NP_security_council_member
+	}
+}
+
 permanent_unsc_member_saved = {
 	OR = {
 		has_country_flag = permanent_unsc_member_1
@@ -46,14 +53,4 @@ at_war_country_saved = {
 		has_country_flag = at_war_country_19
 		has_country_flag = at_war_country_20
 	}
-}
-
-country_is_democratic = {
-	OR = {
-		NOT = {
-			has_government = fascist
-			has_government = communist
-		}
-	}
-	has_elections = yes
 }

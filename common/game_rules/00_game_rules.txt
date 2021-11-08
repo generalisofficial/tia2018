@@ -1,29 +1,11 @@
-#
-# List of options showing in the Game Rules screen
-#
-# format is:
-# rule_token = {
-#	name = "TEXT_KEY_FOR_NAME"
-#	required_dlc = "Name of the Required DLC"
-#	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
-#	icon = gfx_option_token							# Optional icon
-#	option = {										# Unless other specified, the first option is the default option
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
-#													# If not specified, this is set to yes for default options and no for all other options.
-#	}
-#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		...
-#	}
-# }
+#########################################################################
+#  GENERAL FOREIGN POLICY
+#########################################################################
 
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
 	option = {
 		name = "ALWAYS_FREE"
 		text = RULE_OPTION_ALWAYS_FREE
@@ -60,9 +42,11 @@ allow_wargoals = {
 		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
 	}
 }
+
 allow_access = {
 	name = "RULE_ALLOW_MILITARY_ACCESS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_military_access_docking_rights"
 	default = {
 		name = "FREE"
 		text = RULE_OPTION_FREE
@@ -83,6 +67,7 @@ allow_access = {
 allow_release_nations = {
 	name = "RULE_ALLOW_RELEASE_NATIONS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_release_nations"
 	default = {
 		name = "FREE"
 		text = RULE_OPTION_FREE
@@ -104,6 +89,7 @@ allow_licensing = {
 	name = "RULE_ALLOW_LICENSING"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	required_dlc = "Death or Dishonor"
+	icon = "GFX_production_licenses"
 	option = {
 		name = "FREE"
 		text = "RULE_OPTION_FREE"
@@ -129,6 +115,7 @@ allow_licensing = {
 allow_lend_lease = {
 	name = "RULE_ALLOW_LEND_LEASE"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_lend_lease"
 	option = {
 		name = "FREE"
 		text = "RULE_OPTION_FREE"
@@ -159,6 +146,7 @@ allow_lend_lease = {
 allow_volunteers = {
 	name = "RULE_ALLOW_VOLUNTEERS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_volunteers"
 	option = {
 		name = "ALWAYS_FREE"
 		text = "RULE_OPTION_FREE"
@@ -184,6 +172,7 @@ allow_volunteers = {
 allow_guarantees = {
 	name = "RULE_ALLOW_GUARANTEES"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_guarantee_independence"
 	option = {
 		name = "ALWAYS_FREE"
 		text = "RULE_OPTION_FREE"
@@ -209,6 +198,7 @@ allow_guarantees = {
 allow_revoke_guarantees = {
 	name = "RULE_ALLOW_REVOKE_GUARANTEES"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_revoke_guarantees"
 	default = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"
@@ -224,6 +214,7 @@ allow_revoke_guarantees = {
 allow_leave_faction = {
 	name = "RULE_ALLOW_LEAVE_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_leave_faction"
 	default = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"
@@ -239,6 +230,7 @@ allow_leave_faction = {
 allow_kick_faction = {
 	name = "RULE_ALLOW_KICK_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_kick_from_faction"
 	option = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"
@@ -255,6 +247,7 @@ allow_take_over_faction = {
 	name = "RULE_ALLOW_TAKE_OVER_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	required_dlc = "Man the Guns"
+	icon = "GFX_take_over_faction_leadership"
 	option = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"
@@ -267,15 +260,14 @@ allow_take_over_faction = {
 	}
 }
 
- ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
-#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   
-#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #  
-#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   # 
- ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##  
+#########################################################################
+# COVERT ACTIONS
+#########################################################################
 
 allow_coups = {
 	name = "RULE_ALLOW_COUPS"
 	group = "RULE_GROUP_COVERT_ACTIONS"
+	icon = "GFX_coups"
 	option = {
 		name = FREE
 		text = "RULE_OPTION_FREE"
@@ -297,6 +289,7 @@ allow_coups = {
 allow_party_boosting = {
 	name = "RULE_ALLOW_PARTY_BOOSTING"
 	group = "RULE_GROUP_COVERT_ACTIONS"
+	icon = "GFX_boosting_party_popularity"
 	option = {
 		name = FREE
 		text = "RULE_OPTION_FREE"
@@ -320,182 +313,22 @@ allow_party_boosting = {
 	}
 }
 
-###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ## 
-#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #   
-#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #  
-#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     # 
-###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##  
+#########################################################################
+# GAMEPLAY
+#########################################################################
 
-
-allow_paratroopers = {
-	name = "RULE_ALLOW_PARATROOPERS"
+player_led_peace_conferences = {
+	name = "RULE_PLAYER_LED_PEACE_CONFERENCES"
 	group = "RULE_GROUP_GAMEPLAY"
-	option = {
-		name = yes
-		text = "RULE_OPTION_ALLOWED"
-		desc = "RULE_ALLOW_PARATROOPERS_ALLOWED_DESC"
+	icon = "GFX_take_over_faction_leadership"
+	default = {
+		name = disabled
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_PLAYER_LED_PEACE_CONFERENCES_DISABLED_DESC"
 	}
 	option = {
-		name = no
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
-	}
-}
-
-#minimum_division_width = {
-#	name = "RULE_MINIMUM_WIDTH"
-#	group = "RULE_GROUP_DIVISION_TEMPLATES"
-#	option = {
-#		name = none
-#		text = "RULE_OPTION_NONE"
-#		desc = "RULE_MINIMUM_WIDTH_NONE_DESC"
-#	}
-#	option = {
-#		name = WIDTH_10
-#		text = "RULE_OPTION_10"
-#		desc = "RULE_MINIMUM_WIDTH_10_DESC"
-#	}
-#	option = {
-#		name = WIDTH_20
-#		text = "RULE_OPTION_20"
-#		desc = "RULE_MINIMUM_WIDTH_20_DESC"
-#	}
-#}
-#
-#maximum_division_width = {
-#	name = "RULE_MAXIMUM_WIDTH"
-#	group = "RULE_GROUP_DIVISION_TEMPLATES"
-#	option = {
-#		name = none
-#		text = "RULE_OPTION_NONE"
-#		desc = "RULE_MAXIMUM_WIDTH_NONE_DESC"
-#	}
-#	option = {
-#		name = WIDTH_20
-#		text = "RULE_OPTION_20"
-#		desc = "RULE_MAXIMUM_WIDTH_20_DESC"
-#	}
-#	option = {
-#		name = WIDTH_30
-#		text = "RULE_OPTION_30"
-#		desc = "RULE_MAXIMUM_WIDTH_30_DESC"
-#	}
-#	option = {
-#		name = WIDTH_40
-#		text = "RULE_OPTION_40"
-#		desc = "RULE_MAXIMUM_WIDTH_40_DESC"
-#	}
-#}
-
- ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  # 
-#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## # 
-#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ## 
-#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  # 
- ##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  # 
-
-maximum_fort_level = {
-	name = "RULE_MAXIMUM_FORT_LEVEL"
-	group = "RULE_GROUP_GAMEPLAY"
-	option = {
-		name = normal
-		text = "RULE_OPTION_NORMAL"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
-	}
-	option = {
-		name = level_1
-		text = "RULE_OPTION_1"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_2
-		text = "RULE_OPTION_2"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_3
-		text = "RULE_OPTION_3"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_4
-		text = "RULE_OPTION_4"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_5
-		text = "RULE_OPTION_5"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_6
-		text = "RULE_OPTION_6"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_7
-		text = "RULE_OPTION_7"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_8
-		text = "RULE_OPTION_8"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-	option = {
-		name = level_9
-		text = "RULE_OPTION_9"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
-	}
-}
-
-###  ###  ## ###  ##  ###   ##  #  # 
-#  # #   #   #   #  # #  # #  # #  # 
-###  ##   #  ##  #### ###  #    #### 
-#  # #     # #   #  # #  # #  # #  # 
-#  # ### ##  ### #  # #  #  ##  #  # 
-
-#research_ahead_of_time = {
-#	name = "RULE_RESEARCH_AOT"
-#	group = "RULE_GROUP_RESEARCH"
-#	default = {
-#		name = FREE
-#		text = "RULE_OPTION_FREE"
-#		desc = "RULE_RESEARCH_AOT_FREE_DESC"
-#	}
-#	option = {
-#		name = THREE_YEARS
-#		text = "RULE_OPTION_THREE_YEARS"
-#		desc = "RULE_RESEARCH_AOT_THREE_YEARS_DESC"
-#	}
-#	option = {
-#		name = TWO_YEARS
-#		text = "RULE_OPTION_TWO_YEARS"
-#		desc = "RULE_RESEARCH_AOT_TWO_YEARS_DESC"
-#	}
-#	option = {
-#		name = ONE_YEARS
-#		text = "RULE_OPTION_ONE_YEARS"
-#		desc = "RULE_RESEARCH_AOT_ONE_YEARS_DESC"
-#	}
-#	option = {
-#		name = BLOCKED
-#		text = "RULE_OPTION_BLOCKED"
-#		desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
-#	}
-#}
-
-#SUBMODS - THE INFORMATION AGE
-disable_starting_factions = {
-	name = "RULE_DISABLE_STARTING_FACTIONS"
-	group = "RULE_GROUP_SUBMODS"
-	option = {
-		name = DISABLED
-		text = "RULE_OPTION_SUBMOD_DISABLED"
-		desc = "RULE_DISABLE_STARTING_FACTIONS_DISABLED_DESC"
-	}
-	option = {
-		name = ENABLED
-		text = "RULE_OPTION_SUBMOD_ENABLED"
-		desc = "RULE_DISABLE_STARTING_FACTIONS_ENABLED_DESC"
+		name = enabled
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_PLAYER_LED_PEACE_CONFERENCES_ENABLED_DESC"
 	}
 }

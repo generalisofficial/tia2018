@@ -2,21 +2,36 @@
 state={
 	id=641
 	name="STATE_641"
-	manpower=105786
-	state_category = small_island
 
 	history={
 		owner = FRA
+		victory_points = {
+			12148 1
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 1
 			12148 = {
 				naval_base = 1
+
 			}
+			14010 = {
+				naval_base = 1
+
+			}
+			14014 = {
+				naval_base = 1
+
+			}
+
 		}
+
 	}
 
 	provinces={
-		10188 12148 
+		10188 12148 14010 14014 
 	}
+	manpower=105786
+	buildings_max_level_factor=1.000
+	state_category=small_island
 }

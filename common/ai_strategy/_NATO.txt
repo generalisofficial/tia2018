@@ -34,8 +34,8 @@ seek_NATO_membership = {
 			original_tag = MNT
 		}
 		NOT = { has_country_flag = left_NATO }
-		has_democratic_form_of_government = yes
-		USA = { has_democratic_form_of_government = yes }
+		is_democracy = yes
+		USA = { is_democracy = yes }
 	}
 	
 	abort = {
@@ -43,8 +43,8 @@ seek_NATO_membership = {
 			has_war_with = USA
 			USA = { is_in_faction = no }
 			has_country_flag = left_NATO
-			has_democratic_form_of_government = no
-			USA = { has_democratic_form_of_government = no }
+			is_democracy = no
+			USA = { is_democracy = no }
 			USA = { exists = no }
 		}
 	}

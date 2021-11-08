@@ -91,6 +91,24 @@ add_ideas = {
 	parliamentary_system
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NIU
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = CKI
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = NIU
+		puppet = CKI
+	}
+}
+
 set_country_flag = christianity
 
 #House of Representatives
@@ -223,6 +241,9 @@ create_country_leader = {
 	name = "Jacinda Ardern"
 	picture = "Jacinda_Ardern.dds"
 	ideology = social_democrat_ideology
+	traits = {
+		folksy
+	}
 }
 
 create_country_leader = {

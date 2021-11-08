@@ -11,7 +11,7 @@ international_organizations = {
 		
 		available = {
 		    is_subject = no
-			has_democratic_form_of_government = yes
+			is_democracy = yes
 			NOT = { has_idea = immigration_closed_borders has_idea = idea_eu_sanctions }
 			has_civil_war = no
 		}
@@ -583,10 +583,7 @@ international_organizations = {
 	
 		visible = {
 			NOT = { has_idea = african_union_member has_idea = salafist_jihadist_group has_global_flag = african_union_dissolved }
-			any_state = {
-				is_owned_by = ROOT
-				is_on_continent = africa
-			}
+			is_in_africa = yes
 		}
 		available = {
             NOT = { has_idea = african_union_member has_idea = non_member_state }

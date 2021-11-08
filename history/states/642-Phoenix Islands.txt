@@ -2,22 +2,25 @@
 state={
 	id=642
 	name="STATE_642"
-	manpower=1459
-	
-	state_category = state_level_1
 
 	history={
 		owner = KIR
-		add_core_of = KIR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			13050 = {
 				naval_base = 1
+
 			}
+
 		}
+		add_core_of = KIR
+
 	}
 
 	provinces={
 		13050 
 	}
+	manpower=1459
+	buildings_max_level_factor=1.000
+	state_category=state_level_0
 }

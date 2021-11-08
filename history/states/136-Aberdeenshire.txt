@@ -2,29 +2,31 @@
 state={
 	id=136
 	name="STATE_136"
-	manpower = 745466
-	
-	state_category = state_level_7
 	resources={
-		oil=12
-		steel = 30
+		oil=12.000
+		steel=30.000
 	}
 
 	history={
 		owner = ENG
 		victory_points = {
-			11136 3
+			11136 3 
 		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
 			air_base = 4
+
 		}
 		add_core_of = ENG
 		add_core_of = SCO
+
 	}
 
 	provinces={
-		200 3150 9161 11055 11136 11207 11306 
+		200 3150 9161 11055 11136 11207 
 	}
+	manpower=745466
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
 }

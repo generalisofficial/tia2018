@@ -1,22 +1,30 @@
+
 state={
 	id=883
 	name="STATE_883"
-	provinces={
-		13227 13228 
-	}
-	history = {
+
+	history={
 		owner = TON
-		add_core_of = TON
+		victory_points = {
+			13227 1 
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			13227 = { naval_base = 1 }
-			13228 = { naval_base = 1 }
+			13227 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 13227 1 }
+		add_core_of = TON
+
 	}
-	manpower=102000
+
+	provinces={
+		13227 
+	}
+	manpower=100651
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_2
+	state_category=state_level_2
 }
