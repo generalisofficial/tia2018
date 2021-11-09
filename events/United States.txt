@@ -64,3 +64,25 @@ news_event = {
 		}
 	}
 }
+
+#Ted Kaczynski Pardoned
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = usa.3.o1
+		create_country_leader = {
+	        name = "Ted Kaczynski"
+	        picture = "Ted_Kaczynski.dds"
+	        ideology = anarcho_primitivist
+			traits = {
+				the_unabomber
+			}
+        }
+		add_popularity = { ideology = progressive popularity = 0.02 }
+	}
+}
