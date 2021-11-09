@@ -1,0 +1,53 @@
+military_affairs = {
+
+	launch_operation_iron_fist = {
+
+		visible = {
+			original_tag = AZR
+			NOT = { has_war_with = NGK }
+			owns_state = 877
+			NGK = { owns_state = 1097 }
+		}
+		
+		available = {
+			owns_state = 877
+			NGK = { owns_state = 1097 }
+			NOT = { has_war_with = NGK }
+		}
+		
+		complete_effect = {
+			news_event = azerbaijan.1
+			start_border_war = {
+                change_state_after_war = no
+                attacker = {
+                    state = 877
+                    num_provinces = 3
+                    on_win = azerbaijan.2
+                    on_lose = azerbaijan.3
+                }		
+                defender = {
+                   state = 1097
+                   num_provinces = 3
+                   on_win = azerbaijan.4
+                   on_lose = azerbaijan.5
+                }
+	        }
+		}
+		
+		icon = democracy
+
+		fire_only_once = yes
+		
+		cost = 25
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 200
+				date > 2020.9.27
+			}
+		}
+
+	}
+
+}

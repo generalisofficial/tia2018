@@ -116,11 +116,6 @@
  UNSC_SANCTION_NEWS:0 "UNSC [This.GetSanctionType] against [sanctions_country_target.GetNameDef]!"
  UNSC_SANCTION_NEWS_DESC:0 "On the behalf of [sanctions_country_starter.GetNameDef], the Unite Nations Security Council voted to establish [This.GetSanctionType] against [sanctions_country_target.GetNameDef] because of their recent actions affecting the rest of world. The sanctions are meant to stay in action for 2 years."
 
- UNSC_trade_sanctions_idea:0 "United Nations Economic Sanctions"
- UNSC_trade_sanctions_idea_desc:0 "This country is target of coordinated economic sanctions by the members of the United Nations Security Council."
- UNSC_security_risk_idea:0 "United Nations Diplomatic Sanctions"
- UNSC_security_risk_idea_desc:0 "This country is target of coordinated diplomatic sanctions by the members of the United Nations Security Council."
-
  #####################################
  # SPACE SCRIPTED GUI AND EVENTS
  #####################################
@@ -194,6 +189,7 @@
  COALITION_SUPPORT_DIPLO:0 "[?FROM.Coalition]%"
  COALITION_TOOLTIP:0 "\n§YGovernment Support§!\nThe current government holds of §Y[?ROOT.Coalition]%§! of seats\n\nThe current government is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
  COALITION_TOOLTIP_DIPLO:0 "\n§YGovernment Support§!\nThe government holds of §Y[?FROM.Coalition]%§! of seats\n\nIt is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
+ POPULATION_TOOLTIP:0 "\n§YPopulation§!" #TEMPORARY - Will migrate
  coalition_islamist_party:0 "- Islamist Party\n"
  coalition_fascist_party:0 "- Third Positionist Party\n"
  coalition_nationalist_party:0 "- Nationalist Party\n"

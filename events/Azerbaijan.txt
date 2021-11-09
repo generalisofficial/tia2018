@@ -1,0 +1,90 @@
+﻿add_namespace = azerbaijan
+
+#Azerbaijan launches Operation Iron Fist
+news_event = {
+	id = azerbaijan.1
+	title = azerbaijan.1.t
+	desc = azerbaijan.1.d
+	picture = GFX_news_event_azerbaijan_tank
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = azerbaijan.1.o1
+		trigger = {
+			OR = {
+				original_tag = AZR
+				original_tag = TUR
+				is_in_faction_with = AZR
+			}
+		}
+	}
+
+	option = {
+		name = azerbaijan.1.o2
+		trigger = {
+			NOT = {
+				original_tag = AZR
+				original_tag = TUR
+				is_in_faction_with = AZR
+			}
+		}
+	}
+}
+
+#AZR - Successful Operation Iron Fist
+country_event = {
+	id = azerbaijan.2
+	title = azerbaijan.2.t
+	desc = azerbaijan.2.d
+	
+	is_triggered_only = yes
+	
+	option = {	#Hand over Afrin to the Regime
+		name = azerbaijan.2.o1
+		transfer_state = 1097
+	}
+}
+
+#AZR - Failed Operation Iron Fist
+country_event = {
+	id = azerbaijan.3
+	title = azerbaijan.3.t
+	desc = azerbaijan.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = azerbaijan.3.o1
+		add_political_power = -25
+	}
+}
+
+#NGK - Failed Operation Iron Fist
+country_event = {
+	id = azerbaijan.4
+	title = azerbaijan.4.t
+	desc = azerbaijan.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = azerbaijan.4.o1
+		add_political_power = 50
+	}
+}
+
+#NGK - Successful Operation Iron Fist
+country_event = {
+	id = azerbaijan.5
+	title = azerbaijan.5.t
+	desc = azerbaijan.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = azerbaijan.5.o1
+		add_political_power = -25
+	}
+}

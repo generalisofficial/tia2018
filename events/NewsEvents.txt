@@ -182,57 +182,6 @@ news_event = {
 	}
 }
 
-#[Country] enacts Mass Mobilization
-news_event = {
-	id = news.80
-	title = news.80.t
-	desc = news.80.d
-	picture = GFX_news_event_recruits
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = news.80.o1
-		trigger = { tag = ROOT }
-	}
-	
-	option = {
-		name = news.80.o2
-		trigger = {
-			NOT = { tag = ROOT }
-			is_in_faction_with = ROOT
-		}
-	}
-	
-	option = {
-		name = news.80.o3
-		trigger = {
-			NOT = { tag = ROOT }
-			NOT = { is_in_faction_with = ROOT }
-			NOT = { has_war_with = ROOT }
-			has_similar_form_of_government = yes
-		}
-	}
-	
-	option = {
-		name = news.80.o4
-		trigger = {
-			NOT = { tag = ROOT }
-			NOT = { is_in_faction_with = ROOT }
-			NOT = { has_war_with = ROOT }
-			has_similar_form_of_government = no
-		}
-	}
-	
-	option = {
-		name = news.80.o5
-		trigger = {
-			has_war_with = ROOT
-		}
-	}
-}
-
 #ROOT votes in favor!
 news_event = {
 	id = news.102

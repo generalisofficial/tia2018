@@ -23,7 +23,7 @@ country_event = { #Die Grunen - Annalena Baerbock
 	}
 }
 
-country_event = { #SPD - Andrea Nahles
+country_event = { #2019 Social Democratic Party of Germany leadership election
 	id = germany.2
 	title = germany.2.t
 	desc = germany.2.d
@@ -32,15 +32,15 @@ country_event = { #SPD - Andrea Nahles
 
 	trigger = {
 		original_tag = GER
-		date > 2018.4.20
-		date < 2019.1.1
+		date > 2019.10.14
+		date < 2020.1.1
 	}
 	
 	option = {
 		name = germany.2.o1
 		create_country_leader = {
-	        name = "Andrea Nahles"
-	        picture = "Andrea_Nahles.dds"
+	        name = "Olaf Scholz"
+	        picture = "Olaf_Scholz.dds"
 	        ideology = social_democrat_ideology
         }
 	}

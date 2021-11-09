@@ -61,18 +61,19 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="population"
-			position = { x= -10 y = 23 }
+			position = { x= -25 y = 23 }
 			font = "hoi_16mbs"
-			text = "[?FROM.manpower_k]K"
+			text = "[?FROM.max_manpower_k]K"
 			format = center
-			maxWidth = 70
+			maxWidth = 100
 			maxHeight = 24
 			fixedsize = yes
+			pdx_tooltip = POPULATION_TOOLTIP
 		}
 	}
 	containerWindowType = {
 		name = "pie_container"
-		position = { x = 191 y = 155 }
+		position = { x = 191 y = 157 }
 		clipping = no
 		Orientation = UPPER_LEFT
 		origo = center
