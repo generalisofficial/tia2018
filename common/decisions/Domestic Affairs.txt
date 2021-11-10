@@ -25,51 +25,29 @@ domestic_affairs = {
 		}
 		
 	}
-	
-	enact_a_state_of_emergency = {
-		
+
+	pardon_ted_kaczynski = {
+
 		visible = {
-			NOT = { has_idea = state_of_emergency }
+			original_tag = USA
+			is_democracy = yes
+			NOT = { has_government = progressive }
 		}
-		
-		available = {
-			has_war = yes
+
+		complete_effect = {
+			add_stability = -0.05
+			country_event = usa.3
 		}
-		
-		icon = politics
-		
+
+		icon = political_discourse
+
 		cost = 50
-		
-		complete_effect = {
-	        add_ideas = state_of_emergency
-		}
-		
+		fire_only_once = yes 
+
 		ai_will_do = {
 			factor = 0
 		}
-	}
-	
-	enact_martial_law = {
-		
-		visible = {
-			NOT = { has_idea = martial_law }
-		}
-		
-		available = {
-			
-		}
-		
-		icon = politics
-		
-		cost = 100
-		
-		complete_effect = {
-	        add_ideas = martial_law
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
+
 	}
 	
 }

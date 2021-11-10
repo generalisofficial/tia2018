@@ -1,31 +1,3 @@
-domestic_affairs = {
-
-	pardon_ted_kaczynski = {
-
-		visible = {
-			original_tag = USA
-			is_democracy = yes
-			NOT = { has_government = progressive }
-		}
-
-		complete_effect = {
-			add_stability = -0.05
-			country_event = usa.3
-		}
-
-		icon = political_discourse
-
-		cost = 50
-		fire_only_once = yes 
-
-		ai_will_do = {
-			factor = 0
-		}
-
-	}
-
-}
-
 USA_campaign_promises = {
 	
 	build_the_wall = {

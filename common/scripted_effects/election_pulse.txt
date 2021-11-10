@@ -44,4 +44,16 @@ election_pulse = {
 	    set_global_flag = conte_pm
 		country_event = italy.1
 	}
+	if = {
+	    limit = {
+		    original_tag = SIA
+			NOT = { has_global_flag = palang_pracharath_flag }
+	    }
+		set_global_flag = palang_pracharath_flag
+		set_party_name = {
+		    ideology = reactionary
+		    long_name = SIA_reactionary_party_PPP_long
+		    name = SIA_reactionary_party_PPP
+	    }
+	}
 }

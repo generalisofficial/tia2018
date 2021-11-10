@@ -85,43 +85,44 @@ add_ideas = {
 	limited_conscription
 	non_aligned_movement_member
 	asean_member
+	parliamentary_system
 }
 
 set_country_flag = buddhism
 
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 100 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+
 set_politics = {		
 	ruling_party = reactionary
-	last_election = "2014.2.2"
-	election_frequency = 60
+	last_election = "2015.3.24"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 0
-    reactionary = 35
-    conservative = 20
-    classical_liberal = 5
-    social_liberal = 30
-    social_democrat = 5
-    progressive = 5
-}
-
-create_country_leader = {
-	name = "Anuthin Charnweerakul"
-	picture = "Anuthin_Charnweerakul.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Phumtham Wechayachai"
-	picture = "Phumtham_Wechayachai.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Thongphun Diphrai"
-	picture = "Thongphun_Diphrai.dds"
-	ideology = progressive_ideology
+    reactionary = 30.21
+    conservative = 11.2
+    classical_liberal = 10.6
+    social_liberal = 2
+    social_democrat = 29.79
+    progressive = 16.2
 }
 
 create_country_leader = {
@@ -134,6 +135,36 @@ create_country_leader = {
 	name = "Prayut Chan-o-cha"
 	picture = "Prayut_Chan_o_cha.dds"
 	ideology = military_junta
+}
+
+create_country_leader = {
+	name = "Anutin Charnvirakul"
+	picture = "Anutin_Charnvirakul.dds"
+	ideology = liberal_conservative
+}
+
+create_country_leader = {
+	name = "Abhisit Vejjajiva"
+	picture = "Abhisit_Vejjajiva.dds"
+	ideology = libertarian
+}
+
+create_country_leader = {
+	name = "Sereepisuth Temeeyaves"
+	picture = "Sereepisuth_Temeeyaves.dds"
+	ideology = social_liberal_ideology
+}
+
+create_country_leader = {
+	name = "Sudarat Keyuraphan"
+	picture = "Sudarat_Keyuraphan.dds"
+	ideology = social_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Thanathorn Juangroongruangkit"
+	picture = "Thanathorn_Juangroongruangkit.dds"
+	ideology = progressive_ideology
 }
 
 create_corps_commander = {
