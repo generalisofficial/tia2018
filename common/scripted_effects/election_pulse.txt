@@ -56,4 +56,18 @@ election_pulse = {
 		    name = SIA_reactionary_party_PPP
 	    }
 	}
+	if = {
+	    limit = {
+		    original_tag = BRM
+			has_government = social_democrat
+			NOT = { has_global_flag = myanmar_coup }
+		}
+	    set_global_flag = myanmar_coup
+		hidden_effect = {
+			country_event = { 
+				id = myanmar.1
+				days = 85
+			}
+		}
+	}
 }
