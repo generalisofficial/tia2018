@@ -71,13 +71,44 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 10
+		cost = 25
 		
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				factor = 200
 				date > 2018.7.7
+			}
+		}
+	}
+
+	the_kingdom_of_eswatini = {
+	
+		visible = {
+			original_tag = SWZ
+			has_government = monarchist
+		}
+		
+		available = {
+			has_government = monarchist
+		}
+		
+		complete_effect = {
+			set_cosmetic_tag = SWZ_2018
+			news_event = swaziland.1
+		}
+		
+		icon = independence
+
+		fire_only_once = yes
+		
+		cost = 25
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 200
+				date > 2018.4.18
 			}
 		}
 	}

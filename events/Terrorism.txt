@@ -6,13 +6,8 @@ news_event = { #2018 Strasbourg attack
 	desc = terrorism.1.d
 	picture = GFX_news_event_strasbourg
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-		date > 2018.12.13
-		date < 2019.1.1
-	}
 	
 	option = {
 		name = terrorism.1.o1
@@ -35,13 +30,8 @@ news_event = { #Christchurch mosque shootings
 	desc = terrorism.2.d
 	picture = GFX_news_event_al_noor
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-		date > 2019.3.14
-		date < 2020.1.1
-	}
 	
 	option = {
 		name = terrorism.2.o1
@@ -54,13 +44,8 @@ news_event = { #Utrecht tram attack
 	desc = terrorism.3.d
 	picture = GFX_news_event_utrecht_tram
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-		date > 2019.3.17
-		date < 2020.1.1
-	}
 	
 	option = {
 		name = terrorism.3.o1
@@ -73,13 +58,8 @@ news_event = { #Sri Lanka Easter bombings
 	desc = terrorism.4.d
 	picture = GFX_news_event_sri_lanka_bombing
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-		date > 2019.4.20
-		date < 2020.1.1
-	}
 	
 	option = {
 		name = terrorism.4.o1
@@ -92,25 +72,20 @@ news_event = { #Stoneman Douglas High School shooting
 	desc = terrorism.5.d
 	picture = GFX_news_event_stoneman_douglas
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-		date > 2018.2.13
-		date < 2019.1.1
-	}
 	
 	option = {
 		name = terrorism.5.o1
 		trigger = {
-	        NOT = { original_tag = USA }
+	        NOT = { owns_state = 366 }
 	    }
 	}
 	
 	option = {
 		name = terrorism.5.o2
 		trigger = {
-	        original_tag = USA
+	        owns_state = 366 
 	    }
 		366 = { add_manpower = -17 }
 	}

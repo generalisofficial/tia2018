@@ -22,3 +22,26 @@ country_event = { #Miljöpartiet - Per Bolund
         }
 	}
 }
+
+country_event = { #Socialdemokraterna - Magdalena Andersson
+	id = sweden.2
+	title = sweden.2.t
+	desc = sweden.2.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SWE
+		date > 2021.11.
+		date < 2022.1.1
+	}
+	
+	option = {
+		name = sweden.1.a
+		create_country_leader = {
+	        name = "Magdalena Andersson"
+	        picture = "Magdalena_Andersson.dds"
+	        ideology = social_democrat_ideology
+        }
+	}
+}

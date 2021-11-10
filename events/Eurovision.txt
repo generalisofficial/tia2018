@@ -7,13 +7,8 @@ news_event = {
 	desc = eurovision.1.d
 	picture = GFX_news_event_eurovision_2018
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-		date > 2018.5.11
-		date < 2019.1.1
-	}
 	
 	option = {
 		name = eurovision.1.o1
@@ -49,7 +44,7 @@ news_event = {
 	desc = eurovision.2.d
 	picture = GFX_news_event_eurovision_2019
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
 
 	trigger = {

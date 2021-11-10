@@ -94,16 +94,15 @@ country_event = {
 	hidden=yes
 
 	trigger = {
-		NOT = { has_idea = enforced_atheism }
-		NOT = { has_idea = secular }
-		NOT = { has_idea = christianity }
-		NOT = { has_idea = islam }
-		NOT = { has_idea = buddhism }
-		NOT = { has_idea = judaism }
+		NOT = { 
+			any_country = {
+				has_idea = asean_member
+			}
+		}
 	}
 	
 	immediate = {
-		add_ideas = secular
+		set_global_flag = asean_dissolved
 	}
 }
 
@@ -374,22 +373,5 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = benelux_dissolved
-	}
-}
-
-country_event = {
-	id = system.23
-	hidden=yes
-
-	trigger = {
-		NOT = { 
-			any_country = {
-				has_idea = asean_member
-			}
-		}
-	}
-	
-	immediate = {
-		set_global_flag = asean_dissolved
 	}
 }

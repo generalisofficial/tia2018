@@ -191,7 +191,7 @@
  COALITION_TOOLTIP_DIPLO:0 "\n§YGovernment Support§!\nThe government holds of §Y[?FROM.Coalition]%§! of seats\n\nIt is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
  POPULATION_TOOLTIP:0 "\n§YPopulation§!" #TEMPORARY - Will migrate
  coalition_islamist_party:0 "- Islamist Party\n"
- coalition_fascist_party:0 "- Third Positionist Party\n"
+ coalition_fascist_party:0 "- Fascist Party\n"
  coalition_nationalist_party:0 "- Nationalist Party\n"
  coalition_monarchist_party:0 "- Monarchist Independents\n"
  coalition_reactionary_party:0 "- Reactionary Party\n"
@@ -205,7 +205,7 @@
  
  # Flags (mostly for ministers)
  coalition_islamist:0 "Islamists in Government"
- coalition_fascist:0 "Third Positionists in Government"
+ coalition_fascist:0 "Fascists in Government"
  coalition_nationalist:0 "Nationalists in Government"
  coalition_monarchist:0 "Monarchist Independents in Government"
  coalition_reactionary:0 "Reactionaries in Government"
@@ -219,7 +219,7 @@
 ### Window
  # Party Names
  COALITION_PARTY1_TITLE:0 "[This.GetEnoughIslamic]Islamic Party§!"
- COALITION_PARTY2_TITLE:0 "[This.GetEnoughFascist]Third Positionist Party§!"
+ COALITION_PARTY2_TITLE:0 "[This.GetEnoughFascist]Fascist Party§!"
  COALITION_PARTY3_TITLE:0 "[This.GetEnoughNationalist]Nationalist Party§!"
  COALITION_PARTY4_TITLE:0 "[This.GetEnoughMonarchist]Monarchist Independents§!"
  COALITION_PARTY5_TITLE:0 "[This.GetEnoughReactionary]Reactionary Party§!"
@@ -277,7 +277,7 @@
  REACTIONARY_POPULARITY_TEXT:0 "§rReactionaries: [?Root.reactionary_seats]%§!"
  MONARCHIST_POPULARITY_TEXT:0 "§xMonarchist Independents: [?Root.monarchist_seats]%§!"
  NATIONALIST_POPULARITY_TEXT:0 "§NNationalists: [?Root.nationalist_seats]%§!"
- THIRD_POSITION_POPULARITY_TEXT:0 "§FThird Positionists: [?Root.fascist_seats]%§!"
+ THIRD_POSITION_POPULARITY_TEXT:0 "§FFascists: [?Root.fascist_seats]%§!"
  ISLAMIST_POPULARITY_TEXT:0 "§IIslamists: [?Root.islamist_seats]%§!"
 
  # Political Groups
