@@ -49,6 +49,6 @@ replace_path="map/supplyareas"
 replace_path="events"
 replace_path="portraits"
 replace_path="music"
-
 name="The Information Age 2018"
 supported_version="1.10.8"
+remote_file_id="1704800648"
