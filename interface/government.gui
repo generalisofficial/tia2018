@@ -80,36 +80,36 @@ guiTypes = {
 			format = left
 			pdx_tooltip = GOV_RESIGN_TOOLTIP
 		}
+
+		instantTextBoxType = {
+			name = "member_parties_title"
+			position = { x = 21 y = 231 }
+			font = "hoi_18mbs"
+			text = "It is made up of the following parties:"
+			maxWidth = 260
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "upper_left"
+		}
 		
 		containerWindowType = {
 			name = "government_members_container"
-			position = { x = 20 y = 230 }	
-			size = { width = 350 height = 300 }
+			position = { x = 20 y = 250 }	
+			size = { width = 370 height = 280 }
 			clipping = yes
 			moveable = no
 
-			#background = {
-			#	name = "Background"	
-			#	spriteType = "GFX_tiled_bg"
-			#}
-
-			instantTextBoxType = {
-				name = "member_parties_title"
-				position = { x = 1 y = 1 }
-				font = "hoi_18mbs"
-				text = "It is made up of the following parties:"
-				maxWidth = 260
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "upper_left"
+			background = {
+				name = "Background"	
+				spriteType = "GFX_tiled_window2_2b_border"
 			}
 
 			verticalScrollbar = "right_vertical_slider"
 
 			gridboxtype = {
 				name = "member_parties_grid"
-				position = { x = -55 y = 20 }
+				position = { x = -66 y = 0 }
 				size = { width = 95%% height = 100%% }
 				slotsize = { width = 285 height = 1 }
 				max_slots_horizontal = 1
