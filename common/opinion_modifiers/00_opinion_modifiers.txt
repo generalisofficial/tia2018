@@ -10,23 +10,20 @@
 
 opinion_modifiers = {
 
-	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
-		value = -100
-	}
-
-	unstable_alliance = {
-		value = -10
-	}
+	# SYSTEM
 
 	holds_our_cores = {
 		value = -10
 	}
+
 	holds_our_claims = {
 		value = -5
 	}
+
 	claims_on_us = { 
 		value = -10
 	}
+
 	at_war_with_faction = {
 		value = -50
 	}
@@ -37,19 +34,7 @@ opinion_modifiers = {
 		days = 10
 		decay = 1
 	}
-	
-	offered_support = {
-		value = 50
-		months = 24
-	}
 
-	improve_relation = {
-		value = 0
-		months = 0
-		decay = 3
-		max_trust = 100
-	}
-	
 	guarantee = {
 		value = 5
 	}
@@ -68,12 +53,17 @@ opinion_modifiers = {
 		value = -200
 	}
 	
-	frozen_conflict = {
-		value = -200
-	}
-	
 	in_faction = {
 		value = 50
+	}
+
+	faction_traitor = {
+		value = -75
+	}
+
+	faction_traitor_trade = {
+		trade = yes
+		value = -40
 	}
 	
 	military_access = {
@@ -103,74 +93,192 @@ opinion_modifiers = {
 		value = 5
 	}
 	
-	tolerance = {
-		value = 30
-	}
-	
-	summit = {
-	value = 50
-	months = 12
-	decay = 1
-	}
-	
 	different_party_types = {
 		value = 0
 	}
 	
-	long_term_trade_partner = {
-		value = 1
-	}
-	
-	puppet_opinion = 
-	{
+	puppet_opinion = {
 		value = 75
 	}
 
-	middle_east_expansionism = {
-		value = -30
+	our_liberators = {
+		value = 50
+		months = 18
+		decay = 2
 	}
+
+	# GENERIC
 
 	border_conflict_reconciled = {
 		value = 40
 	}
+
+	frozen_conflict = {
+		value = -200
+	}
 	
-	sanctions_relations = {
+	state_visit = {
+		value = 80
+	}	
+	
+	treaty_of_friendship = {
+		value = 25
+	}
+	
+	established_diplomatic_relations = {
+		value = 20
+	}
+	
+	military_cooperation = {
+		value = 20
+		decay = 0.1
+	}
+
+	rival = {
+		value = -100
+	}
+	
+	rival_trade = {
+		value = -100
+		trade = yes
+	}
+
+	terrorist_menace = {
+		value = -200
+	}
+
+	terrorist_menace_trade = {
+		value = -100
+		trade = yes
+	}
+
+	# ECONOMY/TRADE
+
+	embargo = {
+		trade = yes
+		value = -100
+	}
+	
+	sanctions = {
+		trade = yes
 		value = -40
 	}
-	minor_sanctions_relations = {
+	
+	minor_sanctions = {
+		trade = yes
 		value = -20
 	}
+
+	loan_denied = {
+		value = -15
+		decay = 0.5
+	}
 	
-	unprovoked_aggression = {
-		value = -50
-		months = 36
-		decay = 1
+	loan_granted = {
+		value = 15
+		decay = 0.5
 	}
 
-	aided_industry = {
+	# INTERNATIONAL ORGANIZATIONS
+
+	european_union_member = {
 		value = 30
 	}
 	
-	communist_collaborators = {
-		value = -125
-		months = 48
+	european_union_member_trade = {
+		value = 100
+		trade = yes
+	}
+	
+	left_the_eu = {
+		value = -15
 		decay = 1
 	}
 	
-	unholy_alliance  = {
-		value = -50
-		months = 48
-		decay = 1
+	visegrad_group = {
+		value = 20
 	}
 
-	anti_imperialist = {
+	# ISLAM
+
+	fellow_sunni = {
+		value = 20
+	}
+	
+	fellow_sunni_trade = {
+		value = 30
+		trade = yes
+	}
+	
+	fellow_shia = {
+		value = 20
+	}
+	
+	fellow_shia_trade = {
+		value = 30
+		trade = yes
+	}
+
+	opposing_faith = {
+		value = -5
+	}
+	
+	opposing_faith_trade = {
+		value = -20
+		trade = yes
+	}
+	
+	holy_war = {
+		value = -100
+	}
+	
+	holy_war_trade = {
+		value = -100
+		trade = yes
+	}
+
+	# UNIQUE
+
+	death_to_israel = {
+		value = -60
+	}
+	
+	death_to_israel_ISR = {
+		value = -60
+	}
+
+	past_japanese_war_crimes = {
+		value = -10
+	}
+
+	ANZUS = {
+		value = 55
+	}
+	
+	ANZUS_trade = {
 		value = 40
+		trade = yes
+	}
+	
+	five_eyes_agreement = {
+		value = 20
 	}
 
-	destroyers_for_bases_opinion = {
-		value = 30
+	NAFTA = {
+		value = 80
+		trade = yes
 	}
-	state_visit = {
-	value = 80
-}	
+
+	macedonia_naming_dispute = {
+		value = -80
+	}
+
+	skripal_poisoning = {
+		value = -25
+		decay = 1
+	}
+
+	leader_of_the_catholic_church = {
+		value = 100
+	}
 }

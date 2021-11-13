@@ -3,31 +3,13 @@
  option.interesting: "Interesting."
  option.badChoice: "They chose poorly."
  option.newCountry: "A new country enters the world stage."
+
+ #Belgium
  belgium.1.t: "Political Reform for Belgium"
  belgium.1.d: "We have been deeply dissatisfied with the inefficient political systems our leaders forced upon us. Time to straighten our system, get rid of a few of our parliaments and Make Belgium Great Again."
  belgium.1.o1: "Let's do it!"
- diplomatic_message.1.t: "The [From.GetAdjective] Alliance invites us!"
- diplomatic_message.1.d: "Diplomatic envoys from [From.GetName] sent us a request to seriously consider joining their military alliance in order to protect both parties from future harm and to pursue common goals. We need to consider our next step."
- diplomatic_message.1.o1: "[Root.GetName] and [From.GetName] shall be allies!"
- diplomatic_message.1.o2: "We would rather not."
- diplomatic_message.2.t: "[From.GetName] expels us from [From.GetFactionName]!"
- diplomatic_message.2.d: "\"Thus, due to your inacceptable stances, ideologies and policies, our military alliance is no more!\", the [From.GetAdjective] ambassador shouted at [Root.GetLeader] today.\n\nIt seems that [From.GetNameDef] is no longer interested in continuing our military partnership and alliance and has locked our delegations out of the faction's conventions. Good riddance."
- diplomatic_message.2.o1: "These fools!"
- diplomatic_response.1.t: "[From.GetName] accepts!"
- diplomatic_response.1.d: "[This.GetAdjective] and [From.GetAdjective] delegations have reached a mutual agreement in the most recent negotiations. [From.GetName] is willing to go along with our proposal."
- diplomatic_response.1.o1: "Excellent."
- diplomatic_response.2.t: "[From.GetName] rejects!"
- diplomatic_response.2.d: "After several nights and bitter fights over minor details and major points, the most recent wave of negotiations between the [This.GetName] and [From.GetName] delegations have failed. Our proposal will not come to fruition any time soon."
- diplomatic_response.2.o1: "Oh well."
- diplomatic_response.3.t: "[From.GetName] folds!"
- diplomatic_response.3.d: "Unsurprisingly, the [From.GetAdjective] delegations were soon convinced of our overwhelming might and folded to our demands. We got what we wanted."
- diplomatic_response.3.o1: "Excellent!"
- diplomatic_response.4.t: "[From.GetName] defies us!"
- diplomatic_response.4.d: "We knew that some [From.GetAdjective] people are idiots, but their top envoys had to join the rank of idiots in the last few days of negotiations. They defied us, rejected our demands and sent our envoys home.\n\nThese fools."
- diplomatic_response.4.o1: "They will know the consequences."
- diplomatic_response.5.t: "[From.Getname] defies us!"
- diplomatic_response.5.d: "We knew that some [From.GetAdjective] people are idiots, but their top envoys had to join the rank of idiots in the last few days of negotiations. They defied us, rejected our demands and sent our envoys home.\n\nThese fools."
- diplomatic_response.5.o1: "The [From.GetAdjective] will face the consequences!"
+
+ #Elections
  election.1.t: "General Election"
  election.1.d: "General elections are being held, and the votes will soon be counted. With our nation adhering to a first-past-the-post (FPTP) system, the party with the most votes will win the election and form the new government, with or without a majority."
  election.1.o1: "The Communist candidate has won!"
@@ -42,6 +24,9 @@
  election.1.o10: "The Fascist candidate has won!"
  election.1.o11: "The Islamist candidate has won!"
  election.1.o12: "The Monarchist candidate has won!"
+ election.2.t: "Swiss Federal Council Election"
+ election.2.d: "With the expiration of President [SWI.GetLeader]'s term, it is now time to hold the annual elections for the next President, and subsequently the entire Federal Council itself."
+ election.2.o1: "Here we are yet again."
  election.3.t: "Parliamentary Election"
  election.3.d: "Today, it is time for the scheduled elections for our Parliament. The results today will decide who gets to form the next government and who gets to be a part of it."
  election.3.o1: "Count Votes"
@@ -59,6 +44,8 @@
  election.4.o10: "The Fascist Party has won!"
  election.4.o11: "The Islamist Party has won!"
  election.4.o12: "The Monarchist Party has won!"
+
+ #Factions
  factions.1.t: "[From.GetNameDef] joins NATO"
  factions.1.d: "After recent national debates and discussions, [From.GetNameDef] has formally declared their accession to the North Atlantic Treaty Organization, joining a plethora of other nations in the large military pact. The nation's leader, [From.GetLeader] is declaring that the membership will improve security cooperation with Western nations. President [USA.GetLeader] has praised [From.GetNameDef] for its commitment to global security and development."
  factions.1.o1: "NATO expands once more!"
@@ -66,31 +53,45 @@
  factions.2.d: "The leader of [From.GetNameDef], [From.GetLeader], has today announced the country's intention to immediately pull out of the North Atlantic Treaty Organization and its affiliated alliances. This will weaken the military pact."
  factions.2.o1: "A good choice."
  factions.2.o2: "Interesting."
+
+ #Estonia
  estonia.2.t: "Eesti Reformierakond - New Party Leader"
  estonia.2.d: "Today, Kaja Kallas was elected as the leader of Eesti Reformierakond. Last year previous leader Hanno Pevkur announced that he would not run for re-election, and now he has his successor chosen."
  estonia.2.a: "Congratulations!"
  estonia.3.t: "Sotsiaaldemokraatlik Erakond - New Party Leader"
  estonia.3.d: "Today, Indrek Saar was elected as the leader of Sotsiaaldemokraatlik Erakond. With previous leader Jevgeni Ossinovski stepping down due to undesirable election results, the former Minister of Culture was chosen to take up the job."
  estonia.3.a: "Oh, well!"
+
+ #New Zealand
  new_zealand.1.t: "2018 New Zealand National Party leadership election"
  new_zealand.1.d: "After last month's resignation of party leader Bill English, a leadership election was called. Out of 4 candidates, only 2 have advanced to the final round. These candidates are: Tauranga MP and former Minister of Transport Simon Bridges, and Selwyn MP and former Minister of Justice Amy Adams. Who wins, Woman or Minority?"
  new_zealand.1.a: "Simon Bridges"
  new_zealand.1.b: "Amy Adams"
+
+ #Ireland
  ireland.1.t: "Sinn Féin - New Party Leader"
  ireland.1.d: "Today, Mary Lou McDonald was elected as the leader of Sinn Féin. Previous party leader Gerry Adams, having ruled since 1983, chose not to stand for re-election this year, and McDonald was elected to the post unopposed."
  ireland.1.a: "Out with the old, in with the new!"
+
+ #Kosovo
  kosovo.1.t: "Vetëvendosje - New Party Leader"
  kosovo.1.d: "Today, Albin Kurti was elected as the leader of Vetëvendosje. With the party in crisis and previous party leader Visar Ymeri recently resigning, the party hopes for a better year with new leadership."
  kosovo.1.a: "Alright then.."
+
+ #Sweden
  sweden.1.t: "Miljöpartiet - New Party Leader"
  sweden.1.d: "Today, Per Bolund was elected as the leader of Miljöpartiet. Previous party leader Gustav Fridolin, having left his position as Minister of Education months earlier, as well as announcing his decision not to stand for re-election, was today replaced by Per Bolund, the incumbent Minister for Housing."
  sweden.1.a: "Irrelevant.."
  sweden.2.t: "2021 Social Democratic Party Congress"
  sweden.2.d: "After a long 9 year term, former union leader Stefan Löfven today resigned from his position as party leader of the Social Democratic Workers' Party. As the only candidate, economist Magdalena Andersson was chosen as his successor. On another note, Tobias Baudin was elected as the new party General Secretary, replacing Lena Rådström Baastad."
  sweden.2.a: "We thank you for your 9 years of service!"
+
+ #Nauru
  nauru.1.t: "President Lionel Aingimea"
  nauru.1.d: "In the recent elections, President Baron Waqa lost his parliament seat in the Boe constituency. Member for Meneng, Lionel Aingimea, was then elected to succeed Waqa."
  nauru.1.a: "Unfortunate for Waqa!"
+
+ #Austria
  austria.1.t: "NEOS - New Party Leader"
  austria.1.d: "As part of NEOS's scheduled party congress, Beate Meinl-Reisinger has been elected as the new leader of the party, succeeding Matthias Strolz, who resigned from all positions the month before."
  austria.1.a: "Great!"
@@ -100,6 +101,8 @@
  austria.3.t: "JETZT – Liste Pilz"
  austria.3.d: "As part of a major rebranding, the Liste Peter Pilz party, led by Peter Pilz, has now changed its name to JETZT – Liste Pilz, and the new chairman is singer-songwriter Maria Stern, while Pilz has been chosen as the Deputy."
  austria.3.a: "A singer?"
+
+ #United Kingdom
  britain.1.t: "2018 UKIP leadership election"
  britain.1.d: "After previous UK Independence Party leader Henry Bolton was successfully brought down by a motion of no confidence, a leadership election was called. However, only one candidate has stepped up. Acting party leader Gerard Batten has turned out to be the only candidate, and the election is only a formality. Now, who will win?"
  britain.1.a: "Gerard Batten"
@@ -126,12 +129,16 @@
  britain.7.d: "Despite only leading the party for around a year, UKIP leader Gerard Batten has resigned, due to disastrous European election results, and the creation of the new Brexit Party. The resulting leadership election is contested by relative newcomers, and the 2 final candidates are Richard Braine and Freddy Vachha, both without major experience."
  britain.7.a: "Richard Braine"
  britain.7.b: "Freddy Vachha"
+
+ #Islamic State
  isis.1.t: "End of the Islamic State"
  isis.1.d: "After years of a CTJF-OIR foreign bombardment campaign, as well as a ground war waged by Iraq, the Syrian Democratic Forces, the Syrian Arab Army and others, the Islamic State has lost all its territory, including in Syria, Iraq, Afghanistan, Yemen and Libya. With the end of the Caliphate, foreign fighters are returning to their countries and a small percentage of units are turning to guerrilla warfare."
  isis.1.o1: "God, Syria, Bashar!"
  isis.1.o2: "Biji Kurdistan!"
  isis.1.o3: "Allah, save us!"
  isis.1.o4: "Terror is finished!"
+
+ #Bosnia
  bosnia.1.t: "Bosnian Serb Declaration of Independence"
  bosnia.1.d: "With the collapse of the Dayton Agreement, a response from the Serbs was expected. However, not many expected President of Republika Srpska, Milorad Dodik, to step out in the center of Banja Luka, and announce the independence of the Bosnian Serb Republic. Republika Srpska's military units have declared their allegiance to the new Republic, and our commanders are itching for a fight. How will we deal with it?"
  bosnia.1.a: "They made their decision. Let them be."
@@ -152,6 +159,8 @@
  bosnia.6.t: "Serbia rejects unification"
  bosnia.6.d: "Serbia has regrettably rejected our unification proposal. We must now find our own way forward, as a nation of the Bosnian Serbs."
  bosnia.6.a: "NO!"
+
+ #Finland
  finland.1.t: "Green League - New Party Leader"
  finland.1.d: "Today, Maria Ohisalo was elected as the leader of the Green League at a party meeting in Pori. As the sole candidate, Ohisalo won a landslide, and will now lead the Green League into the future."
  finland.1.a: "Good for them."
@@ -159,6 +168,8 @@
  finland.2.d: "Today, a large amount of government parliamentarians joined the opposition after the alleged mishandling of a postal strike. With the end of the government majority, prime minister Antti Rinne has now resigned. The Social Democratic Party is now choosing their next candidate for Prime Minister. The candidates are Sanna Marin and Antti Lindtman. Who will lead the nation?"
  finland.2.a: "Sanna Marin"
  finland.2.b: "Antti Lindtman"
+
+ #European Union
  european_union.1.t: "[From.GetName] wants to join the EU"
  european_union.1.d: "Diplomats from [From.GetName] have applied to join the European Union. Should a single member state - let's say our delegation - veto their application, they will not be permitted. We need to make a wise choice."
  european_union.1.o1: "We approve."
@@ -200,17 +211,23 @@
  european_union.17.t: "Re-Nationalize the Currency"
  european_union.17.d: "Now that we are no longer involved with the Eurozone, we have - as expected - been informed by the European Central Bank that we need to soon shift the Euro out of use in our country.\n\nIntroducing a new national currency will take quite a bit of political effort - but it has to be done."
  european_union.17.o1: "Let's get it over with."
+
+ #Parliament
  parliament.1.t: "Motion of No Confidence - Passed"
  parliament.1.d: "The vote for a Motion of No Confidence has been passed, meaning the current government has fallen and Parliament will be forming a new one. \n\nFor: [?ROOT.Opposition]%\nAgainst: [?ROOT.Coalition]%"
  parliament.1.o1: "Sign"
  parliament.2.t: "Motion of No Confidence - Failed"
  parliament.2.d: "The vote for a Motion of No Confidence has failed, meaning the current government still retains the support of Parliament and will continue governing. \n\nFor: [?ROOT.Opposition]%\nAgainst: [?ROOT.Coalition]%"
  parliament.2.o1: "Nice try."
+
+ #FIFA World Cup
  fifa_world_cup.hostOption: "We were good hosts."
  fifa_world_cup.championOption: "We are the very best!"
  fifa_world_cup.normalOption: "The competition is over."
  fifa_world_cup.1.t: "2018 FIFA World Cup"
  fifa_world_cup.1.d: "The 2018 FIFA World Cup was the 21st FIFA World Cup, an international football tournament contested by the men's national teams of the member associations of FIFA once every four years. It took place in Russia from 14 June to 15 July 2018. It was the first World Cup to be held in Eastern Europe, and the 11th time that it had been held in Europe. It was also the first World Cup to use the video assistant referee system. The finals involved 32 teams, of which 31 came through qualifying competitions, while the host nation qualified automatically. A total of 64 matches were played in 12 venues across 11 cities. The final took place on 15 July in Moscow, between France and Croatia. France won the match 4–2 to claim their second World Cup title, marking the fourth consecutive title won by a European team."
+
+ #Terrorism
  terrorism.1.t: "2018 Strasbourg attack"
  terrorism.1.d: "On the evening of 11 December 2018, a terrorist attack occurred in Strasbourg, France, when a man attacked civilians in the city's busy christmas market with a revolver and a knife, killing five and wounding 11 before fleeing in a taxi. Authorities called the shooting an act of terrorism. The attacker was 29-year-old Chérif Chekatt, who had multiple criminal convictions and was on a security services watchlist as a suspected Islamist extremist. Chekatt was killed in a shootout with French police after a manhunt involving 700 officers. He had pledged allegiance to the terrorist organisation Islamic State of Iraq and the Levant."
  terrorism.1.o1: "I thought ISIL was over?"
@@ -228,9 +245,13 @@
  terrorism.5.d: "On February 14, 2018, a gunman opened fire with a semi-automatic rifle at Marjory Stoneman Douglas High School in Parkland, Florida, killing seventeen students and staff members and injuring seventeen others. Witnesses identified Nikolas Cruz, a nineteen-year-old expelled student, as the assailant. Cruz fled the scene on foot by blending with other students. He was arrested without incident about an hour later in nearby Coral Springs. Cruz's killing spree is the deadliest high school shooting in United States history, surpassing the Columbine High School massacre on April 20, 1999."
  terrorism.5.o1: "Thoughts and prayers!"
  terrorism.5.o2: "A very dark day.."
+
+ #France
  france.1.t: "Notre-Dame de Paris fire"
  france.1.d: "On the 15th of April 2019, a structure fire broke out beneath the roof of Notre-Dame Cathedral in Paris. By the time it was extinguished, the building's spire and most of its roof had been destroyed and its upper walls severely damaged. Extensive damage to the interior was prevented by its stone vaulted ceiling, which largely contained the burning roof as it collapsed. Three people suffered injuries related to the fire. French president [FRA.GetLeader] has said that the cathedral would be restored, but it has been estimated that restoration could require twenty years or more."
  france.1.o1: "Interesting."
+
+ #Germany
  germany.1.t: "Die Grünen - New Party Leader"
  germany.1.d: "With the incumbent party leadership having reached the end of their term, the party council of the Greens has now nominated a new 2-man leadership. Robert Habeck and Annalena Baerbock will now represent the party officially."
  germany.1.o1: "Interesting."
@@ -241,9 +262,13 @@
  germany.3.d: "After having served honorably in her position for 18 years, CDU leader Angela Merkel has now handed in her resignation, and a leadership election has been called. With challenger Jens Spahn being eliminated in the first round, Saarland CDU leader Annegret Kramp-Karrenbauer and former MP Friedrich Merz are now battling it out over the top post."
  germany.3.o1: "Annegret Kramp-Karrenbauer"
  germany.3.o2: "Friedrich Merz"
+
+ #Armenia
  armenia.1.t: "Republican Party replaces PM Karapetyan"
  armenia.1.d: "In a surprising turn of events, the Republican Party of Armenia has replaced sitting prime minister Karen Karapetyan with none other than outgoing president and former prime minister Serzh Sargsyan. This despite having pledged in 2014 not to become prime minister again while supporting a constitutional amendment making it possible. Opposition figures are denouncing the government's actions as a power-grab and unrest is brewing."
  armenia.1.o1: "This won't be very popular...."
+
+ #Brexit
  brexit.1.t: "Brexit"
  brexit.1.d: "After inconclusive efforts by Pro-Europeanists to stop Brexit, the Act has now come into effect and the United Kingdom of Great Britain and Northern Ireland has officially declared its departure from the European Union. Eurosceptics are celebrating the news in full force."
  brexit.1.o1: "Finally, it is over."
@@ -263,6 +288,8 @@
  brexit.5.t: "Britain For Europe"
  brexit.5.d: "With the results of the second Brexit referendum coming in, it is now clear that the people have switched their support, as Brexit is now opposed by a majority of voters. This means that the United Kingdom could end the Brexit process legally and continue the EU membership."
  brexit.5.o1: "Really?"
+
+ #Socotra
  socotra.1.t: "UAE takeover of Socotra"
  socotra.1.d: "With the Yemeni Civil War still raging, the Armed Forces of the United Arab Emirates have seized military control of the valuable Yemeni island of Socotra in the Arabian Sea. Yemen's Foreign Ministry is protesting this violation of their sovereignty, and Saudi Arabia has demanded the withdrawal of UAE forces."
  socotra.1.o1: "Troubling!"
@@ -274,9 +301,13 @@
  socotra.3.d: "After the recent seizure of Socotra by the UAE Armed Forces, the decision has now been made to officially declare the territory a new Emirate. Yemen has cut off all relations with the United Arab Emirates, and there is discussion of foreign intervention."
  socotra.3.o1: "An 8th Emirate?"
  socotra.3.o2: "This is an invasion!"
+
+ #Romania
  romania.1.t: "Mihai Tudose Resigns"
  romania.1.d: "After a series of scandals, incumbent PM Mihai Tudose has submitted his resignation and PSD politician Viorica Dancila has been chosen for his replacement. With PSD as the largest party, Dancila is more than likely to be the next Prime Minister."
  romania.1.o1: "A great accomplishment!"
+
+ #Japan
  japan.1.t: "2018 LDP leadership election"
  japan.1.d: "With incumbent leader Shinzo Abe's term as party President running out, a leadership election has been called. Incumbent Shinzo Abe is running for re-election, challenged by veteran politician Shigeru Ishiba. With LDP historically having a significant role in Japanese politics, this election most likely determines the next Prime Minister." 
  japan.1.a: "Shinzo Abe"
@@ -284,20 +315,28 @@
  japan.2.t: "2019 Imperial Transition"
  japan.2.d: "After 30 years on the Chrysanthemum Throne, Emperor Akihito abdicated on 30 April 2019, being the first Japanese emperor to do so since 1817. This marked the end of the Heisei era and the inception of the Reiwa era, and will precipitate numerous festivities leading up to the accession of his son and successor, Emperor Naruhito."
  japan.2.a: "Congratulations to Naruhito!"
+
+ #Czechia
  czechia.1.t: "2018 ČSSD leadership election"
  czechia.1.d: "After previous leader Bohuslav Sobotka resigned from his post, Milan Chovanek took over as acting leader. A leadership election was called, and the two candidates are Jan Hamacek and Jiri Zimola. Who will take over from Chovanek?"
  czechia.1.a: "Jan Hamacek"
  czechia.1.b: "Jiri Zimola"
+
+ #Italy
  italy.1.t: "Conte Cabinet"
  italy.1.d: "As part of the new coalition deal between the Five Star Movement and Lega Nord, M5S-affiliated independent Giuseppe Conte will take up the office of Prime Minister, while the 2 parties both get a deputy Prime Minister in the new Conte Cabinet."
  italy.1.a: "Populism is back!"
  italy.2.t: "Conte Cabinet"
  italy.2.d: "After a heated government formation in Italy, the populist Five Star Movement and the far-right Lega Nord have struck a coalition deal. M5S-affiliated independent Giuseppe Conte will head the new populist, eurosceptic government as Prime Minister, while Matteo Salvini of Lega Nord and Luigi Di Maio of M5S are both Deputy Prime Minister. Salvini has vowed to crack down on immigration, while Di Maio has vowed to focus on welfare."
  italy.2.a: "A win for populism, no doubt!"
+
+ #Spain
  spain.1.t: "2018 PP leadership election"
  spain.1.d: "After previous party leader Mariano Rajoy resigned on the 5th of June, a leadership election was called. While many candidates entered, only two made it to the final round. These are Pablo Casado and Soraya Sáenz de Santamaría. Who wins the final round?"
  spain.1.a: "Pablo Casado"
  spain.1.b: "Soraya Sáenz de Santamaría"
+
+ #Generic News
  news.1.t: "[Root.GetAdjective] Government Overthrown"
  news.1.d: "The government in [Root.GetName] has been forced to resign. Popular unrest, as well as military intervention, has created a new government, one backed by the people. Will stability return to [Root.GetNameDef]?"
  news.1.o1: "OK"
@@ -449,10 +488,14 @@
  news.108.o2: "Weakness."
  news.UNSC.acknowledged: "Acknowledged."
  news.UNSC.stop: "Stop informing me of individual UNSC votes."
+
+ #Olympic Games
  olympic_games.option: "The games are concluded."
  olympic_games.1.t: "XXIII Olympic Winter Games"
  olympic_games.1.d: "The XXIII Olympic Winter Games was an international winter multi-sport event that was held between 9 and 25 February 2018 in Pyeongchang County, Gangwon Province, South Korea, with the opening rounds for certain events held on 8 February 2018, the eve of the opening ceremony. Pyeongchang was elected as the host city in July 2011, during the 123rd IOC Session in Durban, South Africa."
  political.o.movingOn: "Good for them."
+
+ #Political
  political.0.t: "Party Support System"
  political.0.d: "Millennium Dawn utilizes a Party Support system through National Spirits that allows you to keep track of what your citizens think of their political parties right now. It will not be easy to convince the voters of a revolutionary new idea - unless a change in your country, be it natural or guided by you, makes them reconsider their positions seriously and thoroughly.\n\nCountries will automatically and dynamically receive these drifts and popularities by pressing the button below."
  political.0.o1: "Let's go!"
@@ -518,22 +561,16 @@
  political.23.d: "Our democratic socialists have gathered today to demand equality in the workplace, the abolishment of racism and the fight against right-wing extremist forces."
  political.24.t: "Major Communist Rally"
  political.24.d: "'The world has been run by capitalists for too long! Revolution! Revolution!'\n\nOur communist movements have gathered in the capital. Their central demands boil down to the destruction of capitalism, the removal of the influence of money, followed then by the removal of money itself; and the establishment of a new and futuristic state designed to help the many, not the few."
+
+ #Generic
  generic.1.t: "Leader of the Opposition slams government"
  generic.1.d: "In a powerful speech in Parliament, the Leader of the Opposition has denounced the unpopular government, calling us liars and hypocrites. While this is obviously unfounded, the unhappy public are buying it, and the government parties are losing support in the polls."
  generic.1.a: "Sad!"
  generic.2.t: "Head of Government slams opposition"
  generic.2.d: "In a powerful speech in Parliament, the Head of Government has denounced the opposition group, exposing their lies and deceit. With people relatively happy and content, it seems the government parties are making gains in the polls."
  generic.2.a: "Gotcha!"
- russia.1.t: "Russia proposes Union State"
- russia.1.d: "The Russian Federation has come to us with an interesting proposal. Due to the fact that we share history, language and culture, the new government in Russia wishes to unify our 2 nations into the Union State of Russia and Belarus. It will destroy our national sovereignty but should we even exist in the first place?"
- russia.1.o1: "Accept"
- russia.1.o2: "Reject"
- russia.2.t: "Belarus accepts Union State"
- russia.2.d: "Belarus has accepted the Union State proposal. The Russian Federation and the Republic of Belarus will today merge into the Union State of Russia and Belarus."
- russia.2.o1: "Declare the Union State!"
- russia.3.t: "Belarus rejects Union State"
- russia.3.d: "Belarus has responded to our proposal with a straight no and an announcement that their national sovereignty will always come first. Our government has now voted to de-recognize the Minsk regime and declare the Union State without consent from Minsk."
- russia.3.o1: "Declare the Union State!"
+
+ #Turkey
  turkey.1.t: "Successful Operation Olive Branch"
  turkey.1.d: "Death to Rojava! Death to the PKK! The Turkish Armed Forces are currently parading in Afrin and the YPG is being cleared from the region. We cannot administer this land ourselves however. We have to choose a local Syrian force to our liking. However, with some effort we could make the TAF occupy it directly."
  turkey.1.o1: "Hand over Afrin to the Regime."
@@ -551,6 +588,8 @@
  turkey.5.t: "Operation Olive Branch"
  turkey.5.d: "Today, the Turkish Armed Forces have launched an operation to eliminate the presence of the YPG militia from the Kurdish enclave of Afrin in Syria. Assisting the TAF are Syrian opposition fighters, mainly associated with the Free Syrian Army. The regime in Damascus has protested the invasion and the YPG has mobilized to protect the region."
  turkey.5.o1: "Is this legal?"
+
+ #Azerbaijan
  azerbaijan.1.t: "Azerbaijan launches Operation Iron Fist"
  azerbaijan.1.d: "In an unprecedented escalation of hostilities in the disputed Nagorno-Karabakh region, the Azeri military has declared the start of Operation Iron Fist. The operation aims to drive out the forces of the Armenia-friendly Republic of Artsakh from occupied Azeri territori surrounding the core region of Nagorno-Karabakh itself. President [AZR.GetLeader] of Azerbaijan is said to have declared \"total war\" against the \"Armenian terrorist scum\", while Prime Minister [ARM.GetLeader] of Armenia and President [NGK.GetLeader] of Artsakh vow to repel the \"illegal Azeri-Turkish invasion.\" of their \"rightful territories\". With the almost 30-year long ceasefire finally broken, it seems a final end to the conflict is within reach."
  azerbaijan.1.o1: "Drive out the terrorist scum!"
@@ -567,16 +606,24 @@
  azerbaijan.5.t: "Shameful Defeat"
  azerbaijan.5.d: "Despite initial hopes of holding back the advance of Operation Iron Fist, our forces were routed on the battlefield and were forced to regroup around Stepanakert. With [AZR.GetLeader]'s forces capturing Lachin, we are now cut off from our friends in Armenia."
  azerbaijan.5.o1: "Damn it!"
+
+ #Ukraine
  ukraine.1.t: "Ceasefire Request"
  ukraine.1.d: "With our complete defeat in Donetsk and Luhansk oblasts, the rebels have now sent us a official ceasefire request. The armistice stipulates that they are granted control over the 2 oblasts, which we have to withdraw from, while they abandon any territory they may hold in our lands. The second term is a cessation of hostilities."
  ukraine.1.o1: "Accept"
  ukraine.1.o2: "Reject"
+
+ #Slovakia
  slovakia.1.t: "Murder of Ján Kuciak"
  slovakia.1.d: "Today, journalist Ján Kuciak was murdered in his house by gunshot. The murder is suspected to have been ordered by the government, as he was investigating corruption in top-level politicians. Smer-SD leader Fico has resigned in response, however the government coalition has been preserved and deputy Peter Pellegrini has instead assumed leadership of Smer-SD."
  slovakia.1.o1: "Unfortunate."
+
+ #Peru
  peru.1.t: "Pedro Pablo Kuczynski Resigns"
  peru.1.d: "After several impeachment attempts, President Pedro Pablo Kuczynski of the Peruanos Por el Kambio party has today handed in his resignation. With multiple corruption charges and heavy parliamentary opposition from Keiko Fujimori's Fuerza Popular, the President has handed over his job to First Vice President Martin Vizcarra."
  peru.1.o1: "Corruption is not acceptable!"
+
+ #Australia
  australia.1.t: "Centre Alliance"
  australia.1.d: "After the departure of Nick Xenophon from his NXT party, the party's name has been officially changed from the Nick Xenophon Team to the Centre Alliance. The party politics will remain the same, only with a new name."
  australia.1.a: "What?"
@@ -591,10 +638,14 @@
  australia.4.t: "2019 Australian Labor Party leadership election"
  australia.4.d: "With veteran Labor leader Bill Shorten resigning from his office, a leadership election has been called. Only one candidate has entered the election, Anthony Albanese."
  australia.4.a: "Anthony Albanese"
+ 
+ #Swaziland
  swaziland.1.t: "The Kingdom of Eswatini"
  swaziland.1.d: "Today, the tiny African country of Swaziland changed its name. Due to constant confusion with Switzerland and even Sweden, King [SWZ.GetLeader] has authorized a proposal changing the country's name to the Kingdom of Eswatini, meaning Land of the Swazis. Will this finally separate them from Switzerland and Sweden?"
  swaziland.1.a: "Switzerland has a new name?"
  swaziland.1.b: "Finally!"
+
+ #Italy
  israel.1.t: "Blue and White"
  israel.1.d: "Aiming to finally form a major opposition against Likud, the liberal-centrist political alliance Blue and White has now been established. The alliance is comprised of Benny Gantz's Israel Resilience Party, Yair Lapid's Yesh Atid and Moshe Ya'alon's Telem, and aims to enter the Knesset in April's elections, with Benny Gantz as their candidate for Prime Minister."
  israel.1.a: "Will Gantz be PM?"
@@ -609,9 +660,13 @@
  israel.4.t: "Kulanu merges with Likud"
  israel.4.d: "Originally a splinter group from Likud, Moshe Kahlon's Kulanu party has today approved a controversial merger with Benjamin Netanyahu's Likud. In exchange for Kulanu's reentry into Likud, Moshe Kahlon has been promised the post of Finance Minister within a future Netanyahu cabinet. With the Kulanu party already included in Netanyahu's coalition, the merger increases Likud's parliamentary representation, but without affecting the political situation as a whole. Likud has however dropped by one percentage in the polls, due to former Kulanu voters leaving for other parties."
  israel.4.a: "Doesn't change a thing."
+
+ #Oman
  oman.1.t: "Death of Qaboos bin Said"
  oman.1.d: "Today is a sad day for the entire nation. Sultan of Oman and Head of the Al Said dynasty, has today tragically passed away. After ruling for 50 years, his legacy remains strong. Power has been handed over to his cousin, Haitham bin Tariq."
  oman.1.a: "The nation mourns!"
+
+ #Eritrea-Ethiopia
  eritrea_ethiopia.1.t: "Ethiopian Peace Proposal"
  eritrea_ethiopia.1.d: "The government in Addis Ababa have sent us a proposal that would end the Eritrean-Ethiopian border conflict. They are willing to withdraw from and drop their claims on Badme in exchange for the reestablishment of relations and recognition. If we accept, a bright future would be ahead of us. We could however refuse this offer, sparking further tensions."
  eritrea_ethiopia.1.o1: "Accept"
@@ -619,6 +674,8 @@
  eritrea_ethiopia.2.t: "Eritrea–Ethiopia peace summit"
  eritrea_ethiopia.2.d: "Ever since the 2000 Algiers Agreement, Ethiopia and Eritrea have not had diplomaatic relations, and no trade has taken place between the nations. This has now changed however, as the Ethiopian government proposed to end the dispute, mostly over the region of Badme. Eritrea has accepted the offer, meaning that Badme has been returned to Eritrea and diplomatic relations have been re-established."
  eritrea_ethiopia.2.o1: "Hooray for peace!"
+
+ #Macedonia
  macedonia.1.t: "Prespa Agreement"
  macedonia.1.d: "After negotiations between diplomats from the Hellenic Republic and the Republic of Macedonia, an agreement has been reached where the Republic of Macedonia changes its name to the Republic of North Macedonia. This would ease the tensions between our 2 nations and solve the naming dispute. Do we ratify this?"
  macedonia.1.o1: "Accept"
@@ -626,6 +683,8 @@
  macedonia.2.t: "Prespa Agreement"
  macedonia.2.d: "After negotiations between diplomats from the Hellenic Republic and the Republic of Macedonia, an agreement has been reached where the Republic of Macedonia changes its name to the Republic of North Macedonia. The government in Skopje has ratified the agreement and the country will henceforth be named North Macedonia."
  macedonia.2.o1: "Accept"
+
+ #United Nations
  united_nations.0.t: "Security Council Intervention"
  united_nations.0.d: "A new war is being waged on the world. The United Nations Security Council has to consider stepping in to secure the peace."
  united_nations.0.o1: "Stop the aggressor!"
@@ -646,6 +705,8 @@
  united_nations_vote.o.ready: "I am ready to take my decision."
  united_nations_vote.o.refuse: "Against"
  united_nations_vote.o.veto: "Veto!"
+
+ #United States
  usa.1.t: "2020 Democratic Party presidential primaries"
  usa.1.d: "After a long season of local Democratic primaries for this year's coming presidential election, the field has finally been narrowed down to only 2 candidates. Who will take home the nomination at the annual Democratic National Convention: moderate former vice president Joe Biden, or progressive senator Bernie Sanders?"
  usa.1.o1: "Joe Biden"
@@ -657,6 +718,8 @@
  usa.3.t: "Ted Kaczynski Pardoned"
  usa.3.d: "In a strange turn of events, President [USA.GetLeader] has announced a presidential pardon for Ted Kaczynski, the infamous Unabomber. The public is outraged with this decision, calling the President unstable, dumb and insane. In another strange turn of events, the Green Party has nominated Kaczynski for the next presidential election. Will the Unabomber become President?"
  usa.3.o1: "Oh, lord."
+
+ #Eurovision Song Contest
  eurovision.1.t: "Eurovision Song Contest 2018"
  eurovision.1.d: "The Eurovision Song Contest 2018 was the 63rd edition of the annual Eurovision Song Contest. It took place for the first time in Portugal following the country's first victory at the 2017 contest in Kiev, Ukraine with the song Amar pelos dois, performed by Salvador Sobral. The contest was held at the Altice Arena in Lisbon, and consisted of two semi-finals on 8 and 10 May, and the final on 12 May 2018. Forty-three countries participated in the contest, equalling the record of the 2008 and 2011 editions. Russia returned after their absence from the previous edition, and for the first time since 2011, no country withdrew from the contest. The winner was Israel with the song Toy, performed by Netta. This was Israel's fourth victory in the contest, following their wins in 1978, 1979, and 1998."
  eurovision.1.o1: "A great day for our nation!"
@@ -666,6 +729,8 @@
  eurovision.2.d: "The Eurovision Song Contest 2019 was the 64th edition of the annual Eurovision Song Contest. The contest took place in Tel Aviv, Israel, following Israel's victory at the 2018 contest in Lisbon, Portugal, with the song Toy, performed by Netta. Forty-one countries took part in the contest, with Bulgaria and Ukraine absent. The winner was the Netherlands with the song Arcade, performed by Duncan Laurence. This was the Netherlands' fifth victory in the contest, following their wins in 1957, 1959, 1969 and 1975;"
  eurovision.2.o1: "We won!"
  eurovision.2.o2: "This is getting old.."
+
+ #Syria
  syria.1.t: "End of the Syrian Civil War"
  syria.1.d: "Today marks the end of the deadliest war of the 21st century. The Free Syrian Army, Al-Qaeda and the Islamic State have all been defeated by the Syrian Arab Army and the Syrian Civil War is now over, with a government victory."
  syria.1.o1: "Dictatorship prevails!"
@@ -675,12 +740,16 @@
  syria.3.t: "Islamic State Takeover in Syria"
  syria.3.d: "In a major surprise, the Islamic State of Iraq and the Levant has succeeded in seizing control over Syrian territory. the Syrian Arab Army has been defeated in open combat and the Opposition completely eradicated. International powers are discussing a counter-invasion."
  syria.3.o1: "How???"
+
+ #Ethiopia
  ethiopia.1.t: "Resignation of Hailemariam Desalegn"
  ethiopia.1.d: "For both personal and political reasons, Prime Minister Desalegn handed today in his resignation and fellow party member Abiy Ahmed has taken up his positions of party leader and Prime Minister."
  ethiopia.1.o1: "Oh, well!"
  ethiopia.2.t: "Resignation of Hailemariam Desalegn"
  ethiopia.2.d: "Due to many underlying causes such as the 2016 riots and political instability, Ethiopian Prime Minister Desalegn handed today in his resignation and fellow EPRDF member Abiy Ahmed has been chosen to succeed him as both party leader and Prime Minister."
  ethiopia.2.o1: "Oh, well!"
+
+ #New Caledonia
  new_caledonia.1.t: "New Caledonian independence referendum, 2018"
  new_caledonia.1.d: "As scheduled by the 1998 Nouméa Accord, today the territory of New Caledonia will hold an independence referendum on whether to remain a territory or become their own sovereign state."
  new_caledonia.1.o1: "We will respect the results!"
@@ -693,29 +762,37 @@
  new_caledonia.4.t: "New Caledonian Independence"
  new_caledonia.4.d: "After a heated referendum, the people of New Caledonia have voted to separate from the French Republic. This comes as another blow to the already weakened French overseas empire, while the locals are celebrating their new independence."
  new_caledonia.4.o1: "Democracy strikes again!"
+
+ #South Africa
  south_africa.1.t: "Resignation of Jacob Zuma"
  south_africa.1.d: "After the 2017 nomination of Cyril Ramaphosa as leader of the ANC, as well as corruption charges, president Zuma has now resigned and it is expected that new ANC leader will take up the position of President."
  south_africa.1.o1: "Corruption is not acceptable."
  south_africa.2.t: "Resignation of Jacob Zuma"
  south_africa.2.d: "Facing a strong motion of no confidence in parliament, as well as corruption charges and a new leader for the African National Congress, President Jacob Zuma of South Africa has today handed in his resignation. New ANC leader Cyril Ramaphosa has declared that he will take up the position of President."
  south_africa.2.o1: "I miss the rains..."
+
+ #Kazakhstan
  kazakhstan.1.t: "Resignation of Nursultan Nazarbayev"
  kazakhstan.1.d: "As the last Soviet-era leader, President Nazarbayev has stepped down from his 30-year old reign. As by procedure, Senate president Tokayev will take up the remainder of Nazarbayev's term, with the government remaining unchanged. In honor of the old president, the capital of Astana will be renamed to Nur-Sultan."
  kazakhstan.1.o1: "Bye bye!"
  kazakhstan.2.t: "Resignation of Nursultan Nazarbayev"
  kazakhstan.2.d: "As the last Soviet-era leader, President Nazarbayev of Kazakhstan has stepped down from his 30-year old reign. Senate president Tokayev will take up the remainder of Nazarbayev's term, with the government remaining unchanged. In honor of the old president, the capital of Astana will be renamed to Nur-Sultan."
  kazakhstan.2.o1: "A new day!"
+
+ #Venezuela
  venezuela.1.t: "Juan Guaidó declared president"
  venezuela.1.d: "Claiming the last presidential elections to be rigged, the opposition-led National Assembly has declared majority leader Juan Guaidó to be acting president. This is of course, very unconstitutional and needs to be stopped!"
  venezuela.1.o1: "Let him play his little game.."
  venezuela.2.t: "Venezuelan presidential crisis"
  venezuela.2.d: "A crisis is rapidly erupting in Venezuela. Claiming the last presidential elections to be rigged, the opposition-led National Assembly has declared majority leader Juan Guaidó to be acting president. Countries are rapidly declaring their support for either politician. Is this a new Cold War?"
  venezuela.2.o1: "We hope for a peaceful resolution!"
+
+ #Botswana
  botswana.1.t: "Mokgweetsi Masisi Elected"
  botswana.1.d: "With incumbent president Ian Khama reaching the end of his second term, the office has now been handed over to Vice President Mokgweeti Masisi. Due to term limits, Khama could not seek re-election."
  botswana.1.a: "Not so sure about this!"
- unit_leader.1.t: "[From.GetName] Falls Ill"
- unit_leader.1.d: "In [From.GetHerHis] service to [From.From.GetNameDef], it seems [From.GetRank] [From.GetName] has pushed [From.GetHerselfHimself] too far. As a result of the bad climate in their operational area, the [From.GetRank] has now fallen ill, and will likely need some time to recover. Until [From.GetSheHe] gets well, [From.GetSheHe] will not be performing at [From.GetHerHis] usual level."
+
+ #Myanmar
  myanmar.1.t: "Min Aung Hlaing launches military coup d'etat"
  myanmar.1.d: "Calling the recent elections in which Aung San Suu Kyi's NLD was re-elected to power rigged, Tatmadaw commander Min Aung Hlaing today led a coup that ousted the government and took control of all vital buildings in Naypyidaw. Despite most government officials being arrested, several NLD lawmakers have fled the country and established a government in exile. With the new government breaking the Nationwide Ceasefire Agreement with the various ethnic separatist armies in our nation, it is likely that our nation will be thrown into civil war once more."
  myanmar.1.o1: "Here we go again."

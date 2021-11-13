@@ -84,9 +84,10 @@ add_ideas = {
 	population_growth_steady
 	christianity
 	presidential_system
+	federal
 }
 
-set_country_flag = christianity
+set_country_flag = catholic
 
 #Economy
 set_variable = { income_tax = 35 }
@@ -123,11 +124,6 @@ set_popularities = {
     conservative = 45.13
     social_liberal = 7.41
     communist = 0.77
-}
-
-add_opinion_modifier = {
-	target = ENG
-	modifier = falkland_conflict_argentina
 }
 
 create_country_leader = {

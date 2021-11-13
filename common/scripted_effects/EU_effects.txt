@@ -13,14 +13,8 @@ EU_membership_termination = {
 	hidden_effect = { news_event = news.4 }
 	hidden_effect = {
 		every_country = {
-			remove_opinion_modifier = { target = ROOT modifier = european_economic_project }
 			remove_opinion_modifier = { target = ROOT modifier = european_union_member }
 			remove_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
-			remove_opinion_modifier = { target = ROOT modifier = european_commitment }
-			#reverse_remove_opinion_modifier = { target = ROOT modifier = european_economic_project }
-			#reverse_remove_opinion_modifier = { target = ROOT modifier = european_union_member }
-			#reverse_remove_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
-			#reverse_remove_opinion_modifier = { target = ROOT modifier = european_commitment }
 		}
 	}
 	every_country = {

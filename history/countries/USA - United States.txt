@@ -87,7 +87,7 @@ set_technology = {
 	nukes = 1
 }
 
-set_country_flag = christianity
+set_country_flag = protestant
 
 add_opinion_modifier = {
 	target = AST
@@ -106,7 +106,7 @@ add_opinion_modifier = {
 
 add_opinion_modifier = {
 	target = CAN
-	modifier = american_canadian_friendship
+	modifier = military_cooperation
 }
 
 add_opinion_modifier = {
@@ -177,7 +177,7 @@ CHI = { give_military_access = USA }
 add_ideas = {
 	idea_united_nations_security_council_member
     nuclear_weapons_state
-	laissez_faire
+	free_trade
 	population_growth_steady
 	land_of_the_free
 	american_militarism
@@ -188,6 +188,7 @@ add_ideas = {
 	USA_second_amendment
 	USA_congress_authority
 	idea_oligarchy
+	federal
 }
 
 if = {

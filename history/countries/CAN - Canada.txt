@@ -86,6 +86,7 @@ add_ideas = {
 	quebec_separatism
 	commonwealth_of_nations_member
 	parliamentary_system
+	federal
 }
 
 #House of Commons
@@ -107,7 +108,7 @@ set_country_flag = has_coalition
 set_country_flag = coalition_social_liberal
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
-set_country_flag = christianity
+set_country_flag = protestant
 
 set_politics = {
 	ruling_party = social_liberal
@@ -140,7 +141,7 @@ add_opinion_modifier = {
 
 add_opinion_modifier = {
 	target = USA
-	modifier = american_canadian_friendship
+	modifier = military_cooperation
 }
 
 add_opinion_modifier = {

@@ -60,8 +60,8 @@ country_event = {
 		name = russia.3.o1
 		set_cosmetic_tag = SOV_UNIONSTATE
 		BLR = { every_owned_state = { add_claim_by = ROOT } }
-		add_opinion_modifier = { target = BLR modifier = large_decrease }
-		BLR = { add_opinion_modifier = { target = BLR modifier = large_decrease } }
+		add_opinion_modifier = { target = BLR modifier = rival }
+		BLR = { add_opinion_modifier = { target = BLR modifier = rival } }
 		if = {
 			limit = {
 				is_in_faction_with = BLR

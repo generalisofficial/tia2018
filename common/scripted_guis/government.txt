@@ -231,7 +231,9 @@ scripted_gui = {
 				}
 			}
 			resign_button_click_enabled = {
-				always = yes
+				NOT = {
+					has_idea = swiss_political_system
+				}
 			}
 		}
 

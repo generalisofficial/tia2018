@@ -88,14 +88,14 @@ set_technology = {
 	nukes = 1
 }
 
-set_country_flag = christianity
+set_country_flag = catholic
 
 create_equipment_variant = { name = "Mirage 2000N" type = jet_bomber_equipment_2 upgrades = { plane_engine_upgrade = 5 } }
 
 add_ideas = {
     nuclear_weapons_state
 	population_growth_stagnation
-	laissez_faire
+	free_trade
 	idea_eu_member
 	the_euro
 	idea_united_nations_security_council_member
@@ -151,12 +151,12 @@ set_popularities = {
 
 add_opinion_modifier = {
 	target = ENG
-	modifier = entente_cordiale
+	modifier = treaty_of_friendship
 }
 
 add_opinion_modifier = {
 	target = GER
-	modifier = franco_german_friendship
+	modifier = treaty_of_friendship
 }
 
 add_opinion_modifier = { target = PRK modifier = rival }

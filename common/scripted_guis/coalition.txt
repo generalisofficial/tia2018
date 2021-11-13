@@ -130,6 +130,21 @@ scripted_gui = {
 						add = 1
 						reactionary > 0.39
 					}
+					modifier = {
+						add = 100
+						reactionary > 0.01
+						has_idea = swiss_political_system
+						OR = {
+							AND = {
+								date > 2019.1.1
+								date < 2020.1.1
+							}
+							AND = {
+								date > 2021.1.1
+								date < 2022.1.1
+							}
+						}
+					}
 				}
 			}
 			party6_click = {
@@ -172,6 +187,13 @@ scripted_gui = {
 						add = 1
 						classical_liberal > 0.39
 					}
+					modifier = {
+						add = 100
+						classical_liberal > 0.01
+						has_idea = swiss_political_system
+						date > 2022.1.1
+						date < 2023.1.1
+					}
 				}
 			}
 			party8_click = {
@@ -213,6 +235,13 @@ scripted_gui = {
 					modifier = {
 						add = 1
 						social_democrat > 0.39
+					}
+					modifier = {
+						add = 100
+						social_democrat > 0.01
+						has_idea = swiss_political_system
+						date > 2020.1.1
+						date < 2021.1.1
 					}
 				}
 			}

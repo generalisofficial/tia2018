@@ -1,5 +1,132 @@
 domestic_affairs = {
 
+	establish_democracy = {
+		
+		visible = {
+			is_democracy = no
+		}
+		
+		icon = politics
+		
+		cost = 100
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = communist
+				}
+				set_politics = {
+					ruling_party = communist
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic_socialist
+				}
+				set_politics = {
+					ruling_party = democratic_socialist
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = progressive
+				}
+				set_politics = {
+					ruling_party = progressive
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_democrat
+				}
+				set_politics = {
+					ruling_party = social_democrat
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_liberal
+				}
+				set_politics = {
+					ruling_party = social_liberal
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = classical_liberal
+				}
+				set_politics = {
+					ruling_party = classical_liberal
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservative
+				}
+				set_politics = {
+					ruling_party =  conservative
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				set_politics = {
+					ruling_party = reactionary
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchist
+				}
+				set_politics = {
+					ruling_party = monarchist
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalist
+				}
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascist
+				}
+				set_politics = {
+					ruling_party = fascist
+					elections_allowed = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = islamist
+				}
+				set_politics = {
+					ruling_party = islamist
+					elections_allowed = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
 	hold_snap_election = {
 		
 		visible = {
@@ -14,7 +141,7 @@ domestic_affairs = {
 		
 		cost = 25
 		
-		days_re_enable = 365
+		days_re_enable = 60
 		
 		complete_effect = {
 			hold_election = ROOT

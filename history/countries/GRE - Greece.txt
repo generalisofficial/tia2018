@@ -88,12 +88,11 @@ add_ideas = {
 	parliamentary_system
 }
 
-set_country_flag = christianity
+set_country_flag = catholic
 
 give_guarantee = CYP
 add_opinion_modifier = { target = TUR modifier = rival }
-add_opinion_modifier = { target = MAC modifier = rival }
-add_opinion_modifier = { target = GRE modifier = diplomatic_proximity }
+add_opinion_modifier = { target = MAC modifier = macedonia_naming_dispute }
 
 #Hellenic Parliament
 set_variable = { communist_seats = 5.6 }

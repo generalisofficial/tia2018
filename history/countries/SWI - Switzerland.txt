@@ -86,23 +86,24 @@ add_ideas = {
 	population_growth_decline
 	swiss_political_system
 	neutrality_idea
-	laissez_faire
+	free_trade
 	limited_conscription
+	federal
 }
 
-set_country_flag = christianity
+set_country_flag = catholic
 
 give_guarantee = LIC
 
 #Federal Assembly
-set_variable = { communist_seats = 0 }
+set_variable = { communist_seats = 0.5 }
 set_variable = { democratic_socialist_seats = 0 }
-set_variable = { progressive_seats = 7.1 }
-set_variable = { social_democrat_seats = 30.9 }
-set_variable = { social_liberal_seats = 4.6 }
-set_variable = { classical_liberal_seats = 16.4 }
-set_variable = { conservative_seats = 11.6 }
-set_variable = { reactionary_seats = 29.4 }
+set_variable = { progressive_seats = 5.5 }
+set_variable = { social_democrat_seats = 21.5 }
+set_variable = { social_liberal_seats = 3.5 }
+set_variable = { classical_liberal_seats = 16.5 }
+set_variable = { conservative_seats = 18 }
+set_variable = { reactionary_seats = 34.5 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -121,23 +122,25 @@ add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-    last_election = "2015.10.18"
-	election_frequency = 48
+    last_election = "2018.1.1"
+	election_frequency = 12
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 29.4
-    conservative = 11.6
-    classical_liberal = 16.4
-    social_liberal = 4.6
-    social_democrat = 30.9
-    progressive = 7.1
+    reactionary = 27.51
+    conservative = 15.5
+    classical_liberal = 14.49
+    social_liberal = 8
+    social_democrat = 19.5
+    progressive = 14
+	communist = 0.5
+	democratic_socialist = 0.5
 }
 
 create_country_leader = {
-	name = "Albert Rösti"
-	picture = "Albert_Rosti.dds"
+	name = "Ueli Maurer"
+	picture = "Ueli_Maurer.dds"
 	ideology = reactionary_ideology
 }
 
@@ -148,8 +151,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Petra Gössi"
-	picture = "Petra_Gossi.dds"
+	name = "Ignazio Cassis"
+	picture = "Ignazio_Cassis.dds"
 	ideology = libertarian
 }
 

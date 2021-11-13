@@ -80,7 +80,7 @@ set_technology = {
 	excavation1 = 1
 }
 
-set_country_flag = christianity
+set_country_flag = protestant
 
 add_ideas = {
 	population_growth_stagnation
@@ -115,6 +115,8 @@ add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
+add_opinion_modifier = { target = GER modifier = military_cooperation }
+
 set_politics = {
 	ruling_party = classical_liberal
 	last_election = "2017.3.17"
@@ -132,11 +134,6 @@ set_popularities = {
     progressive = 9.33
     democratic_socialist = 6
     islamist = 2.66
-}
-
-add_opinion_modifier = {
-	target = GER
-	modifier = german_dutch_military_cooperation
 }
 
 create_country_leader = {

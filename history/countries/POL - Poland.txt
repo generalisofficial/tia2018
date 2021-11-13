@@ -83,7 +83,7 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	volunteer_only
-	laissez_faire
+	free_trade
 	visegrad_group_member
 	idea_eu_member
 	parliamentary_system
@@ -91,7 +91,7 @@ add_ideas = {
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 730 }
 
-set_country_flag = christianity
+set_country_flag = catholic
 
 #Sejm
 set_variable = { communist_seats = 0 }
@@ -131,7 +131,7 @@ set_popularities = {
 }
 
 add_opinion_modifier = { target = CZE modifier = visegrad_group }
-add_opinion_modifier = { target = HUN modifier = visegrad_group modifier = declaration_of_friendship }
+add_opinion_modifier = { target = HUN modifier = visegrad_group modifier = treaty_of_friendship }
 add_opinion_modifier = { target = SLO modifier = visegrad_group }
 
 create_country_leader = {

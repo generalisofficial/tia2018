@@ -526,6 +526,33 @@ ideas = {
 	}
 
 	######################################
+	#	CENTRALIZATION
+	######################################
+	
+    centralization = {
+		law = yes
+		
+		unitary = {
+			cost = 750
+			removal_cost = -1
+			level = 1
+
+			default = yes
+		}
+		
+		federal = {
+			cost = 750
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+	}
+
+	######################################
 	#	ELECTORAL SYSTEM
 	######################################
 	
@@ -560,6 +587,24 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.05
+			}
+			
+			cancel_if_invalid = yes
+		}
+
+		swiss_political_system = {
+			cost = 500
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				original_tag = SWI
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.125
+				political_power_factor = -0.25
 			}
 			
 			cancel_if_invalid = yes
@@ -693,7 +738,7 @@ ideas = {
 		lgbt_illegal = {
 			cost = 150
 			removal_cost = -1
-			level = 2
+			level = 1
 			
 			available = {
 			
@@ -705,21 +750,39 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-
 			default = yes
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 100
+					OR = {
+				 		has_government = islamist
+						has_government = fascist
+					}
+			 	}
+				modifier = {
+					factor = 10
+					OR = {
+						has_government = nationalist
+						has_government = reactionary
+					}
+				}
+			}
 		}
 		
 		lgbt_legalized = {
 			cost = 150
 			removal_cost = -1
-			level = 1
+			level = 2
 			
 			available = {
-			
+				NOT = { has_government = islamist }
 			}
 			
 			modifier = {
 				stability_factor = 0.02
+				MONTHLY_POPULATION = -0.02
 			}
 			
 			cancel_if_invalid = no
@@ -739,15 +802,27 @@ ideas = {
 			level = 3
 			
 			available = {
-			
+				NOT = { has_government = progressive }
 			}
 			
 			modifier = {
 				stability_factor = -0.05
 				MONTHLY_POPULATION = 0.05
+				female_random_country_leader_chance = -1
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 25
+					OR = {
+				 		has_government = islamist
+						has_government = fascist
+					}
+			 	}
+			}
 		}
 		
 		family_values = {
@@ -766,6 +841,19 @@ ideas = {
 			cancel_if_invalid = no
 
 			default = yes
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 25
+					OR = {
+				 		has_government = nationalist
+						has_government = reactionary
+						has_government = conservative
+						has_government = communist
+					}
+			 	}
+			}
 		}
 		
 		gender_equality = {
@@ -774,15 +862,30 @@ ideas = {
 			level = 1
 			
 			available = {
-			
+				NOT = { has_government = islamist }
 			}
 			
 			modifier = {
 				stability_factor = 0.05
 				MONTHLY_POPULATION = -0.05
+				female_random_country_leader_chance = 0.5
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 25
+					OR = {
+						has_government = democratic_socialist
+						has_government = progressive
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = classical_liberal
+					}
+			 	}
+			}
 		}
    }
 
@@ -807,7 +910,7 @@ ideas = {
 			}
 			
 			modifier = {
-				#partisan_effect = 0.3
+				resistance_target_on_our_occupied_states = 0.3
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.2
 				political_power_factor = -0.2
@@ -833,7 +936,7 @@ ideas = {
 			}
 			
 			modifier = {
-				#partisan_effect = 0.2
+				resistance_target_on_our_occupied_states = 0.2
 				army_core_defence_factor = 0.15
 				political_power_factor = -0.1
 			}
@@ -858,7 +961,7 @@ ideas = {
 			}
 			
 			modifier = {
-				#partisan_effect = 0.1
+				resistance_target_on_our_occupied_states = 0.1
 				army_core_defence_factor = 0.1
 				political_power_factor = -0.05
 			}
@@ -876,12 +979,6 @@ ideas = {
 			}
 			
 			on_add = {
-			    if = {
-			        limit = {
-				        original_tag = USA
-			        }
-		 	        set_global_flag = terrorism5
-				}
 				custom_effect_tooltip = prohibited_firearms_cost
 				add_to_variable = {
 					total_monthly_expanses = cost_prohibited_firearms
@@ -1460,76 +1557,47 @@ ideas = {
    trade_policy = { 
 		law = yes
 
-		laissez_faire = {
-			available = {
-				OR = {
-					NOT = { has_government = communist }
-				}
-			}
-	
-			cost = 250
-			removal_cost = -1
-			level = 4
-		
-			modifier = {
-				min_export = 0.8
-			}
-		
-			cancel_if_invalid = no
-		}
-	
-		mercantilism = {
-			cost = 250
+		free_trade = {
+			cost = 200
 			removal_cost = -1
 			level = 3
 		
 			modifier = {
-				min_export = 0.5
+				min_export = 0.8
+				trade_opinion_factor = 0.5
 			}
 		
-			default = yes
-		
 			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 50
+					OR = {
+				 		has_government = social_liberal
+						has_government = classical_liberal
+					}
+			 	}
+			}
 		}
 	
-		strict_mercantilism = {
-			cost = 250
+		protectionism = {
+			cost = 200
 			removal_cost = -1
 			level = 2
 		
 			modifier = {
-				min_export = 0.25
+				min_export = 0.4
+				trade_opinion_factor = -0.25
 			}
 		
-			cancel_if_invalid = no
-
-			ai_will_do = {
-				factor = 1
-
-				modifier = {
-					factor = 0
-					
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
-				}
-			}
+			default = yes
+			cancel_if_invalid = yes
 		}
 	
 		isolationism = {
-			available = {
-				OR = { 
-					has_idea = non_member_state
-					OR = {
-						has_government = fascist
-						has_government = communist
-						has_government = islamist
-						has_government = nationalist
-					}
-				}
-			}
 		
-			cost = 250
+			cost = 200
 			removal_cost = -1
 			level = 1
 		
@@ -1537,7 +1605,7 @@ ideas = {
 				min_export = 0
 			}
 		
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 
 			ai_will_do = {
 			   	factor = 1
