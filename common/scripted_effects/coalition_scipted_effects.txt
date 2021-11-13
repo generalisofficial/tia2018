@@ -15,6 +15,54 @@ break_coalition = {
 	clear_variable = ROOT.Coalition
 }
 
+cleanup_coalition = {
+	clr_country_flag = government_chosen
+	clr_country_flag = government_islamist
+	clr_country_flag = government_fascist
+	clr_country_flag = government_nationalist
+	clr_country_flag = government_monarchist
+	clr_country_flag = government_reactionary
+	clr_country_flag = government_conservative
+	clr_country_flag = government_classical_liberal
+	clr_country_flag = government_social_liberal
+	clr_country_flag = government_social_democrat
+	clr_country_flag = government_progressive
+	clr_country_flag = government_democratic_socialist
+	clr_country_flag = government_communist
+	clr_country_flag = coalition_chosen
+	clear_variable = ROOT.NewCoalition
+}
+
+cleanup_seats = {
+	clear_variable = islamist_seats
+	clear_variable = fascist_seats
+	clear_variable = nationalist_seats
+	clear_variable = monarchist_seats
+	clear_variable = reactionary_seats
+	clear_variable = conservative_seats
+	clear_variable = classical_liberal_seats
+	clear_variable = social_liberal_seats
+	clear_variable = social_democrat_seats
+	clear_variable = progressive_seats
+	clear_variable = democratic_socialist_seats
+	clear_variable = communist_seats
+}
+
+cleanup_seats_parliament = {
+	clear_variable = islamist_seats_parliament
+	clear_variable = fascist_seats_parliament
+	clear_variable = nationalist_seats_parliament
+	clear_variable = monarchist_seats_parliament
+	clear_variable = reactionary_seats_parliament
+	clear_variable = conservative_seats_parliament
+	clear_variable = classical_liberal_seats_parliament
+	clear_variable = social_liberal_seats_parliament
+	clear_variable = social_democrat_seats_parliament
+	clear_variable = progressive_seats_parliament
+	clear_variable = democratic_socialist_seats_parliament
+	clear_variable = communist_seats_parliament
+}
+
 update_coalition = {
 	set_variable = {
 		var = ROOT.Coalition
@@ -101,49 +149,56 @@ update_coalition = {
 	create_pie_chart = yes
 }
 
-cleanup_coalition = {
-	clr_country_flag = government_chosen
-	clr_country_flag = government_islamist
-	clr_country_flag = government_fascist
-	clr_country_flag = government_nationalist
-	clr_country_flag = government_monarchist
-	clr_country_flag = government_reactionary
-	clr_country_flag = government_conservative
-	clr_country_flag = government_classical_liberal
-	clr_country_flag = government_social_liberal
-	clr_country_flag = government_social_democrat
-	clr_country_flag = government_progressive
-	clr_country_flag = government_democratic_socialist
-	clr_country_flag = government_communist
-	clr_country_flag = coalition_chosen
-	clear_variable = ROOT.NewCoalition
-}
-
 quickset_parliament = {
-	set_variable = { communist_seats = party_popularity@communist }
+	cleanup_seats = yes
+	set_variable = { communist_seats = party_popularity_100@communist }
 	multiply_variable = { communist_seats = 100 }
-	set_variable = { democratic_socialist_seats = party_popularity@democratic_socialist }
+	round_variable = communist_seats
+	divide_variable = { communist_seats = 100 }
+	set_variable = { democratic_socialist_seats = party_popularity_100@democratic_socialist }
 	multiply_variable = { democratic_socialist_seats = 100 }
-	set_variable = { progressive_seats = party_popularity@progressive }
+	round_variable = democratic_socialist_seats
+	divide_variable = { democratic_socialist_seats = 100 }
+	set_variable = { progressive_seats = party_popularity_100@progressive }
 	multiply_variable = { progressive_seats = 100 }
-	set_variable = { social_democrat_seats = party_popularity@social_democrat }
+	round_variable = progressive_seats
+	divide_variable = { progressive_seats = 100 }
+	set_variable = { social_democrat_seats = party_popularity_100@social_democrat }
 	multiply_variable = { social_democrat_seats = 100 }
-	set_variable = { social_liberal_seats = party_popularity@social_liberal }
+	round_variable = social_democrat_seats
+	divide_variable = { social_democrat_seats = 100 }
+	set_variable = { social_liberal_seats = party_popularity_100@social_liberal }
 	multiply_variable = { social_liberal_seats = 100 }
-	set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
+	round_variable = social_liberal_seats
+	divide_variable = { social_liberal_seats = 100 }
+	set_variable = { classical_liberal_seats = party_popularity_100@classical_liberal }
 	multiply_variable = { classical_liberal_seats = 100 }
-	set_variable = { conservative_seats = party_popularity@conservative }
+	round_variable = classical_liberal_seats
+	divide_variable = { classical_liberal_seats = 100 }
+	set_variable = { conservative_seats = party_popularity_100@conservative }
 	multiply_variable = { conservative_seats = 100 }
-	set_variable = { reactionary_seats = party_popularity@reactionary }
+	round_variable = conservative_seats
+	divide_variable = { conservative_seats = 100 }
+	set_variable = { reactionary_seats = party_popularity_100@reactionary }
 	multiply_variable = { reactionary_seats = 100 }
-	set_variable = { monarchist_seats = party_popularity@monarchist }
+	round_variable = reactionary_seats
+	divide_variable = { reactionary_seats = 100 }
+	set_variable = { monarchist_seats = party_popularity_100@monarchist }
 	multiply_variable = { monarchist_seats = 100 }
-	set_variable = { nationalist_seats = party_popularity@nationalist }
+	round_variable = monarchist_seats
+	divide_variable = { monarchist_seats = 100 }
+	set_variable = { nationalist_seats = party_popularity_100@nationalist }
 	multiply_variable = { nationalist_seats = 100 }
-	set_variable = { fascist_seats = party_popularity@fascist }
+	round_variable = nationalist_seats
+	divide_variable = { nationalist_seats = 100 }
+	set_variable = { fascist_seats = party_popularity_100@fascist }
 	multiply_variable = { fascist_seats = 100 }
-	set_variable = { islamist_seats = party_popularity@islamist }
+	round_variable = fascist_seats
+	divide_variable = { fascist_seats = 100 }
+	set_variable = { islamist_seats = party_popularity_100@islamist }
 	multiply_variable = { islamist_seats = 100 }
+	round_variable = islamist_seats
+	divide_variable = { islamist_seats = 100 }
 	set_parliament_graphics = yes
 }
 
@@ -245,6 +300,7 @@ set_parliament_graphics = {
 # It involves a huge amount of code, I hope it won't kill the performance
 #
 ## Step 1 : Create new variables to work with
+	cleanup_seats_parliament = yes
 	set_variable = { communist_seats_parliament = communist_seats }
 	set_variable = { democratic_socialist_seats_parliament = democratic_socialist_seats }
 	set_variable = { social_democrat_seats_parliament = social_democrat_seats }
@@ -305,7 +361,8 @@ set_parliament_graphics = {
 
 ## Step 5: Assign seats
 
-
+	clear_array = ideology_seats_array
+	clear_array = parliament_array
 	add_to_array = { ideology_seats_array = 0 } # Placeholder, I need the frames to be 1-12 and not 0-11
 	add_to_array = { ideology_seats_array = communist_seats_parliament }
 	add_to_array = { ideology_seats_array = democratic_socialist_seats_parliament }

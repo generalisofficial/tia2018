@@ -330,7 +330,7 @@ scripted_gui = {
 					set_country_flag = coalition_islamist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = islamist_seats
 					}
 				}
 				else_if = {
@@ -344,7 +344,7 @@ scripted_gui = {
 					set_country_flag = coalition_fascist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = fascist_seats
 					}
 				}
 				else_if = {
@@ -358,7 +358,7 @@ scripted_gui = {
 					set_country_flag = coalition_nationalist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = nationalist_seats
 					}
 				}
 				else_if = {
@@ -372,7 +372,7 @@ scripted_gui = {
 					set_country_flag = coalition_monarchist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = monarchist_seats
 					}
 				}
 				else_if = {
@@ -386,7 +386,7 @@ scripted_gui = {
 					set_country_flag = coalition_reactionary
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = reactionary_seats
 					}
 				}
 				else_if = {
@@ -400,7 +400,7 @@ scripted_gui = {
 					set_country_flag = coalition_conservative
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = conservative_seats
 					}
 				}
 				else_if = {
@@ -414,7 +414,7 @@ scripted_gui = {
 					set_country_flag = coalition_classical_liberal
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = classic_liberal_seats
 					}
 				}
 				else_if = {
@@ -428,7 +428,7 @@ scripted_gui = {
 					set_country_flag = coalition_social_liberal
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = social_liberal_seats
 					}
 				}
 				else_if = {
@@ -442,7 +442,7 @@ scripted_gui = {
 					set_country_flag = coalition_social_democrat
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = social_democrat_seats
 					}
 				}
 				else_if = {
@@ -456,7 +456,7 @@ scripted_gui = {
 					set_country_flag = coalition_progressive
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = progressive_seats
 					}
 				}
 				else_if = {
@@ -470,7 +470,7 @@ scripted_gui = {
 					set_country_flag = coalition_democratic_socialist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = democratic_socialist_seats
 					}
 				}
 				else_if = {
@@ -484,7 +484,7 @@ scripted_gui = {
 					set_country_flag = coalition_communist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = party_popularity@ruling_party
+						value = communist_seats
 					}
 				}
 			}
