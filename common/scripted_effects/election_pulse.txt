@@ -70,4 +70,10 @@ election_pulse = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_idea = ENG_conservative_dup_agreement
+		}
+		remove_ideas =  ENG_conservative_dup_agreement
+	}
 }

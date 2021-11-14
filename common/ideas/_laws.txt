@@ -1600,6 +1600,12 @@ ideas = {
 			cost = 200
 			removal_cost = -1
 			level = 1
+
+			available = {
+				NOT = {
+					has_idea = idea_eu_member
+				}
+			}
 		
 			modifier = {
 				min_export = 0
