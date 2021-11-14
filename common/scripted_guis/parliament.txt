@@ -15,37 +15,6 @@ scripted_gui = {
 			close_button_click = {
 				clear_variable = show_parliament
 			}
-			motion_of_no_confidence_button_click = {
-				if = {
-					limit = {
-						minority_government = yes
-					}
-					country_event = parliament.1
-					else = {
-						country_event = parliament.2
-					}
-				}
-			}
-			motion_of_no_confidence_title_click = {
-				if = {
-					limit = {
-						minority_government = yes
-					}
-					country_event = parliament.1
-					else = {
-						country_event = parliament.2
-					}
-				}
-			}
-		}
-
-		triggers = {
-			motion_of_no_confidence_button_click_enabled = {
-				has_idea = parliamentary_system
-			}
-			motion_of_no_confidence_title_click_enabled = {
-				has_idea = parliamentary_system
-			}
 		}
 
 		properties = {

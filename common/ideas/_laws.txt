@@ -623,7 +623,19 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				NOT = { has_government = islamist original_tag = VAT }
+				NOT = { has_government = islamist }
+				if = {
+					limit = {
+						original_tag = VAT
+					}
+					NOT = { original_tag = VAT }
+				}
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					NOT = { has_idea = USA_first_amendment }
+				}
 			}
 			
 			modifier = {
@@ -1008,7 +1020,7 @@ ideas = {
 			level = 3
 			
 			available = {
-			
+				NOT = { has_idea = minority_government }
 			}
 			
 			modifier = {
@@ -1026,7 +1038,12 @@ ideas = {
 			level = 2
 			
 			available = {
-
+				if = {
+					limit = {
+						has_idea = free_media
+					}
+					NOT = { has_idea = minority_government }
+				}
 			}
 			
 			modifier = {
@@ -1309,12 +1326,13 @@ ideas = {
 			level = 3
 			
 			available = {
-			
+				
 			}
 			
 			modifier = {
 				stability_factor = 0.1
 				training_time_factor = -0.05
+				MONTHLY_POPULATION = -0.35
 			}
 			
 			cancel_if_invalid = no
@@ -1332,6 +1350,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				training_time_factor = -0.1
+				MONTHLY_POPULATION = -0.15
 			}
 			
 			cancel_if_invalid = no
@@ -1624,122 +1643,4 @@ ideas = {
 		   	}
 		}
 	}
-
-	######################################
-	#	OTHER COUNTY IDEAS
-	######################################
-	
-    country = {
-		martial_law = {
-			picture = martial_law
-		
-			allowed = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-			    stability_factor = -0.25
-				army_core_attack_factor = 0.1
-		        army_core_defence_factor = 0.2
-				army_org = 10
-				#enemy_partisan_effect = -0.05
-			}
-		}
-		
-		state_of_emergency = {
-			picture = state_of_emergency
-		
-			allowed = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-			    stability_factor = -0.1
-			}
-		}
-		
-		minority_government = {
-			picture = disjointed_government
-		
-			allowed = {
-			    always = no
-			}
-			
-			cancel = {
-			    check_variable = {
-                    var = ROOT.Coalition
-                    value = 50
-                    compare = greater_than_or_equals
-                }
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-			    political_power_gain = -0.1
-			}
-		}
-		
-		unstable_coalition = {
-			picture = disjointed_government
-		
-			allowed = {
-			    always = no
-			}
-			
-			cancel = {
-			    NOT = {
-			    OR = { 
-				    AND = {
-					    OR = {
-						    has_country_flag = coalition_social_liberal
-				            has_country_flag = coalition_classical_liberal
-							has_country_flag = coalition_conservative
-							has_country_flag = coalition_reactionary
-						}
-						OR = {
-						    has_country_flag = coalition_social_democrat
-				            has_country_flag = coalition_progressive
-							has_country_flag = coalition_democratic_socialist
-							has_country_flag = coalition_communist
-						}
-			        }
-					AND = {
-					    OR = {
-						    has_country_flag = coalition_social_liberal
-				            has_country_flag = coalition_classical_liberal
-							has_country_flag = coalition_conservative
-							has_country_flag = coalition_reactionary
-						}
-						OR = {
-							has_country_flag = coalition_islamist
-							has_country_flag = coalition_monarchist
-							has_country_flag = coalition_nationalist
-							has_country_flag = coalition_fascist
-						}
-			        }
-					AND = {
-						OR = {
-							has_country_flag = coalition_islamist
-							has_country_flag = coalition_monarchist
-							has_country_flag = coalition_nationalist
-							has_country_flag = coalition_fascist
-						}
-						OR = {
-						    has_country_flag = coalition_social_democrat
-				            has_country_flag = coalition_progressive
-							has_country_flag = coalition_democratic_socialist
-							has_country_flag = coalition_communist
-						}
-			        }
-				}
-			}
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-			    political_power_gain = -0.25
-				stability_factor = -0.1
-			}
-		}
-	}   
 }

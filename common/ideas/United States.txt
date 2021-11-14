@@ -114,19 +114,6 @@ ideas = {
 			}
 		}
 		
-		USA_american_militias_idea = {
-			picture = manpower_bonus
-			
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.01
-			}
-		}
-		
 		USA_free_college_idea = {
 			picture = shared_research
 			
@@ -155,21 +142,6 @@ ideas = {
 				decryption_factor = 0.1
 				encryption_factor = 0.1
 				political_power_factor = -0.05
-			}
-		}
-		
-		USA_the_war_on_terror = {
-			picture = political_power_bonus
-			
-			allowed = { always = no }
-			allowed_civil_war = { NOT = { has_government = islamist } }
-			
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.1
-				army_morale_factor = 0.05
-				justify_war_goal_time = -0.5
 			}
 		}
 	

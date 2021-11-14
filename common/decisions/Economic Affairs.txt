@@ -1,7 +1,7 @@
 economic_affairs = {
-	adopt_euro = {
+	adopt_the_euro = {
 		visible = {
-			has_idea = idea_eu_member
+			is_in_europe = yes
 			NOT = { has_idea = the_euro }
 		}
 		
@@ -9,12 +9,32 @@ economic_affairs = {
 		
 		}
 		
-		icon = democracy
+		icon = euro_coins
+		cost = 150
+		days_remove = 1095
+
+		remove_effect = {
+			add_ideas = the_euro
+		}
 		
-		cost = 100
-		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	abandon_the_euro = {
+		visible = {
+			has_idea = the_euro
+		}
 		
-		complete_effect = {
+		available = {
+		
+		}
+		
+		icon = euro_coins
+		cost = 150
+		days_remove = 1095
+
+		remove_effect = {
 			add_ideas = the_euro
 		}
 		

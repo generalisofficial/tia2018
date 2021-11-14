@@ -38,3 +38,47 @@ news_event = { #Resignation of Hailemariam Desalegn - News
 		name = ethiopia.2.o1
 	}
 }
+
+country_event = { #Ethiopian Peace Proposal
+	id = ethiopia.3
+	title = ethiopia.3.t
+	desc = ethiopia.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Accept
+		name = ethiopia.1.o1
+		ai_chance = {
+			factor = 100
+		}
+		news_event = ethiopia.2
+		set_global_flag = eritrea_ethiopia_peace
+	    remove_opinion_modifier = { target = ETH modifier = frozen_conflict }
+		ETH = { remove_opinion_modifier = { target = ERI modifier = frozen_conflict } } 
+	    transfer_state = 950
+		950 = { remove_core_of = ETH }
+	}
+	
+	option = { #Reject
+		name = ethiopia.1.o2
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -100
+	}
+}
+
+news_event = { #Eritrea–Ethiopia peace summit
+	id = ethiopia.3
+	title = ethiopia.3.t
+	desc = ethiopia.3.d
+	picture = GFX_news_event_eritrea_ethiopia_peace
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = ethiopia.2.o1
+	}
+}

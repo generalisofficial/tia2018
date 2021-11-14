@@ -436,30 +436,3 @@ country_event = {
 		news_event = news.54
 	}
 }
-
-#Re-Nationalize the Currency
-country_event = {
-	id = european_union.17
-	title = european_union.17.t
-	desc = european_union.17.d
-	picture = GFX_report_event_euro
-	
-	trigger = {
-		has_idea = the_euro
-		AND = {
-			NOT = { has_idea = idea_eu_member }
-			NOT = { has_country_flag = special_euro_user }
-			NOT = { has_cosmetic_tag = EUU }
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 20
-	}
-	
-	option = {
-		name = european_union.17.o1
-		add_political_power = -50
-		remove_ideas = the_euro
-	}
-}

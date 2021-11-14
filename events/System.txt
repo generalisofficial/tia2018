@@ -375,3 +375,19 @@ country_event = {
 		set_global_flag = benelux_dissolved
 	}
 }
+
+country_event = {
+	id = system.23
+	hidden=yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				minority_government = yes
+			}
+			add_ideas = minority_government
+		}
+	}
+}

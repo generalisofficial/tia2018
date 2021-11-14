@@ -90,8 +90,8 @@ add_ideas = {
 	islam
 	asean_member
 	federal
+	parliamentary_system
 }
-
 
 set_country_flag = sunni_islam
 
@@ -99,6 +99,25 @@ give_guarantee = NZL
 give_guarantee = SIG
 give_guarantee = AST
 give_guarantee = ENG
+
+#Dewan Rakyat
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 0.46 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 33.64 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 59.91 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 5.99 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_reactionary
+add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {
 	ruling_party = reactionary
@@ -108,25 +127,9 @@ set_politics = {
 }
 
 set_popularities = {
-    islamist = 8.11
-    nationalist = 5.86
-    reactionary = 24.32
-    conservative = 15.32
-    social_liberal = 4.95
-    social_democrat = 18.92
-    progressive = 22.52
-}
-
-create_country_leader = {
-	name = "Mahathir Mohamad"
-	picture = "Mahathir_Mohamad.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Anwar Ibrahim"
-	picture = "Anwar_Ibrahim.dds"
-	ideology = progressive_ideology
+    islamist = 8.25
+    reactionary = 36.23
+    social_democrat = 55.52
 }
 
 create_country_leader = {
@@ -136,9 +139,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mohamad Sabu"
-	picture = "Mohamad_Sabu.dds"
-	ideology = social_liberal_ideology
+	name = "Muhyiddin Yassin"
+	picture = "Muhyiddin_Yassin.dds"
+	ideology = national_conservative
+}
+
+create_country_leader = {
+	name = "Mahathir Mohamad"
+	picture = "Mahathir_Mohamad.dds"
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
@@ -148,27 +157,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tan Kok Wai"
-	picture = "Tan_Kok_Wai.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Abang Abdul Rahman Zohari"
-	picture = "Abang_Abdul_Rahman_Zohari.dds"
-	ideology = nationalist_ideology
-}
-
-create_country_leader = {
 	name = "Mohd Nasir Hashim"
 	picture = "Mohd_Nasir_Hashim.dds"
 	ideology = democratic_socialist_ideology
-}
-
-create_country_leader = {
-	name = "Teo Chee Kang"
-	picture = "Teo_Chee_Kang.dds"
-	ideology = libertarian
 }
 
 create_corps_commander = {

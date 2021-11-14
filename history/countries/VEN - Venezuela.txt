@@ -89,6 +89,25 @@ add_ideas = {
 
 set_country_flag = catholic
 
+#Chamber of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { democratic_socialist_seats = 33.53 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 66.47 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { reactionary_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_democratic_socialist
+add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+
 set_politics = {	
 	ruling_party = democratic_socialist
 	last_election = "2013.5.20"
@@ -97,13 +116,8 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 17.9
-    social_democrat = 20.3
-    progressive = 4.7
-    democratic_socialist = 50.71
-    conservative = 0.59
-    communist = 3.5
-    classical_liberal = 2.3
+    social_liberal = 32.15
+    democratic_socialist = 67.85
 }
 
 create_country_leader = {
@@ -115,37 +129,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Juan Guaidó"
 	picture = "Juan_Guaido.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Henri Falcón"
-	picture = "Henri_Falcon.dds"
-	ideology = progressive_ideology
-}
-
-create_country_leader = {
-	name = "Tomás Guanipa"
-	picture = "Tomas_Guanipa.dds"
 	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
-	name = "Henrique Salas Römer"
-	picture = "Henrique_Salas_Romer.dds"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Roberto Enriquez"
-	picture = "Roberto_Enriquez.dds"
-	ideology = christian_democrat
-}
-
-create_country_leader = {
-	name = "María Corina Machado"
-	picture = "Maria_Corina_Machado.dds"
-	ideology = libertarian
+	name = "Óscar Figuera"
+	picture = "Oscar_Figuera.dds"
+	ideology = marxist_leninist
 }
 
 create_field_marshal = {
