@@ -765,7 +765,7 @@ ideas = {
 			default = yes
 
 			ai_will_do = {
-				factor = 0
+				factor = 1
 				modifier = {
 				 	factor = 100
 					OR = {
@@ -826,7 +826,7 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 0
+				factor = 1
 				modifier = {
 				 	factor = 25
 					OR = {
@@ -855,7 +855,7 @@ ideas = {
 			default = yes
 
 			ai_will_do = {
-				factor = 0
+				factor = 1
 				modifier = {
 				 	factor = 25
 					OR = {
@@ -886,7 +886,7 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 0
+				factor = 1
 				modifier = {
 				 	factor = 25
 					OR = {
@@ -1022,6 +1022,15 @@ ideas = {
 			available = {
 				NOT = { has_idea = minority_government }
 			}
+
+			on_add = {
+				if = {
+					limit = {
+						has_idea = free_media
+					}
+					custom_effect_tooltip = TT_electoral_fraud_unlocked
+				}
+			}
 			
 			modifier = {
 				political_power_factor = 0.2
@@ -1044,6 +1053,10 @@ ideas = {
 					}
 					NOT = { has_idea = minority_government }
 				}
+			}
+
+			on_add = {
+				custom_effect_tooltip = TT_electoral_fraud_unlocked
 			}
 			
 			modifier = {
@@ -1070,6 +1083,20 @@ ideas = {
 			
 			cancel_if_invalid = no
 			default = yes
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 25
+					OR = {
+						has_government = progressive
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = classical_liberal
+						has_government = conservative
+					}
+			 	}
+			}
 		}
    }
    
@@ -1589,7 +1616,7 @@ ideas = {
 			cancel_if_invalid = no
 			
 			ai_will_do = {
-				factor = 0
+				factor = 1
 				modifier = {
 				 	factor = 50
 					OR = {

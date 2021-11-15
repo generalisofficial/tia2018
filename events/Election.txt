@@ -38,7 +38,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { has_idea = parliamentary_system }
+		NOT = {
+			has_idea = parliamentary_system 
+			has_idea = swiss_political_system
+		}
 	}
 	
 	immediate = {
@@ -893,7 +896,7 @@ country_event = {
 		election_pulse = yes
 	}
 	
-	option = {	#Absolute Monarchists
+	option = {	#Monarchists
 		name = election.1.o13
 		ai_chance = {
 			factor = 1
@@ -965,6 +968,93 @@ country_event = {
 		}
 		set_parliament_graphics = yes
 		set_parliament_graphics_2 = yes
+		election_pulse = yes
+	}
+	option = {	#Commit Electoral Fraud
+		name = election.1.o14
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 10
+				has_country_leader = {
+					name = "Nicolás Maduro"
+					ruling_only = yes
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				has_idea = total_censorship
+				has_idea = press_harassment
+			}
+			NOT = {
+				AND = {
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@communist
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@democratic_socialist
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@social_democrat
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@progressive
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@social_liberal
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@classical_liberal
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@conservative
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@fascist
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@reactionary
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@nationalist
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@islamist
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = party_popularity@monarchist
+						compare = greater_than_or_equals
+					}
+				}
+			}
+		}
+		set_parliament_graphics = yes
+		set_parliament_graphics_2 = yes
+		quickset_coalition = yes
 		election_pulse = yes
 	}
 }

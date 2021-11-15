@@ -23,7 +23,7 @@ country_event = { #Juan Guaido declared president
 	
 	option = {
 		name = venezuela.1.o1
-		add_ideas = venezuelan_presidential_crisis
+		add_ideas = idea_venezuelan_presidential_crisis
 		news_event = venezuela.2
 	}
 }
@@ -52,11 +52,77 @@ country_event = { #Operación Libertad
 	trigger = {
 		original_tag = VEN
 		date > 2019.4.30
-		has_idea = venezuelan_presidential_crisis
+		has_idea = idea_venezuelan_presidential_crisis
 	}
 	
 	option = {
 		name = venezuela.1.o1
-		news_event = venezuela.2
+		random_list = {
+			80 = {
+				news_event = venezuela.4
+				hidden_effect = {
+					remove_ideas = idea_venezuelan_presidential_crisis
+					set_politics = {	
+						ruling_party = social_liberal
+						elections_allowed = yes
+					}
+					create_country_leader = {
+						name = "Diosdado Cabello"
+						picture = "Diosdado_Cabello.dds"
+						ideology = bolivarianist
+					}
+					set_variable = { communist_seats = 0 }
+					set_variable = { democratic_socialist_seats = 0 }
+					set_variable = { progressive_seats = 0 }
+					set_variable = { social_democrat_seats = 0 }
+					set_variable = { social_liberal_seats = 100 }
+					set_variable = { classical_liberal_seats = 0 }
+					set_variable = { conservative_seats = 0 }
+					set_variable = { reactionary_seats = 0 }
+					set_variable = { monarchist_seats = 0 }
+					set_variable = { nationalist_seats = 0 }
+					set_variable = { fascist_seats = 0 }
+					set_variable = { islamist_seats = 0 }
+					set_variable = { ROOT.Coalition = 100 }
+					set_variable = { ROOT.Opposition = 0 }
+					set_parliament_graphics = yes
+					set_parliament_graphics_2 = yes
+				}
+			}
+			20 = {
+			  	news_event = venezuela.5
+				hidden_effect = {
+					remove_ideas =  idea_venezuelan_presidential_crisis
+				}
+			}
+		}
+	}
+}
+
+news_event = { #Pro-Juan Guaidó uprising in Venezuela fails
+	id = venezuela.4
+	title = venezuela.4.t
+	desc = venezuela.4.d
+	picture = GFX_news_event_venezuela_protests
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = venezuela.4.o1
+	}
+}
+
+news_event = { #Operación Libertad - News
+	id = venezuela.5
+	title = venezuela.5.t
+	desc = venezuela.5.d
+	picture = GFX_news_event_guaido_victory
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = venezuela.5.o1
 	}
 }
