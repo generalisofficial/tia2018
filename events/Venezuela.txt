@@ -4,14 +4,27 @@ country_event = { #Juan Guaido declared president
 	id = venezuela.1
 	title = venezuela.1.t
 	desc = venezuela.1.d
-	
-	is_triggered_only = yes
+
 	fire_only_once = yes
+
+	trigger = {
+		original_tag = VEN
+		date > 2019.1.23
+		check_variable = {
+        	var = social_liberal_seats
+        	value = 50
+        	compare = greater_than_or_equals
+    	}
+		has_country_leader = {
+			name = "Nicolás Maduro"
+			ruling_only = yes
+		}
+	}
 	
 	option = {
 		name = venezuela.1.o1
+		add_ideas = venezuelan_presidential_crisis
 		news_event = venezuela.2
-		set_global_flag = venezuela_crisis
 	}
 }
 
@@ -26,5 +39,24 @@ news_event = { #Venezuelan presidential crisis
 	
 	option = {
 		name = venezuela.2.o1
+	}
+}
+
+country_event = { #Operación Libertad
+	id = venezuela.3
+	title = venezuela.3.t
+	desc = venezuela.3.d
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = VEN
+		date > 2019.4.30
+		has_idea = venezuelan_presidential_crisis
+	}
+	
+	option = {
+		name = venezuela.1.o1
+		news_event = venezuela.2
 	}
 }
