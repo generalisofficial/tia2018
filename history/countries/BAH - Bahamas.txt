@@ -81,6 +81,7 @@ add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
 	non_aligned_movement_member
+	parliamentary_system
 }
 
 set_country_flag = catholic
@@ -88,6 +89,25 @@ set_country_flag = catholic
 #Economy
 set_variable = { income_tax = 0 }
 set_variable = { corporate_tax = 0 }
+
+#House of Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 10.25 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 89.75 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -97,18 +117,18 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 56.99
-    social_liberal = 43.01
+    conservative = 17.94
+    social_liberal = 82.06
 }
 	
 create_country_leader = {
 	name = "Hubert Minnis"
 	picture = "Hubert_Minnis.dds"
-	ideology = national_conservative 
+	ideology = liberal_conservative 
 }
 
 create_country_leader = {
-	name = "Perry Christie"
-	picture = "Perry_Christie.dds"
+	name = "Philip Davis"
+	picture = "Philip_Davis.dds"
 	ideology = social_liberal_ideology 
 }

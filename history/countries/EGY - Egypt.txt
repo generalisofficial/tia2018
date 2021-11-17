@@ -104,26 +104,26 @@ set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 11.57 }
 set_variable = { classical_liberal_seats = 12.91 }
 set_variable = { conservative_seats = 7.04 }
-set_variable = { reactionary_seats = 63.46 }
+set_variable = { national_conservative_seats = 63.46 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 1.84 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2014.3.21"
 	election_frequency = 48
 	elections_allowed = yes
 }
  
 set_popularities = {
-    reactionary = 63.46
+    national_conservative = 63.46
 	classical_liberal = 12.91
     social_liberal = 11.57
 	conservative = 7.04
@@ -155,7 +155,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bahaa El-Din Abu Shoka"
 	picture = "Bahaa_El_Din_Abu_Shoka.dds"
-	ideology = national_conservative
+	ideology = liberal_conservative
 }
 
 create_country_leader = {

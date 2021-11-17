@@ -104,28 +104,28 @@ set_variable = { social_democrat_seats = 4.16 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 2.16 }
-set_variable = { reactionary_seats = 80.46 }
+set_variable = { national_conservative_seats = 80.46 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2015.10.11"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 80.46
+    national_conservative = 80.46
     communist = 8.98
-	nationalist = 4.24
+	right_wing_nationalist = 4.24
 	conservative = 2.16
 	social_democrat = 4.16
 }
@@ -133,7 +133,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Alexander Lukashenko"
 	picture = "Alexander_Lukashenko.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
@@ -145,7 +145,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sergei Gaidukevich"
 	picture = "Sergei_Gaidukevich.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

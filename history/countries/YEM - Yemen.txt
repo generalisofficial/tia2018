@@ -100,26 +100,26 @@ set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 73.6 }
+set_variable = { right_wing_nationalist_seats = 73.6 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 22.6 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_nationalist
-add_to_variable = { ROOT.Coalition = nationalist_seats }
+set_country_flag = coalition_right_wing_nationalist
+add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 
 set_politics = {		
-	ruling_party = nationalist
+	ruling_party = right_wing_nationalist
 	last_election = "2012.2.21"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-    nationalist = 73.6
+    right_wing_nationalist = 73.6
 	islamist = 22.6
     socialist = 3.8
 }

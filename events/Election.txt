@@ -60,12 +60,12 @@ country_event = {
 		multiply_variable = { classical_liberal_seats = 100 }
 		set_variable = { conservative_seats = party_popularity@conservative }
 		multiply_variable = { conservative_seats = 100 }
-		set_variable = { reactionary_seats = party_popularity@reactionary }
-		multiply_variable = { reactionary_seats = 100 }
+		set_variable = { national_conservative_seats = party_popularity@national_conservative }
+		multiply_variable = { national_conservative_seats = 100 }
 		set_variable = { monarchist_seats = party_popularity@monarchist }
 		multiply_variable = { monarchist_seats = 100 }
-		set_variable = { nationalist_seats = party_popularity@nationalist }
-		multiply_variable = { nationalist_seats = 100 }
+		set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
+		multiply_variable = { right_wing_nationalist_seats = 100 }
 		set_variable = { fascist_seats = party_popularity@fascist }
 		multiply_variable = { fascist_seats = 100 }
 		set_variable = { islamist_seats = party_popularity@islamist }
@@ -110,7 +110,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@communist
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -120,7 +120,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@communist
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -181,7 +181,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@socialist
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -191,7 +191,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@socialist
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -259,7 +259,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@social_democrat
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -269,7 +269,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@social_democrat
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -331,7 +331,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@progressive
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -341,7 +341,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@progressive
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -409,7 +409,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@social_liberal
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -419,7 +419,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@social_liberal
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -484,7 +484,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@classical_liberal
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -494,7 +494,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@classical_liberal
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -559,7 +559,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@conservative
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -569,7 +569,7 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@conservative
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -603,67 +603,67 @@ country_event = {
 		}
 		trigger = {
 		    check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@communist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@socialist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@social_democrat
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@progressive
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@social_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@monarchist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
-                value = party_popularity@nationalist
+                var = party_popularity@national_conservative
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@fascist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@reactionary
+                var = party_popularity@national_conservative
                 value = party_popularity@islamist
                 compare = greater_than_or_equals
             }
 		}
 		set_country_flag = has_coalition
-		set_country_flag = coalition_reactionary
-        set_variable = { ROOT.Coalition = reactionary_seats }
+		set_country_flag = coalition_national_conservative
+        set_variable = { ROOT.Coalition = national_conservative_seats }
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
-			ruling_party = reactionary
+			ruling_party = national_conservative
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
@@ -678,67 +678,67 @@ country_event = {
 		}
 		trigger = {
 		    check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@communist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@socialist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@social_democrat
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@progressive
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@social_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@classical_liberal
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@monarchist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
-                value = party_popularity@reactionary
+                var = party_popularity@right_wing_nationalist
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@fascist
                 compare = greater_than_or_equals
             }
 			check_variable = {
-                var = party_popularity@nationalist
+                var = party_popularity@right_wing_nationalist
                 value = party_popularity@islamist
                 compare = greater_than_or_equals
             }
 		}
 		set_country_flag = has_coalition
-		set_country_flag = coalition_nationalist
-        set_variable = { ROOT.Coalition = nationalist_seats }
+		set_country_flag = coalition_right_wing_nationalist
+        set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
-			ruling_party = nationalist
+			ruling_party = right_wing_nationalist
 			elections_allowed = no
 		}
 		set_parliament_graphics = yes
@@ -794,12 +794,12 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@fascist
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
                 var = party_popularity@fascist
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -869,12 +869,12 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@islamist
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
                 var = party_popularity@islamist
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -944,12 +944,12 @@ country_event = {
             }
 			check_variable = {
                 var = party_popularity@monarchist
-                value = party_popularity@reactionary
+                value = party_popularity@national_conservative
                 compare = greater_than_or_equals
             }
 			check_variable = {
                 var = party_popularity@monarchist
-                value = party_popularity@nationalist
+                value = party_popularity@right_wing_nationalist
                 compare = greater_than_or_equals
             }
 			check_variable = {
@@ -1031,12 +1031,12 @@ country_event = {
 					}
 					check_variable = {
 						var = party_popularity@ruling_party
-						value = party_popularity@reactionary
+						value = party_popularity@national_conservative
 						compare = greater_than_or_equals
 					}
 					check_variable = {
 						var = party_popularity@ruling_party
-						value = party_popularity@nationalist
+						value = party_popularity@right_wing_nationalist
 						compare = greater_than_or_equals
 					}
 					check_variable = {
@@ -1100,7 +1100,7 @@ country_event = {
 			create_country_leader = {
 				name = "Guy Parmelin"
 				picture = "Guy_Parmelin.dds"
-				ideology = reactionary_ideology
+				ideology = national_conservative_ideology
 			}
 		}
 		quickset_parliament = yes
@@ -1138,8 +1138,8 @@ country_event = {
 					social_liberal > 0.5
 					classical_liberal > 0.5
 					conservative > 0.5
-					reactionary > 0.5
-					nationalist > 0.5
+					national_conservative > 0.5
+					right_wing_nationalist > 0.5
 					fascist > 0.5
 					islamist > 0.5
 				}
@@ -1306,16 +1306,16 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			reactionary > 0.5
+			national_conservative > 0.5
 		}
 		
 		set_politics = {
-			ruling_party = reactionary
+			ruling_party = national_conservative
 			elections_allowed = yes
 		}
 		set_country_flag = has_coalition
-		set_country_flag = coalition_reactionary
-        set_variable = { ROOT.Coalition = reactionary_seats }
+		set_country_flag = coalition_national_conservative
+        set_variable = { ROOT.Coalition = national_conservative_seats }
 		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
@@ -1326,16 +1326,16 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-			nationalist > 0.5
+			right_wing_nationalist > 0.5
 		}
 		
 		set_politics = {
-			ruling_party = nationalist
+			ruling_party = right_wing_nationalist
 			elections_allowed = yes
 		}
 		set_country_flag = has_coalition
-		set_country_flag = coalition_nationalist
-        set_variable = { ROOT.Coalition = nationalist_seats }
+		set_country_flag = coalition_right_wing_nationalist
+        set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}

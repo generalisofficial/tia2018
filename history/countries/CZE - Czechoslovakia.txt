@@ -113,29 +113,29 @@ set_variable = { social_democrat_seats = 7.3 }
 set_variable = { social_liberal_seats = 10.8 }
 set_variable = { classical_liberal_seats = 5.2 }
 set_variable = { conservative_seats = 22.4 }
-set_variable = { reactionary_seats = 35.9 }
+set_variable = { national_conservative_seats = 35.9 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 10.6 }
+set_variable = { right_wing_nationalist_seats = 10.6 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2017.10.20"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 35.9
+    national_conservative = 35.9
     conservative = 22.4
     social_liberal = 10.8
-    nationalist = 10.6
+    right_wing_nationalist = 10.6
     communist = 7.8
     social_democrat = 7.3
     classical_liberal = 5.2
@@ -144,13 +144,13 @@ set_popularities = {
 create_country_leader = {
 	name = "Andrej Babiš"
 	picture = "Andrej_Babis.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
 	name = "Petr Fiala"
 	picture = "Petr_Fiala.dds"
-	ideology = national_conservative
+	ideology = liberal_conservative
 }
 
 create_country_leader = {
@@ -162,7 +162,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tomio Okamura"
 	picture = "Tomio_Okamura.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

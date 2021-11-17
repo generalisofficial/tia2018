@@ -38,10 +38,10 @@ scripted_gui = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 3 }
 					}
-					clr_country_flag = coalition_nationalist
+					clr_country_flag = coalition_right_wing_nationalist
 					remove_from_array = { member_parties_array = 3 }
-					subtract_from_variable = { ROOT.Coalition = nationalist_seats }
-					add_to_variable = { ROOT.Opposition = nationalist_seats }
+					subtract_from_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+					add_to_variable = { ROOT.Opposition = right_wing_nationalist_seats }
 				}
 				else_if = {
 					limit = {
@@ -56,10 +56,10 @@ scripted_gui = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 5 }
 					}
-					clr_country_flag = coalition_reactionary
+					clr_country_flag = coalition_national_conservative
 					remove_from_array = { member_parties_array = 5 }
-					subtract_from_variable = { ROOT.Coalition = reactionary_seats }
-					add_to_variable = { ROOT.Opposition = reactionary_seats }
+					subtract_from_variable = { ROOT.Coalition = national_conservative_seats }
+					add_to_variable = { ROOT.Opposition = national_conservative_seats }
 				}
 				else_if = {
 					limit = {
@@ -159,7 +159,7 @@ scripted_gui = {
 				else_if = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 3 }
-						NOT = { has_government = nationalist }
+						NOT = { has_government = right_wing_nationalist }
 					}
 					always = yes
 				}
@@ -173,7 +173,7 @@ scripted_gui = {
 				else_if = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 5 }
-						NOT = { has_government = reactionary }
+						NOT = { has_government = national_conservative }
 					}
 					always = yes
 				}

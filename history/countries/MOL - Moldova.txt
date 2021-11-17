@@ -96,9 +96,9 @@ set_variable = { social_democrat_seats = 32.18 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 9.67 }
 set_variable = { conservative_seats = 20.16 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -120,7 +120,7 @@ set_popularities = {
     socialist = 31.15
     social_liberal = 28.96
 	classical_liberal = 1.25
-	reactionary = 8.32
+	national_conservative = 8.32
     communist = 3.75
 }
 
@@ -166,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ilan Shor"
 	picture = "Ilan_Shor.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

@@ -74,19 +74,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						nationalist > 0.09
+						right_wing_nationalist > 0.09
 					}
 					modifier = {
 						add = 1
-						nationalist > 0.19
+						right_wing_nationalist > 0.19
 					}
 					modifier = {
 						add = 1
-						nationalist > 0.29
+						right_wing_nationalist > 0.29
 					}
 					modifier = {
 						add = 1
-						nationalist > 0.39
+						right_wing_nationalist > 0.39
 					}
 				}
 			}
@@ -116,23 +116,23 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						reactionary > 0.09
+						national_conservative > 0.09
 					}
 					modifier = {
 						add = 1
-						reactionary > 0.19
+						national_conservative > 0.19
 					}
 					modifier = {
 						add = 1
-						reactionary > 0.29
+						national_conservative > 0.29
 					}
 					modifier = {
 						add = 1
-						reactionary > 0.39
+						national_conservative > 0.39
 					}
 					modifier = {
 						add = 100
-						reactionary > 0.01
+						national_conservative > 0.01
 						has_idea = swiss_political_system
 						OR = {
 							AND = {
@@ -349,16 +349,16 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
-						has_country_flag = government_nationalist
+						has_country_flag = government_right_wing_nationalist
 					}
 					set_politics = {						
-						ruling_party = nationalist
+						ruling_party = right_wing_nationalist
 						elections_allowed = yes
 					}
-					set_country_flag = coalition_nationalist
+					set_country_flag = coalition_right_wing_nationalist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = nationalist_seats
+						value = right_wing_nationalist_seats
 					}
 				}
 				else_if = {
@@ -377,16 +377,16 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
-						has_country_flag = government_reactionary
+						has_country_flag = government_national_conservative
 					}
 					set_politics = {						
-						ruling_party = reactionary
+						ruling_party = national_conservative
 						elections_allowed = yes
 					}
-					set_country_flag = coalition_reactionary
+					set_country_flag = coalition_national_conservative
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = reactionary_seats
+						value = national_conservative_seats
 					}
 				}
 				else_if = {
@@ -502,9 +502,9 @@ scripted_gui = {
 					set_country_flag = government_chosen
 				}
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -527,9 +527,9 @@ scripted_gui = {
 					set_country_flag = government_chosen
 				}
 				clr_country_flag = government_islamist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -541,20 +541,20 @@ scripted_gui = {
 			party3_click = { 
 				if = {
 					limit = {
-						has_country_flag = government_nationalist
+						has_country_flag = government_right_wing_nationalist
 						has_country_flag = government_chosen
 					}
-					clr_country_flag = government_nationalist
+					clr_country_flag = government_right_wing_nationalist
 					clr_country_flag = government_chosen
 				}
 				else = {
-					set_country_flag = government_nationalist
+					set_country_flag = government_right_wing_nationalist
 					set_country_flag = government_chosen
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -578,8 +578,8 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_right_wing_nationalist
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -591,19 +591,19 @@ scripted_gui = {
 			party5_click = { 
 				if = {
 					limit = {
-						has_country_flag = government_reactionary
+						has_country_flag = government_national_conservative
 						has_country_flag = government_chosen
 					}
-					clr_country_flag = government_reactionary
+					clr_country_flag = government_national_conservative
 					clr_country_flag = government_chosen
 				}
 				else = {
-					set_country_flag = government_reactionary
+					set_country_flag = government_national_conservative
 					set_country_flag = government_chosen
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
@@ -628,9 +628,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
@@ -653,9 +653,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
@@ -678,9 +678,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_democrat
@@ -703,9 +703,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -728,9 +728,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -753,9 +753,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -778,9 +778,9 @@ scripted_gui = {
 				}
 				clr_country_flag = government_islamist
 				clr_country_flag = government_fascist
-				clr_country_flag = government_nationalist
+				clr_country_flag = government_right_wing_nationalist
 				clr_country_flag = government_monarchist
-				clr_country_flag = government_reactionary
+				clr_country_flag = government_national_conservative
 				clr_country_flag = government_conservative
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
@@ -810,13 +810,13 @@ scripted_gui = {
 				has_country_flag = government_fascist
 			}
 			party3_click_enabled = {
-				nationalist > 0.00
+				right_wing_nationalist > 0.00
 			}
 			party3_title_click_enabled = {
-				nationalist > 0.00
+				right_wing_nationalist > 0.00
 			}
 			party3_accept_visible = {
-				has_country_flag = government_nationalist
+				has_country_flag = government_right_wing_nationalist
 			}
 			party4_click_enabled = {
 				monarchist > 0.00
@@ -828,13 +828,13 @@ scripted_gui = {
 				has_country_flag = government_monarchist
 			}
 			party5_click_enabled = {
-				reactionary > 0.00
+				national_conservative > 0.00
 			}
 			party5_title_click_enabled = {
-				reactionary > 0.00
+				national_conservative > 0.00
 			}
 			party5_accept_visible = {
-				has_country_flag = government_reactionary
+				has_country_flag = government_national_conservative
 			}
 			party6_click_enabled = {
 				conservative > 0.00
@@ -1020,19 +1020,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						nationalist > 0.09
+						right_wing_nationalist > 0.09
 					}
 					modifier = {
 						add = 1
-						nationalist > 0.19
+						right_wing_nationalist > 0.19
 					}
 					modifier = {
 						add = 1
-						nationalist > 0.29
+						right_wing_nationalist > 0.29
 					}
 					modifier = {
 						add = 1
-						nationalist > 0.39
+						right_wing_nationalist > 0.39
 					}
 				}
 			}
@@ -1062,19 +1062,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						reactionary > 0.09
+						national_conservative > 0.09
 					}
 					modifier = {
 						add = 1
-						reactionary > 0.19
+						national_conservative > 0.19
 					}
 					modifier = {
 						add = 1
-						reactionary > 0.29
+						national_conservative > 0.29
 					}
 					modifier = {
 						add = 1
-						reactionary > 0.39
+						national_conservative > 0.39
 					}
 				}
 			}
@@ -1303,27 +1303,27 @@ scripted_gui = {
 			party3_click = { 
 				if = {
 					limit = {
-						has_country_flag = coalition_nationalist
+						has_country_flag = coalition_right_wing_nationalist
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = nationalist_seats
+							value = right_wing_nationalist_seats
 							compare = greater_than_or_equals
 						}
 					}
-					clr_country_flag = coalition_nationalist
+					clr_country_flag = coalition_right_wing_nationalist
 					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = nationalist_seats
+						value = right_wing_nationalist_seats
 					}
 				}
 				else = {
-					set_country_flag = coalition_nationalist
+					set_country_flag = coalition_right_wing_nationalist
 					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = nationalist_seats
+						value = right_wing_nationalist_seats
 					}
 				}
 			}
@@ -1357,27 +1357,27 @@ scripted_gui = {
 			party5_click = { 
 				if = {
 					limit = {
-						has_country_flag = coalition_reactionary
+						has_country_flag = coalition_national_conservative
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = reactionary_seats
+							value = national_conservative_seats
 							compare = greater_than_or_equals
 						}
 					}
-					clr_country_flag = coalition_reactionary
+					clr_country_flag = coalition_national_conservative
 					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = reactionary_seats
+						value = national_conservative_seats
 					}
 				}
 				else = {
-					set_country_flag = coalition_reactionary
+					set_country_flag = coalition_national_conservative
 					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = reactionary_seats
+						value = national_conservative_seats
 					}
 				}
 			}
@@ -1606,20 +1606,20 @@ scripted_gui = {
 				NOT = { has_country_flag = government_fascist }
 			}
 			party3_click_enabled = {
-				nationalist > 0.00
+				right_wing_nationalist > 0.00
 			}
 			party3_title_click_enabled = {
-				nationalist > 0.00
+				right_wing_nationalist > 0.00
 			}
 			party3_visible = {
-				NOT = { has_country_flag = government_nationalist }
+				NOT = { has_country_flag = government_right_wing_nationalist }
 			}
 			party3_title_visible = {
-				NOT = { has_country_flag = government_nationalist }
+				NOT = { has_country_flag = government_right_wing_nationalist }
 			}
 			party3_accept_visible = {
-				has_country_flag = coalition_nationalist
-				NOT = { has_country_flag = government_nationalist }
+				has_country_flag = coalition_right_wing_nationalist
+				NOT = { has_country_flag = government_right_wing_nationalist }
 			}
 			party4_click_enabled = {
 				monarchist > 0.00
@@ -1638,20 +1638,20 @@ scripted_gui = {
 				NOT = { has_country_flag = government_monarchist }
 			}
 			party5_click_enabled = {
-				reactionary > 0.00
+				national_conservative > 0.00
 			}
 			party5_title_click_enabled = {
-				reactionary > 0.00
+				national_conservative > 0.00
 			}
 			party5_visible = {
-				NOT = { has_country_flag = government_reactionary }
+				NOT = { has_country_flag = government_national_conservative }
 			}
 			party5_title_visible = {
-				NOT = { has_country_flag = government_reactionary }
+				NOT = { has_country_flag = government_national_conservative }
 			}
 			party5_accept_visible = {
-				has_country_flag = coalition_reactionary
-				NOT = { has_country_flag = government_reactionary }
+				has_country_flag = coalition_national_conservative
+				NOT = { has_country_flag = government_national_conservative }
 			}
 			party6_click_enabled = {
 				conservative > 0.00

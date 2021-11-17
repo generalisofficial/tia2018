@@ -97,19 +97,19 @@ set_variable = { social_democrat_seats = 10.12 }
 set_variable = { social_liberal_seats = 0.93 }
 set_variable = { classical_liberal_seats = 25.76 }
 set_variable = { conservative_seats = 27.92 }
-set_variable = { reactionary_seats = 19.36 }
+set_variable = { national_conservative_seats = 19.36 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_conservative
-set_country_flag = coalition_reactionary
+set_country_flag = coalition_national_conservative
 set_country_flag = coalition_social_liberal
 add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {
@@ -120,7 +120,7 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 19.36
+    national_conservative = 19.36
     conservative = 27.92
     progressive = 15.91
     classical_liberal = 25.76
@@ -131,7 +131,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Kadri Veseli"
 	picture = "Kadri_Veseli.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
@@ -161,7 +161,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Valon Murati"
 	picture = "Valon_Murati.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

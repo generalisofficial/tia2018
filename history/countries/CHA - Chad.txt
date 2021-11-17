@@ -99,33 +99,33 @@ set_variable = { social_democrat_seats = 28.73 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 71.27 }
+set_variable = { right_wing_nationalist_seats = 71.27 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_nationalist
-add_to_variable = { ROOT.Coalition = nationalist_seats }
+set_country_flag = coalition_right_wing_nationalist
+add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 
 set_politics = {	
-	ruling_party = nationalist
+	ruling_party = right_wing_nationalist
 	last_election = "2016.4.10"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 71.27
+    right_wing_nationalist = 71.27
     social_democrat = 28.73
 }
 
 create_country_leader = {
 	name = "Idriss Déby"
 	picture = "Idriss_Deby.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

@@ -94,18 +94,18 @@ set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 8.33 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 25 }
-set_variable = { reactionary_seats = 62.51 }
+set_variable = { national_conservative_seats = 62.51 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 4.16 }
+set_variable = { right_wing_nationalist_seats = 4.16 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_conservative
-set_country_flag = coalition_reactionary
+set_country_flag = coalition_national_conservative
 add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -115,8 +115,8 @@ set_politics = {
 }
 
 set_popularities = {
-	nationalist = 30
-	reactionary = 53.34
+	right_wing_nationalist = 30
+	national_conservative = 53.34
 	conservative = 6.66
 	social_liberal = 10
 }
@@ -124,19 +124,19 @@ set_popularities = {
 create_country_leader = {
 	name = "Masis Mayilyan"
 	picture = "Masis_Mayilyan.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {
 	name = "Arayik Harutyunyan"
 	picture = "Arayik_Harutyunyan.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
 	name = "Bako Sahakyan"
 	picture = "Bako_Sahakyan.dds"
-	ideology = national_conservative
+	ideology = social_conservative
 }
 
 create_country_leader = {

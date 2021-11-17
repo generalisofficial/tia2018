@@ -73,28 +73,28 @@ set_variable = { social_democrat_seats = 1.6 }
 set_variable = { social_liberal_seats = 3.6 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 78.75 }
+set_variable = { national_conservative_seats = 78.75 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 4.41 }
+set_variable = { right_wing_nationalist_seats = 4.41 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 11.64 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2014.4.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 78.75
+    national_conservative = 78.75
 	islamist = 11.64
-	nationalist = 4.41
+	right_wing_nationalist = 4.41
 	social_liberal = 3.6
 	social_democrat = 1.6
 }
@@ -120,7 +120,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Muhammad Mohaqiq"
 	picture = "Muhammad_Mohaqiq.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

@@ -36,9 +36,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_government = nationalist
+			has_government = right_wing_nationalist
 		}
-		localization_key = GFX_ideology_[This.GetTag]_nationalist_group
+		localization_key = GFX_ideology_[This.GetTag]_right_wing_nationalist_group
 	}
 	text = {
 		trigger = {
@@ -48,9 +48,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_government = reactionary
+			has_government = national_conservative
 		}
-		localization_key = GFX_ideology_[This.GetTag]_reactionary_group
+		localization_key = GFX_ideology_[This.GetTag]_national_conservative_group
 	}
 	text = {
 		trigger = {
@@ -192,7 +192,7 @@ defined_text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 3 }
 		}
-		localization_key = GFX_ideology_[This.GetTag]_nationalist_group
+		localization_key = GFX_ideology_[This.GetTag]_right_wing_nationalist_group
 	}
 	text = {
 		trigger = {
@@ -204,7 +204,7 @@ defined_text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 5 }
 		}
-		localization_key = GFX_ideology_[This.GetTag]_reactionary_group
+		localization_key = GFX_ideology_[This.GetTag]_national_conservative_group
 	}
 	text = {
 		trigger = {
@@ -283,14 +283,14 @@ defined_text = {
 	}text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 3 }
-			has_government = nationalist
+			has_government = right_wing_nationalist
 		}
 		localization_key = "(Government Leader)"
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 3 }
-			NOT = { has_government = nationalist }
+			NOT = { has_government = right_wing_nationalist }
 		}
 		localization_key = "(Coalition Partner)"
 	}
@@ -311,14 +311,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 5 }
-			has_government = reactionary
+			has_government = national_conservative
 		}
 		localization_key = "(Government Leader)"
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 5 }
-			NOT = { has_government = reactionary }
+			NOT = { has_government = national_conservative }
 		}
 		localization_key = "(Coalition Partner)"
 	}
@@ -455,14 +455,14 @@ defined_text = {
 	}text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 3 }
-			has_government = nationalist
+			has_government = right_wing_nationalist
 		}
 		localization_key = GOV_CANT_BE_KICKED
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 3 }
-			NOT = { has_government = nationalist }
+			NOT = { has_government = right_wing_nationalist }
 		}
 		localization_key = "Kick this Party from your coalition."
 	}
@@ -483,14 +483,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 5 }
-			has_government = reactionary
+			has_government = national_conservative
 		}
 		localization_key = GOV_CANT_BE_KICKED
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 5 }
-			NOT = { has_government = reactionary }
+			NOT = { has_government = national_conservative }
 		}
 		localization_key = "Kick this Party from your coalition."
 	}

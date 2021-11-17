@@ -152,26 +152,26 @@ if = {
 
 ABK = {
 	set_politics = {	
-		ruling_party = nationalist
+		ruling_party = right_wing_nationalist
 		last_election = "2014.8.24"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		nationalist = 51.52
-		reactionary = 48.48
+		right_wing_nationalist = 51.52
+		national_conservative = 48.48
 	}
 }
 
 SOS = {
 	set_politics = {	
-		ruling_party = reactionary
+		ruling_party = national_conservative
 		last_election = "2017.4.9"
 		election_frequency = 60
 		elections_allowed = yes
 	}
 	set_popularities = {
-		reactionary = 100
+		national_conservative = 100
 	}
 }
 
@@ -208,27 +208,27 @@ set_variable = { social_democrat_seats = 5.11 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0.22 }
-set_variable = { reactionary_seats = 76.46 }
+set_variable = { national_conservative_seats = 76.46 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 8.88 }
+set_variable = { right_wing_nationalist_seats = 8.88 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2012.3.18"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 76.02
-    nationalist = 4.88
+    national_conservative = 76.02
+    right_wing_nationalist = 4.88
 	communist = 12.66
 	social_democrat = 6
 	conservative = 0.44
@@ -237,7 +237,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Vladimir Putin"
 	picture = "Vladimir_Putin.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 	traits = {
 		background_intelligence_officer
 		strongman
@@ -253,7 +253,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vladimir Zhirinovsky"
 	picture = "Vladimir_Zhirinovsky.dds"
-	ideology = proto_fascist
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

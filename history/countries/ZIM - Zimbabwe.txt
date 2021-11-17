@@ -114,9 +114,9 @@ set_variable = { social_democrat_seats = 34.9 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -135,13 +135,13 @@ set_politics = {
 set_popularities = {
     socialist = 66.2
     social_democrat = 32.76
-	nationalist = 1.04
+	right_wing_nationalist = 1.04
 }
 
 create_country_leader = {
 	name = "Emmerson Mnangagwa"
 	picture = "Emmerson_Mnangagwa.dds"
-	ideology = african_socialist
+	ideology = left_wing_nationalist
 }
 
 create_country_leader = {
@@ -153,7 +153,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ambrose Mutinhiri"
 	picture = "Ambrose_Mutinhiri.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_corps_commander = {

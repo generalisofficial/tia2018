@@ -108,9 +108,9 @@ set_variable = { social_democrat_seats = 46.00 }
 set_variable = { social_liberal_seats = 0.67 }
 set_variable = { classical_liberal_seats = 41.33 }
 set_variable = { conservative_seats = 10.66 }
-set_variable = { reactionary_seats = 0.67 }
+set_variable = { national_conservative_seats = 0.67 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -133,7 +133,7 @@ set_popularities = {
     social_democrat = 45.03
     conservative = 10.59
     progressive = 0.66
-    reactionary = 0.66
+    national_conservative = 0.66
     social_liberal = 0.66
 }
 
@@ -192,13 +192,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pauline Hanson"
 	picture = "Pauline_Hanson.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {
 	name = "Bob Katter"
 	picture = "Bob_Katter.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

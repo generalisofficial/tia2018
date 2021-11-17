@@ -103,20 +103,20 @@ set_variable = { social_democrat_seats = 21.5 }
 set_variable = { social_liberal_seats = 3.5 }
 set_variable = { classical_liberal_seats = 16.5 }
 set_variable = { conservative_seats = 18 }
-set_variable = { reactionary_seats = 34.5 }
+set_variable = { national_conservative_seats = 34.5 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_reactionary
+set_country_flag = coalition_national_conservative
 set_country_flag = coalition_conservative
 set_country_flag = coalition_classical_liberal
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
@@ -128,7 +128,7 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 27.51
+    national_conservative = 27.51
     conservative = 15.5
     classical_liberal = 14.49
     social_liberal = 8
@@ -141,7 +141,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ueli Maurer"
 	picture = "Ueli_Maurer.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
@@ -177,7 +177,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Andreas Stahel"
 	picture = "Andreas_Stahel.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

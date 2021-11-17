@@ -53,19 +53,19 @@ country_event = {
 	desc = political.2.d
 	
 	trigger = {
-		nationalist > 0.5
-		NOT = { has_government = nationalist has_elections = yes always = no }
+		right_wing_nationalist > 0.5
+		NOT = { has_government = right_wing_nationalist has_elections = yes always = no }
 	}
 	
 	mean_time_to_happen = {
 		days = 100
 		modifier = {
 			factor = 0.5
-			nationalist > 0.5
+			right_wing_nationalist > 0.5
 		}
 		modifier = {
 			factor = 0.5
-			nationalist > 0.55
+			right_wing_nationalist > 0.55
 		}
 		modifier = {
 			factor = 0.75
@@ -76,7 +76,7 @@ country_event = {
 	option = {
 		name = political.2.o1
 		set_politics = {
-			ruling_party = nationalist
+			ruling_party = right_wing_nationalist
 			elections_allowed = yes
 		}
 		news_event = {
@@ -90,7 +90,7 @@ country_event = {
 	option = {
 		name = political.2.o2
 		start_civil_war = {
-			ideology = nationalist
+			ideology = right_wing_nationalist
 			size = 0.5
 		}
 	}
@@ -121,7 +121,7 @@ country_event = {
 			factor = 0.75
 			OR = {
 				has_government = fascist
-				has_government = nationalist
+				has_government = right_wing_nationalist
 			}
 		}
 	}
@@ -210,26 +210,26 @@ country_event = {
 	desc = political.5.d
 	
 	trigger = {
-		reactionary > 0.5
-		NOT = { has_government = reactionary has_elections = yes always = no }
+		national_conservative > 0.5
+		NOT = { has_government = national_conservative has_elections = yes always = no }
 	}
 	
 	mean_time_to_happen = {
 		days = 75
 		modifier = {
 			factor = 0.5
-			reactionary > 0.5
+			national_conservative > 0.5
 		}
 		modifier = {
 			factor = 0.5
-			reactionary > 0.55
+			national_conservative > 0.55
 		}
 	}
 	
 	option = {
 		name = political.5.o1
 		set_politics = {
-			ruling_party = reactionary
+			ruling_party = national_conservative
 			elections_allowed = yes
 		}
 		news_event = {
@@ -525,7 +525,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 3
-			OR = { has_government = fascist has_government = nationalist }
+			OR = { has_government = fascist has_government = right_wing_nationalist }
 		}
 		modifier = {
 			factor = 5
@@ -576,7 +576,7 @@ country_event = {
 	desc = political.15.d
 	
 	trigger = {
-		nationalist > 0.01
+		right_wing_nationalist > 0.01
 	}
 	
 	mean_time_to_happen = {
@@ -586,7 +586,7 @@ country_event = {
 	option = {
 		name = political.o.movingOn
 		add_popularity = {
-			ideology = nationalist
+			ideology = right_wing_nationalist
 			popularity = 0.03
 		}
 	}
@@ -622,7 +622,7 @@ country_event = {
 	desc = political.17.d
 	
 	trigger = {
-		reactionary > 0.01
+		national_conservative > 0.01
 	}
 	
 	mean_time_to_happen = {
@@ -632,7 +632,7 @@ country_event = {
 	option = {
 		name = political.o.movingOn
 		add_popularity = {
-			ideology = reactionary
+			ideology = national_conservative
 			popularity = 0.03
 		}
 	}

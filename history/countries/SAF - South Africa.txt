@@ -109,9 +109,9 @@ set_variable = { social_democrat_seats = 64.75 }
 set_variable = { social_liberal_seats = 22.25 }
 set_variable = { classical_liberal_seats = 2.5 }
 set_variable = { conservative_seats = 1.5 }
-set_variable = { reactionary_seats = 1 }
+set_variable = { national_conservative_seats = 1 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -132,7 +132,7 @@ set_popularities = {
 	social_liberal = 21
 	communist = 11
     classical_liberal = 3.5
-	reactionary = 2.5
+	national_conservative = 2.5
 	conservative = 2
 	progressive = 0.5
 	socialist = 0.25
@@ -166,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pieter Groenewald"
 	picture = "Pieter_Groenewald.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

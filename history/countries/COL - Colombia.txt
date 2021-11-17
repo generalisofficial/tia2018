@@ -97,9 +97,9 @@ set_variable = { social_democrat_seats = 17.26 }
 set_variable = { social_liberal_seats = 34.1 }
 set_variable = { classical_liberal_seats = 9.46 }
 set_variable = { conservative_seats = 19.53 }
-set_variable = { reactionary_seats = 11.57 }
+set_variable = { national_conservative_seats = 11.57 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 3.99 }
+set_variable = { right_wing_nationalist_seats = 3.99 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -116,7 +116,7 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 22.03
+    national_conservative = 22.03
     social_democrat = 20.44
 	classical_liberal = 17.44
     social_liberal = 14.53
@@ -124,7 +124,7 @@ set_popularities = {
 	progressive = 6.97
 	communist = 2.90
 	socialist = 1.74
-	nationalist = 1.16
+	right_wing_nationalist = 1.16
 }
 
 create_country_leader = {
@@ -142,7 +142,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Iván Duque Márquez"
 	picture = "Ivan_Duque_Marquez.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

@@ -95,27 +95,27 @@ set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 3.13 }
 set_variable = { social_liberal_seats = 20.31 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 53.12 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 53.12 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = national_conservative
 	last_election = "2017.11.26"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 53.12
+    national_conservative = 53.12
     social_liberal = 20.31
     socialist = 23.44
 	social_democrat = 3.13
@@ -124,7 +124,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Juan Orlando Hernández"
 	picture = "Juan_Orlando_Hernandez.dds"
-	ideology = national_conservative
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

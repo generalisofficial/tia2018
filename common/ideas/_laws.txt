@@ -195,7 +195,7 @@ ideas = {
 							OR = {
 								has_government = islamist
 								has_government = fascist
-								has_government = nationalist
+								has_government = right_wing_nationalist
 								has_government = communist
 							}
 							threat > 0.7
@@ -303,15 +303,15 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 		
-		nationalist_support = {
+		right_wing_nationalist_support = {
 			cost = 75
 			
 			available = {
-				NOT = { has_government = nationalist is_ai = yes }
+				NOT = { has_government = right_wing_nationalist is_ai = yes }
 			}
 			
 			modifier = {
-				nationalist_drift = 0.1
+				right_wing_nationalist_drift = 0.1
 				political_power_gain = -0.15
 			}
 			
@@ -333,15 +333,15 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 		
-		reactionary_support = {
+		national_conservative_support = {
 			cost = 75
 			
 			available = {
-				NOT = { has_government = reactionary is_ai = yes }
+				NOT = { has_government = national_conservative is_ai = yes }
 			}
 			
 			modifier = {
-				reactionary_drift = 0.1
+				national_conservative_drift = 0.1
 				political_power_gain = -0.15
 			}
 			
@@ -776,8 +776,8 @@ ideas = {
 				modifier = {
 					factor = 10
 					OR = {
-						has_government = nationalist
-						has_government = reactionary
+						has_government = right_wing_nationalist
+						has_government = national_conservative
 					}
 				}
 			}
@@ -859,8 +859,8 @@ ideas = {
 				modifier = {
 				 	factor = 25
 					OR = {
-				 		has_government = nationalist
-						has_government = reactionary
+				 		has_government = right_wing_nationalist
+						has_government = national_conservative
 						has_government = conservative
 						has_government = communist
 					}

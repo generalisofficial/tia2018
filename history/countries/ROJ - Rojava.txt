@@ -100,9 +100,9 @@ set_variable = { social_democrat_seats = 6.9 }
 set_variable = { social_liberal_seats = 6.9 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 2.3 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 4.6 }
+set_variable = { right_wing_nationalist_seats = 4.6 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -111,11 +111,11 @@ set_country_flag = has_coalition
 set_country_flag = coalition_socialist
 set_country_flag = coalition_progressive
 set_country_flag = coalition_social_liberal
-set_country_flag = coalition_nationalist
+set_country_flag = coalition_right_wing_nationalist
 add_to_variable = { ROOT.Coalition = socialist_seats }
 add_to_variable = { ROOT.Coalition = progressive_seats }
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
-add_to_variable = { ROOT.Coalition = nationalist_seats }
+add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 	
 set_politics = {	
 	ruling_party = socialist
@@ -125,7 +125,7 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 4.6
+    right_wing_nationalist = 4.6
     social_democrat = 6.9
     conservative = 2.3
     social_liberal = 6.9
@@ -142,7 +142,7 @@ create_country_leader = {
 create_country_leader = { 
     name = "Ibrahim Biro"
 	picture = "Ibrahim_Biro.dds" 
-	ideology = nationalist_ideology 
+	ideology = right_wing_nationalist_ideology 
 }
 
 create_country_leader = { 

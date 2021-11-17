@@ -98,9 +98,9 @@ set_variable = { social_democrat_seats = 16.04 }
 set_variable = { social_liberal_seats = 38.61 }
 set_variable = { classical_liberal_seats = 9.45 }
 set_variable = { conservative_seats = 24.63 }
-set_variable = { reactionary_seats = 5.72 }
+set_variable = { national_conservative_seats = 5.72 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 5.5 }
+set_variable = { right_wing_nationalist_seats = 5.5 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
@@ -119,12 +119,12 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 5.55
+    right_wing_nationalist = 5.55
     conservative = 24.63
     classical_liberal = 9.45
     social_liberal = 38.61
     social_democrat = 16.04
-    reactionary = 5.72
+    national_conservative = 5.72
 }
 
 create_country_leader = {
@@ -154,13 +154,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Valdemar Tomasevski"
 	picture = "Valdemar_Tomasevski.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
 	name = "Remigijus Zemaitaitis"
 	picture = "Remigijus_Zemaitaitis.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

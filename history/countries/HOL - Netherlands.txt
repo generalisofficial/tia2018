@@ -100,9 +100,9 @@ set_variable = { social_democrat_seats = 5.7 }
 set_variable = { social_liberal_seats = 12.2 }
 set_variable = { classical_liberal_seats = 25.9 }
 set_variable = { conservative_seats = 15.8 }
-set_variable = { reactionary_seats = 18.3 }
+set_variable = { national_conservative_seats = 18.3 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 1.8 }
+set_variable = { right_wing_nationalist_seats = 1.8 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 2.1 }
 
@@ -125,8 +125,8 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 11.33
-    nationalist = 5.33
+    national_conservative = 11.33
+    right_wing_nationalist = 5.33
     conservative = 16
     classical_liberal = 27.35
     social_liberal = 16
@@ -145,7 +145,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Geert Wilders"
 	picture = "Geert_Wilders.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
@@ -187,7 +187,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Thierry Baudet"
 	picture = "Thierry_Baudet.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

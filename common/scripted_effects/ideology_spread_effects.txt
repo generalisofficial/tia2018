@@ -4,8 +4,8 @@ give_001_ideology_to_FROM = {
 		FROM = { add_popularity = { ideology = islamist popularity = 0.01 } }
 	}
 	if = {
-		limit = { has_government = nationalist }
-		FROM = { add_popularity = { ideology = nationalist popularity = 0.01 } }
+		limit = { has_government = right_wing_nationalist }
+		FROM = { add_popularity = { ideology = right_wing_nationalist popularity = 0.01 } }
 	}
 	if = {
 		limit = { has_government = fascist }
@@ -16,8 +16,8 @@ give_001_ideology_to_FROM = {
 		FROM = { add_popularity = { ideology = monarchist popularity = 0.01 } }
 	}
 	if = {
-		limit = { has_government = reactionary }
-		FROM = { add_popularity = { ideology = reactionary popularity = 0.01 } }
+		limit = { has_government = national_conservative }
+		FROM = { add_popularity = { ideology = national_conservative popularity = 0.01 } }
 	}
 	if = {
 		limit = { has_government = conservative }

@@ -118,20 +118,20 @@ set_variable = { social_democrat_seats = 20 }
 set_variable = { social_liberal_seats = 9.16 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 33.35 }
-set_variable = { reactionary_seats = 5 }
+set_variable = { national_conservative_seats = 5 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 17.5 }
+set_variable = { right_wing_nationalist_seats = 17.5 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_conservative
-set_country_flag = coalition_nationalist
-set_country_flag = coalition_reactionary
+set_country_flag = coalition_right_wing_nationalist
+set_country_flag = coalition_national_conservative
 add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = nationalist_seats }
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {		
 	ruling_party = conservative
@@ -141,8 +141,8 @@ set_politics = {
 }
 
 set_popularities = {
-    nationalist = 17.5
-    reactionary = 4.16
+    right_wing_nationalist = 17.5
+    national_conservative = 4.16
     conservative = 32.52
     social_liberal = 29.16
     social_democrat = 5
@@ -179,7 +179,7 @@ add_opinion_modifier = {
 create_country_leader = {
 	name = "Benjamin Netanyahu"
 	picture = "Benjamin_Netanyahu.dds"
-	ideology = national_conservative
+	ideology = liberal_conservative
 }
 
 create_country_leader = {
@@ -191,13 +191,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aryeh Deri"
 	picture = "Aryeh_Deri.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {
 	name = "Avigdor Lieberman"
 	picture = "Avigdor_Lieberman.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

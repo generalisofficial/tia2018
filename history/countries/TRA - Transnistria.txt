@@ -94,34 +94,34 @@ set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 97.68 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 97.68 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = national_conservative
 	last_election = "2016.12.11"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 97.68
+    national_conservative = 97.68
 	communist = 2.32
 }
 
 create_country_leader = {
 	name = "Vadim Krasnoselsky"
 	picture = "Vadim_Krasnoselsky.dds"
-	ideology = national_conservative
+	ideology = national_conservative_ideology
 	traits = {
 		friend_of_russia
 	}
@@ -136,5 +136,5 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roman Khudyakov"
 	picture = "Roman_Khudyakov.dds"
-	ideology = proto_fascist
+	ideology = right_wing_nationalist_ideology
 }

@@ -104,26 +104,26 @@ set_variable = { social_democrat_seats = 13.03 }
 set_variable = { social_liberal_seats = 9.29 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 77.68 }
+set_variable = { right_wing_nationalist_seats = 77.68 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_nationalist
-add_to_variable = { ROOT.Coalition = nationalist_seats }
+set_country_flag = coalition_right_wing_nationalist
+add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 
 set_politics = {	
-	ruling_party = nationalist
+	ruling_party = right_wing_nationalist
 	last_election = "2017.8.4"
 	election_frequency = 84
 	elections_allowed = yes
 }
 
 set_popularities = {
-    nationalist = 74.88
+    right_wing_nationalist = 74.88
 	social_democrat = 13.37
 	social_liberal = 7.20
     progressive = 4.55
@@ -132,7 +132,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Paul Kagame"
 	picture = "Paul_Kagame.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

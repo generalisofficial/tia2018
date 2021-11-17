@@ -224,38 +224,38 @@ if = {
 
 MIC = {
 	set_politics = {	
-		ruling_party = reactionary
+		ruling_party = national_conservative
 		last_election = "2017.3.7"
 		election_frequency = 24
 		elections_allowed = yes
 	}
 	set_popularities = {
-		reactionary = 100
+		national_conservative = 100
 	}
 }
 
 MAR = {
 	set_politics = {	
-		ruling_party = reactionary
+		ruling_party = national_conservative
 		last_election = "2015.11.16"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		reactionary = 100
+		national_conservative = 100
 	}
 }
 
 PLU = {
 	set_politics = {	
-		ruling_party = reactionary
+		ruling_party = national_conservative
 		last_election = "2016.11.1"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	
 	set_popularities = {
-		reactionary = 100
+		national_conservative = 100
 	}
 }
 
@@ -306,9 +306,9 @@ set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 48.8 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 51.2 }
-set_variable = { reactionary_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -362,7 +362,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Frank Fluckiger"
 	picture = "Frank_Fluckiger.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
@@ -386,7 +386,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Richard B. Spencer"
 	picture = "Richard_B_Spencer.dds"
-	ideology = proto_fascist
+	ideology = right_wing_nationalist_ideology
 }
 
 create_country_leader = {

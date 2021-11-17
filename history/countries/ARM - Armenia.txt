@@ -107,8 +107,8 @@ NGK = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		nationalist = 30
-		reactionary = 53.34
+		right_wing_nationalist = 30
+		national_conservative = 53.34
 		conservative = 6.66
 		social_liberal = 10
 	}
@@ -131,21 +131,21 @@ set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 7.78 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 27.35 }
-set_variable = { reactionary_seats = 58.29 }
+set_variable = { national_conservative_seats = 58.29 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
+set_country_flag = coalition_national_conservative
 set_country_flag = coalition_socialist
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2017.6.20"
 	election_frequency = 60
 	elections_allowed = yes
@@ -155,14 +155,14 @@ set_popularities = {
     social_liberal = 56.79
     conservative = 8.26
     classical_liberal = 6.37
-    reactionary = 24.70
+    national_conservative = 24.70
     socialist = 3.88
 }
 
 create_country_leader = {
 	name = "Karen Karapetyan"
 	picture = "Karen_Karapetyan.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

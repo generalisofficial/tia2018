@@ -99,27 +99,27 @@ set_variable = { social_democrat_seats = 13.33 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 52.67 }
+set_variable = { national_conservative_seats = 52.67 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 24 }
+set_variable = { right_wing_nationalist_seats = 24 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2016.12.4"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 52.67
-    nationalist = 24
+    national_conservative = 52.67
+    right_wing_nationalist = 24
     social_democrat = 13.33
 	progressive = 10
 }
@@ -127,7 +127,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Shavkat Mirziyoyev"
 	picture = "Shavkat_Mirziyoyev.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {

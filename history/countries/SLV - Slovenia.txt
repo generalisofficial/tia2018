@@ -94,9 +94,9 @@ set_variable = { social_democrat_seats = 5.98 }
 set_variable = { social_liberal_seats = 44.82 }
 set_variable = { classical_liberal_seats = 7.35 }
 set_variable = { conservative_seats = 5.59 }
-set_variable = { reactionary_seats = 30.29 }
+set_variable = { national_conservative_seats = 30.29 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -115,19 +115,19 @@ set_politics = {
 }
 
 set_popularities = {
-    reactionary = 24.92
+    national_conservative = 24.92
     classical_liberal = 29.63
     social_democrat = 9.93
     social_liberal = 14.86
     socialist = 9.33
 	conservative = 7.16
-	nationalist = 4.17
+	right_wing_nationalist = 4.17
 }
 
 create_country_leader = {
 	name = "Janez Janša"
 	picture = "Janez_Jansa.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
@@ -163,7 +163,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zmago Jelinčič Plemeniti"
 	picture = "Zmago_Jelincic_Plemeniti.dds"
-	ideology = nationalist_ideology
+	ideology = right_wing_nationalist_ideology
 }
 
 create_field_marshal = {

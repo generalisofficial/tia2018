@@ -167,9 +167,9 @@ resistance_90 = {
 				set_temp_variable = { allowed_party_social_liberal = 1 }
 				set_temp_variable = { allowed_party_classical_liberal = 1 }
 				set_temp_variable = { allowed_party_conservative = 1 }
-				set_temp_variable = { allowed_party_reactionary = 1 }
+				set_temp_variable = { allowed_party_national_conservative = 1 }
 				set_temp_variable = { allowed_party_monarchist = 1 }
-				set_temp_variable = { allowed_party_nationalist = 1 }
+				set_temp_variable = { allowed_party_right_wing_nationalist = 1 }
 				set_temp_variable = { allowed_party_fascist = 1 }
 				set_temp_variable = { allowed_party_islamist = 1 }
 				
@@ -222,16 +222,16 @@ resistance_90 = {
 									check_variable = { allowed_party_conservative = 0 }
 								}
 								AND = { 
-									has_government = reactionary
-									check_variable = { allowed_party_reactionary = 0 }
+									has_government = national_conservative
+									check_variable = { allowed_party_national_conservative = 0 }
 								}
 								AND = { 
 									has_government = monarchist
 									check_variable = { allowed_party_monarchist = 0 }
 								}
 								AND = { 
-									has_government = nationalist
-									check_variable = { allowed_party_nationalist = 0 }
+									has_government = right_wing_nationalist
+									check_variable = { allowed_party_right_wing_nationalist = 0 }
 								}
 								AND = { 
 									has_government = fascist
@@ -287,11 +287,11 @@ resistance_90 = {
 								}
 								set_politics = { ruling_party = conservative elections_allowed = yes }
 							}
-							allowed_party_reactionary = {
+							allowed_party_national_conservative = {
 								set_popularities = {
-									reactionary = 100
+									national_conservative = 100
 								}
-								set_politics = { ruling_party = reactionary elections_allowed = yes }
+								set_politics = { ruling_party = national_conservative elections_allowed = yes }
 							}
 							allowed_party_monarchist = {
 								set_popularities = {
@@ -299,11 +299,11 @@ resistance_90 = {
 								}
 								set_politics = { ruling_party = monarchist elections_allowed = no }
 							}
-							allowed_party_nationalist = {
+							allowed_party_right_wing_nationalist = {
 								set_popularities = {
-									nationalist = 100
+									right_wing_nationalist = 100
 								}
-								set_politics = { ruling_party = nationalist elections_allowed = yes }
+								set_politics = { ruling_party = right_wing_nationalist elections_allowed = yes }
 							}
 							allowed_party_fascist = {
 								set_popularities = {

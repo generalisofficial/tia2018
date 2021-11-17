@@ -2,9 +2,9 @@ break_coalition = {
 	clr_country_flag = has_coalition
 	clr_country_flag = coalition_islamist
 	clr_country_flag = coalition_fascist
-	clr_country_flag = coalition_nationalist
+	clr_country_flag = coalition_right_wing_nationalist
 	clr_country_flag = coalition_monarchist
-	clr_country_flag = coalition_reactionary
+	clr_country_flag = coalition_national_conservative
 	clr_country_flag = coalition_conservative
 	clr_country_flag = coalition_classical_liberal
 	clr_country_flag = coalition_social_liberal
@@ -19,9 +19,9 @@ cleanup_coalition = {
 	clr_country_flag = government_chosen
 	clr_country_flag = government_islamist
 	clr_country_flag = government_fascist
-	clr_country_flag = government_nationalist
+	clr_country_flag = government_right_wing_nationalist
 	clr_country_flag = government_monarchist
-	clr_country_flag = government_reactionary
+	clr_country_flag = government_national_conservative
 	clr_country_flag = government_conservative
 	clr_country_flag = government_classical_liberal
 	clr_country_flag = government_social_liberal
@@ -36,9 +36,9 @@ cleanup_coalition = {
 cleanup_seats = {
 	clear_variable = islamist_seats
 	clear_variable = fascist_seats
-	clear_variable = nationalist_seats
+	clear_variable = right_wing_nationalist_seats
 	clear_variable = monarchist_seats
-	clear_variable = reactionary_seats
+	clear_variable = national_conservative_seats
 	clear_variable = conservative_seats
 	clear_variable = classical_liberal_seats
 	clear_variable = social_liberal_seats
@@ -51,9 +51,9 @@ cleanup_seats = {
 cleanup_seats_parliament = {
 	clear_variable = islamist_seats_parliament
 	clear_variable = fascist_seats_parliament
-	clear_variable = nationalist_seats_parliament
+	clear_variable = right_wing_nationalist_seats_parliament
 	clear_variable = monarchist_seats_parliament
-	clear_variable = reactionary_seats_parliament
+	clear_variable = national_conservative_seats_parliament
 	clear_variable = conservative_seats_parliament
 	clear_variable = classical_liberal_seats_parliament
 	clear_variable = social_liberal_seats_parliament
@@ -82,9 +82,9 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_nationalist
+			has_country_flag = coalition_right_wing_nationalist
 		}
-		add_to_variable = { ROOT.Coalition = nationalist_seats }
+		add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 	}
 	if = {
 		limit = {
@@ -94,9 +94,9 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_reactionary
+			has_country_flag = coalition_national_conservative
 		}
-		add_to_variable = { ROOT.Coalition = reactionary_seats }
+		add_to_variable = { ROOT.Coalition = national_conservative_seats }
 	}
 	if = {
 		limit = {
@@ -179,18 +179,18 @@ quickset_parliament = {
 	multiply_variable = { conservative_seats = 100 }
 	round_variable = conservative_seats
 	divide_variable = { conservative_seats = 100 }
-	set_variable = { reactionary_seats = party_popularity_100@reactionary }
-	multiply_variable = { reactionary_seats = 100 }
-	round_variable = reactionary_seats
-	divide_variable = { reactionary_seats = 100 }
+	set_variable = { national_conservative_seats = party_popularity_100@national_conservative }
+	multiply_variable = { national_conservative_seats = 100 }
+	round_variable = national_conservative_seats
+	divide_variable = { national_conservative_seats = 100 }
 	set_variable = { monarchist_seats = party_popularity_100@monarchist }
 	multiply_variable = { monarchist_seats = 100 }
 	round_variable = monarchist_seats
 	divide_variable = { monarchist_seats = 100 }
-	set_variable = { nationalist_seats = party_popularity_100@nationalist }
-	multiply_variable = { nationalist_seats = 100 }
-	round_variable = nationalist_seats
-	divide_variable = { nationalist_seats = 100 }
+	set_variable = { right_wing_nationalist_seats = party_popularity_100@right_wing_nationalist }
+	multiply_variable = { right_wing_nationalist_seats = 100 }
+	round_variable = right_wing_nationalist_seats
+	divide_variable = { right_wing_nationalist_seats = 100 }
 	set_variable = { fascist_seats = party_popularity_100@fascist }
 	multiply_variable = { fascist_seats = 100 }
 	round_variable = fascist_seats
@@ -256,10 +256,10 @@ quickset_coalition = {
 	}
 	if = {
 		limit = {
-			has_government = reactionary
+			has_government = national_conservative
 		}
-		set_country_flag = coalition_reactionary
-        set_variable = { ROOT.Coalition = reactionary_seats }
+		set_country_flag = coalition_national_conservative
+        set_variable = { ROOT.Coalition = national_conservative_seats }
 	}
 	if = {
 		limit = {
@@ -270,10 +270,10 @@ quickset_coalition = {
 	}
 	if = {
 		limit = {
-			has_government = nationalist
+			has_government = right_wing_nationalist
 		}
-		set_country_flag = coalition_nationalist
-        set_variable = { ROOT.Coalition = nationalist_seats }
+		set_country_flag = coalition_right_wing_nationalist
+        set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 	}
 	if = {
 		limit = {
@@ -310,8 +310,8 @@ set_parliament_graphics = {
 	set_variable = { conservative_seats_parliament = conservative_seats }
 	set_variable = { islamist_seats_parliament = islamist_seats }
 	set_variable = { monarchist_seats_parliament = monarchist_seats }
-	set_variable = { reactionary_seats_parliament = reactionary_seats }
-	set_variable = { nationalist_seats_parliament = nationalist_seats }
+	set_variable = { national_conservative_seats_parliament = national_conservative_seats }
+	set_variable = { right_wing_nationalist_seats_parliament = right_wing_nationalist_seats }
 	set_variable = { fascist_seats_parliament = fascist_seats }
 
 ## Step 2 : Round variables
@@ -325,8 +325,8 @@ set_parliament_graphics = {
 	round_variable = conservative_seats_parliament
 	round_variable = islamist_seats_parliament
 	round_variable = monarchist_seats_parliament
-	round_variable = reactionary_seats_parliament
-	round_variable = nationalist_seats_parliament
+	round_variable = national_conservative_seats_parliament
+	round_variable = right_wing_nationalist_seats_parliament
 	round_variable = fascist_seats_parliament
 
 ## Step 3 : Divide by 2 (For a graphic of 50 seats)
@@ -340,8 +340,8 @@ set_parliament_graphics = {
 	divide_variable = { conservative_seats_parliament = 2 }
 	divide_variable = { islamist_seats_parliament = 2 }
 	divide_variable = { monarchist_seats_parliament = 2 }
-	divide_variable = { reactionary_seats_parliament = 2 }
-	divide_variable = { nationalist_seats_parliament = 2 }
+	divide_variable = { national_conservative_seats_parliament = 2 }
+	divide_variable = { right_wing_nationalist_seats_parliament = 2 }
 	divide_variable = { fascist_seats_parliament = 2 }
 
 ## Step 4 : Round again
@@ -355,8 +355,8 @@ set_parliament_graphics = {
 	round_variable = conservative_seats_parliament
 	round_variable = islamist_seats_parliament
 	round_variable = monarchist_seats_parliament
-	round_variable = reactionary_seats_parliament
-	round_variable = nationalist_seats_parliament
+	round_variable = national_conservative_seats_parliament
+	round_variable = right_wing_nationalist_seats_parliament
 	round_variable = fascist_seats_parliament
 
 ## Step 5: Assign seats
@@ -373,8 +373,8 @@ set_parliament_graphics = {
 	add_to_array = { ideology_seats_array = conservative_seats_parliament }
 	add_to_array = { ideology_seats_array = islamist_seats_parliament }
 	add_to_array = { ideology_seats_array = monarchist_seats_parliament }
-	add_to_array = { ideology_seats_array = reactionary_seats_parliament }
-	add_to_array = { ideology_seats_array = nationalist_seats_parliament }
+	add_to_array = { ideology_seats_array = national_conservative_seats_parliament }
+	add_to_array = { ideology_seats_array = right_wing_nationalist_seats_parliament }
 	add_to_array = { ideology_seats_array = fascist_seats_parliament }
 
 	for_each_loop = {
@@ -721,7 +721,7 @@ set_coalition_to_array = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_nationalist
+			has_country_flag = coalition_right_wing_nationalist
 		}
 		add_to_array = { member_parties_array = 3 }
 	}
@@ -733,7 +733,7 @@ set_coalition_to_array = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_reactionary
+			has_country_flag = coalition_national_conservative
 		}
 		add_to_array = { member_parties_array = 5 }
 	}
@@ -902,28 +902,28 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { reactionary_pop = reactionary_seats_parliament }
-	round_temp_variable = reactionary_pop 
+	set_temp_variable = { national_conservative_pop = national_conservative_seats_parliament }
+	round_temp_variable = national_conservative_pop 
 	multiply_temp_variable = {
-		reactionary_pop = 2
+		national_conservative_pop = 2
 	}
-	add_to_temp_variable = { reactionary_pop = ROOT.last_idx }
+	add_to_temp_variable = { national_conservative_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = reactionary_pop
+		end = national_conservative_pop
 		set_variable = { pie_chart^v = 10 }
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { nationalist_pop = nationalist_seats_parliament }
-	round_temp_variable = nationalist_pop 
+	set_temp_variable = { right_wing_nationalist_pop = right_wing_nationalist_seats_parliament }
+	round_temp_variable = right_wing_nationalist_pop 
 	multiply_temp_variable = {
-		nationalist_pop = 2
+		right_wing_nationalist_pop = 2
 	}
-	add_to_temp_variable = { nationalist_pop = ROOT.last_idx }
+	add_to_temp_variable = { right_wing_nationalist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = nationalist_pop
+		end = right_wing_nationalist_pop
 		set_variable = { pie_chart^v = 11 }
 		add_to_variable = { ROOT.last_idx = 1 }
 	}

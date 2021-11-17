@@ -108,13 +108,13 @@ if = {
 
 NCY = {
 	set_politics = {	
-		ruling_party = reactionary
+		ruling_party = national_conservative
 		last_election = "2013.1.7"
 		election_frequency = 60
 		elections_allowed = yes
 	}
 	set_popularities = {
-		reactionary = 45.6
+		national_conservative = 45.6
 		social_democrat = 29.5
 		social_liberal = 17.1
 		conservative = 7.8
@@ -140,26 +140,26 @@ set_variable = { social_democrat_seats = 25.32 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { reactionary_seats = 50.28 }
+set_variable = { national_conservative_seats = 50.28 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 11.90 }
 set_variable = { islamist_seats = 1.21 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_reactionary
-add_to_variable = { ROOT.Coalition = reactionary_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = national_conservative
 	last_election = "2013.6.24"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    reactionary = 42.72
+    national_conservative = 42.72
     social_democrat = 22.64
 	fascist = 11.10
     socialist = 11.70
@@ -171,7 +171,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Recep Tayyip Erdoğan"
 	picture = "Recep_Tayyip_Erdogan.dds"
-	ideology = reactionary_ideology
+	ideology = national_conservative_ideology
 	traits = {
 		background_career_politician
 		strongman
