@@ -110,7 +110,7 @@ set_variable = { corporate_tax = 30 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 61.6 }
+set_variable = { socialist_seats = 61.6 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 10.8 }
 set_variable = { social_liberal_seats = 0 }
@@ -124,18 +124,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2017.8.23"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 61.6
+    socialist = 61.6
     conservative = 27.6
     social_democrat = 10.8
 }

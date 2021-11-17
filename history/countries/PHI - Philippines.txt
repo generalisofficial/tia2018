@@ -96,62 +96,80 @@ add_opinion_modifier = {
 	modifier = past_japanese_war_crimes
 }
 
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 54.42 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 11.29 }
+set_variable = { classical_liberal_seats = 1.25 }
+set_variable = { conservative_seats = 25.10 }
+set_variable = { reactionary_seats = 7.94 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_coalition
+set_country_flag = coalition_socialist
+set_country_flag = coalition_reactionary
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = socialist_seats }
+add_to_variable = { ROOT.Coalition = reactionary_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2016.5.9"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 12.73
-    social_democrat = 3.42
-    social_liberal = 39.01
-    democratic_socialist = 44.84
+	conservative = 25.10
+	reactionary = 7.94
+	classical_liberal = 1.25
+	social_liberal = 11.29
+	socialist = 54.42
 }
 
 create_country_leader = {
 	name = "Rodrigo Duterte"
 	picture = "Rodrigo_Duterte.dds"
-	ideology = democratic_socialist_ideology
+	ideology = democratic_socialist
 	traits = {
 		strongman
 	}
 }
 
 create_country_leader = {
-	name = "Mar Roxas"
-	picture = "Mar_Roxas.dds"
+	name = "Tito Sotto"
+	picture = "Tito_Sotto.dds"
+	ideology = social_conservative
+}
+
+create_country_leader = {
+	name = "Leni Robredo"
+	picture = "Leni_Robredo.dds"
 	ideology = social_liberal_ideology
 }
 
 create_country_leader = {
-	name = "Gregorio Honasan"
-	picture = "Gregorio_Honasan.dds"
+	name = "Nancy Binay"
+	picture = "Nancy_Binay.dds"
 	ideology = libertarian
 }
 
 create_country_leader = {
-	name = "Narciso Santiago Jr."
-	picture = "Narciso_Santiago_Jr.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Manuel Villar"
-	picture = "Manuel_Villar.dds"
+	name = "Cynthia Villar"
+	picture = "Cynthia_Villar.dds"
 	ideology = reactionary_ideology
 }
 
 create_country_leader = {
-	name = "Fredenil Castro"
-	picture = "Fredenil_Castro.dds"
-	ideology = liberal_conservative
-}
-
-create_country_leader = {
-	name = "Martin Romualdez"
-	picture = "Martin_Romualdez.dds"
+	name = "Murad Ebrahim"
+	picture = "Murad_Ebrahim.dds"
 	ideology = islamic_democracy
 }
 

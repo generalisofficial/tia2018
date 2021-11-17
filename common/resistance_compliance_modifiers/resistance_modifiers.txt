@@ -161,7 +161,7 @@ resistance_90 = {
 				
 				# booleans that will be allowed to change ideology
 				set_temp_variable = { allowed_party_communist = 1 }
-				set_temp_variable = { allowed_party_democratic_socialist = 1 }
+				set_temp_variable = { allowed_party_socialist = 1 }
 				set_temp_variable = { allowed_party_progressive = 1 }
 				set_temp_variable = { allowed_party_social_democrat = 1 }
 				set_temp_variable = { allowed_party_social_liberal = 1 }
@@ -198,8 +198,8 @@ resistance_90 = {
 									check_variable = { allowed_party_communist = 0 }
 								}
 								AND = {
-									has_government = democratic_socialist
-									check_variable = { allowed_party_democratic_socialist = 0 }
+									has_government = socialist
+									check_variable = { allowed_party_socialist = 0 }
 								}
 								AND = {
 									has_government = progressive
@@ -251,11 +251,11 @@ resistance_90 = {
 								}
 								set_politics = { ruling_party = communist elections_allowed = no }
 							}
-							allowed_party_democratic_socialist = {
+							allowed_party_socialist = {
 								set_popularities = {
-									democratic_socialist = 100
+									socialist = 100
 								}
-								set_politics = { ruling_party = democratic_socialist elections_allowed = yes }
+								set_politics = { ruling_party = socialist elections_allowed = yes }
 							}
 							allowed_party_progressive = {
 								set_popularities = {

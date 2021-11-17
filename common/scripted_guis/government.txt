@@ -110,10 +110,10 @@ scripted_gui = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 11 }
 					}
-					clr_country_flag = coalition_democratic_socialist
+					clr_country_flag = coalition_socialist
 					remove_from_array = { member_parties_array = 11 }
-					subtract_from_variable = { ROOT.Coalition = democratic_socialist_seats }
-					add_to_variable = { ROOT.Opposition = democratic_socialist_seats }
+					subtract_from_variable = { ROOT.Coalition = socialist_seats }
+					add_to_variable = { ROOT.Opposition = socialist_seats }
 				}
 				else_if = {
 					limit = {
@@ -215,7 +215,7 @@ scripted_gui = {
 				else_if = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 11 }
-						NOT = { has_government = democratic_socialist }
+						NOT = { has_government = socialist }
 					}
 					always = yes
 				}

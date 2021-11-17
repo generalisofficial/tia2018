@@ -92,7 +92,7 @@ set_country_flag = catholic
 
 #Chamber of Representatives
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 33.53 }
+set_variable = { socialist_seats = 33.53 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 66.47 }
@@ -106,11 +106,11 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2013.5.20"
 	election_frequency = 60
 	elections_allowed = yes
@@ -118,13 +118,13 @@ set_politics = {
 
 set_popularities = {
     social_liberal = 54.18
-    democratic_socialist = 45.82
+    socialist = 45.82
 }
 
 create_country_leader = {
 	name = "Nicolás Maduro"
 	picture = "Nicolas_Maduro.dds"
-	ideology = bolivarianist
+	ideology = socialism_of_the_21st_century
 }
 
 create_country_leader = {

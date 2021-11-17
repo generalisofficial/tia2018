@@ -438,26 +438,26 @@ country_event = {
 	desc = political.11.d
 	
 	trigger = {
-		democratic_socialist > 0.5
-		NOT = { has_government = democratic_socialist has_elections = yes always = no }
+		socialist > 0.5
+		NOT = { has_government = socialist has_elections = yes always = no }
 	}
 	
 	mean_time_to_happen = {
 		days = 75
 		modifier = {
 			factor = 0.5
-			democratic_socialist > 0.5
+			socialist > 0.5
 		}
 		modifier = {
 			factor = 0.5
-			democratic_socialist > 0.55
+			socialist > 0.55
 		}
 	}
 	
 	option = {
 		name = political.11.o1
 		set_politics = {
-			ruling_party = democratic_socialist
+			ruling_party = socialist
 			elections_allowed = yes
 		}
 		news_event = {
@@ -760,7 +760,7 @@ country_event = {
 	desc = political.23.d
 	
 	trigger = {
-		democratic_socialist > 0.01
+		socialist > 0.01
 	}
 	
 	mean_time_to_happen = {
@@ -770,7 +770,7 @@ country_event = {
 	option = {
 		name = political.o.movingOn
 		add_popularity = {
-			ideology = democratic_socialist
+			ideology = socialist
 			popularity = 0.03
 		}
 	}

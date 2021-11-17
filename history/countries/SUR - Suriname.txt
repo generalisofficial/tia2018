@@ -91,7 +91,7 @@ set_country_flag = catholic
 
 #National Assembly
 set_variable = { communist_seats = 1.9 }
-set_variable = { democratic_socialist_seats = 50.9 }
+set_variable = { socialist_seats = 50.9 }
 set_variable = { progressive_seats = 31.6 }
 set_variable = { social_democrat_seats = 3.9 }
 set_variable = { social_liberal_seats = 11.7 }
@@ -105,18 +105,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2015.5.25"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 50.9
+    socialist = 50.9
 	progressive = 31.6
 	social_liberal = 11.7
 	social_democrat = 3.9
@@ -126,7 +126,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Dési Bouterse"
 	picture = "Desi_Bouterse.dds"
-	ideology = democratic_socialist_ideology
+	ideology = democratic_socialist
 }
 
 create_country_leader = {

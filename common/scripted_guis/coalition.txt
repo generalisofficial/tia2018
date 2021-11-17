@@ -271,19 +271,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						democratic_socialist > 0.09
+						socialist > 0.09
 					}
 					modifier = {
 						add = 1
-						democratic_socialist > 0.19
+						socialist > 0.19
 					}
 					modifier = {
 						add = 1
-						democratic_socialist > 0.29
+						socialist > 0.29
 					}
 					modifier = {
 						add = 1
-						democratic_socialist > 0.39
+						socialist > 0.39
 					}
 				}
 			}
@@ -461,16 +461,16 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
-						has_country_flag = government_democratic_socialist
+						has_country_flag = government_socialist
 					}
 					set_politics = {						
-						ruling_party = democratic_socialist
+						ruling_party = socialist
 						elections_allowed = yes
 					}
-					set_country_flag = coalition_democratic_socialist
+					set_country_flag = coalition_socialist
 					set_variable = {
 						var = ROOT.NewCoalition
-						value = democratic_socialist_seats
+						value = socialist_seats
 					}
 				}
 				else_if = {
@@ -510,7 +510,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party2_click = { 
@@ -535,7 +535,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party3_click = { 
@@ -560,7 +560,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party4_click = { 
@@ -585,7 +585,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party5_click = { 
@@ -610,7 +610,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party6_click = { 
@@ -635,7 +635,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party7_click = { 
@@ -660,7 +660,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party8_click = { 
@@ -685,7 +685,7 @@ scripted_gui = {
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party9_click = { 
@@ -710,7 +710,7 @@ scripted_gui = {
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party10_click = { 
@@ -735,20 +735,20 @@ scripted_gui = {
 				clr_country_flag = government_classical_liberal
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 				clr_country_flag = government_communist
 			}
 			party11_click = { 
 				if = {
 					limit = {
-						has_country_flag = government_democratic_socialist
+						has_country_flag = government_socialist
 						has_country_flag = government_chosen
 					}
-					clr_country_flag = government_democratic_socialist
+					clr_country_flag = government_socialist
 					clr_country_flag = government_chosen
 				}
 				else = {
-					set_country_flag = government_democratic_socialist
+					set_country_flag = government_socialist
 					set_country_flag = government_chosen
 				}
 				clr_country_flag = government_islamist
@@ -786,7 +786,7 @@ scripted_gui = {
 				clr_country_flag = government_social_liberal
 				clr_country_flag = government_social_democrat
 				clr_country_flag = government_progressive
-				clr_country_flag = government_democratic_socialist
+				clr_country_flag = government_socialist
 			}
         }
         
@@ -882,13 +882,13 @@ scripted_gui = {
 				has_country_flag = government_progressive
 			}
 			party11_click_enabled = {
-				democratic_socialist > 0.00
+				socialist > 0.00
 			}
 			party11_title_click_enabled = {
-				democratic_socialist > 0.00
+				socialist > 0.00
 			}
 			party11_accept_visible = {
-				has_country_flag = government_democratic_socialist
+				has_country_flag = government_socialist
 			}
 			party12_click_enabled = {
 				communist > 0.00
@@ -1188,19 +1188,19 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 1
-						democratic_socialist > 0.09
+						socialist > 0.09
 					}
 					modifier = {
 						add = 1
-						democratic_socialist > 0.19
+						socialist > 0.19
 					}
 					modifier = {
 						add = 1
-						democratic_socialist > 0.29
+						socialist > 0.29
 					}
 					modifier = {
 						add = 1
-						democratic_socialist > 0.39
+						socialist > 0.39
 					}
 				}
 			}
@@ -1519,27 +1519,27 @@ scripted_gui = {
 			party11_click = { 
 				if = {
 					limit = {
-						has_country_flag = coalition_democratic_socialist
+						has_country_flag = coalition_socialist
 						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
-							value = democratic_socialist_seats
+							value = socialist_seats
 							compare = greater_than_or_equals
 						}
 					}
-					clr_country_flag = coalition_democratic_socialist
+					clr_country_flag = coalition_socialist
 					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
-						value = democratic_socialist_seats
+						value = socialist_seats
 					}
 				}
 				else = {
-					set_country_flag = coalition_democratic_socialist
+					set_country_flag = coalition_socialist
 					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
-						value = democratic_socialist_seats
+						value = socialist_seats
 					}
 				}
 			}
@@ -1734,20 +1734,20 @@ scripted_gui = {
 				NOT = { has_country_flag = government_progressive }
 			}
 			party11_click_enabled = {
-				democratic_socialist > 0.00
+				socialist > 0.00
 			}
 			party11_title_click_enabled = {
-				democratic_socialist > 0.00
+				socialist > 0.00
 			}
 			party11_visible = {
-				NOT = { has_country_flag = government_democratic_socialist }
+				NOT = { has_country_flag = government_socialist }
 			}
 			party11_title_visible = {
-				NOT = { has_country_flag = government_democratic_socialist }
+				NOT = { has_country_flag = government_socialist }
 			}
 			party11_accept_visible = {
-				has_country_flag = coalition_democratic_socialist
-				NOT = { has_country_flag = government_democratic_socialist }
+				has_country_flag = coalition_socialist
+				NOT = { has_country_flag = government_socialist }
 			}
 			party12_click_enabled = {
 				communist > 0.00

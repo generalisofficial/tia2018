@@ -87,7 +87,7 @@ add_ideas = {
 
 #Løgting
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 21.21 }
+set_variable = { socialist_seats = 21.21 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 24.25 }
 set_variable = { social_liberal_seats = 6.06 }
@@ -102,10 +102,10 @@ set_variable = { islamist = 0 }
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_democratic_socialist
+set_country_flag = coalition_socialist
 set_country_flag = coalition_reactionary
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
 add_to_variable = { ROOT.Coalition = reactionary_seats }
 
 set_politics = {	
@@ -117,7 +117,7 @@ set_politics = {
 
 set_popularities = {
     social_democrat = 21.21
-    democratic_socialist = 18.18
+    socialist = 18.18
     conservative = 24.24
     classical_liberal = 21.22
     reactionary = 12.12
@@ -133,7 +133,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Høgni Hoydal"
 	picture = "Hogni_Hoydal.dds"
-	ideology = democratic_socialist_ideology
+	ideology = democratic_socialist
 }
 
 create_country_leader = {
@@ -145,7 +145,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bárður á Steig Nielsen"
 	picture = "Barour_a_Steig_Nielsen.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {

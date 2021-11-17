@@ -423,15 +423,15 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 		
-		democratic_socialist_support = {
+		socialist_support = {
 			cost = 75
 			
 			available = {
-				NOT = { has_government = democratic_socialist is_ai = yes }
+				NOT = { has_government = socialist is_ai = yes }
 			}
 			
 			modifier = {
-				democratic_socialist_drift = 0.1
+				socialist_drift = 0.1
 				political_power_gain = -0.15
 			}
 			
@@ -890,7 +890,7 @@ ideas = {
 				modifier = {
 				 	factor = 25
 					OR = {
-						has_government = democratic_socialist
+						has_government = socialist
 						has_government = progressive
 						has_government = social_democrat
 						has_government = social_liberal

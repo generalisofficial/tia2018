@@ -92,7 +92,7 @@ add_ideas = {
 
 #National People's Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 55.8 }
+set_variable = { socialist_seats = 55.8 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 44.2 }
 set_variable = { social_liberal_seats = 0 }
@@ -106,18 +106,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2014.11.18"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 57.83
+    socialist = 57.83
     social_democrat = 21.10
 	progressive = 21.07
 }

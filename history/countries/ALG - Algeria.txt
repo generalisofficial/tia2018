@@ -114,7 +114,7 @@ set_variable = { corporate_tax = 26 }
 
 #People's National Assembly
 set_variable = { communist_seats = 2.29 }
-set_variable = { democratic_socialist_seats = 59.4 }
+set_variable = { socialist_seats = 59.4 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 5.41 }
 set_variable = { social_liberal_seats = 1.87 }
@@ -128,18 +128,18 @@ set_variable = { islamist_seats = 10.20 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2014.12.12"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 59.4
+    socialist = 59.4
 	classical_liberal = 20.83
 	islamist = 10.20
 	social_democrat = 5.41
@@ -155,13 +155,13 @@ add_opinion_modifier = {
 create_country_leader = {
 	name = "Abdelaziz Bouteflika"
 	picture = "Abdelaziz_Bouteflika.dds"
-	ideology = african_socialist
+	ideology = arab_socialist
 }
 
 create_country_leader = {
 	name = "Ahmed Ouyahia"
 	picture = "Ahmed_Ouyahia.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {

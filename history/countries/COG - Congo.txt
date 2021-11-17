@@ -94,7 +94,7 @@ set_country_flag = catholic
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 67.67 }
+set_variable = { socialist_seats = 67.67 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 32.33 }
 set_variable = { social_liberal_seats = 0 }
@@ -108,11 +108,11 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2013.12.30"
 	election_frequency = 60
 	elections_allowed = yes
@@ -121,7 +121,7 @@ set_politics = {
 set_popularities = {
     social_democrat = 38.6
     classical_liberal = 34.8
-    democratic_socialist = 26.6
+    socialist = 26.6
 }
 
 create_country_leader = {
@@ -139,5 +139,5 @@ create_country_leader = {
 create_country_leader = {
 	name = "Martin Fayulu"
 	picture = "Martin_Fayulu.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }

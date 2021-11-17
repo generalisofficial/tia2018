@@ -84,9 +84,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_government = democratic_socialist
+			has_government = socialist
 		}
-		localization_key = GFX_ideology_[This.GetTag]_democratic_socialist_group
+		localization_key = GFX_ideology_[This.GetTag]_socialist_group
 	}
 	text = {
 		trigger = {
@@ -240,7 +240,7 @@ defined_text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 11 }
 		}
-		localization_key = GFX_ideology_[This.GetTag]_democratic_socialist_group
+		localization_key = GFX_ideology_[This.GetTag]_socialist_group
 	}
 	text = {
 		trigger = {
@@ -395,14 +395,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 11 }
-			has_government = democratic_socialist
+			has_government = socialist
 		}
 		localization_key = "(Government Leader)"
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 11 }
-			NOT = { has_government = democratic_socialist }
+			NOT = { has_government = socialist }
 		}
 		localization_key = "(Coalition Partner)"
 	}
@@ -567,14 +567,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 11 }
-			has_government = democratic_socialist
+			has_government = socialist
 		}
 		localization_key = GOV_CANT_BE_KICKED
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 11 }
-			NOT = { has_government = democratic_socialist }
+			NOT = { has_government = socialist }
 		}
 		localization_key = "Kick this Party from your coalition."
 	}

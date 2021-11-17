@@ -125,7 +125,7 @@ set_variable = { corporate_tax = 20 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 6.58 }
+set_variable = { socialist_seats = 6.58 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 7.78 }
@@ -140,9 +140,9 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_coalition
 set_country_flag = coalition_reactionary
-set_country_flag = coalition_democratic_socialist
+set_country_flag = coalition_socialist
 add_to_variable = { ROOT.Coalition = reactionary_seats }
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = reactionary
@@ -156,7 +156,7 @@ set_popularities = {
     conservative = 8.26
     classical_liberal = 6.37
     reactionary = 24.70
-    democratic_socialist = 3.88
+    socialist = 3.88
 }
 
 create_country_leader = {
@@ -180,13 +180,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Edmon Marukyan"
 	picture = "Edmon_Marukyan.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {
 	name = "Armen Rustamyan"
 	picture = "Armen_Rustamyan.dds"
-	ideology = democratic_socialist_ideology
+	ideology = democratic_socialist
 }
 
 create_field_marshal = {

@@ -91,7 +91,7 @@ set_country_flag = sunni_islam
 
 #People's Representative Council
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 19.47 }
+set_variable = { socialist_seats = 19.47 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 6.43 }
 set_variable = { social_liberal_seats = 2.86 }
@@ -105,18 +105,18 @@ set_variable = { islamist_seats = 14.1 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2014.4.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 31.65
+    socialist = 31.65
 	nationalist = 13.57
 	reactionary = 14.78
 	conservative = 17.74
@@ -163,7 +163,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Susilo Bambang Yudhoyono"
 	picture = "Susilo_Bambang_Yudhoyono.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {

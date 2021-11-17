@@ -91,7 +91,7 @@ set_country_flag = catholic
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 55.93 }
+set_variable = { socialist_seats = 55.93 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
@@ -105,18 +105,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2014.10.15"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 55.93
+    socialist = 55.93
     reactionary = 35.72
     conservative = 8.35
 }

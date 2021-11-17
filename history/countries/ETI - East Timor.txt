@@ -87,7 +87,7 @@ add_ideas = {
 
 #National Parliament
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 43.74 }
+set_variable = { socialist_seats = 43.74 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 29.46 }
 set_variable = { social_liberal_seats = 9.79 }
@@ -101,11 +101,11 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2013.5.12"
 	election_frequency = 60
 	elections_allowed = yes
@@ -116,13 +116,13 @@ set_popularities = {
     classical_liberal = 21.49
     social_liberal = 9.79
     social_democrat = 33.57
-    democratic_socialist = 29.65
+    socialist = 29.65
 }
 
 create_country_leader = {
 	name = "Mari Alkatiri"
 	picture = "Mari_Alkatiri.dds"
-	ideology = democratic_socialist_ideology
+	ideology = democratic_socialist
 }
 
 create_country_leader = {
@@ -134,7 +134,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Taur Matan Ruak"
 	picture = "Taur_Matan_Ruak.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {

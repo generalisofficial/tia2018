@@ -93,7 +93,7 @@ set_country_flag = hinduism
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 66.12 }
+set_variable = { socialist_seats = 66.12 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 33.88 }
 set_variable = { social_liberal_seats = 0 }
@@ -107,18 +107,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2014.12.10"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 66.12
+    socialist = 66.12
     social_democrat = 33.88
 }
 

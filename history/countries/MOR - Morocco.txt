@@ -101,7 +101,7 @@ add_opinion_modifier = {
 
 #House of Representatives
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 3.56 }
+set_variable = { socialist_seats = 3.56 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 5.08 }
 set_variable = { social_liberal_seats = 25.95 }
@@ -118,11 +118,11 @@ set_country_flag = has_coalition
 set_country_flag = coalition_islamist
 set_country_flag = coalition_classical_liberal
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_democratic_socialist
+set_country_flag = coalition_socialist
 add_to_variable = { ROOT.Coalition = islamist_seats }
 add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = islamist
@@ -138,7 +138,7 @@ set_popularities = {
     conservative = 20.50
     social_liberal = 22.02
     social_democrat = 8.60
-    democratic_socialist = 6.83
+    socialist = 6.83
 }
 
 create_country_leader = {
@@ -162,7 +162,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aziz Akhannouch"
 	picture = "Aziz_Akhannouch.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {

@@ -91,7 +91,7 @@ add_ideas = {
 
 #Supreme Council
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 9.16 }
+set_variable = { socialist_seats = 9.16 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 34.18 }
 set_variable = { social_liberal_seats = 10 }
@@ -107,11 +107,11 @@ set_variable = { islamist_seats = 0 }
 set_country_flag = has_coalition
 set_country_flag = coalition_social_democrat
 set_country_flag = coalition_reactionary
-set_country_flag = coalition_democratic_socialist
+set_country_flag = coalition_socialist
 set_country_flag = coalition_classical_liberal
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = reactionary_seats }
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
 add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
@@ -126,7 +126,7 @@ set_popularities = {
     conservative = 23.33
     reactionary = 15
 	social_liberal = 10
-	democratic_socialist = 9.16
+	socialist = 9.16
 	classical_liberal = 8.33
 }
 
@@ -151,7 +151,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bakyt Torobayev"
 	picture = "Bakyt_Torobayev.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {
@@ -163,5 +163,5 @@ create_country_leader = {
 create_country_leader = {
 	name = "Omurbek Tekebayev"
 	picture = "Omurbek_Tekebayev.dds"
-	ideology = democratic_socialist_ideology
+	ideology = democratic_socialist
 }

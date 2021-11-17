@@ -96,7 +96,7 @@ set_variable = { corporate_tax = 29 }
 
 #Chamber of Deputies
 set_variable = { communist_seats = 0 }
-set_variable = { democratic_socialist_seats = 67.69 }
+set_variable = { socialist_seats = 67.69 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 24.62 }
 set_variable = { social_liberal_seats = 0 }
@@ -110,18 +110,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_coalition
-set_country_flag = coalition_democratic_socialist
-add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
-	ruling_party = democratic_socialist
+	ruling_party = socialist
 	last_election = "2014.10.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    democratic_socialist = 51.53
+    socialist = 51.53
 	social_liberal = 38.48
 	conservative = 6.92
 	classical_liberal = 3.07
@@ -130,7 +130,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Evo Morales"
 	picture = "Evo_Morales.dds"
-	ideology = bolivarianist
+	ideology = socialism_of_the_21st_century
 }
 
 create_country_leader = {
@@ -154,7 +154,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Óscar Ortiz Antelo"
 	picture = "Oscar_Ortiz_Antelo.dds"
-	ideology = libertarian
+	ideology = classical_liberal_ideology
 }
 
 create_field_marshal = {

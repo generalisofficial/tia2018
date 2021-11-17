@@ -10,7 +10,7 @@ break_coalition = {
 	clr_country_flag = coalition_social_liberal
 	clr_country_flag = coalition_social_democrat
 	clr_country_flag = coalition_progressive
-	clr_country_flag = coalition_democratic_socialist
+	clr_country_flag = coalition_socialist
 	clr_country_flag = coalition_communist
 	clear_variable = ROOT.Coalition
 }
@@ -27,7 +27,7 @@ cleanup_coalition = {
 	clr_country_flag = government_social_liberal
 	clr_country_flag = government_social_democrat
 	clr_country_flag = government_progressive
-	clr_country_flag = government_democratic_socialist
+	clr_country_flag = government_socialist
 	clr_country_flag = government_communist
 	clr_country_flag = coalition_chosen
 	clear_variable = ROOT.NewCoalition
@@ -44,7 +44,7 @@ cleanup_seats = {
 	clear_variable = social_liberal_seats
 	clear_variable = social_democrat_seats
 	clear_variable = progressive_seats
-	clear_variable = democratic_socialist_seats
+	clear_variable = socialist_seats
 	clear_variable = communist_seats
 }
 
@@ -59,7 +59,7 @@ cleanup_seats_parliament = {
 	clear_variable = social_liberal_seats_parliament
 	clear_variable = social_democrat_seats_parliament
 	clear_variable = progressive_seats_parliament
-	clear_variable = democratic_socialist_seats_parliament
+	clear_variable = socialist_seats_parliament
 	clear_variable = communist_seats_parliament
 }
 
@@ -130,9 +130,9 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_democratic_socialist
+			has_country_flag = coalition_socialist
 		}
-		add_to_variable = { ROOT.Coalition = democratic_socialist_seats }
+		add_to_variable = { ROOT.Coalition = socialist_seats }
 	}
 	if = {
 		limit = {
@@ -155,10 +155,10 @@ quickset_parliament = {
 	multiply_variable = { communist_seats = 100 }
 	round_variable = communist_seats
 	divide_variable = { communist_seats = 100 }
-	set_variable = { democratic_socialist_seats = party_popularity_100@democratic_socialist }
-	multiply_variable = { democratic_socialist_seats = 100 }
-	round_variable = democratic_socialist_seats
-	divide_variable = { democratic_socialist_seats = 100 }
+	set_variable = { socialist_seats = party_popularity_100@socialist }
+	multiply_variable = { socialist_seats = 100 }
+	round_variable = socialist_seats
+	divide_variable = { socialist_seats = 100 }
 	set_variable = { progressive_seats = party_popularity_100@progressive }
 	multiply_variable = { progressive_seats = 100 }
 	round_variable = progressive_seats
@@ -214,10 +214,10 @@ quickset_coalition = {
 	}
 	if = {
 		limit = {
-			has_government = democratic_socialist
+			has_government = socialist
 		}
-		set_country_flag = coalition_democratic_socialist
-        set_variable = { ROOT.Coalition = democratic_socialist_seats }
+		set_country_flag = coalition_socialist
+        set_variable = { ROOT.Coalition = socialist_seats }
 	}
 	if = {
 		limit = {
@@ -302,7 +302,7 @@ set_parliament_graphics = {
 ## Step 1 : Create new variables to work with
 	cleanup_seats_parliament = yes
 	set_variable = { communist_seats_parliament = communist_seats }
-	set_variable = { democratic_socialist_seats_parliament = democratic_socialist_seats }
+	set_variable = { socialist_seats_parliament = socialist_seats }
 	set_variable = { social_democrat_seats_parliament = social_democrat_seats }
 	set_variable = { progressive_seats_parliament = progressive_seats }
 	set_variable = { social_liberal_seats_parliament = social_liberal_seats }
@@ -317,7 +317,7 @@ set_parliament_graphics = {
 ## Step 2 : Round variables
 
 	round_variable = communist_seats_parliament
-	round_variable = democratic_socialist_seats_parliament
+	round_variable = socialist_seats_parliament
 	round_variable = social_democrat_seats_parliament
 	round_variable = progressive_seats_parliament
 	round_variable = social_liberal_seats_parliament
@@ -332,7 +332,7 @@ set_parliament_graphics = {
 ## Step 3 : Divide by 2 (For a graphic of 50 seats)
 
 	divide_variable = { communist_seats_parliament = 2 }
-	divide_variable = { democratic_socialist_seats_parliament = 2 }
+	divide_variable = { socialist_seats_parliament = 2 }
 	divide_variable = { social_democrat_seats_parliament = 2 }
 	divide_variable = { progressive_seats_parliament = 2 }
 	divide_variable = { social_liberal_seats_parliament = 2 }
@@ -347,7 +347,7 @@ set_parliament_graphics = {
 ## Step 4 : Round again
 
 	round_variable = communist_seats_parliament
-	round_variable = democratic_socialist_seats_parliament
+	round_variable = socialist_seats_parliament
 	round_variable = social_democrat_seats_parliament
 	round_variable = progressive_seats_parliament
 	round_variable = social_liberal_seats_parliament
@@ -365,7 +365,7 @@ set_parliament_graphics = {
 	clear_array = parliament_array
 	add_to_array = { ideology_seats_array = 0 } # Placeholder, I need the frames to be 1-12 and not 0-11
 	add_to_array = { ideology_seats_array = communist_seats_parliament }
-	add_to_array = { ideology_seats_array = democratic_socialist_seats_parliament }
+	add_to_array = { ideology_seats_array = socialist_seats_parliament }
 	add_to_array = { ideology_seats_array = social_democrat_seats_parliament }
 	add_to_array = { ideology_seats_array = progressive_seats_parliament }
 	add_to_array = { ideology_seats_array = social_liberal_seats_parliament }
@@ -769,7 +769,7 @@ set_coalition_to_array = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_democratic_socialist
+			has_country_flag = coalition_socialist
 		}
 		add_to_array = { member_parties_array = 11 }
 	}
@@ -797,16 +797,16 @@ create_pie_chart = {
 		communist_pop = 2
 	}
 
-	set_temp_variable = { democratic_socialist_pop = democratic_socialist_seats_parliament }
-	round_temp_variable = democratic_socialist_pop 
+	set_temp_variable = { socialist_pop = socialist_seats_parliament }
+	round_temp_variable = socialist_pop 
 	multiply_temp_variable = {
-		democratic_socialist_pop = 2
+		socialist_pop = 2
 	}
 	set_variable = { ROOT.last_idx = communist_pop }
-	add_to_temp_variable = { democratic_socialist_pop = ROOT.last_idx }
+	add_to_temp_variable = { socialist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = democratic_socialist_pop
+		end = socialist_pop
 		set_variable = { pie_chart^v = 2 }
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
