@@ -2,8 +2,8 @@ ideas = {
 	
 	country = {
 		
-		idea_HLS_holy_see = {
-			picture = catholic_faith
+		idea_the_holy_see = {
+			picture = holy_see
 			
 			removal_cost = -1
 			allowed = { always = no }
@@ -13,7 +13,9 @@ ideas = {
 			}
 			
 			modifier = {
-				monarchist_drift = 100
+				drift_defence_factor = 1
+				political_power_factor = 0.25
+				opinion_gain_monthly = 5
 			}
 		}
 		

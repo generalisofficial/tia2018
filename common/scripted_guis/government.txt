@@ -231,6 +231,7 @@ scripted_gui = {
 				}
 			}
 			resign_button_click_enabled = {
+				has_political_power > 100
 				NOT = {
 					has_idea = swiss_political_system
 				}
