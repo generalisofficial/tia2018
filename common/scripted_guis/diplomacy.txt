@@ -6,7 +6,7 @@ scripted_gui = {
 		parent_window_token = selected_country_view_diplomacy
  
 		visible = {
-			FROM = { has_country_flag = has_coalition }
+			FROM = { has_country_flag = has_parliament }
 		}
 	}
 	stability_diplomacy = {
@@ -16,7 +16,7 @@ scripted_gui = {
 		parent_window_token = selected_country_view_diplomacy
  
 		visible = {
-			FROM = { has_country_flag = has_coalition }
+			always = yes
 		}
 	}
 	population_diplomacy = {
@@ -26,7 +26,7 @@ scripted_gui = {
 		parent_window_token = selected_country_view_diplomacy
  
 		visible = {
-			FROM = { has_country_flag = has_coalition }
+			always = yes
 		}
 	}
 	pie_chart_sg = {
@@ -36,7 +36,7 @@ scripted_gui = {
 		parent_window_token = selected_country_view_diplomacy
 
 		visible = {
-			FROM = { has_country_flag = has_coalition }
+			FROM = { has_country_flag = has_parliament }
 		}
 
 		ai_enabled = {

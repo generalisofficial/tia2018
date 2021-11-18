@@ -103,11 +103,11 @@ add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 
 #Riksdag
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 6.01 }
-set_variable = { progressive_seats = 6.87 }
-set_variable = { social_democrat_seats = 32.41 }
-set_variable = { social_liberal_seats = 11.74 }
-set_variable = { classical_liberal_seats = 24.06 }
-set_variable = { conservative_seats = 4.87 }
+set_variable = { progressive_seats = 7.16 }
+set_variable = { social_democrat_seats = 32.4 }
+set_variable = { social_liberal_seats = 6.30 }
+set_variable = { classical_liberal_seats = 5.44 }
+set_variable = { conservative_seats = 28.65 }
 set_variable = { national_conservative_seats = 14.04 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -115,7 +115,7 @@ set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
-set_country_flag = has_coalition
+set_country_flag = has_parliament
 set_country_flag = coalition_social_democrat
 set_country_flag = coalition_progressive
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
@@ -131,12 +131,12 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 28.68
-	classical_liberal = 20.05
+    social_democrat = 28.67
+	classical_liberal = 5.73
     national_conservative = 17.76
-	social_liberal = 14.61
+	social_liberal = 8.88
 	socialist = 8.02
-    conservative = 6.30
+    conservative = 26.36
     progressive = 4.58
 }
 
@@ -175,15 +175,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ebba Busch Thor"
-	picture = "Ebba_Busch_Thor.dds"
-	ideology = christian_democrat
+	name = "Jan Björklund"
+	picture = "Jan_Bjorklund.dds"
+	ideology = classical_liberal_ideology
 }
 		
 create_country_leader = {
 	name = "Ulf Kristersson"
 	picture = "Ulf_Kristersson.dds"
-	ideology = classical_liberal_ideology
+	ideology = liberal_conservative
 }
 
 create_country_leader = {

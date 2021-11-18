@@ -1,5 +1,4 @@
 break_coalition = {
-	clr_country_flag = has_coalition
 	clr_country_flag = coalition_islamist
 	clr_country_flag = coalition_fascist
 	clr_country_flag = coalition_right_wing_nationalist
@@ -142,7 +141,7 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			NOT = { has_country_flag = has_coalition }
+			NOT = { has_country_flag = has_parliament }
 		}
 		break_coalition = yes
 	}
@@ -203,7 +202,7 @@ quickset_parliament = {
 }
 
 quickset_coalition = {
-    set_country_flag = has_coalition
+    set_country_flag = has_parliament
 	set_variable = { ROOT.Coalition = 0 }
 	if = {
 		limit = {

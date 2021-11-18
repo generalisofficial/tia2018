@@ -285,5 +285,11 @@ scripted_gui = {
 				set_coalition_to_array = yes
 			}
 		}
+
+		triggers = {
+			show_government_button_click_enabled = {
+				has_country_flag = has_parliament
+			}
+		}
 	}
 }

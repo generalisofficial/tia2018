@@ -583,6 +583,7 @@ ideas = {
 			
 			available = {
 			    NOT = { has_government = monarchist }
+				has_country_flag = has_parliament
 			}
 			
 			modifier = {
@@ -666,7 +667,11 @@ ideas = {
 			
 			available = {
 				NOT = { has_government = islamist }
-				has_country_flag = christianity
+				OR = {
+					has_country_flag = catholic
+					has_country_flag = protestant
+					has_country_flag = orthodox
+				}
 			}
 			
 			modifier = {

@@ -242,5 +242,11 @@ scripted_gui = {
 				set_variable = { show_government = 0 }
 			}
 		}
+
+		triggers = {
+			show_parliament_button_click_enabled = {
+				has_country_flag = has_parliament
+			}
+		}
 	}
 }

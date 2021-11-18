@@ -1,12 +1,35 @@
 domestic_affairs = {
 
+	establish_parliament = {
+		
+		visible = {
+			NOT = { has_country_flag = has_parliament }
+		}
+		
+		icon = parliament
+		
+		cost = 50
+		
+		complete_effect = {
+			set_country_flag = has_parliament
+			quickset_parliament = yes
+			quickset_coalition = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
 	establish_democracy = {
 		
 		visible = {
+			has_country_flag = has_parliament
 			is_democracy = no
 		}
 		
-		icon = politics
+		icon = ballot_box
 		
 		cost = 100
 		
@@ -130,6 +153,7 @@ domestic_affairs = {
 	hold_snap_election = {
 		
 		visible = {
+			has_country_flag = has_parliament
 			has_elections = yes
 		}
 		

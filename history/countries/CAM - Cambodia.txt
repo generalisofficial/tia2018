@@ -85,9 +85,29 @@ add_ideas = {
 	non_aligned_movement_member
 	buddhism
 	asean_member
+	parliamentary_system
 }
 
 set_country_flag = buddhism
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 35.78 }
+set_variable = { national_conservative_seats = 64.22 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition =national_conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
@@ -97,8 +117,7 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 76.85
-    conservative = 23.15
+    national_conservative = 100
 }
 
 create_country_leader = {
@@ -117,24 +136,6 @@ create_country_leader = {
 	name = "Norodom Sihamoni"
 	picture = "Norodom_Sihamoni.dds"
 	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Sam Rainsy"
-	picture = "Sam_Rainsy.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Khem Veasna"
-	picture = "Khem_Veasna.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Lon Rith"
-	picture = "Lon_Rith.dds"
-	ideology = classical_liberal_ideology
 }
 
 create_corps_commander = {

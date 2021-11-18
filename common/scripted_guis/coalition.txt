@@ -5,7 +5,7 @@ scripted_gui = {
 		context_type = player_context
  
 		visible = {
-            has_country_flag = has_coalition
+            has_country_flag = has_parliament
 		}
 	}
 
@@ -1235,7 +1235,7 @@ scripted_gui = {
         effects = {
 			finish_click = {
 				clr_country_flag = forming_government_2
-				set_country_flag = has_coalition
+				set_country_flag = has_parliament
 				add_to_variable = {
 					var = ROOT.NewCoalition
 					value = party_popularity@ruling_party
