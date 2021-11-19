@@ -1,0 +1,24 @@
+﻿add_namespace = denmark
+
+country_event = { #Venstre - Jakob Ellemann-Jensen
+	id = denmark.1
+	title = denmark.1.t
+	desc = denmark.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DEN
+		date > 2019.9.21
+		date < 2020.1.1
+	}
+	
+	option = {
+		name = denmark.1.a
+		create_country_leader = {
+	        name = "Jakob Ellemann-Jensen"
+	        picture = "Jakob_Ellemann_Jensen.dds"
+	        ideology = classical_liberal_ideology
+        }
+	}
+}
