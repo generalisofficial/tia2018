@@ -1426,6 +1426,7 @@ country_event = {
 		set_variable = { islamist_seats = party_popularity@islamist }
 		multiply_variable = { islamist_seats = 100 }
 		set_variable = { ROOT.Coalition = party_popularity@ruling_party }
+		multiply_variable = { ROOT.Coalition = 100 }
 		set_parliament_graphics = yes
 		set_parliament_graphics_2 = yes
 	}
