@@ -1,0 +1,61 @@
+﻿l_english: 
+
+  # Events
+ space.1.t: "[USA.GetName] starts the InSight Program"
+ space.1.d: "\n\nToday, the president of the United States [USA.GetLeader] announced the start of the InSight Program by NASA. The Programs aims to land a second rover on Mars to measure its seismic activities and its internal heat flow. The project had already been delayed in 2016 but will now be completed.\nIt is scheduled to launch at the end of 2018."
+ space.1.a: "To Mars! For the second time!"
+ space.1.b: "Looking forward to the images."
+ space.2.t: "Government funding for InSight launched!"
+ space.2.d: "We are now collecting money from weekly activities for the next 3 months. It should be enough time to collect the 650.000.000$ we need.\n\n§RPS: You need to access the NASA research window through the politics window to start working on the project.§!"
+ space.2.a: "Nice!"
+
+  # Decisions
+ SPACE_USA: "Space Program"
+ SPACE_SOV: "Space Program"
+ initiate_insight_programm: "Officially restart the Insight Program"
+ initiate_insight_programm_desc: "A lof of time has passed since 2010 and since the approval of the GEMS in 2011. NASA changed the name in 2012 and sceduled it for launch in March 2016. But we had problems with a vacuum leak in the CNES-supplied seismometer. NASA asked us the restart the program now."
+ insight_program_government_funding: "Funding the Insight Program"
+ insight_program_government_funding_desc: "A heavily government-funded project to develop a lander and rocket capable of landing on Mars and mesuring seismic activities."
+ insight_project_progress: "Insight Project Progress:  [?ROOT.USA_insight_level|-0]%"
+ USA_part_progress: "Time left to research §Y[This.GetResearchPart]§!: [?NASA_research_countdown_val] Days"
+ USA_transfer_funds: "Transfer funds from State Treasury"
+ USA_transfer_funds_desc: "We can transfer 25 Million $$ from the state treasury to NASA every week on top of the government funding in case we ever lack funds."
+
+
+  # Variables
+ USA_insight_level: "Insight Research Level"
+
+  # Tooltips
+ NASA_TOOLTIP: "The NASA Research Facility is at your disposal. This is the place where we develop new space projects."
+ NASA_FUNDS_TOOLTIP: "Use the available decisions to get more funds when needed."
+ ATLAS_V_TOOLTIP: "The Atlas V Rocket will be used to launch the lander into space. We have to adjust it to the lander though.\n\n§YFunds required: 27.000.000$\nYour funds: [?ROOT.NASA_funds].000.000$§!"
+ ATLAS_V_DONE_TOOLTIP: "The Insight Completion Level advances by §G10%§!"
+ CNES_SEIS_TOOLTIP: "We are using an advanced version of the seismometer cancelled in 2016 to resist the pressure in Space and during the landing on Mars.\n\n§YFunds required: 73.000.000$\nYour funds: [?ROOT.NASA_funds].000.000$§!"
+ SEISMOMETER_DONE_TOOLTIP: "The Insight Completion Level advances by §G15%§!"
+ NASA_FUNDS_TT: "You can aquire §YFunding§! through decisions"
+ INSIGHT_LANDER_TOOLTIP: "The lander for this mission is based on the design for the 2008 Phoenix Mars Lander. It weights 358kg (on Earth), is 6m wide with solar panels deployed and is equipend with a science deck and a robotic arm.\n\n§YFunds required: 106.000.000$\nYour funds: [?ROOT.NASA_funds].000.000$§!"
+
+  # Flags
+ insight_programm_started: "Insight Program started"
+ insight_programm_over: "Insight Program finished"
+ insight_rocket_built: "Insight Rocket built"
+ insight_gouvernment_funding: "Insight Gouvernment Funding Ongoing"
+ insight_launched: "Insight launched"
+ not_selectable: "Decision Not Selectable."
+ insight_atlas_v_adjustment_done: "Atlas V Rocket Adjustment Done"
+ insight_seismometer_research_done: "Seismometer Research Done"
+ insight_atlas_v_adjustment: "Atlas V Rocket Adjustment Done"
+ insight_seismometer_research: "Seismometer Research Done"
+ research_ongoing: "There's currently a §Yresearch ongoing§!"
+ no_research_ongoing: "There's currently §Yno research ongoing§!"
+
+  # GUI
+ nasa_TOOLTIP: "National Aeronautics and Space Administration"
+ NASA_FUNDS_TEXT: "Funds: §Y[?NASA_funds].000.000§! $"
+ LOCKED_TOOLTIP: "Research Rocket first!"
+ LOCKED_DELAYED_TOOLTIP: "Don't forget to research the rocket before trying to upgrade it."
+ insight_atlas_v_adjustment_name: "Atlas V Rocket Adjustment"
+ insight_seismometer_research_name: "CNES SEIS Seismometer"
+ insight_lander_research_name: "InSight Lander"
+ color_red: "§R"
+ color_green: "§G"

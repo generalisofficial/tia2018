@@ -1,0 +1,18 @@
+﻿l_english:
+ NUKE_TOOLTIP:0 "§YNuclear Weapons§!\nBuy uranium, hire workes and build factories to produce your own nuclear weapons."
+ NUKE_STEP1_TOOLTIP:0 "Our §Ynuclear weapons are made of enriched Uranium§! (also called Uranium-235).\nWe can choose to either §Ybuy natural uranium§! (which is a lot cheaper) and enrich it ourselves (which takes longer) or §Ybuy 90% weapon grade enriched Uranium-235§! directly from the market for a very high price."
+ NUKE_STEP2_TOOLTIP:0 "Natural Uranium has to be enriched in order to §Yextract the weaponizable isotope Uranium-235.§!"
+ NUKE_STEP3_TOOLTIP:0 "§YAssembeling the nuclear weapon§! is (of course) a core element of the process."
+ NUKE_ENRICHMENT_GRADE_TOOLTIP:0 "90% is the §Yperfect enrichment grade§! for weaponized Uranium-235.\nLower rates do not produce the correct chain reaction and higher rates can only hardly be scientifically obtained (and would be wasted ressoures)."
+ NUKE_ENRICHMENT_TIME_TOOLTIP:0 "It can take §Ybetween 40 days and 1 year to enrich natural Uranium to Highly Enriched Uranium (HEU).§!\nAt a tails rate of 0.30%, 150,000kg natural Uranium produce 654kg of HEU at 90% in a timespan of a year.\nIn 40 days and at a tails rate of 0.65%, the same amount of natural Uranium produces 100kg HEU (enough for 4-8 bombs)."
+ NUKE_AMOUNT_TO_ENRICH_TOOLTIP:0 "The Amount of §Ynatural Uranium§! to enrich."
+ NUKE_ENRICH_BUTTON_TOOLTIP:0 "Enrich §Ynatural Uranium to Highly Enriched Uranium§! (HEU)."
+ NUKE_HEU_NEEDED_TOOLTIP:0 "You need §Yapproximately 15-16 KG§! of Highly Enriched Uranium to build §Yone§! Nuclear Warhead."
+ NUKES_IN_STOCK_TOOLTIP:0 "§GDeveloper Notice:§! Due to an engine limitation, the maximum amount of nuclear weapons a country can posess is limited to '999'."
+ NUKE_BUILD_TIME_TOOLTIP:0 "It takes around §Y1 week§! to build a nuclear weapon"
+
+ # TO DO:
+ # FINISH ENRICHEMENT -> add the price ; configure the time needed
+ # -> With one event that enriches the total selected waste once. Or usage of on_daily to check the progress and add KGs of enriched Uranium as soon as they are done?
+ # FINISH BUILDING/ASSEMBLING THE NUKE -> Same system with amount, time needed and price. -> Add Tooltip for assembling information.
+ # -> Same Question as above. (Performance killer? It's just variables after all, the base of computer CPUs is adding, multiplying and checking.)

@@ -28,6 +28,17 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 		}
 
+		instantTextBoxType = {
+			name = "parliament_header"
+			position = { x = 50 y = 0 }
+			font = "hoi_36header"
+			text = "[This.GetParliamentName]"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = no
+			format = center
+			Orientation = "UPPER_LEFT"
+		}
 
 		################ Seat Representation
 
@@ -416,7 +427,7 @@ guiTypes = {
 			name = "popularity_title"
 			position = { x = 40 y = 300 }
 			font = "hoi_36header"
-			text = "Last Election"
+			text = "Composition"
 			maxWidth = 250
 			maxHeight = 40
 			fixedsize = no
