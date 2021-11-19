@@ -175,7 +175,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetNationalistPartyTT
+	name = GetRightWingNationalistPartyTT
 
 	text = {
 		trigger = {
@@ -225,7 +225,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetReactionaryPartyTT
+	name = GetNationalConservativePartyTT
 
 	text = {
 		trigger = {
@@ -375,7 +375,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetDemocraticSocialistPartyTT
+	name = GetSocialistPartyTT
 
 	text = {
 		trigger = {
@@ -433,7 +433,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			islamist < 0.01
+			islamist < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -449,7 +449,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			fascist < 0.01
+			fascist < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -461,11 +461,11 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetEnoughNationalist
+	name = GetEnoughRightWingNationalist
 
 	text = {
 		trigger = {
-			right_wing_nationalist < 0.01
+			right_wing_nationalist < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -481,7 +481,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			monarchist < 0.01
+			monarchist < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -493,11 +493,11 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetEnoughReactionary
+	name = GetEnoughNationalConservative
 
 	text = {
 		trigger = {
-			national_conservative < 0.01
+			national_conservative < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -513,7 +513,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			conservative < 0.01
+			conservative < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -529,7 +529,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			classical_liberal < 0.01
+			classical_liberal < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -545,7 +545,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			social_liberal < 0.01
+			social_liberal < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -561,7 +561,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			social_democrat < 0.01
+			social_democrat < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -577,7 +577,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			progressive < 0.01
+			progressive < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -589,11 +589,11 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetEnoughDemocraticSocialist
+	name = GetEnoughSocialist
 
 	text = {
 		trigger = {
-			socialist < 0.01
+			socialist < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -609,7 +609,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			communist < 0.01
+			communist < 0.001
 		}
 		localization_key = COALITION_PARTY_RED
 	}
@@ -663,5 +663,21 @@ defined_text = {
 			}
 		}
 		localization_key = COALITION_FINISHED_NO
+	}
+}
+
+defined_text = {
+	name = GetParliamentName
+	text = {
+		trigger = {
+			has_country_flag = has_parliament
+		}
+		localization_key = parliament_generic
+	}
+	text = {
+		trigger = {
+			NOT = { has_country_flag = has_parliament }
+		}
+		localization_key = parliament_none
 	}
 }

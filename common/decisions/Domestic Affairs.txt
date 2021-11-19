@@ -154,21 +154,40 @@ domestic_affairs = {
 		
 		visible = {
 			has_country_flag = has_parliament
-			has_elections = yes
-		}
-		
-		available = {
 			has_idea = parliamentary_system
+			has_elections = yes
 		}
 		
 		icon = ballot_box
 		
 		cost = 25
-		
-		days_re_enable = 60
-		
-		complete_effect = {
+		days_remove = 30
+
+		remove_effect = {
 			hold_election = ROOT
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	dissolve_parliament = {
+		
+		visible = {
+			has_country_flag = has_parliament
+			has_idea = presidential_system
+			has_elections = yes
+		}
+		
+		icon = parliament
+		
+		cost = 25
+		days_remove = 30
+
+		remove_effect = {
+			country_event = election.5
 		}
 		
 		ai_will_do = {

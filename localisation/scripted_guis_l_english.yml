@@ -194,7 +194,7 @@
  coalition_fascist_party:0 "- Fascist Party\n"
  coalition_right_wing_nationalist_party:0 "- Right-Wing Nationalist Party\n"
  coalition_monarchist_party:0 "- Monarchist Independents\n"
- coalition_national_conservative_party:0 "- Reactionary Party\n"
+ coalition_national_conservative_party:0 "- National Conservative Party\n"
  coalition_conservative_party:0 "- Conservative Party\n"
  coalition_classical_liberal_party:0 "- Classical Liberal Party\n"
  coalition_social_liberal_party:0 "- Social Liberal Party\n"
@@ -220,29 +220,29 @@
  # Party Names
  COALITION_PARTY1_TITLE:0 "[This.GetEnoughIslamic]Islamic Party§!"
  COALITION_PARTY2_TITLE:0 "[This.GetEnoughFascist]Fascist Party§!"
- COALITION_PARTY3_TITLE:0 "[This.GetEnoughNationalist]Right-Wing Nationalist Party§!"
+ COALITION_PARTY3_TITLE:0 "[This.GetEnoughRightWingNationalist]Right-Wing Nationalist Party§!"
  COALITION_PARTY4_TITLE:0 "[This.GetEnoughMonarchist]Monarchist Independents§!"
- COALITION_PARTY5_TITLE:0 "[This.GetEnoughReactionary]Reactionary Party§!"
+ COALITION_PARTY5_TITLE:0 "[This.GetEnoughNationalConservative]National Conservative Party§!"
  COALITION_PARTY6_TITLE:0 "[This.GetEnoughConservative]Conservative Party§!"
  COALITION_PARTY7_TITLE:0 "[This.GetEnoughMarketLiberal]Classical Liberal Party§!"
  COALITION_PARTY8_TITLE:0 "[This.GetEnoughSocialLiberal]Social Liberal Party§!"
  COALITION_PARTY9_TITLE:0 "[This.GetEnoughSocialDemocratic]Social Democratic Party§!"
  COALITION_PARTY10_TITLE:0 "[This.GetEnoughProgressive]Progressive Party§!"
- COALITION_PARTY11_TITLE:0 "[This.GetEnoughDemocraticSocialist]Socialist Party§!"
+ COALITION_PARTY11_TITLE:0 "[This.GetEnoughSocialist]Socialist Party§!"
  COALITION_PARTY12_TITLE:0 "[This.GetEnoughCommunist]Communist Party§!"
 
  # Party Tooltips
  COALITION_PARTY1_TT:0 "[This.GetIslamicPartyTT]"
  COALITION_PARTY2_TT:0 "[This.GetFascistPartyTT]"
- COALITION_PARTY3_TT:0 "[This.GetNationalistPartyTT]"
+ COALITION_PARTY3_TT:0 "[This.GetRightWingNationalistPartyTT]"
  COALITION_PARTY4_TT:0 "[This.GetMonarchistPartyTT]"
- COALITION_PARTY5_TT:0 "[This.GetReactionaryPartyTT]"
+ COALITION_PARTY5_TT:0 "[This.GetNationalConservativePartyTT]"
  COALITION_PARTY6_TT:0 "[This.GetConservativePartyTT]"
  COALITION_PARTY7_TT:0 "[This.GetMarketLiberalPartyTT]"
  COALITION_PARTY8_TT:0 "[This.GetSocialLiberalPartyTT]"
  COALITION_PARTY9_TT:0 "[This.GetSocialDemocraticPartyTT]"
  COALITION_PARTY10_TT:0 "[This.GetProgressivePartyTT]"
- COALITION_PARTY11_TT:0 "[This.GetDemocraticSocialistPartyTT]"
+ COALITION_PARTY11_TT:0 "[This.GetSocialistPartyTT]"
  COALITION_PARTY12_TT:0 "[This.GetCommunistPartyTT]"
  COALITION_NEXT_TT:0 "[This.GetNextAvailable1]\n\n[!next_click]"
  COALITION_NO_COALITION_TITLE:0 "§RNot forming a coalition§!"
@@ -260,11 +260,11 @@
  COALITION_FINISHED_NO:0 "§GThe coalition formation is not finished yet.§!\n\nWe can't move on."
  COALITION_POPULARITY_TEXT:0 "Our new coalition will have a popularity of §Y[?ROOT.NewCoalition]%§!"
 
-
  #### Parliament Mechanic
  # Tooltips
- parliament_tooltip:0 "§YParliament§!"
- MOTION_NO_CONFIDENCE_TOOLTIP:0 "A successful §YMotion of No Confidence§! will unseat the government and let parliament form a new one from scratch.\n\n§YRequirements§!:\n- Has Idea: §YParliamentary System§!"
+ parliament_tooltip:0 "§Y[This.GetParliamentName]§!"
+ parliament_none:0 ""
+ parliament_generic:0 "Parliament"
 
  # Ideology Texts for the window
  COMMUNIST_POPULARITY_TEXT:0 "§CCommunists: [?Root.communist_seats]%§!"
@@ -272,11 +272,11 @@
  SOCIAL_DEMOCRATS_POPULARITY_TEXT:0 "§SSocial Democrats: [?Root.social_democrat_seats]%§!"
  PROGRESSIVE_POPULARITY_TEXT:0 "§PProgressives: [?Root.progressive_seats]%§!"
  SOCIAL_LIBERAL_POPULARITY_TEXT:0 "§sSocial Liberals: [?Root.social_liberal_seats]%§!"
- LIBERTARIAN_POPULARITY_TEXT:0 "§mClassical Liberals: [?Root.classical_liberal_seats]%§!"
+ CLASSICAL_LIBERAL_POPULARITY_TEXT:0 "§mClassical Liberals: [?Root.classical_liberal_seats]%§!"
  CONSERVATIVE_POPULARITY_TEXT:0 "§cConservatives: [?Root.conservative_seats]%§!"
- REACTIONARY_POPULARITY_TEXT:0 "§rReactionaries: [?Root.national_conservative_seats]%§!"
+ NATIONAL_CONSERVATIVE_POPULARITY_TEXT:0 "§rNational Conservatives: [?Root.national_conservative_seats]%§!"
  MONARCHIST_POPULARITY_TEXT:0 "§xMonarchist Independents: [?Root.monarchist_seats]%§!"
- NATIONALIST_POPULARITY_TEXT:0 "§NRight-Wing Nationalists: [?Root.nationalist_seats]%§!"
+ RIGHT_WING_NATIONALIST_POPULARITY_TEXT:0 "§NRight-Wing Nationalists: [?Root.nationalist_seats]%§!"
  THIRD_POSITION_POPULARITY_TEXT:0 "§FFascists: [?Root.fascist_seats]%§!"
  ISLAMIST_POPULARITY_TEXT:0 "§IIslamists: [?Root.islamist_seats]%§!"
 
@@ -284,10 +284,9 @@
  GOVERNMENT_COALITION_POPULARITY:0 "§GGovernment: [?ROOT.Coalition]%§!"
  OPPOSITION_POPULARITY:0 "§ROpposition: [?ROOT.Opposition]%§!"
 
-
  #### Government Mechanic 
  # Tooltips
  government_tooltip:0 "§YGovernment§!"
  GOV_KICK_TOOLTIP:0 "[This.GetCanBeKicked]"
- GOV_CANT_BE_KICKED:0 "The Party leads the Government.\n§YIt cannot be kicked.§!"
+ GOV_CANT_BE_KICKED:0 "This party leads the Government.\n§YIt cannot be kicked.§!"
  GOV_RESIGN_TOOLTIP:0 "§RThe government will resign and call for Parliament to elect a new Cabinet.§!\n\n§YA new government will have to be formed§! (Requires 150 Political Power)."

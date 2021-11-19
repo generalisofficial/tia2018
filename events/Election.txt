@@ -1296,7 +1296,7 @@ country_event = {
 		election_pulse = yes
 	}
 	
-	option = {	#Reactionary
+	option = {	#National Conservative
 		name = election.4.o8
 		ai_chance = {
 			factor = 1
@@ -1390,4 +1390,54 @@ country_event = {
 		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
+}
+
+#Election - Legislative
+country_event = {
+	id = election.5
+	title = election.5.t
+	desc = election.5.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { socialist_seats = party_popularity@socialist }
+		multiply_variable = { socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
+		multiply_variable = { classical_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { national_conservative_seats = party_popularity@national_conservative }
+		multiply_variable = { national_conservative_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
+		multiply_variable = { right_wing_nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
+		set_variable = { ROOT.Coalition = party_popularity@ruling_party }
+		set_parliament_graphics = yes
+		set_parliament_graphics_2 = yes
+	}
+	
+	option = {
+		name = election.5.o1
+		custom_effect_tooltip = TT_parliamentary_election_results
+		if = {
+			limit = {
+				minority_government = yes
+			}
+			add_ideas = minority_government
+		}
+    }
 }
