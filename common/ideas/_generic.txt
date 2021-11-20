@@ -1,0 +1,218 @@
+ideas = {
+
+	country = {
+	
+		neutrality_idea = {
+			picture = neutrality
+			
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				join_faction_tension = 1.00
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01
+				ai_join_ally_desire_factor = -200
+				ai_get_ally_desire_factor = -200
+			}
+		}
+	
+		non_member_state = {
+			picture = united_nations_red
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+	
+		nuclear_weapons_state = {
+			picture = nuclear_power
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+			
+			}
+			
+		}	
+		
+		idea_non_state_actor = {
+			picture = non_state_actor
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.5
+				justify_war_goal_time = -1.0
+				enemy_justify_war_goal_time = -1.0
+			}
+		}
+		
+		salafist_jihadist_group = {
+			picture = salafist_jihadist_group
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.3
+				offence = 0.25
+				army_morale_factor = 0.5
+				forced_surrender_limit = 1.0
+			}
+		}
+		
+		islamic_sectarian_violence = {
+			picture = islam2
+		
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				conscription_factor = -0.15
+				drift_defence_factor = -0.25
+			}
+		}
+
+		hutu_tutsi_tensions = {
+			picture = hutu_tutsi_tensions
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+			    political_power_gain = -0.1
+				stability_factor = -0.1
+			}
+		}
+
+		minority_government = {
+			picture = minority_government
+		
+			allowed = {
+			    always = no
+			}
+			
+			cancel = {
+			    check_variable = {
+                    var = ROOT.Coalition
+                    value = 50
+                    compare = greater_than_or_equals
+                }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = TT_minority_government_modifier
+				hidden_modifier = {
+					centralization_cost_factor = 0.25
+					state_religion_cost_factor = 0.25
+					electoral_system_cost_factor = 0.25
+					trade_policy_cost_factor = 0.25
+					climate_change_efforts_cost_factor = 0.25
+					lgbt_rights_cost_factor = 0.25
+					female_rights_cost_factor = 0.25
+					gun_control_cost_factor = 0.25
+					immigration_policy_cost_factor = 0.25
+					alcohol_cost_factor = 0.25
+					social_security_cost_factor = 0.25
+					healthcare_cost_factor = 0.25
+					education_cost_factor = 0.25
+					law_enforcement_cost_factor = 0.25
+					state_pensions_cost_factor = 0.25
+					minimum_wage_cost_factor = 0.25
+				}
+			}
+		}
+		
+		unstable_coalition = {
+			picture = disjointed_government
+		
+			allowed = {
+			    always = no
+			}
+			
+			cancel = {
+			    NOT = {
+			    	OR = { 
+				 	   AND = {
+						    OR = {
+							    has_country_flag = coalition_social_liberal
+				 	           	has_country_flag = coalition_classical_liberal
+								has_country_flag = coalition_conservative
+								has_country_flag = coalition_national_conservative
+							}
+							OR = {
+							    has_country_flag = coalition_social_democrat
+				 	           	has_country_flag = coalition_progressive
+								has_country_flag = coalition_socialist
+								has_country_flag = coalition_communist
+							}
+			    	    }
+						AND = {
+						    OR = {
+							    has_country_flag = coalition_social_liberal
+					            has_country_flag = coalition_classical_liberal
+								has_country_flag = coalition_conservative
+								has_country_flag = coalition_national_conservative
+							}
+							OR = {
+								has_country_flag = coalition_islamist
+								has_country_flag = coalition_monarchist
+								has_country_flag = coalition_right_wing_nationalist
+								has_country_flag = coalition_fascist
+							}
+			    	    }
+						AND = {
+							OR = {
+								has_country_flag = coalition_islamist
+								has_country_flag = coalition_monarchist
+								has_country_flag = coalition_right_wing_nationalist
+								has_country_flag = coalition_fascist
+							}
+							OR = {
+							    has_country_flag = coalition_social_democrat
+					            has_country_flag = coalition_progressive
+								has_country_flag = coalition_socialist
+								has_country_flag = coalition_communist
+							}
+			    	    }
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.25
+			}
+		}
+		
+	}
+	
+}

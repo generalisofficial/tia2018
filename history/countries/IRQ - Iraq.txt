@@ -82,8 +82,48 @@ set_technology = {
 	excavation1 = 1
 }
 
-
 set_country_flag = shia_islam
+
+add_ideas = {
+	population_growth_explosion
+	arab_league_member
+	non_aligned_movement_member
+	extensive_conscription
+	islamic_sectarian_violence
+	islam
+	parliamentary_system
+	federal
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = IRK
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = IRK
+	}
+}
+
+IRK = {
+	set_politics = {	
+		ruling_party = national_conservative
+		last_election = "2013.9.30"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 45.7
+		social_democrat = 21.5
+		social_liberal = 12
+		classical_liberal = 8.2
+		islamist = 12.1
+		communist = 0.5
+	}
+}
 
 #Council of Representatives
 set_variable = { communist_seats = 0 }
@@ -109,17 +149,6 @@ add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
-
-add_ideas = {
-	population_growth_explosion
-	arab_league_member
-	non_aligned_movement_member
-	extensive_conscription
-	islamic_sectarian_violence
-	islam
-	parliamentary_system
-	federal
-}
 
 set_politics = {	
 	ruling_party = social_liberal

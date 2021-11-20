@@ -4,7 +4,10 @@ foreign_affairs = {
 		visible = {
 			is_in_faction = no
 			has_war = no
-			NOT = { has_idea = neutrality_idea }
+			NOT = { 
+				has_idea = neutrality_idea
+				has_idea = idea_non_state_actor
+			}
 		}
 		complete_effect = {
 			add_ideas = neutrality_idea

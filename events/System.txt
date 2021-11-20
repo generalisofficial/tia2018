@@ -51,6 +51,8 @@ country_event = {
 		country_exists = HEZ
 		has_government = islamist
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		annex_country = { target = HEZ transfer_troops = yes }
@@ -66,6 +68,8 @@ country_event = {
 		country_exists = HAM
 		has_government = islamist
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		annex_country = { target = HAM transfer_troops = yes }
@@ -100,6 +104,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = asean_dissolved
@@ -116,6 +122,8 @@ country_event = {
 			has_global_flag = isis_defeated
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		news_event = isis.1
@@ -143,6 +151,8 @@ country_event = {
 		NOT = { country_exists = FSA }
 		NOT = { country_exists = ISS }
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		country_event = syria.1
@@ -164,11 +174,16 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		country_event = syria.2
 		set_global_flag = syrian_civil_war_over
-		FSA = { set_cosmetic_tag = FSA_GOV }
+		FSA = {
+			remove_ideas = idea_non_state_entity
+			set_cosmetic_tag = FSA_GOV 
+		}
 	}
 }
 
@@ -182,6 +197,8 @@ country_event = {
 		NOT = { country_exists = FSA }
 		NOT = { country_exists = SYR }
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		country_event = syria.3
@@ -234,6 +251,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = non_aligned_movement_dissolved
@@ -251,6 +270,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = baltic_assembly_dissolved
@@ -268,6 +289,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = east_african_community_dissolved
@@ -285,6 +308,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = guam_dissolved
@@ -302,6 +327,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = commonwealth_of_independent_states_dissolved
@@ -319,6 +346,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = gulf_cooperation_council_dissolved
@@ -336,6 +365,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = arab_league_dissolved
@@ -353,6 +384,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = shanghai_cooperation_organization_dissolved
@@ -370,6 +403,8 @@ country_event = {
 			}
 		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = benelux_dissolved

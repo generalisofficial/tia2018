@@ -1613,6 +1613,12 @@ ideas = {
 			removal_cost = -1
 			level = 3
 		
+			available = {
+				NOT = {
+					has_idea = idea_non_state_actor
+				}
+			}
+			
 			modifier = {
 				min_export = 0.8
 				trade_opinion_factor = 0.5
@@ -1637,13 +1643,19 @@ ideas = {
 			removal_cost = -1
 			level = 2
 		
+			available = {
+				NOT = {
+					has_idea = idea_non_state_actor
+				}
+			}
+
 			modifier = {
 				min_export = 0.4
 				trade_opinion_factor = -0.25
 			}
 		
 			default = yes
-			cancel_if_invalid = yes
+			cancel_if_invalid = no
 		}
 	
 		isolationism = {
@@ -1662,7 +1674,7 @@ ideas = {
 				min_export = 0
 			}
 		
-			cancel_if_invalid = yes
+			cancel_if_invalid = no
 
 			ai_will_do = {
 			   	factor = 1

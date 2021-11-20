@@ -106,9 +106,9 @@ set_country_flag = protestant
 #National Assembly
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 3.20 }
-set_variable = { social_democrat_seats = 57.05 }
-set_variable = { social_liberal_seats = 39.75 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 59.16 }
+set_variable = { social_liberal_seats = 40.84 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
@@ -124,15 +124,14 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2016.8.11"
+	last_election = "2016.8.12"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
     social_democrat = 41.95
-    social_liberal = 57.36
-    progressive = 0.69
+    social_liberal = 58.05
 }
 	
 create_country_leader = {
@@ -145,12 +144,6 @@ create_country_leader = {
 	name = "Hakainde Hichilema"
 	picture = "Hakainde_Hichilema.dds"
 	ideology = social_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Felix Mutati"
-	picture = "Felux_Mutati.dds"
-	ideology = progressive_ideology
 }
 
 create_country_leader = {

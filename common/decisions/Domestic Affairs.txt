@@ -3,7 +3,10 @@ domestic_affairs = {
 	establish_parliament = {
 		
 		visible = {
-			NOT = { has_country_flag = has_parliament }
+			NOT = { 
+				has_country_flag = has_parliament 
+				has_idea = idea_non_state_actor 
+			}
 		}
 		
 		icon = parliament
@@ -27,6 +30,9 @@ domestic_affairs = {
 		visible = {
 			has_country_flag = has_parliament
 			is_democracy = no
+			NOT = { 
+				has_idea = idea_non_state_actor 
+			}
 		}
 		
 		icon = ballot_box
