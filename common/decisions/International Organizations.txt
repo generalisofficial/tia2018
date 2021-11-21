@@ -582,8 +582,9 @@ international_organizations = {
 	join_african_union = {
 	
 		visible = {
-			NOT = { has_idea = african_union_member  has_global_flag = african_union_dissolved }
-			is_in_africa = yes
+			always = no #Geographic trigger bugged
+			#NOT = { has_idea = african_union_member  has_global_flag = african_union_dissolved }
+			#is_in_africa = yes
 		}
 		available = {
             NOT = { has_idea = african_union_member has_idea = non_member_state }

@@ -82,9 +82,29 @@ set_technology = {
 add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
+	presidential_system
 }
 
 set_country_flag = catholic
+
+#Chamber of Deputies
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 11.04 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 9.01 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 60.38 }
+set_variable = { conservative_seats = 19.57 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_classical_liberal
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
 	ruling_party = classical_liberal
@@ -96,7 +116,7 @@ set_politics = {
 set_popularities = {
     classical_liberal = 60.38
     conservative = 19.57
-    progressive = 11.04
+    socialist = 11.04
     social_democrat = 9.01
 }
 
@@ -115,7 +135,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jean-Charles Moïse"
 	picture = "Jean_Charles_Moise.dds"
-	ideology = progressive_ideology
+	ideology = democratic_socialist
 }
 
 create_country_leader = {

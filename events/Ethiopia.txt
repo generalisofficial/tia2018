@@ -52,7 +52,7 @@ country_event = { #Ethiopian Peace Proposal
 		ai_chance = {
 			factor = 100
 		}
-		news_event = ethiopia.2
+		news_event = ethiopia.4
 		set_global_flag = eritrea_ethiopia_peace
 	    remove_opinion_modifier = { target = ETH modifier = frozen_conflict }
 		ETH = { remove_opinion_modifier = { target = ERI modifier = frozen_conflict } } 
@@ -70,15 +70,15 @@ country_event = { #Ethiopian Peace Proposal
 }
 
 news_event = { #Eritrea–Ethiopia peace summit
-	id = ethiopia.3
-	title = ethiopia.3.t
-	desc = ethiopia.3.d
+	id = ethiopia.4
+	title = ethiopia.4.t
+	desc = ethiopia.4.d
 	picture = GFX_news_event_eritrea_ethiopia_peace
 	
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
-		name = ethiopia.2.o1
+		name = ethiopia.4.o1
 	}
 }

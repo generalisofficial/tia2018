@@ -1,29 +1,36 @@
 
 state={
 	id=348
-	name="STATE_348" # Kayseri
-	manpower = 1558452
-	
-	state_category = state_level_5
-	
-	resources = {
-		chromium = 35
-		oil=1
-		steel = 9
+	name="STATE_348"
+	resources={
+		chromium=35.000
+		oil=1.000
+		steel=9.000
 	}
 
 	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = TUR
-		victory_points = { 921 10 }
-		victory_points = { 3862 1 }
-		victory_points = { 11844 1 }
+		victory_points = {
+			921 10 
+		}
+		victory_points = {
+			3862 1 
+		}
+		victory_points = {
+			11844 1 
+		}
+
 	}
 
 	provinces={
-		869 919 921 961 3807 3862 3870 3964 6888 6977 9830 9861 11826 11844 
+		869 919 921 961 3807 3862 3870 3964 6888 6977 9830 9861 11826 11844 13122 
 	}
+	manpower=1558452
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
 }

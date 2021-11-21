@@ -7,6 +7,7 @@ NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "2018.1.1.12"
 NDefines.NDiplomacy.TENSION_CB_WAR = 10
 
 NDefines.NCountry.MIN_SURRENDER_LIMIT = 0.1
+NDefines.NCountry.COUNTRY_LEADER_FEMALE_CHANCE = 0.25
 
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_AFTER = {0, 10}
 

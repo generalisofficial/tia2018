@@ -42,22 +42,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = system.4
-	hidden=yes
-
-	trigger = {
-		original_tag = LEB
-		country_exists = HEZ
-		has_government = islamist
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		annex_country = { target = HEZ transfer_troops = yes }
-	}
-}
+# System.4
 
 country_event = {
 	id = system.5

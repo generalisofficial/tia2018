@@ -79,7 +79,6 @@ set_technology = {
 	excavation1 = 1
 }
 
-
 set_country_flag = sunni_islam
 
 add_ideas = {
@@ -88,81 +87,100 @@ add_ideas = {
 	extensive_conscription
 	non_aligned_movement_member
 	islamic_sectarian_violence
+	parliamentary_system
 }
 
-#give_guarantee = HEZ
-#give_military_access = HEZ
+#Parliament
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 1.76 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 7.07 }
+set_variable = { social_liberal_seats = 1.76 }
+set_variable = { classical_liberal_seats = 30.14 }
+set_variable = { conservative_seats = 22.12 }
+set_variable = { national_conservative_seats = 11.50 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 4.42 }
+set_variable = { islamist_seats = 21.23 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {
-		ruling_party = social_liberal
-		last_election = "2014.5.6"
-		election_frequency = 48
-		elections_allowed = yes
+	ruling_party = classical_liberal
+	last_election = "2014.5.6"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
-    set_popularities = {
-        islamist = 16.87
-        right_wing_nationalist = 8.68
-        classical_liberal = 23.29
-        social_liberal = 31.84
-        fascist = 1.76
-        socialist = 4.56
-        national_conservative = 1.46
-        conservative = 11.54
-    }
+set_popularities = {
+	social_liberal = 3.12
+	social_democrat = 7.03
+	national_conservative = 14.06
+	conservative = 22.65
+	socialist = 3.12
+	fascist = 4.68
+	islamist = 27.34
+	classical_liberal = 18.00
+}
 
 create_country_leader = {
 	name = "Saad Hariri"
 	picture = "Saad_Hariri.dds"
-	ideology = centrist
+	ideology = classical_liberal_ideology
 }
 
 create_country_leader = {
 	name = "Gebran Bassil"
 	picture = "Gebran_Bassil.dds"
-	ideology = classical_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Nabih Berri"
-	picture = "Nabih_Berri.dds"
-	ideology = social_conservative 
+	ideology = christian_democrat
 }
 
 create_country_leader = {
 	name = "Samir Geagea"
 	picture = "Samir_Geagea.dds"
-	ideology = right_wing_nationalist_ideology
+	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
 	name = "Hassan Nasrallah"
 	picture = "Hassan_Nasrallah.dds"
-	ideology = islamic_democracy
+	ideology = khomeinist
 }
 
 create_country_leader = {
 	name = "Walid Jumblatt"
 	picture = "Walid_Jumblatt.dds"
-	ideology = democratic_socialist
+	ideology = social_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Samy Gemayel"
-	picture = "Samy_Gemayel.dds"
+	name = "Ali Qanso"
+	picture = "Ali_Qanso.dds"
 	ideology = fascist_ideology
-}
-
-create_country_leader = {
-	name = "Suleiman Frangieh Jr."
-	picture = "Suleiman_Frangieh_Jr.dds"
-	ideology = national_conservative_ideology
 }
 
 create_country_leader = {
 	name = "Hanna Gharib"
 	picture = "Hanna_Gharib.dds"
 	ideology = marxist_leninist
+}
+
+create_country_leader = {
+	name = "Nada Zaarour"
+	picture = "Nada_Zaarour.dds"
+	ideology = green
+}
+
+create_country_leader = {
+	name = "Najib Mikati"
+	picture = "Najib_Mikati.dds"
+	ideology = centrist
 }
 
 create_field_marshal = { 
