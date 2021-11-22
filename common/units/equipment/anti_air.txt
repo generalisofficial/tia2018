@@ -1,10 +1,14 @@
+### Written and Edited by E. Wolfe ###
 equipments = {
 
 	anti_air_equipment = {
+		year = 2000
+
 		is_archetype = yes
+		picture = archetype_anti_air_equipment		
 		type = {
 			anti_air
-			motorized
+			infantry #adding infantry type
 		}
 		group_by = archetype
 		
@@ -22,8 +26,8 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 3
 		hard_attack = 7
-		ap_attack = 15
-		air_attack = 15
+		ap_attack = 25
+		air_attack = 19
 
 		#Space taken in convoy
 		lend_lease_cost = 3
@@ -32,17 +36,19 @@ equipments = {
 		resources = {
 			steel = 2
 		}
-
-		
 	}
 
 	anti_air_equipment_1 = {
+		year = 2000
+
 		archetype = anti_air_equipment
 		priority = 80
 		visual_level = 0
 	}
 	
 	anti_air_equipment_2 = {
+		year = 2008
+
 		archetype = anti_air_equipment
 		parent = anti_air_equipment_1
 		priority = 80
@@ -50,7 +56,7 @@ equipments = {
 		
 		soft_attack = 3.5
 		hard_attack = 11
-		ap_attack = 25
+		ap_attack = 30
 		air_attack = 25
 
 		build_cost_ic = 5
@@ -60,19 +66,59 @@ equipments = {
 	}
 	
 	anti_air_equipment_3 = {
+		year = 2016
+
 		archetype = anti_air_equipment
 		parent = anti_air_equipment_2
 		priority = 80
 		visual_level = 2
 		
 		soft_attack = 4
-		hard_attack = 15
-		ap_attack = 40
-		air_attack = 40
+		hard_attack = 12
+		ap_attack = 35
+		air_attack = 32
 
 		build_cost_ic = 6
 		resources = {
 			steel = 3
+		}
+	}
+	
+	anti_air_equipment_4 = {
+		year = 2024
+
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_3
+		priority = 80
+		visual_level = 2
+		
+		soft_attack = 4.5
+		hard_attack = 13
+		ap_attack = 40
+		air_attack = 38
+
+		build_cost_ic = 7
+		resources = {
+			steel = 3
+		}
+	}
+	
+	anti_air_equipment_5 = {
+		year = 2032
+
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_4
+		priority = 80
+		visual_level = 2
+		
+		soft_attack = 5
+		hard_attack = 14
+		ap_attack = 45
+		air_attack = 44
+
+		build_cost_ic = 8
+		resources = {
+			steel = 4
 		}
 	}
 }

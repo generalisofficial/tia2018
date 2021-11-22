@@ -1,10 +1,12 @@
 equipments = {
-
+	
 	mechanized_equipment = {
+		year = 1960
+		
 		is_archetype = yes
+		picture = archetype_motorized_equipment		
 		is_buildable = no
 		type = {
-			infantry
 			mechanized
 		}
 		group_by = archetype
@@ -12,151 +14,146 @@ equipments = {
 		interface_category = interface_category_land
 		
 		#Misc Abilities
-		maximum_speed = 20
+		maximum_speed = 15
 		reliability = 0.8
 		
 		#Defensive Abilities
-		defense = 26
+		defense = 22
 		breakthrough = 4
-		hardness = 0.7
-		armor_value = 10
-
+		hardness = 0.5
+		armor_value = 20
+		
 		#Offensive Abilities
-		ap_attack = 11
-		air_attack = 1
-		soft_attack = 5
-		hard_attack = 0.75
-
+		ap_attack = 25
+		air_attack = 0
+		
 		#Space taken in convoy
 		lend_lease_cost = 5
 		
-		build_cost_ic = 20 
+		build_cost_ic = 18
 		resources = {
 			steel = 2
-			oil = 1
+			aluminium = 1
 			rubber = 1
 		}
+		fuel_consumption = 2.4
 	}
-
-	infantry_fighting_vehicle_1 = {
+	
+	mechanized_equipment_1 = {
+		year = 1980
+		
 		archetype = mechanized_equipment
 		priority = 40
 		visual_level = 0
 	}
-
-	infantry_fighting_vehicle_2 = {
-		archetype = mechanized_equipment
-		parent = infantry_fighting_vehicle_1
-		priority = 50
-		visual_level = 1
-
-		maximum_speed = 13
-
-		#Defensive Abilities
-		defense = 30
-		breakthrough = 5
-		armor_value = 15
-
-		#Offensive Abilities
-		ap_attack = 16
-		air_attack = 2
-		soft_attack = 6
-		hard_attack = 1
+	
+	mechanized_equipment_2 = {
+		year = 2000
 		
-		build_cost_ic = 22 
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_1
+		priority = 40
+		visual_level = 1
+		
+		maximum_speed = 15
+		
+		#Defensive Abilities
+		defense = 26
+		breakthrough = 5
+		hardness = 0.5
+		armor_value = 25
+		
+		#Offensive Abilities
+		ap_attack = 31
+		
+		build_cost_ic = 20
 		resources = {
 			steel = 3
-			rubber = 1
-			oil = 1
 		}
 	}
-
-	infantry_fighting_vehicle_3 = {
+	
+	mechanized_equipment_3 = {
+		year = 2006
+		
 		archetype = mechanized_equipment
-		parent = infantry_fighting_vehicle_2
-		priority = 60
+		parent = mechanized_equipment_2
+		priority = 40
 		visual_level = 2
 		
-		maximum_speed = 14
-
+		maximum_speed = 16
+		
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 6
+		hardness = 0.6
+		armor_value = 30
+		
+		#Offensive Abilities
+		ap_attack = 36
+		
+		build_cost_ic = 22
+		resources = {
+			steel = 4
+		}
+	}
+	
+	mechanized_equipment_4 = {
+		year = 2018
+		
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_3
+		priority = 40
+		visual_level = 2
+		
+		maximum_speed = 17
+		
 		#Defensive Abilities
 		defense = 34
-		breakthrough = 6
-		armor_value = 20
-
+		breakthrough = 7
+		hardness = 0.7
+		armor_value = 35
+		
 		#Offensive Abilities
-		ap_attack = 21
-		air_attack = 3
-		soft_attack = 7
-		hard_attack = 1.2
+		ap_attack = 41
 		
 		build_cost_ic = 24
 		resources = {
 			steel = 4
-			rubber = 1
-			oil = 2
+			aluminium = 2
 		}
 	}
 	
-	infantry_fighting_vehicle_4 = {
-		archetype = mechanized_equipment
-		parent = infantry_fighting_vehicle_3
-		priority = 70
-		visual_level = 3
+	mechanized_equipment_5 = {
+		year = 2024
 		
-		maximum_speed = 15
-
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_4
+		priority = 40
+		visual_level = 2
+		
+		maximum_speed = 18
+		
 		#Defensive Abilities
 		defense = 38
-		breakthrough = 7
-		armor_value = 25
-
+		breakthrough = 8
+		hardness = 0.7
+		armor_value = 40
+		
 		#Offensive Abilities
-		ap_attack = 26
-		air_attack = 4
-		soft_attack = 9
-		hard_attack = 2
+		ap_attack = 46
 		
 		build_cost_ic = 26
 		resources = {
 			steel = 4
+			aluminium = 2
 			rubber = 2
-			oil = 3
 		}
 	}
 	
-	infantry_fighting_vehicle_5 = {
-		archetype = mechanized_equipment
-		parent = infantry_fighting_vehicle_4
-		priority = 80
-		visual_level = 4
-		
-		maximum_speed = 17
-
-		#Defensive Abilities
-		defense = 42
-		breakthrough = 8
-		armor_value = 30
-
-		#Offensive Abilities
-		ap_attack = 31
-		air_attack = 5
-		soft_attack = 10
-		hard_attack = 4
-		
-		build_cost_ic = 35
-		resources = {
-			steel = 4
-			rubber = 2
-			oil = 3
-		}
-	}
-
 	light_mechanized_equipment = {
 		is_archetype = yes
 		is_buildable = no
 		type = {
-			infantry
 			mechanized
 		}
 		group_by = archetype
@@ -164,160 +161,138 @@ equipments = {
 		interface_category = interface_category_land
 		
 		#Misc Abilities
-		maximum_speed = 19
+		maximum_speed = 22
 		reliability = 0.8
 		
 		#Defensive Abilities
-		defense = 13
+		defense = 12
 		breakthrough = 2
-		hardness = 0.55
-		armor_value = 5
-
+		hardness = 0.45
+		armor_value = 10
+		
 		#Offensive Abilities
-		ap_attack = 5
-		air_attack = 1.25
-		soft_attack = 4
-		hard_attack = 0.75
-
+		ap_attack = 13
+		air_attack = 0
+		
 		#Space taken in convoy
 		lend_lease_cost = 5
 		
 		build_cost_ic = 10
 		resources = {
 			steel = 2
-			oil = 1
 			rubber = 1
 		}
+		fuel_consumption = 1.2
 	}
 	
-	armored_personnel_carrier_1 = {
+	light_mechanized_equipment_1 = {
 		archetype = light_mechanized_equipment
 		priority = 40
 		visual_level = 1
 	}
 	
-	armored_personnel_carrier_2 = {
+	light_mechanized_equipment_2 = {
 		archetype = light_mechanized_equipment
-		parent = armored_personnel_carrier_1
-		priority = 50
+		parent = light_mechanized_equipment_1
+		priority = 40
 		visual_level = 1
-
-		maximum_speed = 20
-
+		
 		#Defensive Abilities
-		defense = 17
-		breakthrough = 3
-		armor_value = 10
-
+		defense = 16
+		breakthrough = 2
+		armor_value = 12
+		
 		#Offensive Abilities
-		ap_attack = 10
-		air_attack = 2
-		soft_attack = 6
-		hard_attack = 1
+		ap_attack = 15
 		
 		build_cost_ic = 12 
 		resources = {
-			steel = 3
+			steel = 2
 			rubber = 1
-			oil = 1
 		}
 	}
-
-	armored_personnel_carrier_3 = {
+	
+	light_mechanized_equipment_3 = {
 		archetype = light_mechanized_equipment
-		parent = armored_personnel_carrier_2
-		priority = 60
+		parent = light_mechanized_equipment_2
+		priority = 40
 		visual_level = 2
 		
-		maximum_speed = 21
-
 		#Defensive Abilities
-		defense = 21
-		breakthrough = 4
-		armor_value = 15
-
+		defense = 20
+		breakthrough = 3
+		armor_value = 14
+		
 		#Offensive Abilities
-		ap_attack = 15
-		air_attack = 4
-		soft_attack = 11
-		hard_attack = 2
+		ap_attack = 17
 		
 		build_cost_ic = 14
 		resources = {
-			steel = 4
+			steel = 3
 			rubber = 1
-			oil = 2
 		}
 	}
 	
-	armored_personnel_carrier_4 = {
+	light_mechanized_equipment_4 = {
 		archetype = light_mechanized_equipment
-		parent = armored_personnel_carrier_3
-		priority = 70
+		parent = light_mechanized_equipment_3
+		priority = 40
 		visual_level = 3
 		
-		maximum_speed = 22
-
 		#Defensive Abilities
-		defense = 25
-		breakthrough = 5
-		armor_value = 20
-
+		defense = 22
+		breakthrough = 3
+		armor_value = 16
+		
 		#Offensive Abilities
-		ap_attack = 20
-		air_attack = 4
-		soft_attack = 12
-		hard_attack = 2
+		ap_attack = 19
 		
 		build_cost_ic = 16
 		resources = {
-			steel = 4
+			steel = 3
 			rubber = 2
-			oil = 3
 		}
 	}
 	
-	armored_personnel_carrier_5 = {
+	light_mechanized_equipment_5 = {
 		archetype = light_mechanized_equipment
-		parent = armored_personnel_carrier_4
-		priority = 80
+		parent = light_mechanized_equipment_4
+		priority = 40
 		visual_level = 4
 		
-		maximum_speed = 23
-
 		#Defensive Abilities
-		defense = 29
-		breakthrough = 6
-		armor_value = 25
-
+		defense = 26
+		breakthrough = 4
+		armor_value = 18
+		
 		#Offensive Abilities
-		ap_attack = 25
-		air_attack = 5
-		soft_attack = 15
-		hard_attack = 2.5
+		ap_attack = 21
 		
 		build_cost_ic = 18
+		resources = {
+			steel = 4
+			rubber = 2
+		}
 	}
 	
-	armored_personnel_carrier_6 = {
+	light_mechanized_equipment_6 = {
 		archetype = light_mechanized_equipment
-		parent = armored_personnel_carrier_5
-		priority = 90
+		parent = light_mechanized_equipment_5
+		priority = 40
 		visual_level = 5
 		
-		maximum_speed = 25
-
 		#Defensive Abilities
-		defense = 33
-		breakthrough = 7
-		armor_value = 30
-
+		defense = 30
+		breakthrough = 4
+		armor_value = 20
+		
 		#Offensive Abilities
-		ap_attack = 30
-		air_attack = 6
-		soft_attack = 18
-		hard_attack = 3
+		ap_attack = 23
 		
 		build_cost_ic = 20
+		resources = {
+			steel = 4
+			rubber = 2
+		}
 	}
 }

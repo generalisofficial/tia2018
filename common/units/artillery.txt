@@ -4,8 +4,10 @@ sub_units = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
+		ai_priority = 0
 		active = yes
-		
+		affects_speed = no
+
 		type = {
 			infantry
 			support
@@ -23,7 +25,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			artillery_equipment = 24
+			artillery_equipment = 12
 		}
 		manpower = 300
 		training_time = 120
@@ -35,10 +37,10 @@ sub_units = {
 		supply_consumption = 0.16
 
 		# Support nerfs to combat abilities
-		defense = -0.5
-		breakthrough = -0.5
+		defense = -0.4
+		breakthrough = -0.4
 		soft_attack = -0.4
-		hard_attack = -0.5
+		hard_attack = -0.4
 
 
 		can_be_parachuted = yes
@@ -48,7 +50,9 @@ sub_units = {
 		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 0
+		ai_priority = 0
 		active = yes
+		affects_speed = no
 		
 		type = {
 			infantry
@@ -66,7 +70,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			rocket_artillery_equipment = 24
+			rocket_artillery_equipment = 12
 		}
 
 		manpower = 300

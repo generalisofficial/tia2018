@@ -10,74 +10,90 @@ set_country_flag = country_language_english
 set_country_flag = country_language_swazi
 
 set_technology = {
-	infantry_weapons = 1
+	## Infantry ##
 	infantry_weapons1 = 1
 	infantry_weapons2 = 1
-	infantry_weapons3 = 1
-	helmets1 = 1
-	accessories1 = 1
-	pistols1 = 1
-	heavy_weapons1 = 1
-	heavy_weapons2 = 1
-	body_armor1 = 1
-	body_armor2 = 1
-	special_forces2 = 1
-	special_forces = 1
 	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
 	
 	
+	## Support Companies ##
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
 	tech_field_hospital = 1
 	tech_logistics_company = 1
-	tech_military_police = 1
 	tech_signal_company = 1
-	tech_maintenance_company = 1
 	
-	gen1_mbt = 1
-	gen2_mbt = 1
-	gen3_mbt = 1
-	gen3_light = 1
-	gen1_ifv = 1
-	gen1_apc = 1
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
 	
+	## Artillery ##
 	gw_artillery = 1
-	interwar_artillery = 1
-	antitank1 = 1
+	interwar_antitank = 1
 	interwar_antiair = 1
 
 	
-	gen2_attack = 1
-	gen3_attack = 1
-	gen2_multirole = 1
-	gen3_multirole = 1
-	gen4_multirole = 1
-	gen2_mpa = 1
-	gen3_mpa = 1
-	gen4_mpa = 1
-	gen3_bomber = 1
-	modern_gen3_bomber = 1
-	gen1_ucav = 1
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
 	
-	cold_war_engineering = 1
-	modern_communication_systems = 1
-	modern_university_systems = 1
-	internet = 1
+	## Engineering ##
+	electronic_mechanical_engineering = 1
 	
-	assembly_line = 1
-	software1 = 1
-	software2 = 1
-	software3 = 1
-	machine_tools1 = 1
-	machine_tools2 = 1
-	machine_tools3 = 1
-	robotics1 = 1
-	oil1 = 1
-	oil2 = 1
-	construction1 = 1
-	manufacturing1 = 1
-	excavation1 = 1
+	## Industry ##
+	basic_machine_tools = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
 }
 
 add_ideas = {

@@ -26,6 +26,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/thisisdog.dds"
 	}
 
+	spriteType = {
+	   name = "GFX_in_game_menu_dark_overlay"
+	   textureFile = "gfx/interface/in_game_menu_dark_overlay.dds"
+	}
+
 	corneredTileSpriteType = {
 		name = "GFX_tiled_generic_overlay_bg1_small"
 		size= { x=290 y=310 }
@@ -84,6 +89,12 @@ spriteTypes = {
 	
 	textSpriteType = {
 		name = "GFX_sort_button_171x35"
+		texturefile = "gfx//interface//sort_button_171x35.tga"
+		noOfFrames = 2
+	}	
+
+	SpriteType = {
+		name = "GFX_sort_button_focus_171x35"
 		texturefile = "gfx//interface//sort_button_171x35.tga"
 		noOfFrames = 2
 	}	
@@ -191,7 +202,7 @@ spriteTypes = {
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}	
-
+	
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window2_1b_border"
 		size= { x=192 y=192 }
@@ -228,7 +239,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		looping = yes
 		animation_rate_spf = 4
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}	
 
 	corneredTileSpriteType = {
@@ -240,7 +251,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		looping = yes
 		animation_rate_spf = 2
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}	
 	
 	spriteType = {
@@ -282,7 +293,7 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-		allwaystransparent = yes
+		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}	
 	
@@ -301,12 +312,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//icon_twitter.dds"
 		noOfFrames = 1
 	}
-	
-		spriteType = {
-		name = "privacy"
-		texturefile = "gfx//interface//icon_privacy.dds"
-		noOfFrames = 1
-	}
 	spriteType = {
 		name = "homepage"
 		texturefile = "gfx//interface//icon_homepage.dds"
@@ -315,6 +320,11 @@ spriteTypes = {
 	spriteType = {
 		name = "privacy"
 		texturefile = "gfx//interface//icon_privacy.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "achievements"
+		texturefile = "gfx//interface//icon_achievements.dds"
 		noOfFrames = 1
 	}
 	spriteType = {
@@ -341,7 +351,7 @@ spriteTypes = {
 		size= {x=132 y=132 }
 		texturefile = "gfx//interface//tooltip_tile.dds"
 		borderSize = { x=45 y=45 }
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 	corneredTileSpriteType = {
@@ -349,7 +359,7 @@ spriteTypes = {
 		size= {x=32 y=32 }
 		texturefile = "gfx//interface//small_tiles_dialog.dds"
 		borderSize = { x=8 y=8 }
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	corneredTileSpriteType = {
@@ -364,7 +374,7 @@ spriteTypes = {
 		size= {x=76 y=56 }
 		texturefile = "gfx//interface//tiles//tiled_mini_dialog_with_header.dds"
 		borderSize = { x=12 y=21 }
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 	spriteType = {
@@ -376,6 +386,13 @@ spriteTypes = {
 		name = "GFX_mini_bg"
 		size= {x=32 y=32 }
 		texturefile = "gfx//interface//tiles//tiled_mini_dialog.dds"
+		borderSize = { x=12 y=12 }
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_mini_bg_grey"
+		size= {x=32 y=32 }
+		texturefile = "gfx//interface//tiles//tiled_mini_dialog_grey.dds"
 		borderSize = { x=12 y=12 }
 	}
 	
@@ -431,7 +448,7 @@ spriteTypes = {
 		textureFile1 = "gfx//interface//minishield.tga"
 		textureFile2 = "gfx//interface//minimask.tga"
 		effectFile = "gfx//FX//maskedflag.lua"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 	maskedShieldType = {
@@ -1566,6 +1583,7 @@ bitmapfonts = {
 		textureFile ="gfx//interface//tiles//tiled_selection_bold.dds"
 		borderSize = { x=1 y=1 }
 	}
+
 	
 }
 

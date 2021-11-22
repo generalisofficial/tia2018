@@ -1,31 +1,34 @@
 equipments = {
 
 	convoy = {
+		year = 1960
+
 		is_archetype = yes
 		type = convoy
+		picture = archetype_convoy		
 		group_by = archetype
 		sprite = convoy
 		
 		interface_category = interface_category_other_ships
 
 		# Unused by convoys
-		surface_detection = 5
-		sub_detection = 5
-		#port_capacity_usage = 0
+		surface_detection = 10
+		sub_detection = 1
+
+		fuel_consumption = 0
 
 		# Combat abilities
 		lg_armor_piercing = 1
 		armor_value = 0
 		reliability = 0.8
-		surface_visibility = 10
-		#fire_range = 1
-		#evasion = 15
+		surface_visibility = 14
+
 		torpedo_attack = 0
-		lg_attack = 0.5
+		lg_attack = 0.25
 		naval_speed = 12
-		max_strength = 30
+		max_strength = 80
 		max_organisation = 30
-		anti_air_attack = 0.5
+		anti_air_attack = 0.1
 
 
         #Space taken in convoy
@@ -34,14 +37,16 @@ equipments = {
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 70
+		build_cost_ic = 200
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 1
 		}
 	}
 
 	convoy_1 = {
+		year = 1960
+
 		archetype = convoy
 		type = { 
 			convoy

@@ -1,752 +1,61 @@
-#ship type coordinates
+# Written and edited by E. Wolfe #
 
-@headline = 0
+@destroyer_line = 0
+@destroyer_ex_line = 1
+@light_cruiser_line = 3
+@light_cruiser_ex_line = 4
+@heavy_cruiser_line = 6
+@heavy_cruiser_ex_line = 7
+@battleship_line = 9
+@battleship_ex_line = 10
+@carrier_line = 12
+@carrier_ex_line = 13
+@submarine_line = 15
+@submarine_ex_line = 16
+@transport_line = 18
 
-@corvette_line = 2
-@frigate_line = 4
-
-@destroyer_upper_line = 6
-@destroyer_main_line = 8
-@destroyer_lower_line = 10
-
-@cruiser_upper_line = 12
-@cruiser_main_line = 14
-@cruiser_lower_line = 16
-
-@carrier_upper_line = 18
-@carrier_main_line = 20
-@carrier_lower_line = 22
-
-@aas_upper_line = 24
-@aas_main_line = 26
-@aas_lower_line = 28
-
-@submarine_upper_line = 30
-@submarine_main_line = 32
-@submarine_lower_line = 34
-
-#year coordinates
-
-@1950 = -1
-@1950_2 = 1
-@1960 = 4
-@1960_2 = 6
-@1960_3 = 8
-@1980 = 10
-@1980_2 = 12
-@2000 = 16
-@2002 = 22
-@2004 = 28
-@2006 = 34
-@2008 = 40
-@2010 = 46
-@2012 = 52
-@2014 = 58
-@2016 = 64
-@2018 = 70
-@2020 = 76
-@2025 = 82
-@2030 = 88
-@2030_2 = 90
-@2030_3 = 92
+@1980 = 1
+@1990 = 4
+@2000 = 7
+@2004 = 10
+@2008 = 13
+@2012 = 16
+@2016 = 19
+@2020 = 22
+@2024 = 25
+@2028 = 28
+@2032 = 31
+@2036 = 34
 
 technologies = {
 
-	cold_war_ship_design = {
-	
-		transport_capacity = -0.5
-		naval_invasion_capacity = 30
-		
-		path = {
-			leads_to_tech = cold_war_transport_ships
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = corvette1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = frigate1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = destroyer1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = missile_cruiser1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = carrier1
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = lhd1
-			research_cost_coeff = 1
-		}	
-		
-		path = {
-			leads_to_tech = submarine1
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 0.5
-		
-		start_year = 1950
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @headline
-				y = @1950
-			}
-		}
-		
-		ai_will_do = {
-            factor = 20
-            modifier = {
-                factor = -100
-                num_of_naval_factories < 1
-            }
-        }
+	early_destroyer = {
 
-		
-		categories = {
-			naval_equipment
-		}
-		
-	}
-
-	cold_war_transport_ships = {
-	
-		naval_invasion_capacity = 20
-		
-		path = {
-			leads_to_tech = modern_transport_ships
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 0.75
-		
-		start_year = 1980
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @headline
-				y = @1980
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-		
-	}
-
-	modern_transport_ships = {
-	
-		naval_invasion_capacity = 20
-		
-		path = {
-			leads_to_tech = advanced_transport_ships
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		
-		start_year = 2004
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @headline
-				y = @2004
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-		
-	}
-
-	advanced_transport_ships = {
-	
-		naval_invasion_capacity = 20
-		
-		path = {
-			leads_to_tech = future_transport_ships
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		
-		start_year = 2010
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @headline
-				y = @2010
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-		
-	}
-
-	future_transport_ships = {
-	
-		naval_invasion_capacity = 50
-		
-		research_cost = 2
-		
-		start_year = 2020
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @headline
-				y = @2020
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-		
-	}
-	
-	corvette1 = {
-		
-		enable_equipments = {
-			corvette_1
-		}
-		
-		research_cost = 1
-
-		start_year = 1960
-		
-		path = {
-			leads_to_tech = corvette2
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @corvette_line
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	corvette2 = {
-		
-		enable_equipments = {
-			corvette_2
-		}
-		
-		research_cost = 1
-
-		start_year = 1980
-		
-		path = {
-			leads_to_tech = corvette3
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @corvette_line
-				y = @1980
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	corvette3 = {
-		
-		enable_equipments = {
-			corvette_3
-		}
-		
-		research_cost = 1
-
-		start_year = 2002
-		
-		path = {
-			leads_to_tech = corvette4
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @corvette_line
-				y = @2002
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	corvette4 = {
-		
-		enable_equipments = {
-			corvette_4
-		}
-		
-		research_cost = 1
-
-		start_year = 2006
-		
-		path = {
-			leads_to_tech = corvette5
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @corvette_line
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	corvette5 = {
-		
-		enable_equipments = {
-			corvette_5
-		}
-		
-		research_cost = 1
-
-		start_year = 2008
-		
-		path = {
-			leads_to_tech = corvette6
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @corvette_line
-				y = @2008
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	corvette6 = {
-		
-		enable_equipments = {
-			corvette_6
-		}
-		
-		research_cost = 1
-
-		start_year = 2010
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @corvette_line
-				y = @2010
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	frigate1 = {
-		
-		enable_equipments = {
-			frigate_1
-		}
-		
-		research_cost = 1
-
-		start_year = 1960
-		
-		path = {
-			leads_to_tech = frigate2
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @frigate_line
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	frigate2 = {
-		
-		enable_equipments = {
-			frigate_2
-		}
-		
-		research_cost = 1
-
-		start_year = 2000
-		
-		path = {
-			leads_to_tech = frigate3
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @frigate_line
-				y = @2000
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	frigate3 = {
-		
-		enable_equipments = {
-			frigate_3
-		}
-		
-		research_cost = 1
-
-		start_year = 2002
-		
-		path = {
-			leads_to_tech = frigate4
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @frigate_line
-				y = @2002
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	frigate4 = {
-		
-		enable_equipments = {
-			frigate_4
-		}
-		
-		research_cost = 1
-
-		start_year = 2006
-		
-		path = {
-			leads_to_tech = frigate5
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @frigate_line
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	frigate5 = {
-		
-		enable_equipments = {
-			frigate_5
-		}
-		
-		research_cost = 1
-
-		start_year = 2012
-		
-		path = {
-			leads_to_tech = frigate6
-			research_cost_coeff = 1
-		}
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @frigate_line
-				y = @2012
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	frigate6 = {
-		
-		enable_equipments = {
-			frigate_6
-		}
-		
-		research_cost = 1
-
-		start_year = 2018
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @frigate_line
-				y = @2018
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-		}
-	}
-	
-	##DESTROYERS##
-	
-	destroyer1 = {
-		
 		enable_equipments = {
 			destroyer_1
 		}
 		
 		path = {
-			leads_to_tech = destroyer2
+			leads_to_tech = basic_destroyer 
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = destroyer_improved_engines
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
-	
-	destroyer_improved_engines = {
-	
-		destroyer = {
-			naval_range = 0.05
-			naval_speed = 0.1
-		}
-		
-		path = {
-			leads_to_tech = destroyer_advanced_engines
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 0.5
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_upper_line
-				y = @1960_2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-		
-	}
-	
-	destroyer_advanced_engines = {
-	
-		destroyer = {
-			naval_range = 0.1
-			naval_speed = 0.1
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_upper_line
-				y = @1960_3
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-		
-	}
-	
-	destroyer2 = {
-		
-		enable_equipments = {
-			destroyer_2
-		}
-		
-		path = {
-			leads_to_tech = destroyer3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
+		research_cost = 3
 
 		start_year = 1980
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @1980
-			}
+			position = { x = 0 y = @1980 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				tag = ENG
+			}
 		}
 		
 		categories = {
@@ -755,99 +64,75 @@ technologies = {
 		}
 	}
 	
-	destroyer3 = {
+	basic_destroyer = {
+
+		enable_equipments = { 
+			destroyer_2
+		}
 		
-		enable_equipments = {
+		
+		path = {
+			leads_to_tech = improved_destroyer 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		
+		start_year = 2000
+
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	improved_destroyer = {
+
+		enable_equipments = { 
 			destroyer_3
 		}
 		
 		path = {
-			leads_to_tech = destroyer4
+			leads_to_tech = advanced_destroyer 
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = modern_destroyer_armament
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.75
-
-		start_year = 2000
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @2000
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
-	
-	modern_destroyer_armament = {
-		
-		destroyer = {
-			attack = 0.15
-			torpedo_attack = 0.15
-			sub_attack = 0.15
-		}
-		
-		research_cost = 2.25
-
-		start_year = 2002
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @destroyer_upper_line
-				y = @2002
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
-	
-	destroyer4 = {
-		
-		enable_equipments = {
-			destroyer_4
-		}
-		
-		path = {
-			leads_to_tech = destroyer5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2.25
+		research_cost = 3
 
 		start_year = 2008
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @2008
-			}
+			position = { x = 0 y = @2008 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
 		}
 		
 		categories = {
@@ -856,31 +141,75 @@ technologies = {
 		}
 	}
 	
-	destroyer5 = {
+	advanced_destroyer = {
+
+		enable_equipments = { 
+			destroyer_4
+		}
 		
-		enable_equipments = {
+		path = {
+			leads_to_tech = near_future_destroyer 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2016
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	near_future_destroyer = {
+
+		enable_equipments = { 
 			destroyer_5
 		}
 		
 		path = {
-			leads_to_tech = destroyer6
+			leads_to_tech = future_destroyer 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 3
 
-		start_year = 2020
+		start_year = 2024
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @2020
-			}
+			position = { x = 0 y = @2024 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {#EW
+					tag = ENG
+					tag = FRA
+				}
+			}
+
 		}
 		
 		categories = {
@@ -889,1095 +218,1726 @@ technologies = {
 		}
 	}
 	
-	destroyer6 = {
-		
-		enable_equipments = {
+	future_destroyer = {
+
+		enable_equipments = { 
 			destroyer_6
 		}
 		
+		research_cost = 3
+
+		start_year = 2032
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	
+	early_light_cruiser = {
+
+		enable_equipments = { 
+			light_cruiser_1
+		}
 		path = {
-			leads_to_tech = future_destroyer_armament
+			leads_to_tech = basic_light_cruiser 
+			research_cost_coeff = 1
+		}
+		
+		#path = {
+		#	leads_to_tech = early_heavy_cruiser
+		#	research_cost_coeff = 0.75
+		#}
+		
+		research_cost = 3
+
+		start_year = 1980
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @1980 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	basic_light_cruiser = {
+
+		enable_equipments = { 
+			light_cruiser_2
+		}
+		
+		path = {
+			leads_to_tech = improved_light_cruiser 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = basic_heavy_cruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+		
+		start_year = 2000
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	improved_light_cruiser = {
+
+		enable_equipments = { 
+			light_cruiser_3
+		}	
+		
+		path = {
+			leads_to_tech = advanced_light_cruiser 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_heavy_cruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+
+		start_year = 2008
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+				factor = 4
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	advanced_light_cruiser = {
+
+		enable_equipments = { 
+			light_cruiser_4
+		}
+		
+		path = {
+			leads_to_tech = near_future_light_cruiser
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_heavy_cruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+
+		start_year = 2016
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	near_future_light_cruiser = {
+
+		enable_equipments = { 
+			light_cruiser_5
+		}
+		
+		path = {
+			leads_to_tech = future_light_cruiser
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 3
 
-		start_year = 2030
+		start_year = 2024
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @2030
-			}
+			position = { x = -1 y = @2024 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+
 		}
 		
 		categories = {
 			naval_equipment
-			dd_tech
+			cl_tech
 		}
 	}
 	
-	future_destroyer_armament = {
-		
-		destroyer = {
-			attack = 0.2
-			torpedo_attack = 0.2
-			sub_attack = 0.2
-			sub_detection = 0.3
+	future_light_cruiser = {
+
+		enable_equipments = { 
+			light_cruiser_6
 		}
 		
-		research_cost = 1.75
+		research_cost = 3
 
-		start_year = 2030
+		start_year = 2032
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @destroyer_main_line
-				y = @2030_3
-			}
+			position = { x = -1 y = @2032 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+
 		}
 		
 		categories = {
 			naval_equipment
-			dd_tech
+			cl_tech
 		}
 	}
-
-	##MISSILE CRUISERS##
 	
-	missile_cruiser1 = {
-		
-		enable_equipments = {
-			missile_cruiser_1
+	
+	early_heavy_cruiser = {
+
+		enable_equipments = { 
+			heavy_cruiser_1
 		}
 		
 		path = {
-			leads_to_tech = missile_cruiser2
+			leads_to_tech = basic_heavy_cruiser 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		#path = {
+		#	leads_to_tech = early_light_cruiser 
+		#	research_cost_coeff = 0.75
+		#}
 		
-		start_year = 1960
+		research_cost = 3
+
+		start_year = 1980
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @cruiser_main_line
-				y = @1960
-			}
+			position = { x = 1 y = @1980 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			ca_tech
 		}
-		
 	}
 	
-	missile_cruiser2 = {
-		
-		enable_equipments = {
-			missile_cruiser_2
+	basic_heavy_cruiser = {
+
+		enable_equipments = { 
+			heavy_cruiser_2
 		}
 		
 		path = {
-			leads_to_tech = missile_cruiser3
+			leads_to_tech = improved_heavy_cruiser 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = basic_light_cruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+		
+		start_year = 2000
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	improved_heavy_cruiser = {
+
+		enable_equipments = { 
+			heavy_cruiser_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_heavy_cruiser 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_light_cruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+
+		start_year = 2008
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+				factor = 4
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	advanced_heavy_cruiser = {
+
+		enable_equipments = { 
+			heavy_cruiser_4
+		}
+		
+		path = {
+			leads_to_tech = near_future_heavy_cruiser
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_light_cruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+
+		start_year = 2016
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	near_future_heavy_cruiser = {
+
+		enable_equipments = { 
+			heavy_cruiser_5
+		}
+		
+		path = {
+			leads_to_tech = future_heavy_cruiser
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2024
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2024 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	future_heavy_cruiser = {
+
+		enable_equipments = { 
+			heavy_cruiser_6
+		}
+		
+		research_cost = 3
+
+		start_year = 2032
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = SOV
+					tag = USA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	
+#	early_battlecruiser = {
+#
+#		enable_equipments = { 
+#			battle_cruiser_1
+#		}
+#		
+#		path = {
+#			leads_to_tech = basic_battlecruiser 
+#			research_cost_coeff = 1
+#		}
+#		
+#		
+#		research_cost = 1.5
+#
+#		start_year = 1922
+#		
+#		folder = {
+#			name = naval_folder
+#			position = { x = -1 y = @1980 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			naval_equipment
+#			bc_tech
+#		}
+#	}
+#	
+#	basic_battlecruiser = {
+#
+#		enable_equipments = { 
+#			battle_cruiser_2
+#		}
+#		
+#		path = {
+#			leads_to_tech = improved_battleship 
+#			research_cost_coeff = 0.75
+#		}
+#		
+#		research_cost = 2
+#
+#		start_year = 1940
+#		
+#		folder = {
+#			name = naval_folder
+#			position = { x = -1 y = @2008 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			naval_equipment
+#			bc_tech
+#		}
+#	}
+		
+	early_battleship = {
+
+		enable_equipments = { 
+			battleship_1
+		}
+		
+		path = {
+			leads_to_tech = basic_battleship 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 3
+		start_year = 1980
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @1980 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = SOV
+					original_tag = PRU
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_naval_factories < 12
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	basic_battleship = {
+
+		enable_equipments = { 
+			battleship_2
+		}
+		
+		path = {
+			leads_to_tech = improved_battleship 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = heavy_battleship 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+		start_year = 2000
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = SOV
+					original_tag = PRU
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_naval_factories < 12
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	improved_battleship = {
+
+		enable_equipments = { 
+			battleship_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_battleship 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_battlecruiser 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+		start_year = 2008
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = SOV
+					original_tag = PRU
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				num_of_naval_factories < 14
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	advanced_battleship = {
+
+		enable_equipments = { 
+			battleship_4
+		}
+		
+		path = {
+			leads_to_tech = near_future_battleship
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = heavy_battleship2 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+		start_year = 2016
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				num_of_naval_factories < 15
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	near_future_battleship = {
+
+		enable_equipments = { 
+			battleship_5
+		}
+		
+		path = {
+			leads_to_tech = future_battleship
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2024
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2024 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	future_battleship = {
+
+		enable_equipments = { 
+			battleship_6
+		}
+		
+		path = {
+			leads_to_tech = heavy_battleship3 
+			research_cost_coeff = 0.75
+		}
+		
+		research_cost = 3
+		start_year = 2032
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {##E##W
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+				}
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	
+	heavy_battleship = {
+
+		enable_equipments = { 
+			SH_battleship_1
+		}
+		
+		path = {
+			leads_to_tech = heavy_battleship2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 2000
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			modifier = {
+				AND = {
+					NOT = { tag = SOV }
+					num_of_naval_factories < 40
+				}
+				factor = 0
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			shbb_tech
+		}
+	}
+	
+	heavy_battleship2 = {
+
+		enable_equipments = { 
+			SH_battleship_2
+		}
+		
+		path = {
+			leads_to_tech = heavy_battleship3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2016
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = SOV
+			}
+			modifier = {
+				AND = {
+					NOT = { tag = SOV }
+					num_of_naval_factories < 40
+				}
+				factor = 0
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			shbb_tech
+		}
+	}
+	
+	heavy_battleship3 = {
+
+		enable_equipments = { 
+			SH_battleship_3
+		}
+		
+		research_cost = 3
+
+		start_year = 2032
+		
+		folder = {
+			name = naval_folder
+			position = { x = 1 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				num_of_naval_factories < 40
+				factor = 0
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			shbb_tech
+		}
+	}
+	
+	transport = {
+
+		transport_capacity = -0.5
+		naval_invasion_capacity = 10
+		
+		path = {
+			leads_to_tech = landing_craft 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.5
-		
-		start_year = 2000
+		start_year = 1980
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @cruiser_main_line
-				y = @2000
-			}
+			position = { x = 0 y = @1980 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 0.5
+				has_war = no
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				OR = {
+					has_war_with = PRC
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
 		}
 		
 		categories = {
 			naval_equipment
-			ca_tech
+			tp_tech
 		}
-		
 	}
 	
-	missile_cruiser3 = {
-		
-		enable_equipments = {
-			missile_cruiser_3
-		}
-		
+	landing_craft = {
+
+		invasion_preparation = -0.5
+		amphibious_invasion_defence = 0.15
+		naval_invasion_capacity = 40
+
 		path = {
-			leads_to_tech = missile_cruiser4
+			leads_to_tech = tank_landing_craft 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
-		
-		start_year = 2006
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @cruiser_main_line
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ca_tech
-		}
-		
-	}
-	
-	missile_cruiser4 = {
-		
-		enable_equipments = {
-			missile_cruiser_4
-		}
-		
-		path = {
-			leads_to_tech = missile_cruiser5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2.5
-		
-		start_year = 2010
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @cruiser_main_line
-				y = @2010
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ca_tech
-		}
-		
-	}
-	
-	missile_cruiser5 = {
-		
-		enable_equipments = {
-			missile_cruiser_5
-		}
-		
-		path = {
-			leads_to_tech = missile_cruiser6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 3
-		
-		start_year = 2020
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @cruiser_main_line
-				y = @2020
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ca_tech
-		}
-		
-	}
-	
-	missile_cruiser6 = {
-		
-		enable_equipments = {
-			missile_cruiser_6
-		}
-		
-		research_cost = 3
-		
-		start_year = 2030
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @cruiser_main_line
-				y = @2030
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ca_tech
-		}
-		
-	}
-
-	##CARRIERS##
-	
-	carrier1 = {
-		
-		enable_equipments = {
-			carrier_1
-		}
-		
-		path = {
-			leads_to_tech = carrier2
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = carrier_nuclear_reactor
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = carrier_advanced_ramp_system
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 3
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_main_line
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier_nuclear_reactor = {
-	
-		carrier = {
-			naval_range = 0.6
-		}
-		
-		research_cost = 0.75
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_upper_line
-				y = @1960_2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier_advanced_ramp_system = {
-	
-		carrier = {
-			carrier_size = 0.1
-		}
-		
-		path = {
-			leads_to_tech = carrier_catapult
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_lower_line
-				y = @1960_2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier_catapult = {
-	
-		carrier = {
-			carrier_size = 0.2
-		}
-		
-		path = {
-			leads_to_tech = carrier_catapult
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		
-		start_year = 1980
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_lower_line
-				y = @1980
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier2 = {
-		
-		enable_equipments = {
-			carrier_2
-		}
-		
-		path = {
-			leads_to_tech = carrier3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 4
-		
-		start_year = 1980
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_main_line
-				y = @1980
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier3 = {
-		
-		enable_equipments = {
-			carrier_3
-		}
-		
-		path = {
-			leads_to_tech = carrier4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 5
-		
 		start_year = 2004
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @carrier_main_line
-				y = @2004
-			}
+			position = { x = 0 y = @2004 }
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+			
+			modifier = {
+				factor = 0.5
+				has_war = no
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				OR = {
+					has_war_with = PRC
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
 		}
 		
 		categories = {
 			naval_equipment
-			cv_tech
+			tp_tech
 		}
-		
 	}
 	
-	carrier4 = {
-		
-		enable_equipments = {
-			carrier_4
-		}
-		
-		path = {
-			leads_to_tech = carrier5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 6
-		
-		start_year = 2012
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_main_line
-				y = @2012
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier5 = {
-		
-		enable_equipments = {
-			carrier_5
-		}
-		
-		path = {
-			leads_to_tech = carrier6
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 7
-		
-		start_year = 2018
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_main_line
-				y = @2018
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	carrier6 = {
-		
-		enable_equipments = {
-			carrier_6
-		}
-		
-		research_cost = 8
-		
-		start_year = 2030
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @carrier_main_line
-				y = @2030
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	
-	##LHDs##
-	lhd1 = {
-		#EW Technique; LHD is basically useless#
-		allow = {
-			always = no
-		}
-		
-		enable_equipments = {
-			LHD_1
-		}
-		
-		path = {
-			leads_to_tech = lhd2
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 3
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @aas_main_line
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-		
-	}
-	lhd2 = {
-		
-		allow = {
-			always = no
-		}
-		
-		enable_equipments = {
-			LHD_2
-		}
-		path = {
-			leads_to_tech =  lhd3
-			research_cost_coeff = 1
-		}
+	tank_landing_craft = {
 
+		amphibious_invasion = 0.25
+		amphibious_invasion_defence = 0.5
+		naval_invasion_capacity = 100
+
+		research_cost = 2
+		start_year = 2012
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2012 }
+		}
 		
-		research_cost = 3
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 0.5
+				has_war = no
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				OR = {
+					has_war_with = PRC
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
 		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	early_carrier = {
+
+		enable_equipments = { 
+			carrier_1
+		}
+		
+		path = {
+			leads_to_tech = basic_carrier 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
 		start_year = 1980
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @aas_main_line
-				y = @1980
-			}
+			position = { x = 0 y = @1980 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					original_tag = SPR
+					original_tag = SOV
+					original_tag = SIA
+					original_tag = RAJ
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = BRA
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						original_tag = SPR
+						original_tag = SOV
+						original_tag = SIA
+						original_tag = RAJ
+						original_tag = USA
+						original_tag = ITA
+						original_tag = FRA
+						original_tag = ENG
+						original_tag = BRA
+					}
+				}
+				num_of_naval_factories < 12
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			cv_tech
 		}
-		
 	}
-	lhd3 = {
-		
-		allow = {
-			always = no
+	
+	basic_carrier = {
+
+		enable_equipments = { 
+			carrier_2
 		}
 		
-		enable_equipments = {
-			LHD_3
-		}
 		path = {
-			leads_to_tech = lhd4
+			leads_to_tech = improved_carrier 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
-		
+		research_cost = 2
 		start_year = 2000
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @aas_main_line
-				y = @2000
-			}
+			position = { x = 0 y = @2000 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					original_tag = SPR
+					original_tag = SOV
+					original_tag = RAJ
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = BRA
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						original_tag = SPR
+						original_tag = SOV
+						original_tag = RAJ
+						original_tag = USA
+						original_tag = ITA
+						original_tag = FRA
+						original_tag = ENG
+						original_tag = BRA
+					}
+				}
+				num_of_naval_factories < 14
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			cv_tech
 		}
-		
 	}
-	lhd4 = {
-		
-		allow = {
-			always = no
+	
+	improved_carrier = {
+
+		enable_equipments = { 
+			carrier_3
 		}
 		
-		enable_equipments = {
-			LHD_4
-		}
 		path = {
-			leads_to_tech = lhd5
+			leads_to_tech = advanced_carrier 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 3
-		
-		start_year = 2010
+
+		start_year = 2008
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @aas_main_line
-				y = @2010
-			}
+			position = { x = 0 y = @2008 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						original_tag = SOV
+						original_tag = USA
+						original_tag = ITA
+						original_tag = FRA
+						original_tag = ENG
+					}
+				}
+				num_of_naval_factories < 15
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			cv_tech
 		}
-		
 	}
-	lhd5 = {
-		
-		allow = {
-			always = no
+	
+	advanced_carrier = {
+
+		enable_equipments = { 
+			carrier_4
 		}
 		
-		enable_equipments = {
-			LHD_5
+		path = {
+			leads_to_tech = near_future_carrier
+			research_cost_coeff = 1
 		}
 
 		
 		research_cost = 3
-		
-		start_year = 2010
+
+		start_year = 2016
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @aas_main_line
-				y = @2020
-			}
+			position = { x = 0 y = @2016 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						original_tag = SOV
+						original_tag = USA
+						original_tag = ITA
+						original_tag = FRA
+						original_tag = ENG
+					}
+				}
+				num_of_naval_factories < 20
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			cv_tech
 		}
-		
 	}
-
-	##SUBMARINES##
 	
-	submarine1 = {
+	near_future_carrier = {
+
+		enable_equipments = { 
+			carrier_5
+		}
 		
-		enable_equipments = {
+		path = {
+			leads_to_tech = future_carrier 
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 3
+
+		start_year = 2024
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2024 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						original_tag = SOV
+						original_tag = USA
+						original_tag = ITA
+						original_tag = FRA
+						original_tag = ENG
+					}
+				}
+				num_of_naval_factories < 25
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	future_carrier = {
+
+		enable_equipments = { 
+			carrier_6
+		}
+
+		
+		research_cost = 3
+
+		start_year = 2032
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					original_tag = SOV
+					original_tag = USA
+					original_tag = ITA
+					original_tag = FRA
+					original_tag = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						original_tag = SOV
+						original_tag = USA
+						original_tag = ITA
+						original_tag = FRA
+						original_tag = ENG
+					}
+				}
+				num_of_naval_factories < 30
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+	
+	early_submarine = {
+
+		enable_equipments = { 
 			submarine_1
 		}
 		
 		path = {
-			leads_to_tech = submarine2
+			leads_to_tech = basic_submarine 
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = submarine_nuclear_reactor
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = submarine_cold_war_torpedo
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 0.75
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @submarine_main_line
-				y = @1960
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
-	submarine_nuclear_reactor = {
-		
-		submarine = {
-			naval_range = 1
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @submarine_upper_line
-				y = @1960_2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
-	submarine_cold_war_torpedo = {
-		
-		submarine = {
-			torpedo_attack = 0.2
-		}
-		
-		path = {
-			leads_to_tech = submarine_modern_torpedo
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 1960
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @submarine_lower_line
-				y = @1960_2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
-	submarine2 = {
-		
-		enable_equipments = {
-			submarine_2
-		}
-		
-		path = {
-			leads_to_tech = submarine3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.25
-		
+		research_cost = 1.5
+
 		start_year = 1980
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @submarine_main_line
-				y = @1980
-			}
+			position = { x = 0 y = @1980 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = USA
+					original_tag = SOV
+				}
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			ss_tech
 		}
-		
 	}
 	
-	submarine3 = {
+	basic_submarine = {
+
+		enable_equipments = { 
+			submarine_2
+		}
 		
-		enable_equipments = {
+		path = {
+			leads_to_tech = improved_submarine 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = USA
+					original_tag = SOV
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	improved_submarine = {
+
+		enable_equipments = { 
 			submarine_3
 		}
 		
 		path = {
-			leads_to_tech = submarine4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.75
-		
-		start_year = 2006
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @submarine_main_line
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
-	submarine_modern_torpedo = {
-		
-		submarine = {
-			torpedo_attack = 0.2
-		}
-		
-		path = {
-			leads_to_tech = submarine_future_torpedo
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.25
-		
-		start_year = 2006
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @submarine_lower_line
-				y = @2006
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
-	submarine4 = {
-		
-		enable_equipments = {
-			submarine_4
-		}
-		
-		path = {
-			leads_to_tech = submarine5
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		
-		start_year = 2014
-		
-		folder = {
-			name = naval_folder
-			position = {
-				x = @submarine_main_line
-				y = @2014
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		
-	}
-	
-	submarine5 = {
-		
-		enable_equipments = {
-			submarine_5
-		}
-		
-		path = {
-			leads_to_tech = submarine6
+			leads_to_tech = advanced_submarine 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 3
-		
-		start_year = 2025
+
+		start_year = 2008
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @submarine_main_line
-				y = @2025
-			}
+			position = { x = 0 y = @2008 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = USA
+					original_tag = SOV
+				}
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			ss_tech
 		}
-		
 	}
 	
-	submarine_future_torpedo = {
-		
-		submarine = {
-			torpedo_attack = 0.25
+	advanced_submarine = {
+
+		enable_equipments = { 
+			submarine_4
 		}
 		
-		research_cost = 2
+		path = {
+			leads_to_tech = near_future_submarine 
+			research_cost_coeff = 1
+		}
 		
-		start_year = 2025
+		research_cost = 3
+
+		start_year = 2016
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @submarine_lower_line
-				y = @2025
-			}
+			position = { x = 0 y = @2016 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = USA
+					original_tag = SOV
+				}
+			}
 		}
 		
 		categories = {
 			naval_equipment
 			ss_tech
 		}
-		
 	}
 	
-	submarine6 = {
+	near_future_submarine = {
+
+		enable_equipments = { 
+			submarine_5
+		}
 		
-		enable_equipments = {
+		path = {
+			leads_to_tech = future_submarine 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2024
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2024 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = USA
+					original_tag = SOV
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	
+	future_submarine = {
+
+		enable_equipments = { 
 			submarine_6
 		}
 		
-		research_cost = 4
 		
-		start_year = 2030
+		research_cost = 3
+
+		start_year = 2032
 		
 		folder = {
 			name = naval_folder
-			position = {
-				x = @submarine_main_line
-				y = @2030
-			}
+			position = { x = 0 y = @2032 }
 		}
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					original_tag = USA
+					original_tag = SOV
+				}
+			}
+
 		}
 		
 		categories = {
 			naval_equipment
 			ss_tech
 		}
-		
 	}
+
 	
+
+	######## JAPAN FOCUS TREE UNLOCK ########EW
+	torpedo_cruiser = {
+
+		enable_equipments = { 
+			torpedo_cruiser
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+	}
 }
+# Written and edited by E. Wolfe #
