@@ -294,7 +294,7 @@ formable_nation_decisions = {
 		
 		complete_effect = {
 			set_cosmetic_tag = CZESLO
-			set_capital = 9
+			set_capital = { state = 9 }
 			every_state = {
 			    limit = {
 				    OR = {
@@ -344,7 +344,7 @@ formable_nation_decisions = {
 		
 		complete_effect = {
 			set_cosmetic_tag = BLT
-			set_capital = 12
+			set_capital = { state = 12 }
 			every_state = {
 			    limit = {
 				    OR = {
@@ -390,7 +390,7 @@ formable_nation_decisions = {
 		
 		complete_effect = {
 			set_cosmetic_tag = BNL
-			set_capital = 6
+			set_capital = { state = 6 }
 			every_state = {
 			    limit = {
 				    OR = {

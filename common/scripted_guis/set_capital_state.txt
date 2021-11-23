@@ -13,7 +13,7 @@ scripted_gui = {
             set_capital_button_click = {
 				ROOT = { 
 					add_political_power = -500
-					set_capital = PREV
+					set_capital = { state = PREV }
 				}
             }
 		}

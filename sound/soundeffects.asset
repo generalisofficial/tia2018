@@ -76,67 +76,6 @@ soundeffect = {
 	fade_out = 0.8
 	fade_in = 0.2
 }
-########## ON DISTANCE
-soundeffect = {
-	name = distance_ship_hit_big_effect
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ship_hit_big_effect_01
-		sound = distance_ship_hit_big_effect_02
-		sound = distance_ship_hit_big_effect_03
-		sound = distance_ship_hit_big_effect_04
-		sound = distance_ship_hit_big_effect_05
-	} 
-	volume = 0.35
-	is3d = yes
-	max_audible = 3
-	fade_out = 0.8
-}
-soundeffect = {
-	name = distance_ship_miss_big_effect
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ship_miss_big_effect_01
-		sound = distance_ship_miss_big_effect_02
-		sound = distance_ship_miss_big_effect_03
-		sound = distance_ship_miss_big_effect_04
-		sound = distance_ship_miss_big_effect_05
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-	fade_out = 0.8
-}
-soundeffect = {
-	name = distance_ship_hit_small_effect
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ship_hit_small_effect_01
-		sound = distance_ship_hit_small_effect_02
-		sound = distance_ship_hit_small_effect_03
-		sound = distance_ship_hit_small_effect_04
-		sound = distance_ship_hit_small_effect_05
-	} 
-	volume = 0.35
-	is3d = yes
-	max_audible = 3
-	fade_out = 0.8
-}
-soundeffect = {
-	name = distance_ship_miss_small_effect
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ship_miss_small_effect_01
-		sound = distance_ship_miss_small_effect_02
-		sound = distance_ship_miss_small_effect_03
-		sound = distance_ship_miss_small_effect_04
-		sound = distance_ship_miss_small_effect_05
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-	fade_out = 0.8
-}
 
 #################################################################
 #####################MISC SHIP ANIMATION########################
@@ -225,76 +164,6 @@ soundeffect = {
 	is3d = yes
 	max_audible = 3
 }
-
-########## ON DISTANCE
-soundeffect = {
-	name = distance_super_heavy_battleship_attack 
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_super_heavy_battleship_attack_01
-		sound = distance_super_heavy_battleship_attack_02
-		sound = distance_super_heavy_battleship_attack_03
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_super_heavy_battleship_damaged_attack 
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_super_heavy_battleship_damaged_attack_01
-		sound = distance_super_heavy_battleship_damaged_attack_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_super_heavy_battleship_attacked
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_super_heavy_battleship_attacked_01
-		sound = distance_super_heavy_battleship_attacked_02
-		sound = distance_super_heavy_battleship_attacked_03
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_super_heavy_battleship_defend
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_super_heavy_battleship_defend_01
-		sound = distance_super_heavy_battleship_defend_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_super_heavy_battleship_damaged_defend
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_super_heavy_battleship_damaged_defend_01
-		sound = distance_super_heavy_battleship_damaged_defend_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_super_heavy_battleship_destroyed
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_super_heavy_battleship_destroyed_01
-		sound = distance_super_heavy_battleship_destroyed_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
 #################################################################
 #####################DESTROYER########################
 #################################################################
@@ -359,69 +228,6 @@ soundeffect = {
 	is3d = yes
 	max_audible = 3
 }
-
-########## ON DISTANCE
-soundeffect = {
-	name = distance_ships_destroyer_attack 
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_attack_01
-		sound = distance_ships_destroyer_attack_02
-		sound = distance_ships_destroyer_attack_03
-		sound = distance_ships_destroyer_attack_04
-		sound = distance_ships_destroyer_attack_05
-		sound = distance_ships_destroyer_attack_06
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-
-soundeffect = {
-	name = distance_ships_destroyer_attacked
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_attacked_01
-		sound = distance_ships_destroyer_attacked_02
-		sound = distance_ships_destroyer_attacked_03
-		sound = distance_ships_destroyer_attacked_04
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-
-soundeffect = {
-	name = distance_ship_destroyer_damaged_defending_01
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ship_destroyer_damaged_defending_01
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ship_destroyer_damaged_attacking_01
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ship_destroyer_damaged_attacking_01
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ships_destroyer_death
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_death_01
-		sound = distance_ships_destroyer_death_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
 #################################################################
 #####################HEAVY CRUISER################################################
 #################################################################
@@ -479,66 +285,6 @@ soundeffect = {
 		sound = heavy_cruiser_damaged_attacked_loop
 	} 
 	volume = 0.45
-	is3d = yes
-	max_audible = 3
-}
-
-########## ON DISTANCE
-
-soundeffect = {
-	name = distance_ships_heavy_cruiser_attack 
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_heavy_cruiser_attack_01
-		sound = distance_heavy_cruiser_attack_02
-		sound = distance_heavy_cruiser_attack_03
-
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ships_heavy_cruiser_death
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_death_01
-		sound = distance_ships_destroyer_death_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ships_heavy_cruiser_attacked
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_attacked_01
-		sound = distance_ships_destroyer_attacked_02
-		sound = distance_ships_destroyer_attacked_03
-		sound = distance_ships_destroyer_attacked_04
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_heavy_cruiser_damaged_defend_loop
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_heavy_cruiser_damaged_defend_loop
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_heavy_cruiser_damaged_attacked_loop
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_heavy_cruiser_damaged_attacked_loop
-	} 
-	volume = 0.2
 	is3d = yes
 	max_audible = 3
 }
@@ -602,67 +348,6 @@ soundeffect = {
 		sound = light_cruiser_defend_damaged_01
 	} 
 	volume = 0.45
-	is3d = yes
-	max_audible = 3
-}
-
-########## ON DISTANCE
-
-soundeffect = {
-	name =  distance_light_cruiser_attack
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_light_cruiser_attack_01
-		sound = distance_light_cruiser_attack_02
-		sound = distance_light_cruiser_attack_03
-		sound = distance_light_cruiser_attack_04
-
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ships_light_cruiser_death
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_death_01
-		sound = distance_ships_destroyer_death_02
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ships_light_cruiser_attacked
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_ships_destroyer_attacked_01
-		sound = distance_ships_destroyer_attacked_02
-		sound = distance_ships_destroyer_attacked_03
-		sound = distance_ships_destroyer_attacked_04
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_light_cruiser_attack_damaged
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_light_cruiser_attack_damaged_01
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_light_cruiser_defend_damaged_01
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_light_cruiser_defend_damaged_01
-	} 
-	volume = 0.2
 	is3d = yes
 	max_audible = 3
 }
@@ -802,21 +487,25 @@ soundeffect =
 #################################################################
 soundeffect = {
 	name = infantry_move_animation
-	falloff = "falloff_100"
+	falloff = "falloff_80"
 	sounds = {
 		sound = infantry_move_animation_01
 		sound = infantry_move_animation_02
 		sound = infantry_move_animation_03
 		sound = infantry_move_animation_04
 		sound = infantry_move_animation_05
+		sound = infantry_move_animation_06
+		sound = infantry_move_animation_07
+		sound = infantry_move_animation_08
+		sound = infantry_move_animation_09
+		sound = infantry_move_animation_10
 	} 
-	volume = 0.2
+	volume = 0.6
 	max_audible = 3
 	max_audible_behaviour = fail
-	delay_random_offset = { 0.0 0.3 }
+	looping_playbackrate_random_offset = yes
 	is3d = yes
-	loop = yes
-	random_sound_when_looping = no
+	loop = no
 }
 
 #################################################################
@@ -834,6 +523,39 @@ soundeffect = {
 	is3d = yes
 	loop = yes
 	max_audible_behaviour = fail
+}
+
+#################################################################
+######################### RAILWAY GUN ###########################
+#################################################################
+soundeffect = {
+	name = railway_gun_move
+	sounds = {
+		sound = train_horn_veryLarge-001
+		sound = train_horn_veryLarge-002
+		sound = train_horn_veryLarge-003
+		sound = train_horn_veryLarge-004
+	}
+	volume = 0.5
+}
+
+####GEN_RAILGUN###
+soundeffect = {
+	name = GEN_railway_gun
+	falloff = "falloff_trains_medium"
+	loop = no
+	random_sound_when_looping = no
+	sounds = {
+		sound = GEN_railway_gun_01
+		sound = GEN_railway_gun_02
+		sound = GEN_railway_gun_03
+		sound = GEN_railway_gun_04
+	}
+	max_audible = 3
+	max_audible_behaviour = fail
+	prevent_random_repetition = yes
+	is3d = yes
+	volume = 0.80
 }
 
 #################################################################
@@ -883,6 +605,17 @@ soundeffect =
 		sound = select_fleet04
 	}
 	volume = 0.2
+}
+soundeffect =
+{
+	name = select_railway_gun
+	sounds = {
+		sound = train_horn_veryLarge-005
+		sound = train_horn_veryLarge-006
+		sound = train_horn_veryLarge-007
+		sound = train_horn_veryLarge-008
+	}
+	volume = 0.4
 }
 soundeffect =
 {
@@ -1035,22 +768,7 @@ soundeffect = {
 	max_audible_behaviour = fail
 	volume = 0.45
 }
-soundeffect = {
-	name = distance_mechanized_units_mg_fire
-	falloff = "falloff_100"
-	random_sound_when_looping = no
-	sounds = {
-		sound = distance_mechanized_units_mg_fire_01
-		sound = distance_mechanized_units_mg_fire_02
-		sound = distance_mechanized_units_mg_fire_03
-		sound = distance_mechanized_units_mg_fire_04
-	} 
-	max_audible = 5
-	looping_delay_random_offset = yes
-	delay_random_offset = { 0.0 0.3 }
-	max_audible_behaviour = fail
-	volume = 0.6
-}
+
 ############# INFANTRY ANIMATION #############
 
 soundeffect = {
@@ -1126,24 +844,7 @@ soundeffect = {
 	volume = 0.75
 	volume_random_offset = { -0.1 0.1 }
 }
-########## ON DISTANCE
-soundeffect = {
-	name = distance_artillery_unit_fire_01
-	falloff = "falloff_distance"
-	sounds = {
-		#sound = distance_artillery_unit_fire_01
-		sound = distance_artillery_unit_fire_02
-		sound = distance_artillery_unit_fire_03
-		sound = distance_artillery_unit_fire_04
-		sound = distance_artillery_unit_fire_05
-	} 
-	max_audible = 2
-	delay_random_offset = { 0.0 0.3 }
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.3
-	volume_random_offset = { -0.1 0.1 }
-}
+
 ############ TANK ANIMATION ##################
 
 soundeffect = {
@@ -1357,121 +1058,6 @@ soundeffect = {
 	is3d = yes
 	volume = 0.35
 }
-########## ON DISTANCE
-soundeffect = {
-	name = distance_airplane_bomb
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_airplane_bomb_01
-	} 
-	max_audible = 5
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.4
-}
-soundeffect = {
-	name = distance_airplane_crash
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_airplane_burn
-		sound = distance_airplane_burn_02
-		sound = distance_airplane_burn_03
-	} 
-	max_audible = 2
-	max_audible_behaviour = fail
-	playbackrate_random_offset = { -2.0 2.0 }
-	is3d = yes
-	volume = 0.35
-}
-soundeffect = {
-	name = distance_airplane_light_fire
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_light_airplane_fire_01
-		sound = distance_light_airplane_fire_02
-		sound = distance_light_airplane_fire_03
-		sound = distance_light_airplane_fire_04
-		sound = distance_light_airplane_fire_05
-	} 
-	max_audible = 3
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.4
-}
-soundeffect = {
-	name = distance_airplane_jet_idle
-	falloff = "falloff_distance"
-	loop = yes
-	sounds = {
-		sound = distance_airplane_jet_idle_01
-		sound = distance_airplane_jet_idle_02
-		sound = distance_airplane_jet_idle_03
-		sound = distance_airplane_jet_idle_04
-	} 
-	max_audible = 3
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.3
-}
-soundeffect = {
-	name = distance_airplane_ger_jet_fire
-	falloff = "falloff_distance"
-	sounds = {
-		sound = distance_airplane_ger_jet_fire
-	} 
-	max_audible = 5
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.3
-}
-soundeffect = {
-	name = distance_airplane_idle
-	falloff = "falloff_distance"
-	loop = yes
-	random_sound_when_looping = no
-	sounds = {
-		sound = distance_airplane_idle_04
-		sound = distance_airplane_idle_03
-		sound = distance_airplane_idle_02
-		sound = distance_airplane_idle_01
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.5
-}
-
-soundeffect = {
-	name = distance_airplane_medium_idle_01
-	falloff = "falloff_distance"
-	loop = yes
-	sounds = {
-		sound = distance_airplane_medium_idle_01
-		sound = distance_airplane_medium_idle_02
-		sound = distance_airplane_medium_idle_03
-		sound = distance_airplane_medium_idle_04
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.5
-}
-soundeffect = {
-	name = distance_airplane_heavy_idle_01
-	falloff = "falloff_distance"
-	loop = yes
-	sounds = {
-		sound = distance_airplane_heavy_idle_01
-		sound = distance_airplane_heavy_idle_02
-		sound = distance_airplane_heavy_idle_03
-		sound = distance_airplane_heavy_idle_04
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-	is3d = yes
-	volume = 0.5
-}
-
 ############ ARMORED VEHICLES ################
 
 ### ENG ###
@@ -3062,69 +2648,140 @@ soundeffect =
 	max_audible = 1
 	max_audible_behaviour = fail
 }
-######### TRAITS GUI
-sound = {
-	name = "traits_ui_click_01"
-	file = "menu/traits_ui_click_01.wav"
-}
-sound = {
-	name = "traits_ui_over_01"
-	file = "menu/traits_ui_over_01.wav"
+
+
+#### GEN_TRAIN ###
+soundeffect = {
+	name = GEN_train_equipment_1
+	falloff = "falloff_trains_medium"
+	loop = yes
+	random_sound_when_looping = no
+	sounds = {
+		sound = GEN_train_equipment_1_01
+		sound = GEN_train_equipment_1_02
+		sound = GEN_train_equipment_1_03
+		sound = GEN_train_equipment_1_04
+		sound = GEN_train_equipment_1_05
+	}
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -5.0 5.0 }
+	is3d = yes
+	fade_in = 0.20
+	fade_out = 0.40
+	volume = 0.70
 }
 
-######### TRAITS GUI
+soundeffect = {
+	name = GEN_train_equipment_2
+	falloff = "falloff_trains_medium"
+	loop = yes
+	random_sound_when_looping = no
+	sounds = {
+		sound = GEN_train_equipment_2_01
+		sound = GEN_train_equipment_2_02
+		sound = GEN_train_equipment_2_03
+		sound = GEN_train_equipment_2_04
+		sound = GEN_train_equipment_2_05
+	}
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -5.0 5.0 }
+	is3d = yes
+	fade_in = 0.20
+	fade_out = 0.40
+	volume = 0.70
+}
 
 soundeffect = {
-	name = "traits_ui_click"
-	volume = 0.9
+	name = GEN_train_equipment_3
+	falloff = "falloff_trains_medium"
+	loop = yes
+	random_sound_when_looping = no
 	sounds = {
-		sound = "traits_ui_click_01"
+		sound = GEN_train_equipment_3_01
+		sound = GEN_train_equipment_3_02
+		sound = GEN_train_equipment_3_03
+		sound = GEN_train_equipment_3_04
+		sound = GEN_train_equipment_3_05
 	}
-}
-soundeffect = {
-	name = "traits_ui_over"
-	volume = 0.2
-	max_audible = 1
-	sounds = {
-		sound = "traits_ui_over_01"
-	}
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -5.0 5.0 }
+	is3d = yes
+	fade_in = 0.20
+	fade_out = 0.40
+	volume = 0.70
 }
 
-######### DECISIONS GUI
-sound = {
-	name = "decisions_ui_checkbox_01"
-	file = "menu/decisions_ui_checkbox_01.wav"
-}
-sound = {
-	name = "decisions_ui_tab_01"
-	file = "menu/decisions_ui_tab_01.wav"
-}
-sound = {
-	name = "decisions_ui_button_01"
-	file = "menu/decisions_ui_button_01.wav"
+#### HORNS #####
+soundeffect = {
+	name =  train_horn_medium
+	falloff = "falloff_trains_medium"
+	loop = yes
+	prevent_random_repetition = no
+	sounds = {
+		weighted_sound = { sound = train_horn_medium-001  weight = 2 }
+		weighted_sound = { sound = train_horn_medium-002 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-003 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-004 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-005 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-006 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-007 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-008 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-009 weight = 2 }
+		weighted_sound = { sound = train_horn_medium-010 weight = 2 }
+		weighted_sound = { sound = silence_buffer_1s weight = 42 }
+	}
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -5.0 5.0 }
+	is3d = yes
+	volume = 0.5
 }
 
-######### DECISIONS GUI
+soundeffect = {
+	name = train_horn_veryLarge
+	falloff = "falloff_trains_medium"
+	loop = yes
+	sounds = {
+		weighted_sound = { sound = train_horn_veryLarge-001  weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-002 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-003 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-004 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-005 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-006 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-007 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-008 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-009 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-010 weight = 2 }
+		weighted_sound = { sound = train_horn_veryLarge-011 weight = 2 }
+		weighted_sound = { sound = silence_buffer_1s weight = 45 }
+	}
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -5.0 5.0 }
+	is3d = yes
+	volume = 0.5
+}
 
+####GEN_FLOATING_HARBOUR####
 soundeffect = {
-	name = "decisions_ui_checkbox"
-	volume = 0.7
+	name = GEN_floating_harbour
+	falloff = "falloff_floating_harbour"
+	loop = yes
+	random_sound_when_looping = no
 	sounds = {
-		sound = "decisions_ui_checkbox_01"
+		sound = GEN_floating_harbour_01
+		sound = GEN_floating_harbour_02
+		sound = GEN_floating_harbour_03
+		sound = GEN_floating_harbour_04
 	}
-}
-soundeffect = {
-	name = "decisions_ui_tab"
-	volume = 0.55
-	max_audible = 1
-	sounds = {
-		sound = "decisions_ui_tab_01"
-	}
-}
-soundeffect = {
-	name = "decisions_ui_button"
-	volume = 0.7
-	sounds = {
-		sound = "decisions_ui_button_01"
-	}
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -5.0 5.0 }
+	is3d = yes
+	fade_in = 0.20
+	fade_out = 0.40
+	volume = 0.70
 }

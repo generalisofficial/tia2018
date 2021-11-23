@@ -514,6 +514,9 @@ soundeffect =
 	sounds = {
 		sound = agency_complete
 	}
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
 }
 soundeffect =
 {
@@ -923,4 +926,812 @@ soundeffect =
 	sounds = {
 		sound = Resistance_Switch_Map_Mode_Compliance
 	}
+}
+
+
+######### TRAITS GUI
+
+soundeffect = {
+	name = "traits_ui_click"
+	volume = 0.9
+	sounds = {
+		sound = "traits_ui_click_01"
+	}
+}
+soundeffect = {
+	name = "traits_ui_over"
+	volume = 0.2
+	max_audible = 1
+	sounds = {
+		sound = "traits_ui_over_01"
+	}
+}
+
+
+######### DECISIONS GUI
+
+soundeffect = {
+	name = "decisions_ui_checkbox"
+	volume = 0.7
+	sounds = {
+		sound = "decisions_ui_checkbox_01"
+	}
+}
+soundeffect = {
+	name = "decisions_ui_tab"
+	volume = 0.55
+	max_audible = 1
+	sounds = {
+		sound = "decisions_ui_tab_01"
+	}
+}
+soundeffect = {
+	name = "decisions_ui_button"
+	volume = 0.7
+	sounds = {
+		sound = "decisions_ui_button_01"
+	}
+}
+
+
+#####################################################
+################# 	DOCTRINES  	 ####################
+################# 	MAP MODES  	 ####################
+################# RESEARCH TABS  ####################
+################# SHIP DESIGNER  ####################
+################# TANK DESIGNER  ####################
+#####################################################
+
+
+soundeffect = {
+	name = ui_doctrine_tab_air
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_doctrine_tab_air_01
+		sound = ui_doctrine_tab_air_02
+		sound = ui_doctrine_tab_air_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_doctrine_tab_land
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_doctrine_tab_land_01
+		sound = ui_doctrine_tab_land_02
+		sound = ui_doctrine_tab_land_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_doctrine_tab_naval
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_doctrine_tab_naval_01
+		sound = ui_doctrine_tab_naval_02
+		sound = ui_doctrine_tab_naval_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_doctrine_unlock
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_doctrine_unlock_air_01
+		sound = ui_doctrine_unlock_air_02
+		sound = ui_doctrine_unlock_air_03
+		sound = ui_doctrine_unlock_land_01
+		sound = ui_doctrine_unlock_land_02
+		sound = ui_doctrine_unlock_land_03
+		sound = ui_doctrine_unlock_naval_01
+		sound = ui_doctrine_unlock_naval_02
+		sound = ui_doctrine_unlock_naval_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_mapmode_compliance
+	sounds = {
+		sound = ui_mapmode_compliance_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_diplomacy
+	sounds = {
+		sound = ui_mapmode_diplomacy_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_factions
+	sounds = {
+		sound = ui_mapmode_factions_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_ideology
+	sounds = {
+		sound = ui_mapmode_ideology_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_infrastructure
+	sounds = {
+		sound = ui_mapmode_infrastructure_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_operatives
+	sounds = {
+		sound = ui_mapmode_operatives_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_players
+	sounds = {
+		sound = ui_mapmode_players_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_population
+	sounds = {
+		sound = ui_mapmode_population_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_resistance
+	sounds = {
+		sound = ui_mapmode_resistance_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_resource
+	sounds = {
+		sound = ui_mapmode_resource_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_states
+	sounds = {
+		sound = ui_mapmode_states_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_strategic_air
+	sounds = {
+		sound = ui_mapmode_strategic_air_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_strategic_land
+	sounds = {
+		sound = ui_mapmode_strategic_land_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_strategic_navy
+	sounds = {
+		sound = ui_mapmode_strategic_navy_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_supply
+	sounds = {
+		sound = ui_mapmode_supply_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+soundeffect = {
+	name = ui_mapmode_terrain
+	sounds = {
+		sound = ui_mapmode_terrain_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+
+soundeffect = {
+	name = ui_research_tab_air
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_air_01
+		sound = ui_research_tab_air_02
+		sound = ui_research_tab_air_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_armor
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_armor_01
+		sound = ui_research_tab_armor_02
+		sound = ui_research_tab_armor_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_artillery
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_artillery_01
+		sound = ui_research_tab_artillery_02
+		sound = ui_research_tab_artillery_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_engineering
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_engineering_01
+		sound = ui_research_tab_engineering_02
+		sound = ui_research_tab_engineering_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_industry
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_industry_01
+		sound = ui_research_tab_industry_02
+		sound = ui_research_tab_industry_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_infantry
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_infantry_01
+		sound = ui_research_tab_infantry_02
+		sound = ui_research_tab_infantry_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_naval
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_naval_01
+		sound = ui_research_tab_naval_02
+		sound = ui_research_tab_naval_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_research_tab_support
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_research_tab_support_01
+		sound = ui_research_tab_support_02
+		sound = ui_research_tab_support_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_spirit_select
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_spirit_select_01
+		sound = ui_spirit_select_02
+		sound = ui_spirit_select_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_auto
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_auto_01
+		sound = ui_tank_designer_auto_02
+		sound = ui_tank_designer_auto_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_auto_upgrade
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_auto_upgrade_01
+		sound = ui_tank_designer_auto_upgrade_02
+		sound = ui_tank_designer_auto_upgrade_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_company_icon
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_company_icon_01
+		sound = ui_tank_designer_company_icon_02
+		sound = ui_tank_designer_company_icon_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_decrease
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_decrease_01
+		sound = ui_tank_designer_decrease_02
+		sound = ui_tank_designer_decrease_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_duplicate
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_duplicate_01
+		sound = ui_tank_designer_duplicate_02
+		sound = ui_tank_designer_duplicate_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_equipment_icon
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_equipment_icon_01
+		sound = ui_tank_designer_equipment_icon_02
+		sound = ui_tank_designer_equipment_icon_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_expand
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_expand_01
+		sound = ui_tank_designer_expand_02
+		sound = ui_tank_designer_expand_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_increase
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_increase_01
+		sound = ui_tank_designer_increase_02
+		sound = ui_tank_designer_increase_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_panel_appear
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_panel_appear_01
+		sound = ui_tank_designer_panel_appear_02
+		sound = ui_tank_designer_panel_appear_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_reset
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_reset_01
+		sound = ui_tank_designer_reset_02
+		sound = ui_tank_designer_reset_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_role_entry
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_role_entry_01
+		sound = ui_tank_designer_role_entry_02
+		sound = ui_tank_designer_role_entry_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_save
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_save_01
+		sound = ui_tank_designer_save_02
+		sound = ui_tank_designer_save_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_tank_designer_select_3d_model
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_tank_designer_select_3d_model_01
+		sound = ui_tank_designer_select_3d_model_02
+		sound = ui_tank_designer_select_3d_model_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_auto
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_auto_01
+		sound = ui_ship_designer_auto_02
+		sound = ui_ship_designer_auto_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_auto_upgrade
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_auto_upgrade_01
+		sound = ui_ship_designer_auto_upgrade_02
+		sound = ui_ship_designer_auto_upgrade_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_company_icon
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_company_icon_01
+		sound = ui_ship_designer_company_icon_02
+		sound = ui_ship_designer_company_icon_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_decrease
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_decrease_01
+		sound = ui_ship_designer_decrease_02
+		sound = ui_ship_designer_decrease_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_duplicate
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_duplicate_01
+		sound = ui_ship_designer_duplicate_02
+		sound = ui_ship_designer_duplicate_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_equipment_icon
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_equipment_icon_01
+		sound = ui_ship_designer_equipment_icon_02
+		sound = ui_ship_designer_equipment_icon_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_expand
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_expand_01
+		sound = ui_ship_designer_expand_02
+		sound = ui_ship_designer_expand_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_increase
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_increase_01
+		sound = ui_ship_designer_increase_02
+		sound = ui_ship_designer_increase_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_panel_appear
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_panel_appear_01
+		sound = ui_ship_designer_panel_appear_02
+		sound = ui_ship_designer_panel_appear_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_reset
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_reset_01
+		sound = ui_ship_designer_reset_02
+		sound = ui_ship_designer_reset_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_role_entry
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_role_entry_01
+		sound = ui_ship_designer_role_entry_02
+		sound = ui_ship_designer_role_entry_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_save
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_save_01
+		sound = ui_ship_designer_save_02
+		sound = ui_ship_designer_save_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
+}
+
+soundeffect = {
+	name = ui_ship_designer_select_3d_model
+	loop = no
+	prevent_random_repetition = yes
+	sounds = {
+		sound = ui_ship_designer_select_3d_model_01
+		sound = ui_ship_designer_select_3d_model_02
+		sound = ui_ship_designer_select_3d_model_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	is3d = no
+	volume = 0.85
 }

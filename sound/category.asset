@@ -101,10 +101,12 @@ category = {
 	vehicle_move
 	infantry_move_animation
 	motorized_unit_move_animation
+	railway_gun_move
 	select_army
 	select_vehicle
 	select_tank
 	select_fleet
+	select_railway_gun
 	infantry_move
 	order_fleet_effect
 	order_airwing_effect
@@ -249,35 +251,6 @@ category = {
 	FRA_scout_plane_idle
 	ENG_scout_plane_idle
 	USA_scout_plane_idle
-
-	distance_mechanized_units_mg_fire
-	distance_artillery_unit_fire_01
-
-	distance_ship_hit_big_effect
-	distance_ship_miss_big_effect
-	distance_ship_hit_small_effect
-	distance_ship_miss_small_effect
-	distance_super_heavy_battleship_attack
-	distance_super_heavy_battleship_damaged_attack
-	distance_super_heavy_battleship_attacked
-	distance_super_heavy_battleship_defend
-	distance_super_heavy_battleship_damaged_defend
-	distance_super_heavy_battleship_destroyed
-	distance_ships_destroyer_attack
-	distance_ships_destroyer_attacked
-	distance_ship_destroyer_damaged_defending_01
-	distance_ship_destroyer_damaged_attacking_01
-	distance_ships_destroyer_death
-	distance_ships_heavy_cruiser_attack
-	distance_ships_heavy_cruiser_death
-	distance_ships_heavy_cruiser_attacked
-	distance_heavy_cruiser_damaged_defend_loop
-	distance_heavy_cruiser_damaged_attacked_loop
-	distance_light_cruiser_attack
-	distance_ships_light_cruiser_death
-	distance_ships_light_cruiser_attacked
-	distance_light_cruiser_attack_damaged
-	distance_light_cruiser_defend_damaged_01
 	
 	airplane_bomb
 	airplane_crash
@@ -287,16 +260,8 @@ category = {
 	airplane_medium_idle_01
 	airplane_heavy_idle_01
 	airplane_jet_idle
-	
-	distance_airplane_bomb
-	distance_airplane_crash
-	distance_airplane_light_fire
-	distance_airplane_ger_jet_fire
-	distance_airplane_idle
-	distance_airplane_medium_idle_01
-	distance_airplane_heavy_idle_01
-	distance_airplane_jet_idle
-	
+
+	GEN_railway_gun
  }
  
  compressor = 
@@ -432,6 +397,70 @@ category = {
 	
 	cryptology_the_bombe_timer
 	operative_event_close
+
+	ui_doctrine_tab_air
+	ui_doctrine_tab_land
+	ui_doctrine_tab_naval
+	ui_doctrine_unlock
+
+	ui_mapmode_compliance
+	ui_mapmode_diplomacy
+	ui_mapmode_factions
+	ui_mapmode_ideology
+	ui_mapmode_infrastructure
+	ui_mapmode_operatives
+	ui_mapmode_players
+	ui_mapmode_population
+	ui_mapmode_resistance
+	ui_mapmode_resource
+	ui_mapmode_states
+	ui_mapmode_strategic_air
+	ui_mapmode_strategic_land
+	ui_mapmode_strategic_navy
+	ui_mapmode_supply
+	ui_mapmode_terrain
+
+	ui_research_tab_air
+	ui_research_tab_armor
+	ui_research_tab_artillery
+	ui_research_tab_engineering
+	ui_research_tab_industry
+	ui_research_tab_infantry
+	ui_research_tab_naval
+	ui_research_tab_support
+
+	ui_ship_designer_auto
+	ui_ship_designer_auto_upgrade
+	ui_ship_designer_company_icon
+	ui_ship_designer_decrease
+	ui_ship_designer_duplicate
+	ui_ship_designer_equipment_icon
+	ui_ship_designer_expand
+	ui_ship_designer_increase
+	ui_ship_designer_panel_appear
+	ui_ship_designer_reset
+	ui_ship_designer_role_entry
+	ui_ship_designer_save
+	ui_ship_designer_select_3d_model
+
+	ui_spirit_select
+
+	ui_tank_designer_auto
+	ui_tank_designer_auto_upgrade
+	ui_tank_designer_company_icon
+	ui_tank_designer_decrease
+	ui_tank_designer_duplicate
+	ui_tank_designer_equipment_icon
+	ui_tank_designer_expand
+	ui_tank_designer_increase
+	ui_tank_designer_panel_appear
+	ui_tank_designer_reset
+	ui_tank_designer_role_entry
+	ui_tank_designer_save
+	ui_tank_designer_select_3d_model
+
+
+
  }
  
  compressor = 
@@ -446,6 +475,19 @@ category = {
  }
 }
 
+category = {
+ name = "nonControllableEntities"
+ soundeffects = { 
+ 
+ 	### Used largely in dlc for trains/planes/floating harbor
+	GEN_train_equipment_1
+ 	GEN_train_equipment_2
+	GEN_train_equipment_3
+	GEN_floating_harbour
+	train_horn_medium
+	train_horn_veryLarge
+ 	}
+}
 
 category = {
  name = "Atmosphere"
@@ -473,5 +515,4 @@ category = {
 	attacktime = 0.03
 	releasetime = 0.0
  }
-}
 }
