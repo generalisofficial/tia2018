@@ -16,7 +16,7 @@ NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = {
 }
 
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_AFTER = {0, 10}
-NDefines_Graphics.NGraphics.COUNTRY_FLAG_TEX_MAX_SIZE = 1024
-NDefines_Graphics.NGraphics.COUNTRY_FLAG_SMALL_TEX_MAX_SIZE = 512
+NDefines_Graphics.NGraphics.COUNTRY_FLAG_TEX_MAX_SIZE = 2048
+NDefines_Graphics.NGraphics.COUNTRY_FLAG_SMALL_TEX_MAX_SIZE = 1024
 
 NDefines.NResistance.INITIAL_HISTORY_COMPLIANCE = 100

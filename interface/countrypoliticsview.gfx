@@ -103,7 +103,7 @@ spriteTypes = {
 		name = "GFX_autonomy_annex_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_annex_icon.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_autonomy_puppet_state_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_puppet_state_icon.dds"
@@ -136,7 +136,19 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}	
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_spirit_glow"
+		texturefile = "gfx/interface/officer_corp/spirit_glow.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
 	
 	frameAnimatedSpriteType = {
 		name = "GFX_ongoing_focus_goal_polview"
@@ -177,29 +189,30 @@ spriteTypes = {
 		textureFile = "gfx/interface/rules_sum_icon.dds"
 	}
 
+
 	spriteType = {
 		name = "GFX_idea_slot_high_command"
-		textureFile = "gfx/interface/idea_slot_high_command.dds"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_air_chief"
-		textureFile = "gfx/interface/idea_slot_air_chief.dds"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_navy_chief"
-		textureFile = "gfx/interface/idea_slot_navy_chief.dds"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_army_chief"
-		textureFile = "gfx/interface/idea_slot_army_chief.dds"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_theorist"
-		textureFile = "gfx/interface/idea_slot_theorist.dds"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
 
 	spriteType = {
@@ -229,7 +242,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_political_advisor"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
 
 	spriteType = {
@@ -326,7 +339,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_categories"
 		texturefile = "gfx/interface/idea_categories.dds"
-		noOfFrames = 5
+		noOfFrames = 4
 	}
 
 	spriteType = {
@@ -482,6 +495,7 @@ spriteTypes = {
 		name = "GFX_leader_unknown"
 		textureFile = "gfx/leaders/leader_unknown.dds"
 		legacy_lazy_load = no
+		generate_mip_maps = yes
 	}
 	
 	spriteType = {
@@ -565,8 +579,8 @@ spriteTypes = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-	
-    spriteType = {
+
+	spriteType = {
 		name = "GFX_political_colors"
 		texturefile = "gfx/interface/political_colors.dds"
 		noOfFrames = 12
@@ -607,4 +621,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/pie_chart_segment.dds"
 		noOfFrames = 12 # change to how many frames you have, index starts at 1
 	}
+}
+	
 }
