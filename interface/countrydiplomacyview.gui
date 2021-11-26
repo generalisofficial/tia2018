@@ -3827,6 +3827,12 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
+
+		iconType = {
+			name = "recipient_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 160 y = 4 }
+		}
 	}
 
 	containerWindowType = {
@@ -4050,10 +4056,17 @@ guiTypes = {
 			format = center
 			alwaystransparent = yes
 		}
+
+		iconType = {
+			name = "production_icon"
+			position = { x = 182 y = 7 }
+			quadTextureSprite = "GFX_balance_icon"
+			alwaystransparent = yes
+		}
 		
 		buttonType = {
 			name = "number_button"
-			position = { x = 180 y = 7 }
+			position = { x = 211 y = 7 }
 			quadTextureSprite ="GFX_small_button_71x26"
 			buttonFont = "hoi_16mbs"
 			buttonText = "DIPLOMACY_LEND_LEASE_NUMBER"
@@ -4062,16 +4075,23 @@ guiTypes = {
 		
 		buttonType = {
 			name = "percentage_button"
-			position = { x = 257 y = 7 }
+			position = { x = 279 y = 7 }
 			quadTextureSprite ="GFX_small_button_71x26"
 			buttonFont = "hoi_16mbs"
 			buttonText = "DIPLOMACY_LEND_LEASE_PERCENT"
 			Orientation = "UPPER_LEFT"
 		}
 
+		iconType = {
+			name = "stockpile_icon"
+			position = { x = 357 y = 7 }
+			quadTextureSprite = "GFX_in_stock_icon"
+			alwaystransparent = yes
+		}
+
 		buttonType = {
 			name = "once_button"
-			position = { x = 334 y = 7 }
+			position = { x = 380 y = 7 }
 			quadTextureSprite ="GFX_small_button_71x26"
 			buttonFont = "hoi_16mbs"
 			buttonText = "DIPLOMACY_LEND_LEASE_ONCE"
@@ -4106,6 +4126,14 @@ guiTypes = {
 			name = "decrease_amount_button"
 			quadTextureSprite ="GFX_zoom_out"
 			position = { x = 188 y = 38 }
+			scale = 0.9
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "maximum_amount_button"
+			quadTextureSprite ="GFX_maximum_stockpile_button"
+			position = { x = 304 y = 40 }
 			scale = 0.9
 			clicksound = click_default
 		}
@@ -4811,7 +4839,7 @@ guiTypes = {
 
 		iconType = {
 			name ="sub_tech"
-			spriteType = "GFX_sub_tech_strip_w_bg"
+			spriteType = "GFX_land_equipment_role_icons"
 			position = { x=220 y=40 }
 			frame = 1
 			alwaystransparent = yes
