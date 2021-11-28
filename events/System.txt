@@ -210,22 +210,6 @@ country_event = {
 }
 
 country_event = {
-	id = system.13
-	hidden=yes
-
-	trigger = {
-		OR = {
-			has_country_leader = { name = "Collective Leadership" ruling_only = yes } 
-			has_country_leader = { name = "No Candidate" ruling_only = yes } 
-		}
-	}
-	
-	immediate = {
-		kill_country_leader = yes
-	}
-}
-
-country_event = {
 	id = system.14
 	hidden=yes
 

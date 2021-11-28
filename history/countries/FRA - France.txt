@@ -173,317 +173,49 @@ give_guarantee = ENG
 
 give_military_access = GAB
 
-create_country_leader = {
-	name = "Olivier Faure"
-	picture = "Olivier_Faure.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Laurent Wauquiez"
-	picture = "Laurent_Wauquiez.dds"
-	ideology = gaullist
-}
-
-create_country_leader = {
-	name = "Marine Le Pen"
-	picture = "Marine_Le_Pen.dds"
-	ideology = national_conservative_ideology
-}
-
-create_country_leader = {
-	name = "Alain Soral"
-	picture = "Alain_Soral.dds"
-	ideology = national_socialist  
-}
-
-create_country_leader = {
-	name = "Jean-François Simon"
-	picture = "Jean_Francois_Simon.dds"
-	ideology = right_wing_nationalist_ideology 
-}
-
-create_country_leader = {
-	name = "Jean-Luc Mélenchon"
-	picture = "Jean_Luc_Melenchon.dds"
-	ideology = democratic_socialist
-}
-
-create_country_leader = {
-	name = "Pierre Laurent"
-	picture = "Pierre_Laurent.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "François Bayrou"
-	picture = "Francois_Bayrou.dds"
-	ideology = classical_liberal_ideology
-}
-
-create_country_leader = {
-	name = "David Cormand"
-	picture = "David_Cormand.dds"
-	ideology = green
-}
-	
-create_country_leader = {
-	name = "Louis Alphonse de Bourbon"
-	picture = "Louis_Alphonse_de_Bourbon.dds"
-	ideology = absolute_monarchist
-}
-
-create_country_leader = {
-	name = "Emmanuel Macron"
-	picture = "Emmanuel_Macron.dds"
-	ideology = social_liberal_ideology
-}
-
-create_corps_commander = {
-	name = "Jean-Pierre Bosser"
-	picture = "generals/Jean_Pierre_Bosser.dds"
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Pierre Chavancy"
-	picture = "generals/Pierre_Chavancy.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Bertrand Ract-Madoux"
-	picture = "generals/Bertrand_Ract_Madoux.dds"
-	skill = 1
-}
-
-create_field_marshal = {
-	name = "Pierre de Villiers"
-	picture = "Portrait_Pierre_de_Villiers.dds"
-	traits = { old_guard organisational_leader }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Jean-Pierre Bosser"
-	picture = "Portrait_Jean-Pierre_Bosser.dds"
-	traits = { old_guard offensive_doctrine }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Arnaud Sainte-Claire Deville"
-	picture = "Portrait_Arnaud_Sainte-Claire_Deville.dds"
-	traits = { defensive_doctrine }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "François Labuze"
-	picture = "Portrait_Francois_Labuze.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Franck Boudet"
-	picture = "Portrait_Franck_Boudet.dds"
-	traits = { ranger }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Christophe Bizien"
-	picture = "Portrait_Christophe_Bizien.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Loïc Girard"
-	picture = "Portrait_Loic_Girard.dds"
-	traits = { naval_invader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Pascal Ianni"
-	picture = "Portrait_Pascal_Ianni.dds"
-	traits = { naval_invader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Thomas Mollard"
-	picture = "Portrait_Thomas_Mollard.dds"
-	traits = { hill_fighter }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Etienne du Peyroux"
-	picture = "Portrait_Etienne_du_Peyroux.dds"
-	traits = { naval_invader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "François Régis Jaminet"
-	picture = "Portrait_Francois_Regis_Jaminet.dds"
-	traits = { naval_invader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Hervé Bizeul"
-	picture = "Portrait_Herve_Bizeul.dds"
-	traits = { hill_fighter }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Jean-Jacques Fatinet"
-	picture = "Portrait_Jean-Jacques_Fatinet.dds"
-	traits = { trait_mountaineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Guillaume de Sercey"
-	picture = "Portrait_Guillaume_de_Sercey.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Guillaume Venard"
-	picture = "Portrait_Guillaume_Venard.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Nicolas Casanova"
-	picture = "Portrait_Nicolas_Casanova.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Benoit Durieux"
-	picture = "Portrait_Benoit_Durieux.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Éric Bellot des Minières"
-	picture = "Portrait_Eric_Bellot_des_Minieres.dds"
-	traits = { commando urban_assault_specialist }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Jean-Frédéric Lenoble"
-	picture = "Portrait_Jean-Frederic_Lenoble.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Eric Maury"
-	picture = "Portrait_Eric_Maury.dds"
-	traits = { trickster }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Jean-François Lafont Rapnouil"
-	picture = "Portrait_Jean-Francois_Lafont_Rapnouil.dds"
-	traits = {  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Pierre Liot de Nortbecourt"
-	picture = "Portrait_Pierre_Liot_de_Nortbecourt.dds"
-	traits = { commando winter_specialist }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Jean Maurin"
-	picture = "Portrait_Jean_Maurin.dds"
-	traits = { commando desert_fox jungle_rat }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Christophe Prazuck"
-	picture = "Portrait_Christophe_Prazuck.dds"
-	traits = { old_guard_navy superior_tactician }
-	skill = 2
-}
-
-create_navy_leader = {
-	name = "Marc de Briancon"
-	picture = "Portrait_Marc_de_Briancon.dds"
-	traits = { ironside }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Denis Beraud"
-	picture = "Portrait_Denis_Beraud.dds"
-	traits = { fly_swatter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Bruno Thouvenin"
-	picture = "Portrait_Bruno_Thouvenin.dds"
-	traits = { spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "François Rebourd"
-	picture = "Portrait_Francois_Rebourd.dds"
-	traits = { seawolf }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Louis-Michel Guillaume"
-	picture = "Portrait_Louis-Michel_Guillaume.dds"
-	traits = { blockade_runner }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Charles-Henri du Ché"
-	picture = "Portrait_Charles-Henri_du_Che.dds"
-	traits = { air_controller }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Pascal Ausseur"
-	picture = "Portrait_Pascal_Ausseurs.dds"
-	traits = { seawolf }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Emmanuel de Oliveira"
-	picture = "Portrait_Emmanuel_de_Oliveira.dds"
-	traits = { spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Jean-Baptiste Dupuis"
-	picture = "Portrait_Jean-Baptiste_Dupuis.dds"
-	traits = { blockade_runner }
-	skill = 1
-}
+recruit_character = FRA_olivier_faure
+recruit_character = FRA_laurent_wauquiez
+recruit_character = FRA_marine_le_pen
+recruit_character = FRA_alain_soral
+recruit_character = FRA_jeanfrançois_simon
+recruit_character = FRA_jeanluc_mélenchon
+recruit_character = FRA_pierre_laurent
+recruit_character = FRA_françois_bayrou
+recruit_character = FRA_david_cormand
+recruit_character = FRA_louis_alphonse_de_bourbon
+recruit_character = FRA_emmanuel_macron
+recruit_character = FRA_jeanpierre_bosser
+recruit_character = FRA_pierre_chavancy
+recruit_character = FRA_bertrand_ractmadoux
+recruit_character = FRA_pierre_de_villiers
+recruit_character = FRA_arnaud_sainteclaire_deville
+recruit_character = FRA_françois_labuze
+recruit_character = FRA_franck_boudet
+recruit_character = FRA_christophe_bizien
+recruit_character = FRA_loïc_girard
+recruit_character = FRA_pascal_ianni
+recruit_character = FRA_thomas_mollard
+recruit_character = FRA_etienne_du_peyroux
+recruit_character = FRA_françois_régis_jaminet
+recruit_character = FRA_hervé_bizeul
+recruit_character = FRA_jeanjacques_fatinet
+recruit_character = FRA_guillaume_de_sercey
+recruit_character = FRA_guillaume_venard
+recruit_character = FRA_nicolas_casanova
+recruit_character = FRA_benoit_durieux
+recruit_character = FRA_Éric_bellot_des_minières
+recruit_character = FRA_jeanfrédéric_lenoble
+recruit_character = FRA_eric_maury
+recruit_character = FRA_jeanfrançois_lafont_rapnouil
+recruit_character = FRA_pierre_liot_de_nortbecourt
+recruit_character = FRA_jean_maurin
+recruit_character = FRA_christophe_prazuck
+recruit_character = FRA_marc_de_briancon
+recruit_character = FRA_denis_beraud
+recruit_character = FRA_bruno_thouvenin
+recruit_character = FRA_françois_rebourd
+recruit_character = FRA_louismichel_guillaume
+recruit_character = FRA_charleshenri_du_ché
+recruit_character = FRA_pascal_ausseur
+recruit_character = FRA_emmanuel_de_oliveira
+recruit_character = FRA_jeanbaptiste_dupuis

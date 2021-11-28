@@ -15,6 +15,7 @@ country_event = { #Die Grunen - Annalena Baerbock
 	
 	option = {
 		name = germany.1.o1
+		retire_ideology_leader = progressive
 		create_country_leader = {
 	        name = "Annalena Baerbock"
 	        picture = "Annalena_Baerbock.dds"
@@ -38,6 +39,7 @@ country_event = { #2019 Social Democratic Party of Germany leadership election
 	
 	option = {
 		name = germany.2.o1
+		retire_ideology_leader = social_democrat
 		create_country_leader = {
 	        name = "Olaf Scholz"
 	        picture = "Olaf_Scholz.dds"
@@ -74,6 +76,7 @@ country_event = { #2018 Christian Democratic Union leadership election
 			}
 			set_global_flag = akk_elected
 			else = {
+				retire_ideology_leader = conservative
 			    create_country_leader = {
 	                name = "Annegret Kramp-Karrenbauer"
 	                picture = "Annegret_Kramp_Karrenbauer.dds"
@@ -94,6 +97,7 @@ country_event = { #2018 Christian Democratic Union leadership election
 			}
 			set_global_flag = merz_elected
 			else = {
+				retire_ideology_leader = conservative
 			    create_country_leader = {
 	                name = "Friedrich Merz"
 	                picture = "Friedrich_Merz.dds"

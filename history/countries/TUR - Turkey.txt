@@ -192,544 +192,81 @@ set_popularities = {
 	communist = 0.23
 }
 
-create_country_leader = {
-	name = "Recep Tayyip Erdoğan"
-	picture = "Recep_Tayyip_Erdogan.dds"
-	ideology = national_conservative_ideology
-	traits = {
-		background_career_politician
-		strongman
-	}
-}
-
-create_country_leader = {
-	name = "Muharrem İnce"
-	picture = "Muharrem_Ince.dds"
-	ideology = kemalist
-}
-
-create_country_leader = {
-	name = "Selahattin Demirtaş"
-	picture = "Selahattin_Demirtas.dds"
-	ideology = democratic_socialist
-}
-
-create_country_leader = {
-	name = "Meral Akşener"
-	picture = "Meral_Aksener.dds"
-	ideology = liberal_conservative
-}
-
-create_country_leader = {
-	name = "Devlet Bahçeli"
-	picture = "Devlet_Bahceli.dds"
-	ideology = fascist_ideology
-}
-
-create_country_leader = {
-	name = "Temel Karamollaoğlu"
-	picture = "Temel_Karamollaoglu.dds"
-	ideology = islamic_democracy
-}
-
-create_country_leader = {
-	name = "Gültekin Uysal"
-	picture = "Gultekin_Uysal.dds"
-	ideology = classical_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Doğu Perinçek"
-	picture = "Dogu_Perincek.dds"
-	ideology = marxist_leninist
-}
-
-create_field_marshal = { 
-	name = "Hüseyin Kivrikoğlu"
-	picture = "generals/Huseyin_Kivrikoglu.dds"
-	traits = { old_guard organisational_leader }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Hilmi Özkök"
-	picture = "generals/Hilmi_Ozkok.dds"
-	traits = { old_guard defensive_doctrine }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Çetin Doğan"
-	picture = "generals/Cetin_Dogan.dds"
-	traits = { old_guard inspirational_leader }
-	skill = 1
-}
-
-create_field_marshal = {
-	name = "Tuncer Kilinç"
-	picture = "generals/Tuncer_Kilinc.dds"
-	traits = { old_guard fast_planner }
-	skill = 1
-}
-
-create_field_marshal = {
-	name = "Tamer Akbaş"
-	picture = "generals/Tamer_Akbas.dds"
-	traits = { old_guard thorough_planner }
-	skill = 1
-}
-
-create_field_marshal = {
-	name = "Edip Başer"
-	picture = "generals/Edip_Baser.dds"
-	traits = { old_guard logistics_wizard }
-	skill = 1
-}
-
-create_field_marshal = {
-	name = "Rasim Betir"
-	picture = "generals/Rasim_Betir.dds"
-	traits = { old_guard defensive_doctrine  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Attila Ateş"
-	picture = "generals/Attila_Ates.dds"
-	traits = { hill_fighter }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Orhan Yöney"
-	picture = "generals/Orhan_Yoney.dds"
-	traits = {  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Nahit Şenoğul"
-	picture = "generals/Nahit_Senogul.dds"
-	traits = { trait_mountaineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Işik Koşaner"
-	picture = "generals/Isik_Kosaner.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytaç Yalman"
-	picture = "generals/Aytac_Yalman.dds"
-	traits = { trait_mountaineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Şükrü Sariişik"
-	picture = "generals/Sukru_Sariisik.dds"
-	traits = { trait_mountaineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Köksal Karabay"
-	picture = "generals/Koksal_Karabay.dds"
-	traits = { commando }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "İlker Başbuğ"
-	picture = "generals/Ilker_Basbug.dds"
-	traits = { trait_engineer	}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Hurşit Tolon"
-	picture = "generals/Hursit_Tolon.dds"
-	traits = { trait_mountaineer	}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Necdet Timur"
-	picture = "generals/Necdet_Timur.dds"
-	traits = { winter_specialist	}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Yaşar Büyükanit"
-	picture = "generals/Yasar_Buyukanit.dds"
-	traits = { panzer_leader	}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Şener Eruygur"
-	picture = "generals/Sener_Eruygur.dds"
-	traits = { fortress_buster	}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Hasan Peker Günal"
-	picture = "generals/Hasan_Peker_Gunal.dds"
-	traits = { commando	}
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Ilhami Erdil"
-	picture = "generals/Ilhami_Erdil.dds"
-	traits = { old_guard_navy superior_tactician }
-	skill = 2
-}
-
-create_navy_leader = {
-	name = "Bülent Alpkaya"
-	picture = "generals/Bulent_Alpkaya.dds"
-	traits = { old_guard_navy }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Yener Karahanoğlu"
-	picture = "generals/Yener_Karahanoglu.dds"
-	traits = { old_guard_navy }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Özden Örnek"
-	picture = "generals/Ozden_Ornek.dds"
-	traits = { seawolf }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Yalçin Ertuna"
-	picture = "generals/Yalcin_Ertuna.dds"
-	traits = { old_guard_navy blockade_runner }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Osman Metin Açimuz"
-	picture = "generals/Osman_Metin_Acimuz.dds"
-	traits = { old_guard_navy }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Taner Balkiş"
-	picture = "generals/Taner_Balkis.dds"
-	traits = { old_guard_navy spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Alev Gümüşoğlu"
-	picture = "generals/Alev_Gumusoglu.dds"
-	traits = { old_guard_navy fly_swatter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Mehmet Otuzbiroğlu"
-	picture = "generals/Mehmet_Otuzbiroglu.dds"
-	traits = { old_guard_navy ironside }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Taner Uzunay"
-	picture = "generals/Taner_Uzunay.dds"
-	traits = { old_guard_navy }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Uğur Yiğit"
-	picture = "generals/Ugur_Yigit.dds"
-	traits = { old_guard_navy }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Lütfü Sancar"
-	picture = "generals/Lutfu_Sancar.dds"
-	traits = { old_guard_navy }
-	skill = 1
-}
-
-create_field_marshal = {
-	name = "Hulusi Akar"
-	picture = "Portrait_Hulusi_Akar.dds"
-	traits = { old_guard organisational_leader }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Salih Zeki Çolak"
-	picture = "Portrait_Salih_Zeki_Colak.dds"
-	traits = { old_guard offensive_doctrine }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Musa Avsever"
-	picture = "Portrait_Musa_Avsever.dds"
-	traits = { fast_planner }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Yıldırım Güvenç"
-	picture = "Portrait_Yildirim_Guevenc.dds"
-	traits = { old_guard defensive_doctrine }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Ismail Serdar Savaş"
-	picture = "Portrait_Ismail_Serdar_Savas.dds"
-	traits = { thorough_planner }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Ismail Metin Temel"
-	picture = "Portrait_Ismail_Metin_Temel.dds"
-	traits = { inspirational_leader }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Abdullah Recep"
-	picture = "Portrait_Abdullah_Recep.dds"
-	traits = { old_guard logistics_wizard }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Galip Mendi"
-	picture = "Portrait_Galip_Mendi.dds"
-	traits = { logistics_wizard }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Ihsan Uyar"
-	picture = "Portrait_Ihsan_Ueyar.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Mehmet Göktan"
-	picture = "Portrait_Mehmet_Goektan.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Hakan Atınç"
-	picture = "Portrait_Hakan_Atinc.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Izzet Çetingöz"
-	picture = "Portrait_Izzet_Cetingoez.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Şenol Alparslan"
-	picture = "Portrait_Senol_Alparslan.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Erdal Öztürk"
-	picture = "Portrait_Erdal_Oeztuerk.dds"
-	traits = { trickster }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ilyas Bozkurt"
-	picture = "Portrait_Ilyas_Bozkurt.dds"
-	traits = { fortress_buster }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Mehmet Faruk Şengün"
-	picture = "Portrait_Mehmet_Faruk_Senguen.dds"
-	traits = { commando }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ali Sivri"
-	picture = "Portrait_Ali_Sivri.dds"
-	traits = { commando }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Mehmet Daysal"
-	picture = "Portrait_Mehmet_Daysal.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Kemal Başak"
-	picture = "Portrait_Kemal_Basak.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Yılmaz Uyar"
-	picture = "Portrait_Yilmaz_Uyar.dds"
-	traits = { desert_fox }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Levent Ergün"
-	picture = "Portrait_Levent_Erguen.dds"
-	traits = { commando }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Mehmet Özoğlu"
-	picture = "Portrait_Mehmet_Oezoglu.dds"
-	traits = { ranger }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Levent Köse"
-	picture = "Portrait_Levent_Koese.dds"
-	traits = { commando trait_mountaineer }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Özgur Nuhut"
-	picture = "Portrait_Oezgur_Nuhut.dds"
-	traits = {  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ömer Paç"
-	picture = "Portrait_Oemer_Pac.dds"
-	traits = { urban_assault_specialist }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Murat Yetgin"
-	picture = "Portrait_Murat_Yetgin.dds"
-	traits = {  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Zekai Aksakallı"
-	picture = "Portrait_Zekai_Aksakalli.dds"
-	traits = { commando urban_assault_specialist }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Abidin Ünal"
-	picture = "Portrait_Abidin_Uenal.dds"
-	traits = { commando ranger }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Akın Öztürk"
-	picture = "Portrait_Akin_Oeztuerk.dds"
-	traits = {  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Mehmet Şanver"
-	picture = "Portrait_Mehmet_Sanver.dds"
-	traits = {  }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Gürsel Çaypınar"
-	picture = "Portrait_Guersel_Caypinar.dds"
-	traits = { naval_invader }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Bülent Bostanoğlu"
-	picture = "Portrait_Buelent_Bostanoglu.dds"
-	traits = { old_guard_navy superior_tactician }
-	skill = 2
-}
-
-create_navy_leader = {
-	name = "Adnan Özbal"
-	picture = "Portrait_Adnan_Oezbal.dds"
-	traits = { ironside }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Veysel Kösele"
-	picture = "Portrait_Veysel_Koesele.dds"
-	traits = { spotter }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Hasan Şükrü Korlu"
-	picture = "Portrait_Hasan_Suekrue_Korlu.dds"
-	traits = { blockade_runner }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Hasan Uşaklıoğlu"
-	picture = "Portrait_Hasan_Usaklioglu.dds"
-	traits = { seawolf }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Ali Çekiç"
-	picture = "Portrait_Ali_Cekic.dds"
-	traits = { air_controller }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Ercüment Tatlıoğlu"
-	picture = "Portrait_Ercuement_Tatlioglu.dds"
-	traits = { fly_swatter }
-	skill = 1
-}
+recruit_character = TUR_recep_tayyip_erdoğan
+recruit_character = TUR_muharrem_İnce
+recruit_character = TUR_selahattin_demirtaş
+recruit_character = TUR_meral_akşener
+recruit_character = TUR_devlet_bahçeli
+recruit_character = TUR_temel_karamollaoğlu
+recruit_character = TUR_gültekin_uysal
+recruit_character = TUR_doğu_perinçek
+recruit_character = TUR_hüseyin_kivrikoğlu
+recruit_character = TUR_hilmi_azkak
+recruit_character = TUR_Çetin_doğan
+recruit_character = TUR_tuncer_kilinç
+recruit_character = TUR_tamer_akbaş
+recruit_character = TUR_edip_başer
+recruit_character = TUR_rasim_betir
+recruit_character = TUR_attila_ateş
+recruit_character = TUR_orhan_yaney
+recruit_character = TUR_nahit_Şenoğul
+recruit_character = TUR_işik_koşaner
+recruit_character = TUR_aytaç_yalman
+recruit_character = TUR_Şükrü_sariişik
+recruit_character = TUR_kaksal_karabay
+recruit_character = TUR_İlker_başbuğ
+recruit_character = TUR_hurşit_tolon
+recruit_character = TUR_necdet_timur
+recruit_character = TUR_yaşar_büyükanit
+recruit_character = TUR_Şener_eruygur
+recruit_character = TUR_hasan_peker_günal
+recruit_character = TUR_ilhami_erdil
+recruit_character = TUR_bülent_alpkaya
+recruit_character = TUR_yener_karahanoğlu
+recruit_character = TUR_azden_arnek
+recruit_character = TUR_yalçin_ertuna
+recruit_character = TUR_osman_metin_açimuz
+recruit_character = TUR_taner_balkiş
+recruit_character = TUR_alev_gümüşoğlu
+recruit_character = TUR_mehmet_otuzbiroğlu
+recruit_character = TUR_taner_uzunay
+recruit_character = TUR_uğur_yiğit
+recruit_character = TUR_lütfü_sancar
+recruit_character = TUR_hulusi_akar
+recruit_character = TUR_salih_zeki_Çolak
+recruit_character = TUR_musa_avsever
+recruit_character = TUR_yıldırım_güvenç
+recruit_character = TUR_ismail_serdar_savaş
+recruit_character = TUR_ismail_metin_temel
+recruit_character = TUR_abdullah_recep
+recruit_character = TUR_galip_mendi
+recruit_character = TUR_ihsan_uyar
+recruit_character = TUR_mehmet_gaktan
+recruit_character = TUR_hakan_atınç
+recruit_character = TUR_izzet_Çetingaz
+recruit_character = TUR_Şenol_alparslan
+recruit_character = TUR_erdal_aztürk
+recruit_character = TUR_ilyas_bozkurt
+recruit_character = TUR_mehmet_faruk_Şengün
+recruit_character = TUR_ali_sivri
+recruit_character = TUR_mehmet_daysal
+recruit_character = TUR_kemal_başak
+recruit_character = TUR_yılmaz_uyar
+recruit_character = TUR_levent_ergün
+recruit_character = TUR_mehmet_azoğlu
+recruit_character = TUR_levent_kase
+recruit_character = TUR_azgur_nuhut
+recruit_character = TUR_amer_paç
+recruit_character = TUR_murat_yetgin
+recruit_character = TUR_zekai_aksakallı
+recruit_character = TUR_abidin_Ünal
+recruit_character = TUR_akın_aztürk
+recruit_character = TUR_mehmet_Şanver
+recruit_character = TUR_gürsel_Çaypınar
+recruit_character = TUR_bülent_bostanoğlu
+recruit_character = TUR_adnan_azbal
+recruit_character = TUR_veysel_kasele
+recruit_character = TUR_hasan_Şükrü_korlu
+recruit_character = TUR_hasan_uşaklıoğlu
+recruit_character = TUR_ali_Çekiç
+recruit_character = TUR_ercüment_tatlıoğlu

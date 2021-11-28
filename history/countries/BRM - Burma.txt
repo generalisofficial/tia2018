@@ -163,59 +163,11 @@ set_popularities = {
     right_wing_nationalist = 9.15
 }
 
-create_country_leader = {
-	name = "Aung San Suu Kyi"
-	picture = "Aung_San_Suu_Kyi.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Than Htay"
-	picture = "Than_Htay.dds"
-	ideology = right_wing_nationalist_ideology
-}
-
-create_country_leader = {
-	name = "Min Aung Hlaing"
-	picture = "Min_Aung_Hlaing.dds"
-	ideology = military_junta
-	traits = {
-		friend_of_china
-	}
-}
-
-create_corps_commander = {
-	name = "Sein Win"
-	picture = "generals/Sein_Win.dds"
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Maung Aye"
-	picture = "generals/Maung_Aye.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Min Aung Hlaing"
-	picture = "generals/Min_Aung_Hlaing.dds"
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Soe Win"
-	picture = "generals/Soe_Win.dds"
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Thura Thet Swe"
-	picture = "admirals/Thura_Thet_Swe.dds"
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Tin Aung San"
-	picture = "admirals/Tin_Aung_San.dds"
-	skill = 1
-}
+recruit_character = BRM_aung_san_suu_kyi
+recruit_character = BRM_than_htay
+recruit_character = BRM_min_aung_hlaing
+recruit_character = BRM_sein_win
+recruit_character = BRM_maung_aye
+recruit_character = BRM_soe_win
+recruit_character = BRM_thura_thet_swe
+recruit_character = BRM_tin_aung_san

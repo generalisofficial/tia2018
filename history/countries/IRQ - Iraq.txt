@@ -183,194 +183,32 @@ set_popularities = {
 	conservative = 4.89
 }
 
-create_country_leader = {
-	name = "Muqtada al-Sadr"
-	picture = "Muqtada_al_Sadr.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Raid Jahid Fahmi"
-	picture = "Raid_Jahid_Fahmi.dds"
-	ideology = marxist_leninist
-}
-
-create_country_leader = {
-	name = "Hadi al-Amiri"
-	picture = "Hadi_al_Amiri.dds"
-	ideology = khomeinist
-}
-
-create_country_leader = {
-	name = "Haider al-Abadi"
-	picture = "Haider_al_Abadi.dds"
-	ideology = centrist
-}
-
-create_country_leader = {
-	name = "Nouri al-Maliki"
-	picture = "Nouri_al_Maliki.dds"
-	ideology = national_conservative_ideology
-}
-
-create_country_leader = {
-	name = "Ayad Allawi"
-	picture = "Ayad_Allawi.dds"
-	ideology = classical_liberal_ideology
-}
-
-create_country_leader = {
-	name = "Osama al-Nujaifi"
-	picture = "Osama_al_Nujaifi.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-    name = "Izzat Ibrahim al-Douri"
-	picture = "Izzat_Ibrahim_al-Douri.dds"
-    ideology = arab_nationalist
-}
-
-create_country_leader = {
-	name = "Ra'ad bin Zeid"
-	picture = "Raad_bin_Zeid.dds"
-    ideology = absolute_monarchist
-}
-
-create_field_marshal = {
-	name = "Izzat Ibrahim al-Douri"
-	picture = "Portrait_Izzat_Ibrahim_al-Douri.dds"
-	traits = { old_guard logistics_wizard }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Othman Al Ghanimi"
-	picture = "Portrait_Othman_Al_Ghanimi.dds"
-	traits = { old_guard thorough_planner }
-	skill = 2
-}
-
-create_field_marshal = {
-	name = "Babaker Zebari"
-	picture = "Portrait_Babaker_Zebari.dds"
-	traits = { offensive_doctrine }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Qassi Jassem Nazal"
-	picture = "Portrait_Qassi_Jassem_Nazal.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Abud Qanbar"
-	picture = "Portrait_Abud_Qanbar.dds"
-	traits = { trait_engineer }
-	skill = 1
-}
-create_corps_commander = { 
-	name = "Ali Hassan al-Majid" 
-	picture = "Portrait_Ali_al-Majid.dds"
-	traits = { trait_engineer trickster }
-	skill = 1
-}    
-create_corps_commander = {
-	name = "Mutaa Al Khazraji"
-	picture = "Portrait_Mutaa_Al_Khazraji.dds"
-	traits = { desert_fox }
-	skill = 1
-}
-create_corps_commander = {
-	name = "Ahmed Hashim"
-	picture = "Portrait_Ahmad_Hashim.dds"
-	traits = { panzer_leader desert_fox }
-	skill = 2
-}
-create_corps_commander = {
-	name = "Othman Ali Farhood"
-	picture = "Portrait_Othman_Ali_Farhood.dds"
-	traits = { ranger }
-	skill = 1
-}
-create_corps_commander = {
-	name = "Hamid Al Maliki"
-	picture = "Portrait_Hamid_Al_Maliki.dds"
-	traits = { commando }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Abdel Wahal Al Saadi"
-	picture = "Portrait_Abdel_Wahab_Al_Saadi.dds"
-	traits = { urban_assault_specialist }
-	skill = 1
-}
-create_corps_commander = { 
-	name = "Qassim Atta" 
-	picture = "Portrait_Qassim_Atta.dds"
-	traits = { panzer_leader desert_fox }
-	skill = 1
-}
-create_corps_commander = {
-	name = "Ali Ghaidan Majid"
-	picture = "Portrait_Ali_Ghaidan_Majid.dds"
-	traits = { panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Fadhil Jalil Al Barwari"
-	picture = "Portrait_Fadhil_Jalil_Al_Barwari.dds"
-	traits = { urban_assault_specialist }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Nassir Al Hiti"
-	picture = "Portrait_Nassir_Al_Hiti.dds"
-	traits = { ranger }
-	skill = 1
-}
-
-create_corps_commander = { 
-	name = "Najm Abdullah al-Sudani"   
-	picture = "Portrait_Najm_Abdullah_al-Sudani.dds"
-	traits = { bearer_of_artillery }	
-	skill = 1
-
-}
-create_corps_commander = { 
-	name = "Sultan Hashim" 
-	picture = "Portrait_Sultan_Hashim.dds"
-	traits = { fortress_buster }
-	skill = 1
-}
-create_corps_commander = {
-	name = "Sabah Al Fatlawi"
-	picture = "Portrait_Sabah_Al_Fatlawi.dds"
-	traits = { urban_assault_specialist }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Talib Shaghati"
-	picture = "Portrait_Talib_Shaghati.dds"
-	traits = { commando }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Saad Maan"
-	picture = "Portrait_Saad_Maan.dds"
-	traits = {}
-	skill = 1
-}
-create_navy_leader = {
-	name = "Ali Hussain Ali"
-	picture = "Portrait_Ali_Hussain_Ali.dds"
-	traits = { old_guard_navy superior_tactician }
-	skill = 1
-}
+recruit_character = IRQ_muqtada_alsadr
+recruit_character = IRQ_raid_jahid_fahmi
+recruit_character = IRQ_hadi_alamiri
+recruit_character = IRQ_haider_alabadi
+recruit_character = IRQ_nouri_almaliki
+recruit_character = IRQ_ayad_allawi
+recruit_character = IRQ_osama_alnujaifi
+recruit_character = IRQ_izzat_ibrahim_aldouri
+recruit_character = IRQ_raad_bin_zeid
+recruit_character = IRQ_othman_al_ghanimi
+recruit_character = IRQ_babaker_zebari
+recruit_character = IRQ_qassi_jassem_nazal
+recruit_character = IRQ_abud_qanbar
+recruit_character = IRQ_ali_hassan_almajid
+recruit_character = IRQ_mutaa_al_khazraji
+recruit_character = IRQ_ahmed_hashim
+recruit_character = IRQ_othman_ali_farhood
+recruit_character = IRQ_hamid_al_maliki
+recruit_character = IRQ_abdel_wahal_al_saadi
+recruit_character = IRQ_qassim_atta
+recruit_character = IRQ_ali_ghaidan_majid
+recruit_character = IRQ_fadhil_jalil_al_barwari
+recruit_character = IRQ_nassir_al_hiti
+recruit_character = IRQ_najm_abdullah_alsudani
+recruit_character = IRQ_sultan_hashim
+recruit_character = IRQ_sabah_al_fatlawi
+recruit_character = IRQ_talib_shaghati
+recruit_character = IRQ_saad_maan
+recruit_character = IRQ_ali_hussain_ali
