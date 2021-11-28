@@ -141,20 +141,6 @@ set_country_flag = has_parliament
 set_country_flag = coalition_conservative
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
-create_country_leader = {
-	name = "Dean Barrow"
-	picture = "Dean_Barrow.dds"
-	ideology = social_conservative
-}
-
-create_country_leader = {
-	name = "Johnny Briceno"
-	picture = "Johnny_Briceno.dds"
-	ideology = social_democrat_ideology
-}
-
-create_country_leader = {
-	name = "Patrick Rogers"
-	picture = "Patrick_Rogers.dds"
-	ideology = progressive_ideology
-}
+recruit_character = BLZ_dean_barrow
+recruit_character = BLZ_johnny_briceno
+recruit_character = BLZ_patrick_rogers

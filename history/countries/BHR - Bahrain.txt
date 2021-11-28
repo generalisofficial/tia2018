@@ -123,36 +123,8 @@ set_popularities = {
     monarchist = 100
 }
 
-create_country_leader = {
-	name = "Hamad bin Isa"
-	picture = "Hamad_bin_Isa.dds"
-	ideology = absolute_monarchist
-}
-
-create_field_marshal = { 
-	name = "Khalifa bin Ahmed" 
-	picture = "Khalifa_bin_Ahmed.dds"
-	traits = { offensive_doctrine } 
-	skill = 4
-}
-
-create_corps_commander = { 
-	name = "Daij bin Salman" 
-	picture = "Duji_bin_Salman.dds"
-	traits = { commando } 
-	skill = 2
-}
-
-create_corps_commander = { 
-	name = "Theyab bin Saqer Al Noaimi" 
-	picture = "Theyab_biin_Noaimi.dds"
-	traits = { panzer_leader } 
-	skill = 3
-}
-
-create_navy_leader = {
-	name = "Yusuf al-Maluallah"
-	picture = "Yusuf_Maluallab.dds"
-	traits = { blockade_runner }
-	skill = 4
-}
+recruit_character = BHR_hamad_bin_isa
+recruit_character = BHR_khalifa_bin_ahmed
+recruit_character = BHR_daij_bin_salman
+recruit_character = BHR_theyab_bin_saqer_al_noaimi
+recruit_character = BHR_yusuf_almaluallah

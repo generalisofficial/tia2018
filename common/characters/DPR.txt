@@ -1,0 +1,48 @@
+characters={
+	DPR_alexander_zakharchenko={
+		name="Alexander Zakharchenko"
+		portraits={
+			civilian={
+				large="gfx/leaders/DPR/Alexander_Zakharchenko.dds"
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+			traits={ friend_of_russia }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	DPR_yuri_sivokonenko={
+		name="Yuri Sivokonenko"
+		portraits={
+			civilian={
+				large="gfx/leaders/DPR/Yuri_Sivokonenko.dds"
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	DPR_aleksandar_zakharchenko={
+		name="Aleksandar Zakharchenko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Europe/general1.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

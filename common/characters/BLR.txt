@@ -1,0 +1,641 @@
+characters={
+	BLR_alexander_lukashenko={
+		name="Alexander Lukashenko"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/Alexander_Lukashenko.dds"
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+			traits={ strongman }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	BLR_tatsyana_holubeva={
+		name="Tatsyana Holubeva"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/Tatsyana_Holubeva.dds"
+			}
+		}
+		country_leader={
+			ideology=marxist_leninist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	BLR_sergei_gaidukevich={
+		name="Sergei Gaidukevich"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/Sergei_Gaidukevich.dds"
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	BLR_anatoly_lebedko={
+		name="Anatoly Lebedko"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/Anatoly_Lebedko.dds"
+			}
+		}
+		country_leader={
+			ideology=liberal_conservative
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	BLR_vasil_zadnyaprany={
+		name="Vasil Zadnyaprany"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/Vasil_Zadnyaprany.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	BLR_aleh_novikau={
+		name="Aleh Novikau"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/Aleh_Novikau.dds"
+			}
+		}
+		country_leader={
+			ideology=green
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	BLR_andrei_ravkov={
+		name="Andrei Ravkov"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Andrei_Ravkov.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard organisational_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_oleg_belokonev={
+		name="Oleg Belokonev"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Oleg_Belokonev.dds"
+			}
+		}
+		field_marshal={
+			traits={ fast_planner }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_sergei_potapenko={
+		name="Sergei Potapenko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Sergei_Potapenko.dds"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_igor_lotenkov={
+		name="Igor Lotenkov"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Igor_Lotenkov.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_vitaly_kireyev={
+		name="Vitaly Kireyev"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Vitaly_Kireyev.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_viktor_hrenin={
+		name="Viktor Hrenin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Viktor_Hrenin.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_ruslan_kosygin={
+		name="Ruslan Kosygin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Ruslan_Kosygin.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_andrei_zhuk={
+		name="Andrei Zhuk"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Andrei_Zhuk.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_anatolyi_bulavko={
+		name="Anatolyi Bulavko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Anatoliy_Bulavko.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_andrei_fedin={
+		name="Andrei Fedin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Andrei_Fedin.dds"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_oreh_vladimir={
+		name="Oreh Vladimir"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Oreh_Vladimir.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_alexander_volfovich={
+		name="Alexander Volfovich"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Alexander_Volfovich.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_valeriy_gnilozub={
+		name="Valeriy Gnilozub"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Valery_Gnilozub.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_vladimir_kulazhin={
+		name="Vladimir Kulazhin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Vladimir_Khulazin.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_alexander_gurin={
+		name="Alexander Gurin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Alexander_Gurin.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_igor_kuzmuk={
+		name="Igor Kuzmuk"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Igor_Kuzmuk.dds"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_vitaly_shkadrovich={
+		name="Vitaly Shkadrovich"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Vitaly_Shkadrovich.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_vadim_denisenko={
+		name="Vadim Denisenko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Vadim_Denisenko.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando urban_assault_specialist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_igor_danilchik={
+		name="Igor Danilchik"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Igor_Danilchik.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_vyacheslav_starkov={
+		name="Vyacheslav Starkov"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Vyacheslav_Starkov.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_dmitry_lukyanenko={
+		name="Dmitry Lukyanenko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Dmitry_Lukyanenko.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_oleg_dvigalev={
+		name="Oleg Dvigalev"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Oleg_Dvigalev.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_sergei_trus={
+		name="Sergei Trus"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Sergei_Trus.dds"
+			}
+		}
+		corps_commander={
+			traits={ swamp_fox }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_igor_golub={
+		name="Igor Golub"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Igor_Golub.dds"
+			}
+		}
+		corps_commander={
+			traits={ swamp_fox }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_alexander_karev={
+		name="Alexander Karev"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Alexander_Karev.dds"
+			}
+		}
+		corps_commander={
+			traits={ urban_assault_specialist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_valery_shevchenko={
+		name="Valery Shevchenko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Valery_Shevchenko.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_alexander_astrauh={
+		name="Alexander Astrauh"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Alexander_Astrauh.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_alexander_panfyorov={
+		name="Alexander Panfyorov"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/BLR/generals/Alexander_Panfyorov.dds"
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

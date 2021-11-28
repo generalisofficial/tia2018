@@ -1,0 +1,593 @@
+characters={
+	EST_helirvaldor_seeder={
+		name="Helir-Valdor Seeder"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Helir_Valdor_Seeder.dds"
+			}
+		}
+		country_leader={
+			ideology=christian_democrat
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_hanno_pevkur={
+		name="Hanno Pevkur"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Hanno_Pevkur.dds"
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_jüri_ratas={
+		name="Jüri Ratas"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Juri_Ratas.dds"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_mart_helme={
+		name="Mart Helme"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Mart_Helme.dds"
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_jevgeni_ossinovski={
+		name="Jevgeni Ossinovski"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Jevgeni_Ossinovski.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_sven_sildnik={
+		name="Sven Sildnik"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Sven_Sildnik.dds"
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_züleyxa_izmailova={
+		name="Züleyxa Izmailova"
+		portraits={
+			civilian={
+				large="gfx/leaders/EST/Zuleyxa_Izmailova.dds"
+			}
+		}
+		country_leader={
+			ideology=green
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EST_riho_terras={
+		name="Riho Terras"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Riho_Terras.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard thorough_planner }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_indrek_sirel={
+		name="Indrek Sirel"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Indrek_Sirel.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_neeme_väli={
+		name="Neeme Väli"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Neeme_Vaeli.dds"
+			}
+		}
+		field_marshal={
+			traits={ inspirational_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_martin_herem={
+		name="Martin Herem"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Martin_Herem.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_veikovello_palm={
+		name="Veiko-Vello Palm"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Veiko-Vello_Palm.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_janno_märk={
+		name="Janno Märk"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Janno_Maerk.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_arno_kruusmann={
+		name="Arno Kruusmann"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Arno_Kruusmann.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_arbo_probal={
+		name="Arbo Probal"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Arbo_Probal.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_priit_pikner={
+		name="Priit Pikner"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Priit_Pikner.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_sten_allik={
+		name="Sten Allik"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Sten_Allik.dds"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_andré_lilleleht={
+		name="André Lilleleht"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Andre_Lilleleht.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_toomas_pindis={
+		name="Toomas Pindis"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Toomas_Pindis.dds"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_eero_rebo={
+		name="Eero Rebo"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Eero_Rebo.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_roman_lukas={
+		name="Roman Lukas"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Roman_Lukas.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_riho_Ühtegi={
+		name="Riho Ühtegi"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Riho_Uehtegi.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando naval_invader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_jaak_tarien={
+		name="Jaak Tarien"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Jaak_Tarien.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_meelis_kiili={
+		name="Meelis Kiili"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Meelis_Kiili.dds"
+			}
+		}
+		corps_commander={
+			traits={ urban_assault_specialist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_peeter_hoppe={
+		name="Peeter Hoppe"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Peeter_Hoppe.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_artur_tiganik={
+		name="Artur Tiganik"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Artur_Tiganik.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_aivar_kokka={
+		name="Aivar Kokka"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Aivar_Kokka.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_peeter_tali={
+		name="Peeter Tali"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Peeter_Tali.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_jüri_saska={
+		name="Jüri Saska"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Jueri_Saska.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_ain_pärna={
+		name="Ain Pärna"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Ain_Paerna.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_sten_sepper={
+		name="Sten Sepper"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Sten_Sepper.dds"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EST_igor_schvede={
+		name="Igor Schvede"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EST/Portrait_Igor_Schvede.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+}

@@ -1,0 +1,47 @@
+characters={
+	SUD_omar_albashir={
+		name="Omar al-Bashir"
+		portraits={
+			civilian={
+				large="gfx/leaders/SUD/Omar_al_Bashir.dds"
+			}
+		}
+		country_leader={
+			ideology=muslim_brotherhood
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	SUD_abdel_fattah_alburhan={
+		name="Abdel Fattah al-Burhan"
+		portraits={
+			civilian={
+				large="gfx/leaders/SUD/Abdel_Fattah_al_Burhan.dds"
+			}
+		}
+		country_leader={
+			ideology=military_junta
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	SUD_mustafa_osman_obeid_salim={
+		name="Mustafa Osman Obeid Salim"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/SUD/generals/Mustafa_Salim.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

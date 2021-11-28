@@ -8,7 +8,7 @@ NDefines.NDiplomacy.TENSION_CB_WAR = 10
 
 NDefines.NCountry.MIN_SURRENDER_LIMIT = 0.1
 NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = {
-    0.25, -- country leaders
+    0.0, -- country leaders
     0.0, -- army leaders
     0.0, -- navy leaders
     0.0, -- air leaders
