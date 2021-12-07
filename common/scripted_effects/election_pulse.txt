@@ -79,6 +79,13 @@ election_pulse = {
 		}
 	}
 	if = {
+	    limit = {
+		    original_tag = AND
+			has_government = conservative
+		}
+		country_event = andorra.1
+	}
+	if = {
 		limit = {
 			has_idea = ENG_conservative_dup_agreement
 		}

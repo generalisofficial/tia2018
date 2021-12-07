@@ -1,6 +1,17 @@
 characters={
     #Starting
-	AND_antoni_martí={
+	AND_josep_pintat_forné={
+		name="Josep Pintat Forné"
+		portraits={
+			civilian={
+				large=GFX_Portrait_AND_Josep_Pintat_Forne
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
+	AND_antoni_marti={
 		name="Antoni Martí"
 		portraits={
 			civilian={
@@ -9,17 +20,6 @@ characters={
 		}
 		country_leader={
 			ideology=liberal_conservative
-		}
-	}
-	AND_pere_lópez_agras={
-		name="Pere López Agras"
-		portraits={
-			civilian={
-				large=GFX_Portrait_AND_Pere_Lopez_Agras
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
 		}
 	}
 	AND_jordi_gallardo={
@@ -33,15 +33,46 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
-	AND_josep_pintat_forné={
-		name="Josep Pintat Forné"
+	AND_david_baro_riba={
+		name="David Baró Riba"
 		portraits={
 			civilian={
-				large=GFX_Portrait_AND_Josep_Pintat_Forne
+				large=GFX_Portrait_AND_David_Baro_Riba
 			}
 		}
 		country_leader={
-			ideology=centrist
+			ideology=social_liberal_ideology
+		}
+	}
+	AND_pere_lopez_agras={
+		name="Pere López Agras"
+		portraits={
+			civilian={
+				large=GFX_Portrait_AND_Pere_Lopez_Agras
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+		}
+	}
+	AND_isabel_lozano={
+		name="Isabel Lozano"
+		portraits={
+			civilian={
+				large=GFX_Portrait_AND_Isabel_Lozano
+			}
+		}
+		country_leader={
+			ideology=green
+		}
+	}
+	#Added
+	AND_xavier_espot={
+		name="Xavier Espot"
+		portraits={
+			civilian={
+				large=GFX_Portrait_AND_Xavier_Espot
+			}
 		}
 	}
 }
