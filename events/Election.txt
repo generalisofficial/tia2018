@@ -78,61 +78,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@communist
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			communist_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_communist
@@ -146,64 +92,10 @@ country_event = {
 		election_pulse = yes
 	}
 	
-	option = {	#Democratic Socialists
+	option = {	#Socialists
 		name = election.1.o2
 		trigger = {
-		    check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@socialist
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			socialist_plurality_popularity = yes
 		}
 		ai_chance = {
 			factor = 1
@@ -227,61 +119,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_democrat
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			social_democrat_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_social_democrat
@@ -299,61 +137,7 @@ country_event = {
 	option = {	#Progressives
 		name = election.1.o4
 		trigger = {
-		    check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@progressive
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			progressive_plurality_popularity = yes
 		}
 		ai_chance = {
 			factor = 1
@@ -377,61 +161,7 @@ country_event = {
 			factor = 1
 		}	
 		trigger = {
-		    check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@social_liberal
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+		    social_liberal_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_social_liberal
@@ -452,61 +182,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@classical_liberal
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+		    classical_liberal_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_classical_liberal
@@ -527,61 +203,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@conservative
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+		    conservative_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_conservative
@@ -596,67 +218,13 @@ country_event = {
 		election_pulse = yes
 	}
 	
-	option = {	#Reactionaries
+	option = {	#National Conservatives
 		name = election.1.o8
 		ai_chance = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@national_conservative
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+		    national_conservative_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_national_conservative
@@ -671,67 +239,13 @@ country_event = {
 		election_pulse = yes
 	}
 	
-	option = {	#Nationalists
+	option = {	#Right-Wing Nationalists
 		name = election.1.o9
 		ai_chance = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@right_wing_nationalist
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			right_wing_nationalist_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_right_wing_nationalist
@@ -746,67 +260,13 @@ country_event = {
 		election_pulse = yes
 	}
 	
-	option = {	#Third Position
+	option = {	#Fascist
 		name = election.1.o10
 		ai_chance = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			fascist_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_fascist
@@ -827,61 +287,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@fascist
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@monarchist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@islamist
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
+			islamist_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_islamist
@@ -902,61 +308,7 @@ country_event = {
 			factor = 1
 		}
 		trigger = {
-		    check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@communist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@socialist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@social_democrat
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@progressive
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@social_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@classical_liberal
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@fascist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@national_conservative
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@right_wing_nationalist
-                compare = greater_than_or_equals
-            }
-			check_variable = {
-                var = party_popularity@monarchist
-                value = party_popularity@islamist
-                compare = greater_than_or_equals
-            }
+			monarchist_plurality_popularity = yes
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_country_flag = coalition_monarchist
