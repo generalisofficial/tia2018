@@ -166,7 +166,7 @@ scripted_gui = {
 			}
 			next_click = {
                 ai_will_do = {
-                    factor = 10
+                    factor = 100
                 }
             }
         }
@@ -291,7 +291,7 @@ scripted_gui = {
 					limit = {
 						has_country_flag = government_social_democrat
 					}
-					set_politics = {						
+					set_politics = {
 						ruling_party = social_democrat
 						elections_allowed = yes
 					}
@@ -834,6 +834,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_islamist }
 						has_idea = islam
 						OR = {
 							has_government = fascist
@@ -849,10 +850,12 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_fascist }
 						has_government = right_wing_nationalist
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_fascist }
 						has_government = national_conservative
 					}
 				}
@@ -862,6 +865,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_right_wing_nationalist }
 						OR = {
 							has_government = national_conservative
 							has_government = fascist
@@ -869,6 +873,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_right_wing_nationalist }
 						has_government = conservative
 					}
 				}
@@ -883,6 +888,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_national_conservative }
 						OR = {
 							has_government = right_wing_nationalist
 							has_government = conservative
@@ -890,6 +896,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_national_conservative }
 						OR = {
 							has_government = classical_liberal
 							has_government = fascist
@@ -902,6 +909,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_conservative }
 						OR = {
 							has_government = classical_liberal
 							has_government = national_conservative
@@ -909,6 +917,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_conservative }
 						OR = {
 							has_government = social_liberal
 							has_government = right_wing_nationalist
@@ -921,6 +930,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_classical_liberal }
 						OR = {
 							has_government = social_liberal
 							has_government = conservative
@@ -928,6 +938,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_classical_liberal }
 						OR = {
 							has_government = social_democrat
 							has_government = national_conservative
@@ -940,6 +951,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_social_liberal }
 						OR = {
 							has_government = classical_liberal
 							has_government = social_democrat
@@ -947,6 +959,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_social_liberal }
 						OR = {
 							has_government = progressive
 							has_government = conservative
@@ -959,6 +972,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_social_democrat }
 						OR = {
 							has_government = social_liberal
 							has_government = progressive
@@ -966,6 +980,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_social_democrat }
 						OR = {
 							has_government = socialist
 							has_government = classical_liberal
@@ -978,6 +993,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_progressive }
 						OR = {
 							has_government = social_democrat
 							has_government = socialist
@@ -985,6 +1001,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_progressive }
 						OR = {
 							has_government = social_liberal
 							has_government = communist
@@ -997,6 +1014,7 @@ scripted_gui = {
 					factor = 1
 					modifier = {
 						add = 49
+						NOT = { has_country_flag = coalition_socialist }
 						OR = {
 							has_government = communist
 							has_government = progressive
@@ -1004,6 +1022,7 @@ scripted_gui = {
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_socialist }
 						has_government = social_democrat
 					}
 				}
@@ -1012,11 +1031,13 @@ scripted_gui = {
 				ai_will_do = {
 					factor = 1
 					modifier = {
+						NOT = { has_country_flag = coalition_communist }
 						add = 49
 						has_government = socialist
 					}
 					modifier = {
 						add = 24
+						NOT = { has_country_flag = coalition_communist }
 						has_government = progressive
 					}
 				}
