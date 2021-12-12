@@ -48,8 +48,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = 0.001
-				drift_defence_factor = -0.3
+				stability_factor = 0.1
+				drift_defence_factor = -0.1
 			}
 		}
 		
@@ -66,70 +66,6 @@ ideas = {
 			}
 		}
 		
-		USA_congress_authority = {
-			picture = scw_intervention_nat
-			
-			allowed = { always = no }
-			allowed_civil_war = { is_democracy = yes }
-			
-			removal_cost = -1
-			
-			modifier = {
-				justify_war_goal_time = 2
-				political_power_factor = -0.1
-			}
-		}
-		
-		USA_american_aid_for_israel = {
-			picture = american_militarism
-			
-			allowed = { always = no }
-			allowed_civil_war = { is_democracy = no }
-			
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = 0.002
-				army_leader_start_level = 1
-				experience_gain_air = 0.04
-				experience_gain_army = 0.04
-				experience_gain_navy = 0.04
-			}
-		}
-		
-		USA_american_military_assistance = {
-			picture = american_militarism
-			
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = 0.001
-				army_leader_start_level = 1
-				experience_gain_air = 0.03
-				experience_gain_army = 0.03
-				experience_gain_navy = 0.03
-			}
-		}
-		
-		USA_free_college_idea = {
-			picture = shared_research
-			
-			allowed = { always = no }
-			allowed_civil_war = { NOT = { has_government = conservative } }
-			
-			removal_cost = -1
-			
-			modifier = {
-				research_speed_factor = -0.03
-				stability_weekly = 0.002
-				global_building_slots_factor = 0.05
-				consumer_goods_factor = 0.05
-			}
-		}
-		
 		USA_prism_idea = {
 			picture = spy_intel
 			
@@ -142,34 +78,6 @@ ideas = {
 				decryption_factor = 0.1
 				encryption_factor = 0.1
 				political_power_factor = -0.05
-			}
-		}
-	
-		USA_uncle_sam = {
-			picture = manpower_bonus
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			
-			removal_cost = -1
-			
-			modifier = {
-				conscription_factor = 0.3
-			}
-		}
-		
-		USA_universal_healthcare_idea = {
-			picture = agriculture
-			
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = 0.002
-				monthly_population = 0.03
-				political_power_factor = 0.1
 			}
 		}
 	}

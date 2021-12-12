@@ -1,17 +1,28 @@
 characters={
     #Starting
-	CHI_tsai_ingwen={
-		name="Tsai Ing-wen"
+	CHI_hsu_na_chi={
+		name="Hsu Na-chi"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CHI_Tsai_Ing_wen
+				large=GFX_Portrait_CHI_Hsu_Na_chi
 			}
 		}
 		country_leader={
-			ideology=social_liberal_ideology
+			ideology=national_socialist
 		}
 	}
-	CHI_wu_denyih={
+	CHI_yok_mu_ming={
+		name="Yok Mu-ming"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CHI_Yok_Mu_ming
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
+	CHI_wu_den_yih={
 		name="Wu Den-yih"
 		portraits={
 			civilian={
@@ -22,37 +33,26 @@ characters={
 			ideology=liberal_conservative
 		}
 	}
-	CHI_huang_kuochang={
-		name="Huang Kuo-chang"
+	CHI_lin_pin_kuan={
+		name="Lin Pin-kuan"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CHI_Huang_Kuo_Chang
-			}
-		}
-		country_leader={
-			ideology=progressive_ideology
-		}
-	}
-	CHI_james_soong={
-		name="James Soong"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CHI_James_Soong
+				large=GFX_Portrait_CHI_Lin_Pin_kuan
 			}
 		}
 		country_leader={
 			ideology=classical_liberal_ideology
 		}
 	}
-	CHI_hsu_hsinying={
-		name="Hsu Hsin-ying"
+	CHI_tsai_ing_wen={
+		name="Tsai Ing-wen"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CHI_Hsu_Hsin_ying
+				large=GFX_Portrait_CHI_Tsai_Ing_wen
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=social_liberal_ideology
 		}
 	}
 	CHI_fan_yun={
@@ -66,190 +66,37 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	CHI_wu_rongyuan={
-		name="Wu Rongyuan"
+	CHI_huang_kuo_chang={
+		name="Huang Kuo-chang"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CHI_Wu_Rongyuan
+				large=GFX_Portrait_CHI_Huang_Kuo_chang
+			}
+		}
+		country_leader={
+			ideology=progressive_ideology
+		}
+	}
+	CHI_chen_po_wei={
+		name="Chen Po-wei"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CHI_Chen_Po_wei
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist
+		}
+	}
+	CHI_wu_jung_yuan={
+		name="Wu Jung-yuan"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CHI_Wu_Jung_yuan
 			}
 		}
 		country_leader={
 			ideology=maoist
-		}
-	}
-	CHI_jin_yuzhang={
-		name="Jin Yuzhang"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CHI_Jin_Yuzhang
-			}
-		}
-		country_leader={
-			ideology=absolute_monarchist
-		}
-	}
-	CHI_hsu_nachi={
-		name="Hsu Na-chi"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CHI_Hsu_Na_chi
-			}
-		}
-		country_leader={
-			ideology=national_socialist
-		}
-	}
-	CHI_yen_tehfa={
-		name="Yen Teh-fa"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_Yen_Teh_Fa
-			}
-		}
-		field_marshal={
-			traits={ defensive_doctrine }
-			skill=5
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_chen_chuankuan={
-		name="Chen Chuan-kuan"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_Chen_Chuan_Kuan
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_chiu_kuocheng={
-		name="Chiu_Kuo-cheng"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_Chiu_Kuo_Cheng
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_lee_shyingjow={
-		name="Lee Shying-jow"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_Lee_Shying_Jow
-			}
-		}
-		corps_commander={
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_chai_huichen={
-		name="Chai Hui-chen"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_Chai_Hui_Chen
-			}
-		}
-		corps_commander={
-			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_kao_kuangchi={
-		name="Kao Kuang-chi"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_admirals_Kao_Kuang_Chi
-			}
-		}
-		navy_leader={
-			skill=4
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_lee_hsimin={
-		name="Lee Hsi-min"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_admirals_Lee_Hsi_Min
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CHI_lin_chenyi={
-		name="Lin Chen-yi"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large=GFX_Portrait_CHI_admirals_Lin_Chen_Yi
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 }

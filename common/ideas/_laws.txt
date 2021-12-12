@@ -1026,6 +1026,12 @@ ideas = {
 			
 			available = {
 				NOT = { has_idea = minority_government }
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					NOT = { has_idea = USA_first_amendment }
+				}
 			}
 
 			on_add = {
@@ -1057,6 +1063,12 @@ ideas = {
 						has_idea = free_media
 					}
 					NOT = { has_idea = minority_government }
+				}
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					NOT = { has_idea = USA_first_amendment }
 				}
 			}
 

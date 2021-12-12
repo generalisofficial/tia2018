@@ -96,11 +96,6 @@ if = {
 	}
 }
 
-add_opinion_modifier = {
-	target = JAP
-	modifier = past_japanese_war_crimes
-}
-
 set_country_flag = buddhism
 
 add_opinion_modifier = { target = PRC modifier = rival }
@@ -118,9 +113,9 @@ set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 4.42 }
 set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 60.18 }
+set_variable = { social_liberal_seats = 61.08 }
 set_variable = { classical_liberal_seats = 3.53 }
-set_variable = { conservative_seats = 31.87 }
+set_variable = { conservative_seats = 30.97 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -134,32 +129,25 @@ add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {
     ruling_party = social_liberal
-    last_election = "2016.1.16"
+    last_election = "2016.1.11"
     election_frequency = 48
     elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 60.18
-    conservative = 31.87
-    progressive = 4.42
-	classical_liberal = 3.53
+    social_liberal = 56.66
+    conservative = 35.39
+    progressive = 2.65
+	socialist = 0.88
+	classical_liberal = 4.42
 }
 
-recruit_character = CHI_tsai_ingwen
-recruit_character = CHI_wu_denyih
-recruit_character = CHI_huang_kuochang
-recruit_character = CHI_james_soong
-recruit_character = CHI_hsu_hsinying
+recruit_character = CHI_hsu_na_chi
+recruit_character = CHI_yok_mu_ming
+recruit_character = CHI_wu_den_yih
+recruit_character = CHI_lin_pin_kuan
+recruit_character = CHI_tsai_ing_wen
 recruit_character = CHI_fan_yun
-recruit_character = CHI_wu_rongyuan
-recruit_character = CHI_jin_yuzhang
-recruit_character = CHI_hsu_nachi
-recruit_character = CHI_yen_tehfa
-recruit_character = CHI_chen_chuankuan
-recruit_character = CHI_chiu_kuocheng
-recruit_character = CHI_lee_shyingjow
-recruit_character = CHI_chai_huichen
-recruit_character = CHI_kao_kuangchi
-recruit_character = CHI_lee_hsimin
-recruit_character = CHI_lin_chenyi
+recruit_character = CHI_huang_kuo_chang
+recruit_character = CHI_chen_po_wei
+recruit_character = CHI_wu_jung_yuan
