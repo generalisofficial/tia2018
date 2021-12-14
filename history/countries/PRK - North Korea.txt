@@ -116,27 +116,23 @@ add_named_threat = {
 set_country_flag = cheondoism
 
 #Supreme People's Assembly
-set_variable = { communist_seats = 89.5 }
+set_variable = { communist_seats = 100 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 7.3 }
+set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 3.2 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_communist
-set_country_flag = coalition_social_democrat
-set_country_flag = coalition_right_wing_nationalist
 add_to_variable = { ROOT.Coalition = communist_seats }
-add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 
 set_politics = {	
 	ruling_party = communist
@@ -146,24 +142,7 @@ set_politics = {
 }
 
 set_popularities = {
-    right_wing_nationalist = 3.2
-    social_democrat = 7.3
-    communist = 89.5
+    communist = 100
 }
 
-recruit_character = PRK_kim_jongun
-recruit_character = PRK_kim_yongdae
-recruit_character = PRK_ri_myong_su
-recruit_character = PRK_ri_yong_gil
-recruit_character = PRK_hyon_yong_chol
-recruit_character = PRK_cho_ryong_hae
-recruit_character = PRK_choe_pu_il
-recruit_character = PRK_hwang_pyong_so
-recruit_character = PRK_jo_chun_ryong
-recruit_character = PRK_kim_chun_sop
-recruit_character = PRK_jo_kyong_chol
-recruit_character = PRK_kim_kyok_sik
-recruit_character = PRK_kim_myong_kuk
-recruit_character = PRK_kim_won_hong
-recruit_character = PRK_kim_yong_chun
-recruit_character = PRK_pak_yong_sik
+recruit_character = PRK_kim_jong_un

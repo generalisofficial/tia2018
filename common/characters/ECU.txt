@@ -1,32 +1,10 @@
 characters={
     #Starting
-	ECU_lenín_moreno={
-		name="Lenín Moreno"
+	ECU_lucio_gutierrez={
+		name="Lucio Gutiérrez"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ECU_Lenin_Moreno
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	ECU_rafael_correa={
-		name="Rafael Correa"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ECU_Rafael_Correa
-			}
-		}
-		country_leader={
-			ideology=socialism_of_the_21st_century
-		}
-	}
-	ECU_guillermo_lasso={
-		name="Guillermo Lasso"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ECU_Guillermo_Lasso
+				large=GFX_Portrait_ECU_Lucio_Gutierrez
 			}
 		}
 		country_leader={
@@ -44,348 +22,70 @@ characters={
 			ideology=christian_democrat
 		}
 	}
-	ECU_mauricio_rodas={
-		name="Mauricio Rodas"
+	ECU_guillermo_lasso={
+		name="Guillermo Lasso"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ECU_Mauricio_Rodas
+				large=GFX_Portrait_ECU_Guillermo_Lasso
 			}
 		}
 		country_leader={
 			ideology=classical_liberal_ideology
 		}
 	}
-	ECU_marlon_santi={
-		name="Marlon Santi"
+	ECU_xavier_hervas={
+		name="Xavier Hervas"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ECU_Marlon_Santi
+				large=GFX_Portrait_ECU_Xavier_Hervas
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+		}
+	}
+	ECU_lenin_moreno={
+		name="Lenín Moreno"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ECU_Lenin_Moreno
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+		}
+	}
+	ECU_yaku_perez_guartambel={
+		name="Yaku Pérez Guartambel"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ECU_Yaku_Perez_Guartambel
 			}
 		}
 		country_leader={
 			ideology=progressive_ideology
 		}
 	}
-	ECU_leonardo_barreiro={
-		name="Leonardo Barreiro"
+	ECU_andres_arauz={
+		name="Andrés Arauz"
 		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Leandro_Barrero
+			civilian={
+				large=GFX_Portrait_ECU_Andres_Arauz
 			}
 		}
-		field_marshal={
-			traits={ old_guard offensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=socialism_of_the_21st_century
 		}
 	}
-	ECU_césar_merizalde_pavón={
-		name="César Merizalde Pavón"
+	ECU_geovanni_atarihuana={
+		name="Geovanni Atarihuana"
 		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Cesar_Pavon
+			civilian={
+				large=GFX_Portrait_ECU_Geovanni_Atarihuana
 			}
 		}
-		field_marshal={
-			traits={ organisational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_edison_narváez_rosero={
-		name="Edison Narváez Rosero"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Edison_Narvaez
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_raúl_banderas_dueñas={
-		name="Raúl Banderas Dueñas"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Raul_Duenas
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_william_orellana_carrera={
-		name="William Orellana Carrera"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_William_Carrera
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_roque_moreira={
-		name="Roque Moreira"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Roque_Moreira
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_fabián_fuel={
-		name="Fabián Fuel"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Fabian_Fuel
-			}
-		}
-		corps_commander={
-			traits={ commando jungle_rat }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_renán_ruíz_cornejo={
-		name="Renán Ruíz Cornejo"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Renan_Cornejo
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_amilcar_villavicencio={
-		name="Amilcar Villavicencio"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Amilcar_Villavicencio
-			}
-		}
-		navy_leader={
-			traits={ ironside }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_byron_jara_guerron={
-		name="Byron Jara Guerron"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Byron_Jara_Guerron
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_carlos_noboa_coronel={
-		name="Carlos Noboa Coronel"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Carlos_Noboa_Coronel
-			}
-		}
-		navy_leader={
-			traits={ air_controller }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_carlos_zumarraga_asanza={
-		name="Carlos Zumarraga Asanza"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Carlos_Zumarraga_Asanza
-			}
-		}
-		navy_leader={
-			traits={ fly_swatter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_darwin_cisneros={
-		name="Darwin Cisneros"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Darwin_Cisneros
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_fidel_erazo_jacome={
-		name="Fidel Erazo Jacome"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Fidel_Erazo_Jacome
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_francisco_bruque_veliz={
-		name="Francisco Bruque Veliz"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Francisco_Bruque_Veliz
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_galo_carrillo_moya={
-		name="Galo Carrillo Moya"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Galo_Carrillo_Moya
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_harold_salvador_cadena={
-		name="Harold Salvador Cadena"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Harold_Salvador_Cadena
-			}
-		}
-		navy_leader={
-			traits={ ironside }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_jorge_echeverria_bucheli={
-		name="Jorge Echeverria Bucheli"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Jorge_Echeverria_Bucheli
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ECU_marie_fares_cantos={
-		name="Marie Fares Cantos"
-		portraits={
-			army={
-				large=GFX_Portrait_ECU_Portrait_Maria_Fares_Cantos
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 }

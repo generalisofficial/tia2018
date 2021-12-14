@@ -66,6 +66,7 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
@@ -93,18 +94,39 @@ add_ideas = {
 	population_growth_stagnation
 	extensive_conscription
 	non_member_state
+	presidential_system
 }
 
+#People's Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 33.34 }
+set_variable = { national_conservative_seats = 66.66 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
+
 set_politics = {	
-	ruling_party = right_wing_nationalist
-	last_election = "2014.8.24"
-	election_frequency = 48
+	ruling_party = national_conservative
+	last_election = "2014.8.25"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    right_wing_nationalist = 51.52
-    national_conservative = 48.48
+    national_conservative = 41.08
+	conservative = 58.92
 }
 
 recruit_character = ABK_raul_khajimba
+recruit_character = ABK_aslan_bzhania

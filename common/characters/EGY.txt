@@ -1,6 +1,17 @@
 characters={
     #Starting
-	EGY_abdel_fattah_elsisi={
+	EGY_younes_makhioun={
+		name="Younes Makhioun"
+		portraits={
+			civilian={
+				large=GFX_Portrait_EGY_Younes_Makhioun
+			}
+		}
+		country_leader={
+			ideology=salafist
+		}
+	}
+	EGY_abdel_fattah_el_sisi={
 		name="Abdel Fattah el-Sisi"
 		portraits={
 			civilian={
@@ -8,8 +19,19 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=independent
+			ideology=national_conservative_ideology
 			traits={ strongman }
+		}
+	}
+	EGY_bahaa_el_din_abu_shoka={
+		name="Bahaa El-Din Abu Shoka"
+		portraits={
+			civilian={
+				large=GFX_Portrait_EGY_Bahaa_El_Din_Abu_Shoka
+			}
+		}
+		country_leader={
+			ideology=liberal_conservative
 		}
 	}
 	EGY_essam_khalil={
@@ -23,26 +45,26 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
-	EGY_ashraf_rashad={
-		name="Ashraf Rashad"
+	EGY_hazem_muhammad_omar={
+		name="Hazem Muhammad Omar"
 		portraits={
 			civilian={
-				large=GFX_Portrait_EGY_Ashraf_Rashad
+				large=GFX_Portrait_EGY_Hazem_Muhammad_Omar
 			}
 		}
 		country_leader={
-			ideology=centrist
+			ideology=social_liberal_ideology
 		}
 	}
-	EGY_bahaa_eldin_abu_shoka={
-		name="Bahaa El-Din Abu Shoka"
+	EGY_mervat_tallawy={
+		name="Mervat Tallawy"
 		portraits={
 			civilian={
-				large=GFX_Portrait_EGY_Bahaa_El_Din_Abu_Shoka
+				large=GFX_Portrait_EGY_Mervat_Tallawy
 			}
 		}
 		country_leader={
-			ideology=liberal_conservative
+			ideology=social_democrat_ideology
 		}
 	}
 	EGY_galal_haridy={
@@ -54,209 +76,6 @@ characters={
 		}
 		country_leader={
 			ideology=arab_socialist
-		}
-	}
-	EGY_younes_makhioun={
-		name="Younes Makhioun"
-		portraits={
-			civilian={
-				large=GFX_Portrait_EGY_Younes_Makhioun
-			}
-		}
-		country_leader={
-			ideology=salafist
-		}
-	}
-	EGY_mahmoud_hejazi={
-		name="Mahmoud Hejazi"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Mahmoud_Hejazi
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_mohamed_tantawi={
-		name="Mohamed Tantawi"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Mohamed_Tantawi
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_ahmed_mohamed={
-		name="Ahmed Mohamed"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Ahmed_Mohamed
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_sedki_sobhi={
-		name="Sedki Sobhi"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Sedki_Sobhi
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_mohamed_samir={
-		name="Mohamed Samir"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Mohamed_Samir
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_osama_aljamal={
-		name="Osama al-Jamal"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Osama_Al_Jamal
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_younes_elmasri={
-		name="Younes el-Masri"
-		portraits={
-			army={
-				large=GFX_Portrait_EGY_Younes_el-Masri
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_ahmed_hassan_saeed={
-		name="Ahmed Hassan Saeed"
-		portraits={
-			army={
-				large=GFX_Portrait_Africa_general1
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_mohamed_abdel_aziz={
-		name="Mohamed Abdel Aziz"
-		portraits={
-			army={
-				large=GFX_Portrait_Africa_general2
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_osama_elgendi={
-		name="Osama El-Gendi"
-		portraits={
-			army={
-				large=GFX_Portrait_Africa_general3
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_osama_rabaai={
-		name="Osama Raba'ai"
-		portraits={
-			army={
-				large=GFX_Portrait_Africa_general1
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	EGY_mohab_mamish={
-		name="Mohab Mamish"
-		portraits={
-			army={
-				large=GFX_Portrait_Africa_general2
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 }

@@ -1,0 +1,165 @@
+﻿capital = 525
+
+oob = "KOR_2018"
+
+set_research_slots = 5
+set_convoys = 580
+set_stability = 0.7
+
+set_country_flag = country_language_korean
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+set_country_flag = catholic
+
+add_ideas = {
+	population_growth_stagnation
+	extensive_conscription
+	free_trade
+	presidential_system
+}
+
+give_guarantee = USA
+
+add_opinion_modifier = {
+	target = JAP
+	modifier = past_japanese_war_crimes
+}
+
+add_opinion_modifier = {
+	target = PRK
+	modifier = rival
+}
+
+add_opinion_modifier = {
+	target = PRK
+	modifier = rival_trade
+}
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0.33 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 2.03 }
+set_variable = { social_liberal_seats = 41.05 }
+set_variable = { classical_liberal_seats = 13.22 }
+set_variable = { conservative_seats = 3.72 }
+set_variable = { national_conservative_seats = 39.32 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0.33 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
+set_politics = {	
+	ruling_party = social_liberal
+	last_election = "2017.5.9"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	social_liberal = 62.05
+	national_conservative = 34.91
+	social_democrat = 2.03
+	classical_liberal = 1.01
+}
+
+recruit_character = KOR_cho_won_jin
+recruit_character = KOR_yi_seok
+recruit_character = KOR_hong_joon_pyo
+recruit_character = KOR_yoo_seong_min
+recruit_character = KOR_ahn_cheol_soo
+recruit_character = KOR_moon_jae_in
+recruit_character = KOR_lee_jeong_mi
+recruit_character = KOR_kim_chan_hwi
+recruit_character = KOR_lee_sang_kyu
