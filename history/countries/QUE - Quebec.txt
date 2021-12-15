@@ -96,18 +96,37 @@ if = {
 	}
 }
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 2.40 }
+set_variable = { progressive_seats = 0.00 }
+set_variable = { social_democrat_seats = 24.00 }
+set_variable = { social_liberal_seats = 56.00 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 17.60 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {	
-	ruling_party = classical_liberal
+	ruling_party = social_liberal
 	last_election = "2014.10.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 37.42
-    classical_liberal = 29.42
-    social_democrat = 17.06
-    socialist = 16.10
+    conservative = 59.20
+    social_liberal = 24.80
+    social_democrat = 8.00
+    socialist = 8.00
 }
 
 recruit_character = QUE_francois_legault

@@ -307,7 +307,19 @@ on_actions = {
 
 	on_release_as_free = {
 		effect = {
-			ROOT = { quickset_parliament = yes quickset_coalition = yes add_ideas = non_member_state }
+			ROOT = { add_ideas = non_member_state }
+			if = {
+				limit = {
+					ROOT = { has_country_flag = has_parliament }
+				}
+				ROOT = { 	
+					set_parliament_graphics = yes
+					set_parliament_graphics_2 = yes 
+				}
+				else = {
+					ROOT = { quickset_parliament = yes quickset_coalition = yes }
+				}
+			}
 		}
 	}
 
