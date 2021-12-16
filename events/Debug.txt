@@ -145,8 +145,12 @@ country_event = {
 		update_coalition = yes
 	}
 	option = {
-		name = "Update coalition for all"
-		every_country = { update_coalition = yes }
+		name = "Set new parliament seats"
+		every_country = { 
+			clear_array = x_pos_array
+			clear_array = y_pos_array
+			set_new_parliament_seats = yes 
+		}
 	}
 	option = {
 		name ="Quickset Coalition"
