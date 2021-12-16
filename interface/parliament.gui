@@ -12,6 +12,23 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "parliament_popularity_text_container"
+		position = { x = 0 y = 0 }
+	
+		instantTextBoxType = {
+			name = "popularity_text"
+			position = { x = 1 y = 1 }
+			font = "hoi_20bs"
+			text = "[This.GetHasPopularityText]"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+	}
+
+	containerWindowType = {
 		name = "parliament_window_container"
 		position = { x = 1 y = 100 }	
 		show_position = { x = 545 y = 80 }
@@ -61,19 +78,20 @@ guiTypes = {
 			max_slots_horizontal = 1
 			add_horizontal = no
 		}
-		
 
-		################ Old Seat Representation
-		# RIP First ever dynamically represented parliament system: 2019-2021.
-		# Arrays and Python have made your old placement system obsolete
-
-
-		############## Election Results 
 		containerWindowType = {
-			name = "parliament_popularity_container"
+			name = "parliament_popularity_container_win"
 			position = { x = 0 y = 110 }
 			size = { width = 600 height = 650 }
 
+			gridboxtype = {
+				name = "parliament_popularity_container"
+				position = { x = 27 y = 350 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 20 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
 
 			instantTextBoxType = {
 				name = "popularity_title"
@@ -86,139 +104,12 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			instantTextBoxType = {
-				name = "communist_popularity"
-				position = { x = 40 y = 350 }
-				font = "hoi_20bs"
-				text = "COMMUNIST_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "socialists_popularity"
-				position = { x = 40 y = 370 }
-				font = "hoi_20bs"
-				text = "SOCIALISTS_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "social_democrats_popularity"
-				position = { x = 40 y = 390 }
-				font = "hoi_20bs"
-				text = "SOCIAL_DEMOCRATS_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "progressive_popularity"
-				position = { x = 40 y = 410 }
-				font = "hoi_20bs"
-				text = "PROGRESSIVE_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "social_liberal_popularity"
-				position = { x = 40 y = 430 }
-				font = "hoi_20bs"
-				text = "SOCIAL_LIBERAL_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "classical_liberal_popularity"
-				position = { x = 40 y = 450 }
-				font = "hoi_20bs"
-				text = "CLASSICAL_LIBERAL_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "conservative_popularity"
-				position = { x = 40 y = 470 }
-				font = "hoi_20bs"
-				text = "CONSERVATIVE_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "national_conservative_popularity"
-				position = { x = 40 y = 490 }
-				font = "hoi_20bs"
-				text = "NATIONAL_CONSERVATIVE_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "monarchist_popularity"
-				position = { x = 40 y = 510 }
-				font = "hoi_20bs"
-				text = "MONARCHIST_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "right_wing_nationalist_popularity"
-				position = { x = 40 y = 530 }
-				font = "hoi_20bs"
-				text = "RIGHT_WING_NATIONALIST_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "third_position_popularity"
-				position = { x = 40 y = 550 }
-				font = "hoi_20bs"
-				text = "THIRD_POSITION_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "islamist_popularity"
-				position = { x = 40 y = 570 }
-				font = "hoi_20bs"
-				text = "ISLAMIST_POPULARITY_TEXT"
-				maxWidth = 250
-				maxHeight = 40
-				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
 		}
+		
+
+		################ Old Seat Representation
+		# RIP First ever dynamically represented parliament system: 2019-2021.
+		# Arrays and Python have made your old placement system obsolete
 
 
 		####################### Political Groups

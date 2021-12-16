@@ -975,3 +975,81 @@ defined_text = {
 		localization_key = parliament_none
 	}
 }
+
+#### Check if should show popularity in parliament popularity list
+
+defined_text = {
+	name = GetHasPopularityText
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 1 }
+		}
+		localization_key = COMMUNIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 2 }
+		}
+		localization_key = SOCIALISTS_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 3 }
+		}
+		localization_key = SOCIAL_DEMOCRATS_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 4 }
+		}
+		localization_key = PROGRESSIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 5 }
+		}
+		localization_key = SOCIAL_LIBERAL_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 6 }
+		}
+		localization_key = CLASSICAL_LIBERAL_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 7 }
+		}
+		localization_key = CONSERVATIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 8 }
+		}
+		localization_key = ISLAMIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 9 }
+		}
+		localization_key = MONARCHIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 10 }
+		}
+		localization_key = NATIONAL_CONSERVATIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 11 }
+		}
+		localization_key = RIGHT_WING_NATIONALIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { parliament_popularity_array^popularity_idx = 12 }
+		}
+		localization_key = THIRD_POSITION_POPULARITY_TEXT
+	}
+}

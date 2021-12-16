@@ -161,3 +161,20 @@ country_event = {
 		set_parliament_graphics = yes
 	}
 }
+
+country_event = {
+	id = debug.6
+	title = "Debug 6"
+	desc = "Debug 6"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Set Parliament Popularity Array"
+		set_parliament_popularity_array = yes
+	}
+	option = {
+		name = "Update Pie Chart"
+		create_pie_chart = yes
+	}
+}
