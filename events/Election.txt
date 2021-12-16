@@ -24,7 +24,6 @@ country_event = {
 	
 	immediate = {
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 	}
 }
 
@@ -88,7 +87,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -109,7 +107,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -130,7 +127,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -151,7 +147,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -172,7 +167,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -193,7 +187,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -214,7 +207,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -235,7 +227,6 @@ country_event = {
 			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -256,7 +247,6 @@ country_event = {
 			elections_allowed = no
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -277,7 +267,6 @@ country_event = {
 			elections_allowed = no
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -298,7 +287,6 @@ country_event = {
 			elections_allowed = no
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	
@@ -319,7 +307,6 @@ country_event = {
 			elections_allowed = no
 		}
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		election_pulse = yes
 	}
 	option = {	#Commit Electoral Fraud
@@ -406,7 +393,6 @@ country_event = {
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 		quickset_coalition = yes
 		election_pulse = yes
 	}
@@ -532,7 +518,7 @@ country_event = {
 		}
         set_country_flag = coalition_communist
         set_variable = { ROOT.Coalition = communist_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -551,7 +537,7 @@ country_event = {
 		}
 		set_country_flag = coalition_socialist
         set_variable = { ROOT.Coalition = socialist_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -570,7 +556,7 @@ country_event = {
 		}
 		set_country_flag = coalition_progressive
         set_variable = { ROOT.Coalition = progressive_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -589,7 +575,7 @@ country_event = {
 		}
 		set_country_flag = coalition_social_democrat
         set_variable = { ROOT.Coalition = social_democrat_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -608,7 +594,7 @@ country_event = {
 		}
 		set_country_flag = coalition_social_liberal
         set_variable = { ROOT.Coalition = social_liberal_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -627,7 +613,7 @@ country_event = {
 		}		
 		set_country_flag = coalition_classical_liberal
         set_variable = { ROOT.Coalition = classical_liberal_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -646,7 +632,7 @@ country_event = {
 		}
 		set_country_flag = coalition_conservative
         set_variable = { ROOT.Coalition = conservative_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -665,7 +651,7 @@ country_event = {
 		}
 		set_country_flag = coalition_national_conservative
         set_variable = { ROOT.Coalition = national_conservative_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -684,7 +670,7 @@ country_event = {
 		}
 		set_country_flag = coalition_right_wing_nationalist
         set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -703,7 +689,7 @@ country_event = {
 		}
 		set_country_flag = coalition_fascist
         set_variable = { ROOT.Coalition = fascist_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -722,7 +708,7 @@ country_event = {
 		}
 		set_country_flag = coalition_islamist
         set_variable = { ROOT.Coalition = islamist_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	
@@ -741,7 +727,7 @@ country_event = {
 		}
 		set_country_flag = coalition_monarchist
         set_variable = { ROOT.Coalition = monarchist_seats }
-		set_parliament_graphics_2 = yes
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 }
@@ -782,7 +768,6 @@ country_event = {
 		set_variable = { ROOT.Coalition = party_popularity@ruling_party }
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_parliament_graphics = yes
-		set_parliament_graphics_2 = yes
 	}
 	
 	option = {

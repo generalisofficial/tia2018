@@ -288,7 +288,7 @@ quickset_coalition = {
 		set_country_flag = coalition_islamist
         set_variable = { ROOT.Coalition = islamist_seats }
 	}
-	set_parliament_graphics_2 = yes
+	set_parliament_graphics = yes
 }
 
 set_parliament_graphics = {
@@ -329,38 +329,7 @@ set_parliament_graphics = {
 	round_variable = right_wing_nationalist_seats_parliament
 	round_variable = fascist_seats_parliament
 
-	# OBSOLETE IN NEW SYSTEM
-## Step 3 : Divide by 2 (For a graphic of 50 seats)
-#
-#	divide_variable = { communist_seats_parliament = 2 }
-#	divide_variable = { socialist_seats_parliament = 2 }
-#	divide_variable = { social_democrat_seats_parliament = 2 }
-#	divide_variable = { progressive_seats_parliament = 2 }
-#	divide_variable = { social_liberal_seats_parliament = 2 }
-#	divide_variable = { classical_liberal_seats_parliament = 2 }
-#	divide_variable = { conservative_seats_parliament = 2 }
-#	divide_variable = { islamist_seats_parliament = 2 }
-#	divide_variable = { monarchist_seats_parliament = 2 }
-#	divide_variable = { national_conservative_seats_parliament = 2 }
-#	divide_variable = { right_wing_nationalist_seats_parliament = 2 }
-#	divide_variable = { fascist_seats_parliament = 2 }
-#
-### Step 4 : Round again
-#
-#	round_variable = communist_seats_parliament
-#	round_variable = socialist_seats_parliament
-#	round_variable = social_democrat_seats_parliament
-#	round_variable = progressive_seats_parliament
-#	round_variable = social_liberal_seats_parliament
-#	round_variable = classical_liberal_seats_parliament
-#	round_variable = conservative_seats_parliament
-#	round_variable = islamist_seats_parliament
-#	round_variable = monarchist_seats_parliament
-#	round_variable = national_conservative_seats_parliament
-#	round_variable = right_wing_nationalist_seats_parliament
-#	round_variable = fascist_seats_parliament
-
-## Step 5: Assign seats
+## Step 3 : Assign seats
 
 	clear_array = ideology_seats_array
 	clear_array = parliament_array
@@ -998,9 +967,7 @@ set_parliament_graphics = {
 	}
 	set_parliament_popularity_array = yes
 	create_pie_chart = yes
-}
 
-set_parliament_graphics_2 = {
 	set_variable = {
 		ROOT.GroupGFX = ROOT.Coalition
 	}
@@ -1013,6 +980,7 @@ set_parliament_graphics_2 = {
 	subtract_from_variable = {
 		ROOT.Opposition = ROOT.Coalition
 	}
+	set_parliament_speaker_plurality = yes
 }
 
 set_coalition_to_array = {
@@ -1500,5 +1468,80 @@ set_parliament_popularity_array = {
 	for_each_loop = {
 		array = parliament_popularity_array
 		log = "[?parliament_popularity_array^i]"
+	}
+}
+
+set_parliament_speaker_plurality = {
+	if = {
+		limit = {
+			communist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 1 }
+	}
+	if = {
+		limit = {
+			socialist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 2 }
+	}
+	if = {
+		limit = {
+			progressive_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 3 }
+	}
+	if = {
+		limit = {
+			social_democrat_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 4 }
+	}
+	if = {
+		limit = {
+			social_liberal_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 5 }
+	}
+	if = {
+		limit = {
+			classical_liberal_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 6 }
+	}
+	if = {
+		limit = {
+			conservative_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 7 }
+	}
+	if = {
+		limit = {
+			islamist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 8 }
+	}
+	if = {
+		limit = {
+			monarchist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 9 }
+	}
+	if = {
+		limit = {
+			national_conservative_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 10 }
+	}
+	if = {
+		limit = {
+			right_wing_nationalist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 11 }
+	}
+	if = {
+		limit = {
+			fascist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 12 }
 	}
 }

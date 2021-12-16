@@ -80,6 +80,31 @@ guiTypes = {
 		}
 
 		containerWindowType = {
+			name = "parliament_speaker_container"
+			position = { x = 293 y = 305 }
+			size = { width = 600 height = 650 }
+
+			instantTextBoxType = {
+				name = "speaker_title"
+				position = { x = 0 y = 0 }
+				font = "hoi_36header"
+				text = "Speaker"
+				maxWidth = 120
+				maxHeight = 40
+				fixedsize = no
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType = { 
+				name = "speaker_seat"
+				position = { x = 36 y = 40 }
+				quadTextureSprite = "GFX_political_colors"
+				scale = 0.8
+			}
+		}
+
+		containerWindowType = {
 			name = "parliament_popularity_container_win"
 			position = { x = 0 y = 110 }
 			size = { width = 600 height = 650 }
