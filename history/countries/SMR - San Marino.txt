@@ -99,22 +99,50 @@ add_ideas = {
 	population_growth_stagnation
 	neutrality_idea
 	the_euro
+	parliamentary_system
 }
 
+#Grand and General Council
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 36.66 }
+set_variable = { progressive_seats = 16.66 }
+set_variable = { social_democrat_seats = 11.66 }
+set_variable = { social_liberal_seats = 18.36 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 16.66 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_socialist
+set_country_flag = coalition_progressive
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
+
 set_politics = {
-	ruling_party = socialist
-	last_election = "2016.11.20"
+	ruling_party = social_liberal
+	last_election = "2014.11.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 26.79
-    social_democrat = 15.41
-    socialist = 36.79
-    social_liberal = 9.60
-    progressive = 9.27
-    classical_liberal = 2.14
+	conservative = 41.68
+	social_liberal = 10.00
+	social_democrat = 13.33
+	progressive = 16.66
+	socialist = 18.33
 }
 
-recruit_character = SMR_grand_and_general_council
+recruit_character = SMR_luca_beccari
+recruit_character = SMR_marco_arzilli
+recruit_character = SMR_nicola_renzi
+recruit_character = SMR_alessandro_mancini
+recruit_character = SMR_franco_santi
+recruit_character = SMR_gloria_arcangeloni

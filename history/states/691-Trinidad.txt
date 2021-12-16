@@ -1,24 +1,42 @@
+
 state={
 	id=691
 	name="STATE_691"
-	manpower = 1220200
 	resources={
-		oil=8
+		oil=8.000
 	}
-	state_category = state_level_7
+
 	history={
 		owner = TRI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
 			dockyard = 1
-			3284 = { naval_base = 1 }
-			13012 = { naval_base = 1 }
+			3284 = {
+				naval_base = 1
+
+			}
+			13012 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = TRI
-		victory_points = { 3284 1 }
-		victory_points = { 13012 1 }
+		victory_points = {
+			3284 1 
+		}
+		victory_points = {
+			13012 1 
+		}
+
 	}
-	
-	provinces={ 3284 13012 }
+
+	provinces={
+		3284 
+	}
+	manpower=1220200
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
+	local_supplies=0.000
 }

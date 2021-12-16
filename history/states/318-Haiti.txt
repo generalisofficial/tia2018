@@ -1,12 +1,9 @@
-state=
-{
+
+state={
 	id=318
 	name="STATE_318"
-	manpower = 9980000
-	
-	state_category = state_level_7
-	history=
-	{
+
+	history={
 		owner = HAI
 		buildings = {
 			infrastructure = 3
@@ -15,7 +12,9 @@ state=
 			air_base = 1
 			4641 = {
 				naval_base = 3
+
 			}
+
 		}
 		add_core_of = HAI
 		victory_points = {
@@ -23,7 +22,12 @@ state=
 		}
 
 	}
+
 	provinces={
-		1594 1635 4641
+		1594 1635 4641 14045 
 	}
+	manpower=9980000
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
+	local_supplies=0.000
 }
