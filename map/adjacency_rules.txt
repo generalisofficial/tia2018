@@ -1,40 +1,26 @@
-#Adjacency rules are special rules for adjacencies
-#If smbd who is at war fights over canal/strait it is considered closed
-#Enemy status is considered if any of sides controlling the chanel is at war with country
-#Friend status is considered non of sides controlling the chanel is at war with country and one of controllers is ally of giving military access
-#Every one else is considered as neutral according to canal/strait
-#Military access considered as being friend
-#Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
-
-#Name is how you refer to the rule in adjecencies.csv
-
 #Suez Canal
 adjacency_rule = {
 	name = "SUEZ_CANAL"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -59,29 +45,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "GIBRALTAR_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -98,29 +80,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "DANISH_BELTS_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -137,29 +115,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "PANAMA_CANAL"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
@@ -184,29 +158,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "BOSPHORUS_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -221,29 +191,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "DARDANELLES_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -260,29 +226,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "KIEL_CANAL"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
@@ -299,29 +261,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "HORMUZ_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -338,29 +296,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "MALACCA_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -377,29 +331,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "GOLDEN_GATE_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = no
 		navy = no
 		submarine = yes
@@ -416,29 +366,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "PALK_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -455,29 +401,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "TIRAN_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -494,29 +436,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "KERCH_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -533,29 +471,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "BOHAI_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -572,29 +506,25 @@ adjacency_rule = {
 adjacency_rule = {
 	name = "BASS_STRAIT"
 
-	contested =
-	{
+	contested = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = no
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes

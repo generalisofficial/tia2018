@@ -108,10 +108,10 @@ set_country_flag = catholic
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 48.32 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { social_democrat_seats = 43.90 }
+set_variable = { social_liberal_seats = 56.1 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 51.68 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -120,20 +120,20 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {
-	ruling_party = conservative
-	last_election = "2015.9.7"
+	ruling_party = social_liberal
+	last_election = "2015.8.10"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 51.68
-    social_democrat = 48.32
+    social_liberal = 53.66
+    social_democrat = 46.34
 }
 
 recruit_character = TRI_keith_rowley
-recruit_character = TRI_kamla_persadbissessar
+recruit_character = TRI_kamla_persad_bissessar

@@ -5,15 +5,10 @@ NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED = 14
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1
 NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "2018.1.1.12"
 NDefines.NDiplomacy.TENSION_CB_WAR = 10
+NDefines.NDiplomacy.IDEOLOGY_JOIN_FACTION_MIN_LEVEL = 0
 
 NDefines.NCountry.MIN_SURRENDER_LIMIT = 0.1
-NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = {
-    0.0, -- country leaders
-    0.0, -- army leaders
-    0.0, -- navy leaders
-    0.0, -- air leaders
-    1.0, -- operatives
-}
+NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0
 
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_AFTER = {0, 10}
 NDefines_Graphics.NGraphics.COUNTRY_FLAG_TEX_MAX_SIZE = 2048

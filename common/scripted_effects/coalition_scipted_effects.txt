@@ -1486,13 +1486,13 @@ set_parliament_speaker_plurality = {
 	}
 	if = {
 		limit = {
-			progressive_plurality_seats = yes
+			social_democrat_plurality_seats = yes
 		}
 		set_variable = { plurality_var = 3 }
 	}
 	if = {
 		limit = {
-			social_democrat_plurality_seats = yes
+			progressive_plurality_seats = yes
 		}
 		set_variable = { plurality_var = 4 }
 	}

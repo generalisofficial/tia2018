@@ -4,13 +4,15 @@ country_event = {
 	id = system.1
 	hidden=yes
 
-	trigger = {
-		has_war = yes
-		NOT = { has_country_flag = at_war }
-	}
+	is_triggered_only = yes
 	
 	immediate = {
-		set_country_at_war_effect = yes
+		if = {
+			limit = {
+				minority_government = yes
+			}
+			add_ideas = minority_government
+		}
 	}
 }
 
@@ -19,30 +21,38 @@ country_event = {
 	hidden=yes
 
 	trigger = {
-		has_war = no
-		has_country_flag = at_war
+		NOT = { 
+			any_country = {
+				has_idea = benelux_member
+			}
+		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
-		clr_country_flag = at_war
+		set_global_flag = benelux_dissolved
 	}
 }
 
 country_event = {
-	id = system.3
+	id = system.4
 	hidden=yes
 
 	trigger = {
-		NOT = { has_idea = nuclear_weapons_state }
-		has_tech = nukes
+		NOT = { 
+			any_country = {
+				has_idea = arab_league_member
+			}
+		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
-		add_ideas = nuclear_weapons_state
+		set_global_flag = arab_league_dissolved
 	}
 }
-
-# System.4
 
 country_event = {
 	id = system.5
@@ -66,15 +76,17 @@ country_event = {
 	hidden=yes
 
 	trigger = {
-		NOT = { has_idea = population_growth_explosion }
-		NOT = { has_idea = population_growth_rapid }
-		NOT = { has_idea = population_growth_steady }
-		NOT = { has_idea = population_growth_stagnation }
-		NOT = { has_idea = population_growth_decline }
+		NOT = { 
+			any_country = {
+				has_idea = shanghai_cooperation_organization_member
+			}
+		}
 	}
+
+	fire_only_once = yes
 	
 	immediate = {
-		add_ideas = population_growth_stagnation
+		set_global_flag = shanghai_cooperation_organization_dissolved
 	}
 }
 
@@ -191,23 +203,23 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = system.12
-	hidden=yes
-
-	trigger = {
-		has_variable = loan_days_left
-		check_variable = {
-			loan_days_left < 1
-		}
-	}
-	
-	immediate = {
-		var:originated_country = {
-			country_event = money.7
-		}
-	}
-}
+#country_event = {
+#	id = system.12
+#	hidden=yes
+#
+#	trigger = {
+#		has_variable = loan_days_left
+#		check_variable = {
+#			loan_days_left < 1
+#		}
+#	}
+#	
+#	immediate = {
+#		var:originated_country = {
+#			country_event = money.7
+#		}
+#	}
+#}
 
 country_event = {
 	id = system.14
@@ -320,78 +332,5 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = gulf_cooperation_council_dissolved
-	}
-}
-
-country_event = {
-	id = system.20
-	hidden=yes
-
-	trigger = {
-		NOT = { 
-			any_country = {
-				has_idea = arab_league_member
-			}
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = arab_league_dissolved
-	}
-}
-
-country_event = {
-	id = system.21
-	hidden=yes
-
-	trigger = {
-		NOT = { 
-			any_country = {
-				has_idea = shanghai_cooperation_organization_member
-			}
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = shanghai_cooperation_organization_dissolved
-	}
-}
-
-country_event = {
-	id = system.22
-	hidden=yes
-
-	trigger = {
-		NOT = { 
-			any_country = {
-				has_idea = benelux_member
-			}
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = benelux_dissolved
-	}
-}
-
-country_event = {
-	id = system.23
-	hidden=yes
-
-	is_triggered_only = yes
-	
-	immediate = {
-		if = {
-			limit = {
-				minority_government = yes
-			}
-			add_ideas = minority_government
-		}
 	}
 }

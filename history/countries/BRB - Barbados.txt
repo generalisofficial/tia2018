@@ -109,10 +109,10 @@ set_variable = { corporate_tax = 3 }
 
 #House of Assembly of Barbados
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 51.3 }
+set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 48.7 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { social_democrat_seats = 53.34 }
+set_variable = { social_liberal_seats = 46.66 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
@@ -123,19 +123,19 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_socialist
-add_to_variable = { ROOT.Coalition = socialist_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = socialist
+	ruling_party = social_democrat
 	last_election = "2013.5.24"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 74.6
-    socialist = 25.4
+    social_liberal = 96.67
+    social_democrat = 3.33
 }
 
 recruit_character = BRB_mia_mottley
