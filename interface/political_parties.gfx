@@ -459,10 +459,15 @@ spriteTypes = {
 		name = "GFX_ideology_DEN_monarchist_group"
 		texturefile = "gfx/interface/ideologies/multinational/glucksburg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_NOR_fascist_group"
+		texturefile = "gfx/interface/ideologies/NOR/vigrid.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_NOR_classical_liberal_group"
-		texturefile = "gfx/interface/ideologies/NOR/hoyre.dds"
+		texturefile = "gfx/interface/ideologies/NOR/venstre.dds"
 	}
 	
 	spriteType = {
@@ -477,7 +482,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_NOR_conservative_group"
-		texturefile = "gfx/interface/ideologies/NOR/krf.dds"
+		texturefile = "gfx/interface/ideologies/NOR/hoyre.dds"
 	}
 	
 	spriteType = {
@@ -497,7 +502,12 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_NOR_progressive_group"
-		texturefile = "gfx/interface/ideologies/NOR/miljopartiet.dds"
+		texturefile = "gfx/interface/ideologies/NOR/mdg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_NOR_islamist_group"
+		texturefile = "gfx/interface/ideologies/NOR/profetens_ummah.dds"
 	}
 	
 	spriteType = {
@@ -658,6 +668,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_MON_socialist_group"
 		texturefile = "gfx/interface/ideologies/MON/maxh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_MON_fascist_group"
+		texturefile = "gfx/interface/ideologies/MON/tsagaan_khas.dds"
 	}
 	
 	spriteType = {
@@ -1271,12 +1286,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_BRB_social_democrat_group"
+		name = "GFX_ideology_BRB_social_liberal_group"
 		texturefile = "gfx/interface/ideologies/BRB/blp.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_BRB_socialist_group"
+		name = "GFX_ideology_BRB_social_democrat_group"
 		texturefile = "gfx/interface/ideologies/BRB/dlp.dds"
 	}
 	
@@ -1863,6 +1878,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_ANG_socialist_group"
 		texturefile = "gfx/interface/ideologies/ANG/mpla.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ANG_conservative_group"
+		texturefile = "gfx/interface/ideologies/ANG/fnla.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ANG_national_conservative_group"
+		texturefile = "gfx/interface/ideologies/ANG/unita.dds"
 	}
 	
 	spriteType = {
@@ -3187,42 +3212,47 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_ICE_social_liberal_group"
-		texturefile = "gfx/interface/ideologies/ICE/centre.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ideology_ICE_national_conservative_group"
-		texturefile = "gfx/interface/ideologies/ICE/independence.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ideology_ICE_progressive_group"
-		texturefile = "gfx/interface/ideologies/ICE/left_green.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ideology_ICE_socialist_group"
-		texturefile = "gfx/interface/ideologies/ICE/peoples.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ideology_ICE_classical_liberal_group"
 		texturefile = "gfx/interface/ideologies/ICE/progress.dds"
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_ICE_national_conservative_group"
+		texturefile = "gfx/interface/ideologies/ICE/peoples.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ICE_progressive_group"
+		texturefile = "gfx/interface/ideologies/ICE/pirate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ICE_socialist_group"
+		texturefile = "gfx/interface/ideologies/ICE/vg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ICE_classical_liberal_group"
+		texturefile = "gfx/interface/ideologies/ICE/vidreisn.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_ICE_conservative_group"
-		texturefile = "gfx/interface/ideologies/ICE/vioreisn.dds"
+		texturefile = "gfx/interface/ideologies/ICE/independence.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_ICE_communist_group"
-		texturefile = "gfx/interface/ideologies/ICE/workers.dds"
+		texturefile = "gfx/interface/ideologies/ICE/workers_front.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_ICE_social_democrat_group"
 		texturefile = "gfx/interface/ideologies/ICE/xs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ICE_right_wing_nationalist_group"
+		texturefile = "gfx/interface/ideologies/ICE/national_front.dds"
 	}
 	
 	spriteType = {
@@ -3958,5 +3988,40 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_JAM_social_democrat_group"
 		texturefile = "gfx/interface/ideologies/JAM/pnp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ZIM_socialist_group"
+		texturefile = "gfx/interface/ideologies/ZIM/zanu_pf.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ZIM_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/ZIM/npf.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ZIM_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/ZIM/mdc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_KUW_monarchist_group"
+		texturefile = "gfx/interface/ideologies/KUW/sabah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_JRS_classical_liberal_group"
+		texturefile = "gfx/interface/ideologies/JRS/jersey_alliance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_JRS_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/JRS/progress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_JRS_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/JRS/reform_jersey.dds"
 	}
 }

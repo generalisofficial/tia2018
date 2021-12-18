@@ -467,12 +467,37 @@ ideas = {
 			level = 4
 			
 			available = {
-				NOT = { has_idea = idea_eu_member }
+				NOT = { 
+					has_idea = idea_eu_member
+					OR = {
+						has_government = progressive
+						has_country_flag = coalition_progressive
+					}
+				}
 			}
 			
 			modifier = {
 				MONTHLY_POPULATION = -0.2
 				consumer_goods_factor = -0.05
+			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 100
+					OR = {
+						has_government = fascist
+						has_government = right_wing_nationalist
+					}
+			 	}
+				modifier = {
+					factor = 10
+					OR = {
+						has_government = national_conservative
+						has_government = islamist
+						has_government = communist
+					}
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -483,15 +508,31 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			
-			available = {
-			}
-			
 			modifier = {
 				consumer_goods_factor = -0.01
 			}
 			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 100
+					OR = {
+						has_government = national_conservative
+						has_government = conservative
+					}
+			 	}
+				modifier = {
+					factor = 10
+					OR = {
+						has_government = classical_liberal
+						has_government = social_democrat
+						has_government = sociaL_liberal
+						has_government = socialist
+					}
+				}
+			}
+
 			cancel_if_invalid = no
-			
 			default = yes
 		}
 		
@@ -504,6 +545,26 @@ ideas = {
 				MONTHLY_POPULATION = 0.2
 				consumer_goods_factor = 0.03
 			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 100
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = socialist
+						has_government = classical_liberal
+					}
+			 	}
+				modifier = {
+					factor = 10
+					OR = {
+						has_government = conservative
+						has_government = progressive
+					}
+				}
+			}
 			
 			cancel_if_invalid = no
 		}
@@ -514,6 +575,12 @@ ideas = {
 			level = 1
 			
 			available = {
+				NOT = { 
+					OR = {
+						has_government = fascist
+						has_government = right_wing_nationalist
+					}
+				}
 			}
 			
 			modifier = {
@@ -521,6 +588,25 @@ ideas = {
 				consumer_goods_factor = 0.07
 			}
 			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 100
+					OR = {
+						has_government = progressive
+					}
+			 	}
+				modifier = {
+					factor = 10
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = socialist
+						has_government = classical_liberal
+					}
+				}
+			}
+
 			cancel_if_invalid = no
 		}
 	}
@@ -642,14 +728,20 @@ ideas = {
 			modifier = {
 			
 			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 100
+					has_government = communist
+			 	}
+			}
 			
 			cancel_if_invalid = no
 		}
 		secular = {
 			cost = 25
 			removal_cost = -1
-
-			default = yes
 			
 			available = {
 				NOT = { has_government = islamist original_tag = VAT }
@@ -658,7 +750,22 @@ ideas = {
 			modifier = {
 			
 			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 15
+					OR = {
+						has_government = progressive
+						has_government = socialist
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = classical_liberal
+					}
+			 	}
+			}
 			
+			default = yes
 			cancel_if_invalid = no
 		}
 		christianity = {
@@ -676,6 +783,20 @@ ideas = {
 			
 			modifier = {
 			
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 50
+					OR = {
+						has_government = conservative
+						has_government = national_conservative
+						has_government = monarchist
+						has_government = right_wing_nationalist
+						has_government = fascist
+					}
+			 	}
 			}
 			
 			cancel_if_invalid = no
@@ -696,6 +817,24 @@ ideas = {
 			
 			}
 			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 100
+					has_government = islamist
+			 	}
+				modifier = {
+					factor = 50
+				   	OR = {
+					   has_government = conservative
+					   has_government = national_conservative
+					   has_government = monarchist
+					   has_government = right_wing_nationalist
+					   has_government = fascist
+				   	}
+				}
+			}
+
 			cancel_if_invalid = no
 		}
 		buddhism = {
@@ -709,6 +848,20 @@ ideas = {
 			
 			modifier = {
 			
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 50
+					OR = {
+						has_government = conservative
+						has_government = national_conservative
+						has_government = monarchist
+						has_government = right_wing_nationalist
+						has_government = fascist
+					}
+			 	}
 			}
 			
 			cancel_if_invalid = no
@@ -725,6 +878,20 @@ ideas = {
 			modifier = {
 			
 			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 50
+					OR = {
+						has_government = conservative
+						has_government = national_conservative
+						has_government = monarchist
+						has_government = right_wing_nationalist
+						has_government = fascist
+					}
+			 	}
+			}
 			
 			cancel_if_invalid = no
 		}
@@ -739,6 +906,20 @@ ideas = {
 			
 			modifier = {
 			
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 50
+					OR = {
+						has_government = conservative
+						has_government = national_conservative
+						has_government = monarchist
+						has_government = right_wing_nationalist
+						has_government = fascist
+					}
+			 	}
 			}
 			
 			cancel_if_invalid = no

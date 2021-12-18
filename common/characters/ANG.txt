@@ -1,21 +1,21 @@
 characters={
     #Starting
-	ANG_joão_lourenço={
-		name="João Lourenço"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ANG_Joao_Lourenco
-			}
-		}
-		country_leader={
-			ideology=left_wing_nationalist
-		}
-	}
-	ANG_isaías_samakuva={
+	ANG_isaias_samakuva={
 		name="Isaías Samakuva"
 		portraits={
 			civilian={
 				large=GFX_Portrait_ANG_Isaias_Samakuva
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
+	ANG_ngola_kabangu={
+		name="Ngola Kabangu"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ANG_Ngola_Kabangu
 			}
 		}
 		country_leader={
@@ -33,201 +33,15 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	ANG_geraldo_sachipengo_nunda={
-		name="Geraldo Sachipengo Nunda"
+	ANG_joao_lourenco={
+		name="João Lourenço"
 		portraits={
-			army={
-				large=GFX_Portrait_ANG_Geraldo_Sachipengo_Nunda
+			civilian={
+				large=GFX_Portrait_ANG_Joao_Lourenco
 			}
 		}
-		field_marshal={
-			traits={ old_guard }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_francisco_lopes_gonçalves_afonso={
-		name="Francisco Lopes Gonçalves Afonso"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Francisco_Goncalves
-			}
-		}
-		field_marshal={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_egídio_sousa_santos={
-		name="Egídio Sousa Santos"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Egidio_Sosa_Santos
-			}
-		}
-		field_marshal={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_luis_manuel_domingos={
-		name="Luis Manuel Domingos"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Luis_Domingos
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_baltazar_diogo={
-		name="Baltazar Diogo"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Baltazar_Diogo
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_arlindo_josé_assis={
-		name="Arlindo José Assis"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Arlindo_Assis
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_lúcio_goncalves_do_amaral={
-		name="Lúcio Goncalves do Amaral"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Lucio_Goncalves_Amaral
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_antonio_dos_santos_neto={
-		name="Antonio dos Santos Neto"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Antonio_dos_Santos_Neto
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_simão_wala_carlitos={
-		name="Simão Wala Carlitos"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Simao_Carlitos
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_peregrino_huambo={
-		name="Peregrino Huambo"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_Peregrino_Huambo
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_francisco_josé={
-		name="Francisco José"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_admirals_Francisco_Jose
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ANG_augusto_da_silva_cunha={
-		name="Augusto da Silva Cunha"
-		portraits={
-			army={
-				large=GFX_Portrait_ANG_admirals_Augusto_da_Silva
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=left_wing_nationalist
 		}
 	}
 }

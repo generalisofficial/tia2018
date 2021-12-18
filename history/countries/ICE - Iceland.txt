@@ -107,13 +107,13 @@ set_country_flag = protestant
 
 #Althing
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 3.17 }
-set_variable = { progressive_seats = 17.5 }
+set_variable = { socialist_seats = 17.5 }
+set_variable = { progressive_seats = 9.52 }
 set_variable = { social_democrat_seats = 11.11 }
 set_variable = { social_liberal_seats = 23.80 }
-set_variable = { classical_liberal_seats = 12.69 }
-set_variable = { conservative_seats = 6.34 }
-set_variable = { national_conservative_seats = 25.39 }
+set_variable = { classical_liberal_seats = 6.34 }
+set_variable = { conservative_seats = 25.39 }
+set_variable = { national_conservative_seats = 6.34 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -121,41 +121,35 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_national_conservative
-set_country_flag = coalition_progressive
-set_country_flag = coalition_classical_liberal
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
-add_to_variable = { ROOT.Coalition = progressive_seats }
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+set_country_flag = coalition_socialist
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = socialist_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = progressive
-	last_election = "2017.10.23"
+	ruling_party = socialist
+	last_election = "2017.9.25"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 25.39
-    progressive = 17.5
-    classical_liberal = 12.69
-    social_liberal = 23.80
-    social_democrat = 11.11
-	conservative = 6.34
-    socialist = 3.17
+	conservative = 25.43
+	social_liberal = 25.39
+	socialist = 12.69
+    social_democrat = 9.52
+	progressive = 9.52
+	national_conservative = 9.52
+	classical_liberal = 7.93
 }
 
-recruit_character = ICE_bjarni_benediktsson
-recruit_character = ICE_katrin_jakobsdottir
-recruit_character = ICE_sigurdur_ingi_johannsson
-recruit_character = ICE_sigmundur_david_gunnlaugsson
-recruit_character = ICE_logi_már_einarsson
-recruit_character = ICE_thorgerdur_katrin_gunnarsdottir
+recruit_character = ICE_gudmundur_thorleifsson
 recruit_character = ICE_inga_saeland
+recruit_character = ICE_bjarni_benediktsson
+recruit_character = ICE_thorgerdur_katrin_gunnarsdottir
+recruit_character = ICE_sigurdur_ingi_johannsson
+recruit_character = ICE_logi_már_einarsson
+recruit_character = ICE_katrin_jakobsdottir
 recruit_character = ICE_thorvaldur_torvaldsson
-recruit_character = ICE_arnor_sigurjonsson
-recruit_character = ICE_sindri_steingrimsson
-recruit_character = ICE_halli_sigurdsson
-recruit_character = ICE_haraldur_johannessen
-recruit_character = ICE_georg_kristinn_larusson
-recruit_character = ICE_asgrimur_asgrimsson

@@ -1,0 +1,43 @@
+﻿add_namespace = cuba
+
+country_event = { #Raúl Castro Resigns
+	id = cuba.1
+	title = cuba.1.t
+	desc = cuba.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = CUB
+		has_country_leader = { 
+			name = "Raúl Castro" 
+			ruling_only = yes 
+		} 
+		date > 2021.4.19
+	}
+	
+	option = {
+		name = cuba.1.a
+		retire_country_leader = yes 
+		create_country_leader = {
+	        name = "Miguel Díaz-Canel"
+	        picture = GFX_Portrait_CUB_Miguel_Diaz_Canel
+	        ideology = marxist_leninist
+        }
+	}
+}
+
+#End of Castro leadership in Cuba
+news_event = {
+	id = cuba.2
+	title = cuba.2.t
+	desc = cuba.2.d
+	picture = GFX_news_event_castro_and_diaz_canel
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = cuba.2.o1
+	}
+}

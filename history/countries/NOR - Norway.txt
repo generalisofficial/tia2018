@@ -111,10 +111,10 @@ set_country_flag = protestant
 set_variable = { communist_seats = 0.59 }
 set_variable = { socialist_seats = 6.50 }
 set_variable = { progressive_seats = 0.59 }
-set_variable = { social_democrat_seats = 28.99 }
+set_variable = { social_democrat_seats = 29.02 }
 set_variable = { social_liberal_seats = 11.24 }
-set_variable = { classical_liberal_seats = 31.39 }
-set_variable = { conservative_seats = 4.73 }
+set_variable = { classical_liberal_seats = 4.73 }
+set_variable = { conservative_seats = 31.36 }
 set_variable = { national_conservative_seats = 15.97 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -123,87 +123,39 @@ set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_conservative
 set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+set_country_flag = coalition_classical_liberal
+add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {
-	ruling_party = classical_liberal 
+	ruling_party = conservative
 	last_election = "2017.9.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-set_popularities = {    
-    social_democrat = 28.99
-    classical_liberal = 31.39
-    national_conservative = 15.97
-    social_liberal = 11.24
-    socialist = 6.50
-    conservative = 4.73
-    progressive = 0.59
-    communist = 0.59
+set_popularities = {
+	social_democrat = 28.6
+	conservative = 23.21
+	social_liberal = 16.66
+	national_conservative = 12.5
+	socialist = 7.73
+	classical_liberal = 4.76
+	communist = 4.76
+	progressive = 1.78
 }
 
-recruit_character = NOR_jonas_gahr_store
-recruit_character = NOR_erna_solberg
-recruit_character = NOR_siv_jensen
-recruit_character = NOR_trygve_slagsvold_vedum
-recruit_character = NOR_audun_lysbakken
-recruit_character = NOR_knut_arild_hareide
-recruit_character = NOR_une_aina_bastholm
-recruit_character = NOR_bjørnar_moxnes
-recruit_character = NOR_tore_tvedt
-recruit_character = NOR_makvan_kasheikal
-recruit_character = NOR_harald_v
 recruit_character = NOR_ubaydullah_hussain
-recruit_character = NOR_haakon_bruunhanssen
-recruit_character = NOR_erik_gustafsson
-recruit_character = NOR_robert_mood
-recruit_character = NOR_harald_sunde
-recruit_character = NOR_anders_jernberg
-recruit_character = NOR_arild_dregelid
-recruit_character = NOR_eldar_berli
-recruit_character = NOR_inge_kampenes
-recruit_character = NOR_ivar_sakserud
-recruit_character = NOR_jan_erik_thoresen
-recruit_character = NOR_jan_frederik_geiner
-recruit_character = NOR_jan_per_ole_janitz
-recruit_character = NOR_jon_ivar_kjellin
-recruit_character = NOR_kjell_grandhagen
-recruit_character = NOR_kurt_pedersen
-recruit_character = NOR_lars_christian_aamodt
-recruit_character = NOR_morten_haga_lunde
-recruit_character = NOR_nils_johan_holte
-recruit_character = NOR_ingvar_seland
-recruit_character = NOR_frode_kristoffersen
-recruit_character = NOR_oddandreas_søbstad
-recruit_character = NOR_odin_johannessen
-recruit_character = NOR_ole_asbjørn_fauske
-recruit_character = NOR_per_egil_rygg
-recruit_character = NOR_petter_jansen
-recruit_character = NOR_rolf_erik_bjerk
-recruit_character = NOR_tor_rune_jakobsen
-recruit_character = NOR_tom_guttormsen
-recruit_character = NOR_tonje_skinnarland
-recruit_character = NOR_tor_rune_raabye
-recruit_character = NOR_yngve_odlo
-recruit_character = NOR_janerik_haug
-recruit_character = NOR_ivar_halset
-recruit_character = NOR_aril_brandvik
-recruit_character = NOR_ingrid_gjerde
-recruit_character = NOR_ole_johan_skogmo
-recruit_character = NOR_roy_helge_olsen
-recruit_character = NOR_svein_harald_halvorsen
-recruit_character = NOR_louise_kathrine_dedichen
-recruit_character = NOR_jan_knudtzon_sommerfeltpetersen
-recruit_character = NOR_ketil_olsen
-recruit_character = NOR_lars_saunes
-recruit_character = NOR_per_rostad
-recruit_character = NOR_nils_andreas_stensønes
-recruit_character = NOR_henning_amundsen
-recruit_character = NOR_hakon_tronstad
-recruit_character = NOR_trond_grytting
-recruit_character = NOR_bernt_grimstvedt
-recruit_character = NOR_sverre_nordahl_engeness
+recruit_character = NOR_tore_tvedt
+recruit_character = NOR_harald_v
+recruit_character = NOR_siv_jensen
+recruit_character = NOR_erna_solberg
+recruit_character = NOR_trine_skei_grande
+recruit_character = NOR_trygve_slagsvold_vedum
+recruit_character = NOR_jonas_gahr_store
+recruit_character = NOR_une_aina_bastholm
+recruit_character = NOR_audun_lysbakken
+recruit_character = NOR_bjørnar_moxnes

@@ -105,11 +105,38 @@ add_ideas = {
 
 if = {
 	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = JRS
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = JRS
+	}
+}
+
+if = {
+	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
   		name = "Secret Intelligence Service"
  		icon = "GFX_intelligence_agency_logo_ENG"
+	}
+}
+
+JRS = {
+	set_politics = {	
+		ruling_party = classical_liberal
+		last_election = "2014.5.16"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		classical_liberal = 58.34
+		social_liberal = 8.33
+		social_democrat = 33.33
 	}
 }
 

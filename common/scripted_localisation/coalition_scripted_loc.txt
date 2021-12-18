@@ -697,6 +697,33 @@ defined_text = {
 				original_tag = VOL
 				original_tag = CAR
 				original_tag = CHA
+				original_tag = DJI
+				original_tag = ERI
+				original_tag = GAM
+				original_tag = GNA
+				original_tag = GYA
+				original_tag = HUN
+				original_tag = KOR
+				original_tag = KUW
+				original_tag = LAO
+				original_tag = MLW
+				original_tag = MRT
+				original_tag = MAU
+				original_tag = MLI
+				original_tag = NIC
+				original_tag = NGR
+				original_tag = PAN
+				original_tag = SKN
+				original_tag = SAO
+				original_tag = SEN
+				original_tag = SER
+				original_tag = SEY
+				original_tag = SUR
+				original_tag = TZN
+				original_tag = TOG
+				original_tag = VEN
+				original_tag = VIN
+				original_tag = ZAM
 			}
 		}
 		localization_key = parliament_national_assembly
@@ -724,6 +751,9 @@ defined_text = {
 				original_tag = TRI
 				original_tag = YEM
 				original_tag = BOT
+				original_tag = CYP
+				original_tag = MLT
+				original_tag = NZL
 			}
 		}
 		localization_key = parliament_house_of_representatives
@@ -760,6 +790,9 @@ defined_text = {
 				original_tag = SWZ
 				original_tag = STL
 				original_tag = ZIM
+				original_tag = DMN
+				original_tag = KIR
+				original_tag = SVI
 			}
 		}
 		localization_key = parliament_house_of_assembly
@@ -780,6 +813,7 @@ defined_text = {
 				original_tag = PAR
 				original_tag = ROM
 				original_tag = RWA
+				original_tag = LUX
 			}
 		}
 		localization_key = parliament_chamber_of_deputies
@@ -789,13 +823,18 @@ defined_text = {
 			OR = {
 				original_tag = AUS
 				original_tag = SWI
+				original_tag = MOC
+				original_tag = SLO
 			}
 		}
 		localization_key = parliament_national_council
 	}
 	text = {
 		trigger = {
-			original_tag = BHR
+			OR = {
+				original_tag = BHR
+				original_tag = IRQ
+			}
 		}
 		localization_key = parliament_council_of_representatives
 	}
@@ -868,7 +907,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = OMA
+			OR = {
+				original_tag = OMA
+				original_tag = QAT
+			}
 		}
 		localization_key = parliament_consultative_assembly
 	}
@@ -952,7 +994,11 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = BRU
+			OR = {
+				original_tag = BRU
+				original_tag = PAL
+				original_tag = HAM
+			}
 		}
 		localization_key = parliament_legislative_council
 	}
@@ -961,6 +1007,223 @@ defined_text = {
 			original_tag = PRC
 		}
 		localization_key = parliament_national_peoples_congress
+	}
+	text = {
+		trigger = {
+			original_tag = COM
+		}
+		localization_key = parliament_assembly_of_the_union
+	}
+	text = {
+		trigger = {
+			original_tag = CRO
+		}
+		localization_key = parliament_sabor
+	}
+	text = {
+		trigger = {
+			original_tag = CUB
+		}
+		localization_key = parliament_national_assembly_of_peoples_power
+	}
+	text = {
+		trigger = {
+			original_tag = DEN
+		}
+		localization_key = parliament_folketing
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = ETI
+				original_tag = PNG
+				original_tag = SOL
+			}
+		}
+		localization_key = parliament_national_parliament
+	}
+	text = {
+		trigger = {
+			original_tag = EST
+		}
+		localization_key = parliament_riigikogu
+	}
+	text = {
+		trigger = {
+			original_tag = MIC
+		}
+		localization_key = parliament_congress
+	}
+	text = {
+		trigger = {
+			original_tag = FIN
+		}
+		localization_key = parliament_eduskunta
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+		}
+		localization_key = parliament_hellenic_parliament
+	}
+	text = {
+		trigger = {
+			original_tag = GNB
+		}
+		localization_key = parliament_national_peoples_assembly
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = GUA
+				original_tag = PRU
+			}
+		}
+		localization_key = parliament_congress_of_the_republic
+	}
+	text = {
+		trigger = {
+			original_tag = HON
+		}
+		localization_key = parliament_national_congress
+	}
+	text = {
+		trigger = {
+			original_tag = ICE
+		}
+		localization_key = parliament_althing
+	}
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = parliament_islamic_consultative_assembly
+	}
+	text = {
+		trigger = {
+			original_tag = ISR
+		}
+		localization_key = parliament_knesset
+	}
+	text = {
+		trigger = {
+			original_tag = PRK
+		}
+		localization_key = parliament_supreme_peoples_assembly
+	}
+	text = {
+		trigger = {
+			original_tag = KYR
+		}
+		localization_key = parliament_jogorku_kenesh
+	}
+	text = {
+		trigger = {
+			original_tag = LAT
+		}
+		localization_key = parliament_saeima
+	}
+	text = {
+		trigger = {
+			original_tag = LIC
+		}
+		localization_key = parliament_landtag
+	}
+	text = {
+		trigger = {
+			original_tag = LIT
+		}
+		localization_key = parliament_seimas
+	}
+	text = {
+		trigger = {
+			original_tag = MLD
+		}
+		localization_key = parliament_peoples_majlis
+	}
+	text = {
+		trigger = {
+			original_tag = MAR
+		}
+		localization_key = parliament_nitjiela
+	}
+	text = {
+		trigger = {
+			original_tag = MON
+		}
+		localization_key = parliament_state_great_khural
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = MZB
+				original_tag = POR
+			}
+		}
+		localization_key = parliament_assembly_of_the_republic
+	}
+	text = {
+		trigger = {
+			original_tag = MAC
+		}
+		localization_key = parliament_sobranie
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+		}
+		localization_key = parliament_storting
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = SAM
+				original_tag = TON
+			}
+		}
+		localization_key = parliament_legislative_assembly
+	}
+	text = {
+		trigger = {
+			original_tag = SMR
+		}
+		localization_key = parliament_grand_and_general_council
+	}
+	text = {
+		trigger = {
+			original_tag = SYR
+		}
+		localization_key = parliament_peoples_assembly
+	}
+	text = {
+		trigger = {
+			original_tag = TUN
+		}
+		localization_key = parliament_assembly_of_the_representatives_of_the_people
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+		}
+		localization_key = parliament_grand_national_assembly
+	}
+	text = {
+		trigger = {
+			original_tag = UKR
+		}
+		localization_key = parliament_verkhovna_rada
+	}
+	text = {
+		trigger = {
+			original_tag = UAE
+		}
+		localization_key = parliament_federal_national_council
+	}
+	text = {
+		trigger = {
+			original_tag = VAT
+		}
+		localization_key = parliament_pontifical_commission
 	}
 	text = {
 		trigger = {
