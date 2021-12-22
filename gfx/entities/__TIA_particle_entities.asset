@@ -1,0 +1,139 @@
+
+entity = {
+	name = "overrun_effect_2_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no next_state = "idle"
+		event = { time = 0 particle = "overrun_2_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "overrun_effect_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "overrun_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "overrun_enemy_effect_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no next_state = "idle"
+		event = { time = 0 particle = "overrun_enemy_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "shattered_effect_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no next_state = "idle"
+		event = { time = 0 particle = "shattered_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "shattered_enemy_effect_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no next_state = "idle"
+		event = { time = 0 particle = "shattered_enemy_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "bomb_effect_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "88aagun_attack_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 4 looping = no next_state = "idle"
+		event = { time = 0 particle = "88aagun_attack_particle" keep_particle = yes trigger_once = no } 
+		event = { time = 1 particle = "88aagun_attack_particle" keep_particle = yes trigger_once = no } 
+		event = { time = 1.25 particle = "88aagun_attack_particle" keep_particle = yes trigger_once = no } 
+		event = { time = 1.55 particle = "88aagun_attack_particle" keep_particle = yes trigger_once = no } 	}
+}
+
+
+entity = {
+	name = "search_lights_entity"
+	pdxmesh = "french_city_4_02"
+	scale = 1	
+	locator = { name = "fire_7" position = { 0 0 1 } }
+	locator = { name = "fire_6" position = { 1.5 0 -0.3 } }
+	locator = { name = "fire_5" position = { -2 0.5 } }
+	locator = { name = "fire_4" position = { 3 0 1 } }
+	locator = { name = "fire_3" position = { -3.5 0 1.8 } 	rotation = { 40 0 0 }}
+	locator = { name = "fire_2"	position = { 0.8 0.0 0.0 } rotation = { 20 0 0 }}
+	locator = { name = "fire_1"	position = { 3.0 0.1 .2 } rotation = { -20 0 0 }}	
+	default_state = "idle"
+	state = { name = "idle" state_time = 4 looping = no
+		event = { time = 0 node = "fire_1" particle = "search_lights_particle" keep_particle = yes } 
+		event = { time = 1 node = "fire_2" particle = "search_lights_particle" keep_particle = yes } 
+		event = { time = 1.25 node = "fire_3" particle = "search_lights_particle" keep_particle = yes } 
+		}
+}
+
+entity = {
+	name = "city_fire_entity"
+	pdxmesh = "french_city_4_02"
+	scale = 1
+	## Fire 3 = NW, Fire 4 = NE
+	locator = { name = "fire_7" position = { 0 0 1 } }
+	locator = { name = "fire_6" position = { 1.5 0 -0.3 } }
+	locator = { name = "fire_5" position = { -2 0.5 } }
+	locator = { name = "fire_4" position = { 3 0 1 } }
+	locator = { name = "fire_3" position = { -2.5 0 1.5 } }
+	locator = { name = "fire_2"	position = { -0.8 0.0 0.0 } }
+	locator = { name = "fire_1"	position = { 1.0 0.1 -1.8 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 node ="fire_1" particle = "city_fire_2_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_2" particle = "city_fire_s_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_3" particle = "city_fire_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_4" particle = "city_fire_2_s_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_5" particle = "city_fire_l_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_6" particle = "city_fire_s_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_7" particle = "city_fire_2_particle" keep_particle = yes } 
+		}
+}
+
+entity = {
+	name = "city_smoke_entity"
+	pdxmesh = "french_city_4_02"
+	scale = 1
+
+	### EF 2020-12-01: from what I recall the commented parts are tests to see how much fire & smoke we'd want. In the end with the testing I commented them out because they didn't feel necessary for the moment.
+	### If this is never changed again, feel free to remove commented lines.
+
+	## Fire 3 = NW, Fire 4 = NE
+#	locator = { name = "fire_7" position = { 0 0 1 } }
+	locator = { name = "fire_6" position = { 2.0 0 -0.5 } }
+	locator = { name = "fire_5" position = { -1.5 0.5 } }
+#	locator = { name = "fire_4" position = { 3 0 1 } }
+	locator = { name = "fire_3" position = { -2 0 1.5 } }
+	locator = { name = "fire_2"	position = { 0.1 0.0 0.0 } }
+#	locator = { name = "fire_1"	position = { 1.0 0.1 -1.8 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+#		event = { time = 0 node ="fire_1" particle = "city_smoke_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_2" particle = "city_smoke_l_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_3" particle = "city_smoke_particle" keep_particle = yes } 
+#		event = { time = 0 node ="fire_4" particle = "city_smoke_s_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_5" particle = "city_smoke_l_particle" keep_particle = yes } 
+		event = { time = 0 node ="fire_6" particle = "city_smoke_s_particle" keep_particle = yes } 
+#		event = { time = 0 node ="fire_7" particle = "city_smoke_particle" keep_particle = yes } 
+		}
+}

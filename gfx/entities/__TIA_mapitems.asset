@@ -1,0 +1,123 @@
+# Entity for the ambient wind sound effect.
+entity = {
+	name = "ambient_wind_entity"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 1
+		event = { trigger_once = yes sound = { soundeffect = "amb_neutral_wind" } }
+	}
+}
+
+# Entity for the ambient water sound effect.
+entity = {
+	name = "ambient_water_entity"
+
+	# Only enable mesh for debugging
+	#pdxmesh = "ambient_water_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 1
+		event = { trigger_once = yes sound = { soundeffect = "ambient_ocean" } }
+	}
+}
+
+entity = {
+	name = "frame_border_entity"
+	pdxmesh = "frame_border_mesh"
+}
+
+entity = {
+	name = "frame_border_bottom_entity"
+	pdxmesh = "frame_border_bottom_mesh"
+}
+
+entity = {
+	name = "frame_border_logo_entity"
+	pdxmesh = "frame_border_logo_mesh"
+}
+
+entity = {
+	name = "wave_entity"
+	pdxmesh = "wave_mesh"
+	
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.3 }
+	
+	scale = 0.2
+}
+
+#The Information Age
+
+entity = {
+	name = "vejle_wave_entity"
+	pdxmesh = "vejle_wave_mesh"
+}
+
+entity = {
+	name = "brandenburger_tor_entity"
+	pdxmesh = "brandenburger_tor_mesh"
+}
+
+entity = {
+	name = "eiffel_tower_entity"
+	pdxmesh = "eiffel_tower_mesh"
+}
+
+entity = {
+	name = "westminster_entity"
+	pdxmesh = "westminster_mesh"
+}
+
+entity = {
+	name = "statue_of_liberty_entity"
+	pdxmesh = "statue_of_liberty_mesh"
+}
+
+entity = {
+	name = "trade_center_entity"
+	pdxmesh = "trade_center_mesh"
+}
+
+entity = {
+	name = "un_hq_entity"
+	pdxmesh = "un_hq_mesh"
+}
+
+entity = {
+	name = "golden_gate_entity"
+	pdxmesh = "golden_gate_mesh"
+}
+
+entity = {
+	name = "tower_pisa_entity"
+	pdxmesh = "tower_pisa_mesh"
+}
+
+entity = {
+	name = "pyramids_entity"
+	pdxmesh = "pyramids_mesh"
+}
+
+entity = {
+	name = "sphinx_entity"
+	pdxmesh = "sphinx_mesh"
+}
+
+entity = {
+	name = "basil_cathedral_entity"
+	pdxmesh = "basil_cathedral_mesh"
+}
+
+entity = {
+	name = "burj_khalifa_entity"
+	pdxmesh = "burj_khalifa_mesh"
+}
+
+entity = {
+	name = "tokyo_tower_entity"
+	pdxmesh = "tokyo_tower_mesh"
+}
+
+entity = {
+	name = "capitol_entity"
+	pdxmesh = "capitol_mesh"
+}
