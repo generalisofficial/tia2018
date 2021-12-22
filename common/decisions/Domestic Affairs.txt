@@ -5,7 +5,7 @@ domestic_affairs = {
 		visible = {
 			NOT = { 
 				has_country_flag = has_parliament 
-				has_idea = idea_non_state_actor 
+				has_idea = violent_non_state_actor 
 			}
 		}
 		
@@ -30,8 +30,9 @@ domestic_affairs = {
 		visible = {
 			has_country_flag = has_parliament
 			is_democracy = no
-			NOT = { 
-				has_idea = idea_non_state_actor 
+			NOT = {
+				has_government = monarchist
+				has_idea = violent_non_state_actor 
 			}
 		}
 		
@@ -40,6 +41,7 @@ domestic_affairs = {
 		cost = 100
 		
 		complete_effect = {
+			add_ideas = presidential_republic
 			if = {
 				limit = {
 					has_government = communist
@@ -156,11 +158,163 @@ domestic_affairs = {
 		
 	}
 
+	abolish_democracy = {
+		
+		visible = {
+			has_country_flag = has_parliament
+			is_democracy = yes
+			NOT = {
+				has_idea = violent_non_state_actor
+			}
+		}
+
+		available = {
+			NOT = {
+				has_idea = minority_government
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_conservative
+			}
+		}
+		
+		icon = fascism
+		
+		cost = 100
+		
+		complete_effect = {
+			add_ideas = one_party_state
+			quickset_parliament = yes
+			quickset_coalition = yes
+			if = {
+				limit = {
+					has_government = communist
+				}
+				set_politics = {
+					ruling_party = communist
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialist
+				}
+				set_politics = {
+					ruling_party = socialist
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = progressive
+				}
+				set_politics = {
+					ruling_party = progressive
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_democrat
+				}
+				set_politics = {
+					ruling_party = social_democrat
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = social_liberal
+				}
+				set_politics = {
+					ruling_party = social_liberal
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = classical_liberal
+				}
+				set_politics = {
+					ruling_party = classical_liberal
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservative
+				}
+				set_politics = {
+					ruling_party =  conservative
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = national_conservative
+				}
+				set_politics = {
+					ruling_party = national_conservative
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchist
+				}
+				set_politics = {
+					ruling_party = monarchist
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = right_wing_nationalist
+				}
+				set_politics = {
+					ruling_party = right_wing_nationalist
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascist
+				}
+				set_politics = {
+					ruling_party = fascist
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_government = islamist
+				}
+				set_politics = {
+					ruling_party = islamist
+					elections_allowed = no
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
+		
+	}
+
 	hold_snap_election = {
 		
 		visible = {
 			has_country_flag = has_parliament
-			has_idea = parliamentary_system
+			has_idea = parliamentary_republic
 			has_elections = yes
 		}
 		
@@ -183,7 +337,7 @@ domestic_affairs = {
 		
 		visible = {
 			has_country_flag = has_parliament
-			has_idea = presidential_system
+			has_idea = presidential_republic
 			has_elections = yes
 		}
 		

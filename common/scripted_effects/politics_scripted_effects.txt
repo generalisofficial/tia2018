@@ -1,0 +1,1671 @@
+break_coalition = {
+	clr_country_flag = coalition_islamist
+	clr_country_flag = coalition_fascist
+	clr_country_flag = coalition_right_wing_nationalist
+	clr_country_flag = coalition_monarchist
+	clr_country_flag = coalition_national_conservative
+	clr_country_flag = coalition_conservative
+	clr_country_flag = coalition_classical_liberal
+	clr_country_flag = coalition_social_liberal
+	clr_country_flag = coalition_social_democrat
+	clr_country_flag = coalition_progressive
+	clr_country_flag = coalition_socialist
+	clr_country_flag = coalition_communist
+	clear_variable = ROOT.Coalition
+}
+
+cleanup_coalition = {
+	clr_country_flag = government_chosen
+	clr_country_flag = government_islamist
+	clr_country_flag = government_fascist
+	clr_country_flag = government_right_wing_nationalist
+	clr_country_flag = government_monarchist
+	clr_country_flag = government_national_conservative
+	clr_country_flag = government_conservative
+	clr_country_flag = government_classical_liberal
+	clr_country_flag = government_social_liberal
+	clr_country_flag = government_social_democrat
+	clr_country_flag = government_progressive
+	clr_country_flag = government_socialist
+	clr_country_flag = government_communist
+	clr_country_flag = coalition_chosen
+	clear_variable = ROOT.NewCoalition
+}
+
+cleanup_seats = {
+	clear_variable = islamist_seats
+	clear_variable = fascist_seats
+	clear_variable = right_wing_nationalist_seats
+	clear_variable = monarchist_seats
+	clear_variable = national_conservative_seats
+	clear_variable = conservative_seats
+	clear_variable = classical_liberal_seats
+	clear_variable = social_liberal_seats
+	clear_variable = social_democrat_seats
+	clear_variable = progressive_seats
+	clear_variable = socialist_seats
+	clear_variable = communist_seats
+}
+
+cleanup_seats_parliament = {
+	clear_variable = islamist_seats_parliament
+	clear_variable = fascist_seats_parliament
+	clear_variable = right_wing_nationalist_seats_parliament
+	clear_variable = monarchist_seats_parliament
+	clear_variable = national_conservative_seats_parliament
+	clear_variable = conservative_seats_parliament
+	clear_variable = classical_liberal_seats_parliament
+	clear_variable = social_liberal_seats_parliament
+	clear_variable = social_democrat_seats_parliament
+	clear_variable = progressive_seats_parliament
+	clear_variable = socialist_seats_parliament
+	clear_variable = communist_seats_parliament
+}
+
+update_coalition = {
+	set_variable = {
+		var = ROOT.Coalition
+		value = 0
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_islamist
+		}
+		add_to_variable = { ROOT.Coalition = islamist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_fascist
+		}
+		add_to_variable = { ROOT.Coalition = fascist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_right_wing_nationalist
+		}
+		add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_monarchist
+		}
+		add_to_variable = { ROOT.Coalition = monarchist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_national_conservative
+		}
+		add_to_variable = { ROOT.Coalition = national_conservative_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_conservative
+		}
+		add_to_variable = { ROOT.Coalition = conservative_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_classical_liberal
+		}
+		add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_liberal
+		}
+		add_to_variable = { ROOT.Coalition = social_liberal_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_democrat
+		}
+		add_to_variable = { ROOT.Coalition = social_democrat_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_progressive
+		}
+		add_to_variable = { ROOT.Coalition = progressive_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_socialist
+		}
+		add_to_variable = { ROOT.Coalition = socialist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_communist
+		}
+		add_to_variable = { ROOT.Coalition = communist_seats }
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = has_parliament }
+		}
+		break_coalition = yes
+	}
+	create_pie_chart = yes
+}
+
+quickset_parliament = {
+	cleanup_seats = yes
+	set_variable = { communist_seats = party_popularity_100@communist }
+	multiply_variable = { communist_seats = 100 }
+	round_variable = communist_seats
+	divide_variable = { communist_seats = 100 }
+	set_variable = { socialist_seats = party_popularity_100@socialist }
+	multiply_variable = { socialist_seats = 100 }
+	round_variable = socialist_seats
+	divide_variable = { socialist_seats = 100 }
+	set_variable = { progressive_seats = party_popularity_100@progressive }
+	multiply_variable = { progressive_seats = 100 }
+	round_variable = progressive_seats
+	divide_variable = { progressive_seats = 100 }
+	set_variable = { social_democrat_seats = party_popularity_100@social_democrat }
+	multiply_variable = { social_democrat_seats = 100 }
+	round_variable = social_democrat_seats
+	divide_variable = { social_democrat_seats = 100 }
+	set_variable = { social_liberal_seats = party_popularity_100@social_liberal }
+	multiply_variable = { social_liberal_seats = 100 }
+	round_variable = social_liberal_seats
+	divide_variable = { social_liberal_seats = 100 }
+	set_variable = { classical_liberal_seats = party_popularity_100@classical_liberal }
+	multiply_variable = { classical_liberal_seats = 100 }
+	round_variable = classical_liberal_seats
+	divide_variable = { classical_liberal_seats = 100 }
+	set_variable = { conservative_seats = party_popularity_100@conservative }
+	multiply_variable = { conservative_seats = 100 }
+	round_variable = conservative_seats
+	divide_variable = { conservative_seats = 100 }
+	set_variable = { national_conservative_seats = party_popularity_100@national_conservative }
+	multiply_variable = { national_conservative_seats = 100 }
+	round_variable = national_conservative_seats
+	divide_variable = { national_conservative_seats = 100 }
+	set_variable = { monarchist_seats = party_popularity_100@monarchist }
+	multiply_variable = { monarchist_seats = 100 }
+	round_variable = monarchist_seats
+	divide_variable = { monarchist_seats = 100 }
+	set_variable = { right_wing_nationalist_seats = party_popularity_100@right_wing_nationalist }
+	multiply_variable = { right_wing_nationalist_seats = 100 }
+	round_variable = right_wing_nationalist_seats
+	divide_variable = { right_wing_nationalist_seats = 100 }
+	set_variable = { fascist_seats = party_popularity_100@fascist }
+	multiply_variable = { fascist_seats = 100 }
+	round_variable = fascist_seats
+	divide_variable = { fascist_seats = 100 }
+	set_variable = { islamist_seats = party_popularity_100@islamist }
+	multiply_variable = { islamist_seats = 100 }
+	round_variable = islamist_seats
+	divide_variable = { islamist_seats = 100 }
+	set_parliament_graphics = yes
+}
+
+quickset_coalition = {
+    set_country_flag = has_parliament
+	set_variable = { ROOT.Coalition = 0 }
+	if = {
+		limit = {
+			has_government = communist
+		}
+		set_country_flag = coalition_communist
+        set_variable = { ROOT.Coalition = communist_seats }
+	}
+	if = {
+		limit = {
+			has_government = socialist
+		}
+		set_country_flag = coalition_socialist
+        set_variable = { ROOT.Coalition = socialist_seats }
+	}
+	if = {
+		limit = {
+			has_government = progressive
+		}
+		set_country_flag = coalition_progressive
+        set_variable = { ROOT.Coalition = progressive_seats }
+	}
+	if = {
+		limit = {
+			has_government = social_democrat
+		}
+		set_country_flag = coalition_social_democrat
+        set_variable = { ROOT.Coalition = social_democrat_seats }
+	}
+	if = {
+		limit = {
+			has_government = social_liberal
+		}
+		set_country_flag = coalition_social_liberal
+        set_variable = { ROOT.Coalition = social_liberal_seats }
+	}
+	if = {
+		limit = {
+			has_government = classical_liberal
+		}
+		set_country_flag = coalition_classical_liberal
+        set_variable = { ROOT.Coalition = classical_liberal_seats }
+	}
+	if = {
+		limit = {
+			has_government = conservative
+		}
+		set_country_flag = coalition_conservative
+        set_variable = { ROOT.Coalition = conservative_seats }
+	}
+	if = {
+		limit = {
+			has_government = national_conservative
+		}
+		set_country_flag = coalition_national_conservative
+        set_variable = { ROOT.Coalition = national_conservative_seats }
+	}
+	if = {
+		limit = {
+			has_government = monarchist
+		}
+		set_country_flag = coalition_monarchist
+        set_variable = { ROOT.Coalition = monarchist_seats }
+	}
+	if = {
+		limit = {
+			has_government = right_wing_nationalist
+		}
+		set_country_flag = coalition_right_wing_nationalist
+        set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+	}
+	if = {
+		limit = {
+			has_government = fascist
+		}
+		set_country_flag = coalition_fascist
+        set_variable = { ROOT.Coalition = fascist_seats }
+	}
+	if = {
+		limit = {
+			has_government = islamist
+		}
+		set_country_flag = coalition_islamist
+        set_variable = { ROOT.Coalition = islamist_seats }
+	}
+	set_parliament_graphics = yes
+}
+
+set_parliament_graphics = {
+
+## CLARIFICATION
+# Every ideology has a number from 1 to 12.
+# There will be a parliament array with 25 entries of numbers reaching from 1 to 12, each defining a seat for a certain ideology.
+# It involves a huge amount of code, I hope it won't kill the performance
+#
+## Step 1 : Create new variables to work with
+	cleanup_seats_parliament = yes
+	set_new_parliament_seats = yes
+	set_variable = { communist_seats_parliament = communist_seats }
+	set_variable = { socialist_seats_parliament = socialist_seats }
+	set_variable = { social_democrat_seats_parliament = social_democrat_seats }
+	set_variable = { progressive_seats_parliament = progressive_seats }
+	set_variable = { social_liberal_seats_parliament = social_liberal_seats }
+	set_variable = { classical_liberal_seats_parliament = classical_liberal_seats }
+	set_variable = { conservative_seats_parliament = conservative_seats }
+	set_variable = { islamist_seats_parliament = islamist_seats }
+	set_variable = { monarchist_seats_parliament = monarchist_seats }
+	set_variable = { national_conservative_seats_parliament = national_conservative_seats }
+	set_variable = { right_wing_nationalist_seats_parliament = right_wing_nationalist_seats }
+	set_variable = { fascist_seats_parliament = fascist_seats }
+
+## Step 2 : Round variables
+
+	round_variable = communist_seats_parliament
+	round_variable = socialist_seats_parliament
+	round_variable = social_democrat_seats_parliament
+	round_variable = progressive_seats_parliament
+	round_variable = social_liberal_seats_parliament
+	round_variable = classical_liberal_seats_parliament
+	round_variable = conservative_seats_parliament
+	round_variable = islamist_seats_parliament
+	round_variable = monarchist_seats_parliament
+	round_variable = national_conservative_seats_parliament
+	round_variable = right_wing_nationalist_seats_parliament
+	round_variable = fascist_seats_parliament
+
+## Step 3 : Assign seats
+
+	clear_array = ideology_seats_array
+	clear_array = parliament_array
+	clear_array = parliament_popularity_array
+	add_to_array = { ideology_seats_array = 0 } # Placeholder, I need the frames to be 1-12 and not 0-11
+	add_to_array = { ideology_seats_array = communist_seats_parliament }
+	add_to_array = { ideology_seats_array = socialist_seats_parliament }
+	add_to_array = { ideology_seats_array = social_democrat_seats_parliament }
+	add_to_array = { ideology_seats_array = progressive_seats_parliament }
+	add_to_array = { ideology_seats_array = social_liberal_seats_parliament }
+	add_to_array = { ideology_seats_array = classical_liberal_seats_parliament }
+	add_to_array = { ideology_seats_array = conservative_seats_parliament }
+	add_to_array = { ideology_seats_array = islamist_seats_parliament }
+	add_to_array = { ideology_seats_array = monarchist_seats_parliament }
+	add_to_array = { ideology_seats_array = national_conservative_seats_parliament }
+	add_to_array = { ideology_seats_array = right_wing_nationalist_seats_parliament }
+	add_to_array = { ideology_seats_array = fascist_seats_parliament }
+
+	for_each_loop = {
+		array = ideology_seats_array
+		if = {
+			limit = {
+				check_variable = { v > 99 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 98 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 97 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 96 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 95 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 94 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 93 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 92 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 91 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 90 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 89 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 88 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 87 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 86 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 85 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 84 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 83 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 82 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 81 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 80 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 79 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 78 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 77 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 76 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 75 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 74 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 73 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 72 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 71 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 70 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 69 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 68 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 67 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 66 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 65 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 64 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 63 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 62 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 61 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 60 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 59 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 58 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 57 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 49 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 56 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 55 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 54 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 53 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 52 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 51 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 50 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 49 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 48 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 47 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 46 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 45 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 44 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 43 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 42 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 41 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 40 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 39 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 38 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 37 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 36 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 35 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 34 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 33 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 32 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 31 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 30 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 29 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 28 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 27 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 26 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 25 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 24 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 23 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 22 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 21 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 20 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 19 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 18 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 17 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 16 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 15 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 14 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 13 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 12 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 11 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 10 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 9 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 8 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 7 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 6 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 5 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 4 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 3 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 2 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 1 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 0 }
+			}
+			add_to_array = { parliament_array = i }
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { parliament_array^num > 101 }
+		}
+		resize_array = {
+			parliament_array = 101
+		}
+	}
+	set_parliament_popularity_array = yes
+	create_pie_chart = yes
+
+	set_variable = {
+		ROOT.GroupGFX = ROOT.Coalition
+	}
+	divide_variable = { ROOT.GroupGFX = 100 }
+	multiply_variable = { ROOT.GroupGFX = 230 }
+
+	set_variable = {
+		ROOT.Opposition = 100
+	}
+	subtract_from_variable = {
+		ROOT.Opposition = ROOT.Coalition
+	}
+	set_parliament_speaker_plurality = yes
+}
+
+set_coalition_to_array = {
+	if = {
+		limit = {
+			has_country_flag = coalition_islamist
+		}
+		add_to_array = { member_parties_array = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_fascist
+		}
+		add_to_array = { member_parties_array = 2 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_right_wing_nationalist
+		}
+		add_to_array = { member_parties_array = 3 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_monarchist
+		}
+		add_to_array = { member_parties_array = 4 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_national_conservative
+		}
+		add_to_array = { member_parties_array = 5 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_conservative
+		}
+		add_to_array = { member_parties_array = 6 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_classical_liberal
+		}
+		add_to_array = { member_parties_array = 7 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_liberal
+		}
+		add_to_array = { member_parties_array = 8 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_democrat
+		}
+		add_to_array = { member_parties_array = 9 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_progressive
+		}
+		add_to_array = { member_parties_array = 10 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_socialist
+		}
+		add_to_array = { member_parties_array = 11 }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_communist
+		}
+		add_to_array = { member_parties_array = 12 }
+	}
+}
+
+# Scripted GUI Pie Chart by Yard1
+
+# this creates a pie chart of popularities - can be easily adapted to show anything that adds up to 100%
+create_pie_chart = {
+	clear_array = pie_chart
+	resize_array = {
+		array = pie_chart
+		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+		size = 100 # 100 pieces, each percent is one piece
+	}
+	set_temp_variable = { communist_pop = communist_seats_parliament }
+	round_temp_variable = communist_pop
+
+	set_temp_variable = { socialist_pop = socialist_seats_parliament }
+	round_temp_variable = socialist_pop 
+	set_variable = { ROOT.last_idx = communist_pop }
+	add_to_temp_variable = { socialist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = socialist_pop
+		set_variable = { pie_chart^v = 2 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { social_democrat_pop = social_democrat_seats_parliament }
+	round_temp_variable = social_democrat_pop 
+	add_to_temp_variable = { social_democrat_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = social_democrat_pop
+		set_variable = { pie_chart^v = 3 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { progressive_pop = progressive_seats_parliament }
+	round_temp_variable = progressive_pop 
+	add_to_temp_variable = { progressive_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = progressive_pop
+		set_variable = { pie_chart^v = 4 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { social_liberal_pop = social_liberal_seats_parliament }
+	round_temp_variable = social_liberal_pop 
+	add_to_temp_variable = { social_liberal_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = social_liberal_pop
+		set_variable = { pie_chart^v = 5 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { classical_liberal_pop = classical_liberal_seats_parliament }
+	round_temp_variable = classical_liberal_pop 
+	add_to_temp_variable = { classical_liberal_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = classical_liberal_pop
+		set_variable = { pie_chart^v = 6 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { conservative_pop = conservative_seats_parliament }
+	round_temp_variable = conservative_pop 
+	add_to_temp_variable = { conservative_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = conservative_pop
+		set_variable = { pie_chart^v = 7 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { islamist_pop = islamist_seats_parliament }
+	round_temp_variable = islamist_pop 
+	add_to_temp_variable = { islamist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = islamist_pop
+		set_variable = { pie_chart^v = 8 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { monarchist_pop = monarchist_seats_parliament }
+	round_temp_variable = monarchist_pop 
+	add_to_temp_variable = { monarchist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = monarchist_pop
+		set_variable = { pie_chart^v = 9 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { national_conservative_pop = national_conservative_seats_parliament }
+	round_temp_variable = national_conservative_pop 
+	add_to_temp_variable = { national_conservative_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = national_conservative_pop
+		set_variable = { pie_chart^v = 10 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { right_wing_nationalist_pop = right_wing_nationalist_seats_parliament }
+	round_temp_variable = right_wing_nationalist_pop 
+	add_to_temp_variable = { right_wing_nationalist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = right_wing_nationalist_pop
+		set_variable = { pie_chart^v = 11 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { fascist_pop = fascist_seats_parliament }
+	round_temp_variable = fascist_pop 
+	add_to_temp_variable = { fascist_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = fascist_pop
+		set_variable = { pie_chart^v = 12 }
+	}
+
+	clear_variable = ROOT.last_idx
+	add_to_variable = { pie_chart_dirty = 1 }
+}
+
+# New Parliament System for 100 seats
+set_new_parliament_seats = {
+	clear_array = x_pos_array
+	clear_array = y_pos_array
+	add_to_array = { x_pos_array = 0 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 33 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 66 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 99 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 133 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 166 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 4 }
+	add_to_array = { y_pos_array = 528 }
+	add_to_array = { x_pos_array = 38 }
+	add_to_array = { y_pos_array = 527 }
+	add_to_array = { x_pos_array = 72 }
+	add_to_array = { y_pos_array = 528 }
+	add_to_array = { x_pos_array = 106 }
+	add_to_array = { y_pos_array = 527 }
+	add_to_array = { x_pos_array = 140 }
+	add_to_array = { y_pos_array = 529 }
+	add_to_array = { x_pos_array = 14 }
+	add_to_array = { y_pos_array = 487 }
+	add_to_array = { x_pos_array = 50 }
+	add_to_array = { y_pos_array = 486 }
+	add_to_array = { x_pos_array = 175 }
+	add_to_array = { y_pos_array = 531 }
+	add_to_array = { x_pos_array = 85 }
+	add_to_array = { y_pos_array = 488 }
+	add_to_array = { x_pos_array = 30 }
+	add_to_array = { y_pos_array = 448 }
+	add_to_array = { x_pos_array = 123 }
+	add_to_array = { y_pos_array = 486 }
+	add_to_array = { x_pos_array = 69 }
+	add_to_array = { y_pos_array = 446 }
+	add_to_array = { x_pos_array = 159 }
+	add_to_array = { y_pos_array = 490 }
+	add_to_array = { x_pos_array = 105 }
+	add_to_array = { y_pos_array = 451 }
+	add_to_array = { x_pos_array = 51 }
+	add_to_array = { y_pos_array = 412 }
+	add_to_array = { x_pos_array = 195 }
+	add_to_array = { y_pos_array = 495 }
+	add_to_array = { x_pos_array = 93 }
+	add_to_array = { y_pos_array = 411 }
+	add_to_array = { x_pos_array = 147 }
+	add_to_array = { y_pos_array = 449 }
+	add_to_array = { x_pos_array = 77 }
+	add_to_array = { y_pos_array = 378 }
+	add_to_array = { x_pos_array = 131 }
+	add_to_array = { y_pos_array = 417 }
+	add_to_array = { x_pos_array = 186 }
+	add_to_array = { y_pos_array = 457 }
+	add_to_array = { x_pos_array = 123 }
+	add_to_array = { y_pos_array = 379 }
+	add_to_array = { x_pos_array = 108 }
+	add_to_array = { y_pos_array = 349 }
+	add_to_array = { x_pos_array = 179 }
+	add_to_array = { y_pos_array = 419 }
+	add_to_array = { x_pos_array = 163 }
+	add_to_array = { y_pos_array = 390 }
+	add_to_array = { x_pos_array = 225 }
+	add_to_array = { y_pos_array = 467 }
+	add_to_array = { x_pos_array = 158 }
+	add_to_array = { y_pos_array = 353 }
+	add_to_array = { x_pos_array = 142 }
+	add_to_array = { y_pos_array = 324 }
+	add_to_array = { x_pos_array = 220 }
+	add_to_array = { y_pos_array = 432 }
+	add_to_array = { x_pos_array = 200 }
+	add_to_array = { y_pos_array = 368 }
+	add_to_array = { x_pos_array = 217 }
+	add_to_array = { y_pos_array = 396 }
+	add_to_array = { x_pos_array = 179 }
+	add_to_array = { y_pos_array = 304 }
+	add_to_array = { x_pos_array = 197 }
+	add_to_array = { y_pos_array = 333 }
+	add_to_array = { x_pos_array = 262 }
+	add_to_array = { y_pos_array = 450 }
+	add_to_array = { x_pos_array = 219 }
+	add_to_array = { y_pos_array = 290 }
+	add_to_array = { x_pos_array = 239 }
+	add_to_array = { y_pos_array = 353 }
+	add_to_array = { x_pos_array = 260 }
+	add_to_array = { y_pos_array = 416 }
+	add_to_array = { x_pos_array = 238 }
+	add_to_array = { y_pos_array = 319 }
+	add_to_array = { x_pos_array = 259 }
+	add_to_array = { y_pos_array = 382 }
+	add_to_array = { x_pos_array = 260 }
+	add_to_array = { y_pos_array = 281 }
+	add_to_array = { x_pos_array = 281 }
+	add_to_array = { y_pos_array = 345 }
+	add_to_array = { x_pos_array = 281 }
+	add_to_array = { y_pos_array = 312 }
+	add_to_array = { x_pos_array = 302 }
+	add_to_array = { y_pos_array = 444 }
+	add_to_array = { x_pos_array = 302 }
+	add_to_array = { y_pos_array = 377 }
+	add_to_array = { x_pos_array = 302 }
+	add_to_array = { y_pos_array = 278 }
+	add_to_array = { x_pos_array = 302 }
+	add_to_array = { y_pos_array = 411 }
+	add_to_array = { x_pos_array = 324 }
+	add_to_array = { y_pos_array = 312 }
+	add_to_array = { x_pos_array = 324 }
+	add_to_array = { y_pos_array = 345 }
+	add_to_array = { x_pos_array = 344 }
+	add_to_array = { y_pos_array = 281 }
+	add_to_array = { x_pos_array = 346 }
+	add_to_array = { y_pos_array = 382 }
+	add_to_array = { x_pos_array = 367 }
+	add_to_array = { y_pos_array = 319 }
+	add_to_array = { x_pos_array = 345 }
+	add_to_array = { y_pos_array = 416 }
+	add_to_array = { x_pos_array = 365 }
+	add_to_array = { y_pos_array = 353 }
+	add_to_array = { x_pos_array = 386 }
+	add_to_array = { y_pos_array = 290 }
+	add_to_array = { x_pos_array = 343 }
+	add_to_array = { y_pos_array = 450 }
+	add_to_array = { x_pos_array = 408 }
+	add_to_array = { y_pos_array = 333 }
+	add_to_array = { x_pos_array = 426 }
+	add_to_array = { y_pos_array = 304 }
+	add_to_array = { x_pos_array = 388 }
+	add_to_array = { y_pos_array = 396 }
+	add_to_array = { x_pos_array = 405 }
+	add_to_array = { y_pos_array = 368 }
+	add_to_array = { x_pos_array = 384 }
+	add_to_array = { y_pos_array = 432 }
+	add_to_array = { x_pos_array = 463 }
+	add_to_array = { y_pos_array = 324 }
+	add_to_array = { x_pos_array = 447 }
+	add_to_array = { y_pos_array = 353 }
+	add_to_array = { x_pos_array = 380 }
+	add_to_array = { y_pos_array = 467 }
+	add_to_array = { x_pos_array = 441 }
+	add_to_array = { y_pos_array = 390 }
+	add_to_array = { x_pos_array = 426 }
+	add_to_array = { y_pos_array = 419 }
+	add_to_array = { x_pos_array = 497 }
+	add_to_array = { y_pos_array = 349 }
+	add_to_array = { x_pos_array = 481 }
+	add_to_array = { y_pos_array = 379 }
+	add_to_array = { x_pos_array = 419 }
+	add_to_array = { y_pos_array = 457 }
+	add_to_array = { x_pos_array = 473 }
+	add_to_array = { y_pos_array = 417 }
+	add_to_array = { x_pos_array = 527 }
+	add_to_array = { y_pos_array = 378 }
+	add_to_array = { x_pos_array = 458 }
+	add_to_array = { y_pos_array = 449 }
+	add_to_array = { x_pos_array = 511 }
+	add_to_array = { y_pos_array = 411 }
+	add_to_array = { x_pos_array = 409 }
+	add_to_array = { y_pos_array = 495 }
+	add_to_array = { x_pos_array = 553 }
+	add_to_array = { y_pos_array = 412 }
+	add_to_array = { x_pos_array = 500 }
+	add_to_array = { y_pos_array = 451 }
+	add_to_array = { x_pos_array = 446 }
+	add_to_array = { y_pos_array = 490 }
+	add_to_array = { x_pos_array = 536 }
+	add_to_array = { y_pos_array = 446 }
+	add_to_array = { x_pos_array = 482 }
+	add_to_array = { y_pos_array = 486 }
+	add_to_array = { x_pos_array = 574 }
+	add_to_array = { y_pos_array = 448 }
+	add_to_array = { x_pos_array = 520 }
+	add_to_array = { y_pos_array = 488 }
+	add_to_array = { x_pos_array = 430 }
+	add_to_array = { y_pos_array = 531 }
+	add_to_array = { x_pos_array = 554 }
+	add_to_array = { y_pos_array = 486 }
+	add_to_array = { x_pos_array = 590 }
+	add_to_array = { y_pos_array = 487 }
+	add_to_array = { x_pos_array = 464 }
+	add_to_array = { y_pos_array = 529 }
+	add_to_array = { x_pos_array = 498 }
+	add_to_array = { y_pos_array = 527 }
+	add_to_array = { x_pos_array = 533 }
+	add_to_array = { y_pos_array = 528 }
+	add_to_array = { x_pos_array = 566 }
+	add_to_array = { y_pos_array = 527 }
+	add_to_array = { x_pos_array = 600 }
+	add_to_array = { y_pos_array = 528 }
+	add_to_array = { x_pos_array = 439 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 472 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 505 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 538 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 572 }
+	add_to_array = { y_pos_array = 571 }
+	add_to_array = { x_pos_array = 605 }
+	add_to_array = { y_pos_array = 571 }
+}
+
+set_parliament_popularity_array = {
+	clear_array = parliament_popularity_array
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 1 }
+		}
+		add_to_array = { parliament_popularity_array = 1 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 2 }
+		}
+		add_to_array = { parliament_popularity_array = 2 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 3 }
+		}
+		add_to_array = { parliament_popularity_array = 3 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 4 }
+		}
+		add_to_array = { parliament_popularity_array = 4 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 5 }
+		}
+		add_to_array = { parliament_popularity_array = 5 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 6 }
+		}
+		add_to_array = { parliament_popularity_array = 6 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 7 }
+		}
+		add_to_array = { parliament_popularity_array = 7 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 8 }
+		}
+		add_to_array = { parliament_popularity_array = 8 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 9 }
+		}
+		add_to_array = { parliament_popularity_array = 9 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 10 }
+		}
+		add_to_array = { parliament_popularity_array = 10 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 11 }
+		}
+		add_to_array = { parliament_popularity_array = 11 }
+	}
+	if = {
+		limit = {
+			is_in_array = {	parliament_array = 12 }
+		}
+		add_to_array = { parliament_popularity_array = 12 }
+	}
+	for_each_loop = {
+		array = parliament_popularity_array
+		log = "[?parliament_popularity_array^i]"
+	}
+}
+
+set_parliament_speaker_plurality = {
+	if = {
+		limit = {
+			communist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 1 }
+	}
+	if = {
+		limit = {
+			socialist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 2 }
+	}
+	if = {
+		limit = {
+			social_democrat_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 3 }
+	}
+	if = {
+		limit = {
+			progressive_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 4 }
+	}
+	if = {
+		limit = {
+			social_liberal_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 5 }
+	}
+	if = {
+		limit = {
+			classical_liberal_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 6 }
+	}
+	if = {
+		limit = {
+			conservative_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 7 }
+	}
+	if = {
+		limit = {
+			islamist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 8 }
+	}
+	if = {
+		limit = {
+			monarchist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 9 }
+	}
+	if = {
+		limit = {
+			national_conservative_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 10 }
+	}
+	if = {
+		limit = {
+			right_wing_nationalist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 11 }
+	}
+	if = {
+		limit = {
+			fascist_plurality_seats = yes
+		}
+		set_variable = { plurality_var = 12 }
+	}
+}
+
+election_pulse = {
+	add_timed_idea = { idea = electoral_honeymoon days = 30 }
+	if = {
+		limit = {
+			minority_government = yes
+		}
+		hidden_effect = {
+			add_ideas = minority_government
+		}
+	}
+	if = {
+	    limit = {
+		    original_tag = GER
+			has_global_flag = akk_elected
+		}
+		clr_global_flag = akk_elected
+		create_country_leader = {
+	        name = "Annegret Kramp-Karrenbauer"
+	        picture = "Annegret_Kramp_Karrenbauer.dds"
+	        ideology = christian_democrat
+        }
+    }
+	if = {
+	    limit = {
+			original_tag = GER
+			has_global_flag = merz_elected
+		}
+		clr_global_flag = merz_elected
+		create_country_leader = {
+	        name = "Friedrich Merz"
+	        picture = "Friedrich_Merz.dds"
+	        ideology = christian_democrat
+			traits = {
+				friend_of_america
+			}
+        }
+	}
+	if = {
+	    limit = {
+		    original_tag = NAU
+			NOT = { has_global_flag = aingimea_president }
+	    }
+		set_global_flag = aingimea_president
+		country_event = nauru.1
+	}
+	if = {
+	    limit = {
+		    original_tag = ITA
+			has_government = national_conservative
+			has_country_flag = coalition_right_wing_nationalist
+			NOT = { has_global_flag = conte_pm }
+		}
+	    set_global_flag = conte_pm
+		country_event = italy.1
+	}
+	if = {
+	    limit = {
+		    original_tag = SIA
+			NOT = { has_global_flag = palang_pracharath_flag }
+	    }
+		set_global_flag = palang_pracharath_flag
+		set_party_name = {
+		    ideology = national_conservative
+		    long_name = SIA_national_conservative_party_PPP_long
+		    name = SIA_national_conservative_party_PPP
+	    }
+	}
+	if = {
+	    limit = {
+		    original_tag = BRM
+			has_government = social_democrat
+			NOT = { has_global_flag = myanmar_coup }
+		}
+	    set_global_flag = myanmar_coup
+		hidden_effect = {
+			country_event = { 
+				id = myanmar.1
+				days = 85
+			}
+		}
+	}
+	if = {
+	    limit = {
+		    original_tag = AND
+			has_government = conservative
+		}
+		country_event = andorra.1
+	}
+	if = {
+		limit = {
+			has_idea = ENG_conservative_dup_agreement
+		}
+		remove_ideas =  ENG_conservative_dup_agreement
+	}
+	if  = {
+		limit = {
+			has_country_leader = {
+				name = "Alain Berset"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Simonetta Sommaruga"
+			picture = GFX_Portrait_SWI_Simonetta_Sommaruga
+			ideology = social_democrat_ideology
+		}
+	}
+	if  = {
+		limit = {
+			has_country_leader = {
+				name = "Ueli Maurer"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = national_conservative
+		create_country_leader = {
+			name = "Guy Parmelin"
+			picture = GFX_Portrait_SWI_Guy_Parmelin
+			ideology = national_conservative_ideology
+		}
+	}
+}

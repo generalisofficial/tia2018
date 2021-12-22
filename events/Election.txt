@@ -28,7 +28,7 @@ country_event = {
 }
 
 
-#Election - First-past-the-post
+#Election - Presidential
 country_event = {
 	id = election.1
 	title = election.1.t
@@ -37,10 +37,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = {
-			has_idea = parliamentary_system 
-			has_idea = swiss_political_system
-		}
+		has_idea = presidential_republic
 	}
 	
 	immediate = {
@@ -244,7 +241,7 @@ country_event = {
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
 			ruling_party = right_wing_nationalist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
 		election_pulse = yes
@@ -264,7 +261,7 @@ country_event = {
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
 			ruling_party = fascist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
 		election_pulse = yes
@@ -284,7 +281,7 @@ country_event = {
 		multiply_variable = { ROOT.Coalition = 100 }
 		set_politics = {
 			ruling_party = islamist
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		set_parliament_graphics = yes
 		election_pulse = yes
@@ -298,13 +295,29 @@ country_event = {
 		trigger = {
 			monarchist_plurality_popularity = yes
 		}
-		custom_effect_tooltip = TT_parliamentary_election_results
+		custom_effect_tooltip = TT_parliamentary_monarchy
+		add_ideas = absolute_monarchy
 		set_country_flag = coalition_monarchist
-        set_variable = { ROOT.Coalition = monarchist_seats }
-		multiply_variable = { ROOT.Coalition = 100 }
+		set_variable = { ROOT.Coalition = 100 }
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 100 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
 		set_politics = {
 			ruling_party = monarchist
 			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.1
 		}
 		set_parliament_graphics = yes
 		election_pulse = yes
@@ -398,7 +411,7 @@ country_event = {
 	}
 }
 
-#Election - Swiss
+#Election - Legislative
 country_event = {
 	id = election.2
 	title = election.2.t
@@ -406,48 +419,45 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	trigger = {
-	    has_idea = swiss_political_system
-	}
-	
 	immediate = {
-	    break_coalition = yes
+	    set_variable = { communist_seats = party_popularity@communist }
+		multiply_variable = { communist_seats = 100 }
+		set_variable = { socialist_seats = party_popularity@socialist }
+		multiply_variable = { socialist_seats = 100 }
+		set_variable = { progressive_seats = party_popularity@progressive }
+		multiply_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_seats = 100 }
+		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
+		multiply_variable = { classical_liberal_seats = 100 }
+		set_variable = { conservative_seats = party_popularity@conservative }
+		multiply_variable = { conservative_seats = 100 }
+		set_variable = { national_conservative_seats = party_popularity@national_conservative }
+		multiply_variable = { national_conservative_seats = 100 }
+		set_variable = { monarchist_seats = party_popularity@monarchist }
+		multiply_variable = { monarchist_seats = 100 }
+		set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
+		multiply_variable = { right_wing_nationalist_seats = 100 }
+		set_variable = { fascist_seats = party_popularity@fascist }
+		multiply_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = party_popularity@islamist }
+		multiply_variable = { islamist_seats = 100 }
+		set_variable = { ROOT.Coalition = party_popularity@ruling_party }
+		multiply_variable = { ROOT.Coalition = 100 }
+		set_parliament_graphics = yes
 	}
 	
 	option = {
 		name = election.2.o1
 		custom_effect_tooltip = TT_parliamentary_election_results
-		if  = {
+		if = {
 			limit = {
-				has_country_leader = {
-					name = "Alain Berset"
-					ruling_only = yes
-				}
+				minority_government = yes
 			}
-			retire_ideology_leader = social_democrat
-			create_country_leader = {
-				name = "Simonetta Sommaruga"
-				picture = GFX_Portrait_SWI_Simonetta_Sommaruga
-				ideology = social_democrat_ideology
-			}
+			add_ideas = minority_government
 		}
-		if  = {
-			limit = {
-				has_country_leader = {
-					name = "Ueli Maurer"
-					ruling_only = yes
-				}
-			}
-			retire_ideology_leader = national_conservative
-			create_country_leader = {
-				name = "Guy Parmelin"
-				picture = GFX_Portrait_SWI_Guy_Parmelin
-				ideology = national_conservative_ideology
-			}
-		}
-		quickset_parliament = yes
-		election_pulse = yes
-		set_country_flag = forming_government_1
     }
 }
 
@@ -460,7 +470,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-	    has_idea = parliamentary_system
+	    has_idea = parliamentary_republic
 	}
 	
 	immediate = {
@@ -482,6 +492,7 @@ country_event = {
 					classical_liberal > 0.5
 					conservative > 0.5
 					national_conservative > 0.5
+					monarchist > 0.5
 					right_wing_nationalist > 0.5
 					fascist > 0.5
 					islamist > 0.5
@@ -720,64 +731,31 @@ country_event = {
 		trigger = {
 			monarchist > 0.5
 		}
-		
+		custom_effect_tooltip = TT_parliamentary_monarchy
+		add_ideas = absolute_monarchy
+		set_country_flag = coalition_monarchist
+		set_variable = { ROOT.Coalition = 100 }
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 100 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
 		set_politics = {
 			ruling_party = monarchist
-			elections_allowed = yes
+			elections_allowed = no
 		}
-		set_country_flag = coalition_monarchist
-        set_variable = { ROOT.Coalition = monarchist_seats }
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.1
+		}
 		set_parliament_graphics = yes
 		election_pulse = yes
 	}
-}
-
-#Election - Legislative
-country_event = {
-	id = election.5
-	title = election.5.t
-	desc = election.5.d
-	
-	is_triggered_only = yes
-	
-	immediate = {
-	    set_variable = { communist_seats = party_popularity@communist }
-		multiply_variable = { communist_seats = 100 }
-		set_variable = { socialist_seats = party_popularity@socialist }
-		multiply_variable = { socialist_seats = 100 }
-		set_variable = { progressive_seats = party_popularity@progressive }
-		multiply_variable = { progressive_seats = 100 }
-		set_variable = { social_democrat_seats = party_popularity@social_democrat }
-		multiply_variable = { social_democrat_seats = 100 }
-		set_variable = { social_liberal_seats = party_popularity@social_liberal }
-		multiply_variable = { social_liberal_seats = 100 }
-		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
-		multiply_variable = { classical_liberal_seats = 100 }
-		set_variable = { conservative_seats = party_popularity@conservative }
-		multiply_variable = { conservative_seats = 100 }
-		set_variable = { national_conservative_seats = party_popularity@national_conservative }
-		multiply_variable = { national_conservative_seats = 100 }
-		set_variable = { monarchist_seats = party_popularity@monarchist }
-		multiply_variable = { monarchist_seats = 100 }
-		set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
-		multiply_variable = { right_wing_nationalist_seats = 100 }
-		set_variable = { fascist_seats = party_popularity@fascist }
-		multiply_variable = { fascist_seats = 100 }
-		set_variable = { islamist_seats = party_popularity@islamist }
-		multiply_variable = { islamist_seats = 100 }
-		set_variable = { ROOT.Coalition = party_popularity@ruling_party }
-		multiply_variable = { ROOT.Coalition = 100 }
-		set_parliament_graphics = yes
-	}
-	
-	option = {
-		name = election.5.o1
-		custom_effect_tooltip = TT_parliamentary_election_results
-		if = {
-			limit = {
-				minority_government = yes
-			}
-			add_ideas = minority_government
-		}
-    }
 }

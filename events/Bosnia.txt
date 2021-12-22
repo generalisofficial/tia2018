@@ -8,7 +8,7 @@ country_event = { #Bosnian Serb Declaration of Independence
 	is_triggered_only = yes
 	
 	option = {
-		name = bosnia.1.a
+		name = bosnia.1.o1
 		add_political_power = -200
 		release = RSE
 		add_named_threat = { threat = 5 name = "Bosnian Serbs Declare Independence" }
@@ -16,7 +16,7 @@ country_event = { #Bosnian Serb Declaration of Independence
 	}
 	
 	option = {
-		name = bosnia.1.b
+		name = bosnia.1.o2
 		add_political_power = -100
 		release = RSE
 		add_named_threat = { threat = 15 name = "Second Bosnian War" }	
@@ -36,7 +36,7 @@ news_event = { #Bosnia leaves the Dayton Agreement
 	major = yes
 	
 	option = {
-		name = bosnia.2.a
+		name = bosnia.2.o1
 	}
 }
 
@@ -51,7 +51,7 @@ news_event = { #Bosnian Serb Declaration of Independence - News
 	major = yes
 	
 	option = {
-		name = bosnia.3.a
+		name = bosnia.3.o1
 	}
 }
 
@@ -66,7 +66,7 @@ news_event = { #Second Bosnian War
 	major = yes
 	
 	option = {
-		name = bosnia.4.a
+		name = bosnia.4.o1
 	}
 }
 
@@ -78,14 +78,14 @@ country_event = { #Bosnian Serbs apply for Union
 	is_triggered_only = yes
 	
 	option = {
-		name = bosnia.5.a
+		name = bosnia.5.o1
 		annex_country = { target = RSE transfer_troops = yes }
 		add_named_threat = { threat = 3 name = "Bosnian Serbs unify with Serbia" }	
 		add_political_power = 25
 	}
 	
 	option = {
-		name = bosnia.5.b
+		name = bosnia.5.o2
 		BOS = { country_event = bosnia.6 }
 	}
 }
@@ -98,6 +98,6 @@ country_event = { #Serbia rejects unification
 	is_triggered_only = yes
 	
 	option = {
-		name = bosnia.6.a
+		name = bosnia.6.o1
 	}
 }

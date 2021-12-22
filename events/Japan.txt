@@ -14,14 +14,14 @@ country_event = { #2018 LDP leadership election
 	}
 	
 	option = {
-		name = japan.1.a
+		name = japan.1.o1
 		ai_chance = {
 			factor = 68
 		}
 	}
 	
 	option = {
-		name = japan.1.b
+		name = japan.1.o2
 		ai_chance = {
 			factor = 32
 		}
@@ -48,12 +48,12 @@ country_event = { #2019 Imperial Transition
 	}
 	
 	option = {
-		name = japan.2.a
+		name = japan.2.o1
 		retire_ideology_leader = monarchist
 		create_country_leader = {
 	        name = "Naruhito"
 	        picture = GFX_Portrait_JAP_Naruhito
-	        ideology = absolute_monarchist
+	        ideology = monarchist_ideology
         }
 	}
 }

@@ -98,6 +98,8 @@ add_ideas = {
 	idea_united_nations_security_council_member
 	shanghai_cooperation_organization_member
 	free_trade
+	one_party_state
+	state_atheism
 }
 
 give_guarantee = PRK
@@ -171,9 +173,9 @@ add_opinion_modifier = { target = CHI modifier = rival }
 add_opinion_modifier = { target = CHI modifier = rival_trade }
 
 #National People's Congress
-set_variable = { communist_seats = 71.10 }
-set_variable = { socialist_seats = 23.3 }
-set_variable = { progressive_seats = 5.60 }
+set_variable = { communist_seats = 100 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
@@ -191,18 +193,13 @@ add_to_variable = { ROOT.Coalition = communist_seats }
 
 set_politics = {
 	ruling_party = communist
-	last_election = "2017.10.1"
-	election_frequency = 60
-	elections_allowed = yes
+	last_election = "2018.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 set_popularities = {
-    communist = 71.10
-    socialist = 23.3
-    progressive = 5.60
+    communist = 100
 }
 
 recruit_character = PRC_xi_jinping
-recruit_character = PRC_wan_exiang
-recruit_character = PRC_ding_zhongli
-recruit_character = PRC_jin_yuzhang

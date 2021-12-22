@@ -57,19 +57,6 @@ ideas = {
 			
 		}	
 		
-		idea_non_state_actor = {
-			picture = non_state_actor
-		
-			allowed = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_factor = -0.5
-				justify_war_goal_time = -1.0
-				enemy_justify_war_goal_time = -1.0
-			}
-		}
-		
 		salafist_jihadist_group = {
 			picture = salafist_jihadist_group
 		
@@ -107,6 +94,15 @@ ideas = {
 			modifier = {
 			    political_power_gain = -0.1
 				stability_factor = -0.1
+			}
+		}
+
+		electoral_honeymoon= {
+			picture = ballot_box
+
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = 0.2
 			}
 		}
 

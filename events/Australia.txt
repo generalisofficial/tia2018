@@ -14,16 +14,17 @@ country_event = { #Centre Alliance
 	}
 	
 	option = {
-		name = australia.1.a
-		set_party_name = {
-		    ideology = social_liberal
-		    long_name = "Centre Alliance"
-		    name = "Centre Alliance"
-	    }
+		name = australia.1.o1
+		retire_ideology_leader = social_liberal
+		create_country_leader = {
+	        name = "Rebekha Sharkie"
+	        picture = GFX_Portrait_AST_Rebekha_Sharkie
+	        ideology = centrist
+        }
 	}
 }
 
-country_event = { #2018 National Party of Australia leadership election
+country_event = { #Bob Katter hands KAP leadership to Robbie Katter
 	id = australia.2
 	title = australia.2.t
 	desc = australia.2.d
@@ -32,33 +33,16 @@ country_event = { #2018 National Party of Australia leadership election
 
 	trigger = {
 		original_tag = AST
-		date > 2018.2.25
-		date < 2019.1.1
+		date > 2020.2.3
 	}
 	
 	option = {
-		name = australia.2.a
-		ai_chance = {
-			factor = 60
-		}
-		retire_ideology_leader = conservative
+		name = australia.2.o1
+		retire_ideology_leader = national_conservative
 		create_country_leader = {
-	        name = "Michael McCormack"
-	        picture = GFX_Portrait_AST_Michael_McCormack
-	        ideology = liberal_conservative
-        }
-	}
-	
-	option = {
-		name = australia.2.b
-		ai_chance = {
-			factor = 40
-		}
-		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "George Christensen"
-	        picture = GFX_Portrait_AST_George_Christensen
-	        ideology = liberal_conservative
+	        name = "Robbie Katter"
+	        picture = GFX_Portrait_AST_Robbie_Katter
+	        ideology = national_conservative_ideology
         }
 	}
 }
@@ -77,7 +61,7 @@ country_event = { #2018 Liberal Party of Australia leadership spills
 	}
 	
 	option = {
-		name = australia.3.a
+		name = australia.3.o1
 		ai_chance = {
 			factor = 53
 		}
@@ -90,7 +74,7 @@ country_event = { #2018 Liberal Party of Australia leadership spills
 	}
 	
 	option = {
-		name = australia.3.b
+		name = australia.3.o2
 		ai_chance = {
 			factor = 47
 		}
@@ -117,7 +101,7 @@ country_event = { #2019 Australian Labor Party leadership election
 	}
 	
 	option = {
-		name = australia.4.a
+		name = australia.4.o1
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 	        name = "Anthony Albanese"

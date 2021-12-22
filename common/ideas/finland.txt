@@ -1,20 +1,11 @@
 ideas = {
-
 	country = {
-	
-		finnish_neutrality = {
+
+		sisu = {
 			picture = sisu
 			
 			allowed = {
 				always = no
-			}
-
-			cancel = {
-				OR = {
-					has_war = yes
-					is_in_faction = yes
-					is_democracy = no
-				}
 			}
 			
 			modifier = {
@@ -25,27 +16,6 @@ ideas = {
 				conscription = 0.01
 			}
 		}
-	
-		sisu = {
-			picture = sisu
-			
-			allowed = {
-				always = no
-			}
-
-			cancel = {
-				OR = {
-					is_in_faction = yes
-					is_democracy = no
-				}
-			}
-			
-			modifier = {
-				army_morale_factor = 0.2
-				army_core_attack_factor = 0.3
-				army_core_defence_factor = 0.3
-				conscription = 0.02
-			}
-		}
+		
 	}
 }

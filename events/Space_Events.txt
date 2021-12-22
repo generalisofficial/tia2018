@@ -16,14 +16,14 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = space.1.a
+		name = space.1.o1
 		trigger = {
 			tag = USA
 		}
 	}
 
 	option = {
-		name = space.1.b
+		name = space.1.o2
 		trigger = {
 			NOT = { tag = USA }
 		}
@@ -40,7 +40,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = space.2.a
+		name = space.2.o1
 	}
 }
 

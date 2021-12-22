@@ -91,7 +91,7 @@ add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
 	non_aligned_movement_member
-	parliamentary_system
+	parliamentary_republic
 }
 
 set_country_flag = catholic
@@ -99,9 +99,9 @@ set_country_flag = catholic
 #House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 43.55 }
-set_variable = { social_democrat_seats = 56.45 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 82.36 }
+set_variable = { social_liberal_seats = 17.64 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
@@ -117,15 +117,15 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2014.3.24"
-	election_frequency = 48
+	last_election = "2013.3.21"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    progressive = 40.76
-    social_democrat = 59.24
+    social_liberal = 11.76
+    social_democrat = 88.24
 }
 
-recruit_character = ANT_baldwin_spencer
+recruit_character = ANT_harold_lovell
 recruit_character = ANT_gaston_browne

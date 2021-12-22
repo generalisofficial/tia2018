@@ -99,20 +99,20 @@ add_ideas = {
 	population_growth_rapid
 	limited_conscription
 	non_aligned_movement_member
-	presidential_system
+	presidential_republic
 }
 
 set_country_flag = catholic
 
 #National Congress of Honduras
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 23.44 }
+set_variable = { socialist_seats = 23.43 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 3.13 }
+set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 20.31 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 53.12 }
+set_variable = { classical_liberal_seats = 4.68 }
+set_variable = { conservative_seats = 0.78 }
+set_variable = { national_conservative_seats = 50.8 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -125,19 +125,21 @@ add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2017.11.26"
+	last_election = "2017.11.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 53.12
-    social_liberal = 20.31
-    socialist = 23.44
-	social_democrat = 3.13
+	socialist = 39.06
+	national_conservative = 33.61
+	social_liberal = 17.96
+	classical_liberal = 8.59
+	conservative = 0.78
 }
 
 recruit_character = HON_juan_orlando_hernandez
-recruit_character = HON_manuel_zelaya
-recruit_character = HON_luis_orlando_zelaya_medrano
-recruit_character = HON_guillermo_enrique_valle_m
+recruit_character = HON_carlos_mauricio_portillo
+recruit_character = HON_salvador_nasralla
+recruit_character = HON_yani_rosenthal
+recruit_character = HON_xiomara_castro

@@ -14,7 +14,7 @@ country_event = { #2018 UKIP leadership election
 	}
 	
 	option = {
-		name = britain.1.a
+		name = britain.1.o1
 		retire_ideology_leader = right_wing_nationalist
 		create_country_leader = {
 	        name = "Gerard Batten"
@@ -38,7 +38,7 @@ country_event = { #2019 Liberal Democrats leadership election
 	}
 	
 	option = {
-		name = britain.2.a
+		name = britain.2.o1
 		ai_chance = {
 			factor = 63
 		}
@@ -51,7 +51,7 @@ country_event = { #2019 Liberal Democrats leadership election
 	}
 	
 	option = {
-		name = britain.2.b
+		name = britain.2.o2
 		ai_chance = {
 			factor = 37
 		}
@@ -78,7 +78,7 @@ country_event = { #2019 Conservative Party leadership election
 	}
 	
 	option = {
-		name = britain.3.a
+		name = britain.3.o1
 		ai_chance = {
 			factor = 51
 		}
@@ -91,7 +91,7 @@ country_event = { #2019 Conservative Party leadership election
 	}
 	
 	option = {
-		name = britain.3.b
+		name = britain.3.o2
 		ai_chance = {
 			factor = 25
 		}
@@ -104,7 +104,7 @@ country_event = { #2019 Conservative Party leadership election
 	}
 	
 	option = {
-		name = britain.3.c
+		name = britain.3.o3
 		ai_chance = {
 			factor = 24
 		}
@@ -131,7 +131,7 @@ country_event = { #Blaiklock Resigns
 	}
 	
 	option = {
-		name = britain.4.a
+		name = britain.4.o1
 		add_popularity = { ideology = national_conservative popularity = 0.1 }
 		retire_ideology_leader = national_conservative
 		create_country_leader = {
@@ -156,7 +156,7 @@ country_event = { #Poisoning of Sergei and Yulia Skripal
 	}
 	
 	option = {
-		name = britain.5.a
+		name = britain.5.o1
 		news_event = britain.6
 		add_opinion_modifier = { target = SOV modifier = skripal_poisoning }
 	}
@@ -172,14 +172,14 @@ news_event = { #Poisoning of Sergei and Yulia Skripal
 	major = yes
 	
 	option = {
-		name = britain.6.a
+		name = britain.6.o1
 		trigger = {
 	        NOT = { original_tag = ENG }
 	    }
 	}
 	
 	option = {
-		name = britain.6.b
+		name = britain.6.o2
 		trigger = {
 	        original_tag = ENG
 	    }
@@ -200,7 +200,7 @@ country_event = { #2019 UKIP leadership election
 	}
 	
 	option = {
-		name = britain.7.a
+		name = britain.7.o1
 		ai_chance = {
 			factor = 53
 		}
@@ -213,7 +213,7 @@ country_event = { #2019 UKIP leadership election
 	}
 	
 	option = {
-		name = britain.7.b
+		name = britain.7.o2
 		ai_chance = {
 			factor = 47
 		}

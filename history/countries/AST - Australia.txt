@@ -104,7 +104,7 @@ add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
 	free_trade
-	parliamentary_system
+	parliamentary_republic
 	federal
 }
 
@@ -118,10 +118,10 @@ set_variable = { corporate_tax = 30 }
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0.67 }
-set_variable = { social_democrat_seats = 46.00 }
+set_variable = { social_democrat_seats = 46.62 }
 set_variable = { social_liberal_seats = 0.67 }
-set_variable = { classical_liberal_seats = 41.33 }
-set_variable = { conservative_seats = 10.66 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 51.37 }
 set_variable = { national_conservative_seats = 0.67 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -130,25 +130,22 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_classical_liberal
 set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
-	ruling_party = classical_liberal
+	ruling_party = conservative
 	last_election = "2016.5.18"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 42.4
-    social_democrat = 45.03
-    conservative = 10.59
-    progressive = 0.66
-    national_conservative = 0.66
-    social_liberal = 0.66
+    conservative = 52.05
+    social_democrat = 45.94
+    progressive = 0.67
+    national_conservative = 0.67
+    social_liberal = 0.67
 }
 
 add_opinion_modifier = {
@@ -191,46 +188,12 @@ add_opinion_modifier = {
 	modifier = five_eyes_agreement
 }
 
-recruit_character = AST_diaa_mohamed
 recruit_character = AST_jim_saleam
 recruit_character = AST_pauline_hanson
 recruit_character = AST_bob_katter
-recruit_character = AST_barnaby_joyce
 recruit_character = AST_malcolm_turnbull
+recruit_character = AST_david_leyonhjelm
 recruit_character = AST_nick_xenophon
 recruit_character = AST_bill_shorten
 recruit_character = AST_richard_di_natale
 recruit_character = AST_bob_briton
-recruit_character = AST_angus_campbell
-recruit_character = AST_david_morrison
-recruit_character = AST_sir_peter_cosgrove
-recruit_character = AST_timothy_barrett
-recruit_character = AST_mark_bonser
-recruit_character = AST_mark_campbell
-recruit_character = AST_mark_binskin
-recruit_character = AST_rick_burr
-recruit_character = AST_gus_gilmore
-recruit_character = AST_paul_mclachlan
-recruit_character = AST_ben_james
-recruit_character = AST_stephen_porter
-recruit_character = AST_david_westphalen
-recruit_character = AST_jeff_sengelman
-recruit_character = AST_gavin_leo_davis
-recruit_character = AST_warren_mcdonald
-recruit_character = AST_gavin_turnbull
-recruit_character = AST_robert_swanwick
-recruit_character = AST_sharon_pearce
-recruit_character = AST_john_cantwell
-recruit_character = AST_shane_caughey
-recruit_character = AST_mike_hindmarsh
-recruit_character = AST_stuart_smith
-recruit_character = AST_simone_wilkie
-recruit_character = AST_ray_griggs
-recruit_character = AST_michael_noonan
-recruit_character = AST_stuart_mayer
-recruit_character = AST_david_johnston
-recruit_character = AST_jonathan_mead
-recruit_character = AST_michael_uzzell
-recruit_character = AST_brett_brace
-recruit_character = AST_bruce_kafer
-recruit_character = AST_gary_wight

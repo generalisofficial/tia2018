@@ -227,10 +227,20 @@ guiTypes = {
 					position = { x = 330 y = 25 }
 					size = { width = 255 height = 60 }
 					clipping = no
-							
+					
+					instantTextboxType = {
+						name = "ruling_party_text"
+						position = { x = -50 y = -24 }
+						font = "hoi_18mbs"
+						text = "Ruling Party"
+						maxWidth = 245
+						maxHeight = 20
+						fixedsize = yes
+					}
+
 					instantTextboxType = {
 						name = "party_name"
-						position = { x = 5 y = -5 }
+						position = { x = -7 y = 5 }
 						font = "hoi_16mbs"
 						text = "party"
 						maxWidth = 245
@@ -240,19 +250,19 @@ guiTypes = {
 					
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = 5 y = 10 }
+						position = { x = -7 y = 20 }
 						font = "hoi_16mbs"
 						text = "ideology"
-						maxWidth = 245
+						maxWidth = 100
 						maxHeight = 20
 					}
 					
 					instantTextboxType = {
 						name = "elections"
-						position = { x = 5 y = 25 }
+						position = { x = 105 y = 8 }
 						font = "hoi_16mbs"
 						text = "elections"
-						maxWidth = 245
+						maxWidth = 100
 						maxHeight = 20
 					}
 				}
@@ -745,7 +755,7 @@ guiTypes = {
 			iconType ={
 				name = "ideology_icon"
 				spriteType = "GFX_ideology_unknown"
-				position = { x = 250 y = 123 }
+				position = { x = 246 y = 128 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}

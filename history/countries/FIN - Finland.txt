@@ -102,10 +102,9 @@ add_ideas = {
 	idea_eu_member
     nordic_council_member
 	limited_conscription
-	finnish_neutrality
 	sisu
 	the_euro
-	parliamentary_system
+	parliamentary_republic
 }
 
 set_country_flag = protestant
@@ -115,21 +114,23 @@ set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 6 }
 set_variable = { progressive_seats = 7.5 }
 set_variable = { social_democrat_seats = 17.5 }
-set_variable = { social_liberal_seats = 29.51 }
-set_variable = { classical_liberal_seats = 28.49 }
-set_variable = { conservative_seats = 2.5 }
-set_variable = { national_conservative_seats = 8.5 }
+set_variable = { social_liberal_seats = 29.5 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 21.5 }
+set_variable = { national_conservative_seats = 9.5 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 8.5 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_social_liberal
-set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_conservative
+set_country_flag = coalition_national_conservative
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = social_liberal
@@ -139,22 +140,22 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 19.5
-    conservative = 2.5
-    classical_liberal = 19.5
+    right_wing_nationalist = 19.5
+    conservative = 21.5
+    classical_liberal = 0.5
     social_liberal = 20.5
     social_democrat = 20
     progressive = 10
     socialist = 8
 }
 
-recruit_character = FIN_juha_sipila
+recruit_character = FIN_tuukka_kuru
 recruit_character = FIN_jussi_halla_aho
+recruit_character = FIN_sampo_terho
 recruit_character = FIN_petteri_orpo
+recruit_character = FIN_harry_harkimo
+recruit_character = FIN_juha_sipila
 recruit_character = FIN_antti_rinne
-recruit_character = FIN_otto_rutanen
-recruit_character = FIN_henri_aitakari
-recruit_character = FIN_sari_essayah
 recruit_character = FIN_touko_aalto
 recruit_character = FIN_li_andersson
 recruit_character = FIN_juha_pekka_vaisanen

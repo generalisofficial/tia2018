@@ -29,6 +29,16 @@ scripted_gui = {
 			always = yes
 		}
 	}
+	government_form_diplomacy = {
+		window_name = "government_form_diplomacy_container"
+ 
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+ 
+		visible = {
+			always = yes
+		}
+	}
 	pie_chart_sg = {
 		window_name = "pie_container"
 

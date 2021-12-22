@@ -16,7 +16,7 @@
 
  #Elections
  election.1.t: "General Election"
- election.1.d: "General elections are being held, and the votes will soon be counted. With our nation adhering to a first-past-the-post (FPTP) system, the party with the most votes will win the election and form the new government, with or without a majority."
+ election.1.d: "General elections are being held, and the votes will soon be counted. With our nation adhering to a first-past-the-post (FPTP) system, the party with the most votes will win the election and form the new government alone, with or without a parliamentary majority."
  election.1.o1: "The Communist candidate has won!"
  election.1.o2: "The Socialist candidate has won!"
  election.1.o3: "The Social Democratic candidate has won!"
@@ -31,12 +31,12 @@
  #election.1.o12:
  election.1.o13: "The Monarchist candidate has won!"
  election.1.o14: "§RCommit Electoral Fraud§!"
- election.2.t: "Swiss Federal Council Election"
- election.2.d: "With the expiration of President [SWI.GetLeader]'s term, it is now time to hold the annual elections for the next President, and subsequently the entire Federal Council itself."
- election.2.o1: "Here we are yet again."
+ election.2.t: "Legislative Election"
+ election.2.d: "Today, it is time for the snap elections for our [ROOT.GetParliamentName], triggered by the President's dissolution of it. The results today will decide if the government will gain a legislative majority, or become a minority government."
+ election.2.o1: "Certify Results"
  election.3.t: "Parliamentary Election"
  election.3.d: "Today, it is time for the scheduled elections for our [ROOT.GetParliamentName]. The results today will decide who gets to form the next government and who gets to be a part of it."
- election.3.o1: "Count Votes"
+ election.3.o1: "Certify Results"
  election.4.t: "Single-Party Government"
  election.4.d: "In the recent elections, one party has managed to rack up over 50% of the votes, and will now be ruling alone!"
  election.4.o1: "The Communist Party has won!"
@@ -51,9 +51,6 @@
  election.4.o10: "The Fascist Party has won!"
  election.4.o11: "The Islamist Party has won!"
  election.4.o12: "The Monarchist Party has won!"
- election.5.t: "Legislative Election"
- election.5.d: "Today, it is time for the snap elections for our [ROOT.GetParliamentName], triggered by the President's dissolution of it. The results today will decide if the government will gain a legislative majority, or become a minority government."
- election.5.o1: "Count Votes"
 
  #Factions
  factions.1.t: "[From.GetNameDef] joins NATO"
@@ -67,83 +64,83 @@
  #Estonia
  estonia.2.t: "Eesti Reformierakond - New Party Leader"
  estonia.2.d: "Today, Kaja Kallas was elected as the leader of Eesti Reformierakond. Last year previous leader Hanno Pevkur announced that he would not run for re-election, and now he has his successor chosen."
- estonia.2.a: "Congratulations!"
+ estonia.2.o1: "Congratulations!"
  estonia.3.t: "Sotsiaaldemokraatlik Erakond - New Party Leader"
  estonia.3.d: "Today, Indrek Saar was elected as the leader of Sotsiaaldemokraatlik Erakond. With previous leader Jevgeni Ossinovski stepping down due to undesirable election results, the former Minister of Culture was chosen to take up the job."
- estonia.3.a: "Oh, well!"
+ estonia.3.o1: "Oh, well!"
 
  #New Zealand
  new_zealand.1.t: "2018 New Zealand National Party leadership election"
  new_zealand.1.d: "After last month's resignation of party leader Bill English, a leadership election was called. Out of 4 candidates, only 2 have advanced to the final round. These candidates are: Tauranga MP and former Minister of Transport Simon Bridges, and Selwyn MP and former Minister of Justice Amy Adams. Who wins, Woman or Minority?"
- new_zealand.1.a: "Simon Bridges"
- new_zealand.1.b: "Amy Adams"
+ new_zealand.1.o1: "Simon Bridges"
+ new_zealand.1.o2: "Amy Adams"
 
  #Ireland
  ireland.1.t: "Sinn Féin - New Party Leader"
  ireland.1.d: "Today, Mary Lou McDonald was elected as the leader of Sinn Féin. Previous party leader Gerry Adams, having ruled since 1983, chose not to stand for re-election this year, and McDonald was elected to the post unopposed."
- ireland.1.a: "Out with the old, in with the new!"
+ ireland.1.o1: "Out with the old, in with the new!"
 
  #Kosovo
  kosovo.1.t: "Vetëvendosje - New Party Leader"
  kosovo.1.d: "Today, Albin Kurti was elected as the leader of Vetëvendosje. With the party in crisis and previous party leader Visar Ymeri recently resigning, the party hopes for a better year with new leadership."
- kosovo.1.a: "Alright then.."
+ kosovo.1.o1: "Alright then.."
 
  #Sweden
  sweden.1.t: "Miljöpartiet - New Party Leader"
  sweden.1.d: "Today, Per Bolund was elected as the leader of Miljöpartiet. Previous party leader Gustav Fridolin, having left his position as Minister of Education months earlier, as well as announcing his decision not to stand for re-election, was today replaced by Per Bolund, the incumbent Minister for Housing."
- sweden.1.a: "Irrelevant.."
+ sweden.1.o1: "Irrelevant.."
  sweden.2.t: "2021 Social Democratic Party Congress"
  sweden.2.d: "After a long 9 year term, former union leader Stefan Löfven today resigned from his position as party leader of the Social Democratic Workers' Party. As the only candidate, economist Magdalena Andersson was chosen as his successor. On another note, Tobias Baudin was elected as the new party General Secretary, replacing Lena Rådström Baastad."
- sweden.2.a: "We thank you for your 9 years of service!"
+ sweden.2.o1: "We thank you for your 9 years of service!"
 
  #Denmark
  denmark.1.t: "Venstre - New Party Leader"
  denmark.1.d: "After recent pressure by party members, Venstre's Lars Løkke Rasmussen has resigned from his post as party leader. After internal discussions, Jakob Ellemann-Jensen has been chosen as his successor."
- denmark.1.a: "A welcome change!"
+ denmark.1.o1: "A welcome change!"
 
  #Nauru
  nauru.1.t: "President Lionel Aingimea"
  nauru.1.d: "In the recent elections, President Baron Waqa lost his parliament seat in the Boe constituency. Member for Meneng, Lionel Aingimea, was then elected to succeed Waqa."
- nauru.1.a: "Unfortunate for Waqa!"
+ nauru.1.o1: "Unfortunate for Waqa!"
 
  #Austria
  austria.1.t: "NEOS - New Party Leader"
  austria.1.d: "As part of NEOS's scheduled party congress, Beate Meinl-Reisinger has been elected as the new leader of the party, succeeding Matthias Strolz, who resigned from all positions the month before."
- austria.1.a: "Great!"
+ austria.1.o1: "Great!"
  austria.2.t: "SPÖ - New Party Leader"
  austria.2.d: "Following the announcement of SPÖ leader Christian Kern to stand in the 2019 European elections, the party leadership has now given the top job to Pamela Rendi-Wagner, former Minister of Health and Women."
- austria.2.a: "Sure.."
+ austria.2.o1: "Sure.."
  austria.3.t: "JETZT – Liste Pilz"
  austria.3.d: "As part of a major rebranding, the Liste Peter Pilz party, led by Peter Pilz, has now changed its name to JETZT – Liste Pilz, and the new chairman is singer-songwriter Maria Stern, while Pilz has been chosen as the Deputy."
- austria.3.a: "A singer?"
+ austria.3.o1: "A singer?"
 
  #United Kingdom
  britain.1.t: "2018 UKIP leadership election"
  britain.1.d: "After previous UK Independence Party leader Henry Bolton was successfully brought down by a motion of no confidence, a leadership election was called. However, only one candidate has stepped up. Acting party leader Gerard Batten has turned out to be the only candidate, and the election is only a formality. Now, who will win?"
- britain.1.a: "Gerard Batten"
+ britain.1.o1: "Gerard Batten"
  britain.2.t: "2019 Liberal Democrats leadership election"
  britain.2.d: "After previous LibDem leader Vince Cable resigned from his post, a leadership election was called. Two main candidates have emerged, Scottish MP Jo Swinson, and Londoner MP Ed Davey."
- britain.2.a: "Jo Swinson"
- britain.2.b: "Ed Davey"
+ britain.2.o1: "Jo Swinson"
+ britain.2.o2: "Ed Davey"
  britain.3.t: "2019 Conservative Party leadership election"
  britain.3.d: "With previous party leader Theresa May having failed to implement her Brexit policy, she resigned last month and called a leadership election. The final ballot goes down to controversial former Mayor of London, Boris Johnson, Foreign Secretary Jeremy Hunt, and Environment Secretary Michael Gove."
- britain.3.a: "Boris Johnson"
- britain.3.b: "Jeremy Hunt"
- britain.3.c: "Michael Gove"
+ britain.3.o1: "Boris Johnson"
+ britain.3.o2: "Jeremy Hunt"
+ britain.3.o3: "Michael Gove"
  britain.4.t: "Blaiklock Resigns"
  britain.4.d: "Catherine Blaiklock, leader of the recently created Brexit Party, has resigned from her post after being rightly accused of islamophobia. Political veteran and former UKIP leader Nigel Farage has now took up the job, and the party is expected to rocket in the coming months."
- britain.4.a: "Now this is something!"
+ britain.4.o1: "Now this is something!"
  britain.5.t: "Poisoning of Sergei and Yulia Skripal"
  britain.5.d: "This evening, Sergei Skripal, a former Russian military officer and double agent for the our intelligence services, and his daughter Yulia Skripal were poisoned in Salisbury, with a Novichok nerve agent known as A-234. Both victims are currently in critical condition, and evidence points that Russian intelligence services committed the attack."
- britain.5.a: "The Russians will pay!"
+ britain.5.o1: "The Russians will pay!"
  britain.6.t: "Poisoning of Sergei and Yulia Skripal"
  britain.6.d: "This evening, Sergei Skripal, a former Russian military officer and double agent for the UK's intelligence services, and his daughter Yulia Skripal were poisoned in Salisbury, England, with a Novichok nerve agent known as A-234, according to official UK sources and the Organisation for the Prohibition of Chemical Weapons (OPCW). The British government has accused Russia of committing the attack, and has responded by expelling a large amount of Russian diplomats. Relations between the two are at an all-time low, however military conflict seems unlikely."
- britain.6.a: "That was unprovoked!"
- britain.6.b: "How DARE they?!"
+ britain.6.o1: "That was unprovoked!"
+ britain.6.o2: "How DARE they?!"
  britain.7.t: "2019 UKIP leadership election"
  britain.7.d: "Despite only leading the party for around a year, UKIP leader Gerard Batten has resigned, due to disastrous European election results, and the creation of the new Brexit Party. The resulting leadership election is contested by relative newcomers, and the 2 final candidates are Richard Braine and Freddy Vachha, both without major experience."
- britain.7.a: "Richard Braine"
- britain.7.b: "Freddy Vachha"
+ britain.7.o1: "Richard Braine"
+ britain.7.o2: "Freddy Vachha"
 
  #Islamic State
  isis.1.t: "End of the Islamic State"
@@ -156,33 +153,33 @@
  #Bosnia
  bosnia.1.t: "Bosnian Serb Declaration of Independence"
  bosnia.1.d: "With the collapse of the Dayton Agreement, a response from the Serbs was expected. However, not many expected President of Republika Srpska, Milorad Dodik, to step out in the center of Banja Luka, and announce the independence of the Bosnian Serb Republic. Republika Srpska's military units have declared their allegiance to the new Republic, and our commanders are itching for a fight. How will we deal with it?"
- bosnia.1.a: "They made their decision. Let them be."
- bosnia.1.b: "Bosnia shall not be divided!"
+ bosnia.1.o1: "They made their decision. Let them be."
+ bosnia.1.o2: "Bosnia shall not be divided!"
  bosnia.2.t: "Bosnia leaves the Dayton Agreement"
  bosnia.2.d: "The peace that split Bosnia into two has now been torn up. Bosnian leader [BOS.GetLeader] announced today that his country was leaving the Dayton Agreement, the deal between Serbia, Croatia and Bosnia that ended the 4-year-long Bosnian War in 1995. He blamed Croatia and Serbia for making his country an effective protectorate, and vowed to restore Bosnian independence. The international community is condemning his decision, and a response is expected from the Government of Republika Srpska, whose autonomy is now under threat."
- bosnia.2.a: "Does this mean World War 3?"
+ bosnia.2.o1: "Does this mean World War 3?"
  bosnia.3.t: "Bosnian Serb Declaration of Independence"
  bosnia.3.d: "With the collapse of the Dayton Agreement, a response from the Serbs was expected. However, not many expected President of Republika Srpska, Milorad Dodik, to step out in the center of Banja Luka, and announce the independence of the Bosnian Serb Republic. Republika Srpska's military units have declared their allegiance to the new Republic, however a military response from the government of Bosnia and Herzegovina has not yet taken place."
- bosnia.3.a: "A new nation?"
+ bosnia.3.o1: "A new nation?"
  bosnia.4.t: "Second Bosnian War"
  bosnia.4.d: "With the collapse of the Dayton Agreement, a response from the Bosnian Serbs was expected. However, not many expected President of Republika Srpska, Milorad Dodik, to step out in the center of Banja Luka, and announce the independence of the Bosnian Serb Republic. Republika Srpska's military units have declared their allegiance to the new Republic, and a military response from the government of Bosnia and Herzegovina is already taking place. A Second Bosnian War is rapidly breaking out, with international powers expected to intervene."
- bosnia.4.a: "Here we go!"
+ bosnia.4.o1: "Here we go!"
  bosnia.5.t: "Bosnian Serbs apply for Union"
  bosnia.5.d: "Recent events in Bosnia and Herzegovina may have been very beneficial for us. The newly independent government of the Bosnian Serb Republic, now fully at peace and established, has sent in a request for us to accept their entry into Serbia. This would unify us with our brothers in the West, but may cause international tensions. What is our decision?"
- bosnia.5.a: "Accept"
- bosnia.5.b: "Reject"
+ bosnia.5.o1: "Accept"
+ bosnia.5.o2: "Reject"
  bosnia.6.t: "Serbia rejects unification"
  bosnia.6.d: "Serbia has regrettably rejected our unification proposal. We must now find our own way forward, as a nation of the Bosnian Serbs."
- bosnia.6.a: "NO!"
+ bosnia.6.o1: "NO!"
 
  #Finland
  finland.1.t: "Green League - New Party Leader"
  finland.1.d: "Today, Maria Ohisalo was elected as the leader of the Green League at a party meeting in Pori. As the sole candidate, Ohisalo won a landslide, and will now lead the Green League into the future."
- finland.1.a: "Good for them."
+ finland.1.o1: "Good for them."
  finland.2.t: "Antti Rinne Resigns"
  finland.2.d: "Prime Minister §SAntti Rinne§! of the Social Democrats has resigned after a scandal surrounding the alleged mishandling of a postal strike. The Social Democratic Party are now choosing their next candidate for Prime Minister. The candidates are §SSanna Marin§! and §SAntti Lindtman§!. Who will lead the nation forward?"
- finland.2.a: "§SSanna Marin§!"
- finland.2.b: "§SAntti Lindtman§!"
+ finland.2.o1: "§SSanna Marin§!"
+ finland.2.o2: "§SAntti Lindtman§!"
 
  #European Union
  european_union.1.t: "[From.GetName] wants to join the EU"
@@ -226,14 +223,6 @@
  european_union.17.t: "Re-Nationalize the Currency"
  european_union.17.d: "Now that we are no longer involved with the Eurozone, we have - as expected - been informed by the European Central Bank that we need to soon shift the Euro out of use in our country.\n\nIntroducing a new national currency will take quite a bit of political effort - but it has to be done."
  european_union.17.o1: "Let's get it over with."
-
- #Parliament
- parliament.1.t: "Motion of No Confidence - Passed"
- parliament.1.d: "The vote for a Motion of No Confidence has been passed, meaning the current government has fallen and Parliament will be forming a new one. \n\nFor: [?ROOT.Opposition]%\nAgainst: [?ROOT.Coalition]%"
- parliament.1.o1: "Sign"
- parliament.2.t: "Motion of No Confidence - Failed"
- parliament.2.d: "The vote for a Motion of No Confidence has failed, meaning the current government still retains the support of Parliament and will continue governing. \n\nFor: [?ROOT.Opposition]%\nAgainst: [?ROOT.Coalition]%"
- parliament.2.o1: "Nice try."
 
  #FIFA World Cup
  fifa_world_cup.hostOption: "We were good hosts."
@@ -325,31 +314,31 @@
  #Japan
  japan.1.t: "2018 LDP leadership election"
  japan.1.d: "With incumbent leader Shinzo Abe's term as party President running out, a leadership election has been called. Incumbent Shinzo Abe is running for re-election, challenged by veteran politician Shigeru Ishiba. With LDP historically having a significant role in Japanese politics, this election most likely determines the next Prime Minister." 
- japan.1.a: "Shinzo Abe"
- japan.1.b: "Shigeru Ishiba"
+ japan.1.o1: "Shinzo Abe"
+ japan.1.o2: "Shigeru Ishiba"
  japan.2.t: "2019 Imperial Transition"
  japan.2.d: "After 30 years on the Chrysanthemum Throne, Emperor Akihito abdicated on 30 April 2019, being the first Japanese emperor to do so since 1817. This marked the end of the Heisei era and the inception of the Reiwa era, and will precipitate numerous festivities leading up to the accession of his son and successor, Emperor Naruhito."
- japan.2.a: "Congratulations to Naruhito!"
+ japan.2.o1: "Congratulations to Naruhito!"
 
  #Czechia
  czechia.1.t: "2018 ČSSD leadership election"
  czechia.1.d: "After previous leader Bohuslav Sobotka resigned from his post, Milan Chovanek took over as acting leader. A leadership election was called, and the two candidates are Jan Hamacek and Jiri Zimola. Who will take over from Chovanek?"
- czechia.1.a: "Jan Hamacek"
- czechia.1.b: "Jiri Zimola"
+ czechia.1.o1: "Jan Hamacek"
+ czechia.1.o2: "Jiri Zimola"
 
  #Italy
  italy.1.t: "Conte Cabinet"
  italy.1.d: "As part of the new coalition deal between the Five Star Movement and Lega Nord, M5S-affiliated independent Giuseppe Conte will take up the office of Prime Minister, while the 2 parties both get a deputy Prime Minister in the new Conte Cabinet."
- italy.1.a: "Populism is back!"
+ italy.1.o1: "Populism is back!"
  italy.2.t: "Conte Cabinet"
  italy.2.d: "After a heated government formation in Italy, the populist Five Star Movement and the far-right Lega Nord have struck a coalition deal. M5S-affiliated independent Giuseppe Conte will head the new populist, eurosceptic government as Prime Minister, while Matteo Salvini of Lega Nord and Luigi Di Maio of M5S are both Deputy Prime Minister. Salvini has vowed to crack down on immigration, while Di Maio has vowed to focus on welfare."
- italy.2.a: "A win for populism, no doubt!"
+ italy.2.o1: "A win for populism, no doubt!"
 
  #Spain
  spain.1.t: "2018 PP leadership election"
  spain.1.d: "After previous party leader Mariano Rajoy resigned on the 5th of June, a leadership election was called. While many candidates entered, only two made it to the final round. These are Pablo Casado and Soraya Sáenz de Santamaría. Who wins the final round?"
- spain.1.a: "Pablo Casado"
- spain.1.b: "Soraya Sáenz de Santamaría"
+ spain.1.o1: "Pablo Casado"
+ spain.1.o2: "Soraya Sáenz de Santamaría"
 
  #Generic News
  news.1.t: "[Root.GetAdjective] Government Overthrown"
@@ -577,13 +566,13 @@
  political.24.t: "Major Communist Rally"
  political.24.d: "'The world has been run by capitalists for too long! Revolution! Revolution!'\n\nOur communist movements have gathered in the capital. Their central demands boil down to the destruction of capitalism, the removal of the influence of money, followed then by the removal of money itself; and the establishment of a new and futuristic state designed to help the many, not the few."
 
- #Generic
- generic.1.t: "Leader of the Opposition slams government"
- generic.1.d: "In a powerful speech in Parliament, the Leader of the Opposition has denounced the unpopular government, calling us liars and hypocrites. While this is obviously unfounded, the unhappy public are buying it, and the government parties are losing support in the polls."
- generic.1.a: "Sad!"
- generic.2.t: "Head of Government slams opposition"
- generic.2.d: "In a powerful speech in Parliament, the Head of Government has denounced the opposition group, exposing their lies and deceit. With people relatively happy and content, it seems the government parties are making gains in the polls."
- generic.2.a: "Gotcha!"
+ #Politics
+ politics.1.t: "Leader of the Opposition slams government"
+ politics.1.d: "In a powerful speech in Parliament, the Leader of the Opposition has denounced the unpopular government, calling us liars and hypocrites. While this is obviously unfounded, the unhappy public are buying it, and the government parties are losing support in the polls."
+ politics.1.o1: "Sad!"
+ politics.2.t: "Head of Government slams opposition"
+ politics.2.d: "In a powerful speech in Parliament, the Head of Government has denounced the opposition group, exposing their lies and deceit. With people relatively happy and content, it seems the government parties are making gains in the polls."
+ politics.2.o1: "Gotcha!"
 
  #Turkey
  turkey.1.t: "Successful Operation Olive Branch"
@@ -641,45 +630,44 @@
  #Australia
  australia.1.t: "Centre Alliance"
  australia.1.d: "After the departure of Nick Xenophon from his NXT party, the party's name has been officially changed from the Nick Xenophon Team to the Centre Alliance. The party politics will remain the same, only with a new name."
- australia.1.a: "What?"
- australia.2.t: "2018 National Party of Australia leadership election"
- australia.2.d: "With incumbent leader Barnaby Joyce deciding not to stand for re-election, the ensuing leadership election within the National Party of Australia is now taking place. With Michael McCormack being the only candidate for a while, George Christensen has now declared his candidacy. Will National stick with the Liberals, or go another route?"
- australia.2.a: "Michael McCormack"
- australia.2.b: "George Christensen"
+ australia.1.o1: "What?"
+ australia.2.t: "Bob Katter hands KAP leadership to Robbie Katter"
+ australia.2.d: "Bob Katter of Katter's Australian Party has stepped down from the party leadership, in order to be able to focus on his other political duties. Katter's son Robbie has been chosen as the new party leader, already being the leader of the Queensland branch."
+ australia.2.o1: "Like passing down the family business."
  australia.3.t: "2018 Liberal Party of Australia leadership spills"
  australia.3.d: "With prominent Liberal politician Peter Dutton managing to gain support to oust incumbent party leader Malcolm Turnbull, the ensuing leadership election has now begun. With challenger Julie Bishop being eliminated in the first round, the second round is a close race between Scott Morrison and Peter Dutton. Who shall lead the Liberal party into the next election?"
- australia.3.a: "Scott Morrison"
- australia.3.b: "Peter Dutton"
+ australia.3.o1: "Scott Morrison"
+ australia.3.o2: "Peter Dutton"
  australia.4.t: "2019 Australian Labor Party leadership election"
  australia.4.d: "With veteran Labor leader Bill Shorten resigning from his office, a leadership election has been called. Only one candidate has entered the election, Anthony Albanese."
- australia.4.a: "Anthony Albanese"
+ australia.4.o1: "Anthony Albanese"
  
  #Swaziland
  swaziland.1.t: "The Kingdom of Eswatini"
  swaziland.1.d: "Today, the tiny African country of Swaziland changed its name. Due to constant confusion with Switzerland and even Sweden, King [SWZ.GetLeader] has authorized a proposal changing the country's name to the Kingdom of Eswatini, meaning Land of the Swazis. Will this finally separate them from Switzerland and Sweden?"
- swaziland.1.a: "Switzerland has a new name?"
- swaziland.1.b: "Finally!"
+ swaziland.1.o1: "Switzerland has a new name?"
+ swaziland.1.o2: "Finally!"
 
  #Italy
  israel.1.t: "Blue and White"
  israel.1.d: "Aiming to finally form a major opposition against Likud, the liberal-centrist political alliance Blue and White has now been established. The alliance is comprised of Benny Gantz's Israel Resilience Party, Yair Lapid's Yesh Atid and Moshe Ya'alon's Telem, and aims to enter the Knesset in April's elections, with Benny Gantz as their candidate for Prime Minister."
- israel.1.a: "Will Gantz be PM?"
+ israel.1.o1: "Will Gantz be PM?"
  israel.2.t: "2019 Israeli Labor Party leadership election"
  israel.2.d: "After a long period of decline for the Israeli Labor Party, party leader Avi Gabbay has resigned from his position after major pressure from within the party. In the new leadership election, three Knesset members are now competing for the top job. The candidates are long-time political veteran Amir Peretz, left-winger Stav Shaffir and LGBT rights activist Itzik Shmuli."
- israel.2.a: "Amir Peretz"
- israel.2.b: "Stav Shaffir"
- israel.2.c: "Itzik Shmuli"
+ israel.2.o1: "Amir Peretz"
+ israel.2.o2: "Stav Shaffir"
+ israel.2.o3: "Itzik Shmuli"
  israel.3.t: "End of the Zionist Union"
  israel.3.d: "After failure to oust Benjamin Netanyahu in 2015, the Zionist Union (Labor and Hatnuah) alliance was doomed to fail. Today, Labor leader Avi Gabbay has declared the alliance disbanded, and the Hatnuah party is expected to disappear within the coming months."
- israel.3.a: "A sad day for Hatnuah!"
+ israel.3.o1: "A sad day for Hatnuah!"
  israel.4.t: "Kulanu merges with Likud"
  israel.4.d: "Originally a splinter group from Likud, Moshe Kahlon's Kulanu party has today approved a controversial merger with Benjamin Netanyahu's Likud. In exchange for Kulanu's reentry into Likud, Moshe Kahlon has been promised the post of Finance Minister within a future Netanyahu cabinet. With the Kulanu party already included in Netanyahu's coalition, the merger increases Likud's parliamentary representation, but without affecting the political situation as a whole. Likud has however dropped by one percentage in the polls, due to former Kulanu voters leaving for other parties."
- israel.4.a: "Doesn't change a thing."
+ israel.4.o1: "Doesn't change a thing."
 
  #Oman
  oman.1.t: "Death of Qaboos bin Said"
  oman.1.d: "Today is a sad day for the entire nation. Sultan of Oman and Head of the Al Said dynasty, has today tragically passed away. After ruling for 50 years, his legacy remains strong. Power has been handed over to his cousin, Haitham bin Tariq."
- oman.1.a: "The nation mourns!"
+ oman.1.o1: "The nation mourns!"
 
  #Macedonia
  macedonia.1.t: "Prespa Agreement"
@@ -812,7 +800,7 @@
  #Botswana
  botswana.1.t: "Mokgweetsi Masisi Elected"
  botswana.1.d: "With incumbent president Ian Khama reaching the end of his second term, the office has now been handed over to Vice President Mokgweeti Masisi. Due to term limits, Khama could not seek re-election."
- botswana.1.a: "Not so sure about this!"
+ botswana.1.o1: "Not so sure about this!"
 
  #Myanmar
  myanmar.1.t: "Min Aung Hlaing launches military coup d'etat"
@@ -826,7 +814,7 @@
  #Cuba
  cuba.1.t: "Raúl Castro Resigns"
  cuba.1.d: "Raúl Castro, First Secretary of the Communist Party of Cuba, has resigned due to old age. With Raúl being the brother of the late Fidel Castro, this marks the end of the Castro family's rule of Cuba. President Miguel Díaz-Canel, as expected, has taken over the job of First Secretary, ending his status as a mere figurehead."
- cuba.1.a: "Rest in peace, First Secretary!"
+ cuba.1.o1: "Rest in peace, First Secretary!"
  cuba.2.t: "End of Castro leadership in Cuba"
  cuba.2.d: "Cuban leader Raúl Castro has once and for all resigned from his position as First Secretary of the Communist Party of Cuba at the age of 89. With Raúl being the brother of the late Fidel Castro, who lead the country between 1959 and 2008, this marks the end of the Castro family's rule of Cuba. President Miguel Díaz-Canel, as expected, has taken over the job of First Secretary, ending his status as a mere figurehead. It is still unknown what this change will mean for Cuba itself, and what changes it will bring to the country and its people."
  cuba.2.o1: "The end of an era."

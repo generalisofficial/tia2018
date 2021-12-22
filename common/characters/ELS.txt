@@ -1,16 +1,5 @@
 characters={
     #Starting
-	ELS_salvador_sánchez_cerén={
-		name="Salvador Sánchez Cerén"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ELS_Salvador_Sanchez_Ceren
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
-		}
-	}
 	ELS_carlos_calleja={
 		name="Carlos Calleja"
 		portraits={
@@ -31,6 +20,18 @@ characters={
 		}
 		country_leader={
 			ideology=social_conservative
+			traits={ cryptocurrency_advocate }
+		}
+	}
+	ELS_salvador_sanchez_ceren={
+		name="Salvador Sánchez Cerén"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ELS_Salvador_Sanchez_Ceren
+			}
+		}
+		country_leader={
+			ideology=socialism_of_the_21st_century
 		}
 	}
 }

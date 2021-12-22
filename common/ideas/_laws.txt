@@ -630,6 +630,25 @@ ideas = {
 			cost = 750
 			removal_cost = -1
 			level = 2
+
+			available = {
+				num_of_controlled_states > 1
+			}
+
+			on_add = {
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+						has_autonomy_state = autonomy_autonomous_region
+					}
+					ROOT = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+				}
+			}
 			
 			modifier = {
 				stability_factor = 0.05
@@ -639,19 +658,19 @@ ideas = {
 	}
 
 	######################################
-	#	ELECTORAL SYSTEM
+	#	FORM OF GOVERNMENT
 	######################################
 	
-    electoral_system = {
+    form_of_government = {
 		law = yes
 		
-		presidential_system = {
+		presidential_republic = {
 			cost = 500
 			removal_cost = -1
-			level = 1
 			
 			available = {
-			
+				is_democracy = yes
+				NOT = { has_government = monarchist }
 			}
 			
 			modifier = {
@@ -662,13 +681,12 @@ ideas = {
 			default = yes
 		}
 		
-		parliamentary_system = {
+		parliamentary_republic = {
 			cost = 500
 			removal_cost = -1
-			level = 2
 			
 			available = {
-			    NOT = { has_government = monarchist }
+				is_democracy = yes
 				has_country_flag = has_parliament
 			}
 			
@@ -679,22 +697,54 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 
-		swiss_political_system = {
+		one_party_state = {
 			cost = 500
 			removal_cost = -1
-			level = 3
 			
 			available = {
-				original_tag = SWI
+			    NOT = {
+					has_government = monarchist
+					is_democracy = yes
+				}
+			}
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.2
+			}
+			
+			cancel_if_invalid = yes
+		}
+
+		absolute_monarchy = {
+			cost = 500
+			removal_cost = -1
+			
+			available = {
+			    has_government = monarchist
 			}
 			
 			modifier = {
 				stability_factor = 0.05
-				war_support_factor = 0.125
-				political_power_factor = -0.25
 			}
 			
 			cancel_if_invalid = yes
+		}
+
+		violent_non_state_actor = {
+			cost = 500
+		
+			available = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_factor = -0.5
+				justify_war_goal_time = -1.0
+				enemy_justify_war_goal_time = -1.0
+			}
+
+			cancel_if_invalid = no
 		}
 	}
 
@@ -705,7 +755,7 @@ ideas = {
 	state_religion = {
 		law = yes
 		
-		enforced_atheism = {
+		state_atheism = {
 			cost = 25
 			removal_cost = -1
 			
@@ -988,10 +1038,10 @@ ideas = {
    }
 
 	######################################
-	#	FEMALE RIGHTS
+	#	WOMEN'S RIGHTS
 	######################################
    
-   female_rights = {
+   womens_rights = {
 		law = yes
 		
 		patriarchy = {
@@ -1000,12 +1050,31 @@ ideas = {
 			level = 3
 			
 			available = {
-				NOT = { has_government = progressive }
+				NOT = { 
+					OR = {
+						has_country_flag = coalition_progressive
+						has_country_flag = coalition_social_democrat
+						has_country_flag = coalition_social_liberal
+						has_country_flag = coalition_socialist
+						has_country_flag = coalition_classical_liberal
+					}
+				}
 			}
 			
 			modifier = {
-				stability_factor = -0.05
-				MONTHLY_POPULATION = 0.05
+				if = {
+					limit = {
+						OR = {
+							has_idea = state_atheism
+							has_idea = secular
+						}
+					}
+					stability_factor = -0.15
+					else = {
+						stability_factor = -0.025
+					}
+				}
+				MONTHLY_POPULATION = 0.1
 				female_random_country_leader_chance = 0
 			}
 			
@@ -1033,7 +1102,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				female_random_country_leader_chance = 0.25
 			}
 			
 			cancel_if_invalid = no
@@ -1060,12 +1129,25 @@ ideas = {
 			level = 1
 			
 			available = {
-				NOT = { has_government = islamist }
+				NOT = { 
+					OR = {
+						has_country_flag = coalition_islamist
+						has_country_flag = coalition_fascist
+					}
+				}
 			}
 			
 			modifier = {
-				stability_factor = 0.05
-				MONTHLY_POPULATION = -0.05
+				if = {
+					limit = {
+						OR = {
+							has_idea = state_atheism
+							has_idea = secular
+						}
+					}
+					stability_factor = 0.5
+				}
+				MONTHLY_POPULATION = -0.1
 				female_random_country_leader_chance = 0.5
 			}
 			
@@ -1206,7 +1288,16 @@ ideas = {
 			level = 3
 			
 			available = {
-				NOT = { has_idea = minority_government }
+				NOT = { 
+					OR = { 
+						has_idea = minority_government 
+						has_country_flag = coalition_conservative
+						has_country_flag = coalition_classical_liberal
+						has_country_flag = coalition_social_liberal
+						has_country_flag = coalition_social_democrat
+						has_country_flag = coalition_progressive
+					}
+				}
 				if = {
 					limit = {
 						original_tag = USA
@@ -1243,7 +1334,16 @@ ideas = {
 					limit = {
 						has_idea = free_media
 					}
-					NOT = { has_idea = minority_government }
+					NOT = { 
+						OR = { 
+							has_idea = minority_government 
+							has_country_flag = coalition_conservative
+							has_country_flag = coalition_classical_liberal
+							has_country_flag = coalition_social_liberal
+							has_country_flag = coalition_social_democrat
+							has_country_flag = coalition_progressive
+						}
+					}
 				}
 				if = {
 					limit = {
@@ -1795,6 +1895,147 @@ ideas = {
    }
 
     ######################################
+	#	ECONOMIC SYSTEM
+	######################################
+
+	economic_system = { 
+		law = yes
+
+		laissez_faire = {
+			cost = 250
+			removal_cost = -1
+			level = 4
+		
+			available = {
+				NOT = {
+					OR = {
+						has_country_flag = coalition_communist
+						has_country_flag = coalition_socialist
+					}
+				}
+			}
+			
+			modifier = {
+				# Add effects
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 25
+					OR = {
+						has_government = classical_liberal
+						has_government = conservative
+					}
+			 	}
+			}
+		}
+
+		social_market_economy = {
+			cost = 250
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				NOT = {
+					has_government = communist
+				}
+			}
+				
+			modifier = {
+				# Add effects
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 25
+					OR = {
+						has_government = progressive
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = national_conservative
+						has_government = right_wing_nationalist
+					}
+				}
+			}
+		}
+	
+		socialist_market_economy = {
+			cost = 250
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				OR = {
+					has_country_flag = coalition_socialist
+					has_country_flag = coalition_communist
+				}
+			}
+				
+			modifier = {
+				# Add effects
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 25
+					OR = {
+						has_government = socialist
+						has_country_leader_ideology = ho_chi_minh_thought
+						has_country_leader_ideology = kaysone_promvihane_thought
+						has_country_leader_ideology = maoist
+					}
+				}
+			}
+		}
+
+		planned_economy = {
+			cost = 250
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				OR = {
+					has_country_flag = coalition_socialist
+					has_country_flag = coalition_communist
+				}
+			}
+				
+			modifier = {
+				# Add effects
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 25
+					has_government = communist
+					NOT = {
+						OR = {
+							has_country_leader_ideology = ho_chi_minh_thought
+							has_country_leader_ideology = kaysone_promvihane_thought
+							has_country_leader_ideology = maoist
+						}
+					}
+				}
+			}
+		}
+	}
+
+    ######################################
 	#	TRADE POLICY
 	######################################
 
@@ -1802,13 +2043,13 @@ ideas = {
 		law = yes
 
 		free_trade = {
-			cost = 200
+			cost = 150
 			removal_cost = -1
 			level = 3
 		
 			available = {
 				NOT = {
-					has_idea = idea_non_state_actor
+					has_idea = violent_non_state_actor
 				}
 			}
 			
@@ -1832,13 +2073,13 @@ ideas = {
 		}
 	
 		protectionism = {
-			cost = 200
+			cost = 150
 			removal_cost = -1
 			level = 2
 		
 			available = {
 				NOT = {
-					has_idea = idea_non_state_actor
+					has_idea = violent_non_state_actor
 				}
 			}
 
@@ -1852,8 +2093,7 @@ ideas = {
 		}
 	
 		isolationism = {
-		
-			cost = 200
+			cost = 150
 			removal_cost = -1
 			level = 1
 

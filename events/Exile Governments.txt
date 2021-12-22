@@ -14,7 +14,7 @@ unit_leader_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = mtg_exile_leader_added.1.a
+		name = mtg_exile_leader_added.1.o1
 		ai_chance = {
 			factor = 1
 		}		
@@ -31,7 +31,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = mtg_exile_government.2.a
+		name = mtg_exile_government.2.o1
 
 		FROM = {
 			add_opinion_modifier = {
@@ -43,7 +43,7 @@ country_event = {
 	}
 
 	option = {
-		name = mtg_exile_government.2.b
+		name = mtg_exile_government.2.o2
 
 		FROM = {
 			add_legitimacy = -10
@@ -61,7 +61,7 @@ country_event = {
 
 	# Yes we will
 	option = {
-		name = mtg_exile_government.3.a
+		name = mtg_exile_government.3.o1
 		ai_chance = { factor = 1 }
 		transfer_navy = {
 			target = FROM
@@ -75,7 +75,7 @@ country_event = {
 
 	# No ty
 	option = {
-		name = mtg_exile_government.3.b
+		name = mtg_exile_government.3.o2
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -123,6 +123,6 @@ country_event = {
 
 	# Good
 	option = {
-		name = mtg_exile_government.5.a
+		name = mtg_exile_government.5.o1
 	}
 }
