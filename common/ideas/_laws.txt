@@ -1062,18 +1062,7 @@ ideas = {
 			}
 			
 			modifier = {
-				if = {
-					limit = {
-						OR = {
-							has_idea = state_atheism
-							has_idea = secular
-						}
-					}
-					stability_factor = -0.15
-					else = {
-						stability_factor = -0.025
-					}
-				}
+				stability_factor = -0.1
 				MONTHLY_POPULATION = 0.1
 				female_random_country_leader_chance = 0
 			}
@@ -1138,15 +1127,7 @@ ideas = {
 			}
 			
 			modifier = {
-				if = {
-					limit = {
-						OR = {
-							has_idea = state_atheism
-							has_idea = secular
-						}
-					}
-					stability_factor = 0.5
-				}
+				stability_factor = 0.05
 				MONTHLY_POPULATION = -0.1
 				female_random_country_leader_chance = 0.5
 			}
