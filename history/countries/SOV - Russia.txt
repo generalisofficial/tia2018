@@ -3,8 +3,7 @@
 oob = "SOV_2018"
 
 set_research_slots = 4
-set_convoys = 1000
-set_stability = 0.3
+set_convoys = 2808
 
 set_war_support = 0.8
 
@@ -202,6 +201,11 @@ add_to_faction = KYR
 give_military_access = DPR
 SYR = { give_military_access = SOV }
 DPR = { give_military_access = SOV }
+
+add_named_threat = {
+	threat = 3
+	name = threat_annexation_of_crimea
+}
 
 #State Duma
 set_variable = { communist_seats = 9.33 }

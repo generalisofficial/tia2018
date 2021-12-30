@@ -15,7 +15,7 @@ domestic_affairs = {
 		
 		complete_effect = {
 			set_country_flag = has_parliament
-			quickset_parliament = yes
+			one_party_parliament = yes
 			quickset_coalition = yes
 		}
 		
@@ -185,7 +185,7 @@ domestic_affairs = {
 		
 		complete_effect = {
 			add_ideas = one_party_state
-			quickset_parliament = yes
+			one_party_parliament = yes
 			quickset_coalition = yes
 			if = {
 				limit = {
@@ -347,7 +347,7 @@ domestic_affairs = {
 		days_remove = 30
 
 		remove_effect = {
-			country_event = election.5
+			country_event = election.2
 		}
 		
 		ai_will_do = {

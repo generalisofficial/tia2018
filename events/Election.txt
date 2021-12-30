@@ -10,8 +10,6 @@ country_event = {
 	immediate = {
 		clear_array = parliament_array
 		clear_array = ideology_seats_array 
-		#quickset_parliament = yes
-		#quickset_coalition = yes
 	}
 }
 
@@ -42,30 +40,7 @@ country_event = {
 	
 	immediate = {
 	    break_coalition = yes
-		set_variable = { communist_seats = party_popularity@communist }
-		multiply_variable = { communist_seats = 100 }
-		set_variable = { socialist_seats = party_popularity@socialist }
-		multiply_variable = { socialist_seats = 100 }
-		set_variable = { progressive_seats = party_popularity@progressive }
-		multiply_variable = { progressive_seats = 100 }
-		set_variable = { social_democrat_seats = party_popularity@social_democrat }
-		multiply_variable = { social_democrat_seats = 100 }
-		set_variable = { social_liberal_seats = party_popularity@social_liberal }
-		multiply_variable = { social_liberal_seats = 100 }
-		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
-		multiply_variable = { classical_liberal_seats = 100 }
-		set_variable = { conservative_seats = party_popularity@conservative }
-		multiply_variable = { conservative_seats = 100 }
-		set_variable = { national_conservative_seats = party_popularity@national_conservative }
-		multiply_variable = { national_conservative_seats = 100 }
-		set_variable = { monarchist_seats = party_popularity@monarchist }
-		multiply_variable = { monarchist_seats = 100 }
-		set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
-		multiply_variable = { right_wing_nationalist_seats = 100 }
-		set_variable = { fascist_seats = party_popularity@fascist }
-		multiply_variable = { fascist_seats = 100 }
-		set_variable = { islamist_seats = party_popularity@islamist }
-		multiply_variable = { islamist_seats = 100 }
+		quickset_parliament = yes
 	}
 	
 	option = {	#Communists
@@ -297,20 +272,6 @@ country_event = {
 		}
 		custom_effect_tooltip = TT_parliamentary_monarchy
 		add_ideas = absolute_monarchy
-		set_country_flag = coalition_monarchist
-		set_variable = { ROOT.Coalition = 100 }
-		set_variable = { communist_seats = 0 }
-		set_variable = { socialist_seats = 0 }
-		set_variable = { progressive_seats = 0 }
-		set_variable = { social_democrat_seats = 0 }
-		set_variable = { social_liberal_seats = 0 }
-		set_variable = { classical_liberal_seats = 0 }
-		set_variable = { conservative_seats = 0 }
-		set_variable = { national_conservative_seats = 0 }
-		set_variable = { monarchist_seats = 100 }
-		set_variable = { right_wing_nationalist_seats = 0 }
-		set_variable = { fascist_seats = 0 }
-		set_variable = { islamist_seats = 0 }
 		set_politics = {
 			ruling_party = monarchist
 			elections_allowed = no
@@ -319,7 +280,8 @@ country_event = {
 			ideology = monarchist
 			popularity = 0.1
 		}
-		set_parliament_graphics = yes
+		one_party_parliament = yes
+		quickset_coalition = yes
 		election_pulse = yes
 	}
 	option = {	#Commit Electoral Fraud

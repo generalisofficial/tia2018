@@ -32,21 +32,6 @@ cleanup_coalition = {
 	clear_variable = ROOT.NewCoalition
 }
 
-cleanup_seats = {
-	clear_variable = islamist_seats
-	clear_variable = fascist_seats
-	clear_variable = right_wing_nationalist_seats
-	clear_variable = monarchist_seats
-	clear_variable = national_conservative_seats
-	clear_variable = conservative_seats
-	clear_variable = classical_liberal_seats
-	clear_variable = social_liberal_seats
-	clear_variable = social_democrat_seats
-	clear_variable = progressive_seats
-	clear_variable = socialist_seats
-	clear_variable = communist_seats
-}
-
 cleanup_seats_parliament = {
 	clear_variable = islamist_seats_parliament
 	clear_variable = fascist_seats_parliament
@@ -149,55 +134,238 @@ update_coalition = {
 }
 
 quickset_parliament = {
-	cleanup_seats = yes
-	set_variable = { communist_seats = party_popularity_100@communist }
+	set_variable = { communist_seats = party_popularity@communist }
 	multiply_variable = { communist_seats = 100 }
-	round_variable = communist_seats
-	divide_variable = { communist_seats = 100 }
-	set_variable = { socialist_seats = party_popularity_100@socialist }
+	set_variable = { socialist_seats = party_popularity@socialist }
 	multiply_variable = { socialist_seats = 100 }
-	round_variable = socialist_seats
-	divide_variable = { socialist_seats = 100 }
-	set_variable = { progressive_seats = party_popularity_100@progressive }
+	set_variable = { progressive_seats = party_popularity@progressive }
 	multiply_variable = { progressive_seats = 100 }
-	round_variable = progressive_seats
-	divide_variable = { progressive_seats = 100 }
-	set_variable = { social_democrat_seats = party_popularity_100@social_democrat }
+	set_variable = { social_democrat_seats = party_popularity@social_democrat }
 	multiply_variable = { social_democrat_seats = 100 }
-	round_variable = social_democrat_seats
-	divide_variable = { social_democrat_seats = 100 }
-	set_variable = { social_liberal_seats = party_popularity_100@social_liberal }
+	set_variable = { social_liberal_seats = party_popularity@social_liberal }
 	multiply_variable = { social_liberal_seats = 100 }
-	round_variable = social_liberal_seats
-	divide_variable = { social_liberal_seats = 100 }
-	set_variable = { classical_liberal_seats = party_popularity_100@classical_liberal }
+	set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
 	multiply_variable = { classical_liberal_seats = 100 }
-	round_variable = classical_liberal_seats
-	divide_variable = { classical_liberal_seats = 100 }
-	set_variable = { conservative_seats = party_popularity_100@conservative }
+	set_variable = { conservative_seats = party_popularity@conservative }
 	multiply_variable = { conservative_seats = 100 }
-	round_variable = conservative_seats
-	divide_variable = { conservative_seats = 100 }
-	set_variable = { national_conservative_seats = party_popularity_100@national_conservative }
+	set_variable = { national_conservative_seats = party_popularity@national_conservative }
 	multiply_variable = { national_conservative_seats = 100 }
-	round_variable = national_conservative_seats
-	divide_variable = { national_conservative_seats = 100 }
-	set_variable = { monarchist_seats = party_popularity_100@monarchist }
+	set_variable = { monarchist_seats = party_popularity@monarchist }
 	multiply_variable = { monarchist_seats = 100 }
-	round_variable = monarchist_seats
-	divide_variable = { monarchist_seats = 100 }
-	set_variable = { right_wing_nationalist_seats = party_popularity_100@right_wing_nationalist }
+	set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
 	multiply_variable = { right_wing_nationalist_seats = 100 }
-	round_variable = right_wing_nationalist_seats
-	divide_variable = { right_wing_nationalist_seats = 100 }
-	set_variable = { fascist_seats = party_popularity_100@fascist }
+	set_variable = { fascist_seats = party_popularity@fascist }
 	multiply_variable = { fascist_seats = 100 }
-	round_variable = fascist_seats
-	divide_variable = { fascist_seats = 100 }
-	set_variable = { islamist_seats = party_popularity_100@islamist }
+	set_variable = { islamist_seats = party_popularity@islamist }
 	multiply_variable = { islamist_seats = 100 }
-	round_variable = islamist_seats
-	divide_variable = { islamist_seats = 100 }
+	set_parliament_graphics = yes
+}
+
+one_party_parliament = {
+	if = {
+		limit = {
+			has_government = communist
+		}
+		set_variable = { communist_seats = 100 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = socialist
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 100 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = progressive
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 100 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = social_democrat
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 100 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = social_liberal
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 100 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = classical_liberal
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 100 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = conservative
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 100 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = national_conservative
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 100 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = monarchist
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 100 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = right_wing_nationalist
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 100 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = fascist
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 100 }
+		set_variable = { islamist_seats = 0 }
+	}
+	if = {
+		limit = {
+			has_government = islamist
+		}
+		set_variable = { communist_seats = 0 }
+		set_variable = { socialist_seats = 0 }
+		set_variable = { progressive_seats = 0 }
+		set_variable = { social_democrat_seats = 0 }
+		set_variable = { social_liberal_seats = 0 }
+		set_variable = { classical_liberal_seats = 0 }
+		set_variable = { conservative_seats = 0 }
+		set_variable = { national_conservative_seats = 0 }
+		set_variable = { monarchist_seats = 0 }
+		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { fascist_seats = 0 }
+		set_variable = { islamist_seats = 100 }
+	}
 	set_parliament_graphics = yes
 }
 
@@ -1586,9 +1754,8 @@ election_pulse = {
 	if = {
 	    limit = {
 		    original_tag = NAU
-			NOT = { has_global_flag = aingimea_president }
+			has_government = social_liberal
 	    }
-		set_global_flag = aingimea_president
 		country_event = nauru.1
 	}
 	if = {

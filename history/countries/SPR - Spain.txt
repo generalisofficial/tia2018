@@ -4,7 +4,7 @@ oob = "SPR_2018"
 
 set_research_slots = 4
 set_convoys = 700
-set_stability = 0.5
+
 
 set_country_flag = country_language_spanish
 
@@ -118,13 +118,13 @@ add_ideas = {
 }
 
 #Congress of Deputies
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 21.3 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 24.6 }
-set_variable = { social_liberal_seats = 21.1 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 33 }
+set_variable = { communist_seats = 2.28 }
+set_variable = { socialist_seats = 17.71 }
+set_variable = { progressive_seats = 0.85 }
+set_variable = { social_democrat_seats = 26.85 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 11.71 }
+set_variable = { conservative_seats = 40.6 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -140,36 +140,27 @@ set_country_flag = catholic
 
 set_politics = {	
 	ruling_party = conservative
-	last_election = "2016.7.26"
+	last_election = "2016.6.26"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 17.7
-    social_democrat = 36.9
-    socialist = 18.2
-    social_liberal = 16.9
-	fascist = 10.3
+    social_democrat = 39.75
+	conservative = 21.14
+	classical_liberal = 18.85
+    socialist = 11.71
+	right_wing_nationalist = 6.85
+	communist = 1.42
+	progressive = 0.28
 }
 
+recruit_character = SPR_norberto_pico
+recruit_character = SPR_santiago_abascal
 recruit_character = SPR_felipe_vi
 recruit_character = SPR_mariano_rajoy
-recruit_character = SPR_pedro_sánchez
-recruit_character = SPR_pablo_iglesias_turrión
 recruit_character = SPR_albert_rivera
-recruit_character = SPR_daniel_martinez
+recruit_character = SPR_pedro_sanchez
+recruit_character = SPR_juan_lopez_de_uralde
+recruit_character = SPR_pablo_iglesias
 recruit_character = SPR_enrique_santiago
-recruit_character = SPR_juan_lópez_de_uralde
-recruit_character = SPR_manuel_canduela_serrano
-recruit_character = SPR_santiago_abascal
-recruit_character = SPR_jaime_domínguez_buj
-recruit_character = SPR_josé_julio_rodríguez_fernández
-recruit_character = SPR_alfredo_ramirez
-recruit_character = SPR_bernardo_alvarez
-recruit_character = SPR_fernando_gutierrez
-recruit_character = SPR_miguel_alcañiz
-recruit_character = SPR_pedro_pitarch
-recruit_character = SPR_santiago_camarero
-recruit_character = SPR_jaime_muñoz
-recruit_character = SPR_jose_antonio_ruesta

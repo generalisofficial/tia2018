@@ -4,7 +4,6 @@ oob = "NCY_2018"
 
 set_research_slots = 2
 set_convoys = 15
-set_stability = 0.4
 
 set_country_flag = country_language_turkish
 
@@ -110,11 +109,11 @@ add_opinion_modifier = { target = CYP modifier = rival_trade }
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 29.5 }
-set_variable = { social_liberal_seats = 17.1 }
+set_variable = { social_democrat_seats = 48 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 7.8 }
-set_variable = { national_conservative_seats = 45.6 }
+set_variable = { conservative_seats = 24 }
+set_variable = { national_conservative_seats = 28 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -129,19 +128,19 @@ add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2013.1.7"
-	election_frequency = 60
+	last_election = "2014.1.7"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 45.6
-    social_democrat = 29.5
-	social_liberal = 17.1
-	conservative = 7.8
+    national_conservative = 46
+    social_democrat = 30
+	social_liberal = 18
+	conservative = 6
 }
 
-recruit_character = NCY_hüseyin_özgürgün
-recruit_character = NCY_tufan_erhürman
-recruit_character = NCY_kudret_özersay
-recruit_character = NCY_serdar_denktaş
+recruit_character = NCY_huseyin_ozgurgun
+recruit_character = NCY_serdar_denktas
+recruit_character = NCY_kudret_ozersay
+recruit_character = NCY_tufan_erhurman

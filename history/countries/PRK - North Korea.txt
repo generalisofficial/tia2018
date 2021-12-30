@@ -4,7 +4,6 @@ oob = "PRK_2018"
 
 set_research_slots = 2
 set_convoys = 270
-set_stability = 0.15
 
 set_country_flag = country_language_korean
 
@@ -80,9 +79,10 @@ add_ideas = {
 	isolationism
 	one_party_state
 	state_atheism
+	planned_economy
 }
 
-set_country_flag = buddhism
+set_country_flag = cheondoism
 
 add_opinion_modifier = {
 	target = JAP
@@ -111,10 +111,8 @@ add_opinion_modifier = {
 
 add_named_threat = {
 	threat = 5
-	name = threat_PRK_nuclear_program
+	name = threat_north_korean_missile_crisis
 }
-
-set_country_flag = cheondoism
 
 #Supreme People's Assembly
 set_variable = { communist_seats = 100 }

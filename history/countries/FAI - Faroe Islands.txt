@@ -4,7 +4,7 @@ oob = "generic_2018"
 
 set_research_slots = 2
 set_convoys = 10
-set_stability = 0.75
+
 
 set_country_flag = country_language_faroese
 
@@ -99,6 +99,7 @@ set_country_flag = protestant
 
 add_ideas = {
 	christianity
+	parliamentary_republic
 }
 
 #Løgting
@@ -106,10 +107,10 @@ set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 21.21 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 24.25 }
-set_variable = { social_liberal_seats = 6.06 }
+set_variable = { social_liberal_seats = 12.12 }
 set_variable = { classical_liberal_seats = 18.18 }
-set_variable = { conservative_seats = 18.18 }
-set_variable = { national_conservative_seats = 12.12 }
+set_variable = { conservative_seats = 24.24 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -118,11 +119,11 @@ set_variable = { islamist = 0 }
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_social_democrat
+set_country_flag = coalition_social_liberal
 set_country_flag = coalition_socialist
-set_country_flag = coalition_national_conservative
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = socialist_seats }
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
@@ -132,17 +133,15 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 21.21
-    socialist = 18.18
-    conservative = 24.24
+    conservative = 30.30
     classical_liberal = 21.22
-    national_conservative = 12.12
-    social_liberal = 3.03
+	social_democrat = 21.21
+	socialist = 18.18
+    social_liberal = 9.09
 }
 
-recruit_character = FAI_aksel_v_johannesen
-recruit_character = FAI_hogni_hoydal
 recruit_character = FAI_jorgen_niclasen
 recruit_character = FAI_bardur_a_steig_nielsen
 recruit_character = FAI_poul_michelsen
-recruit_character = FAI_jogvan_skorheim
+recruit_character = FAI_aksel_v_johannesen
+recruit_character = FAI_hogni_hoydal

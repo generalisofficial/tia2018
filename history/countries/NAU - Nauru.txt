@@ -3,8 +3,7 @@
 oob = "NAU_2018"
 
 set_research_slots = 2
-set_convoys = 40
-set_stability = 0.5
+set_convoys = 5
 
 set_country_flag = country_language_english
 
@@ -98,17 +97,39 @@ if = {
 add_ideas = {
 	population_growth_steady
 	commonwealth_of_nations_member
+	parliamentary_republic
 }
 
+#Parliament
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 73.69 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 26.31 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = social_liberal
 	last_election = "2016.8.24"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservative = 100
+	social_liberal = 66.67
+	conservative = 33.33
 }
 
+recruit_character = NAU_david_adeang
 recruit_character = NAU_baron_waqa

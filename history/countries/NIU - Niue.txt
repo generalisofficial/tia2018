@@ -2,7 +2,7 @@
 
 set_research_slots = 1
 set_convoys = 50
-set_stability = 0.5
+
 
 set_country_flag = country_language_english
 
@@ -105,17 +105,18 @@ if = {
 add_ideas = {
 	population_growth_stagnation
 	non_member_state
+	parliamentary_republic
 }
 
 set_politics = {	
-	ruling_party = national_conservative
+	ruling_party = conservative
 	last_election = "2017.5.13"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 100
+    conservative = 100
 }
 
 recruit_character = NIU_toke_talagi

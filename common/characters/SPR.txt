@@ -1,5 +1,27 @@
 characters={
     #Starting
+	SPR_norberto_pico={
+		name="Norberto Pico"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SPR_Norberto_Pico
+			}
+		}
+		country_leader={
+			ideology=falangist
+		}
+	}
+	SPR_santiago_abascal={
+		name="Santiago Abascal"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SPR_Santiago_Abascal
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
 	SPR_felipe_vi={
 		name="Felipe VI"
 		portraits={
@@ -22,7 +44,18 @@ characters={
 			ideology=christian_democrat
 		}
 	}
-	SPR_pedro_sánchez={
+	SPR_albert_rivera={
+		name="Albert Rivera"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SPR_Albert_Rivera
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
+	SPR_pedro_sanchez={
 		name="Pedro Sánchez"
 		portraits={
 			civilian={
@@ -33,37 +66,26 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	SPR_pablo_iglesias_turrión={
-		name="Pablo Iglesias Turrión"
+	SPR_juan_lopez_de_uralde={
+		name="Juan López de Uralde"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SPR_Pablo_Iglesias_Turrion
+				large=GFX_Portrait_SPR_Juan_Lopez_de_Uralde
+			}
+		}
+		country_leader={
+			ideology=green
+		}
+	}
+	SPR_pablo_iglesias={
+		name="Pablo Iglesias"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SPR_Pablo_Iglesias
 			}
 		}
 		country_leader={
 			ideology=democratic_socialist
-		}
-	}
-	SPR_albert_rivera={
-		name="Albert Rivera"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SPR_Albert_Rivera
-			}
-		}
-		country_leader={
-			ideology=centrist
-		}
-	}
-	SPR_daniel_martinez={
-		name="Daniel Martinez"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SPR_Daniel_Martinez
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
 		}
 	}
 	SPR_enrique_santiago={
@@ -75,199 +97,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	SPR_juan_lópez_de_uralde={
-		name="Juan López de Uralde"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SPR_Juan_Lopez_de_Uralde
-			}
-		}
-		country_leader={
-			ideology=green
-		}
-	}
-	SPR_manuel_canduela_serrano={
-		name="Manuel Canduela Serrano"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SPR_Manuel_Canduela_Serrano
-			}
-		}
-		country_leader={
-			ideology=right_wing_nationalist_ideology
-		}
-	}
-	SPR_santiago_abascal={
-		name="Santiago Abascal"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SPR_Santiago_Abascal
-			}
-		}
-		country_leader={
-			ideology=fascist_ideology
-		}
-	}
-	SPR_jaime_domínguez_buj={
-		name="Jaime Domínguez Buj"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Jaime_D_Buj
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_josé_julio_rodríguez_fernández={
-		name="José Julio Rodríguez Fernández"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Jose_JR_Fernandez
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_alfredo_ramirez={
-		name="Alfredo Ramirez"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Alfredo_Ramirez
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_bernardo_alvarez={
-		name="Bernardo Alvarez"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Bernardo_Alvarez
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_fernando_gutierrez={
-		name="Fernando Gutierrez"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Fernando_Gutierrez
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_miguel_alcañiz={
-		name="Miguel Alcañiz"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Miguel_Alcaniz
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_pedro_pitarch={
-		name="Pedro Pitarch"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Pedro_Pitarch
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_santiago_camarero={
-		name="Santiago Camarero"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_Santiago_Camarero
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_jaime_muñoz={
-		name="Jaime Muñoz"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_admirals_Jaime_Munoz
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SPR_jose_antonio_ruesta={
-		name="Jose Antonio Ruesta"
-		portraits={
-			army={
-				large=GFX_Portrait_SPR_admirals_Jose_A_Ruesta
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 }

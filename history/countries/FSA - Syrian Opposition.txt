@@ -4,7 +4,7 @@ oob = "FSA_2018"
 
 set_research_slots = 2
 set_convoys = 150
-set_stability = 0.7
+
 set_war_support = 1.0
 
 set_country_flag = country_language_arabic
@@ -113,6 +113,11 @@ add_opinion_modifier = {
 declare_war_on = {
 	target = SYR
 	type = civil_war
+}
+
+add_named_threat = {
+	threat = 5
+	name = threat_syrian_civil_war
 }
 
 add_ideas = {

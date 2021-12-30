@@ -1,30 +1,39 @@
+
 state={
 	id=836
 	name="STATE_836"
 	resources={
 		chromium=3.000
-		aluminium=1
+		aluminium=1.000
 	}
-	
+
 	history={
 		owner = NCY
+		victory_points = {
+			14080 2 
+		}
+		victory_points = {
+			11984 1
+		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
 			11984 = {
 				naval_base = 2
+
 			}
-			industrial_complex = 2
+
 		}
-		
 		add_core_of = CYP
 		add_core_of = NCY
-		
-		victory_points = { 11984 2 }
+
 	}
+
 	provinces={
-		11984 
+		11984 14080 
 	}
 	manpower=313626
 	buildings_max_level_factor=1.000
-	state_category = state_level_5
+	state_category=state_level_5
+	local_supplies=0.000
 }

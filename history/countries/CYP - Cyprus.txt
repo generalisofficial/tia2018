@@ -4,7 +4,6 @@ oob = "CYP_2018"
 
 set_research_slots = 3
 set_convoys = 100
-set_stability = 0.5
 
 set_country_flag = country_language_greek
 
@@ -113,17 +112,17 @@ add_ideas = {
 set_country_flag = catholic
 
 #House of Representatives
-set_variable = { communist_seats = 25.7 }
+set_variable = { communist_seats = 28.57 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 4.8 }
-set_variable = { social_democrat_seats = 6.2 }
-set_variable = { social_liberal_seats = 6.0 }
-set_variable = { classical_liberal_seats = 14.5 }
-set_variable = { conservative_seats = 33.9 }
-set_variable = { national_conservative_seats = 5.2 }
+set_variable = { progressive_seats = 3.57 }
+set_variable = { social_democrat_seats = 10.71 }
+set_variable = { social_liberal_seats = 16.07 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 32.16 }
+set_variable = { national_conservative_seats = 5.35 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
-set_variable = { fascist_seats = 3.7 }
+set_variable = { fascist_seats = 3.57 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
@@ -139,25 +138,21 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 33.9
-    communist = 25.7
-    classical_liberal = 14.5
-	social_democrat = 6.2
-	social_liberal = 6.0
-	national_conservative = 5.2
-	progressive = 4.8
-    fascist = 3.7
+    conservative = 30.38
+    communist = 26.78
+	social_liberal = 16.07
+    fascist = 7.14
+	social_democrat = 7.14
+	classical_liberal = 7.14
+	progressive = 5.35
 }
 
+recruit_character = CYP_christos_christou
+recruit_character = CYP_eleni_theocharous
 recruit_character = CYP_nicos_anastasiades
-recruit_character = CYP_andros_kyprianou
+recruit_character = CYP_marios_garoyian
 recruit_character = CYP_nikolas_papadopoulos
 recruit_character = CYP_marinos_sizopoulos
-recruit_character = CYP_giorgos_lillikas
-recruit_character = CYP_eleni_theocharous
 recruit_character = CYP_george_perdikes
-recruit_character = CYP_christos_christou
-recruit_character = CYP_geórgios_basiakoúlis
-recruit_character = CYP_andréas_markídis
-recruit_character = CYP_ilías_leontáris
-recruit_character = CYP_dimítrios_agorákis
+set_country_flag = socialist_intended_no_leader
+recruit_character = CYP_andros_kyprianou

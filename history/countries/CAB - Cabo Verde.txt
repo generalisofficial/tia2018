@@ -4,7 +4,7 @@ oob = "CAB_2018"
 
 set_research_slots = 2
 set_convoys = 30
-set_stability = 0.5
+
 
 set_country_flag = country_language_portuguese
 
@@ -98,19 +98,39 @@ if = {
 add_ideas = {
 	population_growth_steady
 	african_union_member
+	presidential_republic
 }
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 40.27 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 59.73 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = classical_liberal
-	last_election = "2016.10.2"
+	ruling_party = conservative
+	last_election = "2016.10.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 74.08
-    socialist = 25.92
+    conservative = 58.34
+    socialist = 41.66
 }
 
 recruit_character = CAB_jorge_carlos_fonseca
-recruit_character = CAB_janira_hopffer_almada
+recruit_character = CAB_jose_maria_neves

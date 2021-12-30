@@ -4,7 +4,7 @@ oob = "DPR_2018"
 
 set_research_slots = 2
 set_convoys = 10
-set_stability = 0.5
+
 set_war_support = 1.0
 
 set_country_flag = country_language_russian
@@ -99,6 +99,11 @@ add_ideas = {
 declare_war_on = {
 	target = UKR
 	type = annex_everything
+}
+
+add_named_threat = {
+	threat = 5
+	name = threat_war_in_donbass
 }
 
 give_military_access = SOV
