@@ -435,13 +435,10 @@ country_event = {
 	    has_idea = parliamentary_republic
 	}
 	
-	immediate = {
-	    break_coalition = yes
-	}
-	
 	option = {
 		name = election.3.o1
 		custom_effect_tooltip = TT_parliamentary_election_results
+		break_coalition = yes
 		quickset_parliament = yes
 		if = {
 			limit = {

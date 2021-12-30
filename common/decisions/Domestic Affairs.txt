@@ -170,6 +170,10 @@ domestic_affairs = {
 
 		available = {
 			NOT = {
+				has_country_flag = forming_government_1
+				hidden_trigger = {
+					has_country_flag = forming_government_2
+				}
 				has_idea = minority_government
 				has_country_flag = coalition_progressive
 				has_country_flag = coalition_social_liberal
@@ -313,6 +317,10 @@ domestic_affairs = {
 	hold_snap_election = {
 		
 		visible = {
+			NOT = {
+				has_country_flag = forming_government_1
+				has_country_flag = forming_government_2
+			}
 			has_country_flag = has_parliament
 			has_idea = parliamentary_republic
 			has_elections = yes
