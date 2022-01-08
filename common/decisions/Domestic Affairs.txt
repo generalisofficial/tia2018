@@ -28,12 +28,16 @@ domestic_affairs = {
 	establish_democracy = {
 		
 		visible = {
-			has_country_flag = has_parliament
 			is_democracy = no
 			NOT = {
 				has_government = monarchist
 				has_idea = violent_non_state_actor 
 			}
+		}
+
+		available = {
+			has_country_flag = has_parliament
+			has_war = no
 		}
 		
 		icon = ballot_box
@@ -154,6 +158,23 @@ domestic_affairs = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 25
+				OR = {
+					has_government = progressive
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = classical_liberal
+					has_government = conservative
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = socialist
+					has_government = national_conservative
+				}
+			}
 		}
 		
 	}
@@ -324,6 +345,12 @@ domestic_affairs = {
 			has_country_flag = has_parliament
 			has_idea = parliamentary_republic
 			has_elections = yes
+		}
+
+		available = {
+			NOT = {
+				has_idea = electoral_honeymoon
+			}
 		}
 		
 		icon = ballot_box

@@ -4,20 +4,115 @@ state={
 	name="STATE_973"
 
 	history={
-		owner = SSD
+		owner = SPO
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
+			13437 = {
+				bunker = 3
+
+			}
+			13439 = {
+				bunker = 3
+
+			}
+			10877 = {
+				bunker = 3
+
+			}
+			14092 = {
+				bunker = 4
+
+			}
+			13428 = {
+				bunker = 3
+
+			}
+			13420 = {
+				bunker = 3
+
+			}
+			14091 = {
+				bunker = 3
+
+			}
+			13427 = {
+				bunker = 2
+
+			}
+			13424 = {
+				bunker = 2
+
+			}
+			13416 = {
+				bunker = 2
+
+			}
+			13415 = {
+				bunker = 2
+
+			}
+			13419 = {
+				bunker = 2
+
+			}
+			13423 = {
+				bunker = 2
+
+			}
+			10908 = {
+				bunker = 2
+
+			}
+			13433 = {
+				bunker = 2
+
+			}
+			4033 = {
+				bunker = 2
+
+			}
+			13445 = {
+				bunker = 2
+
+			}
+			13443 = {
+				bunker = 2
+
+			}
+			13450 = {
+				bunker = 2
+
+			}
 
 		}
 		add_core_of = SSD
+		add_core_of = SPO
+		SSD = {
+			set_province_controller = 13417
+			set_province_controller = 13414
+			set_province_controller = 13416
+			set_province_controller = 13422
+			set_province_controller = 13424
+			set_province_controller = 13427
+			set_province_controller = 13433
+			set_province_controller = 13441
+			set_province_controller = 4033
+			set_province_controller = 13445
+			set_province_controller = 12744
+			set_province_controller = 12887
+			set_province_controller = 13443
+			set_province_controller = 13450
+			set_province_controller = 12800
+		}
 
 	}
 
 	provinces={
-		4033 10877 12744 12800 12887 13416 13420 13424 13427 13428 13433 13434 13437 13439 13441 13443 13445 13450 
+		4033 10877 12744 12800 12887 13414 13416 13417 13420 13422 13424 13427 13428 13433 13434 13437 13439 13441 13443 13445 13450 14091 14092 
 	}
 	manpower=4119700
 	buildings_max_level_factor=1.000
 	state_category=state_level_3
+	local_supplies=0.000
 }

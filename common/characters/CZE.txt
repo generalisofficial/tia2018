@@ -1,36 +1,14 @@
 characters={
     #Starting
-	CZE_andrej_babiš={
-		name="Andrej Babiš"
+	CZE_tomas_vandas={
+		name="Tomáš Vandas"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CZE_Andrej_Babis
+				large=GFX_Portrait_CZE_Tomas_Vandas
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	CZE_petr_fiala={
-		name="Petr Fiala"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CZE_Petr_Fiala
-			}
-		}
-		country_leader={
-			ideology=liberal_conservative
-		}
-	}
-	CZE_ivan_bartoš={
-		name="Ivan Bartoš"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CZE_Ivan_Bartos
-			}
-		}
-		country_leader={
-			ideology=pirate
+			ideology=fascist_ideology
 		}
 	}
 	CZE_tomio_okamura={
@@ -44,15 +22,48 @@ characters={
 			ideology=right_wing_nationalist_ideology
 		}
 	}
-	CZE_vojtěch_filip={
-		name="Vojtěch Filip"
+	CZE_petr_fiala={
+		name="Petr Fiala"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CZE_Vojtech_Filip
+				large=GFX_Portrait_CZE_Petr_Fiala
 			}
 		}
 		country_leader={
-			ideology=marxist_leninist
+			ideology=national_conservative_ideology
+		}
+	}
+	CZE_pavel_belobradek={
+		name="Pavel Bělobrádek"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CZE_Petr_Fiala
+			}
+		}
+		country_leader={
+			ideology=christian_democrat
+		}
+	}
+	CZE_andrej_babis={
+		name="Andrej Babiš"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CZE_Andrej_Babis
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
+	CZE_michal_klusacek={
+		name="Michal Klusáček"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CZE_Michal_Klusacek
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
 		}
 	}
 	CZE_milan_chovanec={
@@ -66,585 +77,37 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	CZE_petr_gazdík={
-		name="Petr Gazdík"
+	CZE_ivan_bartos={
+		name="Ivan Bartoš"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CZE_Petr_Gazdik
+				large=GFX_Portrait_CZE_Ivan_Bartos
 			}
 		}
 		country_leader={
-			ideology=classical_liberal_ideology
+			ideology=pirate
 		}
 	}
-	CZE_josef_becvar={
-		name="Josef Becvar"
+	CZE_milan_neubert={
+		name="Milan Neubert"
 		portraits={
-			army={
-				large=GFX_Portrait_CZE_Josef_Becvar
+			civilian={
+				large=GFX_Portrait_CZE_Milan_Neubert
 			}
 		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=democratic_socialist
 		}
 	}
-	CZE_miroslav_zizka={
-		name="Miroslav Zizka"
+	CZE_vojtech_filip={
+		name="Vojtěch Filip"
 		portraits={
-			army={
-				large=GFX_Portrait_CZE_Miroslav_Zizka
+			civilian={
+				large=GFX_Portrait_CZE_Vojtech_Filip
 			}
 		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_ales_opata={
-		name="Ales Opata"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Ales_Opata
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_frantisek_maleninsky={
-		name="Frantisek Maleninsky"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Frantisek_Maleninsky
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_josef_bečvář={
-		name="Josef Bečvář"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Josef_Becvar
-			}
-		}
-		field_marshal={
-			traits={ organisational_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_vlastimil_picek={
-		name="Vlastimil Picek"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Vlastimil_Picek
-			}
-		}
-		field_marshal={
-			traits={ old_guard inspirational_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jiří_baloun={
-		name="Jiří Baloun"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jiri_Baloun
-			}
-		}
-		field_marshal={
-			traits={ thorough_planner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_Štefan_kaleta={
-		name="Štefan Kaleta"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Stefan_Kaleta
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_milan_virt={
-		name="Milan Virt"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Milan_Virt
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_gabriel_kovacs={
-		name="Gabriel Kovacs"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Gabriel_Kovacs
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_františek_maleninský={
-		name="František Maleninský"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Frantisek_Maleninsky
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_petr_mikulenka={
-		name="Petr Mikulenka"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Petr_Mikulenka
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_Štefan_muránský={
-		name="Štefan Muránský"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Stefan_Muransky
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jaroslav_kocián={
-		name="Jaroslav Kocián"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jaroslav_Kocian
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_ján_gurník={
-		name="Ján Gurník"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jan_Gurnik
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_ivo_střecha={
-		name="Ivo Střecha"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Ivo_Strecha
-			}
-		}
-		corps_commander={
-			traits={ winter_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jaromír_Šebesta={
-		name="Jaromír Šebesta"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jaromir_Sebesta
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_petr_hromek={
-		name="Petr Hromek"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Petr_Hromek
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_zuzana_Špačková={
-		name="Zuzana Špačková"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Zuzana_Spackova
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_pavel_kříž={
-		name="Pavel Kříž"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Pavel_Kriz
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_vratislav_beran={
-		name="Vratislav Beran"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Vratislav_Beran
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_karel_Řehka={
-		name="Karel Řehka"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Karel_Rehka
-			}
-		}
-		corps_commander={
-			traits={ commando urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jaromír_alan={
-		name="Jaromír Alan"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jaromir_Alan
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jaromír_zůna={
-		name="Jaromír Zůna"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jaromir_Zuna
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jaroslav_trakal={
-		name="Jaroslav Trakal"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jaroslav_Trakal
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_františek_ridzák={
-		name="František Ridzák"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Frantisek_Ridzak
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_zoltán_bubeník={
-		name="Zoltán Bubeník"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Zoltan_Bubenik
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_josef_kopecký={
-		name="Josef Kopecký"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Josef_Kopecky
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_roman_náhončík={
-		name="Roman Náhončík"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Roman_Nahoncik
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_miroslav_hlaváč={
-		name="Miroslav Hlaváč"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Miroslav_Hlavac
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_jiří_adamec={
-		name="Jiří Adamec"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Jiri_Adamec
-			}
-		}
-		corps_commander={
-			traits={ commando ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_pavel_lipka={
-		name="Pavel Lipka"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Pavel_Lipka
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_robert_bielený={
-		name="Robert Bielený"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Robert_Bieleny
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CZE_josef_havlík={
-		name="Josef Havlík"
-		portraits={
-			army={
-				large=GFX_Portrait_CZE_Portrait_Josef_Havlik
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 }

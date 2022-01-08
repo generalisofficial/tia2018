@@ -102,18 +102,18 @@ add_ideas = {
 	east_african_community_member
 	extensive_conscription
 	lgbt_illegal
-	presidential_republic
+	one_party_state
 }
 
 #National Legislature of South Sudan
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 5.89 }
+set_variable = { social_democrat_seats = 100 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 94.11 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -121,22 +121,18 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = national_conservative
+	ruling_party = social_democrat
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    national_conservative = 94.11
-    social_liberal = 5.89
+	social_democrat = 100
 }
 
 recruit_character = SSD_salva_kiir_mayardit
-recruit_character = SSD_lam_akol
-recruit_character = SSD_dom_deng
-recruit_character = SSD_paul_malong

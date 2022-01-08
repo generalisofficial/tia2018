@@ -113,11 +113,11 @@ set_country_flag = catholic
 #House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 62.5 }
-set_variable = { social_democrat_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 60.23 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 37.5 }
+set_variable = { conservative_seats = 39.77 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -126,44 +126,20 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_progressive
-add_to_variable = { ROOT.Coalition = progressive_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {
-	ruling_party = progressive
-	last_election = "2015.2.16"
+	ruling_party = social_democrat
+	last_election = "2015.2.23"
 	election_frequency = 48
 	elections_allowed = yes
 }
  
 set_popularities = {
-    progressive = 60.27
-    conservative = 39.73
+    social_democrat = 61.22
+    conservative = 38.78
 }
 
 recruit_character = NGA_muhammadu_buhari
 recruit_character = NGA_atiku_abubakar
-recruit_character = NGA_abubakar_shekau
-recruit_character = NGA_t.y._buratai
-recruit_character = NGA_k.t.j._minimah
-recruit_character = NGA_a._oyebade
-recruit_character = NGA_c.m._abraham
-recruit_character = NGA_p.j._dauke
-recruit_character = NGA_e.o._udoh
-recruit_character = NGA_v.o._ezugwu
-recruit_character = NGA_e.b._oyefolu
-recruit_character = NGA_a.b._abubakar
-recruit_character = NGA_m.a._koleoso
-recruit_character = NGA_s._abubakar
-recruit_character = NGA_kenneth_minimah
-recruit_character = NGA_martin_luther_agwai
-recruit_character = NGA_abayomi_olonisakin
-recruit_character = NGA_abdulrahman_bello_dambazau
-recruit_character = NGA_alexander_ogomudia
-recruit_character = NGA_andrew_azazi
-recruit_character = NGA_turker_yusuf_buratai
-recruit_character = NGA_d._j._ezeoba
-recruit_character = NGA_ishaya_ibrahim
-recruit_character = NGA_u._o._jibrin
-recruit_character = NGA_i.e._ibas
-recruit_character = NGA_u.o._jibrin
