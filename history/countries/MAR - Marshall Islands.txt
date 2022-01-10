@@ -97,17 +97,39 @@ if = {
 
 add_ideas = {
 	population_growth_steady
+	parliamentary_republic
 }
 
+#Nitjiela
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 51.52 }
+set_variable = { classical_liberal_seats = 48.48 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+
 set_politics = {	
-	ruling_party = national_conservative
-	last_election = "2015.11.16"
+	ruling_party = social_liberal
+	last_election = "2015.11.18"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 100
+    classical_liberal = 60.6
+	social_liberal = 39.4
 }
 
+recruit_character = MAR_david_kabua
 recruit_character = MAR_hilda_heine

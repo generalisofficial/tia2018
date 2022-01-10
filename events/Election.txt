@@ -435,286 +435,331 @@ country_event = {
 	    has_idea = parliamentary_republic
 	}
 	
-	option = {
+	option = { #Form Coalition Government
 		name = election.3.o1
+		trigger = {
+			NOT = {
+				communist = 1
+				socialist > 1
+				progressive = 1
+				social_democrat = 1
+				social_liberal = 1
+				classical_liberal = 1
+				conservative = 1
+				national_conservative = 1
+				monarchist = 1
+				right_wing_nationalist = 1
+				fascist = 1
+				islamist = 1
+			}
+		}
+		custom_effect_tooltip = TT_parliamentary_election_results
+		break_coalition = yes
+		quickset_parliament = yes
+		set_country_flag = forming_government_1
+    }
+
+	option = { #Form Majority Single-Party Government
+		name = election.3.o2
+		trigger = {
+			OR = {
+				communist > 0.5
+				socialist > 0.5
+				progressive > 0.5
+				social_democrat > 0.5
+				social_liberal > 0.5
+				classical_liberal > 0.5
+				conservative > 0.5
+				national_conservative > 0.5
+				monarchist > 0.5
+				right_wing_nationalist > 0.5
+				fascist > 0.5
+				islamist > 0.5
+			}
+		}
+		custom_effect_tooltip = TT_parliamentary_election_results
+		break_coalition = yes
+		quickset_parliament = yes
+		set_parliament_graphics = yes
+		if = {
+			limit = {
+				communist > 0.5
+			}
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_communist
+			set_variable = { ROOT.Coalition = communist_seats }
+		}
+		if = {
+			limit = {
+				socialist > 0.5
+			}
+			set_politics = {
+				ruling_party = socialist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_socialist
+			set_variable = { ROOT.Coalition = socialist_seats }
+		}
+		if = {
+			limit = {
+				progressive > 0.5
+			}
+			set_politics = {
+				ruling_party = progressive
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_progressive
+			set_variable = { ROOT.Coalition = progressive_seats }
+		}
+		if = {
+			limit = {
+				social_democrat > 0.5
+			}
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_social_democrat
+			set_variable = { ROOT.Coalition = social_democrat_seats }
+		}
+		if = {
+			limit = {
+				social_liberal > 0.5
+			}
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_social_liberal
+			set_variable = { ROOT.Coalition = social_liberal_seats }
+		}
+		if = {
+			limit = {
+				classical_liberal > 0.5
+			}
+			set_politics = {
+				ruling_party = classical_liberal
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_classical_liberal
+			set_variable = { ROOT.Coalition = classical_liberal_seats }
+		}
+		if = {
+			limit = {
+				conservative > 0.5
+			}
+			set_politics = {
+				ruling_party = conservative
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_conservative
+			set_variable = { ROOT.Coalition = conservative_seats }
+		}
+		if = {
+			limit = {
+				national_conservative > 0.5
+			}
+			set_politics = {
+				ruling_party = national_conservative
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_national_conservative
+			set_variable = { ROOT.Coalition = national_conservative_seats }
+		}
+		if = {
+			limit = {
+				monarchist > 0.5
+			}
+			add_ideas = absolute_monarchy
+			set_politics = {
+				ruling_party = monarchist
+				elections_allowed = no
+			}
+			one_party_parliament = yes
+			set_country_flag = coalition_monarchist
+			set_variable = { ROOT.Coalition = 100 }
+		}
+		if = {
+			limit = {
+				right_wing_nationalist > 0.5
+			}
+			set_politics = {
+				ruling_party = right_wing_nationalist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_right_wing_nationalist
+			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		}
+		if = {
+			limit = {
+				fascist > 0.5
+			}
+			set_politics = {
+				ruling_party = fascist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_fascist
+			set_variable = { ROOT.Coalition = fascist_seats }
+		}
+		if = {
+			limit = {
+				islamist > 0.5
+			}
+			set_politics = {
+				ruling_party = islamist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_islamist
+			set_variable = { ROOT.Coalition = islamist_seats }
+		}
+		election_pulse = yes
+	}
+	option = { #Form Minority Single-Party Government
+		name = election.3.o3
+		trigger = {
+			NOT = {
+				monarchist_plurality_popularity = yes
+				communist > 0.5
+				socialist > 0.5
+				progressive > 0.5
+				social_democrat > 0.5
+				social_liberal > 0.5
+				classical_liberal > 0.5
+				conservative > 0.5
+				national_conservative > 0.5
+				monarchist > 0.5
+				right_wing_nationalist > 0.5
+				fascist > 0.5
+				islamist > 0.5
+			}
+		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		break_coalition = yes
 		quickset_parliament = yes
 		if = {
 			limit = {
-			    OR = {
-					communist > 0.5
-					socialist > 0.5
-					progressive > 0.5
-					social_democrat > 0.5
-					social_liberal > 0.5
-					classical_liberal > 0.5
-					conservative > 0.5
-					national_conservative > 0.5
-					monarchist > 0.5
-					right_wing_nationalist > 0.5
-					fascist > 0.5
-					islamist > 0.5
-				}
+				communist_plurality_popularity = yes
 			}
-			country_event = election.4
-			else = {
-				set_country_flag = forming_government_1
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
 			}
+			set_country_flag = coalition_communist
+			set_variable = { ROOT.Coalition = communist_seats }
 		}
-    }
-}
-
-#GENERIC Government Formation - Single-Party
-country_event = {
-	id = election.4
-	title = election.4.t
-	desc = election.4.d
-	
-	is_triggered_only = yes
-	
-	option = {	#Communist
-		name = election.4.o1
-		ai_chance = {
-			factor = 1
+		if = {
+			limit = {
+				socialist_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = socialist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_socialist
+			set_variable = { ROOT.Coalition = socialist_seats }
 		}
-		trigger = {
-			communist > 0.5
+		if = {
+			limit = {
+				progressive_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = progressive
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_progressive
+			set_variable = { ROOT.Coalition = progressive_seats }
 		}
-		
-		set_politics = {
-			ruling_party = communist
-			elections_allowed = yes
+		if = {
+			limit = {
+				social_democrat_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_social_democrat
+			set_variable = { ROOT.Coalition = social_democrat_seats }
 		}
-        set_country_flag = coalition_communist
-        set_variable = { ROOT.Coalition = communist_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Democratic Socialist
-		name = election.4.o2
-		ai_chance = {
-			factor = 1
+		if = {
+			limit = {
+				social_liberal_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_social_liberal
+			set_variable = { ROOT.Coalition = social_liberal_seats }
 		}
-		trigger = {
-			socialist > 0.5
+		if = {
+			limit = {
+				classical_liberal_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = classical_liberal
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_classical_liberal
+			set_variable = { ROOT.Coalition = classical_liberal_seats }
 		}
-		
-		set_politics = {
-			ruling_party = socialist
-			elections_allowed = yes
+		if = {
+			limit = {
+				conservative_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = conservative
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_conservative
+			set_variable = { ROOT.Coalition = conservative_seats }
 		}
-		set_country_flag = coalition_socialist
-        set_variable = { ROOT.Coalition = socialist_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Progressive
-		name = election.4.o3
-		ai_chance = {
-			factor = 1
+		if = {
+			limit = {
+				national_conservative_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = national_conservative
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_national_conservative
+			set_variable = { ROOT.Coalition = national_conservative_seats }
 		}
-		trigger = {
-			progressive > 0.5
+		if = {
+			limit = {
+				right_wing_nationalist_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = right_wing_nationalist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_right_wing_nationalist
+			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 		}
-		
-		set_politics = {
-			ruling_party = progressive
-			elections_allowed = yes
+		if = {
+			limit = {
+				fascist_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = fascist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_fascist
+			set_variable = { ROOT.Coalition = fascist_seats }
 		}
-		set_country_flag = coalition_progressive
-        set_variable = { ROOT.Coalition = progressive_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Social Democrat
-		name = election.4.o4
-		ai_chance = {
-			factor = 1
+		if = {
+			limit = {
+				islamist_plurality_popularity = yes
+			}
+			set_politics = {
+				ruling_party = islamist
+				elections_allowed = yes
+			}
+			set_country_flag = coalition_islamist
+			set_variable = { ROOT.Coalition = islamist_seats }
 		}
-		trigger = {
-			social_democrat > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = social_democrat
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_social_democrat
-        set_variable = { ROOT.Coalition = social_democrat_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Social Liberal
-		name = election.4.o5
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			social_liberal > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = social_liberal
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_social_liberal
-        set_variable = { ROOT.Coalition = social_liberal_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Market Liberal
-		name = election.4.o6
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			classical_liberal > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = classical_liberal
-			elections_allowed = yes
-		}		
-		set_country_flag = coalition_classical_liberal
-        set_variable = { ROOT.Coalition = classical_liberal_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Conservative
-		name = election.4.o7
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			conservative > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = conservative
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_conservative
-        set_variable = { ROOT.Coalition = conservative_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#National Conservative
-		name = election.4.o8
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			national_conservative > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = national_conservative
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_national_conservative
-        set_variable = { ROOT.Coalition = national_conservative_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Nationalist
-		name = election.4.o9
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			right_wing_nationalist > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = right_wing_nationalist
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_right_wing_nationalist
-        set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Third Position
-		name = election.4.o10
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			fascist > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = fascist
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_fascist
-        set_variable = { ROOT.Coalition = fascist_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-	option = {	#Islamist
-		name = election.4.o11
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			islamist > 0.5
-		}
-		
-		set_politics = {
-			ruling_party = islamist
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_islamist
-        set_variable = { ROOT.Coalition = islamist_seats }
-		set_parliament_graphics = yes
-		election_pulse = yes
-	}
-	
-    option = {	#Monarchist
-		name = election.4.o12
-		ai_chance = {
-			factor = 1
-		}
-		trigger = {
-			monarchist > 0.5
-		}
-		custom_effect_tooltip = TT_parliamentary_monarchy
-		add_ideas = absolute_monarchy
-		set_country_flag = coalition_monarchist
-		set_variable = { ROOT.Coalition = 100 }
-		set_variable = { communist_seats = 0 }
-		set_variable = { socialist_seats = 0 }
-		set_variable = { progressive_seats = 0 }
-		set_variable = { social_democrat_seats = 0 }
-		set_variable = { social_liberal_seats = 0 }
-		set_variable = { classical_liberal_seats = 0 }
-		set_variable = { conservative_seats = 0 }
-		set_variable = { national_conservative_seats = 0 }
-		set_variable = { monarchist_seats = 100 }
-		set_variable = { right_wing_nationalist_seats = 0 }
-		set_variable = { fascist_seats = 0 }
-		set_variable = { islamist_seats = 0 }
-		set_politics = {
-			ruling_party = monarchist
-			elections_allowed = no
-		}
-		add_popularity = {
-			ideology = monarchist
-			popularity = 0.1
-		}
-		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 }

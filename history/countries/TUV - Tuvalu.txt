@@ -97,17 +97,39 @@ if = {
 add_ideas = {
 	population_growth_stagnation
 	commonwealth_of_nations_member
+	parliamentary_republic
 }
 
+#Parliament
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 66.66 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 33.34 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_progressive
+add_to_variable = { ROOT.Coalition = progressive_seats }
+
 set_politics = {	
-	ruling_party = national_conservative
-	last_election = "2018.1.1"
+	ruling_party = progressive
+	last_election = "2015.9.9"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 100
+    conservative = 62.5
+	progressive = 37.5
 }
 
+recruit_character = TUV_kausea_natano
 recruit_character = TUV_enele_sopoaga

@@ -1,14 +1,47 @@
 characters={
     #Starting
-	FRA_olivier_faure={
-		name="Olivier Faure"
+	FRA_jean_marie_le_pen={
+		name="Jean-Marie Le Pen"
 		portraits={
 			civilian={
-				large=GFX_Portrait_FRA_Olivier_Faure
+				large=GFX_Portrait_FRA_Jean_Marie_Le_Pen
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
+			ideology=fascist_ideology
+		}
+	}
+	FRA_marine_le_pen={
+		name="Marine Le Pen"
+		portraits={
+			civilian={
+				large=GFX_Portrait_FRA_Marine_Le_Pen
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	FRA_louis_xx={
+		name="Louis XX"
+		portraits={
+			civilian={
+				large=GFX_Portrait_FRA_Louis_XX
+			}
+		}
+		country_leader={
+			ideology=monarchist_ideology
+		}
+	}
+	FRA_eric_zemmour={
+		name="Éric Zemmour"
+		portraits={
+			civilian={
+				large=GFX_Portrait_FRA_Eric_Zemmour
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
 		}
 	}
 	FRA_laurent_wauquiez={
@@ -22,40 +55,51 @@ characters={
 			ideology=gaullist
 		}
 	}
-	FRA_marine_le_pen={
-		name="Marine Le Pen"
+	FRA_francois_bayrou={
+		name="François Bayrou"
 		portraits={
 			civilian={
-				large=GFX_Portrait_FRA_Marine_Le_Pen
+				large=GFX_Portrait_FRA_Francois_Bayrou
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=classical_liberal_ideology
 		}
 	}
-	FRA_alain_soral={
-		name="Alain Soral"
+	FRA_emmanuel_macron={
+		name="Emmanuel Macron"
 		portraits={
 			civilian={
-				large=GFX_Portrait_FRA_Alain_Soral
+				large=GFX_Portrait_FRA_Emmanuel_Macron
 			}
 		}
 		country_leader={
-			ideology=national_socialist
+			ideology=centrist
 		}
 	}
-	FRA_jeanfrançois_simon={
-		name="Jean-François Simon"
+	FRA_olivier_faure={
+		name="Olivier Faure"
 		portraits={
 			civilian={
-				large=GFX_Portrait_FRA_Jean_Francois_Simon
+				large=GFX_Portrait_FRA_Olivier_Faure
 			}
 		}
 		country_leader={
-			ideology=right_wing_nationalist_ideology
+			ideology=social_democrat_ideology
 		}
 	}
-	FRA_jeanluc_mélenchon={
+	FRA_yannick_jadot={
+		name="Yannick Jadot"
+		portraits={
+			civilian={
+				large=GFX_Portrait_FRA_Yannick_Jadot
+			}
+		}
+		country_leader={
+			ideology=green
+		}
+	}
+	FRA_jean_luc_melenchon={
 		name="Jean-Luc Mélenchon"
 		portraits={
 			civilian={
@@ -75,641 +119,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	FRA_françois_bayrou={
-		name="François Bayrou"
-		portraits={
-			civilian={
-				large=GFX_Portrait_FRA_Francois_Bayrou
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
-		}
-	}
-	FRA_david_cormand={
-		name="David Cormand"
-		portraits={
-			civilian={
-				large=GFX_Portrait_FRA_David_Cormand
-			}
-		}
-		country_leader={
-			ideology=green
-		}
-	}
-	FRA_louis_alphonse_de_bourbon={
-		name="Louis Alphonse de Bourbon"
-		portraits={
-			civilian={
-				large=GFX_Portrait_FRA_Louis_Alphonse_de_Bourbon
-			}
-		}
-		country_leader={
-			ideology=monarchist_ideology
-		}
-	}
-	FRA_emmanuel_macron={
-		name="Emmanuel Macron"
-		portraits={
-			civilian={
-				large=GFX_Portrait_FRA_Emmanuel_Macron
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
-	FRA_jeanpierre_bosser={
-		name="Jean-Pierre Bosser"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Jean_Pierre_Bosser
-			}
-		}
-		corps_commander={
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_pierre_chavancy={
-		name="Pierre Chavancy"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Pierre_Chavancy
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_bertrand_ractmadoux={
-		name="Bertrand Ract-Madoux"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Bertrand_Ract_Madoux
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_pierre_de_villiers={
-		name="Pierre de Villiers"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Pierre_de_Villiers
-			}
-		}
-		field_marshal={
-			traits={ old_guard organisational_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_arnaud_sainteclaire_deville={
-		name="Arnaud Sainte-Claire Deville"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Arnaud_Sainte-Claire_Deville
-			}
-		}
-		field_marshal={
-			traits={ defensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_françois_labuze={
-		name="François Labuze"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Francois_Labuze
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_franck_boudet={
-		name="Franck Boudet"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Franck_Boudet
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_christophe_bizien={
-		name="Christophe Bizien"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Christophe_Bizien
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_loïc_girard={
-		name="Loïc Girard"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Loic_Girard
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_pascal_ianni={
-		name="Pascal Ianni"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Pascal_Ianni
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_thomas_mollard={
-		name="Thomas Mollard"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Thomas_Mollard
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_etienne_du_peyroux={
-		name="Etienne du Peyroux"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Etienne_du_Peyroux
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_françois_régis_jaminet={
-		name="François Régis Jaminet"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Francois_Regis_Jaminet
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_hervé_bizeul={
-		name="Hervé Bizeul"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Herve_Bizeul
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_jeanjacques_fatinet={
-		name="Jean-Jacques Fatinet"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Jean-Jacques_Fatinet
-			}
-		}
-		corps_commander={
-			traits={ trait_mountaineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_guillaume_de_sercey={
-		name="Guillaume de Sercey"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Guillaume_de_Sercey
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_guillaume_venard={
-		name="Guillaume Venard"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Guillaume_Venard
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_nicolas_casanova={
-		name="Nicolas Casanova"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Nicolas_Casanova
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_benoit_durieux={
-		name="Benoit Durieux"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Benoit_Durieux
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_Éric_bellot_des_minières={
-		name="Éric Bellot des Minières"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Eric_Bellot_des_Minieres
-			}
-		}
-		corps_commander={
-			traits={ commando urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_jeanfrédéric_lenoble={
-		name="Jean-Frédéric Lenoble"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Jean-Frederic_Lenoble
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_eric_maury={
-		name="Eric Maury"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Eric_Maury
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_jeanfrançois_lafont_rapnouil={
-		name="Jean-François Lafont Rapnouil"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Jean-Francois_Lafont_Rapnouil
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_pierre_liot_de_nortbecourt={
-		name="Pierre Liot de Nortbecourt"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Pierre_Liot_de_Nortbecourt
-			}
-		}
-		corps_commander={
-			traits={ commando winter_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_jean_maurin={
-		name="Jean Maurin"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Jean_Maurin
-			}
-		}
-		corps_commander={
-			traits={ commando desert_fox jungle_rat }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_christophe_prazuck={
-		name="Christophe Prazuck"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Christophe_Prazuck
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_marc_de_briancon={
-		name="Marc de Briancon"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Marc_de_Briancon
-			}
-		}
-		navy_leader={
-			traits={ ironside }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_denis_beraud={
-		name="Denis Beraud"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Denis_Beraud
-			}
-		}
-		navy_leader={
-			traits={ fly_swatter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_bruno_thouvenin={
-		name="Bruno Thouvenin"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Bruno_Thouvenin
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_françois_rebourd={
-		name="François Rebourd"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Francois_Rebourd
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_louismichel_guillaume={
-		name="Louis-Michel Guillaume"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Louis-Michel_Guillaume
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_charleshenri_du_ché={
-		name="Charles-Henri du Ché"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Charles-Henri_du_Che
-			}
-		}
-		navy_leader={
-			traits={ air_controller }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_pascal_ausseur={
-		name="Pascal Ausseur"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Pascal_Ausseurs
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_emmanuel_de_oliveira={
-		name="Emmanuel de Oliveira"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Emmanuel_de_Oliveira
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	FRA_jeanbaptiste_dupuis={
-		name="Jean-Baptiste Dupuis"
-		portraits={
-			army={
-				large=GFX_Portrait_FRA_Portrait_Jean-Baptiste_Dupuis
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 }
