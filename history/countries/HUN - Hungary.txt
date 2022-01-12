@@ -108,38 +108,25 @@ set_country_flag = catholic
 #National Assembly
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 3.01 }
-set_variable = { social_democrat_seats = 14.57 }
-set_variable = { social_liberal_seats = 2.01 }
-set_variable = { classical_liberal_seats = 2.01 }
-set_variable = { conservative_seats = 8.04 }
-set_variable = { national_conservative_seats = 58.81 }
+set_variable = { progressive_seats = 2.51 }
+set_variable = { social_democrat_seats = 15.07 }
+set_variable = { social_liberal_seats = 3.51 }
+set_variable = { classical_liberal_seats = 0.50 }
+set_variable = { conservative_seats = 11.55 }
+set_variable = { national_conservative_seats = 66.86 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
-set_variable = { fascist_seats = 11.55 }
+set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_national_conservative
-set_country_flag = coalition_conservative
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
-add_to_variable = { ROOT.Coalition = conservative_seats }
-
-add_opinion_modifier = {
-	target = CZE
-	modifier = visegrad_group
-}
 
 add_opinion_modifier = {
 	target = POL
-	modifier = visegrad_group
 	modifier = treaty_of_friendship
-}
-
-add_opinion_modifier = {
-	target = SLO
-	modifier = visegrad_group
 }
 
 set_politics = {	
@@ -150,21 +137,23 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 58.81
-    fascist = 13.06
-    social_democrat = 8.04
-    progressive = 6.53
-    conservative = 8.54
-    social_liberal = 4.52
-    classical_liberal = 0.50
+	national_conservative = 67.7
+	conservative = 11.61
+	social_democrat = 10.10
+	social_liberal = 4.54
+	progressive = 4.04
+    fascist = 1.51
+	classical_liberal = 0.50
 }
 
+recruit_character = HUN_laszlo_toroczkai
+recruit_character = HUN_i_gyorgy
 recruit_character = HUN_viktor_orban
 recruit_character = HUN_gabor_vona
-recruit_character = HUN_bertalan_toth
-recruit_character = HUN_bernadett_szel
-recruit_character = HUN_zsolt_semjen
+recruit_character = HUN_gabor_fodor
 recruit_character = HUN_ferenc_gyurcsany
-recruit_character = HUN_peter_juhasz
-recruit_character = HUN_gyula_thürmer
-recruit_character = HUN_szilard_kalmar
+recruit_character = HUN_gergely_karaczony
+recruit_character = HUN_bernadett_szel
+set_country_flag = socialist_intended_no_leader
+recruit_character = HUN_gyula_thurmer
+

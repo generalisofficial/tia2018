@@ -370,7 +370,6 @@ one_party_parliament = {
 }
 
 quickset_coalition = {
-    set_country_flag = has_parliament
 	set_variable = { ROOT.Coalition = 0 }
 	if = {
 		limit = {
@@ -457,6 +456,81 @@ quickset_coalition = {
         set_variable = { ROOT.Coalition = islamist_seats }
 	}
 	set_parliament_graphics = yes
+}
+
+quickset_coalition_flags_only = {
+	if = {
+		limit = {
+			has_government = communist
+		}
+		set_country_flag = coalition_communist
+	}
+	if = {
+		limit = {
+			has_government = socialist
+		}
+		set_country_flag = coalition_socialist
+	}
+	if = {
+		limit = {
+			has_government = progressive
+		}
+		set_country_flag = coalition_progressive
+	}
+	if = {
+		limit = {
+			has_government = social_democrat
+		}
+		set_country_flag = coalition_social_democrat
+	}
+	if = {
+		limit = {
+			has_government = social_liberal
+		}
+		set_country_flag = coalition_social_liberal
+	}
+	if = {
+		limit = {
+			has_government = classical_liberal
+		}
+		set_country_flag = coalition_classical_liberal
+	}
+	if = {
+		limit = {
+			has_government = conservative
+		}
+		set_country_flag = coalition_conservative
+	}
+	if = {
+		limit = {
+			has_government = national_conservative
+		}
+		set_country_flag = coalition_national_conservative
+	}
+	if = {
+		limit = {
+			has_government = monarchist
+		}
+		set_country_flag = coalition_monarchist
+	}
+	if = {
+		limit = {
+			has_government = right_wing_nationalist
+		}
+		set_country_flag = coalition_right_wing_nationalist
+	}
+	if = {
+		limit = {
+			has_government = fascist
+		}
+		set_country_flag = coalition_fascist
+	}
+	if = {
+		limit = {
+			has_government = islamist
+		}
+		set_country_flag = coalition_islamist
+	}
 }
 
 set_parliament_graphics = {

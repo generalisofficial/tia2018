@@ -99,17 +99,39 @@ if = {
 add_ideas = {
 	population_growth_stagnation
 	commonwealth_of_nations_member
+	parliamentary_republic
 }
 
+#House of Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 41.30 }
+set_variable = { social_liberal_seats = 58.7 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
 set_politics = {	
-	ruling_party = social_liberal
-	last_election = "2016.3.9"
+	ruling_party = social_democrat
+	last_election = "2016.6.22"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 100
+	social_democrat = 51.12
+    social_liberal = 48.88
 }
 
-recruit_character = KIR_taneti_mamau
+recruit_character = KIR_tessie_lambourne
+recruit_character = KIR_taneti_maamau

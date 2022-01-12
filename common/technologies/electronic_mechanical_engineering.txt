@@ -1439,10 +1439,6 @@ technologies = {
 		categories = {
 			rocketry
 		}
-		
-		allow = {
-			NOT = { has_global_flag = DPTS_disable_nukes }
-		}
 	}
 	
 	rocket_engines = {
@@ -1664,6 +1660,12 @@ technologies = {
 			leads_to_tech = rocket_engines 
 			research_cost_coeff = 1
 		}
+
+		on_research_complete = {
+			ROOT = {
+				add_ideas = nuclear_weapons_state
+			}
+		}
 		
 		ai_will_do = {
 			factor = 0
@@ -1678,10 +1680,6 @@ technologies = {
 		
 		categories = {
 			nuclear
-		}
-		
-		allow = {
-			NOT = { has_global_flag = DPTS_disable_nukes }
 		}
 	}
 }

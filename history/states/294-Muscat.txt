@@ -10,6 +10,18 @@ state={
 
 	history={
 		owner = OMA
+		victory_points = {
+			10760 10
+		}
+		victory_points = {
+			14103 2 
+		}
+		victory_points = {
+			14102 2 
+		}
+		victory_points = {
+			14100 2
+		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 5
@@ -20,28 +32,25 @@ state={
 				naval_base = 3
 
 			}
+			14103 = {
+				naval_base = 1
 
-		}
-		victory_points = {
-			10760 15 
-		}
-		victory_points = {
-			4993 2 
-		}
-		victory_points = {
-			8020 1 
-		}
-		victory_points = {
-			5049 1 
+			}
+			14100 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = OMA
 
 	}
 
 	provinces={
-		1947 2018 2059 2103 4993 5049 8002 8020 10760 
+		4262 4993 5049 8020 10760 14099 14100 14101 14102 14103 
 	}
-	manpower=4300000
+	manpower=4368710
 	buildings_max_level_factor=1.000
 	state_category=state_level_8
+	local_supplies=0.000
 }

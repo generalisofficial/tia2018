@@ -1,18 +1,5 @@
 ﻿add_namespace = election
 
-# The On_startup seems to be messed up, instead of scripted effects, this event will run on startup to quickset parliaments
-country_event = {
-	id = election.1000
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		clear_array = parliament_array
-		clear_array = ideology_seats_array 
-	}
-}
-
 # For Debug purpose, also ran on every country at startup to set up graphics if coalition already there
 country_event = {
 	id = election.999
@@ -439,18 +426,19 @@ country_event = {
 		name = election.3.o1
 		trigger = {
 			NOT = {
-				communist = 1
+				monarchist_majority_popularity = yes
+				communist > 1
 				socialist > 1
-				progressive = 1
-				social_democrat = 1
-				social_liberal = 1
-				classical_liberal = 1
-				conservative = 1
-				national_conservative = 1
-				monarchist = 1
-				right_wing_nationalist = 1
-				fascist = 1
-				islamist = 1
+				progressive > 1
+				social_democrat > 1
+				social_liberal > 1
+				classical_liberal > 1
+				conservative > 1
+				national_conservative > 1
+				monarchist > 1
+				right_wing_nationalist > 1
+				fascist > 1
+				islamist > 1
 			}
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
@@ -480,7 +468,6 @@ country_event = {
 		custom_effect_tooltip = TT_parliamentary_election_results
 		break_coalition = yes
 		quickset_parliament = yes
-		set_parliament_graphics = yes
 		if = {
 			limit = {
 				communist > 0.5
@@ -615,6 +602,7 @@ country_event = {
 			set_country_flag = coalition_islamist
 			set_variable = { ROOT.Coalition = islamist_seats }
 		}
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 	option = { #Form Minority Single-Party Government
@@ -760,6 +748,7 @@ country_event = {
 			set_country_flag = coalition_islamist
 			set_variable = { ROOT.Coalition = islamist_seats }
 		}
+		set_parliament_graphics = yes
 		election_pulse = yes
 	}
 }

@@ -1,0 +1,65 @@
+political_actions = {
+
+	war_support_campaign = {
+		icon = civil_support
+
+		available = {
+			threat > 0.1
+		}
+
+		visible = {
+			has_war_support < 1
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 75
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 1
+				threat > 0.2
+			}
+			modifier = {
+				add = 1
+				threat > 0.3
+			}
+			modifier = {
+				add = 1
+				threat > 0.4
+			}
+			modifier = {
+				add = 1
+				threat > 0.5
+			}
+			modifier = {
+				add = 1
+				threat > 0.6
+			}
+			modifier = {
+				add = 1
+				threat > 0.7
+			}
+			modifier = {
+				add = 1
+				threat > 0.8
+			}
+			modifier = {
+				add = 1
+				threat > 0.9
+			}
+			modifier = {
+				add = 1
+				threat > 1
+			}
+		}
+	}
+
+}

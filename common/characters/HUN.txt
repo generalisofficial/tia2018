@@ -1,5 +1,27 @@
 characters={
     #Starting
+	HUN_laszlo_toroczkai={
+		name="László Toroczkai"
+		portraits={
+			civilian={
+				large=GFX_Portrait_HUN_Laszlo_Toroczkai
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
+	HUN_i_gyorgy={
+		name="I. György"
+		portraits={
+			civilian={
+				large=GFX_Portrait_HUN_I_Gyorgy
+			}
+		}
+		country_leader={
+			ideology=monarchist_ideology
+		}
+	}
 	HUN_viktor_orban={
 		name="Viktor Orbán"
 		portraits={
@@ -12,21 +34,43 @@ characters={
 		}
 	}
 	HUN_gabor_vona={
-		name="Gábor Vona"
+		name="Gabor Vona"
 		portraits={
 			civilian={
 				large=GFX_Portrait_HUN_Gabor_Vona
 			}
 		}
 		country_leader={
-			ideology=fascist_ideology
+			ideology=social_conservative
 		}
 	}
-	HUN_bertalan_toth={
-		name="Bertalan Tóth"
+	HUN_gabor_fodor={
+		name="Gábor Fodor"
 		portraits={
 			civilian={
-				large=GFX_Portrait_HUN_Bertalan_Toth
+				large=GFX_Portrait_HUN_Gabor_Fodor
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
+	HUN_ferenc_gyurcsany={
+		name="Ferenc Gyurcsány"
+		portraits={
+			civilian={
+				large=GFX_Portrait_HUN_Ferenc_Gyurcsany
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+		}
+	}
+	HUN_gergely_karacsony={
+		name="Gergely Karácsony"
+		portraits={
+			civilian={
+				large=GFX_Portrait_HUN_Gergely_Karacsony
 			}
 		}
 		country_leader={
@@ -44,39 +88,6 @@ characters={
 			ideology=green
 		}
 	}
-	HUN_zsolt_semjen={
-		name="Zsolt Semjén"
-		portraits={
-			civilian={
-				large=GFX_Portrait_HUN_Zsolt_Semjen
-			}
-		}
-		country_leader={
-			ideology=christian_democrat
-		}
-	}
-	HUN_ferenc_gyurcsany={
-		name="Ferenc Gyurcsány"
-		portraits={
-			civilian={
-				large=GFX_Portrait_HUN_Ferenc_Gyurcsany
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
-	HUN_peter_juhasz={
-		name="Péter Juhász"
-		portraits={
-			civilian={
-				large=GFX_Portrait_HUN_Peter_Juhasz
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
-		}
-	}
 	HUN_gyula_thurmer={
 		name="Gyula Thürmer"
 		portraits={
@@ -86,17 +97,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	HUN_szilard_kalmar={
-		name="Szilárd Kalmár"
-		portraits={
-			civilian={
-				large=GFX_Portrait_HUN_Szilard_Kalmar
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
 		}
 	}
 }

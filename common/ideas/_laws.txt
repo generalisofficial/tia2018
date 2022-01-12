@@ -1380,30 +1380,38 @@ ideas = {
    }
    
     ######################################
-	#	ALCOHOL
+	#	ABORTION LAW
 	######################################
    
-    alcohol = {
+    abortion_law = {
 		law = yes
 		
-		alcohol_ban = {
+		abortion_illegal_without_exceptions = {
 			cost = 150
 			removal_cost = -1
 			level = 3
 			
 			available = {
-			
+				NOT = {
+					OR = {
+						has_country_flag = coalition_socialist
+						has_country_flag = coalition_progressive
+						has_country_flag = coalition_social_democrat
+						has_country_flag = coalition_sociaL_liberal
+						has_country_flag = coalition_classical_liberal
+					}
+				}
 			}
 			
 			modifier = {
-				stability_factor = -0.1
-				political_power_factor = 0.05
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.15
 			}
 			
 			cancel_if_invalid = no
 		}
 		
-		adult_only_alcohol = {
+		abortion_illegal_with_exceptions = {
 			cost = 150
 			removal_cost = -1
 			level = 2
@@ -1417,23 +1425,29 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-
 			default = yes
 		}
 		
-		unregulated_alcohol = {
+		abortion_on_request = {
 			cost = 150
 			removal_cost = -1
 			level = 1
 			
 			available = {
-			
+				NOT = {
+					OR = {
+						has_country_flag = coalition_islamist
+						has_country_flag = coalition_fascist
+						has_country_flag = coalition_monarchist
+						has_country_flag = coalition_national_conservative
+						has_country_flag = coalition_conservative
+					}
+				}
 			}
 			
 			modifier = {
-				#partisan_effect = 0.05
-				army_core_defence_factor = 0.05
-				political_power_factor = -0.05
+				stability_factor = 0.05
+				MONTHLY_POPULATION = -0.15
 			}
 			
 			cancel_if_invalid = no

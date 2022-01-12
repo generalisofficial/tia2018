@@ -174,13 +174,13 @@ on_actions = {
 				limit = {
 					NOT = { has_country_flag = has_parliament }
 				}
-				country_event = election.1000
+				quickset_coalition_flags_only = yes
 			}
 			every_country = {
 				limit = {
 					has_country_flag = has_parliament
 				}
-				country_event = election.999
+				set_parliament_graphics = yes
 				country_event = system.1
 			}
 			every_country = {
