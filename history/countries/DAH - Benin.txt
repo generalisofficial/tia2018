@@ -112,11 +112,11 @@ set_variable = { corporate_tax = 35 }
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 27.7 }
-set_variable = { social_liberal_seats = 39.7 }
+set_variable = { social_democrat_seats = 43.38 }
+set_variable = { social_liberal_seats = 56.62 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 32.6 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -124,22 +124,20 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = national_conservative
-	last_election = "2016.3.6"
+	ruling_party = social_democrat
+	last_election = "2016.4.11"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 32.6
-    social_liberal = 39.7
-	social_democrat = 27.7
+	social_democrat = 56.63
+    social_liberal = 43.37
 }
 
+recruit_character = DAH_alassane_soumanou
 recruit_character = DAH_patrice_talon
-recruit_character = DAH_thomas_boni_yayi
-recruit_character = DAH_adrien_houngbédji

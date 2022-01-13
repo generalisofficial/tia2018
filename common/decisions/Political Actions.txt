@@ -1,5 +1,98 @@
 political_actions = {
 
+	hold_campaign_rally = {
+		icon = propaganda
+
+		visible = {
+			is_democracy = yes
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+			if = {
+				limit = { 
+					has_country_flag = coalition_islamist
+				}
+				add_popularity = { ideology = islamist popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_fascist
+				}
+				add_popularity = { ideology = fascist popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_right_wing_nationalist
+				}
+				add_popularity = { ideology = right_wing_nationalist popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_monarchist
+				}
+				add_popularity = { ideology = monarchist popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_national_conservative
+				}
+				add_popularity = { ideology = national_conservative popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_conservative
+				}
+				add_popularity = { ideology = conservative popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_classical_liberal
+				}
+				add_popularity = { ideology = classical_liberal popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_social_liberal
+				}
+				add_popularity = { ideology = social_liberal popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_social_democrat
+				}
+				add_popularity = { ideology = social_democrat popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_progressive
+				}
+				add_popularity = { ideology = progressive popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_socialist
+				}
+				add_popularity = { ideology = socialist popularity = 0.01 }	
+			}
+			if = {
+				limit = { 
+					has_country_flag = coalition_communist
+				}
+				add_popularity = { ideology = communist popularity = 0.01 }	
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	war_support_campaign = {
 		icon = civil_support
 
@@ -61,5 +154,4 @@ political_actions = {
 			}
 		}
 	}
-
 }

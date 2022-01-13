@@ -97,7 +97,27 @@ if = {
 
 add_ideas = {
 	population_growth_steady
+	presidential_system
 }
+
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 25 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 75 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
@@ -107,8 +127,8 @@ set_politics = {
 }
 
 set_popularities = {
-    conservative = 62.2
-    national_conservative = 37.8
+    conservative = 65
+    social_liberal = 35
 }
 
 recruit_character = NMI_ralph_torres
