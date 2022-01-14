@@ -8,60 +8,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		if = { # LGBT RIGHTS
-			limit = {
-				OR = {
-					TAG = ARG
-					TAG = AST
-					TAG = AUS
-					TAG = BEL
-					TAG = BRA
-					TAG = CAN
-					TAG = COL
-					TAG = DEN
-					TAG = ECU
-					TAG = FIN
-					TAG = FRA
-					TAG = GER
-					TAG = GRE
-					TAG = ICE
-					TAG = IRE
-					TAG = LUX
-					TAG = MAL
-					TAG = MEX
-					TAG = HOL
-					TAG = NZL
-					TAG = NOR
-					TAG = POR
-					TAG = SAF
-					TAG = SPR
-					TAG = SWE
-					TAG = CHI
-					TAG = ENG
-					TAG = USA
-					TAG = URG
-				}
-			}
-			add_ideas = lgbt_legalized
-		}
-
-		if = { # GENDER EQUALITY
-			limit = {
-				OR = {
-					TAG = AST
-					TAG = CAN
-					TAG = NZL
-					TAG = SPR
-					TAG = MEX
-					TAG = BOS
-					TAG = ENG
-					TAG = LIT
-					TAG = ICE
-				}
-			}
-			add_ideas = gender_equality
-		}
-
 		if = { # PATRIARCHY
 			limit = {
 				OR = {
@@ -335,29 +281,6 @@ country_event = {
 				}
 			}
 			add_ideas = total_censorship
-		}
-
-		if = { # ALCOHOL BAN
-			limit = {
-				OR = {
-					TAG = AFG
-					TAG = BAN
-					TAG = BRU
-					TAG = RAJ
-					TAG = PER
-					TAG = KUW
-					TAG = LBA
-					TAG = SAU
-					TAG = SUD
-					TAG = UAE
-					TAG = YEM
-					TAG = PAK
-					TAG = MLD
-					TAG = SOM
-					TAG = QAT
-				}
-			}
-			add_ideas = alcohol_ban
 		}
 
 		if = { # SOCIAL SAFETY NET
