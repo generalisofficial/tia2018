@@ -68,8 +68,12 @@ add_ideas = {
 	presidential_republic
 }
 
-
 set_country_flag = sunni_islam
+
+add_opinion_modifier = {
+	target = ISR
+	modifier = no_diplomatic_recognition
+}
 
 #People's Representative Council
 set_variable = { communist_seats = 0 }

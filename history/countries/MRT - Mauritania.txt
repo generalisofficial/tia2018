@@ -98,7 +98,6 @@ if = {
 	}
 }
 
-
 set_country_flag = sunni_islam
 
 add_ideas = {
@@ -109,6 +108,11 @@ add_ideas = {
 	lgbt_illegal
 	islam
 	presidential_republic
+}
+
+add_opinion_modifier = {
+	target = ISR
+	modifier = no_diplomatic_recognition
 }
 
 #National Assembly

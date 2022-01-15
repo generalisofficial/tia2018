@@ -96,8 +96,12 @@ if = {
 	}
 }
 
-
 set_country_flag = ibadi_islam
+
+add_opinion_modifier = {
+	target = ISR
+	modifier = no_diplomatic_recognition
+}
 
 add_ideas = {
 	population_growth_explosion

@@ -106,8 +106,12 @@ add_ideas = {
 	absolute_monarchy
 }
 
-
 set_country_flag = sunni_islam
+
+add_opinion_modifier = {
+	target = ISR
+	modifier = no_diplomatic_recognition
+}
 
 #Economy
 set_variable = { income_tax = 0 }
