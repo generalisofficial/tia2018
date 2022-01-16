@@ -987,24 +987,32 @@ ideas = {
 	}
 
 	######################################
-	#	LGBT
+	#	LGBT/Minority/Women's Rights
 	######################################
 
-	lgbt_rights = {
+	lgbt_minority_womens_rights = {
 		law = yes
 		
-		lgbt_illegal = {
+		lgbt_minority_womens_rights_conservative = {
 			cost = 150
 			removal_cost = -1
 			level = 1
 			
 			available = {
-				NOT = { has_country_flag = coalition_progressive }
+				NOT = {
+					OR = {
+						has_country_flag = coalition_communist
+						has_country_flag = coalition_socialist
+						has_country_flag = coalition_progressive
+						has_country_flag = coalition_social_democrat
+						has_country_flag = coalition_social_liberal
+					}
+				}
 			}
 			
 			modifier = {
-				stability_factor = -0.02
-				MONTHLY_POPULATION = 0.05
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -1012,38 +1020,81 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 				modifier = {
-				 	factor = 100
+					factor = 25
 					OR = {
-				 		has_government = islamist
+						has_government = islamist
 						has_government = fascist
-					}
-			 	}
-				modifier = {
-					factor = 10
-					OR = {
 						has_government = right_wing_nationalist
 						has_government = national_conservative
 					}
 				}
 			}
 		}
-		
-		lgbt_legalized = {
+
+		lgbt_minority_womens_rights_egalitarian = {
 			cost = 150
 			removal_cost = -1
 			level = 2
 			
 			available = {
-				NOT = { has_country_flag = coalition_islamist }
 			}
 			
 			modifier = {
-				stability_factor = 0.02
-				MONTHLY_POPULATION = -0.02
+				female_random_country_leader_chance = 0.25
 			}
 			
 			default = yes
 			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 25
+					has_idea = lgbt_minority_womens_rights_egalitarian
+					OR = {
+						has_government = classical_liberal
+						has_government = conservative
+					}
+				}
+			}
+		}
+		
+		lgbt_minority_womens_rights_progressive = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				NOT = {
+					OR = {
+						has_country_flag = coalition_islamist
+						has_country_flag = coalition_fascist
+						has_country_flag = coalition_right_wing_nationalist
+						has_country_flag = coalition_national_conservative
+					}
+				}
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				MONTHLY_POPULATION = -0.1
+				female_random_country_leader_chance = 0.5
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 25
+					OR = {
+						has_government = socialist
+						has_government = progressive
+						has_government = social_democrat
+						has_government = social_liberal
+					}
+				}
+			}
 		}
    }
 
@@ -1277,6 +1328,11 @@ ideas = {
 			level = 3
 			
 			available = {
+				OR = { 
+					has_idea = one_party_state
+					has_idea = absolute_monarchy
+					has_idea = violent_non_state_actor
+				}
 				NOT = { 
 					OR = { 
 						has_idea = minority_government 
