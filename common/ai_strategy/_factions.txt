@@ -32,25 +32,53 @@ NATO_ai_strategy = {
 			original_tag = CRO
 			original_tag = ALB
 			original_tag = MNT
+			original_tag = BOS
+			original_tag = MAC
 		}
-		is_democracy = yes
-		USA = { is_democracy = yes }
+		NOT = {
+			OR = {
+				has_government = islamist
+				has_government = right_wing_nationalist
+				has_government = fascist
+				has_government = communist
+			}
+			USA = {
+				OR = {
+					has_government = islamist
+					has_government = right_wing_nationalist
+					has_government = fascist
+					has_government = communist
+				}
+			}
+		}
 	}
 	
 	abort = {
 		OR = {
 			has_war_with = USA
 			USA = { is_in_faction = no }
-			has_country_flag = left_NATO
-			is_democracy = no
-			USA = { is_democracy = no }
 			USA = { exists = no }
+			OR = {
+				has_government = islamist
+				has_government = right_wing_nationalist
+				has_government = fascist
+				has_government = communist
+			}
+			USA = {
+				OR = {
+					has_government = islamist
+					has_government = right_wing_nationalist
+					has_government = fascist
+					has_government = communist
+				}
+			}
 		}
 	}
+	
 	ai_strategy = {
 		type = alliance
 		id = "USA"
-		value = 125
+		value = 100
 	}
 }
 

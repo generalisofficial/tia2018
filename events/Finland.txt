@@ -38,10 +38,14 @@ country_event = { #Rinne Cabinet Resigns
 			ruling_only = yes 
 		} 
 		date > 2019.12.10
+		date < 2020.1.1
 	}
 	
 	option = {
 		name = finland.2.o1
+		ai_chance = {
+			factor = 52
+		}
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 	        name = "Sanna Marin"
@@ -52,6 +56,9 @@ country_event = { #Rinne Cabinet Resigns
 	
 	option = {
 		name = finland.2.o2
+		ai_chance = {
+			factor = 48
+		}
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 	        name = "Antti Lindtman"

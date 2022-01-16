@@ -1,0 +1,460 @@
+﻿add_namespace = coup
+
+#Islamist Coup
+country_event = {
+	id = coup.1
+	title = coup.1.t
+	desc = coup.1.d
+	
+	trigger = {
+		islamist > 0.5
+		NOT = { has_government = islamist }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			islamist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			islamist > 0.55
+		}
+		modifier = {
+			factor = 1.5
+			communist > 0.3
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = islamist
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Fascist Coup
+country_event = {
+	id = coup.2
+	title = coup.2.t
+	desc = coup.2.d
+	
+	trigger = {
+		fascist > 0.5
+		NOT = { has_government = fascist }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+		modifier = { factor = 0.5 fascist > 0.48 }
+		modifier = { factor = 0.5 fascist > 0.52 }
+		modifier = { factor = 0.5 fascist > 0.56 }
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = fascist
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+
+#Right-Wing Nationalist Coup
+country_event = {
+	id = coup.3
+	title = coup.3.t
+	desc = coup.3.d
+	
+	trigger = {
+		right_wing_nationalist > 0.5
+		NOT = { has_government = right_wing_nationalist }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			right_wing_nationalist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			right_wing_nationalist > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = right_wing_nationalist
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Monarchist Coup
+country_event = {
+	id = coup.4
+	title = coup.4.t
+	desc = coup.4.d
+	
+	trigger = {
+		monarchist > 0.5
+		NOT = { has_government = monarchist }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			monarchist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			monarchist > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = monarchist
+			elections_allowed = no
+		}
+		news_event = news.1
+		add_ideas = absolute_monarchy
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#National Conservative Coup
+country_event = {
+	id = coup.5
+	title = coup.5.t
+	desc = coup.5.d
+	
+	trigger = {
+		national_conservative > 0.5
+		NOT = { has_government = national_conservative }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			national_conservative > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			national_conservative > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = national_conservative
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Conservative Coup
+country_event = {
+	id = coup.6
+	title = coup.6.t
+	desc = coup.6.d
+	
+	trigger = {
+		conservative > 0.5
+		NOT = { has_government = conservative }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			conservative > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			conservative > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Classical Liberal Coup
+country_event = {
+	id = coup.7
+	title = coup.7.t
+	desc = coup.7.d
+	
+	trigger = {
+		classical_liberal > 0.5
+		NOT = { has_government = classical_liberal }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			classical_liberal > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			classical_liberal > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = classical_liberal
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Social Liberal Coup
+country_event = {
+	id = coup.8
+	title = coup.8.t
+	desc = coup.8.d
+	
+	trigger = {
+		social_liberal > 0.5
+		NOT = { has_government = social_liberal }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			social_liberal > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			social_liberal > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Social Democrat Coup
+country_event = {
+	id = coup.9
+	title = coup.9.t
+	desc = coup.9.d
+	
+	trigger = {
+		social_democrat > 0.5
+		NOT = { has_government = social_democrat }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			social_democrat > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			social_democrat > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Progressive Coup
+country_event = {
+	id = coup.10
+	title = coup.10.t1
+	desc = coup.10.d1
+	
+	trigger = {
+		progressive > 0.5
+		NOT = { has_government = progressive }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			progressive > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			progressive > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Socialist Coup
+country_event = {
+	id = coup.11
+	title = coup.11.t
+	desc = coup.11.d
+	
+	trigger = {
+		socialist > 0.5
+		NOT = { has_government = socialist }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			socialist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			socialist > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = socialist
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+#Communist Coup
+country_event = {
+	id = coup.12
+	title = coup.12.t
+	desc = coup.12.d
+	
+	trigger = {
+		communist > 0.5
+		NOT = { has_government = communist }
+		is_democracy = no
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+		modifier = {
+			factor = 0.5
+			communist > 0.5
+		}
+		modifier = {
+			factor = 0.5
+			communist > 0.55
+		}
+	}
+	
+	option = {
+		name = coup.o1
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		news_event = news.1
+		one_party_parliament = yes
+		break_coalition = yes
+		quickset_coalition = yes
+	}
+}
+
+news_event = {
+	id = coup.13
+	title = coup.13.t
+	desc = coup.13.d
+	picture = GFX_news_event_coup
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = coup.13.o1
+	}
+}
