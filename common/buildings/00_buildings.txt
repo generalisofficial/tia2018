@@ -11,7 +11,7 @@ buildings = {
 		allied_build = yes
 	}
 
-	arms_factory = {
+	military_industry = {
 		show_on_map = 6
 		base_cost = 7200
 		base_cost_conversion = 4000
@@ -23,7 +23,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	industrial_complex = {
+	civilian_industry = {
 		show_on_map = 6
 		base_cost = 10800
 		base_cost_conversion = 9000
@@ -35,7 +35,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	air_base = {
+	military_airport = {
 		show_on_map = 1
 		base_cost = 1250
 		icon_frame = 5
@@ -46,7 +46,7 @@ buildings = {
 		allied_build = yes
 	}
 
-	supply_node = {
+	logistics_hub = {
 		show_on_map = 1
 		base_cost = 20000
 		provincial = yes
@@ -60,7 +60,7 @@ buildings = {
 		always_shown = yes
 	}	
 	
-	rail_way = {
+	highway = {
 		base_cost = 170
 		per_level_extra_cost = 130
 		provincial = yes
@@ -69,7 +69,7 @@ buildings = {
 		max_level = 1
 	}
 	
-	naval_base = {
+	port = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
@@ -83,7 +83,7 @@ buildings = {
 		allied_build = yes
 	}
 
-	bunker = {
+	fortifications = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 500
@@ -96,7 +96,7 @@ buildings = {
 		value = 1
 	}
 	
-	coastal_bunker = {
+	coastal_fortifications = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 500
@@ -110,7 +110,7 @@ buildings = {
 		value = 1
 	}
 
-	dockyard = {
+	shipyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		base_cost = 6400
@@ -124,7 +124,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	anti_air_building = {
+	sam_site = {
 		show_on_map = 3
 		base_cost = 2500
 		icon_frame = 9
@@ -151,7 +151,7 @@ buildings = {
 		fuel_gain_from_states = 2.0
 	}
 
-	fuel_silo = {
+	fuel_storage_tank = {
 		show_on_map = 1
 		base_cost = 5000
 		icon_frame = 14
@@ -176,7 +176,7 @@ buildings = {
 		allied_build = yes
 	}
 
-	rocket_site = {
+	missile_launch_facility = {
 		show_on_map = 1
 		base_cost = 6400
 		icon_frame = 12

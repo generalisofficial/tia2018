@@ -1,0 +1,124 @@
+NATO_ai_strategy = {
+	
+	enable = {
+		NOT = { original_tag = USA }
+		USA = { is_in_faction = yes }
+		OR = {
+			original_tag = BEL
+			original_tag = CAN
+			original_tag = DEN
+			original_tag = FRA
+			original_tag = ICE
+			original_tag = ITA
+			original_tag = LUX
+			original_tag = HOL
+			original_tag = NOR
+			original_tag = POR
+			original_tag = ENG
+			original_tag = GRE
+			original_tag = TUR
+			original_tag = GER
+			original_tag = SPR
+			original_tag = CZE
+			original_tag = HUN
+			original_tag = POL
+			original_tag = BUL
+			original_tag = EST
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = ROM
+			original_tag = SLO
+			original_tag = SLV
+			original_tag = CRO
+			original_tag = ALB
+			original_tag = MNT
+		}
+		is_democracy = yes
+		USA = { is_democracy = yes }
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = USA
+			USA = { is_in_faction = no }
+			has_country_flag = left_NATO
+			is_democracy = no
+			USA = { is_democracy = no }
+			USA = { exists = no }
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = 125
+	}
+}
+
+CSTO_ai_strategy = {
+	
+	enable = {
+	
+		NOT = { tag = SOV }
+		
+		SOV = { is_in_faction = yes }
+		
+		OR = {		#These countries should always desire membership
+			tag = BLR
+			tag = SOS
+			tag = ABK
+			tag = KAZ
+			tag = TAJ
+			tag = KYR
+			tag = ARM
+			tag = NGK
+		}
+		
+		OR = {
+			has_government = monarchist
+			has_government = right_wing_nationalist
+			has_government = national_conservative
+			has_government = conservative
+			has_government = classical_liberal
+			has_government = social_liberal
+			has_government = social_democrat
+		}
+		
+		OR = {
+			SOV = { has_government = monarchist }
+			SOV = { has_government = right_wing_nationalist }
+			SOV = { has_government = national_conservative }
+			SOV = { has_government = conservative }
+			SOV = { has_government = classical_liberal }
+			SOV = { has_government = social_liberal }
+			SOV = { has_government = social_democrat }
+		}
+		
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = SOV
+			SOV = { is_in_faction = no }
+			OR = {
+				has_government = islamist
+				has_government = communist
+				has_government = fascist
+				has_government = progressive
+				has_government = socialist
+			}
+			OR = {
+				SOV = { has_government = islamist }
+				SOV = { has_government = communist }
+				SOV = { has_government = fascist }
+				SOV = { has_government = socialist }
+				SOV = { has_government = progressive }
+			}
+			SOV = { exists = no }
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = 125
+	}
+}

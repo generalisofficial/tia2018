@@ -17,20 +17,8 @@
  #Elections
  election.1.t: "General Election"
  election.1.d: "General elections are being held, and the votes will soon be counted. With our nation adhering to a first-past-the-post (FPTP) system, the party with the most votes will win the election and form the new government alone, with or without a parliamentary majority. The members of our [ROOT.GetParliamentName] are also up for re-election today."
- election.1.o1: "The Communist candidate has won!"
- election.1.o2: "The Socialist candidate has won!"
- election.1.o3: "The Social Democratic candidate has won!"
- election.1.o4: "The Progressive candidate has won!"
- election.1.o5: "The Social Liberal candidate has won!"
- election.1.o6: "The Classical Liberal candidate has won!"
- election.1.o7: "The Conservative candidate has won!"
- election.1.o8: "The National Conservative candidate has won!"
- election.1.o9: "The Nationalist candidate has won!"
- election.1.o10: "The Fascist candidate has won!"
- election.1.o11: "The Islamist candidate has won!"
- #election.1.o12:
- election.1.o13: "The Monarchist candidate has won!"
- election.1.o14: "§RCommit Electoral Fraud§!"
+ election.1.o1: "§PCertify Election Results§!"
+ election.1.o2: "§RCommit Electoral Fraud§!"
  election.2.t: "Legislative Election"
  election.2.d: "Today, it is time for the snap elections for our [ROOT.GetParliamentName], triggered by the Head of State's dissolution of it. The results today will decide if the government will gain a legislative majority, or become a minority government."
  election.2.o1: "Certify Results"
@@ -488,9 +476,6 @@
  political.o.movingOn: "Good for them."
 
  #Political
- political.0.t: "Party Support System"
- political.0.d: "Millennium Dawn utilizes a Party Support system through National Spirits that allows you to keep track of what your citizens think of their political parties right now. It will not be easy to convince the voters of a revolutionary new idea - unless a change in your country, be it natural or guided by you, makes them reconsider their positions seriously and thoroughly.\n\nCountries will automatically and dynamically receive these drifts and popularities by pressing the button below."
- political.0.o1: "Let's go!"
  political.1.t: "Fascist Coup"
  political.1.d: "Due to overwhelming support, the fascists have successfully ousted the government in one violent sudden assault. We are now fascist."
  political.1.o1: "Well then, heil!"
@@ -555,12 +540,10 @@
  political.24.d: "'The world has been run by capitalists for too long! Revolution! Revolution!'\n\nOur communist movements have gathered in the capital. Their central demands boil down to the destruction of capitalism, the removal of the influence of money, followed then by the removal of money itself; and the establishment of a new and futuristic state designed to help the many, not the few."
 
  #Politics
- politics.1.t: "Leader of the Opposition slams government"
- politics.1.d: "In a powerful speech in Parliament, the Leader of the Opposition has denounced the unpopular government, calling us liars and hypocrites. While this is obviously unfounded, the unhappy public are buying it, and the government parties are losing support in the polls."
- politics.1.o1: "Sad!"
- politics.2.t: "Head of Government slams opposition"
- politics.2.d: "In a powerful speech in Parliament, the Head of Government has denounced the opposition group, exposing their lies and deceit. With people relatively happy and content, it seems the government parties are making gains in the polls."
- politics.2.o1: "Gotcha!"
+ politics.1.t: "[FROM.GetNonIdeologyName] investigated for electoral fraud"
+ politics.1.d: "International election observers have launched an investigation against [FROM.GetNonIdeologyName], with the nation's recent election seeing unusually high numbers of discrepancies. It is now widely suspected that the government of [FROM.GetLeader] rigged the election in their favor, taking advantage of the country's government-centric authoritarian institutions. At a press conference in [FROM.Capital.GetName], an opposition spokesperson proceeded to denounce the government as tyrannical, before being carried away by armed police officers."
+ politics.1.o1: "Such shameful behavior!"
+ politics.1.o2: "Such ridiculous allegations!"
 
  #Turkey
  turkey.1.t: "Successful Operation Olive Branch"
@@ -806,3 +789,12 @@
  cuba.2.t: "End of Castro leadership in Cuba"
  cuba.2.d: "Cuban leader Raúl Castro has once and for all resigned from his position as First Secretary of the Communist Party of Cuba at the age of 89. With Raúl being the brother of the late Fidel Castro, who lead the country between 1959 and 2008, this marks the end of the Castro family's rule of Cuba. President Miguel Díaz-Canel, as expected, has taken over the job of First Secretary, ending his status as a mere figurehead. It is still unknown what this change will mean for Cuba itself, and what changes it will bring to the country and its people."
  cuba.2.o1: "The end of an era."
+
+ #Saudi Arabia
+ saudi_arabia.1.t: "The Jamal Khashoggi Situation"
+ saudi_arabia.1.d: "Our operatives have successfully managed to trick major anti-government journalist in-exile Jamal Khashoggi into visiting our consulate in Istanbul. He will visit in order to retrieve his marriage papers. Despite international law banning any such actions, this is a golden opportunity to quietly dispose of the journalist before he creates major dissent within our nation. Do we proceed with the assassination?"
+ saudi_arabia.1.o1: "Go ahead."
+ saudi_arabia.1.o2: "Khashoggi must be allowed to operate freely."
+ saudi_arabia.2.t: "Assassination of Jamal Khashoggi"
+ saudi_arabia.2.d: "On 2 October 2018, Jamal Khashoggi, a Saudi dissident journalist, was assassinated by agents of the Saudi government at the Saudi consulate in Istanbul, Turkey. Lured to the consulate building on the pretext of providing him papers for his upcoming wedding, Khashoggi was ambushed, suffocated, and dismembered by a 15-member squad of Saudi assassins. The Turkish investigation concluded that Khashoggi had been strangled as soon as he entered the consulate building, and that his body was dismembered and disposed of. Turkish investigators, as well as investigations by The New York Times, concluded that some of the 15 members of the Saudi hit team were closely connected to Mohammed bin Salman, the crown prince of Saudi Arabia, and that the team had traveled to Istanbul specifically to commit the murder."
+ saudi_arabia.2.o1: "A heinous crime!"

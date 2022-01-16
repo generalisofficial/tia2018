@@ -1,5 +1,17 @@
 characters={
     #Starting
+	DPR_pavel_gubarev={
+		name="Pavel Gubarev"
+		portraits={
+			civilian={
+				large=GFX_Portrait_DPR_Pavel_Gubarev
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+			traits={ friend_of_russia }
+		}
+	}
 	DPR_alexander_zakharchenko={
 		name="Alexander Zakharchenko"
 		portraits={
@@ -12,31 +24,16 @@ characters={
 			traits={ friend_of_russia }
 		}
 	}
-	DPR_yuri_sivokonenko={
-		name="Yuri Sivokonenko"
+	DPR_boris_litvinov={
+		name="Boris Litvinov"
 		portraits={
 			civilian={
-				large=GFX_Portrait_DPR_Yuri_Sivokonenko
+				large=GFX_Portrait_DPR_Boris_Litvinov
 			}
 		}
 		country_leader={
-			ideology=right_wing_nationalist_ideology
-		}
-	}
-	DPR_aleksandar_zakharchenko={
-		name="Aleksandar Zakharchenko"
-		portraits={
-			army={
-				large=GFX_Portrait_Europe_general1
-			}
-		}
-		corps_commander={
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+			ideology=marxist_leninist
+			traits={ friend_of_russia }
 		}
 	}
 }

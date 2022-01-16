@@ -1,193 +1,25 @@
 ﻿add_namespace = politics
 
-#Leader of the Opposition slams government
-country_event = {
+news_event = { #(Country) investigated for electoral fraud
 	id = politics.1
 	title = politics.1.t
 	desc = politics.1.d
+	picture = GFX_news_event_election
 	
-	trigger = {
-		always = no #Will be replaced
-		#has_idea = parliamentary_republic
-	}
+	is_triggered_only = yes
+	major = yes
 	
-	mean_time_to_happen = {
-		days = 2000
-		modifier = {
-			factor = 0.1
-			has_stability < 0.5
+	option = {
+		name = politics.1.o1
+		trigger = {
+			NOT = { original_tag = FROM }
 		}
 	}
 	
 	option = {
-		name = politics.1.o1
-		if = {
-			limit = { 
-			    has_country_flag = coalition_islamist
-			}
-			add_popularity = { ideology = islamist popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_fascist
-			}
-			add_popularity = { ideology = fascist popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_right_wing_nationalist
-			}
-			add_popularity = { ideology = right_wing_nationalist popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_monarchist
-			}
-			add_popularity = { ideology = monarchist popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_national_conservative
-			}
-			add_popularity = { ideology = national_conservative popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_conservative
-			}
-			add_popularity = { ideology = conservative popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_classical_liberal
-			}
-			add_popularity = { ideology = classical_liberal popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_social_liberal
-			}
-			add_popularity = { ideology = social_liberal popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_social_democrat
-			}
-			add_popularity = { ideology = social_democrat popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_progressive
-			}
-			add_popularity = { ideology = progressive popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_socialist
-			}
-			add_popularity = { ideology = socialist popularity = -0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_communist
-			}
-			add_popularity = { ideology = communist popularity = -0.03 }	
-		}
-	}
-}
-
-#Head of Government slams opposition
-country_event = {
-	id = politics.2
-	title = politics.2.t
-	desc = politics.2.d
-	
-	trigger = {
-		always = no #Will be replaced
-		#has_idea = parliamentary_republic
-	}
-	
-	mean_time_to_happen = {
-		days = 2000
-		modifier = {
-			factor = 0.1
-			has_stability > 0.5
-		}
-	}
-	
-	option = {
-		name = politics.1.o1
-		if = {
-			limit = { 
-			    has_country_flag = coalition_islamist
-			}
-			add_popularity = { ideology = islamist popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_fascist
-			}
-			add_popularity = { ideology = fascist popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_right_wing_nationalist
-			}
-			add_popularity = { ideology = right_wing_nationalist popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_monarchist
-			}
-			add_popularity = { ideology = monarchist popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_national_conservative
-			}
-			add_popularity = { ideology = national_conservative popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_conservative
-			}
-			add_popularity = { ideology = conservative popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_classical_liberal
-			}
-			add_popularity = { ideology = classical_liberal popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_social_liberal
-			}
-			add_popularity = { ideology = social_liberal popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_social_democrat
-			}
-			add_popularity = { ideology = social_democrat popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_progressive
-			}
-			add_popularity = { ideology = progressive popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_socialist
-			}
-			add_popularity = { ideology = socialist popularity = 0.03 }	
-		}
-		if = {
-			limit = { 
-			    has_country_flag = coalition_communist
-			}
-			add_popularity = { ideology = communist popularity = 0.03 }	
+		name = politics.1.o2
+		trigger = {
+			original_tag = FROM
 		}
 	}
 }

@@ -1,34 +1,7 @@
-#action_type = {
-#	available = {
-#		#trigger to check if action available
-#	}
-#	
-#	weight = {
-#		base = 1
-#		modifier = {
-#			add = 10
-#		}
-#	}
-#	
-#	max_amount = 3
-#	duration = 10
-#	
-#	effect = {
-#	
-#	}
-#
-#	state_modifier = {
-#	
-#	}
-#
-#	#if defined, the game will show up an alert text on map when resistance activity trigerred
-#	alert_text = loc
-#}
-
-sabotage_arms_factory = {
+sabotage_military_industry = {
 	available = {
 		non_damaged_building_level = {
-			building = arms_factory
+			building = military_industry
 			level > 0
 		}
 	}
@@ -47,7 +20,7 @@ sabotage_arms_factory = {
 
 	effect = {
 		damage_building = {
-			type = arms_factory
+			type = military_industry
 			damage = 0.25
 		}
 	}
@@ -81,10 +54,10 @@ sabotage_infrastructure = {
 	alert_text = building_is_sabotaged
 }
 
-sabotage_industrial_complex = {
+sabotage_civilian_industry = {
 	available = {
 		non_damaged_building_level = {
-			building = industrial_complex
+			building = civilian_industry
 			level > 0
 		}
 	}
@@ -103,7 +76,7 @@ sabotage_industrial_complex = {
 
 	effect = {
 		damage_building = {
-			type = industrial_complex
+			type = civilian_industry
 			damage = 0.25
 		}
 	}
@@ -111,10 +84,10 @@ sabotage_industrial_complex = {
 	alert_text = building_is_sabotaged
 }
 
-sabotage_air_base = {
+sabotage_military_airport = {
 	available = {
 		non_damaged_building_level = {
-			building = air_base
+			building = military_airport
 			level > 0
 		}
 	}
@@ -129,7 +102,7 @@ sabotage_air_base = {
 
 	effect = {
 		damage_building = {
-			type = air_base
+			type = military_airport
 			damage = 0.25
 		}
 	}
@@ -137,10 +110,10 @@ sabotage_air_base = {
 	alert_text = building_is_sabotaged
 }
 
-sabotage_dockyard = {
+sabotage_shipyard = {
 	available = {
 		non_damaged_building_level = {
-			building = dockyard
+			building = shipyard
 			level > 0
 		}
 	}
@@ -155,7 +128,7 @@ sabotage_dockyard = {
 
 	effect = {
 		damage_building = {
-			type = dockyard
+			type = shipyard
 			damage = 0.25
 		}
 	}
@@ -163,10 +136,10 @@ sabotage_dockyard = {
 	alert_text = building_is_sabotaged
 }
 
-sabotage_anti_air_building = {
+sabotage_sam_site = {
 	available = {
 		non_damaged_building_level = {
-			building = anti_air_building
+			building = sam_site
 			level > 0
 		}
 	}
@@ -181,7 +154,7 @@ sabotage_anti_air_building = {
 
 	effect = {
 		damage_building = {
-			type = anti_air_building
+			type = sam_site
 			damage = 0.25
 		}
 	}
@@ -217,10 +190,10 @@ sabotage_synthetic_refinery = {
 }
 
 
-sabotage_fuel_silo = {
+sabotage_fuel_storage_tank = {
 	available = {
 		non_damaged_building_level = {
-			building = fuel_silo
+			building = fuel_storage_tank
 			level > 0
 		}
 	}
@@ -235,7 +208,7 @@ sabotage_fuel_silo = {
 
 	effect = {
 		damage_building = {
-			type = fuel_silo
+			type = fuel_storage_tank
 			damage = 0.25
 		}
 	}
@@ -270,10 +243,10 @@ sabotage_radar_station = {
 	alert_text = building_is_sabotaged
 }
 
-sabotage_rocket_site = {
+sabotage_missile_launch_facility = {
 	available = {
 		non_damaged_building_level = {
-			building = rocket_site
+			building = missile_launch_facility
 			level > 0
 		}
 	}
@@ -288,7 +261,7 @@ sabotage_rocket_site = {
 
 	effect = {
 		damage_building = {
-			type = rocket_site
+			type = missile_launch_facility
 			damage = 0.25
 		}
 	}

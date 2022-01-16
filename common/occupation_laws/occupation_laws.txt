@@ -242,8 +242,8 @@ military_governor_occupation = {
 		base = 0
 		
 		#modifier = {
-			#set_temp_variable = { num_factory = building_level@arms_factory }
-			#add_to_temp_variable = { num_factory = building_level@industrial_complex }
+			#set_temp_variable = { num_factory = building_level@military_industry }
+			#add_to_temp_variable = { num_factory = building_level@civilian_industry }
 			#check_variable = { num_factory < 1 }
 			
 			#add = 50
@@ -394,8 +394,8 @@ harsh_quotas_occupation = {
 		local_factories 				= 0.25
 		local_resources 				= 0.05
 
-		repair_speed_arms_factory_factor = 0.25
-		repair_speed_industrial_complex_factor = 0.25
+		repair_speed_military_industry_factor = 0.25
+		repair_speed_civilian_industry_factor = 0.25
 		
 		custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
 	}
@@ -406,8 +406,8 @@ harsh_quotas_occupation = {
 		base = 0
 		
 		modifier = {
-			set_temp_variable = { num_damaged = damaged_building_level@arms_factory }
-			add_to_temp_variable = { num_damaged = damaged_building_level@industrial_complex }
+			set_temp_variable = { num_damaged = damaged_building_level@military_industry }
+			add_to_temp_variable = { num_damaged = damaged_building_level@civilian_industry }
 		
 			check_variable = { num_damaged > 0 }
 			clamp_temp_variable = { var = num_damaged max = 4 }
