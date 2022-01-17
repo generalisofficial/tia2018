@@ -104,13 +104,13 @@ set_country_flag = catholic
 
 #National Assembly of the Republic of Slovenia 
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 5.97 }
+set_variable = { socialist_seats = 6.81 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 5.98 }
-set_variable = { social_liberal_seats = 44.82 }
-set_variable = { classical_liberal_seats = 7.35 }
-set_variable = { conservative_seats = 5.59 }
-set_variable = { national_conservative_seats = 30.29 }
+set_variable = { social_democrat_seats = 6.81 }
+set_variable = { social_liberal_seats = 4.54 }
+set_variable = { classical_liberal_seats = 52.3 }
+set_variable = { conservative_seats = 5.68 }
+set_variable = { national_conservative_seats = 23.86 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -118,42 +118,34 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_social_liberal
+set_country_flag = coalition_classical_liberal
 set_country_flag = coalition_social_democrat
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = social_liberal
+	ruling_party = classical_liberal
 	last_election = "2014.6.3"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 24.92
-    classical_liberal = 29.63
-    social_democrat = 9.93
-    social_liberal = 14.86
-    socialist = 9.33
-	conservative = 7.16
-	right_wing_nationalist = 4.17
+	national_conservative = 28.40
+	social_liberal = 20.49
+	social_democrat = 11.36
+	classical_liberal = 17.04
+	socialist = 10.22
+	conservative = 7.95
+	fascist = 4.54
 }
 
-recruit_character = SLV_janez_janša
-recruit_character = SLV_marjan_Šarec
-recruit_character = SLV_dejan_Židan
-recruit_character = SLV_miro_cerar
-recruit_character = SLV_luka_mesec
+recruit_character = SLV_zmago_jelincic_plemeniti
+recruit_character = SLV_janez_jansa
 recruit_character = SLV_ljudmila_novak
-recruit_character = SLV_zmago_jelinčič_plemeniti
-recruit_character = SLV_andrej_osterman
-recruit_character = SLV_alan_geder
-recruit_character = SLV_bojan_pograjc
-recruit_character = SLV_igor_tomašič
-recruit_character = SLV_igor_strojin
-recruit_character = SLV_roman_urbanč
-recruit_character = SLV_matej_jakopič
-recruit_character = SLV_ernest_anželj
-recruit_character = SLV_renato_petrič
-recruit_character = SLV_boris_gersak
+recruit_character = SLV_miro_cerar
+recruit_character = SLV_marjan_sarec
+recruit_character = SLV_dejan_zidan
+recruit_character = SLV_andrej_cus
+recruit_character = SLV_luka_mesec
+recruit_character = SLV_tadej_trcek

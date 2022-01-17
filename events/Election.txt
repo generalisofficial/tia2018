@@ -313,6 +313,9 @@ country_event = {
 	
 	option = { #Form Coalition Government
 		name = election.3.o1
+		ai_chance = {
+			factor = 2
+		}
 		trigger = {
 			NOT = {
 				OR = {
@@ -340,6 +343,9 @@ country_event = {
 
 	option = { #Form Majority Single-Party Government
 		name = election.3.o2
+		ai_chance = {
+			factor = 100
+		}
 		trigger = {
 			OR = {
 				communist > 0.5
@@ -498,6 +504,9 @@ country_event = {
 	}
 	option = { #Form Minority Single-Party Government
 		name = election.3.o3
+		ai_chance = {
+			factor = 1
+		}
 		trigger = {
 			NOT = {
 				monarchist_plurality_popularity = yes

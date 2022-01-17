@@ -1,6 +1,17 @@
 characters={
     #Starting
-	SLV_janez_janša={
+	SLV_zmago_jelincic_plemeniti={
+		name="Zmago Jelinčič Plemeniti"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SLV_Zmago_Jelincic_Plemeniti
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
+	SLV_janez_jansa={
 		name="Janez Janša"
 		portraits={
 			civilian={
@@ -9,50 +20,6 @@ characters={
 		}
 		country_leader={
 			ideology=national_conservative_ideology
-		}
-	}
-	SLV_marjan_Šarec={
-		name="Marjan Šarec"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLV_Marjan_Sarec
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
-		}
-	}
-	SLV_dejan_Židan={
-		name="Dejan Židan"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLV_Dejan_Zidan
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	SLV_miro_cerar={
-		name="Miro Cerar"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLV_Miro_Cerar
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
-	SLV_luka_mesec={
-		name="Luka Mesec"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLV_Luka_Mesec
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
 		}
 	}
 	SLV_ljudmila_novak={
@@ -66,183 +33,70 @@ characters={
 			ideology=christian_democrat
 		}
 	}
-	SLV_zmago_jelinčič_plemeniti={
-		name="Zmago Jelinčič Plemeniti"
+	SLV_miro_cerar={
+		name="Miro Cerar"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SLV_Zmago_Jelincic_Plemeniti
+				large=GFX_Portrait_SLV_Miro_Cerar
 			}
 		}
 		country_leader={
-			ideology=right_wing_nationalist_ideology
+			ideology=classical_liberal_ideology
 		}
 	}
-	SLV_andrej_osterman={
-		name="Andrej Osterman"
+	SLV_marjan_sarec={
+		name="Marjan Šarec"
 		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Andrej_Osterman
+			civilian={
+				large=GFX_Portrait_SLV_Marjan_Sarec
 			}
 		}
-		field_marshal={
-			traits={ inspirational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=social_liberal_ideology
 		}
 	}
-	SLV_alan_geder={
-		name="Alan Geder"
+	SLV_dejan_zidan={
+		name="Dejan Židan"
 		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Alan_Geder
+			civilian={
+				large=GFX_Portrait_SLV_Dejan_Zidan
 			}
 		}
-		field_marshal={
-			traits={ thorough_planner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=social_democrat_ideology
 		}
 	}
-	SLV_bojan_pograjc={
-		name="Bojan Pograjc"
+	SLV_andrej_cus={
+		name="Andrej Čuš"
 		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Bojan_Pograjc
+			civilian={
+				large=GFX_Portrait_SLV_Andrej_Cus
 			}
 		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=green
 		}
 	}
-	SLV_igor_tomašič={
-		name="Igor Tomašič"
+	SLV_luka_mesec={
+		name="Luka Mesec"
 		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Igor_Tomasic
+			civilian={
+				large=GFX_Portrait_SLV_Luka_Mesec
 			}
 		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=democratic_socialist
 		}
 	}
-	SLV_igor_strojin={
-		name="Igor Strojin"
+	SLV_tadej_trcek={
+		name="Tadej Trček"
 		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Igor_Strojin
+			civilian={
+				large=GFX_Portrait_SLV_Tadej_Trcek
 			}
 		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLV_roman_urbanč={
-		name="Roman Urbanč"
-		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Roman_Urbanc
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLV_matej_jakopič={
-		name="Matej Jakopič"
-		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Matej_Jakopic
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLV_ernest_anželj={
-		name="Ernest Anželj"
-		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Ernest_Anzelj
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLV_renato_petrič={
-		name="Renato Petrič"
-		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Renato_Petric
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SLV_boris_gersak={
-		name="Boris Gersak"
-		portraits={
-			army={
-				large=GFX_Portrait_SLV_Portrait_Boris_Gersak
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 }

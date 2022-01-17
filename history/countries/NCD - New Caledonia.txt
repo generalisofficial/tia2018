@@ -97,21 +97,47 @@ if = {
 
 add_ideas = {
 	population_growth_steady
+	parliamentary_republic
 }
 
+#Congress
+set_variable = { communist_seats = 1.85 }
+set_variable = { socialist_seats = 16.66 }
+set_variable = { progressive_seats = 27.8 }
+set_variable = { social_democrat_seats = 27.77 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 25.92 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_progressive
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = progressive_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = classical_liberal
-	last_election = "2014.5.11"
-	election_frequency = 50
+	ruling_party = progressive
+	last_election = "2014.5.12"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 51.19
-    conservative = 24.54
-    socialist = 24.27
+	conservative = 35.31
+	socialist = 31.37
+	social_democrat = 17.64
+	progressive = 13.72
+	communist = 1.96
 }
 
+recruit_character = NCD_thierry_santa
+recruit_character = NCD_daniel_goa
 recruit_character = NCD_philippe_germain
-recruit_character = NCD_pierre_frogier
-recruit_character = NCD_victor_tutugoro
+recruit_character = NCD_louis_mapou
+recruit_character = NCD_louis_kotra_uregei

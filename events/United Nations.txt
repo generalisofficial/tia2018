@@ -1,0 +1,134 @@
+﻿add_namespace = united_nations
+
+# (Country) has applied to join the United Nations
+country_event = {
+	id = united_nations.1
+	title = united_nations.1.t
+	desc = united_nations.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = united_nations.1.o1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+		}
+		add_to_variable = {
+			var = global.un_application_vote_count_in_favor
+			value = 1
+		}
+	}
+
+	option = {
+		name = united_nations.1.o2
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_idea = idea_united_nations_security_council_member
+			}
+			set_global_flag = un_application_veto
+			else = {
+				add_to_variable = {
+					var = global.un_application_vote_count_against
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+# Response from the United Nations
+country_event = {
+	id = united_nations.2
+	title = united_nations.2.t
+	desc = united_nations.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = united_nations.2.o1
+		trigger = {
+			NOT = { has_global_flag = un_application_veto }
+			check_variable = {
+				var = global.un_application_vote_count_in_favor
+				value = global.un_application_vote_count_against
+				compare = greater_than
+			}
+		}
+		news_event = united_nations.3
+		remove_ideas = non_member_state
+		clr_global_flag = ongoing_un_application
+		clr_global_flag = un_application_veto
+		clear_variable = global.un_application_vote_count_in_favor
+		clear_variable = global.un_application_vote_count_against
+	}
+
+	option = {
+		name = united_nations.2.o2
+		trigger = {
+			NOT = {
+				has_global_flag = un_application_veto
+				check_variable = {
+					var = global.un_application_vote_count_in_favor
+					value = global.un_application_vote_count_against
+					compare = greater_than
+				}
+			}
+		}
+		clr_global_flag = ongoing_un_application
+		clr_global_flag = un_application_veto
+		clear_variable = global.un_application_vote_count_in_favor
+		clear_variable = global.un_application_vote_count_against
+	}
+
+	option = {
+		name = united_nations.2.o3
+		trigger = {
+			has_global_flag = un_application_veto
+		}
+		clr_global_flag = ongoing_un_application
+		clr_global_flag = un_application_veto
+		clear_variable = global.un_application_vote_count_in_favor
+		clear_variable = global.un_application_vote_count_against
+	}
+}
+
+news_event = { #(Country) joins the United Nations
+	id = united_nations.3
+	title = united_nations.3.t
+	desc = united_nations.3.d
+	picture = GFX_news_event_general_assembly
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = united_nations.3.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = united_nations.3.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}

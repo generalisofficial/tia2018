@@ -39,6 +39,7 @@ buildings = {
 		show_on_map = 1
 		base_cost = 1250
 		icon_frame = 5
+		disabled_in_dmz = yes
 		air_base = yes
 		max_level = 10
 		value = 1
@@ -46,21 +47,21 @@ buildings = {
 		allied_build = yes
 	}
 
-	logistics_hub = {
+	supply_node = {
 		show_on_map = 1
 		base_cost = 20000
 		provincial = yes
-		disabled_in_dmz = yes
 		icon_frame = 15
 		max_level = 1
 		centered = yes
 		supply_node = yes
+		disabled_in_dmz = yes
 		damage_factor = 0.1
 		allied_build = yes
 		always_shown = yes
 	}	
 	
-	highway = {
+	rail_way = {
 		base_cost = 170
 		per_level_extra_cost = 130
 		provincial = yes
@@ -69,7 +70,7 @@ buildings = {
 		max_level = 1
 	}
 	
-	port = {
+	naval_base = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes

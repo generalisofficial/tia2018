@@ -15,6 +15,10 @@ ideas = {
 			rule = {
 				can_create_factions = yes
 			}
+
+			cancel = {
+				is_UN_member = no
+			}
 		}
 		
 		idea_united_nations_NP_security_council_member = {
@@ -25,6 +29,26 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = 0.1
+			}
+
+			cancel = {
+				is_UN_member = no
+			}
+		}
+
+		non_member_state = {
+			picture = united_nations_red
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.25
 			}
 		}
 

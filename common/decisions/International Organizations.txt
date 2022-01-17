@@ -1,5 +1,65 @@
 international_organizations = {
 
+	join_united_nations = {
+		visible = {
+			is_UN_member = no
+			is_sovereign_state = yes
+		}
+		
+		available = {
+			has_war = no
+			NOT = { has_global_flag = ongoing_UN_application }
+		}
+		
+		icon = united_nations
+		
+		cost = 150
+		
+		days_re_enable = 360
+		
+		complete_effect = {
+			set_global_flag = ongoing_UN_application
+			every_country = {
+				limit = {
+					is_un_member = yes
+				}
+				country_event = united_nations.1
+			}
+			country_event = {
+				id = united_nations.2
+				days = 7
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	leave_united_nations = {
+		visible = {
+			is_UN_member = yes
+		}
+		
+		icon = united_nations
+		
+		cost = 50
+		
+		days_re_enable = 360
+		
+		complete_effect = {
+			add_ideas = non_member_state
+			add_named_threat = {
+				threat = 5
+				name = threat_left_united_nations
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	apply_to_join_the_EU = {
 		visible = {
 			NOT = { has_idea = idea_eu_member }

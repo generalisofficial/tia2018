@@ -78,7 +78,7 @@ NATO_ai_strategy = {
 	ai_strategy = {
 		type = alliance
 		id = "USA"
-		value = 100
+		value = 125
 	}
 }
 
@@ -147,6 +147,33 @@ CSTO_ai_strategy = {
 	ai_strategy = {
 		type = alliance
 		id = "SOV"
+		value = 125
+	}
+}
+
+axis_of_resistance_ai_strategy = {
+	
+	enable = {
+		NOT = { original_tag = PER }
+		PER = { is_in_faction = yes }
+		has_country_leader_ideology = khomeinist
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = PER
+			PER = { is_in_faction = no }
+			PER = { exists = no }
+			NOT = { has_country_leader_ideology = khomeinist }
+			PER = {
+				NOT = { has_country_leader_ideology = khomeinist }
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "PER"
 		value = 125
 	}
 }
