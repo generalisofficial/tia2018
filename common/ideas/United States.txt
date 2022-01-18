@@ -40,7 +40,7 @@ ideas = {
 		}
 		
 		USA_first_amendment = {
-			picture = disjointed_government
+			picture = usa_constitution
 			
 			allowed = { always = no }
 			allowed_civil_war = { is_democracy = yes }
@@ -48,13 +48,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.1
-				drift_defence_factor = -0.1
 			}
 		}
 		
 		USA_second_amendment = {
-			picture = volunteer_defenders
+			picture = usa_constitution
 			
 			allowed = { always = no }
 			allowed_civil_war = { is_democracy = yes }

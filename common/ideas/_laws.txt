@@ -677,7 +677,7 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_gain = 0.15
+				political_power_gain = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -716,8 +716,8 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_gain = 0.25
-				stability_factor = -0.2
+				political_power_gain = 0.2
+				stability_factor = -0.1
 			}
 			
 			cancel_if_invalid = yes
@@ -735,7 +735,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = -0.05
 			}
 			
 			cancel_if_invalid = yes
@@ -1353,7 +1353,7 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = 0.25
-				stability_factor = -0.2
+				stability_factor = -0.15
 				drift_defence_factor = 0.5
 			}
 			
@@ -1400,7 +1400,7 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = 0.1
-				stability_factor = -0.1
+				stability_factor = -0.075
 				drift_defence_factor = 0.25
 			}
 			
@@ -1980,7 +1980,11 @@ ideas = {
 			}
 			
 			modifier = {
-				# Add effects
+				consumer_goods_factor = 0.75
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		
 			cancel_if_invalid = no
@@ -2009,7 +2013,7 @@ ideas = {
 			}
 				
 			modifier = {
-				# Add effects
+				consumer_goods_factor = 0.5
 			}
 			
 			default = yes
@@ -2052,7 +2056,11 @@ ideas = {
 			}
 				
 			modifier = {
-				# Add effects
+				consumer_goods_factor = 0.25
+				stability_factor = -0.025
+				production_speed_buildings_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
 			}
 			
 			cancel_if_invalid = no
@@ -2090,7 +2098,10 @@ ideas = {
 			}
 				
 			modifier = {
-				# Add effects
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 			
 			cancel_if_invalid = no

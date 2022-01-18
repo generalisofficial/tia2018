@@ -1875,14 +1875,9 @@ election_pulse = {
 		}
 		country_event = andorra.1
 	}
-	if = {
-		limit = {
-			has_idea = ENG_conservative_dup_agreement
-		}
-		remove_ideas =  ENG_conservative_dup_agreement
-	}
 	if  = {
 		limit = {
+			original_tag = SWI
 			has_country_leader = {
 				name = "Alain Berset"
 				ruling_only = no
@@ -1897,6 +1892,7 @@ election_pulse = {
 	}
 	if  = {
 		limit = {
+			original_tag = SWI
 			has_country_leader = {
 				name = "Ueli Maurer"
 				ruling_only = no
@@ -1907,6 +1903,20 @@ election_pulse = {
 			name = "Guy Parmelin"
 			picture = GFX_Portrait_SWI_Guy_Parmelin
 			ideology = national_conservative_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = ENG
+			NOT = { has_government = social_democrat }
+			has_country_leader = {
+				name = "Jeremy Corbyn"
+				ruling_only = no
+			}
+		}
+		country_event = {
+			id = britain.8
+			days = 74
 		}
 	}
 }

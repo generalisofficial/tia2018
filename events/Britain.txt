@@ -225,3 +225,50 @@ country_event = { #2019 UKIP leadership election
         }
 	}
 }
+
+country_event = { #(Year) Labour Party leadership election (Corbyn resigns)
+	id = britain.8
+	title = britain.8.t
+	desc = britain.8.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.8.o1
+		ai_chance = {
+			factor = 56
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Keir Starmer"
+	        picture = GFX_Portrait_ENG_Keir_Starmer
+	        ideology = social_democrat_ideology
+        }
+	}
+	
+	option = {
+		name = britain.8.o2
+		ai_chance = {
+			factor = 28
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Rebecca Long-Bailey"
+	        picture = GFX_Portrait_ENG_Rebecca_Long_Bailey
+	        ideology = social_democrat_ideology
+        }
+	}
+	
+	option = {
+		name = britain.8.o3
+		ai_chance = {
+			factor = 16
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Lisa Nandy"
+	        picture = GFX_Portrait_ENG_Lisa_Nandy
+	        ideology = social_democrat_ideology
+        }
+	}
+}
