@@ -1,0 +1,123 @@
+﻿division_template = {
+	name = "Militia Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Special Forces"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "5th SPLA-IO Division"
+		location = 13437
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "7th SPLA-IO Division"
+		location = 13428
+		division_template = "IMilitia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SPLA-IO Special Forces Division"
+		location = 10877
+		division_template = "Special Forces"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1st Nuer White Army Brigade"
+		location = 14092
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Nuer White Army Brigade"
+		location = 13428
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd Nuer White Army Brigade"
+		location = 13428
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4th Nuer White Army Brigade"
+		location = 13420
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "South Sudan Defence Army"
+		location = 14091
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SSDA - Cobra Faction"
+		location = 10877
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SSDA - Upper Nile Faction"
+		location = 13437
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "South Sudan Federal Democratic Party"
+		location = 13439
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Arrow Boys"
+		location = 13411
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Wau Insurgents"
+		location = 14092
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "South Sudan Opposition Alliance"
+		location = 10877
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SSOMA Brigade"
+		location = 13437
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SSNDA Brigade"
+		location = 10877
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+}
