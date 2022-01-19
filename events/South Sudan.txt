@@ -1,0 +1,29 @@
+﻿add_namespace = south_sudan
+
+news_event = { #End of the South Sudanese Civil War (Salva Kiir Mayardit)
+	id = south_sudan.1
+	title = south_sudan.1.t
+	desc = south_sudan.1.d
+	picture = GFX_news_event_south_sudan_war
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = south_sudan.1.o1
+	}
+}
+
+news_event = { #End of the South Sudanese Civil War (Riek Machar)
+	id = south_sudan.2
+	title = south_sudan.2.t
+	desc = south_sudan.2.d
+	picture = GFX_news_event_south_sudan_war
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = south_sudan.2.o1
+	}
+}

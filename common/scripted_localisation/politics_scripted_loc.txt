@@ -940,7 +940,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = SSD
+			OR = {
+				original_tag = SSD
+				original_tag = SPO
+			}
 		}
 		localization_key = parliament_national_legislative_assembly
 	}

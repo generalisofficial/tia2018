@@ -1,3 +1,53 @@
+SOV_support_donetsk = {
+    enable = {
+	    original_tag = SOV
+		DPR = { has_war_with = UKR }
+    }
+	abort = {
+        OR = {
+	        is_in_faction_with = UKR
+            has_war_with = DPR
+            NOT = {
+                DPR = { has_war_with = UKR }
+            }
+        }
+    }
+	ai_strategy = {
+        type = send_volunteers_desire
+        id = "DPR"
+        value = 1000
+    }
+	ai_strategy = {
+        type = support
+        id = "DPR"
+        value = 1000
+    }
+}
+
+UKR_lend_lease = {
+    enable = {
+		original_tag = USA
+		NOT = { 
+            OR = {
+                has_war_with = UKR
+                is_in_faction_with = SOV
+            }
+        }
+        UKR = { has_war_with = DPR }
+    }
+	abort = {
+        OR = {
+	        is_in_faction_with = SOV
+            has_war_with = UKR
+            UKR = { has_war_with = DPR }
+    }
+	ai_strategy = {
+        type = support
+        id = "UKR"
+        value = 1000
+    }
+}
+
 ctjf_oir_strategy_major = {
     enable = {
 	    OR = {
@@ -13,12 +63,12 @@ ctjf_oir_strategy_major = {
 	ai_strategy = {
         type = befriend
         id = "ROJ"
-        value = 2000
+        value = 1000
     }
 	ai_strategy = {
         type = protect
         id = "ROJ"
-        value = 2000
+        value = 1000
     } 
 }
 
@@ -35,17 +85,17 @@ assad_supporter_strategy_major = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "SYR"
-        value = 2000
+        value = 1000
     }
 	ai_strategy = {
         type = befriend
         id = "SYR"
-        value = 2000
+        value = 1000
     }
     ai_strategy = {
         type = protect
         id = "SYR"
-        value = 2000
+        value = 1000
     } 
 }
 
@@ -64,7 +114,7 @@ assad_supporter_strategy_minor = {
     ai_strategy = {
         type = support
         id = "SYR"
-        value = 2000
+        value = 1000
     } 
 }
 
@@ -85,7 +135,7 @@ west_antagonize_assad_strategy = {
     ai_strategy = {
         type = antagonize
         id = "SYR"
-        value = 2000
+        value = 1000
     }
 	ai_strategy = {
         type = send_volunteers_desire
@@ -107,7 +157,7 @@ gulf_opposition_strategy = {
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 2000
+        value = 1000
     }
 }
 
@@ -121,7 +171,7 @@ israel_opposition_strategy = {
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 2000
+        value = 1000
     }
 }
 
@@ -155,17 +205,17 @@ TUR_intervene_in_syria = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "FSA"
-        value = 2000
+        value = 1000
     }
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 2000
+        value = 1000
     }
 	ai_strategy = {
         type = garrison
         id = "FSA"
-        value = 2000
+        value = 1000
     }
     ai_strategy = {
         type = send_volunteers_desire
@@ -180,7 +230,7 @@ TUR_intervene_in_syria = {
 	ai_strategy = {
         type = antagonize
         id = "ROJ"
-        value = 2000
+        value = 1000
     }
 }
 
@@ -203,7 +253,7 @@ fsa_supporter_strategy = {
 	ai_strategy = {
         type = support
         id = "FSA"
-        value = 2000
+        value = 1000
     } 
 }
 
@@ -237,4 +287,52 @@ neutral_scw_strategy = {
         id = "ISS"
         value = -2000
     }
+}
+
+saudi_led_coalition = {
+    enable = {
+	    OR = {
+            original_tag = SAU
+			original_tag = UAE
+			original_tag = SUD
+			original_tag = MOR
+			original_tag = QAT
+			original_tag = BHR
+		}
+    }
+	abort = {
+	    has_global_flag = yemeni_civil_war_over
+    } 
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "YEM"
+        value = 400
+    }
+	ai_strategy = {
+        type = protect
+        id = "YEM"
+        value = 400
+    } 
+}
+
+pro_houthi_coalition = {
+    enable = {
+	    OR = {
+            original_tag = PER
+			original_tag = PRK
+		}
+    }
+	abort = {
+	    has_global_flag = yemeni_civil_war_over
+    } 
+    ai_strategy = {
+        type = befriend
+        id = "HOU"
+        value = 400
+    }
+	ai_strategy = {
+        type = protect
+        id = "HOU"
+        value = 400
+    } 
 }

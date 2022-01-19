@@ -32,7 +32,6 @@ NATO_ai_strategy = {
 			original_tag = CRO
 			original_tag = ALB
 			original_tag = MNT
-			original_tag = BOS
 			original_tag = MAC
 		}
 		NOT = {
@@ -79,6 +78,24 @@ NATO_ai_strategy = {
 		type = alliance
 		id = "USA"
 		value = 125
+	}
+}
+
+protect_nato_countries = {
+    reversed = yes
+	enable = {
+		NOT = { original_tag = USA }
+		is_in_faction_with = USA
+	}
+	
+	abort = {
+		NOT = { country_exists = USA }
+	}
+	
+	ai_strategy = {
+		type = garrison
+		id = "USA"
+		value = 2000
 	}
 }
 
