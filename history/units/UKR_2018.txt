@@ -4,15 +4,45 @@
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		light_mechanized = { x = 0 y = 4 }
+		mechanized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Motorized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Anti-Aircraft Missile Brigade"
+	
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		anti_air_brigade = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -22,13 +52,69 @@ division_template = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		modern_armor = { x = 2 y = 0 }
+
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
 	}
+}
+
+division_template = {
+	name = "Jager Infantry Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Army Aviation Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Mechanized Brigade (Reserve)"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+
+	priority = 0
 }
 division_template = {
 	name = "Reserve Brigade"
@@ -41,9 +127,26 @@ division_template = {
 		artillery_brigade = { x = 0 y = 4 }
 	}
 	support = {
-		military_police = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+	
+	priority = 0
+}
+division_template = {
+	name = "Armored Brigade (Reserve)"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
 	}
 	
 	priority = 0
@@ -55,23 +158,19 @@ division_template = {
 		artillery_brigade = { x = 0 y = 0 }
 		artillery_brigade = { x = 0 y = 1 }
 		artillery_brigade = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		anti_tank_brigade = { x = 0 y = 3 }
 	}
 }
+
 division_template = {
-	name = "Engineer Brigade"
+	name = "SPG Brigade"
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		modern_sp_artillery_brigade = { x = 0 y = 0 }
+		modern_sp_artillery_brigade = { x = 0 y = 1 }
+		modern_sp_artillery_brigade = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		anti_tank_brigade = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -80,9 +179,8 @@ division_template = {
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		light_mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 1 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
@@ -94,284 +192,336 @@ division_template = {
 units = {
 	
 	division = {
-		name = "Ukrainian 1st Armored Brigade"
-		location = 6776
-		division_template = "Armored Brigade"
+		name = "11th Separate Motorized Infantry Brigade"
+		location = 6519
+		division_template = "Motorized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "Ukrainian 2nd Armored Brigade"
-		location = 418
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Mountain Warfare Brigade"
-		location = 6530
+		name = "10th Mountain Assault Brigade"
+		location = 6519
 		division_template = "Mountain Warfare Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "2nd Mountain Warfare Brigade"
-		location = 568
-		division_template = "Mountain Warfare Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Mechanized Brigade"
+		name = "14th Separate Mechanized Brigade"
 		location = 3466
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "2nd Mechanized Brigade"
-		location = 568
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Mechanized Brigade"
+		name = "24th Separate Mechanized Brigade"
 		location = 3479
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "4th Mechanized Brigade"
+		name = "128th Separate Mountain Assault Brigade"
+		location = 9476
+		division_template = "Mountain Warfare Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "44th Separate Artillery Brigade"
+		location = 3483
+		division_template = "Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "39th Anti-Aircraft Missile Regiment"
+		location = 422
+		division_template = "Anti-Aircraft Missile Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Separate Tank Brigade"
+		location = 6519
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "30th Separate Mechanized Brigade"
+		location = 3470
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "58th Separate Motorized Infantry Brigade"
 		location = 9531
-		division_template = "Mechanized Brigade"
+		division_template = "Motorized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "5th Mechanized Brigade"
+		name = "61st Separate Infantry Brigade"
 		location = 568
+		division_template = "Jager Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "72nd Separate Mechanized Brigade"
+		location = 525
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "6th Mechanized Brigade"
+		name = "26th Separate Artillery Brigade"
+		location = 9476
+		division_template = "SPG Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "28th Separate Mechanized Brigade"
+		location = 11670
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "56th Separate Motorized Infantry Brigade"
+		location = 6420
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "57th Separate Motorized Infantry Brigade"
+		location = 3755
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "59th Detached Motorized Infantry Brigade"
+		location = 6776
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "40th Separate Artillery Brigade"
+		location = 409
+		division_template = "Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "38th Anti-Aircraft Missile Regiment"
+		location = 6776
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "17th Separate Tank Brigade"
+		location = 3466
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "53rd Separate Mechanized Brigade"
 		location = 6519
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "7th Mechanized Brigade"
-		location = 502
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "8th Mechanized Brigade"
-		location = 6776
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "9th Mechanized Brigade"
-		location = 11405
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "10th Mechanized Brigade"
-		location = 3449
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "11th Mechanized Brigade"
-		location = 9476
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "12th Mechanized Brigade"
-		location = 6420
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "13th Mechanized Brigade"
-		location = 11541
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Reserve Brigade"
-		location = 6420
-		division_template = "Reserve Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Reserve Brigade"
+		name = "54th Separate Mechanized Brigade"
 		location = 3479
-		division_template = "Reserve Brigade"
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "3rd Reserve Brigade"
+		name = "92nd Separate Mechanized Brigade"
+		location = 11683
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "93rd Separate Mechanized Brigade"
 		location = 6776
-		division_template = "Reserve Brigade"
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "4th Reserve Brigade"
+		name = "55th Separate Artillery Brigade"
 		location = 3466
-		division_template = "Reserve Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Reserve Brigade"
-		location = 568
-		division_template = "Reserve Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Reserve Brigade"
-		location = 6420
-		division_template = "Reserve Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th Reserve Brigade"
-		location = 568
-		division_template = "Reserve Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Artillery Brigade"
-		location = 3479
 		division_template = "Artillery Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "2nd Artillery Brigade"
-		location = 6420
-		division_template = "Artillery Brigade"
+		name = "1039th Anti-Aircraft Missile Regiment"
+		location = 11452
+		division_template = "Anti-Aircraft Missile Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "Operation Command North Engineers"
-		location = 11489
-		division_template = "Engineer Brigade"
+		name = "11th Separate Brigade of Army Aviation"
+		location = 3755
+		division_template = "Army Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "Operation Command West Engineers"
-		location = 11479
-		division_template = "Engineer Brigade"
+		name = "12th Separate Brigade of Army Aviation"
+		location = 6431
+		division_template = "Army Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "Operation Command East Engineers"
-		location = 11405
-		division_template = "Engineer Brigade"
+		name = "16th Separate Brigade of Army Aviation"
+		location = 9558
+		division_template = "Army Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "Operation Command South Engineers"
-		location = 568
-		division_template = "Engineer Brigade"
+		name = "18th Separate Brigade of Army Aviation"
+		location = 511
+		division_template = "Army Aviation Brigade"
 		start_experience_factor = 0.3
 	}
-	
 
-	
+	division = {
+		name = "3rd Separate Tank Brigade"
+		location = 6429
+		division_template = "Armored Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "5th Separate Tank Brigade"
+		location = 3480
+		division_template = "Armored Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "14th Separate Tank Brigade"
+		location = 574
+		division_template = "Armored Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "15th Separate Mechanized Brigade"
+		location = 536
+		division_template = "Mechanized Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "33rd Separate Mechanized Brigade"
+		location = 572
+		division_template = "Mechanized Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "45th Separate Artillery Brigade"
+		location = 9468
+		division_template = "Artillery Brigade"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "60th Separate Mechanized Brigade"
+		location = 737
+		division_template = "Mechanized Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "62nd Separate Mechanized Brigade"
+		location = 11464
+		division_template = "Mechanized Brigade (Reserve)"
+		start_experience_factor = 0
+	}
+
+	division = {
+		name = "63rd Separate Mechanized Brigade"
+		location = 3457
+		division_template = "Mechanized Brigade (Reserve)"
+		start_experience_factor = 0
+	}
 }
 
 ### Air OOB ###
 air_wings = {
-	259 = {
-		#Su-27
-		fighter_equipment_3 = {
-			owner = "UKR" 
-			amount = 74
-		}
-
-	}
-	201 = {
-		#MiG-29A - If  80s equipment is added should be downgraded.
-		fighter_equipment_3 = {
-			owner = "UKR" 
-			amount = 45
-		}
-
-	}
-	202 = {
-		#MiG-29A - If  80s equipment is added should be downgraded.
-		fighter_equipment_3 = {
-			owner = "UKR" 
-			amount = 45
-		}
-	}
+	
 	89 = {
-		#MiG-29A - If  80s equipment is added should be downgraded.
-		fighter_equipment_3 = {
+		fighter_equipment_1 = { #MiG-29
 			owner = "UKR" 
-			amount = 45
+			amount = 32
 		}
+		name = "114th Tactical Aviation Brigade"
+	}
+	93 = {
+		fighter_equipment_1 = { #MiG-29
+			owner = "UKR" 
+			amount = 15
+		}
+		name = "204th Tactical Aviation Brigade"
 	}
 	197 = {
-		#MiG-29A - If  80s equipment is added should be downgraded.
-		fighter_equipment_3 = {
+		tac_bomber_equipment_1 = { #Su-24M
 			owner = "UKR" 
-			amount = 43
+			amount = 28
 		}
-	}
-	137 = {
-		#MiG-29A - If  80s equipment is added should be downgraded.
-		fighter_equipment_3 = {
-			owner = "UKR" 
-			amount = 45
-		}
-	}
-	197 = {
-		#Su-25
-		CAS_equipment_2 = {
-			owner = "UKR" 
-			amount = 63
-		}
-	}
-	197 = {
-		#Su-17
-		CAS_equipment_1 = {
-			owner = "UKR" 
-			amount = 55
-		}
+		name = "7th Tactical Aviation Brigade"
 	}
 	199 = {
-		#Su-24 - If tactical bombers are added, switch to that tech.
-		CAS_equipment_2 = {
+		CAS_equipment_1 = { #Su-24M
 			owner = "UKR" 
-			amount = 230
+			amount = 28
 		}
+		name = "7th Tactical Aviation Brigade"
+	}
+	199 = {
+		scout_plane_equipment_1 = { #Su-24MP
+			owner = "UKR" 
+			amount = 12
+		}
+		name = "3rd Aviation Squadron (reconnaissance)"
+	}
+	201 = {
+		fighter_equipment_2 = { #Su-27
+			owner = "UKR" 
+			amount = 6
+		}
+		name = "39th Tactical Aviation Brigade"
+	}
+	202 = {
+		fighter_equipment_1 = { #MiG-29
+			owner = "UKR" 
+			amount = 16
+		}
+		name = "40th Tactical Aviation Brigade"
+	}
+	259 = {
+		CAS_equipment_2 = { #Su-25
+			owner = "UKR" 
+			amount = 36
+		}
+		name = "299th Tactical Aviation BDE"
 	}
 }

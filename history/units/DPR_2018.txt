@@ -1,152 +1,270 @@
 ﻿division_template = {
-	name = "Civil Guard"
+	name = "Motorized Rifle Brigade"
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Militia Force"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Pro-Russian Separatists"
-	
-	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		anti_air_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		anti_tank_brigade = { x = 3 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
 	}
+}
+
+division_template = {
+	name = "Foreign Volunteer Brigade"
 	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+
+	priority = 0
+}
+
+division_template = {
+	name = "Militia"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0
+}
+
+division_template = {
+	name = "Republican Guard"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized Rifle Brigade (Heavy)"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+
 	priority = 2
+}
+
+division_template = {
+	name = "Motorized Militia"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+
+	priority = 0
+}
+
+division_template = {
+	name = "SPG Brigade"
+	
+	regiments = {
+		modern_sp_artillery_brigade = { x = 0 y = 0 }
+		modern_sp_artillery_brigade = { x = 0 y = 1 }
+		modern_sp_artillery_brigade = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Special Forces"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
 }
 
 units = {
 	
 	division = {
-		name = "1st Russian Separatists"
-		location = 6474
-		division_template = "Pro-Russian Separatists"
+		name = "1st Motorized Rifle Brigade"
+		location = 6493
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "2nd Russian Separatists"
-		location = 3421
-		division_template = "Pro-Russian Separatists"
+		name = "3rd Motorized Rifle Brigade"
+		location = 14106
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "3rd Russian Separatists"
-		location = 6474
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "4th Russian Separatists"
-		location = 6474
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "5th Russian Separatists"
+		name = "5th Motorized Rifle Brigade"
 		location = 14105
-		division_template = "Pro-Russian Separatists"
+		division_template = "Motorized Rifle Brigade (Heavy)"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "6th Russian Separatists"
-		location = 6474
-		division_template = "Pro-Russian Separatists"
+		name = "100th Motorized Rifle Brigade"
+		location = 6461
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "7th Russian Separatists"
-		location = 14107
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "8th Russian Separatists"
-		location = 14107
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "9th Russian Separatists"
-		location = 14107
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "10th Russian Separatists"
-		location = 6474
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "11th Russian Separatists"
-		location = 9461
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "12th Russian Separatists"
-		location = 14107
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "13th Russian Separatists"
-		location = 6474
-		division_template = "Pro-Russian Separatists"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "1st Donezk Civil Guard"
-		location = 6474
-		division_template = "Civil Guard"
-		start_experience_factor = 0
-	}
-	division = {
-		name = "2nd Donezk Civil Guard"
-		location = 6474
-		division_template = "Civil Guard"
-		start_experience_factor = 0
-	}
-	division = {
-		name = "Luhansk Civil Guard"
-		location = 9461
-		division_template = "Civil Guard"
-		start_experience_factor = 0
-	}
-	division = {
-		name = "Mariupol Civil Guard"
+		name = "9th Motorized Rifle Brigade"
 		location = 3421
-		division_template = "Civil Guard"
-		start_experience_factor = 0
+		division_template = "Motorized Rifle Brigade"
+		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "1st Artillery Brigade"
+		location = 6474
+		division_template = "SPG Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Separate Motorized Rifle Brigade"
+		location = 14107
+		division_template = "Motorized Militia"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Separate Tank Battalion"
+		location = 6474
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Separate Tank Battalion"
+		location = 6474
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Sparta Battalion"
+		location = 6474
+		division_template = "Special Forces"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Separate Brigade of Special Forces"
+		location = 6474
+		division_template = "Special Forces"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Separate Brigade of Special Forces"
+		location = 6474
+		division_template = "Special Forces"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Vostok Brigade"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Oplot Brigade"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Russian Orthodox Army"
+		location = 6474
+		division_template = "Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Miner's Division"
+		location = 6474
+		division_template = "Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Kalmius Brigade"
+		location = 6474
+		division_template = "Special Forces"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Republican Guard"
+		location = 6474
+		division_template = "Republican Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Orthodox Dawn"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Legion of Saint Stephen"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Jovan Šević Detachment"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Carlos Palomino International Brigade"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Varyag Battalion"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "RNU Volunteer Units"
+		location = 6474
+		division_template = "Foreign Volunteer Brigade"
+		start_experience_factor = 0.0
+	}
 }
