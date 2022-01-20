@@ -297,8 +297,11 @@ saudi_led_coalition = {
 			original_tag = UAE
 			original_tag = SUD
 			original_tag = MOR
-			original_tag = QAT
-			original_tag = BHR
+            original_tag = BHR
+            original_tag = EGY
+            original_tag = FRA
+            original_tag = MRT
+            original_tag = KUW
 		}
     }
 	abort = {
@@ -307,33 +310,30 @@ saudi_led_coalition = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "YEM"
-        value = 400
+        value = 1000
     }
 	ai_strategy = {
-        type = protect
+        type = support
         id = "YEM"
-        value = 400
+        value = 1000
     } 
 }
 
 pro_houthi_coalition = {
     enable = {
-	    OR = {
-            original_tag = PER
-			original_tag = PRK
-		}
+	    has_country_leader_ideology = khomeinist
     }
 	abort = {
 	    has_global_flag = yemeni_civil_war_over
-    } 
-    ai_strategy = {
-        type = befriend
-        id = "HOU"
-        value = 400
     }
-	ai_strategy = {
-        type = protect
+    ai_strategy = {
+        type = send_volunteers_desire
         id = "HOU"
-        value = 400
-    } 
+        value = 1000
+    }
+    ai_strategy = {
+        type = support
+        id = "HOU"
+        value = 1000
+    }
 }

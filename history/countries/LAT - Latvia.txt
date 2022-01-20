@@ -102,6 +102,7 @@ add_ideas = {
 	idea_eu_member
 	the_euro
     baltic_assembly_member
+	parliamentary_system
 }
 
 set_country_flag = protestant
@@ -109,25 +110,27 @@ set_country_flag = protestant
 #Saeima
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 23.0 }
-set_variable = { social_liberal_seats = 31.6 }
+set_variable = { progressive_seats = 4 }
+set_variable = { social_democrat_seats = 24 }
+set_variable = { social_liberal_seats = 25 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 28.8 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { conservative_seats = 23 }
+set_variable = { national_conservative_seats = 24 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 16.6 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_social_liberal
+set_country_flag = coalition_progressive
 set_country_flag = coalition_conservative
-set_country_flag = coalition_right_wing_nationalist
+set_country_flag = coalition_national_conservative
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = social_liberal
@@ -137,34 +140,19 @@ set_politics = {
 }
 
 set_popularities = {
-    right_wing_nationalist = 11.01
-    national_conservative = 14.25
-    conservative = 20.28
-    classical_liberal = 12.04
-    social_liberal = 22.62
-    social_democrat = 19.80
+	national_conservative = 29
+	conservative = 24
+	social_democrat = 23
+	classical_liberal = 13
+	social_liberal = 10
+	progressive = 1
 }
 
-recruit_character = LAT_arturs_krisjanis_karins
-recruit_character = LAT_vjaceslavs_dombrovskis
-recruit_character = LAT_maris_kucinskis
 recruit_character = LAT_roberts_zile
-recruit_character = LAT_aldis_gobzems
-recruit_character = LAT_juris_pūce
+recruit_character = LAT_arturs_krisjanis_karins
+recruit_character = LAT_artis_pabriks
+recruit_character = LAT_maris_kucinskis
+recruit_character = LAT_vjaceslavs_dombrovskis
+recruit_character = LAT_edgars_tavars
+recruit_character = LAT_juris_zuravlovs
 recruit_character = LAT_vladimirs_frolovs
-recruit_character = LAT_leonīds_kalniņš
-recruit_character = LAT_juris_zeibārts
-recruit_character = LAT_ilmārs_atis_lejiņš
-recruit_character = LAT_ainārs_ozoliņš
-recruit_character = LAT_normunds_aleksis
-recruit_character = LAT_jānis_gailis
-recruit_character = LAT_viktors_kareckis
-recruit_character = LAT_gvido_brenneris
-recruit_character = LAT_brigita_gulbe
-recruit_character = LAT_raivis_melnis
-recruit_character = LAT_juris_ušackis
-recruit_character = LAT_armands_saltups
-recruit_character = LAT_mārtiņš_liberts
-recruit_character = LAT_ingus_vizulis
-recruit_character = LAT_kaspars_zelčs
-recruit_character = LAT_hermanis_Černovs

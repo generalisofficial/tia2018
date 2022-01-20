@@ -6,14 +6,23 @@ state={
 	history={
 		owner = HOU
 		victory_points = {
-			13333 4
+			13333 4 
+		}
+		victory_points = {
+			1072 5 
+		}
+		victory_points = {
+			1973 2 
 		}
 		YEM = {
 			set_province_controller = 13479
+			set_province_controller = 1086
+			set_province_controller = 1072
 
 		}
 		buildings = {
 			infrastructure = 2
+			military_industry = 1
 			13333 = {
 				naval_base = 2
 				fortifications = 3
@@ -28,9 +37,10 @@ state={
 	}
 
 	provinces={
-		1086 13333 13479 
+		1072 1086 13333 13479 14117 
 	}
 	manpower=2621000
 	buildings_max_level_factor=1.000
 	state_category=state_level_2
+	local_supplies=0.000
 }

@@ -20,7 +20,11 @@ domestic_affairs = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 50
+			modifier = {
+				factor = 0
+				has_government = monarchist
+			}
 		}
 		
 	}

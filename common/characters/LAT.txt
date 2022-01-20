@@ -1,5 +1,16 @@
 characters={
     #Starting
+	LAT_roberts_zile={
+		name="Roberts Zile"
+		portraits={
+			civilian={
+				large=GFX_Portrait_LAT_Roberts_Zile
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
 	LAT_arturs_krisjanis_karins={
 		name="Arturs Krisjanis Karins"
 		portraits={
@@ -11,15 +22,15 @@ characters={
 			ideology=liberal_conservative
 		}
 	}
-	LAT_vjaceslavs_dombrovskis={
-		name="Vjaceslavs Dombrovskis"
+	LAT_artis_pabriks={
+		name="Artis Pabriks"
 		portraits={
 			civilian={
-				large=GFX_Portrait_LAT_Vjaceslavs_Dombrovskis
+				large=GFX_Portrait_LAT_Artis_Pabriks
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
+			ideology=classical_liberal_ideology
 		}
 	}
 	LAT_maris_kucinskis={
@@ -33,37 +44,37 @@ characters={
 			ideology=agrarian
 		}
 	}
-	LAT_roberts_zile={
-		name="Roberts Zile"
+	LAT_vjaceslavs_dombrovskis={
+		name="Vjaceslavs Dombrovskis"
 		portraits={
 			civilian={
-				large=GFX_Portrait_LAT_Roberts_Zile
+				large=GFX_Portrait_LAT_Vjaceslavs_Dombrovskis
 			}
 		}
 		country_leader={
-			ideology=right_wing_nationalist_ideology
+			ideology=social_democrat_ideology
 		}
 	}
-	LAT_aldis_gobzems={
-		name="Aldis Gobzems"
+	LAT_edgars_tavars={
+		name="Edgars Tavars"
 		portraits={
 			civilian={
-				large=GFX_Portrait_LAT_Aldis_Gobzems
+				large=GFX_Portrait_LAT_Edgars_Tavars
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=green
 		}
 	}
-	LAT_juris_pūce={
-		name="Juris Pūce"
+	LAT_juris_zuravlovs={
+		name="Juris Zuravlovs"
 		portraits={
 			civilian={
-				large=GFX_Portrait_LAT_Juris_Puce
+				large=GFX_Portrait_LAT_Juris_Zuravlovs
 			}
 		}
 		country_leader={
-			ideology=classical_liberal_ideology
+			ideology=left_wing_nationalist
 		}
 	}
 	LAT_vladimirs_frolovs={
@@ -75,277 +86,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	LAT_leonīds_kalniņš={
-		name="Leonīds Kalniņš"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Leonids_Kalnins
-			}
-		}
-		field_marshal={
-			traits={ inspirational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_juris_zeibārts={
-		name="Juris Zeibārts"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Juris_Zeibarts
-			}
-		}
-		field_marshal={
-			traits={ organisational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_ilmārs_atis_lejiņš={
-		name="Ilmārs Atis Lejiņš"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Ilmars_Lejins
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_ainārs_ozoliņš={
-		name="Ainārs Ozoliņš"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Ainars_Ozolins
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_normunds_aleksis={
-		name="Normunds Aleksis"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Normunds_Aleksis
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_jānis_gailis={
-		name="Jānis Gailis"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Janis_Gailis
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_viktors_kareckis={
-		name="Viktors Kareckis"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Viktors_Kareckis
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_gvido_brenneris={
-		name="Gvido Brenneris"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Gvido_Brenneris
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_brigita_gulbe={
-		name="Brigita Gulbe"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Brigita_Gulbe
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_raivis_melnis={
-		name="Raivis Melnis"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Raivis_Melnis
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_juris_ušackis={
-		name="Juris Ušackis"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Juris_Usackis
-			}
-		}
-		corps_commander={
-			traits={ commando naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_armands_saltups={
-		name="Armands Saltups"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Armands_Saltups
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_mārtiņš_liberts={
-		name="Mārtiņš Liberts"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Martins_Liberts
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_ingus_vizulis={
-		name="Ingus Vizulis"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Ingus_Vizulis
-			}
-		}
-		navy_leader={
-			traits={ superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_kaspars_zelčs={
-		name="Kaspars Zelčs"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Kaspars_Zelcs
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	LAT_hermanis_Černovs={
-		name="Hermanis Černovs"
-		portraits={
-			army={
-				large=GFX_Portrait_LAT_Portrait_Hermanis_Cernovs
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 }

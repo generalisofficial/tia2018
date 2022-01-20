@@ -1,6 +1,6 @@
 ﻿add_namespace = botswana
 
-country_event = { #Mokgweetsi Masisi Elected
+country_event = { #Ian Khama finishes his last term
 	id = botswana.1
 	title = botswana.1.t
 	desc = botswana.1.d
@@ -9,18 +9,36 @@ country_event = { #Mokgweetsi Masisi Elected
 
 	trigger = {
 		original_tag = BOT
-		has_government = conservative
-		date > 2018.3.31
+		date > 2018.4.1
 		date < 2019.1.1
+		has_country_leader = {
+			name = "Ian Khama"
+			ruling_only = yes
+		}
 	}
 	
 	option = {
 		name = botswana.1.o1
+		news_event = botswana.2
 		retire_country_leader = yes
 		create_country_leader = {
 	        name = "Mokgweetsi Masisi"
 	        picture = GFX_Portrait_BOT_Mokgweetsi_Masisi
-	        ideology = liberal_conservative
+	        ideology =social_conservative
         }
+	}
+}
+
+news_event = { #Botswana president resigns after serving final term
+	id = botswana.2
+	title = botswana.2.t
+	desc = botswana.2.d
+	picture = GFX_news_event_khama_masisi
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = botswana.2.o1
 	}
 }
