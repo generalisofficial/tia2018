@@ -4,7 +4,10 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -48,12 +51,16 @@ division_template = {
 }
 
 units = {
-	
 	division = {
-		name = "Papua New Guinea Armed Forces"
+		name = "1st Royal Pacific Islands Regiment"
 		location = 4329
-		division_template = "Mechanized Brigade"
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "2nd Royal Pacific Islands Regiment"
+		location = 12240
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
 }

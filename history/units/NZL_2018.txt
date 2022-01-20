@@ -5,6 +5,26 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Paratrooper Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -48,26 +68,39 @@ division_template = {
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "New Zealand Armed Forces"
-		location = 1814
-		division_template = "Mechanized Brigade"
+		name = "1st Brigade"
+		location = 4804 #Linton Military Camp, Palmerston North
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+
+	division = {
+		name = "New Zealand Special Air Service"
+		location = 4543 #Papakura Military Camp, Auckland
+		division_template = "Paratrooper Brigade"
+		start_experience_factor = 0.3
+	}	
 }
 
 ### Air OOB ###
 
 air_wings = {
 	284 = {
-		#P-3C
-		nav_bomber_equipment_3 = {
+		#Lockheed P-3 Orion
+		nav_bomber_equipment_1 = {
 			owner = "NZL" 
-			amount = 6
+			amount = 5
 		}
-
+		name = "No. 5 Squadron RNZAF"
+	}
+	284 = {
+		#Lockheed C-130H Hercules 
+		transport_plane_equipment_1 = {
+			owner = "NZL" 
+			amount = 5
+		}
+		name = "No. 40 Squadron RNZAF"
 	}
 }

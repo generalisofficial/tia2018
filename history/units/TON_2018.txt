@@ -4,6 +4,9 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+	}
 }
 division_template = {
 	name = "Motorized Regiment"
@@ -39,5 +42,10 @@ division_template = {
 }
 
 units = {
-	#No army to speak of.
-}
+	division = {
+		name = "Tonga Royal Corps"
+		location = 13227
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+}	
