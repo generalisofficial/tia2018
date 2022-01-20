@@ -1,4 +1,4 @@
-version="Early Access 0.3.1"
+version="Early Access 0.3.2"
 tags={
 	"Alternative History"
 	"Historical"

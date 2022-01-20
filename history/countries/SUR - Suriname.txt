@@ -100,17 +100,17 @@ add_ideas = {
 	population_growth_rapid
 	limited_conscription
 	non_aligned_movement_member
-	presidential_republic
+	parliamentary_republic
 }
 
 set_country_flag = catholic
 
 #National Assembly
-set_variable = { communist_seats = 1.9 }
-set_variable = { socialist_seats = 50.9 }
-set_variable = { progressive_seats = 31.6 }
-set_variable = { social_democrat_seats = 3.9 }
-set_variable = { social_liberal_seats = 11.7 }
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 50.98 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 49.02 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
@@ -132,21 +132,9 @@ set_politics = {
 }
 
 set_popularities = {
-    socialist = 50.9
-	progressive = 31.6
-	social_liberal = 11.7
-	social_democrat = 3.9
-	communist = 1.9
+	social_democrat = 64.71
+    socialist = 35.29
 }
 
-recruit_character = SUR_dési_bouterse
 recruit_character = SUR_chan_santokhi
-recruit_character = SUR_ronnie_brunswijk
-recruit_character = SUR_gregory_rusland
-recruit_character = SUR_jim_hok
-recruit_character = SUR_adolf_jardim
-recruit_character = SUR_robert_kartodikromo
-recruit_character = SUR_egmond_letterboom
-recruit_character = SUR_henri_van_axeldongen
-recruit_character = SUR_maipath_ganpat
-recruit_character = SUR_marino_acton
+recruit_character = SUR_desi_bouterse
