@@ -5,66 +5,126 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
 	}
 }
+
 division_template = {
-	name = "Motorized Brigade"
+	name = "Infantry Brigade (Light)"
 	
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		anti_tank = { x = 0 y = 2 }
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
 	}
 }
+
+division_template = {
+	name = "Special Forces"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Air Cavalry"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+}
+
 division_template = {
 	name = "Armored Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "1st Brigade"
-		location = 4598
+		name = "1st Infantry Brigade"
+		location = 7660 #Santo Domingo
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Brigade"
-		location = 7632
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Brigade"
-		location = 7632
+		name = "2nd Infantry Brigade"
+		location = 4598 #Santiago
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Brigade"
-		location = 7660
-		division_template = "Motorized Brigade"
+		name = "3rd Infantry Brigade"
+		location = 7632 #San Juan de la Maguana
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "4th Infantry Brigade"
+		location = 4598 #Mao, Dominican Republic, not the communist Mao
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		location = 7632 #Barahona
+		division_template = "Infantry Brigade (Light)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Infantry Brigade"
+		location = 14044 #San Pedro de Macoris
+		division_template = "Infantry Brigade (Light)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Combat Support Brigade"
+		location = 7660 #Santo Domingo
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Special Operations Brigade"
+		location = 14043 #Constanza
+		division_template = "Special Forces"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Air Cavalry Squadron"
+		location = 7660 #Santo Domingo
+		division_template = "Air Cavalry"
+		start_experience_factor = 0.3
+	}
 }
+
+air_wings = {
+	319 = {
+		#EMB 314 
+		CAS_equipment_2 = {
+			owner = "DOM" 
+			amount = 8
+		}	
+	}
+}	

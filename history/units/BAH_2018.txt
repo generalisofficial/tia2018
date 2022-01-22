@@ -1,51 +1,30 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	}
-}
-division_template = {
 	name = "Marine Brigade"
 	
 	regiments = {
 		marine = { x = 0 y = 0 }
 	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
 }
 
 units = {
-	
 	division = {
-		name = "Brigade of the Bahamas"
-		location = 4647
-		division_template = "Infantry Brigade"
+		name = "Commando Squadron"
+		location = 10254 #Somewhere on New Providence, near Nassau
+		division_template = "Marine Brigade"
 		start_experience_factor = 0.3
-	}
-	
-	
-	
+	}	
 }
+
+air_wings = {
+	690 = {
+		#Super King Air
+		nav_bomber_equipment_1 = {
+			owner = "BAH" 
+			amount = 1
+		}
+		name = "RBDF Air Wing"	
+	}
+}	

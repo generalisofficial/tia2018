@@ -5,85 +5,94 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
 	name = "Armored Brigade"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		modern_armor = { x = 2 y = 0 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Paratrooper Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+units = {	
+	division = {
+		name = ""Mariscal Zavala" Military Brigade"
+		location = 10886 #Guatemala City
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Infantry Brigade"
+		location = 4991 #Santa Elena, Flores
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 4991 #Santa Elena, Flores
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 4991 #Santa Elena, Flores
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 4991 #Santa Elena, Flores
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 4991 #Santa Elena, Flores
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		location = 4991 #Santa Elena, Flores
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Infantry Brigade"
+		location = 10842 #Ixcán, Quiché
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Paratrooper Brigade"
+		location = 10886 #San José, Escuintla
+		division_template = "Paratrooper Brigade"
+		start_experience_factor = 0.3
 	}
 }
 
-units = {
-	
-	division = {
-		name = "1st Brigade"
-		location = 10842
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Brigade"
-		location = 10842
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Brigade"
-		location = 10886
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Brigade"
-		location = 10886
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Brigade"
-		location = 4991
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Brigade"
-		location = 13085
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th Brigade"
-		location = 13085
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-}
+#I can't believe that Guatemala has no actual fighters or attack planes

@@ -2,6 +2,14 @@
 
 oob = "CUB_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "CUB_2018_naval_mtg"
+	else = {
+		set_naval_oob = "CUB_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 set_convoys = 350
 
@@ -146,3 +154,61 @@ set_country_flag = classical_liberal_intended_no_leader
 set_country_flag = social_democrat_intended_no_leader
 set_country_flag = socialist_intended_no_leader
 recruit_character = CUB_raul_castro
+
+create_equipment_variant = {
+	name = "Rio Damuji Class"
+	type = ship_hull_cruiser_1
+	name_group = CUB_CL_HISTORICAL
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_airplane_launcher_1
+	}
+}
+
+create_equipment_variant = {
+	name = "Delfin Class"				
+	type = ship_hull_submarine_1
+	name_group = CUB_SS_HISTORICAL
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}
+
+create_equipment_variant = {
+	name = "Sonya Class"
+	type = ship_hull_light_1
+	name_group = EGY_DD_HISTORICAL
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = ship_mine_sweeper_1
+	}
+}
+
+create_equipment_variant = {
+	name = "Yevgenya Class"
+	type = ship_hull_light_1
+	name_group = EGY_DD_HISTORICAL
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = ship_mine_sweeper_1
+	}
+}

@@ -3,65 +3,15 @@
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
 	}
 }
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-
 units = {
-	
 	division = {
-		name = "1st Brigade"
-		division_template = "Motorized Brigade"
-		location = 4641
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Brigade"
+		name = "Defence Force of Haiti"
 		division_template = "Infantry Brigade"
-		location = 1594
-		start_experience_factor = 0.3
-	}
-	
+		location = 4641 #Port-au-Prince
+		start_experience_factor = 0 #The new defence force was established in 2017 and it's really poorly trained, being dependent on the UN missions
+		start_equipment_factor = 0 #It literally has no equipment, the US took it in the 1990s as part of "Operation Uphold Democracy". Moïse planed on purchasing weapons from Israel, China, Brazil, South Korea and Russia
+		start_manpower_factor = 0.1 #Apparently the conscription campaigns were not very sucessful if they only sent less than a 100 for training
+	}	
 }

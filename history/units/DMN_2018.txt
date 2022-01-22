@@ -1,60 +1,17 @@
 ﻿division_template = {
-	name = "Infantry Regiment"
+	name = "Police Regiment"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Regiment"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Paratrooper Regiment"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Regiment"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Marine Regiment"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
 units = {
-	#No standing army
+	division = { #Now, it is somewhat questionable to add a police force as a military unit, but according to the "Police Act, Chapter 14:01" of Dominica, "In the event of war or other emergency, if proclaimed by the authorities, the Police Force shall be a military force which may be employed for State defence."
+		name = "Commonwealth of Dominica Police Forcee"
+		location = 7123 
+		division_template = "Police Regiment"
+		start_experience_factor = 0
+		start_manpower_factor = 0.440
+	}
 }

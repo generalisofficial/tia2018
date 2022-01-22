@@ -4,23 +4,14 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Armored Regiment"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
 }
 
 units = {
-	
-	#No army to speak of
-	
+	division = { 
+		name = "Barbados Regiment"
+		location = 11350 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+		start_manpower_factor = 0.250
+	}	
 }

@@ -2,6 +2,14 @@
 
 oob = "NIC_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "NIC_2018_naval_mtg"
+	else = {
+		set_naval_oob = "NIC_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 2
 set_convoys = 65
 
@@ -51,6 +59,7 @@ set_technology = {
 	fighter3 = 1
 	naval_bomber1 = 1
 	strategic_bomber1 = 1
+	scout_plane1 = 1
 	
 	## Engineering ##
 	
@@ -144,3 +153,18 @@ recruit_character = NIC_walter_espinoza
 recruit_character = NIC_brooklyn_rivera
 recruit_character = NIC_daniel_ortega
 set_country_flag = communist_intended_no_leader
+
+create_equipment_variant = {
+	name = "Sin Hung Class"
+	type = ship_hull_light_1
+	name_group = NIC_DD_HISTORICAL
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+	}
+}

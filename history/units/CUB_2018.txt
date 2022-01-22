@@ -1,93 +1,103 @@
 ﻿division_template = {
-	name = "Infantry Division"
+	name = "Western Army"
 	
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 3 y = 0 }
+		mechanized = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Central Army"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		marine = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		infantry = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Motorized Brigade"
+	name = "Eastern Army"
 	
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Army Corps"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "1st Infantry Division"
-		location = 7622
-		division_template = "Infantry Division"
+		name = "Western Army"
+		location = 7622 #Havana
+		division_template = "Western Army"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Infantry Division"
-		location = 7622
-		division_template = "Infantry Division"
+		name = "Central Army"
+		location = 14048 #Matanzas
+		division_template = "Central Army"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Infantry Division"
-		location = 1550
-		division_template = "Infantry Division"
+		name = "Western Army"
+		location = 14046 #Santiago de Cuba
+		division_template = "Eastern Army"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Infantry Division"
-		location = 7590
-		division_template = "Infantry Division"
+		name = "Holguín Army Corps"
+		location = 12347 #Holguín
+		division_template = "Army Corps"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Armored Brigade"
-		location = 7622
-		division_template = "Armored Brigade"
+		name = "Camagüey Army Corps"
+		location = 4476 #Camagüey
+		division_template = "Army Corps"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "2nd Armored Brigade"
-		location = 7590
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
@@ -95,11 +105,10 @@ units = {
 air_wings = {
 	315 = {
 		#MiG-29
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "CUB" 
 			amount = 3
 		}
-
 	}
 	315 = {
 		#MiG-23
@@ -107,14 +116,12 @@ air_wings = {
 			owner = "CUB" 
 			amount = 24
 		}
-
 	}
 	315 = {
 		#MiG-21
 		fighter_equipment_1 = {
 			owner = "CUB" 
-			amount = 12
+			amount = 11
 		}
-
 	}
 }

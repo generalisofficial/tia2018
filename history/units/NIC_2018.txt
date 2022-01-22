@@ -4,73 +4,68 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-	}
+	}	
 }
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		light_mechanized = { x = 1 y = 0 }
+units = {	
+	division = {
+		name = "Northern Military Detachment"
+		location = 2075 #Puerto Cabezas
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+	division = {
+		name = "Southern Military Detachment"
+		location = 1988 #San Juan Department
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
 	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 1 y = 0 }
+	division = {
+		name = "1st Regional Military Command"
+		location = 12738 #Estelí
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+	division = {
+		name = "2nd Regional Military Command"
+		location = 12738 # León
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
 	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
+	division = {
+		name = "4th Regional Military Command"
+		location = 12738 #Somewhere on the South-West
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+	division = {
+		name = "5th Regional Military Command"
+		location = 10728 #Boaco
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
 	}
+	division = {
+		name = "6th Regional Military Command"
+		location = 10728 #Matagalpa
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}	
 }
 
-units = {
-	
-	division = {
-		name = "1st Brigade"
-		location = 1988
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+### Air OOB ###
+
+air_wings = {
+	317 = {
+		#Cessna 337
+		scout_plane_equipment_1 = {
+			owner = "NIC" 
+			amount = 8
+		}	
 	}
-	
-	division = {
-		name = "2nd Brigade"
-		location = 10728
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
+	317 = {
+		#Antonov An-26 Curl + Cessna 404
+		transport_plane_equipment_1 = {
+			owner = "NIC" 
+			amount = 5
+		}	
 	}
-	
-	division = {
-		name = "3rd Brigade"
-		location = 10728
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
