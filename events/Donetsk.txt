@@ -13,6 +13,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		news_event = donetsk.4
 		white_peace = DPR
 	}
 	
@@ -65,5 +66,19 @@ news_event = { #Donetsk separatist leader assassinated
 	
 	option = {
 		name = donetsk.3.o1
+	}
+}
+
+news_event = { #Ukraine signs armistice with Donetsk separatists
+	id = donetsk.4
+	title = donetsk.4.t
+	desc = donetsk.4.d
+	picture = GFX_news_event_donetsk_rebels
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = donetsk.4.o1
 	}
 }

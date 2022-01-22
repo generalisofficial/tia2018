@@ -1,26 +1,14 @@
 characters={
     #Starting
-	SOV_vladimir_putin={
-		name="Vladimir Putin"
+	SOV_aleksey_zhuravlyov={
+		name="Aleksey Zhuravlyov"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SOV_Vladimir_Putin
+				large=GFX_Portrait_SOV_Aleksey_Zhuravlyov
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
-			traits={ background_intelligence_officer strongman }
-		}
-	}
-	SOV_pavel_grudinin={
-		name="Pavel Grudinin"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SOV_Pavel_Grudinin
-			}
-		}
-		country_leader={
-			ideology=marxist_leninist
+			ideology=fascist_ideology
 		}
 	}
 	SOV_vladimir_zhirinovsky={
@@ -34,15 +22,27 @@ characters={
 			ideology=right_wing_nationalist_ideology
 		}
 	}
-	SOV_andrew_romanov={
-		name="Andrew Romanov"
+	SOV_nicholas_iii={
+		name="Nicholas III"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SOV_Andrew_Romanov
+				large=GFX_Portrait_SOV_Nicholas_III
 			}
 		}
 		country_leader={
 			ideology=monarchist_ideology
+		}
+	}
+	SOV_vladimir_putin={
+		name="Vladimir Putin"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SOV_Vladimir_Putin
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+			traits={ strongman }
 		}
 	}
 	SOV_boris_titov={
@@ -56,28 +56,6 @@ characters={
 			ideology=liberal_conservative
 		}
 	}
-	SOV_grigory_yavlinsky={
-		name="Grigory Yavlinsky"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SOV_Grigory_Yavlinsky
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
-	SOV_alexei_navalny={
-		name="Alexei Navalny"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SOV_Alexei_Navalny
-			}
-		}
-		country_leader={
-			ideology=progressive_ideology
-		}
-	}
 	SOV_mikhail_kasyanov={
 		name="Mikhail Kasyanov"
 		portraits={
@@ -89,15 +67,15 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
-	SOV_gennady_semigin={
-		name="Gennady Semigin"
+	SOV_grigory_yavlinsky={
+		name="Grigory Yavlinsky"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SOV_Gennady_Semigin
+				large=GFX_Portrait_SOV_Grigory_Yavlinsky
 			}
 		}
 		country_leader={
-			ideology=democratic_socialist
+			ideology=social_liberal_ideology
 		}
 	}
 	SOV_sergey_mironov={
@@ -111,533 +89,37 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	SOV_andrey_savelyev={
-		name="Andrey Savelyev"
+	SOV_andrey_nagibin={
+		name="Andrey Nagibin"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SOV_Andrey_Savelyev
+				large=GFX_Portrait_SOV_Andrey_Nagibin
 			}
 		}
 		country_leader={
-			ideology=national_socialist
+			ideology=green
 		}
 	}
-	SOV_valery_gerasimov={
-		name="Valery Gerasimov"
+	SOV_gennady_semigin={
+		name="Gennady Semigin"
 		portraits={
-			army={
-				large=GFX_Portrait_SOV_Valery_Gerasimov
+			civilian={
+				large=GFX_Portrait_SOV_Gennady_Semigin
 			}
 		}
-		field_marshal={
-			traits={ old_guard }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=democratic_socialist
 		}
 	}
-	SOV_oleg_salyukov={
-		name="Oleg Salyukov"
+	SOV_gennady_zyuganov={
+		name="Gennady Zyuganov"
 		portraits={
-			army={
-				large=GFX_Portrait_SOV_Oleg_Salyukov
+			civilian={
+				large=GFX_Portrait_SOV_Gennady_Zyuganov
 			}
 		}
-		field_marshal={
-			traits={ old_guard }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_dvornikov={
-		name="Aleksandr Dvornikov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Alexander_Dvornikov
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_chayko={
-		name="Aleksandr Chayko"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Aleksandr_Chayko
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_andrey_serdyukov={
-		name="Andrey Serdyukov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Andrey_Serdyukov
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_vadim_pankov={
-		name="Vadim Pankov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Vadim_Pankov
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_vladimir_shamanov={
-		name="Vladimir Shamanov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Vladimir_Shamanov
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_viktor_bondarev={
-		name="Viktor Bondarev"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Viktor_Bondarev
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_golovko={
-		name="Aleksandr Golovko"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Aleksandr_Golovko
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_sergey_karakaev={
-		name="Sergey Karakaev"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Sergey_Karakaev
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_kolpachenko={
-		name="Aleksandr Kolpachenko"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Aleksandr_Kolpachenko
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_fomin={
-		name="Aleksandr Fomin"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Alexander_Fomin
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_pavel_popov={
-		name="Pavel Popov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Pavel_Popov
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_dmitry_bulgakov={
-		name="Dmitry Bulgakov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Dmitry_Bulgakov
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_igor_jewgenjewitsch_konaschenkow={
-		name="Igor Jewgenjewitsch Konaschenkow"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Igor_J_Konaschenkow
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_yuryi_sadovenko={
-		name="Yuryi Sadovenko"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Yuryi_Sadovenko
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_sergey_shoygu={
-		name="Sergey Shoygu"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Sergey_Shoygu
-			}
-		}
-		corps_commander={
-			traits={ trickster urban_assault_specialist }
-			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_igor_sergun={
-		name="Igor Sergun"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Igor_Sergun
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_anatoly_antonov={
-		name="Anatoly Antonov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Anatoly_Antonov
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_pavel_grachev={
-		name="Pavel Grachev"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Pavel_Grachev
-			}
-		}
-		corps_commander={
-			traits={ old_guard }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_andrey_kartapolov={
-		name="Andrey Kartapolov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Andrey_Kartapolov
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_vladimir_zarudnitsky={
-		name="Vladimir Zarudnitsky"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Vladimir_Zarudnitsky
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_sergei_surovikin={
-		name="Sergei Surovikin"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Sergei_Surovikin
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_vladimir_bakin={
-		name="Vladimir Bakin"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_Vladimir_Bakin
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_vladimir_ivanovich_korolev={
-		name="Vladimir Ivanovich Korolev"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Vladimir_Korolev
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_nosatov={
-		name="Aleksandr Nosatov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Aleksandr_Nosatov
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_nikolay_anatolyevich_evmenov={
-		name="Nikolay Anatolyevich Evmenov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Nikolay_Evmenov
-			}
-		}
-		navy_leader={
-			traits={ ironside }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_aleksandr_vitko={
-		name="Aleksandr Vitko"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Aleksandr_Vitko
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_sergey_pinchuk={
-		name="Sergey Pinchuk"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Sergey_Pinchuk
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_viktor_chirkov={
-		name="Viktor Chirkov"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Viktor_Cherkov
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	SOV_vladimir_vysotskiy={
-		name="Vladimir Vysotskiy"
-		portraits={
-			army={
-				large=GFX_Portrait_SOV_admirals_Vladimir_Vysotskiy
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 }

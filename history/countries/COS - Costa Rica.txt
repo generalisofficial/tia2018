@@ -109,36 +109,41 @@ set_country_flag = catholic
 
 #Legislative Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 66.67 }
-set_variable = { social_democrat_seats = 31.58 }
-set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { socialist_seats = 15.78 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 22.84 }
+set_variable = { social_liberal_seats = 31.57 }
+set_variable = { classical_liberal_seats = 7.01 }
+set_variable = { conservative_seats = 21.05 }
+set_variable = { national_conservative_seats = 1.75 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 1.75 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_progressive
-add_to_variable = { ROOT.Coalition = progressive_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = progressive
-	last_election = "2014.4.1"
+	ruling_party = social_democrat
+	last_election = "2014.2.4"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    right_wing_nationalist = 24.56
-	social_democrat = 29.82
-    progressive = 45.62
+	national_conservative = 31.57
+	social_liberal = 29.82
+	conservative = 19.29
+	social_democrat = 17.57
+	socialist = 1.75
 }
 
-recruit_character = COS_luis_guillermo_solís
-recruit_character = COS_fabricio_alvarado_muñoz
-recruit_character = COS_jorge_pattoni_sáenz
+recruit_character = COS_fabricio_alvarado_munoz
+recruit_character = COS_rodolfo_piza_rocafort
+recruit_character = COS_otto_guevara
+recruit_character = COS_antonio_alvarez_desanti
+recruit_character = COS_luis_guillermo_solis
+set_country_flag = socialist_intended_no_leader

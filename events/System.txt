@@ -357,6 +357,9 @@ country_event = {
 				long_name = "Islamist Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_islamist_party
+			}
 		}
 		if = {
 			limit = {
@@ -371,6 +374,9 @@ country_event = {
 				ideology = fascist
 				long_name = "Fascist Independents"
 				name = "Ind."
+			}
+			else = {
+				set_country_flag = has_fascist_party
 			}
 		}
 		if = {
@@ -387,6 +393,9 @@ country_event = {
 				long_name = "Right-Wing Nationalist Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_right_wing_nationalist_party
+			}
 		}
 		if = {
 			limit = {
@@ -401,6 +410,9 @@ country_event = {
 				ideology = monarchist
 				long_name = "Monarchist Independents"
 				name = "Ind."
+			}
+			else = {
+				set_country_flag = has_monarchist_party
 			}
 		}
 		if = {
@@ -417,6 +429,9 @@ country_event = {
 				long_name = "National Conservative Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_national_conservative_party
+			}
 		}
 		if = {
 			limit = {
@@ -431,6 +446,9 @@ country_event = {
 				ideology = conservative
 				long_name = "Conservative Independents"
 				name = "Ind."
+			}
+			else = {
+				set_country_flag = has_conservative_party
 			}
 		}
 		if = {
@@ -447,6 +465,9 @@ country_event = {
 				long_name = "Classical Liberal Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_classical_liberal_party
+			}
 		}
 		if = {
 			limit = {
@@ -461,6 +482,9 @@ country_event = {
 				ideology = social_liberal
 				long_name = "Social Liberal Independents"
 				name = "Ind."
+			}
+			else = {
+				set_country_flag = has_social_liberal_party
 			}
 		}
 		if = {
@@ -477,6 +501,9 @@ country_event = {
 				long_name = "Social Democrat Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_social_democrat_party
+			}
 		}
 		if = {
 			limit = {
@@ -491,6 +518,9 @@ country_event = {
 				ideology = progressive
 				long_name = "Progressive Independents"
 				name = "Ind."
+			}
+			else = {
+				set_country_flag = has_progressive_party
 			}
 		}
 		if = {
@@ -507,6 +537,9 @@ country_event = {
 				long_name = "Socialist Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_socialist_party
+			}
 		}
 		if = {
 			limit = {
@@ -522,6 +555,9 @@ country_event = {
 				long_name = "Communist Independents"
 				name = "Ind."
 			}
+			else = {
+				set_country_flag = has_communist_party
+			}
 		}
 	}
 }
@@ -533,6 +569,215 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		random_list = {
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_islamist_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								islamist > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = islamist
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_fascist_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								fascist > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = fascist
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_right_wing_nationalist_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								right_wing_nationalist > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = right_wing_nationalist
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_monarchist_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								monarchist > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = monarchist
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_national_conservative_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								national_conservative > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = national_conservative
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_conservative_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								conservative > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = conservative
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_classical_liberal_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								classical_liberal > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = classical_liberal
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_social_liberal_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								social_liberal > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = social_liberal
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_social_democrat_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								social_democrat > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = social_democrat
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_progressive_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								progressive > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = progressive
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_socialist_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								socialist > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = socialist
+						popularity = 0.01 
+					}
+				}
+			}
+			5 = {
+				if = {
+					limit = {
+						OR = { 	
+							has_country_flag = has_communist_party
+							AND = {
+								has_idea = idea_nonpartisan_political_system
+								communist > 0.001
+							}
+						}
+					}
+					add_popularity = { 
+						ideology = communist
+						popularity = 0.01 
+					}
+				}
+			}
+			40 = {
+				# Needs to be 100 in total
+			}
+		}
 		if = {
 			limit = {
 				has_stability > 0.5
@@ -819,6 +1064,69 @@ country_event = {
 			}
 			remove_core_of = SSD
 			remove_claim_by = SSD
+		}
+	}
+}
+
+country_event = {
+	id = system.23
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = yemeni_civil_war_over }
+		country_exists = YEM
+		NOT = { country_exists = HOU }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = yemen.1
+		set_global_flag = yemeni_civil_war_over
+		YEM = {
+			set_capital = { state = 293 }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = HOU
+					is_claimed_by = HOU
+				}
+			}
+			remove_core_of = HOU
+			remove_claim_by = HOU
+		}
+	}
+}
+
+country_event = {
+	id = system.24
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = yemeni_civil_war_over }
+		country_exists = HOU
+		NOT = { country_exists = YEM }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = yemen.2
+		set_global_flag = yemeni_civil_war_over
+		HOU = {
+			add_ideas = one_party_state
+			set_cosmetic_tag = YEM
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = YEM
+					is_claimed_by = YEM
+				}
+			}
+			remove_core_of = YEM
+			remove_claim_by = YEM
 		}
 	}
 }

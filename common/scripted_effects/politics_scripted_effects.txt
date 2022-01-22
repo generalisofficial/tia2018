@@ -370,7 +370,7 @@ one_party_parliament = {
 }
 
 quickset_coalition = {
-	set_variable = { ROOT.Coalition = 0 }
+	break_coalition = yes
 	if = {
 		limit = {
 			has_government = communist

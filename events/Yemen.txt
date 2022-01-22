@@ -1,0 +1,104 @@
+﻿add_namespace = yemen
+
+news_event = { #Yemen government prevails in civil war
+	id = yemen.1
+	title = yemen.1.t
+	desc = yemen.1.d
+	picture = GFX_news_event_hadi
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = yemen.1.o1
+	}
+}
+
+news_event = { #Houthi rebels in Yemen prevail in civil war
+	id = yemen.2
+	title = yemen.2.t
+	desc = yemen.2.d
+	picture = GFX_news_event_houthis
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = yemen.2.o1
+	}
+}
+
+news_event = { #North and South Yemen re-divided after armistice
+	id = yemen.3
+	title = yemen.3.t
+	desc = yemen.3.d
+	picture = GFX_news_event_southern_movement
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = yemen.3.o1
+	}
+}
+
+country_event = { #Battle of Aden
+	id = yemen.4
+	title = yemen.4.t
+	desc = yemen.4.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = YEM
+		date > 2018.1.28
+		date < 2019.1.1
+		has_war_with = HOU
+		has_country_leader = {
+			name = "Abdrabbuh Mansur Hadi"
+			ruling_only = yes
+		}
+	}
+
+	option = {
+		name = yemen.4.o1
+		ai_chance = {
+			factor = 75
+		}
+		add_political_power = -30
+	}
+
+	option = {
+		name = yemen.4.o2
+		ai_chance = {
+			factor = 25
+		}
+		HOU = { country_event = yemen.5 }
+		set_politics = {	
+			ruling_party = socialist
+			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = socialist
+			popularity = 0.15
+		}
+		one_party_parliament = yes
+		quickset_coalition = yes
+	}
+}
+
+country_event = { #Armistice with the South
+	id = yemen.5
+	title = yemen.5.t
+	desc = yemen.5.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yemen.5.o1
+		news_event = yemen.3
+		white_peace = YEM
+		set_cosmetic_tag = YEM
+		set_global_flag = yemeni_civil_war_over
+	}
+}
