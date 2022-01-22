@@ -1,15 +1,24 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Infantry Division"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "Motorized Brigade"
+	name = "Motorized Division"
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -25,19 +34,18 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Mechanized Division"
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
 		recon = { x = 0 y = 2 }
 	}
 }
@@ -47,88 +55,158 @@ division_template = {
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		mechanized = { x = 0 y = 2 }
 		mechanized = { x = 1 y = 2 }
-		mechanized = { x = 2 y = 0 }
-		mechanized = { x = 2 y = 1 }
-		mechanized = { x = 2 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
 }
 
-units = {
+division_template = {
+	name = "Amphibious Division"
 	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Garrison Division"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Composite Division"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {	
 	division = {
-		name = "Nigerian Armored Division"
-		location = 2050
+		name = "1st Division"
+		location = 13513 #Based on Kaduna
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "2nd Division"
+		location = 12731 #Based on Ibadan
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "3rd Division"
+		location = 10820 #Based on Jos
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "1st Brigade"
-		location = 8034
-		division_template = "Mechanized Brigade"
+		name = "6th Division"
+		location = 5028 #Based somewhere on northern Borno
+		division_template = "Amphibious Division"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "2nd Brigade"
-		location = 8034
-		division_template = "Mechanized Brigade"
+		name = "7th Division"
+		location = 4997 #Based on Maiduguri
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "3rd Brigade"
-		location = 2025
-		division_template = "Mechanized Brigade"
+		name = "Task Force Division"
+		location = 5028 #Also based somewhere on northern Borno
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "4th Brigade"
-		location = 8109
-		division_template = "Motorized Brigade"
+		name = "81st Division"
+		location = 2050 #Based on Lagos
+		division_template = "Garrison Division"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "5th Brigade"
-		location = 1891
-		division_template = "Motorized Brigade"
+		name = "82nd Division"
+		location = 13515 #Based on Enugu
+		division_template = "Composite Division"
 		start_experience_factor = 0.3
 	}
-	
+
 	division = {
-		name = "6th Brigade"
-		location = 2050
-		division_template = "Motorized Brigade"
+		name = "83rd Division"
+		location = 4952 #Based on Benin City
+		division_template = "Mechanized Division"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "7th Brigade"
-		location = 8034
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
 
 air_wings = {
 	767 = {
-		#F-7 MiG-21 Copy - 70s but downgraded for gameplay variety and to fit with icon
-		fighter_equipment_1 = {
+		fighter_equipment_2 = {
 			owner = "NGR" 
-			amount = 10
+			amount = 8
 		}
-
+		fighter_equipment_3 = {
+			owner = "NGR" 
+			amount = 3
+		}
+	}
+	767 = {
+		CAS_equipment_1 = {
+			owner = "NGR" 
+			amount = 11
+		}
+		CAS_equipment_2 = {
+			owner = "NGR" 
+			amount = 36
+		}
 	}
 }

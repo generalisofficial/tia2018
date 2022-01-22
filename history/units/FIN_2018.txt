@@ -33,28 +33,44 @@ division_template = {
 		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Jaeger Brigade"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
 	name = "Jaeger Brigade"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
 	name = "Special Forces Regiment"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 0 }
 	}
 	support = {
 		field_hospital = { x = 0 y = 0 }
@@ -71,44 +87,34 @@ division_template = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
-		modern_armor = { x = 0 y = 3 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "Finnish Armored Brigade"
-		location = 6163
+		name = "Armored Brigade"
+		location = 11066
 		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "'Pori' Brigade"
-		location = 6066
-		division_template = "Jaeger Brigade"
+		name = "Pori Brigade"
+		location = 169
+		division_template = "Motorized Brigade"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "Karelia Brigade"
-		location = 6186
-		division_template = "Jaeger Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Finnish Army Academy"
-		location = 6082
-		division_template = "Jaeger Brigade"
+		location = 3013
+		division_template = "Mechanized Jaeger Brigade"
 		start_experience_factor = 0.3
 	}
 	
@@ -118,11 +124,18 @@ units = {
 		division_template = "Jaeger Brigade"
 		start_experience_factor = 0.3
 	}
+
+	division = {
+		name = "Jaeger Brigade"
+		location = 124
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
 	
 	division = {
-		name = "'Kainuu' Brigade"
+		name = "Kainuu Brigade"
 		location = 3125
-		division_template = "Jaeger Brigade"
+		division_template = "Motorized Brigade"
 		start_experience_factor = 0.3
 	}
 	
@@ -134,14 +147,11 @@ units = {
 	}
 	
 	division = {
-		name = "SF Regiment Utti"
-		location = 165
+		name = "Utti Jaeger Regiment"
+		location = 11056
 		division_template = "Special Forces Regiment"
 		start_experience_factor = 0.3
 	}
-	
-
-	
 }
 
 ### Air OOB ###

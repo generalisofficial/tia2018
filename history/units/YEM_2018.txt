@@ -1,108 +1,247 @@
 ﻿division_template = {
-	name = "Infantry Division"
+	name = "Infantry Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 	}
 }
 division_template = {
-	name = "Mechanized Division"
+	name = "Mechanized Brigade"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
 		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
+		mechanized = { x = 0 y = 3 }
 	}
 }
 division_template = {
-	name = "Armored Division"
+	name = "Armored Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		light_mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 2 y = 1 }
-		light_mechanized = { x = 3 y = 0 }
-		light_mechanized = { x = 3 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Marine Brigade"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountain Infantry Brigade"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Air Defense Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "Republican Guard"
-		location = 13478
-		division_template = "Mechanized Division"
-		start_experience_factor = 1
-	}
-	
-	division = {
-		name = "Strategic Reserve"
-		location = 13480
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	
-	division = {
-		name = "1st Armored Division"
-		location = 13479
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Armored Division"
-		location = 13479
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Al-Islah"
-		location = 1072
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Popular Resistance Committees"
-		location = 4924
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Popular Resistance Committees"
-		location = 13308
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Southern Movement"
-		location = 5074
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Security Forces"
+		name = "135th Infantry Brigade"
 		location = 13483
-		division_template = "Infantry Division"
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-
-	
+	division = {
+		name = "37th Armored Brigade"
+		location = 14116
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23rd Mechanized Infantry Brigade"
+		location = 13308
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "315th Armored Brigade"
+		location = 13480
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Border Guard Brigade"
+		location = 4924
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "123rd Infantry Brigade"
+		location = 13319
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "137th Mechanized Infantry Brigade"
+		location = 13079
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "27th Mechanized Infantry Brigade"
+		location = 1072
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Marine Brigade"
+		location = 5074
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "190th Air Defense Brigade"
+		location = 5074
+		division_template = "Air Defense Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Infantry Brigade"
+		location = 1086
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "107th Infantry Brigade"
+		location = 13479
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19th Infantry Brigade"
+		location = 1072
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st Mechanized Infantry Brigade"
+		location = 13483
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "312th Armored Brigade"
+		location = 1086
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Armored Brigade"
+		location = 4924
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Mountain Infantry Brigade"
+		location = 1072
+		division_template = "Mountain Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Mountain Infantry Brigade"
+		location = 1072
+		division_template = "Mountain Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Marine Brigade"
+		location = 13482
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "190th Air Defense Brigade"
+		location = 13308
+		division_template = "Air Defense Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "26th Mechanized Infantry Brigade"
+		location = 14116
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "153rd Infantry Brigade"
+		location = 13480
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "163rd Infantry Brigade"
+		location = 13479
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19th Infantry Brigade"
+		location = 13478
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17th Infantry Brigade"
+		location = 13479
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "119th Infantry Brigade"
+		location = 14116
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "111th Infantry Brigade"
+		location = 12821
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "45th Infantry Brigade"
+		location = 14116
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "115th Infantry Brigade"
+		location = 14119
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "135th Infantry Brigade"
+		location = 13308
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###

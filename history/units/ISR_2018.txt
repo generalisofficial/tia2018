@@ -1,33 +1,39 @@
 ﻿division_template = {
-	name = "Militia Regiment"
+	name = "Territorial Defense (Light)"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+		infantry = { x = 0 y = 1 }
 	}
 	
 	priority = 0
 }
 
 division_template = {
-	name = "Infantry Brigade"
+	name = "Territorial Defense"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+}
+
+division_template = {
+	name = "Home Command"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
 	}
 }
 
@@ -35,239 +41,209 @@ division_template = {
 	name = "Infantry Division"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
-		light_mechanized = { x = 1 y = 3 }
-		mechanized = { x = 2 y = 0 }
-		mechanized = { x = 2 y = 1 }
-		mechanized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-		mechanized = { x = 3 y = 0 }
-		mechanized = { x = 3 y = 1 }
-		mechanized = { x = 3 y = 2 }
-		motorized = { x = 3 y = 3 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+		artillery = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Armor Brigade"
+	name = "Infantry Division (Reserve)"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_armor = { x = 2 y = 3 }
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		modern_armor = { x = 3 y = 2 }
+		modern_armor = { x = 3 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+		mot_recon = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 2 }
 	}
 }
 
 division_template = {
-	name = "Armor Division"
+	name = "Armored Division (Reserve)"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
-		modern_armor = { x = 0 y = 3 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-		mechanized = { x = 1 y = 3 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		modern_armor = { x = 2 y = 0 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
 	}
+	priority = 0
+}
+
+division_template = {
+	name = "Armored Division (Regular)"
 	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Alpinist Unit"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
 	priority = 2
 }
 
 division_template = {
-	name = "Paratrooper Brigade"
+	name = "Paratrooper Division"
 	
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
 		paratrooper = { x = 0 y = 1 }
 		paratrooper = { x = 0 y = 2 }
 		paratrooper = { x = 0 y = 3 }
-		paratrooper = { x = 0 y = 4 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
 	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-	}
-}
-
-division_template = {
-	name = "Mountain Division"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		mountaineers = { x = 2 y = 3 }
-		mountaineers = { x = 3 y = 0 }
-		mountaineers = { x = 3 y = 1 }
-		mountaineers = { x = 3 y = 2 }
-		mountaineers = { x = 3 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
-		marine = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-	}
-	
 	priority = 2
 }
 
 units = {
 	division = {
-		name = "Israeli Paratroopers"
-		location = 13221
-		division_template = "Paratrooper Brigade"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "1st Southern Division"
-		location = 11970
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "2nd Southern Division"
-		location = 13219
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "3rd Southern Division"
-		location = 1015
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "4th Southern Division"
-		location = 13220
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "5th Southern Division"
-		location = 1015
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "6th Southern Division"
-		location = 13219
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "7th Southern Division"
-		location = 11970
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "1st Eastern Division"
-		location = 13221
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "2nd Eastern Division"
-		location = 7176
-		division_template = "Infantry Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "Tel Aviv Division"
-		location = 4206
-		division_template = "Armor Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "Golan Division"
-		location = 13221
-		division_template = "Mountain Division"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "Lebanon Border Division"
+		name = "36th Armored Division"
 		location = 1065
-		division_template = "Mountain Division"
+		division_template = "Armored Division"
 		start_experience_factor = 0.5
+	}
+	division = {
+		name = "91st Division"
+		location = 1065
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "210th Division"
+		location = 13221
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "146th Division"
+		location = 1201
+		division_template = "Armored Division (Reserve)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alpinist Unit"
+		location = 13221
+		division_template = "Alpinist Unit"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "98th Paratroopers Division"
+		location = 13218
+		division_template = "Paratrooper Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "340th Division"
+		location = 4206
+		division_template = "Infantry Division (Reserve)"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "877th Division"
+		location = 13248
+		division_template = "Territorial Defense"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "417th Division"
+		location = 13248
+		division_template = "Territorial Defense (Light)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "80th Division"
+		location = 13248
+		division_template = "Territorial Defense"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "143rd Division"
+		location = 11970
+		division_template = "Territorial Defense (Light)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "162nd Division"
+		location = 7176
+		division_template = "Armored Division (Regular)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "252nd Division"
+		location = 13219
+		division_template = "Armored Division (Regular)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Home Front Command"
+		location = 13248
+		division_template = "Home Command"
+		start_experience_factor = 0.3
 	}
 }
 
@@ -280,7 +256,6 @@ air_wings = {
 			owner = "ISR" 
 			amount = 99
 		}
-
 	}
 	812 = {
 		#F-15I
@@ -288,7 +263,6 @@ air_wings = {
 			owner = "ISR" 
 			amount = 25
 		}
-
 	}
 	812 = {
 		#F-16A/B
@@ -296,7 +270,6 @@ air_wings = {
 			owner = "ISR" 
 			amount = 36
 		}
-
 	}
 	454 = {
 		#F-16C/D
@@ -304,7 +277,6 @@ air_wings = {
 			owner = "ISR" 
 			amount = 152
 		}
-
 	}
 	454 = {
 		#F-15C/D
@@ -312,6 +284,5 @@ air_wings = {
 			owner = "ISR" 
 			amount = 58
 		}
-
 	}
 }
