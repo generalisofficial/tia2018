@@ -7,2808 +7,3005 @@ is_democracy = {
 
 minority_government = {
 	check_variable = {
-        var = ROOT.Coalition
-        value = 50
-        compare = less_than
-    }
+		var = ROOT.Coalition
+		value = 50
+		compare = less_than
+	}
 }
 
 majority_government = {
 	check_variable = {
-        var = ROOT.Coalition
-        value = 50
-        compare = greater_than_or_equals
-    }
+		var = ROOT.Coalition
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 # Plurality - Popularity
 
 communist_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 socialist_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 progressive_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 social_democrat_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 social_liberal_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 classical_liberal_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 conservative_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 national_conservative_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 right_wing_nationalist_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 fascist_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 islamist_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@monarchist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@monarchist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
 }
 
 monarchist_plurality_popularity = {
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@communist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@socialist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@social_democrat
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@progressive
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@social_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@classical_liberal
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@fascist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@national_conservative
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@right_wing_nationalist
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = party_popularity@islamist
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@communist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@socialist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@social_democrat
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@progressive
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@social_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@classical_liberal
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@fascist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@national_conservative
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@right_wing_nationalist
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = party_popularity@islamist
+		compare = greater_than_or_equals
+	}
 }
 
 # Plurality - Seats
 
 communist_plurality_seats = {
-    check_variable = {
-        var = communist_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = communist_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 socialist_plurality_seats = {
-    check_variable = {
-        var = socialist_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = socialist_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 progressive_plurality_seats = {
-    check_variable = {
-        var = progressive_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = progressive_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 social_democrat_plurality_seats = {
-    check_variable = {
-        var = social_democrat_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = social_democrat_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 social_liberal_plurality_seats = {
-    check_variable = {
-        var = social_liberal_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = social_liberal_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 classical_liberal_plurality_seats = {
-    check_variable = {
-        var = classical_liberal_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = classical_liberal_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 conservative_plurality_seats = {
-    check_variable = {
-        var = conservative_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = conservative_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 national_conservative_plurality_seats = {
-    check_variable = {
-        var = national_conservative_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = national_conservative_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 right_wing_nationalist_plurality_seats = {
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 fascist_plurality_seats = {
-    check_variable = {
-        var = fascist_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = fascist_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 islamist_plurality_seats = {
-    check_variable = {
-        var = islamist_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = monarchist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = islamist_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 monarchist_plurality_seats = {
-    check_variable = {
-        var = monarchist_seats
-        value = communist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = socialist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = social_democrat_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = progressive_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = social_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = classical_liberal_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = fascist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = national_conservative_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = right_wing_nationalist_seats
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = islamist_seats
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = monarchist_seats
+		value = communist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = social_democrat_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = social_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = national_conservative_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
 }
 
 # Majority - Popularity
 
 communist_majority_popularity = {
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@communist
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@communist
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 socialist_majority_popularity = {
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@socialist
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@socialist
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 progressive_majority_popularity = {
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@progressive
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@progressive
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 social_democrat_majority_popularity = {
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_democrat
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_democrat
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 social_liberal_majority_popularity = {
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@social_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@social_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 classical_liberal_majority_popularity = {
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@classical_liberal
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@classical_liberal
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 conservative_majority_popularity = {
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 national_conservative_majority_popularity = {
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@national_conservative
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@national_conservative
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 right_wing_nationalist_majority_popularity = {
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@right_wing_nationalist
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@right_wing_nationalist
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 fascist_majority_popularity = {
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 islamist_majority_popularity = {
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@fascist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@islamist
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@fascist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@islamist
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 monarchist_majority_popularity = {
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = party_popularity@monarchist
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = party_popularity@monarchist
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 # Majority - Seats
 
 communist_majority_seats = {
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = communist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = communist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 socialist_majority_seats = {
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = socialist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = socialist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 progressive_majority_seats = {
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = progressive_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = progressive_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 social_democrat_majority_seats = {
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_democrat_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_democrat_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 social_liberal_majority_seats = {
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = social_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = social_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 classical_liberal_majority_seats = {
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = classical_liberal_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = classical_liberal_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 conservative_majority_seats = {
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 national_conservative_majority_seats = {
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = national_conservative_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = national_conservative_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 right_wing_nationalist_majority_seats = {
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = right_wing_nationalist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = right_wing_nationalist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 fascist_majority_seats = {
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 islamist_majority_seats = {
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = fascist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = islamist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = fascist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = islamist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
 }
 
 monarchist_majority_seats = {
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
-    check_variable = {
-        var = monarchist_seats
-        value = 50
-        compare = greater_than_or_equals
-    }
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = monarchist_seats
+		value = 50
+		compare = greater_than_or_equals
+	}
+}
+
+has_at_least_two_coalition_flags = {
+	OR = {
+		AND = {
+			has_country_flag = coalition_islamist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_fascist
+			OR = {
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_right_wing_nationalist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_monarchist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_national_conservative
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_conservative
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_classical_liberal
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_social_liberal
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_social_democrat
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_progressive
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_socialist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = coalition_communist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_islamist
+			}
+		}
+	}
 }

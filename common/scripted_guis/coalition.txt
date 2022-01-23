@@ -1075,7 +1075,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_islamist
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = islamist_seats
@@ -1083,7 +1082,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_islamist
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = islamist_seats
@@ -1091,7 +1089,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_islamist
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = islamist_seats
@@ -1102,7 +1099,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_fascist
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = fascist_seats
@@ -1110,7 +1106,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_fascist
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = fascist_seats
@@ -1118,7 +1113,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_fascist
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = fascist_seats
@@ -1129,7 +1123,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_right_wing_nationalist
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = right_wing_nationalist_seats
@@ -1137,7 +1130,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_right_wing_nationalist
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = right_wing_nationalist_seats
@@ -1145,7 +1137,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_right_wing_nationalist
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = right_wing_nationalist_seats
@@ -1156,7 +1147,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_monarchist
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = monarchist_seats
@@ -1164,7 +1154,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_monarchist
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = monarchist_seats
@@ -1172,7 +1161,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_monarchist
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = monarchist_seats
@@ -1183,7 +1171,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_national_conservative
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = national_conservative_seats
@@ -1191,7 +1178,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_national_conservative
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = national_conservative_seats
@@ -1199,7 +1185,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_national_conservative
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = national_conservative_seats
@@ -1210,7 +1195,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_conservative
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = conservative_seats
@@ -1218,7 +1202,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_conservative
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = conservative_seats
@@ -1226,7 +1209,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_conservative
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = conservative_seats
@@ -1237,7 +1219,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_classical_liberal
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = classical_liberal_seats
@@ -1245,7 +1226,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_classical_liberal
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = classical_liberal_seats
@@ -1253,7 +1233,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_classical_liberal
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = classical_liberal_seats
@@ -1264,7 +1243,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_social_liberal
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = social_liberal_seats
@@ -1272,7 +1250,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_social_liberal
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = social_liberal_seats
@@ -1280,7 +1257,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_social_liberal
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = social_liberal_seats
@@ -1291,7 +1267,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_social_democrat
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = social_democrat_seats
@@ -1299,7 +1274,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_social_democrat
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = social_democrat_seats
@@ -1307,7 +1281,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_social_democrat
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = social_democrat_seats
@@ -1318,7 +1291,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_progressive
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = progressive_seats
@@ -1326,7 +1298,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_progressive
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = progressive_seats
@@ -1334,7 +1305,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_progressive
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = progressive_seats
@@ -1345,7 +1315,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_socialist
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = socialist_seats
@@ -1353,7 +1322,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_socialist
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = socialist_seats
@@ -1361,7 +1329,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_socialist
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = socialist_seats
@@ -1372,7 +1339,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = coalition_communist
-						has_country_flag = coalition_chosen
 						check_variable = {
 							var = ROOT.NewCoalition
 							value = communist_seats
@@ -1380,7 +1346,6 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = coalition_communist
-					clr_country_flag = coalition_chosen
 					subtract_from_variable = {
 						var = ROOT.NewCoalition
 						value = communist_seats
@@ -1388,7 +1353,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = coalition_communist
-					set_country_flag = coalition_chosen
 					add_to_variable = {
 						var = ROOT.NewCoalition
 						value = communist_seats
@@ -1591,7 +1555,7 @@ scripted_gui = {
 				NOT = { has_country_flag = government_communist }
 			}
 			finish_click_enabled = {
-				has_country_flag = coalition_chosen
+				has_at_least_two_coalition_flags = yes
 			}		
         }
 		properties = {
