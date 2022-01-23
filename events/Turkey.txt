@@ -8,34 +8,17 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {	#Hand over Afrin to the Regime
+	option = {
 		name = turkey.1.o1
-		trigger = { 
-			country_exists = SYR
-		}
-		ai_chance = {
-			factor = 1
-		}
-		SYR = { transfer_state = 923 }
-	}
-	
-	option = {	#Hand over Afrin to the FSA
-		name = turkey.1.o2
-		trigger = { 
-			country_exists = FSA
-		}
-		ai_chance = {
-			factor = 98
+		if = {
+			limit = {
+				country_exists = FSA
+			}
 		}
 		FSA = { transfer_state = 923 }
-	}
-	
-	option = {	#Occupy Afrin
-		name = turkey.1.o3
-		ai_chance = {
-			factor = 1
+		else = {
+			transfer_state = 923
 		}
-		add_political_power = -100
 	}
 }
 

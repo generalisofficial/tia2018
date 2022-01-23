@@ -117,7 +117,6 @@ country_event = {
 	trigger = {
 		NOT = { 
 			country_exists = ISS
-			has_global_flag = isis_defeated
 		}
 	}
 
@@ -147,14 +146,23 @@ country_event = {
 		NOT = { has_global_flag = syrian_civil_war_over }
 		country_exists = SYR
 		NOT = { country_exists = FSA }
-		NOT = { country_exists = ISS }
 	}
 
 	fire_only_once = yes
 	
 	immediate = {
-		country_event = syria.1
+		news_event = syria.1
 		set_global_flag = syrian_civil_war_over
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = FSA
+					is_claimed_by = FSA
+				}
+			}
+			remove_core_of = FSA
+			remove_claim_by = FSA
+		}
 	}
 }
 
@@ -164,63 +172,21 @@ country_event = {
 
 	trigger = {
 		NOT = { has_global_flag = syrian_civil_war_over }
-		OR = {
-			AND = {
-				country_exists = FSA
-				NOT = { country_exists = SYR }
-				NOT = { country_exists = ISS }
-			}
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		country_event = syria.2
-		set_global_flag = syrian_civil_war_over
-		FSA = {
-			remove_ideas = idea_violent_non_state_actor
-			set_cosmetic_tag = FSA_GOV 
-		}
-	}
-}
-
-country_event = {
-	id = system.11
-	hidden=yes
-
-	trigger = {
-		NOT = { has_global_flag = syrian_civil_war_over }
-		country_exists = ISS
-		NOT = { country_exists = FSA }
+		country_exists = FSA
 		NOT = { country_exists = SYR }
 	}
 
 	fire_only_once = yes
 	
 	immediate = {
-		news_event = syria.3
+		news_event = syria.2
 		set_global_flag = syrian_civil_war_over
+		FSA = {
+			add_ideas = one_party_state
+			set_cosmetic_tag = FSA_GOV 
+		}
 	}
 }
-
-#country_event = {
-#	id = system.12
-#	hidden=yes
-#
-#	trigger = {
-#		has_variable = loan_days_left
-#		check_variable = {
-#			loan_days_left < 1
-#		}
-#	}
-#	
-#	immediate = {
-#		var:originated_country = {
-#			country_event = money.7
-#		}
-#	}
-#}
 
 country_event = {
 	id = system.14

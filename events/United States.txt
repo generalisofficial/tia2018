@@ -88,3 +88,84 @@ country_event = {
 		add_popularity = { ideology = progressive popularity = 0.02 }
 	}
 }
+
+#Withdrawal from Syria
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	
+	trigger = {
+		original_tag = USA
+		has_guaranteed = ROJ
+		has_global_flag = isis_defeated
+		NOT = {
+			OR = {
+				has_war_with = SYR
+				has_war_with = FSA
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.4.o1
+		news_event = usa.5
+		add_political_power = -15
+		diplomatic_relation = {
+			country = ROJ
+			relation = guarantee
+			active = no
+		}
+		if = {
+			limit = {
+				country_exists = FSA
+				owns_state = 962
+			}
+			FSA = {
+				transfer_state = 962
+			}
+		}
+		if = {
+			limit = {
+				NOT = { country_exists = FSA }
+				country_exists = SYR
+				owns_state = 962
+			}
+			SYR = {
+				transfer_state = 962
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					country_exists = FSA 
+					country_exists = SYR
+				}
+				owns_state = 962
+			}
+			ROJ = {
+				transfer_state = 962
+			}
+		}
+	}
+}
+
+news_event = { #United States announces total withdrawal from Syria
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_news_event_us_forces_syria
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = usa.5.o1
+	}
+}

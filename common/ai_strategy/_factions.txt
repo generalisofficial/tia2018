@@ -32,7 +32,10 @@ NATO_ai_strategy = {
 			original_tag = CRO
 			original_tag = ALB
 			original_tag = MNT
-			original_tag = MAC
+			AND = {
+				original_tag = MAC
+				has_global_flag = prespa_agreement
+			}
 		}
 		NOT = {
 			OR = {
@@ -172,9 +175,16 @@ axis_of_resistance_ai_strategy = {
 	
 	enable = {
 		NOT = { original_tag = PER }
-		PER = { is_in_faction = yes }
+		PER = { 
+			has_country_leader_ideology = khomeinist
+			is_in_faction = yes 
+		}
 		has_country_leader_ideology = khomeinist
 		has_civil_war = no
+		OR = {
+			NOT = { original_tag = HOU }
+			has_global_flag = yemeni_civil_war_over
+		}
 	}
 	
 	abort = {
@@ -182,9 +192,12 @@ axis_of_resistance_ai_strategy = {
 			has_war_with = PER
 			PER = { is_in_faction = no }
 			PER = { exists = no }
-			NOT = { has_country_leader_ideology = khomeinist }
-			PER = {
-				NOT = { has_country_leader_ideology = khomeinist }
+			NOT = {
+				has_country_leader_ideology = khomeinist
+				PER = { 
+					has_country_leader_ideology = khomeinist
+					is_in_faction = yes 
+				}
 			}
 		}
 	}
@@ -192,6 +205,6 @@ axis_of_resistance_ai_strategy = {
 	ai_strategy = {
 		type = alliance
 		id = "PER"
-		value = 125
+		value = 150
 	}
 }

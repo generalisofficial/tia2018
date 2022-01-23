@@ -83,16 +83,18 @@ military_affairs = {
 			country_exists = ROJ
 			country_exists = FSA
 			ROJ = { owns_state = 923 controls_state = 923 }
-			NOT = { has_global_flag = syrian_civil_war_over }
+			NOT = {
+				has_war_with = FSA
+				has_global_flag = syrian_civil_war_over
+			}
 		}
 		available = {
-			country_exists = ROJ
 			ROJ = { owns_state = 923 controls_state = 923 }
 		}
 		
 		complete_effect = {
 		    news_event = turkey.5
-			add_named_threat = { threat = 3 name = "Operation Olive Branch" }	
+			add_named_threat = { threat = 3 name = threat_operation_olive_branch }	
 			start_border_war = {
                 change_state_after_war = no
                 attacker = {
@@ -113,7 +115,7 @@ military_affairs = {
 		icon = syrian_civil_war
 		
 		fire_only_once = yes
-		cost = 0
+		cost = 15
 		
 		ai_will_do = {
 			factor = 0

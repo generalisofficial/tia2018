@@ -5,7 +5,7 @@ news_event = {
 	id = syria.1
 	title = syria.1.t
 	desc = syria.1.d
-	picture = GFX_news_event_syrian_war_over
+	picture = GFX_news_event_assad_speech
 	
 	is_triggered_only = yes
 	fire_only_once = no
@@ -31,7 +31,7 @@ news_event = {
 	id = syria.2
 	title = syria.2.t
 	desc = syria.2.d
-	picture = GFX_news_event_al_nusra
+	picture = GFX_news_event_syrian_rebels
 	
 	is_triggered_only = yes
 	fire_only_once = no
@@ -50,33 +50,4 @@ news_event = {
 			remove_claim_by = SYR
 		}
 	}
-}
-
-#End of the Syrian Civil War - ISIL
-news_event = {
-	id = syria.3
-	title = syria.3.t
-	desc = syria.3.d
-	picture = GFX_news_event_islamic_state
-	
-	is_triggered_only = yes
-	fire_only_once = no
-	major = yes
-
-	option = {
-		name = syria.3.o1
-		every_state = {
-		    limit = {
-		        OR = {
-				    is_core_of = SYR
-					is_core_of = FSA
-				    is_claimed_by = SYR
-					is_claimed_by = FSA
-				}
-			}
-			remove_core_of = SYR
-			remove_core_of = FSA
-			remove_claim_by = SYR
-		    remove_claim_by = FSA
-		}
 }

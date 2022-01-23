@@ -1,17 +1,20 @@
 ideas = {
 	
 	country = {
-		
-		idea_PRC_two_child_policy = {
-			picture = risk_of_famine
+		idea_great_firewall = {
+			picture = great_firewall
 			
 			allowed = { always = no }
 			
 			removal_cost = -1
+
+			cancel = {
+				has_idea = civil_liberties_libertarian
+			}
 			
 			modifier = {
-				drift_defence_factor = 0.25
-				MONTHLY_POPULATION = -0.2
+				political_power_gain = -0.05
+				stability_factor = 0.1
 			}
 		}
 	}

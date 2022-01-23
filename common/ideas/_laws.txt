@@ -468,17 +468,18 @@ ideas = {
 			
 			available = {
 				NOT = { 
-					has_idea = idea_eu_member
 					OR = {
-						has_government = progressive
+						has_idea = idea_eu_member
 						has_country_flag = coalition_progressive
+						has_country_flag = coalition_social_liberal
+						has_country_flag = coalition_classical_liberal
 					}
 				}
 			}
 			
 			modifier = {
 				MONTHLY_POPULATION = -0.2
-				consumer_goods_factor = -0.05
+				stability_factor = 0.02
 			}
 
 			ai_will_do = {
@@ -508,8 +509,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			
-			modifier = {
-				consumer_goods_factor = -0.01
+			available = {
+				NOT = { 
+					has_country_flag = coalition_progressive
+				}
 			}
 			
 			ai_will_do = {
@@ -541,9 +544,18 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			
+			available = {
+				NOT = { 
+					OR = {
+						has_country_flag = coalition_fascist
+						has_country_flag = coalition_right_wing_nationalist
+					}
+				}
+			}
+
 			modifier = {
-				MONTHLY_POPULATION = 0.2
-				consumer_goods_factor = 0.03
+				MONTHLY_POPULATION = 0.25
+				stability_factor = -0.025
 			}
 
 			ai_will_do = {
@@ -569,7 +581,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		immigration_open_country = {
+		immigration_open_borders = {
 			cost = 150
 			removal_cost = -1
 			level = 1
@@ -577,15 +589,16 @@ ideas = {
 			available = {
 				NOT = { 
 					OR = {
-						has_government = fascist
-						has_government = right_wing_nationalist
+						has_country_flag = coalition_fascist
+						has_country_flag = coalition_right_wing_nationalist
+						has_country_flag = coalition_national_conservative
 					}
 				}
 			}
 			
 			modifier = {
-				MONTHLY_POPULATION = 0.4
-				consumer_goods_factor = 0.07
+				MONTHLY_POPULATION = 0.5
+				stability_factor = -0.05
 			}
 			
 			ai_will_do = {

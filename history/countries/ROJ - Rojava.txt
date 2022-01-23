@@ -100,7 +100,6 @@ if = {
 	}
 }
 
-
 set_country_flag = sunni_islam
 
 add_opinion_modifier = { target = TUR modifier = rival }
@@ -110,55 +109,37 @@ add_ideas = {
 	population_growth_steady
 	service_by_requirement
 	non_member_state
-	parliamentary_republic
+	one_party_state
 }
 
 #Syrian Democratic Council
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 70 }
-set_variable = { progressive_seats = 9.3 }
-set_variable = { social_democrat_seats = 6.9 }
-set_variable = { social_liberal_seats = 6.9 }
+set_variable = { socialist_seats = 100 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 2.3 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 4.6 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_socialist
-set_country_flag = coalition_progressive
-set_country_flag = coalition_social_liberal
-set_country_flag = coalition_right_wing_nationalist
 add_to_variable = { ROOT.Coalition = socialist_seats }
-add_to_variable = { ROOT.Coalition = progressive_seats }
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 	
 set_politics = {	
 	ruling_party = socialist
-	last_election = "2016.3.1"
+	last_election = "2018.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-    right_wing_nationalist = 4.6
-    social_democrat = 6.9
-    conservative = 2.3
-    social_liberal = 6.9
-    progressive = 9.3
-    socialist = 70
+	socialist = 100
 }
 
 recruit_character = ROJ_hediya_yousef
-recruit_character = ROJ_ibrahim_biro
-recruit_character = ROJ_alaeddine_khaled
-recruit_character = ROJ_haytham_manna
-recruit_character = ROJ_ishow_gowriye
-recruit_character = ROJ_ninos_isho
-recruit_character = ROJ_rojda_felat
-recruit_character = ROJ_clara_raqqa
