@@ -5,8 +5,21 @@ state={
 
 	history={
 		owner = FSA
+		SYR = {
+			set_province_controller = 13292
+
+		}
 		victory_points = {
 			1074 3 
+		}
+		victory_points = {
+			13297 1
+		}
+		victory_points = {
+			14136 1
+		}
+		victory_points = {
+			13292 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -14,10 +27,18 @@ state={
 				fortifications = 5
 
 			}
+			14136 = {
+				fortifications = 5
 
-		}
-		SYR = {
-			set_province_controller = 13292
+			}
+			13297 = {
+				fortifications = 5
+
+			}
+			13292 = {
+				fortifications = 5
+
+			}
 
 		}
 		add_core_of = SYR
@@ -27,9 +48,10 @@ state={
 	}
 
 	provinces={
-		1074 13292 13297 
+		1074 13292 13297 14136 
 	}
 	manpower=1027000
 	buildings_max_level_factor=1.000
 	state_category=state_level_3
+	local_supplies=0.000
 }

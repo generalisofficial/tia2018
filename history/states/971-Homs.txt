@@ -5,29 +5,60 @@ state={
 
 	history={
 		owner = SYR
+		FSA = {
+			set_province_controller = 13283
+
+		}
 		victory_points = {
-			1056 10 
+			1056 5
 		}
 		victory_points = {
 			12442 2 
 		}
+		victory_points = {
+			7513 1
+		}
+		victory_points = {
+			4550 1
+		}
+		victory_points = {
+			13283 1
+		}
 		buildings = {
 			infrastructure = 3
+			4550 = {
+				fortifications = 2
+
+			}
+			1056 = {
+				fortifications = 4
+				
+			}
+			13283 = {
+				fortifications = 5
+				
+			}
+			13315 = {
+				fortifications = 3
+				
+			}
+			13325 = {
+				fortifications = 3
+				
+			}
 
 		}
 		add_core_of = SYR
 		add_core_of = FSA
 		add_claim_by = ISS
-		FSA = {
-			set_province_controller = 13283
-		}
 
 	}
 
 	provinces={
-		1056 4550 7513 12442 13283 13304 13309 13311 13312 13315 13316 13325 13326 
+		1056 4550 7513 12442 13283 13304 13309 13311 13312 13315 13316 13325 13326 14141 14142 
 	}
 	manpower=1803000
 	buildings_max_level_factor=1.000
 	state_category=state_level_5
+	local_supplies=0.000
 }

@@ -1,6 +1,28 @@
 characters={
     #Starting
-	SYR_bashar_alassad={
+	SYR_ali_haidar={
+		name="Ali Haidar"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SYR_Ali_Haidar
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
+	SYR_hassan_al_nouri={
+		name="Hassan al-Nouri"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SYR_Hassan_al_Nouri
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
+	SYR_bashar_al_assad={
 		name="Bashar al-Assad"
 		portraits={
 			civilian={
@@ -8,288 +30,19 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=arab_nationalist
+			ideology=baathist
 			traits={ strongman friend_of_russia }
 		}
 	}
-	SYR_riad_seif={
-		name="Riad Seif"
+	SYR_qadri_jamil={
+		name="Qadri Jamil"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SYR_Riad_Seif
-			}
-		}
-		country_leader={
-			ideology=social_conservative
-		}
-	}
-	SYR_safwan_alqudsi={
-		name="Safwan al-Qudsi"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SYR_Safwan_al_Qudsi
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
-		}
-	}
-	SYR_anas_alabdah={
-		name="Anas al-Abdah"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SYR_Anas_al_Abdah
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
-		}
-	}
-	SYR_ali_qanso={
-		name="Ali Qanso"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SYR_Ali_Qanso
-			}
-		}
-		country_leader={
-			ideology=fascist_ideology
-		}
-	}
-	SYR_ghias_youn_soud={
-		name="Ghias Youn Soud"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SYR_Ghias_Youn_Soud
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	SYR_hanin_nimir={
-		name="Hanin Nimir"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SYR_Hanin_Nimir
+				large=GFX_Portrait_SYR_Qadri_Jamil
 			}
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	SYR_mohammad_riad_alshaqfeh={
-		name="Mohammad Riad al-Shaqfeh"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SYR_Mohammad_Riad_al_Shaqfeh
-			}
-		}
-		country_leader={
-			ideology=islamist_ideology
-		}
-	}
-	SYR_fahd_jassem_al_frej={
-		name="Fahd Jassem Al Frej"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Al_Frej
-			}
-		}
-		field_marshal={
-			traits={ old_guard organisational_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_dawoud_rajha={
-		name="Dawoud Rajha"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Dawoud_Rajha
-			}
-		}
-		field_marshal={
-			traits={ old_guard defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_ali_abdullah_ayyoub={
-		name="Ali Abdullah Ayyoub"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Ali_Ayyoub
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_hawash_mohammed={
-		name="Hawash Mohammed"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Hawash_Mohammed
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_maher_al_assad={
-		name="Maher Al Assad"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Maher_Al_Assad
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_suheil_salman_al_hassan={
-		name="Suheil Salman Al Hassan"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Suheil_Salman_Al_Hassan
-			}
-		}
-		corps_commander={
-			traits={ commando desert_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_abdel_fatah_qudsiyeh={
-		name="Abdel Fatah Qudsiyeh"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Abdel_Fatah_Qudsiyeh
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_hassan_daaboul={
-		name="Hassan Daaboul"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Hassan_Daaboul
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_hussein_isaac={
-		name="Hussein Isaac"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Hussein_Isaac
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_jameh_jameh={
-		name="Jameh Jameh"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Jameh_Jameh
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_rustum_ghazaleh={
-		name="Rustum Ghazaleh"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Rustum_Ghazaleh
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SYR_hassan_turkmani={
-		name="Hassan Turkmani"
-		portraits={
-			army={
-				large=GFX_Portrait_SYR_Portrait_Hassan_Turkmani
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
 		}
 	}
 }

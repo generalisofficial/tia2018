@@ -5,11 +5,44 @@ state={
 
 	history={
 		owner = SYR
+		ISS = {
+			set_province_controller = 14147
+			
+		}
 		victory_points = {
-			13284 4 
+			13284 3
+		}
+		victory_points = {
+			13329 1
+		}
+		victory_points = {
+			14147 1
+		}
+		victory_points = {
+			13331 1
 		}
 		buildings = {
 			infrastructure = 2
+			13284 = {
+				fortifications = 5
+
+			}
+			14143 = {
+				fortifications = 2
+
+			}
+			14147 = {
+				fortifications = 1
+
+			}
+			13329 = {
+				fortifications = 3
+
+			}
+			13331 = {
+				fortifications = 2
+
+			}
 
 		}
 		add_core_of = SYR
@@ -19,9 +52,10 @@ state={
 	}
 
 	provinces={
-		13284 13329 13331 
+		13284 13329 13331 14143 14147 
 	}
 	manpower=1628000
 	buildings_max_level_factor=1.000
 	state_category=state_level_4
+	local_supplies=0.000
 }

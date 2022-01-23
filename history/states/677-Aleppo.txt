@@ -5,8 +5,22 @@ state={
 
 	history={
 		owner = SYR
+		FSA = {
+			set_province_controller = 13268
+			set_province_controller = 13271
+
+		}
 		victory_points = {
 			12473 20 
+		}
+		victory_points = {
+			13268 1
+		}
+		victory_points = {
+			13271 1
+		}
+		victory_points = {
+			7671 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -21,16 +35,15 @@ state={
 				fortifications = 5
 
 			}
+			13268 = {
+				fortifications = 2
+
+			}
 
 		}
 		add_core_of = SYR
 		add_core_of = FSA
 		add_claim_by = ISS
-		FSA = {
-			set_province_controller = 13268
-			set_province_controller = 13271
-
-		}
 
 	}
 

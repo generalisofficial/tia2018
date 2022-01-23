@@ -5,7 +5,6 @@ oob = "ISS_2018"
 set_research_slots = 1
 set_convoys = 1
 
-
 set_war_support = 1.0
 
 set_country_flag = country_language_arabic
@@ -103,6 +102,16 @@ declare_war_on = {
 	type = annex_everything
 }
 
+declare_war_on = {
+	target = SYR
+	type = annex_everything
+}
+
+declare_war_on = {
+	target = FSA
+	type = annex_everything
+}
+
 set_politics = {	
 	ruling_party = islamist
 	last_election = "2018.1.1"
@@ -130,6 +139,4 @@ add_opinion_modifier = {
 	modifier = no_diplomatic_recognition
 }
 
-recruit_character = ISS_abu_bakr_albaghdadi
-recruit_character = ISS_abu_khaled_alansari
-recruit_character = ISS_abu_hamza_alamriki
+recruit_character = ISS_abu_bakr_al_baghdadi

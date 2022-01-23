@@ -1,8 +1,16 @@
+
 state={
 	id=937
 	name="STATE_937"
+
 	history={
 		owner = ISS
+		ROJ = {
+			set_province_controller = 1634
+			set_province_controller = 14146
+			set_province_controller = 13275
+
+		}
 		victory_points = {
 			13274 1 
 		}
@@ -10,16 +18,21 @@ state={
 			infrastructure = 1
 			13274 = {
 				fortifications = 6
+
 			}
+
 		}
 		add_core_of = SYR
 		add_core_of = FSA
 		add_claim_by = ISS
+
 	}
+
 	provinces={
-		13274 
+		1634 13274 13275 14144 14146 
 	}
 	manpower=37936
 	buildings_max_level_factor=1.000
 	state_category=state_level_1
+	local_supplies=0.000
 }

@@ -108,8 +108,8 @@ add_opinion_modifier = {
 set_country_flag = shia_islam
 
 #People’s Council of Syria
-set_variable = { communist_seats = 1.6 }
-set_variable = { socialist_seats = 1.6 }
+set_variable = { communist_seats = 2 }
+set_variable = { socialist_seats = 94.5 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
@@ -117,14 +117,14 @@ set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 94 }
-set_variable = { fascist_seats = 2.8 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 3.5 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_right_wing_nationalist
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
 
 add_ideas = {
 	population_growth_rapid
@@ -148,36 +148,19 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = right_wing_nationalist
-	last_election = "2014.6.3"
+	ruling_party = socialist
+	last_election = "2014.5.26"
 	election_frequency = 84
 	elections_allowed = yes
 }
 
 set_popularities = {
-    right_wing_nationalist = 94
-	fascist = 2.8
-	communist = 1.6
-	socialist = 1.6
+	socialist = 95.64
+    communist = 2.73
+	fascist = 1.63
 }
 
-recruit_character = SYR_bashar_alassad
-recruit_character = SYR_riad_seif
-recruit_character = SYR_safwan_alqudsi
-recruit_character = SYR_anas_alabdah
-recruit_character = SYR_ali_qanso
-recruit_character = SYR_ghias_youn_soud
-recruit_character = SYR_hanin_nimir
-recruit_character = SYR_mohammad_riad_alshaqfeh
-recruit_character = SYR_fahd_jassem_al_frej
-recruit_character = SYR_dawoud_rajha
-recruit_character = SYR_ali_abdullah_ayyoub
-recruit_character = SYR_hawash_mohammed
-recruit_character = SYR_maher_al_assad
-recruit_character = SYR_suheil_salman_al_hassan
-recruit_character = SYR_abdel_fatah_qudsiyeh
-recruit_character = SYR_hassan_daaboul
-recruit_character = SYR_hussein_isaac
-recruit_character = SYR_jameh_jameh
-recruit_character = SYR_rustum_ghazaleh
-recruit_character = SYR_hassan_turkmani
+recruit_character = SYR_ali_haidar
+recruit_character = SYR_hassan_al_nouri
+recruit_character = SYR_bashar_al_assad
+recruit_character = SYR_qadri_jamil

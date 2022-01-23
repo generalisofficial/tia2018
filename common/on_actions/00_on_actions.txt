@@ -193,6 +193,15 @@ on_actions = {
 				}
 			}
 			every_country = {
+				limit = {
+					NOT = { original_tag = ISS }
+				}
+				add_opinion_modifier = {
+					target = ISS
+					modifier = rival
+				}
+			}
+			every_country = {
 				country_event = money.1
 				country_event = ideas.1
 				country_event = system.20
