@@ -1,21 +1,20 @@
 brexit_decisions = {
 	
 	brexit_countdown = {
-
-		icon = european_union_exit
+		icon = european_union
 
 		visible = {
 		    original_tag = ENG
-			has_idea = idea_eu_member
+			has_idea = idea_european_union_member
 			NOT = { has_global_flag = brexit_stopped }
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
 		}
 		
 		available = {
-			has_global_flag = brexit_stopped
+			has_country_flag = second_referendum_stay
 		}
 
 		selectable_mission = yes
@@ -24,21 +23,33 @@ brexit_decisions = {
 		fire_only_once = yes
 
 		complete_effect = {
-            news_event = brexit.2
+            news_event = britain.10
+			hidden_effect = {
+				remove_ideas = idea_brexit
+			}
 		}
 		
 		timeout_effect = {
-		    remove_ideas = idea_eu_member
-			remove_ideas = ENG_brexit
+		    remove_ideas = idea_european_union_member
+			hidden_effect = {
+				remove_ideas = idea_brexit
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = european_union_member }
+				}
+			}
 			if = {
 		        limit = {
-			        has_global_flag = brexit_deal
+			        has_country_flag = brexit_deal
 		        }
-				set_global_flag = soft_brexit
-		        #news_event = brexit.6
+				# Soft Brexit
 		        else = {
-				    set_global_flag = hard_brexit
-			        news_event = brexit.1
+				    # Hard Brexit
+			        news_event = britain.9
+					hidden_effect = {
+						every_country = {
+							remove_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
+						}
+					}
 		        }
 	        }
 		}
@@ -47,26 +58,29 @@ brexit_decisions = {
 	second_brexit_referendum = {
 		visible = {
 		    original_tag = ENG
-			has_idea = idea_eu_member
-			NOT = { has_global_flag = brexit_deal_reached }
+			has_idea = idea_brexit
+			NOT = { has_country_flag = brexit_deal }
 		}
 		
-		visible = {
-			has_idea = idea_eu_member
-			NOT = { has_global_flag = brexit_deal_reached }
-		}
-		
-		icon = united_kingdom
+		icon = european_union
 		
 		cost = 150
 		fire_only_once = yes
 		
 		complete_effect = {
-			country_event = brexit.3
+			country_event = britain.11
 		}
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 10
+				OR = {
+				    has_government = social_liberal
+					has_government = progressive
+					has_government = social_democrat
+				}
+			}
 		}
 	}
 }

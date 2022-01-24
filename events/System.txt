@@ -535,6 +535,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		### Randomizer - Adds 1% to random party
 		random_list = {
 			5 = {
 				if = {
@@ -744,6 +745,116 @@ country_event = {
 				# Needs to be 100 in total
 			}
 		}
+		### Balancer - Removes 1% from all over 75%
+		if = {
+			limit = {
+				islamist > 0.75
+			}
+			add_popularity = { 
+				ideology = islamist
+				popularity = -0.01
+			}
+		}
+		if = {
+			limit = {
+				fascist > 0.75
+			}
+			add_popularity = { 
+				ideology = fascist
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				right_wing_nationalist > 0.75
+			}
+			add_popularity = { 
+				ideology = right_wing_nationalist
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				monarchist > 0.75
+			}
+			add_popularity = { 
+				ideology = monarchist
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				national_conservative > 0.75
+			}
+			add_popularity = { 
+				ideology = national_conservative
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				conservative > 0.75
+			}
+			add_popularity = { 
+				ideology = conservative
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				classical_liberal > 0.75
+			}
+			add_popularity = { 
+				ideology = classical_liberal
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				social_liberal > 0.75
+			}
+			add_popularity = { 
+				ideology = social_liberal
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				social_democrat > 0.75
+			}
+			add_popularity = { 
+				ideology = social_democrat
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				progressive > 0.75
+			}
+			add_popularity = { 
+				ideology = progressive
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				socialist > 0.75
+			}
+			add_popularity = { 
+				ideology = socialist
+				popularity = -0.01 
+			}
+		}
+		if = {
+			limit = {
+				communist > 0.75
+			}
+			add_popularity = { 
+				ideology = communist
+				popularity = -0.01 
+			}
+		}
+		### Satisfaction - Adds/removes 1% from government
 		if = {
 			limit = {
 				has_stability > 0.5
@@ -1094,5 +1205,24 @@ country_event = {
 			remove_core_of = YEM
 			remove_claim_by = YEM
 		}
+	}
+}
+
+country_event = {
+	id = system.25
+	hidden=yes
+
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_idea = european_union_member
+			}
+		}
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		set_global_flag = european_union_dissolved
 	}
 }

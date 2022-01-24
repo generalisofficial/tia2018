@@ -60,9 +60,13 @@ international_organizations = {
 		}
 	}
 
-	apply_to_join_the_EU = {
+	join_european_union = {
 		visible = {
-			NOT = { has_idea = idea_eu_member }
+			is_sovereign_state = yes
+			NOT = { 
+				has_idea = idea_european_union_member 
+				has_global_flag = european_union_dissolved
+			}
 			OR = {
 				is_in_europe = yes
 				original_tag = TUR
@@ -70,21 +74,36 @@ international_organizations = {
 		}
 		
 		available = {
-		    is_subject = no
+			has_war = no
 			is_democracy = yes
-			NOT = { has_idea = immigration_closed_borders has_idea = idea_eu_sanctions }
-			has_civil_war = no
+			has_idea = civil_liberties_libertarian
+			NOT = {
+				OR = {
+					has_idea = planned_economy
+					has_idea = socialist_market_economy
+				}
+			}
+			NOT = { has_global_flag = ongoing_EU_application }
 		}
 		
 		icon = european_union
 		
-		cost = 150
-		fire_only_once = yes
+		cost = 50
 		
-		days_re_enable = 2000
+		days_re_enable = 360
 		
 		complete_effect = {
-			EU_membership_application = yes
+			set_global_flag = ongoing_EU_application
+			every_country = {
+				limit = {
+					has_idea = idea_european_union_member
+				}
+				country_event = european_union.1
+			}
+			country_event = {
+				id = european_union.2
+				days = 7
+			}
 		}
 		
 		ai_will_do = {
@@ -102,9 +121,9 @@ international_organizations = {
 		}
 	}
 
-	leave_the_EU = {
+	leave_european_union = {
 		visible = {
-			has_idea = idea_eu_member
+			has_idea = idea_european_union_member
 		}
 		
 		available = {
@@ -120,19 +139,25 @@ international_organizations = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			EU_membership_termination = yes
+			remove_ideas = idea_european_union_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = european_union_member }
+					remove_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
+				}
+			}
 		}
 		
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				factor = 1
-				NOT = {
-				    has_government = classical_liberal
-					has_government = conservative
-					has_government = social_liberal
-					has_government = social_democrat
-					has_government = progressive
+				OR = {
+				    has_government = fascist
+					has_government = islamist
+					has_government = right_wing_nationalist
+					has_government = monarchist
+					has_government = communist
 				}
 			}
 		}

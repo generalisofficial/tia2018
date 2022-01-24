@@ -94,8 +94,8 @@ ideas = {
 		}
 		
 		#European Union
-		idea_eu_member = {
-			picture = EU_member
+		idea_european_union_member = {
+			picture = european_union
 		
 			allowed = { always = no }
 			removal_cost = -1
@@ -114,18 +114,6 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 				political_power_gain = -0.1
-			}
-		}
-		
-		idea_eu_sanctions = {
-			picture = trade
-		
-			allowed = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_gain = -0.2
-				consumer_goods_factor = 0.05
 			}
 		}
 		

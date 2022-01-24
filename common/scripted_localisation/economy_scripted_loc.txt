@@ -36,10 +36,10 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				has_idea = idea_eu_member
+				has_idea = idea_european_union_member
 			}
 			THIS = {
-				has_idea = idea_eu_member
+				has_idea = idea_european_union_member
 			}
 		}
 		localization_key = LOANS_EU_YES
@@ -49,12 +49,12 @@ defined_text = {
 			OR = {
 				NOT = { 
 					FROM = {
-						has_idea = idea_eu_member
+						has_idea = idea_european_union_member
 					}
 				}
 				NOT = {
 					THIS = {
-						has_idea = idea_eu_member
+						has_idea = idea_european_union_member
 					}
 				}
 			}

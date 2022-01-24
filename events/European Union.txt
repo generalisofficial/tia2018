@@ -1,0 +1,100 @@
+﻿add_namespace = european_union
+
+#(Country) has applied to join the European Union
+country_event = {
+	id = european_union.1
+	title = european_union.1.t
+	desc = european_union.1.d
+	
+	is_triggered_only = yes
+	
+	option = {	#Accept
+		name = european_union.1.o1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+		}
+	}
+	
+	option = {	#Veto!
+		name = european_union.1.o2
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+		set_global_flag = EU_application_veto
+	}
+}
+
+#Response from the European Union
+country_event = {
+	id = european_union.2
+	title = european_union.2.t
+	desc = european_union.2.d
+	
+	is_triggered_only = yes
+	
+	option = { #Accepted
+		name = european_union.2.o1
+		trigger = {
+			NOT = { has_global_flag = EU_application_veto }
+		}
+		news_event = european_union.3
+		add_ideas = idea_european_union_member
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_idea = idea_european_union_member
+				}
+				add_opinion_modifier = { target = ROOT modifier = european_union_member }
+				add_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
+			}
+		}
+		clr_global_flag = ongoing_EU_application
+	}
+
+	option = { #Vetoed
+		name = european_union.2.o2
+		trigger = {
+			has_global_flag = EU_application_veto
+		}
+		clr_global_flag = ongoing_EU_application
+		clr_global_flag = EU_application_veto
+	}
+}
+
+news_event = { #(Country) joins the European Union
+	id = european_union.3
+	title = european_union.3.t
+	desc = european_union.3.d
+	picture = GFX_news_event_european_council
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = european_union.3.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = european_union.3.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}
