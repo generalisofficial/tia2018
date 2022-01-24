@@ -184,4 +184,40 @@ foreign_affairs = {
 			factor = 100
 		}
 	}
+
+	send_ultimatum_to_rojava = {
+	
+		visible = {
+			OR = {
+				original_tag = SYR
+				original_tag = FSA
+			}
+			country_exists = ROJ
+			has_global_flag = syrian_civil_war_over
+		}
+		
+		available = {
+			NOT = {
+				ROJ = {
+					is_guaranteed_by = USA
+				}
+			}
+		}
+		
+		complete_effect = {
+			ROJ = {
+				country_event = syria.3
+			}
+		}
+		
+		icon = rojava
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

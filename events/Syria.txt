@@ -51,3 +51,32 @@ news_event = {
 		}
 	}
 }
+
+#Ultimatum from Damascus
+country_event = {
+	id = syria.3
+	title = syria.3.t
+	desc = syria.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = syria.3.o1
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = no
+			}
+		}
+	}
+
+	option = {
+		name = syria.3.o2
+		FROM = {
+			declare_war_on = {
+				target = ROOT
+				type = take_core_state
+			}
+		}
+	}
+}
