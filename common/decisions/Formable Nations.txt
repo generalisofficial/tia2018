@@ -45,68 +45,6 @@ formable_nation_decisions = {
 		}
 	}
 	
-	form_yugoslavia = {
-		visible = {
-		    OR = {
-			    original_tag = SER
-				original_tag = CRO
-				original_tag = KOS
-				original_tag = BOS
-				original_tag = SLV
-				original_tag = MAC
-				original_tag = MNT
-			}
-		}
-		
-		available = {
-			owns_state = 45
-			owns_state = 107
-			owns_state = 108
-			owns_state = 927
-			owns_state = 785
-			owns_state = 1012
-			owns_state = 1013
-			owns_state = 106
-			owns_state = 1014
-			owns_state = 105
-			owns_state = 104
-			owns_state = 848
-			owns_state = 103
-			owns_state = 109
-			owns_state = 736
-			owns_state = 163
-			owns_state = 102
-		}
-		
-		icon = civil_support
-		
-		cost = 100
-		fire_only_once = yes
-		
-		complete_effect = {
-			set_cosmetic_tag = YUG
-			every_state = {
-			    limit = {
-				    OR = {
-				         is_core_of = SER
-				         is_core_of = CRO
-						 is_core_of = KOS
-						 is_core_of = BOS
-						 is_core_of = SLV
-						 is_core_of = MAC
-						 is_core_of = MNT
-				    }
-			    }
-			    add_core_of = ROOT
-		    }
-			
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
 	form_iberia = {
 		visible = {
 		    OR = {
