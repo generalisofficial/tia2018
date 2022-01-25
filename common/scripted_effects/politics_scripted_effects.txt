@@ -1870,10 +1870,18 @@ election_pulse = {
 	}
 	if = {
 	    limit = {
-		    original_tag = AND
-			has_government = conservative
+			original_tag = AND
+		    has_country_leader = {
+				name = "Antoni Martí"
+				ruling_only = yes
+			}
 		}
-		country_event = andorra.1
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Xavier Espot"
+	        picture = GFX_Portrait_AND_Xavier_Espot
+	        ideology = liberal_conservative
+        }
 	}
 	if  = {
 		limit = {
