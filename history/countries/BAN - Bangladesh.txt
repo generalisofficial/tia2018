@@ -107,7 +107,6 @@ add_ideas = {
 	prohibited_firearms
 }
 
-
 set_country_flag = sunni_islam
 
 #Economy
@@ -115,18 +114,18 @@ set_variable = { income_tax = 25 }
 set_variable = { corporate_tax = 35 }
 
 #Jatiya Sangsad
-set_variable = { communist_seats = 2.06 }
-set_variable = { socialist_seats = 1.75 }
+set_variable = { communist_seats = 2.11 }
+set_variable = { socialist_seats = 1.76 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 79.14 }
+set_variable = { social_democrat_seats =  82.41 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 17.05 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { conservative_seats = 12.67 }
+set_variable = { national_conservative_seats = 0.35 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
+set_variable = { islamist_seats = 0.70 }
 
 # Coalition
 set_country_flag = has_parliament
@@ -141,16 +140,19 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 76.88
-	national_conservative = 16.39
-    conservative = 5.07
-    communist = 1.00
-	socialist = 0.66
+	social_democrat = 86.55
+	conservative = 7.74
+	national_conservative = 2.69
+    socialist = 1.01
+	communist = 1.01
+	social_liberal = 0.67
+	islamist = 0.33
 }
 
-recruit_character = BAN_sheikh_hasina
-recruit_character = BAN_hussain_muhammad_ershad
-recruit_character = BAN_rashed_khan_menon
+recruit_character = BAN_syed_najibul_bashar_maizbhandari
 recruit_character = BAN_khaleda_zia
+recruit_character = BAN_hussain_muhammad_ershad
+recruit_character = BAN_a_q_m_badruddoza_chowdhury
+recruit_character = BAN_sheikh_hasina
 recruit_character = BAN_hasanul_haq_inu
-recruit_character = BAN_maqbul_ahmed
+recruit_character = BAN_rashed_khan_menon

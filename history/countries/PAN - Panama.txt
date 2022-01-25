@@ -109,34 +109,37 @@ set_country_flag = catholic
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 31.49 }
+set_variable = { social_democrat_seats = 35.71 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 33.72 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { classical_liberal_seats = 2.85 }
+set_variable = { conservative_seats = 44.28 }
+set_variable = { national_conservative_seats = 17.16 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 34.79 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_right_wing_nationalist
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = right_wing_nationalist
+	ruling_party = national_conservative
 	last_election = "2014.5.5"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    right_wing_nationalist = 10.83
-    conservative = 31.00
-    social_democrat = 58.17
+	social_democrat = 53.04
+	conservative = 27.27
+	national_conservative = 12.12
+    classical_liberal = 7.57
 }
 
 recruit_character = PAN_juan_carlos_varela
-recruit_character = PAN_rómulo_roux
+recruit_character = PAN_romulo_roux
+recruit_character = PAN_francisco_aleman
 recruit_character = PAN_laurentino_cortizo
+recruit_character = PAN_saul_mendez

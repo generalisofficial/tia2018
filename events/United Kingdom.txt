@@ -388,3 +388,86 @@ country_event = { #Second Brexit Referendum - Stay
 		set_country_flag = second_referendum_stay
 	}
 }
+
+country_event = { #Vote on the proposed Brexit trade agreement
+	id = britain.14
+	title = britain.14.t
+	desc = britain.14.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.14.o1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+		}
+		add_to_variable = {
+			var = global.brexit_trade_agreement_vote_count_in_favor
+			value = 1
+		}
+	}
+
+	option = {
+		name = britain.14.o2
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+		add_to_variable = {
+			var = global.brexit_trade_agreement_vote_count_against
+			value = 1
+		}
+	}
+}
+
+country_event = { #Results of the Brexit trade agreement vote
+	id = britain.15
+	title = britain.15.t
+	desc = britain.15.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.15.o1
+		trigger = {
+			check_variable = {
+				var = global.brexit_trade_agreement_vote_count_in_favor
+				value = global.brexit_trade_agreement_vote_count_against
+				compare = greater_than
+			}
+		}
+		set_country_flag = brexit_deal
+		clr_global_flag = ongoing_brexit_trade_agreement_vote
+		clear_variable = global.brexit_trade_agreement_vote_count_in_favor
+		clear_variable = global.brexit_trade_agreement_vote_count_against
+	}
+
+	option = {
+		name = ibritain.15.o2
+		trigger = {
+			NOT = {
+				check_variable = {
+					var = global.brexit_trade_agreement_vote_count_in_favor
+					value = global.brexit_trade_agreement_vote_count_against
+					compare = greater_than
+				}
+			}
+		}
+		clr_global_flag = ongoing_brexit_trade_agreement_vote
+		clear_variable = global.brexit_trade_agreement_vote_count_in_favor
+		clear_variable = global.brexit_trade_agreement_vote_count_against
+	}
+}

@@ -15,6 +15,9 @@ brexit_decisions = {
 		
 		available = {
 			has_country_flag = second_referendum_stay
+			NOT = {
+				has_global_flag = ongoing_brexit_trade_agreement_vote
+			}
 		}
 
 		selectable_mission = yes
@@ -54,6 +57,36 @@ brexit_decisions = {
 	        }
 		}
 	}
+
+	propose_brexit_trade_agreement = {
+		visible = {
+		    original_tag = ENG
+			has_idea = idea_brexit
+		}
+		
+		icon = european_union
+		
+		cost = 250
+		fire_only_once = yes
+		
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					has_idea = idea_european_union_member
+				}
+				country_event = britain.14
+			}
+			country_event = {
+				id = britain.15
+				days = 7
+			}
+			set_global_flag = ongoing_brexit_trade_agreement_vote
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	second_brexit_referendum = {
 		visible = {
@@ -64,7 +97,7 @@ brexit_decisions = {
 		
 		icon = european_union
 		
-		cost = 150
+		cost = 100
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -72,7 +105,7 @@ brexit_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				factor = 10
 				OR = {
