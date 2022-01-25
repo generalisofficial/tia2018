@@ -202,6 +202,24 @@ on_actions = {
 				}
 			}
 			every_country = {
+				limit = {
+					has_idea = idea_european_union_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_european_union_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = european_union_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = european_union_member_trade
+					}
+				}
+			}
+			every_country = {
 				country_event = money.1
 				country_event = ideas.1
 				country_event = system.20

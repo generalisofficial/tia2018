@@ -1,0 +1,85 @@
+﻿add_namespace = international_organizations
+
+# (Country) has applied to join the (Organization)
+country_event = {
+	id = international_organizations.1
+	title = international_organizations.1.t
+	desc = international_organizations.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = international_organizations.1.o1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+		}
+		add_to_variable = {
+			var = global.generic_application_vote_count_in_favor
+			value = 1
+		}
+	}
+
+	option = {
+		name = international_organizations.1.o2
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+		add_to_variable = {
+			var = global.generic_application_vote_count_against
+			value = 1
+		}
+	}
+}
+
+# Response from the (Organization)
+country_event = {
+	id = international_organizations.2
+	title = international_organizations.2.t
+	desc = international_organizations.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = international_organizations.2.o1
+		trigger = {
+			check_variable = {
+				var = global.generic_application_vote_count_in_favor
+				value = global.generic_application_vote_count_against
+				compare = greater_than
+			}
+		}
+		clr_global_flag = ongoing_generic_application
+		clear_variable = global.generic_application_vote_count_in_favor
+		clear_variable = global.generic_application_vote_count_against
+	}
+
+	option = {
+		name = international_organizations.2.o2
+		trigger = {
+			NOT = {
+				check_variable = {
+					var = global.generic_application_vote_count_in_favor
+					value = global.generic_application_vote_count_against
+					compare = greater_than
+				}
+			}
+		}
+		clr_global_flag = ongoing_generic_application
+		clear_variable = global.generic_application_vote_count_in_favor
+		clear_variable = global.generic_application_vote_count_against
+	}
+}
