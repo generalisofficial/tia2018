@@ -1,50 +1,5 @@
 ﻿add_namespace = news
 
-#[Country] declares Jihad
-news_event = {
-	id = news.2
-	title = news.2.t
-	desc = news.2.d
-	picture = GFX_news_event_jihad
-	
-	major = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = news.2.o1
-	}
-}
-
-#[Country] dissolves their faction
-news_event = {
-	id = news.3
-	title = news.3.t
-	desc = news.3.d
-	picture = GFX_news_event_political_assembly
-	
-	major = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = news.3.o1
-	}
-}
-
-#[Country] leaves the EU!
-news_event = {
-	id = news.4
-	title = news.4.t
-	desc = news.4.d
-	picture = GFX_news_event_european_union
-	
-	major = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = news.4.o1
-	}
-}
-
 #We have been assigned a UNSC seat!
 news_event = {
 	id = news.51
@@ -159,9 +114,9 @@ news_event = {
 		effect_tooltip = {
 			every_country = {
 				limit = {
-					has_idea = idea_eu_member
+					has_idea = idea_european_union_member
 				}
-				remove_ideas = idea_eu_member
+				remove_ideas = idea_european_union_member
 			}
 		}
 	}

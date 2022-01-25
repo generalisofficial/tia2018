@@ -272,3 +272,119 @@ country_event = { #(Year) Labour Party leadership election (Corbyn resigns)
         }
 	}
 }
+
+news_event = { #Hard Brexit
+	id = britain.9
+	title = britain.9.t
+	desc = britain.9.d
+	picture = GFX_news_event_brexit
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = britain.9.o1
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	
+	option = {
+		name = britain.9.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_idea = idea_european_union_member
+		}
+	}
+	
+	option = {
+		name = britain.9.o3
+		trigger = {
+		    NOT = {
+			    original_tag = ENG
+			    has_idea = idea_european_union_member
+			}
+		}
+	}
+}
+
+news_event = { #Article 50 Withdrawn
+	id = britain.10
+	title = britain.10.t
+	desc = britain.10.d
+	picture = GFX_news_event_uk_eu_flags
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = britain.10.o1
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	
+	option = {
+		name = britain.10.o2
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_idea = idea_european_union_member
+		}
+	}
+	
+	option = {
+		name = britain.10.o3
+		trigger = {
+		    NOT = {
+			    original_tag = ENG
+			    has_idea = idea_european_union_member
+			}
+		}
+	}
+}
+
+country_event = { #Second Brexit Referendum
+	id = britain.11
+	title = britain.11.t
+	desc = britain.11.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.11.o1
+	    random_list = {
+			51 = {
+				country_event = britain.12
+			}
+			49 = {
+			    country_event = britain.13
+			}
+		}
+	}
+}
+
+country_event = { #Second Brexit Referendum - Leave
+	id = britain.12
+	title = britain.12.t
+	desc = britain.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.12.o1
+	}
+}
+
+country_event = { #Second Brexit Referendum - Stay
+	id = britain.13
+	title = britain.13.t
+	desc = britain.13.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.13.o1
+		set_country_flag = second_referendum_stay
+	}
+}

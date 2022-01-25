@@ -29,14 +29,14 @@ news_event = {
 	option = {	#We have to watch the Germans.
 		name = germany_news.2.o1
 		trigger = {
-			has_idea = idea_eu_member
+			has_idea = idea_european_union_member
 		}
 	}
 	
 	option = {	#Whatever.
 		name = germany_news.2.o2
 		trigger = {
-			NOT = { has_idea = idea_eu_member }
+			NOT = { has_idea = idea_european_union_member }
 		}
 	}
 }

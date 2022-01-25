@@ -34,8 +34,10 @@
  join_united_nations_desc: "In order to join the United Nations, we need to submit an application to the Secretary-General, which is then voted upon by the General Assembly. However, permanent members of the Security Council can veto our application. After sending the application, a response should arrive within a week."
  leave_united_nations: "Leave the §cUnited Nations§!"
  leave_united_nations_desc: "What good has the United Nations ever done us? Let's leave."
- apply_to_join_the_EU: "Apply to join the European Union"
- leave_the_EU: "Leave the European Union"
+ join_european_union: "Apply to join the §rEuropean Union§!"
+ join_european_union_desc: "In order to promote greater cooperation between us and our European neighbors, we should apply to join the European Union, a political and economic union between its member states. Membership also includes trade benefits as part of the Single Market, being able to elect members to the European Parliament, and defense cooperation. In order for our application to be accepted, every country in the Union has to accept it."
+ leave_european_union: "Leave the European Union"
+ leave_european_union_desc: "The European Union is taking away our sovereignty! Our nation does not wish to be part of a European superstate, and the only way to avoid being eaten up by this globalist project is to leave. Our sovereignty must be protected!"
  join_non_aligned_movement: "Join the Non-Aligned Movement"
  leave_non_aligned_movement: "Leave the Non-Aligned Movement"
  join_baltic_assembly: "Join the Baltic Assembly"
@@ -95,6 +97,8 @@
  pardon_ted_kaczynski_desc: "Ted Kaczynski, also known as the Unabomber, is currently in federal prison for multiple counts of bombings of innocent civilians. A known anarcho-primitivist, Ted Kaczynski has dedicated his life to the abolition of technology worldwide and a return to the old ways. Might it be wise to, for some reason, release him for prison despite his crimes?"
  establish_the_raqqa_canton: "Establish the Raqqa Canton"
  establish_the_raqqa_canton_desc: "In our battle against the Islamic State, we took control of the major city of ar-Raqqah and the surrounding countryside. If we send a few Kurds there, we can integrate it into the DFNS as the Raqqa Canton."
+ establish_the_deir_ez_zor_canton: "Establish the Deir ez-Zor Canton"
+ establish_the_deir_ez_zor_canton_desc: "In the aftermath of Operation Jazira Storm, we now in control of the part of Deir-ez-Zor Governorate that is located east of the Euphrates, having liberated it from the Islamic State. If we send a few Kurds down there, we can integrate that as the next canton of the DFNS."
 
  #Economic Affairs
  economic_affairs: "Economic Affairs"
@@ -115,11 +119,10 @@
  #Brexit
  brexit_decisions: "Brexit"
  brexit_decisions_desc: "Brexit is the impending withdrawal of the United Kingdom from the European Union. It follows the referendum of 23 June 2016 when 51.9 percent of those who voted supported withdrawal. Withdrawal has been advocated by Eurosceptics, both left-wing and right-wing, while Pro-Europeanists, who also span the political spectrum, have advocated continued membership."
- brexit_countdown: "Stop Brexit"
- brexit_countdown_desc: "Unless another solution to the EU question is reached before the 30th of March 2019, the United Kingdom will withdraw permanently from the European Union."
+ brexit_countdown: "Withdraw Article 50"
+ brexit_countdown_desc: "Unless another solution to the EU question is reached before the 30th of March 2019, the United Kingdom will withdraw permanently from the European Union. If a trade deal has been reached before then, it will be a so-called Soft Brexit. If not, it will be a Hard Brexit, significantly impacting our economy due to the shock of the withdrawal."
  second_brexit_referendum: "Second Brexit Referendum"
- second_brexit_referendum_desc: "With a deal for a Soft Brexit not yet reached, another option may be to hold a second referendum in order to confirm that the people are still in favour of exiting the European Union."
- brexit_stopped: "Second Referendum: Stay"
+ second_brexit_referendum_desc: "With a deal for a Soft Brexit not yet reached, another option may be to hold a second referendum in order to confirm that the people are still in favour of exiting the European Union. If not, we may stop the whole process."
  
  #Israeli Regency
  ISR_regency: "Regency"
@@ -141,16 +144,6 @@
  arab_league_decisions_desc: "The Arab League is a regional organization of Arab states in and around North Africa, the Horn of Africa and Arabia. It was formed in Cairo on 22 March 1945 with six members: Kingdom of Egypt, Kingdom of Iraq, Transjordan, Lebanon, Saudi Arabia, and Syria. Yemen joined as a member on 5 May 1945."
  join_arab_league: "Join the Arab League"
  leave_arab_league: "Leave the Arab League"
- 
- #Socotra Crisis
- socotra_crisis: "Socotra Crisis"
- socotra_crisis_desc: "With the civil war in western Yemen only heating up, the island of Socotra is at increasing risk of falling into chaos. As a very prosperous nation, we could uh.. liberate.. the island and put it under our protection. Not an annexation, of course, heh!"
- seize_socotra: "Seize Socotra"
- seize_socotra_desc: "It is time! Socotra shall be ours!"
- withdraw_from_socotra: "Withdraw from Socotra"
- withdraw_from_socotra_desc: "The occupation has become very costly over the weeks, and pressure from Yemen and Saudi Arabia is hitting us hard. Shall we leave and pretend this never happened?"
- annex_socotra: "Annex Socotra"
- annex_socotra_desc: "What are we, cowards? Socotra is ours, and the stupid Yemenis can not even try to take it! Socotra shall be the eighth Emirate!"
 
  #Politics of Bosnia and Herzegovina
  bosnia_politics: "Politics of Bosnia and Herzegovina"
@@ -159,3 +152,25 @@
  leave_dayton_agreement_desc: "The Dayton Agreement may have achieved peace, but at what cost? The agreement turned out great nation into a protectorate of Serbia and Croatia. This ends now! Withdrawal from the Dayton Agreement will only help us, and hopefully the Serbs won't mind."
  apply_for_union_with_serbia: "Apply for Union with Serbia"
  apply_for_union_with_serbia_desc: "Freedom at last! Bosnia no longer occupies Serb land. However, our independence may be a lost cause. Our potential would be much greater as part of a larger Serbian state! We could contact the Serbian government for negotiations."
+
+ # La Resistance
+ recruit_in_europe: "Create the European Section"
+ recruit_in_europe_state: "Recruit in [From.Owner.GetNameDef]"
+ recruit_in_north_america: "Create the North American Section"
+ recruit_in_south_america: "Create the South American Section"
+ recruit_in_africa: "Create the African Section"
+ recruit_in_middle_east: "Create the Middle Eastern Section"
+ recruit_in_asia: "Create the Asian Section"
+ recruit_in_australia: "Create the Oceanian Section"
+ LAR_recruitment_europe: "Recruitment in Europe"
+ LAR_recruitment_north_america: "Recruitment in North America"
+ LAR_recruitment_south_america: "Recruitment in South America"
+ LAR_recruitment_africa: "Recruitment in Africa"
+ LAR_recruitment_asia: "Recruitment in Asia"
+ LAR_recruitment_oceania: "Recruitment in Oceania"
+ LAR_recruitment_middle_east: "Recruitment in the Middle East"
+ lar_local_recruitment: "Local Agent Recruitment"
+ lar_local_recruitment_desc: "We need agents who can blend into the local communities. Some of these can be found within our own country, but we will have to make a concerted effort to identify, recruit and train them."
+ recruit_in_state_tt: "We will gain a local agent from §Y[From.Owner.GetNameDef]§!. This agent will be harder to detect when infiltrating and operating in §Y[From.Owner.GetNameDef]§!."
+ recruit_in_state_to_pool_tt: "A local agent from §Y[From.Owner.GetNameDef]§! becomes available for recruitment if we have an open §YOperative Slot§!. This agent will be harder to detect when infiltrating and operating in §Y[From.Owner.GetNameDef]§!."
+

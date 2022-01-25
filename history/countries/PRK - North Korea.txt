@@ -75,7 +75,7 @@ add_ideas = {
     nuclear_weapons_state
 	UNSC_trade_sanctions_idea
 	population_growth_steady
-	service_by_requirement
+	extensive_conscription
 	isolationism
 	one_party_state
 	state_atheism
@@ -120,6 +120,8 @@ add_opinion_modifier = {
 	target = ISR
 	modifier = no_diplomatic_recognition
 }
+
+diplomatic_relation = { country = SOV relation = non_aggression_pact }
 
 #Supreme People's Assembly
 set_variable = { communist_seats = 100 }

@@ -216,6 +216,10 @@ domestic_affairs = {
 			add_ideas = one_party_state
 			one_party_parliament = yes
 			quickset_coalition = yes
+			add_named_threat = {
+				threat = 5
+				name = threat_abolished_democracy
+			}
 			if = {
 				limit = {
 					has_government = communist
@@ -439,7 +443,7 @@ domestic_affairs = {
 			controls_state = 933
 		}
 		
-		icon = rojava
+		icon = raqqa_canton
 
 		fire_only_once = yes 
 		
@@ -448,6 +452,40 @@ domestic_affairs = {
 
 		remove_effect = {
 			933 = {
+				add_core_of = ROOT
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	establish_the_deir_ez_zor_canton = {
+		
+		visible = {
+			original_tag = ROJ
+			NOT = {
+				937 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		available = {
+			owns_state = 937
+			controls_state = 937
+		}
+		
+		icon = deir_ez_zor_canton
+
+		fire_only_once = yes 
+		
+		cost = 50
+		days_remove = 75
+
+		remove_effect = {
+			937 = {
 				add_core_of = ROOT
 			}
 		}

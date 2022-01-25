@@ -1,12 +1,22 @@
 economic_affairs = {
 	adopt_the_euro = {
 		visible = {
+			is_sovereign_state = yes
 			is_in_europe = yes
 			NOT = { has_idea = the_euro }
 		}
 		
 		available = {
-		
+			has_war = no
+			NOT = {
+				OR = {
+					has_country_flag = coalition_communist
+					has_country_flag = coalition_socialist
+					has_country_flag = coalition_national_conservative
+					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_fascist
+				}
+			}
 		}
 		
 		icon = euro_coins
@@ -19,6 +29,16 @@ economic_affairs = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+				    has_government = classical_liberal
+					has_government = conservative
+					has_government = social_liberal
+					has_government = social_democrat
+					has_government = progressive
+				}
+			}
 		}
 	}
 	abandon_the_euro = {
@@ -27,7 +47,6 @@ economic_affairs = {
 		}
 		
 		available = {
-		
 		}
 		
 		icon = euro_coins
@@ -40,6 +59,16 @@ economic_affairs = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+				    has_government = fascist
+					has_government = islamist
+					has_government = right_wing_nationalist
+					has_government = monarchist
+					has_government = communist
+				}
+			}
 		}
 	}
 }
