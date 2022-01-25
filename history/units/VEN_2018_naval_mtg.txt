@@ -1,0 +1,17 @@
+﻿
+units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Bolivarian Navy"
+		naval_base = 8113 #La Guiara
+		task_force = {				
+			name = "Bolivarian Navy"			
+			location = 8113 #La Guiara
+			ship = { name = "ARBV Sábalo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEN version_name = "Type 209 Class" } } }
+			ship = { name = "ARBV Caribe" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VEN version_name = "Type 209 Class" } } }
+			ship = { name = "ARBV Mariscal Sucre" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COL version_name = "Almirante Padilla Class" } } }
+			ship = { name = "ARBV Almirante Brion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COL version_name = "Almirante Padilla Class" } } }
+		}				
+	}
+} 
+

@@ -6,77 +6,201 @@
 		infantry = { x = 0 y = 1 }
 	}
 	support = {
+		mot_recon = { x = 0 y = 0 }
+	}	
+}
+
+division_template = {
+	name = "Large Militia Brigade"
 	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}	
+}
+
+division_template = {
+	name = "Mechanized Brigade"
 	
-	priority = 0
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}
 }
 
 units = {
 	division = {
-		name = "Euphrates Jarabulus Battalions"
+		name = "1st YPG Afrin Brigade"
+		location = 13261
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd YPG Afrin Brigade"
+		location = 13261
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd YPG Afrin Brigade"
+		location = 13261
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4th YPG Afrin Brigade"
+		location = 13261
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1st YPG Kobane Brigade"
 		location = 13265
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Asayish Jazira"
-		location = 1578
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "Jaysh al-Thuwar"
-		location = 13261
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Khabour Guards"
-		location = 10882
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Manbij Military Council"
-		location = 13260
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Women's Protection Units"
-		location = 13275
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "al-Bab Military Council"
-		location = 13261
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Deir ez-Zor Military Council"
-		location = 13275
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Syriac Military Council"
-		location = 13275
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "Assyrian People's Guard – Nattoreh"
+		name = "1st YPG Jazira Brigade"
 		location = 1549
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Jabhat Thuwar al-Raqqa"
-		location = 1606
+		name = "1st YPG Aleppo Brigade"
+		location = 13260
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1st YPG Tabqa Brigade"
+		location = 14150
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "YPG Mechanized Brigade"
+		location = 13260
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "YPG International Brigade"
+		location = 13261 #Afrin
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Anti-Terror Units"
+		location = 13275
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.4 #Trained by the US Special Forces and the CIA
+	}
+	division = {
+		name = "1st YPJ Brigade"
+		location = 14152
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "2nd YPJ Brigade"
+		location = 13272
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "3rd YPJ Brigade"
+		location = 13273
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Northern Sun Battalion"
+		location = 14150 #Tishrin Dam
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Euphrates Liberation Brigade"
+		location = 14150 #Tishrin Dam
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Manbij Hawks Brigade"
+		location = 14150 #Tishrin Dam
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Al-Bab Revolutionary Front"
+		location = 13260 #Manjib
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Qebasin Martyrs Brigade"
+		location = 13260 #Manjib
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Martyr Silo al-Rai Brigade"
+		location = 13260 #Manjib
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Kieba Martyrs Brigade"
+		location = 13260 #Manjib
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Union of Euphrates Jarabulus Battalions"
+		location = 13265 #Near Jarabulus
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Gathering of al-Baggara Youth"
+		location = 14146 #Near the Deir ez-Zor governate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Al-Sanadid Forces"
+		location = 14146 #Near the Deir ez-Zor governate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Northern Democratic Brigade"
+		location = 1634
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Syriac Military Council"
+		location = 1634
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Tribal Militias"
+		location = 14153
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
 	}
 }

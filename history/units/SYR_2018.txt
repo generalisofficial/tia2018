@@ -1,25 +1,10 @@
 ﻿division_template = {
-	name = "Militia"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 0
-}
-
-division_template = {
 	name = "Infantry Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -28,23 +13,71 @@ division_template = {
 }
 
 division_template = {
-	name = "Armor Regiment"
+	name = "Airbone Brigade"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Armor Brigade"
+	name = "Infantry Regiment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+
+	priority = 0
+}
+
+division_template = {
+	name = "Artillery Regiment"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Marine Regiment"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -54,142 +87,376 @@ division_template = {
 
 units = {
 	division = {
-		name = "1st Brigade"
-		location = 7184
+		name = "104th Airborne Brigade"
+		location = 2013 #Well known for defending Deir-ez-Zor, has reportedly returned to Damascus in early 2018
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "105th Mechanized Brigade"
+		location = 14138 #Was mainly employed on the East Ghouta front
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "106th Mechanized Brigade"
+		location = 7671 #Reportedly part of the Aleppo campaign, so it must be near Aleppo
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "18th Mechanized Brigade"
+		location = 12473 #Created in 2017 after the capture of Aleppo
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "112th Brigade"
+		location = 13306 #Created somewhat close to 2018
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "800th Regiment"
-		location = 1056
+		name = "117th Brigade"
+		location = 13294 #Created somewhat close to 2018
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "3rd Brigade"
-		location = 7671
+		name = "123rd Brigade"
+		location = 13266 #Created in 2017 after the capture of Aleppo
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "4th Brigade"
-		location = 4550
+		name = "124th Brigade"
+		location = 12473 #Created in 2017 after the capture of Aleppo
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "5th Brigade"
-		location = 13294
-		division_template = "Infantry Brigade"
+		name = "103rd Commando Brigade"
+		location = 14143 #Helped expelling rebels from Latakia
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
-	}
-	division = {
-		name = "6th Brigade"
-		location = 7184
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "17th Division"
-		location = 13306
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "ISIS Hunters"
-		location = 13266
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "14th Special Forces Division"
-		location = 1056
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.4
-	}
-	division = {
-		name = "15th Special Forces Division"
-		location = 4486
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.4
 	}
 	division = {
 		name = "Syrian Marines"
-		location = 1088
+		location = 1088 #Redeployed to Latakia
 		division_template = "Infantry Brigade"
-		start_experience_factor = 0.4
-	}
-	division = {
-		name = "Tiger Forces"
-		location = 13284
-		division_template = "Armor Regiment"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "4th Armoured Division"
-		location = 13329
-		division_template = "Armor Regiment"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "9th Armoured Division"
+		name = "Popular Security and Support Forces"
+		location = 7184
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "40th Armored Brigade"
+		location = 13302 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "41st Armored Brigade"
+		location = 14138 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "42nd Armored Brigade"
+		location = 13294 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "138th Mechanized Brigade"
+		location = 13367 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "42nd Armored Brigade"
+		location = 13306 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "154th Artillery Regiment"
+		location = 14142 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Artillery Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "63rd Artillery Regiment"
+		location = 13315 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Artillery Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "National Shield"
+		location = 10087 #part of 4th Armored division. Apparently this division protects a path from Aleppo to Latakia
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Brigade (HHN)"
+		location = 14138 #part of 4th Armored division. Stationed at East Ghouta
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "34th Armored Brigade"
+		location = 4486 #part of 9th Armored division. Somewhere on Southern Syria
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "52nd Mechanized Brigade"
+		location = 13300 #part of 9th Armored division. Somewhere on Southern Syria
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "90th Brigade"
+		location = 4486 #part of 9th Armored division. Somewhere on Southern Syria
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "62nd Mechanized Brigade"
+		location = 13300 #part of 10th Armored division. Somewhere on Southern Syria
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "85th Mechanized Brigade"
+		location = 13300 #part of 10th Armored division. Somewhere on Southern Syria
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "56th Armored Brigade"
+		location = 13292 #part of 10th Armored division. Somewhere on Southern Syria
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "47th Regiment"
+		location = 13331 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "147th Regiment"
+		location = 13329 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "132nd Mechanized Brigade"
 		location = 4550
-		division_template = "Armor Regiment"
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Lionesses of Defense"
-		location = 4111
-		division_template = "Armor Regiment"
+		name = "112th Mechanized Brigade"
+		location = 13292 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Golan Regiment"
-		location = 13294
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "15th Mechanized Brigade"
+		location = 13324 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Galilee Forces"
-		location = 12473
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "12th Armored Brigade"
+		location = 13324 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Liwa Fatemiyoun"
-		location = 12473
-		division_template = "Militia"
-		start_experience_factor = 0.2
+		name = "175th Artillery Regiment"
+		location = 13315 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Artillery Regiment"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Liwa al-Quds"
-		location = 13331
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "68th Mechanized Brigade"
+		location = 13292 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Qalamoun Shield Forces"
-		location = 13306
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "121st Mechanized Brigade"
+		location = 4111 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Jaysh al-Muwahhideen"
-		location = 13292
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "88th Mechanized Brigade"
+		location = 4111 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Fatah al-Intifada"
-		location = 13292
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "78th Armored Brigade"
+		location = 13324 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Ba'ath Brigades"
-		location = 4111
-		division_template = "Militia"
-		start_experience_factor = 0.1
+		name = "85th Mechanized Brigade"
+		location = 13324 #Part of the 1st Corps, which covers the area between Damascus and Golan
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "76th Armored Brigade"
+		location = 13277 #Part of the 1st Armored Division, deployed on the Central Syria front
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "91st Armored Brigade"
+		location = 13276 #Part of the 1st Armored Division, deployed on the Central Syria front
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "85th Mechanized Brigade"
+		location = 13276 #Part of the 1st Armored Division, deployed on the Central Syria front
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "85th Mechanized Brigade"
+		location = 13277 #Part of the 1st Armored Division, deployed on the Central Syria front
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st Mechanized Brigade"
+		location = 14137 #Part of the 3rd Armored Division, deployed on the As-Suwayda governate
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "65th Armored Brigade"
+		location = 4486 #Part of the 3rd Armored Division, deployed on the As-Suwayda governate
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "81st Armored Brigade"
+		location = 4486 #Part of the 3rd Armored Division, deployed on the As-Suwayda governate
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "33rd Armored Brigade"
+		location = 13284 
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "45th Brigade"
+		location = 13284 
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "81st Armored Brigade"
+		location = 13329 
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "60th Armored Brigade"
+		location = 14143 
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "67th Armored Brigade"
+		location = 1088 
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" #The government reorganized them into 12 units, creating the 4th Corps of the Syrian army
+		location = 13315 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 13315 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 13315 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 13315 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1087
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1087 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1087 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1087 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1088 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1088 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1088 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Alawite Militia" 
+		location = 1088 
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
 	}
 }	
 

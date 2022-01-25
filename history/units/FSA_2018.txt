@@ -14,219 +14,222 @@
 }
 
 division_template = {
-	name = "Elite Militia Brigade"
+	name = "Large Militia Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	  	anti_tank = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Combined Brigade"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 	support = {
 	    anti_tank = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		engineer = { x = 0 y = 2 }
 	}
-	
-	priority = 0
 }
 
 units = {
 	division = {
-		name = "Jaysh al-Islam"
-		location = 13281
-		division_template = "Elite Militia Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		name = "21st Combined Force"
+		location = 13271 #Somwhere on the Aleppo governate
+		division_template = "Combined Brigade"
+		start_experience_factor = 0.1 
 	}
 	division = {
-		name = "Jaysh al-Thawra"
-		location = 1074
-		division_template = "Elite Militia Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Faylaq al-Rahman"
-		location = 13281
+		name = "13th Division"
+		location = 14145 #Maarrat al-Nu'man
 		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1 
 	}
 	division = {
-		name = "Alliance of Southern Forces"
-		location = 1074
+		name = "Army of Victory"
+		location = 14145 #South of Maarrat al-Nu'man
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Northern Storm Brigade"
+		location = 13263 #Azaz
 		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1 
 	}
 	division = {
-		name = "Alwiya al-Furqan"
-		location = 1074
+		name = "Levant Front"
+		location = 13263 #Azaz
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Free Men of Syria Brigade"
+		location = 13263 #Azaz
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Fatiheen Brigade"
+		location = 13267 #North of Hama
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Free Men of Syria Brigade"
+		location = 13269 #Somewhere on Idlib
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1 
+	}
+	division = {
+		name = "Ajnad al-Sham Islamic Union"
+		location = 13269 #Somewhere south of Damascus
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.0 #Somewhat defunct, but some pockets may remain south of Damascus
+	}
+	division = {
+		name = "Authenticity and Development Front"
+		location = 13281 #Somewhere on the Damascus governate
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "National Front for the Liberation of Syria"
+		name = "Military Council of Damascus and its Suburbs"
+		location = 13281 #Somewhere on the Damascus governate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "8th Brigade of Islam"
+		location = 14140 #Somewhere on the Damascus governate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "17th Brigade of Islam"
+		location = 1074 #Somewhere south of the Damascus governate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1st Ahrar al-Sham Brigade"
+		location = 13269 #Idlib Governorate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Ahrar al-Sham Brigade"
+		location = 14145 #Idlib Governorate
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd Ahrar al-Sham Brigade"
+		location = 13267 #Idlib Governorate
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Ansar al-Sham"
+		location = 13269 #Near Latakia
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Supporters of Islam Front"
+		location = 14136
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of the Revolution"
 		location = 13297
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Army of Free Tribes"
-		location = 13297
+		name = "Mu'tazz Billah Brigade"
+		location = 13268
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Sultan Murad Division"
-		location = 13264
+		name = "Muhajireen and Ansar Brigade"
+		location = 13268
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Hamza Division"
-		location = 13263
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Jaysh al-Nukhba"
+		name = "Hasan ibn Ali Brigade"
 		location = 13271
 		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Faylaq al-Sham"
-		location = 13263
-		division_template = "Elite Militia Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Jaysh Usud al-Sharqiya"
-		location = 13281
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Forces of Martyr Ahmad al-Abdo"
+		name = "Omari Brigades"
 		location = 1074
 		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "1st Coastal Division"
-		location = 13269
-		division_template = "Elite Militia Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Free Idlib Army"
-		location = 7140
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Jaysh al-Izza"
-		location = 7140
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Saraya Ahl al-Sham"
-		location = 13281
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Al-Qaryatayn Martyrs Brigade"
-		location = 13281
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Jabhat Fateh al-Sham"
-		location = 7140
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "Turkistan Islamic Party in Syria"
-		location = 13269
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.4
-	}
-	division = {
-		name = "Jabhat Ansar al-Din"
-		location = 13267
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Ajnad al-Kavkaz"
-		location = 13269
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Liwa al-Haqq"
-		location = 7140
-		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "Jaysh al-Sunna"
-		location = 13267
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Junud al-Makhdi"
-		location = 13269
-		division_template = "Militia Brigade"
+		name = "18 March Division"
+		location = 14136
+		division_template = "Large Militia Brigade"
 		start_experience_factor = 0.1
 	}
 	division = {
-	    name = "Harakat Ahrar al-Sham"
-	    location = 13271
-	    division_template = "Militia Brigade"
-	    start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-    }
-    division = {
-	    name = "Nour al-Din al-Zenki"
-	    location = 13268
-	    division_template = "Militia Brigade"
-	    start_experience_factor = 0.3
-    }
-    division = {
-	    name = "Suqour al-Sham"
-	    location = 13271
-	    division_template = "Militia Brigade"
-	    start_experience_factor = 0.2
-    }
-    division = {
-	    name = "al-Iqaab Battalion"
-	    location = 13268
-	    division_template = "Militia Brigade"
-	    start_experience_factor = 0.1
-    }
-    division = {
-	    name = "Martyrs of Islam Brigade"
-	    location = 13268
-	    division_template = "Militia Brigade"
-	    start_experience_factor = 0.1
-    }
-    division = {
-	    name = "Martyr Abu Omar Battalion"
-	    location = 13268
-	    division_template = "Militia Brigade"
-	    start_experience_factor = 0.1
-    }
+		name = "Salvation Army"
+		location = 13297
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1st SNA Division"
+		location = 13267
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd SNA Division"
+		location = 13268
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd SNA Division"
+		location = 13271
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4th SNA Division"
+		location = 13283
+		division_template = "Large Militia Brigade"
+		start_experience_factor = 0.1
+	}
 }
    
-   instant_effect = {
-	    add_equipment_to_stockpile = {
-		    type = anti_tank_equipment_1
-		    amount = 1960
-		    producer = USA
-	    }
-    }	
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1
+		amount = 1960
+		producer = USA
+	}
+}	

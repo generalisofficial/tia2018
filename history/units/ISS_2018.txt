@@ -7,74 +7,108 @@
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armoured Brigade"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "Dokumacilar"
-		location = 13274
+		name = "Khalid ibn al-Walid Army"
+		location = 14139
 		division_template = "Daesh Militia"
 		start_experience_factor = 0.30
 		start_equipment_factor = 1.0
-	}
-	
+	}	
 	division = {
-		name = "Group of the One and Only"
-		location = 13274
+		name = "Daesh Militia"
+		location = 14139
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Daesh Militia"
+		location = 14144
 		division_template = "Daesh Militia"
-		start_experience_factor = 0.25
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Daesh Militia"
+		location = 14144
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Daesh Militia"
+		location = 14149
+		division_template = "Daesh Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Daesh Militia"
+		location = 14149
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		name = "Daesh Militia"
+		location = 14147
+		division_template = "Daesh Militia"
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
-	
 	division = {
-		name = "Liwa Dawud"
-		location = 13274
-		division_template = "Daesh Militia"
-		start_experience_factor = 0.25
+		name = "Daesh Militia"
+		location = 14147
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
-	
-	division = {
-		name = "Jaysh al-Jihad"
-		location = 13274
-		division_template = "Daesh Militia"
-		start_experience_factor = 0.25
-		start_equipment_factor = 1.0
-	}
-	
-	division = {
-		name = "Islamic Muthanna Movement"
-		location = 13274
-		division_template = "Daesh Militia"
-		start_experience_factor = 0.25
-		start_equipment_factor = 1.0
-	}
-	
 	division = {
 		name = "Daesh Militia"
 		location = 13274
 		division_template = "Daesh Militia"
-		start_experience_factor = 0.25
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
-	
 	division = {
 		name = "Daesh Militia"
 		location = 13274
-		division_template = "Daesh Militia"
-		start_experience_factor = 0.25
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
-	}
-	
-	division = {
-		name = "Jaysh Khalid ibn al-Walid"
-		location = 13274
-		division_template = "Daesh Militia"
-		start_experience_factor = 0.40
-		start_equipment_factor = 1.0
-	}
-	
+	}	
 }
