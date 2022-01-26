@@ -90,6 +90,7 @@ international_organizations = {
 		
 		cost = 50
 		
+		days_remove = 7
 		days_re_enable = 360
 		
 		complete_effect = {
@@ -100,10 +101,10 @@ international_organizations = {
 				}
 				country_event = european_union.1
 			}
-			country_event = {
-				id = european_union.2
-				days = 7
-			}
+		}
+
+		remove_effect = {
+			country_event = european_union.2
 		}
 		
 		ai_will_do = {
@@ -136,7 +137,6 @@ international_organizations = {
 		icon = european_union
 		
 		cost = 150
-		fire_only_once = yes
 		
 		complete_effect = {
 			remove_ideas = idea_european_union_member
@@ -160,6 +160,69 @@ international_organizations = {
 					has_government = communist
 				}
 			}
+		}
+	}
+
+	join_african_union = {
+	
+		visible = {
+			is_sovereign_state = yes
+			is_in_africa = yes
+			NOT = { 
+				has_idea = african_union_member 
+				has_global_flag = african_union_dissolved 
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ongoing_generic_application
+			}
+		}
+		
+		complete_effect = {
+			set_global_flag = ongoing_AU_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = african_union_member
+				}
+				country_event = international_organizations.1
+			}
+		}
+
+		remove_effect = {
+			country_event = international_organizations.2
+		}
+		
+		icon = african_union
+		
+		days_remove = 7
+		days_re_enable = 360
+
+		cost = 50
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	leave_african_union = {
+	
+		visible = {
+			has_idea = african_union_member
+		}
+		
+		complete_effect = {
+            remove_ideas = african_union_member
+		}
+		
+		icon = african_union
+		
+		cost = 150
+		
+		ai_will_do = {
+			base = 0
 		}
 	}
 	
@@ -656,52 +719,6 @@ international_organizations = {
 		}
 		
 		icon = asean
-		
-		cost = 50
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	join_african_union = {
-	
-		visible = {
-			always = no #Geographic trigger bugged
-			#NOT = { has_idea = african_union_member  has_global_flag = african_union_dissolved }
-			#is_in_africa = yes
-		}
-		available = {
-            NOT = { has_idea = african_union_member has_idea = non_member_state }
-		}
-		
-		complete_effect = {
-            add_ideas = african_union_member
-		}
-		
-		icon = african_union
-		
-		cost = 100
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-	
-	leave_african_union = {
-	
-		visible = {
-			has_idea = african_union_member
-		}
-		available = {
-            always = yes
-		}
-		
-		complete_effect = {
-            remove_ideas = african_union_member
-		}
-		
-		icon = african_union
 		
 		cost = 50
 		

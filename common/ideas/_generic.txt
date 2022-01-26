@@ -49,8 +49,15 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.25
+				defence = 0.1
 				army_org_factor = 0.35
 				army_morale_factor = 0.5
+			}
+
+			cancel = {
+				NOT = {
+					has_government = islamist
+				}
 			}
 		}
 		

@@ -62,6 +62,13 @@ country_event = {
 				compare = greater_than
 			}
 		}
+		if = {
+			limit = {
+				has_global_flag = ongoing_AU_application
+			}
+			add_ideas = african_union_member
+			clr_global_flag = ongoing_AU_application
+		}
 		clr_global_flag = ongoing_generic_application
 		clear_variable = global.generic_application_vote_count_in_favor
 		clear_variable = global.generic_application_vote_count_against
