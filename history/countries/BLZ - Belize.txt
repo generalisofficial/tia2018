@@ -110,27 +110,14 @@ set_country_flag = catholic
 set_variable = { income_tax = 25 }
 set_variable = { corporate_tax = 0 }
 
-set_politics = {	
-	ruling_party = conservative
-	last_election = "2015.2.13"
-	election_frequency = 72
-	elections_allowed = yes
-}
-
-set_popularities = {
-    conservative = 50.52
-    social_democrat = 47.83
-	progressive = 1.65
-}
-
 #Belize House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 1.65 }
-set_variable = { social_democrat_seats = 47.83 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 38.70 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 50.52 }
+set_variable = { conservative_seats = 61.3 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -142,6 +129,17 @@ set_country_flag = has_parliament
 set_country_flag = coalition_conservative
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
+set_politics = {	
+	ruling_party = conservative
+	last_election = "2015.11.11"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	social_democrat = 83.88
+    conservative = 16.12
+}
+
 recruit_character = BLZ_dean_barrow
 recruit_character = BLZ_johnny_briceno
-recruit_character = BLZ_patrick_rogers
