@@ -60,6 +60,10 @@ country_event = {
 				}
 				add_opinion_modifier = { target = ROOT modifier = european_union_member }
 				add_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
+				ROOT = {
+					add_opinion_modifier = { target = PREV modifier = european_union_member }
+					add_opinion_modifier = { target = PREV modifier = european_union_member_trade }
+				}
 			}
 		}
 		clr_global_flag = ongoing_EU_application

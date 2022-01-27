@@ -38,6 +38,9 @@ brexit_decisions = {
 				remove_ideas = idea_brexit
 				every_country = {
 					remove_opinion_modifier = { target = ROOT modifier = european_union_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV = european_union_member }
+					}
 				}
 			}
 			if = {
@@ -51,6 +54,9 @@ brexit_decisions = {
 					hidden_effect = {
 						every_country = {
 							remove_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
+							ROOT = {
+								remove_opinion_modifier = { target = PREV = european_union_member_trade }
+							}
 						}
 					}
 		        }
