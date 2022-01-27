@@ -2,9 +2,16 @@
 
 oob = "PRU_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PRU_2018_naval_mtg"
+	else = {
+		set_naval_oob = "PRU_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 set_convoys = 110
-
 
 set_country_flag = country_language_spanish
 
@@ -58,6 +65,7 @@ set_technology = {
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -161,3 +169,52 @@ recruit_character = PRU_victor_abraham_najar_carrera
 recruit_character = PRU_carlos_tijeda
 recruit_character = PRU_luis_paredes_lora
 recruit_character = PRU_victor_emanuel_pomar_calderon
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Type 209 Submarine"				
+		type = ship_hull_submarine_1
+		name_group = PRU_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "PR-72P Class"
+		type = ship_hull_light_1
+		name_group = PRU_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Carvajal Class"
+		type = ship_hull_cruiser_1
+		name_group = PRU_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}	
+	}
+}

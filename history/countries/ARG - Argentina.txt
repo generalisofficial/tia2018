@@ -2,9 +2,16 @@
 
 oob = "ARG_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ARG_2018_naval_mtg"
+	else = {
+		set_naval_oob = "ARG_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 4
 set_convoys = 260
-
 
 set_country_flag = country_language_spanish
 
@@ -49,7 +56,9 @@ set_technology = {
 	CAS1 = 1
 	CAS2 = 1
 	fighter1 = 1
+	cv_fighter1 = 1
 	fighter2 = 1
+	fighter3 = 1
 	naval_bomber1 = 1
 	naval_bomber2 = 1
 	strategic_bomber1 = 1
@@ -235,3 +244,58 @@ recruit_character = ARG_pedro_galardi
 recruit_character = ARG_rafael_prieto
 recruit_character = ARG_rodolfo_larrosa
 recruit_character = ARG_zenon_bolino
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Espora Class"
+		type = ship_hull_light_1
+		name_group = ARG_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Drummond Class"
+		type = ship_hull_light_1
+		name_group = ARG_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Almirante Brown Class"
+		type = ship_hull_cruiser_1
+		name_group = ARG_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+		}	
+	}
+}	

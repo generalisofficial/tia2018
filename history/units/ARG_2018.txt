@@ -1,109 +1,76 @@
 ﻿division_template = {
+	name = "Bush Infantry Brigade"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+		logistics_company  = { x = 0 y = 1 }
+		signal_company  = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Garrison Brigade"
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
 	name = "Mechanized Brigade"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-		mechanized = { x = 1 y = 3 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	
 	support = {
-		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
+		logistics_company  = { x = 0 y = 1 }
+		signal_company  = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
-	name = "Special Forces Group"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-		mechanized = { x = 1 y = 3 }
-	}
-	
-	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-	}
-	
-	priority = 2
-}
-
-
-division_template = {
-	name = "Mechanized Division"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-		mechanized = { x = 2 y = 0 }
-		mechanized = { x = 2 y = 1 }
-		mechanized = { x = 2 y = 2 }
-		mechanized = { x = 3 y = 0 }
-		mechanized = { x = 3 y = 1 }
-		mechanized = { x = 3 y = 2 }
-	}
-	
-	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-	}
-}
-
-division_template = {
-	name = "Armored Division"
+	name = "Armored Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+		light_mechanized = { x = 1 y = 0 }
 	}
 	
 	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+		recon = { x = 0 y = 0 }
+		logistics_company  = { x = 0 y = 1 }
+		signal_company  = { x = 0 y = 2 }
 	}
-	
-	priority = 2
 }
-
 division_template = {
-	name = "Mountain Division"
+	name = "Mountain Infantry Brigade"
 	
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
 	}
 	
 	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+		recon = { x = 0 y = 0 }
+		logistics_company  = { x = 0 y = 1 }
+		signal_company  = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
-	name = "Parachute Brigade"
+	name = "Airborne Brigade"
 	
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -112,98 +79,127 @@ division_template = {
 	}
 	
 	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		recon = { x = 0 y = 0 }
+		logistics_company  = { x = 0 y = 1 }
+		signal_company  = { x = 0 y = 2 }
 	}
-	
-	priority = 2
 }
-
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
-		marine = { x = 0 y = 3 }
-	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-
-
 
 units = {
-
 	division = {
-		name = "4th Parachute Brigade"
-		location = 12364
-		division_template = "Parachute Brigade"
+		name = "Buenos Aires Military Garrison"
+		location = 12364 #Ciudad Autonoma de Buenos Aires
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "Argentinian Marines"
-		location = 12364
-		division_template = "Marine Brigade"
+		name = "2nd Armored Brigade"
+		location = 1449 #Paraná
+		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "Argentinian Special Forces"
-		location = 12379
-		division_template = "Special Forces Group"
+		name = "3rd Bush Brigade"
+		location = 2106 #Resistencia
+		division_template = "Bush Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "1st Division"
-		location = 12364
-		division_template = "Armored Division"
+		name = "12th Bush Brigade"
+		location = 11007 #Posadas
+		division_template = "Bush Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "2nd Division"
-		location = 8216
-		division_template = "Mountain Division"
+		name = "5th Mountain Brigade"
+		location = 8195 #Salta
+		division_template = "Mountain Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "3rd Division"
-		location = 7621
-		division_template = "Mechanized Division"
+		name = "6th Mountain Brigade"
+		location = 12306 #Neuquén
+		division_template = "Mountain Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "Mechanized Brigade"
-		location = 7621
+		name = "8th Mountain Brigade"
+		location = 8215 #Mendoza
+		division_template = "Mountain Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Armored Brigade"
+		location = 1624 #Tandil
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Mechanized Brigade"
+		location = 10953 #Comodoro Rivadavia
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
-}
-
-instant_effect = {
-	
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "USA"
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 100
-		amount = 100000
+	division = {
+		name = "11th Mechanized Brigade"
+		location = 5173 #Río Gallegos
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "4th Airborne Brigade"
+		location = 12942 #Córdoba
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Mechanized Brigade"
+		location = 12998 #Santa Rosa
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
-### Air OOB ### - No Combat Aircraft 2016.
+### Air OOB ###
+air_wings = {
+	847 = {
+		#KC-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "ARG" 
+			amount = 4
+		}
+		name = "1st Air Brigade"
+	}
+	511 = {
+		#Cessna A-37
+		CAS_equipment_2 = {
+			owner = "ARG" 
+			amount = 6
+		}
+		name = "4th Air Brigade"
+	}
+	511 = {
+		#Cessna A-37
+		CAS_equipment_2 = {
+			owner = "ARG" 
+			amount = 6
+		}
+		name = "5th Air Brigade"
+	}
+	278 = {
+		#A-4AR Fightinghawk
+		cv_fighter_equipment_1 = {
+			owner = "ARG" 
+			amount = 5
+		}
+		name = "2nd Naval Fighter-Attack Squadron"
+	}
+	278 = {
+		#S-2 Tracker and Lockheed P-3
+		nav_bomber_equipment_1 = {
+			owner = "ARG" 
+			amount = 6
+		}
+		name = "Anti-submarine Naval Squadron"
+	}
+}

@@ -2,9 +2,16 @@
 
 oob = "BRA_2018"
 
-set_research_slots = 3
-set_convoys = 150
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "BRA_2018_naval_mtg"
+	else = {
+		set_naval_oob = "BRA_2018_naval_legacy"
+	}
+}
 
+set_research_slots = 3
+set_convoys = 110
 
 set_country_flag = country_language_portuguese
 
@@ -50,6 +57,7 @@ set_technology = {
 	## Air ##
 	CAS1 = 1
 	CAS2 = 1
+	CAS3 = 1
 	cv_CAS1 = 1
 	cv_CAS2 = 1
 	fighter1 = 1
@@ -62,6 +70,7 @@ set_technology = {
 	strategic_bomber1 = 1
 	strategic_bomber2 = 1
 	tactical_bomber1 = 1
+	scout_plane1 = 1
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
@@ -180,3 +189,68 @@ recruit_character = BRA_manuela_davila
 recruit_character = BRA_jair_bolsonaro
 recruit_character = BRA_ciro_gomes
 recruit_character = BRA_hamilton_mourao
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Type 209 Submarine"				
+		type = ship_hull_submarine_1
+		name_group = BRA_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Inhaúma Class"
+		type = ship_hull_light_1
+		name_group = BRA_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Aratu Class"
+		type = ship_hull_light_1
+		name_group = BRA_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Niterói Class"
+		type = ship_hull_cruiser_1
+		name_group = BRA_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}	
+	}
+}	

@@ -1,165 +1,122 @@
-﻿division_template = {
-	name = "Infantry Brigade"
+﻿division_template = { 
+	name = "Motorized Division" #I usually prefer doing brigades instead of divisions, but Chilean brigades are really tiny
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Infantry Regiment"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }	
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }	
+		artillery = { x = 0 y = 2 }	
 	}
 }
-division_template = {
-	name = "Armored Regiment"
+
+division_template = { 
+	name = "Motorized Regiment" #This is the entire 4th division, which only has 1 combat brigade of with only 1 regiment of infantry
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
+		motorized = { x = 0 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }	
+		artillery = { x = 0 y = 2 }	
+		anti_tank = { x = 0 y = 3 }	
 	}
+}
+
+division_template = { 
+	name = "Mechanized Division"
 	
-	priority = 0
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }	
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }	
+		artillery = { x = 0 y = 2 }	
+	}
+}
+
+division_template = { 
+	name = "Mountain Division"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }	
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }	
+		artillery = { x = 0 y = 2 }	
+		recon = { x = 0 y = 3 }			
+	}
+}
+
+division_template = { 
+	name = "Airborne Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }	
+		recon = { x = 0 y = 1 }			
+	}
 }
 
 units = {
-	
 	division = {
-		name = "3rd Armored Brigade"
-		location = 8217
-		division_template = "Armored Brigade"
+		name = "1st Division"
+		location = 12994 #Antofagasta
+		division_template = "Mechanized Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Reinforced Regiment"
-		location = 8217
-		division_template = "Infantry Regiment"
+		name = "2nd Division"
+		location = 650 #Santiago
+		division_template = "Motorized Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "7th Reinforced Regiment"
-		location = 650
-		division_template = "Infantry Regiment"
+		name = "3rd Division"
+		location = 12954 #Valdivia
+		division_template = "Mountain Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Capital Garrison Commando"
-		location = 650
-		division_template = "Infantry Regiment"
+		name = "4th Division"
+		location = 2161 #Coyhaique
+		division_template = "Motorized Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Infantry Regiment"
-		location = 650
-		division_template = "Mechanized Brigade"
+		name = "5th Division"
+		location = 5131 #Iquique
+		division_template = "Mechanized Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Reinforced Regiment"
-		location = 8222
-		division_template = "Infantry Regiment"
+		name = "Special Operations Brigade 'Lautaro'"
+		location = 650 #Peldehue, Santiago Metropolitan Region
+		division_template = "Airborne Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "3rd Armored Cavalry Regiment"
-		location = 8217
-		division_template = "Armored Regiment"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "14th Reinforced Regiment"
-		location = 5118
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Armored Brigade"
-		location = 5215
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Reinforced Regiment"
-		location = 5215
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "11th Reinforced Regiment"
-		location = 5215
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Armored Brigade"
-		location = 5131
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Armored Brigade"
-		location = 5131
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Reinforced Regiment"
-		location = 5131
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
@@ -171,14 +128,12 @@ air_wings = {
 			owner = "CHI" 
 			amount = 46
 		}
-
 	}
 	507 = {
 		#F-5E
 		fighter_equipment_1 = {
 			owner = "CHI" 
-			amount = 11
+			amount = 9
 		}
-
 	}
 }

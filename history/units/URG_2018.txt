@@ -65,3 +65,31 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
+
+### Air OOB ###
+air_wings = {
+	300 = {
+		#CASA C-212
+		nav_bomber_equipment_2 = {
+			owner = "URG" 
+			amount = 4
+		}
+		name = "Naval Aviation Brigade"
+	}
+	300 = {
+		#KC-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "URG" 
+			amount = 2
+		}
+		name = "1st Air Brigade"
+	}
+	300 = {
+		#Cessna A-37
+		CAS_equipment_1 = {
+			owner = "URG" 
+			amount = 7
+		}
+		name = "2nd Air Brigade"
+	}
+}

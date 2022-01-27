@@ -2,9 +2,16 @@
 
 oob = "URG_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "URG_2018_naval_mtg"
+	else = {
+		set_naval_oob = "URG_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 set_convoys = 235
-
 
 set_country_flag = country_language_spanish
 
@@ -57,6 +64,7 @@ set_technology = {
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1 #Frigate has radar, so this is necessary
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -147,3 +155,41 @@ recruit_character = URG_pablo_mieres
 recruit_character = URG_cesar_vega
 recruit_character = URG_tabare_vazquez
 recruit_character = URG_juan_castillo
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Kondor II Class"
+		type = ship_hull_light_1
+		name_group = URG_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "João Belo Class"
+		type = ship_hull_cruiser_1
+		name_group = URG_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+		}	
+	}
+}	

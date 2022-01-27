@@ -1,72 +1,60 @@
 ﻿division_template = {
-	name = "Infantry Regiment"
+	name = "Infantry Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		modern_armor = { x = 1 y = 0 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 2 }
+		armored_car_recon = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
 	}
 }
 
-units = {
+division_template = {
+	name = "Large Infantry Brigade"
 	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		armored_car_recon = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
+	}
+}
+
+units = {	
 	division = {
-		name = "1st (Southern) Brigade"
-		location = 7394
-		division_template = "Motorized Brigade"
+		name = "1st Brigade"
+		location = 11293 #Dublin
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd (Northern) Brigade"
-		location = 11293
-		division_template = "Motorized Brigade"
+		name = "2nd Brigade"
+		location = 7394 #Cork
+		division_template = "Large Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "Defence Forces Training Centre"
-		location = 3342
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
 air_wings = {
 	113 = {
 		#CASA CN-235 MPA
-		nav_bomber_equipment_3 = {
+		nav_bomber_equipment_2 = {
 			owner = "IRE" 
 			amount = 2
 		}

@@ -1,130 +1,166 @@
 ﻿division_template = {
-	name = "Marine Brigade"
+	name = "Infantry Division"
 	
 	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
-		modern_armor = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		recon = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
 	}
 }
 
-units = {
+division_template = {
+	name = "General Command Brigade"
 	
-	division = {
-		name = "Bolivian Armored Brigade"
-		location = 5230
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
 	}
-	
-	division = {
-		name = "Bolivian Paratrooper Brigade"
-		location = 5230
-		division_template = "Paratrooper Brigade"
-		start_experience_factor = 0.3
+	support = {
+		engineer = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
 	}
-	
-	division = {
-		name = "Bolivian Navy"
-		location = 5230
-		division_template = "Marine Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Brigade"
-		location = 5229
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Brigade"
-		location = 5230
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Brigade"
-		location = 12916
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Brigade"
-		location = 2160
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Brigade"
-		location = 2174
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Brigade"
-		location = 10952
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th Brigade"
-		location = 5229
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
+
+division_template = {
+	name = "Andine Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		armored_car_recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Division"
+	
+	regiments = {
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+
+units = {	
+	division = {
+		name = "Army General Command"
+		location = 5230 #La Paz
+		division_template = "General Command Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mechanized Division"
+		location = 13195 #Viacha
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Division"
+		location = 12917 #Cobija
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Division"
+		location = 8157 #Oruro
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Division"
+		location = 12979 #Villamontes
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Division"
+		location = 2160 #Camiri
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Division"
+		location = 12916 #Roboré
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}division = {
+		name = "6th Division"
+		location = 12973 #Trinidad
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Division"
+		location = 8157 #Cochabamba
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Division"
+		location = 10924 #Santa Cruz
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Division"
+		location = 8240 #Villa Tunari
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Division"
+		location = 10987 #Tupiza
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	302 = {
+		#K-8 Karakorum + Pilatus PC-7
+		CAS_equipment_2 = {
+			owner = "BOL" 
+			amount = 9
+		}
+		name = "34th Attack Squadron"
+	}
+}	
