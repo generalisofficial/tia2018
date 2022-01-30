@@ -1,0 +1,35 @@
+﻿add_namespace = algeria
+
+country_event = { #The Fifth Term
+	id = algeria.1
+	title = algeria.1.t
+	desc = algeria.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ALG
+		has_country_leader = {
+			name = "Abdelaziz Bouteflika"
+			ruling_only = yes
+		}
+		date > 2019.2.10
+		date < 2020.1.1
+	}
+	
+	option = {
+		name = algeria.1.o1
+		ai_chance = {
+			factor = 75
+		}
+	    # Add revolution
+	}
+
+	option = {
+		name = algeria.1.o2
+		ai_chance = {
+			factor = 25
+		}
+	    set_country_flag = bouteflika_not_running
+	}
+}

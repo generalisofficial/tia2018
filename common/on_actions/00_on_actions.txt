@@ -154,24 +154,6 @@ on_actions = {
 			add_to_variable = { global.next_month = 1 }
 			every_country = {
 				limit = {
-					has_idea = idea_united_nations_security_council_member
-				}
-				set_permanent_UNSC_members_effect = yes
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_united_nations_NP_security_council_member
-				}
-				set_temp_unsc_member_effect = yes
-			}
-			every_country = {
-				limit = {
-					has_war = yes
-				}
-				set_country_at_war_effect = yes
-			}
-			every_country = {
-				limit = {
 					NOT = { has_country_flag = has_parliament }
 				}
 				quickset_coalition_flags_only = yes

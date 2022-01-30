@@ -64,8 +64,10 @@ international_organizations = {
 		visible = {
 			is_sovereign_state = yes
 			NOT = { 
-				has_idea = idea_european_union_member 
-				has_global_flag = european_union_dissolved
+				OR = {
+					has_idea = idea_european_union_member 
+					has_global_flag = european_union_dissolved
+				}
 			}
 			OR = {
 				is_in_europe = yes
@@ -169,8 +171,10 @@ international_organizations = {
 			is_sovereign_state = yes
 			is_in_africa = yes
 			NOT = { 
-				has_idea = african_union_member 
-				has_global_flag = african_union_dissolved 
+				OR = {
+					has_idea = idea_african_union_member 
+					has_global_flag = african_union_dissolved 
+				}
 			}
 		}
 

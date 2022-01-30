@@ -5,7 +5,6 @@ oob = "MAC_2018"
 set_research_slots = 3
 set_convoys = 20
 
-
 set_country_flag = country_language_macedonian
 
 set_technology = {
@@ -98,19 +97,20 @@ if = {
 add_ideas = {
 	population_growth_steady
 	active_draft
+	parliamentary_republic
 }
 
 set_country_flag = orthodox
 
 #Assembly of the Republic of Macedonia
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 40.23 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { socialist_seats = 2 }
+set_variable = { progressive_seats = 1 }
+set_variable = { social_democrat_seats = 45 }
+set_variable = { social_liberal_seats = 3 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 18.25 }
-set_variable = { national_conservative_seats = 41.52 }
+set_variable = { conservative_seats = 49 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -119,55 +119,32 @@ set_variable = { islamist = 0 }
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_conservative
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_progressive
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = progressive_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2016.12.11"
+	last_election = "2016.11.11"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 41.52
-    conservative = 18.25
-    social_democrat = 40.23
+    conservative = 45.65
+    social_democrat = 44.59
+	socialist = 4.34
+	social_liberal = 2.17
+	progressive = 2.17
+	national_conservative = 1.08
 }
 
-recruit_character = MAC_zoran_zaev
+recruit_character = MAC_ljubco_georgievski
 recruit_character = MAC_hristijan_mickoski
-recruit_character = MAC_ali_ahmeti
-recruit_character = MAC_metodija_velichkovski
-recruit_character = MAC_muhamet_islam_racaj
-recruit_character = MAC_mirche_gjorgoski
-recruit_character = MAC_ljupcho_stojkov
-recruit_character = MAC_ferdo_pavlov
-recruit_character = MAC_sasho_janev
-recruit_character = MAC_zoran_jovanovski
-recruit_character = MAC_zoran_ilov
-recruit_character = MAC_toni_janevski
-recruit_character = MAC_sasho_kocevski
-recruit_character = MAC_zhivko_despotovski
-recruit_character = MAC_dushko_nestorov
-recruit_character = MAC_zoran_dodevski
-recruit_character = MAC_zoran_mileski
-recruit_character = MAC_pavle_arsoski
-recruit_character = MAC_azim_nuredin
-recruit_character = MAC_ljubencho_petrovski
-recruit_character = MAC_orce_jordev
-recruit_character = MAC_besnik_emini
-recruit_character = MAC_zoran_filipovski
-recruit_character = MAC_marjan_masevski
-recruit_character = MAC_sasha_petrushevski
-recruit_character = MAC_ivan_atanasovski
-recruit_character = MAC_goran_kjirkovikj
-recruit_character = MAC_marjan_simonovski
-recruit_character = MAC_mile_donev
-recruit_character = MAC_goran_petrushevski
-recruit_character = MAC_boro_latkoski
-recruit_character = MAC_ivica_cvetkovski
-recruit_character = MAC_toni_zlatevski
-recruit_character = MAC_vasil_mitevski
-recruit_character = MAC_robert_malezanski
+recruit_character = MAC_goran_milevski
+recruit_character = MAC_zoran_zaev
+recruit_character = MAC_maja_morachanin
+recruit_character = MAC_dimitar_apasiev
+recruit_character = MAC_slobodan_ugrinovski

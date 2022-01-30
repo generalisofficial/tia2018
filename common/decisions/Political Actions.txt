@@ -102,6 +102,7 @@ political_actions = {
 
 		visible = {
 			has_war_support < 1
+			NOT = { has_idea = no_standing_army }
 		}
 
 		fire_only_once = no

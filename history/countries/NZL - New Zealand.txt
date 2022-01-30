@@ -97,9 +97,10 @@ if = {
 give_guarantee = AST
 give_guarantee = MAL
 give_guarantee = SIG
-give_guarantee = ENG
 give_guarantee = SAM
 give_guarantee = KIR
+
+diplomatic_relation = { country = SAM relation = non_aggression_pact }
 
 add_ideas = {
 	population_growth_steady
@@ -124,6 +125,31 @@ if = {
 	else = {
 		puppet = NIU
 		puppet = CKI
+	}
+}
+
+NIU = {
+	set_politics = {	
+		ruling_party = progressive
+		last_election = "2017.5.13"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+	set_popularities = {
+		progressive = 100
+	}
+}
+
+CKI = {
+	set_politics = {	
+		ruling_party = national_conservative
+		last_election = "2014.6.14"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 54.17
+		social_liberal = 45.83
 	}
 }
 

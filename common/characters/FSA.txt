@@ -1,5 +1,16 @@
 characters={
-    #Starting
+    #Starting - Political
+	FSA_abu_mohammad_al_julani={
+		name="Abu Mohammad al-Julani"
+		portraits={
+			civilian={
+				large=GFX_Portrait_FSA_Abu_Mohammad_al_Julani
+			}
+		}
+		country_leader={
+			ideology=salafist
+		}
+	}
 	FSA_riad_seif={
 		name="Riad Seif"
 		portraits={
@@ -11,71 +22,5 @@ characters={
 			ideology=national_conservative_ideology
 		}
 	}
-	FSA_abu_mohammad_aljulani={
-		name="Abu Mohammad al-Julani"
-		portraits={
-			civilian={
-				large=GFX_Portrait_FSA_Abu_Mohammad_al_Julani
-			}
-		}
-		field_marshal={
-			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-		country_leader={
-			ideology=salafist
-		}
-	}
-	FSA_bashar_alzoubi={
-		name="Bashar al-Zoubi"
-		portraits={
-			army={
-				large=GFX_Portrait_FSA_Bashar_al_Zoubi
-			}
-		}
-		field_marshal={
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FSA_jamal_maarouf={
-		name="Jamal Maarouf"
-		portraits={
-			army={
-				large=GFX_Portrait_FSA_Jamal_Maarouf
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	FSA_essam_albuwaydhani={
-		name="Essam al-Buwaydhani"
-		portraits={
-			army={
-				large=GFX_Portrait_FSA_Essam_al_Buwaydhani
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
+	#Starting - Military
 }

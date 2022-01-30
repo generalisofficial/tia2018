@@ -1927,4 +1927,64 @@ election_pulse = {
 			days = 74
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = COS
+			has_country_leader = {
+				name = "Luis Guillermo Solís"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Carlos Alvarado Quesada"
+			picture = GFX_Portrait_COS_Carlos_Alvarado_Quesada
+			ideology = social_democrat_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = ALG
+			has_country_flag = bouteflika_not_running
+		}
+		clr_country_flag = bouteflika_not_running
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Abdelmadjid Tebboune"
+			picture = GFX_Portrait_ALG_Abdelmadjid_Tebboune
+			ideology = arab_socialist
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = ITA
+			has_country_leader = {
+				name = "Paolo Gentiloni"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Matteo Renzi"
+			picture = GFX_Portrait_ITA_Matteo_Renzi
+			ideology = social_democrat_ideology
+		}
+		else = {
+			if = {
+				limit = {
+					original_tag = ITA
+					has_country_leader = {
+						name = "Paolo Gentiloni"
+						ruling_only = no
+					}
+				}
+				retire_ideology_leader = social_democrat
+				create_country_leader = {
+					name = "Maurizio Martina"
+					picture = GFX_Portrait_ITA_Maurizio_Martina
+					ideology = social_democrat_ideology
+				}
+			}
+		}
+	}
 }

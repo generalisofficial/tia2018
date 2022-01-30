@@ -73,7 +73,6 @@ set_technology = {
 add_ideas = {
 	non_aligned_movement_member
     nuclear_weapons_state
-	UNSC_trade_sanctions_idea
 	population_growth_steady
 	extensive_conscription
 	isolationism
@@ -120,6 +119,8 @@ add_opinion_modifier = {
 	target = ISR
 	modifier = no_diplomatic_recognition
 }
+
+give_guarantee = PRC
 
 diplomatic_relation = { country = SOV relation = non_aggression_pact }
 

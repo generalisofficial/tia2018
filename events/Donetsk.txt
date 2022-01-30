@@ -82,3 +82,17 @@ news_event = { #Ukraine signs armistice with Donetsk separatists
 		name = donetsk.4.o1
 	}
 }
+
+news_event = { #Ukrainian military declares total victory in Donetsk and Luhansk
+	id = donetsk.5
+	title = donetsk.5.t
+	desc = donetsk.5.d
+	picture = GFX_news_event_ukraine_army
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = donetsk.5.o1
+	}
+}

@@ -284,4 +284,49 @@ foreign_affairs = {
 			factor = 100
 		}
 	}
+
+	propose_a_solution_to_the_macedonian_naming_dispute = {
+	
+		visible = {
+			original_tag = MAC
+			country_exists = GRE
+		}
+		
+		available = {
+			NOT = { has_war_with = GRE }
+		}
+		
+		complete_effect = {
+            GRE = {
+				country_event = macedonia.1
+			}
+		}
+		
+		icon = macedonia
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = fascist
+					has_government = right_wing_nationalist
+					has_government = national_conservative
+					has_government = conservative
+				}
+			}
+			modifier = {
+				factor = 100
+				date > 2018.6.17
+				has_country_leader = {
+					name = "Zoran Zaev"
+					ruling_only = yes
+				}
+			}
+		}
+	}
 }

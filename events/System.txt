@@ -1113,39 +1113,6 @@ country_event = {
 }
 
 country_event = {
-	id = system.22
-	hidden=yes
-
-	trigger = {
-		NOT = { has_global_flag = south_sudanese_civil_war_over }
-		country_exists = SPO
-		NOT = { country_exists = SSD }
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		news_event = south_sudan.2
-		set_global_flag = south_sudanese_civil_war_over
-		SPO = {
-			add_ideas = one_party_state
-			set_cosmetic_tag = SSD
-			set_capital = { state = 762 }
-		}
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = SSD
-					is_claimed_by = SSD
-				}
-			}
-			remove_core_of = SSD
-			remove_claim_by = SSD
-		}
-	}
-}
-
-country_event = {
 	id = system.23
 	hidden=yes
 
@@ -1224,5 +1191,58 @@ country_event = {
 	
 	immediate = {
 		set_global_flag = european_union_dissolved
+	}
+}
+
+country_event = {
+	id = system.26
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = south_sudanese_civil_war_over }
+		country_exists = SPO
+		NOT = { country_exists = SSD }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = south_sudan.2
+		set_global_flag = south_sudanese_civil_war_over
+		SPO = {
+			add_ideas = one_party_state
+			set_cosmetic_tag = SSD
+			set_capital = { state = 762 }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = SSD
+					is_claimed_by = SSD
+				}
+			}
+			remove_core_of = SSD
+			remove_claim_by = SSD
+		}
+	}
+}
+
+country_event = {
+	id = system.27
+	hidden=yes
+
+	trigger = {
+		country_exists = UKR
+		NOT = { country_exists = DPR }
+		UKR = {
+			controls_state = 227
+			controls_state = 228
+		}
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = donetsk.5
 	}
 }

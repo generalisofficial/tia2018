@@ -33,6 +33,13 @@ country_event = {
 					value < 0
 				}
 			}
+			modifier = {
+				factor = 100
+				has_relation_modifier = {
+					target = FROM
+					modifier = macedonia_naming_dispute
+				}
+			}
 		}
 		set_global_flag = EU_application_veto
 	}

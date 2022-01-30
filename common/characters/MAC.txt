@@ -1,5 +1,38 @@
 characters={
-    #Starting
+    #Starting - Political
+	MAC_ljubco_georgievski={
+		name="Ljubčo Georgievski"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MAC_Ljubco_Georgievski
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
+	MAC_hristijan_mickoski={
+		name="Hristijan Mickoski"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MAC_Hristijan_Mickoski
+			}
+		}
+		country_leader={
+			ideology=christian_democrat
+		}
+	}
+	MAC_goran_milevski={
+		name="Goran Milevski"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MAC_Goran_Milevski
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+		}
+	}
 	MAC_zoran_zaev={
 		name="Zoran Zaev"
 		portraits={
@@ -11,565 +44,38 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	MAC_hristijan_mickoski={
-		name="Hristijan Mickoski"
+	MAC_maja_morachanin={
+		name="Maja Morachanin"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MAC_Hristijan_Mickoski
+				large=GFX_Portrait_MAC_Maja_Morachanin
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=green
 		}
 	}
-	MAC_ali_ahmeti={
-		name="Ali Ahmeti"
+	MAC_dimitar_apasiev={
+		name="Dimitar Apasiev"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MAC_Ali_Ahmeti
+				large=GFX_Portrait_MAC_Dimitar_Apasiev
 			}
 		}
 		country_leader={
-			ideology=social_conservative
+			ideology=left_wing_nationalist
 		}
 	}
-	MAC_metodija_velichkovski={
-		name="Metodija Velichkovski"
+	MAC_slobodan_ugrinovski={
+		name="Slobodan Ugrinovski"
 		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Metodija_Velichkovski
+			civilian={
+				large=GFX_Portrait_MAC_Slobodan_Ugrinovski
 			}
 		}
-		field_marshal={
-			traits={ old_guard organisational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
-	MAC_muhamet_islam_racaj={
-		name="Muhamet Islam Racaj"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Muhamet_Racaj
-			}
-		}
-		field_marshal={
-			traits={ thorough_planner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_mirche_gjorgoski={
-		name="Mirche Gjorgoski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Mirche_Gjorgoski
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_ljupcho_stojkov={
-		name="Ljupcho Stojkov"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Ljupcho_Stojkov
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_ferdo_pavlov={
-		name="Ferdo Pavlov"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Ferdo_Pavlov
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_sasho_janev={
-		name="Sasho Janev"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Sasho_Janev
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_zoran_jovanovski={
-		name="Zoran Jovanovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Zoran_Jovanovski
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_zoran_ilov={
-		name="Zoran Ilov"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Zoran_Ilov
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_toni_janevski={
-		name="Toni Janevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Toni_Janevski
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_sasho_kocevski={
-		name="Sasho Kocevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Sasho_Kocevski
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_zhivko_despotovski={
-		name="Zhivko Despotovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Zhivko_Despotovski
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_dushko_nestorov={
-		name="Dushko Nestorov"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Dushko_Nestorov
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_zoran_dodevski={
-		name="Zoran Dodevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Zoran_Dodevski
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_zoran_mileski={
-		name="Zoran Mileski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Zoran_Mileski
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_pavle_arsoski={
-		name="Pavle Arsoski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Pavle_Arsoski
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_azim_nuredin={
-		name="Azim Nuredin"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Azim_Nuredin
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_ljubencho_petrovski={
-		name="Ljubencho Petrovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Ljubencho_Petrovski
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_orce_jordev={
-		name="Orce Jordev"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Orce_Jordev
-			}
-		}
-		corps_commander={
-			traits={ commando urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_besnik_emini={
-		name="Besnik Emini"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Besnik_Emini
-			}
-		}
-		corps_commander={
-			traits={ commando ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_zoran_filipovski={
-		name="Zoran Filipovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Zoran_Filipovski
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_marjan_masevski={
-		name="Marjan Masevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Marjan_Masevski
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_sasha_petrushevski={
-		name="Sasha Petrushevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Sasha_Petrushevski
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_ivan_atanasovski={
-		name="Ivan Atanasovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Ivan_Atanasovski
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_goran_kjirkovikj={
-		name="Goran Kjirkovikj"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Goran_Kjikovikj
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_marjan_simonovski={
-		name="Marjan Simonovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Marjan_Simonovski
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_mile_donev={
-		name="Mile Donev"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Mile_Donev
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_goran_petrushevski={
-		name="Goran Petrushevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Goran_Petrushevski
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_boro_latkoski={
-		name="Boro Latkoski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Boro_Latkoski
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_ivica_cvetkovski={
-		name="Ivica Cvetkovski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Ivica_Cvetkovski
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_toni_zlatevski={
-		name="Toni Zlatevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Toni_Zlatevski
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_vasil_mitevski={
-		name="Vasil Mitevski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Vasil_Mitevski
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	MAC_robert_malezanski={
-		name="Robert Malezanski"
-		portraits={
-			army={
-				large=GFX_Portrait_MAC_Portrait_Robert_Malezanski
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
+	#Starting - Military
 }

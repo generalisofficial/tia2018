@@ -5,10 +5,22 @@
 
 # in some cases this trigger is checked for only initatior country, in that case both from & this is same
 
+is_diplomatic_action_valid_leave_faction = {
+	FROM = {
+		OR = {
+			is_ai = no
+			has_opinion = {
+				target = PREV
+				value < 0
+			}
+		}
+	}
+}
+
 is_diplomatic_action_valid_stage_coup = {
-	NOT = { has_dlc = "La Resistance" } # we have operation for it
+	NOT = { has_dlc = "La Resistance" }
 }
 
 is_diplomatic_action_valid_boost_party_popularity = {
-	NOT = { has_dlc = "La Resistance" } # we have operation for it
+	NOT = { has_dlc = "La Resistance" }
 }
