@@ -1,36 +1,48 @@
 characters={
     #Starting - Political
-	ISR_benjamin_netanyahu={
-		name="Benjamin Netanyahu"
+	ISR_mansour_abbas={
+		name="Mansour Abbas"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ISR_Benjamin_Netanyahu
+				large=GFX_Portrait_ISR_Mansour_Abbas
 			}
 		}
 		country_leader={
-			ideology=liberal_conservative
+			ideology=islamic_democracy
 		}
 	}
-	ISR_avi_gabbay={
-		name="Avi Gabbay"
+	ISR_michael_ben_ari={
+		name="Michael Ben-Ari"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ISR_Avi_Gabbay
+				large=GFX_Portrait_ISR_Michael_Ben_Ari
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
+			ideology=kahanist
 		}
 	}
-	ISR_aryeh_deri={
-		name="Aryeh Deri"
+	ISR_naftali_bennett={
+		name="Naftali Bennett"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ISR_Aryeh_Deri
+				large=GFX_Portrait_ISR_Naftali_Bennett
 			}
 		}
 		country_leader={
 			ideology=right_wing_nationalist_ideology
+		}
+	}
+	ISR_yitzchak_ginsburgh={
+		name="Yitzchak Ginsburgh"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ISR_Yitzchak_Ginsburgh
+			}
+		}
+		country_leader={
+			ideology=monarchist_ideology
+			traits={ regent }
 		}
 	}
 	ISR_avigdor_lieberman={
@@ -44,6 +56,28 @@ characters={
 			ideology=national_conservative_ideology
 		}
 	}
+	ISR_benjamin_netanyahu={
+		name="Benjamin Netanyahu"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ISR_Benjamin_Netanyahu
+			}
+		}
+		country_leader={
+			ideology=liberal_conservative
+		}
+	}
+	ISR_moshe_feiglin={
+		name="Moshe Feiglin"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ISR_Moshe_Feiglin
+			}
+		}
+		country_leader={
+			ideology=libertarian
+		}
+	}
 	ISR_yair_lapid={
 		name="Yair Lapid"
 		portraits={
@@ -55,22 +89,22 @@ characters={
 			ideology=centrist
 		}
 	}
-	ISR_moshe_feiglin={
-		name="Moshe Feiglin"
+	ISR_avi_gabbay={
+		name="Avi Gabbay"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ISR_Moshe_Feiglin
+				large=GFX_Portrait_ISR_Avi_Gabbay
 			}
 		}
 		country_leader={
-			ideology=classical_liberal_ideology
+			ideology=social_democrat_ideology
 		}
 	}
-	ISR_tamar_zandberg={
+	ISR_zehava_gal_on={
 		name="Tamar Zandberg"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ISR_Tamar_Zandberg
+				large=GFX_Portrait_ISR_Zehava_Gal_On
 			}
 		}
 		country_leader={
@@ -97,731 +131,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	ISR_raed_salah={
-		name="Raed Salah"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ISR_Raed_Salah
-			}
-		}
-		country_leader={
-			ideology=islamic_democracy
-		}
-	}
-	ISR_benzion_gopstein={
-		name="Ben-Zion Gopstein"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ISR_Ben_Zion_Gopstein
-			}
-		}
-		country_leader={
-			ideology=national_socialist
-		}
-	}
-	ISR_yitzchak_ginsburgh={
-		name="Yitzchak Ginsburgh"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ISR_Yitzchak_Ginsburgh
-			}
-		}
-		country_leader={
-			ideology=monarchist_ideology
-			traits={ regent }
-		}
-	}
-	ISR_gabi_ashkenazi={
-		name="Gabi Ashkenazi"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general1
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_benjamin_gantz={
-		name="Benjamin Gantz"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general2
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_gadi_eizenkot={
-		name="Gadi Eizenkot"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general1
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_dan_harel={
-		name="Dan Harel"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general2
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_dani_halutz={
-		name="Dani Halutz"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general1
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_yoav_galant={
-		name="Yoav Galant"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general2
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_doron_almog={
-		name="Doron Almog"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general1
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_shaul_mofaz={
-		name="Shaul Mofaz"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general2
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_moshe_yaalon={
-		name="Moshe Yaalon"
-		portraits={
-			army={
-				large=GFX_Portrait_Arabia_general1
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_amir_eshel={
-		name="Amir Eshel"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Amir_Eshel
-			}
-		}
-		field_marshal={
-			traits={ old_guard logistics_wizard }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_yair_golan={
-		name="Yair Golan"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Yair_Golan
-			}
-		}
-		field_marshal={
-			traits={ defensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_amikam_norkin={
-		name="Amikam Norkin"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Amikam_Norkin
-			}
-		}
-		field_marshal={
-			traits={ fast_planner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_hagai_topolansky={
-		name="Hagai Topolansky"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Hagai_Topolansky
-			}
-		}
-		field_marshal={
-			traits={ inspirational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_kobi_barak={
-		name="Kobi Barak"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Kobi_Barak
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_aviv_kochavi={
-		name="Aviv Kochavi"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Aviv_Kochavi
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_yoel_strik={
-		name="Yoel Strik"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Yoel_Strik
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_itzik_turgeman={
-		name="Itzik Turgeman"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Itzik_Turgeman
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_ghassan_alian={
-		name="Ghassan Alian"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Ghassan_Alian
-			}
-		}
-		corps_commander={
-			traits={ trait_mountaineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_nadav_lotan={
-		name="Nadav Lotan"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Nadav_Lotan
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_nitzan_alon={
-		name="Nitzan Alon"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Nitzan_Alon
-			}
-		}
-		corps_commander={
-			traits={ trickster urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_dan_goldfus={
-		name="Dan Goldfus"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Dan_Goldfus
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_guy_hazut={
-		name="Guy Hazut"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Guy_Hazut
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_nimrod_aloni={
-		name="Nimrod Aloni"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Nimrod_Aloni
-			}
-		}
-		corps_commander={
-			traits={ commando ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_amir_baram={
-		name="Amir Baram"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Amir_Baram
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_david_zini={
-		name="David Zini"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_David_Zini
-			}
-		}
-		corps_commander={
-			traits={ commando urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_lior_karmeli={
-		name="Lior Karmeli"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Lior_Karmeli
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader desert_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_amir_abulafia={
-		name="Amir Abulafia"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Amir_Abulafia
-			}
-		}
-		corps_commander={
-			traits={ ranger fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_moti_almoz={
-		name="Moti Almoz"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Moti_Almoz
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_tamir_yadai={
-		name="Tamir Yadai"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Tamir_Yadai
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_muni_katz={
-		name="Muni Katz"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Muni_Katz
-			}
-		}
-		corps_commander={
-			traits={ naval_invader swamp_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_nadav_padan={
-		name="Nadav Padan"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Nadav_Padan
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_eyal_zamir={
-		name="Eyal Zamir"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Eyal_Zamir
-			}
-		}
-		corps_commander={
-			traits={ desert_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_amos_hacohen={
-		name="Amos Hacohen"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Amos_Hacohen
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_mickey_edelstein={
-		name="Mickey Edelstein"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Mickey_Edelstein
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_roi_elkabetz={
-		name="Roi Elkabetz"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Roi_Elkabetz
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_eli_pollack={
-		name="Eli Pollack"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Eli_Pollack
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_yaacov_shahrbani={
-		name="Yaacov Shahrbani"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Yaacov_Sharbani
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_shahar_sochat={
-		name="Shahar Sochat"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Shahar_Sochat
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_eli_sharvit={
-		name="Eli Sharvit"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Eli_Sharvit
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_ram_rothberg={
-		name="Ram Rothberg"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Ram_Rothberg
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ISR_dror_friedman={
-		name="Dror Friedman"
-		portraits={
-			army={
-				large=GFX_Portrait_ISR_Portrait_Dror_Friedman
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	#Starting - Military

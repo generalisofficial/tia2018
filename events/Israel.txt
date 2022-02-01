@@ -15,10 +15,13 @@ country_event = { #Blue and White
 	
 	option = {
 		name = israel.1.o1
+		ai_chance = {
+			factor = 75
+		}
 		set_party_name = {
 		    ideology = social_liberal
-		    long_name = "Kahol Lavan"
-		    name = "Kahol Lavan"
+		    long_name = ISR_social_liberal_party_KL
+		    name =  ISR_social_liberal_party_KL
 	    }
 		retire_ideology_leader = social_liberal
 		create_country_leader = {
@@ -27,6 +30,13 @@ country_event = { #Blue and White
 	        ideology = centrist
         }
 	}
+
+	option = {
+		name = israel.1.o2
+		ai_chance = {
+			factor = 25
+		}
+	}
 }
 
 country_event = { #2019 Israeli Labor Party leadership election
@@ -34,13 +44,7 @@ country_event = { #2019 Israeli Labor Party leadership election
 	title = israel.2.t
 	desc = israel.2.d
 	
-	fire_only_once = yes
-
-	trigger = {
-		original_tag = ISR
-		date > 2019.6.6
-		date < 2020.1.1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = israel.2.o1
@@ -82,7 +86,7 @@ country_event = { #2019 Israeli Labor Party leadership election
 	}
 }
 
-country_event = { #End of the Zionist Union
+country_event = { #2018 Meretz leadership election
 	id = israel.3
 	title = israel.3.t
 	desc = israel.3.d
@@ -91,17 +95,34 @@ country_event = { #End of the Zionist Union
 
 	trigger = {
 		original_tag = ISR
-		date > 2019.1.1
-		date < 2020.1.1
+		date > 2018.3.22
+		date < 2019.1.1
 	}
 	
 	option = {
 		name = israel.3.o1
-		set_party_name = {
-		    ideology = social_democrat
-		    long_name = "Mifleget HaAvoda HaYisrelit"
-		    name = "HaAvoda"
-	    }
+		ai_chance = {
+			factor = 71
+		}
+		retire_ideology_leader = progressive
+		create_country_leader = {
+	        name = "Tamar Zandberg"
+	        picture = GFX_Portrait_ISR_Tamar_Zandberg
+	        ideology = progressive_ideology
+        }
+	}
+
+	option = {
+		name = israel.3.o2
+		ai_chance = {
+			factor = 29
+		}
+		retire_ideology_leader = progressive
+		create_country_leader = {
+	        name = "Avi Buskila"
+	        picture = GFX_Portrait_ISR_Avi_Buskila
+	        ideology = progressive_ideology
+        }
 	}
 }
 
@@ -116,6 +137,7 @@ country_event = { #Kulanu merges with Likud
 		original_tag = ISR
 		date > 2019.5.27
 		date < 2020.1.1
+		conservative > 0.01
 	}
 	
 	option = {

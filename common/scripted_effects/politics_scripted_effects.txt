@@ -1987,4 +1987,15 @@ election_pulse = {
 			}
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = ISR
+			social_democrat < 0.1
+			has_country_leader = {
+				name = "Avi Gabbay"
+				ruling_only = no
+			}
+		}
+		country_event = israel.2
+	}
 }

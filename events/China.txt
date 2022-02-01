@@ -1,0 +1,43 @@
+﻿add_namespace = china
+
+#Taiwan declares independence
+country_event = {
+	id = china.1
+	title = china.1.t
+	desc = china.1.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = china.1.o1
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+		}
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+
+	option = {
+		name = china.1.o2
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+		}
+		add_political_power = -100
+	}
+}

@@ -1,13 +1,9 @@
 formable_nation_decisions = {
-	icon = propaganda
-
-	allowed = {
-		always = yes
-	}
+	icon = generic #
 }
 
 USA_campaign_promises = {
-	icon = united_states
+	icon = generic #
 
 	visible = {
 		original_tag = USA
@@ -15,7 +11,7 @@ USA_campaign_promises = {
 }
 
 bosnia_politics = {
-	icon = bosnia
+	icon = generic #
 
 	visible = {
 	    OR = {
@@ -28,20 +24,20 @@ bosnia_politics = {
 brexit_decisions = {
 	icon = brexit
 
-	allowed = {
+	visible = {
 		original_tag = ENG
 	}
 }
 
 SPACE_USA = {
-	icon = generic_propaganda
+	icon = generic #
 
 	allowed = {
 		original_tag = USA
 	}
     
     visible = {
-        always = yes
+        always = no
     }
 
     priority = {
@@ -53,44 +49,35 @@ SPACE_USA = {
 }
 
 ISR_regency = {
-	icon = democracy
-
-	allowed = {
-		always = yes
-	}
+	icon = generic #
 }
 
 international_organizations = {
-	icon = propaganda
-
-	visible = {
-		always = yes
-	}
+	icon = foreign_affairs
 }
 
 political_actions = {
-	icon = politics
+	icon = political_actions
 }
 
 domestic_affairs = {
-	icon = politics
+	icon = domestic_affairs
 }
 
 foreign_affairs = {
-	icon = break_treaty
+	icon = foreign_affairs
 }
 
 economic_affairs = {
-	icon = economy
+	icon = economic_affairs
 }
 
 military_affairs = {
-	icon = army_reform
+	icon = generic
 }
 
 governments_in_exile = {
-	
-	icon = generic_formable_nations
+	icon = generic
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
 		has_dlc = "Man the Guns"
@@ -98,8 +85,7 @@ governments_in_exile = {
 }
 
 category_exile_forces = {
-	
-	icon = infiltration
+	icon = generic
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
 		has_dlc = "Man the Guns"
