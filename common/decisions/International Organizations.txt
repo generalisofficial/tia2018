@@ -9,6 +9,15 @@ international_organizations = {
 		available = {
 			has_war = no
 			NOT = { has_global_flag = ongoing_UN_application }
+			if = {
+				limit = {
+					original_tag = PAL
+				}
+				owns_state = 915
+				owns_state = 1149
+				owns_state = 1150
+				owns_state = 811
+			}
 		}
 		
 		icon = united_nations
@@ -146,6 +155,10 @@ international_organizations = {
 				every_country = {
 					remove_opinion_modifier = { target = ROOT modifier = european_union_member }
 					remove_opinion_modifier = { target = ROOT modifier = european_union_member_trade }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = european_union_member }
+						remove_opinion_modifier = { target = PREV modifier = european_union_member_trade }
+					}
 				}
 			}
 		}
@@ -189,7 +202,7 @@ international_organizations = {
 			set_global_flag = ongoing_generic_application
 			every_country = {
 				limit = {
-					has_idea = african_union_member
+					has_idea = idea_african_union_member
 				}
 				country_event = international_organizations.1
 			}
@@ -214,14 +227,100 @@ international_organizations = {
 	leave_african_union = {
 	
 		visible = {
-			has_idea = african_union_member
+			has_idea = idea_african_union_member
 		}
 		
 		complete_effect = {
-            remove_ideas = african_union_member
+            remove_ideas = idea_african_union_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = african_union_member }
+					remove_opinion_modifier = { target = ROOT modifier = african_union_member_trade }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = african_union_member }
+						remove_opinion_modifier = { target = PREV modifier = african_union_member_trade }
+					}
+				}
+			}
 		}
 		
 		icon = african_union
+		
+		cost = 150
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	join_commonwealth_of_nations = {
+	
+		visible = {
+			is_sovereign_state = yes
+			is_former_british_colony = yes
+			NOT = { 
+				OR = {
+					has_idea = idea_commonwealth_of_nations_member
+					has_global_flag = commonwealth_of_nations_dissolved 
+				}
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ongoing_generic_application
+			}
+		}
+		
+		complete_effect = {
+			set_global_flag = ongoing_CoN_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_commonwealth_of_nations_member
+				}
+				country_event = international_organizations.1
+			}
+		}
+
+		remove_effect = {
+			country_event = international_organizations.2
+		}
+		
+		icon = commonwealth_of_nations
+		
+		days_remove = 7
+		days_re_enable = 360
+
+		cost = 50
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	leave_commonwealth_of_nations = {
+	
+		visible = {
+			has_idea = idea_commonwealth_of_nations_member
+			NOT = {
+				original_tag = ENG
+			}
+		}
+		
+		complete_effect = {
+            remove_ideas = idea_commonwealth_of_nations_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = commonwealth_of_nations_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = commonwealth_of_nations_member }
+					}
+				}
+			}
+		}
+		
+		icon = commonwealth_of_nations
 		
 		cost = 150
 		

@@ -64,9 +64,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = ongoing_AU_application
+				has_global_flag = ongoing_AU_application # African Union
 			}
-			add_ideas = african_union_member
+			add_ideas = idea_african_union_member
 			clr_global_flag = ongoing_AU_application
 			hidden_effect = {
 				every_country = {
@@ -78,6 +78,24 @@ country_event = {
 					ROOT = {
 						add_opinion_modifier = { target = PREV modifier = african_union_member }
 						add_opinion_modifier = { target = PREV modifier = african_union_member_trade }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = ongoing_CoN_application # Commonwealth of Nations
+			}
+			add_ideas = idea_commonwealth_of_nations_member
+			clr_global_flag = ongoing_CoN_application
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_idea = idea_commonwealth_of_nations_member
+					}
+					add_opinion_modifier = { target = ROOT modifier = commonwealth_of_nations_member }
+					ROOT = {
+						add_opinion_modifier = { target = PREV modifier = commonwealth_of_nations_member }
 					}
 				}
 			}

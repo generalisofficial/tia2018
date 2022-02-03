@@ -219,6 +219,19 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Together for Victory"
+					}
+				}
+				every_country = {
+					limit = {
+						has_country_flag = TfV_marked_for_deletion
+					}
+					country_event = system.28
+				}
+			}
 			every_country = {
 				country_event = money.1
 				country_event = ideas.1

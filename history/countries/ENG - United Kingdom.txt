@@ -92,7 +92,7 @@ set_technology = {
 add_ideas = {
 	idea_united_nations_security_council_member
 	idea_european_union_member
-	commonwealth_of_nations_member
+	idea_commonwealth_of_nations_member
     nuclear_weapons_state
 	idea_brexit
 	population_growth_stagnation
@@ -111,6 +111,7 @@ if = {
 	}
 	else = {
 		puppet = JRS
+		JRS = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 

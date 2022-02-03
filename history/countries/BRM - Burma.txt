@@ -95,6 +95,9 @@ if = {
 	}
 }
 
+set_country_flag = buddhism
+set_country_flag = former_british_colony
+
 add_ideas = {
 	population_growth_steady
 	volunteer_army
@@ -116,6 +119,7 @@ if = {
 	}
 	else = {
 		puppet = WAA
+		WAA = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
@@ -131,8 +135,6 @@ WAA = {
 		communist = 100
 	}
 }
-
-set_country_flag = buddhism
 
 #Pyithu Hluttaw
 set_variable = { communist_seats = 0 }

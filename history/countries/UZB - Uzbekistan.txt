@@ -96,7 +96,7 @@ add_ideas = {
 	population_growth_steady
 	non_aligned_movement_member
 	commonwealth_of_independent_states_member
-	shanghai_cooperation_organization_member
+	shanghai_cooperation_organization_members
 	lgbt_minority_womens_rights_conservative
 	presidential_republic
 	civil_liberties_authoritarian
@@ -104,39 +104,40 @@ add_ideas = {
 
 set_country_flag = sunni_islam
 
-#Assembly of Turkmenistan
+#Legislative Chamber
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 10 }
-set_variable = { social_democrat_seats = 13.33 }
+set_variable = { social_democrat_seats = 31.33 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 34.67 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 52.67 }
+set_variable = { national_conservative_seats = 24 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 24 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
+set_country_flag = coalition_classical_liberal
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
-	ruling_party = national_conservative
-	last_election = "2016.12.4"
+	ruling_party = classical_liberal
+	last_election = "2016.10.24"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 52.67
-    right_wing_nationalist = 24
-    social_democrat = 13.33
+    classical_liberal = 35.34
+    social_democrat = 30.66
+	national_conservative = 24
 	progressive = 10
 }
 
+recruit_character = UZB_alisher_qodirov
 recruit_character = UZB_shavkat_mirziyoyev
-recruit_character = UZB_narimon_umarov
-recruit_character = UZB_boriy_alikhanov
+recruit_character = UZB_bahrom_abdukhalimov
+recruit_character = UZB_narzullo_oblomuradov

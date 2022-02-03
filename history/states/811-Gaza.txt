@@ -1,26 +1,34 @@
+
 state={
 	id=811
 	name="STATE_811"
-	history = {
+
+	history={
 		owner = HAM
-		add_core_of = PAL
-		add_core_of = HAM
+		victory_points = {
+			4088 5
+		}
 		buildings = {
 			infrastructure = 1
 			civilian_industry = 1
 			military_industry = 1
 			4088 = {
-				fortifications = 7
+				naval_base = 1
+				fortifications = 8
 
 			}
+
 		}
-		victory_points = { 4088 10 }
+		add_core_of = PAL
+		add_core_of = HAM
+
 	}
+
 	provinces={
 		4088 
 	}
 	manpower=1795183
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_2
+	state_category=state_level_2
+	local_supplies=0.000
 }

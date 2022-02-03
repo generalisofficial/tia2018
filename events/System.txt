@@ -540,6 +540,10 @@ country_event = {
 			5 = {
 				if = {
 					limit = {
+						OR = {
+							has_country_flag = sunni_islam
+							has_country_flag = shia_islam
+						}
 						OR = { 	
 							has_country_flag = has_islamist_party
 							AND = {
@@ -1182,7 +1186,7 @@ country_event = {
 	trigger = {
 		NOT = { 
 			any_country = {
-				has_idea = european_union_member
+				has_idea = idea_european_union_member
 			}
 		}
 	}
@@ -1244,5 +1248,45 @@ country_event = {
 	
 	immediate = {
 		news_event = donetsk.5
+	}
+}
+
+country_event = {
+	id = system.28
+	hidden=yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		OVERLORD = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = system.29
+	hidden=yes
+
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = ENG
+			}
+			NOT = { 
+				any_country = {
+					has_idea = idea_commonwealth_of_nations_member
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		set_global_flag = commonwealth_of_nations_dissolved
 	}
 }

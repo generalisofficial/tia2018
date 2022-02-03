@@ -3,6 +3,7 @@
 oob = "NGA_2018"
 
 set_research_slots = 2
+set_convoys = 260
 
 set_country_flag = country_language_english
 set_country_flag = country_language_hausa
@@ -97,20 +98,19 @@ if = {
 	}
 }
 
-set_convoys = 260
+set_country_flag = catholic
+set_country_flag = former_british_colony
 
 add_ideas = {
 	population_growth_explosion
 	idea_african_union_member
-	commonwealth_of_nations_member
+	idea_commonwealth_of_nations_member
 	non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
 	presidential_republic
 	federal
 	prohibited_firearms
 }
-
-set_country_flag = catholic
 
 #House of Representatives
 set_variable = { communist_seats = 0 }
