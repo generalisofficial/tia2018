@@ -117,25 +117,25 @@ add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = MAC modifier = macedonia_naming_dispute }
 
 #Hellenic Parliament
-set_variable = { communist_seats = 5.6 }
-set_variable = { socialist_seats = 41.8 }
+set_variable = { communist_seats = 5 }
+set_variable = { socialist_seats = 48.35 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 6.3 }
-set_variable = { social_liberal_seats = 4.1 }
-set_variable = { classical_liberal_seats = 3.4 }
-set_variable = { conservative_seats = 28.1 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { social_democrat_seats = 5.66 }
+set_variable = { social_liberal_seats = 3.66 }
+set_variable = { classical_liberal_seats = 3 }
+set_variable = { conservative_seats = 25 }
+set_variable = { national_conservative_seats = 3.33 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 3.7 }
-set_variable = { fascist_seats = 7.0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 6 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_socialist
-set_country_flag = coalition_right_wing_nationalist
+set_country_flag = coalition_national_conservative
 add_to_variable = { ROOT.Coalition = socialist_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = socialist
@@ -145,50 +145,21 @@ set_politics = {
 }
 
 set_popularities = {
-    fascist = 2.93
-    national_conservative = 3.7
-    conservative = 52.66
-    social_democrat = 8.1
-    socialist = 24.61
-    communist = 5.3
-	progressive = 1.46
-	classical_liberal = 1.24
+	conservative = 52.68
+	socialist = 31.66
+	social_democrat = 7.33
+	communist = 5
+	right_wing_nationalist = 3.33
 }
 
-recruit_character = GRE_alexis_tsipras
-recruit_character = GRE_kyriakos_mitsotakis
 recruit_character = GRE_nikolaos_michaloliakos
-recruit_character = GRE_fofi_gennimata
-recruit_character = GRE_dimitris_koutsoumpas
-recruit_character = GRE_stavros_theodorakis
 recruit_character = GRE_kyriakos_velopoulos
-recruit_character = GRE_panos_kammenos
-recruit_character = GRE_vasilis_leventis
-recruit_character = GRE_zoe_konstantopoulou
 recruit_character = GRE_constantine_ii
-recruit_character = GRE_alkiviadis_stefanis
-recruit_character = GRE_ioannis_iliopoulos
-recruit_character = GRE_konstantinos_floros
-recruit_character = GRE_nikolaos_dimitrios_christopoulos
-recruit_character = GRE_vasileios_tellidis
-recruit_character = GRE_andreas_iliopoulos
-recruit_character = GRE_alexandros_oikonomou
-recruit_character = GRE_nikolaos_manouris
-recruit_character = GRE_dimokritos_zervakis
-recruit_character = GRE_konstantinos_vasiliadis
-recruit_character = GRE_georgios_kambas
-recruit_character = GRE_antonios_nomikos
-recruit_character = GRE_dimitrios_bikos
-recruit_character = GRE_nikolaos_manolakos
-recruit_character = GRE_menelaos_meimaris
-recruit_character = GRE_christos_christodolou
-recruit_character = GRE_evangelos_apostolakis
-recruit_character = GRE_nikolaos_tsounis
-recruit_character = GRE_ioannis_pavlopoulos
-recruit_character = GRE_alexandros_diakopoulos
-recruit_character = GRE_nikolaos_kafetsis
-recruit_character = GRE_ioannis_korakakis
-recruit_character = GRE_efthymios_mikros
-recruit_character = GRE_georgios_pelekanakis
-recruit_character = GRE_stavros_banos
-recruit_character = GRE_aristidis_alexopoulos
+recruit_character = GRE_panos_kammenos
+recruit_character = GRE_kyriakos_mitsotakis
+recruit_character = GRE_vasilis_leventis
+recruit_character = GRE_stavros_theodorakis
+recruit_character = GRE_fofi_gennimata
+set_country_flag = progressive_intended_no_leader
+recruit_character = GRE_alexis_tsipras
+recruit_character = GRE_dimitris_koutsoumpas
