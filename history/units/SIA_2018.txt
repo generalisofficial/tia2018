@@ -2,195 +2,328 @@
 	name = "Infantry Regiment"
 	
 	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 	
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Infantry Division"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		light_mechanized = { x = 0 y = 4 }
-		light_mechanized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-		motorized = { x = 1 y = 4 }
-		light_mechanized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-		motorized = { x = 2 y = 4 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		recon = { x = 0 y = 4 }
 	}
-	
-	priority = 2
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Cavalry Regiment"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		light_mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 	}
+	
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Armored Division"
+	name = "Armored Regiment"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
 		mechanized = { x = 1 y = 0 }
 		mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
-		light_mechanized = { x = 1 y = 3 }
-		light_mechanized = { x = 1 y = 4 }
-		light_mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 2 y = 1 }
-		light_mechanized = { x = 2 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
 	}
 	
-	priority = 2
+	support = {
+		signal_company = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Special Forces Regiment"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+	}
 }
 
 units = {
-	
 	division = {
-		name = "1st (Infantry) Division"
-		location = 7408
-		division_template = "Infantry Division"
+		name = "4th Tank Batallion"
+		location = 7408 #Bangkok
+		division_template = "Armored Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "King's Own Regiment"
-		location = 7408
+		name = "1st Infantry Regiment"
+		location = 7408 #Bangkok
 		division_template = "Infantry Regiment"
-		start_experience_factor = 0.6
-	}
-	
-	division = {
-		name = "2nd Infantry Division"
-		location = 12224
-		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Infantry Division"
-		location = 12264
-		division_template = "Infantry Division"
+		name = "11th Infantry Regiment"
+		location = 7408 #Bangkok
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "4th Infantry Division"
-		location = 10398
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Infantry Division"
-		location = 4371
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Infantry Division"
-		location = 12402
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th Infantry Division"
-		location = 1488
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "9th Infantry Division"
-		location = 4566
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "11th Infantry Division"
-		location = 7225
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "15th Infantry Division"
-		location = 12131
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
 	division = {
 		name = "31st Infantry Regiment"
-		location = 10221
+		location = 7408 #Bangkok
 		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Cavalry Division"
-		location = 7408
-		division_template = "Armored Division"
+		name = "2nd Infantry Regiment"
+		location = 12224 #Prachinburi Province
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Cavalry Division"
-		location = 7408
-		division_template = "Armored Division"
+		name = "12th Infantry Regiment"
+		location = 12224 #Prachinburi Province
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Cavalry Division"
-		location = 7408
-		division_template = "Armored Division"
+		name = "21st Infantry Regiment"
+		location = 12224 #Prachinburi Province
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-
-
+	division = {
+		name = "9th Infantry Regiment"
+		location = 7587 #Fort Surasi
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19th Infantry Regiment"
+		location = 7587 #Fort Surasi
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "29th Infantry Regiment"
+		location = 7587 #Fort Surasi
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "111th Infantry Regiment"
+		location = 7225 #Chachoengsao Province
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "112nd Infantry Regiment"
+		location = 7225 #Chachoengsao Province
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Cavalry Regiment"
+		location = 7408 #Bangkok
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Cavalry Regiment"
+		location = 7408 #Bangkok
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Cavalry Regiment"
+		location = 7408 #Bangkok
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "27th Cavalry Regiment"
+		location = 7408 #Bangkok
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Regiment"
+		location = 10438 #Fort Suranari
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Infantry Regiment"
+		location = 10438 #Fort Suranari
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Infantry Regiment"
+		location = 10438 #Fort Suranari
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Infantry Regiment"
+		location = 12402 #Fort King Phutthayodfa Chulalok Maharat
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16th Infantry Regiment"
+		location = 12402 #Fort King Phutthayodfa Chulalok Maharat
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23rd Infantry Regiment"
+		location = 12402 #Fort King Phutthayodfa Chulalok Maharat
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Cavalry Regiment"
+		location = 12373 #Fort Tinsulanonda
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Cavalry Regiment"
+		location = 12373 #Fort Tinsulanonda
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Regiment"
+		location = 7572 #Fort King Naresuan Maharat
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Infantry Regiment"
+		location = 7572 #Fort King Naresuan Maharat
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Infantry Regiment"
+		location = 4348 #Fort Chao Khun Nen
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17th Infantry Regiment"
+		location = 4348 #Fort Chao Khun Nen
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Cavalry Regiment"
+		location = 1357 #Fort Phokhun Pha Mueang
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Cavalry Regiment"
+		location = 1357 #Fort Phokhun Pha Mueang
+		division_template = "Cavalry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Regiment"
+		location = 1337 #Fort Thep Satri Srisunthorn
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Infantry Regiment"
+		location = 1337 #Fort Thep Satri Srisunthorn
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25th Infantry Regiment"
+		location = 1337 #Fort Thep Satri Srisunthorn
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "151st Infantry Regiment"
+		location = 12131 #Fort Ingkhayutthaborihan
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "152nd Infantry Regiment"
+		location = 12131 #Fort Ingkhayutthaborihan
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "153rd Infantry Regiment"
+		location = 12131 #Fort Ingkhayutthaborihan
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Special Warfare Command"
+		location = 10250 #Lopburi
+		division_template = "Special Forces Regiment"
+		start_experience_factor = 0.3
+	}
 }
+
+### Air OOB ###
+air_wings = {
+	891 = {
+		#Northrop F-5E. RTAFB Korat
+		fighter_equipment_1 = {
+			owner = "SIA" 
+			amount = 30
+		}
+		name = "Wing 1"
+	}
+	890 = {
+		#Alpha Jet. RTAFB Takhli
+		CAS_equipment_2 = {
+			owner = "SIA" 
+			amount = 18
+		}
+		name = "Wing 4"
+	}
+	289 = {
+		#C-130H. RTAFB Prachuap Khiri Khan
+		transport_plane_equipment_1 = {
+			owner = "SIA" 
+			amount = 12
+		}
+		name = "Wing 5"
+	}
+	724 = {
+		#JAS 39 Gripen. RTAFB Surat Thani
+		fighter_equipment_3 = {
+			owner = "SIA" 
+			amount = 7
+		}
+		name = "Wing 7"
+	}
+	891 = {
+		#F-16 Fighting Falcon. RTAFB Ubon Ratchathani
+		fighter_equipment_2 = {
+			owner = "SIA" 
+			amount = 38
+		}
+		name = "Wing 21"
+	}	
+}	

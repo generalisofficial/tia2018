@@ -1,380 +1,366 @@
 ﻿division_template = {
-	name = "Garrison Brigade"
+	name = "Light Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 } #Light Infantry brigades have 10 batallions but those only have 500 personnel
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Light Infantry Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		light_mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
-		light_mechanized = { x = 1 y = 3 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armoured Engineer Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
-units = {
+division_template = {
+	name = "Military Operations Command"
+	division_names_group = GENERIC_MEC_01
 	
-	division = {
-		name = "1st Light Infantry Brigade"
-		location = 4087
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
+	regiments = {
+		mechanized = { x = 0 y = 0 } 
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 } 
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 } 
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
 	}
-	
-	division = {
-		name = "2nd Light Infantry Brigade"
-		location = 12090
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
+}
+
+division_template = {
+	name = "Military Operations Command (Airborne)"
+	division_names_group = GENERIC_MEC_01
 	
-	division = {
-		name = "3rd Light Infantry Brigade"
-		location = 4408
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
+	regiments = {
+		paratrooper = { x = 0 y = 0 } 
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 } 
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 } 
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
 	}
-	
-	division = {
-		name = "4th Light Infantry Brigade"
-		location = 7974
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
-	
-	division = {
-		name = "5th Light Infantry Brigade"
-		location = 12317
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Light Infantry Brigade"
-		location = 7909
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th Light Infantry Brigade"
-		location = 1330
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "8th Light Infantry Brigade"
-		location = 4293
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "9th Light Infantry Brigade"
-		location = 4996
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "10th Light Infantry Brigade"
-		location = 1197
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
+}
+
+units = {	
 	division = {
 		name = "11th Light Infantry Brigade"
-		location = 7400
+		location = 1330 #Hlegu, near Yangon
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "12th Light Infantry Brigade"
-		location = 11966
+		location = 4275 #Tennesserim
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "13th Light Infantry Brigade"
-		location = 3999
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "14th Light Infantry Brigade"
-		location = 1014
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "15th Light Infantry Brigade"
-		location = 4626
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "16th Light Infantry Brigade"
-		location = 1170
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "17th Light Infantry Brigade"
-		location = 7974
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "18th Light Infantry Brigade"
-		location = 12317
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "19th Light Infantry Brigade"
-		location = 7909
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
 	division = {
 		name = "20th Light Infantry Brigade"
-		location = 10486
+		location = 4541 #Pakokku
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "21st Light Infantry Brigade"
-		location = 4425
-		division_template = "Light Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
 	division = {
 		name = "22nd Light Infantry Brigade"
-		location = 4210
+		location = 4408 #Pa-an
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "23rd Light Infantry Brigade"
-		location = 1385
+		name = "33rd Light Infantry Brigade"
+		location = 10386 #Sagaing
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "24th Light Infantry Brigade"
-		location = 12125
+		name = "44th Light Infantry Brigade"
+		location = 4336 #Thaton
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "25th Light Infantry Brigade"
-		location = 4275
+		name = "55th Light Infantry Brigade"
+		location = 4585 #Aungban
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "26th Light Infantry Brigade"
-		location = 3651
+		name = "66th Light Infantry Brigade"
+		location = 1650 #Prome
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "27th Light Infantry Brigade"
-		location = 10920
+		name = "77th Light Infantry Brigade"
+		location = 12127 #Pegu
 		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Armoured Operation Command"
-		location = 1330
-		division_template = "Armoured Engineer Brigade"
+		name = "88th Light Infantry Brigade"
+		location = 7034 #Magwe
+		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Armoured Operation Command"
-		location = 4585
-		division_template = "Armoured Engineer Brigade"
+		name = "99th Light Infantry Brigade"
+		location = 12449 #Meiktila
+		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Armoured Operation Command"
-		location = 4585
-		division_template = "Armoured Engineer Brigade"
+		name = "101st Light Infantry Brigade"
+		location = 1296 #Tennesserim
+		division_template = "Light Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Armoured Operation Command"
-		location = 1330
-		division_template = "Armoured Engineer Brigade"
+		name = "1st Military Operations Command"
+		location = 7562 #Kyaukme
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Auxiliary Brigade"
-		location = 12267
-		division_template = "Motorized Brigade"
+		name = "2nd Military Operations Command"
+		location = 2061 #Mong Nawng
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Auxiliary Brigade"
-		location = 4454
-		division_template = "Motorized Brigade"
+		name = "3rd Military Operations Command"
+		location = 8063 #Mogaung
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Auxiliary Brigade"
-		location = 7122
-		division_template = "Motorized Brigade"
+		name = "4th Military Operations Command"
+		location = 10267 #Somewhere on the Yangon Region
+		division_template = "Military Operations Command (Airborne)"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Auxiliary Brigade"
-		location = 12363
-		division_template = "Motorized Brigade"
+		name = "5th Military Operations Command"
+		location = 12256 #Kyaukme
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "5th Auxiliary Brigade"
-		location = 4588
-		division_template = "Motorized Brigade"
+		name = "6th Military Operations Command"
+		location = 4526 #Pyinmana
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "6th Auxiliary Brigade"
-		location = 4318
-		division_template = "Motorized Brigade"
+		name = "7th Military Operations Command"
+		location = 4654 #I think Hpegon is here, but there's almost no info on that town, not even in Burmese
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "7th Auxiliary Brigade"
-		location = 12363
-		division_template = "Motorized Brigade"
+		name = "8th Military Operations Command"
+		location = 1315 #Dawei
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Garrison Brigade"
-		location = 4585
-		division_template = "Garrison Brigade"
+		name = "9th Military Operations Command"
+		location = 4147 #Kyauktaw
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Garrison Brigade"
-		location = 1330
-		division_template = "Garrison Brigade"
+		name = "10th Military Operations Command"
+		location = 4454 #Kyigon
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Garrison Brigade"
-		location = 1492
-		division_template = "Garrison Brigade"
+		name = "11th Military Operations Command"
+		location = 1566 #Loilem
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Garrison Brigade"
-		location = 4425
-		division_template = "Garrison Brigade"
+		name = "12th Military Operations Command"
+		location = 4408 #Kawkareik
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Military Operations Command"
+		location = 10217 #Bokpyin
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Military Operations Command"
+		location = 7974 #Mong Hsat
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Military Operations Command"
+		location = 13973 #Buthidaung
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16th Military Operations Command"
+		location = 12363 #Theinni
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17th Military Operations Command"
+		location = 7603 #Mong Pan
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "18th Military Operations Command"
+		location = 7974 #Monghpyak
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19th Military Operations Command"
+		location = 12125 #Ye
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "20th Military Operations Command"
+		location = 10217 #Kawthaung
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st Military Operations Command"
+		location = 13980 #Bhamo
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "22nd Military Operations Command"
+		location = 1492 #Unknown
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23rd Military Operations Command"
+		location = 4626 #Unknown
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "24th Military Operations Command"
+		location = 1330 #Unknown
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25th Military Operations Command"
+		location = 1492 #Unknown
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "26th Military Operations Command"
+		location = 4626 #Unknown
+		division_template = "Military Operations Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "27th Military Operations Command"
+		location = 1330 #Unknown
+		division_template = "Military Operations Command"
 		start_experience_factor = 0.3
 	}
 }
 
 air_wings = {
 	288 = {
+		#MiG-29
+		fighter_equipment_2 = {
+			owner = "BRM" 
+			amount = 31
+		}
+	}
+	288 = {
+		#Nanchang Q-5 IIIK
+		CAS_equipment_1 = {
+			owner = "BRM" 
+			amount = 21
+		}
+	}
+	288 = {
 		#F-7M
 		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 30
+			owner = "BRM" 
+			amount = 21
+		}
+	}
+	288 = { 
+		#F-6
+		fighter_equipment_1 = { 
+			owner = "BRM" 
+			amount = 1
 		}
 	}
 	288 = {
-		#A-5M
-		CAS_equipment_1 = {
-			owner = "PRC" 
-			amount = 24
+		#JF-17 Thunder
+		fighter_equipment_4 = {
+			owner = "BRM" 
+			amount = 7
 		}
 	}
 	288 = {
-		#F-27M
-		nav_bomber_equipment_1 = {
-			owner = "HOL" 
-			amount = 3
+		#CASC Rainbow CH-3A
+		tac_bomber_equipment_1 = {
+			owner = "BRM" 
+			amount = 12
 		}
 	}
+}
 
+#Combat drone CASC Rainbow CH-4 is being produced under lincense
+instant_effect = { 
+	add_equipment_production = { 
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "PRC"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 100
+	}
+}
+
+#Apparently Myanmar makes MAV BMPs, which I found quite surprising
+instant_effect = { 
+	add_equipment_production = { 
+		equipment = {
+			type = mechanized_equipment_1
+			creator = "BRM"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
 }

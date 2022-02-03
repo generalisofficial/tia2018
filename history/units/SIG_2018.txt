@@ -7,133 +7,185 @@
 		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 3 }
 	}
 }
+
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Infantry Brigade (Large)"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		light_mechanized = { x = 0 y = 4 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 3 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Marine Infantry Brigade"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armoured Regiment"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
 		mechanized = { x = 1 y = 0 }
 		mechanized = { x = 1 y = 1 }
 		mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
+		recon = { x = 0 y = 0 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "Singapore Elite Forces"
-		location = 12299
-		division_template = "Armored Brigade"
+		name = "2nd Singapore Infantry Brigade"
+		location = 12299 #Won't bother with HQs on a 1 province nation
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Infantry Brigade"
+		name = "3rd Singapore Infantry Brigade"
 		location = 12299
-		division_template = "Mechanized Brigade"
+		division_template = "Infantry Brigade (Large)"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Infantry Brigade"
+		name = "5th Singapore Infantry Brigade"
 		location = 12299
-		division_template = "Mechanized Brigade"
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}	
+	division = {
+		name = "9th Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Infantry Brigade"
+		name = "10th Singapore Infantry Brigade"
 		location = 12299
-		division_template = "Mechanized Brigade"
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Infantry Brigade"
+		name = "12th Singapore Infantry Brigade"
 		location = 12299
-		division_template = "Mechanized Brigade"
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-
-	
-	
+	division = {
+		name = "21st Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "24th Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "26th Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "27th Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "29th Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "32nd Singapore Infantry Brigade"
+		location = 12299
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Singapore Armoured Regiment"
+		location = 12299
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Singapore Guards"
+		location = 12299
+		division_template = "Marine Infantry Brigade"
+		start_experience_factor = 0.3
+	}
 }
+
 ### Air OOB ###
 air_wings = {
 	336 = {
 		#F-16A/C
-		fighter_equipment_3 = {
-			owner = "SIG" 
-			amount = 33
-		}
-
-	}
-	336 = {
-		#323 Squadron (F-16AM)
-		fighter_equipment_3 = {
-			owner = "SIG" 
-			amount = 25
-		}
-
-	}
-	336 = {
-		#F-5S
 		fighter_equipment_2 = {
 			owner = "SIG" 
-			amount = 28
+			amount = 60
 		}
+		name = "140 Squadron"
 	}
 	336 = {
-		#A-4
-		CAS_equipment_2 = {
+		#F-15SG
+		fighter_equipment_3 = {
 			owner = "SIG" 
-			amount = 51
+			amount = 40
 		}
-
+		name = "140 Squadron"
 	}
 	336 = {
-		#C-130
-		transport_plane_equipment_1 = {
-			owner = "SIG" 
-			amount = 5
-		}
-	}
-	336 = {
-		#F-50
-		nav_bomber_equipment_2 = {
+		#Fokker 50
+		nav_bomber_equipment_1 = {
 			owner = "SIG" 
 			amount = 5
 		}
 	}
+	336 = {
+		#C-130 Hercules
+		transport_equipment_1 = {
+			owner = "SIG" 
+			amount = 5
+		}
+		name = "Operations Development Group"
+	}		
 }

@@ -1,0 +1,81 @@
+﻿##### GENERIC NAME LISTS #####
+GENERIC_SS_NAMES = {
+	name = 	name = NAME_THEME_GENERIC_SS
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "SS "
+	fallback_name = "SS-%d"
+}
+
+GENERIC_DD_NAMES = {
+	name = NAME_THEME_GENERIC_DESTROYER
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "FS "
+	fallback_name = "FS-%d"					
+}
+
+GENERIC_MINESWEEPER_NAMES = {
+	name = NAME_THEME_GENERIC_MINESWEEPER
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "AM "
+	fallback_name = "AM-%d"					
+}
+
+GENERIC_CL_NAMES = {
+	name = NAME_THEME_GENERIC_CL
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser heavy_cruiser }
+	
+	prefix = "FFL "
+	fallback_name = "FFL-%d"
+}
+
+GENERIC_CA_NAMES = {
+	name = NAME_THEME_GENERIC_CA
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser heavy_cruiser }
+	
+	prefix = "DD "
+	fallback_name = "DD-%d"
+}
+
+GENERIC_BB_NAMES = {
+	name = NAME_THEME_GENERIC_BB
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "CG "
+	fallback_name = "CG-%d"		
+}
+
+GENERIC_BC_NAMES = {
+	name = NAME_THEME_GENERIC_BB
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "CG "
+	fallback_name = "CG-%d"	
+}
+
+GENERIC_CV_NAMES = {
+	name = NAME_THEME_GENERIC_CV
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "CV "
+	fallback_name = "CV-%d"	
+}
+

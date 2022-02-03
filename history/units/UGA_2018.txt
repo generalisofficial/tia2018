@@ -1,31 +1,40 @@
 ﻿division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
 	name = "Infantry Division"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Artillery Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery = { x = 2 y = 0 }
+		artillery = { x = 2 y = 1 }
+		artillery = { x = 3 y = 0 }
+		artillery = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -38,47 +47,83 @@ division_template = {
 		motorized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	
 	division = {
 		name = "1st Division"
-		location = 12989
-		division_template = "Infantry Division"
+		location = 12989 #Kakiri
+		division_template = "Artillery Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "2nd Division"
-		location = 8223
+		location = 3854 #Mbarara
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "3rd Division"
-		location = 7088
+		location = 12929 #Moroto
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "4th Division"
-		location = 12929
+		location = 8223 #Gulu District
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "5th Division"
-		location = 3854
+		location = 12929 #Lira
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "Armored Brigade"
+		location = 3854
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Motorized Brigade"
+		location = 12989
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}	
 }
 
-### Air OOB ### - No combat aircraft as of 2016
+air_wings = {
+	548 = {
+		#MiG-21
+		fighter_equipment_1 = {
+			owner = "UGA" 
+			amount = 5
+		}
+		name = "1st Wing"
+	}
+	548 = {
+		#Su-30
+		fighter_equipment_3 = {
+			owner = "UGA" 
+			amount = 5
+		}
+		name = "2nd Wing"
+	}
+}	

@@ -7,125 +7,176 @@
 		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Motorized Division"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Division"
+	name = "Mobile Division"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
-
-units = {
-	
+units = {	
 	division = {
-		name = "Cambodian Military Academy"
-		location = 4639
+		name = "Mobile Reinforcement Division"
+		location = 7376 #Phnom Penh
+		division_template = "Mobile Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Brigade"
+		location = 7645 #Stung Treng
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Division"
-		location = 4639
-		division_template = "Armored Division"
+		name = "2nd Brigade"
+		location = 12475 #Kratié
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Division"
-		location = 4639
-		division_template = "Motorized Division"
+		name = "3rd Brigade"
+		location = 12167 #Banlung
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Division"
-		location = 10317
-		division_template = "Motorized Division"
+		name = "4th Brigade"
+		location = 12150 #Senmonorom
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Division"
-		location = 4330
-		division_template = "Motorized Division"
+		name = "5th Brigade"
+		location = 4639 #Kampong Cham
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "5th Division"
-		location = 4302
-		division_template = "Armored Division"
+		name = "6th Brigade"
+		location = 12260 #Prey Veng
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "6th Division"
-		location = 4302
-		division_template = "Motorized Division"
+		name = "7th Brigade"
+		location = 12260 #Svay Rieng
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "7th Division"
-		location = 12150
-		division_template = "Motorized Division"
+		name = "8th Brigade"
+		location = 10289 #Chbar Mon
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "8th Division"
-		location = 4251
-		division_template = "Motorized Division"
+		name = "9th Brigade"
+		location = 10317 #Doun Kaev
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "9th Division"
-		location = 1324
-		division_template = "Motorized Division"
+		name = "10th Brigade"
+		location = 7432 #Kampot
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "10th Division"
-		location = 4251
-		division_template = "Motorized Division"
+		name = "11th Brigade"
+		location = 14025 #Sihanoukville
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "11th Division"
-		location = 12167
-		division_template = "Motorized Division"
+		name = "12th Brigade"
+		location = 4359 #Khemarak Phoumin
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "13th Brigade"
+		location = 7432 #Kep
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Brigade"
+		location = 4302 #Siem Reap
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Brigade"
+		location = 10467 #Samraong
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16th Brigade"
+		location = 12460 #Preah Vihear
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17th Brigade"
+		location = 1324 #Senmonorom
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "18th Brigade"
+		location = 14027 #Battambang
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19th Brigade"
+		location = 10177 #Pursat
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "20th Brigade"
+		location = 4251 #Serei Saophoan
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st Brigade"
+		location = 14026 #Pailin
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "22nd Brigade"
+		location = 7319 #Kampong Chhnang
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23rd Brigade"
+		location = 7376 #Ta Khmau
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "24th Brigade"
+		location = 7376 #Phnom Penh
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}	
 }
+
+#No attack aircraft

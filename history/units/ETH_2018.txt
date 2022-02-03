@@ -1,213 +1,197 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Infantry Division"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Mechanized Division"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
-		modern_armor = { x = 0 y = 3 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
-}
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 0 y = 4 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
 units = {
-
 	division = {
-		name = "1st Northern Brigade"
-		location = 1984
-		division_template = "Mountain Brigade"
+		name = "31st Army Brigade"
+		location = 14059
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "2nd Northern Brigade"
-		location = 1984
-		division_template = "Mountain Brigade"
+		name = "33rd Army Brigade"
+		location = 5010
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "3rd Northern Brigade"
+		name = "35th Army Brigade"
+		location = 14061
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21th Army Brigade"
+		location = 5097
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "22nd Army Brigade"
+		location = 14067
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Mechanized Brigade"
+		location = 14060
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Army Brigade"
+		location = 13301
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st Army Brigade"
+		location = 13618
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Army Brigade"
+		location = 13270
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25th Army Brigade"
+		location = 14071
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "27th Army Brigade"
+		location = 14070
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Mechanized Brigade"
 		location = 2072
-		division_template = "Mountain Brigade"
+		division_template = "Mechanized Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "4th Northern Brigade"
-		location = 2072
-		division_template = "Mountain Brigade"
+		name = "19th Army Brigade"
+		location = 13320
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "5th Northern Brigade"
-		location = 5041
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "6th Northern Brigade"
-		location = 5041
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "7th Northern Brigade"
-		location = 5041
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "1st Northern Brigade"
-		location = 1984
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "8th Northern Brigade"
-		location = 1984
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "9th Northern Brigade"
-		location = 2072
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "1st Eastern Brigade"
+		name = "44th Army Brigade"
 		location = 12812
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "2nd Eastern Brigade"
+		name = "13th Army Brigade"
 		location = 12757
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "3rd Eastern Brigade"
+		name = "12th Army Brigade"
 		location = 4995
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "4th Eastern Brigade"
+		name = "32nd Army Brigade"
 		location = 8062
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "Capital Garrison Brigade"
-		location = 5010
-		division_template = "Infantry Brigade"
+		name = "6th Mechanized Brigade"
+		location = 12714
+		division_template = "Mechanized Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "1st Armored Brigade"
-		location = 5010
-		division_template = "Armored Brigade"
+		name = "23rd Army Brigade"
+		location = 14068
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "2nd Armored Brigade"
-		location = 5010
-		division_template = "Armored Brigade"
+		name = "43rd Army Brigade"
+		location = 2009
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "26th Army Brigade"
+		location = 14057
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Mechanized Brigade"
+		location = 14053
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
 
 air_wings = {
 	271 = {
-		#Su-27
-		fighter_equipment_3 = {
+		#MiG-23
+		fighter_equipment_1 = {
 			owner = "ETH" 
-			amount = 14
+			amount = 9
 		}
-
+		name = "1st Fighter-Ground Attack Squadron"
 	}
 	271 = {
-		#MiG-23
+		#Su-27
 		fighter_equipment_2 = {
 			owner = "ETH" 
-			amount = 10
+			amount = 20
 		}
+		name = "2nd Fighter-Ground Attack Squadron"
+	}
+	271 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "ETH" 
+			amount = 2
+		}
+		name = "1st Transport Squadron"
 	}
 }

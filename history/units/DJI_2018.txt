@@ -1,62 +1,75 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Infantry Regiment"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Rapid Reponse Regiment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Regiment"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 1 }
 	}
-}
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
 units = {
-	
 	division = {
-		name = "Northern Protection Forces"
+		name = "Dikhil Arms Regiment"
+		location = 13496
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Ali Sabieh Arms Regiment"
+		location = 8124
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Tadjourah Arms Regiment"
 		location = 4985
-		division_template = "Infantry Brigade"
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Southern Protection Forces"
-		location = 8124
-		division_template = "Infantry Brigade"
+		name = "Obock Arms Regiment"
+		location = 4985
+		division_template = "Infantry Regiment"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Rapid Deployment Brigade"
+		name = "Armored Regiment"
 		location = 8124
-		division_template = "Marine Brigade"
+		division_template = "Armored Regiment"
 		start_experience_factor = 0.3
 	}
-	
 }

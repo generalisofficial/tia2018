@@ -2,134 +2,114 @@
 	name = "Infantry Brigade"
 	
 	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
 		light_mechanized = { x = 0 y = 0 }
 		light_mechanized = { x = 0 y = 1 }
 		light_mechanized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
+		artillery = { x = 0 y = 0 }
+	}	
 }
+
 division_template = {
-	name = "Infantry Regiment"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
+	name = "Armoured Brigade"
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Paratrooper Brigade"
+	name = "Airborne Brigade"
 	
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
 		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
 units = {
-	
-	division = {
-		name = "1st Brigade"
-		location = 5210
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
 	division = {
 		name = "2nd Brigade"
-		location = 1939
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Brigade"
-		location = 1939
+		location = 5160 #Nakuru
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "4th Brigade"
-		location = 5160
+		location = 1939 #Nairobi
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "North-Eastern Regiment"
-		location = 8133
-		division_template = "Infantry Regiment"
+		name = "6th Brigade"
+		location = 10761 #Garissa
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "North-Western Regiment"
-		location = 11145
-		division_template = "Infantry Regiment"
+		name = "8th Brigade"
+		location = 5210 #Unknown, defaulting to Mombasa
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "110th Brigade"
+		location = 10860 #Unknown, defaulting to Kisumu's actual irl location
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "112th Brigade"
+		location = 1939 #Unknown, defaulting to Ruiru
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Special Operations Regiment"
+		location = 5160 #Nakuru
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Armoured Brigade"
+		location = 5079 #Isiolo was the last known base
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
 
 air_wings = {
 	547 = {
-		#F-5E - Downgraded to fit with the MiG-21
-		fighter_equipment_1 = {
+		#F-5E
+		fighter_equipment_2 = {
 			owner = "KEN" 
 			amount = 17
 		}
+		name = "1st Wing"
 	}
 }
