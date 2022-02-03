@@ -1,27 +1,5 @@
 characters={
     #Starting - Political
-	GRE_alexis_tsipras={
-		name="Alexis Tsipras"
-		portraits={
-			civilian={
-				large=GFX_Portrait_GRE_Alexis_Tsipras
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
-		}
-	}
-	GRE_kyriakos_mitsotakis={
-		name="Kyriakos Mitsotakis"
-		portraits={
-			civilian={
-				large=GFX_Portrait_GRE_Kyriakos_Mitsotakis
-			}
-		}
-		country_leader={
-			ideology=christian_democrat
-		}
-	}
 	GRE_nikolaos_michaloliakos={
 		name="Nikolaos Michaloliakos"
 		portraits={
@@ -30,40 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_socialist
-		}
-	}
-	GRE_fofi_gennimata={
-		name="Fofi Gennimata"
-		portraits={
-			civilian={
-				large=GFX_Portrait_GRE_Fofi_Gennimata
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	GRE_dimitris_koutsoumpas={
-		name="Dimitris Koutsoumpas"
-		portraits={
-			civilian={
-				large=GFX_Portrait_GRE_Dimitris_Koutsoumpas
-			}
-		}
-		country_leader={
-			ideology=marxist_leninist
-		}
-	}
-	GRE_stavros_theodorakis={
-		name="Stavros Theodorakis"
-		portraits={
-			civilian={
-				large=GFX_Portrait_GRE_Stavros_Theodorakis
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
+			ideology=fascist_ideology
 		}
 	}
 	GRE_kyriakos_velopoulos={
@@ -74,7 +19,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	GRE_konstantinos_ii={
+		name="Konstantínos II"
+		portraits={
+			civilian={
+				large=GFX_Portrait_GRE_Konstantinos_II
+			}
+		}
+		country_leader={
+			ideology=monarchist_ideology
 		}
 	}
 	GRE_panos_kammenos={
@@ -85,7 +41,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=right_wing_nationalist_ideology
+			ideology=national_conservative_ideology
+		}
+	}
+	GRE_kyriakos_mitsotakis={
+		name="Kyriakos Mitsotakis"
+		portraits={
+			civilian={
+				large=GFX_Portrait_GRE_Kyriakos_Mitsotakis
+			}
+		}
+		country_leader={
+			ideology=liberal_conservative
 		}
 	}
 	GRE_vasilis_leventis={
@@ -99,463 +66,48 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
-	GRE_zoe_konstantopoulou={
-		name="Zoe Konstantopoulou"
+	GRE_stavros_theodorakis={
+		name="Stavros Theodorakis"
 		portraits={
 			civilian={
-				large=GFX_Portrait_GRE_Zoe_Konstantopoulou
+				large=GFX_Portrait_GRE_Stavros_Theodorakis
 			}
 		}
 		country_leader={
-			ideology=progressive_ideology
+			ideology=social_liberal_ideology
 		}
 	}
-	GRE_constantine_ii={
-		name="Constantine II"
+	GRE_fofi_gennimata={
+		name="Fofi Gennimata"
 		portraits={
 			civilian={
-				large=GFX_Portrait_GRE_Constantine_II
+				large=GFX_Portrait_GRE_Fofi_Gennimata
 			}
 		}
 		country_leader={
-			ideology=monarchist_ideology
+			ideology=social_democrat_ideology
 		}
 	}
-	GRE_alkiviadis_stefanis={
-		name="Alkiviadis Stefanis"
+	GRE_alexis_tsipras={
+		name="Alexis Tsipras"
 		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Alkiviadis_Stefanis
+			civilian={
+				large=GFX_Portrait_GRE_Alexis_Tsipras
 			}
 		}
-		field_marshal={
-			traits={ old_guard organisational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=democratic_socialist
 		}
 	}
-	GRE_ioannis_iliopoulos={
-		name="Ioannis Iliopoulos"
+	GRE_dimitris_koutsoumpas={
+		name="Dimitris Koutsoumpas"
 		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Ioannis_Iliopoulos
+			civilian={
+				large=GFX_Portrait_GRE_Dimitris_Koutsoumpas
 			}
 		}
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_konstantinos_floros={
-		name="Konstantinos Floros"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Konstantinos_Floros
-			}
-		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_nikolaos_dimitrios_christopoulos={
-		name="Nikolaos Dimitrios Christopoulos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Nikolaos_Dimitrios_Christopoulos
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_vasileios_tellidis={
-		name="Vasileios Tellidis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Vasileios_Tellidis
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_andreas_iliopoulos={
-		name="Andreas Iliopoulos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Andreas_Iliopoulos
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_alexandros_oikonomou={
-		name="Alexandros Oikonomou"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Alexandros_Oikonomou
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_nikolaos_manouris={
-		name="Nikolaos Manouris"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Nikolaos_Manouris
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_dimokritos_zervakis={
-		name="Dimokritos Zervakis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Dimokritos_Zervakis
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_konstantinos_vasiliadis={
-		name="Konstantinos Vasiliadis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Konstantinos_Vasiliadis
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_georgios_kambas={
-		name="Georgios Kambas"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Georgios_Kambas
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_antonios_nomikos={
-		name="Antonios Nomikos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Antonios_Nomikos
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_dimitrios_bikos={
-		name="Dimitrios Bikos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Dimitrios_Bikos
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_nikolaos_manolakos={
-		name="Nikolaos Manolakos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Nikolaos_Manolakos
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_menelaos_meimaris={
-		name="Menelaos Meimaris"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Menelaos_Meimaris
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_christos_christodolou={
-		name="Christos Christodolou"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Christos_Christodolou
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_evangelos_apostolakis={
-		name="Evangelos Apostolakis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Evangelos_Apostolakis
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_nikolaos_tsounis={
-		name="Nikolaos Tsounis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Nikolaos_Tsounis
-			}
-		}
-		navy_leader={
-			traits={ superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_ioannis_pavlopoulos={
-		name="Ioannis Pavlopoulos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Ioannis_Pavlopoulos
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_alexandros_diakopoulos={
-		name="Alexandros Diakopoulos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Alexandros_Diakopoulos
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_nikolaos_kafetsis={
-		name="Nikolaos Kafetsis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Nikolaos_Kafetsis
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_ioannis_korakakis={
-		name="Ioannis Korakakis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Ioannis_Korakakis
-			}
-		}
-		navy_leader={
-			traits={ fly_swatter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_efthymios_mikros={
-		name="Efthymios Mikros"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Efthymios_Mikros
-			}
-		}
-		navy_leader={
-			traits={ air_controller }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_georgios_pelekanakis={
-		name="Georgios Pelekanakis"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Georgios_Pelekanakis
-			}
-		}
-		navy_leader={
-			traits={ ironside }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_stavros_banos={
-		name="Stavros Banos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Stavros_Banos
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	GRE_aristidis_alexopoulos={
-		name="Aristidis Alexopoulos"
-		portraits={
-			army={
-				large=GFX_Portrait_GRE_Portrait_Aristidis_Alexopoulos
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 	#Starting - Military

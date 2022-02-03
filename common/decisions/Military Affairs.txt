@@ -1,5 +1,52 @@
 military_affairs = {
 
+	remilitarize_state = {
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_demilitarized_zone = yes
+			}
+		}
+
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		available = {
+			NOT = {
+				has_idea = no_standing_army
+			}
+		}
+		
+		complete_effect = {
+			FROM = {
+				set_demilitarized_zone = no
+			}
+			add_named_threat = {
+				threat = 5
+				name = threat_remilitarized_territory
+			}
+		}
+		
+		icon = army
+		
+		custom_cost_trigger = {
+			command_power > 24
+	  	}
+
+		custom_cost_text = decision_cost_CP_25
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	launch_operation_iron_fist = {
 
 		visible = {
