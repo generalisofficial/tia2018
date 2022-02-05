@@ -1,73 +1,31 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
 	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "3rd Brigade"
-		location = 2038
-		division_template = "Mechanized Brigade"
+		name = "3rd Infantry Brigade"
+		location = 2038 #Freetown
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Brigade"
-		location = 2038
-		division_template = "Motorized Brigade"
+		name = "4th Infantry Brigade"
+		location = 2038 #Makeni
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "5th Brigade"
-		location = 2094
-		division_template = "Motorized Brigade"
+		name = "5th Infantry Brigade"
+		location = 2094 #Bo
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
-	}
-	
+	}	
 }

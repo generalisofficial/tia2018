@@ -1,83 +1,71 @@
 ﻿division_template = {
-	name = "Desert Force"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Motorized Brigade"
-	
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		armored_car_recon = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Mechanized Brigade"
-	
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_PAR_02
+
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 0 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "Mechanized Forces of Niger"
-		location = 12707
-		division_template = "Mechanized Brigade"
+		name = "Zinder Defense Zone"
+		location = 10758 #Zinder
+		division_template = "Airborne Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Auxiliary Brigade"
-		location = 8028
-		division_template = "Motorized Brigade"
+		name = "Maradi Defense Zone"
+		location = 8028 #Maradi
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Northern Force"
-		location = 4913
-		division_template = "Desert Force"
+		name = "Tahoua Defense Zone"
+		location = 13519 #Tahoua
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Northern Force"
-		location = 1956
-		division_template = "Desert Force"
+		name = "Tillabéri Defense Zone"
+		location = 13518 #Tillabéri
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "Dosso Defense Zone"
+		location = 2056 #Dosso
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Diffa Defense Zone"
+		location = 13517 #Diffa
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Agadez Defense Zone"
+		location = 13523 #Agadez
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###

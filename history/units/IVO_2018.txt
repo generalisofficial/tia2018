@@ -1,17 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -19,45 +8,120 @@ division_template = {
 		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
 	}
 }
 
-units = {
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armoured Brigade"
+	division_names_group = GENERIC_ARM_03
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
 	division = {
 		name = "1st Brigade"
-		location = 10803
-		division_template = "Motorized Brigade"
+		location = 13648
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "2nd Brigade"
+		location = 10803
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Brigade"
+		location = 13640
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Brigade"
+		location = 10762
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Brigade"
+		location = 13651
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Brigade"
+		location = 13649
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Brigade"
+		location = 13648
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Brigade"
+		location = 10803
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Brigade"
+		location = 13640
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Brigade"
 		location = 10762
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Brigade"
-		location = 8065
+		name = "11th Brigade"
+		location = 13651
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "12th Brigade"
+		location = 13649
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Brigade"
+		location = 13648
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Brigade"
+		location = 13648
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
-### Air OOB ### - No combat aircraft as of 2016.
+### Air OOB ### - No combat aircraft.

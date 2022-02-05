@@ -1,28 +1,34 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Cavalry Brigade"
+	division_names_group = GENERIC_CAV_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
 	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -30,37 +36,57 @@ division_template = {
 }
 
 units = {
-	
 	division = {
-		name = "1st Division"
-		location = 10362 #Based on Montevideo
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Division"
-		location = 10362 #Based on San José
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Division"
-		location = 1613 #Based on Tacuarembó
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Division"
-		location = 12336 #Based on Lavalleja
-		division_template = "Mechanized Brigade"
+		name = "1st Infantry Brigade"
+		location = 10362 #Montevideo
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Armored Brigade"
-		location = 12496 #Based on Durazno
+		name = "2nd Infantry Brigade"
+		location = 4457 #Colonia
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 12468 #Salto
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 12336 #Minas
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		location = 12496 #Durazno
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Cavalry Brigade"
+		location = 1626 #Rivera
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Cavalry Brigade"
+		location = 1641 #Cerro Largo
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Cavalry Brigade"
+		location = 10362 #Montevideo
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Armoured Brigade"
+		location = 10362 #Montevideo
 		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}

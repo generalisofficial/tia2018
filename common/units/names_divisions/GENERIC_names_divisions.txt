@@ -106,6 +106,43 @@ GENERIC_INFB_01 =
 	}
 }
 
+GENERIC_MILITIA_01 = 
+{
+	name = "Militia Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dth Militia Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Militia Brigade" }
+		2 = { "%dnd Militia Brigade" }
+		3 = { "%drd Militia Brigade" }
+		4 = { "%dth Militia Brigade" }
+		5 = { "%dth Militia Brigade" }
+		6 = { "%dth Militia Brigade" }
+		7 = { "%dth Militia Brigade" }
+		8 = { "%dth Militia Brigade" }
+		9 = { "%dth Militia Brigade" }
+		10 = { "%dth Militia Brigade" }
+		11 = { "%dth Militia Brigade" }
+		12 = { "%dth Militia Brigade" }
+		13 = { "%dth Militia Brigade" }
+		14 = { "%dth Militia Brigade" }
+		15 = { "%dth Militia Brigade" }
+		16 = { "%dth Militia Brigade" }
+		17 = { "%dst Militia Brigade" }
+		18 = { "%dnd Militia Brigade" }
+		19 = { "%drd Militia Brigade" }
+		20 = { "%dth Militia Brigade" }
+	}
+}
+
 GENERIC_CAV_01 = 
 {
 	name = "Cavalry Division"
@@ -187,6 +224,33 @@ GENERIC_MOT_01 =
 	}
 }
 
+GENERIC_MOT_02 = 
+{
+	name = "Motorised Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%dth Motorised Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Motorised Brigade" }
+		2 = { "%dnd Motorised Brigade" }
+		3 = { "%drd Motorised Brigade" }
+		4 = { "%dth Motorised Brigade" }
+		5 = { "%dth Motorised Brigade" }
+		6 = { "%dth Motorised Brigade" }
+		7 = { "%dth Motorised Brigade" }	
+		8 = { "%dth Motorised Brigade" }
+		9 = { "%dth Motorised Brigade" }
+		10 = { "%dth Motorised Brigade" }
+	}
+}
+
 GENERIC_MEC_01 = 
 {
 	name = "Mechanised Division"
@@ -211,6 +275,33 @@ GENERIC_MEC_01 =
 		8 = { "%dth Mechanised Division" }
 		9 = { "%dth Mechanised Division" }
 		10 = { "%dth Mechanised Division" }
+	}
+}
+
+GENERIC_MEC_02 = 
+{
+	name = "Mechanised Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	fallback_name = "%dth Mechanised Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Mechanised Brigade" }
+		2 = { "%dnd Mechanised Brigade" }
+		3 = { "%drd Mechanised Brigade" }
+		4 = { "%dth Mechanised Brigade" }
+		5 = { "%dth Mechanised Brigade" }
+		6 = { "%dth Mechanised Brigade" }
+		7 = { "%dth Mechanised Brigade" }	
+		8 = { "%dth Mechanised Brigade" }
+		9 = { "%dth Mechanised Brigade" }
+		10 = { "%dth Mechanised Brigade" }
 	}
 }
 
@@ -268,6 +359,33 @@ GENERIC_ARM_02 =
 	}
 }
 
+GENERIC_ARM_03 = 
+{
+	name = "Armoured Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%dth Armoured Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Armoured Brigade" }
+		2 = { "%dnd Armoured Brigade" }
+		3 = { "%drd Armoured Brigade" }
+		4 = { "%dth Armoured Brigade" }
+		5 = { "%dth Armoured Brigade" }
+		6 = { "%dth Armoured Brigade" }
+		7 = { "%dth Armoured Brigade" }
+		8 = { "%dth Armoured Brigade" }
+		9 = { "%dth Armoured Brigade" }
+		10 = { "%dth Armoured Brigade" }
+	}
+}
+
 GENERIC_PAR_01 = 
 {
 	name = "Airborne Division"
@@ -292,6 +410,33 @@ GENERIC_PAR_01 =
 		8 = { "%dth Airborne Division" }
 		9 = { "%dth Airborne Division" }
 		10 = { "%dth Airborne Division" }
+	}
+}
+
+GENERIC_PAR_02 = 
+{
+	name = "Airborne Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	fallback_name = "%dth Airborne Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Airborne Brigade" }
+		2 = { "%dnd Airborne Brigade" }	
+		3 = { "%drd Airborne Brigade" }
+		4 = { "%dth Airborne Brigade" }
+		5 = { "%dth Airborne Brigade" }
+		6 = { "%dth Airborne Brigade" }
+		7 = { "%dth Airborne Brigade" }	
+		8 = { "%dth Airborne Brigade" }
+		9 = { "%dth Airborne Brigade" }
+		10 = { "%dth Airborne Brigade" }
 	}
 }
 
