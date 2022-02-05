@@ -1,3 +1,4 @@
+
 state={
 	id=1011
 	name="STATE_1011"
@@ -9,25 +10,30 @@ state={
 	history={
 		owner = GRE
 		victory_points = {
-			1109 1
+			1109 1 
 		}
 		victory_points = {
-			7127 2
+			7127 2 
 		}
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 1
 			military_industry = 1
+			7127 = {
+				naval_base = 1
+				
+			}
 
 		}
 		add_core_of = GRE
 
 	}
-	
+
 	provinces={
-		976 1109 3864 7127 11895 
+		976 1109 3864 7127 11895 14187 
 	}
 	manpower=547390
 	buildings_max_level_factor=1.000
 	state_category=state_level_3
+	local_supplies=0.000
 }

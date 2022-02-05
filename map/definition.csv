@@ -831,7 +831,7 @@
 830;4;31;248;sea;false;ocean;0
 831;4;33;0;land;false;farmland;2
 832;4;33;55;land;false;farmland;1
-833;4;33;205;land;false;hills;1
+833;4;33;205;land;false;mountain;1
 834;4;33;244;sea;false;ocean;0
 835;4;34;232;sea;false;ocean;0
 836;4;36;20;land;false;hills;6
@@ -861,7 +861,7 @@
 860;4;60;95;land;false;forest;2
 861;4;60;145;land;false;mountain;6
 862;4;63;5;land;false;hills;2
-863;4;63;60;land;true;hills;1
+863;4;63;60;land;false;hills;1
 864;4;63;210;land;false;hills;7
 865;4;66;25;land;true;forest;2
 866;4;66;70;land;true;forest;2
@@ -3912,7 +3912,7 @@
 3911;46;126;93;land;false;mountain;2
 3912;46;126;198;land;false;mountain;6
 3913;46;129;58;land;false;plains;6
-3914;46;129;163;land;false;hills;1
+3914;46;129;163;land;false;mountain;1
 3915;46;129;208;land;false;mountain;1
 3916;46;132;23;land;false;plains;7
 3917;46;132;128;land;true;forest;2
@@ -6928,7 +6928,7 @@
 6927;88;126;156;land;true;urban;1
 6928;88;129;71;land;true;hills;6
 6929;88;129;221;land;false;forest;2
-6930;88;132;36;land;false;mountain;1
+6930;88;132;36;land;false;hills;1
 6931;88;132;81;land;false;mountain;1
 6932;88;132;186;land;false;hills;6
 6933;88;135;1;land;false;farmland;1
@@ -11816,7 +11816,7 @@
 11815;172;96;222;land;false;farmland;6
 11816;172;99;82;land;true;hills;1
 11817;172;99;132;land;false;hills;2
-11818;172;99;187;land;true;hills;1
+11818;172;99;187;land;true;urban;1
 11819;172;102;47;land;false;hills;1
 11820;172;102;152;land;false;hills;1
 11821;172;105;12;land;false;farmland;1
@@ -13959,8 +13959,8 @@
 13958;200;255;130;land;true;plains;4
 13959;189;255;188;land;true;plains;4
 13960;213;255;89;land;true;plains;4
-13961;55;55;180;lake;false;mountain;1
-13962;92;37;221;lake;false;mountain;1
+13961;55;55;180;land;true;plains;1
+13962;92;37;221;land;false;mountain;1
 13963;211;187;150;land;true;plains;1
 13964;164;170;102;land;true;urban;5
 13965;35;44;86;land;true;urban;6
@@ -14183,3 +14183,15 @@
 14182;62;91;47;land;true;urban;1
 14183;175;136;91;land;false;desert;7
 14184;138;64;178;land;false;desert;7
+14185;255;212;104;land;true;hills;1
+14186;255;94;131;land;true;hills;1
+14187;127;147;116;land;true;hills;1
+14188;92;130;94;land;true;hills;1
+14189;130;85;89;land;true;hills;1
+14190;133;116;193;land;true;hills;1
+14191;55;55;102;land;true;hills;1
+14192;188;107;110;land;false;mountain;1
+14193;204;42;118;land;true;hills;1
+14194;154;192;206;land;true;hills;1
+14195;204;105;59;land;true;hills;1
+14196;81;104;255;land;false;plains;1

@@ -715,12 +715,11 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				NOT = { has_government = islamist }
-				if = {
-					limit = {
-						original_tag = VAT
+				NOT = {
+					OR = {
+						has_country_flag = coalition_islamist
+						has_country_leader_ideology = theocrat
 					}
-					NOT = { original_tag = VAT }
 				}
 				if = {
 					limit = {
@@ -749,7 +748,12 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				NOT = { has_government = islamist original_tag = VAT }
+				NOT = {
+					OR = {
+						has_country_flag = coalition_islamist
+						has_country_leader_ideology = theocrat
+					}
+				}
 			}
 			
 			modifier = {
