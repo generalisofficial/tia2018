@@ -457,7 +457,7 @@ ideas = {
 					OR = {
 						has_government = classical_liberal
 						has_government = social_democrat
-						has_government = sociaL_liberal
+						has_government = social_liberal
 						has_government = socialist
 					}
 				}
@@ -1048,98 +1048,81 @@ ideas = {
    }
 
 	######################################
-	#	WOMEN'S RIGHTS
+	#	BIRTH CONTROL POLICY
 	######################################
    
-   womens_rights = {
+  	birth_control_policy = {
 		law = yes
 		
-		patriarchy = {
+		population_control = {
 			cost = 150
 			removal_cost = -1
 			level = 3
-			
+
 			available = {
-				NOT = { 
+				NOT = {
 					OR = {
-						has_country_flag = coalition_progressive
-						has_country_flag = coalition_social_democrat
-						has_country_flag = coalition_social_liberal
-						has_country_flag = coalition_socialist
-						has_country_flag = coalition_classical_liberal
+						has_country_flag = coalition_conservative
+						has_country_flag = coalition_national_conservative
+						has_country_flag = coalition_islamist
 					}
 				}
 			}
 			
 			modifier = {
-				stability_factor = -0.1
-				MONTHLY_POPULATION = 0.1
-				female_random_country_leader_chance = 0
+				custom_modifier_tooltip = TT_population_control
+				MONTHLY_POPULATION = -0.2
 			}
 			
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 1
-				modifier = {
-				 	factor = 25
-					OR = {
-				 		has_government = islamist
-						has_government = fascist
-					}
-			 	}
+				factor = 0
+				# Add in economic rework
 			}
 		}
 		
-		family_values = {
+		pro_choice = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-			
-			available = {
-			
-			}
-			
-			modifier = {
-				female_random_country_leader_chance = 0.25
-			}
-			
-			cancel_if_invalid = no
 
 			default = yes
+
+			modifier = {
+				stability_factor = 0.025
+			}
 
 			ai_will_do = {
 				factor = 1
 				modifier = {
-				 	factor = 25
+					factor = 10
 					OR = {
-				 		has_government = right_wing_nationalist
-						has_government = national_conservative
-						has_government = conservative
-						has_government = communist
+						has_government = classical_liberal
+						has_government = social_liberal
+						has_government = progressive
 					}
-			 	}
+				}
 			}
 		}
 		
-		gender_equality = {
+		pro_life = {
 			cost = 150
 			removal_cost = -1
 			level = 1
-			
+
 			available = {
-				NOT = { 
+				NOT = {
 					OR = {
-						has_country_flag = coalition_islamist
-						has_country_flag = coalition_fascist
+						has_country_flag = coalition_progressive
+						has_country_flag = coalition_social_liberal
 					}
 				}
 			}
 			
 			modifier = {
-				stability_factor = 0.05
-				MONTHLY_POPULATION = -0.1
-				female_random_country_leader_chance = 0.5
+				stability_factor = -0.025
+				MONTHLY_POPULATION = 0.2
 			}
 			
 			cancel_if_invalid = no
@@ -1147,15 +1130,12 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 				modifier = {
-				 	factor = 25
+					factor = 10
 					OR = {
-						has_government = socialist
-						has_government = progressive
-						has_government = social_democrat
-						has_government = social_liberal
-						has_government = classical_liberal
+						has_government = conservative
+						has_government = national_conservative
 					}
-			 	}
+				}
 			}
 		}
    }
@@ -1400,74 +1380,57 @@ ideas = {
    }
    
     ######################################
-	#	ABORTION LAW
+	#	WORKER'S RIGHTS
 	######################################
    
-    abortion_law = {
+    workers_rights = {
 		law = yes
 		
-		abortion_illegal_without_exceptions = {
+		organized_labour_discouraged = {
 			cost = 150
 			removal_cost = -1
 			level = 3
 			
 			available = {
 				NOT = {
-					OR = {
-						has_country_flag = coalition_socialist
-						has_country_flag = coalition_progressive
-						has_country_flag = coalition_social_democrat
-						has_country_flag = coalition_sociaL_liberal
-						has_country_flag = coalition_classical_liberal
-					}
+					has_country_flag = coalition_social_democrat
 				}
 			}
 			
 			modifier = {
 				stability_factor = -0.05
-				MONTHLY_POPULATION = 0.15
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 			
 			cancel_if_invalid = no
 		}
 		
-		abortion_illegal_with_exceptions = {
+		organized_labour_tolerated = {
 			cost = 150
 			removal_cost = -1
 			level = 2
-			
-			available = {
-			
-			}
-			
-			modifier = {
-			
-			}
-			
-			cancel_if_invalid = no
+
 			default = yes
 		}
 		
-		abortion_on_request = {
+		organized_labour_encouraged = {
 			cost = 150
 			removal_cost = -1
 			level = 1
 			
 			available = {
 				NOT = {
-					OR = {
-						has_country_flag = coalition_islamist
-						has_country_flag = coalition_fascist
-						has_country_flag = coalition_monarchist
-						has_country_flag = coalition_national_conservative
-						has_country_flag = coalition_conservative
-					}
+					has_country_flag = coalition_classical_liberal
 				}
 			}
 			
 			modifier = {
 				stability_factor = 0.05
-				MONTHLY_POPULATION = -0.15
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 			
 			cancel_if_invalid = no

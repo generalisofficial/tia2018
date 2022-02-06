@@ -86,7 +86,7 @@ country_event = { #2019 Conservative Party leadership election
 		create_country_leader = {
 	        name = "Boris Johnson"
 	        picture = GFX_Portrait_ENG_Boris_Johnson
-	        ideology = social_conservative
+	        ideology = one_nation_conservative
         }
 	}
 	
@@ -99,7 +99,7 @@ country_event = { #2019 Conservative Party leadership election
 		create_country_leader = {
 	        name = "Jeremy Hunt"
 	        picture = GFX_Portrait_ENG_Jeremy_Hunt
-	        ideology = social_conservative
+	        ideology = one_nation_conservative
         }
 	}
 	
@@ -112,7 +112,7 @@ country_event = { #2019 Conservative Party leadership election
 		create_country_leader = {
 	        name = "Michael Gove"
 	        picture = GFX_Portrait_ENG_Michael_Gove
-	        ideology = social_conservative
+	        ideology = one_nation_conservative
         }
 	}
 }
@@ -469,5 +469,34 @@ country_event = { #Results of the Brexit trade agreement vote
 		clr_global_flag = ongoing_brexit_trade_agreement_vote
 		clear_variable = global.brexit_trade_agreement_vote_count_in_favor
 		clear_variable = global.brexit_trade_agreement_vote_count_against
+	}
+}
+
+country_event = { #End of the United Kingdom
+	id = britain.16
+	title = britain.16.t
+	desc = britain.16.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		country_exists = SCO
+		country_exists = WLS
+	}
+	
+	option = {
+		name = britain.16.o1
+		set_cosmetic_tag = ENGLAND
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+				OR = {
+					is_core_of = SCO
+					is_core_of = WLS
+				}
+			}
+			remove_core_of = ENG
+		}
 	}
 }
