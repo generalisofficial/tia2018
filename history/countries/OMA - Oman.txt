@@ -2,9 +2,16 @@
 
 oob = "OMA_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "OMA_2018_naval_mtg"
+	else = {
+		set_naval_oob = "OMA_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 set_convoys = 220
-
 
 set_country_flag = country_language_arabic
 
@@ -53,7 +60,10 @@ set_technology = {
 	CAS2 = 1
 	fighter1 = 1
 	fighter2 = 1
+	fighter3 = 1
 	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
 	strategic_bomber1 = 1
 	
 	## Engineering ##
@@ -67,6 +77,8 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_destroyer = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_submarine = 1
@@ -77,6 +89,8 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_submarine = 1
@@ -128,3 +142,39 @@ set_popularities = {
 }
 
 recruit_character = OMA_qaboos_bin_said
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Khareef Class"
+		type = ship_hull_light_3
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Qahir Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+}	

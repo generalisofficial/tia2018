@@ -1,5 +1,6 @@
 ﻿division_template = {
-	name = "Infantry Division"
+	name = "Dubai Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -11,65 +12,74 @@
 		light_mechanized = { x = 1 y = 3 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
 	}
 }
+
+division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
 division_template = {
 	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		light_mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "UAE Armored Division"
+		name = "Royal Guard"
+		location = 7960
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Armored Brigade"
 		location = 7960
 		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
-	}
-	
+	}	
 	division = {
-		name = "1st Infantry Division"
+		name = "2nd Armored Brigade"
 		location = 7960
-		division_template = "Infantry Division"
+		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Infantry Division"
-		location = 2048
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Infantry Division"
-		location = 8108
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Infantry Division"
-		location = 7960
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
+	}	
 }
 
 ### Air OOB ###

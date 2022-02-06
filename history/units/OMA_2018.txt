@@ -1,198 +1,124 @@
-﻿	division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
+﻿division_template = {
+	name = "Royal Guard Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		motorized = { x = 0 y = 4 }
-	}
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	} 
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		anti_tank = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 0 }    
 	}
+	priority = 2
 }
+
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Infantry Brigade (Large)"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		mechanized = { x = 0 y = 4 }
-	}
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mot_artillery_brigade = { x = 1 y = 2 }
+	} 
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		anti_tank = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
+		engineer = { x = 0 y = 0 }    
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+		mot_artillery_brigade = { x = 1 y = 1 }
+	} 
+	support = {
+		logistics_company = { x = 0 y = 0 }    
+	}
+}
+
+division_template = {
+	name = "Border Guard Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	} 
+}
+
+division_template = {
+	name = "Armoured Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		light_mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 2 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		anti_tank = { x = 0 y = 2 }
+		armored_car_recon = { x = 0 y = 0 }    
 	}
 }
+
 division_template = {
-	name = "Artillery Regiment"
+	name = "Paratrooper Regiment"
+	division_names_group = GENERIC_PAR_02
 	
 	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-		artillery_brigade = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		anti_tank = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "1st Artillery Regiment"
-		location = 2103
-		division_template = "Artillery Regiment"
+		name = "Royal Guard of Oman"
+		location = 10760 #Muscar
+		division_template = "Royal Guard Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Artillery Regiment"
-		location = 2018
-		division_template = "Artillery Regiment"
+		name = "1st Armoured Brigade"
+		location = 14102 #Izki
+		division_template = "Armoured Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Artillery Regiment"
-		location = 4993
-		division_template = "Artillery Regiment"
+		name = "11th Infantry Brigade"
+		location = 2103 #Salalah
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Artillery Regiment"
-		location = 10760
-		division_template = "Artillery Regiment"
+		name = "23rd Infantry Brigade"
+		location = 10760 #Muscar
+		division_template = "Infantry Brigade (Large)"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Armored Brigade"
-		location = 10760
-		division_template = "Armored Brigade"
+		name = "Border Guard Brigade"
+		location = 14098 #Haima
+		division_template = "Border Guard Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Armored Brigade"
-		location = 10760
-		division_template = "Armored Brigade"
+		name = "Sultan of Oman's Parachute Regiment"
+		location = 14102 #Rustaw
+		division_template = "Paratrooper Regiment"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "1st Infantry Brigade 'Muscat Regiment'"
-		location = 10760
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "2nd Infantry Brigade"
-		location = 2018
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Infantry Brigade"
-		location = 2103
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Infantry Brigade"
-		location = 5049
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "5th Infantry Brigade"
-		location = 8002
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th (Reserve) Infantry Brigade"
-		location = 10760
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "7th (Reserve) Infantry Brigade"
-		location = 10760
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "8th (Reserve) Infantry Brigade"
-		location = 1947
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "9th (Reserve) Infantry Brigade"
-		location = 1947
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "10th (Reserve) Infantry Brigade"
-		location = 2059
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "11th (Reserve) Infantry Brigade"
-		location = 1947
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
@@ -200,10 +126,42 @@ units = {
 air_wings = {
 	294 = {
 		#F-16C
+		fighter_equipment_2 = {
+			owner = "OMA" 
+			amount = 23
+		}
+		name = "18th Multi Purpose Squadron"
+	}
+	294 = {
+		#Typhoon
 		fighter_equipment_3 = {
 			owner = "OMA" 
-			amount = 14
+			amount = 12
 		}
-
+		name = "8th Fighter Squadron"
+	}
+	294 = {
+		#BAE Hawk 200
+		CAS_equipment_2 = {
+			owner = "OMA" 
+			amount = 21
+		}
+		name = "6th Bomber Squadron (Light)"
+	}
+	294 = {
+		#CASA C-295
+		nav_bomber_equipment_3 = {
+			owner = "OMA" 
+			amount = 4
+		}
+		name = "20th Bomber Squadron (Naval)"
+	}
+	294 = {
+		#C-130H + C-130J Super Hercules
+		transport_equipment_1 = {
+			owner = "OMA" 
+			amount = 5
+		}
+		name = "2nd Transport Squadron"
 	}
 }
