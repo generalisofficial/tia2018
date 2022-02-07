@@ -1,79 +1,43 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Armored Division"
+	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-		light_mechanized = { x = 1 y = 3 }
-		light_mechanized = { x = 1 y = 4 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
-		marine = { x = 0 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-	
-	priority = 2
 }
 
 units = {
 	division = {
-		name = "Royal Bahraini Army"
+		name = "1st Armored Brigade"
 		location = 13204
-		division_template = "Infantry Brigade"
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Mechanized Infantry Brigade"
+		location = 13204
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 }
@@ -83,16 +47,16 @@ units = {
 air_wings = {
 	856 = {
 		#F-16C
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "BAH" 
 			amount = 17
 		}
 	}
 	856 = {
-		#F-5E
-		fighter_equipment_1 = {
+		#C-130J
+		transport_plane_equipment_1 = {
 			owner = "BAH" 
-			amount = 4
+			amount = 1
 		}
 	}
 }

@@ -1,0 +1,15 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Bahrain Naval Force"
+		naval_base = 13204 #Manama
+		task_force = {				
+			name = "Royal Bahrain Naval Force"			
+			location = 13204 #Manama
+			ship = { name = "RBNS Al-Manama" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BHR version_name = "Al-Manama Class" } } }
+			ship = { name = "RBNS Al-Muharraq" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BHR version_name = "Al-Manama Class" } } }
+			ship = { name = "RBNS Sabha" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BHR version_name = "Oliver Hazard Perry Class" } } }
+		}				
+	}
+} 
+

@@ -2,9 +2,16 @@
 
 oob = "SAU_2018"
 
-set_research_slots = 4
-set_convoys = 370
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SAU_2018_naval_mtg"
+	else = {
+		set_naval_oob = "SAU_2018_naval_legacy"
+	}
+}
 
+set_research_slots = 4
+set_convoys = 374
 
 set_country_flag = country_language_arabic
 
@@ -52,11 +59,13 @@ set_technology = {
 	CAS2 = 1
 	fighter1 = 1
 	fighter2 = 1
+	fighter3 = 1
 	naval_bomber1 = 1
 	strategic_bomber1 = 1
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -66,6 +75,8 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_destroyer = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_submarine = 1
@@ -76,6 +87,8 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_submarine = 1
@@ -152,3 +165,94 @@ set_popularities = {
 
 recruit_character = SAU_salman_bin_abdulaziz
 recruit_character = SAU_yahya_assiri
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Badr Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Sandown Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Avante Class"
+		type = ship_hull_light_3
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Al Madinah Class"
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+			rear_2_custom_slot = ship_depth_charge_1
+		}	
+	}
+
+	create_equipment_variant = {
+		name = "Al Riyadh Class"
+		type = ship_hull_cruiser_2
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+			rear_2_custom_slot = ship_depth_charge_1
+		}	
+	}
+}	
+

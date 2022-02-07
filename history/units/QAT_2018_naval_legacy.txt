@@ -1,0 +1,17 @@
+﻿#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	### Ships Under Contruction ###
+	# FS: Doha Class (Ships: Al Zubarah, Damsah, Al Khor, Sumaysimah)
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_4
+			creator = "QAT" 
+		}
+		requested_factories = 2
+		progress = 0.75
+		amount = 4
+	}
+}	

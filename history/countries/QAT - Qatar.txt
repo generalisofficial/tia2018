@@ -2,9 +2,16 @@
 
 oob = "QAT_2018"
 
-set_research_slots = 3
-set_convoys = 100
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "QAT_2018_naval_mtg"
+	else = {
+		set_naval_oob = "QAT_2018_naval_legacy"
+	}
+}
 
+set_research_slots = 3
+set_convoys = 136
 
 set_country_flag = country_language_arabic
 
@@ -57,6 +64,7 @@ set_technology = {
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -66,6 +74,9 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_destroyer = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
+		advanced_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_submarine = 1
@@ -76,6 +87,9 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
+		advanced_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_submarine = 1
@@ -138,3 +152,23 @@ set_popularities = {
 }
 
 recruit_character = QAT_tamim_bin_hamad
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Doha Class"
+		type = ship_hull_light_4
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_4
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_anti_air_2
+		}
+	}
+}	

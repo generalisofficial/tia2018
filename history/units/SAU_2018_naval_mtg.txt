@@ -1,0 +1,49 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Eastern Fleet"
+		naval_base = 1955 #Jubail
+		task_force = {				
+			name = "Eastern Fleet"			
+			location = 1955 #Jubail
+			ship = { name = "HMS Badr" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Al Yarmook" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Hitteen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Tabuk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Al Jawf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Sandown Class" } } }
+			ship = { name = "HMS Al Kharj" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Sandown Class" } } }
+			ship = { name = "HMS Shaqra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Sandown Class" } } }
+		}				
+	}
+	fleet = {
+		name = "Western Fleet"
+		naval_base = 12883 #Jeddah
+		task_force = {				
+			name = "Western Fleet"			
+			location = 12883 #Jeddah
+			ship = { name = "HMS Al Madinah" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Hofouf" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Abha" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Taif" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Al Riyadh" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SAU version_name = "Al Riyadh Class" } } }
+			ship = { name = "HMS Makkah" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SAU version_name = "Al Riyadh Class" } } }
+			ship = { name = "HMS Dammam" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SAU version_name = "Al Riyadh Class" } } }
+		}				
+	}
+} 
+
+instant_effect = {
+	### Ships Under Contruction ###
+	# FS: Avante Class (Ships: Al Jubail, Al Diriyah, Hail, Jazan, Unaizah)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_3
+			creator = "QAT" 
+			version_name = "Avante Class"
+		}
+		requested_factories = 2
+		progress = 0.1
+		amount = 5
+	}
+}	
+

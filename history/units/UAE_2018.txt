@@ -64,22 +64,64 @@ division_template = {
 units = {
 	division = {
 		name = "Royal Guard"
-		location = 7960
+		location = 13944
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "1st Armored Brigade"
-		location = 7960
+		location = 13944
 		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}	
 	division = {
 		name = "2nd Armored Brigade"
-		location = 7960
+		location = 13943
 		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Mechanized Infantry Brigade"
+		location = 2048
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Mechanized Infantry Brigade"
+		location = 13942
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
 	}	
+	division = {
+		name = "3rd Mechanized Infantry Brigade"
+		location = 8108
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 13942
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		location = 13942
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th (Dubai) Mechanized Infantry Brigade"
+		location = 13254 #Dubai
+		division_template = "Dubai Brigade"
+		start_experience_factor = 0.3
+	}	
+	division = {
+		name = "7th (Dubai) Mechanized Infantry Brigade"
+		location = 13254 #Dubai
+		division_template = "Dubai Brigade"
+		start_experience_factor = 0.3
+	}		
 }
 
 ### Air OOB ###
@@ -87,26 +129,30 @@ units = {
 air_wings = {
 	826 = {
 		#F-16E
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "UAE" 
-			amount = 54
+			amount = 78
 		}
-
 	}
 	826 = {
 		#Mirage 2000
 		fighter_equipment_3 = {
 			owner = "UAE" 
-			amount = 37
+			amount = 59
 		}
-
 	}
-	658 = {
-		#Mirage 2000
-		fighter_equipment_3 = {
+	826 = {
+		#AT-802...Bruh, they're using crop dusters as CAS now?
+		CAS_equipment_2 = {
 			owner = "UAE" 
-			amount = 18
+			amount = 20
 		}
-
+	}
+	826 = {
+		#Seeker II
+		scout_plane_equipment_2 = {
+			owner = "UAE" 
+			amount = 11
+		}
 	}
 }

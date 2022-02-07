@@ -467,6 +467,33 @@ GENERIC_MAR_01 =
 	}
 }
 
+GENERIC_MAR_02 = 
+{
+	name = "Marine Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "%dth Marine Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Marine Brigade" }
+		2 = { "%dnd Marine Brigade" }
+		3 = { "%drd Marine Brigade" }
+		4 = { "%dth Marine Brigade" }
+		5 = { "%dth Marine Brigade" }
+		6 = { "%dth Marine Brigade" }
+		7 = { "%dth Marine Brigade" }
+		8 = { "%dth Marine Brigade" }
+		9 = { "%dth Marine Brigade" }
+		10 = { "%dth Marine Brigade" }
+	}
+}
+
 GENERIC_MNT_01 = 
 {
 	name = "Mountain Division"

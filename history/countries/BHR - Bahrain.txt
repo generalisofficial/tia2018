@@ -2,9 +2,16 @@
 
 oob = "BHR_2018"
 
-set_research_slots = 3
-set_convoys = 40
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "BHR_2018_naval_mtg"
+	else = {
+		set_naval_oob = "BHR_2018_naval_legacy"
+	}
+}
 
+set_research_slots = 3
+set_convoys = 261
 
 set_country_flag = country_language_arabic
 
@@ -133,3 +140,39 @@ set_popularities = {
 }
 
 recruit_character = BHR_hamad_bin_isa
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Al-Manama Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Oliver Hazard Perry Class"
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+		}
+	}
+}	
