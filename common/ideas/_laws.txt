@@ -613,7 +613,6 @@ ideas = {
 				is_democracy = yes
 				NOT = { 
 					has_idea = violent_non_state_actor
-					has_government = monarchist 
 				}
 			}
 			
@@ -642,6 +641,18 @@ ideas = {
 			}
 			
 			cancel_if_invalid = yes
+		}
+
+		lottocratic_republic = {
+			cost = 500
+			removal_cost = -1
+			
+			available = {
+				is_democracy = yes
+				NOT = { 
+					has_idea = violent_non_state_actor
+				}
+			}
 		}
 
 		one_party_state = {
@@ -723,9 +734,9 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = USA
+						has_idea = idea_constitution_of_the_united_states
 					}
-					NOT = { has_idea = USA_first_amendment }
+					has_country_flag = first_amendment_repealed
 				}
 			}
 			
@@ -1200,7 +1211,12 @@ ideas = {
 			level = 2
 			
 			available = {
-			    NOT = { has_idea = USA_second_amendment }
+				if = {
+					limit = {
+						has_idea = idea_constitution_of_the_united_states
+					}
+					has_country_flag = second_amendment_repealed
+				}
 			}
 			
 			modifier = {
@@ -1224,7 +1240,12 @@ ideas = {
 			level = 1
 			
 			available = {
-			    NOT = { has_idea = USA_second_amendment }
+				if = {
+					limit = {
+						has_idea = idea_constitution_of_the_united_states
+					}
+					has_country_flag = second_amendment_repealed
+				}
 			}
 			
 			modifier = {
@@ -1274,9 +1295,9 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = USA
+						has_idea = idea_constitution_of_the_united_states
 					}
-					NOT = { has_idea = USA_first_amendment }
+					has_country_flag = first_amendment_repealed
 				}
 			}
 			
@@ -1312,9 +1333,9 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = USA
+						has_idea = idea_constitution_of_the_united_states
 					}
-					NOT = { has_idea = USA_first_amendment }
+					has_country_flag = first_amendment_repealed
 				}
 			}
 

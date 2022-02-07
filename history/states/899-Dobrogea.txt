@@ -1,10 +1,9 @@
+
 state={
 	id=899
 	name="STATE_899"
-	provinces={
-		657 687 3076 9635 
-	}
-	history = {
+
+	history={
 		owner = ROM
 		add_core_of = ROM
 		victory_points = {
@@ -13,12 +12,24 @@ state={
 		buildings = {
 			civilian_industry = 1
 			shipyard = 1
-			657 = { naval_base = 8 }
-			687 = { naval_base = 1 }
+			657 = {
+				naval_base = 8
+
+			}
+			687 = {
+				naval_base = 1
+
+			}
+
 		}
+
+	}
+
+	provinces={
+		657 687 3076 9635 13864 
 	}
 	manpower=950000
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_5
+	state_category=state_level_5
+	local_supplies=0.000
 }

@@ -3,17 +3,6 @@ ideas = {
 	country = {
 	
 		land_of_the_free = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
 			picture = land_of_the_free
 			
 			modifier = {
@@ -23,11 +12,6 @@ ideas = {
 		
 		american_militarism = {
 			picture = american_militarism
-		
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			
-			removal_cost = -1
 			
 			modifier = {
 				war_support_factor = 0.2
@@ -39,38 +23,37 @@ ideas = {
 			}
 		}
 		
-		USA_first_amendment = {
-			picture = usa_constitution
-			
-			allowed = { always = no }
-			allowed_civil_war = { is_democracy = yes }
-			
-			removal_cost = -1
+		idea_constitution_of_the_united_states = {
+			picture = great_seal
 			
 			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.05
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = first_amendment_repealed
+						}
+					}
+					custom_modifier_tooltip = TT_first_amendment
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = second_amendment_repealed
+						}
+					}
+					custom_modifier_tooltip = TT_second_amendment
+				}
 			}
-		}
-		
-		USA_second_amendment = {
-			picture = usa_constitution
-			
-			allowed = { always = no }
-			allowed_civil_war = { is_democracy = yes }
-			
-			removal_cost = -1
-			
-			modifier = {
-			
+
+			cancel = {
+				is_democracy = no
 			}
 		}
 		
 		USA_prism_idea = {
 			picture = spy_intel
-			
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			
-			removal_cost = -1
 			
 			modifier = {
 				decryption_factor = 0.1

@@ -2,24 +2,30 @@
 state={
 	id=857
 	name="STATE_857"
-	manpower = 530200
-	
-	state_category = state_level_5
 
 	history={
 		owner = TRA
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 1
+
 		}
 		add_core_of = TRA
 		add_core_of = MOL
-		victory_points = { 13209 2 }
-		victory_points = { 13213 1 }
+		victory_points = {
+			13209 2 
+		}
+		victory_points = {
+			13213 1 
+		}
+
 	}
 
 	provinces={
-		13209 13210 13212 13213 13214
+		13210 13213 13214 
 	}
-	
+	manpower=530200
+	buildings_max_level_factor=1.000
+	state_category=state_level_5
+	local_supplies=0.000
 }

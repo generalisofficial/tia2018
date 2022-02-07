@@ -652,3 +652,112 @@ country_event = {
 		election_pulse = yes
 	}
 }
+
+# Election - Sortition
+country_event = {
+	id = election.4
+	title = election.4.t
+	desc = election.4.d
+
+	is_triggered_only = yes
+
+	trigger = {
+	    has_idea = lottocratic_republic
+	}
+	
+	option = {
+		name = election.4.o1
+		random_list = {
+			9 = {
+				set_politics = {
+					ruling_party = islamist
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_islamist
+				set_variable = { ROOT.Coalition = islamist_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = fascist
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_fascist
+				set_variable = { ROOT.Coalition = fascist_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = right_wing_nationalist
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_right_wing_nationalist
+				set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = national_conservative
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_national_conservative
+				set_variable = { ROOT.Coalition = national_conservative_seats }
+			}
+			10 = {
+				set_politics = {
+					ruling_party = conservative
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_conservative
+				set_variable = { ROOT.Coalition = conservative_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = classical_liberal
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_classical_liberal
+				set_variable = { ROOT.Coalition = classical_liberal_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = social_liberal
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_social_liberal
+				set_variable = { ROOT.Coalition = social_liberal_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = social_democrat
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_social_democrat
+				set_variable = { ROOT.Coalition = social_democrat_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = progressive
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_progressive
+				set_variable = { ROOT.Coalition = progressive_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = socialist
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_socialist
+				set_variable = { ROOT.Coalition = socialist_seats }
+			}
+			9 = {
+				set_politics = {
+					ruling_party = communist
+					elections_allowed = yes
+				}
+				set_country_flag = coalition_communist
+				set_variable = { ROOT.Coalition = communist_seats }
+			}
+		}
+		set_parliament_graphics = yes
+		election_pulse = yes
+	}
+}
