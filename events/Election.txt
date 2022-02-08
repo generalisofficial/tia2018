@@ -258,33 +258,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-	    set_variable = { communist_seats = party_popularity@communist }
-		multiply_variable = { communist_seats = 100 }
-		set_variable = { socialist_seats = party_popularity@socialist }
-		multiply_variable = { socialist_seats = 100 }
-		set_variable = { progressive_seats = party_popularity@progressive }
-		multiply_variable = { progressive_seats = 100 }
-		set_variable = { social_democrat_seats = party_popularity@social_democrat }
-		multiply_variable = { social_democrat_seats = 100 }
-		set_variable = { social_liberal_seats = party_popularity@social_liberal }
-		multiply_variable = { social_liberal_seats = 100 }
-		set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
-		multiply_variable = { classical_liberal_seats = 100 }
-		set_variable = { conservative_seats = party_popularity@conservative }
-		multiply_variable = { conservative_seats = 100 }
-		set_variable = { national_conservative_seats = party_popularity@national_conservative }
-		multiply_variable = { national_conservative_seats = 100 }
-		set_variable = { monarchist_seats = party_popularity@monarchist }
-		multiply_variable = { monarchist_seats = 100 }
-		set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
-		multiply_variable = { right_wing_nationalist_seats = 100 }
-		set_variable = { fascist_seats = party_popularity@fascist }
-		multiply_variable = { fascist_seats = 100 }
-		set_variable = { islamist_seats = party_popularity@islamist }
-		multiply_variable = { islamist_seats = 100 }
-		set_variable = { ROOT.Coalition = party_popularity@ruling_party }
-		multiply_variable = { ROOT.Coalition = 100 }
-		set_parliament_graphics = yes
+	    quickset_parliament = yes
 	}
 	
 	option = {
@@ -663,6 +637,11 @@ country_event = {
 
 	trigger = {
 	    has_idea = lottocratic_republic
+	}
+
+	immediate = {
+		break_coalition = yes
+	    quickset_parliament = yes
 	}
 	
 	option = {
