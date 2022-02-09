@@ -522,13 +522,16 @@ domestic_affairs = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			OR = {
-				has_government = fascist
-				has_government = islamist
-				has_government = communist
-				has_government = right_wing_nationalist
-				has_government = monarchist
+			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+					has_government = fascist
+					has_government = islamist
+					has_government = communist
+					has_government = right_wing_nationalist
+					has_government = monarchist
+				}
 			}
 		}
 	}
@@ -558,12 +561,15 @@ domestic_affairs = {
 		
 		ai_will_do = {
 			factor = 1
-			OR = {
-				has_government = social_democrat
-				has_government = social_liberal
-				has_government = progressive
-				has_government = socialist
-				has_government = communist
+			modifier = {
+				factor = 1
+				OR = {
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = progressive
+					has_government = socialist
+					has_government = communist
+				}
 			}
 		}
 	}

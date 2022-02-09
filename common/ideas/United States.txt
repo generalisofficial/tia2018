@@ -29,22 +29,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_factor = -0.05
-				if = {
-					limit = {
-						NOT = {
-							has_country_flag = first_amendment_repealed
-						}
-					}
-					custom_modifier_tooltip = TT_first_amendment
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_country_flag = second_amendment_repealed
-						}
-					}
-					custom_modifier_tooltip = TT_second_amendment
-				}
+				custom_modifier_tooltip = TT_first_amendment
+				custom_modifier_tooltip = TT_second_amendment
 			}
 
 			cancel = {
