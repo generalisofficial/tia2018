@@ -490,7 +490,7 @@ guiTypes = {
 			{
 				name ="event_picture"
 				spriteType = "GFX_event_news_pic_overlay"
-				position = { x = 59 y = 175 }
+				position = { x = 59 y = 115 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
@@ -498,15 +498,15 @@ guiTypes = {
 			iconType = {
 				name ="event_picture_overlay"
 				spriteType = "GFX_event_news_pic_overlay"
-				position = { x = 59 y = 91 }
+				position = { x = 59 y = 9100 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}			
 			
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = 12 y = 143 }
-				font = "hoi4_typewriter22"
+				position = { x = 12 y = 78 }
+				font = "Helvetica_24b"
 				borderSize = {x = 0 y = 0}
 				text = "Title text here!"	
 				maxWidth = 500
@@ -516,22 +516,22 @@ guiTypes = {
 			
 			buttonType = {
 				name = "btn_minimize"
-				position = {x=10 y=10}
-				spriteType = "GFX_event_button_minimize"
+				position = {x=494 y=19}
+				spriteType = "GFX_event_skull"
 				clicksound = click_default
 			}
 		}
 
 		containerWindowType = {
 			name = "midsection"
-			position = { x=0 y=121 }	
+			position = { x=0 y=61 }	
 			size = { width = 580 height = 385 }
 			Orientation = UPPER_LEFT
 		
 			instantTextBoxType = {
 				name = "Description"
 				position = { x = 39 y = 225 }
-				font = "hoi4_typewriter16"
+				font = "Helvetica_16"
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
 				maxWidth = 460
@@ -570,8 +570,8 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "Name"
-			position = { x = 5 y = 0 }
-			font = "hoi_20bs"
+			position = { x = 5 y = 12 }
+			font = "Helvetica_16"
 			maxWidth = 340
 			maxHeight = 40
 			format = center
