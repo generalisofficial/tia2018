@@ -109,14 +109,14 @@ set_country_flag = catholic
 #Seimas
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 16.04 }
-set_variable = { social_liberal_seats = 38.61 }
-set_variable = { classical_liberal_seats = 9.45 }
-set_variable = { conservative_seats = 24.63 }
-set_variable = { national_conservative_seats = 5.72 }
+set_variable = { progressive_seats = 43.11 }
+set_variable = { social_democrat_seats = 12.40 }
+set_variable = { social_liberal_seats = 2.91 }
+set_variable = { classical_liberal_seats = 10.21 }
+set_variable = { conservative_seats = 22.62 }
+set_variable = { national_conservative_seats = 5.83 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 5.5 }
+set_variable = { right_wing_nationalist_seats = 5.83 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
@@ -128,19 +128,19 @@ add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {
-	ruling_party = social_liberal
-	last_election = "2016.10.9"
+	ruling_party = progressive
+	last_election = "2016.10.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    right_wing_nationalist = 5.55
-    conservative = 24.63
-    classical_liberal = 9.45
-    social_liberal = 38.61
-    social_democrat = 16.04
-    national_conservative = 5.72
+	conservative = 36.54
+    progressive = 24.08
+	classical_liberal = 18.24
+	social_democrat = 11.67
+	social_liberal = 7.29
+	national_conservative = 2.18
 }
 
 recruit_character = LIT_saulius_skvernelis
