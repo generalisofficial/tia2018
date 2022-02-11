@@ -430,4 +430,38 @@ foreign_affairs = {
 			}
 		}
 	}
+
+	apply_for_union_with_romania = {
+	
+		visible = {
+			original_tag = MOL
+			country_exists = ROM
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { has_war_with = ROM }
+		}
+		
+		complete_effect = {
+			ROM = { country_event = moldova.1 }
+		}
+		
+		icon = moldova
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_opinion = {
+					target = ROM
+					value > 0
+				}
+			}
+		}
+	}
 }
