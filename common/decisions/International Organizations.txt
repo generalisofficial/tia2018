@@ -24,6 +24,7 @@ international_organizations = {
 		
 		cost = 150
 		
+		days_remove = 7
 		days_re_enable = 360
 		
 		complete_effect = {
@@ -34,10 +35,10 @@ international_organizations = {
 				}
 				country_event = united_nations.1
 			}
-			country_event = {
-				id = united_nations.2
-				days = 7
-			}
+		}
+
+		remove_effect = {
+			country_event = united_nations.2
 		}
 		
 		ai_will_do = {

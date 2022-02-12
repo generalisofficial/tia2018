@@ -1,7 +1,73 @@
 political_actions = {
+	### Generic
+
+	war_support_campaign = {
+		icon = megaphone
+
+		available = {
+			threat > 0.1
+		}
+
+		visible = {
+			has_war_support < 1
+			NOT = { has_idea = no_standing_army }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		days_re_enable = 60
+
+		cost = 75
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 1
+				threat > 0.2
+			}
+			modifier = {
+				add = 1
+				threat > 0.3
+			}
+			modifier = {
+				add = 1
+				threat > 0.4
+			}
+			modifier = {
+				add = 1
+				threat > 0.5
+			}
+			modifier = {
+				add = 1
+				threat > 0.6
+			}
+			modifier = {
+				add = 1
+				threat > 0.7
+			}
+			modifier = {
+				add = 1
+				threat > 0.8
+			}
+			modifier = {
+				add = 1
+				threat > 0.9
+			}
+			modifier = {
+				add = 1
+				threat > 1
+			}
+		}
+	}
 
 	hold_campaign_rally = {
-		icon = propaganda
+		icon = megaphone
 
 		visible = {
 			is_democracy = yes
@@ -93,68 +159,375 @@ political_actions = {
 		}
 	}
 
-	war_support_campaign = {
-		icon = civil_support
+	boost_islamist_opposition = {
+		icon = donation
 
 		available = {
-			threat > 0.1
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
 		}
 
 		visible = {
-			has_war_support < 1
-			NOT = { has_idea = no_standing_army }
+			NOT = { has_country_flag = coalition_islamist }
 		}
 
-		fire_only_once = no
+		cost = 30
+		days_remove = 30
 
-		days_remove = 90
-
-		days_re_enable = 60
-
-		cost = 75
-
-		modifier = {
-			war_support_weekly = 0.01
+		remove_effect = {
+			add_popularity = { 
+				ideology = islamist
+				popularity = 0.02
+			}
 		}
 
 		ai_will_do = {
-			base = 1
-			modifier = {
-				add = 1
-				threat > 0.2
+			factor = 0
+		}
+	}
+
+	boost_fascist_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
 			}
-			modifier = {
-				add = 1
-				threat > 0.3
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = fascist
+				popularity = 0.02
 			}
-			modifier = {
-				add = 1
-				threat > 0.4
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_right_wing_nationalist_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
 			}
-			modifier = {
-				add = 1
-				threat > 0.5
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_right_wing_nationalist }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = right_wing_nationalist
+				popularity = 0.02
 			}
-			modifier = {
-				add = 1
-				threat > 0.6
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_monarchist_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
 			}
-			modifier = {
-				add = 1
-				threat > 0.7
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = monarchist
+				popularity = 0.02
 			}
-			modifier = {
-				add = 1
-				threat > 0.8
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_national_conservative_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
 			}
-			modifier = {
-				add = 1
-				threat > 0.9
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = national_conservative
+				popularity = 0.02
 			}
-			modifier = {
-				add = 1
-				threat > 1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_conservative_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
 			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = conservative
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_classical_liberal_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = classical_liberal
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_social_liberal_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = social_liberal
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_social_democrat_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = social_democrat
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_progressive_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = progressive
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_socialist_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = socialist
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	boost_communist_opposition = {
+		icon = donation
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = forming_government_1
+					has_country_flag = forming_government_2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+
+		cost = 30
+		days_remove = 30
+
+		remove_effect = {
+			add_popularity = { 
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

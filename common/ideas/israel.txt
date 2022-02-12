@@ -1,29 +1,27 @@
 ideas = {
 	country = {
-
-		idea_vanguard_of_judaism = {
-			picture = vanguard_of_judaism
-			
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
+		
+		idea_the_jewish_state = {
+			picture = israel
 			
 			modifier = {
-				conscription = 0.01
+				war_support_factor = 0.5
 	            army_core_attack_factor = 0.15
 	            army_core_defence_factor = 0.25
-				army_morale_factor = 0.20
-				surrender_limit = 0.5
-				islamist_acceptance = -50
-				islamist_drift = -0.25
+				army_org_factor = 0.05
+				army_morale_factor = 0.2
+				surrender_limit = 0.75
 			}
 		}
-		
+
+		idea_law_of_return = {
+			picture = israeli_passport
+			
+			modifier = {
+				stability_factor = 0.02
+				MONTHLY_POPULATION = 0.3
+			}
+		}
+
 	}
 }

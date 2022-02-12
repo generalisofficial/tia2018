@@ -1835,11 +1835,15 @@ election_pulse = {
 	if = {
 	    limit = {
 		    original_tag = ITA
-			has_government = national_conservative
+			has_government = classical_liberal
 			has_country_flag = coalition_right_wing_nationalist
-			NOT = { has_global_flag = conte_pm }
+			NOT = {
+				has_country_leader = {
+					name = "Giuseppe Conte"
+					ruling_only = no
+				}
+			}
 		}
-	    set_global_flag = conte_pm
 		country_event = italy.1
 	}
 	if = {
