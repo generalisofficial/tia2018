@@ -5,7 +5,6 @@ oob = "KOS_2018"
 set_research_slots = 3
 set_convoys = 10
 
-
 set_country_flag = country_language_albanian
 set_country_flag = country_language_serbian
 
@@ -96,7 +95,6 @@ if = {
 	}
 }
 
-
 set_country_flag = sunni_islam
 
 add_ideas = {
@@ -108,12 +106,12 @@ add_ideas = {
 #Assembly of the Republic of Kosovo
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 15.91 }
-set_variable = { social_democrat_seats = 10.12 }
-set_variable = { social_liberal_seats = 0.93 }
-set_variable = { classical_liberal_seats = 25.76 }
-set_variable = { conservative_seats = 27.92 }
-set_variable = { national_conservative_seats = 19.36 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 32 }
+set_variable = { social_liberal_seats = 4 }
+set_variable = { classical_liberal_seats = 2 }
+set_variable = { conservative_seats = 23 }
+set_variable = { national_conservative_seats = 39 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -121,41 +119,28 @@ set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_conservative
 set_country_flag = coalition_national_conservative
 set_country_flag = coalition_social_liberal
-add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {
-	ruling_party = conservative
-	last_election = "2016.2.26"
+	ruling_party = national_conservative
+	last_election = "2017.6.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 19.36
-    conservative = 27.92
-    progressive = 15.91
-    classical_liberal = 25.76
-	social_democrat = 10.12
-	social_liberal = 0.93
+    national_conservative = 37
+	social_democrat = 28
+	conservative = 28
+	social_liberal = 6
+	classical_liberal = 1
 }
 
-recruit_character = KOS_kadri_veseli
 recruit_character = KOS_ramush_haradinaj
-recruit_character = KOS_visar_ymeri
-recruit_character = KOS_isa_mustafa
-recruit_character = KOS_shpend_ahmeti
-recruit_character = KOS_valon_murati
+recruit_character = KOS_avdullah_hoti
+recruit_character = KOS_mimoza_kusari_lila
 recruit_character = KOS_behgjet_pacolli
-recruit_character = KOS_rrahman_rama
-recruit_character = KOS_sylejman_selimi
-recruit_character = KOS_kadri_kastrati
-recruit_character = KOS_bashkim_jashari
-recruit_character = KOS_nazmi_brahimaj
-recruit_character = KOS_zymer_halimi
-recruit_character = KOS_imri_ilazi
-recruit_character = KOS_enver_cikaqi
+recruit_character = KOS_albin_kurti

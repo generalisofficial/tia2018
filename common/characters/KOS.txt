@@ -1,16 +1,5 @@
 characters={
     #Starting - Political
-	KOS_kadri_veseli={
-		name="Kadri Veseli"
-		portraits={
-			civilian={
-				large=GFX_Portrait_KOS_Kadri_Veseli
-			}
-		}
-		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
 	KOS_ramush_haradinaj={
 		name="Ramush Haradinaj"
 		portraits={
@@ -19,51 +8,29 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberal_conservative
+			ideology=national_conservative_ideology
 		}
 	}
-	KOS_visar_ymeri={
-		name="Visar Ymeri"
+	KOS_avdullah_hoti={
+		name="Avdullah Hoti"
 		portraits={
 			civilian={
-				large=GFX_Portrait_KOS_Visar_Ymeri
+				large=GFX_Portrait_KOS_Avdullah_Hoti
 			}
 		}
 		country_leader={
-			ideology=progressive_ideology
+			ideology=liberal_conservative
 		}
 	}
-	KOS_isa_mustafa={
-		name="Isa Mustafa"
+	KOS_mimoza_kusari_lila={
+		name="Mimoza Kusari-Lila"
 		portraits={
 			civilian={
-				large=GFX_Portrait_KOS_Isa_Mustafa
+				large=GFX_Portrait_KOS_Mimoza_Kusari_Lila
 			}
 		}
 		country_leader={
 			ideology=classical_liberal_ideology
-		}
-	}
-	KOS_shpend_ahmeti={
-		name="Shpend Ahmeti"
-		portraits={
-			civilian={
-				large=GFX_Portrait_KOS_Shpend_Ahmeti
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	KOS_valon_murati={
-		name="Valon Murati"
-		portraits={
-			civilian={
-				large=GFX_Portrait_KOS_Valon_Murati
-			}
-		}
-		country_leader={
-			ideology=right_wing_nationalist_ideology
 		}
 	}
 	KOS_behgjet_pacolli={
@@ -74,143 +41,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=centrist
+			ideology=social_liberal_ideology
 		}
 	}
-	KOS_rrahman_rama={
-		name="Rrahman Rama"
+	KOS_albin_kurti={
+		name="Albin Kurti"
 		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Rrahman_Rama
+			civilian={
+				large=GFX_Portrait_KOS_Albin_Kurti
 			}
 		}
-		field_marshal={
-			traits={ organisational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_sylejman_selimi={
-		name="Sylejman Selimi"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Sylejman_Selimi
-			}
-		}
-		field_marshal={
-			traits={ inspirational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_kadri_kastrati={
-		name="Kadri Kastrati"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Kadri_Kastrati
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_bashkim_jashari={
-		name="Bashkim Jashari"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Bashkim_Jashari
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_nazmi_brahimaj={
-		name="Nazmi Brahimaj"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Nazmi_Brahimaj
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_zymer_halimi={
-		name="Zymer Halimi"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Zymer_Halimi
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_imri_ilazi={
-		name="Imri Ilazi"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Imri_Ilazi
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	KOS_enver_cikaqi={
-		name="Enver Cikaqi"
-		portraits={
-			army={
-				large=GFX_Portrait_KOS_Portrait_Enver_Cikaqi
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=social_democrat_ideology
 		}
 	}
 	#Starting - Military
