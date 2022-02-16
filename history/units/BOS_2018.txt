@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -8,62 +9,50 @@
 	}
 	support = {
 		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
 	}
 }
 division_template = {
 	name = "Tactical Support Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "4th Infantry Regiment"
+		name = "4th Infantry Brigade"
 		division_template = "Infantry Brigade"
-		location = 9894
+		location = 9894 #Čapljina
 		start_experience_factor = 0.3
-	}
-	
+	}	
 	division = {
-		name = "5th Infantry Regiment"
+		name = "5th Infantry Brigade"
 		division_template = "Infantry Brigade"
-		location = 6799
+		location = 6799 #Tuzla
 		start_experience_factor = 0.3
-	}
-	
+	}	
 	division = {
-		name = "6th Infantry Regiment"
+		name = "6th Infantry Brigade"
 		division_template = "Infantry Brigade"
-		location = 6983
+		location = 9588 #Banja Luka
 		start_experience_factor = 0.3
-	}
-	
+	}	
 	division = {
 		name = "Tactical Support Brigade"
 		division_template = "Tactical Support Brigade"
-		location = 11899
+		location = 11899 #Sarajevo
 		start_experience_factor = 0.3
-	}
-	
+	}	
 }
 
 ### Air OOB ###
-
-air_wings = {
-	104 = {
-		#J-22
-		CAS_equipment_2 = {
-			owner = "BOS" 
-			amount = 7
-		}
-
-	}
-}
+#J-22 was retired from the airforce

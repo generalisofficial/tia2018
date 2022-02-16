@@ -1,257 +1,319 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "National Guard Unit"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Infantry Division"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Mechanized Brigade"
+	name = "National Guard"
+	division_names_group = GENERIC_GAR_01
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Division"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 		light_mechanized = { x = 1 y = 0 }
 		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Aviation Brigade"
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 0 }
+		modern_sp_artillery_brigade = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
 	}
 }
+
 division_template = {
-	name = "Armored Division"
+	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
+		modern_sp_artillery_brigade = { x = 0 y = 2 }
 		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Marine Brigade"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+	regiments = {
+		light_tank_recon = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "1st Infantry Division"
-		location = 9837
-		division_template = "Infantry Division"
+		name = "1st Paratrooper Brigade"
+		location = 14193 #Rentina
+		division_template = "Airborne Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Mechanized Division"
-		location = 9837
-		division_template = "Mechanized Division"
+		name = "3rd Mechanized Infantry Brigade 'Rimini'"
+		location = 11905 #Orestiada
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "20th Armored Division"
-		location = 9837
-		division_template = "Armored Division"
+		name = "5th Airmobile Infantry Brigade"
+		location = 12058 #Crania
+		division_template = "Airborne Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Brigade of Creta"
-		location = 9940
+		name = "7th Mechanized Infantry Brigade 'Sarantaporos'"
+		location = 11905 #Lykofos
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Motorized Infantry Brigade"
+		location = 3914 #Ioannina
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "8th Infantry Brigade"
-		location = 9916
+		name = "9th Motorized Infantry Brigade"
+		location = 966 #Kozani
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "9th Infantry Brigade"
-		location = 3980
+		name = "10th Mechanized Infantry Brigade"
+		location = 6990 #Serres
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Motorized Infantry Brigade"
+		location = 14192 #Kastoria
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "10th Infantry Brigade"
-		location = 936
-		division_template = "Infantry Brigade"
+		name = "21st Armored Brigade 'Pindus'"
+		location = 11774 #Komotini
+		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "12th Mechanized Division"
-		location = 11905
-		division_template = "Mechanized Division"
+		name = "23rd Armored Brigade 'Dorylaem'"
+		location = 14194 #Alexandroupolis
+		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "16th Mechanized Division"
-		location = 11905
-		division_template = "Mechanized Division"
+		name = "24th Armored Brigade 'Florina'"
+		location = 3844 #Litochoro
+		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "50th Mechanized Brigade"
-		location = 11905
-		division_template = "Infantry Brigade"
+		name = "25th Armored Brigade 'Ephesus'"
+		location = 11774 #Xanthi
+		division_template = "Armored Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "88th and 98th National Guard"
-		location = 8435
-		division_template = "National Guard Unit"
+		name = "29th Mechanized Infantry Brigade 'Pogradec'"
+		location = 11774 #Komotini
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "79th and 96th National Guard"
-		location = 6550
-		division_template = "National Guard Unit"
+		name = "30th Mechanized Infantry Brigade 'Tomoritsa'"
+		location = 11905 #Lagos
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "97th National Guard"
-		location = 10007
-		division_template = "National Guard Unit"
+		name = "31st Mechanized Infantry Brigade 'Kamia'"
+		location = 11905 #Assiros
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "32nd Marine Brigade 'Moravas'"
+		location = 3973 #Volos
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "33rd Mechanized Infantry Brigade"
+		location = 3526 #Polykastro
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "34th Mechanized Infantry Brigade"
+		location = 14196 #Assiros
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "50th Mechanized Infantry Brigade 'Apsos'"
+		location = 11905 #Soufli
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "71st Airmobile Infantry Brigade"
+		location = 11818 #Nea Santa
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "79st National Guard Higher Command"
+		location = 6550 #Samos
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "80th National Guard Higher Command"
+		location = 7003 #Kos
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "88th Military Command"
+		location = 8435 #Myrina
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "95th National Guard Higher Command"
+		location = 10007 #Rhodes
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "96th National Guard Higher Command"
+		location = 14188 #Chios
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "98th National Guard Higher Command"
+		location = 14189 #Lesbos
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
 }
 
-### Air OOB ###
+### Air OOB ### 
 air_wings = {
-	47 = {
-		#F-16C/D Block 52/50
-		fighter_equipment_3 = {
+	1010 = {
+		#Pegasus II
+		scout_plane_equipment_2 = {
 			owner = "GRE" 
-			amount = 44
+			amount = 4
 		}
-
+		name = "Unmanned Aircraft Squadron"
 	}
-	47 = {
-		#Mirage 2000-5
-		fighter_equipment_3 = {
+	1010 = {
+		#F-16 Fighting Falcon / F-16C/D
+		fighter_equipment_2 = {
 			owner = "GRE" 
-			amount = 25
+			amount = 50
 		}
-
+		name = "111th Combat Wing"
 	}
-	186 = {
-		#F-16C/D Block 52
+	1011 = {
+		#Mirage 2000-5 Mark 2
 		fighter_equipment_3 = {
 			owner = "GRE" 
-			amount = 22
+			amount = 40
 		}
+		name = "114th Combat Wing"
 	}
 	182 = {
-		#F-16C/D Block 52
-		fighter_equipment_3 = {
+		#F-16 Fighting Falcon / F-16C/D
+		fighter_equipment_2 = {
 			owner = "GRE" 
-			amount = 44
+			amount = 32
 		}
-
+		name = "115th Combat Wing"
+	}
+	1009 = {
+		#F-16 Fighting Falcon / F-16C/D
+		fighter_equipment_2 = {
+			owner = "GRE" 
+			amount = 32
+		}
+		name = "116th Combat Wing"
+	}
+	1009 = {
+		#F-4 Phantom II / F-4E
+		CAS_equipment_1 = {
+			owner = "GRE" 
+			amount = 33
+		}
+		name = "117th Combat Wing"
 	}
 	47 = {
-		#F-16C/D Block 3
-		fighter_equipment_3 = {
+		#C-27J 
+		transport_plane_equipment_1 = {
 			owner = "GRE" 
-			amount = 22
+			amount = 8
 		}
+		name = "354th Tactical Transport Squadron"
 	}
 	47 = {
-		#Mirage 2000EGM
-		fighter_equipment_3 = {
+		#C-130B/H
+		transport_plane_equipment_1 = {
 			owner = "GRE" 
-			amount = 18
+			amount = 11
 		}
-	}
-	186 = {
-		#F-4E PI2000
-		fighter_equipment_3 = {
-			owner = "GRE" 
-			amount = 34
-		}
+		name = "356th Tactical Transport Squadron"
 	}
 }

@@ -106,6 +106,43 @@ GENERIC_INFB_01 =
 	}
 }
 
+GENERIC_ART_01 = 
+{
+	name = "Artillery Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "artillery_brigade" }
+
+	fallback_name = "%dth Artillery Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Artillery Brigade" }
+		2 = { "%dnd Artillery Brigade" }
+		3 = { "%drd Artillery Brigade" }
+		4 = { "%dth Artillery Brigade" }
+		5 = { "%dth Artillery Brigade" }
+		6 = { "%dth Artillery Brigade" }
+		7 = { "%dth Artillery Brigade" }
+		8 = { "%dth Artillery Brigade" }
+		9 = { "%dth Artillery Brigade" }
+		10 = { "%dth Artillery Brigade" }
+		11 = { "%dth Artillery Brigade" }
+		12 = { "%dth Artillery Brigade" }
+		13 = { "%dth Artillery Brigade" }
+		14 = { "%dth Artillery Brigade" }
+		15 = { "%dth Artillery Brigade" }
+		16 = { "%dth Artillery Brigade" }
+		17 = { "%dst Artillery Brigade" }
+		18 = { "%dnd Artillery Brigade" }
+		19 = { "%drd Artillery Brigade" }
+		20 = { "%dth Artillery Brigade" }
+	}
+}
+
 GENERIC_MILITIA_01 = 
 {
 	name = "Militia Brigade"
@@ -518,6 +555,33 @@ GENERIC_MNT_01 =
 		8 = { "%dth Mountain Division" }
 		9 = { "%dth Mountain Division" }
 		10 = { "%dth Mountain Division" }
+	}
+}
+
+GENERIC_MNT_02 = 
+{
+	name = "Mountain Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	fallback_name = "%dth Mountain Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Mountain Brigade" }
+		2 = { "%dnd Mountain Brigade" }
+		3 = { "%drd Mountain Brigade" }
+		4 = { "%dth Mountain Brigade" }
+		5 = { "%dth Mountain Brigade" }
+		6 = { "%dth Mountain Brigade" }
+		7 = { "%dth Mountain Brigade" }
+		8 = { "%dth Mountain Brigade" }
+		9 = { "%dth Mountain Brigade" }
+		10 = { "%dth Mountain Brigade" }
 	}
 }
 

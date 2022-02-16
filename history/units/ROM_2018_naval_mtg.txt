@@ -1,0 +1,30 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Romanian Naval Forces"
+		naval_base = 657 #Constanța
+		task_force = {				
+			name = "Frigate Flotilla"
+			location = 657 #Constanța
+			ship = { name = "ROS Mărășești" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ROM version_name = "Broadsword Class" } } }
+			ship = { name = "ROS Regele Ferdinand" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ROM version_name = "Broadsword Class" } } }
+			ship = { name = "ROS Regina Maria" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ROM version_name = "Broadsword Class" } } }
+		}
+		task_force = {				
+			name = "Corvette Squadron"
+			location = 657 #Constanța
+			ship = { name = "ROS Lt. Remus Lepri" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Musca Class" } } }
+			ship = { name = "ROS Lt. Lupu Dinescu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Musca Class" } } }
+			ship = { name = "ROS Lt. Dimitrie Nicolescu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Musca Class" } } }
+			ship = { name = "ROS Slt. Alexandru Axente" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Musca Class" } } }
+			ship = { name = "ROS Zborul" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tarantul Class" } } }
+			ship = { name = "ROS Pescărușul" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tarantul Class" } } }
+			ship = { name = "ROS Lăstunul" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tarantul Class" } } }
+			ship = { name = "ROS Amiral Petre Bărbuneanu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tetal-II Class" } } }
+			ship = { name = "ROS Vice-Amiral Eugeniu Roșca" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tetal-II Class" } } }
+			ship = { name = "ROS Contraamiral Eustațiu Sebastian" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tetal-II Class" } } }
+			ship = { name = "ROS Contraamiral Horia Macellariu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Tetal-II Class" } } }
+			ship = { name = "ROS Vice-Amiral Constantin Bălescu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Cosar Class" } } }
+		}					
+	}
+} 

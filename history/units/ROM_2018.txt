@@ -1,18 +1,54 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 		light_mechanized = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
+
 division_template = {
-	name = "Mountain Brigade"
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_02
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mountaineer Brigade"
+	division_names_group = GENERIC_MNT_02	
 	
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -20,142 +56,173 @@ division_template = {
 		mountaineers = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		light_armor = { x = 1 y = 0 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
-	}
-}
+
 division_template = {
 	name = "Artillery Regiment"
+	division_names_group = GENERIC_ART_01	
 	
 	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		rocket_artillery_brigade = { x = 0 y = 1 }
+		rocket_artillery_brigade = { x = 1 y = 0 }
+		rocket_artillery_brigade = { x = 1 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Special Operations Brigade"
+	division_names_group = GENERIC_MAR_02	
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Marine Batallion"
+	division_names_group = GENERIC_MAR_02	
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
 	}
 }
 
 units = {
-	
 	division = {
 		name = "1st Mechanized Brigade 'Argedava'"
 		location = 9617	#Bucharest
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Infantry Brigade"
-		location = 9617	#Craiova
-		division_template = "Infantry Brigade"
+		name = "2nd Mountain Hunters Brigade 'Sarmizegetusa'"
+		location = 690 #Brasov
+		division_template = "Mountaineer Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Vanatori de Munte Brigade"
-		location = 11652 #Brasov
-		division_template = "Mountain Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "51st Artillery Regiment"
-		location = 6677	#Slobozia
-		division_template = "Artillery Regiment"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "9th Mechanized Brigade 'Marasesti'"
-		location = 657	#Constanta
+		name = "9th Mechanized Brigade 'Mărăşeşti'"
+		location = 657	#Constanța
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "15th Mechanized Brigade 'Podu Inalt'"
+		name = "282nd Armored Brigade 'Unirea Principatelor'"
+		location = 8701	#Focșani
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Mechanized Brigade 'Podu Înalt'"
 		location = 9716	#Iasi
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "282nd Mechanized Brigade 'Unirea Principatelor'"
-		location = 9701	#Focșani
+		name = "18th Infantry Brigade 'Banat'"
+		location = 9606	#Timisoara
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "52nd Artillery Regiment"
-		location = 6706	#Barlad
-		division_template = "Artillery Regiment"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "18th Mechanized Brigade 'Banat'"
-		location = 9606	#Timișoara
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "61st Vanatori de Munte Brigade"
+		name = "61st Mountain Hunters Brigade 'Virgil Bădulescu'"
 		location = 9668 #Miercurea Ciuc
-		division_template = "Mountain Brigade"
+		division_template = "Mountaineer Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "81st Mechanized Brigade"
-		location = 11676
-		division_template = "Infantry Brigade"
+		name = "81st Mechanized Brigade 'General Grigore Bălan'"
+		location = 11676 #Iasi
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "69th Artillery Regiment"
-		location = 3696	#Șimleu Silvaniei
+		name = "6th Special Operations Brigade 'Mihai Viteazul'"
+		location = 3694 #Târgu Mureș
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Multiple Rocket Launcher Brigade 'Alexandru Ioan Cuza'"
+		location = 8701	#Focșani
 		division_template = "Artillery Regiment"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "307th Marine Battalion"
+		location = 687	#Babadag
+		division_template = "Marine Batallion"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
 
 air_wings = {
 	46 = {
-		#MiG-21 LanceR
-		CAS_equipment_2 = {
+		#F-16A
+		fighter_equipment_2 = {
 			owner = "ROM" 
-			amount = 18
+			amount = 9
 		}
-
+		name = "53rd Fighter Squadron"
+	}
+	46 = {
+		#MiG-21 Lancer C
+		fighter_equipment_3 = {
+			owner = "ROM" 
+			amount = 12
+		}
+		name = "861st Combat Aviation Squadron"
+	}
+	46 = {
+		#Antonov An-30
+		scout_plane_equipment_1 = {
+			owner = "ROM" 
+			amount = 2
+		}
+		name = "902nd Aerophotogrametric Squadron"
+	}
+	46 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "ROM" 
+			amount = 6
+		}
+		name = "901st Tactical Air Transport Squadron"
 	}
 	82 = {
-		#MiG-21 LanceR
-		CAS_equipment_2 = {
+		#RQ-7 Shadow
+		scout_plane_equipment_2 = {
 			owner = "ROM" 
-			amount = 18
+			amount = 6
 		}
+		name = "142nd Reconnaissance Squadron"
+	}
+	84 = {
+		#MiG-21 Lancer B
+		CAS_equipment_3 = {
+			owner = "ROM" 
+			amount = 12
+		}
+		name = "711th Combat Aviation Squadron"
 	}
 }

@@ -1,95 +1,131 @@
 ﻿division_template = {
-	name = "Mechanized Brigade"
+	name = "Land Force Brigade"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		light_mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		modern_armor = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		motorized_rocket_brigade = { x = 3 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "Armored Brigade"
+	name = "Mixed Artillery Brigade"
 	
+	#This is a terrible template, but what can you do about it
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 0 y = 0 }
+		mot_artillery_brigade = { x = 0 y = 1 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+		mot_artillery_brigade = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		mechanized = { x = 3 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "River Brigade"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	
-	division = {
-		name = "Serbian Special Forces Brigade"
-		location = 3617
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
-	}
-	
 	division = {
 		name = "1st Brigade"
-		location = 3617
-		division_template = "Mechanized Brigade"
+		location = 3617 #Novi Sad
+		division_template = "Land Force Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "2nd Brigade"
-		location = 630
-		division_template = "Mechanized Brigade"
+		location = 3939 #Kraljevo
+		division_template = "Land Force Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "3rd Brigade"
-		location = 3956
-		division_template = "Mechanized Brigade"
+		location = 11887 #Niš
+		division_template = "Land Force Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "4th Brigade"
-		location = 11857
-		division_template = "Mechanized Brigade"
+		location = 11832 #Vranje
+		division_template = "Land Force Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "Mixed Artillery Brigade"
+		location = 11887 #Niš
+		division_template = "Mixed Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "River Brigade"
+		location = 3617 #Novi Sad
+		division_template = "River Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
 
 air_wings = {
 	107 = {
-		#MiG-29A - Downgrade if 80s equipment gets added
-		fighter_equipment_3 = {
+		#MiG-29A
+		fighter_equipment_2 = {
 			owner = "SER" 
-			amount = 3
+			amount = 14
 		}
-
+		name = "204th Air Brigade"
 	}
 	107 = {
-		#MiG-21Bis - 70s but downgraded for gameplay variety
-		fighter_equipment_1 = {
-			owner = "SER" 
-			amount = 16
-		}
-
-	}
-	108 = {
-		#J-22 - Downgrade if 80s equipment gets added
+		#Soko J-22
 		CAS_equipment_2 = {
 			owner = "SER" 
-			amount = 22
+			amount = 12
 		}
+		name = "98th Air Brigade"
+	}
+	107 = {
+		#MiG-29A
+		scout_plane_equipment_2 = {
+			owner = "SER" 
+			amount = 10
+		}
+		name = "353rd Reconnaissance Squadron"
+	}
+	107 = {
+		#Soko J-22
+		tac_bomber_equipment_1 = {
+			owner = "SER" 
+			amount = 6
+		}
+		name = "UCAV Squadron"
+	}
+	107 = {
+		#Antonov An-26
+		transport_plane_equipment_1 = {
+			owner = "SER" 
+			amount = 2
+		}
+		name = "138th Transport Squadron"
 	}
 }

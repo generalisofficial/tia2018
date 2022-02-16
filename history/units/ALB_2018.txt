@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Motorized Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -9,46 +10,36 @@
 	
 	support = {
 		artillery = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Special Forces Regiment"
+	name = "Special Forces Batallion"
 	
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
 	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-	
+
 	priority = 2
 }
 
 units = {
-
 	division = {
-		name = "Albanian Regiment"
+		name = "Albanian Land Force"
 		location = 9914
 		division_template = "Motorized Brigade"
 		start_experience_factor = 0.3
-	}
-	
+	}	
 	division = {
-		name = "Albanian Special Forces"
+		name = "Special Operations Battalion"
 		location = 9914
 		division_template = "Special Forces Regiment"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.6
 	}
-
 }
 
-instant_effect = {
-	
+instant_effect = {   #UM GRAMSH
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -58,6 +49,5 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 100
 		amount = 100000
-	}
-	
+	}	
 }

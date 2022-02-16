@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -14,104 +15,78 @@
 		anti_air = { x = 0 y = 3 }
 	}
 }
+
 division_template = {
-	name = "Special Forces Brigade"
+	name = "Mountain Brigade"
+	division_names_group = GENERIC_MNT_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		paratrooper = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-	}
-	support = {
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Artillery Regiment"
-	
-	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-		artillery_brigade = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Artillery Regiment"
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_PAR_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
 	}
 }
 
 units = {
-	
 	division = {
 		name = "2nd Mechanized Brigade"
-		location = 949
+		location = 6952 #Stara Zagora
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "61st Mechanized Brigade"
-		location = 9783
+		location = 6982 #Karlovo
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "101st Alpine Regiment"
+		location = 11813 #Smolyan
+		division_template = "Mountain Brigade"
+		start_experience_factor = 0.3
+	}
 	division = {
 		name = "68th Special Forces Brigade"
-		location = 3796
-		division_template = "Special Forces Brigade"
+		location = 6923 #Plovdiv
+		division_template = "Mountain Brigade"
 		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Artillery Regiment"
-		location = 949
-		division_template = "Artillery Regiment"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Support Brigade"
-		location = 6923
-		division_template = "Artillery Regiment"
-		start_experience_factor = 0.3
-	}
-	
+	}	
 }
 
 ### Air OOB ###
 air_wings = {
 	212 = {
-		#MiG-29A - Downgrade if 80s equipment gets added
-		fighter_equipment_3 = {
+		#Antonov An-26 + Alenia C-27J
+		transport_plane_equipment_1 = {
 			owner = "BUL" 
-			amount = 7
+			amount = 8
 		}
-
+		name = "16th Air Transport Group"
 	}
 	212 = {
-		#MiG-21Bis - 70s but downgraded for gameplay variety
-		fighter_equipment_1 = {
+		#MiG-29
+		fighter_equipment_2 = {
 			owner = "BUL" 
-			amount = 12
+			amount = 16
 		}
-
+		name = "1st Fighter Squadron"
 	}
 	211 = {
-		#Su-25K
+		#Su-25
 		CAS_equipment_2 = {
 			owner = "BUL" 
-			amount = 5
+			amount = 14
 		}
+		name = "1st Ground Attack Squadron"
 	}
 }
