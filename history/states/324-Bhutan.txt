@@ -2,9 +2,6 @@
 state={
 	id=324
 	name="STATE_324"
-	manpower = 741919
-	
-	state_category = state_level_7
 
 	history={
 		owner = BHU
@@ -12,14 +9,20 @@ state={
 			infrastructure = 1
 			civilian_industry = 3
 			military_industry = 1
+
 		}
 		victory_points = {
 			8010 3 
 		}
 		add_core_of = BHU
+
 	}
 
 	provinces={
-		8010 12860 
+		8010 12860 14215 14216 14217 
 	}
+	manpower=741919
+	buildings_max_level_factor=1.000
+	state_category=state_level_7
+	local_supplies=0.000
 }

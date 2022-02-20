@@ -1,0 +1,155 @@
+﻿add_namespace = olympic_games
+add_namespace = fifa_world_cup
+
+# Olympic Games
+
+news_event = {	#The XXIII Olympic Winter Games
+	id = olympic_games.1
+	title = olympic_games.1.t
+	desc = olympic_games.1.d
+	picture = GFX_news_event_pyeongchang_olympics
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = olympic_games.hostOption
+		trigger = {
+			original_tag = KOR
+		}
+		add_political_power = 100
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+		}
+		name = olympic_games.normalOption
+	}
+}
+
+news_event = {	#The Games of the XXXII Olympiad
+	id = olympic_games.2
+	title = olympic_games.2.t
+	desc = olympic_games.2.d
+	picture = GFX_news_event_tokyo_olympics
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = olympic_games.hostOption
+		trigger = {
+			original_tag = JAP
+		}
+		add_political_power = 100
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				original_tag = JAP
+			}
+		}
+		name = olympic_games.normalOption
+	}
+}
+
+# FIFA World Cup
+
+news_event = {	#2018 FIFA World Cup 
+	id = fifa_world_cup.1
+	title = fifa_world_cup.1.t
+	desc = fifa_world_cup.1.d
+	picture = GFX_news_event_fifa_world_cup_2018
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = fifa_world_cup.hostOption
+		trigger = { original_tag = SOV }
+	}
+	
+	option = {
+		name = fifa_world_cup.championOption
+		trigger = { original_tag = FRA }
+	}
+	
+	option = {
+		name = fifa_world_cup.normalOption
+		trigger = {
+			NOT = { original_tag = SOV }
+			NOT = { original_tag = FRA }
+		}
+	}
+}
+
+# Eurovision Song Contest
+
+news_event = { #Eurovision Song Contest 2018
+	id = eurovision.1
+	title = eurovision.1.t
+	desc = eurovision.1.d
+	picture = GFX_news_event_eurovision_2018
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = eurovision.1.o1
+		trigger = { 
+		    original_tag = ISR 
+	    }
+	}
+	
+	option = {
+		name = eurovision.1.o2
+		trigger = { 
+			NOT = { original_tag = ISR }
+			NOT = { has_idea = arab_league_member has_war_with = ISR }
+		}
+	}
+	
+	option = {
+		name = eurovision.1.o3
+		trigger = { 
+		    OR = { 
+			    has_idea = arab_league_member
+			    has_idea = salafist_jihadist_group
+				has_war_with = ISR
+			}
+		}
+	}
+}
+
+news_event = { #Eurovision Song Contest 2019
+	id = eurovision.2
+	title = eurovision.2.t
+	desc = eurovision.2.d
+	picture = GFX_news_event_eurovision_2019
+	
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		date > 2019.5.17
+		date < 2020.1.1
+	}
+	
+	option = {
+		name = eurovision.2.o1
+		trigger = { 
+		    original_tag = HOL
+	    }
+	}
+	
+	option = {
+		name = eurovision.2.o2
+		trigger = { 
+			NOT = { original_tag = HOL }
+		}
+	}
+}

@@ -2,20 +2,12 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "coalition_topbar_container"
-		position = { x = 1000 y = 4 }
-
-		iconType ={
-			name ="coalition_support_value_bg"
-			spriteType = "GFX_generic_box_small"
-			position = { x = -685 y = 0 }
-			Orientation = "UPPER_LEFT"
-			pdx_tooltip = COALITION_TOOLTIP
-		}
+		position = { x = 1061 y = 4 }
 		
 		iconType ={
 			name ="coalition_support_icon"
 			spriteType = "GFX_coalition_support_icon"
-			position = { x= -681 y = 3 }
+			position = { x= -650 y = 3 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = COALITION_TOOLTIP
 			scale = 0.90
@@ -23,7 +15,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="coalition_support"
-			position = { x= -659 y = 4 }
+			position = { x= -632 y = 4 }
 			font = "hoi_18mbs"
 			text = COALITION_SUPPORT
 			format = center

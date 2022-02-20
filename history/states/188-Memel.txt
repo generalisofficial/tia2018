@@ -9,16 +9,27 @@ state={
 		buildings = {
 			infrastructure = 3
 			civilian_industry = 1
-			3288 = { fortifications = 1 }
-			3288 = { naval_base = 6 }
+			3288 = {
+				fortifications = 1
+
+			}
+			3288 = {
+				naval_base = 6
+
+			}
+
 		}
-		victory_points = { 3288 3 }
+		victory_points = {
+			3288 3 
+		}
+
 	}
 
 	provinces={
-		3288 
+		3288 14211 14212 
 	}
 	manpower=252000
 	buildings_max_level_factor=1.000
-	state_category = state_level_5
+	state_category=state_level_5
+	local_supplies=0.000
 }

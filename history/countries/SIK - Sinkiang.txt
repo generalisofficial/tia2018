@@ -5,7 +5,6 @@ oob = "SIK_2018"
 set_research_slots = 2
 set_convoys = 10
 
-
 set_country_flag = country_language_uyghur
 set_country_flag = country_language_chinese
 
@@ -95,27 +94,19 @@ if = {
 	}
 }
 
-
 set_country_flag = sunni_islam
 
 set_politics = {	
-	ruling_party = islamist
-	last_election = "2013.1.1"
+	ruling_party = social_liberal
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    islamist = 72
-    right_wing_nationalist = 0
-    national_conservative = 0
-    conservative = 0
-    classical_liberal = 0
-    social_liberal = 0
-    social_democrat = 0
-    progressive = 0
-    socialist = 0
-    communist = 28
+	social_liberal = 65
+    islamist = 35
 }
 
-recruit_character = SIK_abdullah_mansour
+recruit_character = SIK_abdul_haq_al_turkistani
+recruit_character = SIK_ahmatjan_osman

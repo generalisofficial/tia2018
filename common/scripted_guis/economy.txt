@@ -1,0 +1,19 @@
+scripted_gui = {
+	money_topbar = {
+		window_name = "money_topbar_container"
+
+		context_type = player_context
+ 
+		visible = {
+            always = yes
+		}
+ 
+        effects = {                     
+            open_money_window_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_money }
+				set_variable = { show_money = show }
+			}
+        }
+	}
+}

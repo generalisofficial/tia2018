@@ -1,0 +1,43 @@
+﻿add_namespace = money
+
+country_event = {
+	id = money.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		money_setup_scripted_effect = yes
+		add_to_array = {
+			array = global.xcountry_grid_array
+			value = ROOT.id
+		}
+		money_update_expenses_scripted_effect = yes
+	}
+}
+
+country_event = {
+	id = money.11
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+            money_update_scripted_effect = yes
+        }
+	}
+}
+
+country_event = {
+	id = money.111
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+            money_update_expenses_scripted_effect = yes
+        }
+	}
+}

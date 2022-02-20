@@ -1,0 +1,26 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "money_topbar_container"
+		position = { x = 167 y = 4 }
+
+		instantTextBoxType = {
+			name = "money_value_button_text"
+			position = { x = -20 y = 4 }
+			font = "hoi_18mbs"
+			text = MONEY_VALUE
+			format = right
+			maxWidth = 110
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = MONEY_TOOLTIP
+		}
+
+		iconType ={
+			name ="money_icon"
+			spriteType = "GFX_money_icon"
+			position = { x= -2 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+}	

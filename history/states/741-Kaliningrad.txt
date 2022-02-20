@@ -1,37 +1,62 @@
+
 state={
 	id=741
 	name="STATE_741"
-	history = {
+
+	history={
 		owner = SOV
 		add_core_of = SOV
 		victory_points = {
-			6332 10
+			6332 10 
 		}
 		victory_points = {
-			11265 1
+			11265 1 
 		}
 		victory_points = {
-			348 1
+			348 1 
 		}
 		victory_points = {
-			3384 1
+			3384 1 
 		}
 		buildings = {
 			infrastructure = 4
 			military_airport = 4
-			6332 = { fortifications = 1	}
-			281 = { fortifications = 1 }
-			348 = { fortifications = 1 }
-			395 = { fortifications = 1 }
-			3384 = { fortifications = 1 }
-			11265 = { fortifications = 1 naval_base = 6  }
+			6332 = {
+				fortifications = 1
+				naval_base = 1
+
+			}
+			281 = {
+				fortifications = 1
+
+			}
+			348 = {
+				fortifications = 1
+
+			}
+			395 = {
+				fortifications = 1
+
+			}
+			3384 = {
+				fortifications = 1
+
+			}
+			11265 = {
+				fortifications = 1
+				naval_base = 6
+
+			}
+
 		}
+
 	}
+
 	provinces={
-		281 348 395 3384 6332 11265 
+		281 348 395 3384 6332 9096 11265 14210 
 	}
 	manpower=994599
 	buildings_max_level_factor=1.000
-	
-	state_category = state_level_9
+	state_category=state_level_9
+	local_supplies=0.000
 }
