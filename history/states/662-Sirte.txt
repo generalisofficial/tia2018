@@ -7,27 +7,49 @@ state={
 	}
 
 	history={
-	    owner = LBA
-		#owner = LNA
-		add_core_of = LBA
-		#add_core_of = LNA
-		#LBA = {
-			#set_province_controller = 7194
-			#set_province_controller = 4047
-			#set_province_controller = 1041
-		#}
+		owner = LBA
+		LNA = {
+			set_province_controller = 8069
+			set_province_controller = 12088
+			set_province_controller = 4057
+			set_province_controller = 10117
+
+		}
+		ISS = {
+			set_province_controller = 14246
+			set_province_controller = 7136
+			set_province_controller = 13073
+			set_province_controller = 7194
+
+		}
+		victory_points = {
+			4047 5
+		}
+		victory_points = {
+			4057 1
+		}
+		victory_points = {
+			10117 1
+		}
+		victory_points = {
+			10046 1
+		}
 		buildings = {
 			infrastructure = 1
 			military_airport = 1
 
 		}
+		add_core_of = LBA
+		add_core_of = LNA
+		add_claim_by = ISS
 
 	}
 
 	provinces={
-		1041 4047 4057 7136 7194 8069 10046 10117 12088 13073 
+		1041 4047 4057 7136 7194 8069 10046 10117 12088 13073 14246 14247 
 	}
 	manpower=113213
 	buildings_max_level_factor=1.000
 	state_category=state_level_1
+	local_supplies=0.000
 }

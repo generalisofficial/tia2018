@@ -4,28 +4,33 @@ state={
 	name="STATE_448"
 
 	history={
-	    owner = LBA
-		add_core_of = LBA
-		#add_core_of = LNA
-		victory_points = {
-			1149 15 
-		}
-		victory_points = {
-			9980 5 
-		}
-		victory_points = {
-			1189 3 
-		}
-		#LNA = {
-			#set_province_controller = 4962
-			#set_province_controller = 11940
-			#set_province_controller = 10037
-			#set_province_controller = 4051
+		owner = LBA
+		LNA = {
+			set_province_controller = 12039
 
-		#}
+		}
+		ISS = {
+			set_province_controller = 1189
+
+		}
+		victory_points = {
+			1149 15
+		}
+		victory_points = {
+			14269 3
+		}
+		victory_points = {
+			14270 2
+		}
+		victory_points = {
+			1189 1
+		}
+		victory_points = {
+			14268 1
+		}
 		buildings = {
 			infrastructure = 3
-			civilian_industry = 2
+			civilian_industry = 1
 			military_industry = 1
 			military_airport = 2
 			1149 = {
@@ -34,13 +39,17 @@ state={
 			}
 
 		}
+		add_core_of = LBA
+		add_core_of = LNA
+		add_claim_by = ISS
 
 	}
 
 	provinces={
-		1118 1149 1174 1189 4051 4117 4176 4194 4962 7066 7209 9980 10037 11940 12009 
+		1149 1189 12039 14268 14269 14270 
 	}
 	manpower=2569136
 	buildings_max_level_factor=1.000
-	state_category=state_level_10
+	state_category=state_level_8
+	local_supplies=0.000
 }
