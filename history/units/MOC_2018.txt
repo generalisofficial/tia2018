@@ -1,18 +1,18 @@
 ﻿division_template = {
-	name = "Infantry Regiment"
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		light_armor = { x = 0 y = 0 }
+		motorized = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	#No standing army
+	division = {
+		name = "Public Services"
+		location = 13208 #Monaco
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.3
+		start_manpower_factor = 0.250
+	}
 }
