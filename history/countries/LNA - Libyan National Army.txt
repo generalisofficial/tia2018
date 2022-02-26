@@ -5,7 +5,6 @@ oob = "LNA_2018"
 set_research_slots = 2
 set_convoys = 300
 
-
 set_country_flag = country_language_arabic
 
 set_technology = {
@@ -112,10 +111,10 @@ add_ideas = {
 	pro_life
 }
 
-#declare_war_on = {
-	#target = LBA
-	#type = civil_war
-#}
+declare_war_on = {
+	target = LBA
+	type = civil_war
+}
 
 set_politics = {	
 	ruling_party = national_conservative
@@ -125,7 +124,9 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 100
+    national_conservative = 76
+	socialist = 24
 }
 
 recruit_character = LNA_khalifa_haftar
+recruit_character = LNA_saif_al_islam_gaddafi
