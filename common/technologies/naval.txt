@@ -1937,4 +1937,229 @@ technologies = {
 			always = no
 		}
 	}
+
+	####### PATROL BOATS ########
+
+	early_patrol_boat = {
+
+		enable_equipments = {
+			patrol_boat_1
+		}
+		
+		path = {
+			leads_to_tech = basic_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 1980
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @1980 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			pb_tech
+		}
+	}
+
+	basic_patrol_boat = {
+
+		enable_equipments = { 
+			patrol_boat_2
+		}
+		
+		
+		path = {
+			leads_to_tech = improved_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		
+		start_year = 2000
+
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	improved_patrol_boat = {
+
+		enable_equipments = { 
+			patrol_boat_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2008
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	advanced_patrol_boat = {
+
+		enable_equipments = { 
+			patrol_boat_4
+		}
+		
+		path = {
+			leads_to_tech = near_future_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2016
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	near_future_patrol_boat = {
+
+		enable_equipments = { 
+			patrol_boat_5
+		}
+		
+		path = {
+			leads_to_tech = future_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+
+		start_year = 2024
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2024 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {#EW
+					tag = ENG
+					tag = FRA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	future_patrol_boat = {
+
+		enable_equipments = { 
+			patrol_boat_6
+		}
+		
+		research_cost = 3
+
+		start_year = 2032
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
 }

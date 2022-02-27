@@ -1489,6 +1489,20 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+
+				instantTextBoxType = {
+					name = "naval_subtitle_patrol_boat"
+					position = { x = 30 y = 1210 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_PATROL_BOAT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "patrol_boat_desc"
+				}
 				
 				instantTextBoxType = {
 					name = "naval_subtitle_mines"
@@ -1585,6 +1599,14 @@ guiTypes = {
 			gridboxtype = {
 				name = "early_submarine_tree"
 				position = { x = 150 y = 900 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "early_patrol_boat_tree"
+				position = { x = 150 y = 1210 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1852,6 +1874,20 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+
+				instantTextBoxType = {
+					name = "naval_subtitle_patrol_boat"
+					position = { x = 30 y = 2900 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "NAVAL_TITLE_PATROL_BOAT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "patrol_boat_desc"
+				}
 			
 			containerWindowType = {
 				name = "tiled_window_transparent_transparent"
@@ -1964,6 +2000,14 @@ guiTypes = {
 			gridboxtype = {
 				name = "basic_naval_mines_tree"
 				position = { x = 150 y = 2480 }
+				size = { width = 100 height = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "early_ship_hull_patrol_boat_tree"
+				position = { x = 150 y = 2910 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"

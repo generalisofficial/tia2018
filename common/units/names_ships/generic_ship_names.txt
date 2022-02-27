@@ -5,8 +5,22 @@ GENERIC_SS_NAMES = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 	
-	prefix = "SS "
 	fallback_name = "SS-%d"
+	unique = {
+		SS-1
+	}	
+}
+
+GENERIC_PB_NAMES = {
+	name = NAME_THEME_GENERIC_PATROL_BOAT
+
+	type = ship
+	ship_types = { ship_hull_light patrol_boat }			
+
+	fallback_name = "PB-%d"
+	unique = {
+		PB-1
+	}				
 }
 
 GENERIC_DD_NAMES = {
@@ -15,8 +29,10 @@ GENERIC_DD_NAMES = {
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
-	prefix = "FS "
-	fallback_name = "FS-%d"					
+	fallback_name = "FS-%d"		
+	unique = {
+		FS-1
+	}				
 }
 
 GENERIC_MINESWEEPER_NAMES = {
@@ -25,8 +41,10 @@ GENERIC_MINESWEEPER_NAMES = {
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
-	prefix = "AM "
-	fallback_name = "AM-%d"					
+	fallback_name = "AM-%d"	
+	unique = {
+		AM-1
+	}					
 }
 
 GENERIC_CL_NAMES = {
@@ -35,8 +53,10 @@ GENERIC_CL_NAMES = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser heavy_cruiser }
 	
-	prefix = "FFL "
 	fallback_name = "FFL-%d"
+	unique = {
+		FFL-1
+	}	
 }
 
 GENERIC_CA_NAMES = {
@@ -45,8 +65,10 @@ GENERIC_CA_NAMES = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser heavy_cruiser }
 	
-	prefix = "DD "
 	fallback_name = "DD-%d"
+	unique = {
+		DD-1
+	}	
 }
 
 GENERIC_BB_NAMES = {
@@ -55,8 +77,10 @@ GENERIC_BB_NAMES = {
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
 	
-	prefix = "CG "
 	fallback_name = "CG-%d"		
+	unique = {
+		CG-1
+	}	
 }
 
 GENERIC_BC_NAMES = {
@@ -65,8 +89,10 @@ GENERIC_BC_NAMES = {
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
 	
-	prefix = "CG "
 	fallback_name = "CG-%d"	
+	unique = {
+		CG-1
+	}	
 }
 
 GENERIC_CV_NAMES = {
@@ -75,7 +101,9 @@ GENERIC_CV_NAMES = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
-	prefix = "CV "
 	fallback_name = "CV-%d"	
+	unique = {
+		CV-1
+	}	
 }
 

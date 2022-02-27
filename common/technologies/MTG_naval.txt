@@ -5404,4 +5404,249 @@ technologies = {
 			always = no
 		}
 	}
+
+
+	########## PATROL BOATS ###########
+
+	early_ship_hull_patrol_boat = {
+
+		enable_equipments = {
+			ship_hull_patrol_boat_1
+		}
+		enable_equipment_modules = {
+			light_patrol_ship_engine_1
+		}
+		path = {
+			leads_to_tech = basic_ship_hull_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1980
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = @1980 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			pb_tech
+		}
+	}
+
+	basic_ship_hull_patrol_boat = {
+
+		enable_equipments = { 
+			ship_hull_patrol_boat_2
+		}
+		enable_equipment_modules = { 
+			light_patrol_ship_engine_2
+		}
+		path = {
+			leads_to_tech = improved_ship_hull_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = @2000 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	improved_ship_hull_patrol_boat = {
+
+		enable_equipments = { 
+			ship_hull_patrol_boat_3
+		}
+		enable_equipment_modules = { 
+			light_patrol_ship_engine_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_ship_hull_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 2008
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = @2008 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		#E#W#
+		categories = {
+			naval_equipment
+			pb_tech
+		}
+	}
+	
+	advanced_ship_hull_patrol_boat = {
+
+		enable_equipments = { 
+			ship_hull_patrol_boat_4
+		}
+		enable_equipment_modules = { 
+			light_patrol_ship_engine_4
+		}
+		
+		path = {
+			leads_to_tech = near_future_ship_hull_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 2016
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = @2016 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			pb_tech
+		}
+	}
+	
+	near_future_ship_hull_patrol_boat = {
+
+		enable_equipments = {
+			ship_hull_patrol_boat_5
+		}
+		enable_equipment_modules = {
+			light_patrol_ship_engine_5
+		}
+		
+		path = {
+			leads_to_tech = future_ship_hull_patrol_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 2024
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = @2024 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			pb_tech
+		}
+	}
+	
+	future_ship_hull_patrol_boat = {
+
+		enable_equipments = { 
+			ship_hull_patrol_boat_6
+		}
+		enable_equipment_modules = { 
+			light_patrol_ship_engine_6
+		}
+		
+		research_cost = 2
+
+		start_year = 2032
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = @2032 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+			pb_tech
+		}
+	}
 }

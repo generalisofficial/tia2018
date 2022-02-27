@@ -1502,6 +1502,168 @@ equipment_modules = {
 ### #  #  ##  ### #  # ### 
 
 
+	light_patrol_ship_engine_1 = {
+		category = light_patrol_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 2
+			fuel_consumption = 5
+			build_cost_ic = 50
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.11
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = light_patrol_ship_engine
+			convert_cost_ic = 150
+		}
+
+	}
+
+	light_patrol_ship_engine_2 = {
+		category = light_patrol_ship_engine
+		parent = light_patrol_ship_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 2
+			fuel_consumption = 5
+			build_cost_ic = 70
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.21
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = light_patrol_ship_engine
+			convert_cost_ic = 150
+		}
+		
+		can_convert_from = {
+			module = light_patrol_ship_engine_1
+			convert_cost_ic = 100
+		}
+	}
+
+	light_patrol_ship_engine_3 = {
+		category = light_patrol_ship_engine
+		parent = light_patrol_ship_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 2
+			fuel_consumption = 5
+			build_cost_ic = 100
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.31
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = light_patrol_ship_engine
+			convert_cost_ic = 175
+		}
+		
+		can_convert_from = {
+			module = light_patrol_ship_engine_2
+			convert_cost_ic = 150
+		}
+	}
+	
+	light_patrol_ship_engine_4 = {
+		category = light_patrol_ship_engine
+		parent = light_patrol_ship_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 2
+			fuel_consumption = 5
+			build_cost_ic = 125
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.41
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = light_patrol_ship_engine
+			convert_cost_ic = 200
+		}
+		
+		can_convert_from = {
+			module = light_patrol_ship_engine_3
+			convert_cost_ic = 175
+		}
+	}
+	
+	light_patrol_ship_engine_5 = {
+		category = light_patrol_ship_engine
+		parent = light_patrol_ship_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 2
+			fuel_consumption = 5
+			build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.51
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = light_patrol_ship_engine
+			convert_cost_ic = 225
+		}
+		
+		can_convert_from = {
+			module = light_patrol_ship_engine_4
+			convert_cost_ic = 200
+		}
+	}
+	
+	light_patrol_ship_engine_6 = {
+		category = light_patrol_ship_engine
+		parent = light_patrol_ship_engine_5
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 3
+			fuel_consumption = 7
+			build_cost_ic = 220
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.54
+			reliability = -0.25
+		}
+		
+		can_convert_from = {
+			module_category = light_patrol_ship_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = light_patrol_ship_engine_5
+			convert_cost_ic = 230
+		}
+	}
 
 	light_ship_engine_1 = {
 		category = light_ship_engine
