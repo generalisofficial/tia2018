@@ -23,7 +23,7 @@
  election.3.o2: "§PForm Majority Single-Party Government§!"
  election.3.o3: "§RForm Minority Single-Party Government§!"
  election.4.t: "[GetYear] Leadership Sortition"
- election.4.d: "It is time for a new government! As our nation is a lottocratic republic, our leaders are selected randomly. However, our [ROOT.GetParliamentName] remains elected. Which party will head the government this year?"
+ election.4.d: "It is time for a new government! As our nation is a demarchic republic, our leaders are selected randomly. However, our [ROOT.GetParliamentName] remains elected. Which party will head the government this year?"
  election.4.o1: "Spin the wheel!"
 
  #Factions
@@ -324,7 +324,7 @@
  coup.12.t: "Communist Coup"
  coup.12.d: "Earlier today, military forces loyal to our nation's growing §Ccommunist§! movement took control on the streets of [ROOT.Capital.GetName], seizing control of vital institutions and arresting pro-government lawmakers. Pro-Coup forces have now surrounded the government headquarters. What shall we do?"
  coup.13.t: "Coup d'etat in [FROM.GetNonIdeologyName] "
- coup.13.d: "After a standoff at the government headquarters, military forces in [FROM.GetNonIdeologyName] have managed to overthrow the government. The army acted in support of a growing opposition movement, one now supported by a majority of the population. The coup did not come as a surprise, as [FROM.GetNonIdeologyName] is a one-party state without democratic elections. It remains to be seen what the new government will bring to the table."
+ coup.13.d: "After a standoff at the government headquarters, military forces in [FROM.GetNonIdeologyName] have managed to overthrow the government. The army acted in support of a growing opposition movement, one now supported by a majority of the population. The coup did not come as a surprise, as [FROM.GetNonIdeologyName] is a one-party state without democratic elections. It remains to be seen what the new government under [FROM.GetLeader] will bring to the table."
  coup.13.o1: "Glad it's over!"
 
  #Politics
@@ -666,3 +666,11 @@ moldova.2.o1: "Very unexpected!"
 palestine.1.t: " New Palestinian Government"
 palestine.1.d: "The so-called Palestinian Authority has met its end, leaving a vacancy in who will become the recognized representative of the Palestinian people. We are the only ones able to fill that vacancy. It's safe to say that we are now the official Palestinian government."
 palestine.1.o1: "Now the real work can begin!"
+
+ #Libya
+ libya.1.t: "End of the Second Libyan Civil War"
+ libya.1.d: "A definitive end has finally arrived to one of the most chaotic conflicts of the 21st century, as forces loyal to the internationally recognized Government of National Accord declare a definitive conclusion of combat operations against the Cyrenaica-based Libyan National Army. The war has been a textbook proxy war, with multiple nations each backing one of the sides militarily. Due to the extreme anti-islamist sentiment of LNA commander Khalifa Haftar, much of the GNA's support came from moderate islamist governments, while Haftar received support from anti-islamist regimes. GNA leader [LBA.GetLeader] now has to rebuild the nation."
+ libya.1.o1: "What a mess!"
+ libya.2.t: "End of the Second Libyan Civil War"
+ libya.2.d: "A definitive end has finally arrived to one of the most chaotic conflicts of the 21st century, as the forces of the Libyan National Army, loyal to General Khalifa Haftar, declare a definitive conclusion of combat operations against the forces of the Tripoli government. The war has been a textbook proxy war, with multiple nations each backing one of the sides militarily. Due to the extreme anti-islamist sentiment of LNA commander Khalifa Haftar, much of the GNA's support came from moderate islamist governments, while Haftar received support from anti-islamist regimes. It is safe to say that Libya now has a new strongman: [LNA.GetLeader]."
+ libya.2.o1: "What a mess!"

@@ -1,0 +1,29 @@
+﻿add_namespace = libya
+
+news_event = { #End of the Second Libyan Civil War (Government of National Accord)
+	id = libya.1
+	title = libya.1.t
+	desc = libya.1.d
+	picture = GFX_news_event_anti_haftar_forces
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = libya.1.o1
+	}
+}
+
+news_event = { #End of the Second Libyan Civil War (Libyan National Army)
+	id = libya.2
+	title = libya.2.t
+	desc = libya.2.d
+	picture = GFX_news_event_khalifa_haftar
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = libya.2.o1
+	}
+}

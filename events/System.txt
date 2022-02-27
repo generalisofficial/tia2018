@@ -1290,3 +1290,65 @@ country_event = {
 		set_global_flag = commonwealth_of_nations_dissolved
 	}
 }
+
+
+country_event = {
+	id = system.30
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = libyan_civil_war_over }
+		country_exists = LBA
+		NOT = { country_exists = LNA }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = libya.1
+		set_global_flag = libyan_civil_war_over
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = LNA
+					is_claimed_by = LNA
+				}
+			}
+			remove_core_of = LNA
+			remove_claim_by = LNA
+		}
+	}
+}
+
+country_event = {
+	id = system.31
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = libyan_civil_war_over }
+		country_exists = LNA
+		NOT = { country_exists = LBA }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = libya.2
+		set_global_flag = libyan_civil_war_over
+		LNA = {
+			add_ideas = one_party_state
+			set_cosmetic_tag = LBA
+			set_capital = { state = 448 }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = LBA
+					is_claimed_by = LBA
+				}
+			}
+			remove_core_of = LBA
+			remove_claim_by = LBA
+		}
+	}
+}

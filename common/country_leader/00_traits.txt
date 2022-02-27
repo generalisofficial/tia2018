@@ -36,14 +36,6 @@ leader_traits = {
 		ai_will_do = { factor = 1 }
 	}
 
-	cryptocurrency_advocate = {
-		random = no
-		
-		#Cryptocurrency mechanic planned
-		
-		ai_will_do = { factor = 1 }
-	}
-
 	# Unique
 
 	the_unabomber = {
@@ -68,6 +60,22 @@ leader_traits = {
 		
 		political_power_factor = 0.15
 		stability_factor = 0.075
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	celebrity = {
+		random = no
+		
+		stability_factor = 0.03
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	cryptocurrency_advocate = {
+		random = no
+		
+		#Cryptocurrency mechanic planned
 		
 		ai_will_do = { factor = 1 }
 	}
