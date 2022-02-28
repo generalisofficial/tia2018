@@ -1,25 +1,12 @@
 ﻿units= {
 	##### Naval OOB #####
 	fleet = {
-		name = "Uruguayan Navy"
-		naval_base = 10362 #Montevideo
+		name = "National Aeronaval Service"
+		naval_base = 7630 #Panama
 		task_force = {				
-			name = "Escort Division"			
-			location = 10362 #Montevideo
-			ship = { name = "ROU Uruguay" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = URG } } }
-		}
-		task_force = {
-			name = "Counter Mining Division"
-			location = 10362 #Montevideo
-			ship = { name = "ROU Temerario" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = URG } } }
-			ship = { name = "ROU Audaz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = URG } } }
-		}
-		task_force = {
-			name = "Patrol Division"
-			location = 10362 #Montevideo
-			ship = { name = "ROU Colonia" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = URG } } }
-			ship = { name = "ROU Río Negro" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = URG } } }
-			ship = { name = "ROU Paysandú" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = URG } } }
+			name = "Maritime Patrol Unit"			
+			location = 7630 #Panama
+			ship = { name = "SENAN P-901" definition = patrol_boat equipment = { ship_hull_patrol_boat_2 = { amount = 1 owner = PAN version_name = "Diciotti Class" } } }
 		}
 	}
 }
