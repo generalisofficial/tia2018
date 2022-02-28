@@ -110,6 +110,21 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "Marine Brigade"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
 units = {
 	division = {
 		name = "1st Infantry Brigade"
@@ -219,6 +234,12 @@ units = {
 		division_template = "Jungle Brigade"
 		start_experience_factor = 0.3
 	}
+	division = {
+		name = "Naval Infantry Brigade"
+		location = 13731 #Lima
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
@@ -255,5 +276,13 @@ air_wings = {
 			amount = 12
 		}
 		name = "Air Squadron 412"
+	}
+	492 = {
+		#Beechcraft 200T Super King Air
+		nav_bomber_equipment_1 = {
+			owner = "PRU" 
+			amount = 6
+		}
+		name = "Naval Air Squadron 11"
 	}
 }

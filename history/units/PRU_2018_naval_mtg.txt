@@ -3,14 +3,15 @@
 	fleet = {
 		name = "Peruvian Navy"
 		naval_base = 13731 #Callao Naval Base
-		task_force = {				
-			name = "Peruvian Navy"			
+		task_force = {			
+			name = "Surface Force"			
 			location = 13731 #Callao Naval Base
-			ship = { name = "BAP Angamos" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
-			ship = { name = "BAP Pisagua" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
-			ship = { name = "BAP Chipana" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
-			ship = { name = "BAP Islay" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
-			ship = { name = "BAP Arica" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
+			ship = { name = "BAP Rio Pativilca" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = PRU version_name = "Río Pativilca Class" } } }
+			ship = { name = "BAP Rio Cañete" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = PRU version_name = "Río Pativilca Class" } } }
+			ship = { name = "BAP Rio Piura" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = PRU version_name = "Río Pativilca Class" } } }
+			ship = { name = "BAP Rio Quilca" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = PRU version_name = "Río Pativilca Class" } } }
+			ship = { name = "BAP Rio Tumbes" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = PRU version_name = "Río Pativilca Class" } } }
+			ship = { name = "BAP Rio Locumba" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = PRU version_name = "Río Pativilca Class" } } }
 			ship = { name = "BAP Velarde" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PRU version_name = "Espora Class" } } }
 			ship = { name = "BAP Santillana" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PRU version_name = "Espora Class" } } }
 			ship = { name = "BAP De los Heros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PRU version_name = "Espora Class" } } }
@@ -26,7 +27,17 @@
 			ship = { name = "BAP Palacios" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
 			ship = { name = "BAP Bolognesi" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
 			ship = { name = "BAP Quiñones" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
-		}				
+			ship = { name = "BAP Guardiamarina San Martin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
+		}
+		task_force = {
+			name = "Submarine Force"			
+			location = 13731 #Callao Naval Base
+			ship = { name = "BAP Angamos" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
+			ship = { name = "BAP Pisagua" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
+			ship = { name = "BAP Chipana" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
+			ship = { name = "BAP Islay" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
+			ship = { name = "BAP Arica" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRU version_name = "Type 209 Class" } } }
+		}			
 	}
 } 
 

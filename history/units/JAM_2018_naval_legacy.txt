@@ -1,0 +1,13 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "JDF Coast Guard"
+		naval_base = 12304 #Kingston
+		task_force = {				
+			name = "JDF Coast Guard"			
+			location = 12304 #Kingston
+			ship = { name = "HMJS Cornwall" definition = patrol_boat equipment = { patrol_boat_3 = { amount = 1 owner = JAM } } }
+			ship = { name = "HMJS Middlesex" definition = patrol_boat equipment = { patrol_boat_3 = { amount = 1 owner = JAM } } }
+		}
+	}
+}

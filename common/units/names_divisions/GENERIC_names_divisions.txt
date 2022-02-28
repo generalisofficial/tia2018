@@ -611,3 +611,30 @@ GENERIC_GAR_01 =
 		10 = { "%dth Garrison Division" }
 	}
 }
+
+GENERIC_GAR_02 = 
+{
+	name = "Garrison Brigade"
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dth Garrison Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Garrison Brigade" }
+		2 = { "%dnd Garrison Brigade" }
+		3 = { "%drd Garrison Brigade" }
+		4 = { "%dth Garrison Brigade" }
+		5 = { "%dth Garrison Brigade" }
+		6 = { "%dth Garrison Brigade" }
+		7 = { "%dth Garrison Brigade" }
+		8 = { "%dth Garrison Brigade" }
+		9 = { "%dth Garrison Brigade" }
+		10 = { "%dth Garrison Brigade" }
+	}
+}

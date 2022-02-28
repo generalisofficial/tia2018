@@ -2,10 +2,21 @@
 	##### Naval OOB #####
 	fleet = {
 		name = "Argentine Navy"
-		naval_base = 1639 # Port Belgrano Naval Base
+		naval_base = 1639 #Port Belgrano Naval Base
 		task_force = {				
-			name = "Argentine Navy"			
-			location = 1639 # Port Belgrano Naval Base
+			name = "Destroyer Division"			
+			location = 1639 #Port Belgrano Naval Base						
+			ship = { name = "ARA Almirante Brown" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
+			ship = { name = "ARA La Argentina" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
+			ship = { name = "ARA Heroína" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
+			ship = { name = "ARA Sarandí" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
+		}
+		task_force = {				
+			name = "Corvette Division"			
+			location = 1639 #Port Belgrano Naval Base
+			ship = { name = "ARA Intrépida" definition = destroyer equipment = { patrol_boat_1 = { amount = 1 owner = ARG } } }
+			ship = { name = "ARA Indómita" definition = destroyer equipment = { patrol_boat_1 = { amount = 1 owner = ARG } } }
+			ship = { name = "ARA King" definition = destroyer equipment = { patrol_boat_1 = { amount = 1 owner = ARG } } }
 			ship = { name = "ARA Drummond" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ARG } } }
 			ship = { name = "ARA Guerrico" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ARG } } }
 			ship = { name = "ARA Granville" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ARG } } }
@@ -15,10 +26,20 @@
 			ship = { name = "ARA Parker" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ARG } } }
 			ship = { name = "ARA Robinson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ARG } } }
 			ship = { name = "ARA Gómez Roca" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ARG } } }						
-			ship = { name = "ARA Almirante Brown" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
-			ship = { name = "ARA La Argentina" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
-			ship = { name = "ARA Heroína" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
-			ship = { name = "ARA Sarandí" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ARG } } }
 		}				
 	}
-} 
+}
+
+instant_effect = {
+	### Ships Under Contruction ###
+	# PB: Gowind Class (Ships: Bouchard, Piedrabuena, Almirante Storni, Bartolomé Cordero)
+	add_equipment_production = {
+		equipment = {
+			type = patrol_boat_4
+			creator = "ARG" 
+		}
+		requested_factories = 1
+		progress = 0.05
+		amount = 4
+	}
+}

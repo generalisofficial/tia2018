@@ -2,6 +2,14 @@
 
 oob = "NMB_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "NMB_2018_naval_mtg"
+	else = {
+		set_naval_oob = "NMB_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 2
 set_convoys = 12
 
@@ -148,3 +156,23 @@ recruit_character = NMB_mike_kavekotora
 recruit_character = NMB_bernadus_swartbooi
 recruit_character = NMB_hage_geingob
 recruit_character = NMB_epafras_mukwiilongo
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Haijiu Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}	

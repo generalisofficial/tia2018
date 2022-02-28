@@ -29,6 +29,10 @@ equipments = {
 				required = no
 				allowed_module_categories = { ship_fire_control_system }
 			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
 			fixed_ship_torpedo_slot = {
 				required = no
 				allowed_module_categories = { ship_torpedo }
@@ -37,10 +41,11 @@ equipments = {
 				required = yes
 				allowed_module_categories = { light_patrol_ship_engine }
 			}
-			depth_charge_slot = {
+			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_depth_charge
+					ship_mine_warfare
 				}
 			}
 		}
@@ -49,9 +54,10 @@ equipments = {
 			fixed_ship_battery_slot = empty
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_patrol_ship_engine_1
 			fixed_ship_torpedo_slot = empty
-			depth_charge_slot = empty
+			mid_1_custom_slot = empty
 		}
 		
 		lg_armor_piercing = 0
@@ -100,9 +106,10 @@ equipments = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
-			depth_charge_slot = inherit
+			mid_1_custom_slot = inherit
 		}
 	}
 
@@ -118,9 +125,10 @@ equipments = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
-			depth_charge_slot = inherit
+			mid_1_custom_slot = inherit
 		}
 
 		default_modules = {
@@ -150,9 +158,10 @@ equipments = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
-			depth_charge_slot = inherit
+			mid_1_custom_slot = inherit
 		}
 
 		
@@ -185,9 +194,10 @@ equipments = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
-			depth_charge_slot = inherit
+			mid_1_custom_slot = inherit
 		}
 
 
@@ -214,9 +224,10 @@ equipments = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
-			depth_charge_slot = inherit
+			mid_1_custom_slot = inherit
 		}
 
 
@@ -243,9 +254,10 @@ equipments = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
-			depth_charge_slot = inherit
+			mid_1_custom_slot = inherit
 		}
 
 		surface_detection = 20
@@ -270,9 +282,10 @@ equipments = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+            fixed_ship_radar_slot = ship_radar_1
 			fixed_ship_engine_slot = light_patrol_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			depth_charge_slot = ship_depth_charge_1
+			mid_1_custom_slot = ship_depth_charge_1
 		}
 	}
 
@@ -288,9 +301,10 @@ equipments = {
 			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_2
 			fixed_ship_engine_slot = light_patrol_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
-			depth_charge_slot = ship_depth_charge_2
+			mid_1_custom_slot = ship_depth_charge_2
 		}
 
 		reliability = 0.80
@@ -315,9 +329,10 @@ equipments = {
 			fixed_ship_battery_slot = ship_light_battery_3
 			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_3
 			fixed_ship_engine_slot = light_patrol_ship_engine_3
 			fixed_ship_torpedo_slot = ship_torpedo_3
-			depth_charge_slot = ship_depth_charge_3
+			mid_1_custom_slot = ship_depth_charge_3
 		}
 
 		resources = {
@@ -349,9 +364,10 @@ equipments = {
 			fixed_ship_battery_slot = ship_light_battery_4
 			fixed_ship_anti_air_slot = ship_anti_air_4
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_4
 			fixed_ship_engine_slot = light_patrol_ship_engine_4
 			fixed_ship_torpedo_slot = ship_torpedo_4
-			depth_charge_slot = ship_depth_charge_4
+			mid_1_custom_slot = ship_depth_charge_4
 		}
 
 		surface_detection = 20
@@ -377,9 +393,10 @@ equipments = {
 			fixed_ship_battery_slot = ship_light_battery_5
 			fixed_ship_anti_air_slot = ship_anti_air_5
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_5
 			fixed_ship_engine_slot = light_patrol_ship_engine_5
 			fixed_ship_torpedo_slot = ship_torpedo_5
-			depth_charge_slot = ship_depth_charge_5
+			mid_1_custom_slot = ship_depth_charge_5
 		}
 
 		surface_detection = 20
@@ -405,9 +422,10 @@ equipments = {
 			fixed_ship_battery_slot = ship_light_battery_6
 			fixed_ship_anti_air_slot = ship_anti_air_6
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_6
 			fixed_ship_engine_slot = light_patrol_ship_engine_6
 			fixed_ship_torpedo_slot = ship_torpedo_6
-			depth_charge_slot = ship_depth_charge_6
+			mid_1_custom_slot = ship_depth_charge_6
 		}
 
 		surface_detection = 20

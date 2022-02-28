@@ -118,31 +118,6 @@ guiTypes = {
 						position = { x=0 y=0 }
 					}
 				}
-
-				#### MODULE: Sonar ####
-				containerWindowType = {
-					name = "ship_sonar"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint"
-						spriteType = "GFX_SM_light_hull_sonar"
-						position = { x=0 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_sonar@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint_highlight"
-						spriteType = "GFX_SM_light_hull_sonar@highlight"
-						position = { x=0 y=0 }
-					}
-				}
 			}
 
 			################# MODULE SLOT: Radar/Sonar #################
@@ -172,31 +147,6 @@ guiTypes = {
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_light_hull_radar@highlight"
-						position = { x=0 y=0 }
-					}
-				}
-
-				#### MODULE: Sonar ####
-				containerWindowType = {
-					name = "ship_sonar"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint"
-						spriteType = "GFX_SM_light_hull_sonar"
-						position = { x=0 y=0 }
-					}
-				}
-
-				containerWindowType = {
-					name = "ship_sonar@highlight"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "blueprint_highlight"
-						spriteType = "GFX_SM_light_hull_sonar@highlight"
 						position = { x=0 y=0 }
 					}
 				}
@@ -294,6 +244,31 @@ guiTypes = {
 						position = { x=310 y=0 }
 					}
 				}
+
+				#### MODULE: Mine Sweeper ####
+				containerWindowType = {
+					name = "ship_mine_sweeper"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						#spriteType = "GFX_SM_light_hull_mid_1_mine_sweeper"
+						position = { x=100 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "ship_mine_sweeper@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						#spriteType = "GFX_SM_light_hull_mid_1_mine_sweeper@highlight"
+						position = { x=100 y=0 }
+					}
+				}
+			}	
 		}
 	}
 }

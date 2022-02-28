@@ -1,81 +1,134 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-}
-division_template = {
 	name = "Motorized Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		light_mechanized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
 	}
 }
 
-units = {
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
-	division = {
-		name = "1st Brigade"
-		location = 4879
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
 	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Motorized Batallion"
+	division_names_group = GENERIC_MOT_02
 	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Marine Batallion"
+	division_names_group = GENERIC_MAR_02
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Airborne Batallion"
+	division_names_group = GENERIC_AIR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+	}
+}
+
+units = {	
 	division = {
-		name = "2nd Brigade"
-		location = 2229
+		name = "12th Motorised Infantry Brigade"
+		location = 4879 #Windhoek
 		division_template = "Motorized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "21st Motorised Infantry Brigade"
+		location = 4879 #Windhoek
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "26th Motorised Infantry Brigade"
+		location = 7770 #Gobabis
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "126th Motorised Infantry Batallion"
+		location = 10978 #Walvis Bay
+		division_template = "Motorized Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "262th Motorised Infantry Batallion"
+		location = 12519 #Rundu
+		division_template = "Motorized Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "263th Motorised Infantry Batallion"
+		location = 13558 #Katima Mulilo
+		division_template = "Motorized Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Amphibious Commandos Unit"
+		location = 10978 #Walvis Bay
+		division_template = "Marine Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Parachute Unit"
+		location = 4879 #Windhoek
+		division_template = "Airborne Batallion"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
 
 air_wings = {
 	541 = {
-		#F-7 MiG-21 Copy - 70s but downgraded for gameplay variety and to fit with icon
+		#Harbin Y-12 + Antonov An-26
+		transport_plane_equipment_1 = {
+			owner = "NMB" 
+			amount = 3
+		}
+		name = "13th Wing"
+	}
+	541 = {
+		#Chengdu J-7
 		fighter_equipment_1 = {
 			owner = "NMB" 
-			amount = 7
+			amount = 6
 		}
+		name = "Air Defence Wing"
 	}
 }

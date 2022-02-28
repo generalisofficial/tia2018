@@ -4,13 +4,14 @@
 		name = "Peruvian Navy"
 		naval_base = 13731 #Callao Naval Base
 		task_force = {				
-			name = "Peruvian Navy"			
+			name = "Surface Force"			
 			location = 13731 #Callao Naval Base
-			ship = { name = "BAP Angamos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
-			ship = { name = "BAP Pisagua" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
-			ship = { name = "BAP Chipana" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
-			ship = { name = "BAP Islay" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
-			ship = { name = "BAP Arica" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Rio Pativilca" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Rio Cañete" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Rio Piura" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Rio Quilca" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Rio Tumbes" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Rio Locumba" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP Velarde" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP Santillana" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP De los Heros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRU } } }
@@ -26,6 +27,15 @@
 			ship = { name = "BAP Palacios" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP Bolognesi" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP Quiñones" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRU } } }
-		}				
+		}
+		task_force = {
+			name = "Submarine Force"			
+			location = 13731 #Callao Naval Base
+			ship = { name = "BAP Angamos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Pisagua" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Chipana" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Islay" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
+			ship = { name = "BAP Arica" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
+		}			
 	}
 } 

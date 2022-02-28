@@ -1,22 +1,20 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		light_mechanized = { x = 0 y = 0 }
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
 	}
 }
+
 units = {
 	division = {
-		name = "Surinamese Land Forces"
+		name = "33rd Infantry Batallion"
 		location = 10906
-		division_template = "Mechanized Brigade"
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}	
 }
