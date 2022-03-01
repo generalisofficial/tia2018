@@ -93,10 +93,9 @@ branch_intelligence = {
 
 branch_defense = {
 	
-	upgrade_passive_defense = {
+	upgrade_counterintelligence = {
 	
-		picture = GFX_agency_defense_department
-		frame = GFX_upgrade_frame_defense
+		picture = GFX_agency_counterintelligence
 		sound = Spy_Agency_Defense_Upgrades_Confirm
 		
 		ai_will_do = {
@@ -133,9 +132,9 @@ branch_defense = {
 		
 	}
 
-	upgrade_anti_partisan = {
+	upgrade_counterinsurgency = {
 	
-		picture = GFX_agency_anti_partisan
+		picture = GFX_agency_counterinsurgency
 		sound = Spy_Agency_Defense_Upgrades_Confirm
 		
 		ai_will_do = {
@@ -163,7 +162,7 @@ branch_defense = {
 
 branch_operation = {
 	
-	upgrade_blueprint_stealing = {
+	upgrade_industrial_espionage = {
 	
 		picture = GFX_agency_steal_blueprints
 		sound = Spy_Agency_Operations_Upgrades_Confirm
@@ -184,7 +183,7 @@ branch_operation = {
 		
 	}
 	
-	upgrade_portable_radios = {
+	upgrade_secure_communication = {
 	
 		picture = GFX_agency_portable_radios
 		sound = Spy_Agency_Operations_Upgrades_Confirm
@@ -205,7 +204,7 @@ branch_operation = {
 		
 	}
 	
-	upgrade_invisible_ink = {
+	upgrade_wiretapping = {
 	
 		picture = GFX_agency_invisible_ink
 		sound = Spy_Agency_Operations_Upgrades_Confirm
@@ -227,7 +226,7 @@ branch_operation = {
 		
 	}
 	
-	upgrade_plastic_explosives = {
+	upgrade_improvised_explosive_devices = {
 	
 		picture = GFX_agency_plastic_explosives
 		sound = Spy_Agency_Operations_Upgrades_Confirm
@@ -275,7 +274,7 @@ branch_operation = {
 
 branch_operative = {
 	
-	upgrade_training_centers = {
+	upgrade_foreign_recruitment = {
 	
 		picture = GFX_agency_localized_training_center
 		Sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
@@ -302,7 +301,7 @@ branch_operative = {
 		
 	}
 	
-	upgrade_commando_training = {
+	upgrade_black_operations = {
 	
 		picture = GFX_agency_commando_training
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm	
@@ -317,7 +316,7 @@ branch_operative = {
 		
 		level = {
 			modifier = {
-				commando_trait_chance_factor = 1 # +100%
+				commando_trait_chance_factor = 1
 			}
 		}
 		
@@ -338,14 +337,14 @@ branch_operative = {
 		
 		level = {
 			modifier = {
-				enemy_operative_capture_chance_factor = 1 # +100%
-				enemy_operative_intel_extraction_rate = 0.25 # +25%
+				enemy_operative_capture_chance_factor = 1
+				enemy_operative_intel_extraction_rate = 0.25
 			}
 		}
 		
 	}
 	
-	upgrade_diplo_training = {
+	upgrade_diplomatic_training = {
 	
 		picture = GFX_agency_diplomatic_training
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
@@ -367,7 +366,7 @@ branch_operative = {
 		
 	}
 	
-	upgrade_psycho_warfare = {
+	upgrade_psychological_warfare = {
 	
 		picture = GFX_agency_psychological_warfare
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
@@ -393,10 +392,9 @@ branch_operative = {
 
 branch_crypto = {
 	
-	upgrade_form_department = {
+	upgrade_form_cyber_operations_department = {
 	
-		picture = GFX_agency_form_department
-		frame = GFX_upgrade_frame_form
+		picture = GFX_agency_cyber_operations
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 		
 		ai_will_do = {
@@ -417,9 +415,9 @@ branch_crypto = {
 		
 	}
 	
-	upgrade_decryption_boost = {
+	upgrade_cybersecurity = {
 	
-		picture = GFX_agency_decryption_boost_1
+		picture = GFX_agency_cybersecurity
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 		
 		ai_will_do = {
@@ -427,7 +425,55 @@ branch_crypto = {
 		}
 		
 		available = {
-			has_done_agency_upgrade = upgrade_form_department
+			has_done_agency_upgrade = upgrade_form_cyber_operations_department
+		}
+		
+		modifiers_during_progress = {
+			civilian_factory_use = 5
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 1
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 1
+			}
+		}
+
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		
+		level = {
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+	}
+	
+	upgrade_cyberwarfare = {
+	
+		picture = GFX_agency_cyberwarfare
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+			has_done_agency_upgrade = upgrade_form_cyber_operations_department
 		}
 		
 		modifiers_during_progress = {
@@ -444,26 +490,8 @@ branch_crypto = {
 			modifier = {
 				decryption_power = 10
 			}
-		}		
-	}
+		}
 
-	upgrade_decryption_boost_2 = {
-	
-		picture = GFX_agency_decryption_boost_2
-		sound = Spy_Agency_Cryptology_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		available = {
-			has_done_agency_upgrade = upgrade_decryption_boost
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 10 
-		}
-		
 		level = {
 			modifier = {
 				decryption_power = 25
@@ -481,73 +509,5 @@ branch_crypto = {
 				decryption_power = 10
 			}
 		}
-		
 	}
-	
-	upgrade_crypto_strength = {
-	
-		picture = GFX_agency_cryptology_2
-		sound = Spy_Agency_Cryptology_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 2
-		}
-		
-		available = {
-			has_done_agency_upgrade = upgrade_form_department
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 5
-		}
-		
-		level = {
-			modifier = {
-				crypto_strength = 1
-			}
-		}
-		
-		level = {
-			modifier = {
-				crypto_strength = 1
-			}
-		}
-	}
-	
-	upgrade_crypto_strength_2 = {
-	
-		picture = GFX_agency_cryptology_1
-		sound = Spy_Agency_Cryptology_Upgrades_Confirm
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		available = {
-			has_done_agency_upgrade = upgrade_crypto_strength
-		}
-		
-		modifiers_during_progress = {
-			civilian_factory_use = 15
-		}
-		
-		level = {
-			modifier = {
-				crypto_strength = 2
-			}
-		}
-		
-		level = {
-			modifier = {
-				crypto_strength = 2
-			}
-		}
-		
-		level = {
-			modifier = {
-				crypto_strength = 2
-			}
-		}
-	}
-	
 }

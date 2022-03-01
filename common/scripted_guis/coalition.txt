@@ -70,21 +70,6 @@ scripted_gui = {
 						add = 100
 						national_conservative_plurality_seats = yes
 					}
-					modifier = {
-						add = 100
-						national_conservative > 0.01
-						has_idea = swiss_political_system
-						OR = {
-							AND = {
-								date > 2019.1.1
-								date < 2020.1.1
-							}
-							AND = {
-								date > 2021.1.1
-								date < 2022.1.1
-							}
-						}
-					}
 				}
 			}
 			party6_click = {
@@ -103,13 +88,6 @@ scripted_gui = {
 						add = 99
 						classical_liberal_plurality_seats = yes
 					}
-					modifier = {
-						add = 100
-						classical_liberal > 0.01
-						has_idea = swiss_political_system
-						date > 2022.1.1
-						date < 2023.1.1
-					}
 				}
 			}
 			party8_click = {
@@ -127,13 +105,6 @@ scripted_gui = {
 					modifier = {
 						add = 99
 						social_democrat_plurality_seats = yes
-					}
-					modifier = {
-						add = 100
-						social_democrat > 0.01
-						has_idea = swiss_political_system
-						date > 2020.1.1
-						date < 2021.1.1
 					}
 				}
 			}
