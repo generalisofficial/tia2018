@@ -204,30 +204,4 @@ wargoal_types = {
 		
 		threat = 2
 	}
-    Jihad = {
-		# PREV = original target country
-		# ROOT = goal owner country
-
-		allowed = {
-			has_idea = salafist_jihadist_group
-		}
-		
-		available = {
-			
-		}
-		
-		take_states = {
-			
-		}
-		
-		generate_base_cost = 100		
-		generate_per_state_cost = 10
-		
-		take_states_limit = 10
-		take_states_cost = -20
-		
-		expire = 360
-		
-		threat = 10
-	}
 }
