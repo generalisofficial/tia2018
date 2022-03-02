@@ -1,5 +1,71 @@
 characters={
     #Starting - Political
+	UKR_andriy_biletsky={
+		name="Andriy Biletsky"
+		portraits={
+			civilian={
+				large=GFX_Portrait_UKR_Andriy_Biletsky
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
+	UKR_oleh_tyahnybok={
+		name="Oleh Tyahnybok"
+		portraits={
+			civilian={
+				large=GFX_Portrait_UKR_Oleh_Tyahnybok
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	UKR_yuriy_boyko={
+		name="Boris Skoropadskyi"
+		portraits={
+			civilian={
+				large=GFX_Portrait_UKR_Boris_Skoropadskyi
+			}
+		}
+		country_leader={
+			ideology=monarchist_ideology
+		}
+	}
+	UKR_yuriy_boyko={
+		name="Yuriy Boyko"
+		portraits={
+			civilian={
+				large=GFX_Portrait_UKR_Yuriy_Boyko
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
+	UKR_petro_poroshenko={
+		name="Petro Poroshenko"
+		portraits={
+			civilian={
+				large=GFX_Portrait_UKR_Petro_Poroshenko
+			}
+		}
+		country_leader={
+			ideology=liberal_conservative
+		}
+	}
+	UKR_svyatoslav_vakarchuk={
+		name="Svyatoslav Vakarchuk"
+		portraits={
+			civilian={
+				large=GFX_Portrait_UKR_Svyatoslav_Vakarchuk
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
 	UKR_volodymyr_zelensky={
 		name="Volodymyr Zelensky"
 		portraits={
@@ -11,17 +77,6 @@ characters={
 			ideology=centrist
 		}
 	}
-	UKR_yuriy_boyko={
-		name="Yuriy Boyko"
-		portraits={
-			civilian={
-				large=GFX_Portrait_UKR_Yuriy_Boyko
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
 	UKR_yulia_tymoshenko={
 		name="Yulia Tymoshenko"
 		portraits={
@@ -30,52 +85,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_conservative
+			ideology=social_democrat_ideology
 		}
 	}
-	UKR_petro_poroshenko={
-		name="Petro Poroshenko"
+	UKR_vitaliy_kononov={
+		name="Vitaliy Kononov"
 		portraits={
 			civilian={
-				large=GFX_Portrait_UKR_Petro_Poroshenko
+				large=GFX_Portrait_UKR_Vitaliy_Kononov
 			}
 		}
 		country_leader={
-			ideology=classical_liberal_ideology
-			traits={ enemy_of_russia }
-		}
-	}
-	UKR_andriy_tarasenko={
-		name="Andriy Tarasenko"
-		portraits={
-			civilian={
-				large=GFX_Portrait_UKR_Andriy_Tarasenko
-			}
-		}
-		country_leader={
-			ideology=fascist_ideology
-		}
-	}
-	UKR_arseniy_yatsenyuk={
-		name="Arseniy Yatsenyuk"
-		portraits={
-			civilian={
-				large=GFX_Portrait_UKR_Arseniy_Yatsenyuk
-			}
-		}
-		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	UKR_oleh_lyashko={
-		name="Oleh Lyashko"
-		portraits={
-			civilian={
-				large=GFX_Portrait_UKR_Oleh_Lyashko
-			}
-		}
-		country_leader={
-			ideology=right_wing_nationalist_ideology
+			ideology=green
 		}
 	}
 	UKR_petro_symonenko={
@@ -87,204 +108,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	UKR_viktor_muzhenko={
-		name="Viktor Muzhenko"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Viktor_Muzhenko
-			}
-		}
-		field_marshal={
-			traits={ old_guard defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_serhiy_popko={
-		name="Serhiy Popko"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Serhiy_Popko
-			}
-		}
-		field_marshal={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_anatoly_shevchenko={
-		name="Anatoly Shevchenko"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Anatoly_Shevchenko
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_mykhailo_zabrodskyi={
-		name="Mykhailo Zabrodskyi"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Mykhailo_Zabrodskyi
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_oleksandr_lokota={
-		name="Oleksandr Lokota"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Oleksandr_Lokota
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_serhiy_drozdov={
-		name="Serhiy Drozdov"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Serhiy_Drozdov
-			}
-		}
-		corps_commander={
-			traits={ old_guard commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_serhiy_shaptala={
-		name="Serhiy Shaptala"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Serhiy_Shaptala
-			}
-		}
-		corps_commander={
-			traits={ old_guard commando }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_vasyl_zubanich={
-		name="Vasyl Zubanich"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Vasyl_Zubanich
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_viktor_nikolyuk={
-		name="Viktor Nikolyuk"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Viktor_Nikolyuk
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_volodymyr_shvorak={
-		name="Volodymyr Shvorak"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_Volodymyr_Shvorak
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_ihor_voronchenko={
-		name="Ihor Voronchenko"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_admirals_Ihor_Voronchenko
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	UKR_serhiy_hayduk={
-		name="Serhiy Hayduk"
-		portraits={
-			army={
-				large=GFX_Portrait_UKR_admirals_Serhiy_Hayduk
-			}
-		}
-		navy_leader={
-			traits={ superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	#Starting - Military

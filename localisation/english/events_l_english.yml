@@ -25,6 +25,10 @@
  election.4.t: "[GetYear] Leadership Sortition"
  election.4.d: "It is time for a new government! As our nation is a demarchic republic, our leaders are selected randomly. However, our [ROOT.GetParliamentName] remains elected. Which party will head the government this year?"
  election.4.o1: "Spin the wheel!"
+ election.5.t: "The Final Debate"
+ election.5.d: "As the election campaign draws to a close, the final TV debate between the Government and the Opposition is now taking place. While most voters have already decided which party to vote for, the result of this debate may influence a few swing voters. Which side wins the debate?"
+ election.5.o1: "The Government"
+ election.5.o2: "The Opposition"
 
  #Factions
  factions.1.t: "[From.GetNameDef] joins NATO"
@@ -202,8 +206,8 @@
  european_union.2.d: "Our recently submitted application to the European Union has now been voted on by the European Council. As it turns out, the application..."
  european_union.2.o1: "was accepted!"
  european_union.2.o2: "was vetoed by a member state!"
- european_union.3.t: "[FROM.GetNonIdeologyName] joins the European Union"
- european_union.3.d: "[FROM.GetNonIdeologyName] today joined the ranks of the European Union as its newest member, after its application to join the organization was accepted. After being voted through by the European Council, the application officially passed, and [FROM.GetNonIdeologyName] became a full member of the organization, as well as the European Single Market. [FROM.GetLeader] proceeded to hold a speech at the European Council, thanking the European Union for being willing to work with their nation."
+ european_union.3.t: "[FROM.GetNonIdeologyNameDef] joins the European Union"
+ european_union.3.d: "[FROM.GetNonIdeologyNameDef] today joined the ranks of the European Union as its newest member, after its application to join the organization was accepted. After being voted through by the European Council, the application officially passed, and [FROM.GetNonIdeologyNameDef] became a full member of the organization, as well as the European Single Market. [FROM.GetLeader] proceeded to hold a speech at the European Council, thanking the European Union for being willing to work with their nation."
  european_union.3.o1: "A great day for international cooperation!"
  european_union.3.o2: "A great day for our nation!"
 
@@ -323,15 +327,19 @@
  coup.11.d: "Earlier today, military forces loyal to our nation's growing §Dsocialist§! movement took control on the streets of [ROOT.Capital.GetName], seizing control of vital institutions and arresting pro-government lawmakers. Pro-Coup forces have now surrounded the government headquarters. What shall we do?"
  coup.12.t: "Communist Coup"
  coup.12.d: "Earlier today, military forces loyal to our nation's growing §Ccommunist§! movement took control on the streets of [ROOT.Capital.GetName], seizing control of vital institutions and arresting pro-government lawmakers. Pro-Coup forces have now surrounded the government headquarters. What shall we do?"
- coup.13.t: "Coup d'etat in [FROM.GetNonIdeologyName] "
- coup.13.d: "After a standoff at the government headquarters, military forces in [FROM.GetNonIdeologyName] have managed to overthrow the government. The army acted in support of a growing opposition movement, one now supported by a majority of the population. The coup did not come as a surprise, as [FROM.GetNonIdeologyName] is a one-party state without democratic elections. It remains to be seen what the new government under [FROM.GetLeader] will bring to the table."
+ coup.13.t: "Coup d'etat in [FROM.GetNonIdeologyNameDef] "
+ coup.13.d: "After a standoff at the government headquarters, military forces in [FROM.GetNonIdeologyNameDef] have managed to overthrow the government. The army acted in support of a growing opposition movement, one now supported by a majority of the population. The coup did not come as a surprise, as [FROM.GetNonIdeologyNameDef] is a one-party state without democratic elections. It remains to be seen what the new government under [FROM.GetLeader] will bring to the table."
  coup.13.o1: "Glad it's over!"
 
  #Politics
- politics.1.t: "[FROM.GetNonIdeologyName] investigated for electoral fraud"
- politics.1.d: "International election observers have launched an investigation against [FROM.GetNonIdeologyName], with the nation's recent election seeing unusually high numbers of discrepancies. It is now widely suspected that the government of [FROM.GetLeader] rigged the election in their favor, taking advantage of the country's government-centric authoritarian institutions. At a press conference in [FROM.Capital.GetName], an opposition spokesperson proceeded to denounce the government as tyrannical, before being carried away by armed police officers."
+ politics.1.t: "[FROM.GetNonIdeologyNameDef] investigated for electoral fraud"
+ politics.1.d: "International election observers have launched an investigation against [FROM.GetNonIdeologyNameDef], with the nation's recent election seeing unusually high numbers of discrepancies. It is now widely suspected that the government of [FROM.GetLeader] rigged the election in their favor, taking advantage of the country's government-centric authoritarian institutions. At a press conference in [FROM.Capital.GetName], an opposition spokesperson proceeded to denounce the government as tyrannical, before being carried away by armed police officers."
  politics.1.o1: "Such shameful behavior!"
  politics.1.o2: "Such ridiculous allegations!"
+ politics.2.t: "[FROM.GetAdjective] transition to democracy"
+ politics.2.d: "Human rights organizations and the United Nations have given rare praise to the government of [FROM.GetNonIdeologyNameDef], as the nation has declared its intent to legalize opposition parties and hold elections. While the ruling [FROM.GetRulingParty] of the now-former one-party state remains in power for the time being, opposition parties are now able to oust the government at the next election. If these elections will be free and fair however remains to be seen." 
+ politics.2.o1: "A bold move!"
+ politics.2.o2: "We love democracy!"
 
  #Turkey
  turkey.1.t: "Successful Operation Olive Branch"
@@ -462,8 +470,8 @@
  united_nations.2.o1: "was accepted!"
  united_nations.2.o2: "was rejected!"
  united_nations.2.o3: "was vetoed by the Security Council!"
- united_nations.3.t: "[FROM.GetNonIdeologyName] joins the United Nations"
- united_nations.3.d: "[FROM.GetNonIdeologyName] today joined the ranks of the United Nations as its newest member, after its application to join the organization was accepted. After being voted through by both the General Assembly and Security Council, the application officially passed, and the Secretary-General officially declared [FROM.GetNonIdeologyName] as a full member of the organization. [FROM.GetLeader] proceeded to hold a speech at the General Assembly, thanking the international community for their willingness to work with his country in ensuring world peace."
+ united_nations.3.t: "[FROM.GetNonIdeologyNameDef] joins the United Nations"
+ united_nations.3.d: "[FROM.GetNonIdeologyNameDef] today joined the ranks of the United Nations as its newest member, after its application to join the organization was accepted. After being voted through by both the General Assembly and Security Council, the application officially passed, and the Secretary-General officially declared [FROM.GetNonIdeologyNameDef] as a full member of the organization. [FROM.GetLeader] proceeded to hold a speech at the General Assembly, thanking the international community for their willingness to work with his country in ensuring world peace."
  united_nations.3.o1: "A great day for world peace!"
  united_nations.3.o2: "A great day for our nation!"
 

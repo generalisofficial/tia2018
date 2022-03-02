@@ -2003,3 +2003,24 @@ election_pulse = {
 		country_event = israel.2
 	}
 }
+
+election_effect = {
+	if = {
+		limit = {
+			has_idea = presidential_republic
+		}
+		country_event = election.1
+	}
+	if = {
+		limit = {
+			has_idea = parliamentary_republic
+		}
+		country_event = election.3
+	}
+	if = {
+		limit = {
+			has_idea = demarchic_republic
+		}
+		country_event = election.4
+	}
+}

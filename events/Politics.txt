@@ -23,3 +23,27 @@ news_event = { #(Country) investigated for electoral fraud
 		}
 	}
 }
+
+news_event = { #(Country, ADJ) transition to democracy
+	id = politics.2
+	title = politics.2.t
+	desc = politics.2.d
+	picture = GFX_news_event_statue_of_liberty
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.2.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = politics.2.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}

@@ -1,14 +1,8 @@
 on_actions = {
 	# country 
 	on_new_term_election = {
-		random_events = {
-			100 = election.1
-		}
-		random_events = {
-			100 = election.3
-		}
-		random_events = {
-			100 = election.4
+		effect = {
+			country_event = election.5
 		}
 	}
 
@@ -34,8 +28,6 @@ on_actions = {
 
 	# country, FROM = ace
 	on_ace_killed = {
-		random_events = {
-		}
 	}
 
 	# During justifying wargoals
