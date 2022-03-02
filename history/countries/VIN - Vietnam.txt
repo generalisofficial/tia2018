@@ -68,9 +68,12 @@ set_technology = {
 	
 	## Industry ##
 	basic_machine_tools = 1
+}
 
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = { 
+		NOT = { has_dlc = "Man the Guns" }
+	}
 	set_technology = {
 		early_destroyer = 1
 		early_light_cruiser = 1
@@ -80,8 +83,11 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = { 
+		has_dlc = "Man the Guns" 
+	}
 	set_technology = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -102,8 +108,6 @@ if = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 	}
-}
-
 }
 
 set_country_flag = buddhism
