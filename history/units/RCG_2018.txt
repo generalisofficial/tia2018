@@ -1,56 +1,29 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		modern_armor = { x = 2 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		light_tank_recon = { x = 0 y = 3 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "Brigade of Brazzaville"
-		location = 8193
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Coastal Protection Force"
-		location = 12975
+		name = "Congolese Army"
+		location = 8193 #Brazzaville
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 }
 
 ### Air OOB ###
@@ -58,9 +31,18 @@ units = {
 air_wings = {
 	759 = {
 		#Mirage F1 
-		fighter_equipment_2 = {
+		fighter_equipment_1 = {
 			owner = "RCG"
 			amount = 4
 		}
+		name = "Fighter Wing"
+	}
+	759 = {
+		#Antonov An-32 + CASA CN-235
+		transport_plane_equipment_1 = {
+			owner = "RCG"
+			amount = 3
+		}
+		name = "Transport Wing"
 	}
 }

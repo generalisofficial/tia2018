@@ -2,6 +2,14 @@
 
 oob = "GAB_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GAB_2018_naval_mtg"
+	else = {
+		set_naval_oob = "GAB_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 2
 set_convoys = 28
 
@@ -140,3 +148,22 @@ set_popularities = {
 
 recruit_character = GAB_ali_bongo_ondimba
 recruit_character = GAB_jean_ping
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "P400 Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_Slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}

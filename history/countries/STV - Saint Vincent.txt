@@ -2,9 +2,16 @@
 
 oob = "STV_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "STV_2018_naval_mtg"
+	else = {
+		set_naval_oob = "STV_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 2
 set_convoys = 810
-
 
 set_country_flag = country_language_english
 
@@ -58,6 +65,7 @@ set_technology = {
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -140,3 +148,22 @@ set_popularities = {
 
 recruit_character = STV_ralph_gonsalves
 recruit_character = STV_godwin_friday
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Captain Mulzac Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}

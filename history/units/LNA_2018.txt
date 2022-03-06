@@ -1,0 +1,181 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Al-Saiqa Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_02
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Militia Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {	
+	division = {
+		name = "21st "Al-Zawiya Martyrs" Brigade"
+		location = 11954 #Benghazi
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21st "Al-Zawiya Martyrs" Brigade"
+		location = 11954 #Benghazi
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Infantry Brigade"
+		location = 14263 #Near Traghan
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Infantry Brigade"
+		location = 14233 #Near Traghan
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "128th Brigade"
+		location = 14263 #Southern Libya
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "141st Brigade"
+		location = 14241 #Southern Libya
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "166th Infantry Brigade"
+		location = 14221 #Southern Libya
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "173rd Brigade"
+		location = 14238
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "177th Brigade"
+		location = 12088
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "36th Brigade"
+		location = 14170 #Involved in the Derna
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Al-Saiqa Brigade"
+		location = 9992 #Involved in the Battle of Derna
+		division_template = "Al-Saiqa Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "204th Tank Brigade"
+		location = 1130 #Involved in the Battle of Derna
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Al-Qa'Qa'a Brigade"
+		location = 12039 #Based near Zawiya
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Al-Naser Brigade"
+		location = 4051 #Based near Zintan
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Jaysh-al-Qaba'el Brigade"
+		location = 12039 #Based on Warshafana
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Zintan Brigades"
+		location = 4051 #Based on Zintan
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Gadafi Loyalists"
+		location = 14249 #Based near Zintan
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	450 = {
+		#MiG-21 + MiG-23 + Su-22 + Mirage F1
+		fighter_equipment_1 = {
+			owner = "LNA" 
+			amount = 21
+		}
+	}
+	450 = {
+		#Sukhoi Su-24
+		cas_equipment_1 = {
+			owner = "LNA" 
+			amount = 2
+		}
+	}
+}

@@ -2,6 +2,14 @@
 
 oob = "RCG_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "RCG_2018_naval_mtg"
+	else = {
+		set_naval_oob = "RCG_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 2
 set_convoys = 11
 
@@ -66,6 +74,9 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_patrol_boat = 1
+		basic_patrol_boat = 1
+		improved_patrol_boat = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
@@ -76,6 +87,9 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		basic_ship_hull_patrol_boat = 1
+		improved_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -145,3 +159,21 @@ recruit_character = RCG_denis_sassou_nguesso
 recruit_character = RCG_pascal_tsaty_mabiala
 recruit_character = RCG_guy_brice_parfait_kolélas
 recruit_character = RCG_guy_blanchard_okoi
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "05 Février 1979 Class"
+		type = ship_hull_patrol_boat_3
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_3
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}

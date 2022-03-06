@@ -5,54 +5,36 @@
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		armored_car_recon = { x = 0 y = 2 }
 	}
+	priority = 2
 }
 division_template = {
-	name = "Armored Brigade"
+	name = "Military Region Brigade"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "1st Republican Guards"
-		location = 5139
+		name = "Republican Guard"
+		location = 5139 #Libreville
 		division_template = "Republican Guard Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Republican Guards"
-		location = 5139
-		division_template = "Republican Guard Brigade"
+		name = "Military Regions Brigade"
+		location = 5139 #All over the country, but HQ is in Libreville
+		division_template = "Military Region Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "3rd Republican Guards"
-		location = 5139
-		division_template = "Republican Guard Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "4th Republican Guards"
-		location = 5139
-		division_template = "Republican Guard Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
@@ -60,17 +42,26 @@ units = {
 air_wings = {
 	539 = {
 		#Mirage F1 
-		fighter_equipment_2 = {
+		fighter_equipment_1 = {
 			owner = "GAB" 
 			amount = 6
 		}
+		name = "1-02 Leyou Fighter Squadron"
 	}
 	539 = {
-		#Mirage 5G
-		CAS_equipment_2 = {
+		#MB-326 Impala I
+		CAS_equipment_1 = {
 			owner = "GAB" 
-			amount = 3
+			amount = 2
 		}
-
+		name = "Tactical Support Squadron"
+	}
+	539 = {
+		#C130H + CN-235
+		transport_plane_equipment_1 = {
+			owner = "GAB" 
+			amount = 2
+		}
+		name = "Heavy Transport Squadron"
 	}
 }

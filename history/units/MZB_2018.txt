@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
-	division_names_group = GENERIC_INFB_01
+	division_names_group = GENERIC_INFB_02
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,6 +16,21 @@
 	}
 }
 
+division_template = {
+	name = "Mountain Brigade"
+	division_names_group = GENERIC_MNT_02
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
 units = {
 	division = {
 		name = "Mozambique Defence Armed Forces"
@@ -23,6 +38,12 @@ units = {
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.0 #Poorly trained, bad treatment, low pay, etc.
 		start_equipment_factor = 0.75 #Suffers a lot of attrition due to bad maintainence and desertion
+	}
+	division = {
+		name = "Mozambique Special Forces"
+		location = 8245 #Maputo
+		division_template = "Mountain Brigade"
+		start_experience_factor = 0.3
 	}
 }
 

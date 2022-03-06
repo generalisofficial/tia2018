@@ -2,6 +2,14 @@
 
 oob = "SEY_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SEY_2018_naval_mtg"
+	else = {
+		set_naval_oob = "SEY_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 2
 set_convoys = 25
 
@@ -140,3 +148,21 @@ set_popularities = {
 
 recruit_character = SEY_danny_faure
 recruit_character = SEY_wavel_ramkalawan
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Zoroaster Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}

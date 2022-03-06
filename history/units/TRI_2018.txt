@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,3 +20,15 @@ units = {
 		start_experience_factor = 0.3
 	}	
 }
+
+### Air OOB ###
+
+air_wings = {
+	826 = {
+		#C-26B Metro
+		nav_bomber_equipment_2 = {
+			owner = "UAE" 
+			amount = 2
+		}
+	}
+}	
