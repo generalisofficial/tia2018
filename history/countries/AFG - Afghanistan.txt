@@ -2,7 +2,7 @@
 
 oob = "AFG_2018"
 
-set_research_slots = 2
+set_research_slots = 1
 set_convoys = 10
 
 
@@ -55,7 +55,6 @@ set_technology = {
 
 add_ideas = {
 	population_growth_explosion
-	limited_conscription
 	protectionism
 	non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
@@ -66,7 +65,6 @@ add_ideas = {
 	pro_life
 }
 
-
 set_country_flag = sunni_islam
 set_country_flag = former_british_colony
 
@@ -74,10 +72,6 @@ add_opinion_modifier = {
 	target = ISR
 	modifier = no_diplomatic_recognition
 }
-
-#Economy
-set_variable = { income_tax = 20 }
-set_variable = { corporate_tax = 20 }
 
 #House of the People
 set_variable = { communist_seats = 0 }

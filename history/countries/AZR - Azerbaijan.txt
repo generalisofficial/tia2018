@@ -2,7 +2,7 @@
 
 oob = "AZR_2018"
 
-set_research_slots = 3
+set_research_slots = 1
 set_convoys = 305
 
 set_country_flag = country_language_azerbaijani
@@ -95,7 +95,7 @@ if = {
 
 add_ideas = {
 	population_growth_steady
-	active_draft
+	limited_conscription
 	non_aligned_movement_member
 	guam_member
 	commonwealth_of_independent_states_member
@@ -111,10 +111,6 @@ give_guarantee = TUR
 add_opinion_modifier = { target = TUR modifier = military_cooperation }
 add_opinion_modifier = { target = ARM modifier = rival }
 add_opinion_modifier = { target = NGK modifier = rival }
-
-#Economy
-set_variable = { income_tax = 25 }
-set_variable = { corporate_tax = 20 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }

@@ -1,13 +1,13 @@
 ﻿add_namespace = money
 
 country_event = {
-	id = money.1
+	id = economy.1
 	hidden = yes
 
 	is_triggered_only = yes
 
 	immediate = {
-		money_setup_scripted_effect = yes
+		economy_setup = yes
 		add_to_array = {
 			array = global.xcountry_grid_array
 			value = ROOT.id
@@ -17,27 +17,14 @@ country_event = {
 }
 
 country_event = {
-	id = money.11
+	id = economy.2
 	hidden = yes
 
 	is_triggered_only = yes
 
 	immediate = {
 		every_country = {
-            money_update_scripted_effect = yes
-        }
-	}
-}
-
-country_event = {
-	id = money.111
-	hidden = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		every_country = {
-            money_update_expenses_scripted_effect = yes
+        	monthly_economy_pulse = yes
         }
 	}
 }

@@ -2,7 +2,7 @@
 
 oob = "ARM_2018"
 
-set_research_slots = 3
+set_research_slots = 1
 set_convoys = 38
 
 
@@ -95,7 +95,7 @@ if = {
 
 add_ideas = {
 	population_growth_stagnation
-	active_draft
+	limited_conscription
 	commonwealth_of_independent_states_member
 	parliamentary_republic
 	immigration_lightly_regulated
@@ -133,10 +133,6 @@ add_opinion_modifier = { target = TUR modifier = rival }
 add_opinion_modifier = { target = AZR modifier = rival }
 
 set_country_flag = orthodox
-
-#Economy
-set_variable = { income_tax = 36 }
-set_variable = { corporate_tax = 20 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }

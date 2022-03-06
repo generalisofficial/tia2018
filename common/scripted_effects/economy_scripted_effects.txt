@@ -68,8 +68,7 @@ create_random_factory_MIL_2 = {
 	}
 }
 
-
-money_setup_scripted_effect = {
+economy_setup = {
 	### Income based on taxes from population and industry
 	# Base value: 40% income tax for everyone which can be changed in-game
 	# All these variables could be changed in-game. Would add more to the fact that we want to create something very immersive, with many possibilities
@@ -77,12 +76,6 @@ money_setup_scripted_effect = {
 	# The total country population divided by 1000, because multiply this by 1000 and the variable breaks - gg Paradox
 	set_variable = {
 		total_population_k = max_manpower_k
-	}
-	if = {
-		limit = {
-			NOT = { has_variable = loan_interest }
-		}
-		set_variable = { loan_interest = 5 }
 	}
 
 	if = {
@@ -400,111 +393,6 @@ money_setup_scripted_effect = {
 	}
 }
 
-money_update_scripted_effect = {
-
-	set_variable = {
-		income_monthly = monthly_income_hourly
-	}
-	multiply_variable = {
-		income_monthly = works_hours_per_day
-	}
-	multiply_variable = { 
-		income_monthly = average_working_days_monthly
-	}
-	divide_variable = {
-		income_monthly = 1000
-	}
-	set_variable = {
-		income_monthly_for_country = income_monthly
-	}
-	divide_variable = {
-		income_monthly_for_country = 100
-	}
-	multiply_variable = {
-		income_monthly_for_country = income_tax
-	}
-	multiply_variable = {
-		income_monthly_for_country = total_population_k
-	}
-	divide_variable = {
-		income_monthly_for_country = 1000
-	}
-
-	set_variable = {
-		corporate_income_monthly_for_country = corporate_income_monthly
-	}
-	divide_variable = {
-		corporate_income_monthly_for_country = 100
-	}
-	multiply_variable = {
-		corporate_income_monthly_for_country = corporate_tax
-	}
-	multiply_variable = { # Final calculation for all factories, civilian and military
-		corporate_income_monthly_for_country = num_of_factories
-	}
-	divide_variable = {
-		corporate_income_monthly_for_country = 1000
-	}
-
-
-	add_to_variable = {
-		state_treasury = income_monthly_for_country
-	}
-	add_to_variable = {
-		state_treasury = corporate_income_monthly_for_country
-	}
-	subtract_from_variable = {
-		state_treasury = total_monthly_expanses
-	}
-}
-
-loans_calculate_opinion_factor = {
-	for_each_scope_loop = {
-		array = global.xcountry_grid_array
-		break = b
-
-		set_variable = {
-			THIS.LoansOpinion = 0
-		}
-		add_to_variable = {
-			THIS.LoansOpinion = THIS.opinion@FROM
-		}
-		if = {
-			limit = {
-				THIS = {
-					is_in_faction_with = FROM
-				}
-			}
-			add_to_variable = {
-				THIS.LoansOpinion = 15
-			}
-		}
-		if = {
-			limit = {
-				FROM = {
-					has_idea = idea_european_union_member
-				}
-				THIS = {
-					has_idea = idea_european_union_member
-				}
-			}
-			add_to_variable = {
-				THIS.LoansOpinion = 15
-			}
-		}
-		if = {
-			limit = {
-				THIS = {
-					has_war_with = FROM
-				}
-			}
-			subtract_from_variable = {
-				THIS.LoansOpinion = 150
-			}
-		}
-	}
-}
-
 setup_country_tag = {
 	var:selected_country = {
 		save_global_event_target_as = selected_country_tag
@@ -517,9 +405,6 @@ setup_country_tag = {
 		multiply_variable = {
 			state_treasury30 = 30
 		}
-	}
-	set_variable = {
-		ROOT.TheirLoanOpinionOfUs = THIS.LoansOpinion
 	}
 }
 
@@ -576,12 +461,67 @@ money_update_taxonly_scripted_effect = {
 	}
 }
 
-money_update_expenses_scripted_effect = {
+monthly_economy_pulse = {
+	set_variable = {
+		income_monthly = monthly_income_hourly
+	}
+	multiply_variable = {
+		income_monthly = works_hours_per_day
+	}
+	multiply_variable = { 
+		income_monthly = average_working_days_monthly
+	}
+	divide_variable = {
+		income_monthly = 1000
+	}
+	set_variable = {
+		income_monthly_for_country = income_monthly
+	}
+	divide_variable = {
+		income_monthly_for_country = 100
+	}
+	multiply_variable = {
+		income_monthly_for_country = income_tax
+	}
+	multiply_variable = {
+		income_monthly_for_country = total_population_k
+	}
+	divide_variable = {
+		income_monthly_for_country = 1000
+	}
+
+	set_variable = {
+		corporate_income_monthly_for_country = corporate_income_monthly
+	}
+	divide_variable = {
+		corporate_income_monthly_for_country = 100
+	}
+	multiply_variable = {
+		corporate_income_monthly_for_country = corporate_tax
+	}
+	multiply_variable = { # Final calculation for all factories, civilian and military
+		corporate_income_monthly_for_country = num_of_factories
+	}
+	divide_variable = {
+		corporate_income_monthly_for_country = 1000
+	}
+
+
+	add_to_variable = {
+		state_treasury = income_monthly_for_country
+	}
+	add_to_variable = {
+		state_treasury = corporate_income_monthly_for_country
+	}
+	subtract_from_variable = {
+		state_treasury = total_monthly_expenses
+	}
+	
 	set_variable = {
 		total_monthly_income = 0
 	}
 	set_variable = {
-		total_monthly_expanses = 0
+		total_monthly_expenses = 0
 	}
 	add_to_variable = {
 		total_monthly_income = income_monthly_for_country

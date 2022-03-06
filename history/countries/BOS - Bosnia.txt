@@ -2,7 +2,7 @@
 
 oob = "BOS_2018"
 
-set_research_slots = 3
+set_research_slots = 1
 set_convoys = 20
 
 
@@ -99,17 +99,12 @@ if = {
 
 add_ideas = {
 	population_growth_decline
-	volunteer_army
 	parliamentary_republic
 	idea_dayton_agreement
 	federal
 }
 
 set_country_flag = catholic
-
-#Economy
-set_variable = { income_tax = 10 }
-set_variable = { corporate_tax = 10 }
 
 #House of Representatives
 set_variable = { communist_seats = 0 }

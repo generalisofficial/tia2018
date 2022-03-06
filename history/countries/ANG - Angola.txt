@@ -10,7 +10,7 @@ if = {
 	}
 }
 
-set_research_slots = 2
+set_research_slots = 1
 set_convoys = 55
 
 set_country_flag = country_language_portuguese
@@ -100,7 +100,7 @@ if = {
 add_ideas = {
 	population_growth_explosion
 	idea_african_union_member
-	active_draft
+	limited_conscription
 	non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
 	presidential_republic
@@ -110,10 +110,6 @@ add_ideas = {
 }
 
 set_country_flag = catholic
-
-#Economy
-set_variable = { income_tax = 17 }
-set_variable = { corporate_tax = 30 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }

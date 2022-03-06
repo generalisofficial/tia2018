@@ -2,7 +2,7 @@
 
 oob = "BOL_2018"
 
-set_research_slots = 3
+set_research_slots = 1
 set_convoys = 43
 
 set_country_flag = country_language_spanish
@@ -99,15 +99,12 @@ add_ideas = {
 	active_draft
 	non_aligned_movement_member
 	presidential_republic
+	active_draft
 }
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 365 }
 
 set_country_flag = catholic
-
-#Economy
-set_variable = { income_tax = 25 }
-set_variable = { corporate_tax = 29 }
 
 #Chamber of Deputies
 set_variable = { communist_seats = 0 }

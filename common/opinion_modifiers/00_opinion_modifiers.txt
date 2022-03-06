@@ -165,7 +165,11 @@ opinion_modifiers = {
 
 	# ECONOMY/TRADE
 
-	embargo = {
+	trade_embargo = {
+		value = -100
+	}
+
+	trade_embargo_trade = {
 		trade = yes
 		value = -100
 	}
@@ -178,16 +182,6 @@ opinion_modifiers = {
 	minor_sanctions = {
 		trade = yes
 		value = -20
-	}
-
-	loan_denied = {
-		value = -15
-		decay = 0.5
-	}
-	
-	loan_granted = {
-		value = 15
-		decay = 0.5
 	}
 
 	# INTERNATIONAL ORGANIZATIONS

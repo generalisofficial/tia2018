@@ -653,7 +653,10 @@ ideas = {
 				factor = 0
 				modifier = {
 				 	factor = 100
-					has_government = islamist
+					OR = {
+						has_government = islamist
+						has_country_leader_ideology = third_international_theory
+					}
 			 	}
 				modifier = {
 					factor = 50
@@ -1864,6 +1867,95 @@ ideas = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	######################################
+	#	TAX POLICY
+	######################################
+
+	tax_policy = { 
+		law = yes
+
+		very_high_taxes = {
+			cost = 125
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+				stability_factor = -0.2
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		high_taxes = {
+			cost = 125
+			removal_cost = -1
+			level = 4
+				
+			modifier = {
+				stability_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		moderate_taxes = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+				
+			modifier = {
+				#
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		low_taxes = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				stability_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		very_low_taxes = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				stability_factor = 0.2
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
 			}
 		}
 	}
