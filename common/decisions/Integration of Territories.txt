@@ -1,0 +1,45 @@
+integration_of_territories = {
+
+	integrate_state = {
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_claimed_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				is_claimed_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		
+		available = {
+			FROM = {
+				compliance > 80
+			}
+		}
+		
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+				remove_claim_by = ROOT
+			}
+		}
+		
+		icon = army
+		
+		cost = 75
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+}
