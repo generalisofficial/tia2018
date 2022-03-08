@@ -7,7 +7,6 @@ integration_of_territories = {
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
-				is_claimed_by = ROOT
 				NOT = { is_core_of = ROOT }
 			}
 		}
@@ -15,30 +14,31 @@ integration_of_territories = {
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				is_claimed_by = ROOT
 				NOT = { is_core_of = ROOT }
 			}
 		}
 		
 		available = {
 			FROM = {
-				compliance > 80
+				OR = {
+					has_active_resistance = no
+					compliance > 80
+				}
 			}
 		}
 		
 		remove_effect = {
 			FROM = {
 				add_core_of = ROOT
-				remove_claim_by = ROOT
 			}
 		}
 		
-		icon = army
+		icon = infiltrate_state
 		
-		cost = 75
+		cost = 100
 		
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 	}
 
