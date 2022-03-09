@@ -1,17 +1,6 @@
 characters={
     #Starting - Political
-	NZL_hazim_arafeh={
-		name="Hazim Arafeh"
-		portraits={
-			civilian={
-				large=GFX_Portrait_NZL_Hazim_Arafeh
-			}
-		}
-		country_leader={
-			ideology=islamic_democracy
-		}
-	}
-	NZL_colin_kingansell={
+	NZL_colin_king_ansell={
 		name="Colin King-Ansell"
 		portraits={
 			civilian={
@@ -19,7 +8,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_socialist
+			ideology=fascist_ideology
+		}
+	}
+	NZL_hannah_tamaki={
+		name="Hannah Tamaki"
+		portraits={
+			civilian={
+				large=GFX_Portrait_NZL_Hannah_Tamaki
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
 		}
 	}
 	NZL_winston_peters={
@@ -27,17 +27,6 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_NZL_Winston_Peters
-			}
-		}
-		country_leader={
-			ideology=right_wing_nationalist_ideology
-		}
-	}
-	NZL_leighton_baker={
-		name="Leighton Baker"
-		portraits={
-			civilian={
-				large=GFX_Portrait_NZL_Leighton_Baker
 			}
 		}
 		country_leader={
@@ -66,22 +55,11 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
-	NZL_james_shaw={
-		name="James Shaw"
+	NZL_rawiri_waititi={
+		name="Rawiri Waititi"
 		portraits={
 			civilian={
-				large=GFX_Portrait_NZL_James_Shaw
-			}
-		}
-		country_leader={
-			ideology=green
-		}
-	}
-	NZL_marama_fox={
-		name="Marama Fox"
-		portraits={
-			civilian={
-				large=GFX_Portrait_NZL_Marama_Fox
+				large=GFX_Portrait_NZL_Rawiri_Waititi
 			}
 		}
 		country_leader={
@@ -100,6 +78,17 @@ characters={
 			traits={ humble }
 		}
 	}
+	NZL_james_shaw={
+		name="James Shaw"
+		portraits={
+			civilian={
+				large=GFX_Portrait_NZL_James_Shaw
+			}
+		}
+		country_leader={
+			ideology=green
+		}
+	}
 	NZL_hone_harawira={
 		name="Hone Harawira"
 		portraits={
@@ -109,267 +98,6 @@ characters={
 		}
 		country_leader={
 			ideology=democratic_socialist
-		}
-	}
-	NZL_felicity_coggan={
-		name="Felicity Coggan"
-		portraits={
-			civilian={
-				large=GFX_Portrait_NZL_Felicity_Coggan
-			}
-		}
-		country_leader={
-			ideology=marxist_leninist
-		}
-	}
-	NZL_kevin_short={
-		name="Kevin Short"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Kevin_Short
-			}
-		}
-		field_marshal={
-			traits={ logistics_wizard }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_clive_douglas={
-		name="Clive Douglas"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Clive_Douglas
-			}
-		}
-		field_marshal={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_michael_shapland={
-		name="Michael Shapland"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Michael_Shapland
-			}
-		}
-		field_marshal={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_tim_keating={
-		name="Tim Keating"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Tim_Keating
-			}
-		}
-		field_marshal={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_richard_rhys_jones={
-		name="Richard Rhys Jones"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Richard_R_Jones
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_peter_kelly={
-		name="Peter Kelly"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Peter_Kelly
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_christopher_parsons={
-		name="Christopher Parsons"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Christopher_Parsons
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_christopher_faulls={
-		name="Christopher Faulls"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Christopher_Faulls
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_tony_davies={
-		name="Tony Davies"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Tony_Davies
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_tim_gall={
-		name="Tim Gall"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Tim_Gall
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_danny_broughton={
-		name="Danny Broughton"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_Danny_Broughton
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_john_martin={
-		name="John Martin"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_admirals_John_Martin
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_wayne_dyke={
-		name="Wayne Dyke"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_admirals_Wayne_Dyke
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_david_gibbs={
-		name="David Gibbs"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_admirals_David_Gibbs
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	NZL_jim_gilmour={
-		name="Jim Gilmour"
-		portraits={
-			army={
-				large=GFX_Portrait_NZL_admirals_Jim_Gilmour
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	#Starting - Military

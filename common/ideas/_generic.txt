@@ -5,15 +5,10 @@ ideas = {
 		neutrality_idea = {
 			picture = neutrality
 			
-			allowed = {
-				always = no
-			}
 			cancel = {
 				has_war = yes
 			}
-			
-			removal_cost = -1
-	
+
 			modifier = {
 				join_faction_tension = 1.00
 				send_volunteers_tension = 0.20
@@ -27,25 +22,13 @@ ideas = {
 		nuclear_weapons_state = {
 			picture = nuclear_power
 			
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
 			modifier = {
 			
 			}
-			
 		}	
 		
 		salafist_jihadist_group = {
 			picture = salafist_jihadist_group
-		
-			allowed = { always = no }
-			removal_cost = -1
 			
 			modifier = {
 				conscription = 0.25
@@ -55,17 +38,15 @@ ideas = {
 			}
 
 			cancel = {
-				NOT = {
-					has_government = islamist
+				OR = {
+					NOT = { has_government = islamist }
+					NOT = { has_idea = violent_non_state_actor }
 				}
 			}
 		}
 		
 		islamic_sectarian_violence = {
 			picture = islam2
-		
-			allowed = { always = no }
-			removal_cost = -1
 			
 			modifier = {
 				stability_factor = -0.1
@@ -76,10 +57,6 @@ ideas = {
 
 		hutu_tutsi_tensions = {
 			picture = hutu_tutsi_tensions
-			
-			allowed = {
-				always = no
-			}
 			
 			modifier = {
 			    political_power_gain = -0.1
@@ -189,13 +166,37 @@ ideas = {
 				}
 			}
 			
-			removal_cost = -1
-			
 			modifier = {
 			    political_power_factor = -0.25
 			}
 		}
-		
+
+		idea_constitutional_monarchy = {
+			picture = monarchy
+			
+			cancel = {
+				has_government = monarchist
+			}
+			
+			modifier = {
+				poliitcal_power_factor = -0.05
+			    stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		idea_commonwealth_realm = {
+			picture = house_of_windsor
+			
+			cancel = {
+				#
+			}
+			
+			modifier = {
+				poliitcal_power_factor = -0.05
+			    stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
 	}
-	
 }

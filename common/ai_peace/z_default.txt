@@ -58,6 +58,10 @@ default_peace = {
 			factor = 0
 			FROM = { has_civil_war = yes }
 		}
+		modifier = {
+			factor = 0
+			FROM = { has_idea = violent_non_state_actor }
+		}
 		modifier = { #Not if we claim anything
 			factor = 0
 			FROM = {

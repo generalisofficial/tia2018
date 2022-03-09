@@ -95,6 +95,7 @@ if = {
 }
 
 set_country_flag = former_british_colony
+set_cosmetic_tag = NZL_monarchist # Constitutional Monarchy
 
 give_guarantee = AST
 give_guarantee = MAL
@@ -106,11 +107,13 @@ diplomatic_relation = { country = SAM relation = non_aggression_pact }
 
 add_ideas = {
 	population_growth_steady
+	idea_commonwealth_realm
 	idea_commonwealth_of_nations_member
 	parliamentary_republic
 	permissive_gun_laws
 	lgbt_minority_womens_rights_progressive
 	organized_labour_encouraged
+	generous_minimum_wage
 }
 
 if = {
@@ -161,39 +164,39 @@ set_country_flag = protestant
 #House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 6.67 }
+set_variable = { progressive_seats = 6.66 }
 set_variable = { social_democrat_seats = 38.33 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0.83 }
-set_variable = { conservative_seats = 46.67 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { conservative_seats = 46.68 }
+set_variable = { national_conservative_seats = 7.5 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 7.50 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_right_wing_nationalist
+set_country_flag = coalition_national_conservative
 set_country_flag = coalition_progressive
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = progressive_seats }
 
 set_politics = {
 	ruling_party = social_democrat
-	last_election = "2017.11.21"
+	last_election = "2017.10.17"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 46.67
-    social_democrat = 38.33
-    right_wing_nationalist = 7.50
-    progressive = 6.67
-    classical_liberal = 0.83
+	social_democrat = 54.18
+	conservative = 27.50
+	progressive = 8.33
+	classical_liberal = 8.33
+    social_liberal = 1.66
 }
 
 add_opinion_modifier = {
@@ -236,29 +239,13 @@ add_opinion_modifier = {
 	modifier = five_eyes_agreement
 }
 
-recruit_character = NZL_hazim_arafeh
-recruit_character = NZL_colin_kingansell
+recruit_character = NZL_colin_king_ansell
+recruit_character = NZL_hannah_tamaki
 recruit_character = NZL_winston_peters
-recruit_character = NZL_leighton_baker
 recruit_character = NZL_bill_english
 recruit_character = NZL_david_seymour
-recruit_character = NZL_james_shaw
-recruit_character = NZL_marama_fox
+recruit_character = NZL_rawiri_waititi
 recruit_character = NZL_jacinda_ardern
+recruit_character = NZL_james_shaw
 recruit_character = NZL_hone_harawira
-recruit_character = NZL_felicity_coggan
-recruit_character = NZL_kevin_short
-recruit_character = NZL_clive_douglas
-recruit_character = NZL_michael_shapland
-recruit_character = NZL_tim_keating
-recruit_character = NZL_richard_rhys_jones
-recruit_character = NZL_peter_kelly
-recruit_character = NZL_christopher_parsons
-recruit_character = NZL_christopher_faulls
-recruit_character = NZL_tony_davies
-recruit_character = NZL_tim_gall
-recruit_character = NZL_danny_broughton
-recruit_character = NZL_john_martin
-recruit_character = NZL_wayne_dyke
-recruit_character = NZL_david_gibbs
-recruit_character = NZL_jim_gilmour
+set_country_flag = communist_intended_no_leader

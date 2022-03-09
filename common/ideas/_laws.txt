@@ -423,9 +423,8 @@ ideas = {
 			
 			available = {
 				is_democracy = yes
-				NOT = { 
-					has_idea = violent_non_state_actor
-				}
+				NOT = { is_constitutional_monarchy = yes }
+				NOT = { has_idea = violent_non_state_actor }
 			}
 			
 			modifier = {
@@ -461,9 +460,8 @@ ideas = {
 			
 			available = {
 				is_democracy = yes
-				NOT = { 
-					has_idea = violent_non_state_actor
-				}
+				NOT = { is_constitutional_monarchy = yes }
+				NOT = { has_idea = violent_non_state_actor }
 			}
 		}
 

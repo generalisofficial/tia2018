@@ -21,6 +21,13 @@ majority_government = {
 	}
 }
 
+is_constitutional_monarchy = {
+	OR = {
+		has_idea = idea_constitutional_monarchy
+		has_idea = idea_commonwealth_realm
+	}
+}
+
 # Plurality - Popularity
 
 communist_plurality_popularity = {
