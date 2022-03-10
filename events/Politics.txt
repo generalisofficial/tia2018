@@ -47,3 +47,59 @@ news_event = { #(Country, ADJ) transition to democracy
 		}
 	}
 }
+
+news_event = { #(Country) condemned after totalitarian turn
+	id = politics.3
+	title = politics.3.t
+	desc = politics.3.d
+	picture = GFX_news_event_police_brutality
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.3.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = politics.3.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}
+
+news_event = { #End of the (Country, ADJ) monarchy
+	id = politics.4
+	title = politics.4.t
+	desc = politics.4.d
+	picture = GFX_news_event_statue_of_liberty
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.4.o1
+		trigger = {
+			OR = {
+				is_constitutional_monarchy = yes
+				has_government = monarchist
+			}
+		}
+	}
+	
+	option = {
+		name = politics.4.o2
+		trigger = {
+			NOT = {
+				OR = {
+					is_constitutional_monarchy = yes
+					has_government = monarchist
+				}
+			}
+		}
+	}
+}

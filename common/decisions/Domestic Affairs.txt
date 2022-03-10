@@ -1,6 +1,72 @@
 domestic_affairs = {
 	### Generic
 	
+	abolish_the_monarchy = {
+		
+		visible = {
+			is_constitutional_monarchy = yes
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_idea = minority_government
+					has_country_flag = coalition_conservative
+					has_country_flag = coalition_national_conservative
+				}
+			}
+		}
+		
+		icon = abolish_monarchy
+		
+		cost = 350
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = idea_constitutional_monarchy
+				}
+				news_event = politics.4
+				remove_ideas = idea_constitutional_monarchy
+			}
+			if = {
+				limit = {
+					has_idea = idea_commonwealth_realm
+				}
+				remove_ideas = idea_commonwealth_realm
+			}
+			if = {
+				limit = {
+					has_constitutional_monarchy_cosmetic_tag = yes
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				OR = {
+					has_government = islamist
+					has_government = communist
+					has_government = fascist
+				}
+			}
+			modifier = {
+				factor = 1
+				OR = {
+					has_government = socialist
+					has_government = progressive
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = classical_liberal
+				}
+			}
+		}
+		
+	}
+
 	establish_parliament = {
 		
 		visible = {
@@ -212,9 +278,10 @@ domestic_affairs = {
 		
 		icon = fascism
 		
-		cost = 500
+		cost = 350
 		
 		complete_effect = {
+			news_event = politics.3
 			add_ideas = one_party_state
 			one_party_parliament = yes
 			quickset_coalition = yes

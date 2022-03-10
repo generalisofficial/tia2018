@@ -449,6 +449,7 @@ country_event = { #Results of the Brexit trade agreement vote
 				compare = greater_than
 			}
 		}
+		news_event = britain.17
 		set_country_flag = brexit_deal
 		clr_global_flag = ongoing_brexit_trade_agreement_vote
 		clear_variable = global.brexit_trade_agreement_vote_count_in_favor
@@ -456,7 +457,7 @@ country_event = { #Results of the Brexit trade agreement vote
 	}
 
 	option = {
-		name = ibritain.15.o2
+		name = britain.15.o2
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -498,5 +499,19 @@ country_event = { #End of the United Kingdom
 			}
 			remove_core_of = ENG
 		}
+	}
+}
+
+news_event = { #Brexit Trade Agreement
+	id = britain.17
+	title = britain.17.t
+	desc = britain.17.d
+	picture = GFX_news_event_uk_eu_flags
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = britain.17.o1
 	}
 }
