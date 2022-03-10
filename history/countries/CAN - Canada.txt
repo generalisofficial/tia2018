@@ -98,6 +98,7 @@ if = {
 
 add_ideas = {
 	population_growth_stagnation
+	idea_commonwealth_realm
 	quebec_separatism
 	idea_commonwealth_of_nations_member
 	parliamentary_republic
@@ -106,6 +107,10 @@ add_ideas = {
 	lgbt_minority_womens_rights_progressive
 	generous_minimum_wage
 }
+
+set_country_flag = protestant
+set_country_flag = former_british_colony
+set_cosmetic_tag = CAN_monarchist # Constitutional Monarchy
 
 #House of Commons
 set_variable = { communist_seats = 0 }
@@ -125,9 +130,6 @@ set_variable = { islamist_seats = 0 }
 set_country_flag = has_parliament
 set_country_flag = coalition_social_liberal
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
-
-set_country_flag = protestant
-set_country_flag = former_british_colony
 
 set_politics = {
 	ruling_party = social_liberal
