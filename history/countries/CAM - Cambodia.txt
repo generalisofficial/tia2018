@@ -94,21 +94,23 @@ if = {
 	}
 }
 
+set_country_flag = buddhism
+set_cosmetic_tag = CAM_monarchist  # Constitutional Monarchy
+
 add_ideas = {
 	population_growth_steady
+	idea_constitutional_monarchy
 	active_draft
 	non_aligned_movement_member
 	buddhism
 	asean_member
-	parliamentary_republic
+	parliamentary_system
 	civil_liberties_authoritarian
 	prohibited_firearms
 	organized_labour_discouraged
 	no_minimum_wage
 	low_taxes
 }
-
-set_country_flag = buddhism
 
 #National Assembly
 set_variable = { communist_seats = 0 }

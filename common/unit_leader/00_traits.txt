@@ -2164,8 +2164,6 @@ leader_traits = {
 			own_operative_detection_chance_factor = -0.1
 			target_sabotage_factor = 0.25
 			target_sabotage_risk = -0.25
-			operation_capture_cipher_outcome = 0.25
-			operation_capture_cipher_risk = -0.25
 		}
 	}
 
@@ -2332,8 +2330,8 @@ leader_traits = {
 		trait_type = basic_trait
 		#gained through script when successfully executing an escape operation
 		modifier = {
-			operation_rescue_operative_risk = -0.1
-			operation_rescue_operative_cost = -0.1
+			#operation_rescue_operative_risk = -0.1
+			#operation_rescue_operative_cost = -0.1
 		}
 	}
 

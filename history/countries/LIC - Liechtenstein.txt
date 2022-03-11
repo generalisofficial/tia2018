@@ -94,11 +94,15 @@ if = {
 	}
 }
 
+set_country_flag = catholic
+set_cosmetic_tag = LIC_monarchist # Constitutional Monarchy
+
 add_ideas = {
 	population_growth_stagnation
+	idea_constitutional_monarchy
 	neutrality_idea
 	christianity
-	parliamentary_republic
+	parliamentary_system
 	permissive_gun_laws
 	pro_life
 	no_minimum_wage
@@ -108,40 +112,40 @@ add_ideas = {
 #Landtag
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 12 }
+set_variable = { progressive_seats = 12 }
+set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 36 }
+set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 32 }
-set_variable = { national_conservative_seats = 20 }
+set_variable = { national_conservative_seats = 36 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 20 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_national_conservative
 set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = classical_liberal
+	ruling_party = national_conservative
 	last_election = "2017.2.7"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	classical_liberal = 40
 	conservative = 40
-	national_conservative = 8
-	social_democrat = 12
+	national_conservative = 40
+	progressive = 12
+	right_wing_nationalist = 8
 }
 
-recruit_character = LIC_hansadam_ii
+recruit_character = LIC_harry_quaderer
+recruit_character = LIC_hans_adam_ii
 recruit_character = LIC_adrian_hasler
 recruit_character = LIC_daniel_risch
-recruit_character = LIC_harry_quaderer
 recruit_character = LIC_pepo_frick

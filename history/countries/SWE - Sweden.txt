@@ -95,12 +95,16 @@ if = {
 	}
 }
 
+set_country_flag = protestant
+set_cosmetic_tag = SWE_monarchist # Constitutional Monarchy
+
 add_ideas = {
 	population_growth_stagnation
+	idea_constitutional_monarchy
 	idea_european_union_member
     nordic_council_member
 	neutrality_idea
-	parliamentary_republic
+	parliamentary_system
 	lgbt_minority_womens_rights_progressive
 	immigration_open_borders
 	organized_labour_encouraged
@@ -142,7 +146,6 @@ set_country_flag = coalition_progressive
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = progressive_seats }
 
-set_country_flag = protestant
 
 set_politics = {	
     ruling_party = social_democrat

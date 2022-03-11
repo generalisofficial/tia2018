@@ -106,13 +106,17 @@ if = {
 	}
 }
 
+set_country_flag = catholic
+set_cosmetic_tag = SPR_monarchist # Constitutional Monarchy
+
 give_guarantee = AND
 
 add_ideas = {
 	population_growth_stagnation
+	idea_constitutional_monarchy
 	idea_european_union_member
 	the_euro
-	parliamentary_republic
+	parliamentary_system
 	lgbt_minority_womens_rights_progressive
 	organized_labour_encouraged
 	generous_minimum_wage
@@ -137,8 +141,6 @@ set_variable = { islamist_seats = 0 }
 set_country_flag = has_parliament
 set_country_flag = coalition_conservative
 add_to_variable = { ROOT.Coalition = conservative_seats }
-
-set_country_flag = catholic
 
 set_politics = {	
 	ruling_party = conservative

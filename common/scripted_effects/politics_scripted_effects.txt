@@ -1993,6 +1993,21 @@ election_pulse = {
 	}
 	if  = {
 		limit = {
+			original_tag = KOR
+			has_country_leader = {
+				name = "Moon Jae-in"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_liberal
+		create_country_leader = {
+			name = "Lee Jae-myung"
+			picture = GFX_Portrait_KOR_Lee_Jae_myung
+			ideology = social_liberal_ideology
+		}
+	}
+	if  = {
+		limit = {
 			original_tag = ISR
 			social_democrat < 0.1
 			has_country_leader = {
@@ -2013,7 +2028,7 @@ election_effect = {
 	}
 	if = {
 		limit = {
-			has_idea = parliamentary_republic
+			has_idea = parliamentary_system
 		}
 		country_event = election.3
 	}

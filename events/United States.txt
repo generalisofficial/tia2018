@@ -169,3 +169,52 @@ news_event = { #United States announces total withdrawal from Syria
 		name = usa.5.o1
 	}
 }
+
+country_event = { #Stoneman Douglas High School shooting
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	
+	trigger = {
+		original_tag = USA
+		owns_state = 366
+		controls_state = 366
+		has_idea = unregulated_firearms
+		date > 2018.2.14
+		date < 2019.1.1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.6.o1
+		add_political_power = -50
+		366 = { add_manpower = -17 }
+		custom_effect_tooltip = TT_shooting
+	}
+}
+
+country_event = { #El Paso Walmart shooting
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	
+	trigger = {
+		original_tag = USA
+		owns_state = 375
+		controls_state = 375
+		has_idea = unregulated_firearms
+		NOT = { has_idea = planned_economy }
+		date > 2019.8.3
+		date < 2020.1.1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.7.o1
+		add_political_power = -50
+		375 = { add_manpower = -23 }
+		custom_effect_tooltip = TT_shooting
+	}
+}

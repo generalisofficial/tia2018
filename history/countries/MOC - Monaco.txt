@@ -95,26 +95,54 @@ if = {
 	}
 }
 
+set_country_flag = catholic
+set_cosmetic_tag = MOC_monarchist # Constitutional Monarchy
+
 add_ideas = {
 	population_growth_stagnation
+	idea_constitutional_monarchy
 	the_euro
 	neutrality_idea
 	christianity
-	absolute_monarchy
+	parliamentary_system
 	permissive_gun_laws
 	pro_life
 	generous_minimum_wage
 }
 
+#National Council
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 12.5 }
+set_variable = { classical_liberal_seats = 4.16 }
+set_variable = { conservative_seats = 83.34 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {
-	ruling_party = monarchist
-	last_election = "2018.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = conservative
+	last_election = "2013.2.11"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 set_popularities = {
-    monarchist = 100
+	classical_liberal = 87.51
+	conservative = 8.33
+    social_liberal = 4.16
 }
 
 recruit_character = MOC_albert_ii
+recruit_character = MOC_christophe_steiner
+recruit_character = MOC_stephane_valeri
+recruit_character = MOC_jean_louis_grinda
