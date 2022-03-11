@@ -76,7 +76,7 @@ news_event = { #End of the (Country, ADJ) monarchy
 	id = politics.4
 	title = politics.4.t
 	desc = politics.4.d
-	picture = GFX_news_event_statue_of_liberty
+	picture = GFX_news_event_monarchy
 	
 	is_triggered_only = yes
 	major = yes
@@ -98,6 +98,38 @@ news_event = { #End of the (Country, ADJ) monarchy
 				OR = {
 					is_constitutional_monarchy = yes
 					has_government = monarchist
+				}
+			}
+		}
+	}
+}
+
+news_event = { #(Country) cuts ties with the British monarchy
+	id = politics.5
+	title = politics.5.t
+	desc = politics.5.d
+	picture = GFX_news_event_monarchy
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.5.o1
+		trigger = {
+			OR = {
+				original_tag = ENG
+				has_idea = idea_commonwealth_realm
+			}
+		}
+	}
+	
+	option = {
+		name = politics.5.o2
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = ENG
+					has_idea = idea_commonwealth_realm
 				}
 			}
 		}

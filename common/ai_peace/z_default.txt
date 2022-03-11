@@ -28,6 +28,13 @@ default_peace = {
 				}
 			}
 		}
+		#If FROM is VNSA
+		modifier = { 
+			factor = 100
+			FROM = {
+				has_idea = violent_non_state_actor
+			}
+		}
 	}
 
 	# ROOT = Taker, FROM = Liberated
