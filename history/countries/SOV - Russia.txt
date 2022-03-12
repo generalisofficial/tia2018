@@ -135,10 +135,20 @@ if = {
 		target = TRA
 		autonomous_state = autonomy_puppet_state
 	}
+	set_autonomy = {
+		target = DPR
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = LPR
+		autonomous_state = autonomy_puppet_state
+	}
 	else = {
 		puppet = ABK
 		puppet = SOS
 		puppet = TRA
+		puppet = DPR
+		puppet = LPR
 	}
 }
 
@@ -189,6 +199,33 @@ TRA = {
 	set_popularities = {
 		conservative = 97.68
 		communist = 2.32
+	}
+}
+
+DPR = {
+	set_politics = {	
+		ruling_party = national_conservative 
+		last_election = "2014.11.11"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 71
+		right_wing_nationalist = 26
+		communist = 3
+	}
+}
+
+LPR = {
+	set_politics = {	
+		ruling_party = national_conservative 
+		last_election = "2014.11.11"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 74
+		classical_liberal = 26
 	}
 }
 
