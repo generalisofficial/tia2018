@@ -10,6 +10,7 @@ country_event = {
 		set_parliament_graphics = yes
 		if = {
 			limit = {
+				has_country_flag = has_parliament
 				minority_government = yes
 			}
 			add_ideas = minority_government

@@ -88,7 +88,7 @@ domestic_affairs = {
 		}
 		
 		ai_will_do = {
-			factor = 50
+			factor = 100
 			modifier = {
 				factor = 0
 				has_government = monarchist
@@ -455,6 +455,7 @@ domestic_affairs = {
 			has_country_flag = has_parliament
 			has_idea = presidential_republic
 			has_elections = yes
+			NOT = { original_tag = USA }
 		}
 
 		available = {
