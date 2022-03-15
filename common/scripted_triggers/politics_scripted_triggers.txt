@@ -7,7 +7,7 @@ is_democracy = {
 
 minority_government = {
 	check_variable = {
-		var = ROOT.Coalition
+		var = Coalition
 		value = 50
 		compare = less_than
 	}
@@ -15,7 +15,7 @@ minority_government = {
 
 majority_government = {
 	check_variable = {
-		var = ROOT.Coalition
+		var = Coalition
 		value = 50
 		compare = greater_than_or_equals
 	}

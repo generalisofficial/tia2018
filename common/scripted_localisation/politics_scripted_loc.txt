@@ -1369,20 +1369,19 @@ defined_text = {
 ########################### GET MEMBERS OF THE CURRENT COALITION
 
 defined_text = {
-	name = GetGovernmentIsMajority
-	
-	text = {
-		trigger = {
-			check_variable = { ROOT.coalition > 49.99 }
-		}
-		localization_key = "Majority Government"
-	}
+	name = GetMajorityMinorityGov
 
 	text = {
 		trigger = {
-			check_variable = { ROOT.coalition < 50 }
+			majority_government = yes
 		}
-		localization_key = "Minority Government"
+		localization_key = majority_government
+	}
+	text = {
+		trigger = {
+			minority_government = yes
+		}
+		localization_key = minority_government
 	}
 }
 
