@@ -2,6 +2,14 @@
 
 oob = "TUN_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "TUN_2018_naval_mtg"
+	else = {
+		set_naval_oob = "TUN_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 1
 set_convoys = 67
 
@@ -53,9 +61,11 @@ set_technology = {
 	fighter2 = 1
 	naval_bomber1 = 1
 	strategic_bomber1 = 1
+	scout_plane1 = 1
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -64,6 +74,10 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_patrol_boat = 1
+		basic_patrol_boat = 1
+		improved_patrol_boat = 1
+		advanced_patrol_boat = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
@@ -74,6 +88,10 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		basic_ship_hull_patrol_boat = 1
+		improved_ship_hull_patrol_boat = 1
+		advanced_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -160,3 +178,63 @@ recruit_character = TUN_yassine_brahim
 recruit_character = TUN_moncef_marzouki
 recruit_character = TUN_rachid_ammar
 recruit_character = TUN_ismail_fathali
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Bizerta Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Hamilcar Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Ras el Blad Class"
+		type = ship_hull_patrol_boat_2
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Jugurtha Class"
+		type = ship_hull_patrol_boat_4
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_4
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+		}
+	}
+}

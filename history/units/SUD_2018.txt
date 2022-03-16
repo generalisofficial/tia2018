@@ -1,120 +1,199 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		motorized = { x = 2 y = 4 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Mechanized Division"
+	division_names_group = GENERIC_MEC_01
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 3 }
+		light_mechanized = { x = 0 y = 4 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_mechanized = { x = 1 y = 3 }
+		light_mechanized = { x = 1 y = 4 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Armored Division"
+	division_names_group = GENERIC_ARM_01
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 3 }
+		modern_armor = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		motorized = { x = 2 y = 4 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		artillery = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Airborne Division"
+	division_names_group = GENERIC_AIR_01
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "1st Northern Brigade"
-		location = 10902
-		division_template = "Mechanized Brigade"
+		name = "1st Division"
+		location = 12806 #Karthoum
+		division_template = "Mechanized Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Northern Brigade"
-		location = 7987
-		division_template = "Motorized Brigade"
+		name = "2nd Division"
+		location = 2088 #Khashm el Girba
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Northern Brigade"
-		location = 8105
-		division_template = "Mechanized Brigade"
+		name = "3rd Division"
+		location = 8105 #Northern Command, probably near Wadi Halfa
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Darfur Brigade"
-		location = 1960
-		division_template = "Mechanized Brigade"
+		name = "4th Division"
+		location = 1960 #Unknown
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Darfur Brigade"
-		location = 8103
-		division_template = "Mechanized Brigade"
+		name = "5th Division"
+		location = 8084 #El Obeid
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Darfur Brigade"
-		location = 5060
-		division_template = "Motorized Brigade"
+		name = "6th Division"
+		location = 10739 #Al Fashir
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Port Sudan Garrison"
-		location = 12725
-		division_template = "Infantry Brigade"
+		name = "7th Division"
+		location = 12806 #Karthoum
+		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Khartoum Brigade"
-		location = 12806
-		division_template = "Mechanized Brigade"
+		name = "8th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Sudan Armored Brigade"
-		location = 12806
-		division_template = "Armored Brigade"
+		name = "9th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "10th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Division"
+		location = 12806 #Unknown
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Airborne Division"
+		location = 12806 #Karthoum
+		division_template = "Airborne Division"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air OOB ###
@@ -122,63 +201,65 @@ units = {
 air_wings = {
 	551 = {
 		#MiG-29
-		fighter_equipment_3 = {
+		fighter_equipment_1 = {
 			owner = "SUD" 
 			amount = 11
 		}
-
 	}
 	551 = {
 		#MiG-23
-		fighter_equipment_2 = {
+		fighter_equipment_1 = {
 			owner = "SUD" 
 			amount = 3
 		}
-
 	}
 	551 = {
-		#F-7 MiG-21 Copy - 70s but downgraded for gameplay variety
-		fighter_equipment_1 = {
-			owner = "SUD" 
-			amount = 20
-		}
-
-	}
-	551 = {
-		#MiG-21Bis - 70s but downgraded for gameplay variety
+		#MiG-21
 		fighter_equipment_1 = {
 			owner = "SUD" 
 			amount = 4
 		}
-
 	}
 	551 = {
-		#F-6 MiG-19 Copy
-		fighter_equipment_1 = {
+		#Su-24
+		CAS_equipment_1 = {
 			owner = "SUD" 
-			amount = 8
+			amount = 3
 		}
-
 	}
-	549 = {
-		#A-5 Export Q-5
-		CAS_equipment_2 = {
+	551 = {
+		#Su-25
+		CAS_equipment_1 = {
+			owner = "SUD"
+			amount = 15
+		}
+	}
+	551 = {
+		#Nanchang Q-5
+		CAS_equipment_1 = {
+			owner = "SUD"
+			amount = 20
+		}
+	}
+	551 = {
+		#Chengdu J-7
+		fighter_equipment_1 = {
 			owner = "SUD" 
 			amount = 20
 		}
 	}
-	549 = {
-		#Su-25
-		CAS_equipment_2 = {
+	551 = {
+		#Shenyang J-6
+		fighter_equipment_1 = {
 			owner = "SUD" 
-			amount = 15
+			amount = 20
 		}
 	}
-	549 = {
-		#Su-24
-		CAS_equipment_2 = {
+	551 = {
+		#Antonov An-12
+		transport_plane_equipment_1 = {
 			owner = "SUD" 
-			amount = 3
+			amount = 25
 		}
 	}
 }

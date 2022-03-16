@@ -2,6 +2,14 @@
 
 oob = "CMR_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "CMR_2018_naval_mtg"
+	else = {
+		set_naval_oob = "CMR_2018_naval_legacy"
+	}
+}
+
 set_research_slots = 1
 set_convoys = 29
 
@@ -57,6 +65,7 @@ set_technology = {
 	
 	## Engineering ##
 	electronic_mechanical_engineering = 1
+	radio = 1
 	
 	## Industry ##
 	basic_machine_tools = 1
@@ -65,6 +74,9 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_patrol_boat = 1
+		basic_patrol_boat = 2
+		improved_patrol_boat = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
@@ -75,6 +87,9 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		basic_ship_hull_patrol_boat = 1
+		improved_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -143,3 +158,37 @@ set_popularities = {
 
 recruit_character = CMR_paul_biya
 recruit_character = CMR_john_fru_ndi
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Bakassi Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Le Ntem Class"
+		type = ship_hull_patrol_boat_3
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_3
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}

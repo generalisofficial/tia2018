@@ -1,61 +1,55 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Armored Regiment"
+	name = "Presidential Guard Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Mountain Regiment"
+	name = "Amphibious Brigade"
+	division_names_group = GENERIC_MAR_02
 	
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
+		marine = { x = 0 y = 0 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-	}
-	
-	priority = 2
 }
 
 units = {
-	
 	division = {
-		name = "1st Brigade"
-		location = 12830
+		name = "Central African Army"
+		location = 12830 #Bangui
 		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.0 #The usual war crimes and bad training common in the region
 	}
-	
 	division = {
-		name = "2nd Brigade"
-		location = 12830
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.3
+		name = "Presidential Guard"
+		location = 12830 #Bangui
+		division_template = "Presidential Guard Brigade"
+		start_experience_factor = 0.0
 	}
-	
 	division = {
-		name = "Central African Armor Regiment"
-		location = 12830
-		division_template = "Armored Regiment"
-		start_experience_factor = 0.3
+		name = "Amphibious Batallion"
+		location = 12830 #Bangui
+		division_template = "Amphibious Brigade"
+		start_experience_factor = 0.0
 	}
-	
 }

@@ -1,28 +1,6 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
 	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -36,155 +14,329 @@ division_template = {
 		engineer = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Mechanized Regiment"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01	
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored Batallion"
+	division_names_group = GENERIC_ARM_03	
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Royal Guard"
+	division_names_group = GENERIC_GAR_02	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "1st Armored Brigade"
-		location = 1194
-		division_template = "Armored Brigade"
+		name = "1st Mechanized Infantry Brigade"
+		location = 10070 #Northern Command
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Armored Brigade"
-		location = 7069
-		division_template = "Armored Brigade"
+		name = "2nd Mechanized Infantry Brigade"
+		location = 4933 #Eastern Command
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "3rd Mechanized Infantry Brigade"
+		location = 7203 #Southern Command
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Mechanized Infantry Regiment"
+		location = 10070 #Northern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Mechanized Infantry Regiment"
+		location = 10070 #Northern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Mechanized Infantry Regiment"
+		location = 4933 #Eastern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Mechanized Infantry Regiment"
+		location = 4933 #Eastern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Mechanized Infantry Regiment"
+		location = 4933 #Eastern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Mechanized Infantry Regiment"
+		location = 7203 #Southern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Mechanized Infantry Regiment"
+		location = 7203 #Southern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Mechanized Infantry Regiment"
+		location = 7203 #Southern Command
+		division_template = "Mechanized Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Commando Brigade"
+		location = 10070 #Northern Command
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "1st Armored Batallion"
+		location = 10070 #Northern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Armored Batallion"
+		location = 10070 #Northern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Armored Batallion"
+		location = 4933 #Eastern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Armored Batallion"
+		location = 4933 #Eastern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Armored Batallion"
+		location = 4933 #Eastern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Armored Batallion"
+		location = 7203 #Southern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Armored Batallion"
+		location = 7203 #Southern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Armored Batallion"
+		location = 7203 #Southern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Armored Batallion"
+		location = 7203 #Southern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Armored Batallion"
+		location = 7203 #Southern Command
+		division_template = "Armored Batallion"
+		start_experience_factor = 0.3
+	}
 	division = {
 		name = "1st Infantry Brigade"
-		location = 989
-		division_template = "Mechanized Brigade"
+		location = 10070 #Northern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "2nd Infantry Brigade"
-		location = 8111
-		division_template = "Mechanized Brigade"
+		location = 10070 #Northern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "3rd Infantry Brigade"
-		location = 7908
-		division_template = "Mechanized Brigade"
+		location = 10070 #Northern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "4th Infantry Brigade"
-		location = 7958
-		division_template = "Mechanized Brigade"
+		location = 10070 #Northern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "5th Infantry Brigade"
-		location = 7116
-		division_template = "Mechanized Brigade"
+		location = 4933 #Eastern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "6th Infantry Brigade"
-		location = 8038
-		division_template = "Mechanized Brigade"
+		location = 4933 #Eastern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "7th Infantry Brigade"
-		location = 4199
-		division_template = "Mechanized Brigade"
+		location = 4933 #Eastern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "8th Infantry Brigade"
-		location = 4022
-		division_template = "Mechanized Brigade"
+		location = 4933 #Eastern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Auxiliary Force"
-		location = 10875
-		division_template = "Motorized Brigade"
+		name = "9th Infantry Brigade"
+		location = 7203 #Southern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Auxiliary Force"
-		location = 12857
-		division_template = "Motorized Brigade"
+		name = "10th Infantry Brigade"
+		location = 7203 #Southern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Auxiliary Force"
-		location = 7908
-		division_template = "Motorized Brigade"
+		name = "11th Infantry Brigade"
+		location = 7203 #Southern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Auxiliary Force"
-		location = 1194
-		division_template = "Motorized Brigade"
+		name = "12th Infantry Brigade"
+		location = 7203 #Southern Command
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 }
 
 ### Air OOB ###
 
 air_wings = {
 	461 = {
-		#F-16C/D Block  52
-		fighter_equipment_3 = {
+		#F-16C/V
+		fighter_equipment_2 = {
+			owner = "MOR" 
+			amount = 26
+		}
+	}
+	461 = {
+		#F-5E
+		fighter_equipment_1 = {
 			owner = "MOR" 
 			amount = 23
 		}
-
 	}
 	461 = {
-		#F-5E - Downgraded to match MiG-21 
+		#MF2000
 		fighter_equipment_1 = {
 			owner = "MOR" 
 			amount = 22
 		}
-
 	}
 	461 = {
-		#Mirage MF 2000
-		fighter_equipment_3 = {
+		#Dassault Falcon 20
+		scout_plane_equipment_1 = {
 			owner = "MOR" 
-			amount = 15
+			amount = 2
 		}
-
 	}
-	290 = {
-		#CL-415
-		nav_bomber_equipment_2 = {
-			owner = "SWI" 
-			amount = 10
+	461 = {
+		#BAE SkyEye + IAI Heron
+		scout_plane_equipment_2 = {
+			owner = "MOR" 
+			amount = 9
 		}
-
+	}
+	461 = {
+		#C-27J Spartan + C-130 Hercules + CASA CN-235
+		transport_plane_equipment_1 = {
+			owner = "MOR" 
+			amount = 22
+		}
+	}
+	461 = {
+		#Britten-Norman Defender + Beech King Air
+		nav_bomber_equipment_1 = {
+			owner = "MOR" 
+			amount = 18
+		}
 	}
 }
