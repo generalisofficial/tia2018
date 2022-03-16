@@ -2,7 +2,6 @@
 
 oob = "NCY_2018"
 
-set_research_slots = 1
 set_convoys = 15
 
 set_country_flag = country_language_turkish
@@ -95,13 +94,13 @@ if = {
 }
 
 add_ideas = {
-	population_growth_steady
+	#population_growth_steady
 	non_member_state
 	limited_conscription
 	isolationism
 	parliamentary_system
 	no_minimum_wage
-	high_taxes
+	#high_taxes 
 }
 
 add_opinion_modifier = { target = CYP modifier = rival }

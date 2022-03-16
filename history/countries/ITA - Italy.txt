@@ -2,7 +2,6 @@
 
 oob = "ITA_2018"
 
-set_research_slots = 1
 set_convoys = 1353
 
 set_country_flag = country_language_italian
@@ -103,14 +102,14 @@ give_guarantee = MLT
 diplomatic_relation = { country = LBA relation = non_aggression_pact }
 
 add_ideas = {
-	population_growth_stagnation
+	#population_growth_stagnation
 	idea_european_union_member
 	the_euro
 	parliamentary_system
 	permissive_gun_laws
 	organized_labour_encouraged
 	no_minimum_wage
-	high_taxes
+	#high_taxes 
 }
 
 if = {

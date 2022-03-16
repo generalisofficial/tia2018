@@ -2,23 +2,23 @@
 # Toolbar
  COALITION_SUPPORT: "[?ROOT.Coalition]%"
  COALITION_SUPPORT_DIPLO: "[?FROM.Coalition]%"
- COALITION_TOOLTIP: "\n§YGovernment Support§!\nThe §Y[ROOT.GetLeader] Government§! holds §Y[?ROOT.Coalition]%§! of seats in the §Y[THIS.GetParliamentName]§!\n\nThe current government is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
- COALITION_TOOLTIP_DIPLO: "\n§YGovernment Support§!\nThe §Y[FROM.GetLeader] Government§! holds §Y[?FROM.Coalition]%§! of seats in the §Y[THIS.GetParliamentName]§!\n\nIt is made up of the following parties:\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
+ COALITION_TOOLTIP: "\n§YGovernment Support§!\n[This.GetMajorityMinorityGov]\n\nThe §Y[ROOT.GetLeader] Government§! holds §Y[?ROOT.Coalition]%§! of seats in the §Y[ROOT.GetParliamentName]§!, and includes the following political groups:\n\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
+ COALITION_TOOLTIP_DIPLO: "\n§YGovernment Support§!\n[FROM.GetMajorityMinorityGov]\n\nThe §Y[FROM.GetLeader] Government§! holds §Y[?FROM.Coalition]%§! of seats in the §Y[FROM.GetParliamentName]§!, and includes the following political groups:\n\n§Y[This.GetCoalitionMember1][This.GetCoalitionMember2][This.GetCoalitionMember3][This.GetCoalitionMember4][This.GetCoalitionMember5][This.GetCoalitionMember6][This.GetCoalitionMember7][This.GetCoalitionMember8][This.GetCoalitionMember9][This.GetCoalitionMember10][This.GetCoalitionMember11][This.GetCoalitionMember12]§!"
  POPULATION_TOOLTIP: "\n§YPopulation§!" #TEMPORARY - Will migrate
 
  # Flags
- coalition_islamist_party: "- Islamist Party\n"
- coalition_fascist_party: "- Fascist Party\n"
- coalition_right_wing_nationalist_party: "- Right-Wing Nationalist Party\n"
- coalition_monarchist_party: "- Monarchist Independents\n"
- coalition_national_conservative_party: "- National Conservative Party\n"
- coalition_conservative_party: "- Conservative Party\n"
- coalition_classical_liberal_party: "- Classical Liberal Party\n"
- coalition_social_liberal_party: "- Social Liberal Party\n"
- coalition_social_democrat_party: "- Social Democratic Party\n"
- coalition_progressive_party: "- Progressive Party\n"
- coalition_socialist_party: "- Socialist Party\n"
- coalition_communist_party: "- Communist Party\n"
+ coalition_islamist_party: "- §GIslamists§!\n"
+ coalition_fascist_party: "- §FFascists§!\n"
+ coalition_right_wing_nationalist_party: "- §NRight-Wing Nationalists§!\n"
+ coalition_monarchist_party: "- §xMonarchist Independents§!\n"
+ coalition_national_conservative_party: "- §rNational Conservatives§!\n"
+ coalition_conservative_party: "- §cConservatives§!\n"
+ coalition_classical_liberal_party: "- §mClassical Liberals§!\n"
+ coalition_social_liberal_party: "- §sSocial Liberals§! \n"
+ coalition_social_democrat_party: "- §SSocial Democrats§!\n"
+ coalition_progressive_party: "- §PProgressives§! \n"
+ coalition_socialist_party: "- §DSocialists§! \n"
+ coalition_communist_party: "- §CCommunists§!\n"
  
  has_parliament: "Has Parliament"
  coalition_islamist: "§GIslamists§! in Government"
@@ -35,18 +35,17 @@
  coalition_communist: "§CCommunists§! in Government"
 
  # Party Names
- COALITION_PARTY1_TITLE: "[This.GetEnoughIslamic]Islamic Party§!"
- COALITION_PARTY2_TITLE: "[This.GetEnoughFascist]Fascist Party§!"
- COALITION_PARTY3_TITLE: "[This.GetEnoughRightWingNationalist]Right-Wing Nationalist Party§!"
- COALITION_PARTY4_TITLE: "[This.GetEnoughMonarchist]Monarchist Independents§!"
- COALITION_PARTY5_TITLE: "[This.GetEnoughNationalConservative]National Conservative Party§!"
- COALITION_PARTY6_TITLE: "[This.GetEnoughConservative]Conservative Party§!"
- COALITION_PARTY7_TITLE: "[This.GetEnoughMarketLiberal]Classical Liberal Party§!"
- COALITION_PARTY8_TITLE: "[This.GetEnoughSocialLiberal]Social Liberal Party§!"
- COALITION_PARTY9_TITLE: "[This.GetEnoughSocialDemocratic]Social Democratic Party§!"
- COALITION_PARTY10_TITLE: "[This.GetEnoughProgressive]Progressive Party§!"
- COALITION_PARTY11_TITLE: "[This.GetEnoughSocialist]Socialist Party§!"
- COALITION_PARTY12_TITLE: "[This.GetEnoughCommunist]Communist Party§!"
+ COALITION_PARTY1_TITLE: "[This.GetEnoughIslamic]Islamist§!"
+ COALITION_PARTY2_TITLE: "[This.GetEnoughFascist]Fascist§!"
+ COALITION_PARTY3_TITLE: "[This.GetEnoughRightWingNationalist]Right-Wing Nationalist§!"
+ COALITION_PARTY5_TITLE: "[This.GetEnoughNationalConservative]National Conservative§!"
+ COALITION_PARTY6_TITLE: "[This.GetEnoughConservative]Conservative§!"
+ COALITION_PARTY7_TITLE: "[This.GetEnoughMarketLiberal]Classical Liberal§!"
+ COALITION_PARTY8_TITLE: "[This.GetEnoughSocialLiberal]Social Liberal§!"
+ COALITION_PARTY9_TITLE: "[This.GetEnoughSocialDemocratic]Social Democratic§!"
+ COALITION_PARTY10_TITLE: "[This.GetEnoughProgressive]Progressive§!"
+ COALITION_PARTY11_TITLE: "[This.GetEnoughSocialist]Socialist§!"
+ COALITION_PARTY12_TITLE: "[This.GetEnoughCommunist]Communist§!"
 
  # Party Tooltips
  COALITION_PARTY1_TT: "[This.GetIslamicPartyTT]"
@@ -66,7 +65,7 @@
  COALITION_NO_COALITION_TT: "§RWe will not form a coalition§!\n\n§YWarning:§! Not forming a coalition will result in a minority governemnt and difficulties for passing legislative acts coming from us."
  COALITION_FINISH_TT: "[This.GetCoalitionFinished]\n\n[!finish_click]"
 
- COALITION_PARTY_NOT_ENOUGH: "§RThis party is not selectable.§!\n\nIt did not score enough votes in the last election."
+ COALITION_PARTY_NOT_ENOUGH: "§RThis party is not selectable.§!\n\nIt did not win a seat in the §Y[ROOT.GetParliamentName]§!."
  COALITION_PARTY_ENOUGH: "§GThis party is selectable.§!\n\nIt reached enough votes to be a part of the next government, but not enough to reach the absolute majority of 50%"
  COALITION_PARTY_MAJORITY: "§GThis party is selectable and should be selected.§!\n\nIt even reached enough votes to form a majority government on its own."
  COALITION_NEXT_OK: "§GYou seleted a party.§!\n\nWe can move on to creating our coalition now."
@@ -80,7 +79,7 @@
  #### Parliament Mechanic
  # Tooltips
  parliament_tooltip: "§Y[This.GetParliamentName]§!"
- parliament_none: ""
+ parliament_none: "§RNo Parliament Established§!"
  parliament_generic: "Parliament"
  parliament_national_assembly: "National Assembly"
  parliament_house_of_representatives: "House of Representatives"
@@ -151,6 +150,7 @@
  parliament_verkhovna_rada: "Verkhovna Rada"
  parliament_federal_national_council: "Federal National Council"
  parliament_pontifical_commission: "Pontifical Commission"
+ parliament_great_khural: "Great Khural"
 
  # Ideology Texts for the window
  COMMUNIST_POPULARITY_TEXT: "§CCommunists: [?Root.communist_seats]%§!"

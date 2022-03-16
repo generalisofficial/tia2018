@@ -1,106 +1,4 @@
 ideas = {
-
-	######################################
-	#	POPULATION
-	######################################
-
-	population_growth = {
-		law = yes
-		
-		population_growth_explosion = {
-		
-			picture = population_explosion
-			
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-
-			available = { always = no }
-			
-			modifier = { 
-				MONTHLY_POPULATION = 1.25
-				consumer_goods_factor = 0.12
-				research_speed_factor = 0.02
-			}
-			
-			cancel_if_invalid = no
-			
-		}
-		
-		population_growth_rapid = {
-			
-			picture = population_rapid_growth
-			
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-
-			available = { always = no }
-			
-			modifier = { 
-				MONTHLY_POPULATION = 0.6
-				consumer_goods_factor = 0.08
-			}
-			
-			cancel_if_invalid = no
-			
-		}
-		
-		population_growth_steady = {
-			
-			picture = population_growth
-			
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-
-			available = { always = no }
-			
-			modifier = {
-				consumer_goods_factor = 0.04
-				research_speed_factor = -0.02
-			}
-			
-			cancel_if_invalid = no
-			
-		}
-		
-		population_growth_stagnation = {
-			
-			picture = population_stagnation
-			
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-
-			available = { always = no }
-			
-			modifier = { 
-				MONTHLY_POPULATION = -0.6
-				research_speed_factor = -0.04
-			}
-			
-			cancel_if_invalid = no
-			
-		}
-		
-		population_growth_decline = {
-			
-			picture = population_decline
-			
-			allowed = { always = yes }
-			allowed_civil_war = { always = yes }
-
-			available = { always = no }
-			
-			modifier = { 
-				MONTHLY_POPULATION = -1.25
-				research_speed_factor = -0.06
-				consumer_goods_factor = -0.08
-			}
-			
-			cancel_if_invalid = no
-			
-		}
-		
-	}
-
 	######################################
 	#	CONSCRIPTION
 	######################################
@@ -445,6 +343,10 @@ ideas = {
 				NOT = {
 					has_idea = violent_non_state_actor
 				}
+			}
+
+			on_add = {
+				custom_effect_tooltip = TT_coalition_governments_unlocked
 			}
 			
 			modifier = {
@@ -1575,6 +1477,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 5
+
+			available = {
+				has_country_flag = economy_mechanic_implemented
+			}
 			
 			modifier = {
 				stability_factor = -0.2
@@ -1591,6 +1497,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 4
+
+			available = {
+				has_country_flag = economy_mechanic_implemented
+			}
 				
 			modifier = {
 				stability_factor = -0.1
@@ -1607,6 +1517,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 3
+
+			available = {
+				has_country_flag = economy_mechanic_implemented
+			}
 				
 			modifier = {
 				#
@@ -1624,6 +1538,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 2
+
+			available = {
+				has_country_flag = economy_mechanic_implemented
+			}
 				
 			modifier = {
 				stability_factor = 0.1
@@ -1640,6 +1558,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 1
+
+			available = {
+				has_country_flag = economy_mechanic_implemented
+			}
 				
 			modifier = {
 				stability_factor = 0.2

@@ -8,6 +8,7 @@ international_organizations = {
 		
 		available = {
 			has_war = no
+			is_subject = no
 			NOT = { has_global_flag = ongoing_UN_application }
 			if = {
 				limit = {
@@ -73,6 +74,7 @@ international_organizations = {
 	join_european_union = {
 		visible = {
 			is_sovereign_state = yes
+			is_UN_member = yes
 			NOT = { 
 				OR = {
 					has_idea = idea_european_union_member 
@@ -183,6 +185,7 @@ international_organizations = {
 	
 		visible = {
 			is_sovereign_state = yes
+			is_UN_member = yes
 			is_in_africa = yes
 			NOT = { 
 				OR = {
@@ -258,6 +261,7 @@ international_organizations = {
 	
 		visible = {
 			is_sovereign_state = yes
+			is_UN_member = yes
 			is_former_british_colony = yes
 			NOT = { 
 				OR = {

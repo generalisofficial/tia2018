@@ -2,9 +2,7 @@
 
 oob = "generic_2018"
 
-set_research_slots = 1
 set_convoys = 10
-
 
 set_country_flag = country_language_russian
 
@@ -94,15 +92,40 @@ if = {
 	}
 }
 
+add_ideas = {
+	idea_nonpartisan_political_system
+	presidential_republic
+}
+
+#Great Khural
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 93.75 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 6.25 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
+
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2018.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "2016.9.17"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 100
+    national_conservative = 93.75
+	right_wing_nationalist = 6.25
 }
 
-recruit_character = TAN_sholban_karaool
+recruit_character = TYV_sholban_kara_ool

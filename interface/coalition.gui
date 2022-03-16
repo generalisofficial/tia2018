@@ -39,22 +39,22 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name ="title"
-			position = { x= 20 y = 10 }
-			font = "hoi_30header"
-			text = "Government formation"
+			name ="subtitle"
+			position = { x= 270 y = 60 }
+			font = "hoi_24header"
+			text = "Which party will form the Government?"
 			format = left
-			maxWidth = 300
+			maxWidth = 450
 			maxHeight = 24
 			fixedsize = no
 		}
 
 		instantTextBoxType = {
-			name ="subtitle"
-			position = { x= 260 y = 60 }
+			name ="recommended_party"
+			position = { x= 250 y = 10 }
 			font = "hoi_24header"
-			text = "Which party should form the Government?"
-			format = left
+			text = "Elected Speaker: [This.GetLargestPartySeats]"
+			format = center
 			maxWidth = 450
 			maxHeight = 24
 			fixedsize = no
@@ -404,17 +404,6 @@ guiTypes = {
 		background = {
 			name = "background"
 			spriteType ="GFX_tiled_window_2b_border"
-		}
-
-		instantTextBoxType = {
-			name ="title"
-			position = { x= 20 y = 10 }
-			font = "hoi_30header"
-			text = "Coalition formation"
-			format = left
-			maxWidth = 300
-			maxHeight = 24
-			fixedsize = no
 		}
 
 		instantTextBoxType = {

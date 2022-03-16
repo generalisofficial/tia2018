@@ -1230,6 +1230,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = TYV
+		}
+		localization_key = parliament_great_khural
+	}
+	text = {
+		trigger = {
 			has_country_flag = has_parliament
 		}
 		localization_key = parliament_generic
@@ -1369,97 +1375,61 @@ defined_text = {
 ########################### GET MEMBERS OF THE CURRENT COALITION
 
 defined_text = {
-	name = GetGovernmentIsMajority
-	
-	text = {
-		trigger = {
-			check_variable = { ROOT.coalition > 49.99 }
-		}
-		localization_key = "Majority Government"
-	}
+	name = GetMajorityMinorityGov
 
 	text = {
 		trigger = {
-			check_variable = { ROOT.coalition < 50 }
+			has_idea = presidential_republic
+			majority_government = yes
 		}
-		localization_key = "Minority Government"
-	}
-}
-
-defined_text = {
-	name = GetGovernmentPartyIcon
-	
-	text = {
-		trigger = {
-			has_government = islamist
-		}
-		localization_key = GFX_ideology_[This.GetTag]_islamist_group
+		localization_key = presidential_majority_government
 	}
 	text = {
 		trigger = {
-			has_government = fascist
+			has_idea = parliamentary_system
+			majority_government = yes
 		}
-		localization_key = GFX_ideology_[This.GetTag]_fascist_group
+		localization_key = parliamentary_majority_government
 	}
 	text = {
 		trigger = {
-			has_government = right_wing_nationalist
+			has_idea = demarchic_republic
+			majority_government = yes
 		}
-		localization_key = GFX_ideology_[This.GetTag]_right_wing_nationalist_group
+		localization_key = randomly_selected_majority_government
 	}
 	text = {
 		trigger = {
-			has_government = monarchist
+			has_idea = presidential_republic
+			minority_government = yes
 		}
-		localization_key = GFX_ideology_[This.GetTag]_monarchist_group
+		localization_key = presidential_minority_government
 	}
 	text = {
 		trigger = {
-			has_government = national_conservative
+			has_idea = parliamentary_system
+			minority_government = yes
 		}
-		localization_key = GFX_ideology_[This.GetTag]_national_conservative_group
+		localization_key = parliamentary_minority_government
 	}
 	text = {
 		trigger = {
-			has_government = conservative
+			has_idea = demarchic_republic
+			minority_government = yes
 		}
-		localization_key = GFX_ideology_[This.GetTag]_conservative_group
+		localization_key = randomly_selected_minority_government
 	}
 	text = {
 		trigger = {
-			has_government = classical_liberal
+			has_idea = absolute_monarchy
 		}
-		localization_key = GFX_ideology_[This.GetTag]_classical_liberal_group
+		localization_key = monarch_led_government
 	}
 	text = {
 		trigger = {
-			has_government = social_liberal
+			has_idea = one_party_state
 		}
-		localization_key = GFX_ideology_[This.GetTag]_social_liberal_group
-	}
-	text = {
-		trigger = {
-			has_government = social_democrat
-		}
-		localization_key = GFX_ideology_[This.GetTag]_social_democrat_group
-	}
-	text = {
-		trigger = {
-			has_government = progressive
-		}
-		localization_key = GFX_ideology_[This.GetTag]_progressive_group
-	}
-	text = {
-		trigger = {
-			has_government = socialist
-		}
-		localization_key = GFX_ideology_[This.GetTag]_socialist_group
-	}
-	text = {
-		trigger = {
-			has_government = communist
-		}
-		localization_key = GFX_ideology_[This.GetTag]_communist_group
+		localization_key = one_party_state_government
 	}
 }
 
@@ -1470,150 +1440,73 @@ defined_text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 1 }
 		}
-		localization_key = "Islamist Party"
+		localization_key = islamist
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 2 }
 		}
-		localization_key = "Third Positionist Party"
+		localization_key = fascist
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 3 }
 		}
-		localization_key = "Right-Wing Nationalist Party"
+		localization_key = right_wing_nationalist
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 4 }
 		}
-		localization_key = "Monarchist Party"
+		localization_key = monarchist
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 5 }
 		}
-		localization_key = "National Conservative Party"
+		localization_key = national_conservative
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 6 }
 		}
-		localization_key = "Conservative Party"
+		localization_key = conservative
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 7 }
 		}
-		localization_key = "Classical Liberal Party"
+		localization_key = classical_liberal
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 8 }
 		}
-		localization_key = "Social Liberal Party"
+		localization_key = social_liberal
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 9 }
 		}
-		localization_key = "Social Democrat Party"
+		localization_key = social_democrat
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 10 }
 		}
-		localization_key = "Progressive Party"
+		localization_key = progressive
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 11 }
 		}
-		localization_key = "Socialist Party"
+		localization_key = socialist
 	}
 	text = {
 		trigger = {
 			check_variable = { Root.member_parties_array^i = 12 }
 		}
-		localization_key = "Communist Party"
-	}
-}
-
-defined_text = {
-	name = GetMemberPartyIcon
-	
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 1 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_islamist_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 2 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_fascist_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 3 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_right_wing_nationalist_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 4 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_monarchist_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 5 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_national_conservative_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 6 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_conservative_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 7 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_classical_liberal_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 8 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_social_liberal_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 9 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_social_democrat_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 10 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_progressive_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 11 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_socialist_group
-	}
-	text = {
-		trigger = {
-			check_variable = { Root.member_parties_array^i = 12 }
-		}
-		localization_key = GFX_ideology_[This.GetTag]_communist_group
+		localization_key = communist
 	}
 }
 
@@ -1958,5 +1851,82 @@ defined_text = {
 			NOT = { has_government = communist }
 		}
 		localization_key = "Kick this Party from your coalition."
+	}
+}
+
+defined_text = {
+	name = GetLargestPartySeats
+	
+	text = {
+		trigger = {
+			islamist_plurality_seats = yes
+		}
+		localization_key = islamist
+	}
+	text = {
+		trigger = {
+			fascist_plurality_seats = yes
+		}
+		localization_key = fascist
+	}
+	text = {
+		trigger = {
+			right_wing_nationalist_plurality_seats = yes
+		}
+		localization_key = right_wing_nationalist
+	}
+	text = {
+		trigger = {
+			monarchist_plurality_seats = yes
+		}
+		localization_key = monarchist
+	}
+	text = {
+		trigger = {
+			national_conservative_plurality_seats = yes
+		}
+		localization_key = national_conservative
+	}
+	text = {
+		trigger = {
+			conservative_plurality_seats = yes
+		}
+		localization_key = conservative
+	}
+	text = {
+		trigger = {
+			classical_liberal_plurality_seats = yes
+		}
+		localization_key = classical_liberal
+	}
+	text = {
+		trigger = {
+			social_liberal_plurality_seats = yes
+		}
+		localization_key = social_liberal
+	}
+	text = {
+		trigger = {
+			social_democrat_plurality_seats = yes
+		}
+		localization_key = social_democrat
+	}
+	text = {
+		trigger = {
+			progressive_plurality_seats = yes
+		}
+		localization_key = progressive
+	}
+	text = {
+		trigger = {
+			socialist_plurality_seats = yes
+		}
+		localization_key = socialist
+	}
+	text = {
+		trigger = {
+			communist_plurality_seats = yes
+		}
+		localization_key = communist
 	}
 }
