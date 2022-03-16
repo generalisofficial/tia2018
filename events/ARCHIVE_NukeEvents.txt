@@ -1,0 +1,80 @@
+﻿add_namespace = nuke_time_calc
+
+country_event = {
+	id = nuke_time_calc.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { enrichment_max_time < 230 }
+			}
+			add_to_variable = { enrichment_max_time = enrichment_max_add_time }
+			country_event = { id = nuke_time_calc.1 hours = 24 }
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { enrichment_max_time > 230 }
+					check_variable = { enrichment_max_time = 230 }
+				}
+			}
+			add_to_variable = { Root.enricheduraniumstock = Root.UraniumToEnrichFinal }
+			clear_variable = enrichment_max_time
+			clear_variable = enrichment_time_left
+			clear_variable = UraniumToEnrichFinal
+			clear_variable = enrichment_calculation
+			clear_variable = enrichment_result_calculation
+			clear_variable = enrichment_price_calcualtion
+			clear_variable = enrichmentcosts
+			clear_variable = enrichmentresult
+			clear_variable = enrichementdaysneeded
+			clear_variable = enrichment_max_add_time
+			clr_country_flag = enriching
+		}
+	}
+
+	option = {
+	}
+}
+
+country_event = {
+	id = nuke_time_calc.2
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { building_max_time < 230 }
+			}
+			add_to_variable = { building_max_time = building_max_add_time }
+			country_event = { id = nuke_time_calc.2 hours = 24 }
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { building_max_time > 230 }
+					check_variable = { building_max_time = 230 }
+				}
+			}
+			add_nuclear_bombs = Root.NukesToBuildFinal
+			clear_variable = building_max_time
+			clear_variable = building_max_add_time
+			clear_variable = NukesToBuildFinal
+			clear_variable = nuke_calculation
+			clear_variable = nuke_time_calculation
+			clear_variable = nuke_costs_calculation
+			clear_variable = buildingcosts
+			clear_variable = buildingdaysneeded
+			clear_variable = HEUNeeded
+			clr_country_flag = building_nuke
+		}
+	}
+
+	option = {
+	}
+}

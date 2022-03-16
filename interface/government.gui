@@ -29,10 +29,10 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "cabinet_name"
-			position = { x = 65 y = 18 }
+			name = "cabinet_of"
+			position = { x = 65 y = 7 }
 			font = "hoi_36header"
-			text = "[Root.GetLeader] Cabinet"
+			text = "Cabinet of"
 			maxWidth = 500
 			maxHeight = 40
 			fixedsize = no
@@ -40,18 +40,23 @@ guiTypes = {
 			Orientation = "center_left"
 		}
 
-		IconType = {
-			name = "leading_party_icon"
-			spriteType = "GFX_default_fallback_texture"
-			position = { x = 275 y = 55 }
-			Orientation = "UPPER_LEFT"
+		instantTextBoxType = {
+			name = "cabinet_name"
+			position = { x = 65 y = 33 }
+			font = "hoi_36header"
+			text = "[Root.GetLeader] ([This.GetRulingParty])"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = no
+			format = center
+			Orientation = "center_left"
 		}
 
 		instantTextBoxType = {
 			name = "government_majority"
-			position = { x = 189 y = 120 }
+			position = { x = 189 y = 65 }
 			font = "hoi_24header"
-			text = "[This.GetGovernmentIsMajority]"
+			text = "[This.GetMajorityMinorityGov]"
 			maxWidth = 250
 			maxHeight = 40
 			fixedsize = no
@@ -60,22 +65,10 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "leading_party_name"
-			position = { x = 20 y = 200 }
-			font = "hoi_18mbs"
-			text = "The Government is lead by [This.GetRulingParty]"
-			maxWidth = 350
-			maxHeight = 40
-			fixedsize = no
-			format = left
-			Orientation = "upper_left"
-		}
-
-		instantTextBoxType = {
 			name = "member_parties_title"
-			position = { x = 21 y = 231 }
+			position = { x = 125 y = 130 }
 			font = "hoi_18mbs"
-			text = "It is made up of the following parties:"
+			text = "The government includes:"
 			maxWidth = 260
 			maxHeight = 40
 			fixedsize = no
@@ -85,7 +78,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "government_members_container"
-			position = { x = 20 y = 250 }	
+			position = { x = 125 y = 150 }	
 			size = { width = 370 height = 280 }
 			clipping = yes
 			moveable = no
@@ -122,18 +115,11 @@ guiTypes = {
 			name = "name"
 			position = { x = 10 y = 15 }
 			font = "hoi_18mbs"
-			text = "[This.GetGovernmentMemberPartyName]"
+			text = "([This.GetGovernmentMemberPartyName])"
 			format = left
 			maxWidth = 200
 			maxHeight = 24
 			fixedsize = yes
-		}
-	
-		IconType = {
-			name = "icon"
-			quadTextureSprite = "GFX_shield_small"
-			position = { x = 160 y = 1 }
-			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {

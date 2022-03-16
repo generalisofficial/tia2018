@@ -2017,6 +2017,21 @@ election_pulse = {
 		}
 		country_event = israel.2
 	}
+	if  = {
+		limit = {
+			original_tag = TMS
+			has_country_leader = {
+				name = "Gurbanguly Berdimuhamedow"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = right_wing_nationalist
+		create_country_leader = {
+			name = "Serdar Berdimuhamedow"
+			picture = GFX_Portrait_TMS_Serdar_Berdimuhamedow
+			ideology = right_wing_nationalist_ideology
+		}
+	}
 }
 
 election_effect = {

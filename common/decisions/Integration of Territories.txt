@@ -5,17 +5,18 @@ integration_of_territories = {
 		on_map_mode = map_and_decisions_view
 
 		target_trigger = {
-			FROM = {
-				is_owned_by = ROOT
-				NOT = { is_core_of = ROOT }
-			}
+			#FROM = {
+			#	is_owned_by = ROOT
+			#	NOT = { is_core_of = ROOT }
+			#}
 		}
 
 		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				NOT = { is_core_of = ROOT }
-			}
+			always = no # Work in Progress
+			#any_state = {
+			#	is_owned_by = ROOT
+			#	NOT = { is_core_of = ROOT }
+			#}
 		}
 		
 		available = {
