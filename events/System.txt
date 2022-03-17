@@ -1232,25 +1232,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = system.27
-	hidden=yes
-
-	trigger = {
-		country_exists = UKR
-		NOT = { country_exists = DPR }
-		UKR = {
-			controls_state = 227
-			controls_state = 228
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		news_event = donetsk.5
-	}
-}
+#system.27 empty
 
 country_event = {
 	id = system.28
