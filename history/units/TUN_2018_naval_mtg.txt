@@ -1,0 +1,47 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Tunisian National Navy"
+		naval_base = 9994 #Bizerte
+		task_force = {
+			name = "Tunisian National Navy"
+			location = 9994 #Bizerte
+			ship = { name = "P301 Bizerta" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Bizerta Class" } } }
+			ship = { name = "P302 El Horria" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Bizerta Class" } } }
+			ship = { name = "P303 Monastir" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Bizerta Class" } } }
+			ship = { name = "P501 La Galite" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Bizerta Class" } } }
+			ship = { name = "P502 Tunis" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Bizerta Class" } } }
+			ship = { name = "P503 Carthage" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Bizerta Class" } } }
+			ship = { name = "P505 Hamilcar" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Hamilcar Class" } } }
+			ship = { name = "P507 Himilcon" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Hamilcar Class" } } }
+			ship = { name = "P508 Hasdrubal" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Hamilcar Class" } } }
+			ship = { name = "P509 Hasdrubal" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Hamilcar Class" } } }
+			ship = { name = "P510 Giscon" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Hamilcar Class" } } }
+			ship = { name = "P601 Ras el Blad" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Ras el Blad Class" } } }
+			ship = { name = "P602 Ras Ajdir" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Ras el Blad Class" } } }
+			ship = { name = "P603 Ras Edrak" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Ras el Blad Class" } } }
+			ship = { name = "P604 Ras Manoura" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Ras el Blad Class" } } }
+			ship = { name = "P605 Ras Enghela" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Ras el Blad Class" } } }
+			ship = { name = "P606 Ras Ifrikia" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = TUN version_name = "Ras el Blad Class" } } }
+		}
+	}
+}		
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	### Ships Under Contruction ###
+	# FS: Jugurtha Class (Ships: Jugurtha, Siphax, Hannon, Sophonisbe)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_patrol_boat_4
+			creator = "TUN" 
+			version_name = "Jugurtha Class"
+		}
+		requested_factories = 1
+		progress = 0.85
+		amount = 4
+	}
+}	

@@ -17,24 +17,6 @@
 }
 
 division_template = {
-	name = "Motorized Rifle Brigade (Heavy)"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		modern_armor = { x = 1 y = 0 }
-		modern_armor = { x = 1 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
-		logistics_company = { x = 0 y = 4 }
-	}
-}
-
-division_template = {
 	name = "Territorial Defense Brigade"
 	
 	regiments = {
@@ -72,15 +54,6 @@ division_template = {
 }
 
 division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
 	name = "Tank Brigade"
 	
 	regiments = {
@@ -109,87 +82,51 @@ division_template = {
 
 units = {	
 	division = {
-		name = "1st Motorized Rifle Brigade 'Slavyanskaya'"
-		location = 6493 #Komsomolske
+		name = "2nd Motorized Rifle Brigade 'Kliment Voroshilov'"
+		location = 9461 #Luhansk
 		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "3rd Motorized Rifle Brigade 'Berkut'"
-		location = 14106 #Horlivka
+		name = "4th Motorized Rifle Brigade"
+		location = 6505 #Alchevsk
 		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "5th Motorized Rifle Brigade 'Oplot'"
-		location = 6474 #Donetsk
-		division_template = "Motorized Rifle Brigade (Heavy)"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "7th Motorized Rifle Brigade 'Slavyansko-Chestyakivska'"
-		location = 14104 #Debaltseve
+		name = "7th Motorized Rifle Brigade 'Chistyakovskaya'"
+		location = 14104 #Debaltseve, Donetsk
 		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "9th Motorized Rifle Brigade"
-		location = 3421 #Novoazovsk
-		division_template = "Motorized Rifle Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "11th Motorized Rifle Brigade 'Vostok'"
-		location = 6474 #Donetsk
-		division_template = "Motorized Rifle Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "100th Motorized Rifle Brigade 'Kupol'"
-		location = 6474 #Donetsk
-		division_template = "Motorized Rifle Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Separate Artillery Brigade 'Kalmius'"
-		location = 6474 #Donetsk
-		division_template = "Artillery Brigade"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "2nd Separate Tank Battalion 'Diesel'"
-		location = 6474 #Donetsk
+		name = "1st Separate Mechanized Brigade 'August'"
+		location = 9461 #Luhansk
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "11th Motorized Rifle Brigade 'Vostok'"
-		location = 6474 #Donetsk
-		division_template = "Motorized Rifle Brigade"
+		name = "Mechanized Brigade 'Prizrak'"
+		location = 9461 #Luhansk
+		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "9th Marine Regiment"
-		location = 3421 #Novoazovsk
-		division_template = "Marine Brigade"
+		name = "Separate Artillery Brigade"
+		location = 9461 #Luhansk
+		division_template = "Artillery Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "Territorial Defense Forces"
-		location = 6474 #Donetsk
+		location = 9461 #Luhansk
 		division_template = "Territorial Defense Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Russian Orthodox Army"
-		location = 6474 #Donetsk
+		name = "Cossack National Guard"
+		location = 9461 #Luhansk
 		division_template = "Large Militia Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "International Battalions"
-		location = 6474 #Donetsk
-		division_template = "Small Militia Brigade"
 		start_experience_factor = 0.1
 	}
 }

@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,6 +20,7 @@
 }
 division_template = {
 	name = "Artillery Division"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -27,10 +29,10 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		artillery = { x = 2 y = 0 }
-		artillery = { x = 2 y = 1 }
-		artillery = { x = 3 y = 0 }
-		artillery = { x = 3 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -39,6 +41,7 @@ division_template = {
 }
 division_template = {
 	name = "Armored Brigade"
+	division_names_group = GENERIC_ARM_01
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
@@ -53,6 +56,7 @@ division_template = {
 
 division_template = {
 	name = "Motorized Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }

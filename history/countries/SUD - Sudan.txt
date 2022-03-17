@@ -2,6 +2,14 @@
 
 oob = "SUD_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SUD_2018_naval_mtg"
+	else = {
+		set_naval_oob = "SUD_2018_naval_legacy"
+	}
+}
+
 set_convoys = 17
 
 set_country_flag = country_language_arabic
@@ -45,13 +53,12 @@ set_technology = {
 	interwar_antitank = 1
 	interwar_antiair = 1
 	
-
-	
 	## Air ##
 	CAS1 = 1
 	CAS2 = 1
 	fighter1 = 1
 	fighter2 = 1
+	fighter3 = 1
 	naval_bomber1 = 1
 	strategic_bomber1 = 1
 	
@@ -65,6 +72,9 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_patrol_boat = 1
+		basic_patrol_boat = 1
+		improved_patrol_boat = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
@@ -75,6 +85,9 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		basic_ship_hull_patrol_boat = 1
+		improved_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -153,3 +166,22 @@ set_popularities = {
 recruit_character = SUD_omar_albashir
 recruit_character = SUD_abdel_fattah_alburhan
 recruit_character = SUD_mustafa_osman_obeid_salim
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "P41S Class"
+		type = ship_hull_patrol_boat_3
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_3
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}	

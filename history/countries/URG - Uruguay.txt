@@ -59,6 +59,7 @@ set_technology = {
 	fighter1 = 1
 	fighter2 = 1
 	naval_bomber1 = 1
+	naval_bomber2 = 1
 	strategic_bomber1 = 1
 	
 	## Engineering ##
@@ -179,7 +180,7 @@ if = {
 	create_equipment_variant = {
 		name = "Kondor II Class"
 		type = ship_hull_light_1
-		name_group = GENERIC_DD_NAMES
+		name_group = GENERIC_MINESWEEPER_NAMES
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = empty
