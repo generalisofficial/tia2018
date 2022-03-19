@@ -1,93 +1,78 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Motor Rifle Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Armored Brigade"
+	name = "Special Forces Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Armoured Brigade"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
-}
-division_template = {
-	name = "Mountain Brigade"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "1st Motor Rifle Brigade"
-		location = 4768
-		division_template = "Infantry Brigade"
+		name = "2nd Guards Motor Rifle Brigade"
+		location = 12583 #Koy-Tash
+		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Koy-Tash Brigade"
-		location = 12370
-		division_template = "Infantry Brigade"
+		name = "8th Guards Motor Rifle Division"
+		location = 13940 #Tokmok
+		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Kyrgyz Armored Brigade"
-		location = 12370
-		division_template = "Armored Brigade"
+		name = "68th Independent Mountain Rifle Brigade"
+		location = 1483 #Osh
+		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "'Scorpion' 25th Special Forces Brigade"
+		location = 13940 #Tokmok
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "Independent Tank Regiment"
+		location = 12583 #Bishkek
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Independent Tank Regiment"
+		location = 12583 #Bishkek
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
 }
+
+air_wings = {
+	586 = {
+		#An-26 + An-2
+		transport_plane_equipment_1 = {
+			owner = "KAZ"
+			amount = 6
+		}
+		name = "Kyrgyz Air Force"
+	}
+}	

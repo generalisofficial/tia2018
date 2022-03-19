@@ -1,62 +1,68 @@
 ﻿division_template = {
 	name = "Motor Rifle Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-	}
-	
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Artillery Regiment"
-	
-	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Armoured Regiment"
-	
-	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
 		modern_armor = { x = 0 y = 0 }
 	}
-	
-	priority = 2
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
 }
 
 units = {
-
 	division = {
 		name = "1st Motor Rifle Brigade"
 		location = 11599
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
 		name = "2nd Motor Rifle Brigade"
 		location = 11617
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
 		name = "3rd Motor Rifle Brigade"
 		location = 11617
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-
-	division = {
-		name = "1st Artillery Regiment"
-		location = 11599
-		division_template = "Artillery Regiment"
-		start_experience_factor = 0.3
-	}
-	
 }
+
+### Air OOB ###
+
+air_wings = {
+	796 = {
+		#Su-27 + MiG-23
+		fighter_equipment_1 = {
+			owner = "ABK" 
+			amount = 3
+		}
+		name = "Fighter Regiment"
+	}
+	796 = {
+		#Su-25
+		CAS_equipment_1 = {
+			owner = "ABK" 
+			amount = 1
+		}
+		name = "Attack Regiment"
+	}
+	796 = {
+		#An-2
+		transport_plane_equipment_1 = {
+			owner = "ABK" 
+			amount = 2
+		}
+		name = "Transport Regiment"
+	}
+}	
 
 instant_effect = {
 	

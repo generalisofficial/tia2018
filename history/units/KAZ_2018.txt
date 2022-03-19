@@ -1,216 +1,253 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Motor Rifle Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
-		mechanized = { x = 1 y = 0 }
+		motorized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Mechanized Division"
+	name = "Training Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		mechanized = { x = 0 y = 4 }
-		light_armor = { x = 1 y = 0 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-	}
+	priority = 0
 }
+
 division_template = {
-	name = "Air Assault Brigade"
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+		artillery = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Cannon Artillery Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		mechanized = { x = 1 y = 0 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		mot_artillery_brigade = { x = 0 y = 0 }
+		mot_artillery_brigade = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Paratrooper Brigade"
+	name = "Rocket Artillery Brigade"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
+		mot_rocket_artillery_brigade = { x = 0 y = 0 }
+		mot_rocket_artillery_brigade = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Naval Infantry Brigade"
+	division_names_group = GENERIC_MAR_02
+	
+	regiments = {
+		amphibious_mechanized = { x = 0 y = 0 }
+		amphibious_mechanized = { x = 0 y = 1 }
+		amphibious_mechanized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
 	}
-	
-	priority = 2
 }
+
 division_template = {
-	name = "Mountain Brigade"
+	name = "Mountaineer Brigade"
+	division_names_group = GENERIC_MNT_02
 	
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Marine Brigade"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-	
-	priority = 2
 }
 
 units = {
-	
 	division = {
-		name = "3rd Mechanized Division"
-		location = 4333
-		division_template = "Mechanized Division"
+		name = "7th Separate Motor Rifle Brigade"
+		location = 7425 #Qaraghandy
+		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Separate Motor Brigade"
-		location = 1749
-		division_template = "Infantry Brigade"
+		name = "401st Cannon Artillery Brigade"
+		location = 14031 #Ungurtas
+		division_template = "Cannon Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Separate Motor Brigade"
-		location = 1276
-		division_template = "Infantry Brigade"
+		name = "402nd Rocket Artillery Brigade"
+		location = 12385 #Priozersk
+		division_template = "Rocket Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Separate Motor Brigade"
-		location = 4300
-		division_template = "Infantry Brigade"
+		name = "Training Center for Combat Training of Junior Specialists and the Reserve"
+		location = 7407 #Spassk
+		division_template = "Training Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "3rd Mechanized Brigade"
+		location = 7784 #Qaraghandy
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Separate Motor Brigade"
-		location = 10619
-		division_template = "Infantry Brigade"
+		name = "3rd Separate Motor Rifle Brigade"
+		location = 10680 #Usharal
+		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "5th Separate Motor Brigade"
-		location = 4523
-		division_template = "Infantry Brigade"
+		name = "4th Mechanized Brigade"
+		location = 1864 #Öskemen
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "6th Separate Motor Brigade"
-		location = 11472
-		division_template = "Infantry Brigade"
+		name = "8th Mechanized Brigade"
+		location = 10584 #Semey
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "7th Separate Motor Brigade"
-		location = 4333
-		division_template = "Infantry Brigade"
+		name = "11th Tank Brigade"
+		location = 1668 #Ayagoz
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "35th Guards Air Assault Brigade"
-		location = 4333
-		division_template = "Air Assault Brigade"
+		name = "34th Artillery Brigade"
+		location = 10680 #Usharal
+		division_template = "Cannon Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "36th Air Assault Brigade"
-		location = 6551
-		division_template = "Air Assault Brigade"
+		name = "102nd Rocket Artillery Brigade"
+		location = 10584 #Semey
+		division_template = "Rocket Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "37th Air Assault Brigade"
-		location = 4333
-		division_template = "Air Assault Brigade"
+		name = "103rd Cannon Artillery Brigade"
+		location = 10584 #Semey
+		division_template = "Cannon Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "38th Air Assault Brigade"
-		location = 4686
-		division_template = "Air Assault Brigade"
+		name = "100th Artillery Brigade"
+		location = 4232 #Aktobe
+		division_template = "Cannon Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "390th Guards Naval Infantry Brigade"
+		location = 4232 #Aktobe
+		division_template = "Naval Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Mountain Rifle Brigade"
+		location = 12340 #Taraz
+		division_template = "Motor Rifle Brigade" #Despite being called mountaineers, they're motorized troops
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Mechanized Brigade"
+		location = 4686 #Shymkent
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Separate Mountain-Jaeger Regiment"
+		location = 4686 #Shymkent
+		division_template = "Mountaineer Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Mechanized Brigade"
+		location = 4773 #Otan ilitary Base, Kordaj District
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "103rd Cannon Artillery Brigade"
+		location = 4773 #Otan ilitary Base, Kordaj District
+		division_template = "Cannon Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "'Karasai Batyr' Training Center of the Ground Forces"
+		location = 4773 #Otan ilitary Base, Kordaj District
+		division_template = "Training Brigade"
+		start_experience_factor = 0.0
+	}
 }
 
 ### Air OOB ###
 
 air_wings = {
 	804 = {
-		#Su-27
-		fighter_equipment_3 = {
+		#MiG-27
+		fighter_equipment_1 = {
 			owner = "KAZ"
-			amount = 47
+			amount = 12
 		}
-
+		name = "129th Fighter-Bomber Regiment"
 	}
-	404 = {
-		#MiG-29
-		fighter_equipment_3 = {
+	804 = {
+		#MiG-29 + MiG-31
+		fighter_equipment_1 = {
 			owner = "KAZ"
-			amount = 15
+			amount = 43
 		}
-
+		name = "715th Fighter Regiment"
 	}
-	404 = {
+	804 = {
+		#Su-24
+		fighter_equipment_1 = {
+			owner = "KAZ"
+			amount = 20
+		}
+		name = "134th Fighter-Bomber Regiment"
+	}
+	804 = {
 		#Su-25
-		CAS_equipment_2 = {
+		CAS_equipment_1 = {
 			owner = "KAZ"
 			amount = 14
 		}
-
+		name = "149th Bomber Regiment"
 	}
-	590 = {
-		#MiG-31 - Interceptor
-		fighter_equipment_3 = {
+	804 = {
+		#Su-27
+		fighter_equipment_1 = {
 			owner = "KAZ"
-			amount = 42
+			amount = 41
 		}
-
+		name = "356th Fighter Aviation Regiment"
 	}
 }

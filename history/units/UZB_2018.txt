@@ -1,135 +1,133 @@
 ﻿division_template = {
 	name = "Motor Rifle Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Special Forces Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		light_mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Armored Brigade"
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_AIR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Tank Regiment"
+	division_names_group = GENERIC_ARM_02
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Artillery Brigade"
-	
-	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-		artillery_brigade = { x = 0 y = 1 }
-		anti_tank_brigade = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "Northwestern Motor Rifles"
-		location = 12233
+		name = "1st Motor Rifle Brigade"
+		location = 1459 #Chirchik
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Southwestern Motor Rifles"
-		location = 12454
+		name = "2nd Motor Rifle Brigade"
+		location = 7775 #Samarkand
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Central Motor Rifles"
-		location = 4618
+		name = "3rd Motor Rifle Brigade"
+		location = 12239 #Termez
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "Eastern Motor Rifles"
-		location = 7777
-		division_template = "Motor Rifle Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Tashkent Motor Rifles"
-		location = 1459
-		division_template = "Motor Rifle Brigade"
-		start_experience_factor = 0.3
-	}
-	
 	division = {
 		name = "25th Motor Rifle Brigade"
-		location = 12722
+		location = 7639 #Qarshi
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "37th Motor Rifle Brigade"
-		location = 10660
+		location = 10601 #Andijan
 		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "19th Artillery Brigade"
-		location = 1623
-		division_template = "Artillery Brigade"
+		name = "17th Air Assault Brigade"
+		location = 10660 #Fergana
+		division_template = "Airborne Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "15th Independent Special Forces Brigade"
+		location = 1459 #Chirchik
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "Tank Regiment"
+		location = 1459 #Ahangaran
+		division_template = "Tank Regiment"
+		start_experience_factor = 0.3
+	}
 }
 
 
 ### Air OOB ###
 
 air_wings = {
-	821 = {
+	823 = {
 		#MiG-29
-		fighter_equipment_3 = {
+		fighter_equipment_1 = {
 			owner = "UZB" 
-			amount = 39
+			amount = 38
 		}
-
+		name = "Dzhizak Separate Mixed Aviation Brigade"
 	}
-	821 = {
+	823 = {
 		#Su-27
-		fighter_equipment_3 = {
+		fighter_equipment_1 = {
 			owner = "UZB" 
-			amount = 30
+			amount = 26
 		}
-
+		name = "Fergana Separate Mixed Aviation Regiment"
 	}
-	585 = {
+	823 = {
 		#Su-25
-		CAS_equipment_2 = {
+		CAS_equipment_1 = {
 			owner = "UZB" 
 			amount = 20
 		}
-
+		name = "Tashkent Separate Mixed Aviation Squadron"
 	}
 }

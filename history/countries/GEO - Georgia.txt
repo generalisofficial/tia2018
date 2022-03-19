@@ -2,6 +2,14 @@
 
 oob = "GEO_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GEO_2018_naval_mtg"
+	else = {
+		set_naval_oob = "GEO_2018_naval_legacy"
+	}
+}
+
 set_convoys = 82
 
 set_country_flag = country_language_georgian
@@ -148,3 +156,21 @@ recruit_character = GEO_zaza_chkhaidze
 recruit_character = GEO_shalva_jabakhidze
 recruit_character = GEO_dimitri_kiknadze
 recruit_character = GEO_nikoloz_janjgava
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Stenka Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}

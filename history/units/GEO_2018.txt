@@ -1,98 +1,125 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		modern_armor = { x = 1 y = 0 }
-		artillery_brigade = { x = 2 y = 0 }
+		motorized = { x = 0 y = 2 }
 	}
 	support = {
 		signal_company = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 2 }
 	}
 }
+
 division_template = {
-	name = "Special Operation Group"
+	name = "Light Infantry Batallion"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
 	name = "Artillery Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-		artillery_brigade = { x = 0 y = 1 }
-		artillery_brigade = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 0 y = 0 }
+		mot_artillery_brigade = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
 	}
 	support = {
 		signal_company = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Special Forces Brigade"
+	division_names_group = GENERIC_ARM_03
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		modern_armor = { x = 1 y = 0 }
 	}
 }
 
 units = {
-
 	division = {
-		name = "Special Operation Group"
-		location = 1599
-		division_template = "Special Operation Group"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Guards Brigade"
-		location = 1599
+		name = "1st Infantry Brigade"
+		location = 1599 #Tbilisi
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "2nd Infantry Brigade"
-		location = 6671
+		location = 772 #Senaki
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "11th Infantry Brigade"
-		location = 12309
+		name = "3rd Infantry Brigade"
+		location = 3658 #Kutaisi
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "21st Infantry Brigade"
-		location = 654
-		division_template = "Infantry Brigade"
+		name = "4th Mechanized Brigade"
+		location = 1599 #Vaziani Military Base
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "25th Infantry Brigade"
-		location = 3653
+		name = "5th Infantry Brigade"
+		location = 6671 #Gori
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "12th Light Infantry Battalion 'Commando'"
+		location = 3653 #Adlia
+		division_template = "Light Infantry Batallion"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Light Infantry Battalion 'Shavnabad'"
+		location = 3653 #Adlia
+		division_template = "Light Infantry Batallion"
+		start_experience_factor = 0.3
+	}
 	division = {
 		name = "1st Artillery Brigade"
-		location = 9702
+		location = 1599 #Vaziani Military Base
 		division_template = "Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-	
-
+	division = {
+		name = "2nd Artillery Brigade"
+		location = 3658 #Khoni
+		division_template = "Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Special Operation Forces"
+		location = 1599 #Tbilisi
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.3
+	}
 }
 air_wings = {
 	231 = {
