@@ -1,0 +1,51 @@
+﻿capital = 692
+
+oob = "generic_2018"
+
+set_country_flag = country_language_german
+
+add_ideas = {
+	parliamentary_system
+}
+
+#Landtag
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 10 }
+set_variable = { social_democrat_seats = 23.33 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 66.67 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
+set_politics = {
+	ruling_party = conservative
+	last_election = "2013.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 54.7
+	progressive = 18.5
+	right_wing_nationalist = 10.7
+	social_democrat = 10.7
+	classical_liberal = 5.4
+}
+
+recruit_character = BAV_martin_sichert
+recruit_character = BAV_franz_von_bayern
+recruit_character = BAV_markus_soder
+recruit_character = BAV_martin_hagen
+recruit_character = BAV_natascha_kohnen
+recruit_character = BAV_katharina_schulze
+recruit_character = BAV_ates_gurpinar

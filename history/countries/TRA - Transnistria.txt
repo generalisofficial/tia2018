@@ -2,10 +2,7 @@
 
 oob = "TRA_2018"
 
-set_convoys = 15
-
-
-set_country_flag = country_language_romanian
+set_country_flag = country_language_russian
 
 set_technology = {
 	## Infantry ##
@@ -99,20 +96,21 @@ if = {
 add_ideas = {
 	#population_growth_stagnation
 	non_member_state
+	civil_liberties_authoritarian
 	presidential_republic
 }
 
 set_country_flag = orthodox
 
 #Supreme Council
-set_variable = { communist_seats = 2.32 }
+set_variable = { communist_seats = 2.77 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 97.68 }
+set_variable = { national_conservative_seats = 97.23 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -125,14 +123,14 @@ add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2016.12.11"
+	last_election = "2016.12.12"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 97.68
-	communist = 2.32
+    national_conservative = 85.56
+	communist = 12.12
 }
 
 recruit_character = TRA_vadim_krasnoselsky

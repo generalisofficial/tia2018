@@ -12,27 +12,22 @@ default_peace = {
 	# ROOT = Taker, FROM = Giver
 	annex = {
 		factor = 1
-		#If all states are claimed
 		modifier = { 
 			factor = 100
 			FROM = {
-				NOT = {
-					any_owned_state = { 
-						NOT = {
-							OR = { 
-								is_claimed_by = ROOT
-								is_core_of = ROOT
+				OR = {
+					NOT = {
+						any_owned_state = { 
+							NOT = {
+								OR = { 
+									is_claimed_by = ROOT
+									is_core_of = ROOT
+								}
 							}
 						}
 					}
+					has_idea = violent_non_state_actor
 				}
-			}
-		}
-		#If FROM is VNSA
-		modifier = { 
-			factor = 100
-			FROM = {
-				has_idea = violent_non_state_actor
 			}
 		}
 	}
@@ -63,22 +58,18 @@ default_peace = {
 		factor = 99
 		modifier = {
 			factor = 0
-			FROM = { has_civil_war = yes }
-		}
-		modifier = {
-			factor = 0
-			FROM = { has_idea = violent_non_state_actor }
-		}
-		modifier = { #Not if we claim anything
-			factor = 0
 			FROM = {
-				any_owned_state = { 
-					AND = { 
-						OR = { 
-							is_claimed_by = ROOT
-							is_core_of = ROOT
+				OR = {
+					has_civil_war = yes
+					has_idea = violent_non_state_actor
+					any_owned_state = { 
+						AND = { 
+							OR = { 
+								is_claimed_by = ROOT
+								is_core_of = ROOT
+							}
+							NOT = { has_claimed_state_in_peace_conference = ROOT }
 						}
-						NOT = { has_claimed_state_in_peace_conference = ROOT }
 					}
 				}
 			}
@@ -113,10 +104,8 @@ default_peace = {
 				OR = {
 					is_claimed_by = ROOT
 					is_core_of = ROOT
-					FROM = {
-						owner = {
-							has_idea = violent_non_state_actor
-						}
+					owner = {
+						has_idea = violent_non_state_actor
 					}
 				}
 			}

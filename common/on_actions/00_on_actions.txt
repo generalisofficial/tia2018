@@ -328,6 +328,7 @@ on_actions = {
 				quickset_coalition = yes 
 				add_ideas = non_member_state 
 				country_event = system.20
+				inherit_technology = FROM
 			}
 		}
 	}
@@ -337,6 +338,7 @@ on_actions = {
 			ROOT = { 
 				add_ideas = non_member_state 
 				country_event = system.20 
+				inherit_technology = FROM
 			}
 			if = {
 				limit = {
