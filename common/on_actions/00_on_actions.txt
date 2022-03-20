@@ -42,8 +42,17 @@ on_actions = {
 	}
 
 	on_nuke_drop = {
+		if = {
+			limit = { 
+				NOT = { 
+					has_global_flag = first_nuke_dropped
+				}
+			}
+			set_global_flag = first_nuke_dropped
+			news_event = nuclear.2
+		}
 		random_events = {
-			10000 = system.27
+			10000 = nuclear.1
 		}
 	}
 
