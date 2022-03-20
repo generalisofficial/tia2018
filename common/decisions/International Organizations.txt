@@ -44,6 +44,10 @@ international_organizations = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_government = fascist
+			}
 		}
 	}
 
@@ -59,6 +63,7 @@ international_organizations = {
 		days_re_enable = 360
 		
 		complete_effect = {
+			news_event = united_nations.4
 			add_ideas = non_member_state
 			add_named_threat = {
 				threat = 5
@@ -68,6 +73,10 @@ international_organizations = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 1
+				has_government = fascist
+			}
 		}
 	}
 

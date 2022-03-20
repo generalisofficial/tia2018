@@ -464,4 +464,45 @@ foreign_affairs = {
 			}
 		}
 	}
+
+	claim_abrene = {
+	
+		visible = {
+			original_tag = LAT
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_claim = 1158
+			add_named_threat = { 
+				threat = 3 
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = latvia
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_war_with = SOV
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+					threat > 0.75
+				}
+			}
+		}
+	}
 }

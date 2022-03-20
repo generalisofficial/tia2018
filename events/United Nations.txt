@@ -132,3 +132,27 @@ news_event = { #(Country) joins the United Nations
 		}
 	}
 }
+
+news_event = { #(Country) leaves the United Nations
+	id = united_nations.4
+	title = united_nations.4.t
+	desc = united_nations.4.d
+	picture = GFX_news_event_united_nations_building
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = united_nations.4.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = united_nations.4.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}

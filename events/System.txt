@@ -1232,7 +1232,101 @@ country_event = {
 	}
 }
 
-#system.27 empty
+country_event = {
+	id = system.27
+	hidden=yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		ROOT = {		
+            add_named_threat = { threat = 100 name = threat_nuclear_attack }
+		}
+		every_enemy_country = {
+			limit = { owns_state = FROM }
+			add_war_support = -25
+		}
+		FROM = {
+			remove_building = { type = military_industry level = 10 }
+			remove_building = { type = civilian_industry level = 10 }
+			remove_building = { type = military_airport level = 10 }
+			remove_building = { type = infrastructure level = 5 }
+			remove_building = { type = shipyard level = 10 }
+			remove_building = { type = sam_site level = 10 }
+			remove_building = { type = radar_station level = 10 }
+			remove_building = { type = missile_launch_facility level = 10 }
+			remove_building = { type = synthetic_refinery level = 10 }
+			remove_building = { type = nuclear_reactor level = 10 }
+			set_state_category = nuclear_wasteland
+		}
+		if = {
+			limit = {
+				FROM = { 
+					state_population > 50000
+					NOT = { state_population > 100000 }
+				}				
+			}
+			FROM = {
+				add_manpower = -20000
+			}
+		}
+		if = {
+			limit = {
+				FROM = { 
+					state_population > 100000
+					NOT = { state_population > 500000 }
+				}				
+			}
+			FROM = {
+				add_manpower = -80000
+			}
+		}
+		if = {
+			limit = {
+				FROM = { 
+					state_population > 1000000
+					NOT = { state_population > 2000000 }
+				}				
+			}
+			FROM = {
+				add_manpower = -600000
+			}
+		}
+		if = {
+			limit = {
+				FROM = { 
+					state_population > 2000000
+					NOT = { state_population > 5000000 }
+				}				
+			}
+			FROM = {
+				add_manpower = -1500000
+			}
+		}
+		if = {
+			limit = {
+				
+				FROM = { 
+					state_population > 5000000
+					NOT = { state_population > 10000000 }
+				}				
+			}
+			FROM = {
+				add_manpower = -5000000
+			}
+		}
+		if = {
+			limit = {
+				FROM = { 
+					state_population > 10000000
+				}		
+			}
+			FROM = {
+				add_manpower = -30000000
+			}
+		}
+	}
+}
 
 country_event = {
 	id = system.28
@@ -1384,101 +1478,5 @@ country_event = {
 	
 	immediate = {
 		drop_cosmetic_tag = Yes
-	}
-}
-
-country_event = {
-	id = system.34
-	hidden=yes
-
-	is_triggered_only = yes
-	
-	immediate = {
-		ROOT = {		
-            add_named_threat = { threat = 100 name = threat_nuclear_attack }
-		}
-		every_enemy_country = {
-			limit = { owns_state = FROM }
-			add_war_support = -25
-		}
-		FROM = {
-			remove_building = { type = military_industry level = 10 }
-			remove_building = { type = civilian_industry level = 10 }
-			remove_building = { type = military_airbase level = 10 }
-			remove_building = { type = infrastructure level = 5 }
-			remove_building = { type = shipyard level = 10 }
-			remove_building = { type = sam_site level = 10 }
-			remove_building = { type = radar_station level = 10 }
-			remove_building = { type = missile_launch_facility level = 10 }
-			remove_building = { type = synthetic_refinery level = 10 }
-			remove_building = { type = nuclear_reactor level = 10 }
-			set_state_category = nuclear_wasteland
-		}
-		if = {
-			limit = {
-				FROM = { 
-					state_population > 50000
-					NOT = { state_population > 100000 }
-				}				
-			}
-			FROM = {
-				add_manpower = -20000
-			}
-		}
-		if = {
-			limit = {
-				FROM = { 
-					state_population > 100000
-					NOT = { state_population > 500000 }
-				}				
-			}
-			FROM = {
-				add_manpower = -80000
-			}
-		}
-		if = {
-			limit = {
-				FROM = { 
-					state_population > 1000000
-					NOT = { state_population > 2000000 }
-				}				
-			}
-			FROM = {
-				add_manpower = -600000
-			}
-		}
-		if = {
-			limit = {
-				FROM = { 
-					state_population > 2000000
-					NOT = { state_population > 5000000 }
-				}				
-			}
-			FROM = {
-				add_manpower = -1500000
-			}
-		}
-		if = {
-			limit = {
-				
-				FROM = { 
-					state_population > 5000000
-					NOT = { state_population > 10000000 }
-				}				
-			}
-			FROM = {
-				add_manpower = -5000000
-			}
-		}
-		if = {
-			limit = {
-				FROM = { 
-					state_population > 10000000
-				}		
-			}
-			FROM = {
-				add_manpower = -30000000
-			}
-		}
 	}
 }
