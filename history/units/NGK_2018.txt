@@ -1,110 +1,44 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Central Defense District"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Motorized Brigade"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Russian Volunteer Force"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armenian Volunteer Force"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Mechanized Brigade"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 }
 
-units = {
-	
+units = {	
 	division = {
-		name = "First Militia Force"
-		location = 1467
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Second Militia Force"
-		location = 9715
-		division_template = "Motorized Brigade"
+		name = "Central Defense District"
+		location = 13997
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Russian Volunteer Force"
-		location = 9715
-		division_template = "Russian Volunteer Force"
-		start_experience_factor = 0.3
-	}	
-	division = {
-		name = "Armenian Volunteer Force"
-		location = 9715
-		division_template = "Armenian Volunteer Force"
+		name = "Hadrut Defense District"
+		location = 9715 #Hadrut
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Armenian Volunteer Force"
-		location = 1467
-		division_template = "Armenian Volunteer Force"
+		name = "Martuni Defense District"
+		location = 13997 #Madagiz
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Armenian Volunteer Force"
-		location = 1467
-		division_template = "Armenian Volunteer Force"
+		name = "Shahumyan Defense District"
+		location = 1467 #Shahumyan
+		division_template = "Motorized Rifle Brigade"
+		start_experience_factor = 0.75 #Considered to be one of the most elite units of the army
+	}
+	division = {
+		name = "Askeran Defense District"
+		location = 13997 #Askeran
+		division_template = "Motorized Rifle Brigade"
 		start_experience_factor = 0.3
-	}	
+	}
 }

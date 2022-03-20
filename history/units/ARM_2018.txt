@@ -1,116 +1,155 @@
 ﻿division_template = {
-	name = "Army Corps"
+	name = "Motor Rifle Brigade (Small)"
+	division_names_group = GENERIC_MOT_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
-	}
-	
-	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
-	name = "Armored Army Corps"
-	
-	regiments = {
-		mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
 		modern_armor = { x = 1 y = 0 }
 	}
-	
 	support = {
-		artillery = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 0 }
 	}
 }
 
 division_template = {
-	name = "Special Forces Regiment"
+	name = "Motor Rifle Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motor Rifle Brigade (Large)"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		rocket_artillery = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Motor Rifle Brigade (SPG)"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Special Forces Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
-	}
-	
-	support = {
-		artillery = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-		engineer = { x = 0 y = 3 }
-		field_hospital = { x = 0 y = 4 }
 	}
 }
 
 division_template = {
 	name = "Artillery Brigade"
+	division_names_group = GENERIC_ART_01
 	
 	regiments = {
-		artillery_brigade = { x = 0 y = 0 }
-		artillery_brigade = { x = 0 y = 1 }
+		modern_sp_artillery_brigade = { x = 0 y = 0 }
+		mot_anti_tank_brigade = { x = 1 y = 0 }
 	}
+}
+
+division_template = {
+	name = "Anti-Air Command"
 	
-	support = {
-		engineer = { x = 0 y = 0 }
+	regiments = {
+		mot_anti_air_brigade = { x = 0 y = 0 }
+		mot_anti_air_brigade = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 1 y = 0 }
+		mot_anti_air_brigade = { x = 1 y = 1 }
 	}
 }
 
 units = {
-
 	division = {
 		name = "1st Army Corps"
-		location = 12320
-		division_template = "Armored Army Corps"
+		location = 4660 #Goris
+		division_template = "Motor Rifle Brigade (Small)"
 		start_experience_factor = 0.3
 	}
-
 	division = {
 		name = "2nd Army Corps"
-		location = 12320
-		division_template = "Army Corps"
+		location = 12450 #Khachaghbyur
+		division_template = "Motor Rifle Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
 		name = "3rd Army Corps"
-		location = 12320
-		division_template = "Armored Army Corps"
+		location = 12380 #Vanadzor
+		division_template = "Motor Rifle Brigade (Large)"
 		start_experience_factor = 0.3
 	}
-
 	division = {
 		name = "4th Army Corps"
-		location = 12320
-		division_template = "Army Corps"
+		location = 6642 #Yeghegnadzor
+		division_template = "Motor Rifle Brigade (SPG)"
 		start_experience_factor = 0.3
 	}
-
 	division = {
 		name = "5th Army Corps"
-		location = 12320
-		division_template = "Army Corps"
+		location = 12320 #Yerevan
+		division_template = "Motor Rifle Brigade (Small)"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "Armenian Artillery Brigade"
-		location = 12320
+		name = "1st Special Forces Regiment"
+		location = 12320 #Yerevan
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "Artillery Brigade"
+		location = 12320 #Yerevan
 		division_template = "Artillery Brigade"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "Armenian Special Forces"
-		location = 12320
-		division_template = "Special Forces Regiment"
+		name = "228th Air Defence Command"
+		location = 12320 #Chobankara
+		division_template = "Anti-Air Command"
 		start_experience_factor = 0.3
 	}
-	
 }
 
 instant_effect = {
-	
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -120,8 +159,7 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 100
 		amount = 100000
-	}
-	
+	}	
 }
 
 ### Air OOB ###
@@ -131,8 +169,23 @@ air_wings = {
 		#Su-25
 		CAS_equipment_2 = {
 			owner = "ARM" 
-			amount = 11
+			amount = 10
 		}
-
+		name = "121st Ground Attack Aviation Squadron"
+	}
+	230 = {
+		#Su-30
+		fighter_equipment_3 = {
+			owner = "ARM" 
+			amount = 10
+		}
+		name = "15th Mixed Aviation Regiment"
+	}
+	230 = {
+		#Ilyushin Il-76
+		transport_plane_equipment_1 = {
+			owner = "ARM" 
+			amount = 2
+		}
 	}
 }
