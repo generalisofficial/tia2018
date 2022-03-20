@@ -453,7 +453,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = -0.05
+				research_speed_factor = 0.05
 			}
 
 			ai_will_do = {
@@ -480,7 +481,7 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.025
 			}
 
 			ai_will_do = {
@@ -514,7 +515,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				research_speed_factor = -0.05
 			}
 
 			ai_will_do = {
@@ -546,7 +548,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				research_speed_factor = -0.05
 			}
 			
 			ai_will_do = {
@@ -582,7 +585,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				research_speed_factor = -0.05
 			}
 
 			ai_will_do = {
@@ -611,7 +615,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				research_speed_factor = -0.05
 			}
 
 			ai_will_do = {
@@ -640,7 +645,8 @@ ideas = {
 			}
 			
 			modifier = {
-			
+				stability_factor = 0.05
+				research_speed_factor = -0.05
 			}
 
 			ai_will_do = {
@@ -1000,7 +1006,8 @@ ideas = {
 				}
 				NOT = { 
 					OR = { 
-						has_idea = minority_government 
+						has_idea = minority_government
+						has_idea = idea_constitutional_monarchy
 						has_country_flag = coalition_conservative
 						has_country_flag = coalition_classical_liberal
 						has_country_flag = coalition_social_liberal
