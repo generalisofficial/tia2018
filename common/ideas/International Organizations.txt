@@ -57,7 +57,8 @@ ideas = {
 			picture = european_union
 			
 			modifier = {
-				political_power_factor = 0.02
+				political_power_factor = -0.025
+				stability_factor = 0.025
 			}
 		}
 		
@@ -79,7 +80,8 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
-				political_power_factor = 0.02
+				political_power_factor = -0.015
+				stability_factor = 0.015
 			}
 		}
 		
@@ -91,7 +93,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			
+				
 			}
 		}
 		
@@ -114,7 +116,8 @@ ideas = {
 				always = no
 			}
 			modifier = {
-			
+				political_power_factor = -0.01
+				stability_factor = 0.01
 			}
 		}
 		
@@ -126,17 +129,6 @@ ideas = {
 			}
 			modifier = {
 			
-			}
-		}
-
-		#Non-Aligned Movement
-		non_aligned_movement_member = {
-			picture = non_aligned_movement
-			allowed = {
-				always = no
-			}
-			modifier = {
-				ai_get_ally_desire_factor = -20
 			}
 		}
 

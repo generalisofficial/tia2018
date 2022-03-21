@@ -135,3 +135,80 @@ news_event = { #(Country) cuts ties with the British monarchy
 		}
 	}
 }
+
+#Rising support for anti-immigration parties
+country_event = {
+	id = politics.6
+	title = politics.6.t
+	desc = politics.6.d
+	
+	trigger = {
+		has_idea = immigration_open_borders
+		NOT = { has_idea = violent_non_state_actor }
+		OR = {
+			has_country_flag = has_fascist_party
+			has_country_flag = has_right_wing_nationalist_party
+			has_country_flag = has_national_conservative_party
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 500
+	}
+	
+	option = {
+		name = politics.6.o1
+		if = {
+			limit = {
+				has_country_flag = has_fascist_party
+			}
+			add_popularity = { 
+				ideology = fascist
+				popularity = 0.02
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = has_right_wing_nationalist_party
+			}
+			add_popularity = { 
+				ideology = right_wing_nationalist
+				popularity = 0.02
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = has_national_conservative_party
+			}
+			add_popularity = { 
+				ideology = national_conservative
+				popularity = 0.02
+			}
+		}
+	}
+}
+
+#Organized labour rallies behind social democrats
+country_event = {
+	id = politics.7
+	title = politics.7.t
+	desc = politics.7.d
+	
+	trigger = {
+		has_idea = organized_labour_discouraged
+		NOT = { has_idea = violent_non_state_actor }
+		has_country_flag = has_social_democrat_party
+	}
+	
+	mean_time_to_happen = {
+		days = 500
+	}
+	
+	option = {
+		name = politics.7.o1
+		add_popularity = { 
+			ideology = social_democrat
+			popularity = 0.025
+		}
+	}
+}

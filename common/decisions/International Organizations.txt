@@ -162,6 +162,7 @@ international_organizations = {
 		cost = 150
 		
 		complete_effect = {
+			news_event = european_union.4
 			remove_ideas = idea_european_union_member
 			hidden_effect = {
 				every_country = {
@@ -341,53 +342,6 @@ international_organizations = {
 		icon = commonwealth_of_nations
 		
 		cost = 150
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-	
-	join_non_aligned_movement = {
-	
-		visible = {
-			NOT = { has_idea = non_aligned_movement_member has_global_flag = non_aligned_movement_dissolved }
-			NOT = { is_in_faction_with = USA }
-			NOT = { is_in_faction_with = SOV }
-			NOT = { is_in_faction_with = PRC }
-		}
-		available = {
-			NOT = { is_in_faction_with = USA is_in_faction_with = SOV is_in_faction_with = PRC has_idea = non_member_state }
-		}
-		
-		complete_effect = {
-            add_ideas = non_aligned_movement_member
-		}
-		
-		icon = non_aligned_movement
-		
-		cost = 100
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-	
-	leave_non_aligned_movement = {
-	
-		visible = {
-			has_idea = non_aligned_movement_member
-		}
-		available = {
-            always = yes
-		}
-		
-		complete_effect = {
-            remove_ideas = non_aligned_movement_member
-		}
-		
-		icon = non_aligned_movement
-		
-		cost = 50
 		
 		ai_will_do = {
 			base = 0

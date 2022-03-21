@@ -2,44 +2,55 @@ foreign_affairs = {
 	
 	declare_neutrality = {
 		visible = {
-			is_in_faction = no
-			has_war = no
 			NOT = { 
-				has_idea = neutrality_idea
+				has_idea = idea_neutral_foreign_policy
 				has_idea = violent_non_state_actor
 			}
 		}
+
+		available = {
+			is_in_faction = no
+			has_war = no
+			is_subject = no
+		}
+
 		complete_effect = {
-			add_ideas = neutrality_idea
+			add_ideas = idea_neutral_foreign_policy
 		}
 		
-		icon = politics
+		icon = neutrality
 		
-		cost = 10
+		cost = 50
 		
 		ai_will_do = {
 			base = 0
+			modifier = {
+				factor = 100
+				has_idea = no_standing_army
+			}
 		}
 	}
 	
 	abandon_neutrality = {
 		visible = {
-			has_idea = neutrality_idea
+			has_idea = idea_neutral_foreign_policy
 		}
-		available = {
-            always = yes
-		}
+
 		complete_effect = {
-			remove_ideas = neutrality_idea
-			add_named_threat = { threat = 5 name = "Abandoned Neutrality" }		
+			remove_ideas = idea_neutral_foreign_policy
 		}
 		
-		icon = break_treaty
+		icon = neutrality
 		
-		cost = 10
+		cost = 50
 		
 		ai_will_do = {
-			base = 0
+			factor = 0
+			modifier = {
+				factor = 100
+				has_government = fascist
+				NOT = { has_idea = no_standing_army }
+			}
 		}
 	}
 

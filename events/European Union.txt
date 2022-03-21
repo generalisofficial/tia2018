@@ -109,3 +109,27 @@ news_event = { #(Country) joins the European Union
 		}
 	}
 }
+
+news_event = { #(Country) leaves the European Union
+	id = european_union.4
+	title = european_union.4.t
+	desc = european_union.4.d
+	picture = GFX_news_event_european_council
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = european_union.4.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = european_union.4.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}

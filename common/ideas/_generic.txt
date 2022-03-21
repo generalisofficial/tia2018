@@ -2,20 +2,24 @@ ideas = {
 
 	country = {
 	
-		neutrality_idea = {
+		idea_neutral_foreign_policy = {
 			picture = neutrality
 			
 			cancel = {
-				has_war = yes
+				OR = {
+					has_war = yes
+					is_subject = yes
+				}
 			}
 
 			modifier = {
-				join_faction_tension = 1.00
 				send_volunteers_tension = 0.20
 				guarantee_tension = 1.0
-				ai_badass_factor = 0.01
-				ai_join_ally_desire_factor = -200
-				ai_get_ally_desire_factor = -200
+				ai_badass_factor = 0.05
+			}
+
+			rule = {
+				can_join_factions = no
 			}
 		}
 	
@@ -23,7 +27,8 @@ ideas = {
 			picture = nuclear_power
 			
 			modifier = {
-			
+				political_power_factor = 0.05
+				ai_badass_factor = -0.05
 			}
 		}	
 		
