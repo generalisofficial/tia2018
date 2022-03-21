@@ -7,6 +7,15 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		if = {
+			limit = { 
+				NOT = { 
+					has_global_flag = first_nuke_dropped
+				}
+			}
+			set_global_flag = first_nuke_dropped
+			news_event = nuclear.2
+		}
 		ROOT = {		
             add_named_threat = { threat = 100 name = threat_nuclear_attack }
 		}
