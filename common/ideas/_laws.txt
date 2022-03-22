@@ -1030,6 +1030,19 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+				 	factor = 25
+					OR = {
+						has_government = fascist
+						has_government = communist
+						has_country_leader_ideology = salafist
+						has_country_leader_ideology = third_international_theory
+					}
+			 	}
+			}
 		}
 		
 		civil_liberties_authoritarian = {
@@ -1081,10 +1094,18 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 				modifier = {
-				 	factor = 15
-					has_country_leader_with_trait = strongman
-					NOT = {
-						has_idea = civil_liberties_totalitarian
+				 	factor = 25
+					OR = {
+						has_government = national_conservative
+						AND = {
+							has_government = socialist
+							NOT = {
+								has_country_leader_ideology = third_international_theory
+							}
+						}
+						has_government = right_wing_nationalist
+						has_country_leader_ideology = khomeinist
+						has_country_leader_ideology = islamist_ideology
 					}
 			 	}
 			}
@@ -1110,6 +1131,7 @@ ideas = {
 				factor = 1
 				modifier = {
 				 	factor = 25
+					has_war = no
 					OR = {
 						has_government = progressive
 						has_government = social_democrat

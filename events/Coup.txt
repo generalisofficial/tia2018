@@ -15,7 +15,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			islamist > 0.5
@@ -35,6 +35,10 @@ country_event = {
 		set_politics = {
 			ruling_party = islamist
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = islamist
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -69,6 +73,10 @@ country_event = {
 		set_politics = {
 			ruling_party = fascist
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = fascist
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -110,6 +118,10 @@ country_event = {
 			ruling_party = right_wing_nationalist
 			elections_allowed = no
 		}
+		add_popularity = { 
+			ideology = right_wing_nationalist
+			popularity = 0.05
+		}
 		news_event = coup.13
 		one_party_parliament = yes
 		break_coalition = yes
@@ -132,7 +144,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			monarchist > 0.5
@@ -172,7 +184,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			national_conservative > 0.5
@@ -188,6 +200,10 @@ country_event = {
 		set_politics = {
 			ruling_party = national_conservative
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = national_conservative
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -211,7 +227,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			conservative > 0.5
@@ -227,6 +243,10 @@ country_event = {
 		set_politics = {
 			ruling_party = conservative
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = conservative
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -250,7 +270,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			classical_liberal > 0.5
@@ -266,6 +286,10 @@ country_event = {
 		set_politics = {
 			ruling_party = classical_liberal
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = classical_liberal
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -289,7 +313,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			social_liberal > 0.5
@@ -305,6 +329,10 @@ country_event = {
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = social_liberal
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -328,7 +356,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			social_democrat > 0.5
@@ -344,6 +372,10 @@ country_event = {
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = social_democrat
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -367,7 +399,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			progressive > 0.5
@@ -383,6 +415,10 @@ country_event = {
 		set_politics = {
 			ruling_party = progressive
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = progressive
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -406,7 +442,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			socialist > 0.5
@@ -422,6 +458,10 @@ country_event = {
 		set_politics = {
 			ruling_party = socialist
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = socialist
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes
@@ -445,7 +485,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 75
+		days = 100
 		modifier = {
 			factor = 0.5
 			communist > 0.5
@@ -461,6 +501,10 @@ country_event = {
 		set_politics = {
 			ruling_party = communist
 			elections_allowed = no
+		}
+		add_popularity = { 
+			ideology = communist
+			popularity = 0.05
 		}
 		news_event = coup.13
 		one_party_parliament = yes

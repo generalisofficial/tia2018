@@ -232,20 +232,21 @@ domestic_affairs = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 30
+				factor = 50
 				OR = {
 					has_government = progressive
 					has_government = social_democrat
 					has_government = social_liberal
 					has_government = classical_liberal
 					has_government = conservative
-				}
-			}
-			modifier = {
-				factor = 5
-				OR = {
-					has_government = socialist
 					has_government = national_conservative
+					AND = {
+						has_government = socialist
+						NOT = {
+							has_country_leader_ideology = third_international_theory
+						}
+					}
+					has_country_leader_ideology = islamic_democracy
 				}
 			}
 		}
