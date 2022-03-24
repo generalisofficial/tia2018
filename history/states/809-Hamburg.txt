@@ -1,10 +1,10 @@
+
 state={
 	id=809
 	name="STATE_809"
-	
-	resources = {
-		aluminium = 6
-		steel = 9
+	resources={
+		aluminium=6.000
+		steel=9.000
 	}
 
 	history={
@@ -15,14 +15,19 @@ state={
 			military_airport = 3
 			civilian_industry = 3
 			shipyard = 1
+
 		}
-		victory_points = { 9347 30 }	#Hamburg
+		victory_points = {
+			9347 30 
+		}
+
 	}
 
 	provinces={
-		9347 
+		9347 14364 
 	}
 	manpower=1435000
 	buildings_max_level_factor=1.000
-	state_category = state_level_10
+	state_category=state_level_10
+	local_supplies=0.000
 }
