@@ -529,7 +529,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { ### Monthly On-action
 	id = system.21
 	hidden=yes
 
@@ -1085,6 +1085,79 @@ country_event = {
 					popularity = -0.01 
 				}
 			}
+		}
+		### State Categories
+		every_state = {
+			limit = {
+				infrastructure = 5
+				NOT = { 
+					OR = {
+						has_state_category = state_level_0
+						has_state_category = nuclear_wasteland
+					}
+				}
+			}
+			set_state_category = state_level_0
+		}
+		every_state = {
+			limit = {
+				infrastructure = 1
+				NOT = { 
+					OR = {
+						has_state_category = state_level_1 
+						has_state_category = nuclear_wasteland
+					}
+				}
+			}
+			set_state_category = state_level_1
+		}
+		every_state = {
+			limit = {
+				infrastructure = 2
+				NOT = { 
+					OR = {
+						has_state_category = state_level_2
+						has_state_category = nuclear_wasteland
+					}
+				}
+			}
+			set_state_category = state_level_2
+		}
+		every_state = {
+			limit = {
+				infrastructure = 3
+				NOT = { 
+					OR = {
+						has_state_category = state_level_3
+						has_state_category = nuclear_wasteland
+					}
+				}
+			}
+			set_state_category = state_level_3
+		}
+		every_state = {
+			limit = {
+				infrastructure = 4
+				NOT = { 
+					OR = {
+						has_state_category = state_level_4
+						has_state_category = nuclear_wasteland
+					}
+				}
+			}
+			set_state_category = state_level_4
+		}
+		every_state = {
+			limit = {
+				infrastructure = 5
+				NOT = { 
+					OR = {
+						has_state_category = state_level_5
+						has_state_category = nuclear_wasteland
+					}
+				}
+			}
+			set_state_category = state_level_5
 		}
 	}
 }
