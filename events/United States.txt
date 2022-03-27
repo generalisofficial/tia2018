@@ -18,7 +18,7 @@ country_event = {
 	option = {
 		name = usa.1.o1
 		ai_chance = {
-			factor = 65
+			factor = 52
 		}
 		retire_ideology_leader = social_liberal
 		create_country_leader = {
@@ -31,12 +31,25 @@ country_event = {
 	option = {
 		name = usa.1.o2
 		ai_chance = {
-			factor = 35
+			factor = 26
 		}
 		retire_ideology_leader = social_liberal
 		create_country_leader = {
 	        name = "Bernie Sanders"
 	        picture = GFX_Portrait_USA_Bernie_Sanders
+	        ideology = social_liberal_ideology
+        }
+	}
+
+	option = {
+		name = usa.1.o3
+		ai_chance = {
+			factor = 22
+		}
+		retire_ideology_leader = social_liberal
+		create_country_leader = {
+	        name = "Elizabeth Warren"
+	        picture = GFX_Portrait_USA_Elizabeth_Warren
 	        ideology = social_liberal_ideology
         }
 	}
@@ -216,5 +229,81 @@ country_event = { #El Paso Walmart shooting
 		add_political_power = -50
 		375 = { add_manpower = -23 }
 		custom_effect_tooltip = TT_shooting
+	}
+}
+
+news_event = { #"Shitholegate"
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_news_event_donald_trump_desk
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = usa.8.o1
+		trigger = {
+			original_tag = USA
+		}
+		every_other_country = {
+			limit = {
+				OR = {
+					original_tag = ELS
+					original_tag = HAI
+					original_tag = HON
+					is_in_africa = yes
+				}
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = shitholegate
+			}
+		}
+	}
+	
+	option = {
+		name = usa.8.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
+	}
+}
+
+country_event = { #Donald Trump attempts to purchase Greenland (Denmark response)
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = usa.9.o1
+		news_event = usa.10
+	}
+}
+
+news_event = { #Donald Trump attemps to purchase Greenland
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_news_event_donald_trump
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = usa.10.o1
+		trigger = {
+			original_tag = USA
+		}
+		add_political_power = -50
+	}
+	
+	option = {
+		name = usa.10.o2
+		trigger = {
+			NOT = { original_tag = USA }
+		}
 	}
 }

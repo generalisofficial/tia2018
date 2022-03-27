@@ -1,0 +1,25 @@
+﻿add_namespace = formable_nations
+
+news_event = { #Return of the Soviet Union
+	id = formable_nations.1
+	title = formable_nations.1.t
+	desc = formable_nations.1.d
+	picture = GFX_news_event_soviet_parade
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = formable_nations.1.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+	
+	option = {
+		name = formable_nations.1.o2
+		trigger = {
+			original_tag = FROM
+		}
+	}
+}

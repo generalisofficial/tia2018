@@ -4,7 +4,6 @@ oob = "generic_2018"
 
 set_convoys = 10
 
-
 set_country_flag = country_language_arabic
 
 set_technology = {
@@ -96,17 +95,41 @@ if = {
 	}
 }
 
+add_ideas = {
+	idea_nonpartisan_political_system
+	presidential_republic
+}
+
+#State Council
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 93.34 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 6.66 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
+
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2014.9.14"
+	last_election = "2014.9.8"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 71.06
-    right_wing_nationalist = 28.94
+    national_conservative = 80.01
+    right_wing_nationalist = 13.33
+	communist = 6.66
 }
 
 recruit_character = CRI_sergey_aksyonov
-recruit_character = CRI_vladimir_zhirinovsky

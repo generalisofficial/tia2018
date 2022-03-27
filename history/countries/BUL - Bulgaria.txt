@@ -111,50 +111,48 @@ set_country_flag = orthodox
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 27.19 }
-set_variable = { social_liberal_seats = 8.99 }
+set_variable = { social_democrat_seats = 33.33 }
+set_variable = { social_liberal_seats = 10.83 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 48.01 }
-set_variable = { national_conservative_seats = 3.75 }
+set_variable = { conservative_seats = 39.6 }
+set_variable = { national_conservative_seats = 4.58 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 8.73 }
-set_variable = { fascist_seats = 3.33 }
+set_variable = { right_wing_nationalist_seats = 5 }
+set_variable = { fascist_seats = 6.66 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_conservative
 set_country_flag = coalition_national_conservative
-set_country_flag = coalition_right_wing_nationalist
 set_country_flag = coalition_fascist
 add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 add_to_variable = { ROOT.Coalition = fascist_seats }
 
 set_politics = {	
 	ruling_party = conservative
-	last_election = "2017.3.26"
+	last_election = "2017.4.4"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 48.01
-    social_democrat = 27.19
-    social_liberal = 8.99
-	right_wing_nationalist = 8.73
-	national_conservative = 3.75
-	fascist = 3.33
+	conservative = 31.26
+    classical_liberal = 27.08
+	social_democrat = 17.91
+	social_liberal = 12.5
+	progressive = 11.25
 }
 
-recruit_character = BUL_boyko_borisov
-recruit_character = BUL_korneliya_ninova
 recruit_character = BUL_volen_siderov
-recruit_character = BUL_valeri_simeonov
+recruit_character = BUL_veselin_mareshki
+recruit_character = BUL_simeon_ii
 recruit_character = BUL_krasimir_karakachanov
-recruit_character = BUL_mustafa_karadaya
+recruit_character = BUL_boyko_borisov
+recruit_character = BUL_slavi_trifonov
+recruit_character = BUL_mustafa_karadayi
+recruit_character = BUL_korneliya_ninova
+recruit_character = BUL_borislav_sandov
 recruit_character = BUL_margarita_mileva
-recruit_character = BUL_aleksandar_karakachanov
 recruit_character = BUL_aleksandar_paunov
-recruit_character = BUL_simeon_saxecoburggotha

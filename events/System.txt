@@ -189,24 +189,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = system.14
-	hidden=yes
-
-	trigger = {
-		NOT = { 
-			any_country = {
-				has_idea = non_aligned_movement_member
-			}
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = non_aligned_movement_dissolved
-	}
-}
+#system.14 (empty)
 
 country_event = {
 	id = system.15
@@ -1093,7 +1076,7 @@ country_event = { ### Monthly On-action
 				NOT = { 
 					OR = {
 						has_state_category = state_level_0
-						has_state_category = nuclear_wasteland
+						has_state_category = state_nuclear_wasteland
 					}
 				}
 			}
@@ -1105,7 +1088,7 @@ country_event = { ### Monthly On-action
 				NOT = { 
 					OR = {
 						has_state_category = state_level_1 
-						has_state_category = nuclear_wasteland
+						has_state_category = state_nuclear_wasteland
 					}
 				}
 			}
@@ -1117,7 +1100,7 @@ country_event = { ### Monthly On-action
 				NOT = { 
 					OR = {
 						has_state_category = state_level_2
-						has_state_category = nuclear_wasteland
+						has_state_category = state_nuclear_wasteland
 					}
 				}
 			}
@@ -1129,7 +1112,7 @@ country_event = { ### Monthly On-action
 				NOT = { 
 					OR = {
 						has_state_category = state_level_3
-						has_state_category = nuclear_wasteland
+						has_state_category = state_nuclear_wasteland
 					}
 				}
 			}
@@ -1141,7 +1124,7 @@ country_event = { ### Monthly On-action
 				NOT = { 
 					OR = {
 						has_state_category = state_level_4
-						has_state_category = nuclear_wasteland
+						has_state_category = state_nuclear_wasteland
 					}
 				}
 			}
@@ -1153,7 +1136,7 @@ country_event = { ### Monthly On-action
 				NOT = { 
 					OR = {
 						has_state_category = state_level_5
-						has_state_category = nuclear_wasteland
+						has_state_category = state_nuclear_wasteland
 					}
 				}
 			}

@@ -138,3 +138,23 @@ country_event = {
 		news_event = olympic_games.2
 	}
 }
+
+country_event = {
+	id = system_events.11
+	hidden=yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = USA
+		has_country_leader = {
+			name = "Donald Trump"
+			ruling_only = yes
+		}
+		date > 2018.1.11
+		date < 2019.1.1
+	}
+	
+	immediate = {
+		news_event = usa.8
+	}
+}

@@ -88,21 +88,13 @@ add_ideas = {
 
 set_country_flag = cheondoism
 
-add_opinion_modifier = {
-	target = JAP
-	modifier = past_japanese_war_crimes
-}
-
 add_opinion_modifier = { target = KOR modifier = rival_government }
+add_opinion_modifier = { target = JAP modifier = sea_of_japan_naming_dispute }
+add_opinion_modifier = { target = ISR modifier = no_diplomatic_recognition }
 
 add_named_threat = {
 	threat = 5
 	name = threat_north_korean_missile_crisis
-}
-
-add_opinion_modifier = {
-	target = ISR
-	modifier = no_diplomatic_recognition
 }
 
 give_guarantee = PRC

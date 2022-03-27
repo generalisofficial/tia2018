@@ -245,16 +245,16 @@ adjacency_rule = {
 		trade = yes
 	}
 	neutral = {
-		army = no
-		navy = no
-		submarine = no
+		army = yes
+		navy = yes
+		submarine = yes
 		trade = yes
 	}
 	
-	required_provinces = { 11366 317 3231 }
+	required_provinces = { 14371 317 3231 3368 14369 6389 }
 		
-	icon = 11366
-	offset = { 5 0 -6 }
+	icon = 14369
+	offset = { 0 0 0 }
 }
 
 #Strait of Hormuz
@@ -639,5 +639,40 @@ adjacency_rule = {
 	required_provinces = { 6979 11767 }
 		
 	icon = 6979
+	offset = { 0 0 0 }
+}
+
+#Piast Canal
+adjacency_rule = {
+	name = "PIAST_CANAL"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 14367 }
+		
+	icon = 14367
 	offset = { 0 0 0 }
 }
