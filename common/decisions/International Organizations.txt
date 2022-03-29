@@ -317,7 +317,11 @@ international_organizations = {
 		cost = 50
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
+			modifier = {
+				factor = 0
+				original_tag = USA
+			}
 		}
 	}
 	
