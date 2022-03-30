@@ -117,14 +117,14 @@ add_opinion_modifier = {
 }
 
 #Chamber of Deputies
-set_variable = { communist_seats = 3.0 }
-set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 5.80 }
-set_variable = { social_democrat_seats = 24.0 }
-set_variable = { social_liberal_seats = 44.4 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 22.80 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 8.21 }
+set_variable = { progressive_seats = 9.41 }
+set_variable = { social_democrat_seats = 16.03 }
+set_variable = { social_liberal_seats = 2.2 }
+set_variable = { classical_liberal_seats = 40.71 }
+set_variable = { conservative_seats = 21.84 }
+set_variable = { national_conservative_seats = 1.6 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -132,45 +132,33 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_social_liberal
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
+set_country_flag = coalition_classical_liberal
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
-	ruling_party = social_liberal
+	ruling_party = classical_liberal
 	last_election = "2012.7.1"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-    socialist = 53.41
-    conservative = 15.8
-    social_liberal = 9.4
-	social_democrat = 7.8
-    national_conservative = 5.80
-	communist = 5.60
-	progressive = 2.19
+	socialist = 50.4
+	conservative = 16.2
+    national_conservative = 11.2
+	social_democrat = 9.6
+	classical_liberal = 9
+	progressive = 3.2
+	social_liberal = 0.4
 }
 
-recruit_character = MEX_andrés_manuel_lópez_obrador
-recruit_character = MEX_ricardo_anaya
-recruit_character = MEX_enrique_peña_nieto
-recruit_character = MEX_clemente_castañeda
+recruit_character = MEX_juan_carlos_lopez_lee
+recruit_character = MEX_maximilian_ii
 recruit_character = MEX_hugo_eric_flores_cervantes
-recruit_character = MEX_alberto_anaya
-recruit_character = MEX_jorge_emilio_gonzález_martínez
-recruit_character = MEX_juan_carlos_lópez_lee
-recruit_character = MEX_carlos_a._r._munguia
-recruit_character = MEX_daniel_velasco_ramirez
-recruit_character = MEX_enrique_cervantes_aguirre
-recruit_character = MEX_gerardo_clemente_vega_garcia
-recruit_character = MEX_gilberto_hernandez_andreu
-recruit_character = MEX_guillermo_galvan
-recruit_character = MEX_juan_rios_cantu
-recruit_character = MEX_roble_arturo_granados_gallardo
-recruit_character = MEX_salvador_cienfuegos_zepeda
-recruit_character = MEX_tomas_angeles_dauahare
-recruit_character = MEX_jose_ramon_lorenzo
-recruit_character = MEX_marco_antonio_peyrot_gonzalez
-recruit_character = MEX_mariano_francisco_saynez_mendoza
-recruit_character = MEX_vidal_francisco_soberon_sanz
+recruit_character = MEX_ricardo_anaya
+recruit_character = MEX_enrique_pena_nieto
+recruit_character = MEX_luis_castro_obregon
+recruit_character = MEX_manuel_granados_covarrubias
+recruit_character = MEX_carlos_alberto_puente_salas
+recruit_character = MEX_andrés_manuel_lopez_obrador
+recruit_character = MEX_pavel_blanco_cabrera
