@@ -114,15 +114,15 @@ add_ideas = {
 
 #Parliament of Uganda
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 7.3 }
+set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
+set_variable = { social_democrat_seats = 9.15 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 14.6 }
-set_variable = { conservative_seats = 9.4 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 19.71 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 68.7 }
+set_variable = { right_wing_nationalist_seats = 71.14 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -133,22 +133,19 @@ add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
 
 set_politics = {	
 	ruling_party = right_wing_nationalist
-	last_election = "2016.2.18"
+	last_election = "2016.1.14"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    right_wing_nationalist = 68.7
-    classical_liberal = 14.6
-	conservative = 9.4
-	socialist = 7.3
+	right_wing_nationalist = 65.67
+	social_liberal = 15.55
+	conservative = 12.33
+    social_democrat = 6.45
 }
 
 recruit_character = UGA_yoweri_museveni
-recruit_character = UGA_patrick_amuriat_oboi
-recruit_character = UGA_norbert_mao
-recruit_character = UGA_jimmy_akena_obote
-recruit_character = UGA_katumba_wamala
-recruit_character = UGA_patrick_kankiriho
-recruit_character = UGA_nathan_mugisha
+recruit_character = UGA_patrick_amuriat
+recruit_character = UGA_bobi_wine
+recruit_character = UGA_jimmy_akena
