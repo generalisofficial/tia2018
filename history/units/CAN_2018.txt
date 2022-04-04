@@ -1,200 +1,146 @@
 ﻿division_template = {
-	name = "Infantry Regiment"
+	name = "Mechanized Brigade"
 	
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
 	}
 	
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 1 }
 	}	
 }
 
 division_template = {
-	name = "Military Police Regiment"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-	}
-	
-	priority = 0
-}
-
-division_template = {
-	name = "Reserve Brigade"
+	name = "Infnatry Brigade"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	
+	support = {
+		recon_company = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 1 }
+	}
 	priority = 0
 }
 
 division_template = {
-	name = "Parachute Batallion"
+	name = "Infnatry Brigade (Small)"
 	
 	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 	
-	priority = 2
-}
-
-division_template = {
-	name = "Armoured Brigade"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
+	support = {
+		recon_company = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 1 }
 	}
-	
-	priority = 2
+	priority = 0
 }
 
 units = {
-
 	division = {
-		name = "Canadian Army Command Regiment"
-		location = 11585	#Southern Ontario
-		division_template = "Reserve Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "5e Brigade Mecanise"
-		location = 12149	#Valcartier
-		division_template = "Armoured Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "34 (Res.) Brigade Group"
-		location = 12205	#Montreal
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "35 (Res.) Brigade Group"
-		location = 12149	#Quebec
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "1 Mechanized Brigade"
-		location = 3010	#Edmonton
-		division_template = "Armoured Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "38 (Res.) Brigade Group"
-		location = 4872	#Winnipeg
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "39 (Res.) Brigade Group"
-		location = 1408	#Vancouver
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "41 (Res.) Brigade Group"
-		location = 3706	#Calgary
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "2 Mechanized Brigade"
-		location = 3661	#Petawawa
-		division_template = "Armoured Brigade"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "31 (Res.) Brigade Group"
-		location = 9667	#London
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "32 (Res.) Brigade Group"
-		location = 3775	#Toronto
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "33 (Res.) Brigade Group"
-		location = 3778	#Ottawa
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "36 (Res.) Brigade Group"
-		location = 7361	#Halifax
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "37 (Res.) Brigade Group"
-		location = 4285	#Moncton
-		division_template = "Infantry Regiment"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "Combat Training Centre"
-		location = 4285	#Oromocto
-		division_template = "Reserve Brigade"
+		name = "1. Canadian Mechanized Brigade Group"
+		location = 3010 #Edmonton
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Canadian Joint Incident Response Unit"
-		location = 4270		#Southern Ontario
-		division_template = "Reserve Brigade"
+		name = "2. Canadian Mechanized Brigade Group"
+		location = 3661 #Valcatier
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Joint Task Force 2"
-		location = 3691	#Quebec
-		division_template = "Reserve Brigade"
+		name = "5. Canadian Mechanized Brigade Group"
+		location = 12149 #Valcatier
+		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
+	}
+	division = {
+		name = "31. Canadian Brigade Group"
+		location = 722 #London, Canada
+		division_template = "Infnatry Brigade"
+		start_experience_factor = 0.2 #Reserves
+	}
+	division = {
+		name = "32. Canadian Brigade Group"
+		location = 3775 #Toronto
+		division_template = "Infnatry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "33. Canadian Brigade Group"
+		location = 3778 #Ottawa
+		division_template = "Infnatry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "34. Canadian Brigade Group"
+		location = 4345 #Montreal
+		division_template = "Infnatry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "35. Canadian Brigade Group"
+		location = 12149 #Quebec
+		division_template = "Infnatry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "36. Canadian Brigade Group"
+		location = 7361 #Halifax
+		division_template = "Infnatry Brigade (Small)"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "37. Canadian Brigade Group"
+		location = 1424 #Quebec
+		division_template = "Infnatry Brigade (Small)"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "38. Canadian Brigade Group"
+		location = 4872 #Winnipeg
+		division_template = "Infnatry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "39. Canadian Brigade Group"
+		location = 1408 #Quebec
+		division_template = "Infnatry Brigade (Small)"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "41. Canadian Brigade Group"
+		location = 1262 #Quebec
+		division_template = "Infnatry Brigade (Small)"
+		start_experience_factor = 0.2
 	}
 }
 
 
 instant_effect = {
-	
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "USA"
-		}
-		requested_factories = 5
-		progress = 0.1
-		efficiency = 100
-		amount = 1000000
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_2
 			creator = "CAN"
 		}
 		requested_factories = 5
@@ -202,18 +148,6 @@ instant_effect = {
 		efficiency = 100
 		amount = 1000000
 	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 5
-		progress = 0.1
-		efficiency = 100
-		amount = 1000000
-	}
-	
 }
 
 ### Air OOB ###
@@ -221,34 +155,41 @@ instant_effect = {
 air_wings = {
 	466 = {
 		#F/A-18A
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "CAN" 
-			amount = 36
+			amount = 28
 		}
-
+		name = "3rd Wing"
 	}
 	470 = {
 		#F/A-18A
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "CAN" 
-			amount = 36
+			amount = 25
 		}
-
+		name = "4th Wing"
+	}
+	466 = {
+		#RQ-21 Blackjack + IAI Heron + UMS Skeldar V-200
+		scout_plane_equipment_2 = {
+			owner = "CAN" 
+			amount = 14
+		}
+	}
+	682 = {
+		#CC-150 Polaris + C-17 + CC-144 Challenger + C-130J Super Hercules
+		transport_plane_equipment_1 = {
+			owner = "CAN" 
+			amount = 28
+		}
+		name = "8th Wing"
 	}
 	464 = {
-		#CP-140 MPA
-		nav_bomber_equipment_3 = {
+		#CP-140 Aurora
+		nav_bomber_equipment_1 = {
 			owner = "CAN" 
-			amount = 10
+			amount = 15
 		}
-
-	}
-	740 = {
-		#CP-140 MPA
-		nav_bomber_equipment_3 = {
-			owner = "CAN" 
-			amount = 10
-		}
-
+		name = "14th Wing"
 	}
 }

@@ -1,6 +1,110 @@
 ﻿units = {
 	### Naval OOB ###
 	fleet = {
+		name = "Second Fleet" #Second Fleet was formed a few months after the start date, but this makes organizing the navy easier
+		naval_base = 788 #Norfolk, Virginia
+		task_force = {
+			name = "Carrier Strike Group 2"
+			location = 788 #Norfolk, Virginia
+			ship = { name = "USS George H.W. Bush" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Nimitz Class" } } 
+				air_wings = {
+					#F/A-18F Super Hornet
+					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
+				}
+			}
+			ship = { name = "USS Philippine Sea" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Vella Gulf" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Mitscher" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Laboon" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Mahan" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Cole" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Bulkeley" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+		}
+		task_force = {
+			name = "Carrier Strike Group 8"
+			location = 788 #Norfolk, Virginia
+			ship = { name = "USS Harry S. Truman" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Nimitz Class" } } 
+				air_wings = {
+					#F/A-18F Super Hornet
+					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
+				}
+			}
+			ship = { name = "USS Normandy" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Anzio" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Ramage" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Bainbridge" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Farragut" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Forrest Sherman" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Gravely" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Jason Dunham" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+		}
+		task_force = {
+			name = "Carrier Strike Group 12"
+			location = 788 #Norfolk, Virginia
+			ship = { name = "USS Gerald R. Ford" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Nimitz Class" } } 
+				air_wings = {
+					#F/A-18F Super Hornet
+					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
+				}
+			}
+			ship = { name = "USS Leyte Gulf" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Gettysburg" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Arleigh Burke" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Winston S. Churchill" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Mason" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Nitze" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Gonzalez" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+		}
+		task_force = {
+			name = "Surface Squadron 14"
+			location = 1572 #Mayport, Florida
+			ship = { name = "USS Hué City" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Vicksburg" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS The Sullivans" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Lassen" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Thomas Hunder" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Paul Ignatius" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+            ship = { name = "USS Delbert D. Black" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Zephyr" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Shamal" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Tornado" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron 6"
+			location = 788 #Norfolk, Virginia
+			ship = { name = "USS Helena" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Newport News" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Albany" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Boise" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Montpelier" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS California" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron 4"
+			location = 11830 #New London, Connecticut
+			ship = { name = "USS Hartford" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Virginia" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS New Hampshire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS New Mexico" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS Missouri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+		}
+		task_force = {
+			name = "Submarine Development Squadron 12"
+			location = 11830 #New London, Connecticut
+			ship = { name = "USS Toledo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Providence" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS San Juan" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron 20"
+			location = 11975 #Kings Bay, Georgia
+			ship = { name = "USS Alaska" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Maryland" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Rhode Island" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+			ship = { name = "USS Wyoming" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+		}
+	}	
+	fleet = {
 		name = "Third Fleet"
 		naval_base = 1562 #San Diego, California
 		task_force = {
@@ -12,8 +116,8 @@
 					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
 				}
 			}
-			ship = { name = "USS Lake Erie" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
-			ship = { name = "USS Princeton" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Lake Erie" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Princeton" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
 			ship = { name = "USS Zumwalt" definition = heavy_cruiser equipment = { ship_hull_cruiser_4 = { amount = 1 owner = USA version_name = "Zumwalt Class" } } }
 			ship = { name = "USS Michael Monsoor" definition = heavy_cruiser equipment = { ship_hull_cruiser_4 = { amount = 1 owner = USA version_name = "Zumwalt Class" } } }
 			ship = { name = "USS Howard" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
@@ -31,8 +135,8 @@
 					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
 				}
 			}
-			ship = { name = "USS Mobile Bay" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
-			ship = { name = "USS Lake Champlain" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Mobile Bay" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Lake Champlain" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
 			ship = { name = "USS Dewey" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Spruance" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Decatur" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
@@ -48,8 +152,8 @@
 					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
 				}
 			}
-			ship = { name = "USS Bunker Hill" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
-			ship = { name = "USS Cape St. George" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Bunker Hill" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Cape St. George" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
 			ship = { name = "USS Russell" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Paul Hamilton" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Rafael Peralta" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
@@ -65,7 +169,7 @@
 					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
 				}
 			}
-			ship = { name = "USS Chosin" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Chosin" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
 			ship = { name = "USS Gridley" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Kidd" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Momsen" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
@@ -75,7 +179,7 @@
 		task_force = {
 			name = "Naval Surface Group Middle Pacific"
 			location = 4180 #Pearl Harbor, Hawaii
-			ship = { name = "USS Port Royal" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Port Royal" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
 			ship = { name = "USS Hopper" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Michael Murphy" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS John Paul Jones" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
@@ -129,9 +233,9 @@
 		task_force = {
 			name = "Submarine Development Squadron 5"
 			location = 7386 #Naval Base Kitsap, Washington State
-			ship = { name = "USS Seawolf" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
-			ship = { name = "USS Connecticut" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
-			ship = { name = "USS Jimmy Carter" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS Seawolf" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS Connecticut" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS Jimmy Carter" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
 		}
 		task_force = {
 			name = "Submarine Squadron 11"
@@ -142,6 +246,41 @@
 			ship = { name = "USS Indianapolis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
 		}
 	}
+	fleet = {
+		name = "Fifth Fleet"
+		naval_base = 13204 #Bahrain, Bahrain
+		task_force = {
+			name = "Surface Squadron 5"
+			location = 13204 #Bahrain, Bahrain
+			ship = { name = "USS Tempest" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Hurricane" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+            ship = { name = "USS Monsoon" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Typhoon" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Sirocco" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Squall" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Chinook" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+            ship = { name = "USS Firebolt" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Whirlwind" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Thunderbolt" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Cyclone Class" } } }
+			ship = { name = "USS Sentry" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Avenger Class" } } }
+			ship = { name = "USS Devastator" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Avenger Class" } } }
+			ship = { name = "USS Gladiator" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Avenger Class" } } }
+			ship = { name = "USS Dexterous" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = USA version_name = "Avenger Class" } } }
+		}
+	}	
+	fleet = {
+		name = "Sixth Fleet"
+		naval_base = 819 #NSA Naples, Italy
+		task_force = {
+			name = "Destroyer Squadron 60"
+			location = 1048 #Rota Naval Station, Spain
+			ship = { name = "USS Carney" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Ross" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+            ship = { name = "USS Donald Cook" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Porter" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Roosevelt" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+		}
+	}	
 	fleet = {
 		name = "Seventh Fleet"
 		naval_base = 9998 #Yokosuka, Japan
@@ -154,9 +293,9 @@
 					cv_fighter_equipment_3 =  { owner = "USA" amount = 20 }
 				}
 			}
-			ship = { name = "USS Antietam" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
-			ship = { name = "USS Chancellorsville" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
-			ship = { name = "USS Shiloh" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Antietam" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Chancellorsville" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
+			ship = { name = "USS Shiloh" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Ticonderoga Class" } } }
 			ship = { name = "USS Barry" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS Curtis Wilbur" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
 			ship = { name = "USS John S. McCain" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
@@ -181,5 +320,5 @@
 			ship = { name = "USS Topeka" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
 			ship = { name = "USS Asheville" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
 		}
-	}	
+	}
 }
