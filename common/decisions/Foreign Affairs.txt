@@ -1,5 +1,104 @@
 foreign_affairs = {
-	
+
+	switch_recognition_to_PRC = {
+		visible = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					original_tag = PRC
+				}
+			}
+			country_exists = PRC
+			country_exists = CHI
+			NOT = { has_global_flag = taiwan_independence }
+			is_sovereign_state = yes
+			has_country_flag = recognizes_the_roc
+		}
+
+		available = {
+			NOT = { is_subject_of = PRC }
+		}
+
+		complete_effect = {
+			clr_country_flag = recognizes_the_roc
+			CHI = {
+				remove_opinion_modifier = { target = ROOT modifier = recognizes_the_roc }
+			}
+			PRC = {
+				remove_opinion_modifier = { target = ROOT modifier = recognizes_the_roc_PRC }
+			}
+		}
+		
+		icon = communist_china
+		
+		cost = 75
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 100
+				has_war_with = CHI
+			}
+			modifier = {
+				factor = 1
+				NOT = { has_war_with = CHI }
+				OR = {
+					has_government = communist
+					has_government = socialist
+					has_country_leader_with_trait = friend_of_china
+				}
+			}
+		}
+	}
+
+	switch_recognition_to_CHI = {
+		visible = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					original_tag = PRC
+				}
+			}
+			country_exists = PRC
+			country_exists = CHI
+			NOT = { has_global_flag = taiwan_independence }
+			is_sovereign_state = yes
+			NOT = { has_country_flag = recognizes_the_roc }
+		}
+
+		available = {
+			NOT = { is_subject_of = PRC }
+		}
+
+		complete_effect = {
+			set_country_flag = recognizes_the_roc
+			CHI = {
+				add_opinion_modifier = { target = ROOT modifier = recognizes_the_roc }
+			}
+			PRC = {
+				add_opinion_modifier = { target = ROOT modifier = recognizes_the_roc_PRC }
+			}
+		}
+		
+		icon = republic_of_china
+		
+		cost = 75
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 100
+				has_war_with = PRC
+			}
+			modifier = {
+				factor = 1
+				threat > 0.5
+				NOT = { has_war_with = PRC }
+				has_country_leader_with_trait = enemy_of_china
+			}
+		}
+	}
+
 	declare_neutrality = {
 		visible = {
 			is_subject = no
@@ -363,6 +462,7 @@ foreign_affairs = {
 		
 		complete_effect = {
 			custom_effect_tooltip = TT_taiwan_independence
+			set_global_flag = taiwan_independence
 			set_cosmetic_tag = TAIWAN
 			every_state = {
 				limit = {
@@ -384,6 +484,20 @@ foreign_affairs = {
 				}
 				remove_core_of = ROOT
 				remove_claim_by = ROOT
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = recognizes_the_roc
+					}
+					clr_country_flag = recognizes_the_roc
+					CHI = {
+						remove_opinion_modifier = { target = PREV modifier = recognizes_the_roc }
+					}
+					PRC = {
+						remove_opinion_modifier = { target = PREV modifier = recognizes_the_roc_PRC }
+					}
+				}
 			}
             PRC = {
 				country_event = china.1
@@ -621,6 +735,57 @@ foreign_affairs = {
 				OR = {
 					has_government = socialist
 					has_government = communist
+				}
+			}
+		}
+	}
+
+	claim_northern_ireland = {
+	
+		visible = {
+			original_tag = IRE
+			NOT = { 
+				119 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_core = 119
+			add_named_threat = { 
+				threat = 3 
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = ireland
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+					has_war_with = ENG
+					has_war_with = NIR
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+					has_government = socialist
+					has_government = communist
+					threat > 0.75
 				}
 			}
 		}

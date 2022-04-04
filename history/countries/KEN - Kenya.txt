@@ -113,11 +113,11 @@ set_country_flag = former_british_colony
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 7.16 }
-set_variable = { social_liberal_seats = 36.10 }
+set_variable = { social_democrat_seats = 11.14 }
+set_variable = { social_liberal_seats = 29.29 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 2.86 }
-set_variable = { national_conservative_seats = 53.88 }
+set_variable = { conservative_seats = 4.77 }
+set_variable = { national_conservative_seats = 54.8 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -130,31 +130,20 @@ add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2017.8.8"
+	last_election = "2017.8.9"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 53.88
-    social_liberal = 36.10
-	social_democrat = 7.16
-	conservative = 2.86
+    national_conservative = 54.8
+    social_liberal = 29.29
+	social_democrat = 11.14
+	conservative = 4.77
 }
 	
 recruit_character = KEN_uhuru_kenyatta
+recruit_character = KEN_gideon_moi
 recruit_character = KEN_raila_odinga
 recruit_character = KEN_kalonzo_musyoka
-recruit_character = KEN_gideon_moi
-recruit_character = KEN_samson_mwathethe
-recruit_character = KEN_leonard_ngondi
-recruit_character = KEN_levi_mghalu
-recruit_character = KEN_julius_waweru_karangi
-recruit_character = KEN_joseph_kiptoo_kasaon
-recruit_character = KEN_robert_kibochi
-recruit_character = KEN_david_obonyo
-recruit_character = KEN_samuel_thuita
-recruit_character = KEN_johnson_mogoa_kimani_ondieki
-recruit_character = KEN_benjamin_biwot
-recruit_character = KEN_cyrus_oguna
-recruit_character = KEN_levi_franklin_mghalu
+recruit_character = KEN_mwandawiro_mghanga

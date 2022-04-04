@@ -54,8 +54,6 @@ country_event = { #Ethiopian Peace Proposal
 		}
 		news_event = ethiopia.4
 		set_global_flag = eritrea_ethiopia_peace
-	    remove_opinion_modifier = { target = ETH modifier = frozen_conflict }
-		ETH = { remove_opinion_modifier = { target = ERI modifier = frozen_conflict } } 
 	    transfer_state = 950
 		950 = { remove_core_of = ETH }
 	}

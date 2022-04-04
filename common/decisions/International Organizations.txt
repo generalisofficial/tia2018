@@ -26,6 +26,14 @@ international_organizations = {
 				owns_state = 699
 				owns_state = 882
 			}
+			if = {
+				limit = {
+					original_tag = CHI
+					country_exists = PRC
+					NOT = { has_global_flag = taiwan_independence }
+				}
+				PRC = { is_UN_member = no }
+			}
 		}
 		
 		icon = united_nations

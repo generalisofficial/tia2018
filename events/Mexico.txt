@@ -10,28 +10,62 @@ country_event = { #Offer from the Government (ZAP)
 	option = {
 		name = mexico.1.o1
 		ai_chance = {
-			factor = 100
+			factor = 95
 		}
+		news_event = mexico.2
 		add_ideas = one_party_state
 		FROM = {
 			set_autonomy = {
 				target = ROOT
 				autonomous_state = autonomy_autonomous_region
 			}
-			set_politics = {	
-				ruling_party = socialist
-				elections_allowed = no
-			}
-			set_popularities = {
-				socialist = 100
-			}
+		}
+		set_politics = {	
+			ruling_party = socialist
+			elections_allowed = no
+		}
+		set_popularities = {
+			socialist = 100
 		}
 	}
 	
 	option = {
 		name = mexico.1.o2
 		ai_chance = {
-			factor = 0
+			factor = 5
+		}
+		add_political_power = 50
+	}
+}
+
+news_event = { #Zapatista Peace Deal
+	id = mexico.2
+	title = mexico.2.t
+	desc = mexico.2.d
+	picture = GFX_news_event_zapatistas
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = mexico.2.o1
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = MEX
+					original_tag = ZAP
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = mexico.2.o2
+		trigger = {
+			OR = {
+				original_tag = MEX
+				original_tag = ZAP
+			}
 		}
 	}
 }
