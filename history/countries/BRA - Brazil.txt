@@ -92,6 +92,8 @@ if = {
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
 		early_submarine = 1
 		transport = 1
 	}
@@ -105,6 +107,8 @@ if = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier 
 		early_ship_hull_submarine = 1
 		smoke_generator = 1
 		sonar = 1
@@ -300,6 +304,21 @@ if = {
 			mid_1_custom_slot = ship_light_medium_battery_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
+		}	
+	}
+
+	create_equipment_variant = {
+		name = "Atlântico Class"
+		type = ship_hull_carrier_1
+		name_group = GENERIC_CV_NAMES
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_armor_carrier_deck
 		}	
 	}
 }	

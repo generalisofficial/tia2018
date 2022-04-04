@@ -1,349 +1,337 @@
 ﻿division_template = {
-	name = "Infantry Brigade"
+	name = "Armoured Brigade"
 	
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Cavalry Brigade"
-	
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-	}
-	
-	priority = 0
-}
-division_template = {
-	name = "Motorized Brigade"
+	name = "Motorized Infantry Brigade"
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		field_hospital = { x = 0 y = 1 }
+		military_police = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Infantry Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Presidential Guard Corps"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mounted Cavalry Group"
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Special Forces Brigade"
 	
 	regiments = {
 		light_mechanized = { x = 0 y = 0 }
 		light_mechanized = { x = 0 y = 1 }
 		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
 	}
 }
+
 division_template = {
-	name = "Special Forces Brigade"
+	name = "Paratrooper Brigade"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		mechanized = { x = 0 y = 4 }
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-		artillery = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 0 }
 	}
-	
-	priority = 2
 }
+
 division_template = {
-	name = "Armored Brigade"
+	name = "Naval Infantry Brigade"
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		light_mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 2 y = 1 }
-		light_mechanized = { x = 2 y = 2 }
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	
 	division = {
-		name = "Mexican Special Forces"
-		location = 1965
-		division_template = "Special Forces Brigade"
+		name = "I Armoured Brigade" #Unlike infantry battalions, which are always denominated by arabic numerals, the Brigades are frequently identified by Roman numbers or by numbers
+		location = 1965 #Almost all brigades are based in and around federal district
+		division_template = "Armoured Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "Mexico City Garrison"
+		name = "II Armoured Brigade" 
 		location = 1965
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "III Armoured Brigade" 
+		location = 1965
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "IV Armoured Brigade" 
+		location = 2011 #Sarabia, Guanajuato
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "I Independent Infantry Brigade" 
+		location = 1965
+		division_template = "Motorized Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "II Independent Infantry Brigade" 
+		location = 1965
+		division_template = "Motorized Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "III Independent Infantry Brigade" 
+		location = 1965
+		division_template = "Motorized Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "VI Light Infantry Brigade" 
+		location = 13918 #Irapuato, Guanajuato
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Cavalry Brigade"
+		name = "Presidential Guard Corps" 
 		location = 1965
-		division_template = "Cavalry Brigade"
+		division_template = "Presidential Guard Corps"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Cavalry Brigade"
-		location = 13089
-		division_template = "Cavalry Brigade"
+		name = "1st Mounted Cavalry Group" 
+		location = 1965 
+		division_template = "Mounted Cavalry Group"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Brigade"
-		location = 1965
-		division_template = "Armored Brigade"
-		start_experience_factor = 0.3
+		name = "1st Special Forces Brigade" 
+		location = 1965 
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "2nd Brigade"
-		location = 12461
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+		name = "2nd Special Forces Brigade" 
+		location = 1965 
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "3rd Brigade"
-		location = 13089
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+		name = "3rd Special Forces Brigade" 
+		location = 1965 
+		division_template = "Special Forces Brigade"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "4th Brigade"
-		location = 12835
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+		name = "Parachute Rifle Brigade" 
+		location = 1965 
+		division_template = "Paratrooper Brigade"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "5th Brigade"
-		location = 10889
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+		name = "1st Amphibious Reaction Forces" 
+		location = 12810 #Both reaction units deployed along the coastlines
+		division_template = "Naval Infantry Brigade"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "6th Brigade"
-		location = 8012
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
+		name = "2nd Amphibious Reaction Forces" 
+		location = 8032 
+		division_template = "Naval Infantry Brigade"
+		start_experience_factor = 0.75
 	}
-	
 	division = {
-		name = "7th Brigade"
-		location = 1965
-		division_template = "Armored Brigade"
+		name = "1st Regional Amphibious Brigade" 
+		location = 4904 #Gulf Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "8th Brigade"
-		location = 4956
-		division_template = "Mechanized Brigade"
+		name = "2nd Regional Amphibious Brigade" 
+		location = 13601 #Pacific Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "1st Auxiliary Brigade"
-		location = 10889
-		division_template = "Motorized Brigade"
+		name = "3rd Regional Amphibious Brigade" 
+		location = 5015 #Gulf Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "2nd Auxiliary Brigade"
-		location = 4908
-		division_template = "Motorized Brigade"
+		name = "4th Regional Amphibious Brigade" 
+		location = 4908 #Pacific Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "3rd Auxiliary Brigade"
-		location = 1965
-		division_template = "Motorized Brigade"
+		name = "5th Regional Amphibious Brigade" 
+		location = 12810 #Gulf Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "4th Auxiliary Brigade"
-		location = 4904
-		division_template = "Motorized Brigade"
+		name = "6th Regional Amphibious Brigade" 
+		location = 13866 #Pacific Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "5th Auxiliary Brigade"
-		location = 13866
-		division_template = "Motorized Brigade"
+		name = "7th Regional Amphibious Brigade" 
+		location = 1965 #Mexico City
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "6th Auxiliary Brigade"
-		location = 13089
-		division_template = "Motorized Brigade"
+		name = "8th Regional Amphibious Brigade" 
+		location = 12461 #Pacific Coast
+		division_template = "Naval Infantry Brigade"
 		start_experience_factor = 0.3
 	}
-	
-	division = {
-		name = "7th Auxiliary Brigade"
-		location = 1965
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "8th Auxiliary Brigade"
-		location = 12867
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "9th Auxiliary Brigade"
-		location = 4904
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "10th Auxiliary Brigade"
-		location = 8057
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "11th Auxiliary Brigade"
-		location = 12461
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "12th Auxiliary Brigade"
-		location = 1965
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "13th Auxiliary Brigade"
-		location = 10738
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "14th Auxiliary Brigade"
-		location = 4904
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "15th Auxiliary Brigade"
-		location = 8057
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "16th Auxiliary Brigade"
-		location = 12461
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "17th Auxiliary Brigade"
-		location = 12810
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "18th Auxiliary Brigade"
-		location = 10738
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "19th Auxiliary Brigade"
-		location = 5015
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "20th Auxiliary Brigade"
-		location = 2011
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "21st Auxiliary Brigade"
-		location = 12810
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "22nd Auxiliary Brigade"
-		location = 12745
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "23rd Auxiliary Brigade"
-		location = 8032
-		division_template = "Motorized Brigade"
-		start_experience_factor = 0.3
-	}
-	
 }
 
 ### Air OOB ###
 
 air_wings = {
+	475 = {
+		#PC-7
+		CAS_equipment_2 = {
+			owner = "MEX" 
+			amount = 8
+		}
+		name = "202 Air Squadron"
+	}
+	1049 = {
+		#PC-7
+		CAS_equipment_2 = {
+			owner = "MEX" 
+			amount = 8
+		}
+		name = "203 Air Squadron"
+	}
+	485 = {
+		#PC-7
+		CAS_equipment_2 = {
+			owner = "MEX" 
+			amount = 8
+		}
+		name = "204 Air Squadron"
+	}
+	476 = {
+		#PC-7
+		CAS_equipment_2 = {
+			owner = "MEX" 
+			amount = 9
+		}
+		name = "402 Air Squadron"
+	}
 	277 = {
-		#F-5E
-		fighter_equipment_1 = {
+		#King Air 350 + Merlin IV
+		scout_plane_equipment_1 = {
+			owner = "MEX" 
+			amount = 4
+		}
+		name = "Aerial Surveillance Squadron"
+	}
+	483 = {
+		#Elbit Hermes 450
+		scout_plane_equipment_2 = {
+			owner = "MEX" 
+			amount = 4
+		}
+		name = "3rd Aerial Surveillance Squadron"
+	}
+	277 = {
+		#Bunch of planes, the CASA C-295 being the most common
+		transport_plane_equipment_1 = {
+			owner = "MEX" 
+			amount = 18
+		}
+		name = "3rd Air Group"
+	}
+	477 = {
+		#CASA C-212
+		nav_bomber_equipment_1 = {
+			owner = "MEX" 
+			amount = 8
+		}
+		name = "1st Maritime Patrol Naval Air Squadron"
+	}
+	477 = {
+		#CASA CN-235
+		nav_bomber_equipment_2 = {
 			owner = "MEX" 
 			amount = 6
 		}
-
+		name = "2nd Maritime Patrol Naval Air Squadron"
 	}
 }

@@ -1,1020 +1,666 @@
-﻿division_template = {
-	name = "Infantry Division"
+division_template = {
+	name = "Armoured Brigade Combat Team"
+	division_names_group = GENERIC_ARM_03
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		light_mechanized = { x = 0 y = 4 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-		motorized = { x = 1 y = 4 }
-		mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 2 y = 1 }
-		light_mechanized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-		mechanized = { x = 3 y = 0 }
-		light_mechanized = { x = 3 y = 1 }
-		light_mechanized = { x = 3 y = 2 }
-		motorized = { x = 3 y = 3 }
-		modern_armor = { x = 4 y = 0 }
-	}
-	
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
-		recon = { x = 0 y = 4 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Garrison Brigade"
-	
-	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		light_mechanized = { x = 0 y = 1 }
-		light_mechanized = { x = 0 y = 2 }
-		light_mechanized = { x = 0 y = 3 }
-	}
-	
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-}
-
-division_template = {
-	name = "State Troopers"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	}
-	
-	priority = 0
-}
-
-division_template = {
-	name = "Army National Guard Division"
-	
-	regiments = {
-		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-	}
-	
-	support = {
-		recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
-	}
-	
-	priority = 0
-}
-
-division_template = {
-	name = "Reserve Training Division"
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-		mechanized = { x = 2 y = 0 }
-		light_mechanized = { x = 3 y = 0 }
-	}
-	
-	support = {
-		recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
-	}
-}
-
-division_template = {
-	name = "Marine Division"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
-		marine = { x = 0 y = 3 }
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-		marine = { x = 1 y = 2 }
-		marine = { x = 1 y = 3 }
-		marine = { x = 2 y = 0 }
-		marine = { x = 2 y = 1 }
-		marine = { x = 2 y = 2 }
-		marine = { x = 2 y = 3 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 3 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
 	}
 	
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		field_hospital = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
-		recon = { x = 0 y = 4 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Mountain Division"
-	
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-	}
-	
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
 	}
 }
 
 division_template = {
-	name = "Airborne Division"
+	name = "Stryker Brigade Combat Team"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
-		paratrooper = { x = 1 y = 2 }
-	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
-		recon = { x = 0 y = 4 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "Armored Division"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		modern_armor = { x = 0 y = 2 }
-		modern_armor = { x = 0 y = 3 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-		mechanized = { x = 2 y = 0 }
-		mechanized = { x = 2 y = 1 }
-		mechanized = { x = 3 y = 0 }
-		mechanized = { x = 3 y = 1 }
-	}
-	
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		artillery = { x = 0 y = 3 }
-	}
-	
-	priority = 2
-}
-
-division_template = {
-	name = "NG Armored Division"
-	
-	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
-		light_mechanized = { x = 1 y = 3 }
-		motorized = { x = 1 y = 4 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-		motorized = { x = 4 y = 0 }
-		motorized = { x = 4 y = 1 }
-		motorized = { x = 4 y = 2 }
-	}
-	
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-	
-	priority = 0
-}
-
-division_template = {
-	name = "Cavalry Division"
-	
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
 		light_mechanized = { x = 1 y = 0 }
 		light_mechanized = { x = 1 y = 1 }
 	}
 	
 	support = {
 		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Infantry Brigade Combat Team"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Combat Aviation Brigade"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
 		field_hospital = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Field Artillery Brigade"
+	division_names_group = GENERIC_ART_01
+	
+	regiments = {
+		rocket_artillery_brigade = { x = 0 y = 0 }
+		rocket_artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+	}
+	
+	support = {
+		signal_company = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Training Brigade"
+	division_names_group = GENERIC_GAR_02
+	
+	regiments = {
+		Infantry = { x = 0 y = 0 }
+		Infantry = { x = 0 y = 1 }
+		Infantry = { x = 0 y = 2 }
+		Infantry = { x = 1 y = 0 }
+		Infantry = { x = 1 y = 1 }
+		Infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Marine Regiment"
+	division_names_group = GENERIC_MAR_02
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		amphibious_mechanized = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Marine Regiment (Small)"
+	division_names_group = GENERIC_MAR_02
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
 	}
 }
 
 units = {
-
+	## US ARMY ##
+	### 1st Armoured Division - Fort Bliss, TX ###
 	division = {
-		name = "1st Marine Division"
-		location = 1562
-		division_template = "Marine Division"
+		name = "1st ABCT 'Ready First', 1st Armoured Division"
+		location = 10740
+		division_template = "Armoured Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "2nd Marine Division"
-		location = 4168
-		division_template = "Marine Division"
+		name = "2nd ABCT 'Iron Brigade', 1st Armoured Division"
+		location = 10740
+		division_template = "Armoured Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "3rd Marine Division"
-		location = 7315
-		division_template = "Marine Division"
+		name = "3rd ABCT 'Bulldog Brigade', 1st Armoured Division"
+		location = 10740
+		division_template = "Armoured Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "4th Marine Division"
-		location = 7552
-		division_template = "Marine Division"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "1st Infantry Division"
-		location = 12024	#Kansas
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "2nd Infantry Division"
-		location = 9814		#California, TBA South Korea
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "3rd Infantry Division"
-		location = 7612		#Georgia
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "4th Infantry Division"
-		location = 10588	#Colorado
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "5th Infantry Division"
-		location = 10588	#Colorado
-		division_template = "Infantry Division"
+		name = "Combat Aviation Brigade 'Iron Eagle', 1st Armoured Division"
+		location = 10740
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 	
+	### 1st Cavalry Division - Fort Hood, TX ###
 	division = {
-		name = "7th Infantry Division"
-		location = 7386		#Washington
-		division_template = "Infantry Division"
+		name = "1st BCT 'Ironhorse', 1st Armoured Division"
+		location = 5022
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd BCT 'Black Jack', 1st Armoured Division"
+		location = 5022
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd BCT 'Greywolf', 1st Armoured Division"
+		location = 5022
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Air Cavalry Brigade"
+		location = 10740
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 1st Infantry Division - Fort Riley, KS ###
 	division = {
-		name = "24th Infantry Division"
-		location = 12024	#Kansas
-		division_template = "Infantry Division"
+		name = "1st ABCT 'Devil Brigade', 1st Infantry Division"
+		location = 7892
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd ABCT 'Dagger Brigade', 1st Infantry Division"
+		location = 7892
+		division_template = "Armoured Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
 
+	### 2nd Infantry Division - Fort Lewis, WA ###
 	division = {
-		name = "25th Infantry Division"
-		location = 4180		#Hawaii
-		division_template = "Infantry Division"
+		name = "1st SBCT 'Ghost Brigade', 2nd Infantry Division"
+		location = 7386
+		division_template = "Stryker Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd SBCT 'Lancer Brigade', 2nd Infantry Division"
+		location = 7386
+		division_template = "Stryker Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16th Mechanized Brigade, ROK Capital Mechanized Division"
+		location = 7204 #Based on Camp Humphreys, ROK
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "210th Field Artillery Brigade"
+		location = 13285 #Based on Camp Casey, ROK
+		division_template = "Field Artillery Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 3rd Infantry Division - Fort Stewart, GA ###
 	division = {
-		name = "28th Infantry Division"
-		location = 6872		#Pennsylvania
-		division_template = "Infantry Division"
+		name = "1st ABCT 'Raider', 3rd Infantry Division"
+		location = 1480 
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd ABCT 'Spartans', 3rd Infantry Division"
+		location = 1480
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Combat Aviation Brigade 'Falcon', 3rd Infantry Division"
+		location = 1480
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 4th Infantry Division - Fort Carson, CO ###
 	division = {
-		name = "29th Infantry Division"
-		location = 11738	#Virginia
-		division_template = "Infantry Division"
+		name = "1st SBCT 'Raiders', 4th Infantry Division"
+		location = 10588 
+		division_template = "Stryker Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd IBCT 'War Horse', 4th Infantry Division"
+		location = 10588
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3nd ABCT 'Iron', 4th Infantry Division"
+		location = 10588
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Combat Aviation Brigade 'Ivy Eagles', 4th Infantry Division"
+		location = 10588
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 7th Infantry Division - Fort Lewis, WA ### Almost all units of the 7th are from the 2nd
 	division = {
-		name = "34th Infantry Division"
-		location = 6752		#Minnesota
-		division_template = "Infantry Division"
+		name = "Combat Aviation Brigade 'Born In Battle', 7th Infantry Division"
+		location = 10588
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 10th Mountain Division - Fort Drum, NY ###
 	division = {
-		name = "35th Infantry Division"
-		location = 12024	#Kansas
-		division_template = "Infantry Division"
+		name = "1st IBCT 'Warrior', 10th Mountain Division"
+		location = 6778 
+		division_template = "Infantry Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "38th Infantry Division"
-		location = 4437	#Indiana
-		division_template = "Infantry Division"
+		name = "2nd IBCT 'Commandos', 10th Mountain Division"
+		location = 6778
+		division_template = "Infantry Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "40th Infantry Division"
-		location = 9814		#California
-		division_template = "Infantry Division"
+		name = "3nd IBCT 'Patriots', 10th Mountain Division"
+		location = 1528 #Fort Polk, LA
+		division_template = "Infantry Brigade Combat Team"
 		start_experience_factor = 0.3
 	}
-
 	division = {
-		name = "41st Infantry Division"
-		location = 9814		#California
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-
-	division = {
-		name = "42nd Infantry Division"
-		location = 11660	#New York
-		division_template = "Infantry Division"
+		name = "Combat Aviation Brigade 'Falcons', 10th Mountain Division"
+		location = 10588
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 25th Infantry Division - Schofield Barracks, HI ###
 	division = {
-		name = "44th Infantry Division"
-		location = 11660	#New York
-		division_template = "Infantry Division"
+		name = "1st SBCT 'Artic Wolves', 25th Infantry Division"
+		location = 13069 #Fort Wainwright, AK 
+		division_template = "Stryker Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd IBCT 'Warriors', 25th Infantry Division"
+		location = 4180
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3nd IBCT 'Broncos', 25th Infantry Division"
+		location = 4180 
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th IBCT (Airborne) 'Spartan', 25th Infantry Division"
+		location = 10588 #Fort Richardson, AK
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Combat Aviation Brigade 'Wings of Lightning', 25th Infantry Division"
+		location = 4180
+		division_template = "Combat Aviation Brigade"
 		start_experience_factor = 0.3
 	}
 
+	### 95th Training Division - Fort Sill, OK ###
 	division = {
-		name = "45th Infantry Division"
-		location = 11660	#New York
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		name = "1st Brigade, 95th Training Division"
+		location = 4919 
+		division_template = "Training Brigade"
+		start_experience_factor = 0.0
 	}
-	
 	division = {
-		name = "49th Infantry Division"
-		location = 9814		#California
-		division_template = "Army National Guard Division"
+		name = "2nd Brigade, 95th Training Division"
+		location = 4919
+		division_template = "Training Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "3rd Brigade, 95th Training Division"
+		location = 4919 
+		division_template = "Training Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "4th Brigade, 95th Training Division"
+		location = 4919
+		division_template = "Training Brigade"
+		start_experience_factor = 0.0
+	}
+
+	## National Guard Units ##
+	### 28th Infantry Division - Harrisburg, PA ###
+	division = {
+		name = "2nd IBCT 'Iron Brigade', PA National Guard"
+		location = 11785
+		division_template = "Armoured Brigade Combat Team"
 		start_experience_factor = 0.1
 	}
-	
 	division = {
-		name = "50th Infantry Division"
-		location = 9814		#California
-		division_template = "Army National Guard Division"
-		start_experience_factor = 0.1
-	}
-	
-	division = {
-		name = "51st Infantry Division"
-		location = 9814		#California
-		division_template = "Army National Guard Division"
-		start_experience_factor = 0.1
-	}
-	
-	division = {
-		name = "52nd Infantry Division"
-		location = 7836		#Texas
-		division_template = "Army National Guard Division"
-		start_experience_factor = 0.1
-	}
-	
-	division = {
-		name = "55th Infantry Division"
-		location = 7836		#Texas
-		division_template = "Army National Guard Division"
-		start_experience_factor = 0.1
-	}
-	
-	division = {
-		name = "56th Infantry Division"
-		location = 7836		#Texas
-		division_template = "Army National Guard Division"
-		start_experience_factor = 0.1
-	}
-	
-	division = {
-		name = "61st Infantry Division"
-		location = 6778		#Upstate New York
-		division_template = "Army National Guard Division"
-		start_experience_factor = 0.1
-	}
-	
-	division = {
-		name = "American Samoa Guards"
-		location = 13080	#American Samoa
-		division_template = "Army National Guard Division"
+		name = "56th SBCT 'Artic Wolves', PA National Guard"
+		location = 11785
+		division_template = "Stryker Brigade Combat Team"
 		start_experience_factor = 0.1
 	}
 
+	### 29th Infantry Division ###
 	division = {
-		name = "10th Mountain Division"
-		location = 6778		#Upstate New York
-		division_template = "Mountain Division"
-		start_experience_factor = 0.3
+		name = "30th ABCT 'Old Hickory', NC National Guard"
+		location = 7138 #Charlotte, NC
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.1
 	}
-	
 	division = {
-		name = "82nd Airborne Division"
-		location = 12054	#North Carolina
-		division_template = "Airborne Division"
-		start_experience_factor = 0.3
+		name = "53rd IBCT 'Iron Brigade', FL National Guard"
+		location = 1572 #San Agustin, FL
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
 	}
-	
 	division = {
-		name = "101st Airborne Division"
-		location = 12709	#Kentucky
-		division_template = "Airborne Division"
-		start_experience_factor = 0.3
+		name = "116th IBCT 'Artic Wolves', VA National Guard"
+		location = 873 #Fort Belvoir, VA
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
 	}
-	
 	division = {
-		name = "1st Armored Division"
-		location = 7836	#Texas
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "3rd Armored Division"
-		location = 7836	#Texas
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "14th Armored Division"
-		location = 7836	#Texas
-		division_template = "NG Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "27th Armored Division"
-		location = 7836	#Texas
-		division_template = "NG Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "49th Armored Division"
-		location = 7836	#Texas
-		division_template = "NG Armored Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "1st Cavalry Division"
-		location = 7836	#Texas
-		division_template = "Cavalry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "75th Training Division"
-		location = 7836	#Texas
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "78th Training Division"
-		location = 11782	#New Jersey
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "80th Training Division"
-		location = 7612		#Georgia
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "84th Training Division"
-		location = 12709	#Kentucky
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "85th Training Division"
-		location = 11738	#Virginia
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "87th Training Division"
-		location = 492	#Alabama
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "91st Training Division"
-		location = 9814		#California
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "92nd Training Division"
-		location = 9814		#California
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "93rd Training Division"
-		location = 9814		#California
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "95th Training Division"
-		location = 5103		#Oklahoma
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "98th Training Division"
-		location = 7612		#Georgia
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "100th Training Division"
-		location = 12709	#Kentucky
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "104th Training Division"
-		location = 7386		#Washington
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "108th Training Division"
-		location = 12054	#North Carolina
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "111th Training Division"
-		location = 12054	#North Carolina
-		division_template = "Reserve Training Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Guantanamo Garrison Force"
-		location = 13216	#Guantanamo
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Guam Garrison Force"
-		location = 12140	#Guam
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Alaska State Troopers"
-		location = 13091	#Anchorage	
-		division_template = "State Troopers"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Hawaii State Troopers"
-		location = 10048
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "California State Troopers"
-		location = 9713		#Sacramento
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Oregon State Troopers"
-		location = 3513		#Portland
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Washington State Troopers"
-		location = 1690		#Spokane
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Montana	State Troopers"
-		location = 4860		#Great Falls
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Idaho State Troopers"
-		location = 10556	#Idaho
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Utah State Troopers"
-		location = 4865		#Salt Lake City
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Arizona State Troopers"
-		location = 853		#Phoenix
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "New Mexico State Troopers"
-		location = 3883
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Colorado State Troopers"
-		location = 1827		#Denver
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Colorado State Troopers"
-		location = 4723		#Wyoming
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "North Dakota State Troopers"
-		location = 1836		#Bismarck
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "South Dakota State Troopers"
-		location = 1747		#Rapid City
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Nebraska State Troopers"
-		location = 12586	#Omaha
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Kansas State Troopers"
-		location = 1352
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Oklahoma State Troopers"
-		location = 1806	#Tulsa
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "1st Texas State Troopers"
-		location = 12782	#San Antonio
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "2nd Texas State Troopers"
-		location = 10337	#Houston
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "3rd Texas State Troopers"
-		location = 3960	#Dallas
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Louisiana State Troopers"
-		location = 1453
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Arkansas State Troopers"
-		location = 12489
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Missouri State Troopers"
-		location = 4569
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Iowa State Troopers"
-		location = 1770
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Minnesota State Troopers"
-		location = 1866
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Minnesota State Troopers"
-		location = 12357
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Illinois State Troopers"
-		location = 9450
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Indiana State Troopers"
-		location = 1595
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Michigan State Troopers"
-		location = 6710
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Tennessee State Troopers"
-		location = 12501
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Mississippi State Troopers"
-		location = 4464
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Alabama State Troopers"
-		location = 7480
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "1st Florida State Troopers"
-		location = 1556
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "2nd Florida State Troopers"
-		location = 1843
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Georgia State Troopers"
-		location = 12384
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "1st North Carolina State Troopers"
-		location = 7138
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "2nd North Carolina State Troopers"
-		location = 1132
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "South Carolina State Troopers"
-		location = 7202
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Virginia State Troopers"
-		location = 788
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "West Virginia State Troopers"
-		location = 10441
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Ohio State Troopers"
-		location = 6890
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Maryland State Troopers"
-		location = 6984
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Pennsylvania State Troopers"
-		location = 11800
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "New Jersey State Troopers"
-		location = 9864
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "New York State Troopers"
-		location = 3894
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "1st New England State Troopers"
-		location = 4445
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "2nd New England State Troopers"
-		location = 12459
-		division_template = "State Troopers"
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		name = "Jaysh Maghawir al-Thawra"
-		location = 10383
-		division_template = "Infantry Division"
-		start_experience_factor = 0.4
-		start_equipment_factor = 1.0
+		name = "29th Combat Aviation Brigade, MD National Guard"
+		location = 6984 #Baltimore, MD
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.1
 	}
 
+	### 34th Infantry Division ###
+	division = {
+		name = "1st ABCT, MN National Guard"
+		location = 1866 #Minneapolis, MN
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd IBCT, IA National Guard"
+		location = 1770 #Des Moines, IA
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "32nd IBCT, WI National Guard"
+		location = 12357 #Milwaukee, WI
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "116th CBCT, MS National Guard"
+		location = 10556 #Boise, MS
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+
+	### 35th Infantry Division ###
+	division = {
+		name = "39th IBCT, AR National Guard"
+		location = 12489 #Little Rock, AR
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "45th IBCT, OK National Guard"
+		location = 10798 #Oklahoma City, OK
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "155th ABCT, MS National Guard"
+		location = 4565 #Jackson, MS
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "35th Combat Aviation Brigade, MO National Guard"
+		location = 7779 #Helena, MO
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.1
+	}
+
+	### 36th Infantry Division ###
+	division = {
+		name = "56 IBCT, TX National Guard"
+		location = 5022 #Austin, TX
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "72nd IBCT, TX National Guard"
+		location = 5022 #Austin, TX
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "278 ABCT, LA National Guard"
+		location = 7552 #New Orleans, LA
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "155th ABCT, TN National Guard"
+		location = 7797 #Jackson, TN
+		division_template = "Armoured Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Task Force Mustang, TX National Guard"
+		location = 5022 #Austin, TX
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.1
+	}
+
+	### 38th Infantry Division ###
+	division = {
+		name = "33rd IBCT, IL National Guard"
+		location = 9450 #Chicago, IL
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "37th IBCT, OH National Guard"
+		location = 6855 #Columbus, OH
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "76th IBCT, IN National Guard"
+		location = 1595 #Indianopolis, IN
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "38th Combat Aviation Brigade, IN National Guard"
+		location = 1595 #Indianopolis, IN
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.1
+	}
+
+	### 40th Infantry Division ###
+	division = {
+		name = "29th IBCT, HI National Guard"
+		location = 4180 #Kalaeloa, HI
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "37th IBCT, OR National Guard"
+		location = 3513 #Portland, OR
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "76th IBCT, CA National Guard"
+		location = 11757 #Los Alamitos, CA
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "40th Combat Aviation Brigade, CA National Guard"
+		location = 11757 #Los Alamitos, CA
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.1
+	}
+
+	### 42th Infantry Division ###
+	division = {
+		name = "27th IBCT, NY National Guard"
+		location = 3806 #Troy, NY
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "44th IBCT, NJ National Guard"
+		location = 6882 #Newark, NJ
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "86th IBCT, VT National Guard"
+		location = 4445 #Montpelier, VT
+		division_template = "Infantry Brigade Combat Team"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "40th Combat Aviation Brigade, NY National Guard"
+		location = 3806 #Troy, NY
+		division_template = "Combat Aviation Brigade"
+		start_experience_factor = 0.1
+	}
+
+	### US Marine Corps ###
+
+	### 1st Marine Division ###
+	division = {
+		name = "1st Marine Regiment 'Inchon'"
+		location = 1562 #San Diego, CA
+		division_template = "Marine Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Marine Regiment 'The Fighting Fifth'"
+		location = 1562 #Honolulu, HI
+		division_template = "Marine Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Marine Regiment 'Magnificent Seventh'"
+		location = 11795 #Twentynine Palms Base, CA
+		division_template = "Marine Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Marine Regiment 'The Cannon Cockers'"
+		location = 11795 #Twentynine Palms Base, CA
+		division_template = "Marine Regiment"
+		start_experience_factor = 0.3
+	}
+
+	### 2nd Marine Division ###
+	division = {
+		name = "2nd Marine Regiment 'Tarawa'"
+		location = 1132 #Jacksonville, NC
+		division_template = "Marine Regiment (Small)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Marine Regiment 'Fighting 6th Marine'"
+		location = 1132 #Jacksonville, NC
+		division_template = "Marine Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Marine Regiment 'Arm of Decision'"
+		location = 1132 #Jacksonville, NC
+		division_template = "Marine Regiment (Small)"
+		start_experience_factor = 0.3
+	}
+
+	### 3rd Marine Division ###
+	division = {
+		name = "3rd Marine Regiment"
+		location = 4180 #Honolulu, HI
+		division_template = "Marine Regiment (Small)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Marine Regiment 'Thunder & Steel'"
+		location = 11932 #Camp Smedley Butler, Okinawa, Japan
+		division_template = "Field Artillery Brigade"
+		start_experience_factor = 0.3
+	}
+
+	### 4th Marine Division ###
+	division = {
+		name = "14th Marine Regiment"
+		location = 7981 #Honolulu, HI
+		division_template = "Marine Regiment (Small)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23d Marine Regiment"
+		location = 9671 #San Mateo, CA
+		division_template = "Marine Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25th Marine Regiment 'Cold Steel Warriors'"
+		location = 6732 #Fort Devens, MA
+		division_template = "Marine Regiment (Small)"
+		start_experience_factor = 0.3
+	}
 }
 
 instant_effect = {
-	
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_2
 			creator = "USA"
 		}
 		requested_factories = 5
@@ -1022,592 +668,979 @@ instant_effect = {
 		efficiency = 100
 		amount = 250000
 	}
-	
 }
 
 ### Air OOB ###
 
 air_wings = {
-	### Alaska ###
-	463 = {
-		#F-15
+	#Around 5 planes per Squadron and 2 squadrons per group, unless said otherwise
+	362 = {
+		#F-22 Raptor
 		fighter_equipment_3 = {
 			owner = "USA" 
-			amount = 48
+			amount = 36
 		}
+		name = "1st Fighter Wing"
 	}
-	463 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	### Hawaii ###
-	629 = {
-		#F-15
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-	}
-	### CONUS West Coast ###
-	385 = {
-		#F-15C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	385 = {
-		#F-15C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	378 = {
-		#F-15C
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	378 = {
-		#F-15
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 48
-		}
-
-	}
-	378 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	378 = {
-		#F-15C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	378 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	387 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
-	}
-	387 = {
-		#F-15E
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 48
-		}
-
-	}
-	382 = {
-		#F-16C
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	380 = {
-		#F-16C
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	380 = {
-		#F-16C
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	379 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 48
-		}
-
-	}
-	379 = {
-		#F-15
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 5
-		}
-
-	}
-	379 = {
-		#F-16C
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 60
-		}
-
-	}
-	379 = {
-		#F-15E
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	379 = {
-		#F-15C
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	379 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
-	}
-	377 = {
-		#F-16
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	377 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 144
-		}
-
-	}
-	377 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 66
-		}
-
-	}
-	377 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	376 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	376 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 48
-		}
-
-	}
-
-### CONUS Central ###
-
-	389 = {
-		#B-52
-		strat_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	389 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	390 = {
-		#B-1
-		strat_bomber_equipment_2 = {
-			owner = "USA" 
-			amount = 28
-		}
-
-	}
-	390 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	374 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	375 = {
-		#B-1
-		strat_bomber_equipment_2 = {
-			owner = "USA" 
-			amount = 28
-		}
-
-	}
-	375 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	375 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	375 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	391 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	392 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	373 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
-	}
-	373 = {
-		#B-2 Spirit
-		strat_bomber_equipment_2 = {
+	366 = {
+		#F-22 Raptor
+		transport_plane_equipment_1 = {
 			owner = "USA" 
 			amount = 20
 		}
-
-	}
-	372 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
-	}
-	371 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
+		name = "1st Special Operations Wing"
 	}
 	371 = {
 		#B-52
 		strat_bomber_equipment_1 = {
 			owner = "USA" 
-			amount = 67
+			amount = 15
 		}
-
-	}
-	394 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	393 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
-	}
-	396 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 22
-		}
-
-	}
-
-### COMUS South-East ###
-
-	367 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	365 = {
-		#A-10C
-		CAS_equipment_2 = {
-			owner = "USA" 
-			amount = 44
-		}
-
-	}
-	366 = {
-		#F-15
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 24
-		}
-
-	}
-	366 = {
-		#F-16
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 12
-		}
-
-	}
-	366 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 96
-		}
-
-	}
-	366 = {
-		#F-15C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 48
-		}
-
-	}
-	364 = {
-		#F-16C/D
-		fighter_equipment_3 = {
-			owner = "USA" 
-			amount = 98
-		}
-
+		name = "2nd Bomb Wing"
 	}
 	363 = {
 		#F-15E
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 98
+			amount = 15
 		}
-
+		name = "4th Fighter Wing"
 	}
-
-### COMUS North-East ###
-
+	389 = {
+		#B-52
+		strat_bomber_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "5th Bomb Wing"
+	}
+	375 = {
+		#B-52
+		strat_bomber_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "7th Bomb Wing"
+	}
+	638 = {
+		#F-16, based in Korea but can't place it there since they're not allies ingame
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "8th Fighter Wing"
+	}
+	378 = {
+		#Lockheed U-2
+		scout_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "9th Operations Group, 9RW"
+	}
+	378 = {
+		#Lockheed P-3 Orion
+		nav_bomber_equipment_1 = {
+			owner = "USA" 
+			amount = 30
+		}
+		name = "10th Patrol and Reconnaissance Wing"
+	}
+	378 = {
+		#RQ-4 Global Hawk
+		scout_plane_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "69th Reconnaissance Group, 9RW"
+	}
+	638 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "18th Wing"
+	}
+	364 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 15
+		}
+		name = "20th Fighter Wing"
+	}
+	365 = {
+		CAS_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "23rd Wing"
+	}
+	366 = {
+		#C-27 Spartan
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "24th Special Operations Wing"
+	}
+	376 = {
+		#C-27 Spartan
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "27th Special Operations Wing"
+	}
+	364 = {
+		#B-52
+		strat_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "28th Bomb Wing"
+	}
+	366 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "31st Fighter Wing"
+	}
+	366 = {
+		#F-35 Lightning II
+		fighter_equipment_4 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "33rd Fighter Wing"
+	}
+	366 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "35th Fighter Wing"
+	}
+	368 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "36th Wing"
+	}
 	362 = {
 		#F-15
-		fighter_equipment_3 = {
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 48
+			amount = 10
 		}
-
+		name = "48th Fighter Wing"
+	}
+	376 = {
+		#T-38 Talon
+		fighter_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "49th Wing"
+	}
+	638 = {
+		#T-38 Talon
+		fighter_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "51st Fighter Wing"
 	}
 	362 = {
-		#F-16C/D
-		fighter_equipment_3 = {
+		#F-16
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "52nd Fighter Wing"
+	}
+	377 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "56th Fighter Wing"
+	}
+	386 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "62nd Airlift Wing"
 	}
 	361 = {
-		#F-16C/D
-		fighter_equipment_3 = {
+		scout_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "70th ISR Wing"
 	}
-	359 = {
-		#F-16C/D
-		fighter_equipment_3 = {
+	361 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "89th Airlift Wing"
 	}
-	358 = {
-		#MQ-1
-		tac_bomber_equipment_1 = {
+	365 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 12
+			amount = 10
 		}
-
+		name = "94th Airlift Wing"
+	}
+	375 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "56th Fighter Wing"
+	}
+	382 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "94th Airlift Wing"
+	}
+	371 = {
+		#B-52
+		strat_bomber_equipment_1 = {
+			owner = "USA" 
+			amount = 18
+		}
+		name = "307th Bomb Wing"
+	}
+	364 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "315th Airlift Wing"
+	}
+	361 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "316th Wing"
+	}
+	389 = {
+		#Lockheed U-2
+		scout_plane_equipment_2 = {
+			owner = "USA" 
+			amount = 15
+		}
+		name = "319th Reconnaissance Wing"
+	}
+	366 = {
+		#F-22 Raptor
+		fighter_equipment_4 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "325th Fighter Wing"
+	}
+	378 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "349th Air Mobility Wing"
+	}
+	463 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "354th Fighter Wing"
+	}
+	377 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "355th Fighter Wing"
+	}
+	387 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "366th Fighter Wing"
+	}
+	638 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "374th Airlift Wing"
+	}
+	395 = {
+		#C-40 Clipper
+		transport_plane_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "375th Air Mobility Wing"
+	}
+	380 = {
+		#F-35 Lightning II
+		fighter_equipment_4 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "388th Fighter Wing"
+	}
+	380 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "419th Fighter Wing"
+	}
+	375 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "433rd Airlift Wing"
+	}
+	361 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "436th Airlift Wing"
+	}
+	364 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "437th Airlift Wing"
 	}
 	357 = {
-		#F-15C/D
-		fighter_equipment_3 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
+		name = "439th Airlift Wing"
+	}
+	363 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "440th Airlift Wing"
+	}
+	373 = {
+		#A-10 Thunderbolt II
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "442nd Fighter Wing"
+	}
+	261 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "445th Airlift Wing"
+	}
+	386 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "446th Airlift Wing"
+	}
+	378 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "452nd Air Mobility Wing"
+	}
+	373 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "482nd Fighter Wing"
+	}
+	373 = {
+		#B-2 Spirit
+		strat_bomber_equipment_3 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "509th Bomb Wing"
+	}
+	931 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "512th Airlift Wing"
+	}
+	359 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "514th Air Moblity Wing"
+	}
+	931 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "908th Airlift Wing"
+	}
+	261 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "910th Airlift Wing"
+	}
+	360 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "910th Airlift Wing"
+	}
+	358 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "910th Airlift Wing"
+	}
+	391 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "934th Airlift Wing"
+	}
 
+	### National Guard Airwings ###
+
+	795 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "103rd Airlift Wing"
+	}
+	357 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "104th Fighter Wing"
+	}
+	358 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "105th Airlift Wing"
+	}
+	358 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "107th Attack Wing"
+	}
+	358 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "105th Airlift Wing"
+	}
+	393 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "110th Wing"
+	}
+	360 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "111th Attack Wing"
+	}
+	361 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "113th Wing"
+	}
+	390 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "114th Fighter Wing"
+	}
+	394 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "115th Fighter Wing"
+	}
+	368 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "118th Wing"
+	}
+	389 = {
+		#MQ-1 Predator
+		tac_bomber_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "119th Wing"
+	}
+	388 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "120th Airlift Wing"
+	}
+	358 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "123rd Airlift Wing"
+	}
+	387 = {
+		#A-10 Thunderbolt II
+		CAS_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "124th Fighter Wing"
+	}
+	366 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "125th Fighter Wing"
+	}
+	393 = {
+		#A-10 Thunderbolt II
+		CAS_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "127th Wing"
+	}
+	896 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "130th Airlift Wing"
+	}
+	391 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "133rd Airlift Wing"
+	}
+	375 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "136th Airlift Wing"
+	}
+	374 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "138th Fighter Wing"
+	}
+	373 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "139th Airlift Wing"
+	}
+	382 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "138th Wing"
+	}
+	385 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "142nd Fighter Wing"
+	}
+	1002 = {
+		#C-130J Super Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "143rd Airlift Wing"
+	}
+	378 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "144th Fighter Wing"
+	}
+	363 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "145th Airlift Wing"
+	}
+	378 = {
+		#C-130J Super Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "146th Airlift Wing"
+	}
+	375 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "147th Attack Wing"
+	}
+	391 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "148th Fighter Wing"
+	}
+	375 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "149th Fighter Wing"
+	}
+	379 = {
+		#C-130J Super Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "152nd Airlift Wing"
+	}
+	381 = {
+		#C-130J Super Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "153rd Airlift Wing"
+	}
+	629 = {
+		#F-15
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "154th Wing"
+	}
+	686 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "156th Wing"
 	}
 	793 = {
-		#F-16C/D
-		fighter_equipment_3 = {
+		#F-35 Lightning II
+		fighter_equipment_4 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "158th Fighter Wing"
 	}
-		### USAF Europe ###
-	125 = {
-		#F-15C/D
-		fighter_equipment_3 = {
+	371 = {
+		#F-15
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "159th Fighter Wing"
 	}
-	125 = {
-		#F-15E
-		fighter_equipment_3 = {
+	377 = {
+		#F-16
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 48
+			amount = 10
 		}
-
+		name = "162nd Fighter Wing"
 	}
-	160 = {
-		#F-16C/D
-		fighter_equipment_3 = {
+	377 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
 			owner = "USA" 
-			amount = 48
+			amount = 10
 		}
-
+		name = "163rd Attack Wing"
 	}
-	42 = {
-		#F-16C/D
-		fighter_equipment_3 = {
+	368 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "164th Airlift Wing"
 	}
-	42 = {
-		#A-10C
+	365 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "165th Airlift Wing"
+	}
+	931 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "166th Airlift Wing"
+	}
+	896 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "167th Airlift Wing"
+	}
+	364 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "169th Fighter Wing"
+	}
+	370 = {
+		#C-17 Globemaster III
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "172nd Airlift Wing"
+	}
+	385 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "174th Fighter Wing"
+	}
+	358 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "174th Attack Wing"
+	}
+	361 = {
+		#A-10 Thunderbolt II
 		CAS_equipment_2 = {
 			owner = "USA" 
-			amount = 48
+			amount = 10
 		}
-
+		name = "175th Wing"
 	}
-
-		### USAF Asia ###
-
-	638 = {
-		#F-16C/D - Gunsan AB Korea
-		fighter_equipment_3 = {
+	463 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "176th Wing"
 	}
-	638 = {
-		#F-16C/D - Misawa AB Japan
-		fighter_equipment_3 = {
+	359 = {
+		#F-16
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "177th Fighter Wing"
 	}
-	638 = {
-		#F-16C/D - Osan AB Korea
-		fighter_equipment_3 = {
+	261 = {
+		#F-16
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 24
+			amount = 10
 		}
-
+		name = "178th Wing"
 	}
-	638 = {
-		#F-15C/D - Kadena AB Japan
-		fighter_equipment_3 = {
+	261 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
 			owner = "USA" 
-			amount = 48
+			amount = 10
 		}
-
+		name = "179th Airlift Wing"
 	}
-	638 = {
-		#A-10C - Osan AB Korea
-		CAS_equipment_2 = {
+	261 = {
+		#F-16
+		fighter_equipment_2 = {
 			owner = "USA" 
-			amount = 22
+			amount = 10
 		}
-
+		name = "180th Fighter Wing"
+	}
+	395 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "182nd Airlift Wing"
+	}
+	383 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "183rd Wing"
+	}
+	367 = {
+		#F-16
+		fighter_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "187th Fighter Wing"
+	}
+	372 = {
+		#MQ-9 Reaper
+		tac_bomber_equipment_2 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "188th Wing"
+	}
+	372 = {
+		#C-130 Hercules
+		transport_plane_equipment_1 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "189th Airlift Wing"
+	}
+	362 = {
+		#F-22 Raptor
+		fighter_equipment_4 = {
+			owner = "USA" 
+			amount = 10
+		}
+		name = "187th Fighter Wing"
 	}
 }
