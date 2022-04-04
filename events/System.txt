@@ -189,7 +189,47 @@ country_event = {
 	}
 }
 
-#system.14 (empty)
+country_event = {
+	id = system.13
+	hidden=yes
+
+	trigger = {
+		country_exists = PRK
+		NOT = { country_exists = KOR }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			remove_core_of = KOR
+		}
+	}
+}
+
+country_event = {
+	id = system.14
+	hidden=yes
+
+	trigger = {
+		country_exists = KOR
+		NOT = { country_exists = PRK }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		every_state = {
+			limit = {
+				is_core_of = PRK
+			}
+			remove_core_of = PRK
+		}
+	}
+}
 
 country_event = {
 	id = system.15

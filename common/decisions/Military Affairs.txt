@@ -146,4 +146,57 @@ military_affairs = {
 		}
 	}
 
+	eradicate_the_zapatistas = {
+		visible = {
+		    original_tag = MEX
+			country_exists = ZAP
+			ZAP = { owns_state = 1179 controls_state = 1179 }
+			NOT = { has_war_with = ZAP }
+			NOT = { is_in_faction_with = ZAP }
+			ZAP = { is_subject = no }
+		}
+
+		available = {
+			is_subject = no
+			owns_state = 475
+			controls_state = 475
+		}
+		
+		complete_effect = {
+			declare_war_on = {
+				target = ZAP
+				type = annex_everything
+			}
+		}
+		
+		icon = red_star
+		
+		days_remove = 10
+
+		fire_only_once = yes
+		cost = 75
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 50
+				OR = {
+					has_government = fascist
+					has_government = islamist
+					has_government = right_wing_nationalist
+					has_government = monarchist
+					threat > 0.8
+				}
+			}
+			modifier = {
+				add = 1
+				OR = {
+					has_government = national_conservative
+					has_government = conservative
+					has_government = classical_liberal
+				}
+			}
+		}
+	}
+
 }

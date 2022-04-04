@@ -2,6 +2,7 @@ foreign_affairs = {
 	
 	declare_neutrality = {
 		visible = {
+			is_subject = no
 			NOT = { 
 				has_idea = idea_neutral_foreign_policy
 				has_idea = violent_non_state_actor
@@ -11,7 +12,6 @@ foreign_affairs = {
 		available = {
 			is_in_faction = no
 			has_war = no
-			is_subject = no
 		}
 
 		complete_effect = {
@@ -566,6 +566,58 @@ foreign_affairs = {
 			modifier = {
 				factor = 50
 				date > 2019.8.1
+			}
+		}
+	}
+
+	negotiate_with_the_zapatistas = {
+	
+		visible = {
+		    original_tag = MEX
+			country_exists = ZAP
+			ZAP = { owns_state = 1179 controls_state = 1179 }
+			NOT = { has_war_with = ZAP }
+			ZAP = { is_subject = no }
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { 
+				OR = {
+					has_country_flag = coalition_fascist 
+					has_country_flag = coalition_islamist
+					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_monarchist
+				}
+			}
+		}
+		
+		complete_effect = {
+			ZAP = { country_event = mexico.1 }
+		}
+		
+		icon = red_star
+
+		fire_only_once = yes
+		
+		cost = 75
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+					has_government = social_liberal
+					has_government = social_democrat
+					has_government = progressive
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					has_government = socialist
+					has_government = communist
+				}
 			}
 		}
 	}
