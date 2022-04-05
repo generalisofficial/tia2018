@@ -1,31 +1,47 @@
 ﻿division_template = {
 	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		rocket_artillery = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade (Tank)"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		recon = { x = 0 y = 3 }
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
 	}
 }
 
 units = {
-	
 	division = {
 		name = "1st Mechanized Brigade"
-		location = 11522	#Topolcany
+		location = 3484 #Topolcany
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "2nd Mechanized Brigade"
-		location = 3550		#Presov
+		location = 3581	#Presov
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
@@ -34,10 +50,27 @@ units = {
 ### Air OOB ###
 air_wings = {
 	70 = {
-		#MiG-29AS - - If  80s equipment is added should be downgraded.
-		fighter_equipment_3 = {
+		#MiG-29AS
+		fighter_equipment_2 = {
 			owner = "SLO" 
-			amount = 12
+			amount = 11
 		}
+		name = "1st Tactical Squadron"
+	}
+	70 = {
+		#L-410 + C-27J
+		transport_plane_equipment_1 = {
+			owner = "SLO" 
+			amount = 7
+		}
+		name = "Transport Squadron"
+	}
+	70 = {
+		#L-410
+		scout_plane_equipment_1 = {
+			owner = "SLO" 
+			amount = 1
+		}
+		name = "Recon Squadron"
 	}
 }

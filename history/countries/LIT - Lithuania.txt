@@ -2,6 +2,14 @@
 
 oob = "LIT_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "LIT_2018_naval_mtg"
+	else = {
+		set_naval_oob = "LIT_2018_naval_legacy"
+	}
+}
+
 set_convoys = 58
 
 set_country_flag = country_language_lithuanian
@@ -41,9 +49,10 @@ set_technology = {
 	
 	## Artillery ##
 	gw_artillery = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
 	interwar_antitank = 1
 	interwar_antiair = 1
-
 	
 	## Air ##
 	CAS1 = 1
@@ -63,6 +72,7 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_patrol_boat = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
@@ -73,6 +83,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -153,3 +164,36 @@ recruit_character = LIT_gintautas_paluckas
 recruit_character = LIT_saulius_skvernelis
 set_country_flag = socialist_intended_no_leader
 recruit_character = LIT_giedrius_grabauskas
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Hunt Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Flyvefisken Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}	

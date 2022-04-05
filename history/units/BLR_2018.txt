@@ -1,150 +1,142 @@
 ﻿division_template = {
-	name = "Mobile Brigade"
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		motorized = { x = 0 y = 4 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Spetsnaz Brigade"
+	name = "Rifle Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
-		mechanized = { x = 0 y = 4 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "Mechanized Brigade"
+	name = "Territorial Defence Brigade"
+	division_names_group = GENERIC_GAR_02
 	
 	regiments = {
-		modern_armor = { x = 0 y = 0 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		light_mechanized = { x = 1 y = 2 }
-		light_mechanized = { x = 1 y = 3 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 	}
 	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
-}
-division_template = {
-	name = "Paratrooper Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-	}
-	support = {
-		field_hospital = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-	
-	priority = 2
 }
 
 units = {
-	
 	division = {
-		name = "38th Mobile Brigade"
-		location = 3392
-		division_template = "Mobile Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "103rd Mobile Brigade"
-		location = 6371
-		division_template = "Mobile Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "6th Mechanized Brigade"
+		name = "6th Guards Kiev-Berlin Mechanised Brigade"
 		location = 3393
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "11th Mechanized Brigade"
+		name = "11th Guards Berlin-Carpathian Mechanised Brigade"
 		location = 3309
+		division_template = "Rifle Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19th Guards Mechanized Brigade"
+		location = 6371
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "120th 'Rogachev' Mechanized Brigade"
+		name = "120th 'Rogachev' Mechanised Brigade"
 		location = 11370
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
-		name = "5th Spetsnaz Brigade"
-		location = 386
-		division_template = "Spetsnaz Brigade"
-		start_experience_factor = 0.3
+		name = "Brest Territorial Defence Brigade"
+		location = 3392 #Brest
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
 	}
-	
 	division = {
-		name = "Spetsnaz Airborne"
-		location = 386
-		division_template = "Paratrooper Brigade"
-		start_experience_factor = 0.3
+		name = "Hrodna Territorial Defence Brigade"
+		location = 318 #Hrodna
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
 	}
-	
+	division = {
+		name = "Gomel Territorial Defence Brigade"
+		location = 9288 #Gomel
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Mogilev Territorial Defence Brigade"
+		location = 9289 #Gomel
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Vitebsk Territorial Defence Brigade"
+		location = 11241 #Vitebsk
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Minsk Territorial Defence Brigade"
+		location = 11370 #Minsk
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Minsk City Defence Brigade"
+		location = 11370 #Minsk
+		division_template = "Territorial Defence Brigade"
+		start_experience_factor = 0.1
+	}
 }
 
 ### Air OOB ###
 air_wings = {
-	206 = {
-		#MiG-29BM
-		fighter_equipment_3 = {
+	808 = {
+		#MiG-29
+		fighter_equipment_2 = {
 			owner = "BLR" 
-			amount = 17
+			amount = 39
 		}
-
-	}
-	95 = {
-		#MiG-29BM
-		fighter_equipment_3 = {
-			owner = "BLR" 
-			amount = 20
-		}
-
-	}
-	206 = {
-		#Su-25 - If  80s equipment is added should be downgraded.
-		CAS_equipment_2 = {
-			owner = "BLR" 
-			amount = 34
-		}
+		name = "61st Fighter Air Base"
 	}
 	94 = {
-		#Su-25 - If  80s equipment is added should be downgraded.
+		#Su-25
 		CAS_equipment_2 = {
 			owner = "BLR" 
-			amount = 34
+			amount = 68
 		}
+		name = "116th Assault Air Base"
+	}
+	206 = {
+		#Il-76 + An-26
+		transport_plane_equipment_1 = {
+			owner = "BLR" 
+			amount = 5
+		}
+		ame = "50th Composite Air Base"
 	}
 }

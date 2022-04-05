@@ -1,0 +1,18 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Polish Navy"
+		naval_base = 9263 #Gdynia
+		task_force = {				
+			name = "Polish Navy"			
+			location = 9263 #Gdynia
+			ship = { name = "ORP Orzel" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Orkan" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Piorun" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Grom" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Kaszub" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Generał Kazimierz Pułaski" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Generał Tadeusz Kościuszko" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+		}	
+	}
+}

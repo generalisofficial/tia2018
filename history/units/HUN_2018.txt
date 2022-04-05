@@ -1,64 +1,45 @@
 ﻿division_template = {
-	name = "Mechanized Brigade"
+	name = "Mechanized Brigade (Tank)"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
 		modern_armor = { x = 1 y = 0 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "Motorized Brigade"
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Support Brigade"
-	
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 
-
 units = {
-	
 	division = {
 		name = "5th Infantry Brigade"
-		location = 11659
+		location = 11659 #Tata
 		division_template = "Mechanized Brigade"
 		start_experience_factor = 0.3
 	}
-	
 	division = {
 		name = "25th Infantry Brigade"
-		location = 11663
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Hungarian Army Support Brigade"
-		location = 9660
-		division_template = "Support Brigade"
+		location = 11663 #Debrece
+		division_template = "Mechanized Brigade (Tank)"
 		start_experience_factor = 0.3
 	}
 }
@@ -66,11 +47,11 @@ units = {
 ### Air OOB ###
 air_wings = {
 	43 = {
-		#MiG-29 - Proposed Number
+		#JAS 39 Gripen - Kecskemét
 		fighter_equipment_3 = {
 			owner = "HUN" 
-			amount = 24
+			amount = 14
 		}
-
+		name = "Tactical Fighter Squadron 'Puma'"
 	}
 }

@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -17,6 +18,7 @@
 
 division_template = {
 	name = "Infnatry Brigade"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -28,7 +30,7 @@ division_template = {
 	}
 	
 	support = {
-		recon_company = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		engineer = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 1 }
@@ -38,6 +40,7 @@ division_template = {
 
 division_template = {
 	name = "Infnatry Brigade (Small)"
+	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -47,7 +50,7 @@ division_template = {
 	}
 	
 	support = {
-		recon_company = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		engineer = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 1 }
@@ -78,61 +81,61 @@ units = {
 		name = "31. Canadian Brigade Group"
 		location = 722 #London, Canada
 		division_template = "Infnatry Brigade"
-		start_experience_factor = 0.2 #Reserves
+		start_experience_factor = 0.1 #Reserves
 	}
 	division = {
 		name = "32. Canadian Brigade Group"
 		location = 3775 #Toronto
 		division_template = "Infnatry Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "33. Canadian Brigade Group"
 		location = 3778 #Ottawa
 		division_template = "Infnatry Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "34. Canadian Brigade Group"
 		location = 4345 #Montreal
 		division_template = "Infnatry Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "35. Canadian Brigade Group"
 		location = 12149 #Quebec
 		division_template = "Infnatry Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "36. Canadian Brigade Group"
 		location = 7361 #Halifax
 		division_template = "Infnatry Brigade (Small)"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "37. Canadian Brigade Group"
 		location = 1424 #Quebec
 		division_template = "Infnatry Brigade (Small)"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "38. Canadian Brigade Group"
 		location = 4872 #Winnipeg
 		division_template = "Infnatry Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "39. Canadian Brigade Group"
 		location = 1408 #Quebec
 		division_template = "Infnatry Brigade (Small)"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "41. Canadian Brigade Group"
 		location = 1262 #Quebec
 		division_template = "Infnatry Brigade (Small)"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 	}
 }
 
