@@ -212,3 +212,29 @@ country_event = {
 		}
 	}
 }
+
+news_event = { #(Country) calls snap legislative elections
+	id = politics.8
+	title = politics.8.t
+	desc = politics.8.d
+	picture = GFX_news_event_election
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.8.o1
+		trigger = {
+			original_tag = FROM
+		}
+	}
+	
+	option = {
+		name = politics.8.o2
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+		}
+	}
+}

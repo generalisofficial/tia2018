@@ -437,7 +437,7 @@ domestic_affairs = {
 		
 		icon = ballot_box
 		
-		cost = 25
+		cost = 50
 		days_remove = 30
 
 		remove_effect = {
@@ -465,8 +465,12 @@ domestic_affairs = {
 		
 		icon = parliament
 		
-		cost = 25
+		cost = 50
 		days_remove = 30
+
+		complete_effect = {
+			news_event = politics.8
+		}
 
 		remove_effect = {
 			country_event = election.2
@@ -474,6 +478,10 @@ domestic_affairs = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				factor = 15
+				@current_party_ideology_group > 0.51
+			}
 		}
 		
 	}
