@@ -35,9 +35,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-				has_relation_modifier = {
-					target = FROM
-					modifier = macedonia_naming_dispute
+				original_tag = GRE
+				FROM = { 
+					original_tag = MAC 
+					NOT = { has_cosmetic_tag = MAC_NORTH }
 				}
 			}
 		}

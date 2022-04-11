@@ -259,6 +259,79 @@ country_event = {
 	
 	immediate = {
 	    quickset_parliament = yes
+		if = {
+			limit = {
+				has_government = communist
+			}
+			set_variable = { ROOT.Coalition = communist_seats }
+		}
+		if = {
+			limit = {
+				has_government = socialist
+			}
+			set_variable = { ROOT.Coalition = socialist_seats }
+		}
+		if = {
+			limit = {
+				has_government = progressive
+			}
+			set_variable = { ROOT.Coalition = progressive_seats }
+		}
+		if = {
+			limit = {
+				has_government = social_democrat
+			}
+			set_variable = { ROOT.Coalition = social_democrat_seats }
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			set_variable = { ROOT.Coalition = social_liberal_seats }
+		}
+		if = {
+			limit = {
+				has_government = classical_liberal
+			}
+			set_variable = { ROOT.Coalition = classical_liberal_seats }
+		}
+		if = {
+			limit = {
+				has_government = conservative
+			}
+			set_variable = { ROOT.Coalition = conservative_seats }
+		}
+		if = {
+			limit = {
+				has_government = national_conservative
+			}
+			set_variable = { ROOT.Coalition = national_conservative_seats }
+		}
+		if = {
+			limit = {
+				has_government = monarchist
+			}
+			set_variable = { ROOT.Coalition = monarchist_seats }
+		}
+		if = {
+			limit = {
+				has_government = right_wing_nationalist
+			}
+			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		}
+		if = {
+			limit = {
+				has_government = fascist
+			}
+			set_variable = { ROOT.Coalition = fascist_seats }
+		}
+		if = {
+			limit = {
+				has_government = islamist
+			}
+			set_variable = { ROOT.Coalition = islamist_seats }
+		}
+		set_parliament_graphics = yes
 	}
 	
 	option = {
@@ -268,6 +341,7 @@ country_event = {
 			limit = {
 				minority_government = yes
 			}
+			add_political_power = -50
 			add_ideas = minority_government
 		}
     }
@@ -980,4 +1054,102 @@ country_event = {
 			}
 		}
 	}
+}
+
+#Election - Midterm (USA)
+country_event = {
+	id = election.6
+	title = election.6.t
+	desc = election.6.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	    quickset_parliament = yes
+		if = {
+			limit = {
+				has_government = communist
+			}
+			set_variable = { ROOT.Coalition = communist_seats }
+		}
+		if = {
+			limit = {
+				has_government = socialist
+			}
+			set_variable = { ROOT.Coalition = socialist_seats }
+		}
+		if = {
+			limit = {
+				has_government = progressive
+			}
+			set_variable = { ROOT.Coalition = progressive_seats }
+		}
+		if = {
+			limit = {
+				has_government = social_democrat
+			}
+			set_variable = { ROOT.Coalition = social_democrat_seats }
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			set_variable = { ROOT.Coalition = social_liberal_seats }
+		}
+		if = {
+			limit = {
+				has_government = classical_liberal
+			}
+			set_variable = { ROOT.Coalition = classical_liberal_seats }
+		}
+		if = {
+			limit = {
+				has_government = conservative
+			}
+			set_variable = { ROOT.Coalition = conservative_seats }
+		}
+		if = {
+			limit = {
+				has_government = national_conservative
+			}
+			set_variable = { ROOT.Coalition = national_conservative_seats }
+		}
+		if = {
+			limit = {
+				has_government = monarchist
+			}
+			set_variable = { ROOT.Coalition = monarchist_seats }
+		}
+		if = {
+			limit = {
+				has_government = right_wing_nationalist
+			}
+			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		}
+		if = {
+			limit = {
+				has_government = fascist
+			}
+			set_variable = { ROOT.Coalition = fascist_seats }
+		}
+		if = {
+			limit = {
+				has_government = islamist
+			}
+			set_variable = { ROOT.Coalition = islamist_seats }
+		}
+		set_parliament_graphics = yes
+	}
+	
+	option = {
+		name = election.6.o1
+		custom_effect_tooltip = TT_parliamentary_election_results
+		if = {
+			limit = {
+				minority_government = yes
+			}
+			add_political_power = -50
+			add_ideas = minority_government
+		}
+    }
 }

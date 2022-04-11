@@ -2,9 +2,6 @@
 
 oob = "RWA_2018"
 
-set_convoys = 10
-
-
 set_country_flag = country_language_english
 set_country_flag = country_language_french
 set_country_flag = country_language_kinyarwanda
@@ -115,17 +112,17 @@ set_country_flag = catholic
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
+set_variable = { socialist_seats = 1.88 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 13.03 }
-set_variable = { social_liberal_seats = 9.29 }
+set_variable = { social_democrat_seats = 13.2 }
+set_variable = { social_liberal_seats = 9.43 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
+set_variable = { conservative_seats = 1.88 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 77.68 }
+set_variable = { right_wing_nationalist_seats = 71.73 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
+set_variable = { islamist_seats = 1.88 }
 
 # Coalition
 set_country_flag = has_parliament
@@ -140,13 +137,20 @@ set_politics = {
 }
 
 set_popularities = {
-    right_wing_nationalist = 74.88
-	social_democrat = 13.37
-	social_liberal = 7.20
-    progressive = 4.55
+	right_wing_nationalist = 71.73
+	social_democrat = 13.2
+	social_liberal = 7.54
+    progressive = 3.77
+	conservative = 1.88
+	islamist = 1.88
 }
 
+set_country_flag = islamist_intended_no_leader
+recruit_character = RWA_sylvestre_mudacumura
 recruit_character = RWA_paul_kagame
-recruit_character = RWA_vincent_biruta
+recruit_character = RWA_yuhi_vi
+recruit_character = RWA_agnes_mukabaranga
 recruit_character = RWA_prosper_higiro
+recruit_character = RWA_vincent_biruta
 recruit_character = RWA_frank_habineza
+set_country_flag = socialist_intended_no_leader

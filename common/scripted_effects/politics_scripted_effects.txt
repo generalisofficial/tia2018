@@ -2032,6 +2032,36 @@ election_pulse = {
 			ideology = right_wing_nationalist_ideology
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = SIE
+			has_country_leader = {
+				name = "Ernest Bai Koroma"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Samura Kamara"
+			picture = GFX_Portrait_SIE_Samura_Kamara
+			ideology = democratic_socialist
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = MEX
+			has_country_leader = {
+				name = "Enrique Peña Nieto"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+			name = "José Antonio Meade"
+			picture = GFX_Portrait_MEX_Jose_Antonio_Meade
+			ideology = classical_liberal_ideology
+		}
+	}
 }
 
 election_effect = {

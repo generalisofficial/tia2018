@@ -1,6 +1,39 @@
 characters={
     #Starting - Political
-	CRO_andrej_plenković={
+	CRO_karlo_starcevic={
+		name="Karlo Starčević"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CRO_Karlo_Starcevic
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
+	CRO_miroslav_skoro={
+		name="Miroslav Škoro"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CRO_Miroslav_Skoro
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	CRO_marijan_pavlicek={
+		name="Marijan Pavliček"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CRO_Marijan_Pavlicek
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
+	CRO_andrej_plenkovic={
 		name="Andrej Plenković"
 		portraits={
 			civilian={
@@ -11,7 +44,29 @@ characters={
 			ideology=christian_democrat
 		}
 	}
-	CRO_davor_bernardić={
+	CRO_darinko_kosor={
+		name="Darinko Kosor"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CRO_Darinko_Kosor
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
+	CRO_ivan_vrdoljak={
+		name="Ivan Vrdoljak"
+		portraits={
+			civilian={
+				large=GFX_Portrait_CRO_Ivan_Vrdoljak
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+		}
+	}
+	CRO_davor_bernardic={
 		name="Davor Bernardić"
 		portraits={
 			civilian={
@@ -20,61 +75,6 @@ characters={
 		}
 		country_leader={
 			ideology=social_democrat_ideology
-		}
-	}
-	CRO_božo_petrov={
-		name="Božo Petrov"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CRO_Bozo_Petrov
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
-		}
-	}
-	CRO_anka_mraktaritaš={
-		name="Anka Mrak-Taritaš"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CRO_Anka_Mrak_Taritas
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
-	CRO_ivan_vilibor_sinčić={
-		name="Ivan Vilibor Sinčić"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CRO_Ivan_Vilibor_Sincic
-			}
-		}
-		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	CRO_karlo_starčević={
-		name="Karlo Starčević"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CRO_Karlo_Starcevic
-			}
-		}
-		country_leader={
-			ideology=right_wing_nationalist_ideology
-		}
-	}
-	CRO_vlado_bušić={
-		name="Vlado Bušić"
-		portraits={
-			civilian={
-				large=GFX_Portrait_CRO_Vlado_Busic
-			}
-		}
-		country_leader={
-			ideology=marxist_leninist
 		}
 	}
 	CRO_luka_keller={
@@ -88,420 +88,15 @@ characters={
 			ideology=green
 		}
 	}
-	CRO_davor_trbuha={
-		name="Davor Trbuha"
+	CRO_vlado_busic={
+		name="Vlado Bušić"
 		portraits={
 			civilian={
-				large=GFX_Portrait_CRO_Davor_Trbuha
+				large=GFX_Portrait_CRO_Vlado_Busic
 			}
 		}
 		country_leader={
-			ideology=fascist_ideology
-		}
-	}
-	CRO_mirko_Šundov={
-		name="Mirko Šundov"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Mirko_Sundov
-			}
-		}
-		field_marshal={
-			traits={ old_guard thorough_planner }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_slavko_barić={
-		name="Slavko Barić"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Slavko_Baric
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_mate_ostović={
-		name="Mate Ostović"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Mate_Ostovic
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_boris_Šerić={
-		name="Boris Šerić"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Boris_Seric
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_bozo_poljak={
-		name="Bozo Poljak"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Bozo_Poljak
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_davor_petek={
-		name="Davor Petek"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Davor_Petek
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_dominik_ban={
-		name="Dominik Ban"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Dominik_Ban
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_drago_matanović={
-		name="Drago Matanović"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Drago_Matanovic
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_dražen_Šćuri={
-		name="Dražen Šćuri"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Drazen_Scuri
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_gordana_garašić={
-		name="Gordana Garašić"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Gordana_Garasic
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_ivica_kinder={
-		name="Ivica Kinder"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Ivica_Kinder
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_mato_matanović={
-		name="Mato Matanović"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Mato_Matanovic
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_mijo_kožić={
-		name="Mijo Kožić"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Mijo_Kozic
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_miroslav_kovać={
-		name="Miroslav Kovać"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Miroslav_Kovac
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_mladen_fuzul={
-		name="Mladen Fuzul"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Mladen_Fuzul
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_niko_jurilj={
-		name="Niko Jurilj"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Niko_Jurilj
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_slaven_zdilar={
-		name="Slaven Zdilar"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Slaven_Zdilar
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_tihomir_zebeć={
-		name="Tihomir Zebeć"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Tihomir_Zebec
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_perica_turalija={
-		name="Perica Turalija"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Perica_Turalija
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_zoran_bozović={
-		name="Zoran Bozović"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Zoran_Bozovic
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_zdravko_kardum={
-		name="Zdravko Kardum"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Zdravko_Kardum
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_predrag_stipanović={
-		name="Predrag Stipanović"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Predrag_Stipanovic
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_robert_hranj={
-		name="Robert Hranj"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Robert_Hranj
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CRO_marin_stošić={
-		name="Marin Stošić"
-		portraits={
-			army={
-				large=GFX_Portrait_CRO_Portrait_Marin_Stosic
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+			ideology=marxist_leninist
 		}
 	}
 	#Starting - Military

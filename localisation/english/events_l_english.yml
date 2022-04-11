@@ -29,6 +29,9 @@
  election.5.d: "As the election campaign draws to a close, the final TV debate between the Government and the Opposition is now taking place. While most voters have already decided which party to vote for, the result of this debate may influence a few swing voters. Which side wins the debate?"
  election.5.o1: "The Government"
  election.5.o2: "The Opposition"
+ election.6.t: "[GetYear] Midterm Elections"
+ election.6.d: "As 2 years have passed since the most recent presidential election, it is time for the regularly scheduled midterm elections, where control of the [ROOT.GetParliamentName] until the next presidential election will be decided. Will the majority belong to the President or the Opposition?"
+ election.6.o1: "§PCertify Election Results§!"
 
  #Factions
  factions.1.t: "[From.GetNameDef] joins NATO"
@@ -72,7 +75,6 @@
  sweden.4.t: "Vänsterpartiet - New Party Leader"
  sweden.4.d: "Jonas Stöstedt of the Left Party has stepped down from his position, after announcing his intention to do so several months ago. Despite a brief internal debate within the party, deputy leader Nooshi Dadgostar was easily chosen as Sjöstedt's successor."
  sweden.4.o1: "Makes sense."
-
 
  #Denmark
  denmark.1.t: "Venstre - New Party Leader"
@@ -335,7 +337,7 @@
  politics.1.o1: "Such shameful behavior!"
  politics.1.o2: "Such ridiculous allegations!"
  politics.2.t: "[FROM.GetAdjective] transition to democracy"
- politics.2.d: "Human rights organizations and the United Nations have given rare praise to the government of [FROM.GetNonIdeologyNameDef], as the nation has declared its intent to legalize opposition parties and hold elections. While the ruling [FROM.GetRulingParty] of the now-former one-party state remains in power for the time being, opposition parties are now able to oust the government at the next election. If these elections will be free and fair however remains to be seen." 
+ politics.2.d: "Human rights organizations and the United Nations have given praise to the government of [FROM.GetNonIdeologyNameDef], led by [FROM.GetLeader], as the nation has declared its intent to officially allow the existence of opposition parties and hold elections. While the ruling [FROM.GetRulingParty] remains in power for the time being, opposition parties will now be able to oust the government at the next election. If these elections will be free and fair however remains to be seen." 
  politics.2.o1: "A bold move!"
  politics.2.o2: "We love democracy!"
  politics.3.t: "[FROM.GetNonIdeologyNameDef] condemned after totalitarian turn"
@@ -696,8 +698,20 @@ algeria.1.o2: "Do not run."
 #China
 china.1.t: "Taiwan declares independence"
 china.1.d: "Those capitalist dogs in Taiwan have declared independence from China! They have clearly underestimated the power of the People's Liberation Army. Do we proceed to reclaim the island once and for all, or do we want to avoid World War III at all costs?"
-china.1.o1: "Invade now!"
-china.1.o2: "We can't risk it."
+china.1.o1: "We must liberate them immediately!"
+china.2.t: "Taiwan accepts becoming a Special Administrative Region"
+china.2.d: "For many years, we have offered the traitorous government of Taiwan the opportunity to become a Special Administrative Region within China, just like Macao and Hong Kong. Against all odds, they have finally accepted the offer! China is finally whole."
+china.2.o1: "A pleasant surprise!"
+china.3.t: "An Independent Taiwan"
+china.3.d: "Ever since the \"end\" of the Chinese Civil War in 1949, the government of the Republic of China has remained exiled on the island of Taiwan as a rival government, despite being diplomatically isolated since 1971. Today's announcement by [CHI.GetLeader] has however changed the situation drastically; Taiwan is declaring independence from China as [CHI.GetNameWithFlag], abandoning all claims to the Chinese mainland. However, [PRC.GetNameWithFlag], having previously threatened to invade the island if independence was declared, is now likely to attempt to retake the island by force. Will this spark the Third World War?"
+china.3.o1: "An irresponsible escalation!"
+china.3.o2: "We are finally free!"
+china.3.o3: "We must stop this immediately!"
+china.4.t: "The Taiwan Special Administrative Region"
+china.4.d: "Ever since the \"end\" of the Chinese Civil War in 1949, the government of the Republic of China has remained exiled on the island of Taiwan as a rival government, despite being diplomatically isolated since 1971. Today's announcement by [CHI.GetLeader] has however changed the situation drastically; Taiwan is accepting the offer from [PRC.GetNameWithFlag] to become a \"Special Administrative Region\" within China, as Hong Kong and Macao did in 1997. Taiwan has thereby completely abandoned all hopes of national sovereignty, and begun the process of re-integration into [PRC.GetNameWithFlag]."
+china.4.o1: "Up to them."
+china.4.o2: "Had to be done."
+china.4.o3: "A glorious victory!"
 
 #Moldova
 moldova.1.t: "Moldova applies for Union"

@@ -451,7 +451,7 @@ domestic_affairs = {
 	}
 
 	dissolve_parliament = {
-		
+
 		visible = {
 			has_country_flag = has_parliament
 			has_idea = presidential_republic
@@ -480,7 +480,11 @@ domestic_affairs = {
 			factor = 0
 			modifier = {
 				factor = 15
-				@current_party_ideology_group > 0.51
+				check_variable = {
+					var = @current_party_ideology_group
+					value = 51
+					compare = greater_than_or_equals
+				}
 			}
 		}
 		

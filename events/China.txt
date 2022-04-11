@@ -10,34 +10,95 @@ country_event = {
 
 	option = {
 		name = china.1.o1
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 100
-				strength_ratio = {
-					tag = FROM
-					ratio > 1
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+#Taiwan accepts becoming a Special Administrative Region
+country_event = {
+	id = china.2
+	title = china.2.t
+	desc = china.2.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = china.2.o1
+		add_political_power = 100
+	}
+}
+
+news_event = { #An Independent Taiwan
+	id = china.3
+	title = china.3.t
+	desc = china.3.d
+	picture = GFX_news_event_taiwan_independence
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = china.3.o1
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					original_tag = PRC
 				}
 			}
 		}
-		declare_war_on = {
-			target = FROM
-			type = annex_everything
+	}
+	
+	option = {
+		name = china.3.o2
+		trigger = {
+			original_tag = CHI
 		}
 	}
 
 	option = {
-		name = china.1.o2
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 100
-				strength_ratio = {
-					tag = FROM
-					ratio < 1
+		name = china.3.o3
+		trigger = {
+			original_tag = PRC
+		}
+	}
+}
+
+news_event = { #The Taiwan Special Administrative Region
+	id = china.4
+	title = china.4.t
+	desc = china.4.d
+	picture = GFX_news_event_peoples_republic_of_china
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = china.4.o1
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHI
+					original_tag = PRC
 				}
 			}
 		}
-		add_political_power = -100
+	}
+	
+	option = {
+		name = china.4.o2
+		trigger = {
+			original_tag = CHI
+		}
+	}
+
+	option = {
+		name = china.4.o3
+		trigger = {
+			original_tag = PRC
+		}
 	}
 }
