@@ -1,6 +1,5 @@
 ﻿capital = 6
 
-
 set_country_flag = country_language_dutch
 set_country_flag = country_language_french
 set_country_flag = country_language_bulgarian
@@ -32,26 +31,20 @@ add_ideas = {
 	parliamentary_system
 }
 
-set_country_flag = catholic
-
 #European Parliament
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 5.6 }
-set_variable = { progressive_seats = 7.3 }
-set_variable = { social_democrat_seats = 24.4 }
-set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 7.0 }
-set_variable = { conservative_seats = 43.9 }
-set_variable = { national_conservative_seats = 5.2 }
-set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 6.6 }
-set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
+set_variable = { pro_european_seats = 69.85 }
+set_variable = { eurosceptic_seats = 30.15 }
 
-# Coalition
-set_country_flag = has_parliament
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_variable = { INITIATIVE_seats = 0.26 }
+set_variable = { GUE_NGL_seats = 6.94 }
+set_variable = { GREENS_EFA_seats = 6.8 }
+set_variable = { SD_seats = 25.23 }
+set_variable = { ALDE_seats = 9.07 }
+set_variable = { EPP_seats = 28.75 }
+set_variable = { ECR_seats = 9.87 }
+set_variable = { ID_seats = 10.94 }
+set_variable = { APF_seats = 0.53 }
+set_variable = { NI_seats = 1.61 }
 
 set_politics = {	
 	ruling_party = conservative

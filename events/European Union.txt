@@ -134,3 +134,110 @@ news_event = { #(Country) leaves the European Union
 		}
 	}
 }
+
+#European Parliament Election (Trigger)
+country_event = {
+	id = european_union.5
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clear_variable = EUU.eurosceptic_seats
+		clear_variable = EUU.pro_european_seats 
+		clear_variable = EUU.INITIATIVE_seats
+		clear_variable = EUU.GUE_NGL_seats
+		clear_variable = EUU.GREENS_EFA_seats
+		clear_variable = EUU.SD_seats
+		clear_variable = EUU.ALDE_seats
+		clear_variable = EUU.EPP_seats
+		clear_variable = EUU.ECR_seats
+		clear_variable = EUU.ID_seats
+		clear_variable = EUU.APF_seats
+		clear_variable = EUU.NI_seats
+		every_country = {
+			limit = {
+				has_idea = idea_european_union_member
+			}
+			country_event = european_union.6
+		}
+		country_event = european_union.7
+	}
+}
+
+#European Parliament Election (Countries)
+country_event = {
+	id = european_union.6
+	title = european_union.6.t
+	desc = european_union.6.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_to_variable = { EUU.election_participants = 1 }
+		add_to_variable = { EUU.INITIATIVE_seats= party_popularity@communist }
+		add_to_variable = { EUU.GUE_NGL_seats = party_popularity@socialist }
+		add_to_variable = { EUU.GREENS_EFA_seats = party_popularity@progressive }
+		add_to_variable = { EUU.SD_seats = party_popularity@social_democrat }
+		add_to_variable = { EUU.ALDE_seats = party_popularity@social_liberal }
+		add_to_variable = { EUU.ALDE_seats = party_popularity@classical_liberal }
+		add_to_variable = { EUU.EPP_seats = party_popularity@conservative }
+		add_to_variable = { EUU.ECR_seats = party_popularity@national_conservative }
+		add_to_variable = { EUU.ID_seats = party_popularity@right_wing_nationalist }
+		add_to_variable = { EUU.APF_seats = party_popularity@fascist }
+		add_to_variable = { EUU.NI_seats = party_popularity@monarchist }
+		add_to_variable = { EUU.NI_seats = party_popularity@islamist }
+	}
+
+	option = {
+		name = european_union.6.o1
+	}
+}
+
+#European Parliament Election (Math)
+country_event = {
+	id = european_union.7
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		# Election Math
+		multiply_variable = { EUU.INITIATIVE_seats = 100 }
+		divide_variable = { EUU.INITIATIVE_seats = EUU.election_participants }
+		multiply_variable = { EUU.GUE_NGL_seats = 100 }
+		divide_variable = { EUU.GUE_NGL_seats = EUU.election_participants }
+		multiply_variable = { EUU.GREENS_EFA_seats = 100 }
+		divide_variable = { EUU.GREENS_EFA_seats = EUU.election_participants }
+		multiply_variable = { EUU.SD_seats = 100 }
+		divide_variable = { EUU.SD_seats = EUU.election_participants }
+		multiply_variable = { EUU.ALDE_seats = 100 }
+		divide_variable = { EUU.ALDE_seats = EUU.election_participants }
+		multiply_variable = { EUU.EPP_seats = 100 }
+		divide_variable = { EUU.EPP_seats = EUU.election_participants }
+		multiply_variable = { EUU.ECR_seats = 100 }
+		divide_variable = { EUU.ECR_seats = EUU.election_participants }
+		multiply_variable = { EUU.ID_seats = 100 }
+		divide_variable = { EUU.ID_seats = EUU.election_participants }
+		multiply_variable = { EUU.APF_seats = 100 }
+		divide_variable = { EUU.APF_seats = EUU.election_participants }
+		multiply_variable = { EUU.NI_seats = 100 }
+		divide_variable = { EUU.NI_seats = EUU.election_participants }
+		clear_variable = EUU.election_participants
+
+		# Political Groups Setup
+		add_to_variable = { EUU.INITIATIVE_seats= EUU.eurosceptic_seats }
+		add_to_variable = { EUU.GUE_NGL_seats = EUU.eurosceptic_seats }
+		add_to_variable = { EUU.GREENS_EFA_seats = EUU.pro_european_seats }
+		add_to_variable = { EUU.SD_seats = EUU.pro_european_seats }
+		add_to_variable = { EUU.ALDE_seats = EUU.pro_european_seats }
+		add_to_variable = { EUU.EPP_seats = EUU.pro_european_seats }
+		add_to_variable = { EUU.ECR_seats =  EUU.eurosceptic_seats }
+		add_to_variable = { EUU.ID_seats = EUU.eurosceptic_seats }
+		add_to_variable = { EUU.APF_seats =  EUU.eurosceptic_seats }
+		add_to_variable = { EUU.NI_seats =  EUU.eurosceptic_seats }
+
+		# UI Setup
+		set_EU_parliament_graphics = yes
+	}
+}

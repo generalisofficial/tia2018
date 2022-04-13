@@ -11,6 +11,7 @@ foreign_affairs = {
 			country_exists = PRC
 			country_exists = CHI
 			NOT = { has_global_flag = taiwan_independence }
+			NOT = { has_global_flag = ROC_victory }
 			is_sovereign_state = yes
 			has_country_flag = recognizes_the_roc
 		}
@@ -62,6 +63,7 @@ foreign_affairs = {
 			country_exists = PRC
 			country_exists = CHI
 			NOT = { has_global_flag = taiwan_independence }
+			NOT = { has_global_flag = ROC_victory }
 			is_sovereign_state = yes
 			NOT = { has_country_flag = recognizes_the_roc }
 		}
@@ -453,6 +455,7 @@ foreign_affairs = {
 		visible = {
 			original_tag = CHI
 			NOT = { has_cosmetic_tag = TAIWAN }
+			NOT = { has_global_flag = ROC_victory }
 			country_exists = PRC
 			owns_state = 524
 		}
@@ -463,9 +466,9 @@ foreign_affairs = {
 		
 		complete_effect = {
 			custom_effect_tooltip = TT_taiwan_independence
+			set_cosmetic_tag = TAIWAN
 			news_event = china.3
 			set_global_flag = taiwan_independence
-			set_cosmetic_tag = TAIWAN
 			every_state = {
 				limit = {
 					OR = {
@@ -534,6 +537,7 @@ foreign_affairs = {
 		visible = {
 			original_tag = CHI
 			NOT = { has_cosmetic_tag = TAIWAN }
+			NOT = { has_global_flag = ROC_victory }
 			country_exists = PRC
 			owns_state = 524
 		}

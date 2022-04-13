@@ -4,10 +4,11 @@ ideas = {
 		#United Nations
 		idea_united_nations_security_council_member = {
 			picture = united_nations_gold
-		
-			allowed = { always = no }
-			removal_cost = -1
 			
+			cancel = {
+				is_UN_member = no
+			}
+
 			modifier = {
 				political_power_gain = 0.15
 			}
@@ -15,36 +16,25 @@ ideas = {
 			rule = {
 				can_create_factions = yes
 			}
-
-			cancel = {
-				is_UN_member = no
-			}
 		}
 		
 		idea_united_nations_NP_security_council_member = {
 			picture = united_nations_green
 		
-			allowed = { always = no }
-			removal_cost = -1
+			cancel = {
+				is_UN_member = no
+			}
 			
 			modifier = {
 				political_power_gain = 0.1
-			}
-
-			cancel = {
-				is_UN_member = no
 			}
 		}
 
 		non_member_state = {
 			picture = united_nations_red
 			
-			allowed = {
-				always = no
-			}	
-			
-			allowed_civil_war = {
-				always = yes
+			cancel = {
+				is_sovereign_state = no
 			}
 			
 			modifier = {
@@ -64,9 +54,6 @@ ideas = {
 		
 		the_euro = {
 			picture = the_euro
-		
-			allowed = { always = no }
-			removal_cost = -1
 			
 			modifier = {
 				industrial_capacity_factory = 0.1
@@ -77,8 +64,7 @@ ideas = {
 		#African Union
 		idea_african_union_member = {
 			picture = african_union
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 				political_power_factor = -0.015
 				stability_factor = 0.015
@@ -88,9 +74,6 @@ ideas = {
 	    #ASEAN 
 		asean_member = {
 			picture = asean
-		
-			allowed = { always = no }
-			removal_cost = -1
 			
 			modifier = {
 				
@@ -100,9 +83,6 @@ ideas = {
 		#Visegrad Group
 		visegrad_group_member = {
 			picture = visegrad
-		
-			allowed = { always = no }
-			removal_cost = -1
 			
 			modifier = {
 			
@@ -112,9 +92,7 @@ ideas = {
 		#Commonwealth of Nations
 		idea_commonwealth_of_nations_member = {
 			picture = commonwealth_of_nations
-			allowed = {
-				always = no
-			}
+
 			modifier = {
 				political_power_factor = -0.01
 				stability_factor = 0.01
@@ -124,9 +102,7 @@ ideas = {
 		#Arab League	
 		arab_league_member = {
 			picture = arab_league
-			allowed = {
-				always = no
-			}
+
 			modifier = {
 			
 			}
@@ -135,8 +111,7 @@ ideas = {
       	#Nordic Council
 	    nordic_council_member = {
 			picture = nordic_council
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -145,8 +120,7 @@ ideas = {
      	#Baltic Assembly
 		baltic_assembly_member = {
 			picture = baltic_assembly
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -155,8 +129,7 @@ ideas = {
      	#East African Community
 		east_african_community_member = {
 			picture = east_african_community
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -165,8 +138,7 @@ ideas = {
      	#GUAM
 		guam_member = {
 			picture = guam
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -175,8 +147,7 @@ ideas = {
      	#Commonwealth of Independent States
 		commonwealth_of_independent_states_member = {
 			picture = commonwealth_of_independent_states
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -185,8 +156,7 @@ ideas = {
      	#Gulf Cooperation Council
 		gulf_cooperation_council_member = {
 			picture = gulf_cooperation_council
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -195,8 +165,7 @@ ideas = {
      	#Shanghai Cooperation Organization
 		shanghai_cooperation_organization_member = {
 			picture = shanghai_cooperation_organization
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
@@ -205,8 +174,7 @@ ideas = {
      	#Benelux Union
 		benelux_member = {
 			picture = benelux_union
-			allowed = { always = no }
-			removal_cost = -1
+
 			modifier = {
 			
 			}
