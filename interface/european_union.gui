@@ -1,0 +1,114 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "european_parliament_window_container"
+		position = { x = 1 y = 100 }	
+		show_position = { x = 1100 y = 80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		size = { width = 700 height = 750 }
+		clipping = yes
+		show_sound = open_sub_window
+		moveable = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_tiled_plain_bg"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -44 y = 12 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "european_parliament_header"
+			position = { x = 0 y = 15 }
+			font = "hoi_36header"
+			text = "European Parliament"
+			maxWidth = 700
+			maxHeight = 40
+			fixedsize = no
+			format = center
+			Orientation = "CENTER_LEFT"
+		}
+	}
+
+	containerWindowType = {
+		name = "european_commission_window_container"
+		position = { x = -100 y = 100 }	
+		show_position = { x = 100 y = 80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		size = { width = 700 height = 750 }
+		clipping = yes
+		show_sound = open_sub_window
+		moveable = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_tiled_plain_bg"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -44 y = 12 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "european_commission_header"
+			position = { x = 0 y = 15 }
+			font = "hoi_36header"
+			text = "European Commission"
+			maxWidth = 700
+			maxHeight = 40
+			fixedsize = no
+			format = center
+			Orientation = "CENTER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "european_commission_president"
+			position = { x = 0 y = 75 }
+			font = "hoi_30header"
+			text = "President: [EUU.GetLeader] ([EUU.GetRulingParty])"
+			maxWidth = 700
+			maxHeight = 40
+			fixedsize = no
+			format = center
+			Orientation = "CENTER_LEFT"
+		}
+	}
+
+	containerWindowType = {
+		name = "european_union_button_container"
+		position = { x = -20 y = 60 }
+		size = { width = 50 height = 50 }
+
+		buttonType = {
+			name = "show_european_union_button"
+			position = { x = 1 y = 1 }
+			quadTextureSprite = "GFX_idea_european_union"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = european_union_tooltip
+			scale = 0.6
+		}
+	}
+}	

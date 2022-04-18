@@ -237,7 +237,22 @@ country_event = {
 		add_to_variable = { EUU.APF_seats =  EUU.eurosceptic_seats }
 		add_to_variable = { EUU.NI_seats =  EUU.eurosceptic_seats }
 
+		# European Commission Setup
+		if = {
+			limit = {
+				check_variable = {
+					var = EUU.pro_european_seats
+					value = EUU.eurosceptic_seats
+					compare = greater_than_or_equals
+				}
+			}
+			set_pro_european_commission = yes
+			else = {
+				set_eurosceptic_commission = yes
+			}
+		}
+
 		# UI Setup
-		set_EU_parliament_graphics = yes
+		#set_EU_parliament_graphics = yes
 	}
 }

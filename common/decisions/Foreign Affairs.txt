@@ -186,10 +186,14 @@ foreign_affairs = {
 		cost = 25
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				factor = 200
-				date > 2018.7.7
+				factor = 100
+				date > 2018.7.8
+				has_country_leader = {
+					name = "Abiy Ahmed"
+					ruling_only = yes
+				}
 			}
 		}
 	}

@@ -2084,3 +2084,329 @@ election_effect = {
 		country_event = election.4
 	}
 }
+
+set_pro_european_commission = {
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.EPP_seats
+				value = EUU.ALDE_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.EPP_seats
+				value = EUU.SD_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.EPP_seats
+				value = EUU.GREENS_EFA_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = conservative
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.ALDE_seats
+				value = EUU.EPP_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ALDE_seats
+				value = EUU.SD_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ALDE_seats
+				value = EUU.GREENS_EFA_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			random_list = {
+				50 = {
+					set_politics = {	
+						ruling_party = social_liberal
+						elections_allowed = yes
+					}
+				}
+				50 = {
+					set_politics = {	
+						ruling_party = classical_liberal
+						elections_allowed = yes
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.SD_seats
+				value = EUU.ALDE_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.SD_seats
+				value = EUU.EPP_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.SD_seats
+				value = EUU.GREENS_EFA_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = social_democrat
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.GREENS_EFA_seats
+				value = EUU.EPP_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.GREENS_EFA_seats
+				value = EUU.SD_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.GREENS_EFA_seats
+				value = EUU.ALDE_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = progressive
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+set_eurosceptic_commission = {
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.NI_seats
+				value = EUU.APF_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.NI_seats
+				value = EUU.ID_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.NI_seats
+				value = EUU.ECR_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.NI_seats
+				value = EUU.GUE_NGL_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.NI_seats
+				value = EUU.INITIATIVE_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = islamist
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.APF_seats
+				value = EUU.NI_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.APF_seats
+				value = EUU.ID_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.APF_seats
+				value = EUU.ECR_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.APF_seats
+				value = EUU.GUE_NGL_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.APF_seats
+				value = EUU.INITIATIVE_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = fascist
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.ID_seats
+				value = EUU.APF_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ID_seats
+				value = EUU.NI_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU_ID_seats
+				value = EUU.ECR_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ID_seats
+				value = EUU.GUE_NGL_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ID_seats
+				value = EUU.INITIATIVE_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = right_wing_nationalist
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.ECR_seats
+				value = EUU.APF_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ECR_seats
+				value = EUU.NI_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU_ECR_seats
+				value = EUU.ID_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ECR_seats
+				value = EUU.GUE_NGL_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.ECR_seats
+				value = EUU.INITIATIVE_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = national_conservative
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.GUE_NGL_seats
+				value = EUU.APF_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.GUE_NGL_seats
+				value = EUU.NI_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU_GUE_NGL_seats
+				value = EUU.ID_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.GUE_NGL_seats
+				value = EUU.ECR_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.GUE_NGL_seats
+				value = EUU.INITIATIVE_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = socialist
+				elections_allowed = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EUU.INITIATIVE_seats
+				value = EUU.APF_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.INITIATIVE_seats
+				value = EUU.NI_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU_INITIATIVE_seats
+				value = EUU.ID_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.INITIATIVE_seats
+				value = EUU.ECR_seats
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = EUU.INITIATIVE_seats
+				value = EUU.GUE_NGL_seats
+				compare = greater_than_or_equals
+			}
+		}
+		EUU = {
+			set_politics = {	
+				ruling_party = communist
+				elections_allowed = yes
+			}
+		}
+	}
+}

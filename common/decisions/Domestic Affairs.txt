@@ -481,7 +481,7 @@ domestic_affairs = {
 			modifier = {
 				factor = 15
 				check_variable = {
-					var = @current_party_ideology_group
+					var = party_popularity@ruling_party
 					value = 51
 					compare = greater_than_or_equals
 				}

@@ -52,10 +52,19 @@ country_event = { #Ethiopian Peace Proposal
 		ai_chance = {
 			factor = 100
 		}
+		add_political_power = -50
 		news_event = ethiopia.4
-		set_global_flag = eritrea_ethiopia_peace
-	    transfer_state = 950
-		950 = { remove_core_of = ETH }
+		remove_opinion_modifier = { target = ETH modifier = frozen_conflict }
+		ETH = { 
+			remove_opinion_modifier = { target = ERI modifier = frozen_conflict } 
+			remove_state_core = 950
+		}
+		if = { 
+			limit =  {
+				ETH = { owns_state = 950 }
+			}
+			transfer_state = 950
+		}
 	}
 	
 	option = { #Reject
@@ -63,7 +72,6 @@ country_event = { #Ethiopian Peace Proposal
 		ai_chance = {
 			factor = 0
 		}
-		add_political_power = -100
 	}
 }
 

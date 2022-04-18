@@ -1,0 +1,67 @@
+scripted_gui = {
+
+	european_parliament_window = {
+		window_name = "european_parliament_window_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+			check_variable = {
+				show_european_union = 1
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = show_european_union
+			}
+		}
+
+		dynamic_lists = {
+		}		
+
+		properties = {
+		}
+	}
+
+	european_commission_window = {
+		window_name = "european_commission_window_container"
+ 
+		context_type = player_context
+ 
+		visible = {
+			check_variable = {
+				show_european_union = 1
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = show_european_union
+			}
+		}
+
+		dynamic_lists = {
+		}		
+
+		properties = {
+		}
+	}
+
+	european_union_button = {
+		window_name = "european_union_button_container"
+
+		context_type = player_context
+
+		visible = {
+			always = no #Archived
+			#NOT = { has_global_flag = european_union_dissolved }
+		}
+
+		effects = {
+			show_european_union_button_click = {
+				set_variable = { show_european_union = 1 }
+			}
+		}
+	}
+}

@@ -1112,7 +1112,7 @@ country_event = { ### Monthly On-action
 		### State Categories
 		every_state = {
 			limit = {
-				infrastructure = 5
+				infrastructure < 1
 				NOT = { 
 					OR = {
 						has_state_category = state_level_0
@@ -1124,7 +1124,8 @@ country_event = { ### Monthly On-action
 		}
 		every_state = {
 			limit = {
-				infrastructure = 1
+				infrastructure > 0
+				infrastructure < 2
 				NOT = { 
 					OR = {
 						has_state_category = state_level_1 
@@ -1136,7 +1137,8 @@ country_event = { ### Monthly On-action
 		}
 		every_state = {
 			limit = {
-				infrastructure = 2
+				infrastructure > 1
+				infrastructure < 3
 				NOT = { 
 					OR = {
 						has_state_category = state_level_2
@@ -1148,7 +1150,8 @@ country_event = { ### Monthly On-action
 		}
 		every_state = {
 			limit = {
-				infrastructure = 3
+				infrastructure > 2
+				infrastructure < 4
 				NOT = { 
 					OR = {
 						has_state_category = state_level_3
@@ -1160,7 +1163,8 @@ country_event = { ### Monthly On-action
 		}
 		every_state = {
 			limit = {
-				infrastructure = 4
+				infrastructure > 3
+				infrastructure < 5
 				NOT = { 
 					OR = {
 						has_state_category = state_level_4
@@ -1172,7 +1176,7 @@ country_event = { ### Monthly On-action
 		}
 		every_state = {
 			limit = {
-				infrastructure = 5
+				infrastructure > 4
 				NOT = { 
 					OR = {
 						has_state_category = state_level_5
