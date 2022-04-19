@@ -359,6 +359,8 @@ on_actions = {
 	on_puppet = {
 		effect = {
 		    ROOT = { break_coalition = yes quickset_coalition = yes }
+			puppet_government_sync = yes
+			puppet_ideology_cleanup = yes
 		}
 	}
 

@@ -2410,3 +2410,178 @@ set_eurosceptic_commission = {
 		}
 	}
 }
+
+puppet_ideology_cleanup = {
+	if  = {
+		limit = {
+			NOT = { has_government = islamist }
+			NOT = { has_country_flag = has_islamist_party }
+		}
+		add_popularity = { 
+			ideology = islamist
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = fascist }
+			NOT = { has_country_flag = has_fascist_party }
+		}
+		add_popularity = { 
+			ideology = fascist
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = right_wing_nationalist }
+			NOT = { has_country_flag = has_right_wing_nationalist_party }
+		}
+		add_popularity = { 
+			ideology = right_wing_nationalist
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = monarchist }
+			NOT = { has_country_flag = has_monarchist_party }
+		}
+		add_popularity = { 
+			ideology = monarchist
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = national_conservative }
+			NOT = { has_country_flag = has_national_conservative_party }
+		}
+		add_popularity = { 
+			ideology = national_conservative
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = conservative }
+			NOT = { has_country_flag = has_conservative_party }
+		}
+		add_popularity = { 
+			ideology = conservative
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = classical_liberal }
+			NOT = { has_country_flag = has_classical_liberal_party }
+		}
+		add_popularity = { 
+			ideology = classical_liberal
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = social_liberal }
+			NOT = { has_country_flag = has_social_liberal_party }
+		}
+		add_popularity = { 
+			ideology = social_liberal
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = social_democrat }
+			NOT = { has_country_flag = has_social_democrat_party }
+		}
+		add_popularity = { 
+			ideology = social_democrat
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = progressive }
+			NOT = { has_country_flag = has_progressive_party }
+		}
+		add_popularity = { 
+			ideology = progressive
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = socialist }
+			NOT = { has_country_flag = has_socialist_party }
+		}
+		add_popularity = { 
+			ideology = socialist
+			popularity = -1
+		}
+	}
+	if  = {
+		limit = {
+			NOT = { has_government = communist }
+			NOT = { has_country_flag = has_communist_party }
+		}
+		add_popularity = { 
+			ideology = communist
+			popularity = -1
+		}
+	}
+}
+
+puppet_government_sync = {
+	if  = {
+		limit = {
+			FROM = {
+				OR = {
+					has_idea = parliamentary_system
+					has_idea = presidential_republic
+					has_idea = demarchic_republic
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = FROM@current_party_ideology_group
+			elections_allowed = yes
+		}
+		if  = {
+			limit = {
+				FROM = { has_idea = presidential_republic }
+			}
+			add_ideas = presidential_republic
+		}
+		if  = {
+			limit = {
+				FROM = { has_idea = parliamentary_system }
+			}
+			add_ideas = parliamentary_system
+		}
+		if  = {
+			limit = {
+				FROM = { has_idea = demarchic_republic }
+			}
+			add_ideas = demarchic_republic
+		}
+		else = {
+			set_politics = {
+				ruling_party = FROM@current_party_ideology_group
+				elections_allowed = no
+			}
+			if  = {
+				limit = {
+					has_government = monarchist
+				}
+				add_ideas = absolute_monarchy
+				else  = {
+					add_ideas = one_party_state
+				}
+			}
+		}
+		one_party_parliament = yes
+	}
+}
