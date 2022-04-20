@@ -246,6 +246,7 @@ domestic_affairs = {
 							has_country_leader_ideology = third_international_theory
 						}
 					}
+					has_country_leader_ideology = peoples_multiparty_democracy
 					has_country_leader_ideology = islamic_democracy
 				}
 			}
@@ -408,6 +409,7 @@ domestic_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = communist
+					NOT = { has_country_leader_ideology = peoples_multiparty_democracy }
 				}
 			}
 		}

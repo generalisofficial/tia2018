@@ -238,3 +238,89 @@ news_event = { #(Country) calls snap legislative elections
 		}
 	}
 }
+
+news_event = { #(Country) recognizes ROC
+	id = politics.8
+	title = politics.8.t
+	desc = politics.8.d
+	picture = GFX_news_event_election
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.8.o1
+		trigger = {
+			original_tag = FROM
+		}
+	}
+	
+	option = {
+		name = politics.8.o2
+		trigger = {
+			NOT = {
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+news_event = { #(Country) recognizes PRC
+	id = politics.9
+	title = politics.9.t
+	desc = politics.9.d
+	picture = GFX_news_event_peoples_republic_of_china
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.9.o1
+		trigger = {
+			OR = {
+				original_tag = PRC
+				NOT = { has_country_flag = recognizes_the_roc }
+			}
+		}
+	}
+	
+	option = {
+		name = politics.9.o2
+		trigger = {
+			OR = {
+				original_tag = CHI
+				has_country_flag = recognizes_the_roc
+			}
+		}
+	}
+}
+
+news_event = { #(Country) recognizes ROC
+	id = politics.10
+	title = politics.10.t
+	desc = politics.10.d
+	picture = GFX_news_event_republic_of_china
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.10.o1
+		trigger = {
+			OR = {
+				original_tag = PRC
+				NOT = { has_country_flag = recognizes_the_roc }
+			}
+		}
+	}
+	
+	option = {
+		name = politics.10.o2
+		trigger = {
+			OR = {
+				original_tag = CHI
+				has_country_flag = recognizes_the_roc
+			}
+		}
+	}
+}

@@ -2,14 +2,10 @@
 state={
 	id=439
 	name="STATE_439"
-	manpower = 95936800
-	
-	state_category = state_default
-	
-	resources = {
-		steel = 95
+	resources={
+		steel=95.000
 	}
-	
+
 	history={
 		owner = RAJ
 		add_core_of = RAJ
@@ -18,11 +14,19 @@ state={
 			military_airport = 4
 			civilian_industry = 12
 			military_industry = 4
+
 		}
-		victory_points = { 2086 40 }	#Delhi
+		victory_points = {
+			2086 40 
+		}
+
 	}
 
 	provinces={
 		1129 1898 2002 2032 2076 2086 3989 5002 5157 7106 10021 10729 11955 12708 12868 
 	}
+	manpower=95936800
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

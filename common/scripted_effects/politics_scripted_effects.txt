@@ -2062,6 +2062,21 @@ election_pulse = {
 			ideology = classical_liberal_ideology
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = JRS
+			has_country_leader = {
+				name = "Ian Gorst"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+			name = "John Le Fondré"
+			picture = GFX_Portrait_JRS_John_Le_Fondre
+			ideology = classical_liberal_ideology
+		}
+	}
 }
 
 election_effect = {
@@ -2567,21 +2582,32 @@ puppet_government_sync = {
 			}
 			add_ideas = demarchic_republic
 		}
-		else = {
-			set_politics = {
-				ruling_party = FROM@current_party_ideology_group
-				elections_allowed = no
-			}
-			if  = {
-				limit = {
-					has_government = monarchist
-				}
-				add_ideas = absolute_monarchy
-				else  = {
-					add_ideas = one_party_state
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					has_idea = one_party_state
+					has_idea = absolute_monarchy
 				}
 			}
 		}
-		one_party_parliament = yes
+		set_politics = {
+			ruling_party = FROM@current_party_ideology_group
+			elections_allowed = no
+		}
+		if  = {
+			limit = {
+				FROM = { has_idea = absolute_monarchy }
+			}
+			add_ideas = absolute_monarchy
+		}
+		if  = {
+			limit = {
+				FROM = { has_idea = one_party_state }
+			}
+			add_ideas = one_party_state
+		}
 	}
+	one_party_parliament = yes
 }

@@ -2,9 +2,6 @@
 
 oob = "NEP_2018"
 
-set_convoys = 10
-
-
 set_country_flag = country_language_nepali
 
 set_technology = {
@@ -103,14 +100,14 @@ add_ideas = {
 set_country_flag = hinduism
 
 #Pratinidhi Sabha
-set_variable = { communist_seats = 46.91 }
-set_variable = { socialist_seats = 4.93 }
+set_variable = { communist_seats = 64.37 }
+set_variable = { socialist_seats = 6.18 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 43.21 }
-set_variable = { social_liberal_seats = 4.95 }
+set_variable = { social_democrat_seats = 29.09 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { national_conservative_seats = 0.36 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -119,9 +116,7 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_communist
-set_country_flag = coalition_socialist
 add_to_variable = { ROOT.Coalition = communist_seats }
-add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = communist
@@ -131,14 +126,15 @@ set_politics = {
 } 
 
 set_popularities = {
-    social_liberal = 4.95
-    socialist = 4.93
-    social_democrat = 43.21
-    communist = 46.91
+	communist = 64.37
+	social_democrat = 29.09
+	socialist = 6.18
+	national_conservative = 0.36
 }
 
-recruit_character = NEP_kp_sharma_oli
+recruit_character = NEP_gyanendra
+recruit_character = NEP_kamal_thapa
+recruit_character = NEP_rabindra_mishra
 recruit_character = NEP_sher_bahadur_deuba
-recruit_character = NEP_mahanth_thakur
 recruit_character = NEP_upendra_yadav
-recruit_character = NEP_gyanendra_bir_bikram_shah_dev
+recruit_character = NEP_kp_sharma_oli
