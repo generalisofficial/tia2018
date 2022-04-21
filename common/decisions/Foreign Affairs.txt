@@ -17,12 +17,17 @@ foreign_affairs = {
 		}
 
 		available = {
-			NOT = { is_subject_of = PRC }
+			NOT = { 
+				OR ={
+					is_subject_of = CHI
+					is_in_faction_with = CHI
+				}
+			}
 		}
 
 		complete_effect = {
 			clr_country_flag = recognizes_the_roc
-			news_event = politics.8
+			news_event = politics.9
 			CHI = {
 				remove_opinion_modifier = { target = ROOT modifier = recognizes_the_roc }
 			}
@@ -70,12 +75,17 @@ foreign_affairs = {
 		}
 
 		available = {
-			NOT = { is_subject_of = PRC }
+			NOT = { 
+				OR ={
+					is_subject_of = PRC
+					is_in_faction_with = PRC
+				}
+			}
 		}
 
 		complete_effect = {
 			set_country_flag = recognizes_the_roc
-			news_event = politics.9
+			news_event = politics.10
 			CHI = {
 				add_opinion_modifier = { target = ROOT modifier = recognizes_the_roc }
 			}
@@ -887,6 +897,56 @@ foreign_affairs = {
 					has_government = monarchist
 					has_government = socialist
 					has_government = communist
+					threat > 0.75
+				}
+			}
+		}
+	}
+
+	claim_greater_hungary = {
+	
+		visible = {
+			original_tag = HUN
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_claim = 851
+			add_state_claim = 1137
+			add_state_claim = 1197
+			add_state_claim = 1198
+			add_state_claim = 45
+			add_state_claim = 70
+			add_state_claim = 870
+			add_state_claim = 71
+			add_state_claim = 664
+			add_state_claim = 73
+			add_state_claim = 76
+			add_state_claim = 83
+			add_state_claim = 84
+			add_state_claim = 82
+			add_named_threat = { 
+				threat = 3 
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = hungary
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
 					threat > 0.75
 				}
 			}
