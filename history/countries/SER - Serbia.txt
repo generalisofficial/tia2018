@@ -4,7 +4,6 @@ oob = "SER_2018"
 
 set_convoys = 120
 
-
 set_country_flag = country_language_serbian
 
 set_technology = {
@@ -104,56 +103,58 @@ if = {
 add_ideas = {
 	#population_growth_stagnation
 	idea_neutral_foreign_policy
-	parliamentary_system
+	presidential_system
 	#low_taxes
 }
 
 set_country_flag = orthodox
 
 #National Assembly
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 11.60 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 5.2 }
-set_variable = { social_liberal_seats = 6.4 }
-set_variable = { classical_liberal_seats = 6.4 }
-set_variable = { conservative_seats = 54.81 }
-set_variable = { national_conservative_seats = 0 }
-set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 8.79 }
-set_variable = { fascist_seats = 5.2 }
-set_variable = { islamist_seats = 1.6 }
+set_variable = { communist_seats = 0.42 }
+set_variable = { socialist_seats = 1.27 }
+set_variable = { progressive_seats = 1.27 }
+set_variable = { social_democrat_seats = 15.31 }
+set_variable = { social_liberal_seats = 5.95 }
+set_variable = { classical_liberal_seats = 1.7 }
+set_variable = { conservative_seats = 0.85 }
+set_variable = { national_conservative_seats = 58.77 }
+set_variable = { monarchist_seats = 0.85 }
+set_variable = { right_wing_nationalist_seats = 4.25 }
+set_variable = { fascist_seats = 9.36 }
+set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = conservative
-	last_election = "2016.4.24"
-	election_frequency = 48
+	ruling_party = national_conservative
+	last_election = "2017.4.3"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 54.81
-    socialist = 11.60
-    right_wing_nationalist = 8.79
-    classical_liberal = 6.4
-    social_liberal = 6.4
-	fascist = 5.2
-    social_democrat = 5.2
-    islamist = 1.6
+	national_conservative = 52.79
+	social_democrat = 17.72
+    progressive = 5.9
+	social_liberal = 5.48
+	conservative = 5.06
+	fascist = 4.21
+	monarchist = 4.21
+	right_wing_nationalist = 3.37
+	socialist = 1.26
 }
 
-recruit_character = SER_aleksandar_vucic
-recruit_character = SER_ivica_dacic
 recruit_character = SER_vojislav_seselj
-recruit_character = SER_branka_stamenkovic
-recruit_character = SER_zoran_lutovac
 recruit_character = SER_bosko_obradovic
-recruit_character = SER_boris_tadic
-recruit_character = SER_muamer_zukorlic
+recruit_character = SER_aleksandar_ii
+recruit_character = SER_aleksandar_vucic
+recruit_character = SER_vuk_jeremic
+recruit_character = SER_cedomir_jovanovic
+recruit_character = SER_zoran_lutovac
+recruit_character = SER_ivica_dacic
+recruit_character = SER_ivan_karic
+recruit_character = SER_ivan_zlatic
 recruit_character = SER_joska_broz
-recruit_character = SER_alexander_ii_karadordevic
