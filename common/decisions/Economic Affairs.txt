@@ -41,14 +41,13 @@ economic_affairs = {
 			}
 		}
 	}
+
 	abandon_the_euro = {
+
 		visible = {
 			has_idea = the_euro
 		}
-		
-		available = {
-		}
-		
+
 		icon = euro_coins
 		cost = 150
 		days_remove = 1095
@@ -69,6 +68,41 @@ economic_affairs = {
 					has_government = communist
 				}
 			}
+		}
+	}
+
+	# Unique
+
+	build_the_nowy_swiat_canal = {
+		icon = container_ship
+
+		highlight_states = {
+			state = 85
+		}
+
+		visible = {
+			original_tag = POL
+		}
+
+		available = {
+			owns_state = 85
+			controls_state = 85
+		}
+		
+		cost = 75
+		fire_only_once = yes 
+		days_remove = 1095
+
+		remove_effect = {
+			set_global_flag = nowy_swiat_canal_built
+		}
+
+		modifier = {
+			civilian_factory_use = 3 # Switch to money when economy implemented
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

@@ -28,14 +28,6 @@ adjacency_rule = {
 	}
 	
 	required_provinces = { 12049 1155 4073 9947 }
-
-	is_disabled = {
-		OR = {
-			has_global_flag = SUEZ_CANAL_BLOCKED
-			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
-		}
-		tooltip = disable_canal_tt
-	}
 		
 	icon = 12049
 	offset = { 1 0 -6 }
@@ -141,14 +133,6 @@ adjacency_rule = {
 	}
 	
 	required_provinces = { 4095 7617 }
-
-	is_disabled = {
-		OR = {
-			has_global_flag = PANAMA_CANAL_BLOCKED
-			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
-		}
-		tooltip = disable_canal_tt
-	}
 		
 	icon = 7617
 	offset = { -3 0 -2 }
@@ -674,5 +658,158 @@ adjacency_rule = {
 	required_provinces = { 14367 }
 		
 	icon = 14367
+	offset = { 0 0 0 }
+}
+
+#La Pérouse Strait
+adjacency_rule = {
+	name = "LA_PEROUSE_STRAIT"
+
+	contested = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12446 4576 }
+		
+	icon = 12446
+	offset = { 5 0 -6 }
+}
+
+#Strait of Tartary
+adjacency_rule = {
+	name = "STRAIT_OF_TARTARY"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 7868 1742 }
+		
+	icon = 7868
+	offset = { 5 0 -6 }
+}
+
+#Strait of Baltiysk
+adjacency_rule = {
+	name = "STRAIT_OF_BALTIYSK"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 11265 }
+		
+	icon = 11265
+	offset = { 0 0 0 }
+}
+
+#Nowy Swiat Canal
+adjacency_rule = {
+	name = "NOWY_SWIAT_CANAL"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	is_disabled = {
+		NOT = {
+			has_global_flag = nowy_swiat_canal_built
+		}
+		tooltip = TT_canal_not_built
+	}
+	
+	required_provinces = { 13953 }
+		
+	icon = 13953
 	offset = { 0 0 0 }
 }
