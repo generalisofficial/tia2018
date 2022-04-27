@@ -1,0 +1,32 @@
+subject_affairs = {
+
+	hold_independence_referendum = {
+
+		allowed = {
+			has_dlc = "Together for Victory"
+		}
+
+		visible = {
+			has_autonomy_state = autonomy_autonomous_region
+		}
+
+		available = {
+			has_war = no
+			compare_autonomy_progress_ratio > 0.99
+		}
+
+		complete_effect = {
+			OVERLORD = {
+				country_event = subject.1
+			}
+		}
+		
+		icon = ballot_box
+		
+		cost = 75
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

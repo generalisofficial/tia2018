@@ -4,7 +4,7 @@ autonomy_state = {
 	default = yes
 	is_puppet = yes
 	
-	min_freedom_level = 0.4
+	min_freedom_level = 0
 	
 	manpower_influence = 0.9
 	
@@ -24,11 +24,11 @@ autonomy_state = {
 	}
 	
 	ai_subject_wants_higher = {
-		factor = 1.0
+		factor = 0.0
 	}
 	
 	ai_overlord_wants_lower = {
-		factor = 1.0
+		factor = 0.0
 	}
 
 	ai_overlord_wants_garrison = {

@@ -1,0 +1,63 @@
+﻿add_namespace = subject
+
+country_event = { #(Subject) unilaterally votes for independence
+	id = subject.1
+	title = subject.1.t
+	desc = subject.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.1.o1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_idea = no_standing_army
+			}
+		}
+		add_political_power = 25
+		FROM = { country_event = subject.2 }
+	}
+
+	option = {
+		name = subject.1.o2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_idea = no_standing_army
+			}
+		}
+		add_political_power = -100
+		end_puppet = FROM
+	}
+}
+
+country_event = { #(Overlord) rejects independence referendum
+	id = subject.2
+	title = subject.2.t
+	desc = subject.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.2.o1
+		add_political_power = 25
+		every_owned_state = {
+			add_claim_by = FROM
+		}
+		FROM = {
+			end_puppet = ROOT
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+
+	option = {
+		name = subject.2.o2
+		add_political_power = -100
+	}
+}
