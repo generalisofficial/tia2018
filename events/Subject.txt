@@ -29,8 +29,10 @@ country_event = { #(Subject) unilaterally votes for independence
 				has_idea = no_standing_army
 			}
 		}
+		news_event = subject.3
 		add_political_power = -100
 		end_puppet = FROM
+		add_ideas = non_member_state
 	}
 }
 
@@ -43,10 +45,12 @@ country_event = { #(Overlord) rejects independence referendum
 	
 	option = {
 		name = subject.2.o1
+		news_event = subject.4
 		add_political_power = 25
 		every_owned_state = {
 			add_claim_by = FROM
 		}
+		add_ideas = non_member_state
 		FROM = {
 			end_puppet = ROOT
 			declare_war_on = {
@@ -59,5 +63,33 @@ country_event = { #(Overlord) rejects independence referendum
 	option = {
 		name = subject.2.o2
 		add_political_power = -100
+	}
+}
+
+news_event = { #(Country) achieves independence
+	id = subject.3
+	title = subject.3.t
+	desc = subject.3.d
+	picture = GFX_news_event_election
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = subject.3.o1
+	}
+}
+
+news_event = { #The (Country, ADJ) War of Independence
+	id = subject.4
+	title = subject.4.t
+	desc = subject.4.d
+	picture = GFX_news_event_army_convoy
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = subject.4.o1
 	}
 }
