@@ -595,6 +595,13 @@ set_parliament_graphics = {
 		if = {
 			limit = {
 				check_variable = { v > 99 }
+				check_variable = { i < 2 }
+			}
+			add_to_array = { parliament_array = 98^i }
+		}
+		if = {
+			limit = {
+				check_variable = { v > 99 }
 			}
 			add_to_array = { parliament_array = i }
 		}
