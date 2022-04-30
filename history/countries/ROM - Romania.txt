@@ -117,17 +117,17 @@ add_ideas = {
 
 set_country_flag = orthodox
 
-#Parliament of Romania
+#Chamber of Deputies
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 45.48 }
-set_variable = { social_liberal_seats = 20.04 }
-set_variable = { classical_liberal_seats = 5.62 }
-set_variable = { conservative_seats = 25.03 }
-set_variable = { national_conservative_seats = 2.79 }
+set_variable = { social_democrat_seats = 49.38 }
+set_variable = { social_liberal_seats = 9.61 }
+set_variable = { classical_liberal_seats = 6.41 }
+set_variable = { conservative_seats = 28.84 }
+set_variable = { national_conservative_seats = 5.76 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 1.04 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -140,59 +140,28 @@ add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2016.3.21"
-	election_frequency = 60
+	last_election = "2016.12.6"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 45.48
-    conservative = 25.03
-    social_liberal = 20.04
-    classical_liberal = 5.62
-	national_conservative = 2.79
-	right_wing_nationalist = 1.04
+	social_democrat = 35.25
+	conservative = 36.56
+	social_liberal = 17.62
+	right_wing_nationalist = 10.57
 }
 
-recruit_character = ROM_mihai_tudose
-recruit_character = ROM_ludovic_orban
-recruit_character = ROM_dan_barna
-recruit_character = ROM_călin_popescutăriceanu
-recruit_character = ROM_dănuţ_pop
-recruit_character = ROM_robert_bugă
-recruit_character = ROM_victor_iovici
 recruit_character = ROM_tudor_ionescu
+recruit_character = ROM_george_simion
+recruit_character = ROM_margareta_I
+recruit_character = ROM_traian_basescu
+recruit_character = ROM_ludovic_orban
+recruit_character = ROM_calin_popescu_tariceanu
+recruit_character = ROM_dan_barna
+recruit_character = ROM_mihai_tudose
+recruit_character = ROM_florin_calinescu
 recruit_character = ROM_constantin_rotaru
-recruit_character = ROM_margareta
-recruit_character = ROM_scarlat_dmitru
-recruit_character = ROM_nicolae_ciuca
-recruit_character = ROM_botea_marian
-recruit_character = ROM_petricalucian_foca
-recruit_character = ROM_eugen_badalan
-recruit_character = ROM_ioan_manci
-recruit_character = ROM_gheorghe_marin
-recruit_character = ROM_alexandru_mirsu
-recruit_character = ROM_nicolae_ionel_ciucă
-recruit_character = ROM_dumitru_scarlat
-recruit_character = ROM_marius_harabagiu
-recruit_character = ROM_marian_botea
-recruit_character = ROM_mirceadan_Şuta
-recruit_character = ROM_florinel_damian
-recruit_character = ROM_tudorică_petrache
-recruit_character = ROM_adrian_soci
-recruit_character = ROM_virgilovidiu_pop
-recruit_character = ROM_nicolae_tonu
-recruit_character = ROM_ovidiu_ufaleanu
-recruit_character = ROM_laurian_anastasof
-recruit_character = ROM_daniel_capatina
-recruit_character = ROM_valentin_iacoblev
-recruit_character = ROM_bogdan_dumitrescu
-recruit_character = ROM_auraşliviu_coman
-recruit_character = ROM_marius_bogdan_mitric
-recruit_character = ROM_vasile_savulescu
-recruit_character = ROM_cornel_rogozan
-recruit_character = ROM_valeriu_simionov
-recruit_character = ROM_aurelian_popoiu
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

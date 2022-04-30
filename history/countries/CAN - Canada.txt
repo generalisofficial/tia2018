@@ -123,6 +123,16 @@ add_ideas = {
 	generous_minimum_wage
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Canadian Security Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_CAN"
+	}
+}
+
 set_country_flag = protestant
 set_country_flag = former_british_colony
 set_cosmetic_tag = CAN_monarchist # Constitutional Monarchy

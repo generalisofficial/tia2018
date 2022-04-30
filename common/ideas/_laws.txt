@@ -538,7 +538,11 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 				modifier = {
-				 	factor = 50
+					factor = 100
+					has_country_leader_ideology = christian_right
+				}
+				modifier = {
+				 	factor = 25
 					OR = {
 						has_government = conservative
 						has_government = national_conservative
@@ -578,7 +582,7 @@ ideas = {
 					}
 			 	}
 				modifier = {
-					factor = 50
+					factor = 25
 				   	OR = {
 					   has_government = conservative
 					   has_government = national_conservative
@@ -608,7 +612,7 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 				modifier = {
-				 	factor = 50
+				 	factor = 25
 					OR = {
 						has_government = conservative
 						has_government = national_conservative
@@ -638,7 +642,7 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 				modifier = {
-				 	factor = 50
+				 	factor = 25
 					OR = {
 						has_government = conservative
 						has_government = national_conservative
@@ -668,7 +672,7 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 				modifier = {
-				 	factor = 50
+				 	factor = 25
 					OR = {
 						has_government = conservative
 						has_government = national_conservative
@@ -716,6 +720,10 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
+				modifier = {
+					factor = 100
+					has_country_leader_ideology = christian_right
+				}
 				modifier = {
 					factor = 25
 					OR = {
@@ -877,6 +885,10 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
+				modifier = {
+					factor = 100
+					has_country_leader_ideology = christian_right
+				}
 				modifier = {
 					factor = 10
 					OR = {

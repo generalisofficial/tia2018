@@ -109,6 +109,16 @@ add_ideas = {
 	#very_high_taxes  
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Norwegian Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_NOR"
+	}
+}
+
 set_country_flag = protestant
 set_cosmetic_tag = NOR_monarchist # Constitutional Monarchy
 

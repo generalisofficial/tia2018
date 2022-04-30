@@ -1,14 +1,47 @@
 characters={
     #Starting - Political
-	ROM_mihai_tudose={
-		name="Mihai Tudose"
+	ROM_tudor_ionescu={
+		name="Tudor Ionescu"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ROM_Mihai_Tudose
+				large=GFX_Portrait_ROM_Tudor_Ionescu
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
+			ideology=fascist_ideology
+		}
+	}
+	ROM_george_simion={
+		name="George Simion"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ROM_George_Simion
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	ROM_margareta_I={
+		name="Margareta I"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ROM_Margareta
+			}
+		}
+		country_leader={
+			ideology=monarchist_ideology
+		}
+	}
+	ROM_traian_basescu={
+		name="Traian Băsescu"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ROM_Traian_Basescu
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
 		}
 	}
 	ROM_ludovic_orban={
@@ -19,7 +52,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=christian_democrat
+			ideology=liberal_conservative
+		}
+	}
+	ROM_calin_popescu_tariceanu={
+		name="Călin Popescu-Tăriceanu"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ROM_Calin_Popescu_Tariceanu
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
 		}
 	}
 	ROM_dan_barna={
@@ -33,59 +77,26 @@ characters={
 			ideology=centrist
 		}
 	}
-	ROM_călin_popescutăriceanu={
-		name="Călin Popescu-Tăriceanu"
+	ROM_mihai_tudose={
+		name="Mihai Tudose"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ROM_Calin_Popescu_Tariceanu
+				large=GFX_Portrait_ROM_Mihai_Tudose
 			}
 		}
 		country_leader={
-			ideology=classical_liberal_ideology
+			ideology=social_democrat_ideology
 		}
 	}
-	ROM_dănuţ_pop={
-		name="Dănuţ Pop"
+	ROM_florin_calinescu={
+		name="Florin Călinescu"
 		portraits={
 			civilian={
-				large=GFX_Portrait_ROM_Danut_Pop
+				large=GFX_Portrait_ROM_Florin_Calinescu
 			}
 		}
 		country_leader={
 			ideology=green
-		}
-	}
-	ROM_robert_bugă={
-		name="Robert Bugă"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ROM_Robert_Buga
-			}
-		}
-		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	ROM_victor_iovici={
-		name="Victor Iovici"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ROM_Victor_Iovici
-			}
-		}
-		country_leader={
-			ideology=right_wing_nationalist_ideology
-		}
-	}
-	ROM_tudor_ionescu={
-		name="Tudor Ionescu"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ROM_Tudor_Ionescu
-			}
-		}
-		country_leader={
-			ideology=fascist_ideology
 		}
 	}
 	ROM_constantin_rotaru={
@@ -97,495 +108,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	ROM_margareta={
-		name="Margareta"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ROM_Margareta
-			}
-		}
-		country_leader={
-			ideology=monarchist_ideology
-		}
-	}
-	ROM_scarlat_dmitru={
-		name="Scarlat Dmitru"
-		portraits={
-			army={
-				large=GFX_Portrait_Europe_general1
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_nicolae_ciuca={
-		name="Nicolae Ciuca"
-		portraits={
-			army={
-				large=GFX_Portrait_Europe_general2
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_botea_marian={
-		name="Botea Marian"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Botea_Marian
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_petricalucian_foca={
-		name="Petrica-Lucian Foca"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Petrica_Lucian_Foca
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_eugen_badalan={
-		name="Eugen Badalan"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Eugen_Badalan
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_ioan_manci={
-		name="Ioan Manci"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Ioan_Manci
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_gheorghe_marin={
-		name="Gheorghe Marin"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_admirals_Gheorghe_Marin
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_alexandru_mirsu={
-		name="Alexandru Mirsu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_admirals_Alexandru_Mirsu
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_nicolae_ionel_ciucă={
-		name="Nicolae Ionel Ciucă"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Nicola_Ciuca
-			}
-		}
-		field_marshal={
-			traits={ old_guard thorough_planner }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_dumitru_scarlat={
-		name="Dumitru Scarlat"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Dumitru_Scarlat
-			}
-		}
-		field_marshal={
-			traits={ organisational_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_marius_harabagiu={
-		name="Marius Harabagiu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Marius_Harabagiu
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_marian_botea={
-		name="Marian Botea"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Marian_Botea
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_mirceadan_Şuta={
-		name="Mircea-Dan Şuta"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Mircea_Dan_Suta
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_florinel_damian={
-		name="Florinel Damian"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Florinel_Damian
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_tudorică_petrache={
-		name="Tudorică Petrache"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Tudorica_Petrache
-			}
-		}
-		corps_commander={
-			traits={ trait_mountaineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_adrian_soci={
-		name="Adrian Soci"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Adrian_Soci
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_virgilovidiu_pop={
-		name="Virgil-Ovidiu Pop"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Virgil_Ovidiu_Pop
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_nicolae_tonu={
-		name="Nicolae Tonu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Nicolae_Tonu
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_ovidiu_ufaleanu={
-		name="Ovidiu Ufaleanu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Ovidiu_Uifaleanu
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_laurian_anastasof={
-		name="Laurian Anastasof"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Laurian_Anastasof
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_daniel_capatina={
-		name="Daniel Capatina"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Daniel_Capatina
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_valentin_iacoblev={
-		name="Valentin Iacoblev"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Valentin_Iacoblev
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_bogdan_dumitrescu={
-		name="Bogdan Dumitrescu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Bogdan_Dumitrescu
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_auraşliviu_coman={
-		name="Auraş-Liviu Coman"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Auras_Liviu_Coman
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_marius_bogdan_mitric={
-		name="Marius Bogdan Mitric"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Marius_Mitric
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_vasile_savulescu={
-		name="Vasile Savulescu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Vasile_Savulescu
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_cornel_rogozan={
-		name="Cornel Rogozan"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Cornel_Rogozan
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_valeriu_simionov={
-		name="Valeriu Simionov"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Valeriu_Simionov
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	ROM_aurelian_popoiu={
-		name="Aurelian Popoiu"
-		portraits={
-			army={
-				large=GFX_Portrait_ROM_Portrait_Aurelian_Popoiu
-			}
-		}
-		navy_leader={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	#Starting - Military
