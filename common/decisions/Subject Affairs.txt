@@ -21,7 +21,47 @@ subject_affairs = {
 			}
 		}
 		
-		icon = ballot_box
+		icon = independence
+		
+		cost = 75
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	reintegrate_autonomous_region = {
+
+		allowed = {
+			has_dlc = "Together for Victory"
+		}
+
+		target_trigger = {
+			FROM = {
+				has_autonomy_state = autonomy_autonomous_region
+				is_subject_of = ROOT
+			}
+	   }
+
+		available = {
+			has_war = no
+			FROM = { compare_autonomy_progress_ratio < 0.01 }
+		}
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					is_core_of = FROM
+				}
+				add_core_of =  ROOT
+			}
+			FROM = {
+				country_event = subject.5
+			}
+		}
+		
+		icon = oppression
 		
 		cost = 75
 		

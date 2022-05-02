@@ -124,6 +124,12 @@ scripted_gui = {
 					subtract_from_variable = { ROOT.Coalition = communist_seats }
 					add_to_variable = { ROOT.Opposition = communist_seats }
 				}
+				if = {
+					limit = {
+						minority_government = yes
+					}
+					add_ideas = minority_government
+				}
 				set_parliament_graphics = yes
 			}
 		}

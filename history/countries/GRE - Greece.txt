@@ -123,7 +123,7 @@ add_ideas = {
 	christianity
 	parliamentary_system
 	moderate_minimum_wage
-	#high_taxes 
+	high_taxes 
 }
 
 if = {
@@ -149,6 +149,16 @@ ATH = {
 	}
 	set_popularities = {
 		monarchist = 100
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "National Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_GRE"
 	}
 }
 

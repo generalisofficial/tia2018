@@ -109,6 +109,16 @@ add_ideas = {
 	no_minimum_wage
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Finnish Security Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_FIN"
+	}
+}
+
 set_country_flag = protestant
 
 #Eduskunta

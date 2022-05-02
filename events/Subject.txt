@@ -93,3 +93,36 @@ news_event = { #The (Country, ADJ) War of Independence
 		name = subject.4.o1
 	}
 }
+
+country_event = { #We are being reintegrated!
+	id = subject.5
+	title = subject.5.t
+	desc = subject.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.5.o1
+		news_event = subject.6
+		OVERLORD = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+news_event = { #Autonomous government of (Country) dissolved
+	id = subject.6
+	title = subject.6.t
+	desc = subject.6.d
+	picture = GFX_news_event_police_brutality
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = subject.6.o1
+	}
+}
