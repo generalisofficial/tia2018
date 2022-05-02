@@ -1720,4 +1720,65 @@ ideas = {
 		   	}
 		}
 	}
+
+	######################################
+	#	HEALTHCARE
+	######################################
+
+	healthcare = { 
+		law = yes
+
+		extensive_healthcare_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				stability_factor = 0.2
+				MONTHLY_POPULATION = 0.2
+				army_morale_factor = 0.05
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		moderate_healthcare_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				stability_factor = 0.1
+				MONTHLY_POPULATION = 0.1
+				army_morale_factor = 0.025
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		minimal_healthcare_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				#
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
 }
