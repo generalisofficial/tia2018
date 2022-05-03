@@ -441,22 +441,35 @@ country_event = { #End of the United Kingdom
 	
 	trigger = {
 		original_tag = ENG
+		OR = {
+			has_cosmetic_tag = GBR
+			has_cosmetic_tag = GBR_monarchist
+		}
 		country_exists = SCO
 		country_exists = WLS
 	}
 	
 	option = {
 		name = britain.16.o1
-		set_cosmetic_tag = ENGLAND
+		if = {
+			limit = {
+				has_cosmetic_tag = GBR_monarchist
+			}
+			set_cosmetic_tag = ENG_monarchist
+			else = {
+				drop_cosmetic_tag = yes
+			}
+		}
 		every_state = {
 			limit = {
 				is_core_of = ROOT
 				OR = {
 					is_core_of = SCO
 					is_core_of = WLS
+					is_core_of = IRE
 				}
 			}
-			remove_core_of = ENG
+			remove_core_of = ROOT
 		}
 	}
 }
