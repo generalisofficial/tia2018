@@ -39,8 +39,15 @@ domestic_affairs = {
 			if = {
 				limit = {
 					has_constitutional_monarchy_cosmetic_tag = yes
+					NOT = { has_cosmetic_tag = GBR_monarchist }
 				}
 				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					has_cosmetic_tag = GBR_monarchist
+				}
+				set_cosmetic_tag = GBR
 			}
 		}
 		

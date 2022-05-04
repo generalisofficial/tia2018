@@ -98,21 +98,42 @@ add_ideas = {
 	#population_growth_rapid
 	idea_african_union_member
 	no_minimum_wage
+	parliamentary_system
 }
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 29.09 }
+set_variable = { social_liberal_seats = 9.09 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 61.82 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = classical_liberal
+	ruling_party = conservative
 	last_election = "2014.10.7"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 40.81
-    socialist = 39.92
-    conservative = 19.27
+	social_democrat = 45.46
+	conservative = 45.45
+    social_liberal = 9.09
 }
 
 recruit_character = SAO_patrice_trovoada
+recruit_character = SAO_tome_vera_cruz
 recruit_character = SAO_jorge_bom_jesus
-recruit_character = SAO_leonel_mário_dalva
+recruit_character = SAO_elsa_garrido
