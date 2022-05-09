@@ -119,13 +119,13 @@ add_ideas = {
 set_country_flag = catholic
 
 #Dáil Éireann
-set_variable = { communist_seats = 3.8 }
-set_variable = { socialist_seats = 14.6 }
-set_variable = { progressive_seats = 1.3 }
-set_variable = { social_democrat_seats = 6.3 }
-set_variable = { social_liberal_seats = 14.5 }
-set_variable = { classical_liberal_seats = 27.8 }
-set_variable = { conservative_seats = 31.7 }
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 23.91 }
+set_variable = { progressive_seats = 1.44 }
+set_variable = { social_democrat_seats = 7.24 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 31.88 }
+set_variable = { conservative_seats = 35.53 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -135,43 +135,32 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_conservative
-set_country_flag = coalition_social_liberal
 add_to_variable = { ROOT.Coalition = conservative_seats }
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
 	ruling_party = conservative
-	last_election = "2016.4.10"
+	last_election = "2016.2.8"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 23.76
-	socialist = 23.75
-    conservative = 21.87
-	social_liberal = 12.5
-	progressive = 7.5
-    social_democrat = 7.5
-	communist = 3.12
+    socialist = 31.42
+	classical_liberal = 26.44
+	conservative = 25
+	progressive = 8.57
+	social_democrat = 8.57
 }
 
+recruit_character = IRE_justin_barrett
+recruit_character = IRE_hermann_kelly
+recruit_character = IRE_john_leahy
 recruit_character = IRE_leo_varadkar
-recruit_character = IRE_micheál_martin
-recruit_character = IRE_gerry_adams
+recruit_character = IRE_micheal_martin
 recruit_character = IRE_brendan_howlin
 recruit_character = IRE_eamon_ryan
-recruit_character = IRE_john_leahy
-recruit_character = IRE_conor_o´boyle
-recruit_character = IRE_philip_brennan
-recruit_character = IRE_michael_beary
-recruit_character = IRE_joe_mulligan
-recruit_character = IRE_paul_fry
-recruit_character = IRE_kevin_cotter
-recruit_character = IRE_kieran_brennan
-recruit_character = IRE_peter_o´hallogan
-recruit_character = IRE_mark_mellett
-recruit_character = IRE_hugh_tully
+recruit_character = IRE_gerry_adams
+recruit_character = IRE_martin_mcmonagle
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

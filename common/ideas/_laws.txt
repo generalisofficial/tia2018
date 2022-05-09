@@ -98,10 +98,12 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.25
+				conscription = 0.3
+				stability_factor = -0.1
+				research_speed_factor = -0.25
 				army_org_factor = -0.25
-				industrial_capacity_factory = -0.25
-				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
 			}
 			
 			cancel_if_invalid = no
@@ -1534,13 +1536,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 5
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 			
 			modifier = {
 				stability_factor = -0.2
+				custom_modifier_tooltip = TT_will_affect_income
 			}
 		
 			cancel_if_invalid = no
@@ -1554,13 +1553,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 4
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
 				stability_factor = -0.1
+				custom_modifier_tooltip = TT_will_affect_income
 			}
 			
 			cancel_if_invalid = no
@@ -1575,12 +1571,8 @@ ideas = {
 			removal_cost = -1
 			level = 3
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
-				
 			modifier = {
-				#
+				custom_modifier_tooltip = TT_will_affect_income
 			}
 			
 			default = yes
@@ -1595,13 +1587,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 2
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
 				stability_factor = 0.1
+				custom_modifier_tooltip = TT_will_affect_income
 			}
 			
 			cancel_if_invalid = no
@@ -1615,13 +1604,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 1
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
 				stability_factor = 0.2
+				custom_modifier_tooltip = TT_will_affect_income
 			}
 			
 			cancel_if_invalid = no
@@ -1734,9 +1720,10 @@ ideas = {
 			level = 3
 			
 			modifier = {
-				stability_factor = 0.2
+				stability_factor = 0.1
 				MONTHLY_POPULATION = 0.2
 				army_morale_factor = 0.05
+				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 		
 			cancel_if_invalid = no
@@ -1752,9 +1739,10 @@ ideas = {
 			level = 2
 				
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.05
 				MONTHLY_POPULATION = 0.1
 				army_morale_factor = 0.025
+				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
 			cancel_if_invalid = no
@@ -1770,7 +1758,70 @@ ideas = {
 			level = 1
 				
 			modifier = {
-				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	######################################
+	#	EDUCATION
+	######################################
+
+	education = { 
+		law = yes
+
+		extensive_education_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.5
+				MONTHLY_POPULATION = -0.2
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		moderate_education_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.25
+				MONTHLY_POPULATION = -0.1
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		minimal_education_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
 			default = yes

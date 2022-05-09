@@ -71,6 +71,50 @@ economic_affairs = {
 		}
 	}
 
+	kickstart_industrial_development = {
+
+		visible = {
+			is_sovereign_state = yes
+			num_of_civilian_factories < 1
+		}
+		
+		available = {
+			has_war = no
+			any_owned_state = {
+				free_building_slots = {
+					building = civilian_industry
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+		
+		icon = industry
+		cost = 50
+		days_remove = 30
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = civilian_industry
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = civilian_industry
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	# Unique
 
 	build_the_nowy_swiat_canal = {

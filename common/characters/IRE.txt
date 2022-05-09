@@ -1,5 +1,38 @@
 characters={
     #Starting - Political
+	IRE_justin_barrett={
+		name="Justin Barrett"
+		portraits={
+			civilian={
+				large=GFX_Portrait_IRE_Justin_Barrett
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
+	IRE_hermann_kelly={
+		name="Hermann Kelly"
+		portraits={
+			civilian={
+				large=GFX_Portrait_IRE_Hermann_Kelly
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	IRE_john_leahy={
+		name="John Leahy"
+		portraits={
+			civilian={
+				large=GFX_Portrait_IRE_John_Leahy
+			}
+		}
+		country_leader={
+			ideology=national_conservative_ideology
+		}
+	}
 	IRE_leo_varadkar={
 		name="Leo Varadkar"
 		portraits={
@@ -11,7 +44,7 @@ characters={
 			ideology=christian_democrat
 		}
 	}
-	IRE_micheál_martin={
+	IRE_micheal_martin={
 		name="Micheál Martin"
 		portraits={
 			civilian={
@@ -20,17 +53,6 @@ characters={
 		}
 		country_leader={
 			ideology=classical_liberal_ideology
-		}
-	}
-	IRE_gerry_adams={
-		name="Gerry Adams"
-		portraits={
-			civilian={
-				large=GFX_Portrait_IRE_Gerry_Adams
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
 		}
 	}
 	IRE_brendan_howlin={
@@ -55,184 +77,26 @@ characters={
 			ideology=green
 		}
 	}
-	IRE_john_leahy={
-		name="John Leahy"
+	IRE_gerry_adams={
+		name="Gerry Adams"
 		portraits={
 			civilian={
-				large=GFX_Portrait_IRE_John_Leahy
+				large=GFX_Portrait_IRE_Gerry_Adams
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=democratic_socialist
 		}
 	}
-	IRE_conor_o´boyle={
-		name="Conor O´Boyle"
+	IRE_martin_mcmonagle={
+		name="Martin McMonagle"
 		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Conor_O_Boyle
+			civilian={
+				large=GFX_Portrait_IRE_Martin_McMonagle
 			}
 		}
-		field_marshal={
-			traits={ old_guard thorough_planner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_philip_brennan={
-		name="Philip Brennan"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Philip_Brennan
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_michael_beary={
-		name="Michael Beary"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Michael_Beary
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_joe_mulligan={
-		name="Joe Mulligan"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Joe_Mulligan
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_paul_fry={
-		name="Paul Fry"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Paul_Fry
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_kevin_cotter={
-		name="Kevin Cotter"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Kevin_Cotter
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_kieran_brennan={
-		name="Kieran Brennan"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Kieran_Brennan
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_peter_o´hallogan={
-		name="Peter O´Hallogan"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Peter_O_Hallogan
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_mark_mellett={
-		name="Mark Mellett"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Mark_Mellett
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	IRE_hugh_tully={
-		name="Hugh Tully"
-		portraits={
-			army={
-				large=GFX_Portrait_IRE_Portrait_Hugh_Tully
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 	#Starting - Military

@@ -231,6 +231,20 @@ on_actions = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					has_idea = idea_baltic_assembly_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_baltic_assembly_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = baltic_assembly_member
+					}
+				}
+			}
 			if = {
 				limit = {
 					NOT = {

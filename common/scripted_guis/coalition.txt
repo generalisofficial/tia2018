@@ -910,10 +910,12 @@ scripted_gui = {
 					modifier = {
 						add = 24
 						NOT = { has_country_flag = coalition_classical_liberal }
-						OR = {
-							has_government = social_democrat
-							has_government = national_conservative
-						}
+						has_government = national_conservative
+					}
+					modifier = {
+						add = 4
+						NOT = { has_country_flag = coalition_classical_liberal }
+						has_government = social_democrat
 					}
 				}
 			}
@@ -954,8 +956,13 @@ scripted_gui = {
 						NOT = { has_country_flag = coalition_social_democrat }
 						OR = {
 							has_government = socialist
-							has_government = classical_liberal
+							has_government = communist
 						}
+					}
+					modifier = {
+						add = 4
+						NOT = { has_country_flag = coalition_social_democrat }
+						has_government = classical_liberal
 					}
 				}
 			}
@@ -1009,7 +1016,10 @@ scripted_gui = {
 					modifier = {
 						add = 24
 						NOT = { has_country_flag = coalition_communist }
-						has_government = progressive
+						OR = {
+							has_government = progressive
+							has_government = social_democrat
+						}
 					}
 				}
 			}

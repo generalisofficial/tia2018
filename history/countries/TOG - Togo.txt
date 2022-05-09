@@ -100,7 +100,8 @@ add_ideas = {
 	#non_aligned_movement_member
 	civil_liberties_authoritarian
 	pro_life
-	very_high_taxes  
+	very_high_taxes
+	presidential_republic
 }
 
 set_country_flag = catholic
@@ -109,11 +110,11 @@ set_country_flag = catholic
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 31.9 }
+set_variable = { social_democrat_seats = 31.12 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 68.1 }
+set_variable = { national_conservative_seats = 68.88 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -126,15 +127,15 @@ add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2015.4.25"
+	last_election = "2015.2.22"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 64.8
-	social_democrat = 35.2
+    national_conservative = 80.82
+	social_democrat = 19.18
 }
 
-recruit_character = TOG_faure_gnassingbé
-recruit_character = TOG_jeanpierre_fabre
+recruit_character = TOG_faure_gnassingbe
+recruit_character = TOG_jean_pierre_fabre

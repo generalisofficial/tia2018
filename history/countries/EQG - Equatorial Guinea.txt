@@ -113,10 +113,10 @@ add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 1 }
+set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
+set_variable = { conservative_seats = 1 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 99 }
@@ -136,9 +136,11 @@ set_politics = {
 }
 
 set_popularities = {
-    right_wing_nationalist = 99
-    social_democrat = 1
+    right_wing_nationalist = 92
+    conservative = 5.77
+	social_democrat = 2.23
 }
 
 recruit_character = EQG_teodoro_obiang_nguema_mbasogo
+recruit_character = EQG_gabriel_nse_obiang
 recruit_character = EQG_andres_esono_ondo

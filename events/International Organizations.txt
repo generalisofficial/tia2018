@@ -100,6 +100,24 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_global_flag = ongoing_BA_application # Baltic Assembly
+			}
+			add_ideas = idea_baltic_assembly_member
+			clr_global_flag = ongoing_BA_application
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_idea = idea_baltic_assembly_member
+					}
+					add_opinion_modifier = { target = ROOT modifier = baltic_assembly_member }
+					ROOT = {
+						add_opinion_modifier = { target = PREV modifier = baltic_assembly_member }
+					}
+				}
+			}
+		}
 		clr_global_flag = ongoing_generic_application
 		clear_variable = global.generic_application_vote_count_in_favor
 		clear_variable = global.generic_application_vote_count_against
