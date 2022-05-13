@@ -1,0 +1,35 @@
+﻿add_namespace = canada
+
+country_event = { #(Year) Conservative leadership election
+	id = canada.1
+	title = canada.1.t
+	desc = canada.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = canada.1.o1
+		ai_chance = {
+			factor = 57
+		}
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Erin O'Toole"
+	        picture = GFX_Portrait_CAN_Erin_O_Toole
+	        ideology = liberal_conservative
+        }
+	}
+	
+	option = {
+		name = canada.1.o2
+		ai_chance = {
+			factor = 43
+		}
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Peter MacKay"
+	        picture = GFX_Portrait_CAN_Peter_MacKay
+	        ideology = social_conservative
+        }
+	}
+}

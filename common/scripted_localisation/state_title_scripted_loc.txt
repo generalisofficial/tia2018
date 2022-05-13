@@ -4,6 +4,36 @@ defined_text = {
 		trigger = {
 			THIS = {
 				is_core_of = owner
+				is_capital = yes
+			}
+			owner = {
+				has_idea = federal
+			}
+		}
+		localization_key = STATE_TITLE_CAPITAL_DISTRICT
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
+			}
+			owner = {
+				OR = {
+					original_tag = ALB
+					original_tag = CRO
+					original_tag = EST
+					original_tag = LIB
+					original_tag = NOR
+					original_tag = SWE
+				}
+			}
+		}
+		localization_key = STATE_TITLE_COUNTY
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
 			}
 			owner = {
 				original_tag = POL
@@ -72,9 +102,105 @@ defined_text = {
 				is_core_of = owner
 			}
 			owner = {
+				OR = {
+					original_tag = DAH
+					original_tag = BOL
+					original_tag = COL
+					original_tag = RCG
+					original_tag = ELS
+					original_tag = GUA
+					original_tag = HAI
+					original_tag = HON
+				}
+			}
+		}
+		localization_key = STATE_TITLE_DEPARTMENT
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
+			}
+			owner = {
+				OR = {
+					original_tag = BOT
+					original_tag = BRU
+					original_tag = AZR
+					original_tag = BAH
+					original_tag = BLZ
+					original_tag = BHU
+					original_tag = CYP
+					original_tag = ISR
+					original_tag = LES
+					original_tag = LBA
+					original_tag = LNA
+					original_tag = NAU
+				}
+			}
+		}
+		localization_key = STATE_TITLE_DISTRICT
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
+			}
+			owner = {
+				OR = {
+					original_tag = BEL
+					original_tag = BLR
+					original_tag = VOL
+					original_tag = CMR
+					original_tag = CHA
+					original_tag = CHL
+					original_tag = CZE
+					original_tag = LIT
+					original_tag = DJI
+					original_tag = ERI
+					original_tag = SWA
+					original_tag = ETH
+					original_tag = FIN
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = GAM
+					original_tag = GEO
+					original_tag = GHA
+					original_tag = GRE
+					original_tag = GNA
+					original_tag = GNB
+					original_tag = GYA
+					original_tag = ITA
+					original_tag = IVO
+					original_tag = KAZ
+					original_tag = KYR
+					original_tag = MLW
+					original_tag = MLI
+					original_tag = MRT
+					original_tag = MOR
+					original_tag = BRM
+					original_tag = NGR
+					original_tag = SEN
+					original_tag = TOG
+					original_tag = TRI
+					original_tag = HUN
+					original_tag = LAT
+				}
+			}
+		}
+		localization_key = STATE_TITLE_REGION
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
+			}
+			owner = {
 				has_idea = federal
 				NOT = {
-					original_tag = CAN
+					OR = {
+						original_tag = CAN
+						original_tag = ARG
+					}
 				}
 			}
 		}
@@ -89,6 +215,7 @@ defined_text = {
 				OR = {
 					has_idea = unitary
 					original_tag = CAN
+					original_tag = ARG
 				}
 			}
 		}

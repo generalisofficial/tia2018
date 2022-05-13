@@ -2084,6 +2084,20 @@ election_pulse = {
 			ideology = classical_liberal_ideology
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = CAN
+			NOT = { has_government = conservative }
+			has_country_leader = {
+				name = "Andrew Scheer"
+				ruling_only = no
+			}
+		}
+		country_event = {
+			id = canada.1
+			days = 52
+		}
+	}
 }
 
 election_effect = {

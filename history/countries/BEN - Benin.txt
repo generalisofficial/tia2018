@@ -1,11 +1,10 @@
-﻿capital = 367
+﻿capital = 780
 
-oob = "generic_2018"
+oob = "BEN_2018"
 
-set_convoys = 60
+set_convoys = 6
 
-
-set_country_flag = country_language_english
+set_country_flag = country_language_french
 
 set_technology = {
 	## Infantry ##
@@ -14,11 +13,12 @@ set_technology = {
 	motorised_infantry = 1
 	infantry_rifle_upgrade = 1
 	support_weapons = 1
-	support_weapons2 = 1
 	night_vision = 1
 	body_armor = 1
 	camouflage = 1
+	marines = 1
 	tech_mountaineers = 1
+	paratroopers = 1
 	
 	
 	## Support Companies ##
@@ -43,7 +43,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antitank = 1
 	interwar_antiair = 1
-	
 
 	
 	## Air ##
@@ -94,17 +93,50 @@ if = {
 	}
 }
 
-set_politics = {
-	ruling_party = conservative
-	last_election = "2014.11.6"
-	election_frequency = 48
+add_ideas = {
+	#population_growth_explosion
+	idea_african_union_member
+	#non_aligned_movement_member
+	presidential_republic
+	prohibited_firearms
+	pro_life
+	active_draft
+	high_taxes 
+	moderate_healthcare_spending
+}
+
+set_country_flag = catholic
+
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 43.38 }
+set_variable = { social_liberal_seats = 56.62 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+
+set_politics = {	
+	ruling_party = social_democrat
+	last_election = "2016.4.11"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 59.5
-    social_liberal = 40.5
+	social_democrat = 56.63
+    social_liberal = 43.37
 }
 
-recruit_character = ABM_kay_ivey
-recruit_character = ABM_walt_maddox
+recruit_character = BEN_alassane_soumanou
+recruit_character = BEN_patrice_talon

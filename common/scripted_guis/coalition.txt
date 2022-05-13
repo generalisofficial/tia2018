@@ -1050,7 +1050,9 @@ scripted_gui = {
 				cleanup_coalition = yes
 				update_coalition = yes
 				set_parliament_graphics = yes
-		        election_pulse = yes
+				hidden_effect = {
+					election_pulse = yes
+				}
 			}
 			party1_click = { 
 				if = {

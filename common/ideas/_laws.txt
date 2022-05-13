@@ -1832,4 +1832,65 @@ ideas = {
 			}
 		}
 	}
+
+	######################################
+	#	ECONOMIC SUBSIDIES
+	######################################
+
+	economic_subsidies = { 
+		law = yes
+
+		extensive_economic_subsidies = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		moderate_economic_subsidies = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		minimal_economic_subsidies = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
 }

@@ -158,7 +158,9 @@ country_event = {
 			set_variable = { ROOT.Coalition = islamist_seats }
 		}
 		set_parliament_graphics = yes
-		election_pulse = yes
+		hidden_effect = {
+			election_pulse = yes
+		}
 	}
 	
 	option = {	#Commit Electoral Fraud
@@ -245,7 +247,9 @@ country_event = {
 		custom_effect_tooltip = TT_parliamentary_election_results
 		set_parliament_graphics = yes
 		quickset_coalition = yes
-		election_pulse = yes
+		hidden_effect = {
+			election_pulse = yes
+		}
 	}
 }
 
@@ -548,7 +552,9 @@ country_event = {
 			set_variable = { ROOT.Coalition = islamist_seats }
 		}
 		set_parliament_graphics = yes
-		election_pulse = yes
+		hidden_effect = {
+			election_pulse = yes
+		}
 	}
 	option = { #Form Minority Single-Party Government
 		name = election.3.o3
@@ -697,7 +703,9 @@ country_event = {
 			set_variable = { ROOT.Coalition = islamist_seats }
 		}
 		set_parliament_graphics = yes
-		election_pulse = yes
+		hidden_effect = {
+			election_pulse = yes
+		}
 	}
 }
 
@@ -811,7 +819,9 @@ country_event = {
 			}
 		}
 		set_parliament_graphics = yes
-		election_pulse = yes
+		hidden_effect = {
+			election_pulse = yes
+		}
 	}
 }
 

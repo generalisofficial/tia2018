@@ -141,12 +141,12 @@ set_cosmetic_tag = CAN_monarchist # Constitutional Monarchy
 #House of Commons
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0.29 }
-set_variable = { social_democrat_seats = 15.68 }
-set_variable = { social_liberal_seats = 54.14 }
+set_variable = { progressive_seats = 0.3 }
+set_variable = { social_democrat_seats = 13.41 }
+set_variable = { social_liberal_seats = 56.11 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 29.89 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { conservative_seats = 29.88 }
+set_variable = { national_conservative_seats = 0.3 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -165,10 +165,10 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 46.77
-    conservative = 35.79
-    social_democrat = 16.56
-    progressive = 0.88
+    social_liberal = 51.49
+    conservative = 39.67
+    social_democrat = 7.86
+    progressive = 0.98
 }
 
 add_opinion_modifier = {
@@ -206,68 +206,15 @@ add_opinion_modifier = {
 	modifier = NAFTA
 }
 
-recruit_character = CAN_justin_trudeau
+recruit_character = CAN_don_andrews
+recruit_character = CAN_travis_patron
+recruit_character = CAN_maxime_bernier
 recruit_character = CAN_andrew_scheer
+recruit_character = CAN_tim_moen
+recruit_character = CAN_justin_trudeau
 recruit_character = CAN_jagmeet_singh
 recruit_character = CAN_elizabeth_may
-recruit_character = CAN_maxime_bernier
-recruit_character = CAN_tim_moen
 recruit_character = CAN_elizabeth_rowley
-recruit_character = CAN_don_andrews
-recruit_character = CAN_wael_haddara
-recruit_character = CAN_j._c._g._juneau
-recruit_character = CAN_jeanmarc_lanthier
-recruit_character = CAN_rob_roy_mackenzie
-recruit_character = CAN_paul_wynnyk
-recruit_character = CAN_jonathan_vance
-recruit_character = CAN_dean_milner
-recruit_character = CAN_simon_hetherington
-recruit_character = CAN_omer_lavoie
-recruit_character = CAN_c.j._turenne
-recruit_character = CAN_eric_landry
-recruit_character = CAN_stéphan_joudry
-recruit_character = CAN_john_cochrane
-recruit_character = CAN_john_hlibchuk
-recruit_character = CAN_sylvie_pelletier
-recruit_character = CAN_wajahat_ali_beg
-recruit_character = CAN_jonathan_chouinard
-recruit_character = CAN_bill_fletcher
-recruit_character = CAN_luc_girouard
-recruit_character = CAN_geoff_abthorpe
-recruit_character = CAN_eppo_van_weelderen
-recruit_character = CAN_josée_robidoux
-recruit_character = CAN_stephen_bowes
-recruit_character = CAN_michael_hood
-recruit_character = CAN_michel_rouleau
-recruit_character = CAN_denis_thompson
-recruit_character = CAN_stephen_hunter
-recruit_character = CAN_blaise_cathcart
-recruit_character = CAN_colleen_halpin
-recruit_character = CAN_alan_guimond
-recruit_character = CAN_gérard_poitras
-recruit_character = CAN_charles_lamarre
-recruit_character = CAN_h.c._mackay
-recruit_character = CAN_jeanrobert_bernier
-recruit_character = CAN_pierre_stamand
-recruit_character = CAN_hercule_gosselin
-recruit_character = CAN_terry_garand
-recruit_character = CAN_stephen_cadden
-recruit_character = CAN_stuart_hartnell
-recruit_character = CAN_jennie_carignan
-recruit_character = CAN_derek_macaulay
-recruit_character = CAN_bill_truelove
-recruit_character = CAN_ron_lloyd
-recruit_character = CAN_art_mcdonald
-recruit_character = CAN_jeff_zwick
-recruit_character = CAN_michel_vigneault
-recruit_character = CAN_marta_mulkins
-recruit_character = CAN_john_newton
-recruit_character = CAN_craig_baines
-recruit_character = CAN_scott_bishop
-recruit_character = CAN_gilles_couturier
-recruit_character = CAN_david_arsenault
-recruit_character = CAN_gilles_grégoire
-recruit_character = CAN_steven_waddell
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
