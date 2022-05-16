@@ -441,6 +441,7 @@ domestic_affairs = {
 		available = {
 			NOT = {
 				has_idea = electoral_honeymoon
+				has_country_flag = snap_election_in_progress
 			}
 		}
 		
@@ -449,7 +450,12 @@ domestic_affairs = {
 		cost = 50
 		days_remove = 30
 
+		complete_effect = {
+			set_country_flag = snap_election_in_progress
+		}
+
 		remove_effect = {
+			clr_country_flag = snap_election_in_progress
 			hold_election = ROOT
 		}
 		
@@ -470,6 +476,7 @@ domestic_affairs = {
 
 		available = {
 			has_idea = minority_government
+			NOT = { has_country_flag = snap_election_in_progress }
 		}
 		
 		icon = parliament
@@ -479,10 +486,12 @@ domestic_affairs = {
 
 		complete_effect = {
 			news_event = politics.8
+			set_country_flag = snap_election_in_progress
 		}
 
 		remove_effect = {
 			country_event = election.2
+			clr_country_flag = snap_election_in_progress
 		}
 		
 		ai_will_do = {

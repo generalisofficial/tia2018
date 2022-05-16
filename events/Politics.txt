@@ -324,3 +324,52 @@ news_event = { #(Country) recognizes ROC
 		}
 	}
 }
+
+#Motion of No Confidence
+country_event = {
+	id = politics.11
+	title = politics.11.t
+	desc = politics.11.d
+	
+	trigger = {
+		has_idea = minority_government
+		has_idea = parliamentary_system
+		has_stability < 0.3
+		has_war = no
+		NOT = {
+			check_variable = {
+				var = party_popularity@ruling_party
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+		name = politics.11.o1
+		news_event = politics.12
+		set_country_flag = snap_election_in_progress
+		country_event = {
+			id = election.5
+			days = 30
+		}
+	}
+}
+
+news_event = { #(Country, ADJ) government ousted in no-confidence vote
+	id = politics.12
+	title = politics.12.t
+	desc = politics.12.d
+	picture = GFX_news_event_election
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.12.o1
+	}
+}

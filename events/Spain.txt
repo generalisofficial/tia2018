@@ -1,6 +1,6 @@
 ﻿add_namespace = spain
 
-country_event = { #2018 PP leadership election
+country_event = { #The Gürtel Case
 	id = spain.1
 	title = spain.1.t
 	desc = spain.1.d
@@ -9,12 +9,36 @@ country_event = { #2018 PP leadership election
 	
 	trigger = {
 		original_tag = SPR
-		date > 2018.7.4
+		date > 2018.5.24
 		date < 2019.1.1
+		has_country_leader = {
+			name = "Mariano Rajoy"
+			ruling_only = no
+		}
 	}
 	
 	option = {
 		name = spain.1.o1
+		country_event = {
+			id = spain.2
+			days = 49
+		}
+		add_popularity = { 
+			ideology = conservative
+			popularity = -0.04
+		}
+	}
+}
+
+country_event = { #19th National Congress of the People's Party
+	id = spain.2
+	title = spain.2.t
+	desc = spain.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spain.2.o1
 		ai_chance = {
 			factor = 58
 		}
@@ -27,7 +51,7 @@ country_event = { #2018 PP leadership election
 	}
 	
 	option = {
-		name = spain.1.o2
+		name = spain.2.o2
 		ai_chance = {
 			factor = 42
 		}
