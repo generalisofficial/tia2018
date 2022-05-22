@@ -1895,4 +1895,181 @@ ideas = {
 			}
 		}
 	}
+
+	######################################
+	#	DEFENSE
+	######################################
+
+	defense = { 
+		law = yes
+
+		extensive_defense_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		moderate_defense_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		minimal_defense_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	######################################
+	#	LAW ENFORCEMENT
+	######################################
+
+	law_enforcement = { 
+		law = yes
+
+		extensive_law_enforcement_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		moderate_law_enforcement_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		minimal_law_enforcement_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	######################################
+	#	SOCIAL WELFARE
+	######################################
+
+	social_welfare = { 
+		law = yes
+
+		extensive_welfare_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+		
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		moderate_welfare_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 2
+				
+			modifier = {
+				#
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		minimal_welfare_spending = {
+			cost = 125
+			removal_cost = -1
+			level = 1
+				
+			modifier = {
+				custom_modifier_tooltip = TT_will_affect_expenses
+			}
+			
+			default = yes
+			cancel_if_invalid = no
+				
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
 }

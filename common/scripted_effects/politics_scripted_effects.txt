@@ -1803,6 +1803,10 @@ election_pulse = {
 		}
 		hidden_effect = {
 			add_ideas = minority_government
+			news_event = politics.14
+		}
+		else = {
+			news_event = politics.13
 		}
 	}
 	if = {
@@ -2096,6 +2100,21 @@ election_pulse = {
 		country_event = {
 			id = canada.1
 			days = 52
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = PAK
+			has_country_leader = {
+				name = "Shahid Khaqan Abbasi"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = conservative
+		create_country_leader = {
+			name = "Shehbaz Sharif"
+			picture = GFX_Portrait_PAK_Shehbaz_Sharif
+			ideology = liberal_conservative
 		}
 	}
 }

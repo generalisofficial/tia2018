@@ -559,6 +559,31 @@ country_event = { ### Monthly On-action
 	is_triggered_only = yes
 	
 	immediate = {
+		### Motion of No Confidence - 10% chance every month if conditions true
+		if = {
+			limit = {
+				has_idea = minority_government
+				has_idea = parliamentary_system
+				has_stability < 0.3
+				has_war = no
+				NOT = {
+					has_country_flag = snap_election_in_progress
+					check_variable = {
+						var = party_popularity@ruling_party
+						value = 50
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			random_list = {
+				10 = {
+					country_event = politics.11
+				}
+				90 = {
+					#
+				}
+			}
+		}
 		### Randomizer - Adds 1% to random party
 		random_list = {
 			5 = {

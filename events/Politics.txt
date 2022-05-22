@@ -331,23 +331,7 @@ country_event = {
 	title = politics.11.t
 	desc = politics.11.d
 	
-	trigger = {
-		has_idea = minority_government
-		has_idea = parliamentary_system
-		has_stability < 0.3
-		has_war = no
-		NOT = {
-			check_variable = {
-				var = party_popularity@ruling_party
-				value = 50
-				compare = greater_than_or_equals
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 100
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = politics.11.o1
@@ -371,5 +355,33 @@ news_event = { #(Country, ADJ) government ousted in no-confidence vote
 	
 	option = {
 		name = politics.12.o1
+	}
+}
+
+news_event = { #(Country, Parliament) approves new majority government in (Country)
+	id = politics.13
+	title = politics.13.t
+	desc = politics.13.d
+	picture = GFX_news_event_parliament_vote
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.13.o1
+	}
+}
+
+news_event = { #(Country, Parliament) approves new minority government in (Country)
+	id = politics.14
+	title = politics.14.t
+	desc = politics.14.d
+	picture = GFX_news_event_parliament_vote
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.14.o1
 	}
 }

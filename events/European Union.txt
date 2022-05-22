@@ -157,7 +157,15 @@ country_event = {
 		clear_variable = EUU.NI_seats
 		every_country = {
 			limit = {
-				has_idea = idea_european_union_member
+				OR = {
+					has_idea = idea_european_union_member
+					AND = {
+						has_autonomy_state = autonomy_autonomous_region
+						OVERLORD = {
+							has_idea = idea_european_union_member
+						}
+					}
+				}
 			}
 			country_event = european_union.6
 		}

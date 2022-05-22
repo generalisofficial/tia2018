@@ -1,10 +1,32 @@
 characters={
     #Starting - Political
-	PAK_imran_khan={
-		name="Imran Khan"
+	PAK_fazal_ur_rehman={
+		name="Fazal-ur-Rehman"
 		portraits={
 			civilian={
-				large=GFX_Portrait_PAK_Imran_Khan
+				large=GFX_Portrait_PAK_Fazal_ur_Rehman
+			}
+		}
+		country_leader={
+			ideology=islamist_ideology
+		}
+	}
+	PAK_ijaz_ul_haq={
+		name="Ijaz-ul-Haq"
+		portraits={
+			civilian={
+				large=GFX_Portrait_PAK_Ijaz_ul_Haq
+			}
+		}
+		country_leader={
+			ideology=right_wing_nationalist_ideology
+		}
+	}
+	PAK_sibghatullah_shah_rashdi_iii={
+		name="Sibghatullah Shah Rashdi III"
+		portraits={
+			civilian={
+				large=GFX_Portrait_PAK_Sibghatullah_Shah_Rashdi_III
 			}
 		}
 		country_leader={
@@ -19,7 +41,31 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_conservative
+			ideology=liberal_conservative
+		}
+	}
+	PAK_pervez_musharraf={
+		name="Pervez Musharraf"
+		portraits={
+			civilian={
+				large=GFX_Portrait_PAK_Pervez_Musharraf
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+			traits={ friend_of_america }
+		}
+	}
+	PAK_imran_khan={
+		name="Imran Khan"
+		portraits={
+			civilian={
+				large=GFX_Portrait_PAK_Imran_Khan
+			}
+		}
+		country_leader={
+			ideology=centrist
+			traits={ friend_of_china friend_of_russia enemy_of_america }
 		}
 	}
 	PAK_bilawal_bhutto_zardari={
@@ -30,29 +76,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=progressive_ideology
-		}
-	}
-	PAK_fazalurrehman={
-		name="Fazal-ur-Rehman"
-		portraits={
-			civilian={
-				large=GFX_Portrait_PAK_Fazal_ur_Rehman
-			}
-		}
-		country_leader={
-			ideology=islamic_democracy
-		}
-	}
-	PAK_sibghatullah_shah_rashdi_iii={
-		name="Sibghatullah Shah Rashdi III"
-		portraits={
-			civilian={
-				large=GFX_Portrait_PAK_Sibghatullah_Shah_Rashdi_III
-			}
-		}
-		country_leader={
 			ideology=social_democrat_ideology
+		}
+	}
+	PAK_liaquat_ali_shaikh={
+		name="Liaquat Ali Shaikh"
+		portraits={
+			civilian={
+				large=GFX_Portrait_PAK_Liaquat_Ali_Shaikh
+			}
+		}
+		country_leader={
+			ideology=green
 		}
 	}
 	PAK_asfandyar_wali_khan={
@@ -66,17 +101,6 @@ characters={
 			ideology=democratic_socialist
 		}
 	}
-	PAK_altaf_hussain={
-		name="Altaf Hussain"
-		portraits={
-			civilian={
-				large=GFX_Portrait_PAK_Altaf_Hussain
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
 	PAK_jameel_ahmad_malik={
 		name="Jameel Ahmad Malik"
 		portraits={
@@ -86,567 +110,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	PAK_ashfaq_parvez_kayani={
-		name="Ashfaq Parvez Kayani"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Kayani
-			}
-		}
-		field_marshal={
-			traits={ old_guard organisational_leader }
-			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_zubair_mahmood_hayat={
-		name="Zubair Mahmood Hayat"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Zubair_Hayat
-			}
-		}
-		field_marshal={
-			traits={ old_guard thorough_planner }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_qamar_javed_bajwa={
-		name="Qamar Javed Bajwa"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Qamar_Bajwa
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_azhar_saleh_abbasi={
-		name="Azhar Saleh Abbasi"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Azhar_Saleh_Abbasi
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_raheel_sharif={
-		name="Raheel Sharif"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Raheel_Sharif
-			}
-		}
-		corps_commander={
-			traits={ commando ranger }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_muhammad_aziz_khan={
-		name="Muhammad Aziz Khan"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Aziz_Khan
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_muhammad_zafar_iqbal={
-		name="Muhammad Zafar Iqbal"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Zafar_Iqbal
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_ishfaq_nadeem_ahmad={
-		name="Ishfaq Nadeem Ahmad"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Ishfaq_Ahmad
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_sadiq_ali={
-		name="Sadiq Ali"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Sadiq_Ali
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_ikram_ul_haq={
-		name="Ikram Ul Haq"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_IkramuL_Haq
-			}
-		}
-		corps_commander={
-			traits={ fortress_buster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_zaheerulislam={
-		name="Zaheer-ul-Islam"
-		portraits={
-			army={
-				large=GFX_Portrait_Asia_general1
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_shahid_baig_mirza={
-		name="Shahid Baig Mirza"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Shahid_Mirza
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_naveed_mukhtar={
-		name="Naveed Mukhtar"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Naveed_Mukhtar
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_sher_afgun={
-		name="Sher Afgun"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Sher_Afgun
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_athar_abbas={
-		name="Athar Abbas"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Athar_Abbas
-			}
-		}
-		corps_commander={
-			traits={ winter_specialist trait_mountaineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_nazir_ahmed_butt={
-		name="Nazir Ahmed Butt"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Nazir_Ahmed_Butt
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_hidayat_ur_rehman={
-		name="Hidayat Ur Rehman"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Hidayat_ur_Rehman
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_nauman_mahmood={
-		name="Nauman Mahmood"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Nauman_Mahmood
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_aamer_riaz={
-		name="Aamer Riaz"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Aamer_Riaz
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_muhammad_zahid_latif_mirza={
-		name="Muhammad Zahid Latif Mirza"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Zahid_Mirza
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_khalid_rabbani={
-		name="Khalid Rabbani"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Rabbani
-			}
-		}
-		corps_commander={
-			traits={ trait_mountaineer }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_mian_muhammad_hilal_hussein={
-		name="Mian Muhammad Hilal Hussein"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Mian_Mohammad_Hussain
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_sohail_aman={
-		name="Sohail Aman"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Sohail_Aman
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_umar_farooq_burki={
-		name="Umar Farooq Burki"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Umar_Faruq_Burki
-			}
-		}
-		corps_commander={
-			traits={ desert_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_muhammad_zakaullah={
-		name="Muhammad Zakaullah"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Muhammad_Zakaullah
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy superior_tactician }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_hasham_siddique={
-		name="Hasham Siddique"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Hasham_Siddique
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_zafar_mahmood_abbasi={
-		name="Zafar Mahmood Abbasi"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Zafar_Abbasi
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_shah_sohail_masood={
-		name="Shah Sohail Masood"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Shah_Masood
-			}
-		}
-		navy_leader={
-			traits={ spotter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_khaleem_shaukat={
-		name="Khaleem Shaukat"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Khaleem_Shaukat
-			}
-		}
-		navy_leader={
-			traits={ fly_swatter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_sajid_wazir_khan={
-		name="Sajid Wazir Khan"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Sajid_Wazir_Khan
-			}
-		}
-		navy_leader={
-			traits={ ironside }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_mukhtar_khan={
-		name="Mukhtar Khan"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Mukhtar_Khan
-			}
-		}
-		navy_leader={
-			traits={ air_controller }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_moazzam_ilyas={
-		name="Moazzam Ilyas"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Moazzam_Ilyas
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	PAK_muhammad_amjad_khan_niazi={
-		name="Muhammad Amjad Khan Niazi"
-		portraits={
-			army={
-				large=GFX_Portrait_PAK_Portrait_Muhammad_Amjad_Khan_Niazi
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	#Starting - Military
