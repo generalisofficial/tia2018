@@ -927,6 +927,13 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+				modifier = {
+				 	factor = 100
+					has_country_leader_ideology = libertarian
+			 	}
+			}
 		}
 		
 		permissive_gun_laws = {
@@ -952,6 +959,7 @@ ideas = {
 				modifier = {
 				 	factor = 10
 					has_idea = civil_liberties_libertarian
+					NOT = { has_country_leader_ideology = libertarian }
 			 	}
 			}
 		}
@@ -981,6 +989,7 @@ ideas = {
 				modifier = {
 				 	factor = 50
 					has_idea = civil_liberties_authoritarian
+					NOT = { has_country_leader_ideology = libertarian }
 			 	}
 			}
 		}
@@ -1011,6 +1020,7 @@ ideas = {
 				modifier = {
 				 	factor = 50
 					has_idea = civil_liberties_totalitarian
+					NOT = { has_country_leader_ideology = libertarian }
 			 	}
 			}
 		}

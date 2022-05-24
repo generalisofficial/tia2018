@@ -690,6 +690,7 @@ foreign_affairs = {
 		
 		complete_effect = {
 			ROM = { country_event = moldova.1 }
+			custom_effect_tooltip = TT_game_over_warning
 		}
 		
 		icon = moldova
@@ -949,6 +950,41 @@ foreign_affairs = {
 					has_government = fascist
 					has_government = monarchist
 					threat > 0.75
+				}
+			}
+		}
+	}
+
+	apply_for_union_with_austria = {
+	
+		visible = {
+			original_tag = STY
+			country_exists = AUS
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { has_war_with = AUS }
+		}
+		
+		complete_effect = {
+			AUS = { country_event = south_tyrol.1 }
+			custom_effect_tooltip = TT_game_over_warning
+		}
+		
+		icon = south_tyrol
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_opinion = {
+					target = ROM
+					value > 0
 				}
 			}
 		}

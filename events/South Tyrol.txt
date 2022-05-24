@@ -1,0 +1,34 @@
+﻿add_namespace = south_tyrol
+
+country_event = { #South Tyrol applies for Union
+	id = south_tyrol.1
+	title = south_tyrol.1.t
+	desc = south_tyrol.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_tyrol.1.o1
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -100
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = ROOT
+		}
+	}
+	
+	option = {
+		name = south_tyrol.1.o2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
