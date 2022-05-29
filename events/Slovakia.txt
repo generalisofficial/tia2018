@@ -13,18 +13,32 @@ country_event = { #Murder of Ján Kuciak
 			name = "Robert Fico"
 			ruling_only = yes
 		}
-		date > 2018.2.21
+		date > 2018.3.15
 		date < 2019.1.1
 	}
 	
 	option = {
 		name = slovakia.1.o1
-		add_stability = -0.1
+		news_event = slovakia.2
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 	        name = "Peter Pellegrini"
 	        picture = GFX_Portrait_SLO_Peter_Pellegrini
 	        ideology = social_democrat_ideology
         }
+	}
+}
+
+news_event = { #(Leader Title) of Slovakia resigns after scandal
+	id = slovakia.2
+	title = slovakia.2.t
+	desc = slovakia.2.d
+	picture = GFX_news_event_robert_fico
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = slovakia.2.o1
 	}
 }

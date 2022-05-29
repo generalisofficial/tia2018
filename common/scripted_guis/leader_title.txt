@@ -1,0 +1,27 @@
+scripted_gui = {
+	leader_title_politics_view = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "leader_title_politics_view_container"
+	}
+}
+
+scripted_gui = {
+	leader_title_diplo_view = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "leader_title_diplomacy_view_container"
+		
+		visible = {
+			THIS = {
+				exists = yes
+			}
+		}
+		
+		effects = {
+		}
+		
+		triggers = {
+		}
+	}
+}

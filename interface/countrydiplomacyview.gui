@@ -73,7 +73,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "leader_name"
-				position = { x = 155 y = 43 }
+				position = { x = 155 y = 8000 } #Hidden
 				font = "hoi_16mbs"
 				text = "Rudolf Kittler"
 				maxWidth = 210
@@ -185,7 +185,7 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "political_pie_chart"
-					position = { x = 141 y = 90 }
+					position = { x = 430 y = 90 }
 					size = { width=330 height=30 }
 					clipping = no
 
@@ -196,22 +196,13 @@ guiTypes = {
 					}
 
 					instantTextboxType = {
-						name = "legislature_text"
-						position = { x = 20 y = -90 }
-						font = "hoi_16mbs"
-						text = "Legislature"
-						maxWidth = 245
-						maxHeight = 20
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
 						name = "polling_text"
-						position = { x = 32 y = -10 }
+						position = { x= -69 y = -15 }
 						font = "hoi_16mbs"
 						text = "Polling"
+						format = center
 						maxWidth = 245
-						maxHeight = 20
+						maxHeight = 50
 						fixedsize = yes
 					}
 					
@@ -227,39 +218,31 @@ guiTypes = {
 					position = { x = 330 y = 25 }
 					size = { width = 255 height = 60 }
 					clipping = no
-					
-					instantTextboxType = {
-						name = "ruling_party_text"
-						position = { x = -50 y = -24 }
-						font = "hoi_18mbs"
-						text = "Ruling Party"
-						maxWidth = 245
-						maxHeight = 20
-						fixedsize = yes
-					}
 
 					instantTextboxType = {
 						name = "party_name"
-						position = { x = -7 y = 5 }
+						position = { x = -214 y = 98 }
 						font = "hoi_16mbs"
 						text = "party"
-						maxWidth = 245
-						maxHeight = 20
+						format = center
+						maxWidth = 190
+						maxHeight = 12
 						fixedsize = yes
 					}
 					
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = -7 y = 20 }
+						position = { x = -192 y = 115 }
 						font = "hoi_16mbs"
 						text = "ideology"
-						maxWidth = 100
+						format = center
+						maxWidth = 150
 						maxHeight = 20
 					}
 					
 					instantTextboxType = {
 						name = "elections"
-						position = { x = 105 y = 8 }
+						position = { x = 105 y = 10 }
 						font = "hoi_16mbs"
 						text = "elections"
 						maxWidth = 100
@@ -755,7 +738,7 @@ guiTypes = {
 			iconType ={
 				name = "ideology_icon"
 				spriteType = "GFX_ideology_unknown"
-				position = { x = 246 y = 128 }
+				position = { x = 179 y = 166 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}

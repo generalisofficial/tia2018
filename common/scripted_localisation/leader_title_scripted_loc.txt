@@ -1,0 +1,182 @@
+defined_text = {
+	name = GetLeaderTitle
+	### Presidential/Demarchic/One-Party
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = one_party_state
+				has_government = fascist
+				original_tag = GER
+			}
+		}
+		localization_key = LEADER_TITLE_FUHRER
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = one_party_state
+				has_government = islamist
+				original_tag = PER
+			}
+		}
+		localization_key = LEADER_TITLE_SUPREME_LEADER
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = one_party_state
+				has_government = communist
+				original_tag = PRK
+			}
+		}
+		localization_key = LEADER_TITLE_CHAIRMAN
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = one_party_state
+				has_government = communist
+				original_tag = CUB
+			}
+		}
+		localization_key = LEADER_TITLE_FIRST_SECRETARY
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = one_party_state
+				has_government = communist
+			}
+		}
+		localization_key = LEADER_TITLE_GENERAL_SECRETARY
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
+					has_idea = presidential_republic
+					has_idea = demarchic_republic
+					has_idea = one_party_state
+					AND = {
+						original_tag = UAE
+						has_idea = absolute_monarchy
+					}
+					AND = {
+						original_tag = SWI
+						has_idea = parliamentary_system
+					}
+				}
+			}
+		}
+		localization_key = LEADER_TITLE_PRESIDENT
+	}
+	### Parliamentary
+	text = {
+		trigger = {
+			THIS = {
+				original_tag = SMR
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_FOREIGN_SECRETARY
+	}
+	text = {
+		trigger = {
+			THIS = {
+				original_tag = IRE
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_TAOISEACH
+	}
+	text = {
+		trigger = {
+			THIS = {
+				original_tag = BRM
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_STATE_COUNCELLOR
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+				}
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_CHANCELLOR
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = parliamentary_system
+			}
+			NOT = { original_tag = SWI }
+		}
+		localization_key = LEADER_TITLE_PRIME_MINISTER
+	}
+	### Monarchy
+	text = {
+		trigger = {
+			THIS = {
+				original_tag = VAT
+				has_idea = absolute_monarchy
+			}
+		}
+		localization_key = LEADER_TITLE_POPE
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
+					original_tag = QAT
+					original_tag = KUW
+				}
+				has_idea = absolute_monarchy
+			}
+		}
+		localization_key = LEADER_TITLE_EMIR
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
+					original_tag = OMA
+					original_tag = BRU
+				}
+				has_idea = absolute_monarchy
+			}
+		}
+		localization_key = LEADER_TITLE_SULTAN
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = absolute_monarchy
+			}
+			NOT = { original_tag = UAE }
+		}
+		localization_key = LEADER_TITLE_MONARCH
+	}
+	### Violent Non-State Actor
+	text = {
+		trigger = {
+			THIS = {
+				original_tag = ISS
+			}
+		}
+		localization_key = LEADER_TITLE_CALIPH
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = violent_non_state_actor
+			}
+		}
+		localization_key = LEADER_TITLE_COMMANDER
+	}
+}

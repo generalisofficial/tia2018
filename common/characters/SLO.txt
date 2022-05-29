@@ -1,36 +1,15 @@
 characters={
     #Starting - Political
-	SLO_robert_fico={
-		name="Robert Fico"
+	SLO_marian_kotleba={
+		name="Marian Kotleba"
 		portraits={
 			civilian={
-				large=GFX_Portrait_SLO_Robert_Fico
+				large=GFX_Portrait_SLO_Marian_Kotleba
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	SLO_richard_sulík={
-		name="Richard Sulík"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLO_Richard_Sulik
-			}
-		}
-		country_leader={
-			ideology=classical_liberal_ideology
-		}
-	}
-	SLO_igor_matovič={
-		name="Igor Matovič"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLO_Igor_Matovic
-			}
-		}
-		country_leader={
-			ideology=christian_democrat
+			ideology=national_socialist
+			traits={ friend_of_russia }
 		}
 	}
 	SLO_andrej_danko={
@@ -42,20 +21,10 @@ characters={
 		}
 		country_leader={
 			ideology=right_wing_nationalist_ideology
+			traits={ friend_of_russia }
 		}
 	}
-	SLO_marian_kotleba={
-		name="Marian Kotleba"
-		portraits={
-			civilian={
-				large=GFX_Portrait_SLO_Marian_Kotleba
-			}
-		}
-		country_leader={
-			ideology=national_socialist
-		}
-	}
-	SLO_boris_kollár={
+	SLO_boris_kollar={
 		name="Boris Kollár"
 		portraits={
 			civilian={
@@ -64,6 +33,51 @@ characters={
 		}
 		country_leader={
 			ideology=national_conservative_ideology
+		}
+	}
+	SLO_igor_matovic={
+		name="Igor Matovič"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SLO_Igor_Matovic
+			}
+		}
+		country_leader={
+			ideology=social_conservative
+		}
+	}
+	SLO_richard_sulik={
+		name="Richard Sulík"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SLO_Richard_Sulik
+			}
+		}
+		country_leader={
+			ideology=classical_liberal_ideology
+		}
+	}
+	SLO_ivan_stefunko={
+		name="Ivan Štefunko"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SLO_Ivan_Stefunko
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+		}
+	}
+	SLO_robert_fico={
+		name="Robert Fico"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SLO_Robert_Fico
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+			traits={ friend_of_russia }
 		}
 	}
 	SLO_pavel_petrik={
@@ -77,7 +91,18 @@ characters={
 			ideology=green
 		}
 	}
-	SLO_jozef_hrdlička={
+	SLO_eduard_chmelar={
+		name="Eduard Chmelár"
+		portraits={
+			civilian={
+				large=GFX_Portrait_SLO_Eduard_Chmelar
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist
+		}
+	}
+	SLO_jozef_hrdlicka={
 		name="Jozef Hrdlička"
 		portraits={
 			civilian={
@@ -86,209 +111,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	SLO_milan_maxim={
-		name="Milan Maxim"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Milan_Maxim
-			}
-		}
-		field_marshal={
-			traits={ old_guard organisational_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_pavel_macko={
-		name="Pavel Macko"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Pavel_Macko
-			}
-		}
-		field_marshal={
-			traits={ logistics_wizard }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_ondřej_novosad={
-		name="Ondřej Novosad"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Ondrej_Novosad
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_jindřich_joch={
-		name="Jindřich Joch"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Jindrich_Joch
-			}
-		}
-		corps_commander={
-			traits={ trickster }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_juraj_krištofovič={
-		name="Juraj Krištofovič"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Juraj_Kristofovic
-			}
-		}
-		corps_commander={
-			traits={ hill_fighter }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_ivan_balog={
-		name="Ivan Balog"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Ivan_Balog
-			}
-		}
-		corps_commander={
-			traits={ ranger }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_jan_dreveniak={
-		name="Jan Dreveniak"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Jan_Dreveniak
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_miroslav_kocian={
-		name="Miroslav Kocian"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Miroslav_Kocian
-			}
-		}
-		corps_commander={
-			traits={ commando }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_jan_bujnak={
-		name="Jan Bujnak"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Jan_Bujnak
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_jan_parimucha={
-		name="Jan Parimucha"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Jan_Parimucha
-			}
-		}
-		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_martin_stoklasa={
-		name="Martin Stoklasa"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Martin_Stoklasa
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	SLO_miroslav_korba={
-		name="Miroslav Korba"
-		portraits={
-			army={
-				large=GFX_Portrait_SLO_Portrait_Miroslav_Korba
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
 		}
 	}
 	#Starting - Military

@@ -1,0 +1,44 @@
+guiTypes = {
+	containerWindowType = {
+		name = "leader_title_politics_view_container"
+		position = { x = 0 y = 0 }
+
+		instantTextBoxType = {
+			name ="leader_title_text"
+			position = { x = 6 y = 245 }
+			font = "hoi_16mbs"
+			text = LEADER_TITLE
+			maxWidth = 160
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+	}
+
+	containerWindowType = {
+		name = "leader_title_diplomacy_view_container"
+		position = { x = 100 y = 60 }
+
+		instantTextBoxType = {
+			name ="leader_title_text"
+			position = { x = 34 y = 50 }
+			font = "hoi_16mbs"
+			text = LEADER_TITLE
+			maxWidth = 160
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+
+		instantTextboxType = {
+			name = "leader_name"
+			position = { x = 42 y = 68 }
+			font = "hoi_18mbs"
+			text = "[THIS.GetLeader]"
+			maxWidth = 145
+			maxHeight = 55
+			format = center
+			fixedsize = yes						
+		}
+	}
+}

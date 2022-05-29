@@ -7,13 +7,13 @@ guiTypes = {
 		iconType ={
 			name ="stability_icon"
 			spriteType = "GFX_stability_icon"
-			position = { x= 1 y = -9 }
+			position = { x= 11 y = -9 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="stability_value"
-			position = { x= -10 y = 23 }
+			position = { x= 0 y = 23 }
 			font = "hoi_16mbs"
 			text = "[?FROM.stability|%]"
 			format = center
@@ -23,22 +23,33 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "coalition_diplomacy_container"
+		name = "parliament_diplomacy_container"
 		position = { x = 370 y = 223 }
 		orientation = UPPER_LEFT
 		
+		instantTextboxType = {
+			name = "parliament_name_text"
+			position = { x= -95 y = -111 }
+			font = "hoi_18mbs"
+			text = "[THIS.GetParliamentName]"
+			format = center
+			maxWidth = 245
+			maxHeight = 50
+			fixedsize = yes
+		}
+
 		iconType ={
-			name ="coalition_support_icon"
+			name ="government_support_icon"
 			spriteType = "GFX_coalition_support_icon"
-			position = { x= 2 y = -7 }
+			position = { x= 14 y = -79 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = COALITION_TOOLTIP_DIPLO
 			scale = 1.1
 		}
 
 		instantTextBoxType = {
-			name ="coalition_support"
-			position = { x= -10 y = 23 }
+			name ="government_support"
+			position = { x= 2 y = -54 }
 			font = "hoi_16mbs"
 			text = COALITION_SUPPORT_DIPLO
 			format = center
@@ -50,7 +61,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "population_diplomacy_container"
-		position = { x = 430 y = 223 }
+		position = { x = 360 y = 223 }
 		orientation = UPPER_LEFT
 		
 		iconType ={
@@ -74,12 +85,22 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "pie_container"
-		position = { x = 191 y = 157 }
+		position = { x = 325 y = 162 }
 		clipping = no
 		Orientation = UPPER_LEFT
 		origo = center
 		scale = 0.06 # scale = 1 = 1024px x 1024px
 		
+		instantTextboxType = {
+			name = "forecast_text"
+			position = { x= 0 y = 0 }
+			font = "hoi_18mbs"
+			text = "Forecast"
+			format = center
+			maxWidth = 245
+			maxHeight = 50
+			fixedsize = yes
+		}
 
 		iconType = {
 			name = "pie0"
