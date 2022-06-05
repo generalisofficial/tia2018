@@ -40,11 +40,31 @@ guiTypes = {
 				position = { x = 14 y = -8 }
 				spriteType = "GFX_diplo_flag_frame"
 				alwaystransparent = yes
-			}			
+			}
+			
+			instantTextboxType = {
+				name = "name_long_title"
+				position = { x = 143 y = 3 }
+				font = "hoi_16mbs"
+				text = "Name (Long):"
+				maxWidth = 100
+				maxHeight = 10
+				format = center
+			}
+
+			instantTextboxType = {
+				name = "name_short_title"
+				position = { x = 145 y = 22 }
+				font = "hoi_16mbs"
+				text = "Name (Short):"
+				maxWidth = 100
+				maxHeight = 10
+				format = center
+			}
 			
 			instantTextboxType = {
 				name = "country_name"
-				position = { x = 155 y = 3 }
+				position = { x = 235 y = 1.5 }
 				font = "hoi_18mbs"
 				text = "Germanian"
 				maxWidth = 300
@@ -55,13 +75,23 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "faction"
-				position = { x = 155 y = 23}	
+				position = { x = 155 y = 40 }	
 				size = { width = 175 height = 20 }
 				clipping = no
 			
 				instantTextboxType = {
+					name = "faction_title"
+					position = { x = -25 y = 0 }
+					font = "hoi_16mbs"
+					text = "Alliance:"
+					maxWidth = 100
+					maxHeight = 10
+					format = center
+				}
+
+				instantTextboxType = {
 					name = "faction_name"
-					position = { x = 0 y = 0 }
+					position = { x = 57 y = -2 }
 					font = "hoi_18mbs"
 					text = "faction"
 					maxWidth = 300
@@ -84,7 +114,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "opinion_info"
-				position = { x = 425 y = 5 }
+				position = { x = 450 y = 5 }
 				size = { width = 100 height = 60 }
 				clipping = no
 			
@@ -202,7 +232,7 @@ guiTypes = {
 						text = "Polling"
 						format = center
 						maxWidth = 245
-						maxHeight = 50
+						maxHeight = 10
 						fixedsize = yes
 					}
 					

@@ -1,4 +1,4 @@
-guiTypes = {
+guiTypes = { #TO DO - MERGE ALL CONTAINERS
 	containerWindowType = {
 		name = "stability_diplomacy_container"
 		position = { x = 300 y = 223 }
@@ -20,6 +20,16 @@ guiTypes = {
 			maxWidth = 50
 			maxHeight = 24
 			fixedsize = yes
+		}
+
+		instantTextboxType = {
+			name = "country_name_short"
+			position = { x= -60 y = -203 }
+			font = "hoi_18mbs"
+			text = "[THIS.GetNonIdeologyName]"
+			maxWidth = 300
+			maxHeight = 20
+			format = left
 		}
 	}
 	containerWindowType = {
@@ -90,17 +100,6 @@ guiTypes = {
 		Orientation = UPPER_LEFT
 		origo = center
 		scale = 0.06 # scale = 1 = 1024px x 1024px
-		
-		instantTextboxType = {
-			name = "forecast_text"
-			position = { x= 0 y = 0 }
-			font = "hoi_18mbs"
-			text = "Forecast"
-			format = center
-			maxWidth = 245
-			maxHeight = 50
-			fixedsize = yes
-		}
 
 		iconType = {
 			name = "pie0"

@@ -6,6 +6,16 @@ defined_text = {
 			THIS = {
 				has_idea = one_party_state
 				has_government = fascist
+				original_tag = CRO
+			}
+		}
+		localization_key = LEADER_TITLE_POGLAVNIK
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = one_party_state
+				has_government = fascist
 				original_tag = GER
 			}
 		}
@@ -120,6 +130,15 @@ defined_text = {
 		localization_key = LEADER_TITLE_PRIME_MINISTER
 	}
 	### Monarchy
+	text = {
+		trigger = {
+			THIS = {
+				original_tag = ATH
+				has_idea = absolute_monarchy
+			}
+		}
+		localization_key = LEADER_TITLE_PATRIARCH
+	}
 	text = {
 		trigger = {
 			THIS = {
