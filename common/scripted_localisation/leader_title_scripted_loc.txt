@@ -84,6 +84,40 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
+				original_tag = GRS
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_COMMITTEE_PRESIDENT
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
+					original_tag = MAN
+					original_tag = JRS
+				}
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_CHIEF_MINISTER
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
+					original_tag = WLS
+					original_tag = SCO
+					original_tag = NIR
+				}
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_FIRST_MINISTER
+	}
+	text = {
+		trigger = {
+			THIS = {
 				original_tag = SMR
 				has_idea = parliamentary_system
 			}
