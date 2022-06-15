@@ -813,3 +813,117 @@ adjacency_rule = {
 	icon = 13953
 	offset = { 0 0 0 }
 }
+
+#Strait of Dover
+adjacency_rule = {
+	name = "STRAIT_OF_DOVER"
+
+	contested = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 3501 11548 }
+		
+	icon = 3501
+	offset = { 5 0 -6 }
+}
+
+#Caledonian Canal
+adjacency_rule = {
+	name = "CALEDONIAN_CANAL"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 11161 6046 9075 }
+		
+	icon = 6046
+	offset = { 0 0 0 }
+}
+
+#Straits of Moyle
+adjacency_rule = {
+	name = "STRAITS_OF_MOYLE"
+
+	contested = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 3329 3373 }
+		
+	icon = 3373
+	offset = { 5 0 -6 }
+}

@@ -64,6 +64,18 @@ defined_text = {
 		trigger = {
 			THIS = {
 				OR = {
+					original_tag = DPR
+					original_tag = LPR
+				}
+				has_idea = presidential_republic
+			}
+		}
+		localization_key = LEADER_TITLE_HEAD
+	}
+	text = {
+		trigger = {
+			THIS = {
+				OR = {
 					has_idea = presidential_republic
 					has_idea = demarchic_republic
 					has_idea = one_party_state
@@ -94,7 +106,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				OR = {
-					original_tag = MAN
+					original_tag = MNN
 					original_tag = JRS
 				}
 				has_idea = parliamentary_system
@@ -148,6 +160,7 @@ defined_text = {
 				OR = {
 					original_tag = GER
 					original_tag = AUS
+					original_tag = BAV
 				}
 				has_idea = parliamentary_system
 			}

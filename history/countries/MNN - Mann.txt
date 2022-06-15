@@ -92,3 +92,41 @@ add_ideas = {
 	parliamentary_system
 	no_standing_army
 }
+
+#House of Keys
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 12.5 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 87.5 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "2016.9.23"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservative = 87.5
+	social_democrat = 8.33
+	social_liberal = 4.17
+}
+
+recruit_character = MNN_howard_quayle
+recruit_character = MNN_kate_costain
+recruit_character = MNN_david_cretney
+recruit_character = MNN_andrew_langan_newton
+recruit_character = MNN_bernard_moffatt
