@@ -983,7 +983,42 @@ foreign_affairs = {
 			modifier = {
 				factor = 1
 				has_opinion = {
-					target = ROM
+					target = AUS
+					value > 0
+				}
+			}
+		}
+	}
+
+	apply_for_union_with_ireland = {
+	
+		visible = {
+			original_tag = NIR
+			country_exists = IRE
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { has_war_with = IRE  }
+		}
+		
+		complete_effect = {
+			IRE = { country_event = ireland.2 }
+			custom_effect_tooltip = TT_game_over_warning
+		}
+		
+		icon = ireland
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_opinion = {
+					target = IRE
 					value > 0
 				}
 			}

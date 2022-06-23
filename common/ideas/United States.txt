@@ -1,28 +1,5 @@
 ideas = {
-
 	country = {
-	
-		land_of_the_free = {
-			picture = land_of_the_free
-			
-			modifier = {
-				ai_badass_factor = 0.03
-			}
-		}
-		
-		american_militarism = {
-			picture = american_militarism
-			
-			modifier = {
-				war_support_factor = 0.2
-				conscription_factor = 0.1
-				army_leader_start_level = 1
-				experience_gain_army = 0.01
-				experience_gain_navy = 0.01
-				experience_gain_air = 0.01
-			}
-		}
-		
 		idea_constitution_of_the_united_states = {
 			picture = great_seal
 			
@@ -37,14 +14,28 @@ ideas = {
 				is_democracy = no
 			}
 		}
-		
-		USA_prism_idea = {
-			picture = spy_intel
+	
+		idea_american_exceptionalism = {
+			picture = statue_of_liberty
 			
 			modifier = {
-				decryption_factor = 0.1
+				ai_badass_factor = 0.03
+				stability_factor = 0.1
+				war_support_factor = 0.2
+				conscription_factor = 0.1
+				fascist_drift = -0.01
+				communist_drift = -0.01
+			}
+		}
+
+		idea_patriot_act = {
+			picture = great_seal
+			
+			modifier = {
+				stability_factor = -0.05
+				decryption_factor = 0.15
 				encryption_factor = 0.1
-				political_power_factor = -0.05
+				foreign_subversive_activites = -0.1
 			}
 		}
 	}

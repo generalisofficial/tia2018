@@ -6,9 +6,6 @@ set_convoys = 20
 
 add_manpower = 31000 #Rest of active + reserves
 
-set_country_flag = country_language_arabic
-set_country_flag = country_language_french
-
 set_technology = {
 	## Infantry ##
 	infantry_weapons1 = 1
@@ -108,17 +105,17 @@ add_ideas = {
 	immigration_open_borders
 	pro_life
 	no_minimum_wage
-	moderate_healthcare_spending
+	#moderate_healthcare_spending
 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 87.83 }
+set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
+set_variable = { social_democrat_seats = 84.61 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 12.17 }
+set_variable = { classical_liberal_seats = 15.39 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
@@ -127,25 +124,20 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_socialist
-add_to_variable = { ROOT.Coalition = socialist_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = socialist
-	last_election = "2016.4.8"
+	ruling_party = social_democrat
+	last_election = "2016.4.9"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    socialist = 87.83
-    conservative = 12.17
+    social_democrat = 87.69
+    classical_liberal = 12.31
 }
 
-recruit_character = DJI_ismail_omar_guelleh
 recruit_character = DJI_omar_elmi_khaireh
-recruit_character = DJI_zakaria_cheikh_ibrahim
-recruit_character = DJI_osman_nour_soubagleh
-recruit_character = DJI_daher_ali_mohamed
-recruit_character = DJI_ali_aden_houmed
-recruit_character = DJI_abdourahman_aden_cher
+recruit_character = DJI_ismail_omar_guelleh

@@ -126,3 +126,23 @@ news_event = { #Autonomous government of (Country) dissolved
 		name = subject.6.o1
 	}
 }
+
+country_event = { #Autonomous Region or Puppet State?
+	id = subject.7
+	title = subject.7.t
+	desc = subject.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.7.o1
+		set_autonomy = {
+			target = FROM
+			autonomous_state = autonomy_autonomous_region
+		}
+	}
+
+	option = {
+		name = subject.7.o2
+	}
+}

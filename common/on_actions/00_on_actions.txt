@@ -344,6 +344,14 @@ on_actions = {
 				add_ideas = non_member_state 
 				country_event = system.20
 				inherit_technology = FROM
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					FROM = {
+						country_event = subject.7
+					}
+				}
 			}
 		}
 	}

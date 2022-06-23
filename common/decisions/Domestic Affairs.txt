@@ -423,6 +423,104 @@ domestic_affairs = {
 		
 	}
 
+	abolish_political_parties = {
+		
+		visible = {
+			NOT = {
+				OR = {
+					has_idea = idea_nonpartisan_political_system
+					has_idea = violent_non_state_actor
+				}
+			}
+		}
+		
+		icon = neutrality
+		
+		cost = 200
+		
+		complete_effect = {
+			add_ideas = idea_nonpartisan_political_system
+			# Add character effects
+			set_party_name = { 
+				ideology = islamist
+				long_name = "Islamist Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = fascist
+				long_name = "Fascist Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = right_wing_nationalist
+				long_name = "Right-Wing Nationalist Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = monarchist
+				long_name = "Monarchist Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = national_conservative
+				long_name = "National Conservative Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = conservative
+				long_name = "Conservative Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = classical_liberal
+				long_name = "Classical Liberal Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = social_liberal
+				long_name = "Social Liberal Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = social_democrat
+				long_name = "Social Democrat Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = progressive
+				long_name = "Progressive Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = socialist
+				long_name = "Socialist Independents"
+				name = "Ind."
+			}
+			set_party_name = { 
+				ideology = communist
+				long_name = "Communist Independents"
+				name = "Ind."
+			}
+			clr_country_flag = has_islamist_party
+			clr_country_flag = has_fascist_party
+			clr_country_flag = has_right_wing_nationalist_party
+			clr_country_flag = has_monarchist_party
+			clr_country_flag = has_national_conservative_party
+			clr_country_flag = has_conservative_party
+			clr_country_flag = has_classical_liberal_party
+			clr_country_flag = has_social_liberal_party
+			clr_country_flag = has_social_democrat_party
+			clr_country_flag = has_progressive_party
+			clr_country_flag = has_socialist_party
+			clr_country_flag = has_communist_party
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
 	hold_snap_election = {
 		
 		visible = {
