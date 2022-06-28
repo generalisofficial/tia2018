@@ -1,0 +1,35 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Netherlands Navy"
+		naval_base = 3314 #Den Helder
+		task_force = {				
+			name = "Naval Squadron"			
+			location = 3314 #Den Helder
+			ship = { name = "HNLMS Makkum" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Schiedam" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Urk" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Zierikzee" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Vlaardingen" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Willemstad" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Holland" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Zeeland" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Friesland" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Groningen" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Van Amstel" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Van Speijk" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS De Zeven Provinciën" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Tromp" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS De Ruyter" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Evertsen" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = HOL } } }
+		}
+		task_force = {				
+			name = "Submarine Service"			
+			location = 3314 #Den Helder
+			ship = { name = "HNLMS Walrus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Zeeleeuw" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Dolfijn" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "HNLMS Bruinvis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL } } }
+		}
+	}
+}

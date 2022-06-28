@@ -1,0 +1,18 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Belgian Naval Component"
+		naval_base = 13636 #Zeebrugge
+		task_force = {				
+			name = "Naval Component Operational Command"			
+			location = 13636 #Zeebrugge
+			ship = { name = "BNS Bellis" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = BEL } } }
+			ship = { name = "BNS Crocus" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = BEL } } }
+			ship = { name = "BNS Lobelia" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = BEL } } }
+			ship = { name = "BNS Narcis" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = BEL } } }
+			ship = { name = "BNS Primula" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = BEL } } }
+			ship = { name = "BNS Leopold I" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BEL } } }
+			ship = { name = "BNS Louise-Marie" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BEL } } }
+		}
+	}
+}

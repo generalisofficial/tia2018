@@ -1,0 +1,62 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "1st Flotilla"
+		naval_base = 6389 #Kiel
+		task_force = {				
+			name = "1st Corvette Squadron"			
+			location = 321 #Hohe Düne Naval Base
+			ship = { name = "FGS Braunschweig" definition = destroyer equipment = { destroyer_3 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Magdeburg" definition = destroyer equipment = { destroyer_3 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Oldenburg" definition = destroyer equipment = { destroyer_3 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Erfurt" definition = destroyer equipment = { destroyer_3 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Ludwigshafen am Rhein" definition = destroyer equipment = { destroyer_3 = { amount = 1 owner = GER } } }
+		}
+		task_force = {				
+			name = "3rd Mine Countermeasures Squadron"			
+			location = 6389 #Kiel
+			ship = { name = "FGS Fulda" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Weilheim" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Rottweil" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Sulzbach-Rosenberg" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Bad Bevensen" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Grömitz" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Dillingen" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Bad Rappenau" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Datteln" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Homburg" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Pegnitz" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Siegburg" definition = patrol_boat equipment = { patrol_boat_2 = { amount = 1 owner = GER } } }
+		}
+		task_force = {				
+			name = "1st Submarine Squadron"			
+			location = 317 #Eckernförde
+			ship = { name = "FGS U-31" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS U-32" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS U-33" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS U-34" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS U-35" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS U-36" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+		}
+	}
+	fleet = {
+		name = "2nd Flotilla"
+		naval_base = 241 #Wilhelmshaven
+		task_force = {				
+			name = "2nd Frigate Squadron"			
+			location = 241 #Wilhelmshaven
+			ship = { name = "FGS Sachsen" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Hamburg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Hessen" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Brandenburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Schleswig-Holstein" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Bayern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "FGS Mecklenburg-Vorpommern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		}
+		task_force = {				
+			name = "4th Frigate Squadron"
+			location = 241 #Wilhelmshaven
+			ship = { name = "FGS Lübeck" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		}
+	}
+}

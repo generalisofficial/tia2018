@@ -2,6 +2,14 @@
 
 oob = "BEL_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "BEL_2018_naval_mtg"
+	else = {
+		set_naval_oob = "BEL_2018_naval_legacy"
+	}
+}
+
 set_convoys = 201
 
 set_technology = {
@@ -163,3 +171,41 @@ recruit_character = BEL_olivier_maingain
 recruit_character = BEL_elio_di_rupo
 recruit_character = BEL_meyrem_almaci
 recruit_character = BEL_peter_mertens
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Tripartite Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Karel Doorman Class"
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_radar_1
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+	}
+}

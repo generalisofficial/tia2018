@@ -2,6 +2,14 @@
 
 oob = "GER_2018"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GER_2018_naval_mtg"
+	else = {
+		set_naval_oob = "GER_2018_naval_legacy"
+	}
+}
+
 set_convoys = 609
 
 set_war_support = 0.15
@@ -73,20 +81,30 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_patrol_boat = 1
+		basic_patrol_boat = 1
 		early_destroyer = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_submarine = 1
+		basic_submarine = 1
 		transport = 1
 	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		basic_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
 		smoke_generator = 1
 		sonar = 1
 		basic_depth_charges = 1
@@ -179,3 +197,87 @@ recruit_character = GER_andrea_nahles
 recruit_character = GER_cem_ozdemir
 recruit_character = GER_dietmar_bartsch
 recruit_character = GER_gabi_fechtner
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Type 212 Class"				
+		type = ship_hull_submarine_2
+		name_group = GENERIC_SS_NAMES
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_radar_slot = ship_radar_1
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Ensdorf Class" #Includes Frankenthal Class
+		type = ship_hull_patrol_boat_2
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_patrol_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Braunschweig Class"
+		type = ship_hull_light_3
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Sachsen Class"
+		type = ship_hull_cruiser_2
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Brandenburg Class" #Includes Bremen Class
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}	
