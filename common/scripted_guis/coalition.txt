@@ -1201,15 +1201,6 @@ scripted_gui = {
 				}
 				update_coalition_majority_gfx = yes
 			}
-			show_leaders_gridbox_click = {
-				if = {
-					limit = { check_variable = { coalition_leaders_visible = 0 } }
-					set_variable = { coalition_leaders_visible = 1 }
-					else = {
-						set_variable = { coalition_leaders_visible = 0 }
-					}
-				}
-			}
 			select_partner_click = {
 				if = {
 					limit = {
@@ -1599,15 +1590,6 @@ scripted_gui = {
         }
         
 		triggers = {
-			coalition_leaders_container_visible = {
-				check_variable = { coalition_leaders_visible = 1 }
-			}
-			coalition_leaders_grid_visible = {
-				check_variable = { coalition_leaders_visible = 1 }
-			}
-			show_leaders_gridbox_visible = {
-				check_variable = { coalition_leaders_visible = 0 }
-			}
 			select_leader_visible = {
 				if = {
 					limit = {
