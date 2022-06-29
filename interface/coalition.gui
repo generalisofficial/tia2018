@@ -39,724 +39,284 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name ="subtitle"
-			position = { x= 270 y = 60 }
-			font = "hoi_24header"
-			text = "Which party will form the Government?"
-			format = left
-			maxWidth = 450
+			name ="title"
+			position = { x= 250 y = 30 }
+			font = "hoi_36header"
+			text = "Government & Coalition Formation"
+			format = center
+			maxWidth = 550
 			maxHeight = 24
 			fixedsize = no
 		}
 
 		instantTextBoxType = {
 			name ="recommended_party"
-			position = { x= 250 y = 10 }
+			position = { x= 250 y = 70 }
 			font = "hoi_24header"
 			text = "Elected Speaker: [This.GetLargestPartySeats]"
 			format = center
-			maxWidth = 450
+			maxWidth = 500
 			maxHeight = 24
-			fixedsize = no
-		}
-
-		buttonType = {
-			name = "party1"
-			spriteType = "GFX_generic_bg"
-			position = { x = 30 y = 120 }
-			pdx_tooltip = "COALITION_PARTY1_TT"
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
-			name ="party1_title"
-			position = { x= 43 y = 134 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY1_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY1_TT"
-		}
-
-		iconType ={
-			name ="party1_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 272 y = 125 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party2"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 120 }
-			pdx_tooltip = "COALITION_PARTY2_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party2_title"
-			position = { x= 353 y = 134 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY2_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY2_TT"
-		}
-
-		iconType ={
-			name ="party2_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 125 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party3"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 120 }
-			pdx_tooltip = "COALITION_PARTY3_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party3_title"
-			position = { x= 663 y = 134 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY3_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY3_TT"
-		}
-
-		iconType ={
-			name ="party3_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 125 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		#buttonType = {
-		#	name = "party4"
-		#	spriteType = "GFX_generic_bg"
-		#	position = { x = 30 y = 220 }
-		#	pdx_tooltip = "COALITION_PARTY4_TT"
-		#}
-
-		#instantTextBoxType = {
-		#	name ="party4_title"
-		#	position = { x= 43 y = 234 }
-		#	font = "hoi_24header"
-		#	text = "COALITION_PARTY4_TITLE"
-		#	format = left
-		#	maxWidth = 260
-		#	maxHeight = 40
-		#	fixedsize = no
-		#	pdx_tooltip = "COALITION_PARTY4_TT"
-		#}
-
-		#iconType ={
-		#	name ="party4_accept"
-		#	spriteType = "GFX_accept_decline_icon"
-		#	position = { x= 270 y = 225 }
-		#	Orientation = "UPPER_LEFT"
-		#}
-
-		buttonType = {
-			name = "party5"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 220 }
-			pdx_tooltip = "COALITION_PARTY5_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party5_title"
-			position = { x= 353 y = 234 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY5_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY5_TT"
-		}
-
-		iconType ={
-			name ="party5_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 225 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party6"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 220 }
-			pdx_tooltip = "COALITION_PARTY6_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party6_title"
-			position = { x= 663 y = 234 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY6_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY6_TT"
-		}
-
-		iconType ={
-			name ="party6_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 225 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party7"
-			spriteType = "GFX_generic_bg"
-			position = { x = 30 y = 320 }
-			pdx_tooltip = "COALITION_PARTY7_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party7_title"
-			position = { x= 43 y = 334 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY7_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY7_TT"
-		}
-
-		iconType ={
-			name ="party7_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 270 y = 325 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party8"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 320 }
-			pdx_tooltip = "COALITION_PARTY8_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party8_title"
-			position = { x= 353 y = 334 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY8_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY8_TT"
-		}
-
-		iconType ={
-			name ="party8_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 325 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party9"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 320 }
-			pdx_tooltip = "COALITION_PARTY9_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party9_title"
-			position = { x= 663 y = 334 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY9_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY9_TT"
-		}
-
-		iconType ={
-			name ="party9_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 325 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party10"
-			spriteType = "GFX_generic_bg"
-			position = { x = 30 y = 420 }
-			pdx_tooltip = "COALITION_PARTY10_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party10_title"
-			position = { x= 43 y = 434 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY10_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY10_TT"
-		}
-
-		iconType ={
-			name ="party10_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 270 y = 425 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party11"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 420 }
-			pdx_tooltip = "COALITION_PARTY11_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party11_title"
-			position = { x= 353 y = 423 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY11_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY11_TT"
-		}
-
-		iconType ={
-			name ="party11_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 425 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party12"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 420 }
-			pdx_tooltip = "COALITION_PARTY12_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party12_title"
-			position = { x= 663 y = 434 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY12_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY12_TT"
-		}
-
-		iconType ={
-			name ="party12_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 425 }
-			Orientation = "UPPER_LEFT"
-		}
-
-
-		buttonType = {
-			name = "next"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 580 }
-			pdx_tooltip = "COALITION_NEXT_TT"
-		}
-
-		instantTextBoxType = {
-			name ="next_title"
-			position = { x= 450 y = 591 }
+			name = "coalition_leader_text"
+			position = { x= 30 y = 130 }
 			font = "hoi_30header"
-			text = "Next"
+			text = "Coalition Leader:"
 			format = left
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_NEXT_TT"
-		}
-
-	}
-
-	containerWindowType = {
-		name = "coalition_coalition_formation_container"
-		position = { x = 460 y = 200 }
-		size = { width = 950 height = 700 }
-		orientation = upper_left
-		moveable = yes
-
-		background = {
-			name = "background"
-			spriteType ="GFX_tiled_window_2b_border"
-		}
-
-		instantTextBoxType = {
-			name ="subtitle"
-			position = { x= 260 y = 60 }
-			font = "hoi_24header"
-			text = "Which parties should be a part of our Coalition?"
-			format = left
-			maxWidth = 450
+			maxWidth = 500
 			maxHeight = 24
-			fixedsize = no
-		}
-
-		buttonType = {
-			name = "party1"
-			spriteType = "GFX_generic_bg"
-			position = { x = 30 y = 120 }
-			pdx_tooltip = "COALITION_PARTY1_TT"
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
-			name ="party1_title"
-			position = { x= 43 y = 134 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY1_TITLE"
+			name = "coalition_leader_selected"
+			position = { x= 30 y = 170 }
+			font = "hoi_30header"
+			text = "[This.GetCoalitionLeaderSelected]"
 			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY1_TT"
+			maxWidth = 470
+			maxHeight = 24
+			fixedsize = yes
 		}
 
-		iconType ={
-			name ="party1_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 272 y = 125 }
-			Orientation = "UPPER_LEFT"
-		}
+		containerWindowType = {
+			name = "coalition_leaders_container"
+			position = { x = 500 y = 120 }	
+			size = { width = 370 height = 150 }
+			clipping = yes
+			moveable = no
 
-		buttonType = {
-			name = "party2"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 120 }
-			pdx_tooltip = "COALITION_PARTY2_TT"
+			background = {
+				name = "Background"	
+				spriteType = "GFX_tiled_window2_2b_border"
+			}
+
+			verticalScrollbar = "right_vertical_slider"
+
+			gridboxtype = {
+				name = "coalition_leaders_grid"
+				position = { x = -66 y = 0 }
+				size = { width = 95%% height = 100%% }
+				slotsize = { width = 285 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
 		}
 
 		instantTextBoxType = {
-			name ="party2_title"
-			position = { x= 353 y = 134 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY2_TITLE"
+			name = "coalition_partners_text"
+			position = { x= 30 y = 310 }
+			font = "hoi_30header"
+			text = "Coalition Partner(s):"
 			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY2_TT"
-		}
-
-		iconType ={
-			name ="party2_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 125 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party3"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 120 }
-			pdx_tooltip = "COALITION_PARTY3_TT"
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
-			name ="party3_title"
-			position = { x= 663 y = 134 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY3_TITLE"
+			name = "coalition_partners_selected1"
+			position = { x= 30 y = 350 }
+			font = "hoi_28header"
+			text = "COALITION_PARTNER_LIST"
 			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY3_TT"
-		}
-
-		iconType ={
-			name ="party3_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 125 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		#buttonType = {
-		#	name = "party4"
-		#	spriteType = "GFX_generic_bg"
-		#	position = { x = 30 y = 220 }
-		#	pdx_tooltip = "COALITION_PARTY4_TT"
-		#}
-
-		#instantTextBoxType = {
-		#	name ="party4_title"
-		#	position = { x= 43 y = 234 }
-		#	font = "hoi_24header"
-		#	text = "COALITION_PARTY4_TITLE"
-		#	format = left
-		#	maxWidth = 260
-		#	maxHeight = 40
-		#	fixedsize = no
-		#	pdx_tooltip = "COALITION_PARTY4_TT"
-		#}
-
-		#iconType ={
-		#	name ="party4_accept"
-		#	spriteType = "GFX_accept_decline_icon"
-		#	position = { x= 270 y = 225 }
-		#	Orientation = "UPPER_LEFT"
-		#}
-
-		buttonType = {
-			name = "party5"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 220 }
-			pdx_tooltip = "COALITION_PARTY5_TT"
+			maxWidth = 230
+			maxHeight = 100
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
-			name ="party5_title"
-			position = { x= 353 y = 234 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY5_TITLE"
+			name = "coalition_partners_selected2"
+			position = { x= 270 y = 350 }
+			font = "hoi_28header"
+			text = "COALITION_PARTNER_LIST2"
 			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY5_TT"
+			maxWidth = 230
+			maxHeight = 100
+			fixedsize = yes
 		}
 
-		iconType ={
-			name ="party5_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 225 }
-			Orientation = "UPPER_LEFT"
-		}
+		containerWindowType = {
+			name = "coalition_partners_container"
+			position = { x = 500 y = 300 }	
+			size = { width = 370 height = 150 }
+			clipping = yes
+			moveable = no
 
-		buttonType = {
-			name = "party6"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 220 }
-			pdx_tooltip = "COALITION_PARTY6_TT"
+			background = {
+				name = "Background"	
+				spriteType = "GFX_tiled_window2_2b_border"
+			}
+
+			verticalScrollbar = "right_vertical_slider"
+
+			gridboxtype = {
+				name = "coalition_partners_grid"
+				position = { x = -66 y = 0 }
+				size = { width = 95%% height = 100%% }
+				slotsize = { width = 285 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
 		}
 
 		instantTextBoxType = {
-			name ="party6_title"
-			position = { x= 663 y = 234 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY6_TITLE"
+			name = "coalition_conclusion_text"
+			position = { x= 30 y = 480 }
+			font = "hoi_30header"
+			text = "Conclusion"
 			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY6_TT"
-		}
-
-		iconType ={
-			name ="party6_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 225 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party7"
-			spriteType = "GFX_generic_bg"
-			position = { x = 30 y = 320 }
-			pdx_tooltip = "COALITION_PARTY7_TT"
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
-			name ="party7_title"
-			position = { x= 43 y = 334 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY7_TITLE"
+			name = "coalition_conclusion_percent"
+			position = { x= 30 y = 520 }
+			font = "hoi_30header"
+			text = "COALITION_CONCLUSION_PERCENT"
 			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY7_TT"
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
 		}
 
-		iconType ={
-			name ="party7_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 270 y = 325 }
-			Orientation = "UPPER_LEFT"
+		containerWindowType = {
+			name = "groups_bar_container"
+			position = { x= 50 y = 580 }
+			size = { width = 230 height = 40 }
+			clipping = yes
+
+			iconType = {
+				name = "groups_bar_progress"
+				spriteType = "GFX_groups_bar_progress"
+				position = { x= 0 y = -1 }
+			}
+
+			iconType = {
+				name = "groups_bar_bg"
+				quadTextureSprite = "GFX_parliament_bar_bg"
+				position = { x= 0 y = 0 }
+			}
+
+			iconType = {
+				name = "groups_bar_fifty_percent"
+				quadTextureSprite = "GFX_parliament_bar_middle"
+				position = { x= 0 y = 0 }
+			}
 		}
 
-		buttonType = {
-			name = "party8"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 320 }
-			pdx_tooltip = "COALITION_PARTY8_TT"
+		iconType = {
+			name = "minority_government_icon"
+			spriteType = "GFX_idea_minority_government"	
+			position = { x = 400 y = 540 }
+			pdx_tooltip = "COALITION_MINORITY_GOV_TT"
+			scale = 1.2
 		}
 
-		instantTextBoxType = {
-			name ="party8_title"
-			position = { x= 353 y = 334 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY8_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY8_TT"
-		}
-
-		iconType ={
-			name ="party8_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 325 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party9"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 320 }
-			pdx_tooltip = "COALITION_PARTY9_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party9_title"
-			position = { x= 663 y = 334 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY9_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY9_TT"
-		}
-
-		iconType ={
-			name ="party9_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 325 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party10"
-			spriteType = "GFX_generic_bg"
-			position = { x = 30 y = 420 }
-			pdx_tooltip = "COALITION_PARTY10_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party10_title"
-			position = { x= 43 y = 434 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY10_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY10_TT"
-		}
-
-		iconType ={
-			name ="party10_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 270 y = 425 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party11"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 420 }
-			pdx_tooltip = "COALITION_PARTY11_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party11_title"
-			position = { x= 353 y = 423 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY11_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY11_TT"
-		}
-
-		iconType ={
-			name ="party11_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 580 y = 425 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "party12"
-			spriteType = "GFX_generic_bg"
-			position = { x = 650 y = 420 }
-			pdx_tooltip = "COALITION_PARTY12_TT"
-		}
-
-		instantTextBoxType = {
-			name ="party12_title"
-			position = { x= 663 y = 434 }
-			font = "hoi_24header"
-			text = "COALITION_PARTY12_TITLE"
-			format = left
-			maxWidth = 260
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_PARTY12_TT"
-		}
-
-		iconType ={
-			name ="party12_accept"
-			spriteType = "GFX_accept_decline_icon"
-			position = { x= 890 y = 425 }
-			Orientation = "UPPER_LEFT"
+		iconType = {
+			name = "unstable_coalition_icon"
+			spriteType = "GFX_idea_deal_with_the_devil2"	
+			position = { x = 480 y = 538 }
+			pdx_tooltip = "COALITION_UNSTABLE_TT"
+			scale = 1.2
 		}
 
 		buttonType = {
 			name = "finish"
-			spriteType = "GFX_generic_bg"
-			position = { x = 340 y = 580 }
+			spriteType = "button_type_1"
+			position = { x = 750 y = 600 }
 			pdx_tooltip = "COALITION_FINISH_TT"
-		}
-
-		instantTextBoxType = {
-			name ="finish_title"
-			position = { x= 433 y = 591 }
-			font = "hoi_30header"
+			font = "hoi_36header"
 			text = "Finish"
+		}
+	}
+
+	containerWindowType = {
+		name = "coalition_leaders_grid_entry"
+		position = { x = 0 y = 0} 
+		size = { width = 350 height = 70 }
+	
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window2_2b_border"
+		}
+	
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 10 y = 15 }
+			font = "hoi_18mbs"
+			text = "[This.GetCoalitionLeaderName]"
 			format = left
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = no
-			pdx_tooltip = "COALITION_FINISH_TT"
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
-			name ="popularity_text"
-			position = { x= 200 y = 520 }
-			font = "hoi_24header"
-			text = "COALITION_POPULARITY_TEXT"
+			name = "seats"
+			position = { x = 10 y = 35 }
+			font = "hoi_18mbs"
+			text = "Parliament Seats: [This.GetCoalitionLeaderSeats]"
 			format = left
-			maxWidth = 600
-			maxHeight = 40
-			fixedsize = no
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "select_leader"
+			spriteType = "GFX_button_94x31"
+			position = { x = 220 y = 18 }
+			font = "hoi_18mbs"
+			text = "Select"
+			pdx_tooltip = "COALITION_LEADER_SELECT_TT"
+		}
+	}
+
+	containerWindowType = {
+		name = "coalition_partners_grid_entry"
+		position = { x = 0 y = 0} 
+		size = { width = 350 height = 70 }
+	
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window2_2b_border"
+		}
+	
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 10 y = 15 }
+			font = "hoi_18mbs"
+			text = "[This.GetCoalitionLeaderName]"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "seats"
+			position = { x = 10 y = 35 }
+			font = "hoi_18mbs"
+			text = "Parliament Seats: [This.GetCoalitionLeaderSeats]"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "select_partner"
+			spriteType = "GFX_button_94x31"
+			position = { x = 220 y = 18 }
+			font = "hoi_18mbs"
+			text = "Select"
+			pdx_tooltip = "COALITION_PARTNER_SELECT_TT"
 		}
 	}
 }	

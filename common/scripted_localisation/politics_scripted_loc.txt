@@ -121,502 +121,363 @@ defined_text = {
 	}
 }
 
-############################### DOES THE PARTY HAVE ENOUGH VOTES TO BE ELECTIBLE?
+########################### GET PARTNERS OF THE CURRENT COALITION
 
 defined_text = {
-	name = GetIslamicPartyTT
-
+	name = GetCoalitionPartner11
+	
 	text = {
 		trigger = {
-			islamist < 0.05
+			has_country_flag = coalition_islamist
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			islamist > 0.05
-			islamist < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			islamist > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_islamist_party_seats
 	}
 }
 defined_text = {
-	name = GetFascistPartyTT
+	name = GetCoalitionPartner10
 
 	text = {
 		trigger = {
-			fascist < 0.05
+			has_country_flag = coalition_fascist
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			fascist > 0.05
-			fascist < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			fascist > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_fascist_party_seats
 	}
 }
 defined_text = {
-	name = GetRightWingNationalistPartyTT
+	name = GetCoalitionPartner9
 
 	text = {
 		trigger = {
-			right_wing_nationalist < 0.05
+			has_country_flag = coalition_right_wing_nationalist
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			right_wing_nationalist > 0.05
-			right_wing_nationalist < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			right_wing_nationalist > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_right_wing_nationalist_party_seats
 	}
 }
 defined_text = {
-	name = GetMonarchistPartyTT
+	name = GetCoalitionPartner8
 
 	text = {
 		trigger = {
-			monarchist < 0.05
+			has_country_flag = coalition_national_conservative
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			monarchist > 0.05
-			monarchist < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			monarchist > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_national_conservative_party_seats
 	}
 }
 defined_text = {
-	name = GetNationalConservativePartyTT
+	name = GetCoalitionPartner7
 
 	text = {
 		trigger = {
-			national_conservative < 0.05
+			has_country_flag = coalition_conservative
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			national_conservative > 0.05
-			national_conservative < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			national_conservative > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_conservative_party_seats
 	}
 }
 defined_text = {
-	name = GetConservativePartyTT
+	name = GetCoalitionPartner6
 
 	text = {
 		trigger = {
-			conservative < 0.05
+			has_country_flag = coalition_classical_liberal
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			conservative > 0.05
-			conservative < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			conservative > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_classical_liberal_party_seats
 	}
 }
 defined_text = {
-	name = GetMarketLiberalPartyTT
+	name = GetCoalitionPartner5
 
 	text = {
 		trigger = {
-			classical_liberal < 0.05
+			has_country_flag = coalition_social_liberal
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			classical_liberal > 0.05
-			classical_liberal < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			classical_liberal > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_social_liberal_party_seats
 	}
 }
 defined_text = {
-	name = GetSocialLiberalPartyTT
+	name = GetCoalitionPartner3
 
 	text = {
 		trigger = {
-			social_liberal < 0.05
+			has_country_flag = coalition_social_democrat
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			social_liberal > 0.05
-			social_liberal < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			social_liberal > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_social_democrat_party_seats
 	}
 }
 defined_text = {
-	name = GetSocialDemocraticPartyTT
+	name = GetCoalitionPartner4
 
 	text = {
 		trigger = {
-			social_democrat < 0.05
+			has_country_flag = coalition_progressive
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			social_democrat > 0.05
-			social_democrat < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			social_democrat > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_progressive_party_seats
 	}
 }
 defined_text = {
-	name = GetProgressivePartyTT
+	name = GetCoalitionPartner2
 
 	text = {
 		trigger = {
-			progressive < 0.05
+			has_country_flag = coalition_socialist
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			progressive > 0.05
-			progressive < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			progressive > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_socialist_party_seats
 	}
 }
 defined_text = {
-	name = GetSocialistPartyTT
+	name = GetCoalitionPartner1
 
 	text = {
 		trigger = {
-			socialist < 0.05
+			has_country_flag = coalition_communist
 		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			socialist > 0.05
-			socialist < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			socialist > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
-	}
-}
-defined_text = {
-	name = GetCommunistPartyTT
-
-	text = {
-		trigger = {
-			communist < 0.05
-		}
-		localization_key = COALITION_PARTY_NOT_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			communist > 0.05
-			communist < 0.5
-		}
-		localization_key = COALITION_PARTY_ENOUGH
-	}
-
-	text = {
-		trigger = {
-			communist > 0.5
-		}
-		localization_key = COALITION_PARTY_MAJORITY
+		localization_key = coalition_communist_party_seats
 	}
 }
 
-
-####################### GET IF ENOUGH VOTES TO TURN GREEN OR RED
+######################### SCIRPTED LOC TO POPULATED COALITION LEADER BOX
 
 defined_text = {
-	name = GetEnoughIslamic
-
+	name = GetCoalitionLeaderName
+	
 	text = {
 		trigger = {
-			islamist < 0.001
+			check_variable = { Root.coalition_leaders_array^i = 1 }
 		}
-		localization_key = COALITION_PARTY_RED
+		localization_key = communist
 	}
 	text = {
 		trigger = {
-			islamist > 0.00
+			check_variable = { Root.coalition_leaders_array^i = 2 }
 		}
-		localization_key = COALITION_PARTY_GREEN
+		localization_key = socialist
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 3 }
+		}
+		localization_key = social_democrat
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 4 }
+		}
+		localization_key = progressive
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 5 }
+		}
+		localization_key = social_liberal
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 6 }
+		}
+		localization_key = classical_liberal
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 7 }
+		}
+		localization_key = conservative
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 8 }
+		}
+		localization_key = national_conservative
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 9 }
+		}
+		localization_key = right_wing_nationalist
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 10 }
+		}
+		localization_key = fascist
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 11 }
+		}
+		localization_key = islamist
 	}
 }
-defined_text = {
-	name = GetEnoughFascist
 
+defined_text = {
+	name = GetCoalitionLeaderSeats
+	
 	text = {
 		trigger = {
-			fascist < 0.001
+			check_variable = { Root.coalition_leaders_array^i = 1 }
 		}
-		localization_key = COALITION_PARTY_RED
+		localization_key = COALITION_COMMUNIST_POPULARITY_TEXT
 	}
 	text = {
 		trigger = {
-			fascist > 0.00
+			check_variable = { Root.coalition_leaders_array^i = 2 }
 		}
-		localization_key = COALITION_PARTY_GREEN
+		localization_key = COALITION_SOCIALISTS_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 3 }
+		}
+		localization_key = COALITION_SOCIAL_DEMOCRATS_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 4 }
+		}
+		localization_key = COALITION_PROGRESSIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 5 }
+		}
+		localization_key = COALITION_SOCIAL_LIBERAL_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 6 }
+		}
+		localization_key = COALITION_CLASSICAL_LIBERAL_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 7 }
+		}
+		localization_key = COALITION_CONSERVATIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 8 }
+		}
+		localization_key = COALITION_NATIONAL_CONSERVATIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 9 }
+		}
+		localization_key = COALITION_RIGHT_WING_NATIONALIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 10 }
+		}
+		localization_key = COALITION_FASCIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.coalition_leaders_array^i = 11 }
+		}
+		localization_key = COALITION_ISLAMIST_POPULARITY_TEXT
 	}
 }
-defined_text = {
-	name = GetEnoughRightWingNationalist
 
+############################### SELECTING A COALITION LEADER
+
+defined_text = {
+	name = GetCoalitionLeaderSelected
+	
 	text = {
 		trigger = {
-			right_wing_nationalist < 0.001
+			NOT = { has_country_flag = government_chosen }
 		}
-		localization_key = COALITION_PARTY_RED
+		localization_key = "No coalition leader selected"
 	}
 	text = {
 		trigger = {
-			right_wing_nationalist > 0.00
+			has_country_flag = government_chosen
+			has_country_flag = government_communist
 		}
-		localization_key = COALITION_PARTY_GREEN
+		localization_key = COMMUNIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_socialist
+		}
+		localization_key = SOCIALISTS_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_social_democrat
+		}
+		localization_key = SOCIAL_DEMOCRATS_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_progressive
+		}
+		localization_key = PROGRESSIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_social_liberal
+		}
+		localization_key = SOCIAL_LIBERAL_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_classical_liberal
+		}
+		localization_key = CLASSICAL_LIBERAL_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_conservative
+		}
+		localization_key = CONSERVATIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_national_conservative
+		}
+		localization_key = NATIONAL_CONSERVATIVE_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_right_wing_nationalist
+		}
+		localization_key = RIGHT_WING_NATIONALIST_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_fascist
+		}
+		localization_key = THIRD_POSITION_POPULARITY_TEXT
+	}
+	text = {
+		trigger = {
+			has_country_flag = government_chosen
+			has_country_flag = government_islamist
+		}
+		localization_key = ISLAMIST_POPULARITY_TEXT
 	}
 }
-defined_text = {
-	name = GetEnoughMonarchist
 
-	text = {
-		trigger = {
-			monarchist < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			monarchist > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughNationalConservative
+############################### SELECTING A/MULTIPLE COALITION PARTNER(S)
 
-	text = {
-		trigger = {
-			national_conservative < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			national_conservative > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
 defined_text = {
-	name = GetEnoughConservative
-
+	name = GetCoalitionPartnerSelected
+	
 	text = {
 		trigger = {
-			conservative < 0.001
+			NOT = { has_country_flag = government_chosen }
 		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			conservative > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughMarketLiberal
-
-	text = {
-		trigger = {
-			classical_liberal < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			classical_liberal > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughSocialLiberal
-
-	text = {
-		trigger = {
-			social_liberal < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			social_liberal > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughSocialDemocratic
-
-	text = {
-		trigger = {
-			social_democrat < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			social_democrat > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughProgressive
-
-	text = {
-		trigger = {
-			progressive < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			progressive > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughSocialist
-
-	text = {
-		trigger = {
-			socialist < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			socialist > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
-	}
-}
-defined_text = {
-	name = GetEnoughCommunist
-
-	text = {
-		trigger = {
-			communist < 0.001
-		}
-		localization_key = COALITION_PARTY_RED
-	}
-	text = {
-		trigger = {
-			communist > 0.00
-		}
-		localization_key = COALITION_PARTY_GREEN
+		localization_key = "No coalition leader selected"
 	}
 }
 
@@ -640,6 +501,36 @@ defined_text = {
 	}
 }
 
+####################### GET IF WE CAN MOVE ON TO FINISH
+
+defined_text = {
+	name = GetNextAvailable2
+
+	text = {
+		trigger = {
+			NOT = { has_country_flag = government_chosen }
+		}
+		localization_key = COALITION_NEXT_GOV_FIRST
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				NewCoalition > 50.0
+			}
+		}
+		localization_key = COALITION_NEXT_OK_2
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				NewCoalition < 50.0
+			}
+		}
+		localization_key = COALITION_NEXT_NO_2
+	}
+}
+
 ####################### GET IF COALITION FORMING IS FINISHED
 
 defined_text = {
@@ -647,14 +538,14 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = coalition_chosen
+			has_at_least_one_government_and_one_coalition_flag = yes
 		}
 		localization_key = COALITION_FINISHED_OK
 	}
 
 	text = {
 		trigger = {
-			NOT = { has_country_flag = coalition_chosen }
+			NOT = { has_at_least_one_government_and_one_coalition_flag = yes }
 			check_variable = {
 				var = ROOT.NewCoalition
 				value = 50
@@ -1402,7 +1293,7 @@ defined_text = {
 }
 
 
-########################### GET MEMBERS OF THE CURRENT COALITION
+########################### GET MAJORITY/MINORITY GOVERNMENT
 
 defined_text = {
 	name = GetMajorityMinorityGov
@@ -1462,6 +1353,8 @@ defined_text = {
 		localization_key = one_party_state_government
 	}
 }
+
+########################### GET MEMBERS OF THE CURRENT GOVERNMENT
 
 defined_text = {
 	name = GetGovernmentMemberPartyName

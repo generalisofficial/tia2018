@@ -3016,3 +3016,392 @@ has_at_least_two_coalition_flags = {
 		}
 	}
 }
+
+has_at_least_one_government_and_one_coalition_flag = {
+	OR = {
+		AND = {
+			has_country_flag = government_islamist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_fascist
+			OR = {
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_right_wing_nationalist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_monarchist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_national_conservative
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_conservative
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_classical_liberal
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_social_liberal
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_social_democrat
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_progressive
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_socialist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_islamist
+				has_country_flag = coalition_communist
+			}
+		}
+		AND = {
+			has_country_flag = government_communist
+			OR = {
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_monarchist
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_islamist
+			}
+		}
+	}
+}
+
+coalition_partners_are_neightbours = {
+	OR = {
+		AND = {
+			has_country_flag = government_communist
+			OR = {
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+			}
+			NOT = {
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_socialist
+			OR = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+			}
+			NOT = {
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_social_democrat
+			OR = {
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_progressive
+			OR = {
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_social_liberal
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_social_liberal
+			OR = {
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_classical_liberal
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_classical_liberal
+			OR = {
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_conservative
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_conservative
+			OR = {
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_national_conservative
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_national_conservative
+			OR = {
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_right_wing_nationalist
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_fascist
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_right_wing_nationalist
+			OR = {
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_fascist
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_islamist
+			}
+		}
+		AND = {
+			has_country_flag = government_fascist
+			OR = {
+				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_islamist
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+			}
+		}
+		AND = {
+			has_country_flag = government_islamist
+			OR = {
+				has_country_flag = coalition_fascist
+			}
+			NOT = {
+				has_country_flag = coalition_communist
+				has_country_flag = coalition_socialist
+				has_country_flag = coalition_social_democrat
+				has_country_flag = coalition_progressive
+				has_country_flag = coalition_social_liberal
+				has_country_flag = coalition_classical_liberal
+				has_country_flag = coalition_conservative
+				has_country_flag = coalition_national_conservative
+				has_country_flag = coalition_right_wing_nationalist
+			}
+		}
+	}
+}

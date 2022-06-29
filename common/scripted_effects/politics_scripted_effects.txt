@@ -30,6 +30,8 @@ cleanup_coalition = {
 	clr_country_flag = government_communist
 	clr_country_flag = coalition_chosen
 	clear_variable = ROOT.NewCoalition
+	clear_variable = ROOT.NewCoalitionLeader
+	clear_variable = ROOT.NewCoalitionPartner
 }
 
 cleanup_seats_parliament = {
@@ -131,6 +133,248 @@ update_coalition = {
 		break_coalition = yes
 	}
 	create_pie_chart = yes
+}
+
+setup_coalition = {
+	# First the Leaders
+	clear_array = coalition_leaders_array
+	if = {
+		limit = {
+			check_variable = {
+				communist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				socialist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 2
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				social_democrat_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 3
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				progressive_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				social_liberal_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 5
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				classical_liberal_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 6
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				conservative_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 7
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				national_conservative_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 8
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				right_wing_nationalist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 9
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				fascist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 10
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				islamist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_leaders_array = 11
+		}
+	}
+	#Then potential partners. Both are separated because the arrays get modified
+	clear_array = coalition_partners_array
+	if = {
+		limit = {
+			check_variable = {
+				communist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				socialist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 2
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				social_democrat_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 3
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				progressive_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				social_liberal_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 5
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				classical_liberal_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 6
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				conservative_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 7
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				national_conservative_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 8
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				right_wing_nationalist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 9
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				fascist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 10
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				islamist_seats > 0.99
+			}
+		}
+		add_to_array = {
+			coalition_partners_array = 11
+		}
+	}
+}
+
+update_coalition_majority_gfx = {
+	set_variable = {
+		ROOT.MajorityGFX = ROOT.NewCoalition
+	}
+	divide_variable = { ROOT.MajorityGFX = 100 }
+	multiply_variable = { ROOT.MajorityGFX = 230 }
+
+	set_variable = {
+		ROOT.Opposition = 100
+	}
+	subtract_from_variable = {
+		ROOT.Opposition = ROOT.NewCoalition
+	}
 }
 
 quickset_parliament = {
@@ -537,8 +781,7 @@ set_parliament_graphics = {
 
 ## CLARIFICATION
 # Every ideology has a number from 1 to 12.
-# There will be a parliament array with 25 entries of numbers reaching from 1 to 12, each defining a seat for a certain ideology.
-# It involves a huge amount of code, I hope it won't kill the performance
+# There will be a parliament array with 100 entries of numbers reaching from 1 to 12, each defining a seat for a certain ideology.
 #
 ## Step 1 : Create new variables to work with
 	cleanup_seats_parliament = yes
@@ -1714,10 +1957,10 @@ set_parliament_popularity_array = {
 		}
 		add_to_array = { parliament_popularity_array = 12 }
 	}
-	for_each_loop = {
-		array = parliament_popularity_array
-		log = "[?parliament_popularity_array^i]"
-	}
+	#for_each_loop = {
+	#	array = parliament_popularity_array
+	#	log = "[?parliament_popularity_array^i]"
+	#}
 }
 
 set_parliament_speaker_plurality = {
