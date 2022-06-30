@@ -51,6 +51,7 @@ country_event = { #(Overlord) rejects independence referendum
 			add_claim_by = FROM
 		}
 		add_ideas = non_member_state
+		create_nationalist_militias = yes
 		FROM = {
 			end_puppet = ROOT
 			declare_war_on = {
@@ -144,5 +145,38 @@ country_event = { #Autonomous Region or Puppet State?
 
 	option = {
 		name = subject.7.o2
+	}
+}
+
+country_event = { #We are being forced into annexation!
+	id = subject.8
+	title = subject.8.t
+	desc = subject.8.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.8.o1
+		news_event = subject.9
+		OVERLORD = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+news_event = { #(Country) annexed after disputed referendum
+	id = subject.9
+	title = subject.9.t
+	desc = subject.9.d
+	picture = GFX_news_event_police_brutality
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = subject.9.o1
 	}
 }

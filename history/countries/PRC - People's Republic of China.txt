@@ -119,14 +119,14 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
-		target = MCU
+		target = MCO
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
 		puppet = HKN
-		puppet = MCU
+		puppet = MCO
 		HKN = { set_country_flag = TfV_marked_for_deletion }
-		MCU = { set_country_flag = TfV_marked_for_deletion }
+		MCO = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
@@ -154,7 +154,7 @@ HKN = {
 	}
 }
 
-MCU = {
+MCO = {
 	set_politics = {	
 		ruling_party = communist
 		last_election = "2017.9.12"
@@ -223,4 +223,5 @@ set_popularities = {
     communist = 100
 }
 
+# Characters - Political
 recruit_character = PRC_xi_jinping

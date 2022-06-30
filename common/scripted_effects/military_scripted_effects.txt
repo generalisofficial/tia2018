@@ -1,0 +1,26 @@
+create_nationalist_militias = {
+    division_template = {
+        name = "Nationalist Militia"
+        regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+        }
+    }
+        
+    set_temp_variable = { num_of_divs = max_available_manpower_k }
+    divide_temp_variable = { num_of_divs = 10 }
+
+    set_temp_variable = { i = 0 }
+    while_loop_effect = {
+        limit = { check_variable = { i < num_of_divs } }
+        random_owned_state = {
+            create_unit = {
+                division = "name = \"Nationalist Militia\" division_template = \"Nationalist Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+                owner = ROOT
+            }
+        }
+        add_to_temp_variable = { i = 1 }
+        multiply_temp_variable = { i = 1.02 }
+    }
+}

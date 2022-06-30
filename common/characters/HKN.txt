@@ -1,29 +1,6 @@
 characters={
  #Starting - Political
-	HKN_carrie_lam={
-		name="Carrie Lam"
-		portraits={
-			civilian={
-				large=GFX_Portrait_HKN_Carrie_Lam
-			}
-		}
-		country_leader={
-			ideology=xi_jinping_thought
-			traits={ friend_of_china }
-		}
-	}
-	HKN_wu_chi_wai={
-		name="Wu Chi-wai"
-		portraits={
-			civilian={
-				large=GFX_Portrait_HKN_Wu_Chi_wai
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-		}
-	}
-	HKN_cheng_chung_tai={
+ 	HKN_cheng_chung_tai={
 		name="Cheng Chung-tai"
 		portraits={
 			civilian={
@@ -32,6 +9,7 @@ characters={
 		}
 		country_leader={
 			ideology=national_conservative_ideology
+			traits={ subject_pro_autonomy }
 		}
 	}
 	HKN_johnny_mak={
@@ -43,6 +21,31 @@ characters={
 		}
 		country_leader={
 			ideology=three_principles_of_the_people
+			traits={ subject_pro_autonomy }
+		}
+	}
+	HKN_wu_chi_wai={
+		name="Wu Chi-wai"
+		portraits={
+			civilian={
+				large=GFX_Portrait_HKN_Wu_Chi_wai
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
+			traits={ subject_pro_autonomy }
+		}
+	}
+	HKN_carrie_lam={
+		name="Carrie Lam"
+		portraits={
+			civilian={
+				large=GFX_Portrait_HKN_Carrie_Lam
+			}
+		}
+		country_leader={
+			ideology=xi_jinping_thought
+			traits={ friend_of_china subject_pro_integration }
 		}
 	}
 	#Starting - Military

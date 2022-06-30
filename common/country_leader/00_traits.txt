@@ -98,6 +98,24 @@ leader_traits = {
 		ai_will_do = { factor = 1 }
 	}
 
+	# Subject
+
+	subject_pro_autonomy = {
+		random = no
+		
+		autonomy_gain = 0.5
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	subject_pro_integration = {
+		random = no
+		
+		autonomy_gain = -0.5
+		
+		ai_will_do = { factor = 1 }
+	}
+
 	# Diplomacy
 	
 	friend_of_america = {

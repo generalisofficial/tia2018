@@ -2354,10 +2354,20 @@ election_pulse = {
 		}
 		hidden_effect = {
 			add_ideas = minority_government
-			news_event = politics.14
+			if = {
+				limit = {
+					has_idea = parliamentary_system
+				}
+				news_event = politics.14
+			}
 		}
 		else = {
-			news_event = politics.13
+			if = {
+				limit = {
+					has_idea = parliamentary_system
+				}
+				news_event = politics.13
+			}
 		}
 	}
 }

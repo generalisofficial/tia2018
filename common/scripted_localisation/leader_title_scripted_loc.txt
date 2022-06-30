@@ -96,6 +96,18 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
+				OR = {
+					original_tag = HKN
+					original_tag = MCO
+				}
+				has_idea = parliamentary_system
+			}
+		}
+		localization_key = LEADER_TITLE_CHIEF_EXECUTIVE
+	}
+	text = {
+		trigger = {
+			THIS = {
 				original_tag = TIB
 				has_idea = parliamentary_system
 			}

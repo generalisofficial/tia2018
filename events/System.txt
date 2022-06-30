@@ -1509,3 +1509,25 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = system.33
+	hidden=yes
+
+	trigger = {
+		is_subject = no
+		OR = {
+			has_country_leader_with_trait = subject_pro_integration
+			has_country_leader_with_trait = subject_pro_autonomy
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_country_leader_trait = subject_pro_integration
+		remove_country_leader_trait = subject_pro_autonomy
+	}
+}
