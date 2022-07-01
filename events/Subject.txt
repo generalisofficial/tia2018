@@ -29,10 +29,12 @@ country_event = { #(Subject) unilaterally votes for independence
 				has_idea = no_standing_army
 			}
 		}
-		news_event = subject.3
+		FROM = { 
+			news_event = subject.3 
+			add_ideas = non_member_state
+		}
 		add_political_power = -100
 		end_puppet = FROM
-		add_ideas = non_member_state
 	}
 }
 
