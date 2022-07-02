@@ -774,4 +774,54 @@ domestic_affairs = {
 			}
 		}
 	}
+
+	introduce_the_FOMLACM_bill = {
+		
+		visible = {
+			original_tag = HKN
+			is_subject_of = PRC
+		}
+		
+		icon = communist_china
+
+		fire_only_once = yes 
+		
+		cost = 50
+
+		complete_effect = {
+			add_ideas = idea_FOMLACM
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				date > 2019.3.29
+			}
+		}
+	}
+
+	repeal_the_FOMLACM_bill = {
+		
+		visible = {
+			original_tag = HKN
+			has_idea = idea_FOMLACM
+		}
+		
+		icon = communist_china
+		
+		cost = 50
+
+		complete_effect = {
+			remove_ideas = idea_FOMLACM
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				NOT = { has_government = communist }
+			}
+		}
+	}
 }

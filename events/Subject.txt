@@ -182,3 +182,54 @@ news_event = { #(Country) annexed after disputed referendum
 		name = subject.9.o1
 	}
 }
+
+country_event = { #(Subject) has purged our influence in their government!
+	id = subject.10
+	title = subject.10.t
+	desc = subject.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.10.o1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_idea = no_standing_army
+			}
+		}
+		add_political_power = 25
+		declare_war_on = {
+			target = FROM
+			type = annex_everything # Change when wargoal rework
+		}
+	}
+
+	option = {
+		name = subject.10.o2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_idea = no_standing_army
+			}
+		}
+		add_political_power = -100
+		end_puppet = FROM
+	}
+}
+
+news_event = { #(Country): Puppet State No More?
+	id = subject.11
+	title = subject.11.t
+	desc = subject.11.d
+	picture = GFX_news_event_army_convoy
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = subject.11.o1
+	}
+}

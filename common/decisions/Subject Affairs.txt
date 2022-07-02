@@ -109,4 +109,35 @@ subject_affairs = {
 			factor = 100
 		}
 	}
+
+	purge_overlord_influence = {
+
+		allowed = {
+			has_dlc = "Together for Victory"
+		}
+
+		visible = {
+			has_autonomy_state = autonomy_puppet_state
+		}
+
+		available = {
+			has_war = no
+			compare_autonomy_progress_ratio > 0.99
+		}
+
+		complete_effect = {
+			news_event = subject.11
+			OVERLORD = {
+				country_event = subject.10
+			}
+		}
+		
+		icon = independence
+		
+		cost = 75
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

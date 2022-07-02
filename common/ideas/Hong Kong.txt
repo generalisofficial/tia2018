@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		idea_FOMLACM = {
+			picture = communist_china
+			
+			modifier = {
+				autonomy_gain = -0.5
+			}
+
+			cancel = {
+				NOT = { is_subject_of = PRC }
+			}
+		}
+	}
+}
