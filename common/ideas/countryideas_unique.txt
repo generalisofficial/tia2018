@@ -1,0 +1,242 @@
+ideas = {
+	country = {
+		# BEL- Belgium
+		idea_belgitude = {
+			picture = belgium
+			
+			modifier = {
+				war_support_factor = -0.25
+			}
+		}
+		# BOS - Bosnia & Herzegovina
+		idea_dayton_agreement = {
+			picture = dayton_agreement
+			
+			modifier = {
+			    political_power_gain = -0.15
+			}
+		}
+		# ENG - England
+		idea_brexit = {
+			picture = brexit
+
+			cancel = {
+				NOT = { has_idea = idea_european_union_member }
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		# FIN - Finland
+		idea_sisu = {
+			picture = finland
+			
+			modifier = {
+				army_morale_factor = 0.25
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				stability_factor = 0.05
+				conscription = 0.01
+			}
+		}
+		# FSA - Syrian Opposition
+		syrian_revolution = {
+			picture = syrian_revolution
+			
+			cancel = {
+			    has_global_flag = syrian_civil_war_over
+			}
+			
+			modifier = {
+				conscription = 0.02
+				out_of_supply_factor = -0.9
+				attrition = -0.2
+				max_dig_in = 1
+			}
+		}
+		# HKN - Hong Kong
+		idea_FOMLACM = {
+			picture = communist_china
+			
+			modifier = {
+				autonomy_gain = -0.5
+			}
+
+			cancel = {
+				NOT = { is_subject_of = PRC }
+			}
+		}
+		# ISS - Islamic State
+		idea_the_islamic_state = {
+			picture = islamic_state
+			
+			modifier = {
+			    political_power_gain = 0.25
+				out_of_supply_factor = -0.95
+			}
+		}
+		# ISR - Israel
+		idea_the_jewish_state = {
+			picture = israel
+			
+			modifier = {
+				war_support_factor = 0.5
+	            army_core_attack_factor = 0.15
+	            army_core_defence_factor = 0.25
+				army_org_factor = 0.05
+				army_morale_factor = 0.2
+				surrender_limit = 0.75
+			}
+		}
+		idea_law_of_return = {
+			picture = israeli_passport
+			
+			modifier = {
+				stability_factor = 0.02
+				MONTHLY_POPULATION = 0.3
+			}
+		}
+		# JAP - Japan
+		japanese_article_9 = {
+		
+			picture = japanese_article_9
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.15
+				drift_defence_factor = 0.05
+				justify_war_goal_time = 10
+				conscription_factor = -0.5
+			}
+		}
+		japanese_article_9_adapted = {
+		
+			picture = japanese_article_9
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				justify_war_goal_time = 0.5
+				conscription_factor = -0.3
+			}
+		}
+		# PRK - North Korea
+		idea_songun = {
+			picture = korean_peoples_army
+			
+			modifier = {
+				recruitable_population = 0.025
+				war_support_factor = 0.5
+				army_morale_factor = 0.25
+				army_org_factor = 0.1
+			}
+
+			cancel = {
+				has_idea = no_standing_army
+			}
+		}
+		# PRC - People's Republic of China
+		idea_great_firewall = {
+			picture = great_firewall
+
+			cancel = {
+				NOT = {
+					has_idea = civil_liberties_totalitarian
+				}
+			}
+			
+			modifier = {
+				political_power_gain = -0.1
+				encryption_factor = 0.1
+				stability_factor = 0.075
+			}
+		}
+		# SAU - Saudi Arabia
+		saudi_vision_2030 = {
+			picture = saudi_vision_2030
+			
+			modifier = {
+			    production_oil_factor = -0.3
+				production_speed_buildings_factor = 0.2
+				local_building_slots_factor = 0.2
+			}
+		}
+		# USA - United States
+		idea_constitution_of_the_united_states = {
+			picture = great_seal
+			
+			modifier = {
+				political_power_factor = -0.05
+				custom_modifier_tooltip = TT_first_amendment
+				custom_modifier_tooltip = TT_restricts_legislation
+				custom_modifier_tooltip = TT_second_amendment
+				custom_modifier_tooltip = TT_restricts_legislation
+			}
+
+			cancel = {
+				is_democracy = no
+			}
+		}
+		idea_american_exceptionalism = {
+			picture = statue_of_liberty
+			
+			modifier = {
+				ai_badass_factor = 0.03
+				stability_factor = 0.1
+				war_support_factor = 0.2
+				conscription_factor = 0.1
+				fascist_drift = -0.01
+				communist_drift = -0.01
+			}
+		}
+		idea_patriot_act = {
+			picture = great_seal
+			
+			modifier = {
+				stability_factor = -0.05
+				decryption_factor = 0.15
+				encryption_factor = 0.1
+				foreign_subversive_activites = -0.1
+			}
+		}
+		# VAT - Vatican City
+		idea_the_holy_see = {
+			picture = holy_see
+			
+			modifier = {
+				drift_defence_factor = 1
+				political_power_factor = 0.25
+				opinion_gain_monthly = 5
+			}
+		}
+		# VEN - Venezuela
+		idea_venezuelan_presidential_crisis = {
+			picture = disjointed_government
+			
+			cancel = {
+				NOT = {
+					check_variable = {
+						var = social_liberal_seats
+						value = 50
+						compare = greater_than_or_equals
+					}
+					has_country_leader = {
+						name = "Nicolás Maduro"
+						ruling_only = yes
+					}
+				}
+			}
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.35
+			}
+		}
+	}
+}
