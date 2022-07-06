@@ -384,10 +384,10 @@
  politics.12.d: "A snap parliamentary election is underway in [FROM.GetNameDef], following a no-confidence vote in the [FROM.GetParliamentName] that resulted in the ousting of sitting government, headed by [FROM.GetLeader] ([FROM.GetRulingParty]). The opposition MP that introduced the motion cited the disastrous approval ratings of the sitting government as the main reason for the move. It remains to be seen what new kind of government will be formed in 30 days."
  politics.12.o1: "Politics..."
  politics.13.t: "[FROM.GetParliamentName] approves new majority government in [FROM.GetNonIdeologyNameDef]"
- politics.13.d: "A new majority government in [FROM.GetNameDef] has officially been approved by the [FROM.GetParliamentName], in the process electing [FROM.GetLeader] ([FROM.GetRulingParty]) as the country's next leader. With the new government possessing a majority of seats in the [FROM.GetParliamentName], it has a powerful legislative mandate that will allow it to govern proactively."
+ politics.13.d: "A new majority government in [FROM.GetNameDef] has officially been approved by the [FROM.GetParliamentName], in the process electing [FROM.GetLeader] ([FROM.GetRulingParty]) as the country's next [FROM.GetLeaderTitle]. With the new government possessing a majority of seats in the [FROM.GetParliamentName], it has a powerful legislative mandate that will allow it to govern proactively."
  politics.13.o1: "Democracy at work."
  politics.14.t: "[FROM.GetParliamentName] approves new minority government in [FROM.GetNonIdeologyNameDef]"
- politics.14.d: "A new minority government in [FROM.GetNameDef] has officially been approved by the [FROM.GetParliamentName], in the process electing [FROM.GetLeader] ([FROM.GetRulingParty]) as the country's next leader. The nation's legislators were unable to agree on a majority coalition government, instead giving the [FROM.GetRulingParty] the task of running a reactive minority government. With the new government only possessing a minority of seats in the [FROM.GetParliamentName], it has a weak legislative mandate that will require it to negotiate extensively with opposition parties to pass legislation, as well as leaving a motion of no-confidence on the table."
+ politics.14.d: "A new minority government in [FROM.GetNameDef] has officially been approved by the [FROM.GetParliamentName], in the process electing [FROM.GetLeader] ([FROM.GetRulingParty]) as the country's next [FROM.GetLeaderTitle]. The nation's legislators were unable to agree on a majority coalition government, instead giving the [FROM.GetRulingParty] the task of running a reactive minority government. With the new government only possessing a minority of seats in the [FROM.GetParliamentName], it has a weak legislative mandate that will require it to negotiate extensively with opposition parties to pass legislation, as well as leaving a motion of no-confidence on the table."
  politics.14.o1: "Democracy at work."
 
  #Turkey
@@ -469,7 +469,7 @@
  
  #Swaziland
  swaziland.1.t: "The Kingdom of Eswatini"
- swaziland.1.d: "Today, the tiny African country of Swaziland changed its name. Due to constant confusion with Switzerland and even Sweden, King [SWZ.GetLeader] has authorized a proposal changing the country's name to the Kingdom of Eswatini, meaning Land of the Swazis. Will this finally separate them from Switzerland and Sweden?"
+ swaziland.1.d: "Today, the tiny African country of Swaziland changed its name. Due to constant confusion with Switzerland and even Sweden, [SWZ.GetLeaderTitle] [SWZ.GetLeader] has authorized a proposal changing the country's name to the Kingdom of Eswatini, meaning Land of the Swazis. Will this finally separate them from Switzerland and Sweden?"
  swaziland.1.o1: "Switzerland has a new name?"
  swaziland.1.o2: "Finally!"
 
@@ -509,7 +509,7 @@
  macedonia.2.d: "Despite our very generous offer, Athens has rejected it! It seems their hostility and xenophobia has stopped them from cooperating with us. The dispute will go on!"
  macedonia.2.o1: "Sad!"
  macedonia.3.t: "Prespa Agreement"
- macedonia.3.d: "Ever since Macedonia's independence from Yugoslavia in 1991, [MAC.GetNameDef] and [GRE.GetNameDef] have been engaged in a bitter dispute over the former's national name, this due to the existence of the Greek region of Macedonia. However, a deal has now been reached between [MAC.GetLeader] and [GRE.GetLeader], where Macedonia changes its name to North Macedonia. With this dispute over, both nations can move on to more pressing issues."
+ macedonia.3.d: "Ever since Macedonia's independence from Yugoslavia in 1991, [MAC.GetNameDef] and [GRE.GetNameDef] have been engaged in a bitter dispute over the former's national name, this due to the existence of the Greek region of Macedonia. However, a deal has now been reached between [MAC.GetLeaderTitle] [MAC.GetLeader] and [MAC.GetLeaderTitle] [GRE.GetLeader], where Macedonia changes its name to North Macedonia. With this dispute over, both nations can move on to more pressing issues."
  macedonia.3.o1: "Oh, really?"
 
  #United Nations
@@ -542,13 +542,13 @@
  usa.2.o1: "Oh boy!"
  usa.2.o2: "Our border finally will be secure!"
  usa.3.t: "Ted Kaczynski Pardoned"
- usa.3.d: "In a strange turn of events, President [USA.GetLeader] has announced a presidential pardon for Ted Kaczynski, the infamous Unabomber. The public is outraged with this decision, calling the President unstable, dumb and insane. In another strange turn of events, the Green Party has nominated Kaczynski for the next presidential election. Will the Unabomber become President?"
+ usa.3.d: "In a strange turn of events, [USA.GetLeaderTitle] [USA.GetLeader] has announced a presidential pardon for Ted Kaczynski, the infamous Unabomber. The public is outraged with this decision, calling the President unstable, dumb and insane. In another strange turn of events, the Green Party has nominated Kaczynski for the next presidential election. Will the Unabomber become President?"
  usa.3.o1: "Oh, lord."
  usa.4.t: "Withdrawal from Syria"
  usa.4.d: "With the total defeat of the Islamic State, our bases in Syria are becoming increasingly worthless and costly. Our forces are therefore withdrawing from the region, making way for local forces to determine the fate of the country."
  usa.4.o1: "Withdrawing as promised."
  usa.5.t: "United States announces total withdrawal from Syria"
- usa.5.d: "Today, [USA.GetLeader] announced the total withdrawal of all United States Armed Forces from Syria. American forces have recently been stationed in two main regions; the At-Tanf Garrison in the Syrian Desert and on the frontlines of the Syrian Democratic Forces in the northeast. Both of these missions were intended to assist the battle against the Islamic State terror group. However, with the recent defeat of ISIS, these missions have become redundant, which is the likely cause of this withdrawal. America's now-former Kurdish allies are protesting the withdrawal, claiming that it leaves them defenseless against Turkey and the Syrian government."
+ usa.5.d: "Today, [USA.GetLeaderTitle] [USA.GetLeader] announced the total withdrawal of all United States Armed Forces from Syria. American forces have recently been stationed in two main regions; the At-Tanf Garrison in the Syrian Desert and on the frontlines of the Syrian Democratic Forces in the northeast. Both of these missions were intended to assist the battle against the Islamic State terror group. However, with the recent defeat of ISIS, these missions have become redundant, which is the likely cause of this withdrawal. America's now-former Kurdish allies are protesting the withdrawal, claiming that it leaves them defenseless against Turkey and the Syrian government."
  usa.5.o1: "It's about to heat up!"
  usa.6.t: "Stoneman Douglas High School shooting"
  usa.6.d: "This morning, a gunman opened fire with a semi-automatic rifle at Marjory Stoneman Douglas High School in Parkland, Florida, killing seventeen students and staff members and injuring seventeen others. Witnesses identified Nikolas Cruz, a nineteen-year-old expelled student, as the assailant. Cruz fled the scene on foot by blending with other students. He was arrested without incident about an hour later in nearby Coral Springs. Cruz's killing spree is the deadliest high school shooting in United States history, surpassing the Columbine High School massacre on April 20, 1999.\n\nSupport for gun control has spiked substantially since the shooting."
@@ -857,3 +857,9 @@ south_tyrol.1.t: "South Tyrol applies for Union"
 south_tyrol.1.d: "Our newly independent brothers in South Tyrol have sent us an offer! They want to join Austria as a new federal state! Integration might be costly. Do we accept?"
 south_tyrol.1.o1: "Of course."
 south_tyrol.1.o2: "Definitely not."
+
+#Hong Kong
+hong_kong.1.t: "Unrest in Hong Kong"
+hong_kong.1.d: "Large-scale protests and riots have erupted in the autonomous Chinese city-state of Hong Kong, following a bill introduced by the local government, headed by [HKN.GetLeaderTitle] [HKN.GetLeader] that would allow criminals to be extracted directly to mainland China. Local citizens have reportedly armed themselves with helmets, face coverings, gas masks and umbrellas, vandalizing pro-government & pro-CCP targets and picking fights with city police. The protest movement, including both the city's \"pro-democracy\" and \"localist\" camps, has demanded the withdrawal of the extradition bill, as well as more civil liberties and less Chinese influence."
+hong_kong.1.o1: "Free Hong Kong!"
+hong_kong.1.o2: "Democracy? Very funny!"

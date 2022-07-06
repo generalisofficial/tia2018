@@ -794,6 +794,16 @@ domestic_affairs = {
 
 		complete_effect = {
 			add_ideas = idea_FOMLACM
+			if = {
+				limit = {
+					has_idea = civil_liberties_libertarian
+				}
+				add_ideas = civil_liberties_authoritarian
+			}
+			hidden_effect = {
+				add_timed_idea = { idea = idea_large_scale_protests days = 300 }
+				news_event = hong_kong.1
+			}
 		}
 		
 		ai_will_do = {
@@ -818,6 +828,13 @@ domestic_affairs = {
 
 		complete_effect = {
 			remove_ideas = idea_FOMLACM
+			add_ideas = civil_liberties_libertarian
+			if = {
+				limit ={
+					has_idea = idea_large_scale_protests
+				}
+				remove_ideas = idea_large_scale_protests
+			}
 		}
 		
 		ai_will_do = {

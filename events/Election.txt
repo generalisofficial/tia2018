@@ -371,19 +371,18 @@ country_event = {
 		trigger = {
 			NOT = {
 				OR = {
+					communist_majority_popularity = yes
+					socialist_majority_popularity = yes
+					progressive_majority_popularity = yes
+					social_democrat_majority_popularity = yes
+					social_liberal_majority_popularity = yes
+					classical_liberal_majority_popularity = yes
+					conservative_majority_popularity = yes
+					national_conservative_majority_popularity = yes
 					monarchist_majority_popularity = yes
-					communist > 0.99
-					socialist > 0.99
-					progressive > 0.99
-					social_democrat > 0.99
-					social_liberal > 0.99
-					classical_liberal > 0.99
-					conservative > 0.99
-					national_conservative > 0.99
-					monarchist > 0.99
-					right_wing_nationalist > 0.99
-					fascist > 0.99
-					islamist > 0.99
+					right_wing_nationalist_majority_popularity = yes
+					fascist_majority_popularity = yes
+					islamist_majority_popularity = yes
 				}
 			}
 		}
@@ -391,9 +390,14 @@ country_event = {
 		break_coalition = yes
 		quickset_parliament = yes
 		if = {
-			limit = { is_ai = no }
+			limit = { 
+				is_ai = no 
+			}
 			setup_coalition = yes
 			set_country_flag = forming_government
+			else = {
+				auto_government = yes
+			}
 		}
     }
 

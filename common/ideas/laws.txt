@@ -292,6 +292,14 @@ ideas = {
 			removal_cost = -1
 			level = 1
 
+			available = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+			}
+
 			default = yes
 		}
 		
@@ -301,22 +309,7 @@ ideas = {
 			level = 2
 
 			available = {
-				num_of_controlled_states > 1
-			}
-
-			on_add = {
-				every_country = {
-					limit = {
-						is_subject_of = ROOT
-						has_autonomy_state = autonomy_autonomous_region
-					}
-					ROOT = {
-						annex_country = {
-							target = PREV
-							transfer_troops = yes
-						}
-					}
-				}
+				always = no
 			}
 			
 			modifier = {

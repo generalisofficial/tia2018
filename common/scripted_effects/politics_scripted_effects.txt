@@ -2905,3 +2905,279 @@ puppet_government_sync = {
 	}
 	one_party_parliament = yes
 }
+
+auto_government = {
+	if = {
+		limit = {
+			islamist_plurality_seats = yes
+		}
+		set_politics = {	
+			ruling_party = islamist
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_islamist
+		add_to_variable = { ROOT.Coalition = islamist_seats }
+	}
+	if = {
+		limit = {
+			fascist_plurality_seats = yes
+		}
+		set_politics = {	
+			ruling_party = fascist
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_fascist
+		add_to_variable = { ROOT.Coalition = fascist_seats }
+		if = {
+			limit = {
+				right_wing_nationalist_seats > 0.01
+			}
+			set_country_flag = coalition_right_wing_nationalist
+			add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		}
+	}
+	if = {
+		limit = {
+			right_wing_nationalist_plurality_seats = yes
+		}
+		set_politics = {	
+			ruling_party = right_wing_nationalist
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_right_wing_nationalist
+		add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		if = {
+			limit = {
+				fascist_seats > 0.01
+			}
+			set_country_flag = coalition_fascist
+			add_to_variable = { ROOT.Coalition = fascist_seats }
+		}
+		if = {
+			limit = {
+				national_conservative_seats > 0.01
+			}
+			set_country_flag = coalition_national_conservative
+			add_to_variable = { ROOT.Coalition = national_conservative_seats }
+		}
+	}
+	if = {
+		limit = {
+			national_conservative_plurality_seats = yes
+		}
+		set_politics = {	
+			ruling_party = national_conservative
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_national_conservative
+		add_to_variable = { ROOT.Coalition = national_conservative_seats }
+		if = {
+			limit = {
+				right_wing_nationalist_seats > 0.01
+			}
+			set_country_flag = coalition_right_wing_nationalist
+			add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		}
+		if = {
+			limit = {
+				conservative_seats > 0.01
+			}
+			set_country_flag = coalition_conservative
+			add_to_variable = { ROOT.Coalition = conservative_seats }
+		}
+	}
+	if = {
+		limit = {
+			national_conservative_plurality_seats = yes
+		}
+		set_politics = {	
+			ruling_party = national_conservative
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_national_conservative
+		add_to_variable = { ROOT.Coalition = national_conservative_seats }
+		if = {
+			limit = {
+				right_wing_nationalist_seats > 0.01
+			}
+			set_country_flag = coalition_right_wing_nationalist
+			add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		}
+		if = {
+			limit = {
+				conservative_seats > 0.01
+			}
+			set_country_flag = coalition_conservative
+			add_to_variable = { ROOT.Coalition = conservative_seats }
+		}
+	}
+	if = {
+		limit = {
+			conservative_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_conservative
+		add_to_variable = { ROOT.Coalition = conservative_seats }
+		if = {
+			limit = {
+				classical_liberal_seats > 0.01
+			}
+			set_country_flag = coalition_classical_liberal
+			add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+		}
+		if = {
+			limit = {
+				national_conservative_seats > 0.01
+			}
+			set_country_flag = coalition_national_conservative
+			add_to_variable = { ROOT.Coalition = national_conservative_seats }
+		}
+	}
+	if = {
+		limit = {
+			classical_liberal_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = classical_liberal
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_classical_liberal
+		add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+		if = {
+			limit = {
+				social_liberal_seats > 0.01
+			}
+			set_country_flag = coalition_social_liberal
+			add_to_variable = { ROOT.Coalition = social_liberal_seats }
+		}
+		if = {
+			limit = {
+				conservative_seats > 0.01
+			}
+			set_country_flag = coalition_conservative
+			add_to_variable = { ROOT.Coalition = conservative_seats }
+		}
+	}
+	if = {
+		limit = {
+			social_liberal_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_social_liberal
+		add_to_variable = { ROOT.Coalition = social_liberal_seats }
+		if = {
+			limit = {
+				classical_liberal_seats > 0.01
+			}
+			set_country_flag = coalition_classical_liberal
+			add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+		}
+		if = {
+			limit = {
+				social_democrat_seats > 0.01
+			}
+			set_country_flag = coalition_social_democrat
+			add_to_variable = { ROOT.Coalition = social_democrat_seats }
+		}
+	}
+	if = {
+		limit = {
+			social_democrat_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_social_democrat
+		add_to_variable = { ROOT.Coalition = social_democrat_seats }
+		if = {
+			limit = {
+				social_liberal_seats > 0.01
+			}
+			set_country_flag = coalition_social_liberal
+			add_to_variable = { ROOT.Coalition = social_liberal_seats }
+		}
+		if = {
+			limit = {
+				progressive_seats > 0.01
+			}
+			set_country_flag = coalition_progressive
+			add_to_variable = { ROOT.Coalition = progressive_seats }
+		}
+	}
+	if = {
+		limit = {
+			progressive_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_progressive
+		add_to_variable = { ROOT.Coalition = progressive_seats }
+		if = {
+			limit = {
+				social_democrat_seats > 0.01
+			}
+			set_country_flag = coalition_social_democrat
+			add_to_variable = { ROOT.Coalition = social_democrat_seats }
+		}
+		if = {
+			limit = {
+				socialist_seats > 0.01
+			}
+			set_country_flag = coalition_socialist
+			add_to_variable = { ROOT.Coalition = socialist_seats }
+		}
+	}
+	if = {
+		limit = {
+			socialist_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = socialist
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_socialist
+		add_to_variable = { ROOT.Coalition = socialist_seats }
+		if = {
+			limit = {
+				progressive_seats > 0.01
+			}
+			set_country_flag = coalition_progressive
+			add_to_variable = { ROOT.Coalition = progressive_seats }
+		}
+		if = {
+			limit = {
+				communist_seats > 0.01
+			}
+			set_country_flag = coalition_communist
+			add_to_variable = { ROOT.Coalition = communist_seats }
+		}
+	}
+	if = {
+		limit = {
+			communist_plurality_seats = yes
+		}
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = yes
+		}
+		set_country_flag = coalition_communist
+		add_to_variable = { ROOT.Coalition = communist_seats }
+		if = {
+			limit = {
+				socialist_seats > 0.01
+			}
+			set_country_flag = coalition_socialist
+			add_to_variable = { ROOT.Coalition = socialist_seats }
+		}
+	}
+	election_pulse = yes
+}

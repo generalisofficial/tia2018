@@ -1,0 +1,25 @@
+﻿add_namespace = hong_kong
+
+news_event = { #Unrest Erupts in Hong Kong
+	id = hong_kong.1
+	title = hong_kong.1.t
+	desc = hong_kong.1.d
+	picture = GFX_news_event_hong_kong_protests
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = hong_kong.1.o1
+		trigger = {
+			has_idea = civil_liberties_libertarian
+		}
+	}
+
+	option = {
+		name = hong_kong.1.o2
+		trigger = {
+			NOT = { has_idea = civil_liberties_libertarian }
+		}
+	}
+}

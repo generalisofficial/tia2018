@@ -190,5 +190,18 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
+
+		idea_large_scale_protests = {
+			picture = factory_strikes
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.75
+				industrial_capacity_dockyard = -0.75
+				production_speed_buildings_factor = -0.75
+			}
+		}
 	}
 }
