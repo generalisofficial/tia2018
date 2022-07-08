@@ -652,7 +652,7 @@ foreign_affairs = {
 			add_state_claim = 78
 			add_state_claim = 1156
 			add_named_threat = { 
-				threat = 3 
+				threat = 5
 				name =  threat_territorial_claims
 			}		
 		}
@@ -724,7 +724,7 @@ foreign_affairs = {
 		complete_effect = {
 			add_state_claim = 1158
 			add_named_threat = { 
-				threat = 3 
+				threat = 5
 				name =  threat_territorial_claims
 			}		
 		}
@@ -871,7 +871,7 @@ foreign_affairs = {
 		complete_effect = {
 			add_state_core = 119
 			add_named_threat = { 
-				threat = 3 
+				threat = 5
 				name =  threat_territorial_claims
 			}		
 		}
@@ -931,7 +931,7 @@ foreign_affairs = {
 			add_state_claim = 84
 			add_state_claim = 82
 			add_named_threat = { 
-				threat = 3 
+				threat = 5
 				name =  threat_territorial_claims
 			}		
 		}
@@ -1020,6 +1020,52 @@ foreign_affairs = {
 				has_opinion = {
 					target = IRE
 					value > 0
+				}
+			}
+		}
+	}
+
+	claim_greater_bulgaria = {
+	
+		visible = {
+			original_tag = BUL
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_claim = 184
+			add_state_claim = 1151
+			add_state_claim = 731
+			add_state_claim = 1152
+			add_state_claim = 106
+			add_state_claim = 1201
+			add_state_claim = 1013
+			add_state_claim = 1014
+			add_state_claim = 791
+			add_state_claim = 899
+			add_named_threat = { 
+				threat = 5
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = bulgaria
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+					threat > 0.75
 				}
 			}
 		}
