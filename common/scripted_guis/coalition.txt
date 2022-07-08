@@ -1779,6 +1779,9 @@ scripted_gui = {
 			unstable_coalition_icon_visible = {
 				NOT = { coalition_partners_are_neightbours = yes }
 			}
+			recommended_icon_visible = {
+				coalition_partners_are_neightbours_grid_entry = yes
+			}
 			finish_click_enabled = {
 				has_country_flag = government_chosen
 				has_at_least_one_government_and_one_coalition_flag = yes

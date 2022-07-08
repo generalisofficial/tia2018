@@ -3405,3 +3405,89 @@ coalition_partners_are_neightbours = {
 		}
 	}
 }
+
+coalition_partners_are_neightbours_grid_entry = {
+	OR = {
+		AND = {
+			has_country_flag = government_communist
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 2 }
+				check_variable = { Root.coalition_leaders_array^i = 3 }
+			}
+		}
+		AND = {
+			has_country_flag = government_socialist
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 1 }
+				check_variable = { Root.coalition_leaders_array^i = 3 }
+				check_variable = { Root.coalition_leaders_array^i = 4 }
+			}
+		}
+		AND = {
+			has_country_flag = government_social_democrat
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 2 }
+				check_variable = { Root.coalition_leaders_array^i = 4 }
+				check_variable = { Root.coalition_leaders_array^i = 5 }
+			}
+		}
+		AND = {
+			has_country_flag = government_progressive
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 2 }
+				check_variable = { Root.coalition_leaders_array^i = 3 }
+				check_variable = { Root.coalition_leaders_array^i = 5 }
+			}
+		}
+		AND = {
+			has_country_flag = government_social_liberal
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 3 }
+				check_variable = { Root.coalition_leaders_array^i = 4 }
+				check_variable = { Root.coalition_leaders_array^i = 6 }
+			}
+		}
+		AND = {
+			has_country_flag = government_classical_liberal
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 5 }
+				check_variable = { Root.coalition_leaders_array^i = 7 }
+			}
+		}
+		AND = {
+			has_country_flag = government_conservative
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 6 }
+				check_variable = { Root.coalition_leaders_array^i = 8 }
+			}
+		}
+		AND = {
+			has_country_flag = government_national_conservative
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 6 }
+				check_variable = { Root.coalition_leaders_array^i = 7 }
+				check_variable = { Root.coalition_leaders_array^i = 9 }
+			}
+		}
+		AND = {
+			has_country_flag = government_right_wing_nationalist
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 8 }
+				check_variable = { Root.coalition_leaders_array^i = 10 }
+			}
+		}
+		AND = {
+			has_country_flag = government_fascist
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 9 }
+				check_variable = { Root.coalition_leaders_array^i = 11 }
+			}
+		}
+		AND = {
+			has_country_flag = government_islamist
+			OR = {
+				check_variable = { Root.coalition_leaders_array^i = 10 }
+			}
+		}
+	}
+}

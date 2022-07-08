@@ -556,6 +556,27 @@ defined_text = {
 	}
 }
 
+
+####################### GET IF COALITION PARTNER IS RECOMMENDED
+
+defined_text = {
+	name = GetRecommendedPartner
+
+	text = {
+		trigger = {
+			coalition_partners_are_neightbours_grid_entry = yes
+		}
+		localization_key = COALITION_PARTNER_RECOMMENDED_YES
+	}
+
+	text = {
+		trigger = {
+			coalition_partners_are_neightbours_grid_entry = no
+		}
+		localization_key = "test"
+	}
+}
+
 ####################### Dynamic Parliament Names
 
 defined_text = {
