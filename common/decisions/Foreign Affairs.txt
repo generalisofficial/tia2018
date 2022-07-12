@@ -1070,4 +1070,34 @@ foreign_affairs = {
 			}
 		}
 	}
+
+	propose_the_kosovo_serbia_land_swap = {
+	
+		visible = {
+			original_tag = KOS
+			country_exists = SER
+			owns_state = 1012
+			SER = { owns_state = 1201 }
+			785 = { is_claimed_by = SER }
+		}
+		
+		available = {
+			has_war = no
+			is_subject = no
+		}
+		
+		complete_effect = {
+			SER = { country_event = kosovo.1 }
+		}
+		
+		icon = kosovo
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
