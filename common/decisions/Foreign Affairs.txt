@@ -1078,6 +1078,7 @@ foreign_affairs = {
 			country_exists = SER
 			owns_state = 1012
 			SER = { owns_state = 1201 }
+			owns_state = 785
 			785 = { is_claimed_by = SER }
 		}
 		
@@ -1098,6 +1099,46 @@ foreign_affairs = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	claim_greater_albania = {
+	
+		visible = {
+			original_tag = ALB
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_claim = 1205
+			add_state_claim = 785
+			add_state_claim = 1201
+			add_state_claim = 1014
+			add_named_threat = { 
+				threat = 5
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = albania
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+					threat > 0.75
+				}
+			}
 		}
 	}
 }

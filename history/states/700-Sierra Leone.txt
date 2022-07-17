@@ -1,19 +1,21 @@
+
 state={
 	id=700
 	name="STATE_700"
-	manpower = 6950200
-	
-	state_category = state_default
-	
-	resources = {
-		rubber = 7
+	resources={
+		rubber=7.000
 	}
-	
-	history=
-	{
+
+	history={
 		owner = SIE
 		victory_points = {
-			2038 1 
+			2038 5
+		}
+		victory_points = {
+			14659 2
+		}
+		victory_points = {
+			14657 2
 		}
 		buildings = {
 			infrastructure = 2
@@ -21,12 +23,18 @@ state={
 			military_industry = 1
 			2038 = {
 				naval_base = 3
+
 			}
+
 		}
 
 	}
-	
+
 	provinces={
-		2038 2094 
+		2038 2094 14657 14658 14659 14660 14661 
 	}
+	manpower=6950200
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }
