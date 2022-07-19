@@ -8,6 +8,7 @@ country_event = {
 
 	immediate = {
 		economy_setup = yes
+		monthly_economy_pulse = yes
 	}
 }
 
@@ -18,8 +19,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		every_country = {
-        	monthly_economy_pulse = yes
-        }
+        monthly_economy_pulse = yes
 	}
 }

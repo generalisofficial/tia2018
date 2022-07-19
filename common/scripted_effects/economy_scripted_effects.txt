@@ -11,31 +11,51 @@ update_finances = {
 		limit = {
 			has_idea = very_high_taxes
 		}
-		#
+		set_variable = { monthly_tax_revenue  = 0.2 }
+		multiply_variable = {
+			var = monthly_tax_revenue
+			value = ROOT.max_manpower
+		}
 	}
 	if = {
 		limit = {
 			has_idea = high_taxes
 		}
-		#
+		set_variable = { monthly_tax_revenue  = 0.15 }
+		multiply_variable = {
+			var = monthly_tax_revenue
+			value = ROOT.max_manpower
+		}
 	}
 	if = {
 		limit = {
 			has_idea = moderate_taxes
 		}
-		#
+		set_variable = { monthly_tax_revenue  = 0.1 }
+		multiply_variable = {
+			var = monthly_tax_revenue
+			value = ROOT.max_manpower
+		}
 	}
 	if = {
 		limit = {
 			has_idea = low_taxes
 		}
-		#
+		set_variable = { monthly_tax_revenue  = 0.05 }
+		multiply_variable = {
+			var = monthly_tax_revenue
+			value = ROOT.max_manpower
+		}
 	}
 	if = {
 		limit = {
 			has_idea = very_low_taxes
 		}
-		#
+		set_variable = { monthly_tax_revenue  = 0.01 }
+		multiply_variable = {
+			var = monthly_tax_revenue
+			value = ROOT.max_manpower
+		}
 	}
 
 	# EXPENSES
@@ -45,34 +65,13 @@ update_finances = {
 		var = monthly_net_income
 		value = monthly_expenses
 	}
+	round_variable = monthly_net_income
 }
 
 monthly_economy_pulse = {
 	update_finances = yes
-	if = {
-		limit = {
-			check_variable = {
-				var = monthly_expenses
-				value = 0
-				compare = less_than
-			}
-		}
-		subtract_from_variable = {
-			var = state_treasury
-			value = monthly_net_income
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = monthly_expenses
-				value = 0
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = state_treasury
-			value = monthly_net_income
-		}
+	add_to_variable = {
+		var = state_treasury
+		value = monthly_net_income
 	}
 }
