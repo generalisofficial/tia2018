@@ -345,6 +345,10 @@ country_event = { #Second Brexit Referendum - Stay
 	option = {
 		name = britain.13.o1
 		set_country_flag = second_referendum_stay
+		add_popularity = {
+    		ideology = social_liberal
+    		popularity = 0.05
+		}
 	}
 }
 

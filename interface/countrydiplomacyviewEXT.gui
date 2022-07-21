@@ -23,10 +23,10 @@ guiTypes = { #TO DO - MERGE ALL CONTAINERS
 		}
 
 		instantTextboxType = {
-			name = "country_name_short"
-			position = { x= -60 y = -203 }
-			font = "hoi_18mbs"
-			text = "[THIS.GetNonIdeologyName]"
+			name = "country_type"
+			position = { x= -145 y = -200 }
+			font = "hoi_16mbs"
+			text = "Type: [THIS.GetCountryType]"
 			maxWidth = 300
 			maxHeight = 20
 			format = left

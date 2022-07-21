@@ -3,7 +3,7 @@ economy_setup = {
 }
 
 update_finances = {
-	set_variable = { monthly_tax_revenue = 0 }
+	set_variable = { monthly_revenue = 0 }
 	set_variable = { monthly_expenses = 0 }
 
 	# INCOME - TAXES
@@ -11,19 +11,23 @@ update_finances = {
 		limit = {
 			has_idea = very_high_taxes
 		}
-		set_variable = { monthly_tax_revenue  = 0.2 }
+		set_variable = { monthly_income_tax_revenue  = 0.2 }
 		multiply_variable = {
-			var = monthly_tax_revenue
+			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
+		}
+		multiply_variable = {
+			var = monthly_income_tax_revenue
+			value = 0.66
 		}
 	}
 	if = {
 		limit = {
 			has_idea = high_taxes
 		}
-		set_variable = { monthly_tax_revenue  = 0.15 }
+		set_variable = { monthly_income_tax_revenue  = 0.15 }
 		multiply_variable = {
-			var = monthly_tax_revenue
+			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
 		}
 	}
@@ -31,36 +35,279 @@ update_finances = {
 		limit = {
 			has_idea = moderate_taxes
 		}
-		set_variable = { monthly_tax_revenue  = 0.1 }
+		set_variable = { monthly_income_tax_revenue  = 0.1 }
 		multiply_variable = {
-			var = monthly_tax_revenue
+			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
+		}
+		multiply_variable = {
+			var = monthly_income_tax_revenue
+			value = 0.66
 		}
 	}
 	if = {
 		limit = {
 			has_idea = low_taxes
 		}
-		set_variable = { monthly_tax_revenue  = 0.05 }
+		set_variable = { monthly_income_tax_revenue  = 0.05 }
 		multiply_variable = {
-			var = monthly_tax_revenue
+			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
+		}
+		multiply_variable = {
+			var = monthly_income_tax_revenue
+			value = 0.66
 		}
 	}
 	if = {
 		limit = {
 			has_idea = very_low_taxes
 		}
-		set_variable = { monthly_tax_revenue  = 0.01 }
+		set_variable = { monthly_income_tax_revenue  = 0.01 }
 		multiply_variable = {
-			var = monthly_tax_revenue
+			var = monthly_income_tax_revenue
+			value = ROOT.max_manpower
+		}
+		multiply_variable = {
+			var = monthly_income_tax_revenue
+			value = 0.66
+		}
+	}
+	round_variable = monthly_income_tax_revenue
+
+	# EXPENSES - SOCIAL WELFARE BUDGET
+	if = {
+		limit = {
+			has_idea = extensive_welfare_spending
+		}
+		set_variable = { monthly_welfare_expenses = 0.075 }
+		multiply_variable = {
+			var = monthly_welfare_expenses
 			value = ROOT.max_manpower
 		}
 	}
+	if = {
+		limit = {
+			has_idea = moderate_welfare_spending
+		}
+		set_variable = { monthly_welfare_expenses = 0.05 }
+		multiply_variable = {
+			var = monthly_healthcare_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = minimal_welfare_spending
+		}
+		set_variable = { monthly_welfare_expenses = 0.015 }
+		multiply_variable = {
+			var = monthly_welfare_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	round_variable = monthly_welfare_expenses
 
-	# EXPENSES
+	# EXPENSES - EDUCATION BUDGET
+	if = {
+		limit = {
+			has_idea = extensive_education_spending
+		}
+		set_variable = { monthly_education_expenses = 0.075 }
+		multiply_variable = {
+			var = monthly_education_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = moderate_education_spending
+		}
+		set_variable = { monthly_education_expenses = 0.05 }
+		multiply_variable = {
+			var = monthly_healthcare_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = minimal_education_spending
+		}
+		set_variable = { monthly_education_expenses = 0.015 }
+		multiply_variable = {
+			var = monthly_education_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	round_variable = monthly_education_expenses
 
-	set_variable = { monthly_net_income  = monthly_tax_revenue }
+	# EXPENSES - HEALTHCARE BUDGET
+	if = {
+		limit = {
+			has_idea = extensive_healthcare_spending
+		}
+		set_variable = { monthly_healthcare_expenses = 0.075 }
+		multiply_variable = {
+			var = monthly_healthcare_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = moderate_healthcare_spending
+		}
+		set_variable = { monthly_healthcare_expenses = 0.05 }
+		multiply_variable = {
+			var = monthly_healthcare_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = minimal_healthcare_spending
+		}
+		set_variable = { monthly_healthcare_expenses = 0.015 }
+		multiply_variable = {
+			var = monthly_healthcare_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	round_variable = monthly_healthcare_expenses
+
+	# EXPENSES - DEFENSE BUDGET
+	if = {
+		limit = {
+			has_idea = extensive_defense_spending
+		}
+		set_variable = { monthly_defense_expenses = 0.5 }
+		multiply_variable = {
+			var = monthly_defense_expenses
+			value = ROOT.manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = moderate_defense_spending
+		}
+		set_variable = { monthly_defense_expenses = 0.25 }
+		multiply_variable = {
+			var = monthly_defense_expenses
+			value = ROOT.manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = minimal_defense_spending
+		}
+		set_variable = { monthly_defense_expenses = 0.01 }
+		multiply_variable = {
+			var = monthly_defense_expenses
+			value = ROOT.manpower
+		}
+	}
+	round_variable = monthly_defense_expenses
+
+	# EXPENSES - LAW ENFORCEMENT BUDGET
+	if = {
+		limit = {
+			has_idea = extensive_law_enforcement_spending
+		}
+		set_variable = { monthly_law_enforcement_expenses = 0.075 }
+		multiply_variable = {
+			var = monthly_law_enforcement_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = moderate_law_enforcement_spending
+		}
+		set_variable = { monthly_law_enforcement_expenses = 0.05 }
+		multiply_variable = {
+			var = monthly_law_enforcement_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = minimal_law_enforcement_spending
+		}
+		set_variable = { monthly_law_enforcement_expenses = 0.015 }
+		multiply_variable = {
+			var = monthly_law_enforcement_expenses
+			value = ROOT.max_manpower
+		}
+	}
+	round_variable = monthly_law_enforcement_expenses
+
+	# EXPENSES - ECONOMIC SUBSIDIES
+	if = {
+		limit = {
+			has_idea = extensive_economic_subsidies
+		}
+		set_variable = { monthly_economic_subsidies = 0.075 } # SYNC WITH GDP WHEN ADDED - 5000 PER FACTORY
+		multiply_variable = {
+			var = monthly_economic_subsidies
+			value = ROOT.manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = moderate_economic_subsidies
+		}
+		set_variable = { monthly_economic_subsidies = 0.05 } # SYNC WITH GDP WHEN ADDED - 2500 PER FACTORY
+		multiply_variable = {
+			var = monthly_economic_subsidies
+			value = ROOT.manpower
+		}
+	}
+	if = {
+		limit = {
+			has_idea = minimal_economic_subsidies
+		}
+		set_variable = { monthly_economic_subsidies = 0.015 } # SYNC WITH GDP WHEN ADDED - 1000 PER FACTORY
+		multiply_variable = {
+			var = monthly_economic_subsidies
+			value = ROOT.manpower
+		}
+	}
+	round_variable = monthly_economic_subsidies
+
+	# CALCULATIONS
+
+	add_to_variable = {
+		var = monthly_revenue
+		value = monthly_income_tax_revenue
+	}
+	round_variable = monthly_revenue
+
+	add_to_variable = {
+		var = monthly_expenses
+		value = monthly_welfare_expenses
+	}
+	add_to_variable = {
+		var = monthly_expenses
+		value = monthly_education_expenses
+	}
+	add_to_variable = {
+		var = monthly_expenses
+		value = monthly_healthcare_expenses
+	}
+	add_to_variable = {
+		var = monthly_expenses
+		value = monthly_defense_expenses
+	}
+	add_to_variable = {
+		var = monthly_expenses
+		value = monthly_law_enforcement_expenses
+	}
+	add_to_variable = {
+		var = monthly_expenses
+		value = monthly_economic_subsidies
+	}
+	round_variable = monthly_expenses
+
+	set_variable = { monthly_net_income = monthly_revenue }
 	subtract_from_variable = {
 		var = monthly_net_income
 		value = monthly_expenses

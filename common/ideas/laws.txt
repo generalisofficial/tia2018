@@ -1539,6 +1539,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 5
+
+			on_add = {
+				update_finances = yes
+			}
 			
 			modifier = {
 				stability_factor = -0.2
@@ -1556,6 +1560,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 4
+
+			on_add = {
+				update_finances = yes
+			}
 				
 			modifier = {
 				stability_factor = -0.1
@@ -1574,6 +1582,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 
+			on_add = {
+				update_finances = yes
+			}
+
 			modifier = {
 				custom_modifier_tooltip = TT_will_affect_income
 			}
@@ -1590,6 +1602,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 2
+
+			on_add = {
+				update_finances = yes
+			}
 				
 			modifier = {
 				stability_factor = 0.1
@@ -1607,6 +1623,10 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 1
+
+			on_add = {
+				update_finances = yes
+			}
 				
 			modifier = {
 				stability_factor = 0.2
@@ -1721,11 +1741,11 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 3
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 			
+			on_add = {
+				update_finances = yes
+			}
+
 			modifier = {
 				stability_factor = 0.1
 				MONTHLY_POPULATION = 0.2
@@ -1745,8 +1765,8 @@ ideas = {
 			removal_cost = -1
 			level = 2
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
@@ -1768,15 +1788,15 @@ ideas = {
 			removal_cost = -1
 			level = 1
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
-			#default = yes
+			default = yes
 			cancel_if_invalid = no
 				
 			ai_will_do = {
@@ -1797,8 +1817,8 @@ ideas = {
 			removal_cost = -1
 			level = 3
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 			
 			modifier = {
@@ -1820,8 +1840,8 @@ ideas = {
 			removal_cost = -1
 			level = 2
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
@@ -1843,15 +1863,15 @@ ideas = {
 			removal_cost = -1
 			level = 1
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
-			#default = yes
+			default = yes
 			cancel_if_invalid = no
 				
 			ai_will_do = {
@@ -1871,10 +1891,6 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 3
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 			
 			modifier = {
 				industrial_capacity_factory = 0.1
@@ -1894,10 +1910,6 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 2
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -1917,16 +1929,12 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 1
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
-			#default = yes
+			default = yes
 			cancel_if_invalid = no
 				
 			ai_will_do = {
@@ -1947,8 +1955,8 @@ ideas = {
 			removal_cost = -1
 			level = 3
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 			
 			modifier = {
@@ -1968,8 +1976,8 @@ ideas = {
 			removal_cost = -1
 			level = 2
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
@@ -1989,8 +1997,8 @@ ideas = {
 			removal_cost = -1
 			level = 1
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
@@ -2017,13 +2025,9 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 3
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 			
 			modifier = {
-				#
+				custom_modifier_tooltip = TT_crime_will_decrease
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 		
@@ -2038,13 +2042,9 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 2
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
-				#
+				custom_modifier_tooltip = TT_crime_will_stagnate
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
@@ -2059,16 +2059,13 @@ ideas = {
 			cost = 125
 			removal_cost = -1
 			level = 1
-
-			available = {
-				has_country_flag = economy_mechanic_implemented
-			}
 				
 			modifier = {
+				custom_modifier_tooltip = TT_crime_will_increase
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
-			#default = yes
+			default = yes
 			cancel_if_invalid = no
 				
 			ai_will_do = {
@@ -2089,12 +2086,12 @@ ideas = {
 			removal_cost = -1
 			level = 3
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 			
 			modifier = {
-				#
+				stability_factor = 0.15
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 		
@@ -2110,12 +2107,12 @@ ideas = {
 			removal_cost = -1
 			level = 2
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
-				#
+				stability_factor = 0.075
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
@@ -2131,15 +2128,15 @@ ideas = {
 			removal_cost = -1
 			level = 1
 
-			available = {
-				has_country_flag = economy_mechanic_implemented
+			on_add = {
+				update_finances = yes
 			}
 				
 			modifier = {
 				custom_modifier_tooltip = TT_will_affect_expenses
 			}
 			
-			#default = yes
+			default = yes
 			cancel_if_invalid = no
 				
 			ai_will_do = {

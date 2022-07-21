@@ -19,7 +19,7 @@ economic_affairs = {
 			}
 		}
 		
-		icon = euro_coins
+		icon = coins
 		cost = 150
 		days_remove = 1095
 
@@ -48,7 +48,7 @@ economic_affairs = {
 			has_idea = the_euro
 		}
 
-		icon = euro_coins
+		icon = coins
 		cost = 150
 		days_remove = 1095
 
@@ -112,6 +112,29 @@ economic_affairs = {
 		
 		ai_will_do = {
 			factor = 100
+		}
+	}
+
+	monthly_tax_break = {
+		
+		available = {
+			# Treasury Surplus
+		}
+		
+		icon = coins
+		cost = 25
+		days_remove = 30
+
+		complete_effect = {
+			# remove monthly tax value
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				# Treasury Surplus
+			}
 		}
 	}
 
