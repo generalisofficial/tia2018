@@ -1,4 +1,5 @@
 economy_setup = {
+	update_gdp = yes
 	update_finances = yes
 }
 
@@ -245,30 +246,30 @@ update_finances = {
 		limit = {
 			has_idea = extensive_economic_subsidies
 		}
-		set_variable = { monthly_economic_subsidies = 0.075 } # SYNC WITH GDP WHEN ADDED - 5000 PER FACTORY
+		set_variable = { monthly_economic_subsidies = 0.005 }
 		multiply_variable = {
 			var = monthly_economic_subsidies
-			value = ROOT.manpower
+			value = gross_domestic_product
 		}
 	}
 	if = {
 		limit = {
 			has_idea = moderate_economic_subsidies
 		}
-		set_variable = { monthly_economic_subsidies = 0.05 } # SYNC WITH GDP WHEN ADDED - 2500 PER FACTORY
+		set_variable = { monthly_economic_subsidies = 0.0025 }
 		multiply_variable = {
 			var = monthly_economic_subsidies
-			value = ROOT.manpower
+			value = gross_domestic_product
 		}
 	}
 	if = {
 		limit = {
 			has_idea = minimal_economic_subsidies
 		}
-		set_variable = { monthly_economic_subsidies = 0.015 } # SYNC WITH GDP WHEN ADDED - 1000 PER FACTORY
+		set_variable = { monthly_economic_subsidies = 0.001 }
 		multiply_variable = {
 			var = monthly_economic_subsidies
-			value = ROOT.manpower
+			value = gross_domestic_product
 		}
 	}
 	round_variable = monthly_economic_subsidies
@@ -313,6 +314,33 @@ update_finances = {
 		value = monthly_expenses
 	}
 	round_variable = monthly_net_income
+}
+
+update_gdp = {
+	set_variable = { gross_domestic_product = 0 }
+	every_owned_state = {
+		add_to_variable = {
+			var = gross_domestic_product
+			value = building_level@military_industry
+		}
+		add_to_variable = {
+			var = gross_domestic_product
+			value = building_level@civilian_industry
+		}
+		add_to_variable = {
+			var = gross_domestic_product
+			value = building_level@shipyard
+		}
+	}
+	multiply_variable = {
+		var = gross_domestic_product
+		value = 1000000
+	}
+	set_variable = { gross_domestic_product_per_capita = gross_domestic_product }
+	divide_variable = {
+		var = gross_domestic_product_per_capita
+		value = ROOT.manpower
+	}
 }
 
 monthly_economy_pulse = {

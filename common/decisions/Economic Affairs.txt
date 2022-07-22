@@ -42,32 +42,28 @@ economic_affairs = {
 		}
 	}
 
-	abandon_the_euro = {
-
-		visible = {
-			has_idea = the_euro
+	monthly_tax_break = {
+		
+		available = {
+			NOT = { has_idea = monthly_tax_break }
+			treasury_surplus = yes
 		}
-
+		
 		icon = coins
-		cost = 150
-		days_remove = 1095
+		cost = 25
 
-		remove_effect = {
-			add_ideas = the_euro
+		complete_effect = {
+			update_finances = yes
+			subtract_from_variable = {
+				var = state_treasury
+				value = monthly_income_tax_revenue
+			}
+			add_timed_idea = { idea = idea_monthly_tax_break days = 150 }
+			# add tooltip
 		}
 		
 		ai_will_do = {
-			factor = 0
-			modifier = {
-				factor = 1
-				OR = {
-				    has_government = fascist
-					has_government = islamist
-					has_government = right_wing_nationalist
-					has_government = monarchist
-					has_government = communist
-				}
-			}
+			factor = 1
 		}
 	}
 
@@ -112,29 +108,6 @@ economic_affairs = {
 		
 		ai_will_do = {
 			factor = 100
-		}
-	}
-
-	monthly_tax_break = {
-		
-		available = {
-			# Treasury Surplus
-		}
-		
-		icon = coins
-		cost = 25
-		days_remove = 30
-
-		complete_effect = {
-			# remove monthly tax value
-		}
-		
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				factor = 1
-				# Treasury Surplus
-			}
 		}
 	}
 
