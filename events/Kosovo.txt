@@ -1,0 +1,49 @@
+﻿add_namespace = kosovo
+
+country_event = { #Kosovo open to land swap
+	id = kosovo.1
+	title = kosovo.1.t
+	desc = kosovo.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kosovo.1.o1
+		ai_chance = {
+			factor = 100
+		}
+		news_event = kosovo.2
+		add_political_power = -25
+		transfer_state = 1012
+		add_state_core = 1012
+		remove_state_core = 1201
+		remove_state_claim = 785
+		KOS = { 
+			transfer_state = 1201 
+			add_state_core = 1201 
+			remove_state_core = 1012
+		}
+	}
+	
+	option = {
+		name = kosovo.1.o2
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = 25
+	}
+}
+
+news_event = { #Kosovo-Serbia land swap
+	id = kosovo.2
+	title = kosovo.2.t
+	desc = kosovo.2.d
+	picture = GFX_news_event_kosovo
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = kosovo.2.o1
+	}
+}

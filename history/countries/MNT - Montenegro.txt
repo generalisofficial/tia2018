@@ -105,12 +105,12 @@ set_country_flag = orthodox
 #Parliament of Montenegro
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 7.40 }
-set_variable = { social_democrat_seats = 50.65 }
-set_variable = { social_liberal_seats = 18.51  }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 2.46 }
-set_variable = { national_conservative_seats = 20.98 }
+set_variable = { progressive_seats = 2.46 }
+set_variable = { social_democrat_seats = 51.87 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 9.87 }
+set_variable = { conservative_seats = 13.58 }
+set_variable = { national_conservative_seats = 22.22 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -123,24 +123,27 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {
 	ruling_party = social_democrat
-	last_election = "2016.10.16"
+	last_election = "2016.8.30"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 50.65
-    national_conservative = 20.98
-    social_liberal = 18.51
-    progressive = 7.40
-    conservative = 2.46
+    social_democrat = 43.23
+    national_conservative = 33.33
+	classical_liberal = 11.11
+	conservative = 7.4
+    progressive = 3.7
+	social_liberal = 1.23
 }
 
 # Characters - Political
-recruit_character = MNT_duško_marković
-recruit_character = MNT_andrija_mandić
-recruit_character = MNT_aleksa_bečić
-recruit_character = MNT_ranko_krivokapić
-recruit_character = MNT_miodrag_lekić
-recruit_character = MNT_zoran_radošević
-recruit_character = MNT_nicholas_ii
+recruit_character = MNT_tatjana_knezevic_perisic
+recruit_character = MNT_nikola_ii
+recruit_character = MNT_nebojsa_medojevic
+recruit_character = MNT_miodrag_lekic
+recruit_character = MNT_aleksa_becic
+recruit_character = MNT_srdan_pavicevic
+recruit_character = MNT_dusko_markovic
+recruit_character = MNT_dritan_abazovic
+recruit_character = MNT_zoran_radosevic
