@@ -317,24 +317,10 @@ update_finances = {
 }
 
 update_gdp = {
-	set_variable = { gross_domestic_product = 0 }
-	every_owned_state = {
-		add_to_variable = {
-			var = gross_domestic_product
-			value = building_level@military_industry
-		}
-		add_to_variable = {
-			var = gross_domestic_product
-			value = building_level@civilian_industry
-		}
-		add_to_variable = {
-			var = gross_domestic_product
-			value = building_level@shipyard
-		}
-	}
+	set_variable = { gross_domestic_product = num_of_factories }
 	multiply_variable = {
 		var = gross_domestic_product
-		value = 1000000
+		value = 1000
 	}
 	set_variable = { gross_domestic_product_per_capita = gross_domestic_product }
 	divide_variable = {

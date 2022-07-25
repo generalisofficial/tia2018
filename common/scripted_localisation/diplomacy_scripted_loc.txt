@@ -1,4 +1,4 @@
-### Get name of international organization currently being voted on
+# Get name of international organization currently being voted on
 defined_text = {
 	name = GetCurrentOrganizationVote
 	
@@ -21,5 +21,81 @@ defined_text = {
 			has_global_flag = ongoing_BA_application
 		}
 		localization_key = org_baltic_assembly
+	}
+}
+
+# Get Country Type (for diplo menu)
+defined_text = {
+	name = GetCountryType
+	text = {
+		trigger = {
+			has_idea = violent_non_state_actor
+		}
+		localization_key = violent_non_state_actor
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_autonomous_region
+		}
+		localization_key = autonomy_autonomous_region
+	}
+	text = {
+		trigger = {
+			has_idea = federal
+		}
+		localization_key = "Federal [THIS.GetFormofGovernment]" # update loc later
+	}
+	text = {
+		trigger = {
+			has_idea = unitary
+		}
+		localization_key = "Unitary [THIS.GetFormofGovernment]" # update loc later
+	}
+}
+
+defined_text = {
+	name = GetFormofGovernment
+	text = {
+		trigger = {
+			has_idea = parliamentary_system
+			has_idea = idea_constitutional_monarchy
+		}
+		localization_key = FoG_parliamentary_constitutional_monarchy
+	}
+	text = {
+		trigger = {
+			has_idea = parliamentary_system
+			NOT = { has_idea = idea_constitutional_monarchy }
+		}
+		localization_key = FoG_parliamentary_republic
+	}
+	text = {
+		trigger = {
+			has_idea = absolute_monarchy
+		}
+		localization_key = FoG_absolute_monarchy
+	}
+	text = {
+		trigger = {
+			has_idea = one_party_state
+			NOT = { has_government = communist }
+		}
+		localization_key = FoG_one_party_presidential_republic
+	}
+	text = {
+		trigger = {
+			has_idea = one_party_state
+			has_government = communist
+		}
+		localization_key = FoG_one_party_socialist_republic
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_idea = presidential_republic
+				has_idea = demarchic_republic
+			}
+		}
+		localization_key = FoG_presidential_republic
 	}
 }
