@@ -45,7 +45,7 @@ economic_affairs = {
 	monthly_tax_break = {
 		
 		available = {
-			NOT = { has_idea = monthly_tax_break }
+			NOT = { has_idea = idea_monthly_tax_break }
 			treasury_surplus = yes
 		}
 		
@@ -59,7 +59,7 @@ economic_affairs = {
 				value = monthly_income_tax_revenue
 			}
 			add_timed_idea = { idea = idea_monthly_tax_break days = 150 }
-			# add tooltip
+			# add money tooltip
 		}
 		
 		ai_will_do = {

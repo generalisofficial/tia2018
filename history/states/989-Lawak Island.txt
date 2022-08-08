@@ -3,13 +3,21 @@ state={
 	id=989
 	name="STATE_989"
 
-	history={
+	history= {
 		owner = PHI
-		add_core_of = CHI
-		add_core_of = PRC
-		add_core_of = VIN
-		add_core_of = PHI
+		buildings = {
+			13363 = {
+				fortifications = 1
+				coastal_fortifications = 1
+				naval_base = 1
 
+			}
+
+		}
+		add_claim_by = PHI
+		add_claim_by = PRC
+		add_claim_by = CHI
+		add_claim_by = VIN
 	}
 
 	provinces={

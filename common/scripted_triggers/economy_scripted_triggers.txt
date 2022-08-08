@@ -1,0 +1,8 @@
+treasury_surplus = {
+	check_variable = {
+		var = state_treasury
+		value = 0
+		compare = greater_than
+	}
+	custom_trigger_tooltip = TT_treasury_surplus
+}
