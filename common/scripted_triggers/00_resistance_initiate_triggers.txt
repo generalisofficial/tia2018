@@ -10,10 +10,10 @@ should_not_activate_active_crypto_bonuses = {
 should_initiate_resistance = {
     check_variable = { core_countries^num > 0 }
     OR = {
-        NOT = { is_core_of = FROM  }
-        AND = {
-            FROM.FROM = { has_country_flag = active_separatism }
-            FROM = { is_democracy = no }
+        NOT = {
+            is_owned_by = FROM
+            is_core_of = FROM  
         }
+        FROM = { is_democracy = no }
     }
 }

@@ -1141,4 +1141,31 @@ foreign_affairs = {
 			}
 		}
 	}
+
+	create_a_world_government = {
+	
+		visible = {
+			all_state = {
+				is_owned_by = ROOT
+			}
+		}
+		
+		complete_effect = {
+			set_cosmetic_tag = UNE
+			add_ideas = federal
+			every_state = {
+				add_core_of = ROOT
+			}
+		}
+		
+		icon = united_nations
+
+		fire_only_once = yes
+		
+		cost = 500
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

@@ -46,7 +46,6 @@ guiTypes = {
 				name = "country_name"
 				position = { x = 154 y = 1.5 }
 				font = "hoi_18mbs"
-				text = "Germanian"
 				maxWidth = 300
 				fixedsize = yes
 				maxHeight = 20
@@ -55,25 +54,14 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "faction"
-				position = { x = 155 y = 40 }	
+				position = { x = 20000 y = 20000 } # Hidden
 				size = { width = 175 height = 20 }
 				clipping = no
-			
-				instantTextboxType = {
-					name = "faction_title"
-					position = { x = -25 y = 2 }
-					font = "hoi_16mbs"
-					text = "Alliance:"
-					maxWidth = 100
-					maxHeight = 10
-					format = center
-				}
 
 				instantTextboxType = {
 					name = "faction_name"
-					position = { x = 55 y = 0 }
-					font = "hoi_18mbs"
-					text = "faction"
+					position = { x = 26 y = 2 }
+					font = "hoi_16mbs"
 					maxWidth = 300
 					maxHeight = 20
 					fixedsize = yes		
@@ -83,7 +71,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "leader_name"
-				position = { x = 155 y = 8000 } #Hidden
+				position = { x = 155 y = 8000 } # Hidden
 				font = "hoi_16mbs"
 				text = "Rudolf Kittler"
 				maxWidth = 210

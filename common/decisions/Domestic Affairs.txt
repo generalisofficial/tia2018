@@ -845,4 +845,54 @@ domestic_affairs = {
 			}
 		}
 	}
+
+	repeal_article_9 = {
+		
+		visible = {
+			original_tag = JAP
+			has_idea = idea_article_9
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = coalition_communist
+					has_country_flag = coalition_socialist
+					has_country_flag = coalition_progressive
+					has_country_flag = coalition_social_democrat
+					has_country_flag = coalition_social_liberal
+				}
+			}
+		}
+		
+		icon = japanese_expansion
+
+		fire_only_once = yes 
+		
+		cost = 100
+
+		complete_effect = {
+			remove_ideas = idea_article_9
+			add_named_threat = { 
+				threat = 5
+				name =  threat_article_9_repealed
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				threat > 0.25
+			}
+			modifier = {
+				factor = 5
+				threat > 0.5
+			}
+			modifier = {
+				factor = 100
+				has_government = fascist
+			}
+		}
+	}
 }

@@ -1,27 +1,31 @@
-state=
-{
+
+state={
 	id=124
 	name="STATE_124"
-	manpower = 57255
-	
-	state_category = state_default
-	
-	history=
-	{
+
+	history={
 		owner = SWE
 		victory_points = {
-			408 1
+			408 1 
 		}
-		add_core_of = SWE
 		buildings = {
 			infrastructure = 1
 			military_airport = 1
 			408 = {
 				naval_base = 1
+
 			}
+
 		}
+		add_core_of = SWE
+
 	}
+
 	provinces={
-		408 6258
+		408 6258 
 	}
+	manpower=57255
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

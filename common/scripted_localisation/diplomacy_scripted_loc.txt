@@ -37,19 +37,21 @@ defined_text = {
 		trigger = {
 			has_autonomy_state = autonomy_autonomous_region
 		}
-		localization_key = autonomy_autonomous_region
+		localization_key = CT_devolved
 	}
 	text = {
 		trigger = {
 			has_idea = federal
+			NOT = { has_autonomy_state = autonomy_autonomous_region }
 		}
-		localization_key = "Federal [THIS.GetFormofGovernment]" # update loc later
+		localization_key = CT_federal
 	}
 	text = {
 		trigger = {
 			has_idea = unitary
+			NOT = { has_autonomy_state = autonomy_autonomous_region }
 		}
-		localization_key = "Unitary [THIS.GetFormofGovernment]" # update loc later
+		localization_key = CT_unitary
 	}
 }
 

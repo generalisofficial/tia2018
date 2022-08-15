@@ -1,4 +1,24 @@
 scripted_gui = {
+	default_diplomacy = {
+		window_name = "default_diplomacy_container"
+ 
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+ 
+		visible = {
+			always = yes
+		}
+	}
+	faction_diplomacy = {
+		window_name = "faction_diplomacy_container"
+ 
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+ 
+		visible = {
+			FROM = { is_in_faction = yes }
+		}
+	}
 	coalition_diplomacy = {
 		window_name = "parliament_diplomacy_container"
  
@@ -7,26 +27,6 @@ scripted_gui = {
  
 		visible = {
 			FROM = { has_country_flag = has_parliament }
-		}
-	}
-	stability_diplomacy = {
-		window_name = "stability_diplomacy_container"
- 
-		context_type = selected_country_context
-		parent_window_token = selected_country_view_diplomacy
- 
-		visible = {
-			always = yes
-		}
-	}
-	population_diplomacy = {
-		window_name = "population_diplomacy_container"
- 
-		context_type = selected_country_context
-		parent_window_token = selected_country_view_diplomacy
- 
-		visible = {
-			always = yes
 		}
 	}
 	pie_chart_sg = {
