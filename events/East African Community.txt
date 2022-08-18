@@ -1,0 +1,84 @@
+﻿add_namespace = east_african_community
+
+# (Country) has officially proposed the East African Federation
+country_event = {
+	id = east_african_community.1
+	title = east_african_community.1.t
+	desc = east_african_community.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = east_african_community.1.o1
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value > 0
+				}
+			}
+		}
+	}
+
+	option = {
+		name = east_african_community.1.o2
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+		}
+		set_country_flag = eaf_vetoed
+	}
+}
+
+# EAF Proposal Results
+country_event = {
+	id = east_african_community.2
+	title = east_african_community.2.t
+	desc = east_african_community.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = east_african_community.2.o1
+		trigger = {
+			NOT = { has_global_flag = eaf_vetoed }
+		}
+		add_ideas = federal
+		set_cosmetic_tag = EAF
+		every_state = {
+			limit = {
+				OWNER = { has_idea = idea_east_african_community_member }
+				is_core_of = OWNER
+			}
+			add_core_of = ROOT
+		}
+		every_other_country = {
+			limit = {
+				has_idea = idea_east_african_community_member
+			}
+			ROOT = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_country_flag = east_african_community_dissolved
+	}
+
+	option = {
+		name = east_african_community.2.o2
+		trigger = {
+			has_global_flag = eaf_vetoed
+		}
+		clr_global_flag = eaf_vetoed
+	}
+}

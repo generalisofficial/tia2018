@@ -1,7 +1,5 @@
 ﻿add_namespace = system_events
 
-# Empty Space - system_events.7
-
 country_event = {
 	id = system_events.1
 	hidden=yes
@@ -89,6 +87,37 @@ country_event = {
 	
 	immediate = {
 		news_event = terrorism.4
+	}
+}
+
+country_event = {
+	id = system_events.7
+	hidden=yes
+	fire_only_once = yes
+
+	trigger = {
+		date > 2018.3.21
+		date < 2019.1.1
+		NOT = { has_global_flag = african_union_dissolved }
+	}
+	
+	immediate = {
+		set_global_flag = afcfta_established
+		every_country = {
+			limit = {
+				has_idea = idea_african_union_member
+			}
+			every_other_country = {
+				limit = {
+					has_idea = idea_african_union_member
+				}
+				add_opinion_modifier = {
+					target = PREV
+					modifier = african_union_member_trade
+				}
+			}
+		}
+		news_event = african_union.1
 	}
 }
 

@@ -437,6 +437,79 @@ international_organizations = {
 			base = 0
 		}
 	}
+
+	join_benelux_union = {
+	
+		visible = {
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_benelux_union_member
+					has_global_flag = benelux_union_dissolved
+				}
+			}
+			OR = { 
+				original_tag = HOL
+				original_tag = BEL
+				original_tag = LUX
+				original_tag = WLN
+				original_tag = FLN
+			}
+		}
+		
+		complete_effect = {
+			set_global_flag = ongoing_BENELUX_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_benelux_union_member
+				}
+				country_event = international_organizations.1
+			}
+		}
+
+		remove_effect = {
+			country_event = international_organizations.2
+		}
+		
+		icon = benelux_union
+		
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	leave_benelux_union = {
+	
+		visible = {
+			has_idea = idea_benelux_union_member
+		}
+		
+		complete_effect = {
+            remove_ideas = idea_benelux_union_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = benelux_union_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = benelux_union_member }
+					}
+				}
+			}
+		}
+		
+		icon = benelux_union
+		
+		cost = 150
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
 	
 	join_nordic_council = {
 	
@@ -486,42 +559,73 @@ international_organizations = {
 	join_east_african_community = {
 	
 		visible = {
-			NOT = { has_idea = east_african_community_member  has_global_flag = east_african_community_dissolved }
-			OR = { original_tag = SSD original_tag = UGA original_tag = RWA original_tag = KEN original_tag = TZN original_tag = BUR }
-		}
-		available = {
-            NOT = { has_idea = east_african_community_member has_idea = non_member_state }
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_east_african_community_member
+					has_global_flag = east_african_community_dissolved
+				}
+			}
+			OR = { 
+				original_tag = TZN
+				original_tag = UGA
+				original_tag = RWA
+				original_tag = BUR
+				original_tag = KEN
+				original_tag = SSD
+				original_tag = SPO
+				original_tag = COG
+			}
 		}
 		
 		complete_effect = {
-            add_ideas = east_african_community_member
+			set_global_flag = ongoing_EAC_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_east_african_community_member
+				}
+				country_event = international_organizations.1
+			}
+		}
+
+		remove_effect = {
+			country_event = international_organizations.2
 		}
 		
 		icon = east_african_community
 		
-		cost = 100
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
 		
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 	
 	leave_east_african_community = {
 	
 		visible = {
-			has_idea = east_african_community_member
-		}
-		available = {
-            always = yes
+			has_idea = idea_east_african_community_member
 		}
 		
 		complete_effect = {
-            remove_ideas = east_african_community_member
+            remove_ideas = idea_east_african_community_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = east_african_community_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = east_african_community_member }
+					}
+				}
+			}
 		}
 		
 		icon = east_african_community
 		
-		cost = 50
+		cost = 150
 		
 		ai_will_do = {
 			base = 0
@@ -548,6 +652,37 @@ international_organizations = {
 		
 		ai_will_do = {
 			base = 0
+		}
+	}
+
+	propose_the_east_african_federation = {
+	
+		visible = {
+			has_idea = idea_east_african_community_member
+		}
+		
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_idea = idea_east_african_community_member
+				}
+				country_event = east_african_community.1
+			}
+		}
+
+		remove_effect = {
+			country_event = east_african_community.2
+		}
+		
+		icon = east_african_community
+		
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 500
+		
+		ai_will_do = {
+			base = 1
 		}
 	}
 	
@@ -747,53 +882,6 @@ international_organizations = {
 		}
 		
 		icon = shanghai_cooperation_organization
-		
-		cost = 50
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-	
-	join_benelux = {
-	
-		visible = {
-			NOT = { has_idea = benelux_member  has_global_flag = benelux_dissolved }
-			OR = { original_tag = HOL original_tag = BEL original_tag = LUX }
-		}
-		
-		available = {
-            NOT = { has_idea = benelux_member has_idea = non_member_state }
-		}
-		
-		complete_effect = {
-            add_ideas = benelux_member
-		}
-		
-		icon = benelux
-		
-		cost = 100
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-	
-	leave_benelux = {
-	
-		visible = {
-			has_idea = benelux_member
-		}
-		
-		available = {
-            always = yes
-		}
-		
-		complete_effect = {
-            remove_ideas = benelux_member
-		}
-		
-		icon = benelux
 		
 		cost = 50
 		

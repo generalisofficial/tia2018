@@ -216,10 +216,6 @@ on_actions = {
 						target = PREV
 						modifier = african_union_member
 					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = african_union_member_trade
-					}
 				}
 			}
 			every_country = {
@@ -247,6 +243,34 @@ on_actions = {
 					add_opinion_modifier = {
 						target = PREV
 						modifier = baltic_assembly_member
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = idea_benelux_union_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_benelux_union_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = benelux_union_member
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = idea_east_african_community_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_east_african_community_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = east_african_community_member
 					}
 				}
 			}

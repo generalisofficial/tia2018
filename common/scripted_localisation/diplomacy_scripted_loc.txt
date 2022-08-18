@@ -1,26 +1,35 @@
 # Get name of international organization currently being voted on
 defined_text = {
 	name = GetCurrentOrganizationVote
-	
 	text = {
 		trigger = {
 			has_global_flag = ongoing_AU_application
 		}
 		localization_key = org_african_union
 	}
-
 	text = {
 		trigger = {
 			has_global_flag = ongoing_CoN_application
 		}
 		localization_key = org_commonwealth_of_nations
 	}
-
 	text = {
 		trigger = {
 			has_global_flag = ongoing_BA_application
 		}
 		localization_key = org_baltic_assembly
+	}
+	text = {
+		trigger = {
+			has_global_flag = ongoing_BENELUX_application
+		}
+		localization_key = org_benelux_union
+	}
+	text = {
+		trigger = {
+			has_global_flag = ongoing_EAC_application
+		}
+		localization_key = org_east_african_community
 	}
 }
 
@@ -60,14 +69,22 @@ defined_text = {
 	text = {
 		trigger = {
 			has_idea = parliamentary_system
-			has_idea = idea_constitutional_monarchy
+			OR = {
+				has_idea = idea_constitutional_monarchy
+				has_idea = idea_commonwealth_realm
+			}
 		}
 		localization_key = FoG_parliamentary_constitutional_monarchy
 	}
 	text = {
 		trigger = {
 			has_idea = parliamentary_system
-			NOT = { has_idea = idea_constitutional_monarchy }
+			NOT = { 			
+				OR = {
+					has_idea = idea_constitutional_monarchy
+					has_idea = idea_commonwealth_realm
+				} 
+			}
 		}
 		localization_key = FoG_parliamentary_republic
 	}
