@@ -25,8 +25,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				has_idea = one_party_state
-				has_government = islamist
-				original_tag = PER
+				has_country_leader_ideology = khomeinist
 			}
 		}
 		localization_key = LEADER_TITLE_SUPREME_LEADER
@@ -75,6 +74,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
+				NOT = { has_country_leader_ideology = khomeinist }
 				OR = {
 					has_idea = presidential_republic
 					has_idea = demarchic_republic

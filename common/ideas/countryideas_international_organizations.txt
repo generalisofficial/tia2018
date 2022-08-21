@@ -129,11 +129,16 @@ ideas = {
 		}
 
       	#Nordic Council
-	    nordic_council_member = {
+	    idea_nordic_council_member = {
 			picture = nordic_council
 
 			modifier = {
-			
+				political_power_factor = -0.01
+				stability_factor = 0.01
+			}
+
+			cancel = {
+				has_global_flag = nordic_council_dissolved
 			}
 		}
 

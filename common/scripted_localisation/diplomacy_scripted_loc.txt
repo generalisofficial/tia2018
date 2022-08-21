@@ -31,6 +31,12 @@ defined_text = {
 		}
 		localization_key = org_east_african_community
 	}
+	text = {
+		trigger = {
+			has_global_flag = ongoing_NC_application
+		}
+		localization_key = org_nordic_council
+	}
 }
 
 # Get Country Type (for diplo menu)
@@ -97,7 +103,12 @@ defined_text = {
 	text = {
 		trigger = {
 			has_idea = one_party_state
-			NOT = { has_government = communist }
+			NOT = { 
+				OR = {
+					has_government = communist 
+					has_country_leader_ideology = khomeinist
+				}
+			}
 		}
 		localization_key = FoG_one_party_presidential_republic
 	}
@@ -107,6 +118,13 @@ defined_text = {
 			has_government = communist
 		}
 		localization_key = FoG_one_party_socialist_republic
+	}
+	text = {
+		trigger = {
+			has_idea = one_party_state
+			has_country_leader_ideology = khomeinist
+		}
+		localization_key = FoG_one_party_islamic_republic
 	}
 	text = {
 		trigger = {

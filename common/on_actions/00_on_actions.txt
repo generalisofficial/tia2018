@@ -274,6 +274,20 @@ on_actions = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					has_idea = idea_nordic_council_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_nordic_council_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = nordic_council_member
+					}
+				}
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -368,6 +382,7 @@ on_actions = {
 	on_release_as_puppet = {
 		effect = {
             ROOT = {
+				add_political_power = 100
 				quickset_parliament = yes 
 				quickset_coalition = yes 
 				add_ideas = non_member_state 
@@ -389,6 +404,7 @@ on_actions = {
 	on_release_as_free = {
 		effect = {
 			ROOT = { 
+				add_political_power = 100
 				add_ideas = non_member_state 
 				country_event = system.20 
 				inherit_technology = FROM

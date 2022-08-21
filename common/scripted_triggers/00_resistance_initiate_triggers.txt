@@ -8,12 +8,18 @@ should_not_activate_active_crypto_bonuses = {
 }
 
 should_initiate_resistance = {
-    check_variable = { core_countries^num > 0 }
+    state_population > 1
     OR = {
-        NOT = {
-            is_owned_by = FROM
-            is_core_of = FROM  
+        AND = {
+            check_variable = { core_countries^num > 0 }
+            NOT = {
+                is_owned_by = FROM
+                is_core_of = FROM  
+            }
         }
-        FROM = { is_democracy = no }
+        AND = {
+            check_variable = { core_countries^num > 1 }
+            FROM = { is_democracy = no }
+        }
     }
 }

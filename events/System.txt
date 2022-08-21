@@ -25,7 +25,7 @@ country_event = {
 	trigger = {
 		NOT = { 
 			any_country = {
-				has_idea = benelux_member
+				has_idea = idea_benelux_union_member
 			}
 		}
 	}
@@ -33,7 +33,7 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = benelux_dissolved
+		set_global_flag = benelux_union_dissolved
 	}
 }
 
@@ -257,7 +257,7 @@ country_event = {
 	trigger = {
 		NOT = { 
 			any_country = {
-				has_idea = east_african_community_member
+				has_idea = idea_east_african_community_member
 			}
 		}
 	}

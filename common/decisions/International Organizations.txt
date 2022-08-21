@@ -233,12 +233,20 @@ international_organizations = {
 				limit = {
 					has_idea = idea_african_union_member
 				}
-				country_event = international_organizations.1
+				# Godresky path
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
 			}
 		}
 
 		remove_effect = {
-			country_event = international_organizations.2
+			# Godresky path
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = african_union
@@ -309,12 +317,18 @@ international_organizations = {
 				limit = {
 					has_idea = idea_commonwealth_of_nations_member
 				}
-				country_event = international_organizations.1
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
 			}
 		}
 
 		remove_effect = {
-			country_event = international_organizations.2
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = commonwealth_of_nations
@@ -391,12 +405,18 @@ international_organizations = {
 				limit = {
 					has_idea = idea_baltic_assembly_member
 				}
-				country_event = international_organizations.1
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
 			}
 		}
 
 		remove_effect = {
-			country_event = international_organizations.2
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = baltic_assembly
@@ -464,12 +484,18 @@ international_organizations = {
 				limit = {
 					has_idea = idea_benelux_union_member
 				}
-				country_event = international_organizations.1
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
 			}
 		}
 
 		remove_effect = {
-			country_event = international_organizations.2
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = benelux_union
@@ -514,42 +540,80 @@ international_organizations = {
 	join_nordic_council = {
 	
 		visible = {
-			NOT = { has_idea = nordic_council_member  has_global_flag = nordic_council_dissolved }
-			OR = { original_tag = SWE original_tag = DEN original_tag = NOR original_tag = FIN original_tag = ICE }
-		}
-		available = {
-            NOT = { has_idea = nordic_council_member has_idea = non_member_state }
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_nordic_council_member
+					has_global_flag = nordic_council_dissolved
+				}
+			}
+			OR = { 
+				original_tag = SWE
+				original_tag = FIN
+				original_tag = ALN
+				original_tag = SCN
+				original_tag = DEN
+				original_tag = NOR
+				original_tag = ICE
+				original_tag = FAI
+				original_tag = GRN
+			}
 		}
 		
 		complete_effect = {
-            add_ideas = nordic_council_member
+			set_global_flag = ongoing_NC_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_nordic_council_member
+				}
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = nordic_council
 		
-		cost = 100
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
 		
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 	
 	leave_nordic_council = {
 	
 		visible = {
-			has_idea = nordic_council_member
-		}
-		available = {
-            always = yes
+			has_idea = idea_nordic_council_member
 		}
 		
 		complete_effect = {
-            remove_ideas = nordic_council_member
+            remove_ideas = idea_nordic_council_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = nordic_council_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = nordic_council_member }
+					}
+				}
+			}
 		}
 		
 		icon = nordic_council
 		
-		cost = 50
+		cost = 150
 		
 		ai_will_do = {
 			base = 0
@@ -585,12 +649,18 @@ international_organizations = {
 				limit = {
 					has_idea = idea_east_african_community_member
 				}
-				country_event = international_organizations.1
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
 			}
 		}
 
 		remove_effect = {
-			country_event = international_organizations.2
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = east_african_community
