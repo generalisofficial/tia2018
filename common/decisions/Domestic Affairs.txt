@@ -895,4 +895,50 @@ domestic_affairs = {
 			}
 		}
 	}
+
+	finish_decommunization = {
+		
+		visible = {
+			original_tag = UKR
+			NOT = { has_government = communist }
+			OR = {
+				owns_state = 1170
+				owns_state = 226
+			}
+		}
+
+		available = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		
+		icon = ukraine
+
+		fire_only_once = yes 
+		
+		cost = 25
+
+		complete_effect = {
+			add_ideas = idea_decommunization_completed
+			if = {
+				limit = {
+					owns_state = 1170
+				}
+				1170 = {
+					set_state_name = STATE_1170_decommunized
+				}	
+			}
+			if = {
+				limit = {
+					owns_state = 226
+				}
+				226 = {
+					set_state_name = STATE_226_decommunized
+				}	
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

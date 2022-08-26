@@ -1,22 +1,78 @@
 integration_of_territories = {
 
+	settle_state = {
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				has_state_flag = uninhabited_state
+			}
+		}
+
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				has_state_flag = uninhabited_state
+			}
+		}
+
+		available = {
+			capital_scope = {
+				has_state_population > 2500
+			}
+		}
+		
+		remove_effect = {
+			capital_scope = {
+				add_manpower = -2500
+			}
+			FROM = {
+				if = {
+					limit = {
+						infrastructure < 1
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_manpower = 2500
+				clr_state_flag = uninhabited_state
+			}
+		}
+		
+		icon = infiltrate_state
+		
+		days_remove = 100
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	integrate_state = {
 		state_target = yes
 		on_map_mode = map_and_decisions_view
 
 		target_trigger = {
-			#FROM = {
-			#	is_owned_by = ROOT
-			#	NOT = { is_core_of = ROOT }
-			#}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = uninhabited_state }
+			}
 		}
 
 		visible = {
-			always = no # Work in Progress
-			#any_state = {
-			#	is_owned_by = ROOT
-			#	NOT = { is_core_of = ROOT }
-			#}
+			any_state = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = uninhabited_state }
+			}
 		}
 		
 		available = {
@@ -36,6 +92,8 @@ integration_of_territories = {
 		
 		icon = infiltrate_state
 		
+		days_remove = 100
+
 		cost = 100
 		
 		ai_will_do = {

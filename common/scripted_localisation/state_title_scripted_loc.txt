@@ -2,6 +2,14 @@ defined_text = {
 	name = GetStateTitle
 	text = {
 		trigger = {
+			OWNER = {
+				num_of_controlled_states = 1
+			}
+		}
+		localization_key = STATE_TITLE_NONE
+	}
+	text = {
+		trigger = {
 			THIS = {
 				is_core_of = owner
 				is_capital = yes
@@ -228,6 +236,14 @@ defined_text = {
 			}
 		}
 		localization_key = STATE_TITLE_PROVINCE
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_state_flag = uninhabited_state
+			}
+		}
+		localization_key = STATE_TITLE_UNINHABITED_TERRITORY
 	}
 	text = {
 		localization_key = STATE_TITLE_TERRITORY

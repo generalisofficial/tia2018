@@ -301,6 +301,12 @@ on_actions = {
 					country_event = system.28
 				}
 			}
+			every_state = {
+				limit = {
+					state_population < 2
+				}
+				set_state_flag = uninhabited_state
+			}
 			every_country = {
 				country_event = economy.1
 				country_event = system.1

@@ -218,5 +218,18 @@ ideas = {
 				stability_factor = -0.35
 			}
 		}
+		# UKR - Ukraine
+		idea_decommunization_completed = {
+			picture = decommunization
+			
+			cancel = {
+				has_government = communist
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+				communist_drift = -0.01
+			}
+		}
 	}
 }
