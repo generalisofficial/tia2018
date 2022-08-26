@@ -42,11 +42,33 @@ economic_affairs = {
 		}
 	}
 
+	print_money = {
+		
+		available = {
+			always = no
+		}
+		
+		icon = money_printer
+		cost = 25
+
+		complete_effect = {
+			#
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	monthly_tax_break = {
 		
 		available = {
-			NOT = { has_idea = idea_monthly_tax_break }
 			treasury_surplus = yes
+			custom_trigger_tooltip = TT_treasury_surplus
+		}
+
+		visible = {
+			NOT = { has_idea = idea_monthly_tax_break }
 		}
 		
 		icon = coins
@@ -54,12 +76,9 @@ economic_affairs = {
 
 		complete_effect = {
 			update_finances = yes
-			subtract_from_variable = {
-				var = state_treasury
-				value = monthly_income_tax_revenue
-			}
+			set_temp_variable = { transaction_value = monthly_income_tax_revenue }
+			transaction_subtract = yes
 			add_timed_idea = { idea = idea_monthly_tax_break days = 150 }
-			# add money tooltip
 		}
 		
 		ai_will_do = {
@@ -133,14 +152,16 @@ economic_affairs = {
 		fire_only_once = yes 
 		days_remove = 1095
 
-		remove_effect = {
-			set_global_flag = nowy_swiat_canal_built
+		complete_effect = {
+			set_temp_variable = { transaction_value = 100 }
+			transaction_add = yes
 		}
 
-		modifier = {
-			civilian_factory_use = 3 # Switch to money when economy implemented
+		remove_effect = {
+			set_global_flag = nowy_swiat_canal_built
+			custom_effect_tooltip = TT_canal_finished
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}

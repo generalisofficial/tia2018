@@ -320,3 +320,33 @@ monthly_economy_pulse = {
 		value = monthly_net_income
 	}
 }
+
+transaction_add = {
+	if = {
+		limit = {
+			check_variable = { transaction_value < 0 }
+		}
+		custom_effect_tooltip = TT_subtract_money
+	}
+	else = {
+		custom_effect_tooltip = TT_add_money
+	}
+	hidden_effect = {
+		sound_effect = "money_sound"
+		add_to_variable = {
+			var = state_treasury
+			value = transaction_value
+		}
+	}
+}
+
+transaction_subtract = {
+	custom_effect_tooltip = TT_subtract_money
+	hidden_effect = {
+		sound_effect = "money_sound"
+		subtract_from_variable = {
+			var = state_treasury
+			value = transaction_value
+		}
+	}
+}
