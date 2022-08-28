@@ -359,3 +359,17 @@ news_event = { #(Country, Parliament) approves new minority government in (Count
 		name = politics.14.o1
 	}
 }
+
+news_event = { #(Leader) elected (Title) of (Country)
+	id = politics.15
+	title = politics.15.t
+	desc = politics.15.d
+	picture = GFX_news_event_inauguration
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.15.o1
+	}
+}

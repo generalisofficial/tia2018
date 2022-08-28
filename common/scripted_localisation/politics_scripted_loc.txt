@@ -1876,3 +1876,20 @@ defined_text = {
 		localization_key = communist
 	}
 }
+
+defined_text = {
+	name = GetLegislativeElectionEventText]
+	
+	text = {
+		trigger = {
+			majority_government = yes
+		}
+		localization_key = TT_legislative_election_event_majority
+	}
+	text = {
+		trigger = {
+			minority_government = yes
+		}
+		localization_key = TT_legislative_election_event_minority
+	}
+}
