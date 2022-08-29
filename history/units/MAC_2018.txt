@@ -1,26 +1,11 @@
 ﻿division_template = {
-	name = "Mechanized Brigade"
-	division_names_group = GENERIC_MEC_02
+	name = "City Garrison Regiment"
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-		mechanized = { x = 0 y = 1 }
-		mechanized = { x = 1 y = 0 }
-		light_mechanized = { x = 1 y = 1 }
-		modern_armor = { x = 2 y = 0 }
-	}
-	support = {
-		signal_company = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
 	}
 }
 
-units = {	
-	division = {
-		name = "1st Mechanized Infantry Brigade"
-		location = 3882
-		division_template = "Mechanized Brigade"
-		start_experience_factor = 0.3
-	}
+units = {
+	#No active military
 }

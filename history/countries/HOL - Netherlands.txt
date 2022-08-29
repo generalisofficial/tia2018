@@ -127,7 +127,7 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = ARU
+		target = ABW
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
@@ -135,14 +135,14 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
-		puppet = ARU
+		puppet = ABW
 		puppet = CRC
-		ARU = { set_country_flag = TfV_marked_for_deletion }
+		ABW = { set_country_flag = TfV_marked_for_deletion }
 		CRC = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
-ARU = {
+ABW = {
 	set_politics = {	
 		ruling_party = social_democrat
 		last_election = "2017.6.25"

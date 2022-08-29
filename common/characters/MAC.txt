@@ -1,80 +1,27 @@
 characters={
     #Starting - Political
-	MAC_ljubco_georgievski={
-		name="Ljubčo Georgievski"
+	MAC_antonio_ng={
+		name="Antonio Ng"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MAC_Ljubco_Georgievski
-			}
-		}
-		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	MAC_hristijan_mickoski={
-		name="Hristijan Mickoski"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MAC_Hristijan_Mickoski
-			}
-		}
-		country_leader={
-			ideology=christian_democrat
-		}
-	}
-	MAC_goran_milevski={
-		name="Goran Milevski"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MAC_Goran_Milevski
+				large=GFX_Portrait_MAC_Antonio_Ng
 			}
 		}
 		country_leader={
 			ideology=social_liberal_ideology
+			traits={ subject_pro_autonomy }
 		}
 	}
-	MAC_zoran_zaev={
-		name="Zoran Zaev"
+	MAC_fernando_chui={
+		name="Fernando Chui"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MAC_Zoran_Zaev
+				large=GFX_Portrait_MAC_Fernando_Chui
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	MAC_maja_morachanin={
-		name="Maja Morachanin"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MAC_Maja_Morachanin
-			}
-		}
-		country_leader={
-			ideology=green
-		}
-	}
-	MAC_dimitar_apasiev={
-		name="Dimitar Apasiev"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MAC_Dimitar_Apasiev
-			}
-		}
-		country_leader={
-			ideology=left_wing_nationalist
-		}
-	}
-	MAC_slobodan_ugrinovski={
-		name="Slobodan Ugrinovski"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MAC_Slobodan_Ugrinovski
-			}
-		}
-		country_leader={
-			ideology=marxist_leninist
+			ideology=socialist_with_chinese_characteristics
+			traits={ friend_of_china subject_pro_integration }
 		}
 	}
 	#Starting - Military

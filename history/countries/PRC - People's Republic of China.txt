@@ -107,7 +107,7 @@ add_ideas = {
 
 give_guarantee = PRK
 
-diplomatic_relation = { country = SOV relation = non_aggression_pact }
+diplomatic_relation = { country = RUS relation = non_aggression_pact }
 diplomatic_relation = { country = PRK relation = non_aggression_pact }
 
 if = {
@@ -119,14 +119,14 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
-		target = MCO
+		target = MAC
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
 		puppet = HKN
-		puppet = MCO
+		puppet = MAC
 		HKN = { set_country_flag = TfV_marked_for_deletion }
-		MCO = { set_country_flag = TfV_marked_for_deletion }
+		MAC = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
@@ -154,7 +154,7 @@ HKN = {
 	}
 }
 
-MCO = {
+MAC = {
 	set_politics = {	
 		ruling_party = communist
 		last_election = "2017.9.12"

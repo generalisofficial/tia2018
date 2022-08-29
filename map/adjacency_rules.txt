@@ -1006,3 +1006,41 @@ adjacency_rule = {
 	icon = 6287
 	offset = { 5 0 -6 }
 }
+
+#Drøbak Sound
+adjacency_rule = {
+	name = "DROBAK_SOUND"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 11184 9204 }
+		
+	icon = 6115
+	offset = { 5 0 -6 }
+}

@@ -8,7 +8,7 @@ country_event = { #Poisoning of Sergei and Yulia Skripal
 	fire_only_once = yes
 	
 	trigger = {
-		original_tag = SOV
+		original_tag = RUS
 		NOT = { is_in_faction_with = ENG }
 		date > 2018.3.4
 		date < 2019.1.1
@@ -47,14 +47,14 @@ news_event = { #Poisoning of Sergei and Yulia Skripal
 	option = {
 		name = russia.2.o1
 		trigger = {
-	        NOT = { original_tag = SOV }
+	        NOT = { original_tag = RUS }
 	    }
 	}
 	
 	option = {
 		name = russia.2.o2
 		trigger = {
-	        original_tag = SOV
+	        original_tag = RUS
 	    }
 	}
 }

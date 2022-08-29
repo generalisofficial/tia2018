@@ -71,7 +71,7 @@ news_event = {	#2018 FIFA World Cup
 
 	option = {
 		name = fifa_world_cup.hostOption
-		trigger = { original_tag = SOV }
+		trigger = { original_tag = RUS }
 	}
 	
 	option = {
@@ -82,7 +82,7 @@ news_event = {	#2018 FIFA World Cup
 	option = {
 		name = fifa_world_cup.normalOption
 		trigger = {
-			NOT = { original_tag = SOV }
+			NOT = { original_tag = RUS }
 			NOT = { original_tag = FRA }
 		}
 	}

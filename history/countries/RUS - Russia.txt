@@ -1,0 +1,297 @@
+﻿capital = 219
+
+oob = "RUS_2018"
+
+set_convoys = 2739
+
+set_war_support = 0.8
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	sp_antiair0 = 1
+	sp_antiair1 = 1
+	rocket_artillery = 1
+	motorized_rocket_unit = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	cv_CAS1 = 1
+	cv_CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	cv_fighter1 = 1
+	cv_fighter2 = 1
+	cv_fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	scout_plane1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	experimental_rockets = 1
+	rocket_engines = 1
+	improved_rocket_engines = 1
+	advanced_rocket_engines = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	mass_assault = 1
+	fleet_in_being = 1
+	air_superiority = 1
+}
+
+create_equipment_variant = { name = "T-62" type = modern_tank_equipment_1 upgrades = { tank_armor_upgrade = 3 tank_gun_upgrade = 1 tank_reliability_upgrade = 1 tank_engine_upgrade = 3 } obsolete = yes }
+create_equipment_variant = { name = "T-64" type = modern_tank_equipment_1 upgrades = { tank_armor_upgrade = 5 tank_gun_upgrade = 3 tank_reliability_upgrade = 3 tank_engine_upgrade = 5 } obsolete = yes }
+create_equipment_variant = { name = "T-80" type = modern_tank_equipment_2 upgrades = { tank_armor_upgrade = 5 tank_gun_upgrade = 3 tank_reliability_upgrade = 3 tank_engine_upgrade = 5 } obsolete = yes }
+create_equipment_variant = { name = "BMP-2" type = mechanized_equipment_1 obsolete = yes }
+create_equipment_variant = { name = "MiG-31" type = fighter_equipment_2 upgrades = { plane_engine_upgrade = 5 plane_reliability_upgrade = 3 } obsolete = yes }
+create_equipment_variant = { name = "Su-27" type = fighter_equipment_3 upgrades = { plane_engine_upgrade = 2 plane_reliability_upgrade = 2 } obsolete = no }
+create_equipment_variant = { name = "Su-24" type = CAS_equipment_2 upgrades = { plane_engine_upgrade = 5 plane_reliability_upgrade = 2 } obsolete = yes }
+create_equipment_variant = { name = "Tu-95MS" type = strat_bomber_equipment_1 upgrades = { plane_bomb_upgrade = 5 plane_reliability_upgrade = 4 } obsolete = yes }
+create_equipment_variant = { name = "Tu-22" type = strat_bomber_equipment_1 upgrades = { plane_engine_upgrade = 4 plane_reliability_upgrade = 1 } obsolete = yes }
+create_equipment_variant = { name = "Tu-22M3" type = strat_bomber_equipment_1 upgrades = { plane_bomb_upgrade = 2 plane_engine_upgrade = 5 plane_reliability_upgrade = 4 } obsolete = yes }
+
+set_country_flag = orthodox
+
+add_ideas = {
+	idea_united_nations_security_council_member
+	commonwealth_of_independent_states_member
+	shanghai_cooperation_organization_member
+    nuclear_weapons_state
+	#population_growth_stagnation
+	presidential_republic
+	federal
+	civil_liberties_authoritarian
+	active_draft
+	#very_#low_taxes
+	#extensive_healthcare_spending
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ABK
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = SOS
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = TRA
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = DPR
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = LPR
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = ABK
+		puppet = SOS
+		puppet = TRA
+		puppet = DPR
+		puppet = LPR
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "Foreign Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_RUS"
+	}
+}
+
+ABK = {
+	set_politics = {	
+		ruling_party = national_conservative
+		last_election = "2014.8.25"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 41.08
+		conservative = 58.92
+	}
+}
+
+SOS = {
+	set_politics = {	
+		ruling_party = national_conservative
+		last_election = "2017.4.9"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 51.86
+		social_liberal = 33.33
+		communist = 14.81
+	}
+}
+
+TRA = {
+	set_politics = {	
+		ruling_party = national_conservative
+		last_election = "2016.12.12"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 87.88
+		communist = 12.12
+	}
+}
+
+DPR = {
+	set_politics = {	
+		ruling_party = national_conservative 
+		last_election = "2014.11.11"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 71
+		right_wing_nationalist = 26
+		communist = 3
+	}
+}
+
+LPR = {
+	set_politics = {	
+		ruling_party = national_conservative 
+		last_election = "2014.11.11"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		national_conservative = 74
+		classical_liberal = 26
+	}
+}
+
+create_faction = FACTION_NAME_CSTO
+add_to_faction = RUS
+add_to_faction = BLR
+add_to_faction = ARM
+add_to_faction = TAJ
+add_to_faction = KAZ
+add_to_faction = KYR
+
+give_military_access = DPR
+SYR = { give_military_access = RUS }
+DPR = { give_military_access = RUS }
+
+diplomatic_relation = { country = UKR relation = non_aggression_pact }
+
+add_named_threat = {
+	threat = 3
+	name = threat_annexation_of_crimea
+}
+
+#State Duma
+set_variable = { communist_seats = 9.35 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.12 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0.22 }
+set_variable = { national_conservative_seats = 76.41 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_nationalist_seats = 8.68 }
+set_variable = { fascist_seats = 0.22 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
+
+set_politics = {	
+	ruling_party = national_conservative
+	last_election = "2012.3.18"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+    national_conservative = 72.85
+	communist = 12.80
+	social_democrat = 6.06
+	right_wing_nationalist = 4.71
+	classical_liberal = 2.92
+	conservative = 0.44
+	fascist = 0.22
+}
+
+# Characters - Military
+
+# Characters - Political
+recruit_character = RUS_aleksey_zhuravlyov
+recruit_character = RUS_vladimir_zhirinovsky
+recruit_character = RUS_nikolai_iii
+recruit_character = RUS_vladimir_putin
+recruit_character = RUS_boris_titov
+recruit_character = RUS_mikhail_kasyanov
+recruit_character = RUS_grigory_yavlinsky
+recruit_character = RUS_sergey_mironov
+recruit_character = RUS_andrey_nagibin
+recruit_character = RUS_gennady_semigin
+recruit_character = RUS_gennady_zyuganov

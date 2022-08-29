@@ -244,7 +244,7 @@ foreign_affairs = {
 	reform_the_soviet_union = {
 		visible = {
 		    OR = {
-			    original_tag = SOV
+			    original_tag = RUS
 				original_tag = UKR
 				original_tag = BLR
 				original_tag = MOL
@@ -286,13 +286,13 @@ foreign_affairs = {
 			set_cosmetic_tag = USSR
 			set_party_name = {
 				ideology = communist
-				long_name = SOV_communist_party_KPSS_long
-				name = SOV_communist_party_KPSS
+				long_name = RUS_communist_party_KPSS_long
+				name = RUS_communist_party_KPSS
 			}
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = SOV
+						is_core_of = RUS
 						is_core_of = UKR
 						is_core_of = BLR
 						is_core_of = MOL
@@ -366,7 +366,7 @@ foreign_affairs = {
 				original_tag = KOS
 				original_tag = BOS
 				original_tag = SLV
-				original_tag = MAC
+				original_tag = MKD
 				original_tag = MNT
 			}
 		}
@@ -407,7 +407,7 @@ foreign_affairs = {
 						is_core_of = KOS
 						is_core_of = BOS
 						is_core_of = SLV
-						is_core_of = MAC
+						is_core_of = MKD
 						is_core_of = MNT
 				    }
 			    }
@@ -424,7 +424,7 @@ foreign_affairs = {
 	propose_a_solution_to_the_macedonian_naming_dispute = {
 	
 		visible = {
-			original_tag = MAC
+			original_tag = MKD
 			country_exists = GRE
 		}
 		
@@ -661,7 +661,7 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -733,13 +733,13 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				factor = 100
-				has_war_with = SOV
+				has_war_with = RUS
 			}
 			modifier = {
 				factor = 5
@@ -878,7 +878,7 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -938,7 +938,7 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -1054,7 +1054,7 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -1125,7 +1125,7 @@ foreign_affairs = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -1164,6 +1164,49 @@ foreign_affairs = {
 		
 		ai_will_do = {
 			factor = 100
+		}
+	}
+
+	claim_greater_croatia = {
+	
+		visible = {
+			original_tag = CRO
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_core = 1018
+			add_state_claim = 848
+			add_state_claim = 104
+			add_state_claim = 1203
+			add_state_claim = 1202
+			add_state_claim = 1204
+			add_state_claim = 45
+			add_state_claim = 1200
+			add_named_threat = { 
+				threat = 5
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = croatia
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+				}
+			}
 		}
 	}
 }

@@ -52,7 +52,7 @@ assad_supporter_strategy = {
     enable = {
 	    OR = {
             original_tag = PER
-		    original_tag = SOV
+		    original_tag = RUS
 		}
         NOT = {
             has_global_flag = syrian_civil_war_over
@@ -228,7 +228,7 @@ civil_war_support_LNA_direct = {
 civil_war_support_LNA_indirect = {
     enable = {
         OR = {
-            original_tag = SOV
+            original_tag = RUS
             original_tag = FRA
             original_tag = CHA
             original_tag = JOR
