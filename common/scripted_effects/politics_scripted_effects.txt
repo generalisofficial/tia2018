@@ -2370,6 +2370,12 @@ election_pulse = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_idea = presidential_republic
+		}
+		news_event = politics.15
+	}
 }
 
 election_effect = {
