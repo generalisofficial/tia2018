@@ -1,4 +1,4 @@
-﻿add_namespace = system
+add_namespace = system
 
 country_event = {
 	id = system.1
@@ -8,6 +8,12 @@ country_event = {
 	
 	immediate = {
 		set_parliament_graphics = yes
+		if = {
+			limit = {
+				has_idea = federal
+			}
+			gubernatorial_elections = yes
+		}
 		if = {
 			limit = {
 				has_country_flag = has_parliament
@@ -575,13 +581,9 @@ country_event = { ### Monthly On-action
 					}
 				}
 			}
-			random_list = {
-				10 = {
-					country_event = politics.11
-				}
-				90 = {
-					#
-				}
+			random = {
+				chance = 10
+				country_event = politics.11
 			}
 		}
 		### Randomizer - Adds 1% to random party
@@ -798,10 +800,10 @@ country_event = { ### Monthly On-action
 				# Needs to be 100 in total
 			}
 		}
-		### Balancer - Removes 1% from all over 75%
+		### Balancer - Removes 1% from all over 60%
 		if = {
 			limit = {
-				islamist > 0.65
+				islamist > 0.6
 			}
 			add_popularity = { 
 				ideology = islamist
@@ -810,7 +812,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				fascist > 0.65
+				fascist > 0.6
 			}
 			add_popularity = { 
 				ideology = fascist
@@ -819,7 +821,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				right_wing_nationalist > 0.65
+				right_wing_nationalist > 0.6
 			}
 			add_popularity = { 
 				ideology = right_wing_nationalist
@@ -828,7 +830,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				monarchist > 0.65
+				monarchist > 0.6
 			}
 			add_popularity = { 
 				ideology = monarchist
@@ -837,7 +839,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				national_conservative > 0.65
+				national_conservative > 0.6
 			}
 			add_popularity = { 
 				ideology = national_conservative
@@ -846,7 +848,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				conservative > 0.65
+				conservative > 0.6
 			}
 			add_popularity = { 
 				ideology = conservative
@@ -855,7 +857,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				classical_liberal > 0.65
+				classical_liberal > 0.6
 			}
 			add_popularity = { 
 				ideology = classical_liberal
@@ -864,7 +866,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				social_liberal > 0.65
+				social_liberal > 0.6
 			}
 			add_popularity = { 
 				ideology = social_liberal
@@ -873,7 +875,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				social_democrat > 0.65
+				social_democrat > 0.6
 			}
 			add_popularity = { 
 				ideology = social_democrat
@@ -882,7 +884,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				progressive > 0.65
+				progressive > 0.6
 			}
 			add_popularity = { 
 				ideology = progressive
@@ -891,7 +893,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				socialist > 0.65
+				socialist > 0.6
 			}
 			add_popularity = { 
 				ideology = socialist
@@ -900,7 +902,7 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				communist > 0.65
+				communist > 0.6
 			}
 			add_popularity = { 
 				ideology = communist

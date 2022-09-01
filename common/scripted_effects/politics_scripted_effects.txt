@@ -3187,3 +3187,82 @@ auto_government = {
 	}
 	election_pulse = yes
 }
+
+gubernatorial_elections = {
+	set_temp_variable = { islamist_popularity = party_popularity@islamist }
+	set_temp_variable = { fascist_popularity = party_popularity@fascist }
+	set_temp_variable = { right_wing_nationalist_popularity = party_popularity@right_wing_nationalist }
+	set_temp_variable = { monarchist_popularity = party_popularity@monarchist }
+	set_temp_variable = { national_conservative_popularity = party_popularity@national_conservative }
+	set_temp_variable = { conservative_popularity = party_popularity@conservative }
+	set_temp_variable = { classical_liberal_popularity = party_popularity@classical_liberal }
+	set_temp_variable = { social_liberal_popularity = party_popularity@social_liberal }
+	set_temp_variable = { social_democrat_popularity = party_popularity@social_democrat }
+	set_temp_variable = { progressive_popularity = party_popularity@progressive }
+	set_temp_variable = { socialist_popularity = party_popularity@socialist }
+	set_temp_variable = { communist_popularity = party_popularity@communist }
+	every_owned_state = {
+		clear_state_government_flags = yes
+	}
+	every_owned_state = {
+		limit = {
+			is_core_of = ROOT
+			NOT = {
+				is_capital = yes
+			}
+		}
+		random_list = {
+			islamist_popularity = {
+				set_state_flag = state_government_islamist
+			}
+			fascist_popularity = {
+				set_state_flag = state_government_fascist
+			}
+			right_wing_nationalist_popularity = {
+				set_state_flag = state_government_right_wing_nationalist
+			}
+			monarchist_popularity = {
+				set_state_flag = state_government_monarchist
+			}
+			national_conservative_popularity = {
+				set_state_flag = state_government_national_conservative
+			}
+			conservative_popularity = {
+				set_state_flag = state_government_conservative
+			}
+			classical_liberal_popularity = {
+				set_state_flag = state_government_classical_liberal
+			}
+			social_liberal_popularity = {
+				set_state_flag = state_government_social_liberal
+			}
+			social_democrat_popularity = {
+				set_state_flag = state_government_social_democrat
+			}
+			progressive_popularity = {
+				set_state_flag = state_government_progressive
+			}
+			socialist_popularity = {
+				set_state_flag = state_government_socialist
+			}
+			communist_popularity = {
+				set_state_flag = state_government_communist
+			}
+		}
+	}
+}
+
+clear_state_government_flags = {
+	clr_state_flag = state_government_islamist
+	clr_state_flag = state_government_fascist
+	clr_state_flag = state_government_right_wing_nationalist
+	clr_state_flag = state_government_monarchist
+	clr_state_flag = state_government_national_conservative
+	clr_state_flag = state_government_conservative
+	clr_state_flag = state_government_classical_liberal
+	clr_state_flag = state_government_social_liberal
+	clr_state_flag = state_government_social_democrat
+	clr_state_flag = state_government_progressive
+	clr_state_flag = state_government_socialist
+	clr_state_flag = state_government_communist
+}

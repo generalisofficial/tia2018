@@ -32,4 +32,18 @@ scripted_gui = {
 		parent_window_token = selected_state_view
 		window_name = "state_title_container"
 	}
+	state_government_gui = {
+		context_type = selected_state_context
+		
+		window_name = "state_government_container"
+		parent_window_token = selected_state_view
+		
+		visible = {
+			THIS = {
+				owner = {
+					has_idea = federal
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,166 @@
+defined_text = {
+	name = GetStateGovernmentParty
+	
+	text = {
+		trigger = {
+			has_state_flag = state_government_islamist
+		}
+		localization_key = islamist
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_fascist
+		}
+		localization_key = fascist
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_right_wing_nationalist
+		}
+		localization_key = right_wing_nationalist
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_monarchist
+		}
+		localization_key = monarchist
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_national_conservative
+		}
+		localization_key = national_conservative
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_conservative
+		}
+		localization_key = conservative
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_classical_liberal
+		}
+		localization_key = classical_liberal
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_social_liberal
+		}
+		localization_key = social_liberal
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_social_democrat
+		}
+		localization_key = social_democrat
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_progressive
+		}
+		localization_key = progressive
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_socialist
+		}
+		localization_key = socialist
+	}
+	text = {
+		trigger = {
+			has_state_flag = state_government_communist
+		}
+		localization_key = communist
+	}
+	text = {
+		localization_key = state_government_federally_administered
+	}
+}
+
+defined_text = {
+	name = GetStateGovernmentAffiliation
+	
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_state_flag = state_government_islamist
+					owner = {
+						NOT = { has_country_flag = coalition_islamist }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_fascist
+					owner = {
+						NOT = { has_country_flag = coalition_fascist }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_right_wing_nationalist
+					owner = {
+						NOT = { has_country_flag = coalition_right_wing_nationalist }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_monarchist
+					owner = {
+						NOT = { has_country_flag = coalition_monarchist }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_national_conservative
+					owner = {
+						NOT = { has_country_flag = coalition_national_conservative }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_conservative
+					owner = {
+						NOT = { has_country_flag = coalition_conservative }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_classical_liberal
+					owner = {
+						NOT = { has_country_flag = coalition_classical_liberal }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_social_liberal
+					owner = {
+						NOT = { has_country_flag = coalition_social_liberal }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_social_democrat
+					owner = {
+						NOT = { has_country_flag = coalition_social_democrat }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_progressive
+					owner = {
+						NOT = { has_country_flag = coalition_progressive }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_socialist
+					owner = {
+						NOT = { has_country_flag = coalition_socialist }
+					}
+				}
+				AND = {
+					has_state_flag = state_government_communist
+					owner = {
+						NOT = { has_country_flag = coalition_communist }
+					}
+				}
+			}
+		}
+		localization_key = sg_opposition
+	}
+	text = {
+		localization_key = sg_government
+	}
+}

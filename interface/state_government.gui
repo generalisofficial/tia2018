@@ -1,0 +1,62 @@
+guiTypes = {
+	containerWindowType = {
+		name = "state_government_container"
+		position = { x = 432 y = 3 }
+		size = { width=200 height=50%% }
+
+		background = {
+			name = "background"
+			spriteType ="GFX_tiled_window_2b_border"
+		}
+
+		instantTextboxType = {
+			name = "state_government_header"
+			position = { x = 22 y = 5 }
+			font = "hoi_18mbs"
+			text = state_government
+			maxWidth = 160
+			maxHeight = 30
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "state_ruling_party_title"
+			position = { x = 50 y = 75 }
+			font = "hoi_16mbs"
+			text = governing_party
+			maxWidth = 100
+			maxHeight = 10
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "state_ruling_party"
+			position = { x = -100 y = 90 }
+			font = "hoi_18mbs"
+			text = "[THIS.GetStateGovernmentParty]"
+			maxWidth = 400
+			maxHeight = 30
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "affiliation_title"
+			position = { x = -100 y = 120 }
+			font = "hoi_16mbs"
+			text = sg_affiliation
+			maxWidth = 400
+			maxHeight = 30
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "affiliation"
+			position = { x = -100 y = 135 }
+			font = "hoi_16mbs"
+			text = "[THIS.GetStateGovernmentAffiliation]"
+			maxWidth = 400
+			maxHeight = 30
+			format = center
+		}
+	}
+}	

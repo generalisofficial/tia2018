@@ -1171,3 +1171,17 @@ country_event = {
 		}
     }
 }
+
+#Election - Gubernatorial
+country_event = {
+	id = election.7
+	title = election.7.t
+	desc = election.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = election.7.o1
+		gubernatorial_elections = yes
+    }
+}
