@@ -1,0 +1,78 @@
+release_idea_transfer = {
+	if = {
+		limit = {
+			FROM = { has_idea = presidential_republic }
+		}
+		add_ideas = presidential_republic
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = has_parliament 
+				}
+			}
+			set_country_flag = has_parliament
+			quickset_parliament = yes 
+			quickset_coalition = yes
+			set_parliament_graphics = yes
+		}
+	}
+	if = {
+		limit = {
+			FROM = { has_idea = parliamentary_system }
+		}
+		ROOT = { 
+			add_ideas = parliamentary_system 
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = has_parliament 
+					}
+				}
+				set_country_flag = has_parliament
+				quickset_parliament = yes 
+				quickset_coalition = yes
+				set_parliament_graphics = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = { has_idea = demarchic_republic }
+		}
+		add_ideas = demarchic_republic
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = has_parliament 
+				}
+			}
+			set_country_flag = has_parliament
+			quickset_parliament = yes 
+			quickset_coalition = yes
+			set_parliament_graphics = yes
+		}
+	}
+	if = {
+		limit = {
+			FROM = { 
+				OR ={
+					has_idea = one_party_state
+					AND = {
+						has_idea = absolute_monarchy
+						NOT = {
+							ROOT = { has_government = monarchist }
+						}
+					}
+				}
+				has_idea = one_party_state
+			}
+		}
+		add_ideas = one_party_state
+	}
+	if = {
+		limit = {
+			has_government = monarchist
+		}
+		add_ideas = absolute_monarchy
+	}
+}

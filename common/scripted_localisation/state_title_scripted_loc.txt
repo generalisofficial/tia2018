@@ -3,7 +3,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OWNER = {
-				num_of_controlled_states = 1
+				num_of_controlled_states > 0
+				num_of_controlled_states < 2
 			}
 		}
 		localization_key = STATE_TITLE_NONE

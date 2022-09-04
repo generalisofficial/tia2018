@@ -2861,7 +2861,6 @@ puppet_government_sync = {
 			}
 		}
 		set_politics = {
-			ruling_party = FROM@current_party_ideology_group
 			elections_allowed = yes
 		}
 		if  = {
@@ -2893,7 +2892,6 @@ puppet_government_sync = {
 			}
 		}
 		set_politics = {
-			ruling_party = FROM@current_party_ideology_group
 			elections_allowed = no
 		}
 		if  = {

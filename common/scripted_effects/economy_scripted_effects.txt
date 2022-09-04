@@ -17,6 +17,11 @@ update_finances = {
 			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
 		}
+		set_variable = { monthly_corporate_tax_revenue  = 1 }
+		multiply_variable = {
+			var = monthly_corporate_tax_revenue
+			value = gross_domestic_product
+		}
 	}
 	if = {
 		limit = {
@@ -26,6 +31,11 @@ update_finances = {
 		multiply_variable = {
 			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
+		}
+		set_variable = { monthly_corporate_tax_revenue  = 0.8 }
+		multiply_variable = {
+			var = monthly_corporate_tax_revenue
+			value = gross_domestic_product
 		}
 	}
 	if = {
@@ -37,6 +47,11 @@ update_finances = {
 			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
 		}
+		set_variable = { monthly_corporate_tax_revenue  = 0.6 }
+		multiply_variable = {
+			var = monthly_corporate_tax_revenue
+			value = gross_domestic_product
+		}
 	}
 	if = {
 		limit = {
@@ -46,6 +61,11 @@ update_finances = {
 		multiply_variable = {
 			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
+		}
+		set_variable = { monthly_corporate_tax_revenue  = 0.4 }
+		multiply_variable = {
+			var = monthly_corporate_tax_revenue
+			value = gross_domestic_product
 		}
 	}
 	if = {
@@ -57,8 +77,14 @@ update_finances = {
 			var = monthly_income_tax_revenue
 			value = ROOT.max_manpower
 		}
+		set_variable = { monthly_corporate_tax_revenue  = 0.2 }
+		multiply_variable = {
+			var = monthly_corporate_tax_revenue
+			value = gross_domestic_product
+		}
 	}
 	round_variable = monthly_income_tax_revenue
+	round_variable = monthly_corporate_tax_revenue
 
 	# EXPENSES - SOCIAL WELFARE BUDGET
 	if = {
@@ -98,7 +124,7 @@ update_finances = {
 		limit = {
 			has_idea = extensive_education_spending
 		}
-		set_variable = { monthly_education_expenses = 0.000075 }
+		set_variable = { monthly_education_expenses = 0.0000075 }
 		multiply_variable = {
 			var = monthly_education_expenses
 			value = ROOT.max_manpower
@@ -108,9 +134,9 @@ update_finances = {
 		limit = {
 			has_idea = moderate_education_spending
 		}
-		set_variable = { monthly_education_expenses = 0.00005 }
+		set_variable = { monthly_education_expenses = 0.000005 }
 		multiply_variable = {
-			var = monthly_healthcare_expenses
+			var = monthly_education_expenses
 			value = ROOT.max_manpower
 		}
 	}
@@ -118,7 +144,7 @@ update_finances = {
 		limit = {
 			has_idea = minimal_education_spending
 		}
-		set_variable = { monthly_education_expenses = 0.000015 }
+		set_variable = { monthly_education_expenses = 0.0000015 }
 		multiply_variable = {
 			var = monthly_education_expenses
 			value = ROOT.max_manpower
@@ -131,7 +157,7 @@ update_finances = {
 		limit = {
 			has_idea = extensive_healthcare_spending
 		}
-		set_variable = { monthly_healthcare_expenses = 0.000075 }
+		set_variable = { monthly_healthcare_expenses = 0.0000075 }
 		multiply_variable = {
 			var = monthly_healthcare_expenses
 			value = ROOT.max_manpower
@@ -141,7 +167,7 @@ update_finances = {
 		limit = {
 			has_idea = moderate_healthcare_spending
 		}
-		set_variable = { monthly_healthcare_expenses = 0.00005 }
+		set_variable = { monthly_healthcare_expenses = 0.000005 }
 		multiply_variable = {
 			var = monthly_healthcare_expenses
 			value = ROOT.max_manpower
@@ -151,7 +177,7 @@ update_finances = {
 		limit = {
 			has_idea = minimal_healthcare_spending
 		}
-		set_variable = { monthly_healthcare_expenses = 0.000015 }
+		set_variable = { monthly_healthcare_expenses = 0.0000015 }
 		multiply_variable = {
 			var = monthly_healthcare_expenses
 			value = ROOT.max_manpower
@@ -197,7 +223,7 @@ update_finances = {
 		limit = {
 			has_idea = extensive_law_enforcement_spending
 		}
-		set_variable = { monthly_law_enforcement_expenses = 0.000075 }
+		set_variable = { monthly_law_enforcement_expenses = 0.0000075 }
 		multiply_variable = {
 			var = monthly_law_enforcement_expenses
 			value = ROOT.max_manpower
@@ -207,7 +233,7 @@ update_finances = {
 		limit = {
 			has_idea = moderate_law_enforcement_spending
 		}
-		set_variable = { monthly_law_enforcement_expenses = 0.00005 }
+		set_variable = { monthly_law_enforcement_expenses = 0.000005 }
 		multiply_variable = {
 			var = monthly_law_enforcement_expenses
 			value = ROOT.max_manpower
@@ -217,7 +243,7 @@ update_finances = {
 		limit = {
 			has_idea = minimal_law_enforcement_spending
 		}
-		set_variable = { monthly_law_enforcement_expenses = 0.000015 }
+		set_variable = { monthly_law_enforcement_expenses = 0.0000015 }
 		multiply_variable = {
 			var = monthly_law_enforcement_expenses
 			value = ROOT.max_manpower

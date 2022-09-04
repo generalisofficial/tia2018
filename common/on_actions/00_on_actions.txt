@@ -385,9 +385,18 @@ on_actions = {
 	on_pride_of_the_fleet_sunk = {
 	}
 
+	#ROOT = nation being released, FROM = overlord
 	on_release_as_puppet = {
 		effect = {
             ROOT = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = violent_non_state_actor
+						}
+					}
+					release_idea_transfer = yes
+				}
 				add_political_power = 100
 				quickset_parliament = yes 
 				quickset_coalition = yes 
@@ -407,15 +416,9 @@ on_actions = {
 		}
 	}
 
+	#ROOT is free nation FROM is releaser
 	on_release_as_free = {
 		effect = {
-			ROOT = { 
-				add_political_power = 100
-				add_ideas = non_member_state 
-				country_event = system.20 
-				inherit_technology = FROM
-				economy_setup = yes
-			}
 			if = {
 				limit = {
 					ROOT = { has_country_flag = has_parliament }
@@ -426,6 +429,21 @@ on_actions = {
 				else = {
 					ROOT = { quickset_parliament = yes quickset_coalition = yes }
 				}
+			}
+			ROOT = { 
+				if = {
+					limit = {
+						NOT = {
+							has_idea = violent_non_state_actor
+						}
+					}
+					release_idea_transfer = yes
+				}
+				add_political_power = 100
+				add_ideas = non_member_state 
+				country_event = system.20 
+				inherit_technology = FROM
+				economy_setup = yes
 			}
 		}
 	}
