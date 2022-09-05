@@ -1,12 +1,12 @@
 ﻿capital = 336
 
-oob = "SIG_2018"
+oob = "SGP_2018"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SIG_2018_naval_mtg"
+		set_naval_oob = "SGP_2018_naval_mtg"
 	else = {
-		set_naval_oob = "SIG_2018_naval_legacy"
+		set_naval_oob = "SGP_2018_naval_legacy"
 	}
 }
 
@@ -154,10 +154,10 @@ set_popularities = {
 # Characters - Military
 
 # Characters - Political
-recruit_character = SIG_lee_hsien_loong
-recruit_character = SIG_tan_cheng_bock
-recruit_character = SIG_low_thia_khiang
-recruit_character = SIG_goh_meng_seng
+recruit_character = SGP_lee_hsien_loong
+recruit_character = SGP_tan_cheng_bock
+recruit_character = SGP_low_thia_khiang
+recruit_character = SGP_goh_meng_seng
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

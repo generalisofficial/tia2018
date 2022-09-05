@@ -1,5 +1,177 @@
 foreign_affairs = {
 
+	# Formable Nations
+	reform_yugoslavia = {
+		visible = {
+		    OR = {
+			    original_tag = SER
+				original_tag = CRO
+				original_tag = KOS
+				original_tag = BOS
+				original_tag = SLV
+				original_tag = MKD
+				original_tag = MNT
+			}
+		}
+		
+		available = {
+			owns_state = 107
+			owns_state = 104
+			owns_state = 109
+		}
+		
+		icon = yugoslavia
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_country_flag = is_formable_nation
+			# event
+			set_cosmetic_tag = YUG
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = SER
+				        is_core_of = CRO
+						is_core_of = KOS
+						is_core_of = BOS
+						is_core_of = SLV
+						is_core_of = MKD
+						is_core_of = MNT
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	reform_the_soviet_union = {
+		visible = {
+		    OR = {
+			    original_tag = RUS
+				original_tag = UKR
+				original_tag = BLR
+				original_tag = MOL
+				original_tag = TRA
+				original_tag = LAT
+				original_tag = LIT
+				original_tag = EST
+				original_tag = GEO
+				original_tag = ARM
+				original_tag = AZR
+				original_tag = NGK
+				original_tag = ABK
+				original_tag = SOS
+				original_tag = KAZ
+				original_tag = UZB
+				original_tag = TMS
+				original_tag = TAJ
+				original_tag = KYR
+				original_tag = CHE
+				original_tag = DAG
+			}
+		}
+		
+		available = {
+		    has_government = communist
+			owns_state = 219
+			owns_state = 202
+			owns_state = 206
+		}
+		
+		icon = soviet_union
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_country_flag = is_formable_nation
+			news_event = formable_nations.1
+			set_cosmetic_tag = SUN
+			set_party_name = {
+				ideology = communist
+				long_name = RUS_communist_party_KPSS_long
+				name = RUS_communist_party_KPSS
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_core_of = UKR
+						is_core_of = BLR
+						is_core_of = MOL
+						is_core_of = TRA
+						is_core_of = LAT
+						is_core_of = LIT
+						is_core_of = EST
+						is_core_of = GEO
+						is_core_of = ARM
+						is_core_of = AZR
+						is_core_of = NGK
+						is_core_of = ABK
+						is_core_of = SOS
+						is_core_of = KAZ
+						is_core_of = UZB
+						is_core_of = TMS
+						is_core_of = TAJ
+						is_core_of = KYR
+					}
+				}
+				add_core_of = ROOT
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	reform_czechoslovakia = {
+		visible = {
+		    OR = {
+			    original_tag = CZE
+				original_tag = SLO
+			}
+		}
+		
+		available = {
+			owns_state = 9
+			owns_state = 70
+		}
+		
+		icon = czechoslovakia
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_country_flag = is_formable_nation
+			# event
+			set_cosmetic_tag = CSK
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = CZE
+				        is_core_of = SLO
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	# Foreign Affairs
 	switch_recognition_to_PRC = {
 		visible = {
 			NOT = {
@@ -222,7 +394,7 @@ foreign_affairs = {
 		}
 		
 		complete_effect = {
-			set_cosmetic_tag = SWZ_2018
+			set_cosmetic_tag = ESW
 			news_event = swaziland.1
 		}
 		
@@ -238,87 +410,6 @@ foreign_affairs = {
 				factor = 100
 				date > 2018.4.18
 			}
-		}
-	}
-
-	reform_the_soviet_union = {
-		visible = {
-		    OR = {
-			    original_tag = RUS
-				original_tag = UKR
-				original_tag = BLR
-				original_tag = MOL
-				original_tag = TRA
-				original_tag = LAT
-				original_tag = LIT
-				original_tag = EST
-				original_tag = GEO
-				original_tag = ARM
-				original_tag = AZR
-				original_tag = NGK
-				original_tag = ABK
-				original_tag = SOS
-				original_tag = KAZ
-				original_tag = UZB
-				original_tag = TMS
-				original_tag = TAJ
-				original_tag = KYR
-				original_tag = CHE
-				original_tag = DAG
-			}
-		}
-		
-		available = {
-		    has_government = communist
-			owns_state = 219
-			owns_state = 202
-			owns_state = 206
-		}
-		
-		icon = soviet_union
-		
-		cost = 100
-		fire_only_once = yes
-		
-		complete_effect = {
-			set_country_flag = is_formable_nation
-			news_event = formable_nations.1
-			set_cosmetic_tag = USSR
-			set_party_name = {
-				ideology = communist
-				long_name = RUS_communist_party_KPSS_long
-				name = RUS_communist_party_KPSS
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = RUS
-						is_core_of = UKR
-						is_core_of = BLR
-						is_core_of = MOL
-						is_core_of = TRA
-						is_core_of = LAT
-						is_core_of = LIT
-						is_core_of = EST
-						is_core_of = GEO
-						is_core_of = ARM
-						is_core_of = AZR
-						is_core_of = NGK
-						is_core_of = ABK
-						is_core_of = SOS
-						is_core_of = KAZ
-						is_core_of = UZB
-						is_core_of = TMS
-						is_core_of = TAJ
-						is_core_of = KYR
-					}
-				}
-				add_core_of = ROOT
-			}
-		}
-		
-		ai_will_do = {
-			factor = 100
 		}
 	}
 
@@ -355,69 +446,6 @@ foreign_affairs = {
 		
 		ai_will_do = {
 			factor = 1
-		}
-	}
-
-	reform_yugoslavia = {
-		visible = {
-		    OR = {
-			    original_tag = SER
-				original_tag = CRO
-				original_tag = KOS
-				original_tag = BOS
-				original_tag = SLV
-				original_tag = MKD
-				original_tag = MNT
-			}
-		}
-		
-		available = {
-			owns_state = 45
-			owns_state = 107
-			owns_state = 108
-			owns_state = 927
-			owns_state = 785
-			owns_state = 1012
-			owns_state = 1013
-			owns_state = 106
-			owns_state = 1014
-			owns_state = 105
-			owns_state = 104
-			owns_state = 848
-			owns_state = 103
-			owns_state = 109
-			owns_state = 736
-			owns_state = 163
-			owns_state = 102
-		}
-		
-		icon = yugoslavia
-		
-		cost = 100
-		fire_only_once = yes
-		
-		complete_effect = {
-			set_country_flag = is_formable_nation
-			set_cosmetic_tag = YUG
-			every_state = {
-			    limit = {
-				    OR = {
-				        is_core_of = SER
-				        is_core_of = CRO
-						is_core_of = KOS
-						is_core_of = BOS
-						is_core_of = SLV
-						is_core_of = MKD
-						is_core_of = MNT
-				    }
-			    }
-			    add_core_of = ROOT
-		    }
-			
-		}
-		
-		ai_will_do = {
-			factor = 100
 		}
 	}
 
@@ -470,7 +498,7 @@ foreign_affairs = {
 	
 		visible = {
 			original_tag = CHI
-			NOT = { has_cosmetic_tag = TAIWAN }
+			NOT = { has_cosmetic_tag = TWN }
 			NOT = { has_global_flag = ROC_victory }
 			country_exists = PRC
 			owns_state = 524
@@ -482,7 +510,7 @@ foreign_affairs = {
 		
 		complete_effect = {
 			custom_effect_tooltip = TT_taiwan_independence
-			set_cosmetic_tag = TAIWAN
+			set_cosmetic_tag = TWN
 			news_event = china.3
 			set_global_flag = taiwan_independence
 			every_state = {
@@ -1078,6 +1106,9 @@ foreign_affairs = {
 			SER = { owns_state = 1201 }
 			owns_state = 785
 			785 = { is_claimed_by = SER }
+			NOT = {
+				SER = { has_cosmetic_tag = YUG }
+			}
 		}
 		
 		available = {
