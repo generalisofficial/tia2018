@@ -26,9 +26,9 @@ foreign_affairs = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			set_country_flag = is_formable_nation
 			# event
 			set_cosmetic_tag = YUG
+			add_ideas = federal
 			every_state = {
 			    limit = {
 				    OR = {
@@ -91,9 +91,9 @@ foreign_affairs = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			set_country_flag = is_formable_nation
 			news_event = formable_nations.1
 			set_cosmetic_tag = SUN
+			add_ideas = federal
 			set_party_name = {
 				ideology = communist
 				long_name = RUS_communist_party_KPSS_long
@@ -151,9 +151,9 @@ foreign_affairs = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			set_country_flag = is_formable_nation
 			# event
 			set_cosmetic_tag = CSK
+			add_ideas = federal
 			every_state = {
 			    limit = {
 				    OR = {
@@ -164,6 +164,51 @@ foreign_affairs = {
 			    add_core_of = ROOT
 		    }
 			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	form_iberia = {
+		visible = {
+		    OR = {
+			    original_tag = SPR
+				original_tag = POR
+				original_tag = CAT
+				original_tag = BSQ
+				original_tag = GLC
+			}
+		}
+		
+		available = {
+			owns_state = 41
+			owns_state = 112
+			owns_state = 165
+		}
+		
+		icon = iberia
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			# event
+			set_cosmetic_tag = IBR
+			add_ideas = federal
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = POR
+				        is_core_of = SPR
+						is_core_of = CAT
+						is_core_of = BSQ
+						is_core_of = GLC
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
 		}
 		
 		ai_will_do = {

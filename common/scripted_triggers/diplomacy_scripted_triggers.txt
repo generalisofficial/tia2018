@@ -50,3 +50,13 @@ has_constitutional_monarchy_cosmetic_tag = {
 		has_cosmetic_tag = ADO_monarchist
 	}
 }
+
+is_formable_nation = {
+	OR = {
+		has_cosmetic_tag = YUG
+		has_cosmetic_tag = IBR
+		has_cosmetic_tag = TWN
+		has_cosmetic_tag = CSK
+		has_cosmetic_tag = EAF
+	}
+}
