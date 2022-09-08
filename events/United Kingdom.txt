@@ -142,8 +142,56 @@ country_event = { #Blaiklock Resigns
 	}
 }
 
-#britain.5 (empty)
-#britain.6 (empty)
+country_event = { #Death of Elizabeth II
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_leader = {
+			name = "Elizabeth II"
+			ruling_only = no
+		}
+		date > 2022.9.8
+		date < 2023.1.1
+	}
+	
+	option = {
+		name = britain.5.o1
+		if = {
+			limit = {
+				OR = {
+					has_idea = idea_constitutional_monarchy
+					has_government = monarchist
+				}
+			}
+			news_event = britain.6
+		}
+		kill_ideology_leader = monarchist
+		create_country_leader = {
+	        name = "Charles III"
+	        picture = GFX_Portrait_ENG_Charles_III
+	        ideology = monarchist_ideology
+        }
+	}
+}
+
+news_event = { #Death of Queen Elizabeth II
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	picture = GFX_news_event_elizabeth_ii
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = britain.6.o1
+	}
+}
 
 country_event = { #2019 UKIP leadership election
 	id = britain.7
