@@ -2041,6 +2041,12 @@ set_parliament_speaker_plurality = {
 election_pulse = {
 	add_timed_idea = { idea = electoral_honeymoon days = 30 }
 	if = {
+		limit = {
+			has_idea = federal
+		}
+		country_event = election.7
+	}
+	if = {
 	    limit = {
 		    original_tag = GER
 			has_global_flag = akk_elected

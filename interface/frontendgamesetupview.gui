@@ -610,9 +610,33 @@ guiTypes = {
 			name = "title"
 			position = { x = 435 y = 12 }
 			textureFile = ""
-			font = "hoi_24header"
+			font = "hoi_22tech"
 			borderSize = {x = 0 y = 0}
 			text = "FE_SELECT_COUNTRY"
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "great_powers_title"
+			position = { x = 435 y = 35 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = FE_GREAT_POWERS
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "middle_powers_title"
+			position = { x = 435 y = 315 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = FE_MIDDLE_POWERS
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -729,101 +753,102 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "leader_label"
-				position = { x = 0 y = -5 }
-				font = "hoi4_typewriter16"
+				position = { x = 139 y = 105 }
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "leader"
-				position = { x = 0 y = 12 }
+				position = { x = 139 y = 120 }
 				textureFile = ""
-				font = "hoi4_typewriter16"
+				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				text = ""
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "ideology_label"
-				position = { x = 0 y = 35 }
+				position = { x = 0 y = 145 }
 				textureFile = ""
-				font = "hoi4_typewriter16"
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "ideology"
-				position = { x = 0 y = 52 }
-				font = "hoi4_typewriter16"
+				position = { x = 0 y = 160 }
+				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "government_label"
-				position = { x = 0 y = 75 }
-				font = "hoi4_typewriter16"
+				position = { x = 139 y = 145 }
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "GOVERNMENT"
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "government"
-				position = { x = 0 y = 92 }
-				font = "hoi4_typewriter16"
+				position = { x = 139 y = 160 }
+				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				text = "FE_INTERESTING_COUNTRIES"
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "elections_label"
-				position = { x = 0 y = 115 }
-				font = "hoi4_typewriter16"
+				position = { x = 70 y = 178 }
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
-				text = "ELECTIONS"
+				text = "POLITICS_NEXTELECTION"
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "elections"
-				position = { x = 0 y = 132 }
-				font = "hoi4_typewriter16"
+				position = { x = 70 y = 191 }
+				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "party_label"
-				position = { x = 0 y = 155 }
-				font = "hoi4_typewriter16"
+				position = { x = 0 y = 110 }
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "RULING_PARTY"
 				maxWidth = 340
-				format = left
+				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "party"
-				position = { x = 0 y = 172 }
-				font = "hoi4_typewriter16"
+				position = { x = 0 y = 125 }
+				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
-				format = left
+				maxHeight = 20
+				format = center
 			}
 		}
 		
@@ -845,7 +870,7 @@ guiTypes = {
 			iconType ={
 				name ="pol_faction_icon"
 				spriteType = "GFX_pol_factions_strip"
-				position = { x= 0 y = 0 }
+				position = { x= -279 y = 40 }
 				frame = 1
 			}
 			
@@ -856,7 +881,7 @@ guiTypes = {
 				
 				gridboxType = {
 					name ="ideas_grid"
-					position = { x = 0 y = 0 }
+					position = { x = -80 y = 0 }
 					size = { width = 100% height = 70 }
 					slotsize = { width = 60 height = 66 }
 					max_slots = { x = 3 y = 1 }

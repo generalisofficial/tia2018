@@ -1,0 +1,18 @@
+wagon_data = {
+	entity = wagon_1_entity
+	scale = 0.35
+	rotation = 90
+	shift = { 0.0 0.6 0.0 }
+	length = 1.8
+}
+
+default = {
+	motorized_equipment_1 = {
+
+		wagon_0 = wagon_1_entity
+
+		wagons = {
+			wagon_1_entity
+		}
+	}
+}

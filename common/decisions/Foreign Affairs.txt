@@ -216,6 +216,91 @@ foreign_affairs = {
 		}
 	}
 
+	reform_the_peru_bolivian_confederation = {
+		visible = {
+		    OR = {
+			    original_tag = PRU	
+				original_tag = BOL
+			}
+		}
+		
+		available = {
+		    owns_state = 303
+			owns_state = 302
+		}
+		
+		icon = peru_bolivia
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = PRB
+			add_ideas = federal
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = PRU
+				        is_core_of = BOL
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	reform_central_america = {
+		visible = {
+		    OR = {
+			    original_tag = ELS
+				original_tag = GUA
+				original_tag = HON
+				original_tag = NIC
+				original_tag = COS
+			}
+		}
+		
+		available = {
+		    owns_state = 313
+			owns_state = 314
+			owns_state = 312
+			owns_state = 317
+			owns_state = 316
+		}
+		
+		icon = central_america
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = CEA
+			add_ideas = federal
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = ELS
+				        is_core_of = GUA
+						is_core_of = HON
+						is_core_of = NIC
+						is_core_of = COS
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+			
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	# Foreign Affairs
 	switch_recognition_to_PRC = {
 		visible = {
@@ -554,7 +639,6 @@ foreign_affairs = {
 		}
 		
 		complete_effect = {
-			custom_effect_tooltip = TT_taiwan_independence
 			set_cosmetic_tag = TWN
 			news_event = china.3
 			set_global_flag = taiwan_independence

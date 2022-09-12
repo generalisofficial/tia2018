@@ -1,82 +1,88 @@
 bookmarks = {
 	bookmark = {
-		name = "INFORMATION_AGE_NAME"
-		desc = "INFORMATION_AGE_DESC"
+		name = "TIA_2018_NAME"
+		desc = "TIA_2018_DESC"
 		date = 2018.1.1.12
 		picture = "GFX_select_date_1939"
 		default_country = "USA"
 		default = yes
 	
 		"USA"={
-			history = "USA_INFORMATION_AGE_DESC"
+			history = "USA_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
-			    idea_united_nations_security_council_member
+				idea_united_nations_security_council_member
 				nuclear_weapons_state
+				idea_constitution_of_the_united_states
+				idea_american_exceptionalism
+				idea_patriot_act
 			}
 		}
 
 		"PRC"={
-			history = "PRC_INFORMATION_AGE_DESC"
+			history = "PRC_COUNTRY_DESC"
 			ideology = communist
 			ideas={
 				idea_united_nations_security_council_member
-				nuclear_weapons_state
 				shanghai_cooperation_organization_member
+				nuclear_weapons_state
+				idea_great_firewall
 			}			
 		}
 		
 		"RUS"={
-			history = "RUS_INFORMATION_AGE_DESC"
+			history = "RUS_COUNTRY_DESC"
 			ideology = national_conservative
 			ideas = {
 				idea_united_nations_security_council_member
-				nuclear_weapons_state
 				commonwealth_of_independent_states_member
 				shanghai_cooperation_organization_member
+				nuclear_weapons_state
 			}
 		}
 		
 		"ENG"={
-			history = "ENG_INFORMATION_AGE_DESC"
+			history = "ENG_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
+				idea_constitutional_monarchy
 				idea_united_nations_security_council_member
-				nuclear_weapons_state
 				idea_european_union_member
 				idea_commonwealth_of_nations_member
+				nuclear_weapons_state
+				idea_brexit
 			}
 		}
 		
 		"FRA"={
-			history = "FRA_INFORMATION_AGE_DESC"
+			history = "FRA_COUNTRY_DESC"
 			ideology = social_liberal
 			ideas = {
-			    idea_united_nations_security_council_member
-				nuclear_weapons_state
+				idea_united_nations_security_council_member
 				idea_european_union_member
+				nuclear_weapons_state
 			}
 		}
-
 		
 		"GER"={
-			history = "GER_INFORMATION_AGE_DESC"
+			history = "GER_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
-			    idea_european_union_member
+				idea_european_union_member
 			}
 		}
 		
 		"JAP"={
-			history = "JAP_INFORMATION_AGE_DESC"
+			history = "JAP_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
-			
+				idea_constitutional_monarchy
+				idea_article_9
 			}
 		}
 
 		"RAJ"={
-			history = "RAJ_INFORMATION_AGE_DESC"
+			history = "RAJ_COUNTRY_DESC"
 			ideology = national_conservative
 			ideas = {
 				nuclear_weapons_state
@@ -87,16 +93,34 @@ bookmarks = {
 		
 		"ITA"={
 		    minor = yes
-			history = "ITA_INFORMATION_AGE_DESC"
+			history = "ITA_COUNTRY_DESC"
 			ideology = social_democrat
 			ideas = {
 			    idea_european_union_member
 			}
 		}
+
+		"PAK"={
+		    minor = yes
+			history = "PAK_COUNTRY_DESC"
+			ideology = conservative
+			ideas = {
+			
+			}
+		}
+
+		"SAU"={
+		    minor = yes
+			history = "SAU_COUNTRY_DESC"
+			ideology = monarchist
+			ideas = {
+			
+			}
+		}
 		
 		"PRK"={
 		    minor = yes
-			history = "PRK_INFORMATION_AGE_DESC"
+			history = "PRK_COUNTRY_DESC"
 			ideology = communist
 			ideas = {
 				idea_songun
@@ -105,7 +129,7 @@ bookmarks = {
 		
 		"KOR"={
 		    minor = yes
-			history = "KOR_INFORMATION_AGE_DESC"
+			history = "KOR_COUNTRY_DESC"
 			ideology = social_liberal
 			ideas = {
 			
@@ -114,24 +138,15 @@ bookmarks = {
 		
 		"PER"={
 		    minor = yes
-			history = "PER_INFORMATION_AGE_DESC"
+			history = "PER_COUNTRY_DESC"
 			ideology = islamist
 			ideas = {
 			}
 		}
 		
-		"SAU"={
-		    minor = yes
-			history = "SAU_INFORMATION_AGE_DESC"
-			ideology = monarchist
-			ideas = {
-			
-			}
-		}
-		
 		"INS"={
 		    minor = yes
-			history = "INS_INFORMATION_AGE_DESC"
+			history = "INS_COUNTRY_DESC"
 			ideology = socialist
 			ideas = {
 			
@@ -140,16 +155,18 @@ bookmarks = {
 		
 		"ISR"={
 		    minor = yes
-			history = "ISR_INFORMATION_AGE_DESC"
+			history = "ISR_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
-			
+				nuclear_weapons_state
+				idea_the_jewish_state
+				idea_law_of_return
 			}
 		}
 		
 		"TUR"={
 		    minor = yes
-			history = "TUR_INFORMATION_AGE_DESC"
+			history = "TUR_COUNTRY_DESC"
 			ideology = national_conservative
 			ideas = {
 			
@@ -158,7 +175,7 @@ bookmarks = {
 		
 		"SWE"={
 		    minor = yes
-			history = "SWE_INFORMATION_AGE_DESC"
+			history = "SWE_COUNTRY_DESC"
 			ideology = social_democrat
 			ideas = {
 			    idea_european_union_member
@@ -168,7 +185,7 @@ bookmarks = {
 		
 		"POL"={
 		    minor = yes
-			history = "POL_INFORMATION_AGE_DESC"
+			history = "POL_COUNTRY_DESC"
 			ideology = national_conservative
 			ideas = {
 			    idea_european_union_member
@@ -177,7 +194,7 @@ bookmarks = {
 		
 		"UKR"={
 		    minor = yes
-			history = "UKR_INFORMATION_AGE_DESC"
+			history = "UKR_COUNTRY_DESC"
 			ideology = classical_liberal
 			ideas = {
 			
@@ -186,7 +203,7 @@ bookmarks = {
 		
 		"SPR"={
 		    minor = yes
-			history = "SPR_INFORMATION_AGE_DESC"
+			history = "SPR_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
 			    idea_european_union_member
@@ -195,7 +212,7 @@ bookmarks = {
 		
 		"AST"={
 		    minor = yes
-			history = "AST_INFORMATION_AGE_DESC"
+			history = "AST_COUNTRY_DESC"
 			ideology = classical_liberal
 			ideas = {
 			
@@ -204,7 +221,7 @@ bookmarks = {
 		
 		"SAF"={
 		    minor = yes
-			history = "SAF_INFORMATION_AGE_DESC"
+			history = "SAF_COUNTRY_DESC"
 			ideology = social_democrat
 			ideas = {
 			
@@ -213,7 +230,7 @@ bookmarks = {
 		
 		"VEN"={
 		    minor = yes
-			history = "VEN_INFORMATION_AGE_DESC"
+			history = "VEN_COUNTRY_DESC"
 			ideology = socialist
 			ideas = {
 			
@@ -222,7 +239,7 @@ bookmarks = {
 
 		"BEL"={
 		    minor = yes
-			history = "BEL_INFORMATION_AGE_DESC"
+			history = "BEL_COUNTRY_DESC"
 			ideology = classical_liberal
 			ideas = {
 			    idea_european_union_member
@@ -231,7 +248,7 @@ bookmarks = {
 		
 		"IRE"={
 		    minor = yes
-			history = "IRE_INFORMATION_AGE_DESC"
+			history = "IRE_COUNTRY_DESC"
 			ideology = conservative
 			ideas = {
 			    idea_european_union_member
@@ -240,7 +257,7 @@ bookmarks = {
 		
 		"BRA"={
 		    minor = yes
-			history = "BRA_INFORMATION_AGE_DESC"
+			history = "BRA_COUNTRY_DESC"
 			ideology = classical_liberal
 			ideas = {
 			    
@@ -249,7 +266,7 @@ bookmarks = {
 		
 		"THA"={
 		    minor = yes
-			history = "THA_INFORMATION_AGE_DESC"
+			history = "THA_COUNTRY_DESC"
 			ideology = national_conservative
 			ideas = {
 			
@@ -258,7 +275,7 @@ bookmarks = {
 		
 		"ETH"={
 		    minor = yes
-			history = "ETH_INFORMATION_AGE_DESC"
+			history = "ETH_COUNTRY_DESC"
 			ideology = socialist
 			ideas = {
 			
@@ -267,17 +284,8 @@ bookmarks = {
 		
 		"CAN"={
 		    minor = yes
-			history = "CAN_INFORMATION_AGE_DESC"
+			history = "CAN_COUNTRY_DESC"
 			ideology = social_liberal
-			ideas = {
-			
-			}
-		}
-
-		"SYR"={
-		    minor = yes
-			history = "SYR_INFORMATION_AGE_DESC"
-			ideology = right_wing_nationalist
 			ideas = {
 			
 			}

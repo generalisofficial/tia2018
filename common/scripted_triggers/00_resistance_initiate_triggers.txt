@@ -7,6 +7,9 @@ should_not_activate_active_crypto_bonuses = {
 	always = no
 }
 
+# ROOT = state
+# FROM = occupier
+# FROM.FROM = occupied
 should_initiate_resistance = {
     state_population > 1
     OR = {
@@ -18,8 +21,9 @@ should_initiate_resistance = {
             }
         }
         AND = {
-            check_variable = { core_countries^num > 1 }
-            FROM = { is_democracy = no }
+            #check_variable = { core_countries^num > 1 }
+            #FROM = { is_democracy = no }
+            always = no # Archived
         }
     }
 }
