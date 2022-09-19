@@ -107,15 +107,15 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = NGK
+		target = ART
 		autonomous_state = autonomy_puppet_state
 	}
 	else = {
-		puppet = NGK
+		puppet = ART
 	}
 }
 
-NGK = {
+ART = {
 	set_politics = {	
 		ruling_party = conservative
 		last_election = "2015.3.31"

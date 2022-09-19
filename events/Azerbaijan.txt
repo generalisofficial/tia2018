@@ -41,9 +41,15 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {	#Hand over Afrin to the Regime
+	option = {
 		name = azerbaijan.2.o1
 		transfer_state = 1097
+		if = {
+			limit = {
+				ART = { owns_state = 1295 }
+			}
+			transfer_state = 1295
+		}
 	}
 }
 
@@ -61,7 +67,7 @@ country_event = {
 	}
 }
 
-#NGK - Failed Operation Iron Fist
+#ART - Failed Operation Iron Fist
 country_event = {
 	id = azerbaijan.4
 	title = azerbaijan.4.t
@@ -75,7 +81,7 @@ country_event = {
 	}
 }
 
-#NGK - Successful Operation Iron Fist
+#ART - Successful Operation Iron Fist
 country_event = {
 	id = azerbaijan.5
 	title = azerbaijan.5.t

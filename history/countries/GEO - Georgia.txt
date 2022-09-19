@@ -115,11 +115,11 @@ set_country_flag = orthodox
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 76.25 }
+set_variable = { social_democrat_seats = 77.19 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 13.69 }
-set_variable = { conservative_seats = 5.03 }
-set_variable = { national_conservative_seats = 5.03 }
+set_variable = { classical_liberal_seats = 18.12 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 4.69 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -132,26 +132,29 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2016.10.8"
+	last_election = "2016.10.31"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 76.25
-	classical_liberal = 13.69
-    conservative = 5.03
-    national_conservative = 5.03
+	social_democrat = 60.69
+	classical_liberal = 26.66
+	social_liberal = 6.66
+	conservative = 3.33
+    national_conservative = 2.66
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = GEO_giorgi_kvirikashvili
-recruit_character = GEO_davit_bakradze
-recruit_character = GEO_grigol_vashadze
+recruit_character = GEO_davit_bagrationi
 recruit_character = GEO_irma_inashvili
-recruit_character = GEO_david_bagration
+recruit_character = GEO_davit_bakradze
+recruit_character = GEO_mikheil_saakashvili
+recruit_character = GEO_mamuka_khazaradze
+recruit_character = GEO_giorgi_kvirikashvili
+recruit_character = GEO_nugzar_avaliani
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

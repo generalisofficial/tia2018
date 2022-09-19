@@ -51,50 +51,49 @@ military_affairs = {
 
 		visible = {
 			original_tag = AZR
-			NOT = { has_war_with = NGK }
-			owns_state = 877
-			NGK = { owns_state = 1097 }
+			ART = { owns_state = 1097 }
 		}
 		
 		available = {
-			owns_state = 877
-			NGK = { owns_state = 1097 }
-			NOT = { has_war_with = NGK }
+			owns_state = 1296
+			controls_state = 1296
+			ART = { owns_state = 1097 }
+			NOT = { has_war_with = ART }
 		}
 		
 		complete_effect = {
 			news_event = azerbaijan.1
+			add_named_threat = { threat = 3 name = threat_special_operation }	
 			start_border_war = {
                 change_state_after_war = no
                 attacker = {
-                    state = 877
-                    num_provinces = 3
+                    state = 1296
+                    num_provinces = 1
                     on_win = azerbaijan.2
                     on_lose = azerbaijan.3
                 }		
                 defender = {
                    state = 1097
-                   num_provinces = 3
+                   num_provinces = 1
                    on_win = azerbaijan.4
                    on_lose = azerbaijan.5
                 }
 	        }
 		}
 		
-		icon = democracy
+		icon = military_plan
 
 		fire_only_once = yes
 		
-		cost = 25
+		cost = 50
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				factor = 200
+				add = 50
 				date > 2020.9.27
 			}
 		}
-
 	}
 
 	launch_operation_olive_branch = {
@@ -114,7 +113,7 @@ military_affairs = {
 		
 		complete_effect = {
 		    news_event = turkey.5
-			add_named_threat = { threat = 3 name = threat_operation_olive_branch }	
+			add_named_threat = { threat = 3 name = threat_special_operation }	
 			start_border_war = {
                 change_state_after_war = no
                 attacker = {
@@ -132,15 +131,15 @@ military_affairs = {
 	        }
 		}
 		
-		icon = syrian_interim_government
+		icon = military_plan
 		
 		fire_only_once = yes
 		cost = 15
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				add = 100
+				add = 50
 				date > 2018.1.20
 			}
 		}
