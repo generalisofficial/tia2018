@@ -634,7 +634,6 @@ domestic_affairs = {
 	repeal_the_first_amendment = {
 		
 		visible = {
-			original_tag = USA
 			has_idea = idea_constitution_of_the_united_states
 		}
 
@@ -672,7 +671,6 @@ domestic_affairs = {
 	repeal_the_second_amendment = {
 		
 		visible = {
-			original_tag = USA
 			has_idea = idea_constitution_of_the_united_states
 		}
 
@@ -708,9 +706,12 @@ domestic_affairs = {
 	}
 
 	introduce_the_FOMLACM_bill = {
+
+		allowed = {
+			original_tag = HKN
+		}
 		
 		visible = {
-			original_tag = HKN
 			is_subject_of = PRC
 		}
 
@@ -733,7 +734,8 @@ domestic_affairs = {
 				add_ideas = civil_liberties_authoritarian
 			}
 			hidden_effect = {
-				add_timed_idea = { idea = idea_large_scale_protests days = 300 }
+				add_ideas = idea_large_scale_protests
+				set_country_flag = hong_kong_protests
 				news_event = hong_kong.1
 			}
 		}
@@ -748,9 +750,8 @@ domestic_affairs = {
 	}
 
 	repeal_the_FOMLACM_bill = {
-		
+
 		visible = {
-			original_tag = HKN
 			has_idea = idea_FOMLACM
 		}
 		
@@ -761,12 +762,6 @@ domestic_affairs = {
 		complete_effect = {
 			remove_ideas = idea_FOMLACM
 			add_ideas = civil_liberties_libertarian
-			if = {
-				limit ={
-					has_idea = idea_large_scale_protests
-				}
-				remove_ideas = idea_large_scale_protests
-			}
 		}
 		
 		ai_will_do = {
@@ -829,9 +824,12 @@ domestic_affairs = {
 	}
 
 	finish_decommunization = {
+
+		allowed = {
+			original_tag = UKR
+		}
 		
 		visible = {
-			original_tag = UKR
 			NOT = { has_government = communist }
 			OR = {
 				owns_state = 1170

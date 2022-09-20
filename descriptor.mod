@@ -1,6 +1,5 @@
 version="Early Access 0.5"
 tags={
-	"Alternative History"
 	"Historical"
 	"Ideologies"
 	"Military"
@@ -10,7 +9,6 @@ tags={
 	"Events"
 	"Graphics"
 	"Modern Day"
-	"Total Overhaul"
 	"Total Conversion"
 }
 replace_path="common/abilities"

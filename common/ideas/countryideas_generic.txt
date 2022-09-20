@@ -202,6 +202,26 @@ ideas = {
 				industrial_capacity_dockyard = -0.75
 				production_speed_buildings_factor = -0.75
 			}
+
+			cancel = {
+				OR = {
+					AND = {
+						has_country_flag = velvet_revolution
+						NOT = {
+							has_country_leader = {
+								name = "Serzh Sargsyan"
+								ruling_only = yes
+							}
+						}
+					}
+					AND = {
+						has_country_flag = hong_kong_protests
+						NOT = {
+							has_idea = idea_FOMLACM
+						}
+					}
+				}
+			}
 		}
 
 		idea_monthly_tax_break = {

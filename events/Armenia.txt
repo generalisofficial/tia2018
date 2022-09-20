@@ -1,6 +1,6 @@
 ﻿add_namespace = armenia
 
-country_event = { #Republican Party replaces PM Karapetyan
+country_event = { #Sargsyan for Prime Minister?
 	id = armenia.1
 	title = armenia.1.t
 	desc = armenia.1.d
@@ -10,18 +10,59 @@ country_event = { #Republican Party replaces PM Karapetyan
 	trigger = {
 		original_tag = ARM
 		has_government = national_conservative
-		date > 2019.4.16
-		date < 2020.1.1
+		has_idea = parliamentary_system
+		NOT = { has_country_flag = coalition_social_liberal }
+		date > 2018.4.9
+		date < 2019.1.1
 	}
 	
 	option = {
 		name = armenia.1.o1
-	    add_stability = -0.3
+		ai_chance = {
+			factor = 60
+		}
+		hidden_effect = {
+			add_ideas = idea_large_scale_protests
+			set_country_flag = velvet_revolution
+			news_event = armenia.2
+		}
 		retire_country_leader = yes
 		create_country_leader = {
 	        name = "Serzh Sargsyan"
 	        picture = GFX_Portrait_ARM_Serzh_Sargsyan
 	        ideology = national_conservative_ideology
+			traits = { strongman friend_of_russia }
         }
+	}
+
+	option = {
+		name = armenia.1.o2
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+news_event = { #MerzhirSerzhin
+	id = armenia.2
+	title = armenia.2.t
+	desc = armenia.2.d
+	picture = GFX_news_event_armenian_revolution
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = armenia.2.o1
+		trigger = {
+			has_idea = civil_liberties_libertarian
+		}
+	}
+
+	option = {
+		name = armenia.2.o2
+		trigger = {
+			NOT = { has_idea = civil_liberties_libertarian }
+		}
 	}
 }

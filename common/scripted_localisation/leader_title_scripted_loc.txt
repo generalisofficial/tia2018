@@ -84,7 +84,11 @@ defined_text = {
 						has_idea = absolute_monarchy
 					}
 					AND = {
-						original_tag = SWI
+						OR = {
+							original_tag = SWI
+							original_tag = BOT
+							original_tag = SAF
+						}
 						has_idea = parliamentary_system
 					}
 				}
@@ -193,7 +197,12 @@ defined_text = {
 			THIS = {
 				has_idea = parliamentary_system
 			}
-			NOT = { original_tag = SWI }
+			NOT = { 
+				OR = {
+					original_tag = SWI 
+					original_tag = BOT
+					original_tag = SAF
+				}
 		}
 		localization_key = LEADER_TITLE_PRIME_MINISTER
 	}

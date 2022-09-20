@@ -246,3 +246,37 @@ civil_war_support_LNA_indirect = {
         value = 1000
     } 
 }
+
+georgia_help_ukraine_if_abk_sos_occupied = {
+    enable = {
+        original_tag = GEO
+        AND = {
+            OR = {
+                country_exists = ABK
+                country_exists = SOS
+            }
+            OR = {
+                ABK = { is_subject_of = RUS }
+                SOS = { is_subject_of = RUS }
+            }
+            UKR = { has_war_with = RUS }
+        }
+    }
+	abort = {
+        NOT = {
+            OR = {
+                country_exists = ABK
+                country_exists = SOS
+            }
+            OR = {
+                ABK = { is_subject_of = RUS }
+                SOS = { is_subject_of = RUS }
+            }
+        }
+    } 
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "UKR"
+        value = 1000
+    }
+}

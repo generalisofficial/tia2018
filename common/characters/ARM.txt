@@ -1,5 +1,17 @@
 characters={
     #Starting - Political
+	ARM_artur_danielyan={
+		name="Artur Danielyan"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ARM_Artur_Danielyan
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+			traits = { friend_of_russia }
+		}
+	}
 	ARM_karen_karapetyan={
 		name="Karen Karapetyan"
 		portraits={
@@ -22,17 +34,6 @@ characters={
 			ideology=social_conservative
 		}
 	}
-	ARM_nikol_pashinyan={
-		name="Nikol Pashinyan"
-		portraits={
-			civilian={
-				large=GFX_Portrait_ARM_Nikol_Pashinyan
-			}
-		}
-		country_leader={
-			ideology=centrist
-		}
-	}
 	ARM_edmon_marukyan={
 		name="Edmon Marukyan"
 		portraits={
@@ -44,6 +45,17 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
+	ARM_nikol_pashinyan={
+		name="Nikol Pashinyan"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ARM_Nikol_Pashinyan
+			}
+		}
+		country_leader={
+			ideology=centrist
+		}
+	}
 	ARM_armen_rustamyan={
 		name="Armen Rustamyan"
 		portraits={
@@ -52,7 +64,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=democratic_socialist
+			ideology=left_wing_nationalist
+		}
+	}
+	ARM_tachat_sargsyan={
+		name="Tachat Sargsyan"
+		portraits={
+			civilian={
+				large=GFX_Portrait_ARM_Tachat_Sargsyan
+			}
+		}
+		country_leader={
+			ideology=marxist_leninist
 		}
 	}
 	#Starting - Military

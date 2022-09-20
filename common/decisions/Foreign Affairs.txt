@@ -301,6 +301,49 @@ foreign_affairs = {
 		}
 	}
 
+	reform_transcaucasia = {
+		allowed = {
+		    OR = {
+			    original_tag = GEO
+				original_tag = ARM
+				original_tag = AZR
+				original_tag = SOS
+				original_tag = ABK
+				original_tag = ART
+			}
+		}
+		
+		available = {
+		    owns_state = 229
+			owns_state = 230
+			owns_state = 231
+		}
+		
+		icon = central_america #needs icon called transcaucasia
+		
+		cost = 100
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = TRC
+			add_ideas = federal
+			every_state = {
+			    limit = {
+				    OR = {
+				        is_core_of = GEO
+				        is_core_of = ARM
+						is_core_of = AZR
+				    }
+			    }
+			    add_core_of = ROOT
+		    }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	# Foreign Affairs
 	switch_recognition_to_PRC = {
 		visible = {

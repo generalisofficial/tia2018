@@ -94,7 +94,6 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_stagnation
 	limited_conscription
 	commonwealth_of_independent_states_member
 	parliamentary_system
@@ -137,13 +136,13 @@ set_country_flag = orthodox
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 6.58 }
+set_variable = { socialist_seats = 6.66 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 7.78 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 27.35 }
-set_variable = { national_conservative_seats = 58.29 }
+set_variable = { social_liberal_seats = 4.76 }
+set_variable = { classical_liberal_seats = 3.8 }
+set_variable = { conservative_seats = 29.52 }
+set_variable = { national_conservative_seats = 55.26 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -152,9 +151,7 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_national_conservative
-set_country_flag = coalition_socialist
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
-add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
@@ -164,18 +161,20 @@ set_politics = {
 }
 
 set_popularities = {
-    social_liberal = 56.79
-    conservative = 8.26
-    classical_liberal = 6.37
-    national_conservative = 24.70
-    socialist = 3.88
+    social_liberal = 32.81
+	national_conservative = 29.98
+    conservative = 19.69
+    classical_liberal = 13.63
+    socialist = 3.89
 }
 
 # Characters - Military
 
 # Characters - Political
+recruit_character = ARM_artur_danielyan
 recruit_character = ARM_karen_karapetyan
 recruit_character = ARM_gagik_tsarukyan
-recruit_character = ARM_nikol_pashinyan
 recruit_character = ARM_edmon_marukyan
+recruit_character = ARM_nikol_pashinyan
 recruit_character = ARM_armen_rustamyan
+recruit_character = ARM_tachat_sargsyan
