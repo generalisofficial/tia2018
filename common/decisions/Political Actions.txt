@@ -164,10 +164,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -176,10 +173,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = islamist
 				popularity = 0.02
@@ -196,10 +192,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -208,10 +201,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = fascist
 				popularity = 0.02
@@ -228,10 +220,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -240,10 +229,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = right_wing_nationalist
 				popularity = 0.02
@@ -261,10 +249,7 @@ political_actions = {
 		available = {
 			has_country_flag = has_monarchist_party
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -273,10 +258,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = monarchist
 				popularity = 0.02
@@ -293,10 +277,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -305,10 +286,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = national_conservative
 				popularity = 0.02
@@ -325,10 +305,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -337,10 +314,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = conservative
 				popularity = 0.02
@@ -357,10 +333,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -369,10 +342,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = classical_liberal
 				popularity = 0.02
@@ -389,10 +361,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -401,10 +370,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = social_liberal
 				popularity = 0.02
@@ -421,10 +389,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -433,10 +398,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = social_democrat
 				popularity = 0.02
@@ -453,10 +417,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -465,10 +426,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = progressive
 				popularity = 0.02
@@ -485,10 +445,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -497,10 +454,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = socialist
 				popularity = 0.02
@@ -517,10 +473,7 @@ political_actions = {
 
 		available = {
 			NOT = {
-				OR = {
-					has_country_flag = forming_government_1
-					has_country_flag = forming_government_2
-				}
+				has_country_flag = forming_government
 			}
 		}
 
@@ -529,10 +482,9 @@ political_actions = {
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
-		cost = 30
-		days_remove = 30
+		cost = 50
 
-		remove_effect = {
+		complete_effect = {
 			add_popularity = { 
 				ideology = communist
 				popularity = 0.02

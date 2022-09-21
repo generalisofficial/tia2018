@@ -3,8 +3,11 @@ brexit_decisions = {
 	brexit_countdown = {
 		icon = european_union
 
+		allowed = {
+			original_tag = ENG
+		}
+
 		visible = {
-		    original_tag = ENG
 			has_idea = idea_european_union_member
 			NOT = { has_global_flag = brexit_stopped }
 		}
@@ -66,7 +69,6 @@ brexit_decisions = {
 
 	propose_brexit_trade_agreement = {
 		visible = {
-		    original_tag = ENG
 			has_idea = idea_brexit
 		}
 		
@@ -98,7 +100,6 @@ brexit_decisions = {
 	
 	second_brexit_referendum = {
 		visible = {
-		    original_tag = ENG
 			has_idea = idea_brexit
 			NOT = { has_country_flag = brexit_deal }
 		}

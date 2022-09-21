@@ -1893,3 +1893,37 @@ defined_text = {
 		localization_key = TT_legislative_election_event_minority
 	}
 }
+
+defined_text = {
+	name = GetFirstAmendmentRepealed
+	
+	text = {
+		trigger = {
+			has_country_flag = first_amendment_repealed
+		}
+		localization_key = TT_amendment_repealed
+	}
+	text = {
+		trigger = {
+			NOT = { has_country_flag = first_amendment_repealed }
+		}
+		localization_key = TT_amendment_active
+	}
+}
+
+defined_text = {
+	name = GetSecondAmendmentRepealed
+	
+	text = {
+		trigger = {
+			has_country_flag = second_amendment_repealed
+		}
+		localization_key = TT_amendment_repealed
+	}
+	text = {
+		trigger = {
+			NOT = { has_country_flag = second_amendment_repealed }
+		}
+		localization_key = TT_amendment_active
+	}
+}

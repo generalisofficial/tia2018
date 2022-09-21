@@ -21,11 +21,6 @@ country_event = { #Sargsyan for Prime Minister?
 		ai_chance = {
 			factor = 60
 		}
-		hidden_effect = {
-			add_ideas = idea_large_scale_protests
-			set_country_flag = velvet_revolution
-			news_event = armenia.2
-		}
 		retire_country_leader = yes
 		create_country_leader = {
 	        name = "Serzh Sargsyan"
@@ -33,6 +28,13 @@ country_event = { #Sargsyan for Prime Minister?
 	        ideology = national_conservative_ideology
 			traits = { strongman friend_of_russia }
         }
+		news_event = armenia.2
+		add_ideas = idea_large_scale_protests
+		set_country_flag = velvet_revolution
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
 	}
 
 	option = {

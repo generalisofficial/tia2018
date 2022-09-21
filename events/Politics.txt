@@ -373,3 +373,17 @@ news_event = { #(Leader) elected (Title) of (Country)
 		name = politics.15.o1
 	}
 }
+
+news_event = { #(Country,ADJ) Armed Forces sent to crush protests
+	id = politics.16
+	title = politics.16.t
+	desc = politics.16.d
+	picture = GFX_news_event_police_brutality
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = politics.16.o1
+	}
+}
