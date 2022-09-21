@@ -319,7 +319,7 @@ foreign_affairs = {
 			owns_state = 231
 		}
 		
-		icon = central_america #needs icon called transcaucasia
+		icon = transcaucasia
 		
 		cost = 100
 		fire_only_once = yes
@@ -346,13 +346,17 @@ foreign_affairs = {
 
 	# Foreign Affairs
 	switch_recognition_to_PRC = {
-		visible = {
+
+		allowed = {
 			NOT = {
 				OR = {
 					original_tag = CHI
 					original_tag = PRC
 				}
 			}
+		}
+
+		visible = {
 			country_exists = PRC
 			country_exists = CHI
 			NOT = { has_global_flag = taiwan_independence }
@@ -404,13 +408,17 @@ foreign_affairs = {
 	}
 
 	switch_recognition_to_CHI = {
-		visible = {
+
+		allowed = {
 			NOT = {
 				OR = {
 					original_tag = CHI
 					original_tag = PRC
 				}
 			}
+		}
+
+		visible = {
 			country_exists = PRC
 			country_exists = CHI
 			NOT = { has_global_flag = taiwan_independence }
@@ -513,9 +521,12 @@ foreign_affairs = {
 	}
 
 	propose_a_peace_summit_with_eritrea = {
+		
+		allowed = {
+			original_tag = ETH
+		}
 	
 		visible = {
-			original_tag = ETH
 			country_exists = ERI
 			owns_state = 950
 		}
@@ -557,9 +568,8 @@ foreign_affairs = {
 
 	the_kingdom_of_eswatini = {
 	
-		visible = {
+		allowed = {
 			original_tag = SWZ
-			has_government = monarchist
 		}
 		
 		available = {
@@ -578,21 +588,24 @@ foreign_affairs = {
 		cost = 25
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
-				factor = 100
+				add = 50
 				date > 2018.4.18
 			}
 		}
 	}
 
 	send_ultimatum_to_rojava = {
-	
-		visible = {
+
+		allowed = {
 			OR = {
 				original_tag = SYR
 				original_tag = FSA
 			}
+		}
+	
+		visible = {
 			country_exists = ROJ
 			has_global_flag = syrian_civil_war_over
 		}
@@ -624,8 +637,11 @@ foreign_affairs = {
 
 	propose_a_solution_to_the_macedonian_naming_dispute = {
 	
-		visible = {
+		allowed = {
 			original_tag = MKD
+		}
+
+		visible = {
 			country_exists = GRE
 		}
 		
@@ -669,8 +685,11 @@ foreign_affairs = {
 
 	declare_taiwanese_independence = {
 	
-		visible = {
+		allowed = {
 			original_tag = CHI
+		}
+
+		visible = {
 			NOT = { has_cosmetic_tag = TWN }
 			NOT = { has_global_flag = ROC_victory }
 			country_exists = PRC
@@ -747,11 +766,11 @@ foreign_affairs = {
 	become_a_special_administrative_region = {
 	
 		allowed = {
+			original_tag = CHI
 			has_dlc = "Together for Victory"
 		}
 
 		visible = {
-			original_tag = CHI
 			NOT = { has_cosmetic_tag = TAIWAN }
 			NOT = { has_global_flag = ROC_victory }
 			country_exists = PRC
@@ -837,7 +856,7 @@ foreign_affairs = {
 
 	claim_greater_romania = {
 	
-		visible = {
+		allowed = {
 			original_tag = ROM
 		}
 		
@@ -878,8 +897,11 @@ foreign_affairs = {
 
 	apply_for_union_with_romania = {
 	
-		visible = {
+		allowed = {
 			original_tag = MOL
+		}
+
+		visible = {
 			country_exists = ROM
 		}
 		
@@ -913,7 +935,7 @@ foreign_affairs = {
 
 	claim_abrene = {
 	
-		visible = {
+		allowed = {
 			original_tag = LAT
 		}
 		
@@ -954,8 +976,11 @@ foreign_affairs = {
 
 	purchase_greenland = {
 	
-		visible = {
+		allowed = {
 			original_tag = USA
+		}
+
+		visible = {
 			has_country_leader = {
 				name = "Donald Trump"
 				ruling_only = yes
@@ -1001,10 +1026,10 @@ foreign_affairs = {
 	
 		allowed = {
 			has_dlc = "Together for Victory"
+			original_tag = MEX
 		}
 
 		visible = {
-		    original_tag = MEX
 			country_exists = ZAP
 			ZAP = { owns_state = 1179 controls_state = 1179 }
 			NOT = { has_war_with = ZAP }
@@ -1054,9 +1079,12 @@ foreign_affairs = {
 	}
 
 	claim_northern_ireland = {
+
+		allowed = {
+			original_tag = IRE
+		}
 	
 		visible = {
-			original_tag = IRE
 			NOT = { 
 				owns_state = 119
 			}
@@ -1104,7 +1132,7 @@ foreign_affairs = {
 
 	claim_greater_hungary = {
 	
-		visible = {
+		allowed = {
 			original_tag = HUN
 		}
 		
@@ -1154,9 +1182,12 @@ foreign_affairs = {
 	}
 
 	apply_for_union_with_austria = {
+
+		allowed = {
+			original_tag = STY
+		}
 	
 		visible = {
-			original_tag = STY
 			country_exists = AUS
 		}
 		
@@ -1189,9 +1220,12 @@ foreign_affairs = {
 	}
 
 	apply_for_union_with_ireland = {
+
+		allowed = {
+			original_tag = NIR
+		}
 	
 		visible = {
-			original_tag = NIR
 			country_exists = IRE
 		}
 		
@@ -1225,7 +1259,7 @@ foreign_affairs = {
 
 	claim_greater_bulgaria = {
 	
-		visible = {
+		allowed = {
 			original_tag = BUL
 		}
 		
@@ -1271,8 +1305,11 @@ foreign_affairs = {
 
 	propose_the_kosovo_serbia_land_swap = {
 	
-		visible = {
+		allowed = {
 			original_tag = KOS
+		}
+
+		visible = {
 			country_exists = SER
 			owns_state = 1012
 			SER = { owns_state = 1201 }
@@ -1305,7 +1342,7 @@ foreign_affairs = {
 
 	claim_greater_albania = {
 	
-		visible = {
+		allowed = {
 			original_tag = ALB
 		}
 		
@@ -1372,7 +1409,7 @@ foreign_affairs = {
 
 	claim_greater_croatia = {
 	
-		visible = {
+		allowed = {
 			original_tag = CRO
 		}
 		

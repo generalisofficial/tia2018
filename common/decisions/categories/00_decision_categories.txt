@@ -1,24 +1,5 @@
-formable_nation_decisions = {
-	icon = generic #
-}
-
-USA_campaign_promises = {
-	icon = generic #
-
-	visible = {
-		original_tag = USA
-	}
-}
-
-bosnia_politics = {
-	icon = generic #
-
-	visible = {
-	    OR = {
-		    original_tag = BOS
-		    original_tag = RSE
-		}
-	}
+emergencies = {
+	icon = domestic_affairs #add icon
 }
 
 brexit_decisions = {
@@ -27,25 +8,6 @@ brexit_decisions = {
 	allowed = {
 		original_tag = ENG
 	}
-}
-
-SPACE_USA = {
-	icon = generic #
-
-	allowed = {
-		original_tag = USA
-	}
-    
-    visible = {
-        always = no
-    }
-
-    priority = {
-        base = 10
-        modifier = {
-            add = 10
-        }
-    }
 }
 
 ISR_regency = {

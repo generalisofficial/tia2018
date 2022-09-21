@@ -1,0 +1,65 @@
+emergencies = {
+	crush_the_protests = {
+		
+		visible = {
+			has_idea = idea_large_scale_protests
+		}
+
+		available = {
+			has_army_manpower = {
+				size > 1000
+			}
+		}
+		
+		icon = tank
+		
+		cost = 50
+		
+		complete_effect = {
+			# add news event
+			remove_ideas = idea_large_scale_protests
+			add_named_threat = { 
+				threat = 5
+				name =  threat_massacred_protestors
+			}
+			if = {
+				limit = {
+					has_idea = civil_liberties_libertarian
+				}
+				add_ideas = civil_liberties_authoritarian
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_idea = civil_liberties_libertarian
+			}
+		}
+	}
+
+	hold_new_elections = {
+		
+		visible = {
+			has_idea = idea_large_scale_protests
+		}
+
+		available = {
+			is_democracy = yes
+		}
+		
+		icon = ballot_box
+		
+		cost = 25
+
+		complete_effect = {
+			remove_ideas = idea_large_scale_protests
+			hold_election = ROOT
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
