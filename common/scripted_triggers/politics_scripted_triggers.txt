@@ -3491,3 +3491,93 @@ coalition_partners_are_neightbours_grid_entry = {
 		}
 	}
 }
+
+# US Politics
+
+USA_democratic_plurality = {
+	original_tag = USA
+	check_variable = {
+		var = democratic_party_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = republican_party_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = democratic_party_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
+}
+
+USA_republican_plurality = {
+	original_tag = USA
+	check_variable = {
+		var = republican_party_seats
+		value = socialist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = progressive_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = classical_liberal_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = democratic_party_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = monarchist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = right_wing_nationalist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = fascist_seats
+		compare = greater_than_or_equals
+	}
+	check_variable = {
+		var = republican_party_seats
+		value = islamist_seats
+		compare = greater_than_or_equals
+	}
+}

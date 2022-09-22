@@ -163,12 +163,6 @@ on_actions = {
 			}
 			every_country = {
 				limit = {
-					has_country_flag = has_parliament
-				}
-				country_event = system.1
-			}
-			every_country = {
-				limit = {
 					has_country_flag = catholic
 					NOT = { original_tag = VAT }
 				}
@@ -313,8 +307,19 @@ on_actions = {
 				country_event = system.20
 				country_event = system.21
 			}
+			USA = { 
+				add_nuclear_bombs = 6185 
+				if = {
+					limit = {
+						date < 2019.1.1
+					}
+					country_event = {
+						id = system.34
+						days = 309
+					}
+				}
+			}
 			RUS = { add_nuclear_bombs = 6490 }
-			USA = { add_nuclear_bombs = 6185 }
 			FRA = { add_nuclear_bombs = 300 }
 			PRC = { add_nuclear_bombs = 280 }
 			ENG = { add_nuclear_bombs = 215 }

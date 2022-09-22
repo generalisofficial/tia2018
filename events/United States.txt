@@ -1,6 +1,6 @@
 ﻿add_namespace = usa
 
-#2020 Democratic Party presidential primaries
+#2020 Democratic Party primaries - Moderate
 country_event = {
 	id = usa.1
 	title = usa.1.t
@@ -15,10 +15,14 @@ country_event = {
 		date < 2021.1.1
 	}
 
+	immediate = {
+		country_event = usa.6
+	}
+
 	option = {
 		name = usa.1.o1
 		ai_chance = {
-			factor = 52
+			factor = 81
 		}
 		retire_ideology_leader = social_liberal
 		create_country_leader = {
@@ -31,26 +35,39 @@ country_event = {
 	option = {
 		name = usa.1.o2
 		ai_chance = {
-			factor = 26
+			factor = 12
 		}
 		retire_ideology_leader = social_liberal
 		create_country_leader = {
-	        name = "Bernie Sanders"
-	        picture = GFX_Portrait_USA_Bernie_Sanders
-	        ideology = social_liberal_ideology
+	        name = "Michael Bloomberg"
+	        picture = GFX_Portrait_USA_Michael_Bloomberg
+	        ideology = centrist
         }
 	}
 
 	option = {
 		name = usa.1.o3
 		ai_chance = {
-			factor = 22
+			factor = 5
 		}
 		retire_ideology_leader = social_liberal
 		create_country_leader = {
-	        name = "Elizabeth Warren"
-	        picture = GFX_Portrait_USA_Elizabeth_Warren
-	        ideology = social_liberal_ideology
+	        name = "Pete Buttigieg"
+	        picture = GFX_Portrait_USA_Pete_Buttigieg
+	        ideology = centrist
+        }
+	}
+
+	option = {
+		name = usa.1.o4
+		ai_chance = {
+			factor = 2
+		}
+		retire_ideology_leader = social_liberal
+		create_country_leader = {
+	        name = "Andrew Yang"
+	        picture = GFX_Portrait_USA_Andrew_Yang
+	        ideology = centrist
         }
 	}
 }
@@ -183,52 +200,98 @@ news_event = { #United States announces total withdrawal from Syria
 	}
 }
 
-country_event = { #Stoneman Douglas High School shooting
+#2020 Democratic Party presidential primaries - Progressive
+country_event = {
 	id = usa.6
 	title = usa.6.t
 	desc = usa.6.d
 	
-	trigger = {
-		original_tag = USA
-		owns_state = 366
-		controls_state = 366
-		has_idea = unregulated_firearms
-		date > 2018.2.14
-		date < 2019.1.1
-	}
-
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = usa.6.o1
-		add_political_power = -50
-		366 = { add_manpower = -17 }
-		custom_effect_tooltip = TT_shooting
+		ai_chance = {
+			factor = 71
+		}
+	}
+
+	option = {
+		name = usa.6.o2
+		ai_chance = {
+			factor = 21
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Elizabeth Warren"
+	        picture = GFX_Portrait_USA_Elizabeth_Warren
+	        ideology = social_democrat_ideology
+        }
+	}
+
+	option = {
+		name = usa.6.o3
+		ai_chance = {
+			factor = 8
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Tulsi Gabbard"
+	        picture = GFX_Portrait_USA_Tulsi_Gabbard
+	        ideology = social_democrat_ideology
+        }
 	}
 }
 
-country_event = { #El Paso Walmart shooting
+#2020 Libertarian Party presidential primaries
+country_event = {
 	id = usa.7
 	title = usa.7.t
 	desc = usa.7.d
 	
 	trigger = {
 		original_tag = USA
-		owns_state = 375
-		controls_state = 375
-		has_idea = unregulated_firearms
-		NOT = { has_idea = planned_economy }
-		date > 2019.8.3
-		date < 2020.1.1
+		has_idea = presidential_republic
+		date > 2020.7.7
+		date < 2021.1.1
 	}
-
-	fire_only_once = yes
 
 	option = {
 		name = usa.7.o1
-		add_political_power = -50
-		375 = { add_manpower = -23 }
-		custom_effect_tooltip = TT_shooting
+		ai_chance = {
+			factor = 51
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+	        name = "Jo Jorgensen"
+	        picture = GFX_Portrait_USA_Jo_Jorgensen
+	        ideology = libertarian
+        }
+	}
+
+	option = {
+		name = usa.7.o2
+		ai_chance = {
+			factor = 34
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+	        name = "Jacob Hornberger"
+	        picture = GFX_Portrait_USA_Jacob_Hornberger
+	        ideology = libertarian
+        }
+	}
+
+	option = {
+		name = usa.7.o3
+		ai_chance = {
+			factor = 15
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+	        name = "Vermin Supreme"
+	        picture = GFX_Portrait_USA_Vermin_Supreme
+	        ideology = libertarian
+        }
 	}
 }
 

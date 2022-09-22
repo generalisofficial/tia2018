@@ -15,6 +15,15 @@ country_event = {
 	immediate = {
 	    break_coalition = yes
 		quickset_parliament = yes
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			set_variable = { republican_party_seats = conservative_seats }
+			add_to_variable = { republican_party_seats = conservative_seats }
+			set_variable = { democratic_party_seats = social_liberal_seats }
+			add_to_variable = { democratic_party_seats = social_democrat_seats }
+		}
 	}
 	
 	option = {	#Certify Election Results
@@ -26,6 +35,12 @@ country_event = {
 		if = {
 			limit = {
 				communist_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = communist
@@ -37,6 +52,12 @@ country_event = {
 		if = {
 			limit = {
 				socialist_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = socialist
@@ -48,6 +69,12 @@ country_event = {
 		if = {
 			limit = {
 				progressive_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = progressive
@@ -58,7 +85,18 @@ country_event = {
 		}
 		if = {
 			limit = {
-				social_democrat_plurality_popularity = yes
+				OR = {
+					social_democrat_plurality_popularity = yes
+					AND = {
+						USA_democratic_plurality = yes
+						check_variable = {
+							var = social_democrat_seats
+							value = social_liberal_seats
+							compare = greater_than
+						}
+					}
+				}
+				NOT = { USA_republican_plurality = yes }
 			}
 			set_politics = {
 				ruling_party = social_democrat
@@ -66,10 +104,28 @@ country_event = {
 			}
 			set_country_flag = coalition_social_democrat
 			set_variable = { ROOT.Coalition = social_democrat_seats }
+			if = {
+				limit = {
+					original_tag = USA
+				}
+				set_country_flag = coalition_social_liberal
+				add_to_variable = { ROOT.Coalition = social_liberal_seats }
+			}
 		}
 		if = {
 			limit = {
-				social_liberal_plurality_popularity = yes
+				OR = {
+					social_liberal_plurality_popularity = yes
+					AND = {
+						USA_democratic_plurality = yes
+						check_variable = {
+							var = social_liberal_seats
+							value = social_democrat_seats
+							compare = greater_than
+						}
+					}
+				}
+				NOT = { USA_republican_plurality = yes }
 			}
 			set_politics = {
 				ruling_party = social_liberal
@@ -77,10 +133,23 @@ country_event = {
 			}
 			set_country_flag = coalition_social_liberal
 			set_variable = { ROOT.Coalition = social_liberal_seats }
+			if = {
+				limit = {
+					original_tag = USA
+				}
+				set_country_flag = coalition_social_democrat
+				add_to_variable = { ROOT.Coalition = social_democrat_seats }
+			}
 		}
 		if = {
 			limit = {
 				classical_liberal_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = classical_liberal
@@ -91,7 +160,18 @@ country_event = {
 		}
 		if = {
 			limit = {
-				conservative_plurality_popularity = yes
+				OR = {
+					conservative_plurality_popularity = yes
+					AND = {
+						USA_republican_plurality = yes
+						check_variable = {
+							var = conservative_seats
+							value = national_conservative_seats
+							compare = greater_than
+						}
+					}
+				}
+				NOT = { USA_democratic_plurality = yes }
 			}
 			set_politics = {
 				ruling_party = conservative
@@ -99,10 +179,28 @@ country_event = {
 			}
 			set_country_flag = coalition_conservative
 			set_variable = { ROOT.Coalition = conservative_seats }
+			if = {
+				limit = {
+					original_tag = USA
+				}
+				set_country_flag = coalition_national_conservative
+				add_to_variable = { ROOT.Coalition = national_conservative_seats }
+			}
 		}
 		if = {
 			limit = {
-				national_conservative_plurality_popularity = yes
+				OR = {
+					national_conservative_plurality_popularity = yes
+					AND = {
+						USA_republican_plurality = yes
+						check_variable = {
+							var = national_conservative_seats
+							value = conservative_seats
+							compare = greater_than
+						}
+					}
+				}
+				NOT = { USA_democratic_plurality = yes }
 			}
 			set_politics = {
 				ruling_party = national_conservative
@@ -110,10 +208,23 @@ country_event = {
 			}
 			set_country_flag = coalition_national_conservative
 			set_variable = { ROOT.Coalition = national_conservative_seats }
+			if = {
+				limit = {
+					original_tag = USA
+				}
+				set_country_flag = coalition_conservative
+				add_to_variable = { ROOT.Coalition = conservative_seats }
+			}
 		}
 		if = {
 			limit = {
 				monarchist_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			add_ideas = absolute_monarchy
 			set_politics = {
@@ -127,6 +238,12 @@ country_event = {
 		if = {
 			limit = {
 				right_wing_nationalist_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = right_wing_nationalist
@@ -138,6 +255,12 @@ country_event = {
 		if = {
 			limit = {
 				fascist_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = fascist
@@ -149,6 +272,12 @@ country_event = {
 		if = {
 			limit = {
 				islamist_plurality_popularity = yes
+				NOT = { 
+					OR = {
+						USA_democratic_plurality = yes
+						USA_republican_plurality = yes
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = islamist
@@ -1082,7 +1211,9 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
+	option = {
+		name = election.6.o1
+		country_event = election.7
 	    quickset_parliament = yes
 		if = {
 			limit = {
@@ -1104,15 +1235,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = social_democrat
-			}
-			set_variable = { ROOT.Coalition = social_democrat_seats }
-		}
-		if = {
-			limit = {
-				has_government = social_liberal
+				OR = {
+					has_government = social_liberal
+					has_government = social_democrat
+				}
 			}
 			set_variable = { ROOT.Coalition = social_liberal_seats }
+			add_to_variable = { ROOT.Coalition = social_democrat_seats }
 		}
 		if = {
 			limit = {
@@ -1122,15 +1251,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = conservative
+				OR = {
+					has_government = conservative
+					has_government = national_conservative
+				}
 			}
 			set_variable = { ROOT.Coalition = conservative_seats }
-		}
-		if = {
-			limit = {
-				has_government = national_conservative
-			}
-			set_variable = { ROOT.Coalition = national_conservative_seats }
+			add_to_variable = { ROOT.Coalition = national_conservative_seats }
 		}
 		if = {
 			limit = {

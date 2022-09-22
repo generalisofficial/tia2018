@@ -371,11 +371,11 @@ diplomatic_relation = { country = KIR relation = non_aggression_pact }
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 48.8 }
+set_variable = { social_democrat_seats = 16.32 }
+set_variable = { social_liberal_seats = 28.29 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 51.2 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { conservative_seats = 27.81 }
+set_variable = { national_conservative_seats = 27.58 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -383,32 +383,35 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
+set_country_flag = coalition_national_conservative
 set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = national_conservative
 	last_election = "2016.11.3"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 53.4
-    conservative = 46.6
+	national_conservative = 35.17
+	social_liberal = 32.43
+	social_democrat = 21.83
+    conservative = 10.57
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = USA_nihad_awad
 recruit_character = USA_burt_colucci
 recruit_character = USA_william_daniel_johnson
-recruit_character = USA_don_blankenship
 recruit_character = USA_donald_trump
-recruit_character = USA_jo_jorgensen
+recruit_character = USA_liz_cheney
+recruit_character = USA_nicholas_sarwark
 recruit_character = USA_nancy_pelosi
-set_country_flag = social_democrat_intended_no_leader
+recruit_character = USA_bernie_sanders
 recruit_character = USA_howie_hawkins
 recruit_character = USA_gloria_la_riva
 

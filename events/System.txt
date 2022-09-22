@@ -1533,3 +1533,24 @@ country_event = {
 		remove_country_leader_trait = subject_pro_autonomy
 	}
 }
+
+country_event = {
+	id = system.34
+	hidden=yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_idea = idea_constitution_of_the_united_states
+				has_idea = presidential_system
+			}
+			country_event = election.6
+			country_event = {
+				id = system.34
+				days = 1460
+			}
+		}
+	}
+}
