@@ -136,6 +136,7 @@ scripted_gui = {
 
 		triggers = {
 			kick_button_click_enabled = {
+				has_idea = parliamentary_system
 				if = {
 					limit = {
 						check_variable = { Root.member_parties_array^i = 1 }

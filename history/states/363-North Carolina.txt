@@ -2,12 +2,8 @@
 state={
 	id=363
 	name="STATE_363"
-	manpower = 8082000
-	
-	state_category = state_default
-	
-	resources = {
-		steel = 11
+	resources={
+		steel=11.000
 	}
 
 	history={
@@ -20,26 +16,31 @@ state={
 			shipyard = 1
 			1132 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = USA
-		add_core_of = CSA
 		victory_points = {
-			7138 7
+			7138 7 
 		}
 		victory_points = {
-			7045 4
+			7045 4 
 		}
 		victory_points = {
-			12445 2
+			12445 2 
 		}
 		victory_points = {
-			1132 2
+			1132 2 
 		}
 
 	}
 
 	provinces={
-		1019 1077 1132 1163 4168 6943 7045 7083 7138 7643 9876 9967 10051 10081 10096 10468 10495 11783 12054 12445 
+		1019 1077 1132 1163 4168 6943 7045 7083 7138 7643 9876 9967 10051 10081 10096 10468 10495 11783 12054 12445 14858 
 	}
+	manpower=8082000
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

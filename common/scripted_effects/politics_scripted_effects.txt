@@ -2386,6 +2386,20 @@ election_pulse = {
 
 election_effect = {
 	clr_country_flag = snap_election_in_progress
+	hidden_effect = {
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = [RULINGPARTY]
+					last_election = [TODAY]
+					elections_allowed = yes
+				}
+			}
+			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+			TODAY = "[?global.date.GetDateStringNoHour]"
+			debug = yes
+		}
+	}
 	if = {
 		limit = {
 			has_idea = presidential_republic
