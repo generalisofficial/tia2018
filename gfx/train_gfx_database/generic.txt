@@ -1,18 +1,18 @@
 wagon_data = {
-	entity = medium_armor_entity
-	scale = 0.35
+	entity = generic_motorized_entity
+	scale = 0.30
 	rotation = 90
-	shift = { 0.0 0.6 0.0 }
-	length = 1.8
+	shift = { 0.0 0.0 0.0 }
+	length = 1.0
 }
 
 default = {
 	motorized_equipment_1 = {
 
-		wagon_0 = medium_armor_entity
+		wagon_0 = generic_motorized_entity
 
 		wagons = {
-			medium_armor_entity
+			#
 		}
 	}
 }
