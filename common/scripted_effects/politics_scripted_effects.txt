@@ -2360,32 +2360,15 @@ election_pulse = {
 		}
 		hidden_effect = {
 			add_ideas = minority_government
-			if = {
-				limit = {
-					has_idea = parliamentary_system
-				}
-				news_event = politics.14
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					has_idea = parliamentary_system
-				}
-				news_event = politics.13
-			}
 		}
 	}
-	if = {
-		limit = {
-			has_idea = presidential_republic
-		}
-		news_event = politics.15
-	}
+	set_election_change = yes
+	news_event = politics.13
 }
 
 election_effect = {
 	clr_country_flag = snap_election_in_progress
+	set_old_election_results = yes
 	hidden_effect = {
 		meta_effect = {
 			text = {
@@ -3283,4 +3266,82 @@ clear_state_government_flags = {
 	clr_state_flag = state_government_progressive
 	clr_state_flag = state_government_socialist
 	clr_state_flag = state_government_communist
+}
+
+set_old_election_results = {
+	set_variable = { old_islamist = islamist_seats }
+	set_variable = { old_fascist = fascist_seats }
+	set_variable = { old_right_wing_nationalist = right_wing_nationalist_seats }
+	set_variable = { old_monarchist = monarchist_seats }
+	set_variable = { old_national_conservative = national_conservative_seats }
+	set_variable = { old_conservative = conservative_seats }
+	set_variable = { old_classical_liberal = classical_liberal_seats }
+	set_variable = { old_social_liberal = social_liberal_seats }
+	set_variable = { old_social_democrat = social_democrat_seats }
+	set_variable = { old_progressive = progressive_seats }
+	set_variable = { old_socialist = socialist_seats }
+	set_variable = { old_communist = communist_seats }
+}
+
+set_election_change = {
+	set_variable = { islamist_election_change = islamist_seats }
+	subtract_from_variable = {
+		var = islamist_election_change
+		value = old_islamist
+	}
+	set_variable = { fascist_election_change = fascist_seats }
+	subtract_from_variable = {
+		var = fascist_election_change
+		value = old_fascist
+	}
+	set_variable = { right_wing_nationalist_election_change = right_wing_nationalist_seats }
+	subtract_from_variable = {
+		var = right_wing_nationalist_election_change
+		value = old_right_wing_nationalist
+	}
+	set_variable = { monarchist_election_change = monarchist_seats }
+	subtract_from_variable = {
+		var = monarchist_election_change
+		value = old_monarchist
+	}
+	set_variable = { national_conservative_election_change = national_conservative_seats }
+	subtract_from_variable = {
+		var = national_conservative_election_change
+		value = old_national_conservative
+	}
+	set_variable = { conservative_election_change = conservative_seats }
+	subtract_from_variable = {
+		var = conservative_election_change
+		value = old_conservative
+	}
+	set_variable = { classical_liberal_election_change = classical_liberal_seats }
+	subtract_from_variable = {
+		var = classical_liberal_election_change
+		value = old_classical_liberal
+	}
+	set_variable = { social_liberal_election_change = social_liberal_seats }
+	subtract_from_variable = {
+		var = social_liberal_election_change
+		value = old_social_liberal
+	}
+	set_variable = { social_democrat_election_change = social_democrat_seats }
+	subtract_from_variable = {
+		var = social_democrat_election_change
+		value = old_social_democrat
+	}
+	set_variable = { progressive_election_change = progressive_seats }
+	subtract_from_variable = {
+		var = progressive_election_change
+		value = old_progressive
+	}
+	set_variable = { socialist_election_change = socialist_seats }
+	subtract_from_variable = {
+		var = socialist_election_change
+		value = old_socialist
+	}
+	set_variable = { communist_election_change = communist_seats }
+	subtract_from_variable = {
+		var = communist_election_change
+		value = old_communist
+	}
 }

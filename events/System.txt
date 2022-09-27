@@ -565,7 +565,7 @@ country_event = { ### Monthly On-action
 	is_triggered_only = yes
 	
 	immediate = {
-		### Motion of No Confidence - 10% chance every month if conditions true
+		### Motion of No Confidence - 5% chance every month if conditions true
 		if = {
 			limit = {
 				has_idea = minority_government
@@ -582,7 +582,7 @@ country_event = { ### Monthly On-action
 				}
 			}
 			random = {
-				chance = 10
+				chance = 5
 				country_event = politics.11
 			}
 		}
@@ -800,7 +800,115 @@ country_event = { ### Monthly On-action
 				# Needs to be 100 in total
 			}
 		}
-		### Balancer - Removes 1% from all over 60%
+		### Balancer - Removes 1% from all over 60%, 3% from all over 80%
+		if = {
+			limit = {
+				islamist > 0.8
+			}
+			add_popularity = { 
+				ideology = islamist
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				fascist > 0.8
+			}
+			add_popularity = { 
+				ideology = fascist
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				right_wing_nationalist > 0.8
+			}
+			add_popularity = { 
+				ideology = right_wing_nationalist
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				monarchist > 0.8
+			}
+			add_popularity = { 
+				ideology = monarchist
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				national_conservative > 0.8
+			}
+			add_popularity = { 
+				ideology = national_conservative
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				conservative > 0.8
+			}
+			add_popularity = { 
+				ideology = conservative
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				classical_liberal > 0.8
+			}
+			add_popularity = { 
+				ideology = classical_liberal
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				social_liberal > 0.8
+			}
+			add_popularity = { 
+				ideology = social_liberal
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				social_democrat > 0.8
+			}
+			add_popularity = { 
+				ideology = social_democrat
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				progressive > 0.8
+			}
+			add_popularity = { 
+				ideology = progressive
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				socialist > 0.8
+			}
+			add_popularity = { 
+				ideology = socialist
+				popularity = -0.02
+			}
+		}
+		if = {
+			limit = {
+				communist > 0.8
+			}
+			add_popularity = { 
+				ideology = communist
+				popularity = -0.02
+			}
+		}
 		if = {
 			limit = {
 				islamist > 0.6
@@ -909,10 +1017,124 @@ country_event = { ### Monthly On-action
 				popularity = -0.01 
 			}
 		}
-		### Satisfaction - Adds/removes 1% from government
+		### Satisfaction - Adds/removes from government based on satisfaction
+		if = {
+			limit = {
+				has_stability > 0.75
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_islamist
+				}
+				add_popularity = { 
+					ideology = islamist
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_fascist
+				}
+				add_popularity = { 
+					ideology = fascist
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_right_wing_nationalist
+				}
+				add_popularity = { 
+					ideology = right_wing_nationalist
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_monarchist
+				}
+				add_popularity = { 
+					ideology = monarchist
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_national_conservative
+				}
+				add_popularity = { 
+					ideology = national_conservative
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_conservative
+				}
+				add_popularity = { 
+					ideology = conservative
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_classical_liberal
+				}
+				add_popularity = { 
+					ideology = classical_liberal
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_social_liberal
+				}
+				add_popularity = { 
+					ideology = social_liberal
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_social_democrat
+				}
+				add_popularity = { 
+					ideology = social_democrat
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_progressive
+				}
+				add_popularity = { 
+					ideology = progressive
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_socialist
+				}
+				add_popularity = { 
+					ideology = socialist
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_communist
+				}
+				add_popularity = { 
+					ideology = communist
+					popularity = 0.02
+				}
+			}
+		}
 		if = {
 			limit = {
 				has_stability > 0.5
+				NOT = { has_stability > 0.75 }
 			}
 			if = {
 				limit = {
@@ -1026,6 +1248,7 @@ country_event = { ### Monthly On-action
 		if = {
 			limit = {
 				has_stability < 0.5
+				NOT = { has_stability < 0.25 }
 			}
 			if = {
 				limit = {
@@ -1133,6 +1356,119 @@ country_event = { ### Monthly On-action
 				add_popularity = { 
 					ideology = communist
 					popularity = -0.01 
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_stability < 0.25
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_islamist
+				}
+				add_popularity = { 
+					ideology = islamist
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_fascist
+				}
+				add_popularity = { 
+					ideology = fascist
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_right_wing_nationalist
+				}
+				add_popularity = { 
+					ideology = right_wing_nationalist
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_monarchist
+				}
+				add_popularity = { 
+					ideology = monarchist
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_national_conservative
+				}
+				add_popularity = { 
+					ideology = national_conservative
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_conservative
+				}
+				add_popularity = { 
+					ideology = conservative
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_classical_liberal
+				}
+				add_popularity = { 
+					ideology = classical_liberal
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_social_liberal
+				}
+				add_popularity = { 
+					ideology = social_liberal
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_social_democrat
+				}
+				add_popularity = { 
+					ideology = social_democrat
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_progressive
+				}
+				add_popularity = { 
+					ideology = progressive
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_socialist
+				}
+				add_popularity = { 
+					ideology = socialist
+					popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = coalition_communist
+				}
+				add_popularity = { 
+					ideology = communist
+					popularity = -0.02
 				}
 			}
 		}

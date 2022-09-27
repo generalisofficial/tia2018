@@ -322,7 +322,7 @@ news_event = { #(Country, ADJ) government ousted in no-confidence vote
 	id = politics.12
 	title = politics.12.t
 	desc = politics.12.d
-	picture = GFX_news_event_election
+	picture = GFX_news_event_parliament_vote
 	
 	is_triggered_only = yes
 	major = yes
@@ -332,11 +332,11 @@ news_event = { #(Country, ADJ) government ousted in no-confidence vote
 	}
 }
 
-news_event = { #(Country, Parliament) approves new majority government in (Country)
+news_event = { #(Year) (Country, ADJ) (ElectionType) elections
 	id = politics.13
 	title = politics.13.t
 	desc = politics.13.d
-	picture = GFX_news_event_parliament_vote
+	picture = GFX_news_event_election
 	
 	is_triggered_only = yes
 	major = yes

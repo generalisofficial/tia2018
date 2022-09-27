@@ -1929,3 +1929,627 @@ defined_text = {
 		localization_key = TT_amendment_active
 	}
 }
+
+defined_text = {
+	name = GetIslamistResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				islamist > 0.0001
+				check_variable = {
+					var = FROM.islamist_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_islamist_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				islamist > 0.0001
+				check_variable = {
+					var = FROM.islamist_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_islamist_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				islamist > 0.0001
+				check_variable = {
+					var = FROM.islamist_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_islamist_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { islamist > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFascistResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				fascist > 0.0001
+				check_variable = {
+					var = FROM.fascist_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_fascist_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				fascist > 0.0001
+				check_variable = {
+					var = FROM.fascist_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_fascist_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				fascist > 0.0001
+				check_variable = {
+					var = FROM.fascist_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_fascist_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { fascist > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetRightWingNationalistResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				right_wing_nationalist > 0.0001
+				check_variable = {
+					var = FROM.right_wing_nationalist_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_right_wing_nationalist_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				right_wing_nationalist > 0.0001
+				check_variable = {
+					var = FROM.right_wing_nationalist_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_right_wing_nationalist_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				right_wing_nationalist > 0.0001
+				check_variable = {
+					var = FROM.right_wing_nationalist_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_right_wing_nationalist_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { right_wing_nationalist > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetMonarchistResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				monarchist > 0.0001
+				check_variable = {
+					var = FROM.monarchist_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_monarchist_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				monarchist > 0.0001
+				check_variable = {
+					var = FROM.monarchist_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_monarchist_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				monarchist > 0.0001
+				check_variable = {
+					var = FROM.monarchist_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_monarchist_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { monarchist > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetNationalConservativeResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				national_conservative > 0.0001
+				check_variable = {
+					var = FROM.national_conservative_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_national_conservative_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				national_conservative > 0.0001
+				check_variable = {
+					var = FROM.national_conservative_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_national_conservative_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				national_conservative > 0.0001
+				check_variable = {
+					var = FROM.national_conservative_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_national_conservative_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { national_conservative > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetConservativeResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				conservative > 0.0001
+				check_variable = {
+					var = FROM.conservative_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_conservative_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				conservative > 0.0001
+				check_variable = {
+					var = FROM.conservative_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_conservative_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				conservative > 0.0001
+				check_variable = {
+					var = FROM.conservative_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_conservative_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { conservative > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetClassicalLiberalResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				classical_liberal > 0.0001
+				check_variable = {
+					var = FROM.classical_liberal_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_classical_liberal_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				classical_liberal > 0.0001
+				check_variable = {
+					var = FROM.classical_liberal_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_classical_liberal_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				classical_liberal > 0.0001
+				check_variable = {
+					var = FROM.classical_liberal_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_classical_liberal_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { classical_liberal > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetSocialLiberalResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				social_liberal > 0.0001
+				check_variable = {
+					var = FROM.social_liberal_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_social_liberal_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				social_liberal > 0.0001
+				check_variable = {
+					var = FROM.social_liberal_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_social_liberal_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				social_liberal > 0.0001
+				check_variable = {
+					var = FROM.social_liberal_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_social_liberal_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { social_liberal > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetSocialDemocratResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				social_democrat > 0.0001
+				check_variable = {
+					var = FROM.social_democrat_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_social_democrat_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				social_democrat > 0.0001
+				check_variable = {
+					var = FROM.social_democrat_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_social_democrat_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				social_democrat > 0.0001
+				check_variable = {
+					var = FROM.social_democrat_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_social_democrat_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { social_democrat > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetProgressiveResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				progressive > 0.0001
+				check_variable = {
+					var = FROM.progressive_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_progressive_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				progressive > 0.0001
+				check_variable = {
+					var = FROM.progressive_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_progressive_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				progressive > 0.0001
+				check_variable = {
+					var = FROM.progressive_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_progressive_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { progressive > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetSocialistResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				socialist > 0.0001
+				check_variable = {
+					var = FROM.socialist_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_socialist_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				socialist > 0.0001
+				check_variable = {
+					var = FROM.socialist_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_socialist_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				socialist > 0.0001
+				check_variable = {
+					var = FROM.socialist_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_socialist_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { socialist > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetCommunistResults
+	
+	text = {
+		trigger = {
+			FROM = {
+				communist > 0.0001
+				check_variable = {
+					var = FROM.communist_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_communist_election_results_gain
+	}
+	text = {
+		trigger = {
+			FROM = {
+				communist > 0.0001
+				check_variable = {
+					var = FROM.communist_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_communist_election_results_loss
+	}
+	text = {
+		trigger = {
+			FROM = {
+				communist > 0.0001
+				check_variable = {
+					var = FROM.communist_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_communist_election_results_even
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { communist > 0.0001 }
+			}
+		}
+		localization_key = ""
+	}
+}
