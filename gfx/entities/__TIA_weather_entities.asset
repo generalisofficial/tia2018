@@ -1,0 +1,186 @@
+
+entity = {
+	name = "rain_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "rain_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_rain_heavy" } }
+	}
+}
+
+entity = {
+	name = "rain_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "rain_clouds_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "rain_small_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "rain_small_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "weather_rain_light" } }
+	}
+}
+
+entity = {
+	name = "rain_small_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "rain_small_clouds_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "lightning_storm_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "lightning_storm_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_lightning_storm" } } 
+	}
+}
+
+entity = {
+	name = "lightning_storm_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "lightning_storm_clouds_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "lightning_storm_small_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "lightning_storm_small_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_lightning_storm" } } 
+	}
+}
+
+entity = {
+	name = "lightning_storm_small_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "lightning_storm_small_clouds_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "snow_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_snow_blizzard" } }
+	}
+}
+
+entity = {
+	name = "snow_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_clouds_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "snow_small_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_small_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_snow_light" } }
+	}
+}
+
+entity = {
+	name = "snow_small_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_small_clouds_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "snow_storm_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_storm_particle" keep_particle = yes trigger_once = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_snow_blizzard" } }
+	}
+}
+
+entity = {
+	name = "snow_storm_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_storm_clouds_particle" keep_particle = yes trigger_once = yes } 
+	}
+}
+
+entity = {
+	name = "snow_storm_small_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_storm_small_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_snow_light" } }
+	}
+}
+
+entity = {
+	name = "snow_storm_small_clouds_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "snow_storm_small_clouds_particle" keep_particle = yes } 
+	}
+}
+
+entity = {
+	name = "sandstorm_entity"
+	cull_radius = 10
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no 
+		event = { time = 0 particle = "sandstorm_particle" keep_particle = yes } 
+		event = { trigger_once = yes sound = { soundeffect = "weather_sandstorm" } }
+	}
+}
+
+
+
+
+
+
+

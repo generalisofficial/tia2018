@@ -1,4 +1,4 @@
-version="Early Access 0.5"
+version="Early Access 0.8"
 tags={
 	"Historical"
 	"Ideologies"
@@ -55,5 +55,5 @@ replace_path="portraits"
 replace_path="music"
 name="The Information Age 2018 - Early Access"
 picture="thumbnail.png"
-supported_version="1.11.13"
+supported_version="1.12.0"
 remote_file_id="2718874788"

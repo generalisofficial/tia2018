@@ -9,9 +9,9 @@ guiTypes = {
 		animation_time = 300	
 		size = { width=550 height=100%% }
 		verticalScrollbar = "right_vertical_slider"
-		
+
 		show_sound = menu_open_window
-		
+	
 		background = {
 			name = "Background"		
 			spriteType ="GFX_tiled_bg"
@@ -40,7 +40,7 @@ guiTypes = {
 				position = { x = 14 y = -8 }
 				spriteType = "GFX_diplo_flag_frame"
 				alwaystransparent = yes
-			}
+			}			
 			
 			instantTextboxType = {
 				name = "country_name"
@@ -54,15 +54,16 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "faction"
-				position = { x = 20000 y = 20000 } # Hidden
+				position = { x = 20000 y = 20000 } # Hidden	
 				size = { width = 175 height = 20 }
 				clipping = no
-
+			
 				instantTextboxType = {
 					name = "faction_name"
-					position = { x = 26 y = 2 }
-					font = "hoi_16mbs"
-					maxWidth = 300
+					position = { x = 0 y = 0 }
+					font = "hoi_18mbs"
+					text = "faction"
+					maxWidth = 173
 					maxHeight = 20
 					fixedsize = yes		
 					format = left
@@ -71,15 +72,15 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "leader_name"
-				position = { x = 155 y = 8000 } # Hidden
+				position = { x = 245 y = 8000 } # Hidden
 				font = "hoi_16mbs"
 				text = "Rudolf Kittler"
-				maxWidth = 210
+				maxWidth = 173
 				maxHeight = 20
 				format = left
 				fixedsize = yes						
 			}
-			
+
 			containerWindowType = {
 				name = "opinion_info"
 				position = { x = 440 y = 5 }
@@ -125,6 +126,50 @@ guiTypes = {
 					maxHeight = 20
 					format = center
 				}
+			}
+
+			iconType = {
+				name ="stability_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x= 447 y = 8000 } # Hidden
+			}	
+			
+			iconType = {
+				name ="stability_icon"
+				spriteType = "GFX_stability_icon"
+				position = { x= 455 y = 8000 } # Hidden
+			}			
+
+			instantTextboxType = {
+				name = "stability_value"
+				position = { x = 446 y = 8000 } # Hidden
+				font = "hoi_16mbs"
+				text = "100%"
+				maxWidth = 44
+				maxHeight = 20
+				format = center
+			}
+			
+			iconType = {
+				name ="war_support_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x= 490 y = 8000 } # Hidden
+			}	
+			
+			iconType = {
+				name ="war_support_icon"
+				spriteType = "GFX_war_support_icon"
+				position = { x= 497 y = 8000 } # Hidden
+			}			
+
+			instantTextboxType = {
+				name = "war_support_value"
+				position = { x = 490 y = 8000 } # Hidden
+				font = "hoi_16mbs"
+				text = "100%"
+				maxWidth = 44
+				maxHeight = 20
+				format = center
 			}
 			
 			#------------------------- TAB BUTTONS ----------------------------
@@ -216,7 +261,7 @@ guiTypes = {
 					position = { x = 330 y = 25 }
 					size = { width = 255 height = 60 }
 					clipping = no
-
+							
 					instantTextboxType = {
 						name = "party_name"
 						position = { x = -213 y = 98 }
@@ -249,8 +294,8 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "active_national_focus_info"
-					position = { x = 1000 y = 88 }  #Positioned out of bounds so it doesn't cause errors
+					name = "active_national_focus_info" 
+					position = { x = 144 y = 8000 } # Hidden
 					size = { width = 330 height = 50 }
 					clipping = no
 					
@@ -303,8 +348,9 @@ guiTypes = {
 				position = { x = 11 y = 355 }
 				size = { width = 268 height = -50 }
 				margin = { top = 8 bottom = 8}	
-				
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 50
+				smooth_scrolling = yes
 
 				background = {
 					name = "Background"
@@ -327,6 +373,8 @@ guiTypes = {
 				position = { x = 272 y = 355 }
 				size = { width = 265 height = -50 }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
 				
 				background = {
 					name = "Background"
@@ -337,7 +385,6 @@ guiTypes = {
 					name = "win_header_short"
 					position = { x = 8 y= 6 }
 					spriteType = "GFX_win_header_short"
-					alwaystransparent = yes
 				}
 
 				instantTextBoxType = {
@@ -349,7 +396,6 @@ guiTypes = {
 					maxWidth = 240
 					maxHeight = 30	
 				}
-
 				
 				gridboxtype = {
 					name = "actions_grid"
@@ -371,9 +417,10 @@ guiTypes = {
 					position = { x = -2 y = -14 }
 				}
 				
+				
 				instantTextBoxType = {
 					name = "spirit_title"
-					position = { x = -150 y = 0 } #Moved out of bounds to hide
+					position = { x = 8000 y = 0 } # Hidden
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
 					text = "FE_COUNTRY_SPIRIT"
@@ -405,7 +452,7 @@ guiTypes = {
 						position = { x = 0 y = 0 }
 						size = { width = 370 height = 65 }
 						slotsize = { width = 33 height = 32 }
-						max_slots_horizontal = 10
+						max_slots_horizontal = 8
 						format = "UPPER_LEFT"
 					}
 				}
@@ -680,7 +727,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "back_button"
-				position = { x = 165 y = -48 }
+				position = { x = 24 y = -48 }
 				clicksound = click_close
 				quadTextureSprite ="GFX_button_221x34"
 				buttonFont = "hoi_16mbs"
@@ -688,49 +735,15 @@ guiTypes = {
 				buttonText = "OPEN_COUNTRY_LIST"
 				clicksound = click_close
 			}
-
-			iconType = {
-				name ="stability_bg"
-				spriteType = "GFX_diplo_unity_bg"
-				position = { x= 600 y = 200 } #Also moved off-screen
-			}	
 			
-			iconType = {
-				name ="stability_icon"
-				spriteType = "GFX_stability_icon"
-				position = { x= 600 y = 210 } #Also moved off-screen
-			}			
-
-			instantTextboxType = {
-				name = "stability_value"
-				position = { x = 600 y = 245 } #Also moved off-screen
-				font = "hoi_16mbs"
-				text = "100%"
-				maxWidth = 44
-				maxHeight = 20
-				format = center
-			}
-			
-			iconType = {
-				name ="war_support_bg"
-				spriteType = "GFX_diplo_unity_bg"
-				position = { x= 600 y = 200 } #Also moved off-screen
-			}	
-			
-			iconType = {
-				name ="war_support_icon"
-				spriteType = "GFX_war_support_icon"
-				position = { x= 600 y = 212 } #Also moved off-screen
-			}			
-
-			instantTextboxType = {
-				name = "war_support_value"
-				position = { x = 600 y = 245 } #Also moved off-screen
-				font = "hoi_16mbs"
-				text = "100%"
-				maxWidth = 44
-				maxHeight = 20
-				format = center
+			buttonType = {
+				name = "logistics_button"
+				position = { x = 296 y = -48 }
+				quadTextureSprite ="GFX_button_221x34"
+				buttonFont = "hoi_16mbs"
+				Orientation = "LOWER_LEFT"
+				buttonText = "OPEN_COUNTRY_LOGISTICS"
+				clicksound = click_close
 			}
 
 			iconType ={
@@ -740,6 +753,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
+			
 		}
 
 		iconType ={
@@ -879,6 +893,8 @@ guiTypes = {
 				size = { width = 545 height = -5 }
 				margin = { top = 8 bottom = 8 }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 45
+				smooth_scrolling = yes
 		
 				background = {
 					name = "Background"
@@ -1026,7 +1042,7 @@ guiTypes = {
 		iconType = {
 			name = "relation_icon"
 			spriteType = "GFX_relation_truce"
-			position = { x = -3 y = 8 }
+			position = { x = 3 y = 8 }
 		}
 		
 		OverlappingElementsBoxType = {
@@ -1100,6 +1116,28 @@ guiTypes = {
 		containerWindowType = {
 			name = "ideas"
 			position = { x = 14 y = 41 }
+			size = { width = 100%% height = 100%% }
+			verticalScrollbar = "right_vertical_slider"
+		
+			gridBoxType = {
+				name = "ideas_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 255 height = 106 }
+				slotsize = { width = 70 height = 64 }
+				max_slots_horizontal = 3
+				format = "UPPER_LEFT"
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "diplomacy_idea_category_noheader_entry"
+		size = { width = 255 height = 100 }
+		clipping = no
+		
+		containerWindowType = {
+			name = "ideas"
+			position = { x = 14 y = 20 }
 			size = { width = 100%% height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 		
@@ -1368,7 +1406,10 @@ guiTypes = {
 				position = { x = 18 y = 125 }	
 				size = { width = 250 height = 200 }
 				margin = { top = 13 left = 13 bottom = 15 right = 25}
-		
+				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+
 				background = {
 					name = "Background"
 					spriteType ="GFX_tiled_paper_w_frame_one_border"
@@ -3720,7 +3761,7 @@ guiTypes = {
 		iconType = {
 			name = "diplo_countrylist_flag_frame"
 			spriteType = "GFX_diplo_countrylist_flag_frame"
-			position = { x = 5 y = 6 }			
+			position = { x = 5 y = 6 }
 			alwaystransparent = yes
 		}
 		
@@ -4848,7 +4889,7 @@ guiTypes = {
 			position = { x = 20 y = 6 }
 			font = "hoi_18mbs"
 			text = "Maus"
-			maxWidth = 200
+			maxWidth = 290
 			maxHeight = 20
 			fixedsize = yes
 			format = left
