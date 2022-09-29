@@ -2863,8 +2863,15 @@ puppet_government_sync = {
 				}
 			}
 		}
-		set_politics = {
-			elections_allowed = yes
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = [RULINGPARTY]
+					elections_allowed = yes
+				}
+			}
+			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+			debug = yes
 		}
 		if  = {
 			limit = {
