@@ -114,7 +114,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 215 y = -1 }
+				position = { x = 215 y = -20 }
 				size = { width = 300 height = 30 }
 				slotsize = { width = 300 height = 47 }
 				max_slots_horizontal = 1
@@ -469,12 +469,28 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow_News"
 		position = { x=-282 y=-310 }	
-		size = { width = 528 height = 595 }
+		size = { width = 528 height = 700 }
 		moveable = yes
 		Orientation = CENTER
 		show_sound = world_news_effect
 		hide_sound = menu_close_window
 		
+		containerWindowType = {
+			name = "bottom_Window"
+			position = { x=0 y=221 }	
+			size = { width = 581 height = 600 }
+			Orientation = UPPER_LEFT
+
+			gridBoxType = {
+				name = "options_grid"
+				position = { x = 80 y = 120 }
+				size = { width = 300 height = 400 }
+				slotsize = { width = 300 height = 90 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+		}
+
 		background = {
 			name = "Background"	
 			spriteType ="GFX_event_news_bg"
@@ -486,8 +502,7 @@ guiTypes = {
 			size = { width = 581 height =121 }
 			Orientation = UPPER_LEFT
 
-			iconType =
-			{
+			iconType ={
 				name ="event_picture"
 				spriteType = "GFX_event_news_pic_overlay"
 				position = { x = 59 y = 115 }
@@ -517,7 +532,7 @@ guiTypes = {
 			buttonType = {
 				name = "btn_minimize"
 				position = {x=494 y=19}
-				spriteType = "GFX_event_skull"
+				spriteType = "GFX_event_button_minimize"
 				clicksound = click_default
 			}
 		}
@@ -539,29 +554,12 @@ guiTypes = {
 				format = left
 			}	
 		}			
-
-
-		containerWindowType = {
-			name = "bottom_Window"
-			position = { x=0 y=221 }	
-			size = { width = 581 height = 505 }
-			Orientation = UPPER_LEFT
-
-			gridBoxType = {
-				name = "options_grid"
-				position = { x = 80 y = 55 }
-				size = { width = 300 height = 300 }
-				slotsize = { width = 300 height = 47 }
-				max_slots_horizontal = 1
-				format = "UPPER_LEFT"
-			}
-		}
 	}
 	
 	containerWindowType = {
 		name = "event_option_entry"
 		size = { width = 300 height = 47 }
-		clipping = no
+		clipping = yes
 		
 		background = {
 			name = "event_option_background"	
