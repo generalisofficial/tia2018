@@ -1,0 +1,29 @@
+﻿add_namespace = singapore
+
+country_event = { #Workers' Party elects new Secretary-General
+	id = singapore.1
+	title = singapore.1.t
+	desc = singapore.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SGP
+		date > 2018.4.8
+		date < 2019.1.1
+		has_country_leader = {
+			name = "Low Thia Khiang"
+			ruling_only = no
+		}
+	}
+	
+	option = {
+		name = singapore.1.o1
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Pritam Singh"
+	        picture = GFX_Portrait_SGP_Pritam_Singh
+	        ideology = social_democrat_ideology
+        }
+	}
+}

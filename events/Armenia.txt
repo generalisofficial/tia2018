@@ -68,3 +68,26 @@ news_event = { #MerzhirSerzhin
 		}
 	}
 }
+
+country_event = { #Robert Kocharyan returns to politics
+	id = armenia.3
+	title = armenia.3.t
+	desc = armenia.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = armenia.3.o1
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Robert Kocharyan"
+	        picture = GFX_Portrait_ARM_Robert_Kocharyan
+	        ideology = social_conservative
+			traits = { friend_of_russia }
+        }
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.075
+		}
+	}
+}

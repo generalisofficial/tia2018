@@ -3,24 +3,18 @@
 
 peace_ai_desires = {
 	
-	take_our_cores = {
+	take_our_cores_and_claims = {
         peace_action_type = { take_states }
         enable = {
             ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
-            ROOT.FROM.FROM.FROM = { is_core_of = ROOT.FROM } #It is ours
-        }
-        ai_desire = 100
-    }
-
-    # Countries the ai should be more unlikely to release in a peace deal
-    unlikely_countries = {
-        peace_action_type = liberate
-        enable = {
-            FROM = {
-                is_unlikely_country_tag = yes
+            ROOT.FROM.FROM.FROM = { 
+                OR = {
+                    is_core_of = ROOT.FROM
+                    is_claimed_by = ROOT.FROM
+                }
             }
         }
-        ai_desire = -85  # 85 percent lower desire
+        ai_desire = 200
     }
 
     other_owner_does_not_have_core = {
@@ -137,23 +131,6 @@ peace_ai_desires = {
         ai_desire = -50
     }
 
-    try_and_take_neighbors_when_forcing_gov = { #Leaving here; this has unintended consequences, but we need it for SOV
-        peace_action_type = { force_government puppet }
-        enable = {
-			ROOT.FROM.FROM = { original_tag = SOV }
-            ROOT.FROM.FROM.FROM = {
-                any_neighbor_state = {
-                    OR = {
-                        pc_is_state_claimed_by = ROOT.FROM
-                        pc_is_state_claimed_by = ROOT
-                    }
-                }
-            }
-        }
-	
-        ai_desire = 50
-    }
-
     liberate_if_already_exists = {
         peace_action_type = liberate
         enable = {
@@ -255,32 +232,36 @@ peace_ai_desires = {
         enable = {
             FROM.FROM = {
                 has_war_with_wargoal_against = {
-                  target = ROOT
-                  type = independence_wargoal
+                    target = ROOT
+                    type = independence_wargoal
                 }
-
             }
         }
         ai_desire = -75
     }
 	
-	return_puppet_cores = { #This simply has to be the highest priority.
+	return_puppet_cores_and_claims = {
 		peace_action_type = take_states
 		enable = {
 			ROOT.FROM = {
 				OR = {
 					is_subject_of = ROOT
-					AND = {
-						pc_is_puppeted_by = ROOT
-						NOT = { original_tag = GER } #This messes with yalta too much.
-					}
+					pc_is_puppeted_by = ROOT
 				}
 			}
 			ROOT.FROM.FROM.FROM = {
-				is_core_of = ROOT.FROM
-				NOT = { is_core_of = ROOT }
+                OR = {
+                    is_core_of = ROOT.FROM
+                    is_claimed_by = ROOT.FROM
+                }
+				NOT = { 
+                    OR = {
+                        is_core_of = ROOT
+                        is_claimed_by = ROOT
+                    }
+                }
 			}
 		}
-		ai_desire = 70 #Acceptable values
+		ai_desire = 100
 	}
 }

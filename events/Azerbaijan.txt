@@ -50,6 +50,12 @@ country_event = {
 			}
 			transfer_state = 1295
 		}
+		if = {
+			limit = {
+				country_exists = ARM
+			}
+			ARM  ={ country_event = armenia.3 }
+		}
 	}
 }
 
