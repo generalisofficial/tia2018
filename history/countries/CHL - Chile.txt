@@ -109,8 +109,6 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_steady
-	#non_aligned_movement_member
 	presidential_republic
 	permissive_gun_laws
 	pro_life
@@ -123,14 +121,14 @@ add_ideas = {
 set_country_flag = catholic
 
 #Chamber of Deputies
-set_variable = { communist_seats = 8.38 }
-set_variable = { socialist_seats = 11.61 }
-set_variable = { progressive_seats = 1.95 }
-set_variable = { social_democrat_seats = 22.58 }
-set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 55.48 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { communist_seats = 5.19 }
+set_variable = { socialist_seats = 11.68 }
+set_variable = { progressive_seats = 3.24 }
+set_variable = { social_democrat_seats = 22.72 }
+set_variable = { social_liberal_seats = 1.29 }
+set_variable = { classical_liberal_seats = 3.89 }
+set_variable = { conservative_seats = 32.51 }
+set_variable = { national_conservative_seats = 19.48 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -143,27 +141,35 @@ add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
-	last_election = "2017.11.19"
+	last_election = "2017.11.21"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 55.48
-	social_democrat = 22.58
-	socialist = 11.61
-	communist = 8.38
-	progressive = 1.95
+	conservative = 22.12
+	socialist = 16.88
+	social_democrat = 15.58
+	national_conservative = 14.93
+	right_wing_nationalist = 10.38
+	communist = 7.79
+    classical_liberal = 6.49
+	social_liberal = 3.24
+	progressive = 2.59
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = CHL_sebastián_piñera
-recruit_character = CHL_Álvaro_elizalde
-recruit_character = CHL_beatriz_sánchez
+recruit_character = CHL_jose_antonio_kast
+recruit_character = CHL_joaquin_lavin
+recruit_character = CHL_sebastian_pinera
+recruit_character = CHL_ignacio_briones
+recruit_character = CHL_patricio_morales
+recruit_character = CHL_alvaro_elizalde
+recruit_character = CHL_felix_gonzalez_gatica
+recruit_character = CHL_gabriel_boric
 recruit_character = CHL_guillermo_teillier
-recruit_character = CHL_félix_gonzález_gatica
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

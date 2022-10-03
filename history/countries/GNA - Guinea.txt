@@ -2,7 +2,7 @@
 
 oob = "GNA_2018"
 
-set_convoys = 100
+set_convoys = 2
 
 set_technology = {
 	## Infantry ##
@@ -91,13 +91,10 @@ if = {
 	}
 }
 
-
 set_country_flag = sunni_islam
 
 add_ideas = {
-	#population_growth_explosion
 	idea_african_union_member
-	#non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
 	presidential_republic
 	civil_liberties_authoritarian
@@ -111,8 +108,8 @@ add_ideas = {
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 53.97 }
-set_variable = { social_liberal_seats = 46.03 }
+set_variable = { social_democrat_seats = 53.51 }
+set_variable = { social_liberal_seats = 46.49 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
@@ -134,12 +131,12 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 53.97
-    social_liberal = 46.03
+    social_democrat = 69.29
+    social_liberal = 30.71
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = GNA_alpha_condé
 recruit_character = GNA_cellou_dalein_diallo
+recruit_character = GNA_alpha_conde

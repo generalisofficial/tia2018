@@ -1,27 +1,42 @@
+
 state={
 	id=775
 	name="STATE_775"
-	
-	resources = {
-		rubber = 7
+	resources={
+		rubber=7.000
 	}
-	
-	history = {
+
+	history={
 		owner = GNA
-		add_core_of = GNA
+		victory_points = {
+			1909 10
+		}
+		victory_points = {
+			14882 3
+		}
+		victory_points = {
+			14879 2
+		}
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 3
 			military_industry = 1
 			military_airport = 1
+			1909 = {
+				naval_base = 2
+				
+			}
+
 		}
+		add_core_of = GNA
+
 	}
-	
+
 	provinces={
-		1909 12802 12858 
+		1909 14876 14879 14882 14883 
 	}
 	manpower=7240000
 	buildings_max_level_factor=1.000
-	
-	state_category = state_default
+	state_category=state_default
+	local_supplies=0.000
 }
