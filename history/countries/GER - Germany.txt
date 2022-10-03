@@ -185,7 +185,14 @@ set_popularities = {
 }
 
 # Characters - Military
-
+recruit_character = GER_eberhard_zorn
+recruit_character = GER_alfons_mais
+recruit_character = GER_markus_laubenthal
+recruit_character = GER_gert_johannes_hagemann
+recruit_character = GER_dieter_naskrent
+recruit_character = GER_stephan_willer
+recruit_character = GER_ansgar_meyer
+recruit_character = GER_harald_gante
 
 # Characters - Political
 recruit_character = GER_ibrahim_abou_nagie
@@ -205,7 +212,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 
 	create_equipment_variant = {
-		name = "Type 212 Class"				
+		name = "Type 212 Class"
 		type = ship_hull_submarine_2
 		name_group = GENERIC_SS_NAMES
 		modules = {
@@ -283,4 +290,4 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-}	
+}
