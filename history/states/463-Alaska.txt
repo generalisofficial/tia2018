@@ -1,12 +1,12 @@
+
 state={
 	id=463
 	name="STATE_463"
-
-	resources = {
-		oil = 208
-		steel = 3
+	resources={
+		oil=208.000
+		steel=3.000
 	}
-	
+
 	history={
 		owner = USA
 		buildings = {
@@ -16,21 +16,32 @@ state={
 			shipyard = 1
 			13091 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = USA
 		add_core_of = ALK
-		victory_points = { 13069 3 }	#Fairbanks
-		victory_points = { 13090 1 }	#Unalaska
-		victory_points = { 13091 5 }	#Anchorage
-		victory_points = { 13203 3 }	#Juneau
+		victory_points = {
+			13069 3 
+		}
+		victory_points = {
+			13090 1 
+		}
+		victory_points = {
+			13091 5 
+		}
+		victory_points = {
+			13203 3 
+		}
 
 	}
 
 	provinces={
-		1135 1830 4833 4848 7855 7884 10679 10694 10707 12661 13069 13090 13091 13202 13203 
+		1135 1830 4833 4848 7855 7884 10679 10694 10707 12661 13069 13090 13091 13202 13203 14936 14938 14939 14940 14941 14942 14943 14948 14950 14952 14953 14957 14961 14964 14966 14968 14970 14971 14972 14973 14989 14993 14997 15001 15002 15008 
 	}
 	manpower=627822
-	buildings_max_level_factor=1
-	state_category = state_default
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }
