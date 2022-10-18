@@ -2,12 +2,8 @@
 state={
 	id=248
 	name="STATE_248"
-	manpower = 1864541
-	
-	state_category = state_default
-	
-	resources = {
-		steel = 8
+	resources={
+		steel=8.000
 	}
 
 	history={
@@ -18,11 +14,17 @@ state={
 		buildings = {
 			infrastructure = 3
 			military_airport = 1
+
 		}
 		add_core_of = RUS
+
 	}
 
 	provinces={
-		2 62 97 121 164 231 252 3077 3116 3190 3220 6056 6101 6143 6167 6356 9122 9188 9345 11039 11099 11166 11205 13128 
+		2 62 121 231 252 3077 3220 6056 6101 6143 6356 9122 9188 9345 11039 11099 11166 11205 13128 
 	}
+	manpower=1864541
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }
