@@ -456,15 +456,18 @@ ideas = {
 			level = 1
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 12
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 12
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -475,15 +478,18 @@ ideas = {
 			level = 2
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 24
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 24
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -494,15 +500,18 @@ ideas = {
 			level = 3
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 36
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 36
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -513,15 +522,18 @@ ideas = {
 			level = 4
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 48
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 48
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 			
@@ -534,15 +546,18 @@ ideas = {
 			level = 5
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 60
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 60
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -553,15 +568,18 @@ ideas = {
 			level = 6
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 72
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 72
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -572,15 +590,18 @@ ideas = {
 			level = 7
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 84
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 84
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -591,15 +612,18 @@ ideas = {
 			level = 8
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 96
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 96
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -610,15 +634,18 @@ ideas = {
 			level = 9
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 108
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 108
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
@@ -629,15 +656,18 @@ ideas = {
 			level = 10
 			
 			on_add = {
-				meta_effect = {
-					text = {
-						set_politics = {
-							ruling_party = [RULINGPARTY]
-							election_frequency = 120
+				hidden_effect = {
+					meta_effect = {
+						text = {
+							set_politics = {
+								ruling_party = [RULINGPARTY]
+								election_frequency = 120
+								elections_allowed = yes
+							}
 						}
+						RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+						debug = yes
 					}
-					RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-					debug = yes
 				}
 			}
 		}
