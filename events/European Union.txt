@@ -160,6 +160,7 @@ country_event = {
 				OR = {
 					has_idea = idea_european_union_member
 					AND = {
+						is_in_europe = yes
 						has_autonomy_state = autonomy_autonomous_region
 						OVERLORD = {
 							has_idea = idea_european_union_member
@@ -234,16 +235,16 @@ country_event = {
 		clear_variable = EUU.election_participants
 
 		# Political Groups Setup
-		add_to_variable = { EUU.INITIATIVE_seats= EUU.eurosceptic_seats }
-		add_to_variable = { EUU.GUE_NGL_seats = EUU.eurosceptic_seats }
-		add_to_variable = { EUU.GREENS_EFA_seats = EUU.pro_european_seats }
-		add_to_variable = { EUU.SD_seats = EUU.pro_european_seats }
-		add_to_variable = { EUU.ALDE_seats = EUU.pro_european_seats }
-		add_to_variable = { EUU.EPP_seats = EUU.pro_european_seats }
-		add_to_variable = { EUU.ECR_seats =  EUU.eurosceptic_seats }
-		add_to_variable = { EUU.ID_seats = EUU.eurosceptic_seats }
-		add_to_variable = { EUU.APF_seats =  EUU.eurosceptic_seats }
-		add_to_variable = { EUU.NI_seats =  EUU.eurosceptic_seats }
+		add_to_variable = { EUU.eurosceptic_seats = EUU.INITIATIVE_seats }
+		add_to_variable = { EUU.eurosceptic_seats = EUU.GUE_NGL_seats }
+		add_to_variable = { EUU.pro_european_seats = EUU.GREENS_EFA_seats }
+		add_to_variable = { EUU.pro_european_seats = EUU.SD_seats }
+		add_to_variable = { EUU.pro_european_seats = EUU.ALDE_seats }
+		add_to_variable = { EUU.pro_european_seats = EUU.EPP_seats }
+		add_to_variable = { EUU.eurosceptic_seats =  EUU.ECR_seats }
+		add_to_variable = { EUU.eurosceptic_seats = EUU.ID_seats }
+		add_to_variable = { EUU.eurosceptic_seats =  EUU.APF_seats }
+		add_to_variable = { EUU.eurosceptic_seats =  EUU.NI_seats }
 
 		# European Commission Setup
 		if = {

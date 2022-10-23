@@ -54,8 +54,7 @@ scripted_gui = {
 		context_type = player_context
 
 		visible = {
-			always = no #Archived
-			#NOT = { has_global_flag = european_union_dissolved }
+			NOT = { has_global_flag = european_union_dissolved }
 		}
 
 		effects = {

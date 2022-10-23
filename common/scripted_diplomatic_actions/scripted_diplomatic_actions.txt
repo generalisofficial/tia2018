@@ -3,6 +3,12 @@ scripted_diplomatic_actions = {
 	recall_volunteers = {
 		allowed = {
 			ROOT = { is_ai = no }
+			NOT = { 
+				OR = {
+					original_tag = XXX 
+					FROM = { original_tag = XXX }
+				}
+			}
 		}
 
 		visible = {

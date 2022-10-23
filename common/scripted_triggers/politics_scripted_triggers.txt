@@ -3581,3 +3581,111 @@ USA_republican_plurality = {
 		compare = greater_than_or_equals
 	}
 }
+
+# Neighbor Coalitions
+
+fascist_neighbor_coalition_plurality = {
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = islamist_seats
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = right_wing_nationalist_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = national_conservative_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = conservative_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = classical_liberal_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = social_liberal_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = social_democrat_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = progressive_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = socialist_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = fascist_neighbor_coalition
+		value = communist_neighbor_coalition
+		compare = greater_than
+	}
+}
+
+right_wing_nationalist_neighbor_coalition_plurality = {
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = islamist_seats
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = fascist_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = national_conservative_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = conservative_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = classical_liberal_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = social_liberal_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = social_democrat_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = progressive_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = socialist_neighbor_coalition
+		compare = greater_than
+	}
+	check_variable = {
+		var = right_wing_nationalist_neighbor_coalition
+		value = communist_neighbor_coalition
+		compare = greater_than
+	}
+}

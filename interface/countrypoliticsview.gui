@@ -56,7 +56,15 @@ guiTypes = {
 			size = { width = 267 height = 73 }
 			clipping = yes
 		    verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 			
+			background = {
+                name = "Background"
+                spriteType ="GFX_diplo_ideology_scroll_box_bg"
+                position = { x = 8000 y = 8000 } # Hidden
+            }
+
 			gridBoxType = {
 				name = "parties_grid"
 				position = { x = 1 y = 1 }
@@ -116,7 +124,7 @@ guiTypes = {
 				position = { x = 105 y = -45 }
 				font = "hoi_18mbs"
 				text = "faction"
-				maxWidth = 195
+				maxWidth = 300
 				maxHeight = 20
 				multiline = no
 				format = left

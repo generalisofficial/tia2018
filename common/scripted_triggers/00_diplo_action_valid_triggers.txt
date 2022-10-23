@@ -6,6 +6,12 @@
 # in some cases this trigger is checked for only initatior country, in that case both from & this is same
 
 is_diplomatic_action_valid_leave_faction = {
+	NOT = { 
+		OR = {
+			original_tag = XXX 
+			FROM = { original_tag = XXX }
+		}
+	}
 	FROM = {
 		OR = {
 			is_ai = no
@@ -17,10 +23,25 @@ is_diplomatic_action_valid_leave_faction = {
 	}
 }
 
+is_diplomatic_action_valid_send_attache = {
+	NOT = { 
+		OR = {
+			original_tag = XXX 
+			FROM = { original_tag = XXX }
+		}
+	}
+}
+
 is_diplomatic_action_valid_stage_coup = {
 	always = no
 }
 
 is_diplomatic_action_valid_boost_party_popularity = {
-	NOT = { has_dlc = "La Resistance" }
+	NOT = { 
+		OR = {
+			original_tag = XXX 
+			FROM = { original_tag = XXX }
+		}
+	}
 }
+

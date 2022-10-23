@@ -403,6 +403,7 @@ quickset_parliament = {
 	set_variable = { islamist_seats = party_popularity@islamist }
 	multiply_variable = { islamist_seats = 100 }
 	set_parliament_graphics = yes
+	set_neighbor_coalition_values = yes
 }
 
 one_party_parliament = {
@@ -3351,4 +3352,44 @@ set_election_change = {
 		var = communist_election_change
 		value = old_communist
 	}
+}
+
+set_neighbor_coalition_values = {
+	set_variable = { fascist_neighbor_coalition = 0 }
+	set_variable = { right_wing_nationalist_neighbor_coalition = 0 }
+	set_variable = { national_conservative_neighbor_coalition = 0 }
+	set_variable = { conservative_neighbor_coalition = 0 }
+	set_variable = { classical_liberal_neighbor_coalition = 0 }
+	set_variable = { social_liberal_neighbor_coalition = 0 }
+	set_variable = { social_democrat_neighbor_coalition = 0 }
+	set_variable = { progressive_neighbor_coalition = 0 }
+	set_variable = { socialist_neighbor_coalition = 0 }
+	set_variable = { communist_neighbor_coalition = 0 }
+	add_to_variable = { fascist_neighbor_coalition = fascist_seats }
+	add_to_variable = { fascist_neighbor_coalition = right_wing_nationalist_seats }
+	add_to_variable = { right_wing_nationalist_neighbor_coalition = fascist_seats }
+	add_to_variable = { right_wing_nationalist_neighbor_coalition = right_wing_nationalist_seats }
+	add_to_variable = { right_wing_nationalist_neighbor_coalition = national_conservative_seats }
+	add_to_variable = { national_conservative_neighbor_coalition = right_wing_nationalist_seats }
+	add_to_variable = { national_conservative_neighbor_coalition = national_conservative_seats }
+	add_to_variable = { national_conservative_neighbor_coalition = conservative_seats }
+	add_to_variable = { conservative_neighbor_coalition = national_conservative_seats }
+	add_to_variable = { conservative_neighbor_coalition = conservative_seats }
+	add_to_variable = { conservative_neighbor_coalition = classical_liberal_seats }
+	add_to_variable = { classical_liberal_neighbor_coalition = conservative_seats }
+	add_to_variable = { classical_liberal_neighbor_coalition = classical_liberal_seats }
+	add_to_variable = { social_liberal_neighbor_coalition = classical_liberal_seats }
+	add_to_variable = { social_liberal_neighbor_coalition = social_liberal_seats }
+	add_to_variable = { social_liberal_neighbor_coalition = social_democrat_seats }
+	add_to_variable = { social_democrat_neighbor_coalition = social_liberal_seats }
+	add_to_variable = { social_democrat_neighbor_coalition = social_democrat_seats }
+	add_to_variable = { social_democrat_neighbor_coalition = progressive_seats }
+	add_to_variable = { progressive_neighbor_coalition = social_democrat_seats }
+	add_to_variable = { progressive_neighbor_coalition = progressive_seats }
+	add_to_variable = { progressive_neighbor_coalition = socialist_seats }
+	add_to_variable = { socialist_neighbor_coalition = progressive_seats }
+	add_to_variable = { socialist_neighbor_coalition = socialist_seats }
+	add_to_variable = { socialist_neighbor_coalition = communist_seats }
+	add_to_variable = { communist_neighbor_coalition = socialist_seats }
+	add_to_variable = { communist_neighbor_coalition = communist_seats }
 }
