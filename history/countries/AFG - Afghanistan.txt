@@ -69,45 +69,46 @@ add_opinion_modifier = {
 }
 
 #House of the People
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
+set_variable = { communist_seats = 4.01 }
+set_variable = { socialist_seats = 1.6 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 1.6 }
-set_variable = { social_liberal_seats = 3.6 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 36.42 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 78.75 }
-set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 4.41 }
+set_variable = { conservative_seats = 29.47 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 1.2 }
+set_variable = { right_wing_nationalist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 11.64 }
+set_variable = { islamist_seats = 27.3 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
-	ruling_party = national_conservative
-	last_election = "2014.4.20"
+	ruling_party = social_liberal
+	last_election = "2014.9.28"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 78.75
-	islamist = 11.64
-	right_wing_nationalist = 4.41
-	social_liberal = 3.6
-	social_democrat = 1.6
+    social_liberal = 39.86
+	conservative = 26.03
+	islamist = 27.3
+	communist = 4.01
+	socialist = 1.6
+	monarchist = 1.2
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = AFG_ashraf_ghani
-recruit_character = AFG_abdullah_abdullah
 recruit_character = AFG_salahuddin_rabbani
-recruit_character = AFG_muhammad_mohaqiq
-recruit_character = AFG_sebghatullah_sanjar
 recruit_character = AFG_ahmad_shah_khan
+recruit_character = AFG_abdullah_abdullah
+recruit_character = AFG_ashraf_ghani
+recruit_character = AFG_dawood_razmak
+recruit_character = AFG_abdul_rashid_dostum

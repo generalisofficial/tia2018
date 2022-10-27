@@ -1,6 +1,6 @@
 characters={
     #Starting - Political
-	TCD_idriss_déby={
+	TCD_idriss_deby={
 		name="Idriss Déby"
 		portraits={
 			civilian={
@@ -8,7 +8,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=right_wing_nationalist_ideology
+			ideology=national_conservative_ideology
+			traits = { strongman friend_of_france }
 		}
 	}
 	TCD_saleh_kebzabo={
@@ -20,6 +21,17 @@ characters={
 		}
 		country_leader={
 			ideology=social_democrat_ideology
+		}
+	}
+	TCD_albert_pahimi_padacke={
+		name="Albert Pahimi Padacké"
+		portraits={
+			civilian={
+				large=GFX_Portrait_TCD_Albert_Pahimi_Padacke
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist
 		}
 	}
 	#Starting - Military

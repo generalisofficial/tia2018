@@ -121,6 +121,11 @@ declare_war_on = {
 	type = annex_everything
 }
 
+declare_war_on = {
+	target = AFG
+	type = annex_everything
+}
+
 set_politics = {	
 	ruling_party = islamist
 	last_election = "2018.1.1"
@@ -133,7 +138,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	#population_growth_rapid
 	extensive_conscription
 	isolationism
 	violent_non_state_actor
@@ -144,11 +148,6 @@ add_ideas = {
 	civil_liberties_totalitarian
 	pro_life
 	organized_labour_discouraged
-}
-
-add_opinion_modifier = {
-	target = ISR
-	modifier = no_diplomatic_recognition
 }
 
 # Characters - Military

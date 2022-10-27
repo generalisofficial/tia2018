@@ -107,10 +107,8 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_explosion
 	idea_commonwealth_of_nations_member
 	idea_african_union_member
-	#non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
 	presidential_republic
 	civil_liberties_authoritarian
@@ -126,13 +124,13 @@ set_country_flag = catholic
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 21.12 }
+set_variable = { social_democrat_seats = 12.69 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
+set_variable = { conservative_seats = 5.09 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 78.88 }
+set_variable = { right_wing_nationalist_seats = 82.22 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -149,14 +147,16 @@ set_politics = {
 }
 
 set_popularities = {
-    right_wing_nationalist = 78.88
-    social_democrat = 21.12
+    right_wing_nationalist = 77.22
+	conservative = 12
+    social_democrat = 10.78
 }
 
 # Characters - Military
 
 # Characters - Political
 recruit_character = CMR_paul_biya
+recruit_character = CMR_bello_bouba_maigari
 recruit_character = CMR_john_fru_ndi
 
 if = {
