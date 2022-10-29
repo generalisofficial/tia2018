@@ -280,3 +280,58 @@ georgia_help_ukraine_if_abk_sos_occupied = {
         value = 1000
     }
 }
+
+resolute_support_mission = {
+    enable = {
+	    OR = {
+            original_tag = USA
+            original_tag = ENG
+            original_tag = GER
+            original_tag = TUR
+        }
+        NOT = { has_government = islamist }
+        country_exists = AFG
+        country_exists = TAL
+        AFG = {
+            has_war_with = TAL
+        }
+    }
+	abort = {
+        OR = {
+            has_government = islamist
+            NOT = { country_exists = TAL }
+        }
+    } 
+	ai_strategy = {
+        type = support
+        id = "AFG"
+        value = 1000
+    }
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "AFG"
+        value = 1000
+    }
+}
+
+islamic_fundamentalists_support_taliban = {
+    enable = {
+        has_country_leader_ideology = islamic_fundamentalist
+        country_exists = AFG
+        country_exists = TAL
+        TAL = {
+            has_war_with = AFG
+        }
+    }
+	abort = {
+        OR = {
+            NOT = { has_country_leader_ideology = islamic_fundamentalist }
+            NOT = { country_exists = AFG }
+        }
+    } 
+	ai_strategy = {
+        type = support
+        id = "TAL"
+        value = 1000
+    }
+}

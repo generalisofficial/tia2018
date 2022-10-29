@@ -32,7 +32,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = islamist
 			elections_allowed = no
@@ -45,6 +45,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -71,7 +77,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = fascist
 			elections_allowed = no
@@ -84,6 +90,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -116,7 +128,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = right_wing_nationalist
 			elections_allowed = no
@@ -129,6 +141,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -160,7 +178,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = monarchist
 			elections_allowed = no
@@ -201,7 +219,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = national_conservative
 			elections_allowed = no
@@ -214,6 +232,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -245,7 +269,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = conservative
 			elections_allowed = no
@@ -258,6 +282,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -289,7 +319,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = classical_liberal
 			elections_allowed = no
@@ -302,6 +332,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -333,7 +369,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
@@ -346,6 +382,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -377,7 +419,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = no
@@ -390,14 +432,20 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
 #Progressive Coup
 country_event = {
 	id = coup.10
-	title = coup.10.t1
-	desc = coup.10.d1
+	title = coup.10.t
+	desc = coup.10.d
 	
 	trigger = {
 		progressive > 0.5
@@ -421,7 +469,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = progressive
 			elections_allowed = no
@@ -434,6 +482,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -465,7 +519,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = socialist
 			elections_allowed = no
@@ -478,6 +532,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
@@ -509,7 +569,7 @@ country_event = {
 	
 	option = {
 		name = coup.o1
-		add_political_power = 100
+		add_political_power = 200
 		set_politics = {
 			ruling_party = communist
 			elections_allowed = no
@@ -522,6 +582,12 @@ country_event = {
 		one_party_parliament = yes
 		break_coalition = yes
 		quickset_coalition = yes
+		if = {
+			limit =  {
+				has_idea = absolute_monarchy
+			}
+			add_ideas = one_party_state
+		}
 	}
 }
 
