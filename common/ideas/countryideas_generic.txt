@@ -112,55 +112,13 @@ ideas = {
 			
 			cancel = {
 			    NOT = {
-			    	OR = { 
-				 	   AND = {
-						    OR = {
-							    has_country_flag = coalition_social_liberal
-				 	           	has_country_flag = coalition_classical_liberal
-								has_country_flag = coalition_conservative
-								has_country_flag = coalition_national_conservative
-							}
-							OR = {
-							    has_country_flag = coalition_social_democrat
-				 	           	has_country_flag = coalition_progressive
-								has_country_flag = coalition_socialist
-								has_country_flag = coalition_communist
-							}
-			    	    }
-						AND = {
-						    OR = {
-							    has_country_flag = coalition_social_liberal
-					            has_country_flag = coalition_classical_liberal
-								has_country_flag = coalition_conservative
-								has_country_flag = coalition_national_conservative
-							}
-							OR = {
-								has_country_flag = coalition_islamist
-								has_country_flag = coalition_monarchist
-								has_country_flag = coalition_right_wing_nationalist
-								has_country_flag = coalition_fascist
-							}
-			    	    }
-						AND = {
-							OR = {
-								has_country_flag = coalition_islamist
-								has_country_flag = coalition_monarchist
-								has_country_flag = coalition_right_wing_nationalist
-								has_country_flag = coalition_fascist
-							}
-							OR = {
-							    has_country_flag = coalition_social_democrat
-					            has_country_flag = coalition_progressive
-								has_country_flag = coalition_socialist
-								has_country_flag = coalition_communist
-							}
-			    	    }
-					}
+					has_idea = parliamentary_system
 				}
 			}
 			
 			modifier = {
-			    political_power_factor = -0.15
+			    political_power_factor = -0.1
+				war_support_factor = -0.025
 			}
 		}
 

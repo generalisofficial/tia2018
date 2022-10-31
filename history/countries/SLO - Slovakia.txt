@@ -118,16 +118,16 @@ set_variable = { classical_liberal_seats = 14 }
 set_variable = { conservative_seats = 26.66 }
 set_variable = { national_conservative_seats = 7.33 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_nationalist_seats = 10 }
+set_variable = { right_wing_populist_seats = 10 }
 set_variable = { fascist_seats = 9.33 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_right_wing_nationalist
+set_country_flag = coalition_right_wing_populist
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
 
 set_politics = {
 	ruling_party = social_democrat

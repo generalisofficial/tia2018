@@ -94,9 +94,9 @@ political_actions = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_right_wing_populist
 				}
-				add_popularity = { ideology = right_wing_nationalist popularity = 0.01 }	
+				add_popularity = { ideology = right_wing_populist popularity = 0.01 }	
 			}
 			if = {
 				limit = { 
@@ -215,7 +215,7 @@ political_actions = {
 		}
 	}
 
-	boost_right_wing_nationalist_opposition = {
+	boost_right_wing_populist_opposition = {
 		icon = donation
 
 		available = {
@@ -225,7 +225,7 @@ political_actions = {
 		}
 
 		visible = {
-			NOT = { has_country_flag = coalition_right_wing_nationalist }
+			NOT = { has_country_flag = coalition_right_wing_populist }
 			NOT = { has_idea = violent_non_state_actor }
 		}
 
@@ -233,7 +233,7 @@ political_actions = {
 
 		complete_effect = {
 			add_popularity = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				popularity = 0.02
 			}
 		}

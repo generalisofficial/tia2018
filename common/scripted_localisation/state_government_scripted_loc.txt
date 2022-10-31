@@ -15,9 +15,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_state_flag = state_government_right_wing_nationalist
+			has_state_flag = state_government_right_wing_populist
 		}
-		localization_key = right_wing_nationalist
+		localization_key = right_wing_populist
 	}
 	text = {
 		trigger = {
@@ -97,9 +97,9 @@ defined_text = {
 					}
 				}
 				AND = {
-					has_state_flag = state_government_right_wing_nationalist
+					has_state_flag = state_government_right_wing_populist
 					owner = {
-						NOT = { has_country_flag = coalition_right_wing_nationalist }
+						NOT = { has_country_flag = coalition_right_wing_populist }
 					}
 				}
 				AND = {

@@ -1,7 +1,7 @@
 break_coalition = {
 	clr_country_flag = coalition_islamist
 	clr_country_flag = coalition_fascist
-	clr_country_flag = coalition_right_wing_nationalist
+	clr_country_flag = coalition_right_wing_populist
 	clr_country_flag = coalition_monarchist
 	clr_country_flag = coalition_national_conservative
 	clr_country_flag = coalition_conservative
@@ -18,7 +18,7 @@ cleanup_coalition = {
 	clr_country_flag = government_chosen
 	clr_country_flag = government_islamist
 	clr_country_flag = government_fascist
-	clr_country_flag = government_right_wing_nationalist
+	clr_country_flag = government_right_wing_populist
 	clr_country_flag = government_monarchist
 	clr_country_flag = government_national_conservative
 	clr_country_flag = government_conservative
@@ -37,7 +37,7 @@ cleanup_coalition = {
 cleanup_seats_parliament = {
 	clear_variable = islamist_seats_parliament
 	clear_variable = fascist_seats_parliament
-	clear_variable = right_wing_nationalist_seats_parliament
+	clear_variable = right_wing_populist_seats_parliament
 	clear_variable = monarchist_seats_parliament
 	clear_variable = national_conservative_seats_parliament
 	clear_variable = conservative_seats_parliament
@@ -68,9 +68,9 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_right_wing_nationalist
+			has_country_flag = coalition_right_wing_populist
 		}
-		add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
 	}
 	if = {
 		limit = {
@@ -221,7 +221,7 @@ setup_coalition = {
 	if = {
 		limit = {
 			check_variable = {
-				right_wing_nationalist_seats > 0.99
+				right_wing_populist_seats > 0.99
 			}
 		}
 		add_to_array = {
@@ -333,7 +333,7 @@ setup_coalition = {
 	if = {
 		limit = {
 			check_variable = {
-				right_wing_nationalist_seats > 0.99
+				right_wing_populist_seats > 0.99
 			}
 		}
 		add_to_array = {
@@ -396,8 +396,8 @@ quickset_parliament = {
 	multiply_variable = { national_conservative_seats = 100 }
 	set_variable = { monarchist_seats = party_popularity@monarchist }
 	multiply_variable = { monarchist_seats = 100 }
-	set_variable = { right_wing_nationalist_seats = party_popularity@right_wing_nationalist }
-	multiply_variable = { right_wing_nationalist_seats = 100 }
+	set_variable = { right_wing_populist_seats = party_popularity@right_wing_populist }
+	multiply_variable = { right_wing_populist_seats = 100 }
 	set_variable = { fascist_seats = party_popularity@fascist }
 	multiply_variable = { fascist_seats = 100 }
 	set_variable = { islamist_seats = party_popularity@islamist }
@@ -420,7 +420,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -437,7 +437,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -454,7 +454,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -471,7 +471,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -488,7 +488,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -505,7 +505,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -522,7 +522,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 100 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -539,7 +539,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 100 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -556,13 +556,13 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 100 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
 	if = {
 		limit = {
-			has_government = right_wing_nationalist
+			has_government = right_wing_populist
 		}
 		set_variable = { communist_seats = 0 }
 		set_variable = { socialist_seats = 0 }
@@ -573,7 +573,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 100 }
+		set_variable = { right_wing_populist_seats = 100 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -590,7 +590,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 100 }
 		set_variable = { islamist_seats = 0 }
 	}
@@ -607,7 +607,7 @@ one_party_parliament = {
 		set_variable = { conservative_seats = 0 }
 		set_variable = { national_conservative_seats = 0 }
 		set_variable = { monarchist_seats = 0 }
-		set_variable = { right_wing_nationalist_seats = 0 }
+		set_variable = { right_wing_populist_seats = 0 }
 		set_variable = { fascist_seats = 0 }
 		set_variable = { islamist_seats = 100 }
 	}
@@ -681,10 +681,10 @@ quickset_coalition = {
 	}
 	if = {
 		limit = {
-			has_government = right_wing_nationalist
+			has_government = right_wing_populist
 		}
-		set_country_flag = coalition_right_wing_nationalist
-        set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		set_country_flag = coalition_right_wing_populist
+        set_variable = { ROOT.Coalition = right_wing_populist_seats }
 	}
 	if = {
 		limit = {
@@ -760,9 +760,9 @@ quickset_coalition_flags_only = {
 	}
 	if = {
 		limit = {
-			has_government = right_wing_nationalist
+			has_government = right_wing_populist
 		}
-		set_country_flag = coalition_right_wing_nationalist
+		set_country_flag = coalition_right_wing_populist
 	}
 	if = {
 		limit = {
@@ -797,7 +797,7 @@ set_parliament_graphics = {
 	set_variable = { islamist_seats_parliament = islamist_seats }
 	set_variable = { monarchist_seats_parliament = monarchist_seats }
 	set_variable = { national_conservative_seats_parliament = national_conservative_seats }
-	set_variable = { right_wing_nationalist_seats_parliament = right_wing_nationalist_seats }
+	set_variable = { right_wing_populist_seats_parliament = right_wing_populist_seats }
 	set_variable = { fascist_seats_parliament = fascist_seats }
 
 ## Step 2 : Round variables
@@ -812,7 +812,7 @@ set_parliament_graphics = {
 	round_variable = islamist_seats_parliament
 	round_variable = monarchist_seats_parliament
 	round_variable = national_conservative_seats_parliament
-	round_variable = right_wing_nationalist_seats_parliament
+	round_variable = right_wing_populist_seats_parliament
 	round_variable = fascist_seats_parliament
 
 ## Step 3 : Assign seats
@@ -831,7 +831,7 @@ set_parliament_graphics = {
 	add_to_array = { ideology_seats_array = islamist_seats_parliament }
 	add_to_array = { ideology_seats_array = monarchist_seats_parliament }
 	add_to_array = { ideology_seats_array = national_conservative_seats_parliament }
-	add_to_array = { ideology_seats_array = right_wing_nationalist_seats_parliament }
+	add_to_array = { ideology_seats_array = right_wing_populist_seats_parliament }
 	add_to_array = { ideology_seats_array = fascist_seats_parliament }
 
 	for_each_loop = {
@@ -1491,7 +1491,7 @@ set_coalition_to_array = {
 	}
 	if = {
 		limit = {
-			has_country_flag = coalition_right_wing_nationalist
+			has_country_flag = coalition_right_wing_populist
 		}
 		add_to_array = { member_parties_array = 3 }
 	}
@@ -1655,12 +1655,12 @@ create_pie_chart = {
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { right_wing_nationalist_pop = right_wing_nationalist_seats_parliament }
-	round_temp_variable = right_wing_nationalist_pop 
-	add_to_temp_variable = { right_wing_nationalist_pop = ROOT.last_idx }
+	set_temp_variable = { right_wing_populist_pop = right_wing_populist_seats_parliament }
+	round_temp_variable = right_wing_populist_pop 
+	add_to_temp_variable = { right_wing_populist_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = right_wing_nationalist_pop
+		end = right_wing_populist_pop
 		set_variable = { pie_chart^v = 11 }
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
@@ -2027,7 +2027,7 @@ set_parliament_speaker_plurality = {
 	}
 	if = {
 		limit = {
-			right_wing_nationalist_plurality_seats = yes
+			right_wing_populist_plurality_seats = yes
 		}
 		set_variable = { plurality_var = 11 }
 	}
@@ -2085,7 +2085,7 @@ election_pulse = {
 	    limit = {
 		    original_tag = ITA
 			has_government = classical_liberal
-			has_country_flag = coalition_right_wing_nationalist
+			has_country_flag = coalition_right_wing_populist
 			NOT = {
 				has_country_leader = {
 					name = "Giuseppe Conte"
@@ -2383,6 +2383,7 @@ election_effect = {
 			TODAY = "[?global.date.GetDateStringNoHour]"
 			debug = yes
 		}
+		remove_ideas = unstable_coalition
 	}
 	if = {
 		limit = {
@@ -2618,7 +2619,7 @@ set_eurosceptic_commission = {
 		}
 		EUU = {
 			set_politics = {	
-				ruling_party = right_wing_nationalist
+				ruling_party = right_wing_populist
 				elections_allowed = yes
 			}
 		}
@@ -2753,11 +2754,11 @@ puppet_ideology_cleanup = {
 	}
 	if  = {
 		limit = {
-			NOT = { has_government = right_wing_nationalist }
-			NOT = { has_country_flag = has_right_wing_nationalist_party }
+			NOT = { has_government = right_wing_populist }
+			NOT = { has_country_flag = has_right_wing_populist_party }
 		}
 		add_popularity = { 
-			ideology = right_wing_nationalist
+			ideology = right_wing_populist
 			popularity = -1
 		}
 	}
@@ -2924,7 +2925,7 @@ puppet_government_sync = {
 auto_government = {
 	if = {
 		limit = {
-			islamist_plurality_seats = yes
+			islamist_neighbor_coalition_plurality = yes
 		}
 		set_politics = {	
 			ruling_party = islamist
@@ -2935,7 +2936,8 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			fascist_plurality_seats = yes
+			fascist_neighbor_coalition_plurality = yes
+			check_variable = { fascist_seats > right_wing_nationalist_seats }
 		}
 		set_politics = {	
 			ruling_party = fascist
@@ -2945,25 +2947,32 @@ auto_government = {
 		add_to_variable = { ROOT.Coalition = fascist_seats }
 		if = {
 			limit = {
-				check_variable = { right_wing_nationalist_seats > 0.01 }
+				check_variable = { right_wing_populist_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
-			set_country_flag = coalition_right_wing_nationalist
-			add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_country_flag = coalition_right_wing_populist
+			add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 	}
 	if = {
 		limit = {
-			right_wing_nationalist_plurality_seats = yes
+			right_wing_populist_neighbor_coalition_plurality = yes
+			check_variable = { right_wing_populist_seats > fascist_seats }
+			OR = {
+				NOT = { national_conservative_neighbor_coalition_plurality = yes }
+				check_variable = { right_wing_populist_seats > national_conservative_seats }
+			}
 		}
-		set_politics = {	
-			ruling_party = right_wing_nationalist
+		set_politics = {
+			ruling_party = right_wing_populist
 			elections_allowed = yes
 		}
-		set_country_flag = coalition_right_wing_nationalist
-		add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+		set_country_flag = coalition_right_wing_populist
+		add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
 		if = {
 			limit = {
 				check_variable = { fascist_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_fascist
 			add_to_variable = { ROOT.Coalition = fascist_seats }
@@ -2971,6 +2980,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { national_conservative_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_national_conservative
 			add_to_variable = { ROOT.Coalition = national_conservative_seats }
@@ -2978,7 +2988,15 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			national_conservative_plurality_seats = yes
+			national_conservative_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { right_wing_populist_neighbor_coalition_plurality = yes }
+				check_variable = { national_conservative_seats > right_wing_populist_seats }
+			}
+			OR = {
+				NOT = { conservative_neighbor_coalition_plurality = yes }
+				check_variable = { national_conservative_seats > conservative_seats }
+			}
 		}
 		set_politics = {	
 			ruling_party = national_conservative
@@ -2988,14 +3006,16 @@ auto_government = {
 		add_to_variable = { ROOT.Coalition = national_conservative_seats }
 		if = {
 			limit = {
-				check_variable = { right_wing_nationalist_seats > 0.01 }
+				check_variable = { right_wing_populist_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
-			set_country_flag = coalition_right_wing_nationalist
-			add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_country_flag = coalition_right_wing_populist
+			add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 		if = {
 			limit = {
 				check_variable = { conservative_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_conservative
 			add_to_variable = { ROOT.Coalition = conservative_seats }
@@ -3003,32 +3023,15 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			national_conservative_plurality_seats = yes
-		}
-		set_politics = {	
-			ruling_party = national_conservative
-			elections_allowed = yes
-		}
-		set_country_flag = coalition_national_conservative
-		add_to_variable = { ROOT.Coalition = national_conservative_seats }
-		if = {
-			limit = {
-				check_variable = { right_wing_nationalist_seats > 0.01 }
+			conservative_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { national_conservative_neighbor_coalition_plurality = yes }
+				check_variable = { conservative_seats > national_conservative_seats }
 			}
-			set_country_flag = coalition_right_wing_nationalist
-			add_to_variable = { ROOT.Coalition = right_wing_nationalist_seats }
-		}
-		if = {
-			limit = {
-				check_variable = { conservative_seats > 0.01 }
+			OR = {
+				NOT = { classical_liberal_neighbor_coalition_plurality = yes }
+				check_variable = { conservative_seats > classical_liberal_seats }
 			}
-			set_country_flag = coalition_conservative
-			add_to_variable = { ROOT.Coalition = conservative_seats }
-		}
-	}
-	if = {
-		limit = {
-			conservative_plurality_seats = yes
 		}
 		set_politics = {
 			ruling_party = conservative
@@ -3039,6 +3042,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { classical_liberal_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_classical_liberal
 			add_to_variable = { ROOT.Coalition = classical_liberal_seats }
@@ -3046,6 +3050,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { national_conservative_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_national_conservative
 			add_to_variable = { ROOT.Coalition = national_conservative_seats }
@@ -3053,7 +3058,15 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			classical_liberal_plurality_seats = yes
+			classical_liberal_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { conservative_neighbor_coalition_plurality = yes }
+				check_variable = { classical_liberal_seats > conservative_seats }
+			}
+			OR = {
+				NOT = { social_liberal_neighbor_coalition_plurality = yes }
+				check_variable = { classical_liberal_seats > social_liberal_seats }
+			}
 		}
 		set_politics = {
 			ruling_party = classical_liberal
@@ -3063,22 +3076,32 @@ auto_government = {
 		add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 		if = {
 			limit = {
-				check_variable = { social_liberal_seats > 0.01 }
-			}
-			set_country_flag = coalition_social_liberal
-			add_to_variable = { ROOT.Coalition = social_liberal_seats }
-		}
-		if = {
-			limit = {
 				check_variable = { conservative_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_conservative
 			add_to_variable = { ROOT.Coalition = conservative_seats }
 		}
+		if = {
+			limit = {
+				check_variable = { social_liberal_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
+			}
+			set_country_flag = coalition_social_liberal
+			add_to_variable = { ROOT.Coalition = social_liberal_seats }
+		}
 	}
 	if = {
 		limit = {
-			social_liberal_plurality_seats = yes
+			social_liberal_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { social_democrat_neighbor_coalition_plurality = yes }
+				check_variable = { social_liberal_seats > social_democrat_seats }
+			}
+			OR = {
+				NOT = { classical_liberal_neighbor_coalition_plurality = yes }
+				check_variable = { social_liberal_seats > classical_liberal_seats }
+			}
 		}
 		set_politics = {
 			ruling_party = social_liberal
@@ -3089,6 +3112,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { classical_liberal_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_classical_liberal
 			add_to_variable = { ROOT.Coalition = classical_liberal_seats }
@@ -3096,6 +3120,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { social_democrat_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_social_democrat
 			add_to_variable = { ROOT.Coalition = social_democrat_seats }
@@ -3103,7 +3128,15 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			social_democrat_plurality_seats = yes
+			social_democrat_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { social_liberal_neighbor_coalition_plurality = yes }
+				check_variable = { social_democrat_seats > social_liberal_seats }
+			}
+			OR = {
+				NOT = { progressive_neighbor_coalition_plurality = yes }
+				check_variable = { social_democrat_seats > progressive_seats }
+			}
 		}
 		set_politics = {
 			ruling_party = social_democrat
@@ -3113,22 +3146,32 @@ auto_government = {
 		add_to_variable = { ROOT.Coalition = social_democrat_seats }
 		if = {
 			limit = {
-				check_variable = { social_liberal_seats > 0.01 }
-			}
-			set_country_flag = coalition_social_liberal
-			add_to_variable = { ROOT.Coalition = social_liberal_seats }
-		}
-		if = {
-			limit = {
 				check_variable = { progressive_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_progressive
 			add_to_variable = { ROOT.Coalition = progressive_seats }
 		}
+		if = {
+			limit = {
+				check_variable = { social_liberal_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
+			}
+			set_country_flag = coalition_social_liberal
+			add_to_variable = { ROOT.Coalition = social_liberal_seats }
+		}
 	}
 	if = {
 		limit = {
-			progressive_plurality_seats = yes
+			progressive_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { social_democrat_neighbor_coalition_plurality = yes }
+				check_variable = { progressive_seats > social_democrat_seats }
+			}
+			OR = {
+				NOT = { socialist_neighbor_coalition_plurality = yes }
+				check_variable = { progressive_seats > socialist_seats }
+			}
 		}
 		set_politics = {
 			ruling_party = progressive
@@ -3139,6 +3182,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { social_democrat_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_social_democrat
 			add_to_variable = { ROOT.Coalition = social_democrat_seats }
@@ -3146,6 +3190,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { socialist_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_socialist
 			add_to_variable = { ROOT.Coalition = socialist_seats }
@@ -3153,7 +3198,12 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			socialist_plurality_seats = yes
+			socialist_neighbor_coalition_plurality = yes
+			OR = {
+				NOT = { progressive_neighbor_coalition_plurality = yes }
+				check_variable = { socialist_seats > progressive_seats }
+			}
+			check_variable = { socialist_seats > communist_seats }
 		}
 		set_politics = {
 			ruling_party = socialist
@@ -3164,6 +3214,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { progressive_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_progressive
 			add_to_variable = { ROOT.Coalition = progressive_seats }
@@ -3171,6 +3222,7 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { communist_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_communist
 			add_to_variable = { ROOT.Coalition = communist_seats }
@@ -3178,7 +3230,8 @@ auto_government = {
 	}
 	if = {
 		limit = {
-			communist_plurality_seats = yes
+			communist_neighbor_coalition_plurality = yes
+			check_variable = { communist_seats > socialist_seats }
 		}
 		set_politics = {
 			ruling_party = communist
@@ -3189,18 +3242,20 @@ auto_government = {
 		if = {
 			limit = {
 				check_variable = { socialist_seats > 0.01 }
+				check_variable = { ROOT.Coalition < 50.01 }
 			}
 			set_country_flag = coalition_socialist
 			add_to_variable = { ROOT.Coalition = socialist_seats }
 		}
 	}
+	set_parliament_graphics = yes
 	election_pulse = yes
 }
 
 gubernatorial_elections = {
 	set_temp_variable = { islamist_popularity = party_popularity@islamist }
 	set_temp_variable = { fascist_popularity = party_popularity@fascist }
-	set_temp_variable = { right_wing_nationalist_popularity = party_popularity@right_wing_nationalist }
+	set_temp_variable = { right_wing_populist_popularity = party_popularity@right_wing_populist }
 	set_temp_variable = { monarchist_popularity = party_popularity@monarchist }
 	set_temp_variable = { national_conservative_popularity = party_popularity@national_conservative }
 	set_temp_variable = { conservative_popularity = party_popularity@conservative }
@@ -3227,8 +3282,8 @@ gubernatorial_elections = {
 			fascist_popularity = {
 				set_state_flag = state_government_fascist
 			}
-			right_wing_nationalist_popularity = {
-				set_state_flag = state_government_right_wing_nationalist
+			right_wing_populist_popularity = {
+				set_state_flag = state_government_right_wing_populist
 			}
 			monarchist_popularity = {
 				set_state_flag = state_government_monarchist
@@ -3264,7 +3319,7 @@ gubernatorial_elections = {
 clear_state_government_flags = {
 	clr_state_flag = state_government_islamist
 	clr_state_flag = state_government_fascist
-	clr_state_flag = state_government_right_wing_nationalist
+	clr_state_flag = state_government_right_wing_populist
 	clr_state_flag = state_government_monarchist
 	clr_state_flag = state_government_national_conservative
 	clr_state_flag = state_government_conservative
@@ -3279,7 +3334,7 @@ clear_state_government_flags = {
 set_old_election_results = {
 	set_variable = { old_islamist = islamist_seats }
 	set_variable = { old_fascist = fascist_seats }
-	set_variable = { old_right_wing_nationalist = right_wing_nationalist_seats }
+	set_variable = { old_right_wing_populist = right_wing_populist_seats }
 	set_variable = { old_monarchist = monarchist_seats }
 	set_variable = { old_national_conservative = national_conservative_seats }
 	set_variable = { old_conservative = conservative_seats }
@@ -3302,10 +3357,10 @@ set_election_change = {
 		var = fascist_election_change
 		value = old_fascist
 	}
-	set_variable = { right_wing_nationalist_election_change = right_wing_nationalist_seats }
+	set_variable = { right_wing_populist_election_change = right_wing_populist_seats }
 	subtract_from_variable = {
-		var = right_wing_nationalist_election_change
-		value = old_right_wing_nationalist
+		var = right_wing_populist_election_change
+		value = old_right_wing_populist
 	}
 	set_variable = { monarchist_election_change = monarchist_seats }
 	subtract_from_variable = {
@@ -3356,7 +3411,7 @@ set_election_change = {
 
 set_neighbor_coalition_values = {
 	set_variable = { fascist_neighbor_coalition = 0 }
-	set_variable = { right_wing_nationalist_neighbor_coalition = 0 }
+	set_variable = { right_wing_populist_neighbor_coalition = 0 }
 	set_variable = { national_conservative_neighbor_coalition = 0 }
 	set_variable = { conservative_neighbor_coalition = 0 }
 	set_variable = { classical_liberal_neighbor_coalition = 0 }
@@ -3366,11 +3421,11 @@ set_neighbor_coalition_values = {
 	set_variable = { socialist_neighbor_coalition = 0 }
 	set_variable = { communist_neighbor_coalition = 0 }
 	add_to_variable = { fascist_neighbor_coalition = fascist_seats }
-	add_to_variable = { fascist_neighbor_coalition = right_wing_nationalist_seats }
-	add_to_variable = { right_wing_nationalist_neighbor_coalition = fascist_seats }
-	add_to_variable = { right_wing_nationalist_neighbor_coalition = right_wing_nationalist_seats }
-	add_to_variable = { right_wing_nationalist_neighbor_coalition = national_conservative_seats }
-	add_to_variable = { national_conservative_neighbor_coalition = right_wing_nationalist_seats }
+	add_to_variable = { fascist_neighbor_coalition = right_wing_populist_seats }
+	add_to_variable = { right_wing_populist_neighbor_coalition = fascist_seats }
+	add_to_variable = { right_wing_populist_neighbor_coalition = right_wing_populist_seats }
+	add_to_variable = { right_wing_populist_neighbor_coalition = national_conservative_seats }
+	add_to_variable = { national_conservative_neighbor_coalition = right_wing_populist_seats }
 	add_to_variable = { national_conservative_neighbor_coalition = national_conservative_seats }
 	add_to_variable = { national_conservative_neighbor_coalition = conservative_seats }
 	add_to_variable = { conservative_neighbor_coalition = national_conservative_seats }
@@ -3392,4 +3447,64 @@ set_neighbor_coalition_values = {
 	add_to_variable = { socialist_neighbor_coalition = communist_seats }
 	add_to_variable = { communist_neighbor_coalition = socialist_seats }
 	add_to_variable = { communist_neighbor_coalition = communist_seats }
+	if = {
+		limit = {
+			check_variable = { fascist_seats < 0.01 }
+		}
+		set_variable = { fascist_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { right_wing_populist_seats < 0.01 }
+		}
+		set_variable = { right_wing_populist_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { national_conservative_seats < 0.01 }
+		}
+		set_variable = { national_conservative_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { conservative_seats < 0.01 }
+		}
+		set_variable = { conservative_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { classical_liberal_seats < 0.01 }
+		}
+		set_variable = { classical_liberal_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { social_liberal_seats < 0.01 }
+		}
+		set_variable = { social_liberal_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { social_democrat_seats < 0.01 }
+		}
+		set_variable = { social_democrat_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { progressive_seats < 0.01 }
+		}
+		set_variable = { progressive_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { socialist_seats < 0.01 }
+		}
+		set_variable = { socialist_neighbor_coalition = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { communist_seats < 0.01 }
+		}
+		set_variable = { communist_neighbor_coalition = 0 }
+	}
 }

@@ -209,10 +209,10 @@ domestic_affairs = {
 			}
 			if = {
 				limit = {
-					has_government = right_wing_nationalist
+					has_government = right_wing_populist
 				}
 				set_politics = {
-					ruling_party = right_wing_nationalist
+					ruling_party = right_wing_populist
 					elections_allowed = yes
 				}
 			}
@@ -380,10 +380,10 @@ domestic_affairs = {
 			}
 			if = {
 				limit = {
-					has_government = right_wing_nationalist
+					has_government = right_wing_populist
 				}
 				set_politics = {
-					ruling_party = right_wing_nationalist
+					ruling_party = right_wing_populist
 					elections_allowed = no
 				}
 			}
@@ -449,7 +449,7 @@ domestic_affairs = {
 				name = "Ind."
 			}
 			set_party_name = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				long_name = "Right-Wing Populist Independents"
 				name = "Ind."
 			}
@@ -500,7 +500,7 @@ domestic_affairs = {
 			}
 			clr_country_flag = has_islamist_party
 			clr_country_flag = has_fascist_party
-			clr_country_flag = has_right_wing_nationalist_party
+			clr_country_flag = has_right_wing_populist_party
 			clr_country_flag = has_monarchist_party
 			clr_country_flag = has_national_conservative_party
 			clr_country_flag = has_conservative_party
@@ -656,7 +656,7 @@ domestic_affairs = {
 					has_government = fascist
 					has_government = islamist
 					has_government = communist
-					has_government = right_wing_nationalist
+					has_government = right_wing_populist
 					has_government = monarchist
 				}
 			}

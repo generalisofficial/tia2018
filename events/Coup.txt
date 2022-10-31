@@ -107,8 +107,8 @@ country_event = {
 	desc = coup.3.d
 	
 	trigger = {
-		right_wing_nationalist > 0.5
-		NOT = { has_government = right_wing_nationalist }
+		right_wing_populist > 0.5
+		NOT = { has_government = right_wing_populist }
 		is_democracy = no
         has_civil_war = no
 		NOT = { has_idea = violent_non_state_actor }
@@ -118,11 +118,11 @@ country_event = {
 		days = 100
 		modifier = {
 			factor = 0.5
-			right_wing_nationalist > 0.5
+			right_wing_populist > 0.5
 		}
 		modifier = {
 			factor = 0.5
-			right_wing_nationalist > 0.55
+			right_wing_populist > 0.55
 		}
 	}
 	
@@ -130,11 +130,11 @@ country_event = {
 		name = coup.o1
 		add_political_power = 200
 		set_politics = {
-			ruling_party = right_wing_nationalist
+			ruling_party = right_wing_populist
 			elections_allowed = no
 		}
 		add_popularity = { 
-			ideology = right_wing_nationalist
+			ideology = right_wing_populist
 			popularity = 0.05
 		}
 		news_event = coup.13
@@ -602,5 +602,35 @@ news_event = {
 	
 	option = {
 		name = coup.13.o1
+	}
+}
+
+#Military Coup
+country_event = {
+	id = coup.14
+	title = coup.14.t
+	desc = coup.14.d
+	
+	is_triggered_only = yes #testing
+	
+	option = {
+		name = coup.o1
+		random_character = {
+			limit = {
+				is_army_leader = yes
+				is_advisor = yes
+				is_character_slot = army_chief_of_staff
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = fascist_Ideology
+				}
+			}
+			set_politics = {
+				ruling_party = fascist
+				elections_allowed = no
+			}
+		}
 	}
 }

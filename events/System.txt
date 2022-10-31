@@ -377,20 +377,20 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_country_flag = right_wing_nationalist_intended_no_leader }
+				NOT = { has_country_flag = right_wing_populist_intended_no_leader }
 				ROOT = {
 					any_character = {
-						has_ideology = right_wing_nationalist_independent
+						has_ideology = right_wing_populist_independent
 					}
 				}
 			}
 			set_party_name = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				long_name = "Right-Wing Populist Independents"
 				name = "Ind."
 			}
 			else = {
-				set_country_flag = has_right_wing_nationalist_party
+				set_country_flag = has_right_wing_populist_party
 			}
 		}
 		if = {
@@ -630,15 +630,15 @@ country_event = { ### Monthly On-action
 				if = {
 					limit = {
 						OR = { 	
-							has_country_flag = has_right_wing_nationalist_party
+							has_country_flag = has_right_wing_populist_party
 							AND = {
 								has_idea = idea_nonpartisan_political_system
-								right_wing_nationalist > 0.001
+								right_wing_populist > 0.001
 							}
 						}
 					}
 					add_popularity = { 
-						ideology = right_wing_nationalist
+						ideology = right_wing_populist
 						popularity = 0.01 
 					}
 				}
@@ -821,10 +821,10 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				right_wing_nationalist > 0.8
+				right_wing_populist > 0.8
 			}
 			add_popularity = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				popularity = -0.02
 			}
 		}
@@ -929,10 +929,10 @@ country_event = { ### Monthly On-action
 		}
 		if = {
 			limit = {
-				right_wing_nationalist > 0.6
+				right_wing_populist > 0.6
 			}
 			add_popularity = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				popularity = -0.01 
 			}
 		}
@@ -1042,10 +1042,10 @@ country_event = { ### Monthly On-action
 			}
 			if = {
 				limit = {
-					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_right_wing_populist
 				}
 				add_popularity = { 
-					ideology = right_wing_nationalist
+					ideology = right_wing_populist
 					popularity = 0.02
 				}
 			}
@@ -1156,10 +1156,10 @@ country_event = { ### Monthly On-action
 			}
 			if = {
 				limit = {
-					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_right_wing_populist
 				}
 				add_popularity = { 
-					ideology = right_wing_nationalist
+					ideology = right_wing_populist
 					popularity = 0.01 
 				}
 			}
@@ -1270,10 +1270,10 @@ country_event = { ### Monthly On-action
 			}
 			if = {
 				limit = {
-					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_right_wing_populist
 				}
 				add_popularity = { 
-					ideology = right_wing_nationalist
+					ideology = right_wing_populist
 					popularity = -0.01 
 				}
 			}
@@ -1383,10 +1383,10 @@ country_event = { ### Monthly On-action
 			}
 			if = {
 				limit = {
-					has_country_flag = coalition_right_wing_nationalist
+					has_country_flag = coalition_right_wing_populist
 				}
 				add_popularity = { 
-					ideology = right_wing_nationalist
+					ideology = right_wing_populist
 					popularity = -0.02
 				}
 			}

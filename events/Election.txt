@@ -237,7 +237,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				right_wing_nationalist_plurality_popularity = yes
+				right_wing_populist_plurality_popularity = yes
 				NOT = { 
 					OR = {
 						USA_democratic_plurality = yes
@@ -246,11 +246,11 @@ country_event = {
 				}
 			}
 			set_politics = {
-				ruling_party = right_wing_nationalist
+				ruling_party = right_wing_populist
 				elections_allowed = yes
 			}
-			set_country_flag = coalition_right_wing_nationalist
-			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_country_flag = coalition_right_wing_populist
+			set_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 		if = {
 			limit = {
@@ -348,7 +348,7 @@ country_event = {
 					}
 					check_variable = {
 						var = party_popularity@ruling_party
-						value = party_popularity@right_wing_nationalist
+						value = party_popularity@right_wing_populist
 						compare = greater_than_or_equals
 					}
 					check_variable = {
@@ -448,9 +448,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = right_wing_nationalist
+				has_government = right_wing_populist
 			}
-			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 		if = {
 			limit = {
@@ -509,7 +509,7 @@ country_event = {
 					conservative_majority_popularity = yes
 					national_conservative_majority_popularity = yes
 					monarchist_majority_popularity = yes
-					right_wing_nationalist_majority_popularity = yes
+					right_wing_populist_majority_popularity = yes
 					fascist_majority_popularity = yes
 					islamist_majority_popularity = yes
 				}
@@ -546,7 +546,7 @@ country_event = {
 				conservative > 0.5
 				national_conservative > 0.5
 				monarchist > 0.5
-				right_wing_nationalist > 0.5
+				right_wing_populist > 0.5
 				fascist > 0.5
 				islamist > 0.5
 			}
@@ -657,14 +657,14 @@ country_event = {
 		}
 		if = {
 			limit = {
-				right_wing_nationalist > 0.5
+				right_wing_populist > 0.5
 			}
 			set_politics = {
-				ruling_party = right_wing_nationalist
+				ruling_party = right_wing_populist
 				elections_allowed = yes
 			}
-			set_country_flag = coalition_right_wing_nationalist
-			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_country_flag = coalition_right_wing_populist
+			set_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 		if = {
 			limit = {
@@ -696,7 +696,7 @@ country_event = {
 	option = { #Form Minority Single-Party Government
 		name = election.3.o3
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 		trigger = {
 			NOT = {
@@ -710,7 +710,7 @@ country_event = {
 				conservative > 0.5
 				national_conservative > 0.5
 				monarchist > 0.5
-				right_wing_nationalist > 0.5
+				right_wing_populist > 0.5
 				fascist > 0.5
 				islamist > 0.5
 			}
@@ -808,14 +808,14 @@ country_event = {
 		}
 		if = {
 			limit = {
-				right_wing_nationalist_plurality_popularity = yes
+				right_wing_populist_plurality_popularity = yes
 			}
 			set_politics = {
-				ruling_party = right_wing_nationalist
+				ruling_party = right_wing_populist
 				elections_allowed = yes
 			}
-			set_country_flag = coalition_right_wing_nationalist
-			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_country_flag = coalition_right_wing_populist
+			set_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 		if = {
 			limit = {
@@ -884,11 +884,11 @@ country_event = {
 			}
 			9 = {
 				set_politics = {
-					ruling_party = right_wing_nationalist
+					ruling_party = right_wing_populist
 					elections_allowed = yes
 				}
-				set_country_flag = coalition_right_wing_nationalist
-				set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+				set_country_flag = coalition_right_wing_populist
+				set_variable = { ROOT.Coalition = right_wing_populist_seats }
 			}
 			9 = {
 				set_politics = {
@@ -995,10 +995,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_right_wing_populist
 			}
 			add_popularity = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				popularity = 0.02
 			}
 		}
@@ -1111,10 +1111,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = coalition_right_wing_nationalist
+				has_country_flag = coalition_right_wing_populist
 			}
 			add_popularity = { 
-				ideology = right_wing_nationalist
+				ideology = right_wing_populist
 				popularity = -0.02
 			}
 		}
@@ -1267,9 +1267,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = right_wing_nationalist
+				has_government = right_wing_populist
 			}
-			set_variable = { ROOT.Coalition = right_wing_nationalist_seats }
+			set_variable = { ROOT.Coalition = right_wing_populist_seats }
 		}
 		if = {
 			limit = {

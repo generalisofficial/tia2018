@@ -331,8 +331,8 @@ remove_from_allowed_party = {
 		set_temp_variable = { allowed_party_monarchist = 0 }
 	}
 	else_if = {
-		limit = { has_government = right_wing_nationalist }
-		set_temp_variable = { allowed_party_right_wing_nationalist = 0 }
+		limit = { has_government = right_wing_populist }
+		set_temp_variable = { allowed_party_right_wing_populist = 0 }
 	}
 	else_if = {
 		limit = { has_government = fascist }

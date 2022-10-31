@@ -942,9 +942,9 @@ operation_coup_government = { ### 7 1/70
 			}
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = right_wing_nationalist }
+					PREV.ROOT = { has_government = right_wing_populist }
 				}
-				right_wing_nationalist > 0.2
+				right_wing_populist > 0.2
 			}
 			if = {
 				limit = {

@@ -144,7 +144,7 @@ ideas = {
 				 	factor = 100
 					OR = {
 						has_government = fascist
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 					}
 			 	}
 				modifier = {
@@ -204,7 +204,7 @@ ideas = {
 				NOT = { 
 					OR = {
 						has_country_flag = coalition_fascist
-						has_country_flag = coalition_right_wing_nationalist
+						has_country_flag = coalition_right_wing_populist
 					}
 				}
 			}
@@ -246,7 +246,7 @@ ideas = {
 				NOT = { 
 					OR = {
 						has_country_flag = coalition_fascist
-						has_country_flag = coalition_right_wing_nationalist
+						has_country_flag = coalition_right_wing_populist
 						has_country_flag = coalition_national_conservative
 					}
 				}
@@ -476,6 +476,15 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			level = 2
+
+			available = {
+				if = {
+					limit = {
+						has_idea = one_year_term
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
 			
 			on_add = {
 				hidden_effect = {
@@ -499,6 +508,18 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -521,6 +542,19 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+							has_idea = three_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -545,6 +579,20 @@ ideas = {
 			removal_cost = -1
 			level = 5
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+							has_idea = three_year_term
+							has_idea = four_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -567,6 +615,21 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+							has_idea = three_year_term
+							has_idea = four_year_term
+							has_idea = five_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -589,6 +652,22 @@ ideas = {
 			removal_cost = -1
 			level = 7
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+							has_idea = three_year_term
+							has_idea = four_year_term
+							has_idea = five_year_term
+							has_idea = six_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -611,6 +690,23 @@ ideas = {
 			removal_cost = -1
 			level = 8
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+							has_idea = three_year_term
+							has_idea = four_year_term
+							has_idea = five_year_term
+							has_idea = six_year_term
+							has_idea = seven_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -633,6 +729,24 @@ ideas = {
 			removal_cost = -1
 			level = 9
 			
+			available = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = one_year_term
+							has_idea = two_year_term
+							has_idea = three_year_term
+							has_idea = four_year_term
+							has_idea = five_year_term
+							has_idea = six_year_term
+							has_idea = seven_year_term
+							has_idea = eight_year_term
+						}
+					}
+					NOT = { has_idea = minority_government }
+				}
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -655,6 +769,10 @@ ideas = {
 			removal_cost = -1
 			level = 10
 			
+			available = {
+				NOT = { has_idea = minority_government }
+			}
+
 			on_add = {
 				hidden_effect = {
 					meta_effect = {
@@ -778,7 +896,7 @@ ideas = {
 						has_government = conservative
 						has_government = national_conservative
 						has_government = monarchist
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 						has_government = fascist
 					}
 			 	}
@@ -818,7 +936,7 @@ ideas = {
 					   has_government = conservative
 					   has_government = national_conservative
 					   has_government = monarchist
-					   has_government = right_wing_nationalist
+					   has_government = right_wing_populist
 					   has_government = fascist
 				   	}
 				}
@@ -848,7 +966,7 @@ ideas = {
 						has_government = conservative
 						has_government = national_conservative
 						has_government = monarchist
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 						has_government = fascist
 					}
 			 	}
@@ -878,7 +996,7 @@ ideas = {
 						has_government = conservative
 						has_government = national_conservative
 						has_government = monarchist
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 						has_government = fascist
 					}
 			 	}
@@ -908,7 +1026,7 @@ ideas = {
 						has_government = conservative
 						has_government = national_conservative
 						has_government = monarchist
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 						has_government = fascist
 					}
 			 	}
@@ -960,7 +1078,7 @@ ideas = {
 					OR = {
 						has_government = islamist
 						has_government = fascist
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 						has_government = national_conservative
 					}
 				}
@@ -1005,7 +1123,7 @@ ideas = {
 					OR = {
 						has_country_flag = coalition_islamist
 						has_country_flag = coalition_fascist
-						has_country_flag = coalition_right_wing_nationalist
+						has_country_flag = coalition_right_wing_populist
 						has_country_flag = coalition_national_conservative
 					}
 				}
@@ -1372,7 +1490,7 @@ ideas = {
 								has_country_leader_ideology = third_international_theory
 							}
 						}
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 						has_country_leader_ideology = khomeinist
 						has_country_leader_ideology = islamic_fundamentalist
 					}
@@ -1669,7 +1787,7 @@ ideas = {
 						has_government = social_democrat
 						has_government = social_liberal
 						has_government = national_conservative
-						has_government = right_wing_nationalist
+						has_government = right_wing_populist
 					}
 				}
 			}
@@ -1684,7 +1802,7 @@ ideas = {
 				NOT = {
 					OR = {
 						has_country_flag = coalition_islamist
-						has_country_flag = coalition_right_wing_nationalist
+						has_country_flag = coalition_right_wing_populist
 						has_country_flag = coalition_monarchist
 						has_country_flag = coalition_national_conservative
 						has_country_flag = coalition_conservative
