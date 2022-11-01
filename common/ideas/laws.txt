@@ -1564,6 +1564,17 @@ ideas = {
 			removal_cost = -1
 			level = 2
 
+			available = {
+				if = {
+					limit = {
+						has_idea = organized_labour_encouraged
+					}
+					NOT = {
+						has_country_flag = coalition_social_democrat
+					}
+				}
+			}
+
 			default = yes
 		}
 		

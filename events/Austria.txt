@@ -15,11 +15,12 @@ country_event = { #NEOS - Beate Meinl-Reisinger
 
 	option = {
 		name = austria.1.o1
-		retire_ideology_leader = classical_liberal
+		add_popularity = { ideology = social_liberal popularity = 0.02 }
+		retire_ideology_leader = social_liberal
 		create_country_leader = {
 	        name = "Beate Meinl-Reisinger"
 	        picture = GFX_Portrait_AUS_Beate_Meinl_Reisinger
-	        ideology = libertarian
+	        ideology = centrist
         }
 	}
 }
@@ -39,6 +40,7 @@ country_event = { #SPÖ - Pamela Rendi-Wagner
 	
 	option = {
 		name = austria.2.o1
+		add_popularity = { ideology = social_democrat popularity = 0.02 }
 		create_country_leader = {
 	        name = "Pamela Rendi-Wagner"
 	        picture = GFX_Portrait_AUS_Pamela_Rendi_Wagner
@@ -62,15 +64,16 @@ country_event = { #JETZT – Liste Pilz
 	
 	option = {
 		name = austria.2.o1
+		add_popularity = { ideology = socialist popularity = 0.01 }
 		set_party_name = {
 		    ideology = socialist
-		    long_name = "JETZT – Liste Pilz"
-		    name = "JETZT"
+		    long_name = AUS_socialist_party_JETZT_long
+		    name = AUS_socialist_party_JETZT
 	    }
 		create_country_leader = {
 	        name = "Maria Stern"
 	        picture = GFX_Portrait_AUS_Maria_Stern
-	        ideology = democratic_socialist
+	        ideology = left_wing_nationalist
         }
 	}
 }

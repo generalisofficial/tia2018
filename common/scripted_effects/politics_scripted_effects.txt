@@ -2138,7 +2138,7 @@ election_pulse = {
 	}
 	if  = {
 		limit = {
-			original_tag = SWI
+			original_tag = CHE
 			has_country_leader = {
 				name = "Alain Berset"
 				ruling_only = no
@@ -2147,13 +2147,13 @@ election_pulse = {
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 			name = "Simonetta Sommaruga"
-			picture = GFX_Portrait_SWI_Simonetta_Sommaruga
+			picture = GFX_Portrait_CHE_Simonetta_Sommaruga
 			ideology = social_democrat_ideology
 		}
 	}
 	if  = {
 		limit = {
-			original_tag = SWI
+			original_tag = CHE
 			has_country_leader = {
 				name = "Ueli Maurer"
 				ruling_only = no
@@ -2162,7 +2162,7 @@ election_pulse = {
 		retire_ideology_leader = national_conservative
 		create_country_leader = {
 			name = "Guy Parmelin"
-			picture = GFX_Portrait_SWI_Guy_Parmelin
+			picture = GFX_Portrait_CHE_Guy_Parmelin
 			ideology = national_conservative_ideology
 		}
 	}
@@ -3449,61 +3449,61 @@ set_neighbor_coalition_values = {
 	add_to_variable = { communist_neighbor_coalition = communist_seats }
 	if = {
 		limit = {
-			check_variable = { fascist_seats < 0.01 }
+			check_variable = { fascist_seats < 1 }
 		}
 		set_variable = { fascist_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { right_wing_populist_seats < 0.01 }
+			check_variable = { right_wing_populist_seats < 1 }
 		}
 		set_variable = { right_wing_populist_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { national_conservative_seats < 0.01 }
+			check_variable = { national_conservative_seats < 1 }
 		}
 		set_variable = { national_conservative_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { conservative_seats < 0.01 }
+			check_variable = { conservative_seats < 1 }
 		}
 		set_variable = { conservative_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { classical_liberal_seats < 0.01 }
+			check_variable = { classical_liberal_seats < 1 }
 		}
 		set_variable = { classical_liberal_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { social_liberal_seats < 0.01 }
+			check_variable = { social_liberal_seats < 1 }
 		}
 		set_variable = { social_liberal_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { social_democrat_seats < 0.01 }
+			check_variable = { social_democrat_seats < 1 }
 		}
 		set_variable = { social_democrat_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { progressive_seats < 0.01 }
+			check_variable = { progressive_seats < 1 }
 		}
 		set_variable = { progressive_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { socialist_seats < 0.01 }
+			check_variable = { socialist_seats < 1 }
 		}
 		set_variable = { socialist_neighbor_coalition = 0 }
 	}
 	if = {
 		limit = {
-			check_variable = { communist_seats < 0.01 }
+			check_variable = { communist_seats < 1 }
 		}
 		set_variable = { communist_neighbor_coalition = 0 }
 	}
