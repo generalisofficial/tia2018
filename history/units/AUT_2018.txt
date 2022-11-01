@@ -1,0 +1,179 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountain Military Command"
+	division_names_group = GENERIC_MNT_02
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Military Command"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "4th Mechanized Infantry Brigade"
+		location = 9665 #Horsching
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		location = 3673 #Klagenfurt
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Rapid Missions Command"
+		location = 9679 #Mautern
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mountain Warfare Command"
+		location = 11618 #Absam
+		division_template = "Mountain Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Vienna Warfare Command"
+		location = 11666 #Vienna
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Burgenland Warfare Command"
+		location = 9661 #Eistenstadt
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Lower Austria Warfare Command"
+		location = 14156 #Sankt Polten
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Upper Austria Warfare Command"
+		location = 9665 #Horsching
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Styria Warfare Command"
+		location = 9648 #Graz
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Tyrol Warfare Command"
+		location = 11618 #Innsbruck
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Carinthia Warfare Command"
+		location = 3673 #Klagenfurt
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Salzburg Warfare Command"
+		location = 688 #Salzburg
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Vorarlberg Warfare Command"
+		location = 6680 #Bregenz
+		division_template = "Military Command"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+		amount = 100000
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	900 = {
+		#Eurofighter Typhoon
+		fighter_equipment_3 = {
+			owner = "AUT" 
+			amount = 8
+		}
+		name = "Fighter Squadron 1"
+	}
+	900 = {
+		#Eurofighter Typhoon
+		fighter_equipment_3 = {
+			owner = "AUT" 
+			amount = 7
+		}
+		name = "Fighter Squadron 2"
+	}
+	152 = {
+		#C-130K + PC-6
+		transport_plane_equipment_1 = {
+			owner = "AUT" 
+			amount = 11
+		}
+		name = "Air Transport Squadron"
+	}
+}
+

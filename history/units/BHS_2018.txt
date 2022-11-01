@@ -1,0 +1,30 @@
+﻿division_template = {
+	name = "Marine Brigade"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Commando Squadron"
+		location = 10254 #Somewhere on New Providence, near Nassau
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}	
+}
+
+air_wings = {
+	690 = {
+		#Super King Air
+		nav_bomber_equipment_1 = {
+			owner = "BHS" 
+			amount = 1
+		}
+		name = "RBDF Air Wing"	
+	}
+}	

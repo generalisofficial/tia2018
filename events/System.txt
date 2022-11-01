@@ -21,6 +21,12 @@ country_event = {
 			}
 			add_ideas = minority_government
 		}
+		if = {
+			limit = {
+				NOT = { coalition_partners_are_neighbors_outside_gui = yes }
+			}
+			add_ideas = unstable_coalition
+		}
 	}
 }
 

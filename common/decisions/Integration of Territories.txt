@@ -21,6 +21,7 @@ integration_of_territories = {
 		}
 
 		available = {
+			has_full_control_of_state = FROM
 			capital_scope = {
 				state_population > 2500
 			}
@@ -78,6 +79,7 @@ integration_of_territories = {
 		}
 		
 		available = {
+			has_full_control_of_state = FROM
 			FROM = {
 				OR = {
 					has_active_resistance = no

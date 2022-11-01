@@ -564,14 +564,14 @@ defined_text = {
 
 	text = {
 		trigger = {
-			coalition_partners_are_neightbours_grid_entry = yes
+			coalition_partners_are_neighbors_grid_entry = yes
 		}
 		localization_key = COALITION_PARTNER_RECOMMENDED_YES
 	}
 
 	text = {
 		trigger = {
-			coalition_partners_are_neightbours_grid_entry = no
+			coalition_partners_are_neighbors_grid_entry = no
 		}
 		localization_key = "test"
 	}
@@ -607,7 +607,7 @@ defined_text = {
 				original_tag = DAH
 				original_tag = BUL
 				original_tag = BFA
-				original_tag = CAR
+				original_tag = CAF
 				original_tag = TCD
 				original_tag = DJI
 				original_tag = ERI
@@ -629,10 +629,10 @@ defined_text = {
 				original_tag = SAO
 				original_tag = SEN
 				original_tag = SER
-				original_tag = SEY
+				original_tag = SYC
 				original_tag = SUR
 				original_tag = TZN
-				original_tag = TOG
+				original_tag = TGO
 				original_tag = VEN
 				original_tag = VNM
 				original_tag = ZAM
@@ -699,7 +699,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				original_tag = BAH
+				original_tag = BHS
 				original_tag = BRB
 				original_tag = SWZ
 				original_tag = LCA
@@ -735,7 +735,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				original_tag = AUS
+				original_tag = AUT
 				original_tag = CHE
 				original_tag = MOC
 				original_tag = SLO
@@ -869,7 +869,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = TAJ
+			original_tag = TJK
 		}
 		localization_key = parliament_assembly_of_representatives
 	}
@@ -1949,7 +1949,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				islamist > 0.0001
 				check_variable = {
 					var = FROM.islamist_election_change
 					value = 0
@@ -2001,7 +2000,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				fascist > 0.0001
 				check_variable = {
 					var = FROM.fascist_election_change
 					value = 0
@@ -2053,7 +2051,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				right_wing_populist > 0.0001
 				check_variable = {
 					var = FROM.right_wing_populist_election_change
 					value = 0
@@ -2105,7 +2102,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				monarchist > 0.0001
 				check_variable = {
 					var = FROM.monarchist_election_change
 					value = 0
@@ -2157,7 +2153,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				national_conservative > 0.0001
 				check_variable = {
 					var = FROM.national_conservative_election_change
 					value = 0
@@ -2209,7 +2204,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				conservative > 0.0001
 				check_variable = {
 					var = FROM.conservative_election_change
 					value = 0
@@ -2261,7 +2255,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				classical_liberal > 0.0001
 				check_variable = {
 					var = FROM.classical_liberal_election_change
 					value = 0
@@ -2313,7 +2306,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				social_liberal > 0.0001
 				check_variable = {
 					var = FROM.social_liberal_election_change
 					value = 0
@@ -2365,7 +2357,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				social_democrat > 0.0001
 				check_variable = {
 					var = FROM.social_democrat_election_change
 					value = 0
@@ -2417,7 +2408,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				progressive > 0.0001
 				check_variable = {
 					var = FROM.progressive_election_change
 					value = 0
@@ -2469,7 +2459,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				socialist > 0.0001
 				check_variable = {
 					var = FROM.socialist_election_change
 					value = 0
@@ -2521,7 +2510,6 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				communist > 0.0001
 				check_variable = {
 					var = FROM.communist_election_change
 					value = 0
