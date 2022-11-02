@@ -8,13 +8,13 @@ guiTypes = {
 		iconType ={
 			name ="satisfaction_icon"
 			spriteType = "GFX_stability_icon"
-			position = { x= 295 y = 205 }
+			position = { x= 292 y = 205 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="satisfaction_value"
-			position = { x= 329 y = 212 }
+			position = { x= 326 y = 212 }
 			font = "hoi_16mbs"
 			text = "[?FROM.stability|%]"
 			format = left
@@ -27,13 +27,13 @@ guiTypes = {
 		iconType ={
 			name ="patriotism_icon"
 			spriteType = "GFX_war_support_icon"
-			position = { x= 296 y = 240 }
+			position = { x= 294 y = 240 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="patriotism_value"
-			position = { x= 329 y = 245 }
+			position = { x= 326 y = 245 }
 			font = "hoi_16mbs"
 			text = "[?FROM.has_war_support|%]"
 			format = left
@@ -52,7 +52,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="population"
-			position = { x= 376 y = 240 }
+			position = { x= 374 y = 240 }
 			font = "hoi_16mbs"
 			text = "[?FROM.max_manpower_k|0]000"
 			format = center
@@ -73,7 +73,7 @@ guiTypes = {
 			position = { x = 180 y = 22 }
 			font = "hoi_16mbs"
 			text = "[THIS.GetCountryType]"
-			maxWidth = 500
+			maxWidth = 278
 			maxHeight = 20
 			format = left
 		}
@@ -95,7 +95,7 @@ guiTypes = {
 			position = { x = 180 y = 40 }
 			font = "hoi_16mbs"
 			text = "[THIS.GetFactionName]"
-			maxWidth = 300
+			maxWidth = 278
 			maxHeight = 20
 			fixedsize = yes		
 			format = left
@@ -109,7 +109,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "parliament_name_text"
-			position = { x= -95 y = -111 }
+			position = { x= -85 y = -111 }
 			font = "hoi_18mbs"
 			text = "[THIS.GetParliamentName]"
 			format = center

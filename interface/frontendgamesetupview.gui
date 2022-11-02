@@ -130,7 +130,7 @@ guiTypes = {
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 17 y = 22 }
+			position = { x = 17 y = 6 }
 			scale=0.615
 			clicksound = click_checkbox
 		}
@@ -138,7 +138,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 34 y = 188 }
+			position = { x = 34 y = 172 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}		
@@ -146,13 +146,13 @@ guiTypes = {
 		buttonType = {
 			name = "country"	
 			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=0 y =0 }
+			position = { x=0 y =-16 }
 			clicksound = click_checkbox
 		}		
 		
 		instantTextBoxType = {
 			name = "country_name"
-			position = { x = 18 y = 247 }
+			position = { x = 18 y = 231 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 114
@@ -608,11 +608,11 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 435 y = 12 }
+			position = { x = 435 y = 2 }
 			textureFile = ""
-			font = "hoi_22tech"
+			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
-			text = "FE_SELECT_COUNTRY"
+			#text = "FE_SELECT_COUNTRY"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -620,7 +620,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "great_powers_title"
-			position = { x = 435 y = 35 }
+			position = { x = 435 y = 5 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
@@ -632,7 +632,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "middle_powers_title"
-			position = { x = 435 y = 315 }
+			position = { x = 435 y = 305 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
@@ -725,7 +725,7 @@ guiTypes = {
 		iconType = {
 			name = "minor_country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 289 y = 441 }
+			position = { x = 289 y = 480 }
 			scale=0.57
 			rotation=0
 		}
@@ -733,16 +733,16 @@ guiTypes = {
 		iconType = {
 				name ="minor_portrait_overlay"
 				spriteType = "GFX_minor_portrait_overlay"
-				position = { x= 280 y = 430 }
+				position = { x= 280 y = 469 }
 		}
 		
 		instantTextBoxType = {
 			name = "info_title"
-			position = { x = 10 y = 450 }
+			position = { x = 158 y = 442 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_INFO_TITLE"
-			maxWidth = 340
+			maxWidth = 140
 			maxHeight = 30	
 			format = centre
 		}
@@ -753,100 +753,100 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "leader_label"
-				position = { x = 139 y = 105 }
+				position = { x = 250 y = 150 }
 				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "leader"
-				position = { x = 139 y = 120 }
+				position = { x = 250 y = 170 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "ideology_label"
-				position = { x = 0 y = 145 }
+				position = { x = 0 y = 0 }
 				textureFile = ""
 				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "ideology"
-				position = { x = 0 y = 160 }
+				position = { x = 0 y = 20 }
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "government_label"
-				position = { x = 139 y = 145 }
+				position = { x = 0 y = 70 }
 				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "GOVERNMENT"
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "government"
-				position = { x = 139 y = 160 }
+				position = { x = 0 y = 90 }
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				text = "FE_INTERESTING_COUNTRIES"
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "elections_label"
-				position = { x = 70 y = 178 }
+				position = { x = 0 y = 140 }
 				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "POLITICS_NEXTELECTION"
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "elections"
-				position = { x = 70 y = 191 }
+				position = { x = 0 y = 160 }
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "party_label"
-				position = { x = 0 y = 110 }
+				position = { x = 126 y = 125 }
 				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "RULING_PARTY"
-				maxWidth = 340
+				maxWidth = 120
 				format = center
 			}
 			
 			instantTextBoxType = {
 				name = "party"
-				position = { x = 0 y = 125 }
+				position = { x = 126 y = 105 }
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 340
+				maxWidth = 120
 				maxHeight = 20
 				format = center
 			}
@@ -870,7 +870,7 @@ guiTypes = {
 			iconType ={
 				name ="pol_faction_icon"
 				spriteType = "GFX_pol_factions_strip"
-				position = { x= -279 y = 40 }
+				position = { x= -263 y = 30 }
 				frame = 1
 			}
 			

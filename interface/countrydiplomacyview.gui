@@ -46,7 +46,7 @@ guiTypes = {
 				name = "country_name"
 				position = { x = 154 y = 1.5 }
 				font = "hoi_18mbs"
-				maxWidth = 300
+				maxWidth = 305
 				fixedsize = yes
 				maxHeight = 20
 				format = left
@@ -83,7 +83,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "opinion_info"
-				position = { x = 440 y = 5 }
+				position = { x = 425 y = 5 }
 				size = { width = 100 height = 60 }
 				clipping = no
 			
@@ -240,11 +240,11 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "polling_text"
-						position = { x= -69 y = -15 }
+						position = { x= 0 y = -15 }
 						font = "hoi_16mbs"
 						text = "Polling"
 						format = center
-						maxWidth = 245
+						maxWidth = 100
 						maxHeight = 10
 						fixedsize = yes
 					}
@@ -264,30 +264,31 @@ guiTypes = {
 							
 					instantTextboxType = {
 						name = "party_name"
-						position = { x = -213 y = 98 }
+						position = { x = -186 y = 104 }
 						font = "hoi_16mbs"
 						text = "party"
 						format = center
-						maxWidth = 190
+						maxWidth = 140
 						maxHeight = 12
 						fixedsize = yes
 					}
 					
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = -192 y = 115 }
+						position = { x = -186 y = 120 }
 						font = "hoi_16mbs"
 						text = "ideology"
 						format = center
-						maxWidth = 150
+						maxWidth = 140
 						maxHeight = 20
 					}
 					
 					instantTextboxType = {
 						name = "elections"
-						position = { x = 105 y = 10 }
+						position = { x = 100 y = 10 }
 						font = "hoi_16mbs"
 						text = "elections"
+						format = center
 						maxWidth = 100
 						maxHeight = 20
 					}
@@ -430,7 +431,7 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "national_spirit_container"
-					position = { x = 5 y = -5 }
+					position = { x = 5 y = 0 }
 					size = { width = 500 height = 75 }
 					verticalScrollbar = "right_vertical_slider"
 					
@@ -749,8 +750,8 @@ guiTypes = {
 			iconType ={
 				name = "ideology_icon"
 				spriteType = "GFX_ideology_unknown"
-				position = { x = 179 y = 166 }
-				Orientation = "UPPER_LEFT"
+				position = { x = -83 y = -310 }
+				Orientation = "CENTER"
 				frame = 1
 			}
 			
