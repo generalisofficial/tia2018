@@ -1,5 +1,16 @@
 characters={
     #Starting - Political
+	MAL_abdul_hadi_awang={
+		name="Abdul Hadi Awang"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MAL_Abdul_Hadi_Awang
+			}
+		}
+		country_leader={
+			ideology=islamic_democracy
+		}
+	}
 	MAL_najib_razak={
 		name="Najib Razak"
 		portraits={
@@ -11,17 +22,6 @@ characters={
 			ideology=national_conservative_ideology
 		}
 	}
-	MAL_muhyiddin_yassin={
-		name="Muhyiddin Yassin"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MAL_Muhyiddin_Yassin
-			}
-		}
-		country_leader={
-			ideology=social_conservative
-		}
-	}
 	MAL_mahathir_mohamad={
 		name="Mahathir Mohamad"
 		portraits={
@@ -30,18 +30,29 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
+			ideology=social_conservative
 		}
 	}
-	MAL_abdul_hadi_awang={
-		name="Abdul Hadi Awang"
+	MAL_anwar_ibrahim={
+		name="Anwar Ibrahim"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MAL_Abdul_Hadi_Awang
+				large=GFX_Portrait_MAL_Anwar_Ibrahim
 			}
 		}
 		country_leader={
-			ideology=islamic_democracy
+			ideology=social_liberal_ideology
+		}
+	}
+	MAL_lim_guan_eng={
+		name="Lim Guan Eng"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MAL_Lim_Guan_Eng
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
 		}
 	}
 	MAL_mohd_nasir_hashim={

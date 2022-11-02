@@ -310,11 +310,7 @@ country_event = {
 	option = {
 		name = politics.11.o1
 		news_event = politics.12
-		set_country_flag = snap_election_in_progress
-		country_event = {
-			id = election.5
-			days = 30
-		}
+		country_event = election.5
 	}
 }
 

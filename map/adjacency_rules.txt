@@ -1047,3 +1047,41 @@ adjacency_rule = {
 	icon = 6115
 	offset = { 5 0 -6 }
 }
+
+#White Sea-Baltic Canal
+adjacency_rule = {
+	name = "WHITE_SEA_CANAL"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 3151 149 6174 79 11068 11059 9190 9082 6106 3084 6057 11153 11212 3078 9045 94 6021 11175 155 }
+		
+	icon = 13198
+	offset = { 0 0 0 }
+}
