@@ -48,6 +48,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "icon"
+			position = { x = 5 y = -5 }
 			quadTextureSprite ="GFX_idea_unknown"
 			orientation = "CENTER"
 			centerPosition = yes
@@ -191,7 +192,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x = 9 y = 8 }
+			position = { x = 22 y = 8 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -199,7 +200,7 @@ guiTypes = {
 		buttonType = {
 			name = "country"	
 			quadTextureSprite = "GFX_mini_country_selector"
-			position = { x=0 y =0 }
+			position = { x=13 y =0 }
 			clicksound = click_checkbox
 		}		
 	}
@@ -620,7 +621,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "great_powers_title"
-			position = { x = 435 y = 5 }
+			position = { x = 448 y = 5 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
@@ -632,7 +633,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "middle_powers_title"
-			position = { x = 435 y = 305 }
+			position = { x = 444 y = 305 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
@@ -854,7 +855,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "nation_title"
-			position = { x = 437 y = 439 }
+			position = { x = 444 y = 440 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340

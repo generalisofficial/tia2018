@@ -53,9 +53,9 @@ guiTypes = {
 		containerWindowType = {
 			name = "chart_explanation"
 			position = { x = 280 y = 301 }
-			size = { width = 267 height = 73 }
+			size = { width = 267 height = 70 }
 			clipping = yes
-		    verticalScrollbar = "right_vertical_slider"
+			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
 			smooth_scrolling = yes
 			
@@ -372,16 +372,16 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "national_spirit"
-			position = { x = 81 y = 153 }
+			position = { x = 66 y = 160 }
 			size = { width = 360 height = 50 }
 			clipping = no
 						
 			instantTextboxType = {
 				name = "title"
-				position = { x = 110 y = -2 }
+				position = { x = 122 y = -12 }
 				font = "hoi_18mbs"
 				text = "POLITICS_NATIONAL_SPIRIT"
-				maxWidth = 200
+				maxWidth = 120
 				maxHeight = 20
 				alwaystransparent = yes
 			}
@@ -389,9 +389,10 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "national_spirit_container"
-				position = { x = 90 y = 19 }
+				position = { x = 110 y = 19 }
 				size = { width = 365 height = 68 }
 				verticalScrollbar = "right_vertical_slider"
+				clipping = no
 				
 				background = {
 					name = "Background"
@@ -400,7 +401,7 @@ guiTypes = {
 				
 				gridboxtype = {
 					name = "spirit_grid"
-					position = { x = 12 y = 0 }
+					position = { x = 0 y = 0 }
 					size = { width = 350 height = 100%% }
 					slotsize = { width = 60 height = 68 }
 					max_slots = { x = 8 y = 1 }
@@ -408,7 +409,7 @@ guiTypes = {
 				}
 				gridboxtype = {
 					name = "spirit_grid_over_defined"
-					position = { x = 10 y = 1 }
+					position = { x = 0 y = 1 }
 					size = { width = 350 height = 100%% }
 					slotsize = { width = 33 height = 32 }
 					max_slots_horizontal = 10
@@ -981,7 +982,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			text = "party name"
 			fixedsize = yes
-			maxWidth = 170
+			maxWidth = 160
 			maxHeight = 18
 		}
 	}

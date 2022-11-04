@@ -409,13 +409,13 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "national_spirit_info"
-				position = { x = 17 y = 285 }
+				position = { x = -55 y = 295 }
 				size = { width = 530 height = 70 }
 				
 				iconType = {
 					name = "diplo_nat_spirits_bg"
 					spriteType = "GFX_diplo_nat_spirits_bg"
-					position = { x = -2 y = -14 }
+					position = { x = 70 y = -24 }
 				}
 				
 				
@@ -431,9 +431,10 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "national_spirit_container"
-					position = { x = 5 y = 0 }
+					position = { x = 75 y = -4 }
 					size = { width = 500 height = 75 }
 					verticalScrollbar = "right_vertical_slider"
+					clipping = no
 					
 					background = {
 						name = "Background"
@@ -442,7 +443,7 @@ guiTypes = {
 					
 					gridboxtype = {
 						name = "national_spirit_ideas_grid"
-						position = { x = 8 y = 0 }
+						position = { x = 0 y = 0 }
 						size = { width = 370 height = 65 }
 						slotsize = { width = 64 height = 64 }
 						max_slots = { x = 6 y = 1 }
