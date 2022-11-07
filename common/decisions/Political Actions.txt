@@ -90,6 +90,43 @@ political_actions = {
 		}
 	}
 
+	# Unique
+
+	take_donations_from_the_NRA = {
+		icon = national_rifle_association
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_idea = unregulated_firearms
+			always = no #in development
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_political_power = 100
+			#add corruption effect
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				OR = {
+					has_government = classical_liberal
+					has_government = conservative
+					has_government = national_conservative
+					has_government = right_wing_populist
+				}
+			}
+		}
+	}
+
+	# Boost Opposition
+
 	boost_islamist_opposition = {
 		icon = donation
 

@@ -228,6 +228,20 @@ ideas = {
 				communist_drift = -0.01
 			}
 		}
+		# TAL - Taliban
+		idea_graveyard_of_empires = {
+			picture = graveyard_of_empires
+			
+			cancel = {
+				NOT = { has_idea = violent_non_state_actor }
+			}
+			
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				out_of_supply_factor = -0.75
+			}
+		}
 		# XXX - Terra Nullius
 		idea_terra_nullius = {
 			picture = protests

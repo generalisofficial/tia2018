@@ -18,3 +18,27 @@ news_event = { #Notre-Dame de Paris fire
 		name = france.1.o1
 	}
 }
+
+country_event = { #National Front rebranded
+	id = france.2
+	title = france.2.t
+	desc = france.2.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = FRA
+		date > 2018.6.1
+		date < 2019.1.1
+	}
+	
+	option = {
+		name = france.2.o1
+		add_popularity = { ideology = right_wing_populist popularity = 0.02 }
+		set_party_name = {
+		    ideology = right_wing_populist
+		    long_name = FRA_right_wing_populist_party_RN_long
+		    name = FRA_right_wing_populist_party_RN
+	    }
+	}
+}

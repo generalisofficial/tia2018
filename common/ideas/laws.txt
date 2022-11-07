@@ -1901,7 +1901,7 @@ ideas = {
 		law = yes
 
 		very_high_taxes = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 5
 
@@ -1909,6 +1909,10 @@ ideas = {
 				update_finances = yes
 			}
 			
+			available = {
+				NOT = { has_country_flag = coalition_classical_liberal }
+			}
+
 			modifier = {
 				stability_factor = -0.2
 				custom_modifier_tooltip = TT_will_affect_income
@@ -1918,11 +1922,15 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 0
+				modifier = {
+					factor = 1
+					NOT = { monthly_surplus = yes }
+				}
 			}
 		}
 
 		high_taxes = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 4
 
@@ -1939,11 +1947,20 @@ ideas = {
 				
 			ai_will_do = {
 				factor = 0
+				modifier = {
+					factor = 1
+					NOT = {
+						OR = {
+							has_idea = very_high_taxes
+							monthly_surplus = yes 
+						}
+					}
+				}
 			}
 		}
 	
 		moderate_taxes = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 
@@ -1960,11 +1977,21 @@ ideas = {
 				
 			ai_will_do = {
 				factor = 0
+				modifier = {
+					factor = 1
+					NOT = {
+						OR = {
+							has_idea = very_high_taxes
+							has_idea = high_taxes
+							monthly_surplus = yes 
+						}
+					}
+				}
 			}
 		}
 
 		low_taxes = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 
@@ -1981,11 +2008,16 @@ ideas = {
 				
 			ai_will_do = {
 				factor = 0
+				modifier = {
+					factor = 1
+					has_idea = very_low_taxes
+					NOT = { monthly_surplus = yes  }
+				}
 			}
 		}
 
 		very_low_taxes = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 
@@ -2021,6 +2053,10 @@ ideas = {
 			available = {
 				NOT = {
 					has_idea = violent_non_state_actor
+					OR = {
+						has_country_flag = coalition_fascist
+						has_country_flag = coalition_right_wing_populist
+					}
 				}
 			}
 			
@@ -2051,6 +2087,10 @@ ideas = {
 			available = {
 				NOT = {
 					has_idea = violent_non_state_actor
+					OR = {
+						has_country_flag = coalition_classical_liberal
+						has_country_flag = coalition_social_liberal
+					}
 				}
 			}
 
@@ -2061,6 +2101,19 @@ ideas = {
 		
 			default = yes
 			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 25
+				   	OR = {
+						has_government = right_wing_populist
+						has_government = fascist
+						has_government = communist
+						has_government = national_conservative
+				   	}
+				}
+			}
 		}
 	
 		isolationism = {
@@ -2073,6 +2126,7 @@ ideas = {
 					OR = {
 						has_idea = idea_european_union_member
 						has_country_flag = coalition_classical_liberal
+						has_country_flag = coalition_social_liberal
 					}
 				}
 			}
@@ -2084,13 +2138,7 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-			   	factor = 1
-			   	modifier = {
-					factor = 0
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
-				}
+			   	factor = 0
 		   	}
 		}
 	}
@@ -2103,7 +2151,7 @@ ideas = {
 		law = yes
 
 		extensive_healthcare_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 			
@@ -2126,7 +2174,7 @@ ideas = {
 		}
 
 		moderate_healthcare_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 
@@ -2149,7 +2197,7 @@ ideas = {
 		}
 	
 		minimal_healthcare_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 
@@ -2178,7 +2226,7 @@ ideas = {
 		law = yes
 
 		extensive_education_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 
@@ -2201,7 +2249,7 @@ ideas = {
 		}
 
 		moderate_education_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 
@@ -2224,7 +2272,7 @@ ideas = {
 		}
 	
 		minimal_education_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 
@@ -2253,7 +2301,7 @@ ideas = {
 		law = yes
 
 		extensive_economic_subsidies = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 			
@@ -2272,7 +2320,7 @@ ideas = {
 		}
 
 		moderate_economic_subsidies = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 				
@@ -2291,7 +2339,7 @@ ideas = {
 		}
 	
 		minimal_economic_subsidies = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 				
@@ -2316,7 +2364,7 @@ ideas = {
 		law = yes
 
 		extensive_defense_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 
@@ -2337,7 +2385,7 @@ ideas = {
 		}
 
 		moderate_defense_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 
@@ -2358,7 +2406,7 @@ ideas = {
 		}
 	
 		minimal_defense_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 
@@ -2387,7 +2435,7 @@ ideas = {
 		law = yes
 
 		extensive_law_enforcement_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 			
@@ -2404,7 +2452,7 @@ ideas = {
 		}
 
 		moderate_law_enforcement_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 				
@@ -2421,7 +2469,7 @@ ideas = {
 		}
 	
 		minimal_law_enforcement_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 				
@@ -2447,7 +2495,7 @@ ideas = {
 		law = yes
 
 		extensive_welfare_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 3
 
@@ -2468,7 +2516,7 @@ ideas = {
 		}
 
 		moderate_welfare_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 2
 
@@ -2489,7 +2537,7 @@ ideas = {
 		}
 	
 		minimal_welfare_spending = {
-			cost = 125
+			cost = 100
 			removal_cost = -1
 			level = 1
 

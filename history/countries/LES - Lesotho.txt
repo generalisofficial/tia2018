@@ -93,28 +93,61 @@ if = {
 
 set_country_flag = catholic
 set_country_flag = former_british_colony
+set_cosmetic_tag = LES_monarchist # Constitutional Monarchy
 
 add_ideas = {
-	#population_growth_rapid
 	idea_african_union_member
 	idea_commonwealth_of_nations_member
 	#non_aligned_movement_member
-	absolute_monarchy
+	parliamentary_system
 	pro_life
 }
 
+#National Assembly
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 3.33 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 39.16 }
+set_variable = { social_liberal_seats = 8.33 }
+set_variable = { classical_liberal_seats = 43.35 }
+set_variable = { conservative_seats = 5 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0.83 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+
 set_politics = {	
-	ruling_party = monarchist
-	last_election = "2018.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = classical_liberal
+	last_election = "2017.10.7"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 set_popularities = {
-    monarchist = 100
+	social_liberal = 27.41
+	social_democrat = 42.3
+	classical_liberal = 22.8
+	conservative = 4.16
+	socialist = 2.5
+	monarchist = 0.83
 }
 
 # Characters - Military
 
 # Characters - Political
 recruit_character = LES_letsie_iii
+recruit_character = LES_machesetsa_mofomobe
+recruit_character = LES_tom_thabane
+recruit_character = LES_sam_matekane
+recruit_character = LES_pakalitha_mosisili
+recruit_character = LES_lekhetho_rakuoane

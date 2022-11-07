@@ -5,3 +5,11 @@ treasury_surplus = {
 		compare = greater_than
 	}
 }
+
+monthly_surplus = {
+	check_variable = {
+		var = monthly_net_income
+		value = 0
+		compare = greater_than
+	}
+}

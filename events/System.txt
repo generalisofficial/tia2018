@@ -24,6 +24,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { coalition_partners_are_neighbors_outside_gui = yes }
+				NOT = { has_idea = absolute_monarchy }
 			}
 			add_ideas = unstable_coalition
 		}
