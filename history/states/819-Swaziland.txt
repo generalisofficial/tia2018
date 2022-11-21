@@ -1,23 +1,29 @@
+
 state={
 	id=819
 	name="STATE_819"
-	
-	history = {
+
+	history={
 		owner = SWZ
 		add_core_of = SWZ
 		buildings = {
 			infrastructure = 1
 			civilian_industry = 3
 			military_industry = 1
-			military_airport = 3 #Matsapha Airport
+			military_airport = 3
+
 		}
-		victory_points = { 7900 1 }
+		victory_points = {
+			7900 1 
+		}
+
 	}
-	
+
 	provinces={
-		7900
+		7900 15238 
 	}
 	manpower=1336933
 	buildings_max_level_factor=1.000
-	state_category = state_default
+	state_category=state_default
+	local_supplies=0.000
 }

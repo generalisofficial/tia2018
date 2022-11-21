@@ -6,6 +6,7 @@ sub_units = {
 		type = { fighter cas }
 		need = { fighter_equipment = 1 }
 		categories = { category_fighter }
+		land_air_wing_size = 40
 	}
 	
 	cv_fighter = {
@@ -15,6 +16,8 @@ sub_units = {
 		type = { fighter cas }
 		need = { cv_fighter_equipment = 1 }
 		categories = { category_fighter }
+		land_air_wing_size = 40
+		carrier_air_wing_size = 10
 	}
 	
 	cas = {
@@ -24,6 +27,7 @@ sub_units = {
 		type = { cas }
 		need = { CAS_equipment = 1 }
 		categories = { category_cas }
+		land_air_wing_size = 40
 	}
 	
 	cv_cas = {
@@ -33,6 +37,8 @@ sub_units = {
 		type = { cas }
 		need = { cv_CAS_equipment = 1 }
 		categories = { category_cas }
+		land_air_wing_size = 40
+		carrier_air_wing_size = 10
 	}
 	
 	nav_bomber = {
@@ -42,6 +48,7 @@ sub_units = {
 		type = { naval_bomber }
 		need = { nav_bomber_equipment = 1 }
 		categories = { category_nav_bomber }
+		land_air_wing_size = 40
 	}
 	
 	cv_nav_bomber = {
@@ -51,6 +58,8 @@ sub_units = {
 		type = { naval_bomber }
 		need = { cv_nav_bomber_equipment = 1 }
 		categories = { category_nav_bomber }
+		land_air_wing_size = 40
+		carrier_air_wing_size = 10
 	}
 	
 	tac_bomber = {
@@ -60,6 +69,7 @@ sub_units = {
 		type = { tactical_bomber }
 		need = { tac_bomber_equipment = 1 }
 		categories = { category_tac_bomber }
+		land_air_wing_size = 40
 	}
 	
 	strat_bomber = {
@@ -69,6 +79,7 @@ sub_units = {
 		type = { strategic_bomber }
 		need = { strat_bomber_equipment = 1 }
 		categories = { category_strat_bomber }
+		land_air_wing_size = 40
 	}
 	
 	scout_plane = {
@@ -78,6 +89,7 @@ sub_units = {
 		type = { scout_plane }
 		need = { scout_plane_equipment = 1 }
 		categories = { category_scout_plane }
+		land_air_wing_size = 40
 	}
 	
 	transport_plane = {
@@ -86,6 +98,7 @@ sub_units = {
 		active = yes
 		type = { air_transport }
 		need = { transport_plane_equipment = 1 }
+		land_air_wing_size = 40
 	}
 	
 	rocket_interceptor = {
@@ -94,6 +107,7 @@ sub_units = {
 		active = yes
 		type = { interceptor }
 		need = { rocket_interceptor_equipment = 1 }
+		land_air_wing_size = 40
 	}
 	
 	guided_missile = {
@@ -102,5 +116,6 @@ sub_units = {
 		active = yes
 		type = { missile }
 		need = { guided_missile_equipment = 1 }
+		land_air_wing_size = 40
 	}
 }
