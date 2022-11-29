@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Tank Regiment"
+	division_names_group = GENERIC_ARM_02
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		light_mechanized = { x = 1 y = 0 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Brigade"
+		location = 5199 #Lusaka
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Brigade"
+		location = 12504 #Kabwe
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Brigade"
+		location = 12677 #Ndola
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "64th Armoured Tank Regiment"
+		location = 5199 #Lusaka
+		division_template = "Tank Regiment"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Zambia Regiment"
+		location = 5199 #Lusaka
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	545 = {
+		#Shenyang J-6 + MiG 21
+		fighter_equipment_1 = {
+			owner = "ZMB" 
+			amount = 18
+		}
+		name = "No. 65 Wing"
+	}
+	545 = {
+		#Hongdu JL-10
+		fighter_equipment_5 = {
+			owner = "ZMB" 
+			amount = 6
+		}
+		name = "No. 71 Wing"
+	}
+	545 = {
+		#Elbit Hermes 450
+		scout_plane_equipment_2 = {
+			owner = "ZMB" 
+			amount = 3
+		}
+		name = "Recon Wing"
+	}
+}

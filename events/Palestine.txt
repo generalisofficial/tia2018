@@ -10,12 +10,12 @@ country_event = { #Hamas becomes Palestinian government
 	trigger = {
 		original_tag = HAM
 		has_idea = violent_non_state_actor
-		NOT = { country_exists = PAL }
+		NOT = { country_exists = PSE }
 	}
 	
 	option = {
 		name = palestine.1.o1
-		set_cosmetic_tag = PAL
+		set_cosmetic_tag = PSE
 		add_ideas = {
 			one_party_state
 			non_member_state
@@ -23,12 +23,12 @@ country_event = { #Hamas becomes Palestinian government
 		every_state = {
 		    limit = {
 		        OR = {
-					is_core_of = PAL
-					is_claimed_by = PAL
+					is_core_of = PSE
+					is_claimed_by = PSE
 				}
 			}
-			remove_core_of = PAL
-		    remove_claim_by = PAL
+			remove_core_of = PSE
+		    remove_claim_by = PSE
 		}
 	}
 }

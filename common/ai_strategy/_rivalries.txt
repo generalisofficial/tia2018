@@ -50,30 +50,30 @@ iran_saudi_rivalry_SAU = {
 
 	enable = {
 		original_tag = SAU
-		country_exists = PER
-		PER = { has_government = islamist }
+		country_exists = IRN
+		IRN = { has_government = islamist }
 	}
 	
 	abort = {
-		PER = { NOT = { has_government = islamist } }
+		IRN = { NOT = { has_government = islamist } }
 	}
 	
 	ai_strategy = {
 		type = antagonize
-		id = PER
+		id = IRN
 		value = 200
 	}
 	ai_strategy = {
 		type = contain
-		id = PER
+		id = IRN
 		value = 200
 	}
 }
 
-iran_saudi_rivalry_PER = {
+iran_saudi_rivalry_IRN = {
 
 	enable = {
-		original_tag = PER
+		original_tag = IRN
 		country_exists = SAU
 		has_government = islamist
 	}

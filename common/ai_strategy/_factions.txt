@@ -1,8 +1,8 @@
 axis_of_resistance_ai_strategy = {
 	
 	enable = {
-		NOT = { original_tag = PER }
-		PER = { 
+		NOT = { original_tag = IRN }
+		IRN = { 
 			has_country_leader_ideology = khomeinist
 			is_in_faction = yes 
 		}
@@ -16,12 +16,12 @@ axis_of_resistance_ai_strategy = {
 	
 	abort = {
 		OR = {
-			has_war_with = PER
-			PER = { is_in_faction = no }
-			PER = { exists = no }
+			has_war_with = IRN
+			IRN = { is_in_faction = no }
+			IRN = { exists = no }
 			NOT = {
 				has_country_leader_ideology = khomeinist
-				PER = { 
+				IRN = { 
 					has_country_leader_ideology = khomeinist
 					is_in_faction = yes 
 				}
@@ -31,7 +31,7 @@ axis_of_resistance_ai_strategy = {
 	
 	ai_strategy = {
 		type = alliance
-		id = "PER"
+		id = "IRN"
 		value = 150
 	}
 }

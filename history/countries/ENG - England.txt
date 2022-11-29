@@ -113,7 +113,7 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
-		target = JRS
+		target = JEY
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
@@ -122,10 +122,10 @@ if = {
 	}
 	else = {
 		puppet = MNN
-		puppet = JRS
+		puppet = JEY
 		puppet = GRS
 		MNN = { set_country_flag = TfV_marked_for_deletion }
-		JRS = { set_country_flag = TfV_marked_for_deletion }
+		JEY = { set_country_flag = TfV_marked_for_deletion }
 		GRS = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
@@ -140,7 +140,7 @@ if = {
 	}
 }
 
-JRS = {
+JEY = {
 	set_politics = {	
 		ruling_party = classical_liberal
 		last_election = "2014.5.16"
