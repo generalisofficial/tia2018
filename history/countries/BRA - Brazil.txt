@@ -10,7 +10,7 @@ if = {
 	}
 }
 
-set_convoys = 864guese
+set_convoys = 864
 
 set_technology = {
 	## Infantry ##
@@ -157,8 +157,8 @@ set_variable = { classical_liberal_seats = 19.49 }
 set_variable = { conservative_seats = 9.55 }
 set_variable = { national_conservative_seats = 10.13 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 5.06 }
-set_variable = { fascist_seats = 0.38 }
+set_variable = { right_wing_populist_seats = 5.44 }
+set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
@@ -175,12 +175,11 @@ set_politics = {
 
 set_popularities = {
 	communist = 1.75
-	socialist = 19.68
+	socialist = 22.68
 	conservative = 13.25
 	classical_liberal = 14.61
-	social_liberal = 18.90
-	fascist = 0.97
-	right_wing_populist = 1.94
+	social_liberal = 15.90
+	right_wing_populist = 2.91
 	progressive = 0.97
 	social_democrat = 7.99
 	national_conservative = 19.94
@@ -189,17 +188,17 @@ set_popularities = {
 # Characters - Military
 
 # Characters - Political
+recruit_character = BRA_moises_lima
+recruit_character = BRA_hamilton_mourao
+recruit_character = BRA_luiz_i
+recruit_character = BRA_jair_bolsonaro
+recruit_character = BRA_antonio_carlos_magalhaes_neto
 recruit_character = BRA_michel_temer
 recruit_character = BRA_geraldo_alckmin
-recruit_character = BRA_luiz_inacio_lula_da_silva
-recruit_character = BRA_marina_silva
-recruit_character = BRA_antonio_carlos_magalhaes_neto
-recruit_character = BRA_luiz
-recruit_character = BRA_cabo_daciolo
-recruit_character = BRA_manuela_davila
-recruit_character = BRA_jair_bolsonaro
 recruit_character = BRA_ciro_gomes
-recruit_character = BRA_hamilton_mourao
+recruit_character = BRA_marina_silva
+recruit_character = BRA_luiz_inacio_lula_da_silva
+recruit_character = BRA_manuela_d_avila
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

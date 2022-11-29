@@ -2355,6 +2355,21 @@ election_pulse = {
 			ideology = liberal_conservative
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = BRA
+			has_country_leader = {
+				name = "Michel Temer"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+			name = "Henrique Meirelles"
+			picture = GFX_Portrait_BRA_Henrique_Meirelles
+			ideology = classical_liberal_ideology
+		}
+	}
 	if = {
 		limit = {
 			minority_government = yes
