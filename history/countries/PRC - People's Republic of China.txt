@@ -114,7 +114,7 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = HKN
+		target = HKG
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
@@ -122,9 +122,9 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
-		puppet = HKN
+		puppet = HKG
 		puppet = MAC
-		HKN = { set_country_flag = TfV_marked_for_deletion }
+		HKG = { set_country_flag = TfV_marked_for_deletion }
 		MAC = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
@@ -139,7 +139,7 @@ if = {
 	}
 }
 
-HKN = {
+HKG = {
 	set_politics = {	
 		ruling_party = communist
 		last_election = "2016.9.6"
@@ -171,16 +171,16 @@ add_opinion_modifier = {
 	modifier = past_japanese_war_crimes
 }
 
-add_opinion_modifier = { target = CHI modifier = rival_government }
+add_opinion_modifier = { target = ROC modifier = rival_government }
 add_opinion_modifier = { target = BLZ modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = SWZ modifier = recognizes_the_roc_PRC }
-add_opinion_modifier = { target = GUA modifier = recognizes_the_roc_PRC }
-add_opinion_modifier = { target = HAI modifier = recognizes_the_roc_PRC }
+add_opinion_modifier = { target = GTM modifier = recognizes_the_roc_PRC }
+add_opinion_modifier = { target = HTI modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = VAT modifier = recognizes_the_roc_PRC }
-add_opinion_modifier = { target = HON modifier = recognizes_the_roc_PRC }
+add_opinion_modifier = { target = HND modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = MAR modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = NAU modifier = recognizes_the_roc_PRC }
-add_opinion_modifier = { target = PLU modifier = recognizes_the_roc_PRC }
+add_opinion_modifier = { target = PLW modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = PAR modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = SKN modifier = recognizes_the_roc_PRC }
 add_opinion_modifier = { target = LCA modifier = recognizes_the_roc_PRC }

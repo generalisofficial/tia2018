@@ -1,0 +1,202 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Defense Zone 1"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Defense Zone 2"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Defense Zone 3"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+units = {	
+	#Badly trained and corrupt forces which commit crimes against civilians on a daily basis
+	division = { 
+		name = "1st Brigade"
+		location = 13863 #Mahagi
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "2nd Brigade"
+		location = 13852 #Butembo
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "4th Brigade"
+		location = 2034 #Bukavu
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "5th Brigade"
+		location = 13831 #Kananga
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "6th Brigade"
+		location = 12783 #North Kivu
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "7th Brigade"
+		location = 13840 #Bolobo
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "8th Brigade"
+		location = 4941 #Luvungi
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "9th Brigade"
+		location = 13852 #North Kivu
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "10th Brigade"
+		location = 7931 #Dongo
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "12th Brigade"
+		location = 7161 #Baraka
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "13th Brigade"
+		location = 13852 #North Kivu
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "15th Brigade"
+		location = 1181 #Sake
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "16th Brigade"
+		location = 4941 #Kabare
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "17th Brigade"
+		location = 4941 #Kabare
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "101st Brigade"
+		location = 4941 #Bukavu
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "101st Brigade"
+		location = 7161 #SW of Bakuvu
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "105th Brigade"
+		location = 10766 #Kalima
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Defense Zone 1"
+		location = 5117 #Kinshasa
+		division_template = "Defense Zone 1"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Defense Zone 2"
+		location = 13817 #Lubumbashi
+		division_template = "Defense Zone 2"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Defense Zone 3"
+		location = 1181 #Goma
+		division_template = "Defense Zone 3"
+		start_experience_factor = 0.1
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	295 = {
+		#MiG-23 
+		fighter_equipment_1 = {
+			owner = "COD" 
+			amount = 2
+		}
+	}
+	295 = {
+		#Su-25
+		CAS_equipment_1 = {
+			owner = "COD" 
+			amount = 4
+		}
+	}
+	295 = {
+		#Antonov An-26 + Antonov An-72
+		transport_plane_equipment_1 = {
+			owner = "COD" 
+			amount = 4
+		}
+	}
+}

@@ -156,17 +156,17 @@ if = {
 set_country_flag = protestant
 
 add_opinion_modifier = {
-	target = AST
+	target = AUS
 	modifier = ANZUS
 }
 
 add_opinion_modifier = {
-	target = AST
+	target = AUS
 	modifier = ANZUS_trade
 }
 
 add_opinion_modifier = {
-	target = AST
+	target = AUS
 	modifier = five_eyes_agreement
 }
 
@@ -219,14 +219,14 @@ KOR = { give_military_access = USA }
 ROJ = { give_military_access = USA }
 IRQ = { give_military_access = USA }
 DJI = { give_military_access = USA }
-AST = { give_military_access = USA }
+AUS = { give_military_access = USA }
 BHS = { give_military_access = USA }
 BHR = { give_military_access = USA }
 BIH = { give_military_access = USA }
 BFA = { give_military_access = USA }
 CMR = { give_military_access = USA }
 ECU = { give_military_access = USA }
-HON = { give_military_access = USA }
+HND = { give_military_access = USA }
 JAP = { give_military_access = USA }
 KEN = { give_military_access = USA }
 KOS = { give_military_access = USA }
@@ -238,7 +238,7 @@ SGP = { give_military_access = USA }
 THA = { give_military_access = USA }
 TUN = { give_military_access = USA }
 UAE = { give_military_access = USA }
-CHI = { give_military_access = USA }
+ROC = { give_military_access = USA }
 
 add_ideas = {
 	idea_united_nations_security_council_member
@@ -259,7 +259,7 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = MIC
+		target = FSM
 		autonomous_state = autonomy_puppet_state
 	}
 	set_autonomy = {
@@ -267,13 +267,13 @@ if = {
 		autonomous_state = autonomy_puppet_state
 	}
 	set_autonomy = {
-		target = PLU
+		target = PLW
 		autonomous_state = autonomy_puppet_state
 	}
 	else = {
-		puppet = MIC
+		puppet = FSM
 		puppet = MAR
-		puppet = PLU
+		puppet = PLW
 	}
 }
 
@@ -287,7 +287,7 @@ if = {
 	}
 }
 
-MIC = {
+FSM = {
 	set_politics = {	
 		ruling_party = progressive
 		last_election = "2017.3.5"
@@ -313,7 +313,7 @@ MAR = {
 	}
 }
 
-PLU = {
+PLW = {
 	set_politics = {	
 		ruling_party = progressive
 		last_election = "2016.11.3"
@@ -331,10 +331,10 @@ add_to_faction = USA
 add_to_faction = BEL
 add_to_faction = CAN
 add_to_faction = CZE
-add_to_faction = DEN
+add_to_faction = DNK
 add_to_faction = FRA
-add_to_faction = GER
-add_to_faction = GRE
+add_to_faction = DEU
+add_to_faction = GRC
 add_to_faction = HUN
 add_to_faction = ICE
 add_to_faction = ITA
@@ -357,11 +357,11 @@ add_to_faction = ALB
 add_to_faction = CRO
 add_to_faction = MNT
 
-give_guarantee = AST
+give_guarantee = AUS
 give_guarantee = ISR
 give_guarantee = JAP
 give_guarantee = KOR
-give_guarantee = CHI
+give_guarantee = ROC
 give_guarantee = PHI
 give_guarantee = ROJ
 

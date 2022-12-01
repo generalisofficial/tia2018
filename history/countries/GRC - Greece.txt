@@ -1,0 +1,294 @@
+﻿capital = 47
+
+oob = "GRC_2018"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GRC_2018_naval_mtg"
+	else = {
+		set_naval_oob = "GRC_2018_naval_legacy"
+	}
+}
+
+set_convoys = 1308
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	scout_plane2 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	mobile_warfare = 1
+	fleet_in_being = 1
+	formation_flying = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+add_ideas = {
+	idea_european_union_member
+	limited_conscription
+	the_euro
+	christianity
+	parliamentary_system
+	moderate_minimum_wage
+	high_taxes 
+	#extensive_healthcare_spending
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ATH
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = ATH
+		ATH = { set_country_flag = TfV_marked_for_deletion }
+	}
+}
+
+ATH = {
+	set_politics = {
+		ruling_party = monarchist
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		monarchist = 100
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+  		name = "National Intelligence Service"
+ 		icon = "GFX_intelligence_agency_logo_GRC"
+	}
+}
+
+set_country_flag = catholic
+
+give_guarantee = CYP
+add_opinion_modifier = { target = TUR modifier = rival }
+add_opinion_modifier = { target = MKD modifier = macedonia_naming_dispute }
+
+#Hellenic Parliament
+set_variable = { communist_seats = 5 }
+set_variable = { socialist_seats = 48.35 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.66 }
+set_variable = { social_liberal_seats = 3.66 }
+set_variable = { classical_liberal_seats = 3 }
+set_variable = { conservative_seats = 25 }
+set_variable = { national_conservative_seats = 3.33 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 6 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_socialist
+set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = socialist_seats }
+add_to_variable = { ROOT.Coalition = national_conservative_seats }
+
+set_politics = {	
+	ruling_party = socialist
+	last_election = "2015.7.7"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservative = 43.1
+	socialist = 25
+	fascist = 8.5
+	social_democrat = 8.5
+	communist = 6.5
+	classical_liberal = 2.5
+	national_conservative = 2.5
+	right_wing_populist = 1.9
+	social_liberal = 1.5
+}
+
+# Characters - Military
+
+# Characters - Political
+recruit_character = GRC_nikolaos_michaloliakos
+recruit_character = GRC_kyriakos_velopoulos
+recruit_character = GRC_konstantinos_ii
+recruit_character = GRC_panos_kammenos
+recruit_character = GRC_kyriakos_mitsotakis
+recruit_character = GRC_vasilis_leventis
+recruit_character = GRC_stavros_theodorakis
+recruit_character = GRC_fofi_gennimata
+set_country_flag = progressive_intended_no_leader
+recruit_character = GRC_alexis_tsipras
+recruit_character = GRC_dimitris_koutsoumpas
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Kavaloudis Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Russen class"
+		type = ship_hull_light_3
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Hydra Class"
+		type = ship_hull_cruiser_2
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			front_1_custom_slot = ship_light_battery_1
+		}	
+	}
+
+	create_equipment_variant = {
+		name = "Elli Class"
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_anti_air_1
+		}	
+	}
+}

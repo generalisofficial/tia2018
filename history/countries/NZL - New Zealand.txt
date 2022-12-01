@@ -94,7 +94,7 @@ if = {
 set_country_flag = former_british_colony
 set_cosmetic_tag = NZL_monarchist # Constitutional Monarchy
 
-give_guarantee = AST
+give_guarantee = AUS
 give_guarantee = MAL
 give_guarantee = SGP
 give_guarantee = SAM
@@ -124,12 +124,12 @@ if = {
 		autonomous_state = autonomy_puppet_state
 	}
 	set_autonomy = {
-		target = CKI
+		target = COK
 		autonomous_state = autonomy_puppet_state
 	}
 	else = {
 		puppet = NIU
-		puppet = CKI
+		puppet = COK
 	}
 }
 
@@ -145,7 +145,7 @@ NIU = {
 	}
 }
 
-CKI = {
+COK = {
 	set_politics = {	
 		ruling_party = national_conservative
 		last_election = "2014.6.14"
@@ -199,17 +199,17 @@ set_popularities = {
 }
 
 add_opinion_modifier = {
-	target = AST
+	target = AUS
 	modifier = ANZUS
 }
 
 add_opinion_modifier = {
-	target = AST
+	target = AUS
 	modifier = ANZUS_trade
 }
 
 add_opinion_modifier = {
-	target = AST
+	target = AUS
 	modifier = five_eyes_agreement
 }
 

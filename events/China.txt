@@ -45,7 +45,7 @@ news_event = { #An Independent Taiwan
 		trigger = {
 			NOT = {
 				OR = {
-					original_tag = CHI
+					original_tag = ROC
 					original_tag = PRC
 				}
 			}
@@ -55,7 +55,7 @@ news_event = { #An Independent Taiwan
 	option = {
 		name = china.3.o2
 		trigger = {
-			original_tag = CHI
+			original_tag = ROC
 		}
 	}
 
@@ -81,7 +81,7 @@ news_event = { #The Taiwan Special Administrative Region
 		trigger = {
 			NOT = {
 				OR = {
-					original_tag = CHI
+					original_tag = ROC
 					original_tag = PRC
 				}
 			}
@@ -91,7 +91,7 @@ news_event = { #The Taiwan Special Administrative Region
 	option = {
 		name = china.4.o2
 		trigger = {
-			original_tag = CHI
+			original_tag = ROC
 		}
 	}
 
@@ -110,7 +110,7 @@ country_event = {
 	desc = china.5.d
 	
 	trigger = {
-		original_tag = CHI
+		original_tag = ROC
 		NOT = { has_autonomy_state = autonomy_autonomous_region }
 		NOT = { has_global_flag = taiwan_independence }
 		NOT = { country_exists = PRC }
@@ -140,7 +140,7 @@ country_event = {
 					has_country_flag = recognizes_the_roc
 				}
 				clr_country_flag = recognizes_the_roc
-				CHI = {
+				ROC = {
 					remove_opinion_modifier = { target = PREV modifier = recognizes_the_roc }
 					add_opinion_modifier = { target = PREV modifier = recognized_the_roc_prior_to_victory }
 				}
@@ -165,7 +165,7 @@ news_event = { #ROC reclaims seat at the United Nations
 		name = china.6.o1
 		trigger = {
 			NOT = {
-				original_tag = CHI
+				original_tag = ROC
 			}
 		}
 	}
@@ -173,7 +173,7 @@ news_event = { #ROC reclaims seat at the United Nations
 	option = {
 		name = china.6.o2
 		trigger = {
-			original_tag = CHI
+			original_tag = ROC
 		}
 	}
 }

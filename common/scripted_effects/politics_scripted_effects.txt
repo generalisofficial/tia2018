@@ -2049,7 +2049,7 @@ election_pulse = {
 	}
 	if = {
 	    limit = {
-		    original_tag = GER
+		    original_tag = DEU
 			has_global_flag = akk_elected
 		}
 		clr_global_flag = akk_elected
@@ -2061,7 +2061,7 @@ election_pulse = {
     }
 	if = {
 	    limit = {
-			original_tag = GER
+			original_tag = DEU
 			has_global_flag = merz_elected
 		}
 		clr_global_flag = merz_elected
@@ -2109,7 +2109,7 @@ election_pulse = {
 	}
 	if = {
 	    limit = {
-		    original_tag = BRM
+		    original_tag = MMR
 			has_government = social_democrat
 			NOT = { has_global_flag = myanmar_coup }
 		}
@@ -2182,7 +2182,7 @@ election_pulse = {
 	}
 	if  = {
 		limit = {
-			original_tag = COS
+			original_tag = CRI
 			has_country_leader = {
 				name = "Luis Guillermo Solís"
 				ruling_only = no
@@ -2191,20 +2191,20 @@ election_pulse = {
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 			name = "Carlos Alvarado Quesada"
-			picture = GFX_Portrait_COS_Carlos_Alvarado_Quesada
+			picture = GFX_Portrait_CRI_Carlos_Alvarado_Quesada
 			ideology = social_democrat_ideology
 		}
 	}
 	if  = {
 		limit = {
-			original_tag = ALG
+			original_tag = DZA
 			has_country_flag = bouteflika_not_running
 		}
 		clr_country_flag = bouteflika_not_running
 		retire_ideology_leader = socialist
 		create_country_leader = {
 			name = "Abdelmadjid Tebboune"
-			picture = GFX_Portrait_ALG_Abdelmadjid_Tebboune
+			picture = GFX_Portrait_DZA_Abdelmadjid_Tebboune
 			ideology = arab_socialist
 		}
 	}

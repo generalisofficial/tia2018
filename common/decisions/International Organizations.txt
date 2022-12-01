@@ -21,14 +21,14 @@ international_organizations = {
 			}
 			if = {
 				limit = {
-					original_tag = WES
+					original_tag = ESH
 				}
 				owns_state = 699
 				owns_state = 882
 			}
 			if = {
 				limit = {
-					original_tag = CHI
+					original_tag = ROC
 					country_exists = PRC
 					NOT = { has_global_flag = taiwan_independence }
 				}
@@ -548,13 +548,13 @@ international_organizations = {
 			OR = { 
 				original_tag = SWE
 				original_tag = FIN
-				original_tag = ALN
+				original_tag = ALA
 				original_tag = SCN
-				original_tag = DEN
+				original_tag = DNK
 				original_tag = NOR
 				original_tag = ICE
-				original_tag = FAI
-				original_tag = GRN
+				original_tag = FRO
+				original_tag = GRL
 			}
 		}
 		
@@ -636,7 +636,7 @@ international_organizations = {
 				original_tag = KEN
 				original_tag = SSD
 				original_tag = SPO
-				original_tag = COG
+				original_tag = COD
 			}
 		}
 		
@@ -704,7 +704,7 @@ international_organizations = {
 	
 		visible = {
 			NOT = { has_idea = guam_member  has_global_flag = guam_dissolved }
-			OR = { original_tag = GEO original_tag = UKR original_tag = AZR original_tag = MOL }
+			OR = { original_tag = GEO original_tag = UKR original_tag = AZE original_tag = MOL }
 		}
 		available = {
             NOT = { has_idea = guam_member has_idea = non_member_state }
@@ -780,7 +780,7 @@ international_organizations = {
 	
 		visible = {
 			NOT = { has_idea = commonwealth_of_independent_states_member  has_global_flag = commonwealth_of_independent_states_dissolved }
-			OR = { original_tag = RUS original_tag = UKR original_tag = BLR original_tag = LIT original_tag = LAT original_tag = EST original_tag = MOL original_tag = GEO original_tag = TRA original_tag = GEO original_tag = ABK original_tag = SOS original_tag = ART original_tag = ARM original_tag = AZR original_tag = KAZ original_tag = UZB original_tag = KYR original_tag = TMS original_tag = TJK }
+			OR = { original_tag = RUS original_tag = UKR original_tag = BLR original_tag = LIT original_tag = LAT original_tag = EST original_tag = MOL original_tag = GEO original_tag = TRA original_tag = GEO original_tag = ABK original_tag = SOS original_tag = ART original_tag = ARM original_tag = AZE original_tag = KAZ original_tag = UZB original_tag = KYR original_tag = TMS original_tag = TJK }
 		}
 		available = {
             NOT = { has_idea = commonwealth_of_independent_states_member has_idea = non_member_state }
@@ -962,7 +962,7 @@ international_organizations = {
 	
 		visible = {
 			NOT = { has_idea = asean_member  has_global_flag = asean_dissolved }
-			OR = { original_tag = BRM original_tag = THA original_tag = LAO	original_tag = CAM original_tag = VNM original_tag = PHI original_tag = MAL original_tag = SGP original_tag = BRU original_tag = INS original_tag = TLS }
+			OR = { original_tag = MMR original_tag = THA original_tag = LAO	original_tag = CAM original_tag = VNM original_tag = PHI original_tag = MAL original_tag = SGP original_tag = BRN original_tag = INS original_tag = TLS }
 		}
 		available = {
             NOT = { has_idea = asean_member has_idea = non_member_state }

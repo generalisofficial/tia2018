@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armoured Brigade"
+	division_names_group = GENERIC_ARM_03
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_mechanized = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Armoured Brigade"
+		location = 8214 #Gaborone
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 8214 #Gaborone
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}	
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 10525 #Francistown
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 13529 #Ghanzi
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}	
+}
+
+### Air OOB ###
+air_wings = {
+	542 = {
+		#C-130 Hercules + CASA C212 + CASA CN-235 + Beechcraft King Air 200
+		transport_plane_equipment_1 = {
+			owner = "BWA" 
+			amount = 9
+		}
+		name = "Z10 Transport Squadron"
+	}
+	542 = {
+		#KC-130 Hercules
+		fighter_equipment_1 = {
+			owner = "BWA" 
+			amount = 10
+		}
+		name = "Z28 Fighter Squadron"
+	}
+}

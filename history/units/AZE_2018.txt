@@ -1,0 +1,134 @@
+﻿division_template = {
+	name = "Motor Rifle Division"
+	division_names_group = GENERIC_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Motor Rifle Division (Small)"
+	division_names_group = GENERIC_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+	}	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0 #Reserves of the army
+}
+
+division_template = {
+	name = "Motor Rifle Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+}	
+
+units = {
+	division = {
+		name = "Barda Army Corps"
+		location = 1539 #Deployed on Ganja
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Beylagan Army Corps"
+		location = 11704 #Somewhere on the Iranian border, near Beylagan
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Shamkir Army Corps"
+		location = 11674 #Shamkir
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Baku Army Corps"
+		location = 7661 #Baku
+		division_template = "Motor Rifle Division (Small)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Nakhchivan Garrison"
+		location = 6997 #Nakhchivan
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+		amount = 100000
+	}
+	
+}
+
+air_wings = {
+	229 = {
+		#MiG-21
+		fighter_equipment_1 = {
+			owner = "AZE" 
+			amount = 5
+		}
+	}
+	229 = {
+		#MiG-29
+		fighter_equipment_2 = {
+			owner = "AZE"
+			amount = 13
+		}
+	}
+	229 = {
+		#Su-25
+		CAS_equipment_2 = {
+			owner = "AZE" 
+			amount = 12
+		}
+	}
+	229 = {
+		#Il-76
+		transport_plane_equipment_1 = {
+			owner = "AZE" 
+			amount = 1
+		} 
+	}
+	229 = {
+		#Orbiter + Hermes 450 + IAI Heron + IAI Searcher
+		scout_plane_equipment_2 = {
+			owner = "AZE" 
+			amount = 34
+		} 
+	}
+}

@@ -1,12 +1,15 @@
 ﻿units= {
 	##### Naval OOB #####
 	fleet = {
-		name = "National Navy"
-		naval_base = 10968 #Matadi
+		name = "Republic of the Congo Navy"
+		naval_base = 12975 #Pointe-Noire
 		task_force = {				
-			name = "Matadi Command"			
-			location = 10968 #Matadi
-			ship = { name = "P102" definition = patrol_boat equipment = { ship_hull_patrol_boat_1 = { amount = 1 owner = COG version_name = "Shanghai II Class" } } }
+			name = "Coastal Fleet"			
+			location = 12975 #Pointe-Noire
+			ship = { name = "05 Février 1979" definition = patrol_boat equipment = { ship_hull_patrol_boat_3 = { amount = 1 owner = COG version_name = "05 Février 1979 Class" } } }
+			ship = { name = "31 Juillet 1968" definition = patrol_boat equipment = { ship_hull_patrol_boat_3 = { amount = 1 owner = COG version_name = "05 Février 1979 Class" } } }
+			ship = { name = "15 Août 1960" definition = patrol_boat equipment = { ship_hull_patrol_boat_3 = { amount = 1 owner = COG version_name = "05 Février 1979 Class" } } }
+			ship = { name = "10 Juin 1991" definition = patrol_boat equipment = { ship_hull_patrol_boat_3 = { amount = 1 owner = COG version_name = "05 Février 1979 Class" } } }
 		}
 	}
 }

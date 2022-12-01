@@ -1,0 +1,121 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Presidential Guard"
+	division_names_group = GENERIC_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Infantry Brigade"
+		location = 4851 #Bulawayo
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 10929 #Harare
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 13541 #Mutare
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 2151 #Masvingo
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		location = 13540 #KweKwe
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Presidential Guard Brigade"
+		location = 10929 #Harare
+		division_template = "Presidential Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mechanised Brigade"
+		location = 10929 #Harare
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1st Parachute Battalion"
+		location = 13544 #Nyabira
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	541 = {
+		#MiG-23 
+		fighter_equipment_2 = {
+			owner = "ZWE" 
+			amount = 3
+		}
+	}
+	541 = {
+		#F-7 MiG-21 Copy - 70s but downgraded for gameplay variety and to fit with icon
+		fighter_equipment_1 = {
+			owner = "ZWE" 
+			amount = 7
+		}
+
+	}
+}

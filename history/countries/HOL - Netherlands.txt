@@ -131,14 +131,14 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
-		target = CRC
+		target = CUW
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
 		puppet = ABW
-		puppet = CRC
+		puppet = CUW
 		ABW = { set_country_flag = TfV_marked_for_deletion }
-		CRC = { set_country_flag = TfV_marked_for_deletion }
+		CUW = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
@@ -156,7 +156,7 @@ ABW = {
 	}
 }
 
-CRC = {
+CUW = {
 	set_politics = {	
 		ruling_party = social_liberal
 		last_election = "2017.3.19"
@@ -196,7 +196,7 @@ add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
-add_opinion_modifier = { target = GER modifier = military_cooperation }
+add_opinion_modifier = { target = DEU modifier = military_cooperation }
 
 set_politics = {
 	ruling_party = classical_liberal

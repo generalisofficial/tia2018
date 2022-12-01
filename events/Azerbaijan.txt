@@ -14,9 +14,9 @@ news_event = {
 		name = azerbaijan.1.o1
 		trigger = {
 			OR = {
-				original_tag = AZR
+				original_tag = AZE
 				original_tag = TUR
-				is_in_faction_with = AZR
+				is_in_faction_with = AZE
 			}
 		}
 	}
@@ -25,15 +25,15 @@ news_event = {
 		name = azerbaijan.1.o2
 		trigger = {
 			NOT = {
-				original_tag = AZR
+				original_tag = AZE
 				original_tag = TUR
-				is_in_faction_with = AZR
+				is_in_faction_with = AZE
 			}
 		}
 	}
 }
 
-#AZR - Successful Operation Iron Fist
+#AZE - Successful Operation Iron Fist
 country_event = {
 	id = azerbaijan.2
 	title = azerbaijan.2.t
@@ -59,7 +59,7 @@ country_event = {
 	}
 }
 
-#AZR - Failed Operation Iron Fist
+#AZE - Failed Operation Iron Fist
 country_event = {
 	id = azerbaijan.3
 	title = azerbaijan.3.t

@@ -113,12 +113,12 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = ALN
+		target = ALA
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
-		puppet = ALN
-		ALN = { set_country_flag = TfV_marked_for_deletion }
+		puppet = ALA
+		ALA = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
@@ -132,7 +132,7 @@ if = {
 	}
 }
 
-ALN = {
+ALA = {
 	set_politics = {	
 		ruling_party = classical_liberal
 		last_election = "2015.10.20"

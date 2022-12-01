@@ -64,7 +64,7 @@ foreign_affairs = {
 				original_tag = EST
 				original_tag = GEO
 				original_tag = ARM
-				original_tag = AZR
+				original_tag = AZE
 				original_tag = ART
 				original_tag = ABK
 				original_tag = SOS
@@ -112,7 +112,7 @@ foreign_affairs = {
 						is_core_of = EST
 						is_core_of = GEO
 						is_core_of = ARM
-						is_core_of = AZR
+						is_core_of = AZE
 						is_core_of = ART
 						is_core_of = ABK
 						is_core_of = SOS
@@ -258,10 +258,10 @@ foreign_affairs = {
 		allowed = {
 		    OR = {
 			    original_tag = ELS
-				original_tag = GUA
-				original_tag = HON
+				original_tag = GTM
+				original_tag = HND
 				original_tag = NIC
-				original_tag = COS
+				original_tag = CRI
 			}
 		}
 		
@@ -285,10 +285,10 @@ foreign_affairs = {
 			    limit = {
 				    OR = {
 				        is_core_of = ELS
-				        is_core_of = GUA
-						is_core_of = HON
+				        is_core_of = GTM
+						is_core_of = HND
 						is_core_of = NIC
-						is_core_of = COS
+						is_core_of = CRI
 				    }
 			    }
 			    add_core_of = ROOT
@@ -306,7 +306,7 @@ foreign_affairs = {
 		    OR = {
 			    original_tag = GEO
 				original_tag = ARM
-				original_tag = AZR
+				original_tag = AZE
 				original_tag = SOS
 				original_tag = ABK
 				original_tag = ART
@@ -332,7 +332,7 @@ foreign_affairs = {
 				    OR = {
 				        is_core_of = GEO
 				        is_core_of = ARM
-						is_core_of = AZR
+						is_core_of = AZE
 				    }
 			    }
 			    add_core_of = ROOT
@@ -350,7 +350,7 @@ foreign_affairs = {
 		allowed = {
 			NOT = {
 				OR = {
-					original_tag = CHI
+					original_tag = ROC
 					original_tag = PRC
 				}
 			}
@@ -358,7 +358,7 @@ foreign_affairs = {
 
 		visible = {
 			country_exists = PRC
-			country_exists = CHI
+			country_exists = ROC
 			NOT = { has_global_flag = taiwan_independence }
 			NOT = { has_global_flag = ROC_victory }
 			is_sovereign_state = yes
@@ -368,8 +368,8 @@ foreign_affairs = {
 		available = {
 			NOT = { 
 				OR ={
-					is_subject_of = CHI
-					is_in_faction_with = CHI
+					is_subject_of = ROC
+					is_in_faction_with = ROC
 				}
 			}
 		}
@@ -377,7 +377,7 @@ foreign_affairs = {
 		complete_effect = {
 			clr_country_flag = recognizes_the_roc
 			news_event = politics.9
-			CHI = {
+			ROC = {
 				remove_opinion_modifier = { target = ROOT modifier = recognizes_the_roc }
 			}
 			PRC = {
@@ -393,11 +393,11 @@ foreign_affairs = {
 			base = 0
 			modifier = {
 				factor = 100
-				has_war_with = CHI
+				has_war_with = ROC
 			}
 			modifier = {
 				factor = 1
-				NOT = { has_war_with = CHI }
+				NOT = { has_war_with = ROC }
 				OR = {
 					has_government = communist
 					has_government = socialist
@@ -407,12 +407,12 @@ foreign_affairs = {
 		}
 	}
 
-	switch_recognition_to_CHI = {
+	switch_recognition_to_ROC = {
 
 		allowed = {
 			NOT = {
 				OR = {
-					original_tag = CHI
+					original_tag = ROC
 					original_tag = PRC
 				}
 			}
@@ -420,7 +420,7 @@ foreign_affairs = {
 
 		visible = {
 			country_exists = PRC
-			country_exists = CHI
+			country_exists = ROC
 			NOT = { has_global_flag = taiwan_independence }
 			NOT = { has_global_flag = ROC_victory }
 			is_sovereign_state = yes
@@ -439,7 +439,7 @@ foreign_affairs = {
 		complete_effect = {
 			set_country_flag = recognizes_the_roc
 			news_event = politics.10
-			CHI = {
+			ROC = {
 				add_opinion_modifier = { target = ROOT modifier = recognizes_the_roc }
 			}
 			PRC = {
@@ -642,15 +642,15 @@ foreign_affairs = {
 		}
 
 		visible = {
-			country_exists = GRE
+			country_exists = GRC
 		}
 		
 		available = {
-			NOT = { has_war_with = GRE }
+			NOT = { has_war_with = GRC }
 		}
 		
 		complete_effect = {
-            GRE = {
+            GRC = {
 				country_event = macedonia.1
 			}
 		}
@@ -686,7 +686,7 @@ foreign_affairs = {
 	declare_taiwanese_independence = {
 	
 		allowed = {
-			original_tag = CHI
+			original_tag = ROC
 		}
 
 		visible = {
@@ -731,7 +731,7 @@ foreign_affairs = {
 						has_country_flag = recognizes_the_roc
 					}
 					clr_country_flag = recognizes_the_roc
-					CHI = {
+					ROC = {
 						remove_opinion_modifier = { target = PREV modifier = recognizes_the_roc }
 					}
 					PRC = {
@@ -766,7 +766,7 @@ foreign_affairs = {
 	become_a_special_administrative_region = {
 	
 		allowed = {
-			original_tag = CHI
+			original_tag = ROC
 			has_dlc = "Together for Victory"
 		}
 
@@ -814,7 +814,7 @@ foreign_affairs = {
 						has_country_flag = recognizes_the_roc
 					}
 					clr_country_flag = recognizes_the_roc
-					CHI = {
+					ROC = {
 						remove_opinion_modifier = { target = PREV modifier = recognizes_the_roc }
 					}
 					PRC = {
@@ -987,10 +987,10 @@ foreign_affairs = {
 			}
 			NOT = { owns_state = 101 }
 			OR = {
-				DEN = { owns_state = 101 }
-				GRN = {
+				DNK = { owns_state = 101 }
+				GRL = {
 					AND = {
-						is_subject_of = DEN
+						is_subject_of = DNK
 						has_autonomy_state = autonomy_autonomous_region
 						owns_state = 101
 					}
@@ -1000,11 +1000,11 @@ foreign_affairs = {
 		
 		available = {
 			is_subject = no
-			NOT = { has_war_with = DEN }
+			NOT = { has_war_with = DNK }
 		}
 		
 		complete_effect = {
-			DEN = { country_event = usa.9 }
+			DNK = { country_event = usa.9 }
 		}
 		
 		icon = greenland

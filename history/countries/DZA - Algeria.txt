@@ -1,0 +1,271 @@
+﻿capital = 459
+
+oob = "DZA_2018"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "DZA_2018_naval_mtg"
+	else = {
+		set_naval_oob = "DZA_2018_naval_legacy"
+	}
+}
+
+set_convoys = 114
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	body_armor = 1
+	camouflage = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	improved_decimetric_radar = 1
+	
+	## Industry ##
+	
+	## Doctrines ##
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+add_ideas = {
+	#population_growth_rapid
+	idea_african_union_member
+	arab_league_member
+	active_draft
+	#non_aligned_movement_member
+	lgbt_minority_womens_rights_conservative
+	islam
+	presidential_republic
+	civil_liberties_authoritarian
+	pro_life
+	organized_labour_discouraged
+	high_taxes 
+	#extensive_healthcare_spending
+	five_year_term
+}
+
+
+set_country_flag = sunni_islam
+
+give_guarantee = ESH
+
+add_opinion_modifier = {
+	target = ISR
+	modifier = no_diplomatic_recognition
+}
+
+# People's National Assembly
+set_variable = { communist_seats = 2.29 }
+set_variable = { socialist_seats = 59.4 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.41 }
+set_variable = { social_liberal_seats = 1.87 }
+set_variable = { classical_liberal_seats = 20.83 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 10.20 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
+
+set_politics = {	
+	ruling_party = socialist
+	last_election = "2014.12.12"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    socialist = 59.4
+	classical_liberal = 20.83
+	islamist = 10.20
+	social_democrat = 5.41
+	communist = 2.29
+	social_liberal = 1.87
+}
+
+# Characters - Military
+
+# Characters - Political
+recruit_character = DZA_abdelaziz_bouteflika
+recruit_character = DZA_ahmed_ouyahia
+recruit_character = DZA_abderrazak_makri
+recruit_character = DZA_amara_benyounès
+recruit_character = DZA_louisa_hanoune
+recruit_character = DZA_mohcine_belabbas
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Kilo Class"				
+		type = ship_hull_submarine_1
+		name_group = GENERIC_SS_NAMES
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = {
+		name = "MEKO 200 Class"
+		type = ship_hull_cruiser_2
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_secondaries_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Adhafer Class"
+		type = ship_hull_cruiser_4
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+			rear_2_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Koni Class"
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}	
+	}
+
+	create_equipment_variant = {
+		name = "Djebel Chenoua Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Lerici Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_MINESWEEPER_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+}	
