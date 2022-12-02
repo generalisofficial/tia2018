@@ -109,7 +109,7 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = MNN
+		target = IMN
 		autonomous_state = autonomy_autonomous_region
 	}
 	set_autonomy = {
@@ -121,10 +121,10 @@ if = {
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
-		puppet = MNN
+		puppet = IMN
 		puppet = JEY
 		puppet = GGY
-		MNN = { set_country_flag = TfV_marked_for_deletion }
+		IMN = { set_country_flag = TfV_marked_for_deletion }
 		JEY = { set_country_flag = TfV_marked_for_deletion }
 		GGY = { set_country_flag = TfV_marked_for_deletion }
 	}
@@ -167,7 +167,7 @@ GGY = {
 	}
 }
 
-MNN = {
+IMN = {
 	set_politics = {	
 		ruling_party = conservative
 		last_election = "2016.9.23"

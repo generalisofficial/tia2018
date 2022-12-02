@@ -5,7 +5,7 @@ foreign_affairs = {
 		allowed = {
 		    OR = {
 			    original_tag = SER
-				original_tag = CRO
+				original_tag = HRV
 				original_tag = KOS
 				original_tag = BIH
 				original_tag = SLV
@@ -33,7 +33,7 @@ foreign_affairs = {
 			    limit = {
 				    OR = {
 				        is_core_of = SER
-				        is_core_of = CRO
+				        is_core_of = HRV
 						is_core_of = KOS
 						is_core_of = BIH
 						is_core_of = SLV
@@ -1081,7 +1081,7 @@ foreign_affairs = {
 	claim_northern_ireland = {
 
 		allowed = {
-			original_tag = IRE
+			original_tag = IRL
 		}
 	
 		visible = {
@@ -1226,16 +1226,16 @@ foreign_affairs = {
 		}
 	
 		visible = {
-			country_exists = IRE
+			country_exists = IRL
 		}
 		
 		available = {
 			is_subject = no
-			NOT = { has_war_with = IRE  }
+			NOT = { has_war_with = IRL  }
 		}
 		
 		complete_effect = {
-			IRE = { country_event = ireland.2 }
+			IRL = { country_event = ireland.2 }
 			custom_effect_tooltip = TT_game_over_warning
 		}
 		
@@ -1250,7 +1250,7 @@ foreign_affairs = {
 			modifier = {
 				factor = 1
 				has_opinion = {
-					target = IRE
+					target = IRL
 					value > 0
 				}
 			}
@@ -1410,7 +1410,7 @@ foreign_affairs = {
 	claim_greater_croatia = {
 	
 		allowed = {
-			original_tag = CRO
+			original_tag = HRV
 		}
 		
 		available = {

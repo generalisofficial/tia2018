@@ -1,8 +1,6 @@
-﻿capital = 100
+﻿capital = 338
 
-oob = "ICE_2018"
-
-set_convoys = 37
+oob = "generic_2018"
 
 set_technology = {
 	## Infantry ##
@@ -41,7 +39,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antitank = 1
 	interwar_antiair = 1
-
 	
 	## Air ##
 	CAS1 = 1
@@ -92,28 +89,20 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_stagnation
-    idea_nordic_council_member
-	no_standing_army
-	christianity
 	parliamentary_system
-	lgbt_minority_womens_rights_progressive
-	organized_labour_encouraged
-	no_minimum_wage
-	#extensive_healthcare_spending
+	no_standing_army
+	five_year_term
 }
 
-set_country_flag = protestant
-
-#Althing
+#House of Keys
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 17.5 }
-set_variable = { progressive_seats = 9.52 }
-set_variable = { social_democrat_seats = 11.11 }
-set_variable = { social_liberal_seats = 23.80 }
-set_variable = { classical_liberal_seats = 6.34 }
-set_variable = { conservative_seats = 25.39 }
-set_variable = { national_conservative_seats = 6.34 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 12.5 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 87.5 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -121,39 +110,27 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_socialist
-set_country_flag = coalition_social_liberal
 set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = socialist_seats }
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = socialist
-	last_election = "2017.9.25"
-	election_frequency = 48
+	ruling_party = conservative
+	last_election = "2016.9.23"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservative = 25.43
-	social_liberal = 25.39
-	socialist = 12.69
-    social_democrat = 9.52
-	progressive = 9.52
-	national_conservative = 9.52
-	classical_liberal = 7.93
+	conservative = 87.5
+	social_democrat = 8.33
+	social_liberal = 4.17
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = ICE_gudmundur_thorleifsson
-recruit_character = ICE_inga_saeland
-recruit_character = ICE_bjarni_benediktsson
-recruit_character = ICE_thorgerdur_katrin_gunnarsdottir
-recruit_character = ICE_sigurdur_ingi_johannsson
-recruit_character = ICE_logi_mar_einarsson
-set_country_flag = progressive_intended_no_leader
-recruit_character = ICE_katrin_jakobsdottir
-recruit_character = ICE_thorvaldur_thorvaldsson
+recruit_character = IMN_howard_quayle
+recruit_character = IMN_kate_costain
+recruit_character = IMN_david_cretney
+recruit_character = IMN_andrew_langan_newton
+recruit_character = IMN_bernard_moffatt

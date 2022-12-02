@@ -1,16 +1,8 @@
-﻿capital = 113
+﻿capital = 100
 
-oob = "IRE_2018"
+oob = "ISL_2018"
 
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "IRE_2018_naval_mtg"
-	else = {
-		set_naval_oob = "IRE_2018_naval_legacy"
-	}
-}
-
-set_convoys = 93
+set_convoys = 37
 
 set_technology = {
 	## Infantry ##
@@ -57,7 +49,6 @@ set_technology = {
 	fighter1 = 1
 	fighter2 = 1
 	naval_bomber1 = 1
-	naval_bomber2 = 1
 	strategic_bomber1 = 1
 	
 	## Engineering ##
@@ -71,7 +62,6 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_destroyer = 1
-		basic_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_submarine = 1
@@ -82,7 +72,6 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_submarine = 1
@@ -103,29 +92,28 @@ if = {
 }
 
 add_ideas = {
-	idea_european_union_member
-	the_euro
-	idea_neutral_foreign_policy
-	#population_growth_steady
+	#population_growth_stagnation
+    idea_nordic_council_member
+	no_standing_army
+	christianity
 	parliamentary_system
 	lgbt_minority_womens_rights_progressive
-	generous_minimum_wage
-	high_taxes 
+	organized_labour_encouraged
+	no_minimum_wage
 	#extensive_healthcare_spending
-	five_year_term
 }
 
-set_country_flag = catholic
+set_country_flag = protestant
 
-#Dáil Éireann
+#Althing
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 23.91 }
-set_variable = { progressive_seats = 1.44 }
-set_variable = { social_democrat_seats = 7.24 }
-set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 31.88 }
-set_variable = { conservative_seats = 35.53 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { socialist_seats = 17.5 }
+set_variable = { progressive_seats = 9.52 }
+set_variable = { social_democrat_seats = 11.11 }
+set_variable = { social_liberal_seats = 23.80 }
+set_variable = { classical_liberal_seats = 6.34 }
+set_variable = { conservative_seats = 25.39 }
+set_variable = { national_conservative_seats = 6.34 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -133,57 +121,39 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
+set_country_flag = coalition_socialist
+set_country_flag = coalition_social_liberal
 set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = socialist_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = conservative
-	last_election = "2016.2.8"
-	election_frequency = 60
+	ruling_party = socialist
+	last_election = "2017.9.25"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    socialist = 31.42
-	classical_liberal = 26.44
-	conservative = 25
-	progressive = 8.57
-	social_democrat = 8.57
+	conservative = 25.43
+	social_liberal = 25.39
+	socialist = 12.69
+    social_democrat = 9.52
+	progressive = 9.52
+	national_conservative = 9.52
+	classical_liberal = 7.93
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = IRE_justin_barrett
-recruit_character = IRE_hermann_kelly
-recruit_character = IRE_john_leahy
-recruit_character = IRE_leo_varadkar
-recruit_character = IRE_micheal_martin
-recruit_character = IRE_brendan_howlin
-recruit_character = IRE_eamon_ryan
-recruit_character = IRE_gerry_adams
-recruit_character = IRE_martin_mcmonagle
-
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Peacock Class"
-		type = ship_hull_light_2
-		name_group = GENERIC_DD_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_light_battery_1
-		}
-	}
-}	
+recruit_character = ISL_gudmundur_thorleifsson
+recruit_character = ISL_inga_saeland
+recruit_character = ISL_bjarni_benediktsson
+recruit_character = ISL_thorgerdur_katrin_gunnarsdottir
+recruit_character = ISL_sigurdur_ingi_johannsson
+recruit_character = ISL_logi_mar_einarsson
+set_country_flag = progressive_intended_no_leader
+recruit_character = ISL_katrin_jakobsdottir
+recruit_character = ISL_thorvaldur_thorvaldsson

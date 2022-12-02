@@ -1,6 +1,16 @@
-﻿capital = 338
+﻿capital = 113
 
-oob = "generic_2018"
+oob = "IRL_2018"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "IRL_2018_naval_mtg"
+	else = {
+		set_naval_oob = "IRL_2018_naval_legacy"
+	}
+}
+
+set_convoys = 93
 
 set_technology = {
 	## Infantry ##
@@ -39,6 +49,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antitank = 1
 	interwar_antiair = 1
+
 	
 	## Air ##
 	CAS1 = 1
@@ -46,6 +57,7 @@ set_technology = {
 	fighter1 = 1
 	fighter2 = 1
 	naval_bomber1 = 1
+	naval_bomber2 = 1
 	strategic_bomber1 = 1
 	
 	## Engineering ##
@@ -59,6 +71,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_destroyer = 1
+		basic_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_submarine = 1
@@ -69,6 +82,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_submarine = 1
@@ -89,19 +103,28 @@ if = {
 }
 
 add_ideas = {
+	idea_european_union_member
+	the_euro
+	idea_neutral_foreign_policy
+	#population_growth_steady
 	parliamentary_system
-	no_standing_army
+	lgbt_minority_womens_rights_progressive
+	generous_minimum_wage
+	high_taxes 
+	#extensive_healthcare_spending
 	five_year_term
 }
 
-#House of Keys
+set_country_flag = catholic
+
+#Dáil Éireann
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 12.5 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 87.5 }
+set_variable = { socialist_seats = 23.91 }
+set_variable = { progressive_seats = 1.44 }
+set_variable = { social_democrat_seats = 7.24 }
+set_variable = { social_liberal_seats = 0 }
+set_variable = { classical_liberal_seats = 31.88 }
+set_variable = { conservative_seats = 35.53 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -115,22 +138,52 @@ add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = conservative
-	last_election = "2016.9.23"
+	last_election = "2016.2.8"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservative = 87.5
-	social_democrat = 8.33
-	social_liberal = 4.17
+    socialist = 31.42
+	classical_liberal = 26.44
+	conservative = 25
+	progressive = 8.57
+	social_democrat = 8.57
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MNN_howard_quayle
-recruit_character = MNN_kate_costain
-recruit_character = MNN_david_cretney
-recruit_character = MNN_andrew_langan_newton
-recruit_character = MNN_bernard_moffatt
+recruit_character = IRL_justin_barrett
+recruit_character = IRL_hermann_kelly
+recruit_character = IRL_john_leahy
+recruit_character = IRL_leo_varadkar
+recruit_character = IRL_micheal_martin
+recruit_character = IRL_brendan_howlin
+recruit_character = IRL_eamon_ryan
+recruit_character = IRL_gerry_adams
+recruit_character = IRL_martin_mcmonagle
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Peacock Class"
+		type = ship_hull_light_2
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+		}
+	}
+}	
