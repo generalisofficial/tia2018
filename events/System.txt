@@ -1769,7 +1769,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_global_flag = libyan_civil_war_over }
-		country_exists = LBA
+		country_exists = LBY
 		NOT = { country_exists = LNA }
 	}
 
@@ -1798,7 +1798,7 @@ country_event = {
 	trigger = {
 		NOT = { has_global_flag = libyan_civil_war_over }
 		country_exists = LNA
-		NOT = { country_exists = LBA }
+		NOT = { country_exists = LBY }
 	}
 
 	fire_only_once = yes
@@ -1808,18 +1808,18 @@ country_event = {
 		set_global_flag = libyan_civil_war_over
 		LNA = {
 			add_ideas = one_party_state
-			set_cosmetic_tag = LBA
+			set_cosmetic_tag = LBY
 			set_capital = { state = 448 }
 		}
 		every_state = {
 			limit = {
 				OR = {
-					is_core_of = LBA
-					is_claimed_by = LBA
+					is_core_of = LBY
+					is_claimed_by = LBY
 				}
 			}
-			remove_core_of = LBA
-			remove_claim_by = LBA
+			remove_core_of = LBY
+			remove_claim_by = LBY
 		}
 	}
 }

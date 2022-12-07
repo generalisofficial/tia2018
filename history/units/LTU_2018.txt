@@ -1,0 +1,110 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	division_names_group = GENERIC_MEC_02
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "National Defense Volunteer Forces"
+	division_names_group = GENERIC_GAR_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {	
+	division = {
+		name = "'Iron Wolf' Mechanized Infantry Brigade"
+		location = 6296	#Rukla
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "'Žemaitija' Motorized Infantry Brigade"
+		location = 3288	#Klaipėda
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "'Aukštaitija' Light Infantry Brigade"
+		location = 3320	#Vilnius
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "National Defense Volunteer Forces"
+		location = 3320	#Vilnius
+		division_template = "National Defense Volunteer Forces"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Lithuanian Special Operations Force"
+		location = 3320	#Vilnius
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.75
+	}
+}
+
+### Air OOB ###
+air_wings = {
+	70 = {
+		#L-39 Albatros
+		CAS_equipment_1 = {
+			owner = "LTU" 
+			amount = 1
+		}
+		name = "Lithuanian Air Force"
+	}
+}

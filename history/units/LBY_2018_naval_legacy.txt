@@ -1,0 +1,16 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "Libyan Navy"
+		naval_base = 1149 #Tripoli
+		task_force = {				
+			name = "Libyan Fleet"			
+			location = 1149 #Tripoli
+			ship = { name = "Ras Al Falluga" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = LBY } } }
+			ship = { name = "Ras Al Oula" definition = patrol_boat equipment = { patrol_boat_1 = { amount = 1 owner = LBY } } }
+			ship = { name = "Tariq-Ibn Ziyad" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LBY } } }
+			ship = { name = "Shafak" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LBY } } }
+			ship = { name = "Al Hani" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = LBY } } }
+		}
+	}
+}

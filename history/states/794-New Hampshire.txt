@@ -1,28 +1,36 @@
+
 state={
 	id=794
 	name="STATE_794"
-	
-	resources = {
-		steel = 13
+	resources={
+		steel=13.000
 	}
-	
-	history = {
+
+	history={
 		owner = USA
-		add_core_of = USA
+		victory_points = {
+			3712 2 
+		}
 		buildings = {
 			infrastructure = 3
 			military_airport = 1
 			civilian_industry = 3
 			military_industry = 1
+			3712 = {
+				naval_base = 2
+
+			}
+
 		}
-		victory_points = { 3712 2 }
-		victory_points = { 3715 3 }
+		add_core_of = USA
+
 	}
+
 	provinces={
 		733 3712 3715 10481 
 	}
 	manpower=1240500
 	buildings_max_level_factor=1.000
-	
-	state_category = state_default
+	state_category=state_default
+	local_supplies=0.000
 }

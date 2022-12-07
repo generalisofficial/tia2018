@@ -21,6 +21,11 @@ equipments = {
 			plane_engine_upgrade
 			plane_reliability_upgrade
 		}
+
+		allow_mission_type = {
+			strategic_bomber
+			naval_mines_planting
+		}
 		
 		air_superiority = 0.01
 		reliability = 0.8
@@ -157,6 +162,11 @@ equipments = {
 		
 		air_superiority = 0
 		reliability = 0.8
+
+		allow_mission_type = {
+			paradrop
+			air_supply
+		}
 		
 		# Naval attack
 		naval_strike_attack = 0

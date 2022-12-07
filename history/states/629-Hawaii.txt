@@ -2,10 +2,21 @@
 state={
 	id=629
 	name="STATE_629"
-	manpower = 1420491
-	state_category = state_default
+
 	history={
 		owner = USA
+		victory_points = {
+			4180 5 
+		}
+		victory_points = {
+			12021 1 
+		}
+		victory_points = {
+			7195 1 
+		}
+		victory_points = {
+			7112 1 
+		}
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 1
@@ -13,15 +24,24 @@ state={
 			military_airport = 5
 			4180 = {
 				naval_base = 10
+
 			}
+			12021 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = USA
 		add_core_of = HWI
-		victory_points = { 4180 5 }
-		victory_points = { 12021 1 }
+
 	}
 
 	provinces={
 		4180 7112 7195 10048 12021 
 	}
+	manpower=1420491
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

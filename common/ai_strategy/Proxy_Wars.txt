@@ -154,7 +154,7 @@ pro_houthi_coalition = {
     }
 }
 
-civil_war_support_LBA_direct = {
+civil_war_support_LBY_direct = {
     enable = {
         OR = {
             original_tag = TUR
@@ -166,17 +166,17 @@ civil_war_support_LBA_direct = {
     } 
     ai_strategy = {
         type = send_volunteers_desire
-        id = "LBA"
+        id = "LBY"
         value = 1000
     }
 	ai_strategy = {
         type = support
-        id = "LBA"
+        id = "LBY"
         value = 1000
     } 
 }
 
-civil_war_support_LBA_indirect = {
+civil_war_support_LBY_indirect = {
     enable = {
         OR = {
             original_tag = QAT
@@ -197,7 +197,7 @@ civil_war_support_LBA_indirect = {
 
 	ai_strategy = {
         type = support
-        id = "LBA"
+        id = "LBY"
         value = 1000
     } 
 }
