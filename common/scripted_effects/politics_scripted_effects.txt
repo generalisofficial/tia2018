@@ -2175,10 +2175,7 @@ election_pulse = {
 				ruling_only = no
 			}
 		}
-		country_event = {
-			id = britain.8
-			days = 74
-		}
+		country_event = britain.8
 	}
 	if  = {
 		limit = {
@@ -2335,10 +2332,7 @@ election_pulse = {
 				ruling_only = no
 			}
 		}
-		country_event = {
-			id = canada.1
-			days = 52
-		}
+		country_event = canada.1
 	}
 	if  = {
 		limit = {
@@ -2369,6 +2363,17 @@ election_pulse = {
 			picture = GFX_Portrait_BRA_Henrique_Meirelles
 			ideology = classical_liberal_ideology
 		}
+	}
+	if  = {
+		limit = {
+			original_tag = AUS
+			NOT = { has_government = social_democrat }
+			has_country_leader = {
+				name = "Bill Shorten"
+				ruling_only = no
+			}
+		}
+		country_event = australia.4
 	}
 	if = {
 		limit = {

@@ -11,6 +11,10 @@ country_event = { #Centre Alliance
 		original_tag = AUS
 		date > 2018.6.7
 		date < 2019.1.1
+		has_country_leader = {
+			name = "Nick Xenophon"
+			ruling_only = no
+		}
 	}
 	
 	option = {
@@ -21,6 +25,11 @@ country_event = { #Centre Alliance
 	        picture = GFX_Portrait_AUS_Rebekha_Sharkie
 	        ideology = centrist
         }
+		set_party_name = {
+		    ideology = social_liberal
+		    long_name = AUS_social_liberal_party_CA_long
+		    name = AUS_social_liberal_party_CA
+	    }
 	}
 }
 
@@ -48,23 +57,17 @@ country_event = { #Bob Katter hands KAP leadership to Robbie Katter
 	}
 }
 
-country_event = { #2018 Liberal Party of Australia leadership spills
+country_event = { #2018 Liberal Party of Australia leadership spill
 	id = australia.3
 	title = australia.3.t
 	desc = australia.3.d
 	
-	fire_only_once = yes
-
-	trigger = {
-		original_tag = AUS
-		date > 2018.8.23
-		date < 2019.1.1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = australia.3.o1
 		ai_chance = {
-			factor = 53
+			factor = 42
 		}
 		retire_ideology_leader = conservative
 		create_country_leader = {
@@ -77,37 +80,80 @@ country_event = { #2018 Liberal Party of Australia leadership spills
 	option = {
 		name = australia.3.o2
 		ai_chance = {
-			factor = 47
+			factor = 45
 		}
+		add_popularity = { ideology = conservative popularity = -0.02 }
 		retire_ideology_leader = conservative
 		create_country_leader = {
 	        name = "Peter Dutton"
 	        picture = GFX_Portrait_AUS_Peter_Dutton
+	        ideology = social_conservative
+        }
+	}
+
+	option = {
+		name = australia.3.o3
+		ai_chance = {
+			factor = 13
+		}
+		add_popularity = { ideology = conservative popularity = 0.02 }
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Julie Bishop"
+	        picture = GFX_Portrait_AUS_Julie_Bishop
 	        ideology = liberal_conservative
         }
 	}
 }
 
-country_event = { #2019 Australian Labor Party leadership election
+country_event = { #(GetYear) Australian Labor Party leadership election
 	id = australia.4
 	title = australia.4.t
 	desc = australia.4.d
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		original_tag = AUS
-		date > 2019.5.29
-		date < 2020.1.1
-	}
-	
 	option = {
 		name = australia.4.o1
+		add_popularity = { ideology = social_democrat popularity = 0.02 }
 		retire_ideology_leader = social_democrat
 		create_country_leader = {
 	        name = "Anthony Albanese"
 	        picture = GFX_Portrait_AUS_Anthony_Albanese
 	        ideology = social_democrat_ideology
         }
+	}
+}
+
+country_event = { #LPA spill motion presented by Peter Dutton
+	id = australia.5
+	title = australia.5.t
+	desc = australia.5.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = AUS
+		date > 2018.8.24
+		date < 2019.1.1
+		has_country_leader = {
+			name = "Malcolm Turnbull"
+			ruling_only = no
+		}
+	}
+	
+	option = {
+		name = australia.5.o1
+		ai_chance = {
+			factor = 58
+		}
+	}
+	
+	option = {
+		name = australia.5.o2
+		ai_chance = {
+			factor = 42
+		}
+		country_event = australia.3
 	}
 }
