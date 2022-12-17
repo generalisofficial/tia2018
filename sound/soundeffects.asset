@@ -1010,6 +1010,17 @@ soundeffect = {
 	volume = 0.5
 }
 soundeffect = {
+	name = airplane_jet_fire
+	falloff = "falloff_50"
+	sounds = {
+		sound = airplane_jet_fire_01
+	} 
+	max_audible = 8
+	max_audible_behaviour = fail
+	is3d = yes
+	volume = 0.5
+}
+soundeffect = {
 	name = airplane_idle
 	falloff = "falloff_airplane_light"
 	loop = yes

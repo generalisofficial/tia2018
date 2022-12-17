@@ -95,10 +95,9 @@ set_country_flag = protestant
 set_country_flag = former_british_colony
 
 add_ideas = {
-	#population_growth_steady
+	parliamentary_system
 	idea_commonwealth_realm
 	idea_commonwealth_of_nations_member
-	#non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
 	prohibited_firearms
 	pro_life
@@ -107,22 +106,49 @@ add_ideas = {
 	five_year_term
 }
 
+#National Parliament
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 14.58 }
+set_variable = { social_liberal_seats = 47.94 }
+set_variable = { classical_liberal_seats = 11.45 }
+set_variable = { conservative_seats = 20.83 }
+set_variable = { national_conservative_seats = 5.2 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_social_liberal
+set_country_flag = coalition_classical_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+
 set_politics = {	
 	ruling_party = social_liberal
-	last_election = "2017.6.24"
+	last_election = "2017.7.4"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 100
+	social_democrat = 46.4
+    social_liberal = 27.83
+	conservative = 12.37
+	classical_liberal = 11.34
+	national_conservative = 1.03
+	progressive = 1.03
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = PNG_peter_oneill
 recruit_character = PNG_don_polye
+recruit_character = PNG_patrick_pruaitch
+recruit_character = PNG_william_duma
+recruit_character = PNG_peter_o_neill
+recruit_character = PNG_james_marape
 recruit_character = PNG_dorothy_tekwie
-recruit_character = PNG_kelly_naru
-recruit_character = PNG_powes_parkop

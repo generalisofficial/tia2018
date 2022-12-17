@@ -60,8 +60,6 @@ set_technology = {
 }
 
 add_ideas = {
-	#population_growth_rapid
-	#non_aligned_movement_member
 	asean_member
 	presidential_republic
 	prohibited_firearms
@@ -79,17 +77,17 @@ add_opinion_modifier = {
 
 #People's Representative Council
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 19.47 }
+set_variable = { socialist_seats = 19.49 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 6.43 }
-set_variable = { social_liberal_seats = 2.86 }
+set_variable = { social_democrat_seats = 6.42 }
+set_variable = { social_liberal_seats = 2.85 }
 set_variable = { classical_liberal_seats = 10.89 }
-set_variable = { conservative_seats = 16.96 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 16.25 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 13.04 }
+set_variable = { right_wing_populist_seats = 13.03 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 14.1 }
+set_variable = { islamist_seats = 31.07 }
 
 # Coalition
 set_country_flag = has_parliament
@@ -104,23 +102,28 @@ set_politics = {
 }
 
 set_popularities = {
-    socialist = 31.65
-	right_wing_populist = 13.57
+    socialist = 22.28
+	islamist = 20.82
 	national_conservative = 14.78
-	conservative = 17.74
+	right_wing_populist = 13.56
 	social_democrat = 10.26
-	islamist = 12.0
+	classical_liberal = 9.39
+	conservative = 2.67
+	fascist = 2.59
+	progressive = 1.89
+	social_liberal = 1.76
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = IDN_joko_widodo
+recruit_character = IDN_sohibul_iman
+recruit_character = IDN_tommy_suharto
 recruit_character = IDN_prabowo_subianto
 recruit_character = IDN_airlangga_hartarto
-recruit_character = IDN_muhaimin_iskandar
-recruit_character = IDN_surya_paloh
-recruit_character = IDN_sohibul_iman
+recruit_character = IDN_hary_tanoesoedibjo
 recruit_character = IDN_susilo_bambang_yudhoyono
 recruit_character = IDN_oesman_sapta_odang
+recruit_character = IDN_surya_paloh
 recruit_character = IDN_grace_natalie
+recruit_character = IDN_joko_widodo
