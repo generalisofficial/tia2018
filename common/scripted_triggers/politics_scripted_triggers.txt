@@ -14,10 +14,20 @@ minority_government = {
 }
 
 majority_government = {
-	check_variable = {
-		var = Coalition
-		value = 50
-		compare = greater_than_or_equals
+	OR = {
+		check_variable = {
+			var = Coalition
+			value = 51
+			compare = greater_than_or_equals
+		}
+		AND = {
+			check_variable = {
+				var = Coalition
+				value = 50
+				compare = greater_than_or_equals
+			}
+			#
+		}
 	}
 }
 

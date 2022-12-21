@@ -105,7 +105,6 @@ give_military_access = FSA
 set_country_flag = sunni_islam
 
 add_ideas = {
-	#population_growth_steady
 	limited_conscription
 	presidential_republic
 	immigration_open_borders
@@ -155,18 +154,18 @@ add_opinion_modifier = { target = ART modifier = rival_trade }
 add_opinion_modifier = { target = GRC modifier = rival }
 
 #Grand National Assembly
-set_variable = { communist_seats = 0.53 }
-set_variable = { socialist_seats = 10.76 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 25.32 }
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 0 }
+set_variable = { progressive_seats = 10.72 }
+set_variable = { social_democrat_seats = 24.36 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 50.28 }
+set_variable = { national_conservative_seats = 57.65 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
-set_variable = { fascist_seats = 11.90 }
-set_variable = { islamist_seats = 1.21 }
+set_variable = { fascist_seats = 7.27 }
+set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
@@ -181,23 +180,26 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 42.72
-    social_democrat = 22.64
-	fascist = 11.10
-    socialist = 11.70
-    conservative = 9.96
+	national_conservative = 42.71
+	social_democrat = 22.88
+	progressive = 11.7
+	fascist = 11.1
+	classical_liberal = 9.96
 	islamist = 1.65
-	communist = 0.23
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = TUR_recep_tayyip_erdogan
-recruit_character = TUR_muharrem_ince
-recruit_character = TUR_selahattin_demirtas
-recruit_character = TUR_meral_aksener
-recruit_character = TUR_devlet_bahceli
 recruit_character = TUR_temel_karamollaoglu
+recruit_character = TUR_devlet_bahceli
+recruit_character = TUR_umit_ozdag
+recruit_character = TUR_dundar_i
+recruit_character = TUR_recep_tayyip_erdogan
 recruit_character = TUR_gultekin_uysal
+recruit_character = TUR_meral_aksener
+recruit_character = TUR_ali_babacan
+recruit_character = TUR_kemal_kilicdaroglu
+recruit_character = TUR_selahattin_demirtas
 recruit_character = TUR_dogu_perincek
+recruit_character = TUR_kemal_okuyan

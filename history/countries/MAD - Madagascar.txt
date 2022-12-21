@@ -118,11 +118,11 @@ set_country_flag = catholic
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 17.3 }
+set_variable = { social_democrat_seats = 32.45 }
+set_variable = { social_liberal_seats = 54.31 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 71.9 }
-set_variable = { national_conservative_seats = 10.8 }
+set_variable = { conservative_seats = 13.24 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -130,28 +130,28 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_parliament
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = social_liberal
 	last_election = "2013.11.7"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 55.62
-	national_conservative = 41.07
-	conservative = 3.31
+    social_democrat = 55.62
+	conservative = 30.46
+	social_liberal = 13.92
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MAD_andry_rajoelina
 recruit_character = MAD_marc_ravalomanana
 recruit_character = MAD_hery_rajaonarimampianina
+recruit_character = MAD_andry_rajoelina
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

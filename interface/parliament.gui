@@ -146,7 +146,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "political_groups_title"
-				position = { x = 310 y = 300 }
+				position = { x = 280 y = 300 }
 				font = "hoi_36header"
 				text = "Political Groups"
 				maxWidth = 300
@@ -158,7 +158,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "groups_bar_container"
-				position = { x= 320 y = 350 }
+				position = { x= 280 y = 350 }
 				size = { width = 230 height = 40 }
 				clipping = yes
 
@@ -182,25 +182,13 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "government_group"
-				position = { x = 310 y = 390 }
+				name = "political_groups"
+				position = { x = 280 y = 390 }
 				font = "hoi_20bs"
-				text = "GOVERNMENT_COALITION_POPULARITY"
-				maxWidth = 160
+				text = "PARLIAMENT_POLITICAL_GROUPS"
+				maxWidth = 400
 				maxHeight = 40
 				fixedsize = no
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "opposition_group"
-				position = { x = 310 y = 410 }
-				font = "hoi_20bs"
-				text = "OPPOSITION_POPULARITY"
-				maxWidth = 160
-				maxHeight = 40
-				fixedsize = yes
 				format = left
 				Orientation = "UPPER_LEFT"
 			}

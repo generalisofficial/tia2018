@@ -1072,13 +1072,15 @@ ideas = {
 				modifier = {
 					factor = 100
 					has_country_leader_ideology = christian_right
-				}
-				modifier = {
-					factor = 25
 					OR = {
 						has_government = islamist
 						has_government = fascist
 						has_government = right_wing_populist
+					}
+				}
+				modifier = {
+					factor = 25
+					OR = {
 						has_government = national_conservative
 					}
 				}

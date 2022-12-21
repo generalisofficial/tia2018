@@ -92,9 +92,7 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_explosion
 	idea_african_union_member
-	#non_aligned_movement_member
 	presidential_republic
 	civil_liberties_authoritarian
 	prohibited_firearms
@@ -106,13 +104,13 @@ set_country_flag = catholic
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 55.93 }
+set_variable = { socialist_seats = 57.6 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 8.35 }
-set_variable = { national_conservative_seats = 35.72 }
+set_variable = { conservative_seats = 6.8 }
+set_variable = { national_conservative_seats = 35.6 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -131,14 +129,15 @@ set_politics = {
 }
 
 set_popularities = {
-    socialist = 55.93
-    national_conservative = 35.72
-    conservative = 8.35
+    socialist = 62
+    national_conservative = 35.6
+    conservative = 2.4
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MZB_felipe_nyusi
 recruit_character = MZB_afonso_dhlakama
 recruit_character = MZB_daviz_simango
+recruit_character = MZB_filipe_nyusi
+set_country_flag = progressive_intended_no_leader
