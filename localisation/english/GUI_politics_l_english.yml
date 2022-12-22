@@ -193,7 +193,7 @@
  COALITION_CONCLUSION_PERCENT: "§Y[?NewCoalitionLeader]%§! + §Y[?NewCoalitionPartner]%§! = §Y[?NewCoalition]%§!"
 
  # Political Groups
- PARLIAMENT_POLITICAL_GROUPS: "§GGovernment: [?ROOT.Coalition] seats§!\n- [ROOT.GetLeaderTitle]: §Y[ROOT.GetLeader]§! ([ROOT.GetRulingPartyColored])\n§ROpposition: [?ROOT.Opposition] seats§!\n- Leader of the Opposition: TBA"
+ PARLIAMENT_POLITICAL_GROUPS: "§GGovernment: [?ROOT.Coalition] seats§!\n- [ROOT.GetLeaderTitle]: §Y[ROOT.GetLeader]§! ([ROOT.GetRulingPartyColored])\n§ROpposition: [?ROOT.Opposition] seats§!\n- Leader of the Opposition: [ROOT.GetLargestOppositionParty]"
  PRO_EUROPEAN_POPULARITY: "§GPro-European: [?EUU.pro_european_seats]%§!"
  EUROSCEPTIC_POPULARITY: "§REurosceptic: [?EUU.eurosceptic_seats]%§!"
 

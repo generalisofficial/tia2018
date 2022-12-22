@@ -3978,59 +3978,6 @@ conservative_neighbor_coalition_plurality = {
 	}
 }
 
-conservative_neighbor_coalition_plurality = {
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = islamist_seats
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = fascist_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = right_wing_populist_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = national_conservative_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = classical_liberal_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = social_liberal_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = social_democrat_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = progressive_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = socialist_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-	check_variable = {
-		var = conservative_neighbor_coalition
-		value = communist_neighbor_coalition
-		compare = greater_than_or_equals
-	}
-}
-
 classical_liberal_neighbor_coalition_plurality = {
 	check_variable = {
 		var = classical_liberal_neighbor_coalition
@@ -4346,5 +4293,1387 @@ communist_neighbor_coalition_plurality = {
 		var = communist_neighbor_coalition
 		value = socialist_neighbor_coalition
 		compare = greater_than_or_equals
+	}
+}
+
+# Leader of the Opposition
+
+islamist_leader_of_the_opposition = {
+	check_variable = { islamist_seats > 0.99 }
+	NOT = { has_country_flag = coalition_islamist }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = islamist_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+fascist_leader_of_the_opposition = {
+	check_variable = { fascist_seats > 0.99 }
+	NOT = { has_country_flag = coalition_fascist }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = fascist_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+right_wing_populist_leader_of_the_opposition = {
+	check_variable = { right_wing_populist_seats > 0.99 }
+	NOT = { has_country_flag = coalition_right_wing_populist }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = right_wing_populist_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+monarchist_leader_of_the_opposition = {
+	check_variable = { monarchist_seats > 0.99 }
+	NOT = { has_country_flag = coalition_monarchist }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = monarchist_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+national_conservative_leader_of_the_opposition = {
+	check_variable = { national_conservative_seats > 0.99 }
+	NOT = { has_country_flag = coalition_national_conservative }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = national_conservative_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+conservative_leader_of_the_opposition = {
+	check_variable = { conservative_seats > 0.99 }
+	NOT = { has_country_flag = coalition_conservative }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = conservative_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+classical_liberal_leader_of_the_opposition = {
+	check_variable = { classical_liberal_seats > 0.99 }
+	NOT = { has_country_flag = coalition_classical_liberal }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = classical_liberal_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+social_liberal_leader_of_the_opposition = {
+	check_variable = { social_liberal_seats > 0.99 }
+	NOT = { has_country_flag = coalition_social_liberal }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = social_liberal_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+social_democrat_leader_of_the_opposition = {
+	check_variable = { social_democrat_seats > 0.99 }
+	NOT = { has_country_flag = coalition_social_democrat }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = social_democrat_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+progressive_leader_of_the_opposition = {
+	check_variable = { progressive_seats > 0.99 }
+	NOT = { has_country_flag = coalition_progressive }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = progressive_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+socialist_leader_of_the_opposition = {
+	check_variable = { socialist_seats > 0.99 }
+	NOT = { has_country_flag = coalition_socialist }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_communist }
+		}
+		check_variable = {
+			var = socialist_election_votes
+			value = communist_election_votes
+			compare = greater_than
+		}
+	}
+}
+
+communist_leader_of_the_opposition = {
+	check_variable = { communist_seats > 0.99 }
+	NOT = { has_country_flag = coalition_communist }
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_islamist }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = islamist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_fascist }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = fascist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_right_wing_populist}
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = right_wing_populist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_monarchist }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = monarchist_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_national_conservative }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = national_conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_conservative }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = conservative_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_classical_liberal }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = classical_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_liberal }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = social_liberal_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_social_democrat }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = social_democrat_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_progressive }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = progressive_election_votes
+			compare = greater_than
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = coalition_socialist }
+		}
+		check_variable = {
+			var = communist_election_votes
+			value = socialist_election_votes
+			compare = greater_than
+		}
 	}
 }

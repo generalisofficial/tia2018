@@ -377,58 +377,600 @@ update_coalition_majority_gfx = {
 	}
 }
 
-quickset_parliament = {
-	set_variable = { communist_seats = party_popularity@communist }
-	multiply_variable = { communist_seats = 100 }
-	set_variable = { communist_election_votes = communist_seats }
-	round_variable = communist_seats
-	set_variable = { socialist_seats = party_popularity@socialist }
-	multiply_variable = { socialist_seats = 100 }
-	set_variable = { socialist_election_votes = socialist_seats }
-	round_variable = socialist_seats
-	set_variable = { progressive_seats = party_popularity@progressive }
-	multiply_variable = { progressive_seats = 100 }
-	set_variable = { progressive_election_votes = progressive_seats }
-	round_variable = progressive_seats
-	set_variable = { social_democrat_seats = party_popularity@social_democrat }
-	multiply_variable = { social_democrat_seats = 100 }
-	set_variable = { social_democrat_election_votes = social_democrat_seats }
-	round_variable = social_democrat_seats
-	set_variable = { social_liberal_seats = party_popularity@social_liberal }
-	multiply_variable = { social_liberal_seats = 100 }
-	set_variable = { social_liberal_election_votes = social_liberal_seats }
-	round_variable = social_liberal_seats
-	set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
-	multiply_variable = { classical_liberal_seats = 100 }
-	set_variable = { classical_liberal_election_votes = classical_liberal_seats }
-	round_variable = classical_liberal_seats
-	set_variable = { conservative_seats = party_popularity@conservative }
-	multiply_variable = { conservative_seats = 100 }
-	set_variable = { conservative_election_votes = conservative_seats }
-	round_variable = conservative_seats
-	set_variable = { national_conservative_seats = party_popularity@national_conservative }
-	multiply_variable = { national_conservative_seats = 100 }
-	set_variable = { national_conservative_election_votes = national_conservative_seats }
-	round_variable = national_conservative_seats
-	set_variable = { monarchist_seats = party_popularity@monarchist }
-	multiply_variable = { monarchist_seats = 100 }
-	set_variable = { monarchist_election_votes = monarchist_seats }
-	round_variable = monarchist_seats
-	set_variable = { right_wing_populist_seats = party_popularity@right_wing_populist }
-	multiply_variable = { right_wing_populist_seats = 100 }
-	set_variable = { right_wing_populist_election_votes = right_wing_populist_seats }
-	round_variable = right_wing_populist_seats
-	set_variable = { fascist_seats = party_popularity@fascist }
-	multiply_variable = { fascist_seats = 100 }
-	set_variable = { fascist_election_votes = fascist_seats }
-	round_variable = fascist_seats
-	set_variable = { islamist_seats = party_popularity@islamist }
-	multiply_variable = { islamist_seats = 100 }
-	set_variable = { islamist_election_votes = islamist_seats }
-	round_variable = islamist_seats
-	round_parliament_seats = yes
-	set_parliament_graphics = yes
-	set_neighbor_coalition_values = yes
+elect_new_parliament = {
+	hidden_effect = {
+		set_variable = { communist_election_votes = party_popularity@communist }
+		multiply_variable = { communist_election_votes = 100 }
+		set_variable = { socialist_election_votes = party_popularity@socialist }
+		multiply_variable = { socialist_election_votes = 100 }
+		set_variable = { progressive_election_votes = party_popularity@progressive }
+		multiply_variable = { progressive_election_votes = 100 }
+		set_variable = { social_democrat_election_votes = party_popularity@social_democrat }
+		multiply_variable = { social_democrat_election_votes = 100 }
+		set_variable = { social_liberal_election_votes = party_popularity@social_liberal }
+		multiply_variable = { social_liberal_election_votes = 100 }
+		set_variable = { classical_liberal_election_votes = party_popularity@classical_liberal }
+		multiply_variable = { classical_liberal_election_votes = 100 }
+		set_variable = { conservative_election_votes = party_popularity@conservative }
+		multiply_variable = { conservative_election_votes = 100 }
+		set_variable = { national_conservative_election_votes = party_popularity@national_conservative }
+		multiply_variable = { national_conservative_election_votes = 100 }
+		set_variable = { monarchist_election_votes = party_popularity@monarchist }
+		multiply_variable = { monarchist_election_votes = 100 }
+		set_variable = { right_wing_populist_election_votes = party_popularity@right_wing_populist }
+		multiply_variable = { right_wing_populist_election_votes = 100 }
+		set_variable = { fascist_election_votes = party_popularity@fascist }
+		multiply_variable = { fascist_election_votes = 100 }
+		set_variable = { islamist_election_votes = party_popularity@islamist }
+		multiply_variable = { islamist_election_votes = 100 }
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						communist < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						communist < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						communist < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						communist < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						communist < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						communist < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						communist < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						communist < 0.08
+					}
+				}
+			}
+			set_temp_variable = { communist_temp_popularity = party_popularity@communist }
+			add_popularity = { ideology = communist popularity = -1 }
+			set_variable = { communist_seats = 0 }
+		}
+		else = {
+			set_variable = { communist_seats = party_popularity@communist }
+			multiply_variable = { communist_seats = 100 }
+			round_variable = communist_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						socialist < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						socialist < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						socialist < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						socialist < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						socialist < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						socialist < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						socialist < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						socialist < 0.08
+					}
+				}
+			}
+			set_temp_variable = { socialist_temp_popularity = party_popularity@socialist }
+			add_popularity = {	ideology = socialist popularity = -1 }
+			set_variable = { socialist_seats = 0 }
+		}
+		else = {
+			set_variable = { socialist_seats = party_popularity@socialist }
+			multiply_variable = { socialist_seats = 100 }
+			round_variable = socialist_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						progressive < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						progressive < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						progressive < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						progressive < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						progressive < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						progressive < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						progressive < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						progressive < 0.08
+					}
+				}
+			}
+			set_temp_variable = { progressive_temp_popularity = party_popularity@progressive }
+			add_popularity = {	ideology = progressive popularity = -1 }
+			set_variable = { progressive_seats = 0 }
+		}
+		else = {
+			set_variable = { progressive_seats = party_popularity@progressive }
+			multiply_variable = { progressive_seats = 100 }
+			round_variable = progressive_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						social_democrat < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						social_democrat < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						social_democrat < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						social_democrat < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						social_democrat < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						social_democrat < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						social_democrat < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						social_democrat < 0.08
+					}
+				}
+			}
+			set_temp_variable = { social_democrat_temp_popularity = party_popularity@social_democrat }
+			add_popularity = {	ideology = social_democrat popularity = -1 }
+			set_variable = { social_democrat_seats = 0 }
+		}
+		else = {
+			set_variable = { social_democrat_seats = party_popularity@social_democrat }
+			multiply_variable = { social_democrat_seats = 100 }
+			round_variable = social_democrat_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						social_liberal < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						social_liberal < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						social_liberal < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						social_liberal < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						social_liberal < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						social_liberal < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						social_liberal < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						social_liberal < 0.08
+					}
+				}
+			}
+			set_temp_variable = { social_liberal_temp_popularity = party_popularity@social_liberal }
+			add_popularity = {	ideology = social_liberal popularity = -1 }
+			set_variable = { social_liberal_seats = 0 }
+		}
+		else = {
+			set_variable = { social_liberal_seats = party_popularity@social_liberal }
+			multiply_variable = { social_liberal_seats = 100 }
+			round_variable = social_liberal_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						classical_liberal < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						classical_liberal < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						classical_liberal < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						classical_liberal < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						classical_liberal < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						classical_liberal < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						classical_liberal < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						classical_liberal < 0.08
+					}
+				}
+			}
+			set_temp_variable = { classical_liberal_temp_popularity = party_popularity@classical_liberal }
+			add_popularity = {	ideology = classical_liberal popularity = -1 }
+			set_variable = { classical_liberal_seats = 0 }
+		}
+		else = {
+			set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
+			multiply_variable = { classical_liberal_seats = 100 }
+			round_variable = classical_liberal_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						conservative < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						conservative < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						conservative < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						conservative < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						conservative < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						conservative < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						conservative < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						conservative < 0.08
+					}
+				}
+			}
+			set_temp_variable = { conservative_temp_popularity = party_popularity@conservative }
+			add_popularity = {	ideology = conservative popularity = -1 }
+			set_variable = { conservative_seats = 0 }
+		}
+		else = {
+			set_variable = { conservative_seats = party_popularity@conservative }
+			multiply_variable = { conservative_seats = 100 }
+			round_variable = conservative_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						national_conservative < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						national_conservative < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						national_conservative < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						national_conservative < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						national_conservative < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						national_conservative < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						national_conservative < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						national_conservative < 0.08
+					}
+				}
+			}
+			set_temp_variable = { national_conservative_temp_popularity = party_popularity@national_conservative }
+			add_popularity = {	ideology = national_conservative popularity = -1 }
+			set_variable = { national_conservative_seats = 0 }
+		}
+		else = {
+			set_variable = { national_conservative_seats = party_popularity@national_conservative }
+			multiply_variable = { national_conservative_seats = 100 }
+			round_variable = national_conservative_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						monarchist < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						monarchist < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						monarchist < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						monarchist < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						monarchist < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						monarchist < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						monarchist < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						monarchist < 0.08
+					}
+				}
+			}
+			set_temp_variable = { monarchist_temp_popularity = party_popularity@monarchist }
+			add_popularity = {	ideology = monarchist popularity = -1 }
+			set_variable = { monarchist_seats = 0 }
+		}
+		else = {
+			set_variable = { monarchist_seats = party_popularity@monarchist }
+			multiply_variable = { monarchist_seats = 100 }
+			round_variable = monarchist_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						right_wing_populist < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						right_wing_populist < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						right_wing_populist < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						right_wing_populist < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						right_wing_populist < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						right_wing_populist < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						right_wing_populist < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						right_wing_populist < 0.08
+					}
+				}
+			}
+			set_temp_variable = { right_wing_populist_temp_popularity = party_popularity@right_wing_populist }
+			add_popularity = {	ideology = right_wing_populist popularity = -1 }
+			set_variable = { right_wing_populist_seats = 0 }
+		}
+		else = {
+			set_variable = { right_wing_populist_seats = party_popularity@right_wing_populist }
+			multiply_variable = { right_wing_populist_seats = 100 }
+			round_variable = right_wing_populist_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						fascist < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						fascist < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						fascist < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						fascist < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						fascist < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						fascist < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						fascist < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						fascist < 0.08
+					}
+				}
+			}
+			set_temp_variable = { fascist_temp_popularity = party_popularity@fascist }
+			add_popularity = {	ideology = fascist popularity = -1 }
+			set_variable = { fascist_seats = 0 }
+		}
+		else = {
+			set_variable = { fascist_seats = party_popularity@fascist }
+			multiply_variable = { fascist_seats = 100 }
+			round_variable = fascist_seats
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_idea = threshold_one_percent
+						islamist < 0.01
+					}
+					AND = {
+						has_idea = threshold_two_percent
+						islamist < 0.02
+					}
+					AND = {
+						has_idea = threshold_three_percent
+						islamist < 0.03
+					}
+					AND = {
+						has_idea = threshold_four_percent
+						islamist < 0.04
+					}
+					AND = {
+						has_idea = threshold_five_percent
+						islamist < 0.05
+					}
+					AND = {
+						has_idea = threshold_six_percent
+						islamist < 0.06
+					}
+					AND = {
+						has_idea = threshold_seven_percent
+						islamist < 0.07
+					}
+					AND = {
+						has_idea = threshold_eight_percent
+						islamist < 0.08
+					}
+				}
+			}
+			set_temp_variable = { islamist_temp_popularity = party_popularity@islamist }
+			add_popularity = {	ideology = islamist popularity = -1 }
+			set_variable = { islamist_seats = 0 }
+		}
+		else = {
+			set_variable = { islamist_seats = party_popularity@islamist }
+			multiply_variable = { islamist_seats = 100 }
+			round_variable = islamist_seats
+		}
+		add_popularity = {	ideology = communist popularity = communist_temp_popularity }
+		add_popularity = {	ideology = socialist popularity = socialist_temp_popularity }
+		add_popularity = {	ideology = progressive popularity = progressive_temp_popularity }
+		add_popularity = {	ideology = social_democrat popularity = social_democrat_temp_popularity }
+		add_popularity = {	ideology = social_liberal popularity = social_liberal_temp_popularity }
+		add_popularity = {	ideology = classical_liberal popularity = classical_liberal_temp_popularity }
+		add_popularity = {	ideology = conservative popularity = conservative_temp_popularity }
+		add_popularity = {	ideology = national_conservative popularity = national_conservative_temp_popularity }
+		add_popularity = {	ideology = monarchist popularity = monarchist_temp_popularity }
+		add_popularity = {	ideology = right_wing_populist popularity = right_wing_populist_temp_popularity }
+		add_popularity = {	ideology = fascist popularity = fascist_temp_popularity }
+		add_popularity = {	ideology = islamist popularity = islamist_temp_popularity }
+		round_parliament_seats = yes
+		set_parliament_graphics = yes
+		set_neighbor_coalition_values = yes
+	}
 }
 
 round_parliament_seats = {
@@ -3588,18 +4130,18 @@ parliament_math_failsafe = {
 		if = {
 			limit = {
 				check_variable = {
-					social_liberal_seats > 0.99
-				}
-			}
-			add_to_variable = { social_liberal_seats = parliament_math_failsafe }
-		}
-		else_if = {
-			limit = {
-				check_variable = {
 					classical_liberal_seats > 0.99
 				}
 			}
 			add_to_variable = { classical_liberal_seats = parliament_math_failsafe }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					social_liberal_seats > 0.99
+				}
+			}
+			add_to_variable = { social_liberal_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
