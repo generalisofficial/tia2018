@@ -1,3 +1,389 @@
+pre_election_effects = {
+	set_old_election_results = yes
+	hidden_effect = {
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = [RULINGPARTY]
+					last_election = [TODAY]
+					elections_allowed = yes
+				}
+			}
+			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+			TODAY = "[?global.date.GetDateStringNoHour]"
+			debug = yes
+		}
+		remove_ideas = unstable_coalition
+	}
+	if = {
+		limit = {
+			has_idea = presidential_republic
+		}
+		country_event = election.1
+	}
+	if = {
+		limit = {
+			has_idea = parliamentary_system
+		}
+		country_event = election.3
+	}
+	if = {
+		limit = {
+			has_idea = demarchic_republic
+		}
+		country_event = election.4
+	}
+}
+
+post_election_effects = {
+	set_parliament_graphics = yes
+	add_timed_idea = { idea = electoral_honeymoon days = 30 }
+	if = {
+		limit = {
+			has_idea = federal
+		}
+		country_event = election.7
+	}
+	if = {
+	    limit = {
+		    original_tag = DEU
+			has_global_flag = akk_elected
+		}
+		clr_global_flag = akk_elected
+		create_country_leader = {
+	        name = "Annegret Kramp-Karrenbauer"
+	        picture = "Annegret_Kramp_Karrenbauer.dds"
+	        ideology = christian_democrat
+        }
+    }
+	if = {
+	    limit = {
+			original_tag = DEU
+			has_global_flag = merz_elected
+		}
+		clr_global_flag = merz_elected
+		create_country_leader = {
+	        name = "Friedrich Merz"
+	        picture = "Friedrich_Merz.dds"
+	        ideology = christian_democrat
+			traits = {
+				friend_of_america
+			}
+        }
+	}
+	if = {
+	    limit = {
+		    original_tag = NAU
+			has_government = social_liberal
+	    }
+		country_event = nauru.1
+	}
+	if = {
+	    limit = {
+		    original_tag = ITA
+			has_government = classical_liberal
+			has_country_flag = coalition_right_wing_populist
+			NOT = {
+				has_country_leader = {
+					name = "Giuseppe Conte"
+					ruling_only = no
+				}
+			}
+		}
+		country_event = italy.1
+	}
+	if = {
+	    limit = {
+		    original_tag = THA
+			NOT = { has_global_flag = palang_pracharath_flag }
+	    }
+		set_global_flag = palang_pracharath_flag
+		set_party_name = {
+		    ideology = national_conservative
+		    long_name = THA_national_conservative_party_PPP_long
+		    name = THA_national_conservative_party_PPP
+	    }
+	}
+	if = {
+	    limit = {
+		    original_tag = MMR
+			has_government = social_democrat
+			NOT = { has_global_flag = myanmar_coup }
+		}
+	    set_global_flag = myanmar_coup
+		hidden_effect = {
+			country_event = { 
+				id = myanmar.1
+				days = 85
+			}
+		}
+	}
+	if = {
+	    limit = {
+			original_tag = ADO
+		    has_country_leader = {
+				name = "Antoni Martí"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Xavier Espot"
+	        picture = GFX_Portrait_ADO_Xavier_Espot
+	        ideology = liberal_conservative
+        }
+	}
+	if  = {
+		limit = {
+			original_tag = CHE
+			has_country_leader = {
+				name = "Alain Berset"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Simonetta Sommaruga"
+			picture = GFX_Portrait_CHE_Simonetta_Sommaruga
+			ideology = social_democrat_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = CHE
+			has_country_leader = {
+				name = "Ueli Maurer"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = national_conservative
+		create_country_leader = {
+			name = "Guy Parmelin"
+			picture = GFX_Portrait_CHE_Guy_Parmelin
+			ideology = national_conservative_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = ENG
+			NOT = { has_government = social_democrat }
+			has_country_leader = {
+				name = "Jeremy Corbyn"
+				ruling_only = no
+			}
+		}
+		country_event = britain.8
+	}
+	if  = {
+		limit = {
+			original_tag = CRI
+			has_country_leader = {
+				name = "Luis Guillermo Solís"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Carlos Alvarado Quesada"
+			picture = GFX_Portrait_CRI_Carlos_Alvarado_Quesada
+			ideology = social_democrat_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = DZA
+			has_country_flag = bouteflika_not_running
+		}
+		clr_country_flag = bouteflika_not_running
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Abdelmadjid Tebboune"
+			picture = GFX_Portrait_DZA_Abdelmadjid_Tebboune
+			ideology = arab_socialist
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = ITA
+			has_country_leader = {
+				name = "Paolo Gentiloni"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Matteo Renzi"
+			picture = GFX_Portrait_ITA_Matteo_Renzi
+			ideology = social_democrat_ideology
+		}
+		else = {
+			if = {
+				limit = {
+					original_tag = ITA
+					has_country_leader = {
+						name = "Paolo Gentiloni"
+						ruling_only = no
+					}
+				}
+				retire_ideology_leader = social_democrat
+				create_country_leader = {
+					name = "Maurizio Martina"
+					picture = GFX_Portrait_ITA_Maurizio_Martina
+					ideology = social_democrat_ideology
+				}
+			}
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = KOR
+			has_country_leader = {
+				name = "Moon Jae-in"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_liberal
+		create_country_leader = {
+			name = "Lee Jae-myung"
+			picture = GFX_Portrait_KOR_Lee_Jae_myung
+			ideology = social_liberal_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = ISR
+			social_democrat < 0.1
+			has_country_leader = {
+				name = "Avi Gabbay"
+				ruling_only = no
+			}
+		}
+		country_event = israel.2
+	}
+	if  = {
+		limit = {
+			original_tag = TMS
+			has_country_leader = {
+				name = "Gurbanguly Berdimuhamedow"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = national_conservative
+		create_country_leader = {
+			name = "Serdar Berdimuhamedow"
+			picture = GFX_Portrait_TMS_Serdar_Berdimuhamedow
+			ideology = national_conservative_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = SIE
+			has_country_leader = {
+				name = "Ernest Bai Koroma"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Samura Kamara"
+			picture = GFX_Portrait_SIE_Samura_Kamara
+			ideology = democratic_socialist
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = MEX
+			has_country_leader = {
+				name = "Enrique Peña Nieto"
+				ruling_only = yes
+			}
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+			name = "José Antonio Meade"
+			picture = GFX_Portrait_MEX_Jose_Antonio_Meade
+			ideology = classical_liberal_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = JEY
+			has_country_leader = {
+				name = "Ian Gorst"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+			name = "John Le Fondré"
+			picture = GFX_Portrait_JEY_John_Le_Fondre
+			ideology = classical_liberal_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = CAN
+			NOT = { has_government = conservative }
+			has_country_leader = {
+				name = "Andrew Scheer"
+				ruling_only = no
+			}
+		}
+		country_event = canada.1
+	}
+	if  = {
+		limit = {
+			original_tag = PAK
+			has_country_leader = {
+				name = "Shahid Khaqan Abbasi"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = conservative
+		create_country_leader = {
+			name = "Shehbaz Sharif"
+			picture = GFX_Portrait_PAK_Shehbaz_Sharif
+			ideology = liberal_conservative
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = BRA
+			has_country_leader = {
+				name = "Michel Temer"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = classical_liberal
+		create_country_leader = {
+			name = "Henrique Meirelles"
+			picture = GFX_Portrait_BRA_Henrique_Meirelles
+			ideology = classical_liberal_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = AUS
+			NOT = { has_government = social_democrat }
+			has_country_leader = {
+				name = "Bill Shorten"
+				ruling_only = no
+			}
+		}
+		country_event = australia.4
+	}
+	if = {
+		limit = {
+			minority_government = yes
+		}
+		hidden_effect = {
+			add_ideas = minority_government
+		}
+	}
+	set_election_change = yes
+	news_event = politics.13
+}
+
 break_coalition = {
 	clr_country_flag = coalition_islamist
 	clr_country_flag = coalition_fascist
@@ -403,44 +789,55 @@ elect_new_parliament = {
 		multiply_variable = { fascist_election_votes = 100 }
 		set_variable = { islamist_election_votes = party_popularity@islamist }
 		multiply_variable = { islamist_election_votes = 100 }
+		set_variable = { communist_temp_popularity = party_popularity@communist }
+		set_variable = { socialist_temp_popularity = party_popularity@socialist }
+		set_variable = { progressive_temp_popularity = party_popularity@progressive }
+		set_variable = { social_democrat_temp_popularity = party_popularity@social_democrat }
+		set_variable = { social_liberal_temp_popularity = party_popularity@social_liberal }
+		set_variable = { classical_liberal_temp_popularity = party_popularity@classical_liberal }
+		set_variable = { conservative_temp_popularity = party_popularity@conservative }
+		set_variable = { national_conservative_temp_popularity = party_popularity@national_conservative }
+		set_variable = { monarchist_temp_popularity = party_popularity@monarchist }
+		set_variable = { right_wing_populist_temp_popularity = party_popularity@right_wing_populist }
+		set_variable = { fascist_temp_popularity = party_popularity@fascist }
+		set_variable = { islamist_temp_popularity = party_popularity@islamist }
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						communist < 0.01
+						check_variable = { communist_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						communist < 0.02
+						check_variable = { communist_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						communist < 0.03
+						check_variable = { communist_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						communist < 0.04
+						check_variable = { communist_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						communist < 0.05
+						check_variable = { communist_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						communist < 0.06
+						check_variable = { communist_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						communist < 0.07
+						check_variable = { communist_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						communist < 0.08
+						check_variable = { communist_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { communist_temp_popularity = party_popularity@communist }
 			add_popularity = { ideology = communist popularity = -1 }
 			set_variable = { communist_seats = 0 }
 		}
@@ -448,45 +845,45 @@ elect_new_parliament = {
 			set_variable = { communist_seats = party_popularity@communist }
 			multiply_variable = { communist_seats = 100 }
 			round_variable = communist_seats
+			set_variable = { communist_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						socialist < 0.01
+						check_variable = { socialist_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						socialist < 0.02
+						check_variable = { socialist_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						socialist < 0.03
+						check_variable = { socialist_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						socialist < 0.04
+						check_variable = { socialist_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						socialist < 0.05
+						check_variable = { socialist_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						socialist < 0.06
+						check_variable = { socialist_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						socialist < 0.07
+						check_variable = { socialist_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						socialist < 0.08
+						check_variable = { socialist_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { socialist_temp_popularity = party_popularity@socialist }
 			add_popularity = {	ideology = socialist popularity = -1 }
 			set_variable = { socialist_seats = 0 }
 		}
@@ -494,45 +891,45 @@ elect_new_parliament = {
 			set_variable = { socialist_seats = party_popularity@socialist }
 			multiply_variable = { socialist_seats = 100 }
 			round_variable = socialist_seats
+			set_variable = { socialist_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						progressive < 0.01
+						check_variable = { progressive_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						progressive < 0.02
+						check_variable = { progressive_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						progressive < 0.03
+						check_variable = { progressive_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						progressive < 0.04
+						check_variable = { progressive_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						progressive < 0.05
+						check_variable = { progressive_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						progressive < 0.06
+						check_variable = { progressive_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						progressive < 0.07
+						check_variable = { progressive_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						progressive < 0.08
+						check_variable = { progressive_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { progressive_temp_popularity = party_popularity@progressive }
 			add_popularity = {	ideology = progressive popularity = -1 }
 			set_variable = { progressive_seats = 0 }
 		}
@@ -540,45 +937,45 @@ elect_new_parliament = {
 			set_variable = { progressive_seats = party_popularity@progressive }
 			multiply_variable = { progressive_seats = 100 }
 			round_variable = progressive_seats
+			set_variable = { progressive_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						social_democrat < 0.01
+						check_variable = { social_democrat_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						social_democrat < 0.02
+						check_variable = { social_democrat_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						social_democrat < 0.03
+						check_variable = { social_democrat_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						social_democrat < 0.04
+						check_variable = { social_democrat_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						social_democrat < 0.05
+						check_variable = { social_democrat_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						social_democrat < 0.06
+						check_variable = { social_democrat_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						social_democrat < 0.07
+						check_variable = { social_democrat_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						social_democrat < 0.08
+						check_variable = { social_democrat_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { social_democrat_temp_popularity = party_popularity@social_democrat }
 			add_popularity = {	ideology = social_democrat popularity = -1 }
 			set_variable = { social_democrat_seats = 0 }
 		}
@@ -586,45 +983,45 @@ elect_new_parliament = {
 			set_variable = { social_democrat_seats = party_popularity@social_democrat }
 			multiply_variable = { social_democrat_seats = 100 }
 			round_variable = social_democrat_seats
+			set_variable = { social_democrat_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						social_liberal < 0.01
+						check_variable = { social_liberal_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						social_liberal < 0.02
+						check_variable = { social_liberal_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						social_liberal < 0.03
+						check_variable = { social_liberal_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						social_liberal < 0.04
+						check_variable = { social_liberal_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						social_liberal < 0.05
+						check_variable = { social_liberal_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						social_liberal < 0.06
+						check_variable = { social_liberal_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						social_liberal < 0.07
+						check_variable = { social_liberal_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						social_liberal < 0.08
+						check_variable = { social_liberal_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { social_liberal_temp_popularity = party_popularity@social_liberal }
 			add_popularity = {	ideology = social_liberal popularity = -1 }
 			set_variable = { social_liberal_seats = 0 }
 		}
@@ -632,45 +1029,45 @@ elect_new_parliament = {
 			set_variable = { social_liberal_seats = party_popularity@social_liberal }
 			multiply_variable = { social_liberal_seats = 100 }
 			round_variable = social_liberal_seats
+			set_variable = { social_liberal_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						classical_liberal < 0.01
+						check_variable = { classical_liberal_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						classical_liberal < 0.02
+						check_variable = { classical_liberal_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						classical_liberal < 0.03
+						check_variable = { classical_liberal_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						classical_liberal < 0.04
+						check_variable = { classical_liberal_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						classical_liberal < 0.05
+						check_variable = { classical_liberal_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						classical_liberal < 0.06
+						check_variable = { classical_liberal_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						classical_liberal < 0.07
+						check_variable = { classical_liberal_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						classical_liberal < 0.08
+						check_variable = { classical_liberal_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { classical_liberal_temp_popularity = party_popularity@classical_liberal }
 			add_popularity = {	ideology = classical_liberal popularity = -1 }
 			set_variable = { classical_liberal_seats = 0 }
 		}
@@ -678,45 +1075,45 @@ elect_new_parliament = {
 			set_variable = { classical_liberal_seats = party_popularity@classical_liberal }
 			multiply_variable = { classical_liberal_seats = 100 }
 			round_variable = classical_liberal_seats
+			set_variable = { classical_liberal_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						conservative < 0.01
+						check_variable = { conservative_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						conservative < 0.02
+						check_variable = { conservative_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						conservative < 0.03
+						check_variable = { conservative_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						conservative < 0.04
+						check_variable = { conservative_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						conservative < 0.05
+						check_variable = { conservative_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						conservative < 0.06
+						check_variable = { conservative_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						conservative < 0.07
+						check_variable = { conservative_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						conservative < 0.08
+						check_variable = { conservative_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { conservative_temp_popularity = party_popularity@conservative }
 			add_popularity = {	ideology = conservative popularity = -1 }
 			set_variable = { conservative_seats = 0 }
 		}
@@ -724,45 +1121,45 @@ elect_new_parliament = {
 			set_variable = { conservative_seats = party_popularity@conservative }
 			multiply_variable = { conservative_seats = 100 }
 			round_variable = conservative_seats
+			set_variable = { conservative_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						national_conservative < 0.01
+						check_variable = { national_conservative_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						national_conservative < 0.02
+						check_variable = { national_conservative_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						national_conservative < 0.03
+						check_variable = { national_conservative_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						national_conservative < 0.04
+						check_variable = { national_conservative_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						national_conservative < 0.05
+						check_variable = { national_conservative_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						national_conservative < 0.06
+						check_variable = { national_conservative_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						national_conservative < 0.07
+						check_variable = { national_conservative_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						national_conservative < 0.08
+						check_variable = { national_conservative_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { national_conservative_temp_popularity = party_popularity@national_conservative }
 			add_popularity = {	ideology = national_conservative popularity = -1 }
 			set_variable = { national_conservative_seats = 0 }
 		}
@@ -770,45 +1167,45 @@ elect_new_parliament = {
 			set_variable = { national_conservative_seats = party_popularity@national_conservative }
 			multiply_variable = { national_conservative_seats = 100 }
 			round_variable = national_conservative_seats
+			set_variable = { national_conservative_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						monarchist < 0.01
+						check_variable = { monarchist_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						monarchist < 0.02
+						check_variable = { monarchist_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						monarchist < 0.03
+						check_variable = { monarchist_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						monarchist < 0.04
+						check_variable = { monarchist_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						monarchist < 0.05
+						check_variable = { monarchist_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						monarchist < 0.06
+						check_variable = { monarchist_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						monarchist < 0.07
+						check_variable = { monarchist_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						monarchist < 0.08
+						check_variable = { monarchist_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { monarchist_temp_popularity = party_popularity@monarchist }
 			add_popularity = {	ideology = monarchist popularity = -1 }
 			set_variable = { monarchist_seats = 0 }
 		}
@@ -816,45 +1213,45 @@ elect_new_parliament = {
 			set_variable = { monarchist_seats = party_popularity@monarchist }
 			multiply_variable = { monarchist_seats = 100 }
 			round_variable = monarchist_seats
+			set_variable = { monarchist_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						right_wing_populist < 0.01
+						check_variable = { right_wing_populist_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						right_wing_populist < 0.02
+						check_variable = { right_wing_populist_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						right_wing_populist < 0.03
+						check_variable = { right_wing_populist_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						right_wing_populist < 0.04
+						check_variable = { right_wing_populist_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						right_wing_populist < 0.05
+						check_variable = { right_wing_populist_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						right_wing_populist < 0.06
+						check_variable = { right_wing_populist_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						right_wing_populist < 0.07
+						check_variable = { right_wing_populist_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						right_wing_populist < 0.08
+						check_variable = { right_wing_populist_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { right_wing_populist_temp_popularity = party_popularity@right_wing_populist }
 			add_popularity = {	ideology = right_wing_populist popularity = -1 }
 			set_variable = { right_wing_populist_seats = 0 }
 		}
@@ -862,45 +1259,45 @@ elect_new_parliament = {
 			set_variable = { right_wing_populist_seats = party_popularity@right_wing_populist }
 			multiply_variable = { right_wing_populist_seats = 100 }
 			round_variable = right_wing_populist_seats
+			set_variable = { right_wing_populist_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						fascist < 0.01
+						check_variable = { fascist_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						fascist < 0.02
+						check_variable = { fascist_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						fascist < 0.03
+						check_variable = { fascist_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						fascist < 0.04
+						check_variable = { fascist_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						fascist < 0.05
+						check_variable = { fascist_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						fascist < 0.06
+						check_variable = { fascist_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						fascist < 0.07
+						check_variable = { fascist_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						fascist < 0.08
+						check_variable = { fascist_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { fascist_temp_popularity = party_popularity@fascist }
 			add_popularity = {	ideology = fascist popularity = -1 }
 			set_variable = { fascist_seats = 0 }
 		}
@@ -908,45 +1305,45 @@ elect_new_parliament = {
 			set_variable = { fascist_seats = party_popularity@fascist }
 			multiply_variable = { fascist_seats = 100 }
 			round_variable = fascist_seats
+			set_variable = { fascist_temp_popularity = 0 }
 		}
 		if = {
 			limit = {
 				OR = {
 					AND = {
 						has_idea = threshold_one_percent
-						islamist < 0.01
+						check_variable = { islamist_temp_popularity < 0.01 }
 					}
 					AND = {
 						has_idea = threshold_two_percent
-						islamist < 0.02
+						check_variable = { islamist_temp_popularity < 0.02 }
 					}
 					AND = {
 						has_idea = threshold_three_percent
-						islamist < 0.03
+						check_variable = { islamist_temp_popularity < 0.03 }
 					}
 					AND = {
 						has_idea = threshold_four_percent
-						islamist < 0.04
+						check_variable = { islamist_temp_popularity < 0.04 }
 					}
 					AND = {
 						has_idea = threshold_five_percent
-						islamist < 0.05
+						check_variable = { islamist_temp_popularity < 0.05 }
 					}
 					AND = {
 						has_idea = threshold_six_percent
-						islamist < 0.06
+						check_variable = { islamist_temp_popularity < 0.06 }
 					}
 					AND = {
 						has_idea = threshold_seven_percent
-						islamist < 0.07
+						check_variable = { islamist_temp_popularity < 0.07 }
 					}
 					AND = {
 						has_idea = threshold_eight_percent
-						islamist < 0.08
+						check_variable = { islamist_temp_popularity < 0.08 }
 					}
 				}
 			}
-			set_temp_variable = { islamist_temp_popularity = party_popularity@islamist }
 			add_popularity = {	ideology = islamist popularity = -1 }
 			set_variable = { islamist_seats = 0 }
 		}
@@ -954,6 +1351,7 @@ elect_new_parliament = {
 			set_variable = { islamist_seats = party_popularity@islamist }
 			multiply_variable = { islamist_seats = 100 }
 			round_variable = islamist_seats
+			set_variable = { islamist_temp_popularity = 0 }
 		}
 		add_popularity = {	ideology = communist popularity = communist_temp_popularity }
 		add_popularity = {	ideology = socialist popularity = socialist_temp_popularity }
@@ -2050,12 +2448,7 @@ set_parliament_graphics = {
 	divide_variable = { ROOT.GroupGFX = 100 }
 	multiply_variable = { ROOT.GroupGFX = 230 }
 
-	set_variable = {
-		ROOT.Opposition = 100
-	}
-	subtract_from_variable = {
-		ROOT.Opposition = ROOT.Coalition
-	}
+	set_coalition_seats = yes
 	set_parliament_speaker_plurality = yes
 }
 
@@ -2619,392 +3012,6 @@ set_parliament_speaker_plurality = {
 			fascist_plurality_seats = yes
 		}
 		set_variable = { plurality_var = 12 }
-	}
-}
-
-election_pulse = {
-	add_timed_idea = { idea = electoral_honeymoon days = 30 }
-	if = {
-		limit = {
-			has_idea = federal
-		}
-		country_event = election.7
-	}
-	if = {
-	    limit = {
-		    original_tag = DEU
-			has_global_flag = akk_elected
-		}
-		clr_global_flag = akk_elected
-		create_country_leader = {
-	        name = "Annegret Kramp-Karrenbauer"
-	        picture = "Annegret_Kramp_Karrenbauer.dds"
-	        ideology = christian_democrat
-        }
-    }
-	if = {
-	    limit = {
-			original_tag = DEU
-			has_global_flag = merz_elected
-		}
-		clr_global_flag = merz_elected
-		create_country_leader = {
-	        name = "Friedrich Merz"
-	        picture = "Friedrich_Merz.dds"
-	        ideology = christian_democrat
-			traits = {
-				friend_of_america
-			}
-        }
-	}
-	if = {
-	    limit = {
-		    original_tag = NAU
-			has_government = social_liberal
-	    }
-		country_event = nauru.1
-	}
-	if = {
-	    limit = {
-		    original_tag = ITA
-			has_government = classical_liberal
-			has_country_flag = coalition_right_wing_populist
-			NOT = {
-				has_country_leader = {
-					name = "Giuseppe Conte"
-					ruling_only = no
-				}
-			}
-		}
-		country_event = italy.1
-	}
-	if = {
-	    limit = {
-		    original_tag = THA
-			NOT = { has_global_flag = palang_pracharath_flag }
-	    }
-		set_global_flag = palang_pracharath_flag
-		set_party_name = {
-		    ideology = national_conservative
-		    long_name = THA_national_conservative_party_PPP_long
-		    name = THA_national_conservative_party_PPP
-	    }
-	}
-	if = {
-	    limit = {
-		    original_tag = MMR
-			has_government = social_democrat
-			NOT = { has_global_flag = myanmar_coup }
-		}
-	    set_global_flag = myanmar_coup
-		hidden_effect = {
-			country_event = { 
-				id = myanmar.1
-				days = 85
-			}
-		}
-	}
-	if = {
-	    limit = {
-			original_tag = ADO
-		    has_country_leader = {
-				name = "Antoni Martí"
-				ruling_only = yes
-			}
-		}
-		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Xavier Espot"
-	        picture = GFX_Portrait_ADO_Xavier_Espot
-	        ideology = liberal_conservative
-        }
-	}
-	if  = {
-		limit = {
-			original_tag = CHE
-			has_country_leader = {
-				name = "Alain Berset"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Simonetta Sommaruga"
-			picture = GFX_Portrait_CHE_Simonetta_Sommaruga
-			ideology = social_democrat_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = CHE
-			has_country_leader = {
-				name = "Ueli Maurer"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = national_conservative
-		create_country_leader = {
-			name = "Guy Parmelin"
-			picture = GFX_Portrait_CHE_Guy_Parmelin
-			ideology = national_conservative_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = ENG
-			NOT = { has_government = social_democrat }
-			has_country_leader = {
-				name = "Jeremy Corbyn"
-				ruling_only = no
-			}
-		}
-		country_event = britain.8
-	}
-	if  = {
-		limit = {
-			original_tag = CRI
-			has_country_leader = {
-				name = "Luis Guillermo Solís"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Carlos Alvarado Quesada"
-			picture = GFX_Portrait_CRI_Carlos_Alvarado_Quesada
-			ideology = social_democrat_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = DZA
-			has_country_flag = bouteflika_not_running
-		}
-		clr_country_flag = bouteflika_not_running
-		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Abdelmadjid Tebboune"
-			picture = GFX_Portrait_DZA_Abdelmadjid_Tebboune
-			ideology = arab_socialist
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = ITA
-			has_country_leader = {
-				name = "Paolo Gentiloni"
-				ruling_only = yes
-			}
-		}
-		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Matteo Renzi"
-			picture = GFX_Portrait_ITA_Matteo_Renzi
-			ideology = social_democrat_ideology
-		}
-		else = {
-			if = {
-				limit = {
-					original_tag = ITA
-					has_country_leader = {
-						name = "Paolo Gentiloni"
-						ruling_only = no
-					}
-				}
-				retire_ideology_leader = social_democrat
-				create_country_leader = {
-					name = "Maurizio Martina"
-					picture = GFX_Portrait_ITA_Maurizio_Martina
-					ideology = social_democrat_ideology
-				}
-			}
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = KOR
-			has_country_leader = {
-				name = "Moon Jae-in"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = social_liberal
-		create_country_leader = {
-			name = "Lee Jae-myung"
-			picture = GFX_Portrait_KOR_Lee_Jae_myung
-			ideology = social_liberal_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = ISR
-			social_democrat < 0.1
-			has_country_leader = {
-				name = "Avi Gabbay"
-				ruling_only = no
-			}
-		}
-		country_event = israel.2
-	}
-	if  = {
-		limit = {
-			original_tag = TMS
-			has_country_leader = {
-				name = "Gurbanguly Berdimuhamedow"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = national_conservative
-		create_country_leader = {
-			name = "Serdar Berdimuhamedow"
-			picture = GFX_Portrait_TMS_Serdar_Berdimuhamedow
-			ideology = national_conservative_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = SIE
-			has_country_leader = {
-				name = "Ernest Bai Koroma"
-				ruling_only = yes
-			}
-		}
-		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Samura Kamara"
-			picture = GFX_Portrait_SIE_Samura_Kamara
-			ideology = democratic_socialist
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = MEX
-			has_country_leader = {
-				name = "Enrique Peña Nieto"
-				ruling_only = yes
-			}
-		}
-		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-			name = "José Antonio Meade"
-			picture = GFX_Portrait_MEX_Jose_Antonio_Meade
-			ideology = classical_liberal_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = JEY
-			has_country_leader = {
-				name = "Ian Gorst"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-			name = "John Le Fondré"
-			picture = GFX_Portrait_JEY_John_Le_Fondre
-			ideology = classical_liberal_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = CAN
-			NOT = { has_government = conservative }
-			has_country_leader = {
-				name = "Andrew Scheer"
-				ruling_only = no
-			}
-		}
-		country_event = canada.1
-	}
-	if  = {
-		limit = {
-			original_tag = PAK
-			has_country_leader = {
-				name = "Shahid Khaqan Abbasi"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = conservative
-		create_country_leader = {
-			name = "Shehbaz Sharif"
-			picture = GFX_Portrait_PAK_Shehbaz_Sharif
-			ideology = liberal_conservative
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = BRA
-			has_country_leader = {
-				name = "Michel Temer"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-			name = "Henrique Meirelles"
-			picture = GFX_Portrait_BRA_Henrique_Meirelles
-			ideology = classical_liberal_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = AUS
-			NOT = { has_government = social_democrat }
-			has_country_leader = {
-				name = "Bill Shorten"
-				ruling_only = no
-			}
-		}
-		country_event = australia.4
-	}
-	if = {
-		limit = {
-			minority_government = yes
-		}
-		hidden_effect = {
-			add_ideas = minority_government
-		}
-	}
-	set_election_change = yes
-	news_event = politics.13
-}
-
-election_effect = {
-	clr_country_flag = snap_election_in_progress
-	set_old_election_results = yes
-	hidden_effect = {
-		meta_effect = {
-			text = {
-				set_politics = {
-					ruling_party = [RULINGPARTY]
-					last_election = [TODAY]
-					elections_allowed = yes
-				}
-			}
-			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-			TODAY = "[?global.date.GetDateStringNoHour]"
-			debug = yes
-		}
-		remove_ideas = unstable_coalition
-	}
-	if = {
-		limit = {
-			has_idea = presidential_republic
-		}
-		country_event = election.1
-	}
-	if = {
-		limit = {
-			has_idea = parliamentary_system
-		}
-		country_event = election.3
-	}
-	if = {
-		limit = {
-			has_idea = demarchic_republic
-		}
-		country_event = election.4
 	}
 }
 
@@ -3852,7 +3859,7 @@ auto_government = {
 		}
 	}
 	set_parliament_graphics = yes
-	election_pulse = yes
+	post_election_effects = yes
 }
 
 gubernatorial_elections = {
@@ -4223,5 +4230,87 @@ parliament_math_failsafe = {
 			}
 			add_to_variable = { monarchist_seats = parliament_math_failsafe }
 		}
+	}
+}
+
+set_coalition_seats = {
+	set_variable = { ROOT.Coalition = 0 }
+	if = {
+		limit = {
+			has_country_flag = coalition_communist
+		}
+		add_to_variable = { ROOT.Coalition = communist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_socialist
+		}
+		add_to_variable = { ROOT.Coalition = socialist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_progressive
+		}
+		add_to_variable = { ROOT.Coalition = progressive_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_democrat
+		}
+		add_to_variable = { ROOT.Coalition = social_democrat_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_social_liberal
+		}
+		add_to_variable = { ROOT.Coalition = social_liberal_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_classical_liberal
+		}
+		add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_conservative
+		}
+		add_to_variable = { ROOT.Coalition = conservative_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_national_conservative
+		}
+		add_to_variable = { ROOT.Coalition = national_conservative_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_monarchist
+		}
+		add_to_variable = { ROOT.Coalition = monarchist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_right_wing_populist
+		}
+		add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_fascist
+		}
+		add_to_variable = { ROOT.Coalition = fascist_seats }
+	}
+	if = {
+		limit = {
+			has_country_flag = coalition_islamist
+		}
+		add_to_variable = { ROOT.Coalition = islamist_seats }
+	}
+	set_variable = {
+		ROOT.Opposition = 100
+	}
+	subtract_from_variable = {
+		ROOT.Opposition = ROOT.Coalition
 	}
 }

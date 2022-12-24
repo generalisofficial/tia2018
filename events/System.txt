@@ -8,6 +8,7 @@ country_event = {
 	
 	immediate = {
 		round_parliament_seats = yes
+		set_coalition_seats = yes
 		set_parliament_graphics = yes
 		if = {
 			limit = {
@@ -581,7 +582,6 @@ country_event = { ### Monthly On-action
 				has_stability < 0.25
 				has_war = no
 				NOT = {
-					has_country_flag = snap_election_in_progress
 					check_variable = {
 						var = party_popularity@ruling_party
 						value = 50
