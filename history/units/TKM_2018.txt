@@ -1,0 +1,131 @@
+﻿division_template = {
+	name = "Motor Rifle Division (Large)"
+	division_names_group = GENERIC_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Motor Rifle Division"
+	division_names_group = GENERIC_MOT_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		modern_armor = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Independent Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "2nd Training Motor Rifle Division 'Alp Arslan'"
+		location = 7491 #Tejen
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3rd Motorized Rifle Division 'Bairam Khan'"
+		location = 12333 #Ashgabat
+		division_template = "Motor Rifle Division (Large)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "22nd Motorized Rifle Division 'Atamyrat Niyazov'"
+		location = 4599 #Serdar
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Separate Motorized Rifle Brigade 'Tughril'"
+		location = 1632 #Kerki
+		division_template = "Independent Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Separate Motorized Rifle Brigade 'Chaghri Beg'"
+		location = 12333 #Ashgabat
+		division_template = "Independent Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Separate Motorized Rifle Brigade 'Gorogly Beg'"
+		location = 12333 #Ashgabat
+		division_template = "Independent Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "152nd Independent Air Assault Battalion"
+		location = 10357 #Mary
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	803 = {
+		#MiG-29
+		fighter_equipment_2 = {
+			owner = "TKM" 
+			amount = 24
+		}
+		name = "107th Fighter Aviation Regiment"
+	}
+	803 = {
+		#Su-25
+		CAS_equipment_2 = {
+			owner = "TKM" 
+			amount = 31
+		}
+		name = "99th Separate Aviation Regiment"
+	}
+	803 = {
+		#A-29 Super Tucano
+		CAS_equipment_3 = {
+			owner = "TKM" 
+			amount = 5
+		}
+		name = "31st Separate Aviation Squadron"
+	}
+	803 = {
+		#C-27J Spartan + An-26 + An-74
+		transport_plane_equipment_1 = {
+			owner = "TKM" 
+			amount = 5
+		}
+		name = "47th Separate Mixed Aviation Squadron"
+	}
+}

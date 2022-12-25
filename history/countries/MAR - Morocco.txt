@@ -1,0 +1,309 @@
+﻿capital = 461
+
+oob = "MAR_2018"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "MAR_2018_naval_mtg"
+	else = {
+		set_naval_oob = "MAR_2018_naval_legacy"
+	}
+}
+
+set_convoys = 86
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	scout_plane2 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_patrol_boat = 1
+		basic_patrol_boat = 1
+		improved_patrol_boat = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		improved_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		basic_ship_hull_patrol_boat = 1
+		improved_ship_hull_patrol_boat = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		improved_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+set_country_flag = sunni_islam
+set_cosmetic_tag = MAR_monarchist # Constitutional Monarchy
+
+add_ideas = {
+	#population_growth_rapid
+	idea_constitutional_monarchy
+	arab_league_member
+	active_draft
+	#non_aligned_movement_member
+	idea_african_union_member
+	lgbt_minority_womens_rights_conservative
+	islam
+	parliamentary_system
+	pro_life
+	high_taxes 
+	#moderate_healthcare_spending
+	five_year_term
+}
+
+add_opinion_modifier = {
+	target = ISR
+	modifier = no_diplomatic_recognition
+}
+
+#House of Representatives
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 3.56 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 5.08 }
+set_variable = { social_liberal_seats = 25.95 }
+set_variable = { classical_liberal_seats = 21.11 }
+set_variable = { conservative_seats = 11.70 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0.76 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 31.84 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_islamist
+set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_social_democrat
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = islamist_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
+
+set_politics = {	
+	ruling_party = islamist
+	last_election = "2016.9.8"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+   	islamist = 3.29
+    monarchist = 1.26
+    classical_liberal = 37.5
+    conservative = 20.50
+    social_liberal = 22.02
+    social_democrat = 8.60
+    socialist = 6.83
+}
+
+# Characters - Military
+
+# Characters - Political
+recruit_character = MAR_mohammed_vi
+recruit_character = MAR_saadeddine_othmani
+recruit_character = MAR_nizar_baraka
+recruit_character = MAR_aziz_akhannouch
+recruit_character = MAR_ilyas_el_omari
+recruit_character = MAR_driss_lachgar
+recruit_character = MAR_nabil_benabdallah
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "FREMM Class"
+		type = ship_hull_cruiser_3
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+			front_1_custom_slot = ship_light_medium_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+			rear_2_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Sigma Class"
+		type = ship_hull_cruiser_3
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+			rear_2_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Floréal Class"
+		type = ship_hull_cruiser_2
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Descubierta Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Lazaga Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_DD_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "OPV-70 Class"
+		type = ship_hull_patrol_boat_3
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_3
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Osprey 55 Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+		}
+	}
+}	

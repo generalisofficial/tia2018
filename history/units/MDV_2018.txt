@@ -1,0 +1,45 @@
+﻿division_template = {
+	name = "Marine Corps"
+	division_names_group = GENERIC_MAR_02
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Airborne Brigade"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Marine Corps"
+		location = 4967 #Spread across the Maldives
+		division_template = "Marine Corps"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Special Forces"
+		location = 4967 #Spread across the Maldives
+		division_template = "Airborne Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+air_wings = {
+	281 = {
+		#Dornier 228
+		nav_bomber_equipment_2 = {
+			owner = "MDV" 
+			amount = 1
+		}
+		name = "Coast Guard Aviation Squadron"
+	}
+}	

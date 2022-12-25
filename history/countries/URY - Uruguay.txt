@@ -1,0 +1,217 @@
+﻿capital = 300
+
+oob = "URY_2018"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "URY_2018_naval_mtg"
+	else = {
+		set_naval_oob = "URY_2018_naval_legacy"
+	}
+}
+
+set_convoys = 60
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1 #Frigate has radar, so this is necessary
+	
+	## Industry ##
+	basic_machine_tools = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_patrol_boat = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_patrol_boat = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+add_ideas = {
+	#population_growth_stagnation
+	presidential_republic
+	permissive_gun_laws
+	lgbt_minority_womens_rights_progressive
+	organized_labour_encouraged
+	moderate_minimum_wage
+	#extensive_healthcare_spending
+	five_year_term
+	threshold_one_percent
+}
+
+set_country_flag = catholic
+
+#National Assembly
+set_variable = { communist_seats = 8.08 }
+set_variable = { socialist_seats = 43.44 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 3.03 }
+set_variable = { social_liberal_seats = 13.13 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 32.32 }
+set_variable = { national_conservative_seats = 0 }
+set_variable = { monarchist_seats = 0 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 0 }
+
+# Coalition
+set_country_flag = has_parliament
+set_country_flag = coalition_socialist
+add_to_variable = { ROOT.Coalition = socialist_seats }
+
+set_politics = {	
+	ruling_party = socialist
+	last_election = "2014.10.27"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	socialist = 35.35
+	conservative = 30.31
+	social_liberal = 13.13
+	national_conservative = 12.12
+    communist = 7.07
+	progressive = 1.01
+	social_democrat = 1.01
+}
+
+# Characters - Military
+
+# Characters - Political
+recruit_character = URY_guido_manini_rios
+recruit_character = URY_luis_lacalle_pou
+recruit_character = URY_ernesto_talvi
+recruit_character = URY_pablo_mieres
+recruit_character = URY_cesar_vega
+recruit_character = URY_tabare_vazquez
+recruit_character = URY_juan_castillo
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Paysandú Class"
+		type = ship_hull_patrol_boat_1
+		name_group = GENERIC_PB_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_patrol_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Kondor II Class"
+		type = ship_hull_light_1
+		name_group = GENERIC_MINESWEEPER_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_mine_sweeper_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "João Belo Class"
+		type = ship_hull_cruiser_1
+		name_group = GENERIC_CL_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+		}	
+	}
+}	

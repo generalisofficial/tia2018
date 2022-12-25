@@ -1,0 +1,22 @@
+﻿units= {
+	##### Naval OOB #####
+	fleet = {
+		name = "South African Navy"
+		naval_base = 12589 #Simon's Town, Western Cape
+		task_force = {				
+			name = "Submarine Fleet"			
+			location = 12589 #Simon's Town, Western Cape
+			ship = { name = "SAS Manthatisi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZAF version_name = "Heroine Class" } } }
+			ship = { name = "SAS Charlotte Maxeke" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZAF version_name = "Heroine Class" } } }
+			ship = { name = "SAS Queen Modjadji" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZAF version_name = "Heroine Class" } } }
+		}
+		task_force = {				
+			name = "Surface Fleet"			
+			location = 12589 #Simon's Town, Western Cape
+			ship = { name = "SAS Amatola" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAF version_name = "Valour Class" } } }
+			ship = { name = "SAS Isandlwana" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAF version_name = "Valour Class" } } }
+			ship = { name = "SAS Spioenkop" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAF version_name = "Valour Class" } } }
+			ship = { name = "SAS Mendi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ZAF version_name = "Valour Class" } } }
+		}			
+	}
+}

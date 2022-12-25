@@ -1,0 +1,167 @@
+﻿division_template = {
+	name = "Royal Guard Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	} 
+	support = {
+		signal_company = { x = 0 y = 0 }    
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Infantry Brigade (Large)"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mot_artillery_brigade = { x = 1 y = 2 }
+	} 
+	support = {
+		engineer = { x = 0 y = 0 }    
+	}
+}
+
+division_template = {
+	name = "Infantry Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+		mot_artillery_brigade = { x = 1 y = 1 }
+	} 
+	support = {
+		logistics_company = { x = 0 y = 0 }    
+	}
+}
+
+division_template = {
+	name = "Border Guard Brigade"
+	division_names_group = GENERIC_INFB_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	} 
+}
+
+division_template = {
+	name = "Armoured Brigade"
+	division_names_group = GENERIC_ARM_03
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }    
+	}
+}
+
+division_template = {
+	name = "Paratrooper Regiment"
+	division_names_group = GENERIC_PAR_02
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Royal Guard of Oman"
+		location = 10760 #Muscar
+		division_template = "Royal Guard Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Armoured Brigade"
+		location = 14102 #Izki
+		division_template = "Armoured Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Infantry Brigade"
+		location = 2103 #Salalah
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "23rd Infantry Brigade"
+		location = 10760 #Muscar
+		division_template = "Infantry Brigade (Large)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Border Guard Brigade"
+		location = 14098 #Haima
+		division_template = "Border Guard Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Sultan of Oman's Parachute Regiment"
+		location = 14102 #Rustaw
+		division_template = "Paratrooper Regiment"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+
+air_wings = {
+	294 = {
+		#F-16C
+		fighter_equipment_2 = {
+			owner = "OMN" 
+			amount = 23
+		}
+		name = "18th Multi Purpose Squadron"
+	}
+	294 = {
+		#Typhoon
+		fighter_equipment_3 = {
+			owner = "OMN" 
+			amount = 12
+		}
+		name = "8th Fighter Squadron"
+	}
+	294 = {
+		#BAE Hawk 200
+		CAS_equipment_2 = {
+			owner = "OMN" 
+			amount = 21
+		}
+		name = "6th Bomber Squadron (Light)"
+	}
+	294 = {
+		#CASA C-295
+		nav_bomber_equipment_3 = {
+			owner = "OMN" 
+			amount = 4
+		}
+		name = "20th Bomber Squadron (Naval)"
+	}
+	294 = {
+		#C-130H + C-130J Super Hercules
+		transport_plane_equipment_1 = {
+			owner = "OMN" 
+			amount = 5
+		}
+		name = "2nd Transport Squadron"
+	}
+}

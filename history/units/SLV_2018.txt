@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Infantry Brigade"
-	division_names_group = GENERIC_INFB_01
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -8,50 +7,59 @@
 		motorized = { x = 0 y = 2 }
 	}
 	support = {
-		logistics_company = { x = 0 y = 0 }
-		signal_company = { x = 0 y = 1 }
-		armored_car_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 }
 
-division_template = {
-	name = "Armored Brigade"
-	division_names_group = GENERIC_ARM_03
-	
-	regiments = {
-		light_mechanized = { x = 0 y = 0 }
-		modern_armor = { x = 0 y = 1 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		field_hospital = { x = 0 y = 2 }
-	}
-}
-
-units = {	
+units = {
 	division = {
-		name = "1st Brigade"
-		location = 9627
+		name = "2nd Brigade"
+		location = 12823 #Santa Ana
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "72nd Brigade"
-		location = 9596
-		division_template = "Armored Brigade"
+		name = "3rd Brigade"
+		location = 13093 #San Miguel
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Brigade"
+		location = 12823 #El Paraíso
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Brigade"
+		location = 12823 #San Vicente
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Brigade"
+		location = 13093 #Usulután
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.3
 	}
 }
 
 ### Air OOB ###
-air_wings = {	
-	1027 = {
-		#Pilatus PC-9
-		CAS_equipment_2 = {
+air_wings = {
+	314 = {
+		fighter_equipment_1 = { #Cessna A-37 Dragonfly
 			owner = "SLV" 
-			amount = 9
+			amount = 18
 		}
-		name = "Slovenian Air Force"
+		name = "Fighter and Bombardment Group"
+	}
+	314 = {
+		scout_plane_equipment_1 = { #Cessna O-2 Skymaster + Beechcraft Baron
+			owner = "SLV" 
+			amount = 10
+		}
+		name = "Cuscatlan Squadron (reconnaissance)"
 	}
 }	

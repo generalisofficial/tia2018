@@ -230,9 +230,9 @@ HND = { give_military_access = USA }
 JPN = { give_military_access = USA }
 KEN = { give_military_access = USA }
 KOS = { give_military_access = USA }
-NGR = { give_military_access = USA }
-OMA = { give_military_access = USA }
-PHI = { give_military_access = USA }
+NER = { give_military_access = USA }
+OMN = { give_military_access = USA }
+PHL = { give_military_access = USA }
 SYC = { give_military_access = USA }
 SGP = { give_military_access = USA }
 THA = { give_military_access = USA }
@@ -263,7 +263,7 @@ if = {
 		autonomous_state = autonomy_puppet_state
 	}
 	set_autonomy = {
-		target = MAR
+		target = MHL
 		autonomous_state = autonomy_puppet_state
 	}
 	set_autonomy = {
@@ -272,7 +272,7 @@ if = {
 	}
 	else = {
 		puppet = FSM
-		puppet = MAR
+		puppet = MHL
 		puppet = PLW
 	}
 }
@@ -300,7 +300,7 @@ FSM = {
 	}
 }
 
-MAR = {
+MHL = {
 	set_politics = {	
 		ruling_party = social_liberal
 		last_election = "2015.11.18"
@@ -339,10 +339,10 @@ add_to_faction = HUN
 add_to_faction = ISL
 add_to_faction = ITA
 add_to_faction = LUX
-add_to_faction = HOL
+add_to_faction = NLD
 add_to_faction = NOR
 add_to_faction = POL
-add_to_faction = POR
+add_to_faction = PRT
 add_to_faction = ESP
 add_to_faction = TUR
 add_to_faction = ENG
@@ -351,18 +351,18 @@ add_to_faction = EST
 add_to_faction = LVA
 add_to_faction = LTU
 add_to_faction = ROM
-add_to_faction = SLO
-add_to_faction = SLV
+add_to_faction = SVK
+add_to_faction = SVN
 add_to_faction = ALB
 add_to_faction = HRV
-add_to_faction = MNT
+add_to_faction = MNE
 
 give_guarantee = AUS
 give_guarantee = ISR
 give_guarantee = JPN
 give_guarantee = KOR
 give_guarantee = ROC
-give_guarantee = PHI
+give_guarantee = PHL
 give_guarantee = ROJ
 
 diplomatic_relation = { country = KIR relation = non_aggression_pact }

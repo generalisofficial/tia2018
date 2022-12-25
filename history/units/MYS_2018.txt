@@ -1,0 +1,149 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Infantry Brigade (Large)"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+
+
+units = {
+	division = {
+		name = "16th Brigade"
+		location = 13612 #Kuala Lampur
+		division_template = "Infantry Brigade (Large)"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Brigade"
+		location = 7427 #Somewhere on the Peninsular Malaysia
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Brigade"
+		location = 13614 #Somewhere on the Peninsular Malaysia
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Brigade"
+		location = 1364 #Somewhere on the Peninsular Malaysia
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Brigade"
+		location = 4412 #Somewhere on the Peninsular Malaysia
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Brigade"
+		location = 7399 #Somewhere on the Peninsular Malaysia
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Brigade"
+		location = 7329 #Somewhere on the Peninsular Malaysia
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Brigade"
+		location = 1291 #Somewhere on the Peninsular Malaysia
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Brigade"
+		location = 1376 #Somewhere on the Peninsular Malaysia
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Brigade"
+		location = 10212 #Somewhere on Sabah
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Brigade"
+		location = 1208 #Somewhere on Sarawak
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Brigade"
+		location = 10285 #Somewhere on Sarawak
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air OOB ###
+air_wings = {
+	610 = {
+		#BAE Hawk 208. Labuan Airbase
+		CAS_equipment_1 = {
+			owner = "MYS" 
+			amount = 13
+		}
+		name = "6 Squadron"
+	}
+	892 = {
+		#Su-30MKM. Gong Kedak Airbase
+		fighter_equipment_4 = {
+			owner = "MYS" 
+			amount = 18
+		}
+		name = "12 Squadron"
+	}
+	817 = { 
+		#F/A-18D. Butterworth Airbase
+		fighter_equipment_3 = {
+			owner = "MYS" 
+			amount = 8
+		}
+		name = "18 Squadron"
+	}
+}	

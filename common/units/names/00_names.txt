@@ -1721,7 +1721,7 @@ ECU = {
 	
 }
 
-ELS = {
+SLV = {
 	submarine = {
 		prefix = "ARS"
 		generic = { "Submarino" }
@@ -2080,7 +2080,7 @@ HTI = {
 	}
 }
 
-HOL = {
+NLD = {
 	submarine = {
 		prefix = "HrMs"
 		generic = { "Onderzeebot" }
@@ -2136,13 +2136,13 @@ HOL = {
 			"Karel Doorman" "De Zeven Provinciën" "De Ruyter" "Tromp" "Piet Hein" 
 		}
 	}
-	air_wing_names_template = AIR_WING_NAME_HOL_FALLBACK
+	air_wing_names_template = AIR_WING_NAME_NLD_FALLBACK
 
 	#Air wings can only be named through archetype
 	fighter_equipment = {
 		prefix = ""
 		generic = { "Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2150,7 +2150,7 @@ HOL = {
 	jet_fighter_equipment = {
 		prefix = ""
 		generic = { "Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2158,7 +2158,7 @@ HOL = {
 	heavy_fighter_equipment = {
 		prefix = ""
 		generic = { "Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2166,7 +2166,7 @@ HOL = {
 	CAS_equipment = {
 		prefix = ""
 		generic = { "Duikbommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2174,7 +2174,7 @@ HOL = {
 	cv_fighter_equipment = {
 		prefix = ""
 		generic = { "Marine-Jachtvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2182,14 +2182,14 @@ HOL = {
 	cv_CAS_equipment = {
 		prefix = ""
 		generic = { "Marine-Duikbommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
 	cv_nav_bomber_equipment = {
 		prefix = ""
 		generic = { "Marine-Torpedobommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2197,7 +2197,7 @@ HOL = {
 	tac_bomber_equipment = {
 		prefix = ""
 		generic = { "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2205,7 +2205,7 @@ HOL = {
 	jet_tac_bomber_equipment = {
 		prefix = ""
 		generic = { "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2213,7 +2213,7 @@ HOL = {
 	nav_bomber_equipment = {
 		prefix = ""
 		generic = { "Marine-Bommenwerpergroep" "Marine-Torpedobommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2221,7 +2221,7 @@ HOL = {
 	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2229,7 +2229,7 @@ HOL = {
 	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bommenwerpergroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}
@@ -2237,7 +2237,7 @@ HOL = {
 	transport_plane_equipment = {
 		prefix = ""
 		generic = { "Transportvliegtuiggroep" }
-		generic_pattern = AIR_WING_NAME_HOL_GENERIC
+		generic_pattern = AIR_WING_NAME_NLD_GENERIC
 		unique = {
 		}	
 	}	
@@ -2668,7 +2668,7 @@ LBR = {
 	}
 }
 
-SAF = {
+ZAF = {
 	submarine = {
 		prefix = "HMSAS"
 		generic = { "Submarine" }
@@ -2722,7 +2722,7 @@ SAF = {
 		}
 	}
 
-	air_wing_names_template = AIR_WING_NAME_SAF_FALLBACK
+	air_wing_names_template = AIR_WING_NAME_ZAF_FALLBACK
 
 	cv_fighter_equipment = {
 		prefix = ""
@@ -2748,7 +2748,7 @@ SAF = {
 	}
 }
 
-MAL = {
+MYS = {
 	submarine = {
 		prefix = "KD"
 		generic = { "Submarine" }
@@ -3129,7 +3129,7 @@ NZL = {
 	}
 }
 
-OMA = {
+OMN = {
 	submarine = {
 		prefix = "SNV"
 		generic = { "Submarine" }
@@ -3392,7 +3392,7 @@ IRN = {
 	}
 }
 
-PHI = {
+PHL = {
 	submarine = {
 		prefix = "RPS"
 		generic = { "Submarine" }
@@ -3446,7 +3446,7 @@ PHI = {
 	}
 }
 
-POR = {
+PRT = {
 	submarine = {
 		prefix = "NRP"
 		generic = { "Submarino" }
@@ -3501,7 +3501,7 @@ POR = {
 	}
 }
 
-PRU = {
+PER = {
 	submarine = {
 		prefix = "BAP"
 		generic = { "Submarino" }
@@ -3988,7 +3988,7 @@ VEN = {
 	}
 }
 
-URG = {
+URY = {
 	submarine = {
 		prefix = "ROU"
 		generic = { "Submarino" }

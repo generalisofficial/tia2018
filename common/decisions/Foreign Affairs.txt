@@ -4,13 +4,13 @@ foreign_affairs = {
 	reform_yugoslavia = {
 		allowed = {
 		    OR = {
-			    original_tag = SER
+			    original_tag = SRB
 				original_tag = HRV
 				original_tag = KOS
 				original_tag = BIH
-				original_tag = SLV
+				original_tag = SVN
 				original_tag = MKD
-				original_tag = MNT
+				original_tag = MNE
 			}
 		}
 		
@@ -32,13 +32,13 @@ foreign_affairs = {
 			every_state = {
 			    limit = {
 				    OR = {
-				        is_core_of = SER
+				        is_core_of = SRB
 				        is_core_of = HRV
 						is_core_of = KOS
 						is_core_of = BIH
-						is_core_of = SLV
+						is_core_of = SVN
 						is_core_of = MKD
-						is_core_of = MNT
+						is_core_of = MNE
 				    }
 			    }
 			    add_core_of = ROOT
@@ -57,7 +57,7 @@ foreign_affairs = {
 			    original_tag = RUS
 				original_tag = UKR
 				original_tag = BLR
-				original_tag = MOL
+				original_tag = MDA
 				original_tag = TRA
 				original_tag = LVA
 				original_tag = LTU
@@ -70,7 +70,7 @@ foreign_affairs = {
 				original_tag = SOS
 				original_tag = KAZ
 				original_tag = UZB
-				original_tag = TMS
+				original_tag = TKM
 				original_tag = TJK
 				original_tag = KGZ
 				original_tag = CHY
@@ -105,7 +105,7 @@ foreign_affairs = {
 						is_core_of = RUS
 						is_core_of = UKR
 						is_core_of = BLR
-						is_core_of = MOL
+						is_core_of = MDA
 						is_core_of = TRA
 						is_core_of = LVA
 						is_core_of = LTU
@@ -118,7 +118,7 @@ foreign_affairs = {
 						is_core_of = SOS
 						is_core_of = KAZ
 						is_core_of = UZB
-						is_core_of = TMS
+						is_core_of = TKM
 						is_core_of = TJK
 						is_core_of = KGZ
 					}
@@ -136,7 +136,7 @@ foreign_affairs = {
 		allowed = {
 		    OR = {
 			    original_tag = CZE
-				original_tag = SLO
+				original_tag = SVK
 			}
 		}
 		
@@ -158,7 +158,7 @@ foreign_affairs = {
 			    limit = {
 				    OR = {
 				        is_core_of = CZE
-				        is_core_of = SLO
+				        is_core_of = SVK
 				    }
 			    }
 			    add_core_of = ROOT
@@ -175,7 +175,7 @@ foreign_affairs = {
 		allowed = {
 		    OR = {
 			    original_tag = ESP
-				original_tag = POR
+				original_tag = PRT
 				original_tag = CAT
 				original_tag = BSQ
 				original_tag = GLC
@@ -200,7 +200,7 @@ foreign_affairs = {
 			every_state = {
 			    limit = {
 				    OR = {
-				        is_core_of = POR
+				        is_core_of = PRT
 				        is_core_of = ESP
 						is_core_of = CAT
 						is_core_of = BSQ
@@ -219,7 +219,7 @@ foreign_affairs = {
 	reform_the_peru_bolivian_confederation = {
 		allowed = {
 		    OR = {
-			    original_tag = PRU	
+			    original_tag = PER	
 				original_tag = BOL
 			}
 		}
@@ -240,7 +240,7 @@ foreign_affairs = {
 			every_state = {
 			    limit = {
 				    OR = {
-				        is_core_of = PRU
+				        is_core_of = PER
 				        is_core_of = BOL
 				    }
 			    }
@@ -257,7 +257,7 @@ foreign_affairs = {
 	reform_central_america = {
 		allowed = {
 		    OR = {
-			    original_tag = ELS
+			    original_tag = SLV
 				original_tag = GTM
 				original_tag = HND
 				original_tag = NIC
@@ -284,7 +284,7 @@ foreign_affairs = {
 			every_state = {
 			    limit = {
 				    OR = {
-				        is_core_of = ELS
+				        is_core_of = SLV
 				        is_core_of = GTM
 						is_core_of = HND
 						is_core_of = NIC
@@ -898,7 +898,7 @@ foreign_affairs = {
 	apply_for_union_with_romania = {
 	
 		allowed = {
-			original_tag = MOL
+			original_tag = MDA
 		}
 
 		visible = {
@@ -1310,13 +1310,13 @@ foreign_affairs = {
 		}
 
 		visible = {
-			country_exists = SER
+			country_exists = SRB
 			owns_state = 1012
-			SER = { owns_state = 1201 }
+			SRB = { owns_state = 1201 }
 			owns_state = 785
-			785 = { is_claimed_by = SER }
+			785 = { is_claimed_by = SRB }
 			NOT = {
-				SER = { has_cosmetic_tag = YUG }
+				SRB = { has_cosmetic_tag = YUG }
 			}
 		}
 		
@@ -1326,7 +1326,7 @@ foreign_affairs = {
 		}
 		
 		complete_effect = {
-			SER = { country_event = kosovo.1 }
+			SRB = { country_event = kosovo.1 }
 		}
 		
 		icon = kosovo

@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "Motorized Infantry Brigade"
+	division_names_group = GENERIC_MOT_02
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		armored_car_recon = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Motorized Infantry Brigade 'Moldova'"
+		location = 6600 #Bălți
+		division_template = "Motorized Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5 #Government has been underfunding and downsizing the army
+	}
+	division = {
+		name = "2nd Motorized Infantry Brigade 'Stefan Cel Mare'"
+		location = 14197 #Chișinău
+		division_template = "Motorized Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd Motorized Infantry Brigade 'Dacia'"
+		location = 3724 #Cahul
+		division_template = "Motorized Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+}
+
+### Air OOB ###
+air_wings = {
+	78 = {
+		#Antonov AN-26
+		transport_plane_equipment_1 = {
+			owner = "MDA" 
+			amount = 1
+		}
+		name = "Air Regiment 'Decebal'"
+	}
+}	
