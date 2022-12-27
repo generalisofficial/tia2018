@@ -5,7 +5,7 @@ scripted_gui = {
 		context_type = player_context
  
 		visible = {
-            has_country_flag = has_parliament
+            has_country_flag = has_a_legislature
 			is_ai = no
 		}
 	}
@@ -1584,7 +1584,7 @@ scripted_gui = {
 					}
 					set_country_flag = coalition_communist
 				}
-				set_country_flag = has_parliament
+				set_country_flag = has_a_legislature
 				set_variable = { ROOT.NewCoalition = ROOT.Coalition }
 				cleanup_coalition = yes
 				update_coalition = yes

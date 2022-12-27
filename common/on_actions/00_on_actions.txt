@@ -157,7 +157,7 @@ on_actions = {
 			add_to_variable = { global.next_month = 1 }
 			every_country = {
 				limit = {
-					NOT = { has_country_flag = has_parliament }
+					NOT = { has_country_flag = has_a_legislature }
 				}
 				quickset_coalition_flags_only = yes
 			}
@@ -426,7 +426,7 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { has_country_flag = has_parliament }
+					ROOT = { has_country_flag = has_a_legislature }
 				}
 				ROOT = { 	
 					set_parliament_graphics = yes

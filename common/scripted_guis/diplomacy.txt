@@ -30,7 +30,7 @@ scripted_gui = {
 		parent_window_token = selected_country_view_diplomacy
  
 		visible = {
-			FROM = { has_country_flag = has_parliament }
+			FROM = { has_country_flag = has_a_legislature }
 		}
 	}
 	pie_chart_sg = {
@@ -40,7 +40,7 @@ scripted_gui = {
 		parent_window_token = selected_country_view_diplomacy
 
 		visible = {
-			FROM = { has_country_flag = has_parliament }
+			FROM = { has_country_flag = has_a_legislature }
 		}
 
 		ai_enabled = {

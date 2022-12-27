@@ -514,7 +514,7 @@ update_coalition = {
 	}
 	if = {
 		limit = {
-			NOT = { has_country_flag = has_parliament }
+			NOT = { has_country_flag = has_a_legislature }
 		}
 		break_coalition = yes
 	}

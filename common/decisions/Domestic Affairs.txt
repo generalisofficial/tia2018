@@ -79,7 +79,7 @@ domestic_affairs = {
 		
 		visible = {
 			NOT = { 
-				has_country_flag = has_parliament 
+				has_country_flag = has_a_legislature 
 				has_idea = violent_non_state_actor 
 			}
 		}
@@ -89,7 +89,7 @@ domestic_affairs = {
 		cost = 50
 		
 		complete_effect = {
-			set_country_flag = has_parliament
+			set_country_flag = has_a_legislature
 			one_party_parliament = yes
 			quickset_coalition = yes
 		}
@@ -115,7 +115,7 @@ domestic_affairs = {
 		}
 
 		available = {
-			has_country_flag = has_parliament
+			has_country_flag = has_a_legislature
 			has_war = no
 		}
 		
@@ -264,7 +264,7 @@ domestic_affairs = {
 	abolish_democracy = {
 		
 		visible = {
-			has_country_flag = has_parliament
+			has_country_flag = has_a_legislature
 			is_democracy = yes
 			NOT = {
 				has_idea = violent_non_state_actor
@@ -522,7 +522,7 @@ domestic_affairs = {
 		
 		visible = {
 			NOT = { has_country_flag = forming_government }
-			has_country_flag = has_parliament
+			has_country_flag = has_a_legislature
 			OR = {
 				has_idea = parliamentary_system
 				has_idea = demarchic_republic
@@ -551,7 +551,7 @@ domestic_affairs = {
 	dissolve_parliament = {
 
 		visible = {
-			has_country_flag = has_parliament
+			has_country_flag = has_a_legislature
 			has_idea = presidential_republic
 			has_elections = yes
 			NOT = { original_tag = USA }

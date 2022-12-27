@@ -61,7 +61,11 @@ international_organizations = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_government = fascist
+				OR = {
+					has_government = fascist
+					original_tag = VAT
+					original_tag = ATH
+				}
 			}
 		}
 	}
