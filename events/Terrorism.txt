@@ -1,29 +1,5 @@
 ﻿add_namespace = terrorism
 
-news_event = { #2018 Strasbourg attack
-	id = terrorism.1
-	title = terrorism.1.t
-	desc = terrorism.1.d
-	picture = GFX_news_event_strasbourg
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = terrorism.1.o1
-		trigger = { 
-			NOT = { original_tag = ISS }
-		}
-	}
-	
-	option = {
-		name = terrorism.1.o2
-		trigger = { 
-			original_tag = ISS
-		}
-	}
-}
-
 news_event = { #Christchurch mosque shootings
 	id = terrorism.2
 	title = terrorism.2.t

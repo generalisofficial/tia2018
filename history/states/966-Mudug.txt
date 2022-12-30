@@ -5,19 +5,35 @@ state={
 
 	history={
 		owner = SOM
+		HSM = {
+			set_province_controller = 13473
+			set_province_controller = 15387
+			set_province_controller = 12840
+			set_province_controller = 5065
+			set_province_controller = 12991
+
+		}
+		victory_points = {
+			1964 3
+		}
+		victory_points = {
+			12840 1
+		}
 		buildings = {
 			infrastructure = 1
 
 		}
 		add_core_of = SOM
 		add_core_of = HSM
+		add_claim_by = ISS
 
 	}
 
 	provinces={
-		1964 10818 12840 13472 13473 
+		1964 5065 10818 12840 12991 13472 13473 15387 15388 
 	}
 	manpower=900000
 	buildings_max_level_factor=1.000
 	state_category=state_default
+	local_supplies=0.000
 }

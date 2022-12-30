@@ -94,7 +94,6 @@ if = {
 set_country_flag = former_british_colony
 
 add_ideas = {
-	#population_growth_rapid
 	non_member_state
 	lgbt_minority_womens_rights_conservative
 	presidential_republic
@@ -107,37 +106,37 @@ add_ideas = {
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 26.8 }
-set_variable = { social_liberal_seats = 34.1 }
-set_variable = { classical_liberal_seats = 39.1 }
+set_variable = { social_democrat_seats = 4.17 }
+set_variable = { social_liberal_seats = 55.1 }
+set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
+set_variable = { islamist_seats = 40.73 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_classical_liberal
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
-	ruling_party = classical_liberal
+	ruling_party = social_liberal
 	last_election = "2017.11.13"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    classical_liberal = 39.1
-    social_liberal = 34.1
-	social_democrat = 26.8
+	islamist = 37.8
+	social_liberal = 36.6
+	social_democrat = 25.6
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = SML_muse_bihi_abdi
 recruit_character = SML_abdirahman_mohamed_abdullahi
+recruit_character = SML_muse_bihi_abdi
 recruit_character = SML_faysal_ali_warabe

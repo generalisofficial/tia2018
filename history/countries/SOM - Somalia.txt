@@ -109,7 +109,7 @@ add_ideas = {
 	pro_life
 	no_minimum_wage
 	very_low_taxes
-	three_year_term
+	five_year_term
 }
 
 add_opinion_modifier = {
@@ -121,15 +121,15 @@ add_opinion_modifier = {
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 14.6 }
+set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 55.9 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 29.5 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
+set_variable = { islamist_seats = 44.1 }
 
 # Coalition
 set_country_flag = has_a_legislature
@@ -138,20 +138,20 @@ add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {
 	ruling_party = social_liberal
-	last_election = "2017.2.8"
-	election_frequency = 36
+	last_election = "2017.5.15"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 55.9
-	conservative = 29.5
-	social_democrat = 14.6
+	social_liberal = 40.45
+	islamist = 34.75
+	conservative = 24.8
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = SOM_mohamed_abdullahi_mohamed
 recruit_character = SOM_hassan_sheikh_mohamud
-recruit_character = SOM_sharif_sheikh_ahmed
+recruit_character = SOM_said_abdullahi_deni
+recruit_character = SOM_mohamed_abdullahi_mohamed

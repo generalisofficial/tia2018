@@ -4,25 +4,35 @@ state={
 	name="STATE_928"
 
 	history={
-		owner = SOM
-		add_core_of = SOM
-		add_core_of = HSM
-		#HSM = {
-			#set_province_controller = 13370
-			#set_province_controller = 12316
-
-		#}
+		owner = HSM
+		victory_points = {
+			12941 5
+		}
+		victory_points = {
+			15377 3
+		}
+		victory_points = {
+			15376 1
+		}
 		buildings = {
 			infrastructure = 2
+			12941 = {
+				naval_base = 2
+
+			}
 
 		}
+		add_core_of = SOM
+		add_core_of = HSM
+		add_claim_by = ISS
 
 	}
 
 	provinces={
-		11014 12316 12941 13368 13370 
+		11014 12316 12941 13368 13370 15376 15377 15378 
 	}
 	manpower=953045
 	buildings_max_level_factor=1.000
 	state_category=state_default
+	local_supplies=0.000
 }

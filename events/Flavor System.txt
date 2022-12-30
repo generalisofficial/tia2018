@@ -31,21 +31,6 @@ country_event = {
 }
 
 country_event = {
-	id = system_events.3
-	hidden=yes
-	fire_only_once = yes
-
-	trigger = {
-		date > 2018.12.13
-		date < 2019.1.1
-	}
-	
-	immediate = {
-		news_event = terrorism.1
-	}
-}
-
-country_event = {
 	id = system_events.4
 	hidden=yes
 	fire_only_once = yes

@@ -78,3 +78,41 @@ news_event = {
 		name = turkey.5.o1
 	}
 }
+
+country_event = { #36th CHP Ordinary Convention
+	id = turkey.6
+	title = turkey.6.t
+	desc = turkey.6.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = TUR
+		date > 2018.2.3
+		date < 2019.1.1
+		has_country_leader = {
+			name = "Kemal Kiliçdaroğlu"
+			ruling_only = no
+		}
+	}
+	
+	option = {
+		name = turkey.6.o1
+		ai_chance = {
+			factor = 64
+		}
+	}
+
+	option = {
+		name = turkey.6.o2
+		ai_chance = {
+			factor = 36
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+	        name = "Muharrem Ince"
+	        picture = GFX_Portrait_TUR_Muharrem_Ince
+	        ideology = kemalist
+        }
+	}
+}

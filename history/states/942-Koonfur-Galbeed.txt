@@ -4,12 +4,25 @@ state={
 	name="STATE_942"
 
 	history={
-		owner = SOM
-		#HSM = {
-			#set_province_controller = 13471
-			#set_province_controller = 8164
+		owner = HSM
+		SOM = {
+			set_province_controller = 15381
+			set_province_controller = 15379
+			set_province_controller = 13471
 
-		#}
+		}
+		victory_points = {
+			15382 3
+		}
+		victory_points = {
+			15379 2
+		}
+		victory_points = {
+			13471 1
+		}
+		victory_points = {
+			2063 1
+		}
 		buildings = {
 			infrastructure = 2
 			military_airport = 1
@@ -17,13 +30,15 @@ state={
 		}
 		add_core_of = SOM
 		add_core_of = HSM
+		add_claim_by = ISS
 
 	}
 
 	provinces={
-		2063 8164 13279 13330 13471 
+		2063 8164 13330 13471 15379 15380 15381 15382 15384 
 	}
 	manpower=1900000
 	buildings_max_level_factor=1.000
 	state_category=state_default
+	local_supplies=0.000
 }

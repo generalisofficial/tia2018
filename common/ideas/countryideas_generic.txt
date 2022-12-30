@@ -33,24 +33,6 @@ ideas = {
 			}
 		}	
 		
-		salafist_jihadist_group = {
-			picture = salafist_jihadist_group
-			
-			modifier = {
-				conscription = 0.25
-				defence = 0.1
-				army_org_factor = 0.35
-				army_morale_factor = 0.5
-			}
-
-			cancel = {
-				OR = {
-					NOT = { has_government = islamist }
-					NOT = { has_idea = violent_non_state_actor }
-				}
-			}
-		}
-		
 		islamic_sectarian_violence = {
 			picture = religious_sectarian_conflict
 			

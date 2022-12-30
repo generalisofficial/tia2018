@@ -68,13 +68,27 @@ ideas = {
 				NOT = { is_subject_of = PRC }
 			}
 		}
-		# ISS - Islamic State
+		# ISS - Islamic State / Al-Qaeda
 		idea_the_islamic_state = {
 			picture = islamic_state
 			
 			modifier = {
-			    political_power_gain = 0.25
-				out_of_supply_factor = -0.95
+				political_power_gain = 0.25
+				conscription = 0.25
+				defence = 0.1
+				army_org_factor = 0.35
+				army_morale_factor = 0.5
+			}
+		}
+		idea_al_qaeda = {
+			picture = al_qaeda
+			
+			modifier = {
+				political_power_gain = 0.15
+				conscription = 0.1
+				defence = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.25
 			}
 		}
 		# ISR - Israel

@@ -4,23 +4,28 @@ state={
 	name="STATE_934"
 
 	history={
-	    owner = SOM
-		#owner = HSM
-		#SOM = {
-			#set_province_controller = 2020
-			
-		#}
+		owner = SOM
+		victory_points = {
+			15386 3
+		}
+		victory_points = {
+			13279 2
+		}
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = SOM
 		add_core_of = HSM
+		add_claim_by = ISS
+
 	}
 
 	provinces={
-		2020 5065 12991 13314 
+		2020 13279 13314 15383 15385 15386 
 	}
 	manpower=1947100
 	buildings_max_level_factor=1.000
 	state_category=state_default
+	local_supplies=0.000
 }
