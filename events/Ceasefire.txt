@@ -1,0 +1,171 @@
+﻿add_namespace = ceasefire
+
+country_event = { #(FROM) offers ceasefire
+	id = ceasefire.1
+	title = ceasefire.1.t
+	desc = ceasefire.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ceasefire.1.o1
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.5
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.3
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.2
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.1
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.1
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.2
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.3
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.4
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.5
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.6
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.7
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.8
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.9
+			}
+		}
+		FROM = { country_event = ceasefire.2 }
+	}
+	
+	option = {
+		name = ceasefire.1.o2
+		ai_chance = {
+			base = 1
+		}
+		FROM = { country_event = ceasefire.3 }
+	}
+}
+
+country_event = { #(FROM) accepts ceasefire
+	id = ceasefire.2
+	title = ceasefire.2.t
+	desc = ceasefire.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ceasefire.2.o1
+		FROM = { save_event_target_as = ceasefire_receiver } 
+		news_event = ceasefire.4
+		add_political_power = 150
+		every_subject_country = {
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					OR = {
+						is_controlled_by = ROOT
+						is_controlled_by = PREV
+					}
+					OR = {
+						is_core_of = PREV
+						is_claimed_by = PREV
+					}
+				}
+				transfer_state_to = PREV
+			}
+		}
+		FROM = { 
+			every_subject_country = {
+				every_state = {
+					limit = {
+						is_owned_by = ROOT
+						OR = {
+							is_controlled_by = FROM
+							is_controlled_by = PREV
+						}
+						OR = {
+							is_core_of = PREV
+							is_claimed_by = PREV
+						}
+					}
+					transfer_state_to = PREV
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FROM
+				is_controlled_by = ROOT
+			}
+			transfer_state_to = ROOT
+		}
+		every_state = {
+			limit = {
+				is_owned_by = ROOT
+				is_controlled_by = FROM
+			}
+			transfer_state_to = FROM
+		}
+		white_peace = FROM
+	}
+}
+
+country_event = { #(FROM) rejects ceasefire
+	id = ceasefire.3
+	title = ceasefire.3.t
+	desc = ceasefire.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ceasefire.3.o1
+	}
+}
+
+news_event = { #(FROM and ceasefire_receiver) sign ceasefire
+	id = ceasefire.4
+	title = ceasefire.4.t
+	desc = ceasefire.4.d
+	picture = GFX_news_event_signature
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = ceasefire.4.o1
+	}
+}

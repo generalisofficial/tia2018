@@ -1,0 +1,33 @@
+﻿add_namespace = afghanistan
+
+#Afghan government victory
+news_event = {
+	id = afghanistan.1
+	title = afghanistan.1.t
+	desc = afghanistan.1.d
+	picture = GFX_news_event_afghan_army
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = afghanistan.1.o1
+	}
+}
+
+#Taliban victory
+news_event = {
+	id = afghanistan.2
+	title = afghanistan.2.t
+	desc = afghanistan.2.d
+	picture = GFX_news_event_taliban
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	
+	option = {
+		name = afghanistan.2.o1
+	}
+}

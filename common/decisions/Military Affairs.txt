@@ -1,5 +1,99 @@
 military_affairs = {
 
+	offer_ceasefire = {
+		icon = politics
+		target_array = enemies
+		target_trigger = {
+			NOT = {
+				OR = {
+					original_tag = ISS
+					original_tag = HSM
+				}
+			}
+		}
+
+		allowed = {
+			NOT = {
+				OR = {
+					original_tag = ISS
+					original_tag = HSM
+				}
+			}
+		}
+
+		available = {
+			NOT = { 
+				FROM = { has_idea = violent_non_state_actor }
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			FROM = { country_event = ceasefire.1 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.5
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.3
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.2
+			}
+			modifier = {
+				add = 1
+				has_war_support < 0.1
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.1
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.2
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.3
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.4
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.5
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.6
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.7
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.8
+			}
+			modifier = {
+				add = 1
+				surrender_progress > 0.9
+			}
+		}
+	}
+
 	pro_military_ad_campaign = {
 		icon = megaphone
 

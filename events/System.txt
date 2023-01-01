@@ -201,6 +201,72 @@ country_event = {
 			add_ideas = one_party_state
 			set_cosmetic_tag = FSA_GOV 
 		}
+		every_state = {
+		    limit = {
+		        OR = {
+				    is_core_of = SYR
+				    is_claimed_by = SYR
+				}
+			}
+			remove_core_of = SYR
+			remove_claim_by = SYR
+		}
+	}
+}
+
+country_event = {
+	id = system.11
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = war_in_afghanistan_over }
+		country_exists = AFG
+		NOT = { country_exists = TAL }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = afghanistan.1
+		set_global_flag = war_in_afghanistan_over
+		every_state = {
+		    limit = {
+		        OR = {
+				    is_core_of = TAL
+				    is_claimed_by = TAL
+				}
+			}
+			remove_core_of = TAL
+			remove_claim_by = TAL
+		}
+	}
+}
+
+country_event = {
+	id = system.12
+	hidden=yes
+
+	trigger = {
+		NOT = { has_global_flag = war_in_afghanistan_over }
+		country_exists = TAL
+		NOT = { country_exists = AFG }
+	}
+
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = afghanistan.2
+		set_global_flag = war_in_afghanistan_over
+		every_state = {
+		    limit = {
+		        OR = {
+				    is_core_of = AFG
+				    is_claimed_by = AFG
+				}
+			}
+			remove_core_of = AFG
+			remove_claim_by = AFG
+		}
 	}
 }
 

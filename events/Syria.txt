@@ -13,16 +13,6 @@ news_event = {
 	
 	option = {
 		name = syria.1.o1
-		every_state = {
-		    limit = {
-		        OR = {
-					is_core_of = FSA
-					is_claimed_by = FSA
-				}
-			}
-			remove_core_of = FSA
-		    remove_claim_by = FSA
-		}
 	}
 }
 
@@ -39,16 +29,6 @@ news_event = {
 	
 	option = {
 		name = syria.2.o1
-		every_state = {
-		    limit = {
-		        OR = {
-				    is_core_of = SYR
-				    is_claimed_by = SYR
-				}
-			}
-			remove_core_of = SYR
-			remove_claim_by = SYR
-		}
 	}
 }
 

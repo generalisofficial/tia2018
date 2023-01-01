@@ -1,93 +1,99 @@
 spriteTypes = {
-	
-	### GENERIC EQUIPMENT ARCHETYPES ###
+	# Backgrounds
 
-	SpriteType = {
+	spriteType = {
+		name = "GFX_civilian_techtree_bg"
+		texturefile = "gfx/interface/techtree/civilian_techtree_bg.dds"
+	}	
+
+	# Tech stuff (not organized)
+
+	spriteType = {
 		name = "GFX_archetype_heavy_fighter_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_heavy_fighter_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_CAS_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_CAS_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_fighter_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_fighter_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_strat_bomber_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_strat_bomber_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_convoy_medium"
 		texturefile = "gfx/interface/archetypes/archetype_convoy.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_motorized_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_motorized_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_support_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_support_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_modern_tank_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_modern_tank_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_super_heavy_tank_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_super_heavy_tank_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_heavy_tank_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_heavy_tank_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_medium_tank_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_medium_tank_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_light_tank_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_light_tank_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_motorized_rocket_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_motorized_rocket_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_rocket_artillery_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_rocket_artillery_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_artillery_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_artillery_equipment.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_anti_tank_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_anti_tank_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_anti_air_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_anti_air_equipment.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_archetype_infantry_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_infantry_equipment.dds"
 	}	
@@ -95,32 +101,32 @@ spriteTypes = {
 	
 	### GENERIC EQUIPMENT TECH ###
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_rocket_interceptor_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/rocket_interceptor_3.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_rocket_interceptor_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/rocket_interceptor_2.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_rocket_interceptor_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/rocket_interceptor_1.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guided_missile_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/ICBM3.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guided_missile_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/ICBM2.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guided_missile_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/ICBM1.dds"
 	}
@@ -159,331 +165,331 @@ spriteTypes = {
 	
 	### LAND DOCTRINES ###
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_advanced_firebases_medium"
 		texturefile = "gfx/interface/technologies/advanced_firebases.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_air_land_battle_medium"
 		texturefile = "gfx/interface/technologies/air_land_battle.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_armored_spearhead_medium"
 		texturefile = "gfx/interface/technologies/armored_spearhead.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_attritional_containment_medium"
 		texturefile = "gfx/interface/technologies/attritional_containment.dds"
 		alwaystransparent = yes
 	}	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_backhand_blow_medium"
 		texturefile = "gfx/interface/technologies/backhand_blow.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_blitzkrieg_medium"
 		texturefile = "gfx/interface/technologies/blitzkrieg.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_centralized_fire_control_medium"
 		texturefile = "gfx/interface/technologies/centralized_fire_control.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_combined_arms_medium"
 		texturefile = "gfx/interface/technologies/combined_arms.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_concentrated_fire_plans_medium"
 		texturefile = "gfx/interface/technologies/concentrated_fire_plans.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_sup_delay_medium"
 		texturefile = "gfx/interface/technologies/delay.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_delay_medium"
 		texturefile = "gfx/interface/technologies/delay.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dispersed_support_medium"
 		texturefile = "gfx/interface/technologies/dispersed_support.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_elastic_defence_medium"
 		texturefile = "gfx/interface/technologies/elastic_defence.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_firebrigades_medium"
 		texturefile = "gfx/interface/technologies/firebrigades.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_forward_observers_medium"
 		texturefile = "gfx/interface/technologies/forward_observers.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_intergrated_support_medium"
 		texturefile = "gfx/interface/technologies/intergrated_support.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_kampfgruppe_medium"
 		texturefile = "gfx/interface/technologies/kampfgruppe.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mass_motorization_medium"
 		texturefile = "gfx/interface/technologies/mass_motorization.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mechanised_offensive_medium"
 		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_sup_mechanized_offensive_medium"
 		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mobile_defence_medium"
 		texturefile = "gfx/interface/technologies/mobile_defence.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mobile_infantry_medium"
 		texturefile = "gfx/interface/technologies/mobile_infantry.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mobile_warfare_medium"
 		texturefile = "gfx/interface/technologies/mobile_warfare.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_modern_blitzkrieg_medium"
 		texturefile = "gfx/interface/technologies/modern_blitzkrieg.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_nd_conscription_medium"
 		texturefile = "gfx/interface/technologies/nd_conscription.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_overwhelming_firepower_medium"
 		texturefile = "gfx/interface/technologies/overwhelming_firepower.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_regimental_combat_teams_medium"
 		texturefile = "gfx/interface/technologies/regimental_combat_teams.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_schwerpunk_medium"
 		texturefile = "gfx/interface/technologies/schwerpunk.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_shock_and_awe_medium"
 		texturefile = "gfx/interface/technologies/shock_and_awe.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_superior_firepower_medium"
 		texturefile = "gfx/interface/technologies/superior_firepower.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_tactical_control_medium"
 		texturefile = "gfx/interface/technologies/tactical_control.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_volkssturm_medium"
 		texturefile = "gfx/interface/technologies/volkssturm.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_werwolf_guerillas_medium"
 		texturefile = "gfx/interface/technologies/werwolf_guerillas.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_armored_operations_medium"
 		texturefile = "gfx/interface/technologies/armored_operations.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_assault_concentration_medium"
 		texturefile = "gfx/interface/technologies/assault_concentration.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_infantry_offensive_medium"
 		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_deep_operations_medium"
 		texturefile = "gfx/interface/technologies/deep_operations.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_defence_in_depth_medium"
 		texturefile = "gfx/interface/technologies/defence_in_depth.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_grand_assault_medium"
 		texturefile = "gfx/interface/technologies/grand_assault.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_grand_battle_plan_medium"
 		texturefile = "gfx/interface/technologies/grand_battle_plan.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_grand_mechanized_offensive_medium"
 		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_human_infantry_offensive_medium"
 		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_human_wave_offensive_medium"
 		texturefile = "gfx/interface/technologies/human_wave_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_large_front_offensive_medium"
 		texturefile = "gfx/interface/technologies/large_front_offensive.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_large_front_operations_medium"
 		texturefile = "gfx/interface/technologies/large_front_operations.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mass_assault_medium"
 		texturefile = "gfx/interface/technologies/mass_assault.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_operational_concentration_medium"
 		texturefile = "gfx/interface/technologies/operational_concentration.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_pocket_defence_medium"
 		texturefile = "gfx/interface/technologies/pocket_defence.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_prepared_defense_medium"
 		texturefile = "gfx/interface/technologies/prepared_defense.dds"
 		alwaystransparent = yes
 	}
-	SpriteType = {
+	spriteType = {
 		name = "GFX_trench_warfare_medium"
 		texturefile = "gfx/interface/technologies/trench_warfare.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_branch_interoperation_medium"
 		texturefile = "gfx/interface/technologies/branch_interoperation.dds"
 		alwaystransparent = yes
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_assault_breakthrough_medium"
 		texturefile = "gfx/interface/technologies/assault_breakthrough.dds"
 		alwaystransparent = yes
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_central_planning_medium"
 		texturefile = "gfx/interface/technologies/central_planning.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_c3i_theory_medium"
 		texturefile = "gfx/interface/technologies/c3i_theory.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_infiltration_assault_medium"
 		texturefile = "gfx/interface/technologies/infiltration_assault.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_night_assault_tactics_medium"
 		texturefile = "gfx/interface/technologies/night_assault_tactics.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_infiltration_in_depth_medium"
 		texturefile = "gfx/interface/technologies/infiltration_in_depth.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_vast_offensives_medium"
 		texturefile = "gfx/interface/technologies/vast_offensives.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_breakthrough_priority_medium"
 		texturefile = "gfx/interface/technologies/breakthrough_priority.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mechanized_wave_medium"
 		texturefile = "gfx/interface/technologies/mechanized_wave.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_continuous_offensive_medium"
 		texturefile = "gfx/interface/technologies/continuous_offensive.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_peoples_army_medium"
 		texturefile = "gfx/interface/technologies/peoples_army.dds"
 		alwaystransparent = yes
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_guerilla_warfare_medium"
 		texturefile = "gfx/interface/technologies/guerilla_warfare.dds"
 		alwaystransparent = yes
@@ -492,227 +498,227 @@ spriteTypes = {
 	
 	### NAVAL DOCTRINES ###
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_escort_patrols_medium"
 		texturefile = "gfx/interface/technologies/escort_patrols.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_carrier_battlegroups_medium"
 		texturefile = "gfx/interface/technologies/carrier_battlegroups.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_massed_strikes_medium"
 		texturefile = "gfx/interface/technologies/massed_strikes.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_carrier_task_forces_medium"
 		texturefile = "gfx/interface/technologies/carrier_task_forces.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_carrier_primacy_medium"
 		texturefile = "gfx/interface/technologies/carrier_primacy.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_base_strike_medium"
 		texturefile = "gfx/interface/technologies/base_strike.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_naval_air_operations_medium"
 		texturefile = "gfx/interface/technologies/naval_air_operations.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_carrier_operations_medium"
 		texturefile = "gfx/interface/technologies/carrier_operations.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_capital_ship_raiders_medium"
 		texturefile = "gfx/interface/technologies/capital_ship_raiders.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_raider_patrols_medium"
 		texturefile = "gfx/interface/technologies/raider_patrols.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_combined_operations_raiding_medium"
 		texturefile = "gfx/interface/technologies/combined_operations_raiding.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_advanced_submarine_warfare_medium"
 		texturefile = "gfx/interface/technologies/advanced_submarine_warfare.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_wolfpacks_medium"
 		texturefile = "gfx/interface/technologies/wolfpacks.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_unrestricted_submarine_warfare_medium"
 		texturefile = "gfx/interface/technologies/unrestricted_submarine_warfare.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_trade_interdiction_medium"
 		texturefile = "gfx/interface/technologies/trade_interdiction.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_submarine_offensive_medium"
 		texturefile = "gfx/interface/technologies/submarine_offensive.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_submarine_offensive_bs_medium"
 		texturefile = "gfx/interface/technologies/submarine_offensive.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_interdiction_ti_medium"
 		texturefile = "gfx/interface/technologies/convoy_interdiction.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_interdiction_bs_medium"
 		texturefile = "gfx/interface/technologies/convoy_interdiction.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_interdiction_medium"
 		texturefile = "gfx/interface/technologies/convoy_interdiction.dds"
 	}		
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_undersea_blockade_bs_medium"
 		texturefile = "gfx/interface/technologies/undersea_blockade.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_undersea_blockade_medium"
 		texturefile = "gfx/interface/technologies/undersea_blockade.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_submarine_operations_bs_medium"
 		texturefile = "gfx/interface/technologies/submarine_operations.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_submarine_operations_medium"
 		texturefile = "gfx/interface/technologies/submarine_operations.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_integrated_convoy_defence_bs_medium"
 		texturefile = "gfx/interface/technologies/integrated_convoy_defence.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_integrated_convoy_defence_medium"
 		texturefile = "gfx/interface/technologies/integrated_convoy_defence.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_escort_carriers_medium"
 		texturefile = "gfx/interface/technologies/escort_carriers.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_escorts_bs_medium"
 		texturefile = "gfx/interface/technologies/convoy_escorts.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_escorts_medium"
 		texturefile = "gfx/interface/technologies/convoy_escorts.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_sailing_bs_medium"
 		texturefile = "gfx/interface/technologies/convoy_sailing.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_sailing_ti_medium"
 		texturefile = "gfx/interface/technologies/convoy_sailing.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_convoy_sailing_medium"
 		texturefile = "gfx/interface/technologies/convoy_sailing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_grand_battlefleet_medium"
 		texturefile = "gfx/interface/technologies/grand_battlefleet.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_floating_airfield_bs_medium"
 		texturefile = "gfx/interface/technologies/floating_airfield.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_floating_airfield_ti_medium"
 		texturefile = "gfx/interface/technologies/floating_airfield.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_floating_airfield_medium"
 		texturefile = "gfx/interface/technologies/floating_airfield.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_floating_fortress_bs_medium"
 		texturefile = "gfx/interface/technologies/floating_fortress.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_floating_fortress_ti_medium"
 		texturefile = "gfx/interface/technologies/floating_fortress.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_floating_fortress_medium"
 		texturefile = "gfx/interface/technologies/floating_fortress.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_hunter_killer_groups_medium"
 		texturefile = "gfx/interface/technologies/hunter_killer_groups.dds"
 	}		
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_subsidiary_carrier_role_ti_medium"
 		texturefile = "gfx/interface/technologies/subsidiary_carrier_role.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_subsidiary_carrier_role_medium"
 		texturefile = "gfx/interface/technologies/subsidiary_carrier_role.dds"
 	}	
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_battlefleet_concentration_ti_medium"
 		texturefile = "gfx/interface/technologies/battlefleet_concentration.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_battlefleet_concentration_medium"
 		texturefile = "gfx/interface/technologies/battlefleet_concentration.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_fleet_in_being_medium"
 		texturefile = "gfx/interface/technologies/fleet_in_being.dds"
 	}	
@@ -720,249 +726,249 @@ spriteTypes = {
 	
 	### AIR DOCTRINES ###
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_naval_strike_torpedo_tactics_medium"
 		texturefile = "gfx/interface/technologies/naval_strike_torpedo_tactics.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_naval_strike_torpedo_tactics_oi_medium"
 		texturefile = "gfx/interface/technologies/naval_strike_torpedo_tactics.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_naval_strike_tactics_medium"
 		texturefile = "gfx/interface/technologies/naval_strike_tactics.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_cas_veteran_initiative_medium"
 		texturefile = "gfx/interface/technologies/cas_veteran_initiative.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_cas_ace_initiative_medium"
 		texturefile = "gfx/interface/technologies/cas_ace_initiative.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_mass_destruction_medium"
 		texturefile = "gfx/interface/technologies/mass_destruction.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_flying_fortress_medium"
 		texturefile = "gfx/interface/technologies/flying_fortress.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_escort_relay_system_medium"
 		texturefile = "gfx/interface/technologies/escort_relay_system.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_day_bombing_medium"
 		texturefile = "gfx/interface/technologies/day_bombing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_pathfinder_groups_medium"
 		texturefile = "gfx/interface/technologies/pathfinder_groups.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_infiltration_bombing_medium"
 		texturefile = "gfx/interface/technologies/infiltration_bombing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dead_reckoning_bombing_medium"
 		texturefile = "gfx/interface/technologies/dead_reckoning_bombing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_night_bombing_medium"
 		texturefile = "gfx/interface/technologies/night_bombing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_massed_bomber_formations_medium"
 		texturefile = "gfx/interface/technologies/massed_bomber_formations.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_high_level_bombing_medium"
 		texturefile = "gfx/interface/technologies/high_level_bombing.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_strategic_destruction_medium"
 		texturefile = "gfx/interface/technologies/strategic_destruction.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_ground_support_integration_medium"
 		texturefile = "gfx/interface/technologies/ground_support_integration.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_keypoint_bombing_medium"
 		texturefile = "gfx/interface/technologies/keypoint_bombing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_carousel_bombing_medium"
 		texturefile = "gfx/interface/technologies/carousel_bombing.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_battlefield_support_medium"
 		texturefile = "gfx/interface/technologies/battlefield_support.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_logistical_bombing_medium"
 		texturefile = "gfx/interface/technologies/logistical_bombing.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_infrastructure_destruction_medium"
 		texturefile = "gfx/interface/technologies/infrastructure_destruction.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_operational_destruction_medium"
 		texturefile = "gfx/interface/technologies/operational_destruction.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_combat_unit_destruction_medium"
 		texturefile = "gfx/interface/technologies/combat_unit_destruction.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_low_echelon_support_medium"
 		texturefile = "gfx/interface/technologies/low_echelon_support.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_hunt_and_destroy_medium"
 		texturefile = "gfx/interface/technologies/hunt_and_destroy.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bomber_ace_initiative_medium"
 		texturefile = "gfx/interface/technologies/bomber_ace_initiative.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_bomber_veteran_initiative_medium"
 		texturefile = "gfx/interface/technologies/bomber_veteran_initiative.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_direct_ground_support_medium"
 		texturefile = "gfx/interface/technologies/direct_ground_support.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dive_bombing_medium"
 		texturefile = "gfx/interface/technologies/dive_bombing.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_battlefield_destruction_medium"
 		texturefile = "gfx/interface/technologies/battlefield_destruction.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_home_defence_medium"
 		texturefile = "gfx/interface/technologies/home_defence.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_air_skirmish_medium"
 		texturefile = "gfx/interface/technologies/air_skirmish.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_formation_fighting_medium"
 		texturefile = "gfx/interface/technologies/formation_fighting.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_fighter_veteran_initiative_medium"
 		texturefile = "gfx/interface/technologies/fighter_veteran_initiative.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_forward_interception_medium"
 		texturefile = "gfx/interface/technologies/forward_interception.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dispersed_fighting_medium"
 		texturefile = "gfx/interface/technologies/dispersed_fighting.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_air_defence_medium"
 		texturefile = "gfx/interface/technologies/air_defence.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_force_rotation_medium"
 		texturefile = "gfx/interface/technologies/force_rotation.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_fighter_sweeps_medium"
 		texturefile = "gfx/interface/technologies/fighter_sweeps.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_offensive_formations_medium"
 		texturefile = "gfx/interface/technologies/offensive_formations.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_multialtitude_flying_medium"
 		texturefile = "gfx/interface/technologies/multialtitude_flying.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_fighter_ace_initiative_medium"
 		texturefile = "gfx/interface/technologies/fighter_ace_initiative.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_dogfighting_experience_medium"
 		texturefile = "gfx/interface/technologies/dogfighting_experience.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_fighter_baiting_medium"
 		texturefile = "gfx/interface/technologies/fighter_baiting.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_air_offense_medium"
 		texturefile = "gfx/interface/technologies/air_offense.dds"
 	}		
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_formation_flying_medium"
 		texturefile = "gfx/interface/technologies/formation_flying.dds"
 	}	
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_air_superiority_medium"
 		texturefile = "gfx/interface/technologies/air_superiority.dds"
 	}
 	
 	### SEIZED EQUIPMENT ###
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_seized_equipment_item"
 		texturefile = "gfx/interface/seized_equipment_item.dds"
 	}
