@@ -1,0 +1,35 @@
+﻿add_namespace = portugal
+
+country_event = { #2018 PSD leadership election
+	id = portugal.1
+	title = portugal.1.t
+	desc = portugal.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PRT
+		date > 2018.1.13
+		date < 2019.1.1
+	}
+	
+	option = {
+		name = portugal.1.o1
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Rui Rio"
+	        picture = GFX_Portrait_POR_Rui_Rio
+	        ideology = liberal_conservative
+        }
+	}
+
+	option = {
+		name = portugal.1.o2
+		retire_ideology_leader = conservative
+		create_country_leader = {
+	        name = "Pedro Santana Lopes"
+	        picture = GFX_Portrait_POR_Pedro_Santana_Lopes
+	        ideology = liberal_conservative
+        }
+	}
+}
