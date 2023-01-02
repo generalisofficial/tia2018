@@ -889,7 +889,7 @@ foreign_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = monarchist
-					threat > 0.75
+					threat > 0.8
 				}
 			}
 		}
@@ -968,7 +968,7 @@ foreign_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = monarchist
-					threat > 0.75
+					threat > 0.8
 				}
 			}
 		}
@@ -1124,7 +1124,7 @@ foreign_affairs = {
 					has_government = monarchist
 					has_government = socialist
 					has_government = communist
-					threat > 0.75
+					threat > 0.8
 				}
 			}
 		}
@@ -1175,7 +1175,7 @@ foreign_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = monarchist
-					threat > 0.75
+					threat > 0.8
 				}
 			}
 		}
@@ -1297,7 +1297,7 @@ foreign_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = monarchist
-					threat > 0.75
+					threat > 0.8
 				}
 			}
 		}
@@ -1374,7 +1374,7 @@ foreign_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = monarchist
-					threat > 0.75
+					threat > 0.8
 				}
 			}
 		}
@@ -1445,6 +1445,51 @@ foreign_affairs = {
 				OR = {
 					has_government = fascist
 					has_government = monarchist
+				}
+			}
+		}
+	}
+
+	embrace_pan_mongolism = {
+	
+		allowed = {
+			original_tag = MNG
+		}
+		
+		available = {
+			is_subject = no
+		}
+		
+		complete_effect = {
+			add_state_claim = 1236
+			add_state_claim = 611
+			add_state_claim = 1235
+			add_state_claim = 1234
+			add_state_claim = 564
+			add_state_claim = 1324
+			add_state_claim = 1325
+			add_state_claim = 329
+			add_state_claim = 564
+			add_named_threat = { 
+				threat = 5
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = mongolia
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+					threat > 0.8
 				}
 			}
 		}
