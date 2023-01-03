@@ -1494,4 +1494,49 @@ foreign_affairs = {
 			}
 		}
 	}
+
+	establish_the_kherson_peoples_republic = {
+	
+		allowed = {
+			original_tag = RUS
+		}
+
+		visible = {
+			has_government = national_conservative
+		}
+		
+		available = {
+			owns_state = 196
+			controls_state = 196
+		}
+		
+		complete_effect = {
+			CPR = {
+				add_state_core = 196
+			}
+			release = CPR
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = CPR
+					autonomous_state = autonomy_puppet_state
+				}
+				else = {
+					puppet = CPR
+				}
+			}
+		}
+		
+		icon = novorossiya
+
+		fire_only_once = yes
+		
+		cost = 25
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

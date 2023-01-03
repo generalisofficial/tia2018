@@ -1,10 +1,4 @@
-﻿capital = 228
-
-oob = "LPR_2018"
-
-set_convoys = 10
-
-set_war_support = 1.0
+﻿capital = 196
 
 set_technology = {
 	## Infantry ##
@@ -87,7 +81,6 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_stagnation
 	isolationism
 	extensive_conscription
 	non_member_state
@@ -96,14 +89,14 @@ add_ideas = {
 }
 
 #People's Council
-set_variable = { communist_seats = 3 }
+set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 30 }
+set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 70 }
+set_variable = { national_conservative_seats = 100 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -116,18 +109,16 @@ add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative 
-	last_election = "2014.11.11"
+	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	national_conservative = 74
-    classical_liberal = 26
+    national_conservative = 100
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = LPR_leonid_pasechnik
-recruit_character = LPR_oleg_koval
+recruit_character = CPR_vladimir_saldo

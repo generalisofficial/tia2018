@@ -714,6 +714,7 @@ defined_text = {
 				original_tag = CHE
 				original_tag = MCO
 				original_tag = SVK
+				original_tag = ESH
 			}
 		}
 		localization_key = parliament_national_council
@@ -1145,9 +1146,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = ESH
+			OR = {
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = CPR
+			}
 		}
-		localization_key = parliament_sahrawi_national_council
+		localization_key = parliament_peoples_council
 	}
 	text = {
 		trigger = {
