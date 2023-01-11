@@ -132,13 +132,13 @@ diplomatic_relation = { country = CHL relation = non_aggression_pact }
 set_country_flag = catholic
 
 #Chamber of Deputies
-set_variable = { communist_seats = 1.16 }
-set_variable = { socialist_seats = 52.91 }
+set_variable = { communist_seats = 0.87 }
+set_variable = { socialist_seats = 46.3 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 3.91 }
+set_variable = { social_democrat_seats = 5.67 }
+set_variable = { social_liberal_seats = 17.46 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 42.02 }
+set_variable = { conservative_seats = 29.7 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -158,19 +158,25 @@ set_politics = {
 }
 
 set_popularities = {
-    socialist = 46.69
-    conservative = 45.13
-    social_liberal = 7.41
-    communist = 0.77
+    socialist = 43.31
+    conservative = 32.01
+	social_liberal = 16.19
+    social_democrat = 7.69
+    communist = 0.8
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = ARG_alberto_fernández
+recruit_character = ARG_alejandro_biondini
+recruit_character = ARG_gustavo_breide_obeid
+recruit_character = ARG_juan_jose_gomez_centurion
 recruit_character = ARG_mauricio_macri
-recruit_character = ARG_roberto_lavagna
-recruit_character = ARG_josé_montes
+recruit_character = ARG_javier_milei
+recruit_character = ARG_gerardo_morales
+recruit_character = ARG_antonio_bonfatti
+recruit_character = ARG_alberto_fernandez
+recruit_character = ARG_nicolas_del_cano
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
