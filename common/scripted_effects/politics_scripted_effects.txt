@@ -363,6 +363,21 @@ post_election_effects = {
 	}
 	if  = {
 		limit = {
+			original_tag = PRY
+			has_country_leader = {
+				name = "Horacio Cartes"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = national_conservative
+		create_country_leader = {
+			name = "Mario Abdo Benítez"
+			picture = GFX_Portrait_PRY_Mario_Abdo_Benitez
+			ideology = national_conservative_ideology
+		}
+	}
+	if  = {
+		limit = {
 			original_tag = AUS
 			NOT = { has_government = social_democrat }
 			has_country_leader = {
