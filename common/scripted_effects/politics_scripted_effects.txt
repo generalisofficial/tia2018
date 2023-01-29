@@ -387,6 +387,21 @@ post_election_effects = {
 		}
 		country_event = australia.4
 	}
+	if  = {
+		limit = {
+			original_tag = URY
+			has_country_leader = {
+				name = "Tabaré Vázquez"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Daniel Martínez"
+			picture = GFX_Portrait_URY_Daniel_Martinez
+			ideology = socialism_of_the_21st_century
+		}
+	}
 	if = {
 		limit = {
 			minority_government = yes
@@ -3227,7 +3242,7 @@ set_eurosceptic_commission = {
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU_ID_seats
+				var = EUU.ID_seats
 				value = EUU.ECR_seats
 				compare = greater_than_or_equals
 			}
@@ -3262,7 +3277,7 @@ set_eurosceptic_commission = {
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU_ECR_seats
+				var = EUU.ECR_seats
 				value = EUU.ID_seats
 				compare = greater_than_or_equals
 			}
@@ -3297,7 +3312,7 @@ set_eurosceptic_commission = {
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU_GUE_NGL_seats
+				var = EUU.GUE_NGL_seats
 				value = EUU.ID_seats
 				compare = greater_than_or_equals
 			}
@@ -3332,7 +3347,7 @@ set_eurosceptic_commission = {
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU_INITIATIVE_seats
+				var = EUU.INITIATIVE_seats
 				value = EUU.ID_seats
 				compare = greater_than_or_equals
 			}
@@ -3528,8 +3543,15 @@ puppet_government_sync = {
 				}
 			}
 		}
-		set_politics = {
-			elections_allowed = no
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = [RULINGPARTY]
+					elections_allowed = no
+				}
+			}
+			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
+			debug = yes
 		}
 		if  = {
 			limit = {
@@ -4151,98 +4173,71 @@ parliament_math_failsafe = {
 		subtract_from_variable = { parliament_math_failsafe = islamist_seats }
 		if = {
 			limit = {
-				check_variable = {
-					classical_liberal_seats > 0.99
-				}
+				classical_liberal_plurality_popularity = yes
 			}
 			add_to_variable = { classical_liberal_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					social_liberal_seats > 0.99
-				}
+				social_liberal_plurality_popularity = yes
 			}
 			add_to_variable = { social_liberal_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					social_democrat_seats > 0.99
-				}
+				social_democrat_plurality_popularity = yes
 			}
 			add_to_variable = { social_democrat_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					conservative_seats > 0.99
-				}
+				conservative_plurality_popularity = yes
 			}
 			add_to_variable = { conservative_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					progressive_seats > 0.99
-				}
+				progressive_plurality_popularity = yes
 			}
 			add_to_variable = { progressive_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					national_conservative_seats > 0.99
-				}
+				national_conservative_plurality_popularity = yes
 			}
 			add_to_variable = { national_conservative_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					socialist_seats > 0.99
-				}
+				socialist_plurality_popularity = yes
 			}
 			add_to_variable = { socialist_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					right_wing_populist_seats > 0.99
-				}
+				right_wing_populist_plurality_popularity = yes
 			}
 			add_to_variable = { right_wing_populist_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					communist_seats > 0.99
-				}
+				communist_plurality_popularity = yes
 			}
 			add_to_variable = { communist_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					fascist_seats > 0.99
-				}
+				fascist_plurality_popularity = yes
 			}
 			add_to_variable = { fascist_seats = parliament_math_failsafe }
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					islamist_seats > 0.99
-				}
+				islamist_plurality_popularity = yes
 			}
 			add_to_variable = { islamist_seats = parliament_math_failsafe }
 		}
 		else = {
-			limit = {
-				check_variable = {
-					monarchist_seats > 0.99
-				}
-			}
 			add_to_variable = { monarchist_seats = parliament_math_failsafe }
 		}
 	}

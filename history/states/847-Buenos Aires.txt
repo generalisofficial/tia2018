@@ -1,3 +1,4 @@
+
 state={
 	id=847
 	name="STATE_847"
@@ -8,11 +9,14 @@ state={
 
 	history={
 		owner = ARG
+		victory_points = {
+			12364 15
+		}
 		buildings = {
 			infrastructure = 5
 			civilian_industry = 6
 			military_industry = 3
-			military_airport = 1 #El Palomar Airport
+			military_airport = 1
 			shipyard = 3
 			12364 = {
 				naval_base = 7
@@ -20,20 +24,16 @@ state={
 				coastal_fortifications = 1
 
 			}
-		}
-		victory_points = {
-			12364 10 
-		}
-		victory_points = {
-			12379 1 
+
 		}
 
 	}
 
 	provinces={
-		1555 4573 10390 10402 12351 12364 12379 
+		12364 
 	}
 	manpower=17400000
 	buildings_max_level_factor=1.000
-	state_category = state_default
+	state_category=state_default
+	local_supplies=0.000
 }

@@ -1,25 +1,36 @@
-state=
-{
+
+state={
 	id=314
 	name="STATE_314"
-	manpower = 7330000
-	
-	state_category = state_default
-	
-	history=
-	{
+
+	history={
 		owner = SLV
-		add_core_of = SLV
+		victory_points = {
+			12823 5 
+		}
+		victory_points = {
+			13093 2 
+		}
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 4
 			military_industry = 2
 			military_airport = 1
-			12823 = { naval_base = 1 }
+			12823 = {
+				naval_base = 3
+
+			}
+
 		}
-		victory_points = { 12823 3 }
+		add_core_of = SLV
+
 	}
+
 	provinces={
 		12823 13093 
 	}
+	manpower=7330000
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

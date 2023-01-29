@@ -10,12 +10,28 @@ state={
 
 	history={
 		owner = ARG
+		victory_points = {
+			12379 5 
+		}
+		victory_points = {
+			7621 5
+		}
+		victory_points = {
+			1639 3
+		}
+		victory_points = {
+			1568 2
+		}
 		buildings = {
 			infrastructure = 3
 			military_industry = 2
 			civilian_industry = 5
 			shipyard = 1
 			military_airport = 4
+			12379 = {
+				naval_base = 2
+
+			}
 			7621 = {
 				naval_base = 2
 
@@ -27,16 +43,14 @@ state={
 
 		}
 		add_core_of = ARG
-		victory_points = {
-			7621 1 
-		}
 
 	}
 
 	provinces={
-		1568 1596 1624 1639 4602 4643 7621 10375 10418 12321 12394 12409 12494 
+		1555 1568 1596 1624 1639 4573 4602 4643 7621 10375 10390 10402 10418 12321 12351 12379 12394 12409 12494 
 	}
 	manpower=8696366
 	buildings_max_level_factor=1.000
 	state_category=state_default
+	local_supplies=0.000
 }

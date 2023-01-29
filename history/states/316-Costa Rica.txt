@@ -2,26 +2,46 @@
 state={
 	id=316
 	name="STATE_316"
-	manpower = 4580250
-	
-	state_category = state_default
-	
 
 	history={
 		owner = CRI
-		add_core_of = CRI
+		victory_points = {
+			13087 5 
+		}
+		victory_points = {
+			15607 1
+		}
+		victory_points = {
+			13092 1
+		}
+		victory_points = {
+			15606 1
+		}
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 5
 			military_industry = 1
 			shipyard = 1
 			military_airport = 1
-			13087 = { naval_base = 4 }
+			15606 = {
+				naval_base = 3
+
+			}
+			15607 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 13087 3 }
+		add_core_of = CRI
+
 	}
 
 	provinces={
-		12878 13087 13092 
+		12878 13087 13092 15605 15606 15607 15608 
 	}
+	manpower=4580250
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

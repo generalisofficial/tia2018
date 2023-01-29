@@ -92,7 +92,6 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_rapid
 	active_draft
 	#non_aligned_movement_member
 	presidential_republic
@@ -109,13 +108,13 @@ set_country_flag = catholic
 
 #Chamber of Deputies
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 67.69 }
+set_variable = { socialist_seats = 67.7 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 24.62 }
+set_variable = { social_democrat_seats = 24.61 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 7.69 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { conservative_seats = 0 }
+set_variable = { national_conservative_seats = 7.69 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -134,17 +133,17 @@ set_politics = {
 }
 
 set_popularities = {
-    socialist = 51.53
-	social_liberal = 38.48
-	conservative = 6.92
-	classical_liberal = 3.07
+    socialist = 51.55
+	social_liberal = 38.46
+	national_conservative = 6.92
+	conservative = 3.07
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = BOL_evo_morales
-recruit_character = BOL_samuel_jorge_doria_medina_auza
-recruit_character = BOL_carlos_mesa
 recruit_character = BOL_chi_hyun_chung
-recruit_character = BOL_Óscar_ortiz_antelo
+recruit_character = BOL_oscar_ortiz_antelo
+recruit_character = BOL_carlos_mesa
+recruit_character = BOL_samuel_doria_medina
+recruit_character = BOL_evo_morales

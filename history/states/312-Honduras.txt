@@ -1,22 +1,56 @@
-state=
-{
+
+state={
 	id=312
 	name="STATE_312"
-	manpower=8119761
-	
-	state_category = state_default
-	history = {
+
+	history={
 		owner = HND
-		add_core_of = HND
+		victory_points = {
+			12865 5
+		}
+		victory_points = {
+			8017 3
+		}
+		victory_points = {
+			15626 3
+		}
+		victory_points = {
+			15624 1
+		}
+		victory_points = {
+			15614 1
+		}
+		victory_points = {
+			15616 1
+		}
 		buildings = {
 			infrastructure = 2
 			civilian_industry = 4
 			military_industry = 1
 			military_airport = 1
-			12865 = { naval_base = 1 }
-			8017 = { naval_base = 1 }
+			8017 = {
+				naval_base = 2
+
+			}
+			15626 = {
+				naval_base = 2
+
+			}
+			15614 = {
+				naval_base = 1
+
+			}
+
 		}
-		victory_points = { 12865 3 }
+		add_core_of = HND
+
 	}
-	provinces = { 2031 8017 12865 }
+
+	provinces={
+		2031 8017 12865 15614 15616 15618 15621 15622 15624 15626 
+	}
+	manpower=8119761
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }
