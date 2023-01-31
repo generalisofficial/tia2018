@@ -374,6 +374,14 @@ country_event = {
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		quickset_coalition = yes
+		if = {
+			limit = {
+				date > 2018.1.1
+				date < 2019.1.1
+				original_tag = VEN
+			}
+			set_country_flag = venezuela_rigged_2018
+		}
 		hidden_effect = {
 			post_election_effects = yes
 		}
