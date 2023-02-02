@@ -1,6 +1,6 @@
 ﻿add_namespace = peru
 
-country_event = { #Pedro Pablo Kuczynski Resigns
+country_event = { #Mamanivideos
 	id = peru.1
 	title = peru.1.t
 	desc = peru.1.d
@@ -9,22 +9,39 @@ country_event = { #Pedro Pablo Kuczynski Resigns
 
 	trigger = {
 		original_tag = PER
+		date > 2018.3.21
+		date < 2019.1.1
+		has_idea = presidential_republic
+		right_wing_populist_majority_seats = yes
 		has_country_leader = { 
 			name = "Pedro Pablo Kuczynski" 
 			ruling_only = yes 
 		} 
-		date > 2018.3.22
-		date < 2019.1.1
 	}
 	
 	option = {
 		name = peru.1.o1
-		add_stability = -0.1
+		news_event = peru.2
+		add_popularity = { ideology = classical_liberal popularity = -0.1 }
 		retire_ideology_leader = classical_liberal
 		create_country_leader = {
 	        name = "Martín Vizcarra"
 	        picture = GFX_Portrait_PER_Martin_Vizcarra
-	        ideology = libertarian
+	        ideology = classical_liberal_ideology
         }
+	}
+}
+
+news_event = { #Mamanivideos - News
+	id = peru.2
+	title = peru.2.t
+	desc = peru.2.d
+	picture = GFX_news_event_mamanivideos
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = peru.2.o1
 	}
 }

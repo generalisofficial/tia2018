@@ -3,7 +3,7 @@ economic_affairs = {
 		visible = {
 			is_sovereign_state = yes
 			is_in_europe = yes
-			NOT = { has_idea = the_euro }
+			NOT = { has_idea = idea_eurozone }
 		}
 		
 		available = {
@@ -24,7 +24,7 @@ economic_affairs = {
 		days_remove = 1095
 
 		remove_effect = {
-			add_ideas = the_euro
+			add_ideas = idea_eurozone
 		}
 		
 		ai_will_do = {
