@@ -119,15 +119,15 @@ set_country_flag = catholic
 
 #Chamber of Representatives
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 3.54 }
-set_variable = { progressive_seats = 4.09 }
-set_variable = { social_democrat_seats = 17.26 }
-set_variable = { social_liberal_seats = 34.1 }
-set_variable = { classical_liberal_seats = 9.46 }
-set_variable = { conservative_seats = 19.53 }
-set_variable = { national_conservative_seats = 11.57 }
+set_variable = { socialist_seats = 1.79 }
+set_variable = { progressive_seats = 5.38 }
+set_variable = { social_democrat_seats = 23.35 }
+set_variable = { social_liberal_seats = 26.98 }
+set_variable = { classical_liberal_seats = 9.58 }
+set_variable = { conservative_seats = 16.16 }
+set_variable = { national_conservative_seats = 13.17 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 3.99 }
+set_variable = { right_wing_populist_seats = 3.59 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -144,28 +144,29 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 22.03
-    social_democrat = 20.44
-	classical_liberal = 17.44
-    social_liberal = 14.53
-	conservative = 12.79
-	progressive = 6.97
-	communist = 2.90
-	socialist = 1.74
-	right_wing_populist = 1.16
+    national_conservative = 21.21
+    social_democrat = 20.58
+	classical_liberal = 17.64
+    social_liberal = 14.7
+	conservative = 12.35
+	progressive = 6.47
+	communist = 2.94
+	socialist = 2.94
+	right_wing_populist = 1.17
 }
 
 # Characters - Military
 
 # Characters - Political
+recruit_character = COL_luis_alberto_gil
+recruit_character = COL_ivan_duque
+recruit_character = COL_hernan_andrade
+recruit_character = COL_german_vargas_lleras
 recruit_character = COL_juan_manuel_santos
 recruit_character = COL_humberto_de_la_calle
-recruit_character = COL_iván_duque_márquez
-recruit_character = COL_hernán_andrade
-recruit_character = COL_jorge_enrique_vélez
-recruit_character = COL_clara_lópez_obregón
+recruit_character = COL_claudia_lopez_hernandez
 recruit_character = COL_gustavo_petro
-recruit_character = COL_timoleón_jiménez
+recruit_character = COL_timoleon_jimenez
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
