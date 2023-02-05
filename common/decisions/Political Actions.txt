@@ -90,6 +90,410 @@ political_actions = {
 		}
 	}
 
+	invite_fascists_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			has_government = right_wing_populist
+			NOT = { has_country_flag = coalition_fascist }
+			check_variable = {
+				var = fascist_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_fascist
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_right_wing_populists_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = fascist
+				has_government = national_conservative
+			}
+			NOT = { has_country_flag = coalition_right_wing_populist }
+			check_variable = {
+				var = right_wing_populist_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_right_wing_populist
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_national_conservatives_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = right_wing_populist
+				has_government = conservative
+			}
+			NOT = { has_country_flag = coalition_national_conservative }
+			check_variable = {
+				var = national_conservative_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_national_conservative
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_conservatives_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = national_conservative
+				has_government = classical_liberal
+			}
+			NOT = { has_country_flag = coalition_conservative }
+			check_variable = {
+				var = conservative_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_conservative
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_classical_liberals_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = social_liberal
+				has_government = conservative
+			}
+			NOT = { has_country_flag = coalition_classical_liberal }
+			check_variable = {
+				var = classical_liberal_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_classical_liberal
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_social_liberals_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = classical_liberal
+				has_government = social_democrat
+			}
+			NOT = { has_country_flag = coalition_social_liberal }
+			check_variable = {
+				var = social_liberal_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_social_liberal
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_social_democrats_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = social_liberal
+				has_government = progressive
+			}
+			NOT = { has_country_flag = coalition_social_democrat }
+			check_variable = {
+				var = social_democrat_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_social_democrat
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_progressives_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = social_democrat
+				has_government = socialist
+			}
+			NOT = { has_country_flag = coalition_progressive }
+			check_variable = {
+				var = progressive_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_progressive
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_socialists_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			OR = {
+				has_government = progressive
+				has_government = communist
+			}
+			NOT = { has_country_flag = coalition_socialist }
+			check_variable = {
+				var = socialist_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_socialist
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	invite_communists_to_presidential_coalition = {
+		icon = parliament
+
+		visible = {
+			has_idea = presidential_republic
+			has_idea = minority_government
+			has_government = socialist
+			NOT = { has_country_flag = coalition_communist }
+			check_variable = {
+				var = communist_seats
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_stability > 0.35
+						has_idea = electoral_honeymoon
+					}
+				}
+				set_country_flag = coalition_proposal_communist
+				country_event = politics.14
+				else  = {
+					country_event = politics.15
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
 	# Unique
 
 	take_donations_from_the_NRA = {

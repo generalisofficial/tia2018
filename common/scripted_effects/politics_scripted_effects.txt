@@ -402,6 +402,21 @@ post_election_effects = {
 			ideology = socialism_of_the_21st_century
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = SLV
+			has_country_leader = {
+				name = "Salvador Sánchez Cerén"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Hugo Martínez"
+			picture = GFX_Portrait_SLV_Hugo_Martinez
+			ideology = socialism_of_the_21st_century
+		}
+	}
 	if = {
 		limit = {
 			minority_government = yes
@@ -411,7 +426,7 @@ post_election_effects = {
 		}
 	}
 	set_election_change = yes
-	news_event = politics.13
+	news_event = election.8
 }
 
 break_coalition = {
@@ -1790,12 +1805,8 @@ quickset_coalition_flags_only = {
 }
 
 set_parliament_graphics = {
+	set_coalition_seats = yes
 
-## CLARIFICATION
-# Every ideology has a number from 1 to 12.
-# There will be a parliament array with 100 entries of numbers reaching from 1 to 12, each defining a seat for a certain ideology.
-#
-## Step 1 : Create new variables to work with
 	cleanup_seats_parliament = yes
 	set_new_parliament_seats = yes
 	set_variable = { communist_seats_parliament = communist_seats }
@@ -1811,8 +1822,6 @@ set_parliament_graphics = {
 	set_variable = { right_wing_populist_seats_parliament = right_wing_populist_seats }
 	set_variable = { fascist_seats_parliament = fascist_seats }
 
-## Step 2 : Round variables
-
 	round_variable = communist_seats_parliament
 	round_variable = socialist_seats_parliament
 	round_variable = social_democrat_seats_parliament
@@ -1825,8 +1834,6 @@ set_parliament_graphics = {
 	round_variable = national_conservative_seats_parliament
 	round_variable = right_wing_populist_seats_parliament
 	round_variable = fascist_seats_parliament
-
-## Step 3 : Assign seats
 
 	clear_array = ideology_seats_array
 	clear_array = parliament_array
@@ -2478,7 +2485,6 @@ set_parliament_graphics = {
 	divide_variable = { ROOT.GroupGFX = 100 }
 	multiply_variable = { ROOT.GroupGFX = 230 }
 
-	set_coalition_seats = yes
 	set_parliament_speaker_plurality = yes
 }
 

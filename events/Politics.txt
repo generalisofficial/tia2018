@@ -328,11 +328,11 @@ news_event = { #(Country, ADJ) government ousted in no-confidence vote
 	}
 }
 
-news_event = { #(Year) (Country, ADJ) (ElectionType) elections
+news_event = { #(Country,ADJ) Armed Forces sent to crush protests
 	id = politics.13
 	title = politics.13.t
 	desc = politics.13.d
-	picture = GFX_news_event_election
+	picture = GFX_news_event_police_brutality
 	
 	is_triggered_only = yes
 	major = yes
@@ -342,44 +342,109 @@ news_event = { #(Year) (Country, ADJ) (ElectionType) elections
 	}
 }
 
-news_event = { #(Country, Parliament) approves new minority government in (Country)
+#Coalition deal accepted
+country_event = {
 	id = politics.14
 	title = politics.14.t
 	desc = politics.14.d
-	picture = GFX_news_event_parliament_vote
 	
 	is_triggered_only = yes
-	major = yes
 	
 	option = {
 		name = politics.14.o1
+		add_political_power = 75
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_fascist
+			}
+			set_country_flag = coalition_fascist
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_fascist
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_right_wing_populist
+			}
+			set_country_flag = coalition_right_wing_populist
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_right_wing_populist
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_national_conservative
+			}
+			set_country_flag = coalition_national_conservative
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_national_conservative
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_conservative
+			}
+			set_country_flag = coalition_conservative
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_conservative
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_classical_liberal
+			}
+			set_country_flag = coalition_classical_liberal
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_classical_liberal
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_social_liberal
+			}
+			set_country_flag = coalition_social_liberal
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_social_liberal
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_social_democrat
+			}
+			set_country_flag = coalition_social_democrat
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_social_democrat
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_progressive
+			}
+			set_country_flag = coalition_progressive
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_progressive
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_socialist
+			}
+			set_country_flag = coalition_socialist
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_socialist
+		}
+		if = {
+			limit = {
+				has_country_flag = coalition_proposal_communist
+			}
+			set_country_flag = coalition_communist
+			set_parliament_graphics = yes
+			clr_country_flag = coalition_proposal_communist
+		}
 	}
 }
 
-news_event = { #(Leader) elected (Title) of (Country)
+#Coalition deal rejected
+country_event = {
 	id = politics.15
 	title = politics.15.t
 	desc = politics.15.d
-	picture = GFX_news_event_inauguration
 	
 	is_triggered_only = yes
-	major = yes
 	
 	option = {
 		name = politics.15.o1
-	}
-}
-
-news_event = { #(Country,ADJ) Armed Forces sent to crush protests
-	id = politics.16
-	title = politics.16.t
-	desc = politics.16.d
-	picture = GFX_news_event_police_brutality
-	
-	is_triggered_only = yes
-	major = yes
-	
-	option = {
-		name = politics.16.o1
 	}
 }

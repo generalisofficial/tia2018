@@ -31,6 +31,9 @@
  election.7.t: "[GetYear] Gubernatorial Elections"
  election.7.d: "Alongside the ongoing national elections, gubernatorial elections are also being held in each federal state of our nation, where voters will decide which party controls the regional executive."
  election.7.o1: "§GCertify Election Results§!"
+ election.8.t: "Results - [GetYear] [FROM.GetAdjective] general election"
+ election.8.d: "NEW GOVERNMENT:\n[FROM.GetLeaderTitle] of [FROM.GetNonIdeologyNameDef]: [FROM.GetLeader] ([FROM.GetRulingPartyColored])\nType: [FROM.GetMajorityMinorityGov]\n\nResults - [FROM.GetParliamentName]\n[FROM.GetIslamistResults][FROM.GetFascistResults][FROM.GetRightWingNationalistResults][FROM.GetMonarchistResults][FROM.GetNationalConservativeResults][FROM.GetConservativeResults][FROM.GetClassicalLiberalResults][FROM.GetSocialLiberalResults][FROM.GetSocialDemocratResults][FROM.GetProgressiveResults][FROM.GetSocialistResults][FROM.GetCommunistResults]"
+ election.8.o1: "Democracy strikes again."
 
  #Factions
  factions.1.t: "[From.GetNameDef] joins NATO"
@@ -415,12 +418,15 @@
  politics.12.t: "[FROM.GetAdjective] government ousted in no-confidence vote"
  politics.12.d: "A snap parliamentary election is underway in [FROM.GetNameDef], following a no-confidence vote in the [FROM.GetParliamentName] that resulted in the ousting of sitting government, headed by [FROM.GetLeader] ([FROM.GetRulingPartyColored]). The opposition MP that introduced the motion cited the disastrous approval ratings of the sitting government as the main reason for the move. It remains to be seen what new kind of government will be formed after the results are announced."
  politics.12.o1: "Politics..."
- politics.13.t: "Results - [GetYear] [FROM.GetAdjective] general election"
- politics.13.d: "NEW GOVERNMENT:\n[FROM.GetLeaderTitle] of [FROM.GetNonIdeologyNameDef]: [FROM.GetLeader] ([FROM.GetRulingPartyColored])\nType: [FROM.GetMajorityMinorityGov]\n\nResults - [FROM.GetParliamentName]\n[FROM.GetIslamistResults][FROM.GetFascistResults][FROM.GetRightWingNationalistResults][FROM.GetMonarchistResults][FROM.GetNationalConservativeResults][FROM.GetConservativeResults][FROM.GetClassicalLiberalResults][FROM.GetSocialLiberalResults][FROM.GetSocialDemocratResults][FROM.GetProgressiveResults][FROM.GetSocialistResults][FROM.GetCommunistResults]"
- politics.13.o1: "Democracy strikes again."
- politics.16.t: "[FROM.GetAdjective] Armed Forces sent to crush protests"
- politics.16.d: "In an unprecented bloodbath, the [FROM.GetAdjective] Armed Forces were today sent by [FROM.GetLeaderTitle] [FROM.GetLeader] to crush the ongoing mass protests against the [FROM.GetRulingPartyColored]-led government. During the operation, hundreds of protestors were killed or injured, sparking harsh criticism from human rights organizations and the United Nations. [FROM.GetLeader] remains in power for now, but the events of today have emboldened the [FROM.GetAdjective] opposition, leading some to expect a revolution or civil war in the future."
- politics.16.o1: "What a mess..."
+ politics.13.t: "[FROM.GetAdjective] Armed Forces sent to crush protests"
+ politics.13.d: "In an unprecented bloodbath, the [FROM.GetAdjective] Armed Forces were today sent by [FROM.GetLeaderTitle] [FROM.GetLeader] to crush the ongoing mass protests against the [FROM.GetRulingPartyColored]-led government. During the operation, hundreds of protestors were killed or injured, sparking harsh criticism from human rights organizations and the United Nations. [FROM.GetLeader] remains in power for now, but the events of today have emboldened the [FROM.GetAdjective] opposition, leading some to expect a revolution or civil war in the future."
+ politics.13.o1: "What a mess..."
+ politics.14.t: "Coalition proposal accepted"
+ politics.14.d: "The proposed coalition deal with the selected opposition party has been approved. Our approval ratings were high enough for the party to accept the deal and join the government."
+ politics.14.o1: "Great news!"
+ politics.15.t: "Coalition proposal rejected"
+ politics.15.d: "The proposed coalition deal with the selected opposition party has been rejected. Our approval ratings were too low for the party to accept the deal, due to the risk of them being dragged down with us."
+ politics.15.o1: "Unfortunate."
 
  #Turkey
  turkey.1.t: "Successful Operation Olive Branch"

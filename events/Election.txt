@@ -1159,3 +1159,17 @@ country_event = {
 		gubernatorial_elections = yes
     }
 }
+
+news_event = { #(Year) (Country, ADJ) (ElectionType) elections
+	id = election.8
+	title = election.8.t
+	desc = election.8.d
+	picture = GFX_news_event_election
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = election.8.o1
+	}
+}
