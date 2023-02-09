@@ -103,12 +103,12 @@ add_ideas = {
 
 set_country_flag = sunni_islam
 
-#Parliament of Albania
+#Kuvendi
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 13.57 }
+set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 52.85 }
-set_variable = { social_liberal_seats = 0.73 }
+set_variable = { social_democrat_seats = 67.15 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 30.71 }
 set_variable = { national_conservative_seats = 2.14 }
@@ -124,26 +124,30 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2017.6.25"
+	last_election = "2017.4.25"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 52.85
-    conservative = 30.71
-    socialist = 13.57
-    national_conservative = 2.14
-    social_liberal = 0.73
+    social_democrat = 51.04
+    conservative = 40.52
+    national_conservative = 4.28
+	monarchist = 2.14
+    social_liberal = 1.09
+	classical_liberal = 0.81
+	fascist = 0.12
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = ALB_edi_rama
-recruit_character = ALB_lulzim_basha
-recruit_character = ALB_monika_kryemadhi
-recruit_character = ALB_shpetim_idrizi
-recruit_character = ALB_ben_blushi
-recruit_character = ALB_qemal_cicollari
+recruit_character = ALB_adriatik_alimadhi
 recruit_character = ALB_leka_ii
+recruit_character = ALB_fatmir_mediu
+recruit_character = ALB_lulzim_basha
+recruit_character = ALB_gjerg_bojaxhi
+recruit_character = ALB_ben_blushi
+recruit_character = ALB_edi_rama
+recruit_character = ALB_edlir_petanaj
+recruit_character = ALB_qemal_cicollari

@@ -82,6 +82,17 @@ defined_text = {
 				is_core_of = owner
 			}
 			owner = {
+				original_tag = GRC
+			}
+		}
+		localization_key = STATE_TITLE_PERIFERIA
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
+			}
+			owner = {
 				OR = {
 					original_tag = BHR
 					original_tag = EGY
@@ -234,11 +245,24 @@ defined_text = {
 						original_tag = CAN
 						original_tag = ARG
 						original_tag = PAK
+						original_tag = DEU
 					}
 				}
 			}
 		}
 		localization_key = STATE_TITLE_STATE
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_core_of = owner
+			}
+			owner = {
+				has_idea = federal
+				original_tag = DEU
+			}
+		}
+		localization_key = STATE_TITLE_BUNDESLAND
 	}
 	text = {
 		trigger = {
