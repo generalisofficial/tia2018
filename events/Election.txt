@@ -504,9 +504,12 @@ country_event = {
 			factor = 100
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
+		custom_effect_tooltip = TT_auto_government
 		break_coalition = yes
 		elect_new_parliament = yes
-		auto_government = yes
+		hidden_effect = {
+			auto_government = yes
+		}
     }
 	
 	option = { #Form Coalition Government
@@ -539,6 +542,7 @@ country_event = {
 			limit = { 
 				is_ai = no 
 			}
+			custom_effect_tooltip = TT_gov_formation_ui
 			setup_coalition = yes
 			set_country_flag = forming_government
 			else = {

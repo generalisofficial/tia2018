@@ -94,25 +94,22 @@ if = {
 set_country_flag = sunni_islam
 
 add_ideas = {
-	#population_growth_explosion
 	idea_african_union_member
-	#non_aligned_movement_member
 	presidential_republic
 	civil_liberties_authoritarian
 	prohibited_firearms
 	pro_life
-	#extensive_healthcare_spending
 	five_year_term
 }
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 16.96 }
+set_variable = { socialist_seats = 6.29 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 57.57 }
-set_variable = { social_liberal_seats = 23.59 }
+set_variable = { social_democrat_seats = 57.48 }
+set_variable = { social_liberal_seats = 36.23 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 1.88 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -126,22 +123,20 @@ add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2015.11.29"
+	last_election = "2015.11.22"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 57.57
-    social_liberal = 23.59
-	socialist = 16.96
-	conservative = 1.88
+	social_democrat = 59.84
+	social_liberal = 34.65
+	socialist = 5.51
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = BFA_roch_marc_christian_kaboré
-recruit_character = BFA_zéphirin_diabré
-recruit_character = BFA_eddie_komboïgo
-recruit_character = BFA_tahirou_barry
+recruit_character = BFA_zephirin_diabre
+recruit_character = BFA_roch_marc_christian_kabore
+recruit_character = BFA_benewende_stanislas_sankara

@@ -124,15 +124,21 @@ if = {
 		target = GIB
 		autonomous_state = autonomy_autonomous_region
 	}
+	set_autonomy = {
+		target = TCA
+		autonomous_state = autonomy_autonomous_region
+	}
 	else = {
 		puppet = IMN
 		puppet = JEY
 		puppet = GGY
 		puppet = GIB
+		puppet = TCA
 		IMN = { set_country_flag = TfV_marked_for_deletion }
 		JEY = { set_country_flag = TfV_marked_for_deletion }
 		GGY = { set_country_flag = TfV_marked_for_deletion }
 		GIB = { set_country_flag = TfV_marked_for_deletion }
+		TCA = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
