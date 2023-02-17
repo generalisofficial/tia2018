@@ -10,9 +10,14 @@ state={
 
 	history={
 		owner = GHA
-		add_core_of = GHA
 		victory_points = {
-			10862 10 
+			10862 15
+		}
+		victory_points = {
+			12742 3 
+		}
+		victory_points = {
+			13889 2 
 		}
 		buildings = {
 			infrastructure = 3
@@ -21,16 +26,23 @@ state={
 			shipyard = 1
 			10862 = {
 				naval_base = 3
+
+			}
+			12742 = {
+				naval_base = 2
+				
 			}
 
 		}
+		add_core_of = GHA
 
 	}
 
 	provinces={
-		10862 
+		10862 12742 13889 13890 15753 15754 15755 
 	}
 	manpower=4010054
 	buildings_max_level_factor=1.000
 	state_category=state_default
+	local_supplies=0.000
 }

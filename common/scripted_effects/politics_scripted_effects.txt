@@ -417,6 +417,21 @@ post_election_effects = {
 			ideology = socialism_of_the_21st_century
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = GNB
+			has_country_leader = {
+				name = "José Mário Vaz"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = socialist
+		create_country_leader = {
+			name = "Domingos Simões Pereira"
+			picture = GFX_Portrait_GNB_Domingos_Simoes_Pereira
+			ideology = left_wing_nationalist
+		}
+	}
 	if = {
 		limit = {
 			minority_government = yes

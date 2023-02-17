@@ -95,24 +95,23 @@ if = {
 set_country_flag = sunni_islam
 
 add_ideas = {
-	#population_growth_explosion
 	idea_african_union_member
 	active_draft
-	#non_aligned_movement_member
 	presidential_republic
 	civil_liberties_authoritarian
 	prohibited_firearms
 	pro_life
 	active_draft
 	low_taxes
+	five_year_term
 }
 
 #National People's Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 55.8 }
+set_variable = { socialist_seats = 55.88 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 44.2 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 44.12 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
@@ -128,20 +127,20 @@ add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = socialist
-	last_election = "2014.11.18"
-	election_frequency = 48
+	last_election = "2014.11.24"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    socialist = 57.83
-    social_democrat = 21.10
-	progressive = 21.07
+    socialist = 50.98
+	social_democrat = 28.44
+	social_liberal = 20.58
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = GNB_josé_mário_vaz
-recruit_character = GNB_alberto_mbunhe_nambeia
-recruit_character = GNB_braima_camará
+recruit_character = GNB_alberto_nambeia
+recruit_character = GNB_umaro_sissoco_embalo
+recruit_character = GNB_jose_mario_vaz

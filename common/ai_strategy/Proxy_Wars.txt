@@ -353,15 +353,15 @@ somalia_western_intervention = {
         }
         NOT = { has_government = islamist }
         country_exists = SOM
-        country_exists  = HSM
+        country_exists  = AQA
         SOM = {
-            has_war_with = HSM
+            has_war_with = AQA
         }
     }
 	abort = {
         OR = {
             has_government = islamist
-            NOT = { country_exists = HSM }
+            NOT = { country_exists = AQA }
         }
     } 
 	ai_strategy = {
@@ -372,6 +372,78 @@ somalia_western_intervention = {
     ai_strategy = {
         type = send_volunteers_desire
         id = "SOM"
+        value = 1000
+    }
+}
+
+operation_barkhane = {
+    enable = {
+        original_tag = FRA
+        NOT = { has_government = islamist }
+        OR = {
+            MLI = { 
+                OR = {
+                    has_war_with = ISS 
+                    has_war_with = AQA 
+                }
+            }
+            BFA = { 
+                OR = {
+                    has_war_with = ISS 
+                    has_war_with = AQA 
+                }
+            }
+            NER = { 
+                OR = {
+                    has_war_with = ISS 
+                    has_war_with = AQA 
+                }
+            }
+        }
+        SOM = {
+            has_war_with = AQA
+        }
+    }
+	abort = {
+        OR = {
+            has_government = islamist
+            NOT = {
+                OR = {
+                    MLI = { 
+                        OR = {
+                            has_war_with = ISS 
+                            has_war_with = AQA 
+                        }
+                    }
+                    BFA = { 
+                        OR = {
+                            has_war_with = ISS 
+                            has_war_with = AQA 
+                        }
+                    }
+                    NER = { 
+                        OR = {
+                            has_war_with = ISS 
+                            has_war_with = AQA 
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "MLI"
+        value = 1000
+    }
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "BFA"
+        value = 1000
+    }
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = "NER"
         value = 1000
     }
 }
