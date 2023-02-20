@@ -94,10 +94,8 @@ if = {
 set_country_flag = sunni_islam
 
 add_ideas = {
-	#population_growth_explosion
 	idea_african_union_member
 	arab_league_member
-	#non_aligned_movement_member
 	lgbt_minority_womens_rights_conservative
 	islam
 	presidential_republic
@@ -114,37 +112,43 @@ add_opinion_modifier = {
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
+set_variable = { socialist_seats = 0.68 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
+set_variable = { social_democrat_seats = 14.38 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 84.38 }
+set_variable = { conservative_seats = 51.36 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 15.62 }
+set_variable = { islamist_seats = 33.58 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
+set_country_flag = coalition_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
-	ruling_party = national_conservative
+	ruling_party = conservative
 	last_election = "2014.6.22"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 84.38
-    islamist = 15.62
+    conservative = 59.23
+	islamist = 27.41
+	social_democrat = 8.91
+	fascist = 2.54
+    socialist = 1.91
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MRT_mohamed_ould_abdel_aziz
 recruit_character = MRT_mohamed_jemil_ould_mansour
+set_country_flag = fascist_intended_no_leader #add later - saddamist/iraqi led baath party
+recruit_character = MRT_mohamed_ould_abdel_aziz
+recruit_character = MRT_ahmed_ould_daddah
+recruit_character = MRT_mohamed_ould_maouloud

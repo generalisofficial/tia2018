@@ -96,23 +96,21 @@ if = {
 set_country_flag = former_british_colony
 
 add_ideas = {
-	#population_growth_stagnation
 	idea_commonwealth_of_nations_member
-	#non_aligned_movement_member
 	parliamentary_system
 	pro_life
 	threshold_five_percent
 }
 
-#Parliament of Fiji
+#Parliament
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 12.65 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { social_democrat_seats = 6 }
+set_variable = { social_liberal_seats = 64 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 59.17 }
-set_variable = { national_conservative_seats = 28.18 }
+set_variable = { conservative_seats = 30 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -120,25 +118,25 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_conservative
-add_to_variable = { ROOT.Coalition = conservative_seats }
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = social_liberal
 	last_election = "2014.11.14"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 50.02
-    national_conservative = 39.85
-    social_democrat = 10.13
+	social_liberal = 50.02
+	conservative = 42.6
+	social_democrat = 7.38
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = FJI_frank_bainimarama
 recruit_character = FJI_sitiveni_rabuka
+recruit_character = FJI_frank_bainimarama
 recruit_character = FJI_biman_prasad

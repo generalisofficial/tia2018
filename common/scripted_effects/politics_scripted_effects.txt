@@ -432,6 +432,21 @@ post_election_effects = {
 			ideology = left_wing_nationalist
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = MRT
+			has_country_leader = {
+				name = "Mohamed Ould Abdel Aziz"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = conservative
+		create_country_leader = {
+			name = "Mohamed Ould Ghazouani"
+			picture = GFX_Portrait_MRT_Mohamed_Ould_Ghazouani
+			ideology = liberal_conservative
+		}
+	}
 	if = {
 		limit = {
 			minority_government = yes

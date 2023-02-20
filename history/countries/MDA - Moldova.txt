@@ -105,13 +105,13 @@ add_ideas = {
 set_country_flag = orthodox
 
 #Parliament of the Republic of Moldova
-set_variable = { communist_seats = 17.48 }
-set_variable = { socialist_seats = 20.51 }
+set_variable = { communist_seats = 20.79 }
+set_variable = { socialist_seats = 24.75 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 32.18 }
+set_variable = { social_democrat_seats = 18.82 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 9.67 }
-set_variable = { conservative_seats = 20.16 }
+set_variable = { classical_liberal_seats = 12.87 }
+set_variable = { conservative_seats = 22.77 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -121,33 +121,38 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_a_legislature
 set_country_flag = coalition_social_democrat
+set_country_flag = coalition_conservative
+set_country_flag = coalition_classical_liberal
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2016.10.30"
+	last_election = "2015.2.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 2.95
-    social_democrat = 23.62
-    socialist = 31.15
-    social_liberal = 28.96
-	classical_liberal = 1.25
+	socialist = 31.15
+	social_liberal = 26.84
+	social_democrat = 23.62
 	national_conservative = 8.32
-    communist = 3.75
+	communist = 3.75
+	conservative = 2.95
+	classical_liberal = 1.69
+	progressive = 1.68
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MDA_zinaida_greceanii
-recruit_character = MDA_pavel_filip
-recruit_character = MDA_viorel_cibotaru
-recruit_character = MDA_vladimir_voronin
-recruit_character = MDA_maia_sandu
-recruit_character = MDA_mihai_ghimpu
 recruit_character = MDA_ilan_shor
+recruit_character = MDA_viorel_cibotaru
+recruit_character = MDA_mihai_ghimpu
+recruit_character = MDA_maia_sandu
+recruit_character = MDA_pavel_filip
 recruit_character = MDA_vladimir_braga
+recruit_character = MDA_zinaida_greceanii
+recruit_character = MDA_vladimir_voronin
