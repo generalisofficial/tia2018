@@ -930,6 +930,14 @@ foreign_affairs = {
 					value > 0
 				}
 			}
+			modifier = {
+				factor = 10
+				has_opinion = {
+					target = ROM
+					value > 0
+				}
+				threat > 0.75
+			}
 		}
 	}
 

@@ -113,7 +113,6 @@ scripted_gui = {
                 set_variable = { AmountUraniumToBuy = 0 }
             }
 
-
             # BUY ENRICHED URANIUM
             enriched_uranium_amount_plus_button_click = {
                 add_to_variable = { Root.AmountEnrichedUraniumToBuy = 1 }
@@ -171,7 +170,6 @@ scripted_gui = {
                 add_to_variable = { Root.enricheduraniumstock = AmountEnrichedUraniumToBuy }
                 set_variable = { AmountEnrichedUraniumToBuy = 0 }
             }
-
 
             # ENRICH NATURAL URANIUM
             amount_to_enrich_plus_button_click = {

@@ -936,11 +936,6 @@ ideas = {
 			
 			available = {
 				NOT = { has_government = islamist }
-				OR = {
-					has_country_flag = catholic
-					has_country_flag = protestant
-					has_country_flag = orthodox
-				}
 			}
 			
 			modifier = {
@@ -975,8 +970,6 @@ ideas = {
 			available = {
 			    OR = {
 				    has_government = islamist
-				    has_country_flag = sunni_islam
-					has_country_flag = shia_islam
 				}
 			}
 			
@@ -1014,7 +1007,6 @@ ideas = {
 			
 			available = {
 				NOT = { has_government = islamist }
-				has_country_flag = buddhism
 			}
 			
 			modifier = {
@@ -1044,7 +1036,6 @@ ideas = {
 			
 			available = {
 				NOT = { has_government = islamist }
-				has_country_flag = judaism
 			}
 			
 			modifier = {
@@ -1074,7 +1065,6 @@ ideas = {
 			
 			available = {
 				NOT = { has_government = islamist }
-				has_country_flag = cheondoism
 			}
 			
 			modifier = {

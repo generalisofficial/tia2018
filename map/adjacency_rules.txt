@@ -1237,3 +1237,41 @@ adjacency_rule = {
 	icon = 10191
 	offset = { -5 0 0 }
 }
+
+#Bab-el-Mandeb
+adjacency_rule = {
+	name = "BAB_EL_MANDEB"
+
+	contested = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 4985 13479  }
+		
+	icon = 4985
+	offset = { 5 0 -6 }
+}

@@ -32,7 +32,6 @@ peace_ai_desires = {
         ai_desire = -20
     }
 
-
     dont_grab_exclaves = {
         peace_action_type = take_states
         enable = {
@@ -53,7 +52,6 @@ peace_ai_desires = {
         ai_desire = -40
     }
 
-
     do_grab_stuff_near_us = {
         peace_action_type = take_states
         enable = {
@@ -73,7 +71,6 @@ peace_ai_desires = {
         }
         ai_desire = 10
     }
-
 
     leave_force_gov_at_will_to_allies = { #It is a bit hacky, but we need a preference here or we end up worse than where we started
         peace_action_type = force_government
@@ -109,7 +106,6 @@ peace_ai_desires = {
         }
         ai_desire = -200
     }
-
 
     dont_force_government_and_puppet = {
         peace_action_type = { force_government }
@@ -196,7 +192,6 @@ peace_ai_desires = {
         ai_desire = 100
     }
 
-
     dont_force_government_for_puppets_with_cores = {
         peace_action_type = { force_government puppet }
         enable = {
@@ -209,7 +204,6 @@ peace_ai_desires = {
         }
         ai_desire = -100
     }
-
 
     # push countries to actually retake territory that has risen up against them
     retake_territory_from_independence_wars = {
@@ -225,7 +219,6 @@ peace_ai_desires = {
         }
         ai_desire = 75
     }
-
 
     dont_change_gov_after_independence_wars = {
         peace_action_type = { force_government liberate puppet }

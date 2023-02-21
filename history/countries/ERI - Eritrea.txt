@@ -93,10 +93,8 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_explosion
 	limited_conscription
 	idea_african_union_member
-	#non_aligned_movement_member
 	one_party_state
 	civil_liberties_totalitarian
 	prohibited_firearms
@@ -105,9 +103,7 @@ add_ideas = {
 	#extensive_healthcare_spending
 }
 
-set_country_flag = catholic
-
-add_opinion_modifier = { target = ERI modifier = frozen_conflict }
+add_opinion_modifier = { target = ETH modifier = frozen_conflict }
 
 #National Assembly
 set_variable = { communist_seats = 0 }
@@ -136,11 +132,12 @@ set_politics = {
 }
 
 set_popularities = {
-	socialist = 100
+	socialist = 94.32
+	conservative = 5.68
 }
 
 # Characters - Military
 
 # Characters - Political
+recruit_character = ERI_hussein_kelifah
 recruit_character = ERI_isaias_afwerki
-recruit_character = ERI_haffaz_aladeen

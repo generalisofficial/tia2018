@@ -100,10 +100,8 @@ if = {
 }
 
 add_ideas = {
-	#population_growth_explosion
 	idea_african_union_member
 	active_draft
-	#non_aligned_movement_member
 	presidential_republic
 	civil_liberties_authoritarian
 	prohibited_firearms
@@ -113,16 +111,14 @@ add_ideas = {
 	seven_year_term
 }
 
-set_country_flag = catholic
-
 #National Assembly
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 19.1 }
+set_variable = { social_liberal_seats = 5.84 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 80.9 }
+set_variable = { conservative_seats = 94.16 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -136,14 +132,14 @@ add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {
 	ruling_party = conservative
-	last_election = "2016.8.28"
+	last_election = "2016.8.27"
 	election_frequency = 84
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservative = 80.9
-    social_liberal = 19.1
+    conservative = 68.53
+    social_liberal = 31.47
 }
 
 # Characters - Military

@@ -1,25 +1,15 @@
 characters={
     #Starting - Political
-	MDA_zinaida_greceanii={
-		name="Zinaida Greceanii"
+	MDA_ilan_shor={
+		name="Ilan Shor"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MDA_Zinaida_Greceanii
+				large=GFX_Portrait_MDA_Ilan_Shor
 			}
 		}
 		country_leader={
-			ideology=democratic_socialist
-		}
-	}
-	MDA_pavel_filip={
-		name="Pavel Filip"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MDA_Pavel_Filip
-			}
-		}
-		country_leader={
-			ideology=social_democrat_ideology
+			ideology=national_conservative_ideology
+			traits={ friend_of_russia }
 		}
 	}
 	MDA_viorel_cibotaru={
@@ -33,15 +23,15 @@ characters={
 			ideology=liberal_conservative
 		}
 	}
-	MDA_vladimir_voronin={
-		name="Vladimir Voronin"
+	MDA_mihai_ghimpu={
+		name="Mihai Ghimpu"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MDA_Vladimir_Voronin
+				large=GFX_Portrait_MDA_Mihai_Ghimpu
 			}
 		}
 		country_leader={
-			ideology=marxist_leninist
+			ideology=classical_liberal_ideology
 		}
 	}
 	MDA_maia_sandu={
@@ -56,37 +46,39 @@ characters={
 			traits={ friend_of_america }
 		}
 	}
-	MDA_mihai_ghimpu={
-		name="Mihai Ghimpu"
+	MDA_pavel_filip={
+		name="Pavel Filip"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MDA_Mihai_Ghimpu
+				large=GFX_Portrait_MDA_Pavel_Filip
 			}
 		}
 		country_leader={
-			ideology=classical_liberal_ideology
+			ideology=social_democrat_ideology
 		}
 	}
-	MDA_ilan_shor={
-		name="Ilan Shor"
+	MDA_zinaida_greceanii={
+		name="Zinaida Greceanii"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MDA_Ilan_Shor
+				large=GFX_Portrait_MDA_Zinaida_Greceanii
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=democratic_socialist
+			traits={ friend_of_russia }
 		}
 	}
-	MDA_vladimir_braga={
-		name="Vladimir Braga"
+	MDA_vladimir_voronin={
+		name="Vladimir Voronin"
 		portraits={
 			civilian={
-				large=GFX_Portrait_MDA_Vladimir_Braga
+				large=GFX_Portrait_MDA_Vladimir_Voronin
 			}
 		}
 		country_leader={
-			ideology=green
+			ideology=marxist_leninist
+			traits={ friend_of_russia }
 		}
 	}
 	#Starting - Military

@@ -447,6 +447,21 @@ post_election_effects = {
 			ideology = liberal_conservative
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = MDA
+			has_country_leader = {
+				name = "Pavel Filip"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_democrat
+		create_country_leader = {
+			name = "Vladimir Plahotniuc"
+			picture = GFX_Portrait_MDA_Vladimir_Plahotniuc
+			ideology = social_democrat_ideology
+		}
+	}
 	if = {
 		limit = {
 			minority_government = yes

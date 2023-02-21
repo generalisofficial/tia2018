@@ -13,7 +13,6 @@ guiTypes = {
 		position = { x = 0 y = 20 }
 	}
 
-
 	containerWindowType = {
 		name = "unit_counter"
 		position = { x=0 y=0 }
@@ -547,7 +546,6 @@ guiTypes = {
 			alwaystransparent=yes
 		}
 
-
 		iconType = {
 			name = "no_mission"
 			spriteType = "GFX_mapicon_unit_no_orders"
@@ -584,7 +582,6 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-
 
 	#### VICTORY POINTS MAP ICON
 	containerWindowType = {
@@ -640,7 +637,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
-
 
 	#### RESOURCE MAP ICON
 	
@@ -943,7 +939,6 @@ guiTypes = {
 		}
 	}
 
-
 	#### NAVAL COMBAT RESULTS MAP ICON
 	containerWindowType = {
 		name = "naval_combat_results_mapicon"
@@ -958,7 +953,6 @@ guiTypes = {
 			position = { x=0 y=0 }
 		}
 	}
-
 
 	#### NAVAL COMBAT MAP ICON
 	containerWindowType = {
@@ -1030,7 +1024,6 @@ guiTypes = {
 
 	}
 
-
 	#### LAND COMBAT MAP ICON
 	containerWindowType = {
 		name = "land_combat_mapicon"
@@ -1039,8 +1032,6 @@ guiTypes = {
 		size = { width=35 height=34 } # WARNING: To make sure icon will not be misplaced, set the size to the true size of the content
 		clipping = no
 		orientation = upper_left
-
-
 
 		iconType={
 			name ="battle_indicator_direction"
@@ -1770,7 +1761,6 @@ guiTypes = {
 		size = { width = 40 height = 40 }
 		clipping = no
 
-
 		buttonType = {
 			name ="background_btn"
 			quadTextureSprite = "GFX_mapicon_decision_bg"
@@ -1785,7 +1775,6 @@ guiTypes = {
 			centerPosition = yes
 			scale = 1
 		}
-
 
 		iconType = {
 			name ="progress_good"
@@ -1844,7 +1833,6 @@ guiTypes = {
 			frame = 2
 		}
 	}
-
 
 	#### RESISTANCE COMPLIANCE MAP ICON
 	containerWindowType = {
@@ -2166,7 +2154,6 @@ guiTypes = {
 			spriteType = "GFX_mapicon_intel_cartouche"
 		}
 
-
 		instantTextboxType = {
 			name = "percent"
 			position = { x = -15 y = 58 }
@@ -2178,7 +2165,6 @@ guiTypes = {
 		}
 
 	}
-
 
 	containerWindowType = {
 		name = "intel_ledger_naval_mission_entry"
@@ -2232,7 +2218,6 @@ guiTypes = {
 		position = { x=0 y=0 }
 		size = { width=0 height=0 }
 
-
 		containerWindowType = {
 			name = "civilian_ledger_view"
 			position = { x=-80 y=-42 }
@@ -2258,7 +2243,6 @@ guiTypes = {
 				format = left
 				maxWidth = 60
 			}
-
 
 			iconType ={
 				name ="military_factory_icon"
@@ -2494,7 +2478,6 @@ guiTypes = {
 		position = { x=0 y=0 }
 		size = { width = 20 height = 20 }
 		clipping = no
-
 
 		iconType ={
 			name ="bg"
