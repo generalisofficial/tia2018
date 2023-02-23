@@ -101,17 +101,17 @@ add_ideas = {
 	five_year_term
 }
 
-#House of Representatives of Belarus
-set_variable = { communist_seats = 8.98 }
-set_variable = { socialist_seats = 0 }
+#House of Representatives
+set_variable = { communist_seats = 7.27 }
+set_variable = { socialist_seats = 5.45 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 4.16 }
+set_variable = { social_democrat_seats = 0 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 2.16 }
-set_variable = { national_conservative_seats = 80.46 }
+set_variable = { conservative_seats = 0.9 }
+set_variable = { national_conservative_seats = 85.48 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 0 }
+set_variable = { right_wing_populist_seats = 0.9 }
 set_variable = { fascist_seats = 0 }
 set_variable = { islamist_seats = 0 }
 
@@ -128,20 +128,24 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 80.46
-    communist = 8.98
-	right_wing_populist = 4.24
-	conservative = 2.16
-	social_democrat = 4.16
+	national_conservative = 45.94
+	classical_liberal = 23.74
+	communist = 10.62
+	socialist = 9.1
+	right_wing_populist = 5.33
+	conservative = 3.07
+	social_democrat = 2.2
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = BLR_alexander_lukashenko
-recruit_character = BLR_tatsyana_holubeva
 recruit_character = BLR_sergei_gaidukevich
-recruit_character = BLR_anatoly_lebedko
-recruit_character = BLR_vasil_zadnyaprany
+recruit_character = BLR_alexander_lukashenko
+recruit_character = BLR_mikalaj_kazlou
+recruit_character = BLR_sergei_tikhanovsky
+recruit_character = BLR_vladimir_novosiad
+recruit_character = BLR_irina_veshtard
 recruit_character = BLR_aleh_novikau
-
+recruit_character = BLR_sergey_kalyakin
+recruit_character = BLR_igor_karpenko
