@@ -179,6 +179,24 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_global_flag = ongoing_ASEAN_application # ASEAN
+			}
+			add_ideas = idea_asean_member
+			clr_global_flag = ongoing_ASEAN_application
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_idea = idea_asean_member
+					}
+					add_opinion_modifier = { target = ROOT modifier = asean_member }
+					ROOT = {
+						add_opinion_modifier = { target = PREV modifier = asean_member }
+					}
+				}
+			}
+		}
 		clr_global_flag = ongoing_generic_application
 		clear_variable = global.generic_application_vote_count_in_favor
 		clear_variable = global.generic_application_vote_count_against

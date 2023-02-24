@@ -961,46 +961,90 @@ international_organizations = {
 			base = 0
 		}
 	}
-	
+
 	join_asean = {
 	
 		visible = {
-			NOT = { has_idea = asean_member  has_global_flag = asean_dissolved }
-			OR = { original_tag = MMR original_tag = THA original_tag = LAO	original_tag = KHM original_tag = VNM original_tag = PHL original_tag = MYS original_tag = SGP original_tag = BRN original_tag = IDN original_tag = TLS }
-		}
-		available = {
-            NOT = { has_idea = asean_member has_idea = non_member_state }
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_asean_member
+					has_global_flag = asean_dissolved
+				}
+			}
+			OR = { 
+				original_tag = MMR 
+				original_tag = THA 
+				original_tag = LAO	
+				original_tag = KHM 
+				original_tag = VNM 
+				original_tag = PHL 
+				original_tag = MYS 
+				original_tag = SGP 
+				original_tag = BRN 
+				original_tag = IDN 
+				original_tag = TLS
+				original_tag = PNG
+				original_tag = SMK
+				original_tag = WPA
+				original_tag = PAT
+			}
 		}
 		
 		complete_effect = {
-            add_ideas = asean_member
+			set_global_flag = ongoing_ASEAN_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_asean_member
+				}
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = asean
 		
-		cost = 100
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
 		
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
-	
+
 	leave_asean = {
 	
 		visible = {
-			has_idea = asean_member
-		}
-		available = {
-            always = yes
+			has_idea = idea_asean_member
 		}
 		
 		complete_effect = {
-            remove_ideas = asean_member
+            remove_ideas = idea_asean_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = asean_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = asean_member }
+					}
+				}
+			}
 		}
 		
 		icon = asean
 		
-		cost = 50
+		cost = 150
 		
 		ai_will_do = {
 			base = 0
