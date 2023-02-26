@@ -107,7 +107,6 @@ if = {
 add_ideas = {
 	volunteer_army
 	free_trade
-	visegrad_group_member
 	idea_european_union_member
 	parliamentary_system
 	pro_life
@@ -117,6 +116,9 @@ add_ideas = {
 }
 
 add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 730 }
+add_opinion_modifier = { target = CZE modifier = visegrad_group }
+add_opinion_modifier = { target = SVK modifier = visegrad_group }
+add_opinion_modifier = { target = HUN modifier = visegrad_group }
 
 #Sejm
 set_variable = { communist_seats = 0 }

@@ -93,19 +93,6 @@ ideas = {
 			}
 		}
 		
-		#Visegrad Group
-		visegrad_group_member = {
-			picture = visegrad
-			
-			modifier = {
-			
-			}
-
-			cancel = {
-				has_global_flag = visegrad_group_dissolved
-			}
-		}
-		
 		#Commonwealth of Nations
 		idea_commonwealth_of_nations_member = {
 			picture = commonwealth_of_nations
@@ -170,15 +157,6 @@ ideas = {
 				has_global_flag = east_african_community_dissolved
 			}
 		}
-				
-     	#GUAM
-		guam_member = {
-			picture = guam
-
-			modifier = {
-			
-			}
-		}
 		
      	#Commonwealth of Independent States
 		commonwealth_of_independent_states_member = {
@@ -190,11 +168,16 @@ ideas = {
 		}
 		
      	#Gulf Cooperation Council
-		gulf_cooperation_council_member = {
+		idea_gulf_cooperation_council_member = {
 			picture = gulf_cooperation_council
 
 			modifier = {
-			
+				political_power_factor = -0.01
+				stability_factor = 0.01
+			}
+
+			cancel = {
+				has_global_flag = gulf_cooperation_council_dissolved
 			}
 		}
 		

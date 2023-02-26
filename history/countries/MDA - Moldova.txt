@@ -93,13 +93,16 @@ if = {
 
 add_ideas = {
 	limited_conscription
-	guam_member
 	commonwealth_of_independent_states_member
 	parliamentary_system
 	low_taxes
 	#extensive_healthcare_spending
 	threshold_five_percent
 }
+
+add_opinion_modifier = { target = UKR modifier = guam_organization }
+add_opinion_modifier = { target = GEO modifier = guam_organization }
+add_opinion_modifier = { target = AZE modifier = guam_organization }
 
 #Parliament
 set_variable = { communist_seats = 20.79 }

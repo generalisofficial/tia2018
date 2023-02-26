@@ -96,7 +96,6 @@ if = {
 }
 
 add_ideas = {
-	visegrad_group_member
 	idea_european_union_member
 	free_trade
 	parliamentary_system
@@ -107,6 +106,10 @@ add_ideas = {
 	#extensive_healthcare_spending
 	threshold_five_percent
 }
+
+add_opinion_modifier = { target = POL modifier = visegrad_group }
+add_opinion_modifier = { target = SVK modifier = visegrad_group }
+add_opinion_modifier = { target = HUN modifier = visegrad_group }
 
 #Chamber of Deputies
 set_variable = { communist_seats = 7.5 }

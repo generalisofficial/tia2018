@@ -101,13 +101,16 @@ if = {
 
 add_ideas = {
 	active_draft
-	guam_member
 	christianity
 	parliamentary_system
 	low_taxes
 	#extensive_healthcare_spending
 	threshold_three_percent
 }
+
+add_opinion_modifier = { target = MDA modifier = guam_organization }
+add_opinion_modifier = { target = UKR modifier = guam_organization }
+add_opinion_modifier = { target = AZE modifier = guam_organization }
 
 #Parliament of Georgia
 set_variable = { communist_seats = 0 }

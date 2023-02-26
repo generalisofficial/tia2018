@@ -94,7 +94,6 @@ if = {
 
 add_ideas = {
 	free_trade
-	visegrad_group_member
 	idea_european_union_member
 	parliamentary_system
 	pro_life
@@ -103,6 +102,10 @@ add_ideas = {
 	#extensive_healthcare_spending
 	threshold_five_percent
 }
+
+add_opinion_modifier = { target = CZE modifier = visegrad_group }
+add_opinion_modifier = { target = SVK modifier = visegrad_group }
+add_opinion_modifier = { target = POL modifier = visegrad_group }
 
 #National Assembly
 set_variable = { communist_seats = 0 }

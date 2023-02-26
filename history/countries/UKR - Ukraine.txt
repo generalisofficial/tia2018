@@ -109,7 +109,6 @@ add_opinion_modifier = {
 	
 add_ideas = {
 	limited_conscription
-	guam_member
 	presidential_republic
 	organized_labour_discouraged
 	low_taxes
@@ -117,6 +116,10 @@ add_ideas = {
 	five_year_term
 	threshold_five_percent
 }
+
+add_opinion_modifier = { target = MDA modifier = guam_organization }
+add_opinion_modifier = { target = GEO modifier = guam_organization }
+add_opinion_modifier = { target = AZE modifier = guam_organization }
 
 if = {
 	limit = {

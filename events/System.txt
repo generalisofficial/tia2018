@@ -349,24 +349,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = system.17
-	hidden=yes
-
-	trigger = {
-		NOT = { 
-			any_country = {
-				has_idea = guam_member
-			}
-		}
-	}
-
-	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = guam_dissolved
-	}
-}
+# system.17 empty
 
 country_event = {
 	id = system.18
@@ -394,7 +377,7 @@ country_event = {
 	trigger = {
 		NOT = { 
 			any_country = {
-				has_idea = gulf_cooperation_council_member
+				has_idea = idea_gulf_cooperation_council_member
 			}
 		}
 	}

@@ -94,7 +94,6 @@ if = {
 
 add_ideas = {
 	limited_conscription
-	guam_member
 	commonwealth_of_independent_states_member
 	presidential_republic
 	civil_liberties_authoritarian
@@ -108,6 +107,9 @@ give_guarantee = TUR
 add_opinion_modifier = { target = TUR modifier = military_cooperation }
 add_opinion_modifier = { target = ARM modifier = rival }
 add_opinion_modifier = { target = ART modifier = rival }
+add_opinion_modifier = { target = MDA modifier = guam_organization }
+add_opinion_modifier = { target = GEO modifier = guam_organization }
+add_opinion_modifier = { target = UKR modifier = guam_organization }
 
 #National Assembly
 set_variable = { communist_seats = 0 }
