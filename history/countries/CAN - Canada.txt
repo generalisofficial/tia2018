@@ -202,6 +202,10 @@ add_opinion_modifier = {
 }
 
 # Characters - Military
+recruit_character = CAN_alain_guimond
+recruit_character = CAN_dean_milner
+recruit_character = CAN_bill_fletcher
+recruit_character = CAN_stephan_joudry
 
 # Characters - Political
 recruit_character = CAN_don_andrews
@@ -218,7 +222,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 
 	create_equipment_variant = {
-		name = "Victoria Class"		
+		name = "Victoria Class"
 		type = ship_hull_submarine_2
 		name_group = GENERIC_SS_NAMES
 		modules = {
@@ -263,4 +267,4 @@ if = {
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
-}	
+}
