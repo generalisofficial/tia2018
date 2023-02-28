@@ -310,6 +310,20 @@ on_actions = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					has_idea = idea_commonwealth_of_independent_states_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_commonwealth_of_independent_states_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = commonwealth_of_independent_states_member
+					}
+				}
+			}
 			if = {
 				limit = {
 					NOT = {

@@ -91,6 +91,13 @@ set_technology = {
 
 create_equipment_variant = { name = "Mirage 2000N" type = strat_bomber_equipment_2 upgrades = { plane_engine_upgrade = 5 } }
 
+add_opinion_modifier = { target = CAN modifier = group_of_seven }
+add_opinion_modifier = { target = USA modifier = group_of_seven }
+add_opinion_modifier = { target = DEU modifier = group_of_seven }
+add_opinion_modifier = { target = ITA modifier = group_of_seven }
+add_opinion_modifier = { target = JPN modifier = group_of_seven }
+add_opinion_modifier = { target = ENG modifier = group_of_seven }
+
 add_ideas = {
 	idea_united_nations_security_council_member
 	idea_european_union_member

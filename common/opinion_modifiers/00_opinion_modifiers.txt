@@ -122,6 +122,7 @@ opinion_modifiers = {
 
 	border_conflict_reconciled = {
 		value = 40
+		decay = 0.1
 	}
 
 	rival_government = {
@@ -138,10 +139,6 @@ opinion_modifiers = {
 	
 	treaty_of_friendship = {
 		value = 25
-	}
-	
-	established_diplomatic_relations = {
-		value = 20
 	}
 	
 	military_cooperation = {
@@ -165,6 +162,14 @@ opinion_modifiers = {
 	terrorist_menace_trade = {
 		value = -100
 		trade = yes
+	}
+
+	authoritarian_regime = {
+		value = -15
+	}
+
+	totalitarian_regime = {
+		value = -30
 	}
 
 	# ECONOMY/TRADE
@@ -233,6 +238,10 @@ opinion_modifiers = {
 	}
 
 	gulf_cooperation_council_member = {
+		value = 30
+	}
+
+	commonwealth_of_independent_states_member = {
 		value = 30
 	}
 
@@ -350,5 +359,13 @@ opinion_modifiers = {
 
 	genocide_accusations = {
 		value = -100
+	}
+
+	kidnapping_of_gui_minhai = {
+		value = -50
+	}
+
+	group_of_seven = {
+		value = 25
 	}
 }

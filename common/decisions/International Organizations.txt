@@ -297,7 +297,7 @@ international_organizations = {
 		visible = {
 			is_sovereign_state = yes
 			is_UN_member = yes
-			is_former_british_colony = yes
+			is_anglosphere = yes
 			NOT = { 
 				OR = {
 					has_idea = idea_commonwealth_of_nations_member
@@ -738,39 +738,84 @@ international_organizations = {
 	join_commonwealth_of_independent_states = {
 	
 		visible = {
-			NOT = { has_idea = commonwealth_of_independent_states_member  has_global_flag = commonwealth_of_independent_states_dissolved }
-			OR = { original_tag = RUS original_tag = UKR original_tag = BLR original_tag = LTU original_tag = LVA original_tag = EST original_tag = MDA original_tag = GEO original_tag = TRA original_tag = GEO original_tag = ABK original_tag = SOS original_tag = ART original_tag = ARM original_tag = AZE original_tag = KAZ original_tag = UZB original_tag = KGZ original_tag = TKM original_tag = TJK }
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_commonwealth_of_independent_states_member
+					has_global_flag = commonwealth_of_independent_states_dissolved
+				}
+			}
+			OR = { 
+				original_tag = RUS
+				original_tag = BLR
+				original_tag = UKR
+				original_tag = MDA
+				original_tag = TRA
+				original_tag = DPR
+				original_tag = LPR
+				original_tag = KAZ
+				original_tag = KGZ
+				original_tag = UZB
+				original_tag = TKM
+				original_tag = TJK
+				original_tag = TYV
+			}
 		}
-		available = {
-            NOT = { has_idea = commonwealth_of_independent_states_member has_idea = non_member_state }
-		}
-		
+
 		complete_effect = {
-            add_ideas = commonwealth_of_independent_states_member
+			set_global_flag = ongoing_CIS_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_commonwealth_of_independent_states_member
+				}
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = commonwealth_of_independent_states
 		
-		cost = 100
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
 		
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 	
 	leave_commonwealth_of_independent_states  = {
 	
 		visible = {
-			has_idea = commonwealth_of_independent_states_member
+			has_idea = idea_commonwealth_of_independent_states_member
 		}
 		
 		complete_effect = {
-            remove_ideas = commonwealth_of_independent_states_member
+            remove_ideas = idea_commonwealth_of_independent_states_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = commonwealth_of_independent_states_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = commonwealth_of_independent_states_member }
+					}
+				}
+			}
 		}
 		
 		icon = commonwealth_of_independent_states
 		
-		cost = 50
+		cost = 150
 		
 		ai_will_do = {
 			base = 0

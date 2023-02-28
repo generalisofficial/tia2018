@@ -159,11 +159,16 @@ ideas = {
 		}
 		
      	#Commonwealth of Independent States
-		commonwealth_of_independent_states_member = {
+		idea_commonwealth_of_independent_states_member = {
 			picture = commonwealth_of_independent_states
 
 			modifier = {
-			
+				political_power_factor = -0.01
+				stability_factor = 0.01
+			}
+
+			cancel = {
+				has_global_flag = commonwealth_of_independent_states_dissolved
 			}
 		}
 		
