@@ -324,6 +324,20 @@ on_actions = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					has_idea = idea_league_of_arab_states_member
+				}
+				every_other_country = {
+					limit = {
+						has_idea = idea_league_of_arab_states_member
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = league_of_arab_states_member
+					}
+				}
+			}
 			if = {
 				limit = {
 					NOT = {

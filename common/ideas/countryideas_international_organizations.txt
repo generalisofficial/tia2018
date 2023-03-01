@@ -108,11 +108,16 @@ ideas = {
 		}
 		
 		#Arab League	
-		arab_league_member = {
-			picture = arab_league
+		idea_league_of_arab_states_member = {
+			picture = league_of_arab_states
 
 			modifier = {
-			
+				political_power_factor = -0.01
+				stability_factor = 0.01
+			}
+
+			cancel = {
+				has_global_flag = league_of_arab_states_dissolved
 			}
 		}
 

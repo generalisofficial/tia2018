@@ -233,6 +233,24 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_global_flag = ongoing_LAS_application # League of Arab States
+			}
+			add_ideas = idea_league_of_arab_states_member
+			clr_global_flag = ongoing_LAS_application
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_idea = idea_league_of_arab_states_member
+					}
+					add_opinion_modifier = { target = ROOT modifier = league_of_arab_states_member }
+					ROOT = {
+						add_opinion_modifier = { target = PREV modifier = league_of_arab_states_member }
+					}
+				}
+			}
+		}
 		clr_global_flag = ongoing_generic_application
 		clear_variable = global.generic_application_vote_count_in_favor
 		clear_variable = global.generic_application_vote_count_against

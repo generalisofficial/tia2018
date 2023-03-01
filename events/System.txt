@@ -58,7 +58,7 @@ country_event = {
 	trigger = {
 		NOT = { 
 			any_country = {
-				has_idea = arab_league_member
+				has_idea = idea_league_of_arab_states_member
 			}
 		}
 	}
@@ -66,7 +66,7 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = arab_league_dissolved
+		set_global_flag = league_of_arab_states_dissolved
 	}
 }
 

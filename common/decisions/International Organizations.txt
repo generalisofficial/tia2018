@@ -841,6 +841,7 @@ international_organizations = {
 				original_tag = JOR 
 				original_tag = YEM 
 				original_tag = MAR
+				original_tag = KWT
 			}
 		}
 		
@@ -904,51 +905,99 @@ international_organizations = {
 		}
 	}
 	
-	join_arab_league = {
+	join_league_of_arab_states = {
 	
 		visible = {
-			NOT = { has_idea = arab_league_member  has_global_flag = arab_league_dissolved }
-			has_country_flag = country_language_arabic
-		}
-		
-		available = {
-            NOT = { has_idea = arab_league_member has_idea = non_member_state }
-			OR = {
-			    NOT = { original_tag = SYR }
-				NOT = { country_exists = FSA }
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_league_of_arab_states_member
+					has_global_flag = league_of_arab_states_dissolved
+				}
+			}
+			OR = { 
+				original_tag = SAU 
+				original_tag = OMN 
+				original_tag = UAE 
+				original_tag = QAT 
+				original_tag = BHR 
+				original_tag = JOR 
+				original_tag = YEM 
+				original_tag = HOU
+				original_tag = MAR
+				original_tag = DZA
+				original_tag = TUN
+				original_tag = MRT
+				original_tag = ESH
+				original_tag = LBY
+				original_tag = LNA
+				original_tag = EGY
+				original_tag = SDN
+				original_tag = SOM
+				original_tag = IRQ
+				original_tag = PSE
+				original_tag = HAM
+				original_tag = SYR
+				original_tag = LBN
+				original_tag = KWT
+				original_tag = COM
 			}
 		}
 		
 		complete_effect = {
-            add_ideas = arab_league_member
+			set_global_flag = ongoing_LAS_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_league_of_arab_states_member
+				}
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
-		icon = arab_league
+		icon = league_of_arab_states
 		
-		cost = 100
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
 		
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 	
-	leave_arab_league = {
+	leave_league_of_arab_states = {
 	
 		visible = {
-			has_idea = arab_league_member
-		}
-		
-		available = {
-            always = yes
+			has_idea = idea_league_of_arab_states_member
 		}
 		
 		complete_effect = {
-            remove_ideas = arab_league_member
+            remove_ideas = idea_league_of_arab_states_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = league_of_arab_states_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = league_of_arab_states_member }
+					}
+				}
+			}
 		}
 		
-		icon = arab_league
+		icon = league_of_arab_states
 		
-		cost = 50
+		cost = 150
 		
 		ai_will_do = {
 			base = 0

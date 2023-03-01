@@ -110,7 +110,7 @@ news_event = { #Eurovision Song Contest 2018
 		name = eurovision.1.o2
 		trigger = { 
 			NOT = { original_tag = ISR }
-			NOT = { has_idea = arab_league_member has_war_with = ISR }
+			NOT = { has_idea = idea_league_of_arab_states_member has_war_with = ISR }
 		}
 	}
 	
@@ -118,7 +118,7 @@ news_event = { #Eurovision Song Contest 2018
 		name = eurovision.1.o3
 		trigger = { 
 		    OR = { 
-			    has_idea = arab_league_member
+			    has_idea = idea_league_of_arab_states_member
 			    has_idea = idea_al_qaeda
 				has_war_with = ISR
 			}
