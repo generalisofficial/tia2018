@@ -424,6 +424,7 @@ domestic_affairs = {
 	abolish_political_parties = {
 		
 		visible = {
+			is_democracy = yes
 			NOT = {
 				OR = {
 					has_idea = idea_nonpartisan_political_system
@@ -440,63 +441,63 @@ domestic_affairs = {
 			add_ideas = idea_nonpartisan_political_system
 			set_party_name = { 
 				ideology = islamist
-				long_name = "Islamist Independents"
-				name = "Ind."
+				long_name = independent_islamist_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = fascist
-				long_name = "Fascist Independents"
-				name = "Ind."
+				long_name = independent_fascist_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = right_wing_populist
-				long_name = "Right-Wing Populist Independents"
-				name = "Ind."
+				long_name = independent_right_wing_populist_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = monarchist
-				long_name = "Monarchist Independents"
-				name = "Ind."
+				long_name = independent_monarchist_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = national_conservative
-				long_name = "National Conservative Independents"
-				name = "Ind."
+				long_name = independent_national_conservative_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = conservative
-				long_name = "Conservative Independents"
-				name = "Ind."
+				long_name = independent_conservative_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = classical_liberal
-				long_name = "Classical Liberal Independents"
-				name = "Ind."
+				long_name = independent_classical_liberal_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = social_liberal
-				long_name = "Social Liberal Independents"
-				name = "Ind."
+				long_name = independent_social_liberal_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = social_democrat
-				long_name = "Social Democrat Independents"
-				name = "Ind."
+				long_name = independent_social_democrat_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = progressive
-				long_name = "Progressive Independents"
-				name = "Ind."
+				long_name = independent_progressive_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = socialist
-				long_name = "Socialist Independents"
-				name = "Ind."
+				long_name = independent_socialist_party_long
+				name = independent_party
 			}
 			set_party_name = { 
 				ideology = communist
-				long_name = "Communist Independents"
-				name = "Ind."
+				long_name = independent_communist_party_long
+				name = independent_party
 			}
 			clr_country_flag = has_islamist_party
 			clr_country_flag = has_fascist_party

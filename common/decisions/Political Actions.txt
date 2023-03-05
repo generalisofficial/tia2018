@@ -529,6 +529,72 @@ political_actions = {
 		}
 	}
 
+	the_prosperity_party = {
+		icon = prosperity_party
+
+		allowed = {
+			original_tag = ETH
+		}
+
+		visible = {
+			has_government = socialist
+			has_country_leader = {
+				name = "Abiy Ahmed"
+				ruling_only = yes
+			}
+		}
+
+		available = {
+			is_democracy = yes
+		}
+
+		fire_only_once = yes
+
+		cost = 250
+
+		complete_effect = {
+			set_party_name = { 
+				ideology = classical_liberal
+				long_name = ETH_classical_liberal_party_PP_long
+				name = ETH_classical_liberal_party_PP
+			}
+			set_party_name = { 
+				ideology = socialist
+				long_name = "Socialist Independents"
+				name = "Ind."
+			}
+			set_country_flag = has_classical_liberal_party
+			clr_country_flag = has_socialist_party
+			set_politics = {	
+				ruling_party = classical_liberal
+				elections_allowed = yes
+			}
+			quickset_coalition = yes
+			set_variable = { classical_liberal_seats = socialist_seats }
+			set_variable = { socialist_seats = 0 }
+			set_parliament_graphics = yes
+			set_temp_variable = { eprdf_popularity = party_popularity@socialist }
+			hidden_effect = {
+				add_popularity = {	ideology = socialist popularity = -1 }
+				add_popularity = {	ideology = classical_liberal popularity = eprdf_popularity }
+			}
+			# leader change - update after adding characters
+			hidden_effect = {
+				retire_ideology_leader = socialist
+				retire_ideology_leader = classical_liberal
+			}
+			create_country_leader = {
+				name = "Abiy Ahmed"
+				picture = GFX_Portrait_ETH_Abiy_Ahmed
+				ideology = classical_liberal_ideology
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
 	# Boost Opposition
 
 	boost_islamist_opposition = {

@@ -15,13 +15,18 @@ country_event = { #Resignation of Hailemariam Desalegn
 	
 	option = {
 		name = ethiopia.1.o1
-		news_event = ethiopia.2
 		retire_ideology_leader = socialist
 		create_country_leader = {
 	        name = "Abiy Ahmed"
 	        picture = GFX_Portrait_ETH_Abiy_Ahmed
-	        ideology = african_socialist
+	        ideology = revolutionary_democracy
         }
+		if = {
+			limit =  {
+				has_government = socialist
+			}
+			news_event = ethiopia.2
+		}
 	}
 }
 

@@ -156,3 +156,82 @@ news_event = { #(Country) leaves the United Nations
 		}
 	}
 }
+
+# Selecting new non-permanent members
+country_event = {
+	id = united_nations.5
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		set_variable = { global.unsc_member_count = 0 }
+		every_country = {
+			limit = {
+				OR = {
+					has_idea = idea_united_nations_security_council_member
+					has_idea = idea_united_nations_NP_security_council_member
+				}
+			}
+			add_to_variable = {
+				var = global.unsc_member_count
+				value = 1
+			}
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = global.unsc_member_count
+					value = 15
+					compare = less_than
+				}
+			}
+			random_country = {
+				limit = {
+					is_UN_member = yes
+					NOT = {
+						OR = {
+							has_idea = idea_united_nations_security_council_member
+							has_idea = idea_united_nations_NP_security_council_member
+						}
+					}
+				}
+				country_event = united_nations.6
+			}
+			add_to_variable = {
+				var = global.unsc_member_count
+				value = 1
+			}
+		}
+		clear_variable = global.unsc_member_count
+	}
+}
+
+# We are the next non-permanent UNSC member!
+country_event = {
+	id = united_nations.6
+	title = united_nations.6.t
+	desc = united_nations.6.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = united_nations.6.o1
+		add_timed_idea = { idea = idea_united_nations_NP_security_council_member days = 729 }
+		news_event = united_nations.7
+	}
+}
+
+news_event = { #(FROM): the new non-permanent member
+	id = united_nations.7
+	title = united_nations.7.t
+	desc = united_nations.7.d
+	picture = GFX_news_event_united_nations_building
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = united_nations.7.o1
+	}
+}
