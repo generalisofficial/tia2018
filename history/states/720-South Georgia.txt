@@ -1,23 +1,31 @@
+
 state={
 	id=720
 	name="STATE_720"
-	manpower=30	
-	state_category = state_default
-	
-	history=
-	{
+
+	history={
 		owner = ENG
-		add_core_of = ENG
-		add_claim_by = ARG
+		victory_points = {
+			10995 1
+		}
 		buildings = {
 			infrastructure = 1
 			10995 = {
 				naval_base = 1
+
 			}
+
 		}
+		add_core_of = ENG
+		add_claim_by = ARG
+
 	}
-	
+
 	provinces={
-		10995 
+		10995 15868 
 	}
+	manpower=30
+	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

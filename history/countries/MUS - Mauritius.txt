@@ -107,12 +107,12 @@ add_opinion_modifier = {
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 66.12 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 33.88 }
+set_variable = { socialist_seats = 60.88 }
+set_variable = { progressive_seats = 17.39 }
+set_variable = { social_democrat_seats = 5.79 }
 set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
+set_variable = { conservative_seats = 15.94 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -126,18 +126,24 @@ add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = socialist
-	last_election = "2014.12.10"
+	last_election = "2014.11.7"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    socialist = 66.12
-    social_democrat = 33.88
+	socialist = 57.98
+	social_democrat = 20
+	progressive = 15.71
+	conservative = 5.71
+	islamist = 0.6
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MUS_pravind_jugnauth
+recruit_character = MUS_cehl_meeah
+recruit_character = MUS_xavier_luc_duval
 recruit_character = MUS_navin_ramgoolam
+recruit_character = MUS_paul_berenger
+recruit_character = MUS_pravind_jugnauth

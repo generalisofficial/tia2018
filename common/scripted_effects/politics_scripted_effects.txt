@@ -928,7 +928,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = { ideology = communist popularity = -1 }
+			set_political_party = { ideology = communist popularity = 0 }
 			set_variable = { communist_seats = 0 }
 		}
 		else = {
@@ -974,7 +974,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = socialist popularity = -1 }
+			set_political_party = { ideology = socialist popularity = 0 }
 			set_variable = { socialist_seats = 0 }
 		}
 		else = {
@@ -1020,7 +1020,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = progressive popularity = -1 }
+			set_political_party = { ideology = progressive popularity = 0 }
 			set_variable = { progressive_seats = 0 }
 		}
 		else = {
@@ -1066,7 +1066,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = social_democrat popularity = -1 }
+			set_political_party = { ideology = social_democrat popularity = 0 }
 			set_variable = { social_democrat_seats = 0 }
 		}
 		else = {
@@ -1112,7 +1112,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = social_liberal popularity = -1 }
+			set_political_party = { ideology = social_liberal popularity = 0 }
 			set_variable = { social_liberal_seats = 0 }
 		}
 		else = {
@@ -1158,7 +1158,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = classical_liberal popularity = -1 }
+			set_political_party = { ideology = classical_liberal popularity = 0 }
 			set_variable = { classical_liberal_seats = 0 }
 		}
 		else = {
@@ -1204,7 +1204,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = conservative popularity = -1 }
+			set_political_party = { ideology = conservative popularity = 0 }
 			set_variable = { conservative_seats = 0 }
 		}
 		else = {
@@ -1250,7 +1250,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = national_conservative popularity = -1 }
+			set_political_party = { ideology = national_conservative popularity = 0 }
 			set_variable = { national_conservative_seats = 0 }
 		}
 		else = {
@@ -1296,7 +1296,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = monarchist popularity = -1 }
+			set_political_party = { ideology = monarchist popularity = 0 }
 			set_variable = { monarchist_seats = 0 }
 		}
 		else = {
@@ -1342,7 +1342,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = right_wing_populist popularity = -1 }
+			set_political_party = { ideology = right_wing_populist popularity = 0 }
 			set_variable = { right_wing_populist_seats = 0 }
 		}
 		else = {
@@ -1388,7 +1388,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = fascist popularity = -1 }
+			set_political_party = { ideology = fascist popularity = 0 }
 			set_variable = { fascist_seats = 0 }
 		}
 		else = {
@@ -1434,7 +1434,7 @@ elect_new_parliament = {
 					}
 				}
 			}
-			add_popularity = {	ideology = islamist popularity = -1 }
+			set_political_party = { ideology = islamist popularity = 0 }
 			set_variable = { islamist_seats = 0 }
 		}
 		else = {
@@ -2530,7 +2530,7 @@ set_parliament_graphics = {
 	divide_variable = { ROOT.GroupGFX = 100 }
 	multiply_variable = { ROOT.GroupGFX = 230 }
 
-	set_parliament_speaker_plurality = yes
+	set_parliament_speaker = yes
 }
 
 set_coalition_to_array = {
@@ -3015,84 +3015,80 @@ set_parliament_popularity_array = {
 		}
 		add_to_array = { parliament_popularity_array = 12 }
 	}
-	#for_each_loop = {
-	#	array = parliament_popularity_array
-	#	log = "[?parliament_popularity_array^i]"
-	#}
 }
 
-set_parliament_speaker_plurality = {
+set_parliament_speaker = {
 	if = {
 		limit = {
 			communist_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 1 }
+		set_variable = { speaker_var = 1 }
 	}
 	if = {
 		limit = {
 			socialist_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 2 }
+		set_variable = { speaker_var = 2 }
 	}
 	if = {
 		limit = {
 			social_democrat_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 3 }
+		set_variable = { speaker_var = 3 }
 	}
 	if = {
 		limit = {
 			progressive_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 4 }
+		set_variable = { speaker_var = 4 }
 	}
 	if = {
 		limit = {
 			social_liberal_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 5 }
+		set_variable = { speaker_var = 5 }
 	}
 	if = {
 		limit = {
 			classical_liberal_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 6 }
+		set_variable = { speaker_var = 6 }
 	}
 	if = {
 		limit = {
 			conservative_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 7 }
+		set_variable = { speaker_var = 7 }
 	}
 	if = {
 		limit = {
 			islamist_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 8 }
+		set_variable = { speaker_var = 8 }
 	}
 	if = {
 		limit = {
 			monarchist_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 9 }
+		set_variable = { speaker_var = 9 }
 	}
 	if = {
 		limit = {
 			national_conservative_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 10 }
+		set_variable = { speaker_var = 10 }
 	}
 	if = {
 		limit = {
 			right_wing_populist_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 11 }
+		set_variable = { speaker_var = 11 }
 	}
 	if = {
 		limit = {
 			fascist_plurality_seats = yes
 		}
-		set_variable = { plurality_var = 12 }
+		set_variable = { speaker_var = 12 }
 	}
 }
 
@@ -3428,120 +3424,84 @@ puppet_ideology_cleanup = {
 			NOT = { has_government = islamist }
 			NOT = { has_country_flag = has_islamist_party }
 		}
-		add_popularity = { 
-			ideology = islamist
-			popularity = -1
-		}
+		set_political_party = { ideology = islamist popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = fascist }
 			NOT = { has_country_flag = has_fascist_party }
 		}
-		add_popularity = { 
-			ideology = fascist
-			popularity = -1
-		}
+		set_political_party = { ideology = fascist popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = right_wing_populist }
 			NOT = { has_country_flag = has_right_wing_populist_party }
 		}
-		add_popularity = { 
-			ideology = right_wing_populist
-			popularity = -1
-		}
+		set_political_party = { ideology = right_wing_populist popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = monarchist }
 			NOT = { has_country_flag = has_monarchist_party }
 		}
-		add_popularity = { 
-			ideology = monarchist
-			popularity = -1
-		}
+		set_political_party = { ideology = monarchist popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = national_conservative }
 			NOT = { has_country_flag = has_national_conservative_party }
 		}
-		add_popularity = { 
-			ideology = national_conservative
-			popularity = -1
-		}
+		set_political_party = { ideology = national_conservative popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = conservative }
 			NOT = { has_country_flag = has_conservative_party }
 		}
-		add_popularity = { 
-			ideology = conservative
-			popularity = -1
-		}
+		set_political_party = { ideology = conservative popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = classical_liberal }
 			NOT = { has_country_flag = has_classical_liberal_party }
 		}
-		add_popularity = { 
-			ideology = classical_liberal
-			popularity = -1
-		}
+		set_political_party = { ideology = classical_liberal popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = social_liberal }
 			NOT = { has_country_flag = has_social_liberal_party }
 		}
-		add_popularity = { 
-			ideology = social_liberal
-			popularity = -1
-		}
+		set_political_party = { ideology = social_liberal popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = social_democrat }
 			NOT = { has_country_flag = has_social_democrat_party }
 		}
-		add_popularity = { 
-			ideology = social_democrat
-			popularity = -1
-		}
+		set_political_party = { ideology = social_democrat popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = progressive }
 			NOT = { has_country_flag = has_progressive_party }
 		}
-		add_popularity = { 
-			ideology = progressive
-			popularity = -1
-		}
+		set_political_party = { ideology = progressive popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = socialist }
 			NOT = { has_country_flag = has_socialist_party }
 		}
-		add_popularity = { 
-			ideology = socialist
-			popularity = -1
-		}
+		set_political_party = { ideology = socialist popularity = 0 }
 	}
 	if  = {
 		limit = {
 			NOT = { has_government = communist }
 			NOT = { has_country_flag = has_communist_party }
 		}
-		add_popularity = { 
-			ideology = communist
-			popularity = -1
-		}
+		set_political_party = { ideology = communist popularity = 0 }
 	}
 }
 

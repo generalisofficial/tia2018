@@ -501,7 +501,26 @@ country_event = {
 	option = { #Auto-Generate Government
 		name = election.3.o1
 		ai_chance = {
-			factor = 100
+			factor = 0
+			modifier = {
+				factor = 100
+				NOT = {
+					OR = {
+						communist_majority_seats = yes
+						socialist_majority_seats = yes
+						progressive_majority_seats = yes
+						social_democrat_majority_seats = yes
+						social_liberal_majority_seats = yes
+						classical_liberal_majority_seats = yes
+						conservative_majority_seats = yes
+						national_conservative_majority_seats = yes
+						monarchist_majority_seats = yes
+						right_wing_populist_majority_seats = yes
+						fascist_majority_seats = yes
+						islamist_majority_seats = yes
+					}
+				}
+			}
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		custom_effect_tooltip = TT_auto_government
@@ -520,18 +539,18 @@ country_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					communist_majority_popularity = yes
-					socialist_majority_popularity = yes
-					progressive_majority_popularity = yes
-					social_democrat_majority_popularity = yes
-					social_liberal_majority_popularity = yes
-					classical_liberal_majority_popularity = yes
-					conservative_majority_popularity = yes
-					national_conservative_majority_popularity = yes
-					monarchist_majority_popularity = yes
-					right_wing_populist_majority_popularity = yes
-					fascist_majority_popularity = yes
-					islamist_majority_popularity = yes
+					communist_majority_seats = yes
+					socialist_majority_seats = yes
+					progressive_majority_seats = yes
+					social_democrat_majority_seats = yes
+					social_liberal_majority_seats = yes
+					classical_liberal_majority_seats = yes
+					conservative_majority_seats = yes
+					national_conservative_majority_seats = yes
+					monarchist_majority_seats = yes
+					right_wing_populist_majority_seats = yes
+					fascist_majority_seats = yes
+					islamist_majority_seats = yes
 				}
 			}
 		}
@@ -555,6 +574,23 @@ country_event = {
 		name = election.3.o3
 		ai_chance = {
 			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+					communist_majority_seats = yes
+					socialist_majority_seats = yes
+					progressive_majority_seats = yes
+					social_democrat_majority_seats = yes
+					social_liberal_majority_seats = yes
+					classical_liberal_majority_seats = yes
+					conservative_majority_seats = yes
+					national_conservative_majority_seats = yes
+					monarchist_majority_seats = yes
+					right_wing_populist_majority_seats = yes
+					fascist_majority_seats = yes
+					islamist_majority_seats = yes
+				}
+			}
 		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		break_coalition = yes
@@ -831,108 +867,156 @@ country_event = {
 			limit = {
 				has_country_flag = coalition_islamist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = islamist
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_fascist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = fascist
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_right_wing_populist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = right_wing_populist
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_monarchist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = monarchist
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_national_conservative
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = national_conservative
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_conservative
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = conservative
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_classical_liberal
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = classical_liberal
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_social_liberal
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = social_liberal
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_social_democrat
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = social_democrat
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_progressive
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = progressive
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_socialist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = socialist
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_communist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_gain
+				max = 0.05
+			}
 			add_popularity = { 
 				ideology = communist
-				popularity = 0.02
+				popularity = random_popularity_gain
 			}
 		}
 		pre_election_effects = yes
@@ -947,108 +1031,168 @@ country_event = {
 			limit = {
 				has_country_flag = coalition_islamist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = islamist
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_fascist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = fascist
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_right_wing_populist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = right_wing_populist
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_monarchist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = monarchist
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_national_conservative
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = national_conservative
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_conservative
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = conservative
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_classical_liberal
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = classical_liberal
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_social_liberal
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = social_liberal
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_social_democrat
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = social_democrat
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_progressive
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = progressive
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_socialist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = socialist
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = coalition_communist
 			}
+			set_temp_variable_to_random = {
+				var = random_popularity_loss
+				max = 0
+				min = -0.05
+			}
 			add_popularity = { 
 				ideology = communist
-				popularity = -0.02
+				popularity = random_popularity_loss
 			}
 		}
 		pre_election_effects = yes

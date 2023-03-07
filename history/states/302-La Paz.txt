@@ -1,31 +1,33 @@
+
 state={
 	id=302
 	name="STATE_302"
 	resources={
-		tungsten=98
-		oil=6
+		tungsten=98.000
+		oil=6.000
 	}
-	
-	state_category = state_default
 
 	history={
 		owner = BOL
+		victory_points = {
+			5230 5 
+		}
 		buildings = {
 			infrastructure = 3
 			military_industry = 2
 			civilian_industry = 4
 			military_airport = 2
+
 		}
 		add_core_of = BOL
-		victory_points = {
-			5230 5 
-		}
 
 	}
 
 	provinces={
-		2174 5179 5229 5230 8157 8225 10938 10952 10987 12930 12979 13134 13174 13195 
+		5188 5230 8157 8225 13174 13195 15890 15892 15898 15902 15907 
 	}
 	manpower=8044500
 	buildings_max_level_factor=1.000
+	state_category=state_default
+	local_supplies=0.000
 }

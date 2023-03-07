@@ -615,14 +615,14 @@ country_event = {
 	}
 }
 
-country_event = { ### Monthly On-action
+country_event = { # Monthly On-action
 	id = system.21
 	hidden=yes
 
 	is_triggered_only = yes
 	
 	immediate = {
-		### Motion of No Confidence - 5% chance every month if conditions true
+		# Motion of No Confidence - 5% chance every month if conditions true
 		if = {
 			limit = {
 				has_idea = minority_government
@@ -642,7 +642,7 @@ country_event = { ### Monthly On-action
 				country_event = politics.11
 			}
 		}
-		### Randomizer - Adds 1% to random party
+		# Randomizer - Adds 0-2.5% to random party
 		random_list = {
 			7 = {
 				if = {
@@ -659,9 +659,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = islamist
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -676,9 +680,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = fascist
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -693,9 +701,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = right_wing_populist
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -710,9 +722,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = monarchist
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -727,9 +743,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = national_conservative
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -744,9 +764,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = conservative
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -761,9 +785,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = classical_liberal
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -778,9 +806,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = social_liberal
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -795,9 +827,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = social_democrat
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -812,9 +848,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = progressive
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -829,9 +869,13 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = socialist
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
@@ -846,14 +890,18 @@ country_event = { ### Monthly On-action
 							}
 						}
 					}
+					set_temp_variable_to_random = {
+						var = random_popularity_gain
+						max = 0.025
+					}
 					add_popularity = { 
 						ideology = communist
-						popularity = 0.01 
+						popularity = random_popularity_gain
 					}
 				}
 			}
 		}
-		### Balancer - Removes 1% from all over 60%, 3% from all over 80%
+		# Balancer - Removes 1% from all over 60%, 3% from all over 80%
 		if = {
 			limit = {
 				islamist > 0.8
@@ -1070,7 +1118,7 @@ country_event = { ### Monthly On-action
 				popularity = -0.01 
 			}
 		}
-		### Satisfaction - Adds/removes from government based on satisfaction
+		# Satisfaction - Adds/removes from government based on satisfaction
 		if = {
 			limit = {
 				has_stability > 0.75
@@ -1525,7 +1573,7 @@ country_event = { ### Monthly On-action
 				}
 			}
 		}
-		### State Categories
+		# State Categories
 		every_state = {
 			limit = {
 				infrastructure < 1
