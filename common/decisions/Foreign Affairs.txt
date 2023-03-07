@@ -1548,4 +1548,45 @@ foreign_affairs = {
 			factor = 100
 		}
 	}
+
+	claim_united_macedonia = {
+	
+		allowed = {
+			original_tag = MKD
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { has_cosmetic_tag = NMK }
+		}
+		
+		complete_effect = {
+			add_state_claim = 731
+			add_state_claim = 1153
+			add_state_claim = 1151
+			add_state_claim = 1349
+			add_named_threat = { 
+				threat = 5
+				name =  threat_territorial_claims
+			}		
+		}
+		
+		icon = macedonia
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 5
+				OR = {
+					has_government = fascist
+					has_government = monarchist
+					threat > 0.8
+				}
+			}
+		}
+	}
 }

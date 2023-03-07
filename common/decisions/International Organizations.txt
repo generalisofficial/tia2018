@@ -1007,21 +1007,42 @@ international_organizations = {
 	join_shanghai_cooperation_organization = {
 	
 		visible = {
-			NOT = { has_idea = shanghai_cooperation_organization_member  has_global_flag = shanghai_cooperation_organization_dissolved }
-			OR = { original_tag = IND original_tag = PAK original_tag = PRC original_tag = RUS original_tag = KAZ original_tag = TJK original_tag = UZB original_tag = KGZ}
-		}
-		
-		available = {
-            NOT = { has_idea = shanghai_cooperation_organization_member has_idea = non_member_state }
+			is_sovereign_state = yes
+			NOT = { 
+				OR ={
+					has_idea = idea_shanghai_cooperation_organization_member
+					has_global_flag = shanghai_cooperation_organization_dissolved
+				}
+			}
 		}
 		
 		complete_effect = {
-            add_ideas = shanghai_cooperation_organization_member
+			set_global_flag = ongoing_SCO_application
+			set_global_flag = ongoing_generic_application
+			every_country = {
+				limit = {
+					has_idea = idea_shanghai_cooperation_organization_member
+				}
+				custom_effect_tooltip = TT_org_application
+				hidden_effect = {
+					country_event = international_organizations.1
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = TT_org_response
+			hidden_effect = {
+				country_event = international_organizations.2
+			}
 		}
 		
 		icon = shanghai_cooperation_organization
 		
-		cost = 100
+		days_remove = 7
+		days_re_enable = 360
+		
+		cost = 50
 		
 		ai_will_do = {
 			base = 0
@@ -1031,20 +1052,24 @@ international_organizations = {
 	leave_shanghai_cooperation_organization = {
 	
 		visible = {
-			has_idea = shanghai_cooperation_organization_member
-		}
-		
-		available = {
-            always = yes
+			has_idea = idea_shanghai_cooperation_organization_member
 		}
 		
 		complete_effect = {
-            remove_ideas = shanghai_cooperation_organization_member
+            remove_ideas = idea_shanghai_cooperation_organization_member
+			hidden_effect = {
+				every_country = {
+					remove_opinion_modifier = { target = ROOT modifier = shanghai_cooperation_organization_member }
+					ROOT = {
+						remove_opinion_modifier = { target = PREV modifier = shanghai_cooperation_organization_member }
+					}
+				}
+			}
 		}
 		
 		icon = shanghai_cooperation_organization
 		
-		cost = 50
+		cost = 150
 		
 		ai_will_do = {
 			base = 0

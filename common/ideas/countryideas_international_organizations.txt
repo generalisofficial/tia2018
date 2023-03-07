@@ -192,11 +192,16 @@ ideas = {
 		}
 		
      	#Shanghai Cooperation Organization
-		shanghai_cooperation_organization_member = {
+		idea_shanghai_cooperation_organization_member = {
 			picture = shanghai_cooperation_organization
 
 			modifier = {
-			
+				political_power_factor = -0.01
+				stability_factor = 0.01
+			}
+
+			cancel = {
+				has_global_flag = shanghai_cooperation_organization_dissolved
 			}
 		}
 		
