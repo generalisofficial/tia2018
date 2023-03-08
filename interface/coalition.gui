@@ -42,7 +42,7 @@ guiTypes = {
 			name ="title"
 			position = { x= 250 y = 30 }
 			font = "hoi_36header"
-			text = "Government & Coalition Formation"
+			text = coalition_gui_header
 			format = center
 			maxWidth = 550
 			maxHeight = 24
@@ -53,7 +53,7 @@ guiTypes = {
 			name ="recommended_party"
 			position = { x= 250 y = 70 }
 			font = "hoi_24header"
-			text = "Elected Speaker: [This.GetLargestPartySeats]"
+			text = coalition_gui_recommended
 			format = center
 			maxWidth = 500
 			maxHeight = 24
@@ -64,7 +64,7 @@ guiTypes = {
 			name = "coalition_leader_text"
 			position = { x= 30 y = 130 }
 			font = "hoi_30header"
-			text = "Coalition Leader:"
+			text = coalition_gui_leader
 			format = left
 			maxWidth = 500
 			maxHeight = 24
@@ -75,7 +75,7 @@ guiTypes = {
 			name = "coalition_leader_selected"
 			position = { x= 30 y = 170 }
 			font = "hoi_30header"
-			text = "[This.GetCoalitionLeaderSelected]"
+			text = "[THIS.GetCoalitionLeaderSelected]"
 			format = left
 			maxWidth = 470
 			maxHeight = 24
@@ -110,7 +110,7 @@ guiTypes = {
 			name = "coalition_partners_text"
 			position = { x= 30 y = 310 }
 			font = "hoi_30header"
-			text = "Coalition Partner(s):"
+			text = coalition_gui_partners
 			format = left
 			maxWidth = 500
 			maxHeight = 24
@@ -167,7 +167,7 @@ guiTypes = {
 			name = "coalition_conclusion_text"
 			position = { x= 30 y = 480 }
 			font = "hoi_30header"
-			text = "Conclusion"
+			text = coalition_gui_conclusion
 			format = left
 			maxWidth = 500
 			maxHeight = 24
@@ -178,7 +178,7 @@ guiTypes = {
 			name = "coalition_conclusion_percent"
 			position = { x= 30 y = 520 }
 			font = "hoi_30header"
-			text = "COALITION_CONCLUSION_PERCENT"
+			text = COALITION_CONCLUSION_PERCENT
 			format = left
 			maxWidth = 350
 			maxHeight = 24
@@ -261,7 +261,7 @@ guiTypes = {
 			name = "seats"
 			position = { x = 10 y = 35 }
 			font = "hoi_18mbs"
-			text = "Parliament Seats: [This.GetCoalitionLeaderSeats]"
+			text = coalition_gui_seats
 			format = center
 			maxWidth = 200
 			maxHeight = 24
@@ -303,7 +303,7 @@ guiTypes = {
 			name = "seats"
 			position = { x = 10 y = 35 }
 			font = "hoi_18mbs"
-			text = "Parliament Seats: [This.GetCoalitionLeaderSeats]"
+			text = coalition_gui_seats
 			format = center
 			maxWidth = 200
 			maxHeight = 24

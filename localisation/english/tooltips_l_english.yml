@@ -237,6 +237,17 @@
  COALITION_PARTNER_LIST: "[This.GetCoalitionPartnerSelected][This.GetCoalitionPartner1][This.GetCoalitionPartner2][This.GetCoalitionPartner3][This.GetCoalitionPartner4][This.GetCoalitionPartner5]"
  COALITION_PARTNER_LIST2: "[This.GetCoalitionPartner6][This.GetCoalitionPartner7][This.GetCoalitionPartner8][This.GetCoalitionPartner9][This.GetCoalitionPartner10][This.GetCoalitionPartner11]"
  COALITION_CONCLUSION_PERCENT: "§Y[?NewCoalitionLeader]%§! + §Y[?NewCoalitionPartner]%§! = §Y[?NewCoalition]%§!"
+ 
+ parliament_gui_composition: "Composition"¨
+ parliament_gui_political_groups: "Political Groups"
+
+ # COALITION GUI (NOT ORGANIZED)
+ coalition_gui_header: "Government Formation"
+ coalition_gui_leader: "Coalition Leader:"
+ coalition_gui_partners: "Coalition Partner(s):"
+ coalition_gui_recommended: "Elected Speaker: [This.GetLargestPartySeats]"
+ coalition_gui_conclusion: "Conclusion"
+ coalition_gui_seats: "Parliament Seats: [This.GetCoalitionLeaderSeats]"
 
  # Political Groups
  PARLIAMENT_POLITICAL_GROUPS: "§GGovernment: [?ROOT.Coalition] seats§!\n- [ROOT.GetLeaderTitle]: §Y[ROOT.GetLeader]§! ([ROOT.GetRulingPartyColored])\n§ROpposition: [?ROOT.Opposition] seats§!\n- Leader of the Opposition: [ROOT.GetLargestOppositionParty]"
