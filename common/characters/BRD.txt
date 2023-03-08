@@ -1,5 +1,16 @@
 characters={
     #Starting - Political
+	BRD_gaston_sindimwo={
+		name="Gaston Sindimwo"
+		portraits={
+			civilian={
+				large=GFX_Portrait_BRD_Gaston_Sindimwo
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+		}
+	}
 	BRD_pierre_nkurunziza={
 		name="Pierre Nkurunziza"
 		portraits={
@@ -8,7 +19,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=centrist
+			ideology=personalist
 		}
 	}
 	BRD_agathon_rwasa={
@@ -19,18 +30,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	BRD_pierre_buyoya={
-		name="Pierre Buyoya"
-		portraits={
-			civilian={
-				large=GFX_Portrait_BRD_Pierre_Buyoya
-			}
-		}
-		country_leader={
-			ideology=right_wing_populist_ideology
+			ideology=centrist
 		}
 	}
 	#Starting - Military

@@ -268,11 +268,11 @@ post_election_effects = {
 				ruling_only = no
 			}
 		}
-		retire_ideology_leader = national_conservative
+		retire_ideology_leader = right_wing_populist
 		create_country_leader = {
 			name = "Serdar Berdimuhamedow"
 			picture = GFX_Portrait_TKM_Serdar_Berdimuhamedow
-			ideology = national_conservative_ideology
+			ideology = personalist
 		}
 	}
 	if  = {
@@ -460,6 +460,21 @@ post_election_effects = {
 			name = "Vladimir Plahotniuc"
 			picture = GFX_Portrait_MDA_Vladimir_Plahotniuc
 			ideology = social_democrat_ideology
+		}
+	}
+	if  = {
+		limit = {
+			original_tag = BRD
+			has_country_leader = {
+				name = "Pierre Nkurunziza"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = right_wing_populist
+		create_country_leader = {
+			name = "Évariste Ndayishimiye"
+			picture = GFX_Portrait_BRD_Evariste_Ndayishimiye
+			ideology = personalist
 		}
 	}
 	if = {

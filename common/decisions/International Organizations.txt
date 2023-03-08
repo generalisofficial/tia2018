@@ -709,6 +709,16 @@ international_organizations = {
 		visible = {
 			has_idea = idea_east_african_community_member
 		}
+
+		available = {
+			is_subject = no
+			every_country = {
+				limit = {
+					has_idea = idea_east_african_community_member
+				}
+				has_war = no
+			}
+		}
 		
 		complete_effect = {
 			every_country = {

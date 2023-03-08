@@ -109,36 +109,36 @@ set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 86.35 }
+set_variable = { social_liberal_seats = 24.79 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 11.16 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 2.49 }
-set_variable = { fascist_seats = 0 }
+set_variable = { right_wing_populist_seats = 71.07 }
+set_variable = { fascist_seats = 4.14 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_social_liberal
-add_to_variable = { ROOT.Coalition = social_liberal_seats }
+set_country_flag = coalition_right_wing_populist
+add_to_variable = { ROOT.Coalition = right_wing_populist_seats }
 
 set_politics = {	
-	ruling_party = social_liberal
-	last_election = "2015.7.21"
+	ruling_party = right_wing_populist
+	last_election = "2015.5.20"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_liberal = 86.35
-    national_conservative = 11.16
-	right_wing_populist = 2.49
+    right_wing_populist = 69.91
+	social_liberal = 26.01
+	fascist = 4.08
 }
 
 # Characters - Military
 
 # Characters - Political
+recruit_character = BRD_gaston_sindimwo
 recruit_character = BRD_pierre_nkurunziza
 recruit_character = BRD_agathon_rwasa
-recruit_character = BRD_pierre_buyoya
