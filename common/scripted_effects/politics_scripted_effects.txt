@@ -3122,7 +3122,7 @@ set_pro_european_commission = {
 			}
 			check_variable = {
 				var = EUU.EPP_seats
-				value = EUU.GREENS_EFA_seats
+				value = EUU.GEFA_seats
 				compare = greater_than_or_equals
 			}
 		}
@@ -3147,7 +3147,7 @@ set_pro_european_commission = {
 			}
 			check_variable = {
 				var = EUU.ALDE_seats
-				value = EUU.GREENS_EFA_seats
+				value = EUU.GEFA_seats
 				compare = greater_than_or_equals
 			}
 		}
@@ -3182,7 +3182,7 @@ set_pro_european_commission = {
 			}
 			check_variable = {
 				var = EUU.SD_seats
-				value = EUU.GREENS_EFA_seats
+				value = EUU.GEFA_seats
 				compare = greater_than_or_equals
 			}
 		}
@@ -3196,17 +3196,17 @@ set_pro_european_commission = {
 	if = {
 		limit = {
 			check_variable = {
-				var = EUU.GREENS_EFA_seats
+				var = EUU.GEFA_seats
 				value = EUU.EPP_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU.GREENS_EFA_seats
+				var = EUU.GEFA_seats
 				value = EUU.SD_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU.GREENS_EFA_seats
+				var = EUU.GEFA_seats
 				value = EUU.ALDE_seats
 				compare = greater_than_or_equals
 			}
@@ -3240,7 +3240,7 @@ set_eurosceptic_commission = {
 			}
 			check_variable = {
 				var = EUU.NI_seats
-				value = EUU.GUE_NGL_seats
+				value = EUU.GUENGL_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
@@ -3275,7 +3275,7 @@ set_eurosceptic_commission = {
 			}
 			check_variable = {
 				var = EUU.APF_seats
-				value = EUU.GUE_NGL_seats
+				value = EUU.GUENGL_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
@@ -3310,7 +3310,7 @@ set_eurosceptic_commission = {
 			}
 			check_variable = {
 				var = EUU.ID_seats
-				value = EUU.GUE_NGL_seats
+				value = EUU.GUENGL_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
@@ -3345,7 +3345,7 @@ set_eurosceptic_commission = {
 			}
 			check_variable = {
 				var = EUU.ECR_seats
-				value = EUU.GUE_NGL_seats
+				value = EUU.GUENGL_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
@@ -3364,27 +3364,27 @@ set_eurosceptic_commission = {
 	if = {
 		limit = {
 			check_variable = {
-				var = EUU.GUE_NGL_seats
+				var = EUU.GUENGL_seats
 				value = EUU.APF_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU.GUE_NGL_seats
+				var = EUU.GUENGL_seats
 				value = EUU.NI_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU.GUE_NGL_seats
+				var = EUU.GUENGL_seats
 				value = EUU.ID_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU.GUE_NGL_seats
+				var = EUU.GUENGL_seats
 				value = EUU.ECR_seats
 				compare = greater_than_or_equals
 			}
 			check_variable = {
-				var = EUU.GUE_NGL_seats
+				var = EUU.GUENGL_seats
 				value = EUU.INITIATIVE_seats
 				compare = greater_than_or_equals
 			}
@@ -3420,7 +3420,7 @@ set_eurosceptic_commission = {
 			}
 			check_variable = {
 				var = EUU.INITIATIVE_seats
-				value = EUU.GUE_NGL_seats
+				value = EUU.GUENGL_seats
 				compare = greater_than_or_equals
 			}
 		}
@@ -4079,6 +4079,76 @@ set_election_change = {
 	subtract_from_variable = {
 		var = communist_election_change
 		value = old_communist
+	}
+}
+
+set_old_election_results_EU = {
+	EUU = {
+		set_variable = { old_NI = NI_seats }
+		set_variable = { old_APF = APF_seats }
+		set_variable = { old_ID = ID_seats }
+		set_variable = { old_ECR = ECR_seats }
+		set_variable = { old_EPP = EPP_seats }
+		set_variable = { old_ALDE = ALDE_seats }
+		set_variable = { old_SD = SD_seats }
+		set_variable = { old_GEFA = GEFA_seats }
+		set_variable = { old_GUENGL = GUENGL_seats }
+		set_variable = { old_INITIATIVE = INITIATIVE_seats }
+	}
+}
+
+set_election_change_EU = {
+	EUU = {
+		set_variable = { NI_election_change = NI_seats }
+		subtract_from_variable = {
+			var = NI_election_change
+			value = old_NI
+		}
+		set_variable = { APF_election_change = APF_seats }
+		subtract_from_variable = {
+			var = APF_election_change
+			value = old_APF
+		}
+		set_variable = { ID_election_change = ID_seats }
+		subtract_from_variable = {
+			var = ID_election_change
+			value = old_ID
+		}
+		set_variable = { ECR_election_change = ECR_seats }
+		subtract_from_variable = {
+			var = ECR_election_change
+			value = old_ECR
+		}
+		set_variable = { EPP_election_change = EPP_seats }
+		subtract_from_variable = {
+			var = EPP_election_change
+			value = old_EPP
+		}
+		set_variable = { ALDE_election_change = ALDE_seats }
+		subtract_from_variable = {
+			var = ALDE_election_change
+			value = old_ALDE
+		}
+		set_variable = { SD_election_change = SD_seats }
+		subtract_from_variable = {
+			var = SD_election_change
+			value = old_SD
+		}
+		set_variable = { GEFA_election_change = GEFA_seats }
+		subtract_from_variable = {
+			var = GEFA_election_change
+			value = old_GEFA
+		}
+		set_variable = { GUENGL_election_change = GUENGL_seats }
+		subtract_from_variable = {
+			var = GUENGL_election_change
+			value = old_GUENGL
+		}
+		set_variable = { INITIATIVE_election_change = INITIATIVE_seats }
+		subtract_from_variable = {
+			var = INITIATIVE_election_change
+			value = old_INITIATIVE
+		}
 	}
 }
 

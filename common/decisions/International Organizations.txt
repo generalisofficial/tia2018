@@ -99,6 +99,24 @@ international_organizations = {
 		}
 	}
 
+	gui_european_union = {
+		visible = {
+			NOT = { has_global_flag = european_union_dissolved }
+		}
+		
+		icon = european_union
+		
+		cost = 0
+		
+		complete_effect = {
+			set_variable = { show_european_union = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	join_european_union = {
 		visible = {
 			is_sovereign_state = yes

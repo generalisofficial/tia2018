@@ -47,20 +47,4 @@ scripted_gui = {
 		properties = {
 		}
 	}
-
-	european_union_button = {
-		window_name = "european_union_button_container"
-
-		context_type = player_context
-
-		visible = {
-			NOT = { has_global_flag = european_union_dissolved }
-		}
-
-		effects = {
-			show_european_union_button_click = {
-				set_variable = { show_european_union = 1 }
-			}
-		}
-	}
 }

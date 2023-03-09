@@ -1311,6 +1311,8 @@ defined_text = {
 	}
 }
 
+# Election News Calculation
+
 defined_text = {
 	name = GetIslamistResults
 	
@@ -1920,6 +1922,418 @@ defined_text = {
 			}
 		}
 		localization_key = ""
+	}
+}
+
+# European Election News Calculation
+
+defined_text = {
+	name = GetNIResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.NI_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_NI_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.NI_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_NI_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.NI_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_NI_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetAPFResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.APF_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_APF_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.APF_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_APF_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.APF_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_APF_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetIDResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ID_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_ID_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ID_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_ID_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ID_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_ID_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetECRResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ECR_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_ECR_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ECR_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_ECR_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ECR_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_ECR_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetEPPResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.EPP_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_EPP_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.EPP_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_EPP_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.EPP_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_EPP_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetALDEResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ALDE_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_ALDE_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ALDE_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_ALDE_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.ALDE_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_ALDE_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetSDResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.SD_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_SD_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.SD_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_SD_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.SD_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_SD_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetGEFAResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.GEFA_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_GEFA_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.GEFA_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_GEFA_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.GEFA_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_GEFA_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetGUENGLResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.GUENGL_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_GUENGL_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.GUENGL_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_GUENGL_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.GUENGL_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_GUENGL_election_results_even
+	}
+}
+
+defined_text = {
+	name = GetINITIATIVEResults
+	
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.INITIATIVE_election_change
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		localization_key = TT_INITIATIVE_election_results_gain
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.INITIATIVE_election_change
+					value = 0
+					compare = less_than
+				}
+			}
+		}
+		localization_key = TT_INITIATIVE_election_results_loss
+	}
+	text = {
+		trigger = {
+			EUU = {
+				check_variable = {
+					var = EUU.INITIATIVE_election_change
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		localization_key = TT_INITIATIVE_election_results_even
 	}
 }
 

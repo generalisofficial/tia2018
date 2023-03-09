@@ -38,7 +38,7 @@ country_event = {
 				original_tag = GRC
 				FROM = { 
 					original_tag = MKD 
-					NOT = { has_cosmetic_tag = MKD_NORTH }
+					NOT = { has_cosmetic_tag = NMK }
 				}
 			}
 		}
@@ -143,11 +143,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		set_old_election_results_EU = yes
 		clear_variable = EUU.eurosceptic_seats
 		clear_variable = EUU.pro_european_seats 
 		clear_variable = EUU.INITIATIVE_seats
-		clear_variable = EUU.GUE_NGL_seats
-		clear_variable = EUU.GREENS_EFA_seats
+		clear_variable = EUU.GUENGL_seats
+		clear_variable = EUU.GEFA_seats
 		clear_variable = EUU.SD_seats
 		clear_variable = EUU.ALDE_seats
 		clear_variable = EUU.EPP_seats
@@ -185,8 +186,8 @@ country_event = {
 	immediate = {
 		add_to_variable = { EUU.election_participants = 1 }
 		add_to_variable = { EUU.INITIATIVE_seats= party_popularity@communist }
-		add_to_variable = { EUU.GUE_NGL_seats = party_popularity@socialist }
-		add_to_variable = { EUU.GREENS_EFA_seats = party_popularity@progressive }
+		add_to_variable = { EUU.GUENGL_seats = party_popularity@socialist }
+		add_to_variable = { EUU.GEFA_seats = party_popularity@progressive }
 		add_to_variable = { EUU.SD_seats = party_popularity@social_democrat }
 		add_to_variable = { EUU.ALDE_seats = party_popularity@social_liberal }
 		add_to_variable = { EUU.ALDE_seats = party_popularity@classical_liberal }
@@ -214,30 +215,40 @@ country_event = {
 		# Election Math
 		multiply_variable = { EUU.INITIATIVE_seats = 100 }
 		divide_variable = { EUU.INITIATIVE_seats = EUU.election_participants }
-		multiply_variable = { EUU.GUE_NGL_seats = 100 }
-		divide_variable = { EUU.GUE_NGL_seats = EUU.election_participants }
-		multiply_variable = { EUU.GREENS_EFA_seats = 100 }
-		divide_variable = { EUU.GREENS_EFA_seats = EUU.election_participants }
+		round_variable = EUU.INITIATIVE_seats
+		multiply_variable = { EUU.GUENGL_seats = 100 }
+		divide_variable = { EUU.GUENGL_seats = EUU.election_participants }
+		round_variable = EUU.GUENGL_seats
+		multiply_variable = { EUU.GEFA_seats = 100 }
+		divide_variable = { EUU.GEFA_seats = EUU.election_participants }
+		round_variable = EUU.GEFA_seats
 		multiply_variable = { EUU.SD_seats = 100 }
 		divide_variable = { EUU.SD_seats = EUU.election_participants }
+		round_variable = EUU.SD_seats
 		multiply_variable = { EUU.ALDE_seats = 100 }
 		divide_variable = { EUU.ALDE_seats = EUU.election_participants }
+		round_variable = EUU.ALDE_seats
 		multiply_variable = { EUU.EPP_seats = 100 }
 		divide_variable = { EUU.EPP_seats = EUU.election_participants }
+		round_variable = EUU.EPP_seats
 		multiply_variable = { EUU.ECR_seats = 100 }
 		divide_variable = { EUU.ECR_seats = EUU.election_participants }
+		round_variable = EUU.ECR_seats
 		multiply_variable = { EUU.ID_seats = 100 }
 		divide_variable = { EUU.ID_seats = EUU.election_participants }
+		round_variable = EUU.ID_seats
 		multiply_variable = { EUU.APF_seats = 100 }
 		divide_variable = { EUU.APF_seats = EUU.election_participants }
+		round_variable = EUU.APF_seats
 		multiply_variable = { EUU.NI_seats = 100 }
 		divide_variable = { EUU.NI_seats = EUU.election_participants }
+		round_variable = EUU.NI_seats
 		clear_variable = EUU.election_participants
 
 		# Political Groups Setup
 		add_to_variable = { EUU.eurosceptic_seats = EUU.INITIATIVE_seats }
-		add_to_variable = { EUU.eurosceptic_seats = EUU.GUE_NGL_seats }
-		add_to_variable = { EUU.pro_european_seats = EUU.GREENS_EFA_seats }
+		add_to_variable = { EUU.eurosceptic_seats = EUU.GUENGL_seats }
+		add_to_variable = { EUU.pro_european_seats = EUU.GEFA_seats }
 		add_to_variable = { EUU.pro_european_seats = EUU.SD_seats }
 		add_to_variable = { EUU.pro_european_seats = EUU.ALDE_seats }
 		add_to_variable = { EUU.pro_european_seats = EUU.EPP_seats }
@@ -263,5 +274,23 @@ country_event = {
 
 		# UI Setup
 		#set_EU_parliament_graphics = yes
+
+		# News Event
+		set_election_change_EU = yes
+		news_event = european_union.8
+	}
+}
+
+news_event = { #(Year) European Parliament election
+	id = european_union.8
+	title = european_union.8.t
+	desc = european_union.8.d
+	picture = GFX_news_event_european_parliament
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = european_union.8.o1
 	}
 }

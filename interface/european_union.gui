@@ -97,7 +97,7 @@ guiTypes = {
 			name = "european_commission_president"
 			position = { x = 0 y = 75 }
 			font = "hoi_30header"
-			text = "President: [EUU.GetLeader] ([EUU.GetRulingPartyColored])"
+			text = "President: [EUU.GetLeader] ([EUU.GetRulingParty])"
 			maxWidth = 700
 			maxHeight = 40
 			fixedsize = no
@@ -115,24 +115,6 @@ guiTypes = {
 			fixedsize = no
 			format = center
 			Orientation = "CENTER_LEFT"
-		}
-	}
-
-	containerWindowType = {
-		name = "european_union_button_container"
-		position = { x = -20 y = 60 }
-		size = { width = 50 height = 50 }
-
-		buttonType = {
-			name = "show_european_union_button"
-			position = { x = 1 y = 1 }
-			quadTextureSprite = "GFX_idea_european_union"
-			buttonFont = "Main_14_black"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_open
-			clicksound = click_default
-			pdx_tooltip = european_union_tooltip
-			scale = 0.6
 		}
 	}
 }	
