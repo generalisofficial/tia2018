@@ -21,10 +21,12 @@ country_event = { #Mihai Tudose Resigns
 		name = romania.1.o1
 		add_popularity = { ideology = social_democrat popularity = -0.05 }
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Viorica Dăncilă"
-	        picture = GFX_Portrait_ROM_Viorica_Dancila
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ROM_viorica_dancila
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }

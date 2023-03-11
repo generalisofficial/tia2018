@@ -6,8 +6,6 @@ leader_traits = {
 		
 		political_power_factor = 0.02
 		stability_factor = -0.02
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	humble = {
@@ -16,24 +14,18 @@ leader_traits = {
 		
 		political_power_factor = -0.02
 		stability_factor = 0.02
-		
-		ai_will_do = { factor = 1 }
 	}
 	
 	regent = {
 		random = no
 		
 		political_power_factor = -0.2
-		
-		ai_will_do = { factor = 1 }
 	}
 	
 	warlord = {
 		random = no
 		
 		war_support_factor = 0.3
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	won_a_war = {
@@ -41,8 +33,12 @@ leader_traits = {
 		
 		stability_factor = 0.1
 		war_support_factor = 0.1
+	}
+
+	celebrity = {
+		random = no
 		
-		ai_will_do = { factor = 1 }
+		stability_factor = 0.03
 	}
 
 	# Unique
@@ -52,16 +48,12 @@ leader_traits = {
 		
 		research_speed_factor = -1
 		political_power_factor = 0.2
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	morbidly_obese = {
 		random = no
 		
 		army_speed_factor = -0.25
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	mutti_merkel = {
@@ -69,33 +61,19 @@ leader_traits = {
 		
 		political_power_factor = 0.15
 		stability_factor = 0.075
-		
-		ai_will_do = { factor = 1 }
 	}
 
-	celebrity = {
+	bitcoin_advocate = { # Nayib Bukele
 		random = no
 		
-		stability_factor = 0.03
-		
-		ai_will_do = { factor = 1 }
+		#Bitcoin mechanic planned
 	}
 
-	cryptocurrency_advocate = {
-		random = no
-		
-		#Cryptocurrency mechanic planned
-		
-		ai_will_do = { factor = 1 }
-	}
-
-	subcomandante_insurgente_galeano = {
+	subcomandante_insurgente_galeano = { # Rafael Guillen Vicente
 		random = no
 		
 		stability_factor = 0.15
 		war_support_factor = 0.25
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	# Subject
@@ -104,16 +82,12 @@ leader_traits = {
 		random = no
 		
 		autonomy_gain = 0.5
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	subject_pro_integration = {
 		random = no
 		
 		autonomy_gain = -0.5
-		
-		ai_will_do = { factor = 1 }
 	}
 
 	# Diplomacy

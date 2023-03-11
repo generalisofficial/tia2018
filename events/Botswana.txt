@@ -21,11 +21,13 @@ country_event = { #Ian Khama finishes his last term
 		name = botswana.1.o1
 		news_event = botswana.2
 		retire_country_leader = yes
-		create_country_leader = {
-	        name = "Mokgweetsi Masisi"
-	        picture = GFX_Portrait_BWA_Mokgweetsi_Masisi
-	        ideology =liberal_conservative
-        }
+		add_country_leader_role = {
+			character = BWA_mokgweetsi_masisi
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 }
 

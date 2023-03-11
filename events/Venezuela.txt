@@ -20,10 +20,12 @@ country_event = { #Juan Guaido declared president
 		name = venezuela.1.o1
 		add_ideas = idea_venezuelan_presidential_crisis
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Juan Guaidó"
-			picture = GFX_Portrait_VEN_Juan_Guaido
-			ideology = social_democrat_ideology
+		add_country_leader_role = {
+			character = VEN_juan_guaido
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
 		}
 		news_event = venezuela.2
 	}
@@ -77,10 +79,12 @@ country_event = { #Operación Libertad
 			}
 			quickset_coalition = yes
 			retire_ideology_leader = socialist
-			create_country_leader = {
-				name = "Diosdado Cabello"
-				picture = GFX_Portrait_VEN_Diosdado_Cabello
-				ideology = chavismo
+			add_country_leader_role = {
+				character = VEN_diosdado_cabello
+				promote_leader = yes
+				country_leader = {
+					ideology = chavismo
+				}
 			}
 		}
 	}

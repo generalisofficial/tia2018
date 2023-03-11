@@ -21,10 +21,12 @@ country_event = { #Kvirikashvili Resigns
 	option = {
 		name = georgia.1.o1
 		retire_country_leader = yes
-		create_country_leader = {
-	        name = "Mamuka Bakhtadze"
-	        picture = GFX_Portrait_GEO_Mamuka_Bakhtadze
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = GEO_mamuka_bakhtadze
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }

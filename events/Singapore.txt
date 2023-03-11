@@ -20,10 +20,12 @@ country_event = { #Workers' Party elects new Secretary-General
 	option = {
 		name = singapore.1.o1
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Pritam Singh"
-	        picture = GFX_Portrait_SGP_Pritam_Singh
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = SGP_pritam_singh
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }

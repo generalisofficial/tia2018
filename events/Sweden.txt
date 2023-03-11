@@ -16,11 +16,13 @@ country_event = { #Miljöpartiet - Per Bolund
 	option = {
 		name = sweden.1.o1
 		retire_ideology_leader = progressive
-		create_country_leader = {
-	        name = "Per Bolund"
-	        picture = GFX_Portrait_SWE_Per_Bolund
-	        ideology = green
-        }
+		add_country_leader_role = {
+			character = SWE_per_bolund
+			promote_leader = yes
+			country_leader = {
+				ideology = green
+			}
+		}
 	}
 }
 
@@ -40,11 +42,13 @@ country_event = { #Socialdemokraterna - Magdalena Andersson
 	option = {
 		name = sweden.2.o1
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Magdalena Andersson"
-	        picture = GFX_Portrait_SWE_Magdalena_Andersson
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = SWE_magdalena_andersson
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 
@@ -64,21 +68,25 @@ country_event = { #2019 Liberalerna leadership electin
 	option = {
 		name = sweden.3.o1
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Nyamko Sabuni"
-	        picture = GFX_Portrait_SWE_Nyamko_Sabuni
-	        ideology = classical_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = SWE_nyamko_sabuni
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
+		}
 	}
 
 	option = {
 		name = sweden.3.o2
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Erik Ullenhag"
-	        picture = GFX_Portrait_SWE_Erik_Ullenhag
-	        ideology = classical_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = SWE_erik_ullenhag
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
+		}
 	}
 }
 
@@ -98,10 +106,12 @@ country_event = { #Vänsterpartiet - Nooshi Dadgostar
 	option = {
 		name = sweden.1.o1
 		retire_ideology_leader = socialist
-		create_country_leader = {
-	        name = "Nooshi Dadgostar"
-	        picture = GFX_Portrait_SWE_Nooshi_Dadgostar
-	        ideology = democratic_socialist
-        }
+		add_country_leader_role = {
+			character = SWE_nooshi_dadgostar
+			promote_leader = yes
+			country_leader = {
+				ideology = democratic_socialist
+			}
+		}
 	}
 }

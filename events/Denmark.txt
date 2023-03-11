@@ -15,10 +15,12 @@ country_event = { #Venstre - Jakob Ellemann-Jensen
 	
 	option = {
 		name = denmark.1.o1
-		create_country_leader = {
-	        name = "Jakob Ellemann-Jensen"
-	        picture = GFX_Portrait_DNK_Jakob_Ellemann_Jensen
-	        ideology = classical_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = DNK_jakob_ellemann_jensen
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
+		}
 	}
 }

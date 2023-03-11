@@ -11,15 +11,21 @@ country_event = { #Death of Qaboos bin Said
 		original_tag = OMN
 		date > 2020.1.10
 		date < 2021.1.1
+		has_country_leader = {
+			name = "Qaboos bin Said"
+			ruling_only = yes
+		}
 	}
 	
 	option = {
 		name = oman.1.o1
 		retire_ideology_leader = monarchist
-		create_country_leader = {
-	        name = "Haitham bin Tariq"
-	        picture = GFX_Portrait_OMN_Haitham_bin_Tariq
-	        ideology = monarchist_ideology
-        }
+		add_country_leader_role = {
+			character = OMN_haitham_bin_tariq
+			promote_leader = yes
+			country_leader = {
+				ideology = monarchist_ideology
+			}
+		}
 	}
 }

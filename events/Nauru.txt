@@ -11,10 +11,12 @@ country_event = { #President Lionel Aingimea
 	option = {
 		name = nauru.1.o1
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Lionel Aingimea"
-	        picture = GFX_Portrait_NRU_Lionel_Aingimea
-	        ideology = social_liberal_independent
-        }
+		add_country_leader_role = {
+			character = NRU_lionel_aingimea
+			promote_leader = yes
+			country_leader = {
+				ideology = social_liberal_independent
+			}
+		}
 	}
 }

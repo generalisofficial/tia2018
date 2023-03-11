@@ -109,10 +109,12 @@ country_event = { #36th CHP Ordinary Convention
 			factor = 36
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Muharrem Ince"
-	        picture = GFX_Portrait_TUR_Muharrem_Ince
-	        ideology = kemalist
-        }
+		add_country_leader_role = {
+			character = TUR_muharrem_ince
+			promote_leader = yes
+			country_leader = {
+				ideology = kemalist
+			}
+		}
 	}
 }

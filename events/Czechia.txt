@@ -19,11 +19,13 @@ country_event = { #2018 ČSSD leadership election
 			factor = 55
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Jan Hamáček"
-	        picture = GFX_Portrait_CZE_Jan_Hamacek
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = CZE_jan_hamacek
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -32,10 +34,12 @@ country_event = { #2018 ČSSD leadership election
 			factor = 45
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Jiří Zimola"
-	        picture = GFX_Portrait_CZE_Jiri_Zimola
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = CZE_jiri_zimola
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }

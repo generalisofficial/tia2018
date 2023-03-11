@@ -578,15 +578,16 @@ political_actions = {
 				set_political_party = { ideology = socialist popularity = 0 }
 				add_popularity = {	ideology = classical_liberal popularity = eprdf_popularity }
 			}
-			# leader change - update after adding characters
-			hidden_effect = {
-				retire_ideology_leader = socialist
-				retire_ideology_leader = classical_liberal
+			remove_country_leader_role = {
+				character = ETH_abiy_ahmed
+				ideology = revolutionary_democracy
 			}
-			create_country_leader = {
-				name = "Abiy Ahmed"
-				picture = GFX_Portrait_ETH_Abiy_Ahmed
-				ideology = classical_liberal_ideology
+			add_country_leader_role = {
+				character = ETH_abiy_ahmed
+				promote_leader = yes
+				country_leader = {
+					ideology = classical_liberal_ideology
+				}
 			}
 		}
 

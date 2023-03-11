@@ -24,10 +24,13 @@ country_event = {
 		name = donetsk.2.o1
 		news_event = donetsk.3
 		kill_country_leader = yes
-		create_country_leader = {
-			name = "Denis Pushilin"
-			picture = GFX_Portrait_DPR_Denis_Pushilin
-			ideology = national_conservative_ideology
+		add_country_leader_role = {
+			character = DPR_denis_pushilin
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+				traits={ friend_of_russia subject_pro_integration }
+			}
 		}
 	}
 }

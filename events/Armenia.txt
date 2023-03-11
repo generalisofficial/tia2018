@@ -22,12 +22,14 @@ country_event = { #Sargsyan for Prime Minister?
 			factor = 60
 		}
 		retire_country_leader = yes
-		create_country_leader = {
-	        name = "Serzh Sargsyan"
-	        picture = GFX_Portrait_ARM_Serzh_Sargsyan
-	        ideology = national_conservative_ideology
-			traits = { strongman friend_of_russia }
-        }
+		add_country_leader_role = {
+			character = ARM_serzh_sargsyan
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+				traits = { strongman friend_of_russia }
+			}
+		}
 		news_event = armenia.2
 		add_ideas = idea_large_scale_protests
 		set_country_flag = velvet_revolution
@@ -79,12 +81,14 @@ country_event = { #Robert Kocharyan returns to politics
 	option = {
 		name = armenia.3.o1
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Robert Kocharyan"
-	        picture = GFX_Portrait_ARM_Robert_Kocharyan
-	        ideology = liberal_conservative
-			traits = { friend_of_russia }
-        }
+		add_country_leader_role = {
+			character = ARM_robert_kocharyan
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+				traits = { friend_of_russia }
+			}
+		}
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.075

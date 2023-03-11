@@ -21,11 +21,13 @@ country_event = { #Raúl Castro Resigns
 		name = cuba.1.o1
 		news_event = cuba.2
 		retire_country_leader = yes 
-		create_country_leader = {
-	        name = "Miguel Díaz-Canel"
-	        picture = GFX_Portrait_CUB_Miguel_Diaz_Canel
-	        ideology = marxist_leninist
-        }
+		add_country_leader_role = {
+			character = CUB_miguel_diaz_canel
+			promote_leader = yes
+			country_leader = {
+				ideology = marxist_leninist
+			}
+		}
 	}
 }
 

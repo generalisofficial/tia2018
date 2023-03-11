@@ -16,11 +16,13 @@ country_event = { #Eesti Reformierakond - Kaja Kallas
 	option = {
 		name = estonia.2.o1
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Kaja Kallas"
-	        picture = GFX_Portrait_EST_Kaja_Kallas
-	        ideology = classical_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = EST_kaja_kallas
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
+		}
 	}
 }
 
@@ -40,10 +42,12 @@ country_event = { #Sotsiaaldemokraatlik Erakond - Indrek Saar
 	option = {
 		name = estonia.3.o1
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Indrek Saar"
-	        picture = GFX_Portrait_EST_Indrek_Saar
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = EST_indrek_saar
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }

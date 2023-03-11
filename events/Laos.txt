@@ -1,0 +1,31 @@
+﻿add_namespace = laos
+
+country_event = { #11th Congress of the Lao People's Revolutionary Party
+	id = laos.1
+	title = laos.1.t
+	desc = laos.1.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = LAO
+		date > 2021.1.15
+		date < 2022.1.1
+		has_country_leader = {
+			name = "Bounnhang Vorachit"
+			ruling_only = no
+		}
+	}
+
+	option = {
+		name = laos.1.o1
+		retire_ideology_leader = communist
+		add_country_leader_role = {
+			character = LAO_thongloun_sisoulith
+			promote_leader = yes
+			country_leader = {
+				ideology = kaysone_promvihane_thought
+			}
+		}
+	}
+}

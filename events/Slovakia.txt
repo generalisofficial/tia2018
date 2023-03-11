@@ -21,11 +21,13 @@ country_event = { #Murder of Ján Kuciak
 		name = slovakia.1.o1
 		news_event = slovakia.2
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Peter Pellegrini"
-	        picture = GFX_Portrait_SVK_Peter_Pellegrini
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = SVK_peter_pellegrini
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 

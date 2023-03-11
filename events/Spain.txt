@@ -43,11 +43,13 @@ country_event = { #19th National Congress of the People's Party
 			factor = 58
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Pablo Casado"
-	        picture = GFX_Portrait_ESP_Pablo_Casado
-	        ideology = christian_democrat
-        }
+		add_country_leader_role = {
+			character = ESP_pablo_casado
+			promote_leader = yes
+			country_leader = {
+				ideology = christian_democrat
+			}
+		}
 	}
 	
 	option = {
@@ -56,10 +58,12 @@ country_event = { #19th National Congress of the People's Party
 			factor = 42
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Soraya Sáenz de Santamaría"
-	        picture = GFX_Portrait_ESP_Soraya_Saenz_de_Santamaria
-	        ideology = christian_democrat
-        }
+		add_country_leader_role = {
+			character = ESP_soraya_saenz_de_santamaria
+			promote_leader = yes
+			country_leader = {
+				ideology = christian_democrat
+			}
+		}
 	}
 }

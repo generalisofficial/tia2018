@@ -26,11 +26,13 @@ country_event = { #2018 LDP leadership election
 			factor = 32
 		}
 		retire_ideology_leader = national_conservative
-		create_country_leader = {
-	        name = "Shigeru Ishiba"
-	        picture = GFX_Portrait_JPN_Shigeru_Ishiba
-	        ideology = national_conservative_ideology
-        }
+		add_country_leader_role = {
+			character = JPN_shigeru_ishiba
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+			}
+		}
 	}
 }
 
@@ -50,10 +52,12 @@ country_event = { #2019 Imperial Transition
 	option = {
 		name = japan.2.o1
 		retire_ideology_leader = monarchist
-		create_country_leader = {
-	        name = "Naruhito"
-	        picture = GFX_Portrait_JPN_Naruhito
-	        ideology = monarchist_ideology
-        }
+		add_country_leader_role = {
+			character = JPN_naruhito
+			promote_leader = yes
+			country_leader = {
+				ideology = monarchist_ideology
+			}
+		}
 	}
 }

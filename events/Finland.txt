@@ -16,11 +16,13 @@ country_event = { #Green League - Maria Ohisalo
 	option = {
 		name = finland.1.o1
 		retire_ideology_leader = progressive
-		create_country_leader = {
-	        name = "Maria Ohisalo"
-	        picture = GFX_Portrait_FIN_Maria_Ohisalo
-	        ideology = green
-        }
+		add_country_leader_role = {
+			character = FIN_maria_ohisalo
+			promote_leader = yes
+			country_leader = {
+				ideology = green
+			}
+		}
 	}
 }
 
@@ -47,11 +49,13 @@ country_event = { #Rinne Cabinet Resigns
 			factor = 52
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Sanna Marin"
-	        picture = GFX_Portrait_FIN_Sanna_Marin
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = FIN_sanna_marin
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -60,10 +64,12 @@ country_event = { #Rinne Cabinet Resigns
 			factor = 48
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Antti Lindtman"
-	        picture = GFX_Portrait_FIN_Antti_Lindtman
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = FIN_antti_lindtman
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }

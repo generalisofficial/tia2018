@@ -21,11 +21,13 @@ country_event = { #Resignation of Jacob Zuma
 		name = south_africa.1.o1
 		news_event = south_africa.2
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Cyril Ramaphosa"
-	        picture = GFX_Portrait_ZAF_Cyril_Ramaphosa
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ZAF_cyril_ramaphosa
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 

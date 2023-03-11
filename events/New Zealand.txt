@@ -19,11 +19,13 @@ country_event = { #2018 New Zealand National Party leadership election
 			factor = 51
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Simon Bridges"
-	        picture = GFX_Portrait_NZL_Simon_Bridges
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = NZL_simon_bridges
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 	
 	option = {
@@ -32,10 +34,12 @@ country_event = { #2018 New Zealand National Party leadership election
 			factor = 49
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Amy Adams"
-	        picture = GFX_Portrait_NZL_Amy_Adams
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = NZL_amy_adams
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 }

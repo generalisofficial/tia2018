@@ -24,11 +24,13 @@ country_event = { #Mamanivideos
 		news_event = peru.2
 		add_popularity = { ideology = classical_liberal popularity = -0.1 }
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Martín Vizcarra"
-	        picture = GFX_Portrait_PER_Martin_Vizcarra
-	        ideology = classical_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = PER_martin_vizcarra
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
+		}
 	}
 }
 

@@ -22,11 +22,13 @@ country_event = { #Resignation of Nursultan Nazarbayev
 		news_event = kazakhstan.2
 		set_province_name = { id = 14042 name = VICTORY_POINTS_14042_2 }
 		retire_ideology_leader = national_conservative
-		create_country_leader = {
-	        name = "Kassym Jomart-Tokayev"
-	        picture = GFX_Portrait_KAZ_Kassym_Jomart_Tokayev
-	        ideology = national_conservative_ideology
-        }
+		add_country_leader_role = {
+			character = KAZ_kassym_jomart_tokayev
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+			}
+		}
 	}
 }
 

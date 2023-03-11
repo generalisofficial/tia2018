@@ -25,11 +25,13 @@ country_event = { #Lula Disqualified?
 		}
 		add_popularity = { ideology = socialist popularity = -0.05 }
 		retire_ideology_leader = socialist
-		create_country_leader = {
-	        name = "Fernando Haddad"
-	        picture = GFX_Portrait_BRA_Fernando_Haddad
-	        ideology = socialism_of_the_21st_century
-        }
+		add_country_leader_role = {
+			character = BRA_fernando_haddad
+			promote_leader = yes
+			country_leader = {
+				ideology = socialism_of_the_21st_century
+			}
+		}
 	}
 
 	option = {

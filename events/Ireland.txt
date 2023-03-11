@@ -15,11 +15,13 @@ country_event = { #Sinn Fein - Mary Lou McDonald
 	
 	option = {
 		name = ireland.1.o1
-		create_country_leader = {
-	        name = "Mary Lou McDonald"
-	        picture = GFX_Portrait_IRL_Mary_Lou_McDonald
-	        ideology = democratic_socialist
-        }
+		add_country_leader_role = {
+			character = IRL_mary_lou_mcdonald
+			promote_leader = yes
+			country_leader = {
+				ideology = democratic_socialist
+			}
+		}
 	}
 }
 

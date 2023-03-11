@@ -13,11 +13,13 @@ country_event = { #(Year) Conservative leadership election
 			factor = 57
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Erin O'Toole"
-	        picture = GFX_Portrait_CAN_Erin_O_Toole
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = CAN_erin_o_toole
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 	
 	option = {
@@ -26,10 +28,12 @@ country_event = { #(Year) Conservative leadership election
 			factor = 43
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Peter MacKay"
-	        picture = GFX_Portrait_CAN_Peter_MacKay
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = CAN_peter_mackay
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 }

@@ -16,20 +16,24 @@ country_event = { #2018 PSD leadership election
 	option = {
 		name = portugal.1.o1
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Rui Rio"
-	        picture = GFX_Portrait_POR_Rui_Rio
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = PRT_rui_rio
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 
 	option = {
 		name = portugal.1.o2
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Pedro Santana Lopes"
-	        picture = GFX_Portrait_POR_Pedro_Santana_Lopes
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = PRT_pedro_santana_lopes
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 }

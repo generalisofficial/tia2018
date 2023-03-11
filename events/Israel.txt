@@ -24,11 +24,13 @@ country_event = { #Blue and White
 		    name =  ISR_social_liberal_party_KL
 	    }
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Benny Gantz"
-	        picture = GFX_Portrait_ISR_Benny_Gantz
-	        ideology = centrist
-        }
+		add_country_leader_role = {
+			character = ISR_benny_gantz
+			promote_leader = yes
+			country_leader = {
+				ideology = centrist
+			}
+		}
 	}
 
 	option = {
@@ -52,11 +54,13 @@ country_event = { #2019 Israeli Labor Party leadership election
 			factor = 47
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Amir Peretz"
-	        picture = GFX_Portrait_ISR_Amir_Peretz
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ISR_amir_peretz
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -65,11 +69,13 @@ country_event = { #2019 Israeli Labor Party leadership election
 			factor = 27
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Stav Shaffir"
-	        picture = GFX_Portrait_ISR_Stav_Shaffir
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ISR_stav_shaffir
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -78,11 +84,13 @@ country_event = { #2019 Israeli Labor Party leadership election
 			factor = 26
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Itzik Shmuli"
-	        picture = GFX_Portrait_ISR_Itzik_Shmuli
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ISR_itzik_shmuli
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 
@@ -105,11 +113,13 @@ country_event = { #2018 Meretz leadership election
 			factor = 71
 		}
 		retire_ideology_leader = progressive
-		create_country_leader = {
-	        name = "Tamar Zandberg"
-	        picture = GFX_Portrait_ISR_Tamar_Zandberg
-	        ideology = green
-        }
+		add_country_leader_role = {
+			character = ISR_tamar_zandberg
+			promote_leader = yes
+			country_leader = {
+				ideology = green
+			}
+		}
 	}
 
 	option = {
@@ -118,11 +128,13 @@ country_event = { #2018 Meretz leadership election
 			factor = 29
 		}
 		retire_ideology_leader = progressive
-		create_country_leader = {
-	        name = "Avi Buskila"
-	        picture = GFX_Portrait_ISR_Avi_Buskila
-	        ideology = green
-        }
+		add_country_leader_role = {
+			character = ISR_avi_buskila
+			promote_leader = yes
+			country_leader = {
+				ideology = green
+			}
+		}
 	}
 }
 
@@ -176,10 +188,12 @@ country_event = { #2019 Likud leadership election
 			factor = 28
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Gideon Sa'ar"
-	        picture = GFX_Portrait_ISR_Gideon_Saar
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = ISR_gideon_saar
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 }

@@ -20,11 +20,13 @@ country_event = { #Centre Alliance
 	option = {
 		name = australia.1.o1
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Rebekha Sharkie"
-	        picture = GFX_Portrait_AUS_Rebekha_Sharkie
-	        ideology = centrist
-        }
+		add_country_leader_role = {
+			character = AUS_rebekha_sharkie
+			promote_leader = yes
+			country_leader = {
+				ideology = centrist
+			}
+		}
 		set_party_name = {
 		    ideology = social_liberal
 		    long_name = AUS_social_liberal_party_CA_long
@@ -49,11 +51,13 @@ country_event = { #Bob Katter hands KAP leadership to Robbie Katter
 	option = {
 		name = australia.2.o1
 		retire_ideology_leader = national_conservative
-		create_country_leader = {
-	        name = "Robbie Katter"
-	        picture = GFX_Portrait_AUS_Robbie_Katter
-	        ideology = national_conservative_ideology
-        }
+		add_country_leader_role = {
+			character = AUS_robbie_katter
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+			}
+		}
 	}
 }
 
@@ -70,11 +74,13 @@ country_event = { #2018 Liberal Party of Australia leadership spill
 			factor = 42
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Scott Morrison"
-	        picture = GFX_Portrait_AUS_Scott_Morrison
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = AUS_scott_morrison
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 	
 	option = {
@@ -84,11 +90,13 @@ country_event = { #2018 Liberal Party of Australia leadership spill
 		}
 		add_popularity = { ideology = conservative popularity = -0.02 }
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Peter Dutton"
-	        picture = GFX_Portrait_AUS_Peter_Dutton
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = AUS_peter_dutton
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 
 	option = {
@@ -98,11 +106,13 @@ country_event = { #2018 Liberal Party of Australia leadership spill
 		}
 		add_popularity = { ideology = conservative popularity = 0.02 }
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Julie Bishop"
-	        picture = GFX_Portrait_AUS_Julie_Bishop
-	        ideology = liberal_conservative
-        }
+		add_country_leader_role = {
+			character = AUS_julie_bishop
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
+		}
 	}
 }
 
@@ -117,11 +127,13 @@ country_event = { #(GetYear) Australian Labor Party leadership election
 		name = australia.4.o1
 		add_popularity = { ideology = social_democrat popularity = 0.02 }
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Anthony Albanese"
-	        picture = GFX_Portrait_AUS_Anthony_Albanese
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = AUS_anthony_albanese
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 
