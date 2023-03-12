@@ -536,24 +536,6 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		trigger = {
-			NOT = {
-				OR = {
-					communist_majority_popularity = yes
-					socialist_majority_popularity = yes
-					progressive_majority_popularity = yes
-					social_democrat_majority_popularity = yes
-					social_liberal_majority_popularity = yes
-					classical_liberal_majority_popularity = yes
-					conservative_majority_popularity = yes
-					national_conservative_majority_popularity = yes
-					monarchist_majority_popularity = yes
-					right_wing_populist_majority_popularity = yes
-					fascist_majority_popularity = yes
-					islamist_majority_popularity = yes
-				}
-			}
-		}
 		custom_effect_tooltip = TT_parliamentary_election_results
 		break_coalition = yes
 		elect_new_parliament = yes
