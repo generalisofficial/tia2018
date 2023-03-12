@@ -124,41 +124,42 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_social_democrat
 set_country_flag = coalition_national_conservative
+set_country_flag = coalition_social_democrat
 set_country_flag = coalition_conservative
 set_country_flag = coalition_classical_liberal
-add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 add_to_variable = { ROOT.Coalition = conservative_seats }
 add_to_variable = { ROOT.Coalition = classical_liberal_seats }
 
 set_politics = {	
-	ruling_party = social_democrat
-    last_election = "2018.1.1"
-	election_frequency = 12
+	ruling_party = national_conservative
+    last_election = "2015.10.20"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 27.51
-    conservative = 15.5
-    classical_liberal = 14.49
-    social_liberal = 8
-    social_democrat = 19.5
-    progressive = 14
-	communist = 0.5
-	socialist = 0.5
+    national_conservative = 28.7
+	social_democrat = 18.7
+    classical_liberal = 16.8
+	conservative = 15.14
+    progressive = 9.48
+	social_liberal = 7.8
+	communist = 2.1
+	right_wing_populist = 1.28
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = CHE_ueli_maurer
-recruit_character = CHE_alain_berset
-recruit_character = CHE_ignazio_cassis
-recruit_character = CHE_gerhard_pfister
-recruit_character = CHE_regula_rytz
-recruit_character = CHE_jurg_grossen
+recruit_character = CHE_dominic_luthard
 recruit_character = CHE_andreas_stahel
+recruit_character = CHE_albert_rosti
+recruit_character = CHE_gerhard_pfister
+recruit_character = CHE_petra_gossi
+recruit_character = CHE_jurg_grossen
+recruit_character = CHE_christian_levrat
+recruit_character = CHE_regula_rytz
 recruit_character = CHE_norberto_crivelli

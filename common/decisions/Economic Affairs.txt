@@ -63,10 +63,11 @@ economic_affairs = {
 	monthly_tax_break = {
 		
 		available = {
-			treasury_surplus = yes
-			custom_trigger_tooltip = {
-				tooltip = TT_treasury_surplus	
-			}
+			always = no
+			#treasury_surplus = yes
+			#custom_trigger_tooltip = {
+			#	tooltip = TT_treasury_surplus	
+			#}
 		}
 
 		visible = {

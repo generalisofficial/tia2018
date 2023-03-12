@@ -731,10 +731,10 @@ international_organizations = {
 		available = {
 			is_subject = no
 			all_country = {
-				limit = {
-					has_idea = idea_east_african_community_member
+				OR = {
+					NOT = { has_idea = idea_east_african_community_member }
+					has_war = no
 				}
-				has_war = no
 			}
 		}
 		

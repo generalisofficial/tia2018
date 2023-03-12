@@ -3610,7 +3610,7 @@ auto_government = {
 	else_if = {
 		limit = {
 			fascist_neighbor_coalition_plurality = yes
-			check_variable = { fascist_seats > right_wing_nationalist_seats }
+			check_variable = { fascist_seats > right_wing_populist_seats }
 		}
 		set_politics = {	
 			ruling_party = fascist
@@ -3951,39 +3951,51 @@ gubernatorial_elections = {
 		random_list = {
 			islamist_popularity = {
 				set_state_flag = state_government_islamist
+				custom_effect_tooltip = islamist_governor
 			}
 			fascist_popularity = {
 				set_state_flag = state_government_fascist
+				custom_effect_tooltip = fascist_governor
 			}
 			right_wing_populist_popularity = {
 				set_state_flag = state_government_right_wing_populist
+				custom_effect_tooltip = right_wing_populist_governor
 			}
 			monarchist_popularity = {
 				set_state_flag = state_government_monarchist
+				custom_effect_tooltip = monarchist_governor
 			}
 			national_conservative_popularity = {
 				set_state_flag = state_government_national_conservative
+				custom_effect_tooltip = national_conservative_governor
 			}
 			conservative_popularity = {
 				set_state_flag = state_government_conservative
+				custom_effect_tooltip = conservative_governor
 			}
 			classical_liberal_popularity = {
 				set_state_flag = state_government_classical_liberal
+				custom_effect_tooltip = classical_liberal_governor
 			}
 			social_liberal_popularity = {
 				set_state_flag = state_government_social_liberal
+				custom_effect_tooltip = social_liberal_governor
 			}
 			social_democrat_popularity = {
 				set_state_flag = state_government_social_democrat
+				custom_effect_tooltip = social_democrat_governor
 			}
 			progressive_popularity = {
 				set_state_flag = state_government_progressive
+				custom_effect_tooltip = progressive_governor
 			}
 			socialist_popularity = {
 				set_state_flag = state_government_socialist
+				custom_effect_tooltip = socialist_governor
 			}
 			communist_popularity = {
 				set_state_flag = state_government_communist
+				custom_effect_tooltip = communist_governor
 			}
 		}
 	}

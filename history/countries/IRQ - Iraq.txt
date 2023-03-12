@@ -113,16 +113,16 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
-		target = IRK
+		target = KUR
 		autonomous_state = autonomy_autonomous_region
 	}
 	else = {
-		puppet = IRK
-		IRK = { set_country_flag = TfV_marked_for_deletion }
+		puppet = KUR
+		KUR = { set_country_flag = TfV_marked_for_deletion }
 	}
 }
 
-IRK = {
+KUR = {
 	set_politics = {	
 		ruling_party = national_conservative
 		last_election = "2013.9.30"
@@ -130,12 +130,13 @@ IRK = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		national_conservative = 45.7
-		social_democrat = 21.5
+		national_conservative = 45
+		social_democrat = 21
 		social_liberal = 12
-		classical_liberal = 8.2
-		islamist = 12.1
-		communist = 0.5
+		classical_liberal = 8
+		islamist = 12
+		socialist = 1
+		communist = 1
 	}
 }
 
@@ -145,56 +146,55 @@ add_opinion_modifier = {
 }
 
 #Council of Representatives
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
+set_variable = { communist_seats = 1 }
+set_variable = { socialist_seats = 37.81 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 12.45 }
-set_variable = { social_liberal_seats = 33.69 }
-set_variable = { classical_liberal_seats = 9.52 }
-set_variable = { conservative_seats = 14.65 }
-set_variable = { national_conservative_seats = 18.34 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 8.86 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 25.76 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 0 }
+set_variable = { right_wing_populist_seats = 14.34 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 11.35 }
+set_variable = { islamist_seats = 12.23 }
 
 # Coalition
 set_country_flag = has_a_legislature
+set_country_flag = coalition_conservative
+set_country_flag = coalition_socialist
 set_country_flag = coalition_social_liberal
-set_country_flag = coalition_social_democrat
-set_country_flag = coalition_classical_liberal
-set_country_flag = coalition_national_conservative
+add_to_variable = { ROOT.Coalition = conservative_seats }
+add_to_variable = { ROOT.Coalition = socialist_seats }
 add_to_variable = { ROOT.Coalition = social_liberal_seats }
-add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
 
 set_politics = {	
-	ruling_party = social_liberal
+	ruling_party = conservative
 	last_election = "2014.5.12"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 46.88
-	communist = 0.69
-	islamist = 16.78
-	social_liberal = 14.68
-	national_conservative = 8.74
-	classical_liberal = 7.34
-	conservative = 4.89
+	right_wing_populist = 32.95
+	islamist = 23.42
+	conservative = 14.68
+	socialist = 8.74
+	social_liberal = 7.34
+	classical_liberal = 4.89
+	communist = 4.84
+	fascist = 3.14
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = IRQ_muqtada_al_sadr
-recruit_character = IRQ_raid_jahid_fahmi
 recruit_character = IRQ_hadi_al_amiri
-recruit_character = IRQ_haider_al_abadi
-recruit_character = IRQ_nouri_al_maliki
-recruit_character = IRQ_ayad_allawi
-recruit_character = IRQ_osama_al_nujaifi
 recruit_character = IRQ_izzat_ibrahim_al_douri
+recruit_character = IRQ_muqtada_al_sadr
 recruit_character = IRQ_raad_bin_zeid
+recruit_character = IRQ_haider_al_abadi
+recruit_character = IRQ_mohamed_al_halbousi
+recruit_character = IRQ_ayad_allawi
+recruit_character = IRQ_nouri_al_maliki
+recruit_character = IRQ_raid_fahmi

@@ -1,0 +1,58 @@
+﻿add_namespace = gpg
+
+# Generic Party Generator - Islamist
+country_event = {
+	id = gpg.1
+	title = gpg.1.t
+	desc = gpg.1.d
+	
+	trigger = {
+		islamist > 0.01
+		NOT = {
+			OR = {
+				has_country_flag = has_islamist_party
+				has_idea = violent_non_state_actor
+				has_idea = idea_nonpartisan_political_system
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = gpg.1.o1
+		set_country_flag = has_islamist_party
+		random_list = {
+			25 = {
+				set_party_name = { 
+					ideology = islamist
+					long_name = generic_islamist_party_1_long
+					name = generic_islamist_party_1
+				}
+			}
+			25 = {
+				set_party_name = { 
+					ideology = islamist
+					long_name = generic_islamist_party_2_long
+					name = generic_islamist_party_2
+				}
+			}
+			25 = {
+				set_party_name = { 
+					ideology = islamist
+					long_name = generic_islamist_party_3_long
+					name = generic_islamist_party_3
+				}
+			}
+			25 = {
+				set_party_name = { 
+					ideology = islamist
+					long_name = generic_islamist_party_4_long
+					name = generic_islamist_party_4
+				}
+			}
+		}
+	}
+}

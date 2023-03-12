@@ -74,6 +74,20 @@
  FoG_one_party_islamic_republic: "one-party islamic republic"
  FoG_presidential_republic: "presidential republic"
 
+ # Gubernatorial Elections
+ islamist_governor: "$islamist$ Governor"
+ fascist_governor: "$fascist$ Governor"
+ right_wing_populist_governor: "$right_wing_populist$ Governor"
+ monarchist_governor: "$monarchist$ Governor"
+ national_conservative_governor: "$national_conservative$ Governor"
+ conservative_governor: "$conservative$ Governor"
+ classical_liberal_governor: "$classical_liberal$ Governor"
+ social_liberal_governor: "$social_liberal$ Governor"
+ social_democrat_governor: "$social_democrat$ Governor"
+ progressive_governor: "$progressive$ Governor"
+ socialist_governor: "$socialist$ Governor"
+ communist_governor: "$communist$ Governor"
+
  # Election Results
  TT_islamist_election_results_gain: "$islamist$: [?FROM.islamist_election_votes]% of votes, [?FROM.islamist_seats] seats (+§G[?FROM.islamist_election_change]§!)\n"
  TT_islamist_election_results_loss: "$islamist$: [?FROM.islamist_election_votes]% of votes, [?FROM.islamist_seats] seats (§R[?FROM.islamist_election_change]§!)\n"
@@ -251,7 +265,7 @@
  CONSERVATIVE_POPULARITY_TEXT: "§6Conservatives: [?Root.conservative_seats] seats§!"
  NATIONAL_CONSERVATIVE_POPULARITY_TEXT: "§7National Conservatives: [?Root.national_conservative_seats] seats§!"
  MONARCHIST_POPULARITY_TEXT: "§8Monarchist Independents: [?Root.monarchist_seats] seats§!"
- RIGHT_WING_NATIONALIST_POPULARITY_TEXT: "§9Right-Wing Populists: [?Root.right_wing_populist_seats] seats§!"
+ RIGHT_WING_POPULIST_POPULARITY_TEXT: "§9Right-Wing Populists: [?Root.right_wing_populist_seats] seats§!"
  THIRD_POSITION_POPULARITY_TEXT: "§xFascists: [?Root.fascist_seats] seats§!"
  ISLAMIST_POPULARITY_TEXT: "§XIslamists: [?Root.islamist_seats] seats§!"
 
@@ -263,7 +277,7 @@
  COALITION_CLASSICAL_LIBERAL_POPULARITY_TEXT: "§5[?Root.classical_liberal_seats]%§!"
  COALITION_CONSERVATIVE_POPULARITY_TEXT: "§6[?Root.conservative_seats]%§!"
  COALITION_NATIONAL_CONSERVATIVE_POPULARITY_TEXT: "§7[?Root.national_conservative_seats]%§!"
- COALITION_RIGHT_WING_NATIONALIST_POPULARITY_TEXT: "§9[?Root.right_wing_populist_seats]%§!"
+ COALITION_RIGHT_WING_POPULIST_POPULARITY_TEXT: "§9[?Root.right_wing_populist_seats]%§!"
  COALITION_FASCIST_POPULARITY_TEXT: "§x[?Root.fascist_seats]%§!"
  COALITION_ISLAMIST_POPULARITY_TEXT: "§X[?Root.islamist_seats]%§!"
  COALITION_PARTNER_LIST: "[This.GetCoalitionPartnerSelected][This.GetCoalitionPartner1][This.GetCoalitionPartner2][This.GetCoalitionPartner3][This.GetCoalitionPartner4][This.GetCoalitionPartner5]"
