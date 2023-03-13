@@ -46,33 +46,6 @@ post_election_effects = {
 	}
 	if = {
 	    limit = {
-		    original_tag = DEU
-			has_global_flag = akk_elected
-		}
-		clr_global_flag = akk_elected
-		create_country_leader = {
-	        name = "Annegret Kramp-Karrenbauer"
-	        picture = "Annegret_Kramp_Karrenbauer.dds"
-	        ideology = christian_democrat
-        }
-    }
-	if = {
-	    limit = {
-			original_tag = DEU
-			has_global_flag = merz_elected
-		}
-		clr_global_flag = merz_elected
-		create_country_leader = {
-	        name = "Friedrich Merz"
-	        picture = "Friedrich_Merz.dds"
-	        ideology = christian_democrat
-			traits = {
-				friend_of_america
-			}
-        }
-	}
-	if = {
-	    limit = {
 		    original_tag = NRU
 			has_government = social_liberal
 	    }
@@ -127,40 +100,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Xavier Espot"
-	        picture = GFX_Portrait_ADO_Xavier_Espot
-	        ideology = liberal_conservative
-        }
-	}
-	if  = {
-		limit = {
-			original_tag = CHE
-			has_country_leader = {
-				name = "Alain Berset"
-				ruling_only = no
+		add_country_leader_role = {
+			character = ADO_xavier_espot
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
 			}
-		}
-		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Simonetta Sommaruga"
-			picture = GFX_Portrait_CHE_Simonetta_Sommaruga
-			ideology = social_democrat_ideology
-		}
-	}
-	if  = {
-		limit = {
-			original_tag = CHE
-			has_country_leader = {
-				name = "Ueli Maurer"
-				ruling_only = no
-			}
-		}
-		retire_ideology_leader = national_conservative
-		create_country_leader = {
-			name = "Guy Parmelin"
-			picture = GFX_Portrait_CHE_Guy_Parmelin
-			ideology = national_conservative_ideology
 		}
 	}
 	if  = {
@@ -183,10 +128,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Carlos Alvarado Quesada"
-			picture = GFX_Portrait_CRI_Carlos_Alvarado_Quesada
-			ideology = social_democrat_ideology
+		add_country_leader_role = {
+			character = CRI_carlos_alvarado_quesada
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
 		}
 	}
 	if  = {
@@ -196,10 +143,12 @@ post_election_effects = {
 		}
 		clr_country_flag = bouteflika_not_running
 		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Abdelmadjid Tebboune"
-			picture = GFX_Portrait_DZA_Abdelmadjid_Tebboune
-			ideology = arab_socialist
+		add_country_leader_role = {
+			character = DZA_abdelmadjid_tebboune
+			promote_leader = yes
+			country_leader = {
+				ideology = arab_socialist
+			}
 		}
 	}
 	if  = {
@@ -211,10 +160,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Matteo Renzi"
-			picture = GFX_Portrait_ITA_Matteo_Renzi
-			ideology = social_democrat_ideology
+		add_country_leader_role = {
+			character = ITA_matteo_renzi
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
 		}
 		else = {
 			if = {
@@ -226,10 +177,12 @@ post_election_effects = {
 					}
 				}
 				retire_ideology_leader = social_democrat
-				create_country_leader = {
-					name = "Maurizio Martina"
-					picture = GFX_Portrait_ITA_Maurizio_Martina
-					ideology = social_democrat_ideology
+				add_country_leader_role = {
+					character = ITA_maurizio_martina
+					promote_leader = yes
+					country_leader = {
+						ideology = social_democrat_ideology
+					}
 				}
 			}
 		}
@@ -243,10 +196,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-			name = "Lee Jae-myung"
-			picture = GFX_Portrait_KOR_Lee_Jae_myung
-			ideology = social_liberal_ideology
+		add_country_leader_role = {
+			character = KOR_lee_jae_myung
+			promote_leader = yes
+			country_leader = {
+				ideology = social_liberal_ideology
+			}
 		}
 	}
 	if  = {
@@ -269,10 +224,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = right_wing_populist
-		create_country_leader = {
-			name = "Serdar Berdimuhamedow"
-			picture = GFX_Portrait_TKM_Serdar_Berdimuhamedow
-			ideology = personalist
+		add_country_leader_role = {
+			character = TKM_serdar_berdimuhamedow
+			promote_leader = yes
+			country_leader = {
+				ideology = personalist
+			}
 		}
 	}
 	if  = {
@@ -284,10 +241,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Samura Kamara"
-			picture = GFX_Portrait_SLE_Samura_Kamara
-			ideology = democratic_socialist
+		add_country_leader_role = {
+			character = SLE_samura_kamara
+			promote_leader = yes
+			country_leader = {
+				ideology = democratic_socialist
+			}
 		}
 	}
 	if  = {
@@ -299,10 +258,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-			name = "José Antonio Meade"
-			picture = GFX_Portrait_MEX_Jose_Antonio_Meade
-			ideology = classical_liberal_ideology
+		add_country_leader_role = {
+			character = MEX_jose_antonio_meade
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
 		}
 	}
 	if  = {
@@ -314,10 +275,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-			name = "John Le Fondré"
-			picture = GFX_Portrait_JEY_John_Le_Fondre
-			ideology = classical_liberal_ideology
+		add_country_leader_role = {
+			character = JEY_john_le_fondre
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
 		}
 	}
 	if  = {
@@ -340,10 +303,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-			name = "Shehbaz Sharif"
-			picture = GFX_Portrait_PAK_Shehbaz_Sharif
-			ideology = liberal_conservative
+		add_country_leader_role = {
+			character = PAK_shehbaz_sharif
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
 		}
 	}
 	if  = {
@@ -355,10 +320,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-			name = "Henrique Meirelles"
-			picture = GFX_Portrait_BRA_Henrique_Meirelles
-			ideology = classical_liberal_ideology
+		add_country_leader_role = {
+			character = BRA_henrique_meirelles
+			promote_leader = yes
+			country_leader = {
+				ideology = classical_liberal_ideology
+			}
 		}
 	}
 	if  = {
@@ -370,10 +337,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = national_conservative
-		create_country_leader = {
-			name = "Mario Abdo Benítez"
-			picture = GFX_Portrait_PRY_Mario_Abdo_Benitez
-			ideology = national_conservative_ideology
+		add_country_leader_role = {
+			character = PRY_mario_abdo_benitez
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+			}
 		}
 	}
 	if  = {
@@ -396,10 +365,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Daniel Martínez"
-			picture = GFX_Portrait_URY_Daniel_Martinez
-			ideology = socialism_of_the_21st_century
+		add_country_leader_role = {
+			character = URY_daniel_martinez
+			promote_leader = yes
+			country_leader = {
+				ideology = socialism_of_the_21st_century
+			}
 		}
 	}
 	if  = {
@@ -411,10 +382,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Hugo Martínez"
-			picture = GFX_Portrait_SLV_Hugo_Martinez
-			ideology = socialism_of_the_21st_century
+		add_country_leader_role = {
+			character = SLV_hugo_martinez
+			promote_leader = yes
+			country_leader = {
+				ideology = socialism_of_the_21st_century
+			}
 		}
 	}
 	if  = {
@@ -426,10 +399,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = socialist
-		create_country_leader = {
-			name = "Domingos Simões Pereira"
-			picture = GFX_Portrait_GNB_Domingos_Simoes_Pereira
-			ideology = left_wing_nationalist
+		add_country_leader_role = {
+			character = GNB_domingos_simoes_pereira
+			promote_leader = yes
+			country_leader = {
+				ideology = left_wing_nationalist
+			}
 		}
 	}
 	if  = {
@@ -441,10 +416,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-			name = "Mohamed Ould Ghazouani"
-			picture = GFX_Portrait_MRT_Mohamed_Ould_Ghazouani
-			ideology = liberal_conservative
+		add_country_leader_role = {
+			character = MRT_mohamed_ould_ghazouani
+			promote_leader = yes
+			country_leader = {
+				ideology = liberal_conservative
+			}
 		}
 	}
 	if  = {
@@ -456,10 +433,12 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-			name = "Vladimir Plahotniuc"
-			picture = GFX_Portrait_MDA_Vladimir_Plahotniuc
-			ideology = social_democrat_ideology
+		add_country_leader_role = {
+			character = MDA_vladimir_plahotniuc
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
 		}
 	}
 	if  = {
@@ -471,15 +450,17 @@ post_election_effects = {
 			}
 		}
 		retire_ideology_leader = right_wing_populist
-		create_country_leader = {
-			name = "Évariste Ndayishimiye"
-			picture = GFX_Portrait_BRD_Evariste_Ndayishimiye
-			ideology = personalist
+		add_country_leader_role = {
+			character = BRD_evariste_ndayishimiye
+			promote_leader = yes
+			country_leader = {
+				ideology = personalist
+			}
 		}
 	}
 	if = {
 		limit = {
-			minority_government = yes
+			NOT = { majority_government = yes }
 		}
 		hidden_effect = {
 			add_ideas = minority_government
@@ -510,7 +491,6 @@ cleanup_coalition = {
 	clr_country_flag = government_islamist
 	clr_country_flag = government_fascist
 	clr_country_flag = government_right_wing_populist
-	clr_country_flag = government_monarchist
 	clr_country_flag = government_national_conservative
 	clr_country_flag = government_conservative
 	clr_country_flag = government_classical_liberal

@@ -1496,16 +1496,6 @@ scripted_gui = {
 				}
 				else_if = {
 					limit = {
-						has_country_flag = government_monarchist
-					}
-					set_politics = {						
-						ruling_party = monarchist
-						elections_allowed = yes
-					}
-					set_country_flag = coalition_monarchist
-				}
-				else_if = {
-					limit = {
 						has_country_flag = government_national_conservative
 					}
 					set_politics = {						

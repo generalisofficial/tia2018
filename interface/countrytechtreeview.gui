@@ -60,7 +60,7 @@ guiTypes = {
 					name ="infantry_techtree_bg"
 					spriteType = "GFX_infantry_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					alwaystransparent = yes
 				}
 				
 				instantTextBoxType = {
@@ -584,7 +584,7 @@ guiTypes = {
 					name ="armortech_bg"
 					spriteType = "GFX_armortech_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					alwaystransparent = yes
 				}
 
 				containerWindowType = {
@@ -911,7 +911,7 @@ guiTypes = {
 					name ="artillery_techtree_bg"
 					spriteType = "GFX_artillery_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					alwaystransparent = yes
 				}				
 
 			containerWindowType = {
@@ -2042,7 +2042,7 @@ guiTypes = {
 					name ="artillery_techtree_bg"
 					spriteType = "GFX_air_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					alwaystransparent = yes
 				}				
 				
 			}
@@ -2309,37 +2309,6 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "civilian_folder"
-			position = { x=0 y=47 }
-			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
-			drag_scroll = { left middle }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
-			scroll_wheel_factor = 40
-			
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_2b_border"
-			}
-			
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = {
-					width = 1550 height = 1000
-					min = { width = 100%% height = 100%% }
-				}
-				
-				iconType = {
-					name ="GFX_civilian_techtree_bg"
-					spriteType = "GFX_civilian_techtree_bg"
-					position = { x=0 y=0 }
-				}
-			}
-		}
-
-		containerWindowType = {
 			name = "electronics_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
@@ -2371,7 +2340,7 @@ guiTypes = {
 					name ="wonderweapons_bg"
 					spriteType = "GFX_wonderweapons_bg"
 					position = { x=810 y=0 }
-					allwaystransparent = yes
+					alwaystransparent = yes
 				}
 			}
 			
@@ -2752,22 +2721,6 @@ guiTypes = {
 				hide = yes
 				alwaystransparent = yes
 			}			
-				
-			buttonType = {
-				position = { x = 645 y = 0 }
-				name = "civilian_folder_tab"
-				quadTextureSprite = "GFX_industry_folder_tab"
-				frame = 1
-				clicksound = ui_research_tab_industry
-			}
-
-			iconType = {
-				name = "highlight_civilian_folder"
-				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=645 y=0}
-				hide = yes
-				alwaystransparent = yes
-			}
 		}
 
 		buttonType = {

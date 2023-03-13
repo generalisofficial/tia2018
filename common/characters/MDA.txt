@@ -36,6 +36,7 @@ characters={
 	}
 	MDA_maia_sandu={
 		name="Maia Sandu"
+		gender = female
 		portraits={
 			civilian={
 				large=GFX_Portrait_MDA_Maia_Sandu
@@ -59,6 +60,7 @@ characters={
 	}
 	MDA_zinaida_greceanii={
 		name="Zinaida Greceanii"
+		gender = female
 		portraits={
 			civilian={
 				large=GFX_Portrait_MDA_Zinaida_Greceanii
@@ -79,6 +81,15 @@ characters={
 		country_leader={
 			ideology=marxist_leninist
 			traits={ friend_of_russia }
+		}
+	}
+	# Added - Political
+	MDA_vladimir_plahotniuc={
+		name="Vladimir Plahotniuc"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MDA_Vladimir_Plahotniuc
+			}
 		}
 	}
 	# Starting - Military

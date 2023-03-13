@@ -17,11 +17,13 @@ country_event = { #Die Grunen - Annalena Baerbock
 		name = germany.1.o1
 		add_popularity = { ideology = progressive popularity = 0.02 }
 		retire_ideology_leader = progressive
-		create_country_leader = {
-	        name = "Annalena Baerbock"
-	        picture = GFX_Portrait_DEU_Annalena_Baerbock
-	        ideology = green
-        }
+		add_country_leader_role = {
+			character = DEU_annalena_baerbock
+			promote_leader = yes
+			country_leader = {
+				ideology = green
+			}
+		}
 	}
 }
 
@@ -42,11 +44,13 @@ country_event = { #2019 Social Democratic Party of Germany leadership election
 		name = germany.2.o1
 		add_popularity = { ideology = social_democrat popularity = 0.03 }
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Olaf Scholz"
-	        picture = GFX_Portrait_DEU_Olaf_Scholz
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = DEU_olaf_scholz
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 
@@ -59,31 +63,25 @@ country_event = { #2018 Christian Democratic Union leadership election
 
 	trigger = {
 		original_tag = DEU
+		date > 2018.12.7
+		date < 2019.1.1
 		has_country_leader = {
 			name = "Angela Merkel"
 			ruling_only = no
 		}
-		date > 2018.12.7
-		date < 2019.1.1
 	}
 	
 	option = {
 		name = germany.3.o1
 		ai_chance = {
-			factor = 52
+			factor = 45
 		}
-		if = {
-	        limit = {
-			    has_government = conservative
-			}
-			set_global_flag = akk_elected
-			else = {
-				retire_ideology_leader = conservative
-			    create_country_leader = {
-	                name = "Annegret Kramp-Karrenbauer"
-	                picture = GFX_Portrait_DEU_Annegret_Kramp_Karrenbauer
-	                ideology = christian_democrat
-                }
+		retire_ideology_leader = conservative
+		add_country_leader_role = {
+			character = DEU_annegret_kramp_karrenbauer
+			promote_leader = yes
+			country_leader = {
+				ideology = christian_democrat
 			}
 		}
 	}
@@ -91,20 +89,29 @@ country_event = { #2018 Christian Democratic Union leadership election
 	option = {
 		name = germany.3.o2
 		ai_chance = {
-			factor = 48
+			factor = 39
 		}
-		if = {
-	        limit = {
-			    has_government = conservative
+		retire_ideology_leader = conservative
+		add_country_leader_role = {
+			character = DEU_friedrich_merz
+			promote_leader = yes
+			country_leader = {
+				ideology = christian_democrat
 			}
-			set_global_flag = merz_elected
-			else = {
-				retire_ideology_leader = conservative
-			    create_country_leader = {
-	                name = "Friedrich Merz"
-	                picture = GFX_Portrait_DEU_Friedrich_Merz
-	                ideology = christian_democrat
-                }
+		}
+	}
+
+	option = {
+		name = germany.3.o3
+		ai_chance = {
+			factor = 16
+		}
+		retire_ideology_leader = conservative
+		add_country_leader_role = {
+			character = DEU_jens_spahn
+			promote_leader = yes
+			country_leader = {
+				ideology = christian_democrat
 			}
 		}
 	}

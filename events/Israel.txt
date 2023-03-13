@@ -197,3 +197,44 @@ country_event = { #2019 Likud leadership election
 		}
 	}
 }
+
+country_event = { #Meretz requests Michael Ben-Ari disqualified
+	id = israel.5
+	title = israel.5.t
+	desc = israel.5.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ISR
+		date > 2019.3.18
+		date < 2020.1.1
+		has_country_leader = {
+			name = "Michael Ben-Ari"
+			ruling_only = no
+		}
+	}
+	
+	option = {
+		name = israel.5.o1
+		ai_chance = {
+			factor = 50
+		}
+		add_popularity = { ideology = fascist popularity = 0.01 }
+		retire_ideology_leader = fascist
+		add_country_leader_role = {
+			character = ISR_itamar_ben_gvir
+			promote_leader = yes
+			country_leader = {
+				ideology = kahanist
+			}
+		}
+	}
+
+	option = {
+		name = israel.5.o2
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

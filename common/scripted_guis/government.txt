@@ -126,7 +126,7 @@ scripted_gui = {
 				}
 				if = {
 					limit = {
-						minority_government = yes
+						NOT = { majority_government = yes }
 					}
 					add_ideas = minority_government
 				}

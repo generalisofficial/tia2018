@@ -728,21 +728,21 @@ defined_text = {
 	text = {
 		trigger = {
 			has_idea = presidential_republic
-			minority_government = yes
+			NOT = { majority_government = yes }
 		}
 		localization_key = presidential_minority_government
 	}
 	text = {
 		trigger = {
 			has_idea = parliamentary_system
-			minority_government = yes
+			NOT = { majority_government = yes }
 		}
 		localization_key = parliamentary_minority_government
 	}
 	text = {
 		trigger = {
 			has_idea = demarchic_republic
-			minority_government = yes
+			NOT = { majority_government = yes }
 		}
 		localization_key = randomly_selected_minority_government
 	}
@@ -1271,7 +1271,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			minority_government = yes
+			NOT = { majority_government = yes }
 		}
 		localization_key = TT_legislative_election_event_minority
 	}

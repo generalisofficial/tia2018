@@ -1,5 +1,16 @@
 characters={
     # Starting - Political
+	LBR_charles_taylor={
+		name="Charles Taylor"
+		portraits={
+			civilian={
+				large=GFX_Portrait_LBR_Charles_Taylor
+			}
+		}
+		country_leader={
+			ideology=neo_fascist
+		}
+	}
 	LBR_george_weah={
 		name="George Weah"
 		portraits={
@@ -8,18 +19,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
-		}
-	}
-	LBR_joseph_boakai={
-		name="Joseph Boakai"
-		portraits={
-			civilian={
-				large=GFX_Portrait_LBR_Joseph_Boakai
-			}
-		}
-		country_leader={
-			ideology=centrist
+			ideology=liberal_conservative
 		}
 	}
 	LBR_charles_brumskine={
@@ -33,15 +33,26 @@ characters={
 			ideology=classical_liberal_ideology
 		}
 	}
-	LBR_charles_taylor={
-		name="Charles Taylor"
+	LBR_emmanuel_j_nuquay={
+		name="Emmanuel J. Nuquay"
 		portraits={
 			civilian={
-				large=GFX_Portrait_LBR_Charles_Taylor
+				large=GFX_Portrait_LBR_Emmanuel_J_Nuquay
 			}
 		}
 		country_leader={
-			ideology=right_wing_populist_ideology
+			ideology=centrist
+		}
+	}
+	LBR_joseph_boakai={
+		name="Joseph Boakai"
+		portraits={
+			civilian={
+				large=GFX_Portrait_LBR_Joseph_Boakai
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
 		}
 	}
 	# Starting - Military

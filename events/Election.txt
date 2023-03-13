@@ -478,7 +478,7 @@ country_event = {
 		custom_effect_tooltip = TT_parliamentary_election_results
 		if = {
 			limit = {
-				minority_government = yes
+				NOT = { majority_government = yes }
 			}
 			add_political_power = -50
 			add_ideas = minority_government
@@ -1268,7 +1268,7 @@ country_event = {
 		custom_effect_tooltip = TT_parliamentary_election_results
 		if = {
 			limit = {
-				minority_government = yes
+				NOT = { majority_government = yes }
 			}
 			add_political_power = -50
 			add_ideas = minority_government

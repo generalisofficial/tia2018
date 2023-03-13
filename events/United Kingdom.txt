@@ -16,11 +16,13 @@ country_event = { #2018 UKIP leadership election
 	option = {
 		name = britain.1.o1
 		retire_ideology_leader = right_wing_populist
-		create_country_leader = {
-	        name = "Gerard Batten"
-	        picture = GFX_Portrait_ENG_Gerard_Batten
-	        ideology = right_wing_populist_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_gerard_batten
+			promote_leader = yes
+			country_leader = {
+				ideology = right_wing_populist_ideology
+			}
+		}
 	}
 }
 
@@ -43,11 +45,13 @@ country_event = { #2019 Liberal Democrats leadership election
 			factor = 63
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Jo Swinson"
-	        picture = GFX_Portrait_ENG_Jo_Swinson
-	        ideology = social_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_jo_swinson
+			promote_leader = yes
+			country_leader = {
+				ideology = social_liberal_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -56,11 +60,13 @@ country_event = { #2019 Liberal Democrats leadership election
 			factor = 37
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Ed Davey"
-	        picture = GFX_Portrait_ENG_Ed_Davey
-	        ideology = social_liberal_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_ed_davey
+			promote_leader = yes
+			country_leader = {
+				ideology = social_liberal_ideology
+			}
+		}
 	}
 }
 
@@ -83,11 +89,13 @@ country_event = { #2019 Conservative Party leadership election
 			factor = 51
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Boris Johnson"
-	        picture = GFX_Portrait_ENG_Boris_Johnson
-	        ideology = one_nation_conservative
-        }
+		add_country_leader_role = {
+			character = ENG_boris_johnson
+			promote_leader = yes
+			country_leader = {
+				ideology = one_nation_conservative
+			}
+		}
 	}
 	
 	option = {
@@ -96,11 +104,13 @@ country_event = { #2019 Conservative Party leadership election
 			factor = 25
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Jeremy Hunt"
-	        picture = GFX_Portrait_ENG_Jeremy_Hunt
-	        ideology = one_nation_conservative
-        }
+		add_country_leader_role = {
+			character = ENG_jeremy_hunt
+			promote_leader = yes
+			country_leader = {
+				ideology = one_nation_conservative
+			}
+		}
 	}
 	
 	option = {
@@ -109,11 +119,13 @@ country_event = { #2019 Conservative Party leadership election
 			factor = 24
 		}
 		retire_ideology_leader = conservative
-		create_country_leader = {
-	        name = "Michael Gove"
-	        picture = GFX_Portrait_ENG_Michael_Gove
-	        ideology = one_nation_conservative
-        }
+		add_country_leader_role = {
+			character = ENG_michael_gove
+			promote_leader = yes
+			country_leader = {
+				ideology = one_nation_conservative
+			}
+		}
 	}
 }
 
@@ -134,11 +146,13 @@ country_event = { #Blaiklock Resigns
 		name = britain.4.o1
 		add_popularity = { ideology = national_conservative popularity = 0.02 }
 		retire_ideology_leader = national_conservative
-		create_country_leader = {
-	        name = "Nigel Farage"
-	        picture = GFX_Portrait_ENG_Nigel_Farage
-	        ideology = national_conservative_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_nigel_farage
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservative_ideology
+			}
+		}
 	}
 }
 
@@ -171,11 +185,13 @@ country_event = { #Death of Elizabeth II
 			news_event = britain.6
 		}
 		kill_ideology_leader = monarchist
-		create_country_leader = {
-	        name = "Charles III"
-	        picture = GFX_Portrait_ENG_Charles_III
-	        ideology = monarchist_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_charles_iii
+			promote_leader = yes
+			country_leader = {
+				ideology = monarchist_ideology
+			}
+		}
 	}
 }
 
@@ -212,11 +228,13 @@ country_event = { #2019 UKIP leadership election
 			factor = 53
 		}
 		retire_ideology_leader = right_wing_populist
-		create_country_leader = {
-	        name = "Richard Braine"
-	        picture = GFX_Portrait_ENG_Richard_Braine
-	        ideology = right_wing_populist_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_richard_braine
+			promote_leader = yes
+			country_leader = {
+				ideology = right_wing_populist_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -225,11 +243,13 @@ country_event = { #2019 UKIP leadership election
 			factor = 47
 		}
 		retire_ideology_leader = right_wing_populist
-		create_country_leader = {
-	        name = "Freddy Vachha"
-	        picture = GFX_Portrait_ENG_Freddy_Vachha
-	        ideology = right_wing_populist_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_freddy_vachha
+			promote_leader = yes
+			country_leader = {
+				ideology = right_wing_populist_ideology
+			}
+		}
 	}
 }
 
@@ -246,11 +266,13 @@ country_event = { #(Year) Labour Party leadership election (Corbyn resigns)
 			factor = 56
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Keir Starmer"
-	        picture = GFX_Portrait_ENG_Keir_Starmer
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_keir_starmer
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -259,11 +281,13 @@ country_event = { #(Year) Labour Party leadership election (Corbyn resigns)
 			factor = 28
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Rebecca Long-Bailey"
-	        picture = GFX_Portrait_ENG_Rebecca_Long_Bailey
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_rebecca_long_bailey
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 	
 	option = {
@@ -272,11 +296,13 @@ country_event = { #(Year) Labour Party leadership election (Corbyn resigns)
 			factor = 16
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Lisa Nandy"
-	        picture = GFX_Portrait_ENG_Lisa_Nandy
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = ENG_lisa_nandy
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 }
 

@@ -27,11 +27,13 @@ country_event = {
 			factor = 81
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Joe Biden"
-	        picture = GFX_Portrait_USA_Joe_Biden
-	        ideology = centrist
-        }
+		add_country_leader_role = {
+			character = USA_joe_biden
+			promote_leader = yes
+			country_leader = {
+				ideology = centrist
+			}
+		}
 	}
 
 	option = {
@@ -40,11 +42,13 @@ country_event = {
 			factor = 12
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Michael Bloomberg"
-	        picture = GFX_Portrait_USA_Michael_Bloomberg
-	        ideology = centrist
-        }
+		add_country_leader_role = {
+			character = USA_michael_bloomberg
+			promote_leader = yes
+			country_leader = {
+				ideology = centrist
+			}
+		}
 	}
 
 	option = {
@@ -53,11 +57,13 @@ country_event = {
 			factor = 5
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Pete Buttigieg"
-	        picture = GFX_Portrait_USA_Pete_Buttigieg
-	        ideology = centrist
-        }
+		add_country_leader_role = {
+			character = USA_pete_buttigieg
+			promote_leader = yes
+			country_leader = {
+				ideology = centrist
+			}
+		}
 	}
 
 	option = {
@@ -66,11 +72,13 @@ country_event = {
 			factor = 2
 		}
 		retire_ideology_leader = social_liberal
-		create_country_leader = {
-	        name = "Andrew Yang"
-	        picture = GFX_Portrait_USA_Andrew_Yang
-	        ideology = centrist
-        }
+		add_country_leader_role = {
+			character = USA_andrew_yang
+			promote_leader = yes
+			country_leader = {
+				ideology = centrist
+			}
+		}
 	}
 }
 
@@ -109,14 +117,14 @@ country_event = {
 
 	option = {
 		name = usa.3.o1
-		create_country_leader = {
-	        name = "Ted Kaczynski"
-	        picture = GFX_Portrait_USA_Ted_Kaczynski
-	        ideology = anarcho_primitivist
-			traits = {
-				the_unabomber
-			}
-        }
+		#create_country_leader = {
+	    #    name = "Ted Kaczynski"
+	    #    picture = GFX_Portrait_USA_Ted_Kaczynski
+	    #    ideology = anarcho_primitivist
+		#	traits = {
+		#		the_unabomber
+		#	}
+        #}
 		add_popularity = { ideology = progressive popularity = 0.02 }
 	}
 }
@@ -223,11 +231,13 @@ country_event = {
 			factor = 21
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Elizabeth Warren"
-	        picture = GFX_Portrait_USA_Elizabeth_Warren
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = USA_elizabeth_warren
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
 	}
 
 	option = {
@@ -236,11 +246,14 @@ country_event = {
 			factor = 8
 		}
 		retire_ideology_leader = social_democrat
-		create_country_leader = {
-	        name = "Tulsi Gabbard"
-	        picture = GFX_Portrait_USA_Tulsi_Gabbard
-	        ideology = social_democrat_ideology
-        }
+		add_country_leader_role = {
+			character = USA_tulsi_gabbard
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+				traits = { friend_of_russia }
+			}
+		}
 	}
 }
 
@@ -265,11 +278,13 @@ country_event = {
 			factor = 51
 		}
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Jo Jorgensen"
-	        picture = GFX_Portrait_USA_Jo_Jorgensen
-	        ideology = libertarian
-        }
+		add_country_leader_role = {
+			character = USA_jo_jorgensen
+			promote_leader = yes
+			country_leader = {
+				ideology = libertarian
+			}
+		}
 	}
 
 	option = {
@@ -278,11 +293,13 @@ country_event = {
 			factor = 34
 		}
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Jacob Hornberger"
-	        picture = GFX_Portrait_USA_Jacob_Hornberger
-	        ideology = libertarian
-        }
+		add_country_leader_role = {
+			character = USA_jacob_hornberger
+			promote_leader = yes
+			country_leader = {
+				ideology = libertarian
+			}
+		}
 	}
 
 	option = {
@@ -291,11 +308,13 @@ country_event = {
 			factor = 15
 		}
 		retire_ideology_leader = classical_liberal
-		create_country_leader = {
-	        name = "Vermin Supreme"
-	        picture = GFX_Portrait_USA_Vermin_Supreme
-	        ideology = libertarian
-        }
+		add_country_leader_role = {
+			character = USA_vermin_supreme
+			promote_leader = yes
+			country_leader = {
+				ideology = libertarian
+			}
+		}
 	}
 }
 
