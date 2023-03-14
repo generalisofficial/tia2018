@@ -213,73 +213,11 @@ add_ideas = {
 
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = FSM
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = MHL
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = PLW
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = FSM
-		puppet = MHL
-		puppet = PLW
-	}
-}
-
-if = {
-	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
   		name = "Central Intelligence Agency"
  		icon = "GFX_intelligence_agency_logo_USA"
-	}
-}
-
-FSM = {
-	set_politics = {	
-		ruling_party = progressive
-		last_election = "2017.3.5"
-		election_frequency = 24
-		elections_allowed = yes
-	}
-	
-	set_popularities = {
-		progressive = 100
-	}
-}
-
-MHL = {
-	set_politics = {	
-		ruling_party = social_liberal
-		last_election = "2015.11.18"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		classical_liberal = 60.6
-		social_liberal = 39.4
-	}
-}
-
-PLW = {
-	set_politics = {	
-		ruling_party = progressive
-		last_election = "2016.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		classical_liberal = 56.71
-		progressive = 43.29
 	}
 }
 
@@ -357,6 +295,29 @@ set_popularities = {
 	social_liberal = 32.43
 	social_democrat = 21.83
     conservative = 10.57
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = FSM
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = MHL
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = PLW
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = FSM
+		puppet = MHL
+		puppet = PLW
+	}
 }
 
 # Characters - Military

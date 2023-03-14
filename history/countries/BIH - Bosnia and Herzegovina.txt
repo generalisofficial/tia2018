@@ -94,35 +94,6 @@ add_ideas = {
 	very_low_taxes
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = RSE
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = RSE
-		RSE = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
-RSE = {
-	set_politics = {	
-		ruling_party = right_wing_populist
-		last_election = "2014.10.7"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		right_wing_populist = 38.57
-		national_conservative = 37.34
-		conservative = 15.66
-		social_democrat = 8.43
-	}
-}
-
 #House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
@@ -154,6 +125,20 @@ set_popularities = {
 	social_democrat = 27.55
 	conservative = 18.36
 	social_liberal = 6.12
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = RSE
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = RSE
+		RSE = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military

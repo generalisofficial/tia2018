@@ -108,58 +108,11 @@ diplomatic_relation = { country = PRK relation = non_aggression_pact }
 
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = HKG
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = MAC
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = HKG
-		puppet = MAC
-		HKG = { set_country_flag = TfV_marked_for_deletion }
-		MAC = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
-if = {
-	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
   		name = "Ministry of State Security"
  		icon = "GFX_intelligence_agency_logo_PRC"
-	}
-}
-
-HKG = {
-	set_politics = {	
-		ruling_party = communist
-		last_election = "2016.9.6"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		social_liberal = 39
-		communist = 48
-		national_conservative = 13
-	}
-}
-
-MAC = {
-	set_politics = {	
-		ruling_party = communist
-		last_election = "2017.9.12"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		communist = 85.72
-		social_liberal = 14.28
 	}
 }
 
@@ -217,6 +170,26 @@ set_politics = {
 
 set_popularities = {
     communist = 100
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = HKG
+		autonomous_state = autonomy_autonomous_region
+	}
+	set_autonomy = {
+		target = MAC
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = HKG
+		puppet = MAC
+		HKG = { set_country_flag = TfV_marked_for_deletion }
+		MAC = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military

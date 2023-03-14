@@ -112,34 +112,6 @@ add_ideas = {
 	threshold_seven_percent
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = NCY
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = NCY
-	}
-}
-
-NCY = {
-	set_politics = {	
-		ruling_party = national_conservative
-		last_election = "2013.1.7"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 45.6
-		social_democrat = 29.5
-		social_liberal = 17.1
-		conservative = 7.8
-	}
-}
-
 add_opinion_modifier = { target = AZE modifier = military_cooperation }
 add_opinion_modifier = { target = ARM modifier = genocide_accusations }
 add_opinion_modifier = { target = ART modifier = genocide_accusations }
@@ -182,6 +154,19 @@ set_popularities = {
 	fascist = 11.1
 	classical_liberal = 9.96
 	islamist = 1.65
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NCY
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = NCY
+	}
 }
 
 # Characters - Military

@@ -116,39 +116,6 @@ add_ideas = {
 
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ABK
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = SOS
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = TRA
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = DPR
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = LPR
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = ABK
-		puppet = SOS
-		puppet = TRA
-		puppet = DPR
-		puppet = LPR
-	}
-}
-
-if = {
-	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
@@ -178,73 +145,6 @@ if = {
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
 			engine_type_slot = engine_1_1x
 		}
-	}
-}
-
-ABK = {
-	set_politics = {	
-		ruling_party = national_conservative
-		last_election = "2014.8.25"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 41.08
-		conservative = 58.92
-	}
-}
-
-SOS = {
-	set_politics = {	
-		ruling_party = national_conservative
-		last_election = "2017.4.9"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 51.86
-		social_liberal = 33.33
-		communist = 14.81
-	}
-}
-
-TRA = {
-	set_politics = {	
-		ruling_party = national_conservative
-		last_election = "2016.12.12"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 87.88
-		communist = 12.12
-	}
-}
-
-DPR = {
-	set_politics = {	
-		ruling_party = national_conservative 
-		last_election = "2014.11.11"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 71
-		right_wing_populist = 26
-		communist = 3
-	}
-}
-
-LPR = {
-	set_politics = {	
-		ruling_party = national_conservative 
-		last_election = "2014.11.11"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 74
-		classical_liberal = 26
 	}
 }
 
@@ -303,6 +203,39 @@ set_popularities = {
 	fascist = 5.47
 	social_liberal = 5.2
 	progressive = 1.2
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ABK
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = SOS
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = TRA
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = DPR
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = LPR
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = ABK
+		puppet = SOS
+		puppet = TRA
+		puppet = DPR
+		puppet = LPR
+	}
 }
 
 # Characters - Military

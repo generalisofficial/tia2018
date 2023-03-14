@@ -114,49 +114,6 @@ add_ideas = {
 	threshold_five_percent
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = NIU
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = COK
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = NIU
-		puppet = COK
-	}
-}
-
-NIU = {
-	set_politics = {	
-		ruling_party = progressive
-		last_election = "2017.5.13"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		progressive = 100
-	}
-}
-
-COK = {
-	set_politics = {	
-		ruling_party = national_conservative
-		last_election = "2014.6.14"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 54.17
-		social_liberal = 45.83
-	}
-}
-
 #House of Representatives
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
@@ -194,6 +151,24 @@ set_popularities = {
 	national_conservative = 6
 	classical_liberal = 0.5
     social_liberal = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NIU
+		autonomous_state = autonomy_puppet_state
+	}
+	set_autonomy = {
+		target = COK
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = NIU
+		puppet = COK
+	}
 }
 
 # Characters - Military

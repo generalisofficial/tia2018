@@ -108,38 +108,6 @@ add_ideas = {
 	five_year_term
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = KUR
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = KUR
-		KUR = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
-KUR = {
-	set_politics = {	
-		ruling_party = national_conservative
-		last_election = "2013.9.30"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		national_conservative = 45
-		social_democrat = 21
-		social_liberal = 12
-		classical_liberal = 8
-		islamist = 12
-		socialist = 1
-		communist = 1
-	}
-}
-
 add_opinion_modifier = {
 	target = ISR
 	modifier = no_diplomatic_recognition
@@ -184,6 +152,20 @@ set_popularities = {
 	classical_liberal = 4.89
 	communist = 4.84
 	fascist = 3.14
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = KUR
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = KUR
+		KUR = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military

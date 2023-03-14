@@ -124,33 +124,6 @@ add_ideas = {
 	five_year_term
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = WAA
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = WAA
-		WAA = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
-WAA = {
-	set_politics = {	
-		ruling_party = communist
-		last_election = "2018.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	
-	set_popularities = {
-		communist = 100
-	}
-}
-
 #Pyithu Hluttaw
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
@@ -180,6 +153,20 @@ set_politics = {
 set_popularities = {
     social_democrat = 90.85
     right_wing_populist = 9.15
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = WAA
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = WAA
+		WAA = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military

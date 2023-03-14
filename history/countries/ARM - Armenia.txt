@@ -102,34 +102,6 @@ add_ideas = {
 	threshold_five_percent
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ART
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = ART
-	}
-}
-
-ART = {
-	set_politics = {	
-		ruling_party = conservative
-		last_election = "2015.3.31"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		right_wing_populist = 30
-		national_conservative = 53.34
-		conservative = 6.66
-		social_liberal = 10
-	}
-}
-
 add_opinion_modifier = { target = TUR modifier = armenian_genocide }
 add_opinion_modifier = { target = AZE modifier = rival }
 
@@ -167,6 +139,19 @@ set_popularities = {
     conservative = 19.69
     classical_liberal = 13.63
     socialist = 3.89
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ART
+		autonomous_state = autonomy_puppet_state
+	}
+	else = {
+		puppet = ART
+	}
 }
 
 # Characters - Military

@@ -126,32 +126,6 @@ add_ideas = {
 
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ATH
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = ATH
-		ATH = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
-ATH = {
-	set_politics = {
-		ruling_party = monarchist
-		last_election = "2018.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		monarchist = 100
-	}
-}
-
-if = {
-	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
@@ -202,6 +176,20 @@ set_popularities = {
 	national_conservative = 2.5
 	right_wing_populist = 1.9
 	social_liberal = 1.5
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ATH
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = ATH
+		ATH = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military

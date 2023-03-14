@@ -108,42 +108,11 @@ add_ideas = {
 
 if = {
 	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ALA
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = ALA
-		ALA = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
-if = {
-	limit = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
   		name = "Finnish Security Intelligence Service"
  		icon = "GFX_intelligence_agency_logo_FIN"
-	}
-}
-
-ALA = {
-	set_politics = {	
-		ruling_party = classical_liberal
-		last_election = "2015.10.20"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		social_liberal = 30.02
-		classical_liberal = 23.33
-		national_conservative = 16.66
-		conservative = 13.33
-		social_democrat = 10
-		progressive = 6.66
 	}
 }
 
@@ -186,6 +155,20 @@ set_popularities = {
 	right_wing_populist = 8.1
 	classical_liberal = 1.8
 	national_conservative = 1.5
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ALA
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = ALA
+		ALA = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military

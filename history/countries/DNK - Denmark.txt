@@ -100,31 +100,6 @@ if = {
 	}
 }
 
-set_politics = {
-	ruling_party = social_democrat
-	elections_allowed = yes
-}
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = FRO
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = GRL
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = FRO
-		puppet = GRL
-		FRO = { set_country_flag = TfV_marked_for_deletion }
-		GRL = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -190,6 +165,26 @@ set_popularities = {
 	socialist = 4.5
 	conservative = 4.5
     right_wing_populist = 1.1
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = FRO
+		autonomous_state = autonomy_autonomous_region
+	}
+	set_autonomy = {
+		target = GRL
+		autonomous_state = autonomy_autonomous_region
+	}
+	else = {
+		puppet = FRO
+		puppet = GRL
+		FRO = { set_country_flag = TfV_marked_for_deletion }
+		GRL = { set_country_flag = TfV_marked_for_deletion }
+	}
 }
 
 # Characters - Military
