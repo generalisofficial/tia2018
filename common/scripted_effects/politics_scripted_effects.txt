@@ -79,20 +79,6 @@ post_election_effects = {
 	}
 	if = {
 	    limit = {
-		    original_tag = MMR
-			has_government = social_democrat
-			NOT = { has_global_flag = myanmar_coup }
-		}
-	    set_global_flag = myanmar_coup
-		hidden_effect = {
-			country_event = { 
-				id = myanmar.1
-				days = 85
-			}
-		}
-	}
-	if = {
-	    limit = {
 			original_tag = ADO
 		    has_country_leader = {
 				name = "Antoni Martí"

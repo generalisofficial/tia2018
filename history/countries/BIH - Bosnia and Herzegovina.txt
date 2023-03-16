@@ -127,20 +127,6 @@ set_popularities = {
 	social_liberal = 6.12
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = RSE
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = RSE
-		RSE = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
 # Characters - Military
 
 # Characters - Political

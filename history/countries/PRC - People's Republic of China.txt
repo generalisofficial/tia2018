@@ -172,26 +172,6 @@ set_popularities = {
     communist = 100
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = HKG
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = MAC
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = HKG
-		puppet = MAC
-		HKG = { set_country_flag = TfV_marked_for_deletion }
-		MAC = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
 # Characters - Military
 
 # Characters - Political

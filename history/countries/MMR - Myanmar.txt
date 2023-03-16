@@ -128,53 +128,41 @@ add_ideas = {
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 89.48 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 77.27 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 10.52 }
-set_variable = { fascist_seats = 0 }
+set_variable = { right_wing_populist_seats = 0 }
+set_variable = { fascist_seats = 22.73 }
 set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_social_democrat
-add_to_variable = { ROOT.Coalition = social_democrat_seats }
+set_country_flag = coalition_social_liberal
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
-	ruling_party = social_democrat
+	ruling_party = social_liberal
 	last_election = "2015.11.8"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 90.85
-    right_wing_populist = 9.15
-}
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = WAA
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = WAA
-		WAA = { set_country_flag = TfV_marked_for_deletion }
-	}
+    social_liberal = 71.83
+    fascist = 26.24
+	socialist = 1.93
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = MMR_aung_san_suu_kyi
 recruit_character = MMR_than_htay
-recruit_character = MMR_min_aung_hlaing
+recruit_character = MMR_aung_san_suu_kyi
+set_country_flag = socialist_intended_no_leader
+set_country_flag = communist_intended_no_leader
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

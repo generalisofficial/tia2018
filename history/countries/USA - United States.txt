@@ -297,29 +297,6 @@ set_popularities = {
     conservative = 10.57
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = FSM
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = MHL
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = PLW
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = FSM
-		puppet = MHL
-		puppet = PLW
-	}
-}
-
 # Characters - Military
 recruit_character = USA_mark_milley
 recruit_character = USA_tommy_r_franks

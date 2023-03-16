@@ -86,6 +86,21 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	RUS = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_puppet_state
+		}
+	}
+	else = {
+		RUS = { puppet = ROOT }
+	}
+}
+
 add_ideas = {
 	isolationism
 	extensive_conscription

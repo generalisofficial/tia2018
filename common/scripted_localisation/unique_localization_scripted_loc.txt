@@ -567,9 +567,20 @@ defined_text = {
 			THIS = {
 				has_idea = absolute_monarchy
 			}
+			is_female = yes
 			NOT = { original_tag = UAE }
 		}
-		localization_key = LEADER_TITLE_MONARCH
+		localization_key = LEADER_TITLE_QUEEN
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = absolute_monarchy
+			}
+			is_female = no
+			NOT = { original_tag = UAE }
+		}
+		localization_key = LEADER_TITLE_KING
 	}
 	### Violent Non-State Actor
 	text = {

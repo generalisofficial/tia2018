@@ -1,5 +1,27 @@
 characters={
     # Starting - Political
+	IND_k_m_kader_mohideen={
+		name="K. M. Kader Mohideen"
+		portraits={
+			civilian={
+				large=GFX_Portrait_IND_K_M_Kader_Mohideen
+			}
+		}
+		country_leader={
+			ideology=islamic_democracy
+		}
+	}
+	IND_uddhav_thackeray={
+		name="Uddhav Thackeray"
+		portraits={
+			civilian={
+				large=GFX_Portrait_IND_Uddhav_Thackeray
+			}
+		}
+		country_leader={
+			ideology=right_wing_populist_ideology
+		}
+	}
 	IND_narendra_modi={
 		name="Narendra Modi"
 		portraits={
@@ -19,7 +41,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
+			ideology=social_liberal_ideology
 		}
 	}
 	IND_mamata_banerjee={
@@ -31,18 +53,30 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=democratic_socialist
+			ideology=social_democrat_ideology
 		}
 	}
-	IND_uddhav_thackeray={
-		name="Uddhav Thackeray"
+	IND_kumari_mayawati={
+		name="Kumari Mayawati"
+		gender = female
 		portraits={
 			civilian={
-				large=GFX_Portrait_IND_Uddhav_Thackeray
+				large=GFX_Portrait_IND_Kumari_Mayawati
 			}
 		}
 		country_leader={
-			ideology=neo_fascist
+			ideology=social_justice
+		}
+	}
+	IND_akhilesh_yadav={
+		name="Akhilesh Yadav"
+		portraits={
+			civilian={
+				large=GFX_Portrait_IND_Akhilesh_Yadav
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist
 		}
 	}
 	IND_suravaram_sudhakar_reddy={
@@ -54,40 +88,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxist_leninist
-		}
-	}
-	IND_mayawati={
-		name="Mayawati"
-		gender = female
-		portraits={
-			civilian={
-				large=GFX_Portrait_IND_Mayawati
-			}
-		}
-		country_leader={
-			ideology=social_justice
-		}
-	}
-	IND_k_m_kader_mohideen={
-		name="K. M. Kader Mohideen"
-		portraits={
-			civilian={
-				large=GFX_Portrait_IND_K_M_Kader_Mohideen
-			}
-		}
-		country_leader={
-			ideology=islamic_democracy
-		}
-	}
-	IND_sharad_pawar={
-		name="Sharad Pawar"
-		portraits={
-			civilian={
-				large=GFX_Portrait_IND_Sharad_Pawar
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
 		}
 	}
 	# Starting - Military

@@ -89,6 +89,22 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	IRQ = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_autonomous_region
+		}
+	}
+	else = {
+		IRQ = { puppet = ROOT }
+		set_country_flag = TfV_marked_for_deletion
+	}
+}
+
 add_ideas = {
 	extensive_conscription
 	parliamentary_system

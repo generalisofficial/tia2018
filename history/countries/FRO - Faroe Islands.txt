@@ -90,6 +90,22 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	DNK = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_autonomous_region
+		}
+	}
+	else = {
+		DNK = { puppet = ROOT }
+		set_country_flag = TfV_marked_for_deletion
+	}
+}
+
 add_ideas = {
 	christianity
 	parliamentary_system

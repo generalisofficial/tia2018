@@ -92,25 +92,23 @@ add_ideas = {
 add_opinion_modifier = { target = PAK modifier = rival }
 
 #Lok Sabha
-set_variable = { communist_seats = 3.25 }
-set_variable = { socialist_seats = 7.1 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 24.5 }
-set_variable = { social_liberal_seats = 0 }
+set_variable = { communist_seats = 2.01 }
+set_variable = { socialist_seats = 0.91 }
+set_variable = { progressive_seats = 2.93 }
+set_variable = { social_democrat_seats = 16.69 }
+set_variable = { social_liberal_seats = 20.95 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 65.1 }
+set_variable = { national_conservative_seats = 52.11 }
 set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 0 }
-set_variable = { fascist_seats = 3.3 }
-set_variable = { islamist_seats = 0 }
+set_variable = { right_wing_populist_seats = 3.3 }
+set_variable = { fascist_seats = 0 }
+set_variable = { islamist_seats = 1.1 }
 
 # Coalition
 set_country_flag = has_a_legislature
 set_country_flag = coalition_national_conservative
-set_country_flag = coalition_fascist
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
-add_to_variable = { ROOT.Coalition = fascist_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
@@ -120,23 +118,25 @@ set_politics = {
 }
 
 set_popularities = {
-    national_conservative = 61.34
-    progressive = 5.09
-    social_democrat = 25.94
-    fascist = 2.10
-    socialist = 4.07
-	social_liberal = 0.91
-	islamist = 0.55
+	national_conservative = 45.15
+	social_liberal = 26.25
+	social_democrat = 12.31
+	progressive = 6.74
+	right_wing_populist = 3.3
+	communist = 2.62
+	socialist = 2.55
+	islamist = 1.08
 }
 
 # Characters - Military
 
 # Characters - Political
+recruit_character = IND_k_m_kader_mohideen
+set_country_flag = fascist_intended_no_leader
+recruit_character = IND_uddhav_thackeray
 recruit_character = IND_narendra_modi
 recruit_character = IND_rahul_gandhi
 recruit_character = IND_mamata_banerjee
-recruit_character = IND_uddhav_thackeray
+recruit_character = IND_kumari_mayawati
+recruit_character = IND_akhilesh_yadav
 recruit_character = IND_suravaram_sudhakar_reddy
-recruit_character = IND_mayawati
-recruit_character = IND_k_m_kader_mohideen
-recruit_character = IND_sharad_pawar

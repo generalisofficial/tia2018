@@ -87,6 +87,22 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	ENG = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_autonomous_region
+		}
+	}
+	else = {
+		ENG = { puppet = ROOT }
+		set_country_flag = TfV_marked_for_deletion
+	}
+}
+
 add_ideas = {
 	parliamentary_system
 	pro_life

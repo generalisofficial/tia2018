@@ -89,6 +89,21 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	USA = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_puppet_state
+		}
+	}
+	else = {
+		USA = { puppet = ROOT }
+	}
+}
+
 add_ideas = {
 	federal
 	parliamentary_system

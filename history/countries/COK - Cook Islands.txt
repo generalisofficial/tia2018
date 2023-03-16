@@ -87,6 +87,21 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	NZL = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_puppet_state
+		}
+	}
+	else = {
+		NZL = { puppet = ROOT }
+	}
+}
+
 add_ideas = {
 	non_member_state
 	parliamentary_system

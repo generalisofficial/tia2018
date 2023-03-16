@@ -1,5 +1,16 @@
 characters={
     # Starting - Political
+	MMR_than_htay={
+		name="Than Htay"
+		portraits={
+			civilian={
+				large=GFX_Portrait_MMR_Than_Htay
+			}
+		}
+		country_leader={
+			ideology=neo_fascist
+		}
+	}
 	MMR_aung_san_suu_kyi={
 		name="Aung San Suu Kyi"
 		gender = female
@@ -9,30 +20,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_ideology
-		}
-	}
-	MMR_than_htay={
-		name="Than Htay"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MMR_Than_Htay
-			}
-		}
-		country_leader={
-			ideology=right_wing_populist_ideology
-		}
-	}
-	MMR_min_aung_hlaing={
-		name="Min Aung Hlaing"
-		portraits={
-			civilian={
-				large=GFX_Portrait_MMR_Min_Aung_Hlaing
-			}
-		}
-		country_leader={
-			ideology=military_junta
-			traits={ friend_of_china }
+			ideology=social_liberal_ideology
 		}
 	}
 	# Starting - Military

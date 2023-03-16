@@ -90,6 +90,22 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	NLD = {
+		set_autonomy = {
+			target = ROOT
+			autonomous_state = autonomy_autonomous_region
+		}
+	}
+	else = {
+		NLD = { puppet = ROOT }
+		set_country_flag = TfV_marked_for_deletion
+	}
+}
+
 add_ideas = {
 	parliamentary_system
 	no_standing_army

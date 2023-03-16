@@ -119,12 +119,12 @@ add_opinion_modifier = { target = ENG modifier = group_of_seven }
 #House of Representatives 
 set_variable = { communist_seats = 2.58 }
 set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 8.6 }
+set_variable = { progressive_seats = 0 }
 set_variable = { social_democrat_seats = 0.43 }
-set_variable = { social_liberal_seats = 18.06 }
+set_variable = { social_liberal_seats = 27.33 }
 set_variable = { classical_liberal_seats = 2.36 }
 set_variable = { conservative_seats = 6.23 }
-set_variable = { national_conservative_seats = 61.74 }
+set_variable = { national_conservative_seats = 61.07 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -133,35 +133,38 @@ set_variable = { islamist_seats = 0 }
 # Coalition
 set_country_flag = has_a_legislature
 set_country_flag = coalition_national_conservative
-set_country_flag = coalition_conservative
 add_to_variable = { ROOT.Coalition = national_conservative_seats }
-add_to_variable = { ROOT.Coalition = conservative_seats }
 
 set_politics = {	
 	ruling_party = national_conservative
-	last_election = "2017.10.22"
+	last_election = "2017.10.31"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 61.74
-    conservative = 6.23
-    social_democrat = 0.43
-    social_liberal = 18.06
-	classical_liberal = 2.36
-    progressive = 8.6
-    communist = 2.58
+	national_conservative = 37.72
+	social_liberal = 23.01
+	classical_liberal = 14.01
+	conservative = 12.38
+	communist = 7.25
+	socialist = 3.86
+	social_democrat = 1.77
 }
+
+# Characters - Military
 	
-recruit_character = JPN_shinzo_abe
-recruit_character = JPN_shigeru_ishiba
-recruit_character = JPN_yukio_edano
-recruit_character = JPN_natsuo_yamaguchi
-recruit_character = JPN_ichiro_matsui
-recruit_character = JPN_kazuo_shii
-recruit_character = JPN_tadatomo_yoshida
-recruit_character = JPN_ichiro_ozawa
+# Characters - Political
+recruit_character = JPN_makoto_sakurai
 recruit_character = JPN_masashi_nakano
 recruit_character = JPN_akihito
 recruit_character = JPN_naruhito
+recruit_character = JPN_shinzo_abe
+recruit_character = JPN_shigeru_ishiba
+recruit_character = JPN_natsuo_yamaguchi
+recruit_character = JPN_ichiro_matsui
+recruit_character = JPN_yukio_edano
+recruit_character = JPN_tadatomo_yoshida
+recruit_character = JPN_kazumi_inamura
+recruit_character = JPN_taro_yamamoto
+recruit_character = JPN_kazuo_shii

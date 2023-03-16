@@ -161,44 +161,6 @@ set_popularities = {
 	progressive = 2
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = IMN
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = JEY
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = GGY
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = GIB
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = TCA
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = IMN
-		puppet = JEY
-		puppet = GGY
-		puppet = GIB
-		puppet = TCA
-		IMN = { set_country_flag = TfV_marked_for_deletion }
-		JEY = { set_country_flag = TfV_marked_for_deletion }
-		GGY = { set_country_flag = TfV_marked_for_deletion }
-		GIB = { set_country_flag = TfV_marked_for_deletion }
-		TCA = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
 # Characters - Military
 recruit_character = ENG_christopher_deverell
 recruit_character = ENG_patrick_sanders

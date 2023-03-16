@@ -156,19 +156,6 @@ set_popularities = {
 	islamist = 1.65
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = NCY
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = NCY
-	}
-}
-
 # Characters - Military
 
 # Characters - Political

@@ -154,20 +154,6 @@ set_popularities = {
 	fascist = 3.14
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = KUR
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = KUR
-		KUR = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
 # Characters - Military
 
 # Characters - Political

@@ -165,26 +165,6 @@ set_popularities = {
     islamist = 2
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ABW
-		autonomous_state = autonomy_autonomous_region
-	}
-	set_autonomy = {
-		target = CUW
-		autonomous_state = autonomy_autonomous_region
-	}
-	else = {
-		puppet = ABW
-		puppet = CUW
-		ABW = { set_country_flag = TfV_marked_for_deletion }
-		CUW = { set_country_flag = TfV_marked_for_deletion }
-	}
-}
-
 # Characters - Military
 
 # Characters - Political

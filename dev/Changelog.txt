@@ -1,30 +1,36 @@
-GENERAL CHANGELOG - Early Access 0.9
-(reorganize before release)
+UPDATE NOTES - Early Access 0.9
 
+NEW GAME VERSION
 - Upgraded supported game version to 1.12.11
-- Full map rework for: Indonesia, Mozambique, the Philippines, Mongolia, Uruguay, Brazil, Paraguay, Central America, Argentina, Venezuela, Ghana, Mali, Burkina Faso, Eritrea, Namibia, Bolivia
-- Full political rework for: Papua New Guinea, Indonesia, Turkey, Mozambique, Madagascar, Argentina, Paraguay, Venezuela, Peru, Colombia, El Salvador, the Dominican Republic, Albania, Cambodia, Burkina Faso, Guinea-Bissau, Mauritania, Eritrea, Belarus, Malta, Ethiopia, Kurdistan, Iraq
-- Political tweaks for: South Africa, Laos
-- (TfV) New autonomous regions: Gibraltar, Turks & Caicos Islands
-- Added the Norwegian Language Conflict
-- Fixed Dronning Maud Land (Norwegian Antarctica) and the Greenland Ice Sheet not being impassable
-- Snap elections are now instant (previously in 30 days), in order to prevent the game breaking due to something happening to the country during the 30 days
+
+POLITICAL REWORK
+- All nations have had their starting political parties, political situation and leaders generally reworked and updated to current mod standards. From now on, submit any feedback or suggestions relating to this at the TIA Forum, so that this part of the mod can be fully optimized.
 - Parliament has been streamlined, with seat percentages now being rounded into actual seats (100 for every country for now), the Speaker breaks any 50-50 tie
-- Electoral Thresholds have been added, and you can set it from a range of 0.5% (natural threshold) to 8%
-- Improved election events
-- The Vatican City and Mount Athos will no longer try to join the United Nations
+
+MAP REWORK
+- Full map rework for: Indonesia, Mozambique, the Philippines, Mongolia, Uruguay, Brazil, Paraguay, Central America, Argentina, Venezuela, Ghana, Mali, Burkina Faso, Eritrea, Namibia, Bolivia
+- (TfV) New autonomous regions: Gibraltar, Turks & Caicos Islands
+- Added the Bab-el-Mandeb Strait
 - Added the Somali Civil War & Mali War
-- Added various events that change party leaders
+- Added Al-Qaeda
+
+CODE OPTIMIZATION
+- Major progress has been made on de-cluttering, optimizing and updating code to the newest version of HOI4. Country leaders that would previously be added through "add_country_leader" now fully utilize the new characters system, and genders have been assigned to all characters for any future use.
+- All international organizations now utilize the new TIA system of having to be voted in by the current members.
+
+NEW CONTENT
 - Added a decision for Honduras to change their flag shade of blue
 - Added a decision for Ethiopia to create the Prosperity Party
-- Improved events for Venezuela, Ethiopia and Peru
-- Complete rework of the alert icons, topbar icons and toolbar buttons
-- Added Al-Qaeda
-- Added the Bab-el-Mandeb Strait
-- Added a bunch of unique opinion modifiers for flavor purposes
-- Non-permanent members of the United Nations Security Council will now be automatically elected
+- Added various events that change party leaders
 - Added irredentist decision for Greater Macedonia
-- Overhauled all remaining international organizations (joining systems, opinion modifiers etc), and planned more
-- The "Final Debate" event will now randomize a decimal percentage between 0 and 5, instead of a set 2%
-- Optimized code that adds new country leaders
-- And more
+- Electoral Thresholds have been added, and you can set it from a range of 0.5% (natural threshold) to 8% in the laws menu
+- Added the Norwegian Language Conflict
+
+DIPLOMACY
+- Added a number of new unique opinion modifiers for flavor purposes
+- Non-permanent members of the United Nations Security Council will now be automatically elected
+
+GFX
+- Complete rework of the alert icons, topbar icons and toolbar buttons
+
+As always, these notes do not contain all changes made during the update. Bug fixes and tweaks are included in every update.

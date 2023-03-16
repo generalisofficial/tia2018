@@ -205,39 +205,6 @@ set_popularities = {
 	progressive = 1.2
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ABK
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = SOS
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = TRA
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = DPR
-		autonomous_state = autonomy_puppet_state
-	}
-	set_autonomy = {
-		target = LPR
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = ABK
-		puppet = SOS
-		puppet = TRA
-		puppet = DPR
-		puppet = LPR
-	}
-}
-
 # Characters - Military
 
 # Characters - Political

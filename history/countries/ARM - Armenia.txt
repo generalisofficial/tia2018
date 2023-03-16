@@ -141,19 +141,6 @@ set_popularities = {
     socialist = 3.89
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ART
-		autonomous_state = autonomy_puppet_state
-	}
-	else = {
-		puppet = ART
-	}
-}
-
 # Characters - Military
 
 # Characters - Political
