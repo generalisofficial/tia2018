@@ -173,183 +173,18 @@ on_actions = {
 			}
 			every_country = {
 				limit = {
-					NOT = { original_tag = ISS }
+					NOT = { 
+						original_tag = ISS
+						original_tag = AQA
+					}
 				}
 				add_opinion_modifier = {
 					target = ISS
-					modifier = rival
+					modifier = terrorist_menace
 				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_european_union_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_european_union_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = european_union_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = european_union_member_trade
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_african_union_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_african_union_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = african_union_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_commonwealth_of_nations_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_commonwealth_of_nations_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = commonwealth_of_nations_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_baltic_assembly_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_baltic_assembly_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = baltic_assembly_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_benelux_union_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_benelux_union_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = benelux_union_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_east_african_community_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_east_african_community_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = east_african_community_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_nordic_council_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_nordic_council_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = nordic_council_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_asean_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_asean_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = asean_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_gulf_cooperation_council_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_gulf_cooperation_council_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = gulf_cooperation_council_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_commonwealth_of_independent_states_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_commonwealth_of_independent_states_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = commonwealth_of_independent_states_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_league_of_arab_states_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_league_of_arab_states_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = league_of_arab_states_member
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					has_idea = idea_shanghai_cooperation_organization_member
-				}
-				every_other_country = {
-					limit = {
-						has_idea = idea_shanghai_cooperation_organization_member
-					}
-					add_opinion_modifier = {
-						target = PREV
-						modifier = shanghai_cooperation_organization_member
-					}
+				add_opinion_modifier = {
+					target = AQA
+					modifier = terrorist_menace
 				}
 			}
 			if = {
@@ -374,8 +209,10 @@ on_actions = {
 			every_country = {
 				country_event = economy.1
 				country_event = system.1
-				country_event = system.20
 				country_event = system.21
+			}
+			XXX = {
+				country_event = system.20
 			}
 			USA = { 
 				add_nuclear_bombs = 6185 

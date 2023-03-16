@@ -1465,6 +1465,11 @@ ideas = {
 					has_country_flag = first_amendment_repealed
 				}
 			}
+
+			on_add = {
+				clear_civil_liberties_opinion  = yes
+				set_civil_liberties_opinion  = yes
+			}
 			
 			modifier = {
 				political_power_factor = 0.4
@@ -1524,6 +1529,8 @@ ideas = {
 					}
 					custom_effect_tooltip = TT_electoral_fraud_unlocked
 				}
+				clear_civil_liberties_opinion  = yes
+				set_civil_liberties_opinion  = yes
 			}
 			
 			modifier = {
@@ -1559,12 +1566,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			
-			available = {
-			
-			}
-			
-			modifier = {
-				
+			on_add = {
+				clear_civil_liberties_opinion  = yes
+				set_civil_liberties_opinion  = yes
 			}
 			
 			cancel_if_invalid = no

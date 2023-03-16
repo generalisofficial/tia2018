@@ -1,6 +1,6 @@
 add_namespace = system
 
-country_event = {
+country_event = { # On-startup ( Once for individual nation )
 	id = system.1
 	hidden=yes
 
@@ -9,6 +9,7 @@ country_event = {
 	immediate = {
 		round_parliament_seats = yes
 		set_parliament_graphics = yes
+		setup_independent_parties = yes
 		if = {
 			limit = {
 				has_idea = federal
@@ -389,229 +390,16 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # On-startup ( Once overall )
 	id = system.20
 	hidden=yes
 
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	immediate = {
-		if = {
-			limit = {
-				NOT = { has_country_flag = islamist_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = islamist_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = islamist
-				long_name = independent_islamist_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_islamist_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = fascist_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = fascist_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = fascist
-				long_name = independent_fascist_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_fascist_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = right_wing_populist_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = right_wing_populist_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = right_wing_populist
-				long_name = independent_right_wing_populist_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_right_wing_populist_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = monarchist_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = monarchist_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = monarchist
-				long_name = independent_monarchist_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_monarchist_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = national_conservative_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = national_conservative_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = national_conservative
-				long_name = independent_national_conservative_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_national_conservative_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = conservative_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = conservative_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = conservative
-				long_name = independent_conservative_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_conservative_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = classical_liberal_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = classical_liberal_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = classical_liberal
-				long_name = independent_classical_liberal_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_classical_liberal_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = social_liberal_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = social_liberal_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = social_liberal
-				long_name = independent_social_liberal_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_social_liberal_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = social_democrat_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = social_democrat_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = social_democrat
-				long_name = independent_social_democrat_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_social_democrat_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = progressive_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = progressive_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = progressive
-				long_name = independent_progressive_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_progressive_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = socialist_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = socialist_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = socialist
-				long_name = independent_socialist_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_socialist_party
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = communist_intended_no_leader }
-				ROOT = {
-					any_character = {
-						has_ideology = communist_independent
-					}
-				}
-			}
-			set_party_name = { 
-				ideology = communist
-				long_name = independent_communist_party_long
-				name = independent_party
-			}
-			else = {
-				set_country_flag = has_communist_party
-			}
-		}
+		organizations_opinion_setup = yes
+		set_civil_liberties_opinion  = yes
 	}
 }
 
