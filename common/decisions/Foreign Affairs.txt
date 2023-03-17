@@ -1589,4 +1589,87 @@ foreign_affairs = {
 			}
 		}
 	}
+
+	demand_unification_with_belarus = {
+	
+		allowed = {
+			original_tag = RUS
+		}
+
+		visible = {
+			country_exists = BLR
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { has_war_with = BLR }
+			BLR = { is_subject = no }
+		}
+		
+		complete_effect = {
+			BLR = { country_event = belarus.1 }
+		}
+		
+		icon = belarus
+
+		fire_only_once = yes
+		
+		cost = 200
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				OR = {
+					has_government = national_conservative
+					has_government = right_wing_populist
+					has_government = fascist
+					has_government = communist
+					has_government = monarchist
+					has_government = islamist
+				}
+			}
+			modifier = {
+				factor = 5
+				threat > 0.9
+			}
+		}
+	}
+
+	offer_unification_with_russia = {
+	
+		allowed = {
+			original_tag = BLR
+		}
+
+		visible = {
+			country_exists = RUS
+		}
+		
+		available = {
+			is_subject = no
+			NOT = { has_war_with = RUS }
+			RUS = { is_subject = no }
+		}
+		
+		complete_effect = {
+			#RUS = { country_event = belarus.1 }
+		}
+		
+		icon = belarus
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+					has_government = right_wing_populist
+				}
+			}
+		}
+	}
 }

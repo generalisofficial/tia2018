@@ -1,0 +1,47 @@
+﻿add_namespace = belarus
+
+country_event = { #Russia demands our accession!
+	id = belarus.1
+	title = belarus.1.t
+	desc = belarus.1.d
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = belarus.1.o1
+		ai_chance = {
+			factor = 50
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = FROM
+		}
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = belarus.1.o2
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				is_in_faction_with = RUS
+			}
+			leave_faction = yes
+		}
+		RUS = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
