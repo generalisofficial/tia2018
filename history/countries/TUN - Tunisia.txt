@@ -126,53 +126,49 @@ add_opinion_modifier = {
 }
 
 #Assembly of the Representatives of the People
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 6.91 }
-set_variable = { progressive_seats = 1.84 }
-set_variable = { social_democrat_seats = 48.41 }
-set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 3.68 }
-set_variable = { conservative_seats = 7.37 }
+set_variable = { communist_seats = 6.91 }
+set_variable = { socialist_seats = 1.38 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 47.49 }
+set_variable = { social_liberal_seats = 11.05 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 0 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 31.79 }
+set_variable = { islamist_seats = 33.17 }
 
 # Coalition
 set_country_flag = has_a_legislature
 set_country_flag = coalition_social_democrat
-set_country_flag = coalition_islamist
-set_country_flag = coalition_classical_liberal
+set_country_flag = coalition_social_liberal
 add_to_variable = { ROOT.Coalition = social_democrat_seats }
-add_to_variable = { ROOT.Coalition = islamist_seats }
-add_to_variable = { ROOT.Coalition = classical_liberal_seats }
+add_to_variable = { ROOT.Coalition = social_liberal_seats }
 
 set_politics = {	
 	ruling_party = social_democrat
-	last_election = "2014.10.26"
+	last_election = "2014.10.6"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    social_democrat = 48.41
-    islamist = 31.79
-	conservative = 7.37
-    socialist = 6.91
-	classical_liberal = 3.68
-	progressive = 1.84
+	islamist = 35.94
+	social_democrat = 35.04
+	social_liberal = 21.19
+	socialist = 6.91
+	communist = 0.92
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = TUN_youssef_chahed
 recruit_character = TUN_rached_ghannouchi
-recruit_character = TUN_slim_riahi
+recruit_character = TUN_nabil_karoui
+recruit_character = TUN_youssef_chahed
+recruit_character = TUN_zouhair_maghzaoui
 recruit_character = TUN_hamma_hammami
-recruit_character = TUN_yassine_brahim
-recruit_character = TUN_moncef_marzouki
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

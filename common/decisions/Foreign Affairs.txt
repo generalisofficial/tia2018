@@ -1519,23 +1519,13 @@ foreign_affairs = {
 		}
 		
 		complete_effect = {
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				set_autonomy = {
-					target = CPR
-					autonomous_state = autonomy_puppet_state
-				}
-				else = {
-					puppet = CPR
-				}
-			}
 			CPR = {
 				add_state_core = 196
-				puppet_government_sync = yes
 			}
-			release = CPR
+			release_autonomy = {
+				target = CPR
+				autonomy_state = autonomy_puppet_state
+			}
 		}
 		
 		icon = novorossiya

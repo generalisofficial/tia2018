@@ -103,12 +103,12 @@ add_ideas = {
 
 #National Assembly
 set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 73.12 }
-set_variable = { progressive_seats = 0.26 }
-set_variable = { social_democrat_seats = 0.26 }
-set_variable = { social_liberal_seats = 10.18 }
+set_variable = { socialist_seats = 66.15 }
+set_variable = { progressive_seats = 0 }
+set_variable = { social_democrat_seats = 0.5 }
+set_variable = { social_liberal_seats = 10.68 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 16.18 }
+set_variable = { conservative_seats = 22.67 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
@@ -122,24 +122,23 @@ add_to_variable = { ROOT.Coalition = socialist_seats }
 
 set_politics = {	
 	ruling_party = socialist
-	last_election = "2015.10.25"
+	last_election = "2015.10.28"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    socialist = 73.12
-	conservative = 16.18
-	social_liberal = 10.18
-	progressive = 0.26
-	social_democrat = 0.26
+    socialist = 84.4
+	conservative = 14.85
+	social_liberal = 0.5
+	social_democrat = 0.25
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = TZA_john_magufuli
 recruit_character = TZA_freeman_mbowe
-recruit_character = TZA_seif_sharif_hamad
-recruit_character = TZA_zitto_kabwe
+recruit_character = TZA_ibrahim_lipumba
 recruit_character = TZA_james_mbatia
+recruit_character = TZA_john_magufuli
+recruit_character = TZA_samia_suhulu

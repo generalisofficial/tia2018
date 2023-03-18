@@ -444,6 +444,23 @@ post_election_effects = {
 			}
 		}
 	}
+	if  = {
+		limit = {
+			original_tag = NER
+			has_country_leader = {
+				name = "Mahamadou Issoufou"
+				ruling_only = no
+			}
+		}
+		retire_ideology_leader = social_democrat
+		add_country_leader_role = {
+			character = NER_mohamed_bazoum
+			promote_leader = yes
+			country_leader = {
+				ideology = social_democrat_ideology
+			}
+		}
+	}
 	if = {
 		limit = {
 			NOT = { majority_government = yes }
@@ -1832,7 +1849,6 @@ quickset_coalition_flags_only = {
 
 set_parliament_graphics = {
 	set_coalition_seats = yes
-
 	cleanup_seats_parliament = yes
 	set_new_parliament_seats = yes
 	set_variable = { communist_seats_parliament = communist_seats }
@@ -3397,168 +3413,6 @@ set_eurosceptic_commission = {
 			}
 		}
 	}
-}
-
-puppet_ideology_cleanup = {
-	if  = {
-		limit = {
-			NOT = { has_government = islamist }
-			NOT = { has_country_flag = has_islamist_party }
-		}
-		set_political_party = { ideology = islamist popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = fascist }
-			NOT = { has_country_flag = has_fascist_party }
-		}
-		set_political_party = { ideology = fascist popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = right_wing_populist }
-			NOT = { has_country_flag = has_right_wing_populist_party }
-		}
-		set_political_party = { ideology = right_wing_populist popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = monarchist }
-			NOT = { has_country_flag = has_monarchist_party }
-		}
-		set_political_party = { ideology = monarchist popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = national_conservative }
-			NOT = { has_country_flag = has_national_conservative_party }
-		}
-		set_political_party = { ideology = national_conservative popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = conservative }
-			NOT = { has_country_flag = has_conservative_party }
-		}
-		set_political_party = { ideology = conservative popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = classical_liberal }
-			NOT = { has_country_flag = has_classical_liberal_party }
-		}
-		set_political_party = { ideology = classical_liberal popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = social_liberal }
-			NOT = { has_country_flag = has_social_liberal_party }
-		}
-		set_political_party = { ideology = social_liberal popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = social_democrat }
-			NOT = { has_country_flag = has_social_democrat_party }
-		}
-		set_political_party = { ideology = social_democrat popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = progressive }
-			NOT = { has_country_flag = has_progressive_party }
-		}
-		set_political_party = { ideology = progressive popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = socialist }
-			NOT = { has_country_flag = has_socialist_party }
-		}
-		set_political_party = { ideology = socialist popularity = 0 }
-	}
-	if  = {
-		limit = {
-			NOT = { has_government = communist }
-			NOT = { has_country_flag = has_communist_party }
-		}
-		set_political_party = { ideology = communist popularity = 0 }
-	}
-}
-
-puppet_government_sync = {
-	if  = {
-		limit = {
-			FROM = {
-				OR = {
-					has_idea = parliamentary_system
-					has_idea = presidential_republic
-					has_idea = demarchic_republic
-				}
-			}
-		}
-		meta_effect = {
-			text = {
-				set_politics = {
-					ruling_party = [RULINGPARTY]
-					elections_allowed = yes
-				}
-			}
-			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-			debug = yes
-		}
-		if  = {
-			limit = {
-				FROM = { has_idea = presidential_republic }
-			}
-			add_ideas = presidential_republic
-		}
-		if  = {
-			limit = {
-				FROM = { has_idea = parliamentary_system }
-			}
-			add_ideas = parliamentary_system
-		}
-		if  = {
-			limit = {
-				FROM = { has_idea = demarchic_republic }
-			}
-			add_ideas = demarchic_republic
-		}
-	}
-	if = {
-		limit = {
-			FROM = {
-				OR = {
-					has_idea = one_party_state
-					has_idea = absolute_monarchy
-				}
-			}
-		}
-		meta_effect = {
-			text = {
-				set_politics = {
-					ruling_party = [RULINGPARTY]
-					elections_allowed = no
-				}
-			}
-			RULINGPARTY = "[?ROOT.current_party_ideology_group.GetTokenKey]"
-			debug = yes
-		}
-		if  = {
-			limit = {
-				FROM = { has_idea = absolute_monarchy }
-			}
-			add_ideas = absolute_monarchy
-		}
-		if  = {
-			limit = {
-				FROM = { has_idea = one_party_state }
-			}
-			add_ideas = one_party_state
-		}
-	}
-	one_party_parliament = yes
 }
 
 auto_government = {

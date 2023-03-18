@@ -109,15 +109,15 @@ add_opinion_modifier = {
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 69.0 }
+set_variable = { social_democrat_seats = 50.29 }
 set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 31.0 }
-set_variable = { conservative_seats = 0 }
+set_variable = { classical_liberal_seats = 0 }
+set_variable = { conservative_seats = 35.1 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
+set_variable = { islamist_seats = 14.61 }
 
 # Coalition
 set_country_flag = has_a_legislature
@@ -132,12 +132,15 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 69.0
-    classical_liberal = 31.0
+    social_democrat = 46.19
+	conservative = 42.7
+    islamist = 11.11
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = NER_mahamadou_issoufou
 recruit_character = NER_hama_amadou
+recruit_character = NER_mahamane_ousmane
+recruit_character = NER_mahamadou_issoufou
+recruit_character = NER_mohamed_bazoum

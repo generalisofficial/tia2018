@@ -77,11 +77,7 @@ ideas = {
 			picture = minority_government
 			
 			cancel = {
-			    check_variable = {
-                    var = ROOT.Coalition
-                    value = 50
-                    compare = greater_than_or_equals
-                }
+				majority_government = yes
 			}
 			
 			modifier = {

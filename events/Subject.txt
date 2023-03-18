@@ -146,6 +146,7 @@ country_event = { #Autonomous Region or Puppet State?
 			target = FROM
 			autonomous_state = autonomy_autonomous_region
 		}
+		FROM = { puppet_ideology_cleanup = yes }
 	}
 
 	option = {
@@ -236,5 +237,35 @@ news_event = { #(Country): Puppet State No More?
 	
 	option = {
 		name = subject.11.o1
+	}
+}
+
+country_event = { #How will our puppet be ruled?
+	id = subject.12
+	title = subject.12.t
+	desc = subject.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subject.12.o1
+		trigger = {
+			FROM = { is_democracy = yes }
+		}
+		hidden_effect = {
+			FROM = { 
+				set_country_flag = has_a_legislature
+				country_event = election.5
+			}
+		}
+	}
+
+	option = {
+		name = subject.12.o2
+		hidden_effect = {
+			FROM = { 
+				puppet_government_sync = yes
+			}
+		}
 	}
 }
