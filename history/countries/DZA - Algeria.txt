@@ -121,18 +121,18 @@ add_opinion_modifier = {
 }
 
 # People's National Assembly
-set_variable = { communist_seats = 2.29 }
-set_variable = { socialist_seats = 59.4 }
+set_variable = { communist_seats = 2.74 }
+set_variable = { socialist_seats = 44.42 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 5.41 }
-set_variable = { social_liberal_seats = 1.87 }
-set_variable = { classical_liberal_seats = 20.83 }
+set_variable = { social_democrat_seats = 6.73 }
+set_variable = { social_liberal_seats = 2.24 }
+set_variable = { classical_liberal_seats = 24.93 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 0 }
+set_variable = { national_conservative_seats = 1.99 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 10.20 }
+set_variable = { islamist_seats = 16.95 }
 
 # Coalition
 set_country_flag = has_a_legislature
@@ -147,24 +147,25 @@ set_politics = {
 }
 
 set_popularities = {
-    socialist = 59.4
-	classical_liberal = 20.83
-	islamist = 10.20
-	social_democrat = 5.41
-	communist = 2.29
-	social_liberal = 1.87
+	socialist = 41.05
+	islamist = 33.54
+	classical_liberal = 18.35
+	social_democrat = 2.77
+	social_liberal = 2.4
+	national_conservative = 1.89
 }
 
 # Characters - Military
 
 # Characters - Political
+recruit_character = DZA_abderrazak_makri
+recruit_character = DZA_moussa_touati
+recruit_character = DZA_ahmed_ouyahia
+recruit_character = DZA_mohcine_belabbas
+set_country_flag = social_democrat_intended_no_leader
 recruit_character = DZA_abdelaziz_bouteflika
 recruit_character = DZA_abdelmadjid_tebboune
-recruit_character = DZA_ahmed_ouyahia
-recruit_character = DZA_abderrazak_makri
-recruit_character = DZA_amara_benyounès
 recruit_character = DZA_louisa_hanoune
-recruit_character = DZA_mohcine_belabbas
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

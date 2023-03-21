@@ -97,18 +97,19 @@ add_ideas = {
 	prohibited_firearms
 	pro_life
 	very_high_taxes  
+	five_year_term
 	#moderate_healthcare_spending
 }
 
 #National Assembly
-set_variable = { communist_seats = 6.87 }
-set_variable = { socialist_seats = 7.63 }
+set_variable = { communist_seats = 0 }
+set_variable = { socialist_seats = 17.59 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 9.92 }
-set_variable = { social_liberal_seats = 5.34 }
+set_variable = { social_democrat_seats = 63.88 }
+set_variable = { social_liberal_seats = 18.53 }
 set_variable = { classical_liberal_seats = 0 }
 set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 70.24 }
+set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
@@ -116,29 +117,25 @@ set_variable = { islamist_seats = 0 }
 
 # Coalition
 set_country_flag = has_a_legislature
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
+set_country_flag = coalition_social_democrat
+add_to_variable = { ROOT.Coalition = social_democrat_seats }
 
 set_politics = {	
-	ruling_party = national_conservative
-	last_election = "2015.12.30"
-	election_frequency = 48
+	ruling_party = social_democrat
+	last_election = "2015.12.27"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-    national_conservative = 70.24
-    social_democrat = 9.92
-	socialist = 7.63
-	communist = 6.87
-	social_liberal = 5.34
+    social_democrat = 57.89
+	social_liberal = 31.57
+	socialist = 10.54
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = CAF_faustinarchange_touadéra
-recruit_character = CAF_anicetgeorges_dologuélé
-recruit_character = CAF_emile_gros_raymond_nakombo
-recruit_character = CAF_martin_ziguélé
-recruit_character = CAF_françois_bozizé
+recruit_character = CAF_anicet_georges_dologuele
+recruit_character = CAF_faustin_archange_touadera
+recruit_character = CAF_martin_ziguele

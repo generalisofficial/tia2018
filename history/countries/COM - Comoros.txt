@@ -109,15 +109,15 @@ add_opinion_modifier = {
 set_variable = { communist_seats = 0 }
 set_variable = { socialist_seats = 0 }
 set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 53.12 }
-set_variable = { social_liberal_seats = 10.42 }
+set_variable = { social_democrat_seats = 0 }
+set_variable = { social_liberal_seats = 0 }
 set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 18.47 }
+set_variable = { conservative_seats = 38.09 }
 set_variable = { national_conservative_seats = 0 }
 set_variable = { monarchist_seats = 0 }
 set_variable = { right_wing_populist_seats = 0 }
 set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 17.99 }
+set_variable = { islamist_seats = 33.33 }
 
 # Coalition
 set_country_flag = has_a_legislature
@@ -132,16 +132,16 @@ set_politics = {
 }
 
 set_popularities = {
-    social_democrat = 53.12
-    conservative = 18.47
-    islamist = 17.99
-    social_liberal = 10.42
+    social_democrat = 41.43
+	social_liberal = 25.87
+    conservative = 17.61
+    islamist = 15.09
 }
 
 # Characters - Military
 
 # Characters - Political
-recruit_character = COM_azali_assoumani
-recruit_character = COM_mohamed_halifa
 recruit_character = COM_ahmed_abdallah_mohamed_sambi
-recruit_character = COM_mouigni_baraka
+set_country_flag = conservative_intended_no_leader
+recruit_character = COM_mohamed_daoudou
+recruit_character = COM_azali_assoumani
