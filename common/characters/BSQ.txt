@@ -1,6 +1,17 @@
 characters={
     # Starting - Political
-	BSQ_iñigo_urkullu={
+	BSQ_alfonso_alonso={
+		name="Alfonso Alonso"
+		portraits={
+			civilian={
+				large=GFX_Portrait_BSQ_Alfonso_Alonso
+			}
+		}
+		country_leader={
+			ideology=christian_democrat
+		}
+	}
+	BSQ_inigo_urkullu={
 		name="Iñigo Urkullu"
 		portraits={
 			civilian={
@@ -8,34 +19,12 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=christian_democrat
-		}
-	}
-	BSQ_arnaldo_otegi={
-		name="Arnaldo Otegi"
-		portraits={
-			civilian={
-				large=GFX_Portrait_BSQ_Arnaldo_Otegi
-			}
-		}
-		country_leader={
-			ideology=democratic_socialist
-		}
-	}
-	BSQ_pilar_zabala_artano={
-		name="Pilar Zabala Artano"
-		gender = female
-		portraits={
-			civilian={
-				large=GFX_Portrait_BSQ_Pilar_Zabala_Artano
-			}
-		}
-		country_leader={
-			ideology=marxist_leninist
+			ideology=classical_liberal_ideology
 		}
 	}
 	BSQ_idoia_mendia={
 		name="Idoia Mendia"
+		gender = female
 		portraits={
 			civilian={
 				large=GFX_Portrait_BSQ_Idoia_Mendia
@@ -45,15 +34,16 @@ characters={
 			ideology=social_democrat_ideology
 		}
 	}
-	BSQ_alfonso_alonso={
-		name="Alfonso Alonso"
+	BSQ_maddalen_iriarte={
+		name="Maddalen Iriarte"
+		gender = female
 		portraits={
 			civilian={
-				large=GFX_Portrait_BSQ_Alfonso_Alonso
+				large=GFX_Portrait_BSQ_Maddalen_Iriarte
 			}
 		}
 		country_leader={
-			ideology=national_conservative_ideology
+			ideology=left_wing_nationalist
 		}
 	}
 	# Starting - Military
