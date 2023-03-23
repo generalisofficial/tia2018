@@ -1,6 +1,6 @@
 ﻿add_namespace = belarus
 
-country_event = { #Russia demands our accession!
+country_event = { # Russia demands our accession!
 	id = belarus.1
 	title = belarus.1.t
 	desc = belarus.1.d
@@ -43,5 +43,58 @@ country_event = { #Russia demands our accession!
 				type = annex_everything
 			}
 		}
+	}
+}
+
+country_event = { # Belarus offers to join Russia!
+	id = belarus.2
+	title = belarus.2.t
+	desc = belarus.2.d
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = belarus.2.o1
+		add_political_power = -100
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+	}
+
+	option = {
+		name = belarus.2.o2
+		BLR = { country_event = belarus.3 }
+	}
+}
+
+country_event = { # Russia denied our offer!
+	id = belarus.3
+	title = belarus.3.t
+	desc = belarus.3.d
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = belarus.3.o1
+	}
+}
+
+news_event = { # Union State Realized
+	id = belarus.4
+	title = belarus.4.t
+	desc = belarus.4.d
+	picture = GFX_news_event_russia_and_belarus
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = belarus.4.o1
 	}
 }
