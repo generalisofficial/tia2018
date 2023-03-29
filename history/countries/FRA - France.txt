@@ -88,8 +88,6 @@ set_technology = {
 	formation_flying = 1
 }
 
-create_equipment_variant = { name = "Mirage 2000N" type = strat_bomber_equipment_2 upgrades = { plane_engine_upgrade = 5 } }
-
 add_opinion_modifier = { target = CAN modifier = group_of_seven }
 add_opinion_modifier = { target = USA modifier = group_of_seven }
 add_opinion_modifier = { target = DEU modifier = group_of_seven }
@@ -117,7 +115,7 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
-  		name = "Directorate-General for External Security"
+  		name = FRA_default_intelligence_agency
  		icon = "GFX_intelligence_agency_logo_FRA"
 	}
 }
@@ -186,7 +184,7 @@ recruit_character = FRA_jean_pierre_bosser
 recruit_character = FRA_thierry_burkhard
 recruit_character = FRA_pierre_schill
 recruit_character = FRA_herve_bizeul
-recruit_character = FRA_nicholas_casanova
+recruit_character = FRA_nicolas_casanova
 recruit_character = FRA_eric_maury
 
 # Characters - Political

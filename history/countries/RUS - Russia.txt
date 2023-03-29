@@ -88,17 +88,6 @@ set_technology = {
 	air_superiority = 1
 }
 
-create_equipment_variant = { name = "T-62" type = modern_tank_equipment_1 upgrades = { tank_armor_upgrade = 3 tank_gun_upgrade = 1 tank_reliability_upgrade = 1 tank_engine_upgrade = 3 } obsolete = yes }
-create_equipment_variant = { name = "T-64" type = modern_tank_equipment_1 upgrades = { tank_armor_upgrade = 5 tank_gun_upgrade = 3 tank_reliability_upgrade = 3 tank_engine_upgrade = 5 } obsolete = yes }
-create_equipment_variant = { name = "T-80" type = modern_tank_equipment_2 upgrades = { tank_armor_upgrade = 5 tank_gun_upgrade = 3 tank_reliability_upgrade = 3 tank_engine_upgrade = 5 } obsolete = yes }
-create_equipment_variant = { name = "BMP-2" type = mechanized_equipment_1 obsolete = yes }
-create_equipment_variant = { name = "MiG-31" type = fighter_equipment_2 upgrades = { plane_engine_upgrade = 5 plane_reliability_upgrade = 3 } obsolete = yes }
-create_equipment_variant = { name = "Su-27" type = fighter_equipment_3 upgrades = { plane_engine_upgrade = 2 plane_reliability_upgrade = 2 } obsolete = no }
-create_equipment_variant = { name = "Su-24" type = CAS_equipment_2 upgrades = { plane_engine_upgrade = 5 plane_reliability_upgrade = 2 } obsolete = yes }
-create_equipment_variant = { name = "Tu-95MS" type = strat_bomber_equipment_1 upgrades = { plane_bomb_upgrade = 5 plane_reliability_upgrade = 4 } obsolete = yes }
-create_equipment_variant = { name = "Tu-22" type = strat_bomber_equipment_1 upgrades = { plane_engine_upgrade = 4 plane_reliability_upgrade = 1 } obsolete = yes }
-create_equipment_variant = { name = "Tu-22M3" type = strat_bomber_equipment_1 upgrades = { plane_bomb_upgrade = 2 plane_engine_upgrade = 5 plane_reliability_upgrade = 4 } obsolete = yes }
-
 add_ideas = {
 	idea_united_nations_security_council_member
 	idea_commonwealth_of_independent_states_member
@@ -119,32 +108,8 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
-  		name = "Foreign Intelligence Service"
+  		name = RUS_default_intelligence_agency
  		icon = "GFX_intelligence_agency_logo_RUS"
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "MiG-23"
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Su-25" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_1_1x
-		}
 	}
 }
 

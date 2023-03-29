@@ -51,10 +51,8 @@ news_event = { #Zapatista Peace Deal
 		name = mexico.2.o1
 		trigger = {
 			NOT = {
-				OR = {
-					original_tag = MEX
-					original_tag = ZAP
-				}
+				original_tag = MEX
+				original_tag = ZAP
 			}
 		}
 	}

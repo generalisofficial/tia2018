@@ -133,7 +133,7 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
-  		name = "Signals Intelligence Agency"
+  		name = UAE_default_intelligence_agency
  		icon = "GFX_intelligence_agency_logo_UAE"
 	}
 }
@@ -153,39 +153,3 @@ set_popularities = {
 
 # Characters - Political
 recruit_character = UAE_khalifa_bin_zayed
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Baynunah Class"
-		type = ship_hull_light_3
-		name_group = GENERIC_DD_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_3
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = ship_light_battery_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Frankenthal Class"
-		type = ship_hull_light_1
-		name_group = GENERIC_DD_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_depth_charge_1
-			rear_1_custom_slot = ship_mine_sweeper_1
-		}
-	}
-}	

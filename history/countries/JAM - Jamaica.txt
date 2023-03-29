@@ -84,7 +84,7 @@ if = {
 	set_technology = {
 		early_ship_hull_patrol_boat = 1
 		basic_ship_hull_patrol_boat = 1
-		improved_shill_hull_patrol_boat = 1
+		improved_ship_hull_patrol_boat = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -152,22 +152,3 @@ set_popularities = {
 # Characters - Political
 recruit_character = JAM_andrew_holness
 recruit_character = JAM_peter_phillips
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "County Class"
-		type = ship_hull_patrol_boat_3
-		name_group = GENERIC_PB_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = light_patrol_ship_engine_2
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-		}
-	}
-}

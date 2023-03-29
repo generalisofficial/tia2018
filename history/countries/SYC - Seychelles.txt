@@ -143,21 +143,3 @@ set_popularities = {
 # Characters - Political
 recruit_character = SYC_wavel_ramkalawan
 recruit_character = SYC_danny_faure
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Zoroaster Class"
-		type = ship_hull_patrol_boat_1
-		name_group = GENERIC_PB_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_engine_slot = light_patrol_ship_engine_1
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-		}
-	}
-}

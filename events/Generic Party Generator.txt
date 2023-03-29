@@ -7,18 +7,19 @@ country_event = {
 	desc = gpg.1.d
 	
 	trigger = {
-		islamist > 0.01
-		NOT = {
-			OR = {
-				has_country_flag = has_islamist_party
-				has_idea = violent_non_state_actor
-				has_idea = idea_nonpartisan_political_system
-			}
-		}
+		always = no # in dev - not ready for release
+		#islamist > 0.01
+		#NOT = {
+		#	OR = {
+		#		has_country_flag = has_islamist_party
+		#		has_idea = violent_non_state_actor
+		#		has_idea = idea_nonpartisan_political_system
+		#	}
+		#}
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		days = 2
 	}
 	
 	option = {

@@ -70,8 +70,8 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_patrol_boat = 1
-		basic_patrol_ship = 1
-		improved_patrol_ship = 1
+		basic_patrol_boat = 1
+		improved_patrol_boat = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
@@ -160,22 +160,3 @@ set_popularities = {
 # Characters - Political
 recruit_character = BRB_mia_mottley
 recruit_character = BRB_freundel_stuart
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Damen 4207 Class"
-		type = ship_hull_patrol_boat_3
-		name_group = GENERIC_PB_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = light_patrol_ship_engine_3
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-		}
-	}
-}	

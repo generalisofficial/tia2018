@@ -117,7 +117,6 @@ if = {
 		early_light_cruiser = 1
 		basic_light_cruiser = 1
 		early_battleship = 1
-		early_battlecruiser = 1
 		early_carrier = 1
 		early_submarine = 1
 		transport = 1
@@ -216,7 +215,7 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
-  		name = "Central Intelligence Agency"
+  		name = USA_default_intelligence_agency
  		icon = "GFX_intelligence_agency_logo_USA"
 	}
 }
@@ -326,135 +325,3 @@ recruit_character = USA_elizabeth_warren
 recruit_character = USA_tulsi_gabbard
 recruit_character = USA_howie_hawkins
 recruit_character = USA_gloria_la_riva
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Nimitz Class"
-		type = ship_hull_carrier_conversion_bb
-		name_group = GENERIC_CV_NAMES
-		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = carrier_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_carrier_1
-			mid_1_custom_slot = ship_deck_space
-			rear_1_custom_slot = ship_airplane_launcher_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Ticonderoga Class"
-		type = ship_hull_heavy_1
-		name_group = GENERIC_BB_NAMES
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_sonar_1
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = ship_heavy_battery_1
-			mid_1_custom_slot = ship_heavy_battery_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_airplane_launcher_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Arleigh Burke Class"
-		type = ship_hull_cruiser_1
-		name_group = GENERIC_CA_NAMES
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_light_medium_battery_1
-			mid_1_custom_slot = ship_light_medium_battery_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_airplane_launcher_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Zumwalt Class"
-		type = ship_hull_cruiser_4
-		name_group = GENERIC_CA_NAMES
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_3
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_radar_3
-			fixed_ship_engine_slot = cruiser_ship_engine_4
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_light_medium_battery_3
-			mid_1_custom_slot = ship_light_battery_1
-			mid_2_custom_slot = ship_light_medium_battery_3
-			rear_1_custom_slot = ship_medium_battery_3
-			rear_2_custom_slot = ship_airplane_launcher_drone_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Avenger Class"
-		type = ship_hull_patrol_boat_1
-		name_group = GENERIC_PB_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_engine_slot = light_patrol_ship_engine_1
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_mine_sweeper_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Los Angeles Class"		#Includes Ohio Class		
-		type = ship_hull_submarine_1
-		name_group = GENERIC_SS_NAMES
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Seawolf Class"		#Includes Virginia Class		
-		type = ship_hull_submarine_2
-		name_group = GENERIC_SS_NAMES
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Cyclone Class"
-		type = ship_hull_patrol_boat_1
-		name_group = GENERIC_PB_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_engine_slot = light_patrol_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-		}
-	}
-}	

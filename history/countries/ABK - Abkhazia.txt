@@ -10,33 +10,6 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ABK_2018_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			engines_1 = 1
-			aa_lmg = 1
-			early_bombs = 1
-		}
-	else = {
-		set_air_oob = "ABK_2018_air_legacy"
-		set_technology = {
-			CAS1 = 1
-			CAS2 = 1
-			fighter1 = 1
-			fighter2 = 1
-			fighter3 = 1
-			naval_bomber1 = 1
-			naval_bomber2 = 1
-			strategic_bomber1 = 1
-			strategic_bomber2 = 1
-			tactical_bomber1 = 1
-		}
-	}
-}
-
 set_convoys = 25
 
 set_technology = {
@@ -125,30 +98,6 @@ if = {
 
 if = {
 	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "MiG-23"
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Su-25"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_1_1x
-		}
-	}
-}	
-
-if = {
-	limit = {
 		has_dlc = "Together for Victory"
 	}
 	RUS = {
@@ -206,21 +155,3 @@ set_popularities = {
 # Characters - Political
 recruit_character = ABK_raul_khajimba
 recruit_character = ABK_aslan_bzhania
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Stenka Class"
-		type = ship_hull_patrol_boat_1
-		name_group = GENERIC_PB_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_engine_slot = light_patrol_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
-		}
-	}
-}

@@ -168,37 +168,3 @@ recruit_character = ZAF_jacob_zuma
 recruit_character = ZAF_cyril_ramaphosa
 recruit_character = ZAF_narius_moloto
 recruit_character = ZAF_julius_malema
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Heroine Class"				
-		type = ship_hull_submarine_2
-		name_group = GENERIC_SS_NAMES
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_sub_2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Valour Class"
-		type = ship_hull_cruiser_2
-		name_group = GENERIC_CL_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_3
-			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = ship_light_battery_1
-			rear_1_custom_slot = ship_airplane_launcher_1
-		}	
-	}
-}	

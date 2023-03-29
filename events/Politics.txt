@@ -95,10 +95,8 @@ news_event = { #End of the (Country, ADJ) monarchy
 		name = politics.4.o2
 		trigger = {
 			NOT = {
-				OR = {
-					is_constitutional_monarchy = yes
-					has_government = monarchist
-				}
+				is_constitutional_monarchy = yes
+				has_government = monarchist
 			}
 		}
 	}
@@ -127,10 +125,8 @@ news_event = { #(Country) cuts ties with the British monarchy
 		name = politics.5.o2
 		trigger = {
 			NOT = {
-				OR = {
-					original_tag = ENG
-					has_idea = idea_commonwealth_realm
-				}
+				original_tag = ENG
+				has_idea = idea_commonwealth_realm
 			}
 		}
 	}

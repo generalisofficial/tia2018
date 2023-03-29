@@ -154,22 +154,3 @@ recruit_character = NIC_walter_espinoza
 recruit_character = NIC_brooklyn_rivera
 recruit_character = NIC_daniel_ortega
 set_country_flag = communist_intended_no_leader
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Sin Hung Class"
-		type = ship_hull_light_1
-		name_group = GENERIC_DD_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-		mid_1_custom_slot = ship_torpedo_1
-		}
-	}
-}	

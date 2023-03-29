@@ -130,7 +130,7 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
-  		name = "Qatar State Security"
+  		name = QAT_default_intelligence_agency
  		icon = "GFX_intelligence_agency_logo_QAT"
 	}
 }
@@ -150,23 +150,3 @@ set_popularities = {
 
 # Characters - Political
 recruit_character = QAT_tamim_bin_hamad
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Doha Class"
-		type = ship_hull_light_4
-		name_group = GENERIC_DD_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_sonar_1
-			fixed_ship_radar_slot = ship_radar_1
-			fixed_ship_engine_slot = light_ship_engine_4
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_light_battery_1
-			rear_1_custom_slot = ship_anti_air_2
-		}
-	}
-}	

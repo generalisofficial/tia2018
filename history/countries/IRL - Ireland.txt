@@ -160,27 +160,3 @@ recruit_character = IRL_eamon_ryan
 recruit_character = IRL_gerry_adams
 recruit_character = IRL_mary_lou_mcdonald
 recruit_character = IRL_martin_mcmonagle
-
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Peacock Class"
-		type = ship_hull_light_2
-		name_group = GENERIC_DD_NAMES
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_light_battery_1
-		}
-	}
-}	

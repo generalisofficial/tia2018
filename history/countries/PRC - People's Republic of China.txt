@@ -79,10 +79,6 @@ set_technology = {
 	force_rotation = 1
 }
 
-create_equipment_variant = { name = "J-6" type = fighter_equipment_1 upgrades = { plane_gun_upgrade = 2 plane_engine_upgrade = 2 plane_reliability_upgrade = 2 } obsolete = yes }
-create_equipment_variant = { name = "J-7" type = fighter_equipment_1 upgrades = { plane_gun_upgrade = 5 plane_engine_upgrade = 5 plane_reliability_upgrade = 5 } obsolete = yes }
-create_equipment_variant = { name = "H-5" type = strat_bomber_equipment_1  obsolete = yes }
-
 add_ideas = {
 	idea_united_nations_security_council_member
 	idea_shanghai_cooperation_organization_member
@@ -111,7 +107,7 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	create_intelligence_agency = {
-  		name = "Ministry of State Security"
+  		name = PRC_default_intelligence_agency
  		icon = "GFX_intelligence_agency_logo_PRC"
 	}
 }

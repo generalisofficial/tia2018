@@ -44,10 +44,8 @@ news_event = { #An Independent Taiwan
 		name = china.3.o1
 		trigger = {
 			NOT = {
-				OR = {
-					original_tag = ROC
-					original_tag = PRC
-				}
+				original_tag = ROC
+				original_tag = PRC
 			}
 		}
 	}
@@ -80,10 +78,8 @@ news_event = { #The Taiwan Special Administrative Region
 		name = china.4.o1
 		trigger = {
 			NOT = {
-				OR = {
-					original_tag = ROC
-					original_tag = PRC
-				}
+				original_tag = ROC
+				original_tag = PRC
 			}
 		}
 	}
