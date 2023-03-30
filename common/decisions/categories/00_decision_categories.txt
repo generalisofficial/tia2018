@@ -1,8 +1,8 @@
-emergencies = {
+category_emergencies = {
 	icon = domestic_affairs #add icon
 }
 
-brexit_decisions = {
+category_brexit = {
 	icon = brexit
 
 	allowed = {
@@ -10,46 +10,42 @@ brexit_decisions = {
 	}
 }
 
-ISR_regency = {
-	icon = generic #
-}
-
-international_organizations = {
+category_international_organizations = {
 	icon = foreign_affairs
 }
 
-political_actions = {
+category_political_actions = {
 	icon = political_actions
 }
 
-domestic_affairs = {
+category_domestic_affairs = {
 	icon = domestic_affairs
 }
 
-foreign_affairs = {
+category_foreign_affairs = {
 	icon = foreign_affairs
 }
 
-subject_affairs = {
+category_subject_affairs = {
 	icon = subject_affairs
 	allowed = {
 		has_dlc = "Together for Victory"
 	}
 }
 
-economic_affairs = {
+category_economic_affairs = {
 	icon = economic_affairs
 }
 
-military_affairs = {
+category_military_affairs = {
 	icon = military_affairs
 }
 
-integration_of_territories = {
+category_integration_of_territories = {
 	icon = integration_of_territories
 }
 
-governments_in_exile = {
+category_governments_in_exile = {
 	icon = generic
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
@@ -65,7 +61,7 @@ category_exile_forces = {
 	}
 }
 
-lar_local_recruitment = {
+category_lar_local_recruitment = {
 	allowed = { has_dlc = "La Resistance" }
 
 	visible = { has_done_agency_upgrade = upgrade_foreign_recruitment }

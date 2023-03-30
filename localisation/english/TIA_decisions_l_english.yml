@@ -1,14 +1,14 @@
 ﻿l_english:
 
  #Emergencies
- emergencies: "Emergencies"
+ category_emergencies: "Emergencies"
  crush_the_protests: "- §RCrush the Protests§!"
  crush_the_protests_desc: "The protestors have been brainwashed by foreign propaganda, and are enemies of [ROOT.GetNonIdeologyNameDef]. We need to do the right thing, which is sending the military to retake the streets. Will there be collateral damage? Probably. Will the United Nations send an angry letter? Definitely."
  hold_new_elections: "- §GHold New Elections§!"
  hold_new_elections_desc: "The protestors are our fellow countrymen, and their concerns are legitimate. This government has failed them, and we must hold new elections immediately to restore peace."
 
  #International Organizations
- international_organizations: "International Organizations"
+ category_international_organizations: "International Organizations"
  join_united_nations: "Apply to join the §BUnited Nations§!"
  join_united_nations_desc: "In order to join the United Nations, we need to submit an application to the Secretary-General, which is then voted upon by the General Assembly. However, permanent members of the Security Council can veto our application. After sending the application, a response should arrive within a week."
  leave_united_nations: "Leave the §BUnited Nations§!"
@@ -27,8 +27,6 @@
  join_commonwealth_of_nations_desc: "Our nations has many historical ties to the United Kingdom, and membership in the Commonwealth of Nations would allow us to put these ties into practice. In order for our application to be accepted, a majority of members need to vote in favor of our entry."
  leave_commonwealth_of_nations: "Leave the §LCommonwealth of Nations§!"
  leave_commonwealth_of_nations_desc: "The Commonwealth is merely a vector of British neocolonialism! Let's leave and send a message to these imperialists!"
- join_non_aligned_movement: "Apply to join the Non-Aligned Movement"
- leave_non_aligned_movement: "Leave the Non-Aligned Movement"
  join_baltic_assembly: "Apply to join the Baltic Assembly"
  join_baltic_assembly_desc: "The Baltic Assembly is a noble organization with great diplomatic potential. We should take part in it as well."
  leave_baltic_assembly: "Leave the Baltic Assembly"
@@ -69,7 +67,7 @@
  leave_commonwealth_of_independent_states_desc: "Our relations with our post-Soviet neighbors have soured, and membership in the CIS is no longer of interest to us. We will never again be a Russian colony."
  
  #Political Actions
- political_actions: "Political Actions"
+ category_political_actions: "Political Actions"
  hold_campaign_rally: "Hold Campaign Rally"
  hold_campaign_rally_desc: "There's no better way to win over just a few more voters for the government parties than a good old campaign rally by our [ROOT.GetLeaderTitle]! Remember voters, the opposition is bad and the government is good."
  invite_fascists_to_presidential_coalition: "Invite the §xFascists§! to the presidential coalition"
@@ -122,7 +120,7 @@
  boost_communist_opposition_desc: "If we wanted to, we could secretly give the §0communist§! opposition in our country a boost in the polls by giving them positive advertising and some anonymous donations from our own party treasury. This could either be because we want them to become a future coalition partner, or that we for some reason want our own government to fall. Now, why would we ever want that?"
 
  #Foreign Affairs
- foreign_affairs: "Foreign Affairs"
+ category_foreign_affairs: "Foreign Affairs"
  reform_the_soviet_union: "(Formable) Reform the §YSoviet Union§!"
  reform_the_soviet_union_desc: "Our nation is once again a government of the proletariat! In order to properly liberate the workers of Eurasia, we need to restore the Union of Soviet Socialist Republics, previously existing from 1922 to 1991. By taking control of Moscow, Kiev and Minsk, we should have a legitimate enough hold on the Union's core territories."
  reform_yugoslavia: "(Formable) Reform §YYugoslavia§!"
@@ -197,7 +195,7 @@
  offer_unification_with_russia_desc: "In 1999, the treaty to establish the Union State of Russia and Belarus was signed by Alexander Lukashenko and Boris Yeltsin. The treaty aimed to deepen integration between the two brotherly states and eventually lead to full unification. However, this goal has still not been achieved. It is clear that joining Russia would be of great benefit to our people, and we must begin negotiations to become the next region of Russia as soon as possible."
 
  #Domestic Affairs
- domestic_affairs: "Domestic Affairs"
+ category_domestic_affairs: "Domestic Affairs"
  abolish_the_monarchy: "Abolish the Monarchy"
  abolish_the_monarchy_desc: "Being a constitutional monarchy is both undemocratic and a waste of taxpayer money. The head of state should be elected! Let's become a Republic."
  establish_parliament: "Establish Parliament"
@@ -236,7 +234,7 @@
  adopt_the_turquoise_flag_desc: "The flag of Honduras was officially fixed and standardized in 1949, under President Juan Lindo. The 1949 decree specified that the stripes were to be turquoise, but in practice the flag has remained blue ever since. There are those in Honduras that wish for [ROOT.GetLeader] to finally make the change, such as the Universidad Nacional Autónoma de Honduras, believing that the degree should be followed."
 
  #Economic Affairs
- economic_affairs: "Economic Affairs"
+ category_economic_affairs: "Economic Affairs"
  adopt_the_euro: "Adopt the Euro"
  adopt_the_euro_desc: "Adopting the Euro would reduce trade barriers between us and other European nations, giving us access to larger and more efficient markets. However, giving up control of our currency won't be popular, and reduces our economic independence. Will the 3-year process be worth it?"
  build_the_nowy_swiat_canal: "Build the Nowy Świat Canal"
@@ -249,7 +247,7 @@
  print_money_desc: "Our treasury is in desperate need of funds. Increasing taxes would put too much of a toll on our economy. Let's print some more, even though it will cause inflation, devaluing our national currency."
  
  #Military Affairs
- military_affairs: "Military Affairs"
+ category_military_affairs: "Military Affairs"
  offer_ceasefire: "Offer Ceasefire"
  offer_ceasefire_desc: "Our people are tired of war, and are calling for an immediate ceasefire with [FROM.GetNonIdeologyNameDef]. If accepted, all occupied administrative regions of either side will be transferred to the occupier, while official territorial claims remain unaffected. While this is undoubtedly a short-term solution, our people need time to heal, and our army needs time to regroup."
  pro_military_ad_campaign: "Pro-Military Ad Campaign"
@@ -264,15 +262,15 @@
  eradicate_the_zapatistas_desc: "Far-left militants continue to occupy the Lacandon Jungle region of the state of Chiapas, undermining the local authorities. Negotiating with these terrorists will lead nowhere. Our army must neutralize them at once, even if that means violating the ceasefire agreement of 1997."
 
  #Integration of Territories
- integration_of_territories: "Integration of Territories"
+ category_integration_of_territories: "Integration of Territories"
  integrate_state: "Integrate §Y[FROM.GetName]§!"
  integrate_state_desc: "We currently control §Y[FROM.GetName]§!, a territory with a permanent population, but one that hasn't been fully integrated into our realm. By establishing a functioning administrative structure and neutralizing any armed resistance to our rule, §Y[FROM.GetName]§! can be just as [ROOT.GetAdjective] as our capital city."
  settle_state: "Settle §Y[FROM.GetName]§!"
  settle_state_desc: "We currently control §Y[FROM.GetName]§!, a territory which currently lacks any kind of permanent population, putting a dent in our plans to fully integrate the territory into our realm and establish a functioning local economy. By constructing basic infrastructure and sending 2500 [ROOT.GetAdjective] settlers from our capital region, §Y[FROM.GetName]§! will no longer be an unpopulated wasteland."
 
  #Brexit
- brexit_decisions: "Brexit"
- brexit_decisions_desc: "Brexit is the impending withdrawal of the United Kingdom from the European Union. It follows the referendum of 23 June 2016 when 51.9 percent of those who voted supported withdrawal. Withdrawal has been advocated by Eurosceptics, both left-wing and right-wing, while Pro-Europeanists, who also span the political spectrum, have advocated continued membership."
+ category_brexit: "Brexit"
+ category_brexit_desc: "Brexit is the impending withdrawal of the United Kingdom from the European Union. It follows the referendum of 23 June 2016 when 51.9 percent of those who voted supported withdrawal. Withdrawal has been advocated by Eurosceptics, both left-wing and right-wing, while Pro-Europeanists, who also span the political spectrum, have advocated continued membership."
  brexit_countdown: "Withdraw Article 50"
  brexit_countdown_desc: "Unless another solution to the EU question is reached before the 30th of March 2019, the United Kingdom will withdraw permanently from the European Union. If a trade deal has been reached before then, it will be a so-called Soft Brexit. If not, it will be a Hard Brexit, significantly impacting our economy due to the shock of the withdrawal."
  propose_brexit_trade_agreement: "Propose Brexit Trade Agreement"
@@ -281,7 +279,7 @@
  second_brexit_referendum_desc: "With a deal for a Soft Brexit not yet reached, another option may be to hold a second referendum in order to confirm that the people are still in favour of exiting the European Union. If not, we may stop the whole process."
 
  #Subject Affairs
- subject_affairs: "Subject Affairs"
+ category_subject_affairs: "Subject Affairs"
  hold_independence_referendum: "Hold Independence Referendum"
  hold_independence_referendum_desc: "We are no longer in need of our status as a half-independent autonomous region. The people are heavily in favor of complete independence, and as their representatives, we must oblige. It's time to unilaterally hold a referendum on independence, and show the central government what our people want. According to current polling, it will pass with a substantial majority."
  reintegrate_autonomous_region: "Reintegrate §Y[FROM.GetNonIdeologyNameDef]§!"
@@ -307,8 +305,8 @@
  LAR_recruitment_asia: "Recruitment in Asia"
  LAR_recruitment_oceania: "Recruitment in Oceania"
  LAR_recruitment_middle_east: "Recruitment in the Middle East"
- lar_local_recruitment: "Local Agent Recruitment"
- lar_local_recruitment_desc: "We need agents who can blend into the local communities. Some of these can be found within our own country, but we will have to make a concerted effort to identify, recruit and train them."
+ category_lar_local_recruitment: "Local Agent Recruitment"
+ category_lar_local_recruitment_desc: "We need agents who can blend into the local communities. Some of these can be found within our own country, but we will have to make a concerted effort to identify, recruit and train them."
  recruit_in_state_tt: "We will gain a local agent from §Y[From.Owner.GetNameDef]§!. This agent will be harder to detect when infiltrating and operating in §Y[From.Owner.GetNameDef]§!."
  recruit_in_state_to_pool_tt: "A local agent from §Y[From.Owner.GetNameDef]§! becomes available for recruitment if we have an open §YOperative Slot§!. This agent will be harder to detect when infiltrating and operating in §Y[From.Owner.GetNameDef]§!."
 
