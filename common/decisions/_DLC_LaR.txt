@@ -1,78 +1,205 @@
-category_lar_local_recruitment = {
-	#unlocks decisions to recruit in Europe
-	recruit_in_europe = {
+category_intelligence_affairs = {
 
-		#icon = generic_research
+	# Establish Branch
 
-		available = {
-			
-		}
+	establish_branch_europe = {
+		icon = intelligence_agency
 
 		visible = {
+			NOT = { has_country_flag = has_spy_branch_europe }
 			capital_scope = {
 				NOT = {
 					is_on_continent = europe
 				}
 			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = europe
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = europe
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = europe
-					}
-				}
-			}
 		}
 
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
+		cost = 100
 
 		days_remove = 90
 
 		remove_effect = {
-			set_country_flag = europe_recruitment_unlocked
+			set_country_flag = has_spy_branch_europe
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	recruit_in_europe_state = {
+	establish_branch_north_america = {
+		icon = intelligence_agency
 
-		icon = onmap_recruit_operative
-
-		available = {
-			
+		visible = {
+			NOT = { has_country_flag = has_spy_branch_north_america }
+			capital_scope = {
+				NOT = {
+					is_on_continent = north_america
+				}
+			}
 		}
+
+		cost = 100
+
+		days_remove = 90
+
+		remove_effect = {
+			set_country_flag = has_spy_branch_north_america
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	establish_branch_south_america = {
+		icon = intelligence_agency
+
+		visible = {
+			NOT = { has_country_flag = has_spy_branch_south_america }
+			capital_scope = {
+				NOT = {
+					is_on_continent = south_america
+				}
+			}
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		remove_effect = {
+			set_country_flag = has_spy_branch_south_america
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	establish_branch_africa = {
+		icon = intelligence_agency
+
+		visible = {
+			NOT = { has_country_flag = has_spy_branch_africa }
+			capital_scope = {
+				NOT = {
+					is_on_continent = africa
+				}
+			}
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		remove_effect = {
+			set_country_flag = has_spy_branch_africa
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	establish_branch_middle_east = {
+		icon = intelligence_agency
+
+		visible = {
+			NOT = { has_country_flag = has_spy_branch_middle_east }
+			capital_scope = {
+				NOT = {
+					is_on_continent = middle_east
+				}
+			}
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		remove_effect = {
+			set_country_flag = has_spy_branch_middle_east
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	establish_branch_asia = {
+		icon = intelligence_agency
+
+		visible = {
+			NOT = { has_country_flag = has_spy_branch_asia }
+			capital_scope = {
+				NOT = {
+					is_on_continent = asia
+				}
+			}
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		remove_effect = {
+			set_country_flag = has_spy_branch_asia
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	establish_branch_oceania = {
+		icon = intelligence_agency
+
+		visible = {
+			NOT = { has_country_flag = has_spy_branch_oceania }
+			capital_scope = {
+				NOT = {
+					is_on_continent = oceania
+				}
+			}
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		remove_effect = {
+			set_country_flag = has_spy_branch_oceania
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	# Recruit
+
+	recruit_operative_in_europe = {
+		icon = onmap_recruit_operative
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
 				is_on_continent = europe
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = europe_recruitment_unlocked
+				has_country_flag = has_spy_branch_europe
 				capital_scope = { is_on_continent = europe }
 			}
 			NOT = { has_country_flag = europe_recruitment_in_process }
@@ -88,10 +215,10 @@ category_lar_local_recruitment = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -103,83 +230,31 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
-		}
-	}
-#unlocks decisions to recruit in Europe
-	recruit_in_north_america = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			capital_scope = {
-				NOT = {
-					is_on_continent = north_america
-				}
-			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = north_america
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = north_america
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = north_america
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = north_america_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	recruit_in_north_america_state = {
-
+	recruit_operative_in_north_america = {
 		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
 				is_on_continent = north_america
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = north_america_recruitment_unlocked
+				has_country_flag = has_spy_branch_north_america
 				capital_scope = { is_on_continent = north_america }
 			}
 			NOT = { has_country_flag = north_america_recruitment_in_process }
@@ -195,10 +270,10 @@ category_lar_local_recruitment = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -210,84 +285,31 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	#unlocks decisions to recruit in south_america
-	recruit_in_south_america = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			capital_scope = {
-				NOT = {
-					is_on_continent = south_america
-				}
-			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = south_america
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = south_america
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = south_america
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = south_america_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	recruit_in_south_america_state = {
-
+	recruit_operative_in_south_america = {
 		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
 				is_on_continent = south_america
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = south_america_recruitment_unlocked
+				has_country_flag = has_spy_branch_south_america
 				capital_scope = { is_on_continent = south_america }
 			}
 			NOT = { has_country_flag = south_america_recruitment_in_process }
@@ -303,10 +325,10 @@ category_lar_local_recruitment = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -318,84 +340,31 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	#unlocks decisions to recruit in africa
-	recruit_in_africa = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			capital_scope = {
-				NOT = {
-					is_on_continent = africa
-				}
-			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = africa
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = africa
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = africa
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = africa_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	recruit_in_africa_state = {
-
+	recruit_operative_in_africa = {
 		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
 				is_on_continent = africa
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = africa_recruitment_unlocked
+				has_country_flag = has_spy_branch_africa
 				capital_scope = { is_on_continent = africa }
 			}
 			NOT = { has_country_flag = africa_recruitment_in_process }
@@ -411,10 +380,10 @@ category_lar_local_recruitment = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -426,84 +395,31 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	#unlocks decisions to recruit in middle_east
-	recruit_in_middle_east = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			capital_scope = {
-				NOT = {
-					is_on_continent = middle_east
-				}
-			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = middle_east
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = middle_east
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = middle_east
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = middle_east_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	recruit_in_middle_east_state = {
-
+	recruit_operative_in_middle_east = {
 		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
 				is_on_continent = middle_east
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = middle_east_recruitment_unlocked
+				has_country_flag = has_spy_branch_middle_east
 				capital_scope = { is_on_continent = middle_east }
 			}
 			NOT = { has_country_flag = middle_east_recruitment_in_process }
@@ -519,10 +435,10 @@ category_lar_local_recruitment = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -534,84 +450,31 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	#unlocks decisions to recruit in asia
-	recruit_in_asia = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			capital_scope = {
-				NOT = {
-					is_on_continent = asia
-				}
-			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = asia
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = asia
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = asia
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = asia_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	recruit_in_asia_state = {
-
+	recruit_operative_in_asia = {
 		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
 				is_on_continent = asia
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = asia_recruitment_unlocked
+				has_country_flag = has_spy_branch_asia
 				capital_scope = { 
 					is_on_continent = asia 
 				}
@@ -629,10 +492,10 @@ category_lar_local_recruitment = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -644,87 +507,34 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 
-	#unlocks decisions to recruit in australia
-	recruit_in_australia = {
-
-		#icon = generic_research
-
-		available = {
-			
-		}
-
-		visible = {
-			capital_scope = {
-				NOT = {
-					is_on_continent = australia
-				}
-			}
-			OR = {
-				any_owned_state = {
-					is_on_continent = australia
-				}
-				any_allied_country = {
-					any_owned_state = {
-						is_on_continent = australia
-					}
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					any_owned_state = {
-						is_on_continent = australia
-					}
-				}
-			}
-		}
-
-		fire_only_once = yes
-		cost = 50
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		days_remove = 90
-
-		remove_effect = {
-			set_country_flag = australia_recruitment_unlocked
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	recruit_in_australia_state = {
-
+	recruit_operative_in_oceania = {
 		icon = onmap_recruit_operative
-		name = recruit_in_europe_state
-		available = {
-			
-		}
+		name = recruit_operative_in_X
 
 		state_target = yes
 		target_trigger = {
 			FROM = {
-				is_on_continent = australia
+				is_on_continent = oceania
+				is_capital = yes
 				CONTROLLER = {
-					NOT = {
-						tag = ROOT
+					NOT = { 
+						tag = ROOT 
+						has_idea = violent_non_state_actor
 					}
 				}
-				is_capital = yes
 			}
 		}
+
 		visible = {
 			OR = {
-				has_country_flag = australia_recruitment_unlocked
-				capital_scope = { is_on_continent = australia }
+				has_country_flag = has_spy_branch_oceania
+				capital_scope = { is_on_continent = oceania }
 			}
-			NOT = { has_country_flag = australia_recruitment_in_process }
+			NOT = { has_country_flag = oceania_recruitment_in_process }
 		}
 
 		cost = 0
@@ -732,15 +542,15 @@ category_lar_local_recruitment = {
 		days_re_enable = 180
 		on_map_mode = map_only
 		complete_effect = {
-			set_country_flag = { flag = australia_recruitment_in_process days = 180 value = 1 }
+			set_country_flag = { flag = oceania_recruitment_in_process days = 180 value = 1 }
 			if = {
 				limit = {
 					num_of_operatives < num_operative_slots
 				}
-				custom_effect_tooltip = recruit_in_state_tt
+				custom_effect_tooltip = recruit_in_state
 			}
 			else = {
-				custom_effect_tooltip = recruit_in_state_to_pool_tt
+				custom_effect_tooltip = recruit_in_state_to_pool
 			}
 			hidden_effect = {
 				create_operative_leader = {
@@ -752,7 +562,7 @@ category_lar_local_recruitment = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 }

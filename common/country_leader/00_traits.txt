@@ -1,6 +1,6 @@
 leader_traits = {
 	
-	strongman = {
+	trait_strongman = {
 		sprite = 4
 		random = yes
 		
@@ -8,7 +8,7 @@ leader_traits = {
 		stability_factor = -0.02
 	}
 
-	humble = {
+	trait_humble = {
 		sprite = 4
 		random = yes
 		
@@ -16,26 +16,26 @@ leader_traits = {
 		stability_factor = 0.02
 	}
 	
-	regent = {
+	trait_regent = {
 		random = no
 		
 		political_power_factor = -0.2
 	}
 	
-	warlord = {
+	trait_warlord = {
 		random = no
 		
 		war_support_factor = 0.3
 	}
 
-	won_a_war = {
+	trait_won_a_war = {
 		random = no
 		
 		stability_factor = 0.1
 		war_support_factor = 0.1
 	}
 
-	celebrity = {
+	trait_celebrity = {
 		random = no
 		
 		stability_factor = 0.03
@@ -43,33 +43,33 @@ leader_traits = {
 
 	# Unique
 
-	the_unabomber = {
+	trait_the_unabomber = {
 		random = no
 		
 		research_speed_factor = -1
 		political_power_factor = 0.2
 	}
 
-	morbidly_obese = {
+	trait_morbidly_obese = {
 		random = no
 		
 		army_speed_factor = -0.25
 	}
 
-	mutti_merkel = {
+	trait_mutti_merkel = {
 		random = no
 		
 		political_power_factor = 0.15
 		stability_factor = 0.075
 	}
 
-	bitcoin_advocate = { # Nayib Bukele
+	trait_bitcoin_advocate = { # Nayib Bukele
 		random = no
 		
 		#Bitcoin mechanic planned
 	}
 
-	subcomandante_insurgente_galeano = { # Rafael Guillen Vicente
+	trait_subcomandante_insurgente_galeano = { # Rafael Guillen Vicente
 		random = no
 		
 		stability_factor = 0.15
@@ -78,13 +78,13 @@ leader_traits = {
 
 	# Subject
 
-	subject_pro_autonomy = {
+	trait_pro_autonomy = {
 		random = no
 		
 		autonomy_gain = 0.5
 	}
 
-	subject_pro_integration = {
+	trait_pro_integration = {
 		random = no
 		
 		autonomy_gain = -0.5

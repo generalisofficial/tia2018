@@ -1731,8 +1731,8 @@ country_event = {
 	trigger = {
 		is_subject = no
 		OR = {
-			has_country_leader_with_trait = subject_pro_integration
-			has_country_leader_with_trait = subject_pro_autonomy
+			has_country_leader_with_trait = trait_pro_integration
+			has_country_leader_with_trait = trait_pro_autonomy
 		}
 	}
 
@@ -1741,8 +1741,8 @@ country_event = {
 	}
 	
 	immediate = {
-		remove_country_leader_trait = subject_pro_integration
-		remove_country_leader_trait = subject_pro_autonomy
+		remove_country_leader_trait = trait_pro_integration
+		remove_country_leader_trait = trait_pro_autonomy
 	}
 }
 
