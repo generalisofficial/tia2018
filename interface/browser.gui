@@ -1,0 +1,152 @@
+guiTypes = {
+	containerWindowType = {
+		name = "browser_window"
+		position = { x=150 y=100 }	
+		size = { width = 1108 height = 720 }
+		moveable = yes
+		Orientation = UPPER_LEFT
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_browser_bg"
+		}			
+		
+		browserType = {
+			name = "browser"
+			spriteType = "GFX_dummy_browser"
+			position = { x = 24 y = 90 }
+			size = { x = 1060 y = 575 }
+		}
+
+		iconType = {
+			name = "browser_overlay"
+			position = {x = 24 y = 60}	
+			spriteType = "GFX_browser_overlay"
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "back"
+			quadTextureSprite = "GFX_browser_back"
+			position = { x = 20 y = 11 }
+			pdx_tooltip = "BROWSER_BACK"
+		}
+		
+		buttonType = {
+			name = "forward"
+			quadTextureSprite = "GFX_browser_forward"
+			position = { x = 60 y = 11 }
+			pdx_tooltip = "BROWSER_FORWARD"
+		}
+		
+		buttonType = {
+			name = "reload"
+			quadTextureSprite = "GFX_browser_refresh"
+			position = { x = 100 y = 11 }
+			pdx_tooltip = "BROWSER_RELOAD"			
+		}
+
+		buttonType = {
+			name = "home"
+			quadTextureSprite = "homepage"
+			position = { x = 20 y = 50 }
+			pdx_tooltip = "MENU_HOMEPAGE"		
+			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2718874788"		
+		}
+
+		instantTextboxType = {
+			name = "home_text"
+			position = { x= 65 y = 61 }
+			font = "hoi_18mbs"
+			text = MENU_HOMEPAGE
+			format = left
+			maxWidth = 200
+			maxHeight = 10
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "forum"
+			quadTextureSprite = "forum"
+			position = { x = 190 y = 50 }
+			pdx_tooltip = "MENU_FORUM"		
+			web_link = "https://discord.gg/VScgm8MSaP"	
+		}
+
+		instantTextboxType = {
+			name = "forum_text"
+			position = { x= 235 y = 61 }
+			font = "hoi_18mbs"
+			text = MENU_FORUM
+			format = left
+			maxWidth = 100
+			maxHeight = 10
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "facebook"
+			quadTextureSprite = "facebook"
+			position = { x = 300 y = 50 }
+			pdx_tooltip = "MENU_FACEBOOK"		
+			web_link = "https://www.youtube.com/channel/UCD1iEgkHQlbecfTDespIayw"
+		}
+
+		instantTextboxType = {
+			name = "facebook_text"
+			position = { x= 345 y = 61 }
+			font = "hoi_18mbs"
+			text = MENU_FACEBOOK
+			format = left
+			maxWidth = 100
+			maxHeight = 10
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "twitter"
+			quadTextureSprite = "twitter"
+			position = { x = 410 y = 50 }
+			pdx_tooltip = "MENU_TWITTER"		
+			web_link = "https://github.com/generalisofficial/tia2018"
+		}
+
+		instantTextboxType = {
+			name = "twitter_text"
+			position = { x= 455 y = 61 }
+			font = "hoi_18mbs"
+			text = MENU_TWITTER
+			format = left
+			maxWidth = 100
+			maxHeight = 10
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "privacy"
+			quadTextureSprite = "privacy"
+			position = { x = 510 y = 50 }
+			pdx_tooltip = "MENU_PRIVACY_POLICY"		
+			web_link = "https://www.patreon.com/TIAdev"
+		}
+
+		instantTextboxType = {
+			name = "privacy_text"
+			position = { x= 555 y = 61 }
+			font = "hoi_18mbs"
+			text = MENU_PRIVACY_POLICY
+			format = left
+			maxWidth = 100
+			maxHeight = 10
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_closebutton"
+			position = { x = -52 y = 16 }
+			Orientation = UPPER_RIGHT
+			clicksound = click_close
+		}		
+	}
+}

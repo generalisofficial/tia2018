@@ -118,39 +118,20 @@ characters={
 		}
 	}
 	# Starting - Military
-	ESP_king_felipe_vi={
-		name="King Fellipe VI"
-		portraits={
-			army={
-				large=GFX_generic_military_large
-				small=GFX_generic_military_small
-			}
-		}
-  		field_marshal={
-			traits = {
-				offensive_doctrine
-				inspirational_leader
-				thorough_planner
-				infantry_officer
-				media_personality
-				brilliant_strategist
-			}
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-		}
-	}
 	ESP_francisco_javier_varela_salas={
 		name="Francisco Javier Varela Salas"
 		portraits={
 			army={
-				large=GFX_generic_military_large
+				large=GFX_Portrait_Army_Francisco_Javier_Varela_Salas
 				small=GFX_generic_military_small
 			}
 		}
   		field_marshal={
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
 			traits = {
 				aggressive_assaulter
 				offensive_doctrine
@@ -158,43 +139,43 @@ characters={
 				cavalry_officer
 				trait_cautious
 			}
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
 		}
 	}
 	ESP_fernando_alejandre_martinez={
-		name="Fernando Alejandre Martinez"
+		name="Fernando Alejandre Martínez"
 		portraits={
 			army={
-				large=GFX_generic_military_large
+				large=GFX_Portrait_Army_Fernando_Alejandre_Martinez
 				small=GFX_generic_military_small
 			}
 		}
   		field_marshal={
-			traits = {
-				defensive_doctrine
-				organisational_leader
-				inflexible_strategist
-			}
 			skill=3
 			attack_skill=1
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
+			traits = {
+				defensive_doctrine
+				organisational_leader
+				inflexible_strategist
+			}
 		}
 	}
-	ESP_amador_fernando_ensenat_y_berea={
-		name="Amador Fernando Ensenat y Berea"
+	ESP_amador_ensenat_y_berea={
+		name="Amador Enseñat y Berea"
 		portraits={
 			army={
-				large=GFX_generic_military_large
+				large=GFX_Portrait_Army_Amador_Ensenat_y_Berea
 				small=GFX_generic_military_small
 			}
 		}
   		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
 			traits = {
 				career_officer
 				armor_officer
@@ -202,75 +183,49 @@ characters={
 				organizer
 				urban_assault_specialist
 			}
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
 		}
 	}
-	ESP_pedro_bitarch_bartolome={
-		name="Pedro Bitarch Bartolome"
+	ESP_antonio_planells_palau={
+		name="Antonio Planells Palau"
 		portraits={
 			army={
-				large=GFX_generic_military_large
+				large=GFX_Portrait_Army_Antonio_Planells_Palau
 				small=GFX_generic_military_small
 			}
 		}
   		corps_commander={
-			traits = {
-				combined_arms_expert
-				adaptable
-				trait_engineer
-			}
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-		}
-	}
-	ESP_antonio_planells={
-		name="Antonio Planells"
-		portraits={
-			army={
-				large=GFX_generic_military_large
-				small=GFX_generic_military_small
-			}
-		}
-  		corps_commander={
-			traits = {
-				infantry_officer
-				infantry_leader
-				organizer
-			}
 			skill=3
 			attack_skill=2
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=4
+			traits = {
+				infantry_officer
+				infantry_leader
+				organizer
+			}
 		}
 	}
 	ESP_rafael_roldan_tudela={
-		name="Rafael Roldan Tudela"
+		name="Rafael Roldán Tudela"
 		portraits={
 			army={
-				large=GFX_generic_military_large
+				large=GFX_Portrait_Army_Rafael_Roldan_Tudela
 				small=GFX_generic_military_small
 			}
 		}
   		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 			traits = {
 				cavalry_leader
 				career_officer
 				trait_reckless
 				ranger
 			}
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
 		}
 	}
 }
