@@ -1,29 +1,34 @@
+
 state={
 	id=798
 	name="STATE_798"
-	
-	resources = {
-		oil=4
+	resources={
+		oil=4.000
 	}
-	
-	history = {
+
+	history={
 		owner = EGY
-		add_core_of = EGY
-		add_core_of = SDN
-		
+		victory_points = {
+			1977 1
+		}
 		buildings = {
 			infrastructure = 1
-			1977 = { naval_base = 2 }
+			1977 = {
+				naval_base = 2
+
+			}
+
 		}
-		
-		victory_points = { 1977 2 }
+		add_core_of = EGY
+		add_core_of = SDN
+
 	}
-	
+
 	provinces={
-		1977 
+		1977 15991 
 	}
 	manpower=110000
 	buildings_max_level_factor=1.000
-	
-	state_category = state_default
+	state_category=state_default
+	local_supplies=0.000
 }
