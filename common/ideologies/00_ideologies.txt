@@ -1,7 +1,30 @@
 ideologies = {
 
-	islamist = {
+	military_junta = {
+		types = {
+
+			military_junta_ideology = {
+			}
 		
+		}
+		
+		color = { 75 83 32 }
+		
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 0.25
+		
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_boost_other_ideologies = yes
+			can_create_factions = no
+		}
+		
+		can_host_government_in_exile = yes
+	}
+
+	islamist = {
 		types = {
 
 			islamic_fundamentalist = {
@@ -15,7 +38,7 @@ ideologies = {
 			salafi_jihadist = {
 				can_be_randomly_selected = no
 			}
-			
+
 			khomeinist = {
 				can_be_randomly_selected = no
 			}
@@ -53,7 +76,6 @@ ideologies = {
     ######################################################################
 
     fascist = {
-		
 		types = {
 
 			neo_fascist = {
@@ -117,7 +139,6 @@ ideologies = {
     ######################################################################
 
     right_wing_populist = {
-		
 		types = {
 		
 			right_wing_populist_ideology = {
@@ -169,7 +190,6 @@ ideologies = {
     ######################################################################
 
     monarchist = {
-		
 		types = {
 		
 			monarchist_ideology = {
@@ -213,7 +233,6 @@ ideologies = {
     ######################################################################
 
     national_conservative = {
-		
 		types = {
 			
 			national_conservative_ideology = {
@@ -261,7 +280,6 @@ ideologies = {
     ######################################################################
 
     conservative = {
-		
 		types = {
 			
 			
@@ -322,7 +340,6 @@ ideologies = {
     ######################################################################
 
     classical_liberal = {
-		
 		types = {
 
 			classical_liberal_ideology = {
@@ -370,7 +387,6 @@ ideologies = {
     ######################################################################
 
     social_liberal = {
-		
 		types = {
 		
 			social_liberal_ideology = {
@@ -418,7 +434,6 @@ ideologies = {
 	######################################################################
 
     social_democrat = {
-		
 		types = {
 		
 			social_democrat_ideology = {
@@ -466,7 +481,6 @@ ideologies = {
     ######################################################################
 
     progressive = {
-		
 		types = {
 			
 			green = {
@@ -526,7 +540,6 @@ ideologies = {
     ######################################################################
 
     socialist = {
-		
 		types = {
 		
 			democratic_socialist = {
@@ -626,7 +639,6 @@ ideologies = {
     ######################################################################
 
     communist = {
-		
 		types = {
 		
 			marxist_leninist = {

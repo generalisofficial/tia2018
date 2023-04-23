@@ -1,4 +1,10 @@
 pre_election_effects = {
+	if = {
+		limit = {
+			military_junta > 0
+		}
+		set_political_party = { ideology = military_junta popularity = 0 }
+	}
 	set_old_election_results = yes
 	hidden_effect = {
 		meta_effect = {
@@ -4254,6 +4260,11 @@ set_coalition_seats = {
 }
 
 setup_independent_parties = {
+	set_party_name = { 
+		ideology = military_junta
+		long_name = generic_military_party
+		name = generic_military_party
+	}
 	if = {
 		limit = {
 			NOT = { has_country_flag = islamist_intended_no_leader }

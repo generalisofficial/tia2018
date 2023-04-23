@@ -113,34 +113,15 @@ add_ideas = {
 
 set_cosmetic_tag = THA_monarchist # Constitutional Monarchy
 
-#House of Representatives
-set_variable = { communist_seats = 0 }
-set_variable = { socialist_seats = 0 }
-set_variable = { progressive_seats = 0 }
-set_variable = { social_democrat_seats = 0 }
-set_variable = { social_liberal_seats = 0 }
-set_variable = { classical_liberal_seats = 0 }
-set_variable = { conservative_seats = 0 }
-set_variable = { national_conservative_seats = 100 }
-set_variable = { monarchist_seats = 0 }
-set_variable = { right_wing_populist_seats = 0 }
-set_variable = { fascist_seats = 0 }
-set_variable = { islamist_seats = 0 }
-
-# Coalition
-set_country_flag = has_a_legislature
-set_country_flag = coalition_national_conservative
-add_to_variable = { ROOT.Coalition = national_conservative_seats }
-
 set_politics = {		
-	ruling_party = national_conservative
+	ruling_party = military_junta
 	last_election = "2015.3.24"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-    national_conservative = 30.21
+    military_junta = 30.21
     conservative = 11.2
     classical_liberal = 10.6
     social_liberal = 2
