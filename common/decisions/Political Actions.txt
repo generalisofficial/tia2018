@@ -1,6 +1,79 @@
 category_political_actions = {
 	### Generic
 
+	a_totally_civilian_government = {
+		
+		visible = {
+			has_idea = FoG_military_junta
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		icon = placeholder
+		
+		cost = 150
+		
+		complete_effect = {
+			add_ideas = FoG_one_party_state
+			random_character = {
+				limit = {
+					is_country_leader = yes
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = national_conservative_ideology
+					}
+				}
+				hidden_effect = {
+					remove_country_leader_role = {
+						ideology = military_junta_ideology
+					}
+				}
+			}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = national_conservative
+					elections_allowed = no
+				}
+				set_country_flag = has_a_legislature
+				one_party_parliament = yes
+				quickset_coalition = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = has_national_conservative_party }
+				}
+				set_country_flag = has_national_conservative_party
+				# random generate
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Prayut Chan-o-cha"
+						ruling_only = yes
+					}
+				}
+				set_country_leader_portrait = {
+					ideology = national_conservative
+					portrait = GFX_Portrait_THA_Prayut_Chan_o_cha
+				}
+				set_party_name = { 
+					ideology = national_conservative
+					long_name = THA_national_conservative_party_PPP_long
+					name = THA_national_conservative_party_PPP
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+
 	hold_campaign_rally = {
 		icon = megaphone
 
@@ -94,7 +167,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			has_government = right_wing_populist
 			NOT = { has_country_flag = coalition_fascist }
@@ -132,7 +205,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = fascist
@@ -173,7 +246,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = right_wing_populist
@@ -214,7 +287,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = national_conservative
@@ -255,7 +328,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = social_liberal
@@ -296,7 +369,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = classical_liberal
@@ -337,7 +410,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = social_liberal
@@ -378,7 +451,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = social_democrat
@@ -419,7 +492,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			OR = {
 				has_government = progressive
@@ -460,7 +533,7 @@ category_political_actions = {
 		icon = parliament
 
 		visible = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_idea = minority_government
 			has_government = socialist
 			NOT = { has_country_flag = coalition_communist }

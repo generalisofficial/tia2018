@@ -26,7 +26,7 @@ country_event = { # On-startup ( Once for individual nation )
 		if = {
 			limit = {
 				NOT = { coalition_partners_are_neighbors_outside_gui = yes }
-				NOT = { has_idea = absolute_monarchy }
+				NOT = { has_idea = FoG_absolute_monarchy }
 			}
 			add_ideas = unstable_coalition
 		}
@@ -198,7 +198,7 @@ country_event = {
 		news_event = syria.2
 		set_global_flag = syrian_civil_war_over
 		FSA = {
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 			set_cosmetic_tag = FSA_GOV 
 		}
 		every_state = {
@@ -414,7 +414,7 @@ country_event = { # Monthly On-action
 		if = {
 			limit = {
 				has_idea = minority_government
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 				has_stability < 0.25
 				has_war = no
 				NOT = {
@@ -1504,7 +1504,7 @@ country_event = {
 		news_event = yemen.2
 		set_global_flag = yemeni_civil_war_over
 		HOU = {
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 			set_cosmetic_tag = YEM
 		}
 		every_state = {
@@ -1555,7 +1555,7 @@ country_event = {
 		news_event = south_sudan.2
 		set_global_flag = south_sudanese_civil_war_over
 		SPO = {
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 			set_cosmetic_tag = SSD
 			set_capital = { state = 762 }
 		}
@@ -1676,7 +1676,7 @@ country_event = {
 		news_event = libya.2
 		set_global_flag = libyan_civil_war_over
 		LNA = {
-			add_ideas = one_party_state
+			add_ideas = FoG_military_junta
 			set_cosmetic_tag = LBY
 			set_capital = { state = 448 }
 		}
@@ -1756,7 +1756,7 @@ country_event = {
 		if = {
 			limit = {
 				has_idea = idea_constitution_of_the_united_states
-				has_idea = presidential_republic
+				has_idea = FoG_presidential_republic
 			}
 			country_event = election.6
 			country_event = {

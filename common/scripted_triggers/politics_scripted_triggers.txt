@@ -5,6 +5,13 @@ is_democracy = {
 	}
 }
 
+has_an_army = {
+	NOT = { has_idea = no_standing_army }
+	has_army_manpower = {
+		size > 10
+	}
+}
+
 majority_government = {
 	OR = {
 		check_variable = {

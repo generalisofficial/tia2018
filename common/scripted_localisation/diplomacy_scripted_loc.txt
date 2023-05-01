@@ -110,17 +110,17 @@ defined_text = {
 	name = GetFormofGovernment
 	text = {
 		trigger = {
-			has_idea = parliamentary_system
+			has_idea = FoG_parliamentary_system
 			OR = {
 				has_idea = idea_constitutional_monarchy
 				has_idea = idea_commonwealth_realm
 			}
 		}
-		localization_key = FoG_parliamentary_constitutional_monarchy
+		localization_key = FoG_diplomacy_parliamentary_constitutional_monarchy
 	}
 	text = {
 		trigger = {
-			has_idea = parliamentary_system
+			has_idea = FoG_parliamentary_system
 			NOT = { 			
 				OR = {
 					has_idea = idea_constitutional_monarchy
@@ -128,17 +128,17 @@ defined_text = {
 				} 
 			}
 		}
-		localization_key = FoG_parliamentary_republic
+		localization_key = FoG_diplomacy_parliamentary_republic
 	}
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			has_idea = FoG_absolute_monarchy
 		}
-		localization_key = FoG_absolute_monarchy
+		localization_key = FoG_diplomacy_absolute_monarchy
 	}
 	text = {
 		trigger = {
-			has_idea = one_party_state
+			has_idea = FoG_one_party_state
 			NOT = { 
 				OR = {
 					has_government = communist 
@@ -146,29 +146,35 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = FoG_one_party_presidential_republic
+		localization_key = FoG_diplomacy_one_party_presidential_republic
 	}
 	text = {
 		trigger = {
-			has_idea = one_party_state
+			has_idea = FoG_one_party_state
 			has_government = communist
 		}
-		localization_key = FoG_one_party_socialist_republic
+		localization_key = FoG_diplomacy_one_party_socialist_republic
 	}
 	text = {
 		trigger = {
-			has_idea = one_party_state
+			has_idea = FoG_one_party_state
 			has_country_leader_ideology = khomeinist
 		}
-		localization_key = FoG_one_party_islamic_republic
+		localization_key = FoG_diplomacy_one_party_islamic_republic
 	}
 	text = {
 		trigger = {
 			OR = {
-				has_idea = presidential_republic
-				has_idea = demarchic_republic
+				has_idea = FoG_presidential_republic
+				has_idea = FoG_demarchic_republic
 			}
 		}
-		localization_key = FoG_presidential_republic
+		localization_key = FoG_diplomacy_presidential_republic
+	}
+	text = {
+		trigger = {
+			has_government = military_junta
+		}
+		localization_key = FoG_diplomacy_military_junta
 	}
 }

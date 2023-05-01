@@ -124,7 +124,7 @@ category_domestic_affairs = {
 		cost = 100
 		
 		complete_effect = {
-			add_ideas = presidential_republic
+			add_ideas = FoG_presidential_republic
 			news_event = politics.2
 			if = {
 				limit = {
@@ -290,7 +290,7 @@ category_domestic_affairs = {
 		
 		complete_effect = {
 			news_event = politics.3
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 			one_party_parliament = yes
 			quickset_coalition = yes
 			add_named_threat = {
@@ -525,8 +525,8 @@ category_domestic_affairs = {
 			NOT = { has_country_flag = forming_government }
 			has_country_flag = has_a_legislature
 			OR = {
-				has_idea = parliamentary_system
-				has_idea = demarchic_republic
+				has_idea = FoG_parliamentary_system
+				has_idea = FoG_demarchic_republic
 			}
 			has_elections = yes
 		}
@@ -553,7 +553,7 @@ category_domestic_affairs = {
 
 		visible = {
 			has_country_flag = has_a_legislature
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			has_elections = yes
 			NOT = { original_tag = USA }
 		}

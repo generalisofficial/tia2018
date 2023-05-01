@@ -99,9 +99,9 @@ puppet_government_sync = {
 		limit = {
 			FROM = {
 				OR = {
-					has_idea = parliamentary_system
-					has_idea = presidential_republic
-					has_idea = demarchic_republic
+					has_idea = FoG_parliamentary_system
+					has_idea = FoG_presidential_republic
+					has_idea = FoG_demarchic_republic
 				}
 			}
 		}
@@ -117,29 +117,29 @@ puppet_government_sync = {
 		}
 		if  = {
 			limit = {
-				FROM = { has_idea = presidential_republic }
+				FROM = { has_idea = FoG_presidential_republic }
 			}
-			add_ideas = presidential_republic
+			add_ideas = FoG_presidential_republic
 		}
 		if  = {
 			limit = {
-				FROM = { has_idea = parliamentary_system }
+				FROM = { has_idea = FoG_parliamentary_system }
 			}
-			add_ideas = parliamentary_system
+			add_ideas = FoG_parliamentary_system
 		}
 		if  = {
 			limit = {
-				FROM = { has_idea = demarchic_republic }
+				FROM = { has_idea = FoG_demarchic_republic }
 			}
-			add_ideas = demarchic_republic
+			add_ideas = FoG_demarchic_republic
 		}
 	}
 	if = {
 		limit = {
 			FROM = {
 				OR = {
-					has_idea = one_party_state
-					has_idea = absolute_monarchy
+					has_idea = FoG_one_party_state
+					has_idea = FoG_absolute_monarchy
 				}
 			}
 		}
@@ -155,15 +155,15 @@ puppet_government_sync = {
 		}
 		if  = {
 			limit = {
-				FROM = { has_idea = absolute_monarchy }
+				FROM = { has_idea = FoG_absolute_monarchy }
 			}
-			add_ideas = absolute_monarchy
+			add_ideas = FoG_absolute_monarchy
 		}
 		if  = {
 			limit = {
-				FROM = { has_idea = one_party_state }
+				FROM = { has_idea = FoG_one_party_state }
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 	if = {

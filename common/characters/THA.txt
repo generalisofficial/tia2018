@@ -11,17 +11,6 @@ characters={
 			ideology=monarchist_ideology
 		}
 	}
-	THA_prayut_chanocha={
-		name="Prayut Chan-o-cha"
-		portraits={
-			civilian={
-				large=GFX_Portrait_THA_Prayut_Chan_o_cha
-			}
-		}
-		country_leader={
-			ideology=military_junta_ideology
-		}
-	}
 	THA_anutin_charnvirakul={
 		name="Anutin Charnvirakul"
 		portraits={
@@ -79,4 +68,16 @@ characters={
 		}
 	}
 	# Starting - Military
+	THA_prayut_chanocha={
+		name="Prayut Chan-o-cha"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Army_Prayut_Chan_o_cha
+			}
+		}
+		country_leader={
+			ideology=military_junta_ideology
+		}
+		# add as field marshal
+	}
 }

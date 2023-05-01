@@ -302,7 +302,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = one_party_state
+				has_idea = FoG_one_party_state
 				has_government = fascist
 				original_tag = HRV
 			}
@@ -312,7 +312,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = one_party_state
+				has_idea = FoG_one_party_state
 				has_government = fascist
 				original_tag = DEU
 			}
@@ -322,7 +322,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = one_party_state
+				has_idea = FoG_one_party_state
 				has_country_leader_ideology = khomeinist
 			}
 		}
@@ -331,9 +331,14 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = one_party_state
-				has_government = communist
-				original_tag = PRK
+				OR = {
+					AND = {
+						has_idea = FoG_one_party_state
+						has_government = communist
+						original_tag = PRK
+					}
+					has_government = military_junta
+				}
 			}
 		}
 		localization_key = LEADER_TITLE_CHAIRMAN
@@ -341,7 +346,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = one_party_state
+				has_idea = FoG_one_party_state
 				has_government = communist
 				original_tag = CUB
 			}
@@ -351,7 +356,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = one_party_state
+				has_idea = FoG_one_party_state
 				has_government = communist
 			}
 		}
@@ -364,7 +369,7 @@ defined_text = {
 					original_tag = DPR
 					original_tag = LPR
 				}
-				has_idea = presidential_republic
+				has_idea = FoG_presidential_republic
 			}
 		}
 		localization_key = LEADER_TITLE_HEAD
@@ -374,12 +379,12 @@ defined_text = {
 			THIS = {
 				NOT = { has_country_leader_ideology = khomeinist }
 				OR = {
-					has_idea = presidential_republic
-					has_idea = demarchic_republic
-					has_idea = one_party_state
+					has_idea = FoG_presidential_republic
+					has_idea = FoG_demarchic_republic
+					has_idea = FoG_one_party_state
 					AND = {
 						original_tag = UAE
-						has_idea = absolute_monarchy
+						has_idea = FoG_absolute_monarchy
 					}
 					AND = {
 						OR = {
@@ -391,7 +396,7 @@ defined_text = {
 							original_tag = KIR
 							original_tag = SUR
 						}
-						has_idea = parliamentary_system
+						has_idea = FoG_parliamentary_system
 					}
 				}
 			}
@@ -406,7 +411,7 @@ defined_text = {
 					original_tag = HKG
 					original_tag = MAC
 				}
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_CHIEF_EXECUTIVE
@@ -415,7 +420,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = TIB
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_SIKYONG
@@ -424,7 +429,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = GGY
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_COMMITTEE_PRESIDENT
@@ -437,7 +442,7 @@ defined_text = {
 					original_tag = JEY
 					original_tag = GIB
 				}
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_CHIEF_MINISTER
@@ -450,7 +455,7 @@ defined_text = {
 					original_tag = SCO
 					original_tag = NIR
 				}
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_FIRST_MINISTER
@@ -459,7 +464,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = SMR
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_FOREIGN_SECRETARY
@@ -468,7 +473,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = IRL
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_TAOISEACH
@@ -477,7 +482,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = MMR
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_STATE_COUNCELLOR
@@ -486,7 +491,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = BSQ
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_LEHENDAKARI
@@ -499,7 +504,7 @@ defined_text = {
 					original_tag = AUT
 					original_tag = BAV
 				}
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 		}
 		localization_key = LEADER_TITLE_CHANCELLOR
@@ -507,7 +512,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = parliamentary_system
+				has_idea = FoG_parliamentary_system
 			}
 			NOT = { 
 				OR = {
@@ -524,7 +529,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = TIB
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 		}
 		localization_key = LEADER_TITLE_DALAI_LAMA
@@ -533,7 +538,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = ATH
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 		}
 		localization_key = LEADER_TITLE_PATRIARCH
@@ -542,7 +547,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = VAT
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 		}
 		localization_key = LEADER_TITLE_POPE
@@ -554,7 +559,7 @@ defined_text = {
 					original_tag = QAT
 					original_tag = KWT
 				}
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 		}
 		localization_key = LEADER_TITLE_EMIR
@@ -566,7 +571,7 @@ defined_text = {
 					original_tag = OMN
 					original_tag = BRN
 				}
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 		}
 		localization_key = LEADER_TITLE_SULTAN
@@ -575,7 +580,7 @@ defined_text = {
 		trigger = {
 			THIS = {
 				original_tag = IRN
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 		}
 		localization_key = LEADER_TITLE_SHAH
@@ -583,7 +588,7 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 			is_female = yes
 			NOT = { original_tag = UAE }
@@ -593,21 +598,12 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
 			NOT = { is_female = yes }
 			NOT = { original_tag = UAE }
 		}
 		localization_key = LEADER_TITLE_KING
-	}
-	### Military Junta
-	text = {
-		trigger = {
-			THIS = {
-				has_government = military_junta
-			}
-		}
-		localization_key = LEADER_TITLE_JUNTA_CHAIRMAN
 	}
 	### Violent Non-State Actor
 	text = {

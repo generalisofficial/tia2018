@@ -661,14 +661,14 @@ defined_text = {
 	text = {
 		trigger = {
 			is_democracy = yes
-			has_idea = parliamentary_system
+			has_idea = FoG_parliamentary_system
 		}
 		localization_key = government_parliamentary_system
 	}
 	text = {
 		trigger = {
 			is_democracy = yes
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 		}
 		localization_key = government_presidential_republic
 	}
@@ -706,55 +706,55 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			majority_government = yes
 		}
 		localization_key = presidential_majority_government
 	}
 	text = {
 		trigger = {
-			has_idea = parliamentary_system
+			has_idea = FoG_parliamentary_system
 			majority_government = yes
 		}
 		localization_key = parliamentary_majority_government
 	}
 	text = {
 		trigger = {
-			has_idea = demarchic_republic
+			has_idea = FoG_demarchic_republic
 			majority_government = yes
 		}
 		localization_key = randomly_selected_majority_government
 	}
 	text = {
 		trigger = {
-			has_idea = presidential_republic
+			has_idea = FoG_presidential_republic
 			NOT = { majority_government = yes }
 		}
 		localization_key = presidential_minority_government
 	}
 	text = {
 		trigger = {
-			has_idea = parliamentary_system
+			has_idea = FoG_parliamentary_system
 			NOT = { majority_government = yes }
 		}
 		localization_key = parliamentary_minority_government
 	}
 	text = {
 		trigger = {
-			has_idea = demarchic_republic
+			has_idea = FoG_demarchic_republic
 			NOT = { majority_government = yes }
 		}
 		localization_key = randomly_selected_minority_government
 	}
 	text = {
 		trigger = {
-			has_idea = absolute_monarchy
+			has_idea = FoG_absolute_monarchy
 		}
 		localization_key = monarch_led_government
 	}
 	text = {
 		trigger = {
-			has_idea = one_party_state
+			has_idea = FoG_one_party_state
 		}
 		localization_key = one_party_state_government
 	}

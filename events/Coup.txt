@@ -46,9 +46,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -90,9 +90,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -139,9 +139,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -180,7 +180,7 @@ country_event = {
 			elections_allowed = no
 		}
 		news_event = coup.13
-		add_ideas = absolute_monarchy
+		add_ideas = FoG_absolute_monarchy
 		one_party_parliament = yes
 		quickset_coalition = yes
 	}
@@ -228,9 +228,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -277,9 +277,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -326,9 +326,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -375,9 +375,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -424,9 +424,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -473,9 +473,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -522,9 +522,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -571,9 +571,9 @@ country_event = {
 		quickset_coalition = yes
 		if = {
 			limit =  {
-				has_idea = absolute_monarchy
+				has_idea = FoG_absolute_monarchy
 			}
-			add_ideas = one_party_state
+			add_ideas = FoG_one_party_state
 		}
 	}
 }
@@ -598,10 +598,17 @@ country_event = {
 	title = coup.14.t
 	desc = coup.14.d
 	
-	is_triggered_only = yes #testing
+	trigger = {
+		#has_an_army = yes
+		always = no
+	}
 	
 	option = {
-		name = coup.o1
+		name = coup.14.o1
+		add_popularity = {
+			ideology = military_junta
+			popularity = 0.2
+		}
 		random_character = {
 			limit = {
 				is_army_leader = yes
@@ -617,6 +624,33 @@ country_event = {
 		set_politics = {
 			ruling_party = military_junta
 			elections_allowed = no
+		}
+		add_ideas = FoG_military_junta
+		clr_country_flag = has_a_legislature
+		news_event = coup.15
+	}
+}
+
+news_event = {
+	id = coup.15
+	title = coup.15.t
+	desc = coup.15.d
+	picture = GFX_news_event_coup
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = coup.15.o1
+		trigger = {
+			NOT = { original_tag = FROM }
+		}
+	}
+
+	option = {
+		name = coup.15.o2
+		trigger = {
+			original_tag = FROM
 		}
 	}
 }

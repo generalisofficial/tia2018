@@ -326,7 +326,7 @@ ideas = {
     form_of_government = {
 		law = yes
 		
-		presidential_republic = {
+		FoG_presidential_republic = {
 			cost = 500
 			removal_cost = -1
 			
@@ -344,7 +344,7 @@ ideas = {
 			default = yes
 		}
 		
-		parliamentary_system = {
+		FoG_parliamentary_system = {
 			cost = 500
 			removal_cost = -1
 			
@@ -367,7 +367,7 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 
-		demarchic_republic = {
+		FoG_demarchic_republic = {
 			cost = 500
 			removal_cost = -1
 			
@@ -378,7 +378,7 @@ ideas = {
 			}
 		}
 
-		one_party_state = {
+		FoG_one_party_state = {
 			cost = 500
 			removal_cost = -1
 			
@@ -398,7 +398,22 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 
-		absolute_monarchy = {
+		FoG_military_junta = {
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		FoG_absolute_monarchy = {
 			cost = 500
 			removal_cost = -1
 			
@@ -1443,8 +1458,8 @@ ideas = {
 			
 			available = {
 				OR = { 
-					has_idea = one_party_state
-					has_idea = absolute_monarchy
+					has_idea = FoG_one_party_state
+					has_idea = FoG_absolute_monarchy
 					has_idea = violent_non_state_actor
 				}
 				NOT = { 
@@ -1525,7 +1540,7 @@ ideas = {
 			on_add = {
 				if = {
 					limit = {
-						has_idea = presidential_republic
+						has_idea = FoG_presidential_republic
 					}
 					custom_effect_tooltip = TT_electoral_fraud_unlocked
 				}
