@@ -13,7 +13,7 @@ NDefines.NCountry.DEFAULT_STABILITY = 0.25
 NDefines.NCountry.DEFAULT_STABILITY = 0.25
 NDefines.NCountry.MIN_STABILITY = 0.1
 NDefines.NCountry.MAX_STABILITY = 0.9
-NDefines.NCountry.BASE_RESEARCH_SLOTS  = 1
+NDefines.NCountry.BASE_RESEARCH_SLOTS  = 0
 
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_AFTER = {0, 5}
 NDefines_Graphics.NGraphics.COUNTRY_FLAG_TEX_MAX_SIZE = 2048
